@@ -1,0 +1,110 @@
+# ============================================================================
+# user_repo.yaml — THE MANIFEST for this User Data Repo
+# ============================================================================
+# Spec: we_citizens/pm/user_repos.mdx §6.2 ("the manifest, read first").
+# Reader: code/packages/backend/src/modules/groups/user-repo-scan.ts
+#         -> parseManifest() (§6.2) and scanRemoteRepo() (§6.5, §25).
+#
+# WHAT THIS FILE DOES. A registered user repo is scanned by We The Citizens for
+# `*.transcription` files. The scanner reads THIS file first. When it carries a
+# `transcriptions:` index, that index is AUTHORITATIVE and the fallback walk
+# (§6.3 / §25.R1) does not run. With no manifest the repo is still scanned — the
+# walk just has to guess the shape, and the scan report says it guessed
+# (`manifest: "absent"`, `no_manifest_directories_walked`).
+#
+# ⚠️ AN INDEXED REPO IS ONLY AS COMPLETE AS ITS INDEX. Because the index replaces
+#    the walk, a transcript added under videos/transcriptions/ and NOT added here
+#    is invisible to the scan — and "not found" is byte-indistinguishable from
+#    "this person has never spoken", which is the false sentence §25.3 exists to
+#    refuse. ADD EVERY NEW TRANSCRIPT TO `transcriptions:` BELOW, or delete the
+#    whole `transcriptions:` block and let the walk do it.
+#
+# ⚠️ `text_sha256` IS A REFUSAL, NOT A WARNING (§6.2). A hash here that does not
+#    match the bytes read is stored as `gap_reason: manifest_hash_mismatch` and
+#    the source is NOT scored. Re-hash after ANY edit to a transcript:
+#        shasum -a 256 videos/transcriptions/tucker/joe_kent/1cbw1utqzHg.transcription
+#
+# ⚠️ `person_key` BELOW IS A CLAIM, NEVER TRUTH (§6.5). The registration in the
+#    app wins, always. A claim that matches is recorded as confirmation; a claim
+#    that conflicts changes nothing and is surfaced to the admin as
+#    `manifest_person_conflict`. It is written here so this repo is
+#    self-describing, not so it can re-point itself.
+# ============================================================================
+
+user_repo:
+  schema_version: 1
+
+  # people.mdx §2.1 / data_we_citizens/people/tucker_carlson.yaml — the frozen
+  # PERSON key (^[a-z0-9_]{1,120}$), never a roster key. The same human's roster
+  # record is `tucker_carlson_us_pres` (politicians/new/), and the spine resolves
+  # either address to this person — but the person key is the one the speaking
+  # corpus is scoped by (people.mdx §5.3, THE WALL).
+  #
+  # WHY TUCKER CARLSON AND NOT JOE KENT. The one transcript here is an interview:
+  # Tucker Carlson is the SUBJECT whose words are assessed, Joe Kent is the
+  # GUEST. The data repo already states exactly that split for this same video in
+  # politicians/new/tucker_carlson_us_pres/transcriptions/1cbw1utqzHg/speaker_map.yaml
+  # ("Only this speaker is scored" / "Do not score his lines as the subject").
+  # The directory name `videos/transcriptions/tucker/joe_kent/` names two humans
+  # and re-points nothing (§25.5) — this key is what says which one is the subject.
+  person_key: "tucker_carlson"
+  display_name: "Tucker Carlson"
+
+  # §7 — PUBLIC, https only. No ssh, no git://, no credential, no token: the test
+  # the scan performs is "can the WORLD read this?".
+  repo_url: "https://github.com/BryanStarbuck/we_bryan.git"
+
+  # §7.2 — empty means "read from the repo root". Every walk root and every path
+  # below is resolved beneath this.
+  subpath: ""
+
+  tooling:
+    # transcription.mdx §2 — rung 3, id `aligned_local`: yt-dlp bestaudio ->
+    # ffmpeg -> Silero VAD -> whisper.cpp -> sherpa-onnx diarize -> interval-tree
+    # merge. The only rung that produces word timings AND speaker turns, which is
+    # why the sidecar's Evidence_Grade is `aligned`.
+    ladder_tier: 3
+    tier_id: "aligned_local"
+    transcriber: "whisper.cpp / ggml-large-v3-turbo-q5_0"
+    diarizer: "sherpa-onnx-node / pyannote-segmentation-3.0 (onnx)"
+    evidence_grade: "aligned"
+    language: "en"
+
+  # §6.2 — THE EXPLICIT INDEX. Authoritative when present. Paths are
+  # REPO-ROOT-RELATIVE (the scanner applies `subpath` itself), forward slashes,
+  # no leading "./".
+  transcriptions:
+    - video_key: "1cbw1utqzHg"                # transcription.mdx §13.8 — a frozen
+                                              # YouTube id, taken from the FILENAME
+                                              # STEM and never from the directory
+                                              # name `joe_kent` (§25.R3).
+      title: "Tucker Carlson interviews Joe Kent"
+      source_url: "https://www.youtube.com/watch?v=1cbw1utqzHg"
+      recorded_language: "en"
+      path: "videos/transcriptions/tucker/joe_kent/1cbw1utqzHg.transcription"
+      sidecar: "videos/transcriptions/tucker/joe_kent/transcription.yaml"
+      segments: "videos/transcriptions/tucker/joe_kent/1cbw1utqzHg.segments.json"
+      # VERIFIED against the bytes on disk 2026-09-04:
+      #   shasum -a 256 -> 43201be4e1a85af110ceabadfae2b6ee9236c84bf594d4e5e3b90ed313621e18
+      text_sha256: "43201be4e1a85af110ceabadfae2b6ee9236c84bf594d4e5e3b90ed313621e18"
+      transcribed_at: 2026-09-03T20:19:28.997Z
+      word_count: 24110
+      # Who is speaking, so nobody has to infer it from the directory path. The
+      # SUBJECT is the person this repo is keyed by; the guest's lines are not
+      # this run's subject (see speaker_map.yaml in the data repo).
+      speakers:
+        SPEAKER_00: { person_key: "tucker_carlson", role: "subject", display_name: "Tucker Carlson" }
+        SPEAKER_01: { person_key: "joe_kent", role: "guest", display_name: "Joe Kent" }
+      # §25.R6 — text sidecars a transcriber emitted that the scanner's
+      # TEXT_EXTENSIONS allow-list does not admit. Listed so their absence from
+      # the read is STATED rather than silent. They are not fetched.
+      unread_sidecars:
+        - "videos/transcriptions/tucker/joe_kent/1cbw1utqzHg.ctm"
+        - "videos/transcriptions/tucker/joe_kent/1cbw1utqzHg.rttm"
+        - "videos/transcriptions/tucker/joe_kent/1cbw1utqzHg.fountain"
+        - "videos/transcriptions/tucker/joe_kent/1cbw1utqzHg.segments.jsonl"
+        - "videos/transcriptions/tucker/joe_kent/1cbw1utqzHg.script.txt"
+        - "videos/transcriptions/tucker/joe_kent/1cbw1utqzHg.srt"
+        - "videos/transcriptions/tucker/joe_kent/1cbw1utqzHg.vtt"
+
+  updated_at: 2026-09-04T19:42:30.000Z
