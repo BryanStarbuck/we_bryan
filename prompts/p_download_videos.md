@@ -902,22 +902,47 @@ everything the run now knows. Full schema in APPENDIX D. The blocks to complete:
 
 Absent is absent, at every field. And if a fact has no field, ADD the field.
 
-7.1a REGENERATING A SIDECAR DESTROYS THE WRITTEN PART
+7.1a SWEEP FOR THE PART A MACHINE COULD NOT HAVE WRITTEN
 
-Everything in transcription.yaml except Description and Topics can be rebuilt from
-the media and the outputs. Those two cannot: they were read and written by hand.
+transcription.yaml has two kinds of field and only one of them defends itself.
 
-So if a sidecar is regenerated — because a bug was found in the generator, or a
-field was added — the Description and Topics are silently lost, and the file still
-parses, still carries a correct SHA-256, and still looks finished. Nothing downstream
-can tell.
+  MECHANICAL — SHA256, Bytes, Duration, Word_Count, Files, Demand, Title, Show,
+  Recorded. All derived from the media, ffprobe, the .info.json and the CSV row.
+  A script produces them and reproduces them.
 
-  * Regenerate the mechanical fields only, or re-apply the written ones afterwards.
-  * Before Stage 8, sweep EVERY video and assert Description, Topics, Media.SHA256
-    and Demand are all present and non-empty. Do not trust that a directory with ten
-    files in it is complete. This exact sweep caught two videos in the run that
-    produced this file — one whose sidecar was never written and one whose
-    description was wiped by a regeneration.
+  HAND-WRITTEN — Description and Topics. Nothing on disk contains them. They
+  require reading the transcript. No script can produce them, and no mechanical
+  check tends to look for them.
+
+That asymmetry is the danger: the cheap fields become the APPEARANCE of
+completeness. A sidecar with no Description still parses, still carries a correct
+and verified SHA-256, still joins back to its demand row, and would be committed,
+indexed, pushed and trusted. The absence surfaces only when a human opens it.
+
+So before Stage 8, sweep EVERY selected video and assert:
+
+  * the nine output files exist and are non-empty
+  * transcription.yaml parses
+  * Video.Description is present and NON-EMPTY
+  * Topics is present and NON-EMPTY
+  * Media.SHA256 and Demand are present
+
+RE-RUN THE SWEEP UNTIL IT COMES BACK CLEAN. Fixing one miss routinely reveals the
+next: in the run that produced this file it reported 19/20, then 19/20 again for a
+different video, then 20/20. A sweep that runs once and reports "one problem" has
+not finished.
+
+Both misses that run were OMISSIONS — a video whose sidecar was never generated,
+and a video handled early and out of band whose description was never written
+because it was already "done". Sidecars written in batches lose the exception you
+handled first. Do not trust that a directory with ten files in it is complete.
+
+SEPARATELY, THE GENERATOR IS A HAZARD. A generator that writes the file from
+scratch destroys Description and Topics on any re-run — after a bug fix, or when a
+field is added — and leaves a file that still parses and still hashes correctly.
+Regenerate the mechanical fields only, or re-apply the written ones afterwards.
+This is a different failure from the omission above and the sweep is what catches
+both.
 
 7.1b PARSE WHAT YOU WROTE
 
