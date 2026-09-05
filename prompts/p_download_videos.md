@@ -79,7 +79,22 @@ VIDEO_DEMAND_YAML is file {DATA_REPO}/video_demand.yaml
 
 VIDEO_DOWNLOAD_ROOT dir is ~/T/_we_citizens/download/videos
   * Where media THIS PROMPT downloads lands. OUTSIDE every git repo, on purpose:
-    media is large, it is never committed, and it is disposable once the words exist.
+    media is large and it is never committed.
+  * THE MEDIA IS DISPOSABLE ONCE THE WORDS EXIST. THE METADATA BESIDE IT IS NOT.
+    The {video_key}.info.json holds the only copy of the channel id, the view /
+    like / comment counts at capture time, and the availability — facts that
+    change hourly, are never recoverable for a past date, and vanish outright if
+    the video is edited, made private or deleted. Nothing else on this machine
+    has them, and *.info.json is in {ROOT_DIR}/.gitignore, so they can never
+    reach the repo by accident.
+    Stage 7's Capture block is what rescues them. Until a video's sidecar carries
+    a Capture block, deleting its directory destroys evidence permanently.
+    This is not theoretical: the one transcript in this repo that predates the
+    Capture block, tucker/joe_kent, has lost its media, and its Media.SHA256 can
+    now never be computed. `verify` reports it as LEGACY forever.
+  * SAFE TO DELETE: the media file itself, and any superseded full-video file,
+    once `verify` is green for that video. Deleting the .info.json is only safe
+    after its facts are in the sidecar.
   * Layout: {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/{video_key}.{ext}
   * It may not exist yet. Create it, and create {VIDEO_DOWNLOAD_ROOT}/_runs, before
     anything writes into either.
@@ -1389,6 +1404,18 @@ added. ABSENT IS ABSENT: omit what is not known; never write a placeholder.
         Stored_At: "/Users/.../T/_we_citizens/download/videos/tucker_carlson_us_pres/1cbw1utqzHg/"
         Media_Kind: "audio"             audio | video — what was actually fetched
 
+      Capture:                        # facts about the POSTING at fetch time.
+        Channel_ID: "UCakn6ZCwlFA6Ct6XSU-HmtQ"   the DURABLE uploader identity.
+                                        A handle can be renamed or reassigned to
+                                        a different human; a UC id cannot.
+        Uploader_ID: "@karilake"
+        View_Count: 1790                reach AT CAPTURE TIME. Changes hourly and
+        Like_Count: 276                 is never recoverable for a past date.
+        Comment_Count: 45
+        Availability: "public"          public / unlisted / members-only, then
+        Published_At: "2024-10-14T20:08:25+00:00"
+        Captured_At: "2026-09-05T08:39:08-07:00"
+
       People_in_Video:
         Person_1:
           Name: "Tucker Carlson"
@@ -1718,9 +1745,13 @@ Z18 — an older run left full-video files that bestaudio has superseded.
       ============================================================
       {N} full-video downloads from an earlier run are superseded
       by the audio files beside them — {SIZE} that nothing reads.
-      Delete them when you want the space back:
+      Safe to delete once `verify` is green: the words and the
+      Capture block are already in the repo. This removes only the
+      video files, never the .info.json beside them, which holds
+      facts that exist nowhere else.
       ============================================================
-      find ~/T/_we_citizens/download/videos -name "*.mkv" -delete
+      find ~/T/_we_citizens/download/videos \
+           \( -name "*.mkv" -o -name "*.f[0-9]*" \) -delete
 
 
 Z19 — a video produced far fewer words than its length suggests.

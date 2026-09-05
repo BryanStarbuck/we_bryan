@@ -7,3 +7,8 @@
 *.webp
 # ...but the empty-directory markers must always survive.
 !.gitkeep
+
+# Python build artifacts from tools/. The auto-committer will otherwise sweep
+# these in — it did on 2026-09-05.
+__pycache__/
+*.pyc
