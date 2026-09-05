@@ -1,0 +1,847 @@
+{
+  "schema_version": 2,
+  "canonical_id": "b361b77a8b13b228",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 41.16,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-05T16:02:45.160Z",
+  "text_sha256": "c931c4dbfd764e3e5d2b078e6e1c1ec6f02e05a57f3184c5978e89d26cfdc0ac",
+  "segments_sha256": "86226212d71c9935eefa2a8459d7ca28d2f833dcb0bdbd584cf922a3742eed93",
+  "words_sha256": "e3f1e5d453e463b077c7bda684b0143f9306a67c8d33fcb1fd0ada30f5139b5a",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 1,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 4,
+    "clusters": 3,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 7.9
+      },
+      "clean_s": 7.9,
+      "speaking_s": 7.9,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 18.9
+      },
+      "clean_s": 18.9,
+      "speaking_s": 18.9,
+      "first_s": 8.97
+    },
+    {
+      "id": "SPEAKER_02",
+      "n": 3,
+      "label": "Speaker 3 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.8,
+        "confidence": "low",
+        "clean_s": 11.5
+      },
+      "clean_s": 11.5,
+      "speaking_s": 11.5,
+      "first_s": 29.9
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 8.08,
+      "end_s": 8.92,
+      "segment_i": 1,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 29.06,
+      "end_s": 29.8,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.09,
+      "end_s": 8.08,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Credit Congressman Ro Khanna hosted a roundtable discussion today with mom and pop groceries workers. They discussed the soaring cost",
+      "words": [
+        {
+          "w": "Credit",
+          "s": 0.09,
+          "e": 0.39,
+          "c": 0.599544
+        },
+        {
+          "w": "Congressman",
+          "s": 0.39,
+          "e": 1.05,
+          "c": 0.776073
+        },
+        {
+          "w": "Ro",
+          "s": 1.13,
+          "e": 1.24,
+          "c": 0.654906
+        },
+        {
+          "w": "Khanna",
+          "s": 1.25,
+          "e": 1.6,
+          "c": 0.947341
+        },
+        {
+          "w": "hosted",
+          "s": 1.68,
+          "e": 1.92,
+          "c": 0.903347
+        },
+        {
+          "w": "a",
+          "s": 1.92,
+          "e": 1.99,
+          "c": 0.81186
+        },
+        {
+          "w": "roundtable",
+          "s": 1.99,
+          "e": 2.58,
+          "c": 0.636013
+        },
+        {
+          "w": "discussion",
+          "s": 2.77,
+          "e": 3.12,
+          "c": 0.852937
+        },
+        {
+          "w": "today",
+          "s": 3.12,
+          "e": 3.48,
+          "c": 0.941342
+        },
+        {
+          "w": "with",
+          "s": 3.48,
+          "e": 3.63,
+          "c": 0.837111
+        },
+        {
+          "w": "mom",
+          "s": 3.7,
+          "e": 3.99,
+          "c": 0.823556
+        },
+        {
+          "w": "and",
+          "s": 3.99,
+          "e": 4.15,
+          "c": 0.899141
+        },
+        {
+          "w": "pop",
+          "s": 4.24,
+          "e": 4.37,
+          "c": 0.987364
+        },
+        {
+          "w": "groceries",
+          "s": 4.37,
+          "e": 5,
+          "c": 0.852306
+        },
+        {
+          "w": "workers.",
+          "s": 5,
+          "e": 5.72,
+          "c": 0.848953
+        },
+        {
+          "w": "They",
+          "s": 5.81,
+          "e": 6.07,
+          "c": 0.999512
+        },
+        {
+          "w": "discussed",
+          "s": 6.07,
+          "e": 6.86,
+          "c": 0.762154
+        },
+        {
+          "w": "the",
+          "s": 6.86,
+          "e": 7.12,
+          "c": 0.998877
+        },
+        {
+          "w": "soaring",
+          "s": 7.12,
+          "e": 7.73,
+          "c": 0.976848
+        },
+        {
+          "w": "cost",
+          "s": 7.73,
+          "e": 8.08,
+          "c": 0.94408
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 8.08,
+      "end_s": 8.92,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "of food.",
+      "words": [
+        {
+          "w": "of",
+          "s": 8.08,
+          "e": 8.25,
+          "c": 0.999251
+        },
+        {
+          "w": "food.",
+          "s": 8.25,
+          "e": 8.92,
+          "c": 0.980685
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 9.01,
+      "end_s": 28.99,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Oftentimes we get products and we don't have what we order. So then you go without that product for a period of time or you replace it with a different product that perhaps is not as well known with the community, so therefore it results on less",
+      "words": [
+        {
+          "w": "Oftentimes",
+          "s": 9.01,
+          "e": 10.1,
+          "c": 0.902927
+        },
+        {
+          "w": "we",
+          "s": 10.1,
+          "e": 10.33,
+          "c": 0.768237
+        },
+        {
+          "w": "get",
+          "s": 10.33,
+          "e": 10.68,
+          "c": 0.998828
+        },
+        {
+          "w": "products",
+          "s": 10.68,
+          "e": 11.5,
+          "c": 0.995308
+        },
+        {
+          "w": "and",
+          "s": 11.69,
+          "e": 12,
+          "c": 0.952441
+        },
+        {
+          "w": "we",
+          "s": 12,
+          "e": 12.16,
+          "c": 0.623397
+        },
+        {
+          "w": "don't",
+          "s": 12.17,
+          "e": 12.55,
+          "c": 0.994922
+        },
+        {
+          "w": "have",
+          "s": 12.62,
+          "e": 13.76,
+          "c": 0.902975
+        },
+        {
+          "w": "what",
+          "s": 13.76,
+          "e": 14.62,
+          "c": 0.937807
+        },
+        {
+          "w": "we",
+          "s": 14.74,
+          "e": 15.15,
+          "c": 0.989019
+        },
+        {
+          "w": "order.",
+          "s": 15.22,
+          "e": 16.07,
+          "c": 0.853789
+        },
+        {
+          "w": "So",
+          "s": 16.2,
+          "e": 16.28,
+          "c": 0.998119
+        },
+        {
+          "w": "then",
+          "s": 16.28,
+          "e": 16.6,
+          "c": 0.917029
+        },
+        {
+          "w": "you",
+          "s": 16.6,
+          "e": 16.84,
+          "c": 0.995488
+        },
+        {
+          "w": "go",
+          "s": 16.84,
+          "e": 17,
+          "c": 0.998094
+        },
+        {
+          "w": "without",
+          "s": 17,
+          "e": 17.56,
+          "c": 0.998193
+        },
+        {
+          "w": "that",
+          "s": 17.56,
+          "e": 17.88,
+          "c": 0.997826
+        },
+        {
+          "w": "product",
+          "s": 17.88,
+          "e": 18.44,
+          "c": 0.999295
+        },
+        {
+          "w": "for",
+          "s": 18.44,
+          "e": 18.7,
+          "c": 0.996561
+        },
+        {
+          "w": "a",
+          "s": 18.86,
+          "e": 18.86,
+          "c": 0.766197
+        },
+        {
+          "w": "period",
+          "s": 18.91,
+          "e": 19.73,
+          "c": 0.989013
+        },
+        {
+          "w": "of",
+          "s": 19.73,
+          "e": 20.02,
+          "c": 0.989865
+        },
+        {
+          "w": "time",
+          "s": 20.02,
+          "e": 20.56,
+          "c": 0.997973
+        },
+        {
+          "w": "or",
+          "s": 20.65,
+          "e": 20.92,
+          "c": 0.679728
+        },
+        {
+          "w": "you",
+          "s": 21,
+          "e": 21.1,
+          "c": 0.980176
+        },
+        {
+          "w": "replace",
+          "s": 21.1,
+          "e": 21.52,
+          "c": 0.92624
+        },
+        {
+          "w": "it",
+          "s": 21.52,
+          "e": 21.64,
+          "c": 0.989449
+        },
+        {
+          "w": "with",
+          "s": 21.64,
+          "e": 21.88,
+          "c": 0.999054
+        },
+        {
+          "w": "a",
+          "s": 21.88,
+          "e": 21.94,
+          "c": 0.996677
+        },
+        {
+          "w": "different",
+          "s": 21.94,
+          "e": 22.48,
+          "c": 0.99927
+        },
+        {
+          "w": "product",
+          "s": 22.48,
+          "e": 22.9,
+          "c": 0.995169
+        },
+        {
+          "w": "that",
+          "s": 22.9,
+          "e": 23.14,
+          "c": 0.88953
+        },
+        {
+          "w": "perhaps",
+          "s": 23.14,
+          "e": 23.5,
+          "c": 0.974068
+        },
+        {
+          "w": "is",
+          "s": 23.69,
+          "e": 23.71,
+          "c": 0.918291
+        },
+        {
+          "w": "not",
+          "s": 23.71,
+          "e": 23.88,
+          "c": 0.992489
+        },
+        {
+          "w": "as",
+          "s": 23.88,
+          "e": 24,
+          "c": 0.973145
+        },
+        {
+          "w": "well",
+          "s": 24,
+          "e": 24.32,
+          "c": 0.984834
+        },
+        {
+          "w": "known",
+          "s": 24.32,
+          "e": 24.64,
+          "c": 0.919541
+        },
+        {
+          "w": "with",
+          "s": 24.64,
+          "e": 25.35,
+          "c": 0.485039
+        },
+        {
+          "w": "the",
+          "s": 25.44,
+          "e": 25.63,
+          "c": 0.696141
+        },
+        {
+          "w": "community,",
+          "s": 25.67,
+          "e": 26.66,
+          "c": 0.420528
+        },
+        {
+          "w": "so",
+          "s": 26.66,
+          "e": 26.84,
+          "c": 0.994135
+        },
+        {
+          "w": "therefore",
+          "s": 26.84,
+          "e": 27.68,
+          "c": 0.971651
+        },
+        {
+          "w": "it",
+          "s": 27.68,
+          "e": 27.86,
+          "c": 0.700079
+        },
+        {
+          "w": "results",
+          "s": 27.86,
+          "e": 28.51,
+          "c": 0.989817
+        },
+        {
+          "w": "on",
+          "s": 28.51,
+          "e": 28.69,
+          "c": 0.518533
+        },
+        {
+          "w": "less",
+          "s": 28.69,
+          "e": 28.99,
+          "c": 0.997455
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 29.06,
+      "end_s": 29.8,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "sales.",
+      "words": [
+        {
+          "w": "sales.",
+          "s": 29.06,
+          "e": 29.8,
+          "c": 0.977465
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 29.96,
+      "end_s": 41.16,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Lupe Lopez, owner of Artigas Food Center, says over the past three years she's seen a 38 percent increase in the cost of milk and in the past eight months the food price index has risen by more than eight percent.",
+      "words": [
+        {
+          "w": "Lupe",
+          "s": 29.96,
+          "e": 30.14,
+          "c": 0.72831
+        },
+        {
+          "w": "Lopez,",
+          "s": 30.14,
+          "e": 30.6,
+          "c": 0.836636
+        },
+        {
+          "w": "owner",
+          "s": 30.6,
+          "e": 30.93,
+          "c": 0.950132
+        },
+        {
+          "w": "of",
+          "s": 30.93,
+          "e": 31.06,
+          "c": 0.996632
+        },
+        {
+          "w": "Artigas",
+          "s": 31.06,
+          "e": 31.49,
+          "c": 0.396963
+        },
+        {
+          "w": "Food",
+          "s": 31.51,
+          "e": 31.7,
+          "c": 0.795191
+        },
+        {
+          "w": "Center,",
+          "s": 31.78,
+          "e": 32.24,
+          "c": 0.667478
+        },
+        {
+          "w": "says",
+          "s": 32.27,
+          "e": 32.44,
+          "c": 0.816217
+        },
+        {
+          "w": "over",
+          "s": 32.44,
+          "e": 32.46,
+          "c": 0.960833
+        },
+        {
+          "w": "the",
+          "s": 32.65,
+          "e": 32.69,
+          "c": 0.98546
+        },
+        {
+          "w": "past",
+          "s": 32.72,
+          "e": 33,
+          "c": 0.953899
+        },
+        {
+          "w": "three",
+          "s": 33,
+          "e": 33.16,
+          "c": 0.889817
+        },
+        {
+          "w": "years",
+          "s": 33.16,
+          "e": 33.48,
+          "c": 0.921825
+        },
+        {
+          "w": "she's",
+          "s": 33.48,
+          "e": 33.68,
+          "c": 0.555224
+        },
+        {
+          "w": "seen",
+          "s": 33.68,
+          "e": 33.87,
+          "c": 0.688185
+        },
+        {
+          "w": "a",
+          "s": 33.96,
+          "e": 33.96,
+          "c": 0.995302
+        },
+        {
+          "w": "38",
+          "s": 33.96,
+          "e": 34.44,
+          "c": 0.905527
+        },
+        {
+          "w": "percent",
+          "s": 34.44,
+          "e": 34.93,
+          "c": 0.459448
+        },
+        {
+          "w": "increase",
+          "s": 35.01,
+          "e": 35.64,
+          "c": 0.996508
+        },
+        {
+          "w": "in",
+          "s": 35.64,
+          "e": 35.8,
+          "c": 0.99293
+        },
+        {
+          "w": "the",
+          "s": 35.8,
+          "e": 36.01,
+          "c": 0.991268
+        },
+        {
+          "w": "cost",
+          "s": 36.04,
+          "e": 36.36,
+          "c": 0.995372
+        },
+        {
+          "w": "of",
+          "s": 36.36,
+          "e": 36.46,
+          "c": 0.997577
+        },
+        {
+          "w": "milk",
+          "s": 36.65,
+          "e": 36.88,
+          "c": 0.997352
+        },
+        {
+          "w": "and",
+          "s": 36.88,
+          "e": 37.12,
+          "c": 0.477535
+        },
+        {
+          "w": "in",
+          "s": 37.12,
+          "e": 37.18,
+          "c": 0.937954
+        },
+        {
+          "w": "the",
+          "s": 37.18,
+          "e": 37.28,
+          "c": 0.992316
+        },
+        {
+          "w": "past",
+          "s": 37.28,
+          "e": 37.6,
+          "c": 0.981747
+        },
+        {
+          "w": "eight",
+          "s": 37.6,
+          "e": 37.76,
+          "c": 0.962368
+        },
+        {
+          "w": "months",
+          "s": 37.76,
+          "e": 38.03,
+          "c": 0.977594
+        },
+        {
+          "w": "the",
+          "s": 38.09,
+          "e": 38.24,
+          "c": 0.812531
+        },
+        {
+          "w": "food",
+          "s": 38.24,
+          "e": 38.44,
+          "c": 0.863708
+        },
+        {
+          "w": "price",
+          "s": 38.53,
+          "e": 38.77,
+          "c": 0.997742
+        },
+        {
+          "w": "index",
+          "s": 38.77,
+          "e": 39.05,
+          "c": 0.998999
+        },
+        {
+          "w": "has",
+          "s": 39.12,
+          "e": 39.3,
+          "c": 0.997428
+        },
+        {
+          "w": "risen",
+          "s": 39.3,
+          "e": 39.63,
+          "c": 0.999129
+        },
+        {
+          "w": "by",
+          "s": 39.63,
+          "e": 39.76,
+          "c": 0.995879
+        },
+        {
+          "w": "more",
+          "s": 39.76,
+          "e": 40.03,
+          "c": 0.998866
+        },
+        {
+          "w": "than",
+          "s": 40.03,
+          "e": 40.26,
+          "c": 0.998081
+        },
+        {
+          "w": "eight",
+          "s": 40.34,
+          "e": 40.63,
+          "c": 0.568391
+        },
+        {
+          "w": "percent.",
+          "s": 40.63,
+          "e": 41.16,
+          "c": 0.958815
+        }
+      ]
+    }
+  ]
+}
