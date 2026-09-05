@@ -114,6 +114,17 @@ MANIFEST_FILE is file {ROOT_DIR}/user_repo.yaml
   * The repo's own index of its transcripts. A transcript not listed here is
     INVISIBLE to the movement's scanner. See STAGE 8 and APPENDIX C.
 
+SIDECAR_TOOL is file {ROOT_DIR}/tools/wtc_sidecar.py
+  * The CHECKED-IN builder and verifier for transcription.yaml. Stage 7 calls it;
+    Stage 7.5 gates on it. It is committed code with a test beside it
+    ({ROOT_DIR}/tools/test_wtc_sidecar.py) precisely so this prompt never has to
+    describe a schema that nothing implements.
+  * WHY IT EXISTS: before it, the writer was improvised in /tmp on every run. The
+    outputs were committed and auditable forever; the program that produced them
+    was deleted by the next /tmp sweep. Unversioned code wrote files into a repo
+    meant to be published. If it ever moves back to a scratch directory, that
+    regression has returned.
+
 CITIZENS_CLI is file {WTC_REPO}/cli/citizens
 LOCALHOST_API is the string "http://127.0.0.1:9333"
 LOCALHOST_WEB is the string "http://localhost:4444"
@@ -828,8 +839,21 @@ STAGE 7 — COMPLETE transcription.yaml, OR CLEAN UP THE FAILURE
 
 7.1 ON SUCCESS — FILL IN transcription.yaml
 
-Update {TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/transcription.yaml with
-everything the run now knows. Full schema in APPENDIX D. The blocks to complete:
+RUN THE TOOL. Do not hand-roll a writer and do not improvise one in a scratch
+directory:
+
+        python3 {SIDECAR_TOOL} write {roster_key}/{video_key} [...]
+
+It gathers every mechanical field itself — SHA-256, bytes, duration, codecs,
+word count, speaker shares from the .rttm, the Capture block, the demand row —
+and it MERGES: any Description, Topics or named speaker already in the file is
+carried forward untouched, and it asserts that afterwards rather than assuming it.
+It writes atomically, so a crash cannot leave a truncated file that still parses.
+
+What the tool CANNOT do, and what is therefore still your job: read the transcript
+and write Description and Topics. Nothing on disk contains them.
+
+Full schema in APPENDIX D. The blocks, and who fills them:
 
   * Video      — Title, Description, URL, Video_ID, Show, Runtime, Language.
                  Title, Show, Runtime and the recorded date come from Stage 4.6 and
@@ -927,9 +951,17 @@ So before Stage 8, sweep EVERY selected video and assert:
   * Topics is present and NON-EMPTY
   * Media.SHA256 and Demand are present
 
-RE-RUN THE SWEEP UNTIL IT COMES BACK CLEAN. Fixing one miss routinely reveals the
-next: in the run that produced this file it reported 19/20, then 19/20 again for a
-different video, then 20/20. A sweep that runs once and reports "one problem" has
+THAT SWEEP IS NOW A COMMITTED COMMAND, not a thing to reinvent:
+
+        python3 {SIDECAR_TOOL} verify --all
+
+It exits non-zero while anything is missing, checks the four fields the product
+actually reads as well as the human ones, and re-verifies each transcript's
+SHA-256 against the bytes on disk.
+
+RE-RUN IT UNTIL IT COMES BACK CLEAN. Fixing one miss routinely reveals the next:
+in the run that produced this file it reported 19/20, then 19/20 again for a
+DIFFERENT video, then 20/20. A sweep that runs once and reports "one problem" has
 not finished.
 
 Both misses that run were OMISSIONS — a video whose sidecar was never generated,
@@ -996,6 +1028,21 @@ NOTHING behind in {ROOT_DIR}.
   * Mark the row [FAIL ] and append the reason to {RUN_LOG}.
   * Do NOT retry automatically. A silent retry loop burns an hour of CPU against a
     cause that has not changed.
+
+
+7.5 THE GATE — NOTHING REACHES STAGE 8 UNTIL THIS IS GREEN
+
+        python3 {SIDECAR_TOOL} verify --all
+
+  * Exit 0: proceed to Stage 8.
+  * Exit non-zero: fix what it names and run it AGAIN. Do not index, commit or
+    push past a red gate. An incomplete sidecar that reaches the manifest is
+    indistinguishable from a complete one to every automatic check downstream.
+  * Lines marked LEGACY do not fail the gate and must not be "fixed". They are
+    sidecars written before this schema whose media has since been cleared, so
+    their Media.SHA256 describes bytes that no longer exist anywhere and cannot
+    be recomputed. Report them; leave them exactly as written. A gate that can
+    never go green stops being read.
 
 
 ====================================================================
