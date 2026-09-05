@@ -902,6 +902,23 @@ everything the run now knows. Full schema in APPENDIX D. The blocks to complete:
 
 Absent is absent, at every field. And if a fact has no field, ADD the field.
 
+7.1a REGENERATING A SIDECAR DESTROYS THE WRITTEN PART
+
+Everything in transcription.yaml except Description and Topics can be rebuilt from
+the media and the outputs. Those two cannot: they were read and written by hand.
+
+So if a sidecar is regenerated — because a bug was found in the generator, or a
+field was added — the Description and Topics are silently lost, and the file still
+parses, still carries a correct SHA-256, and still looks finished. Nothing downstream
+can tell.
+
+  * Regenerate the mechanical fields only, or re-apply the written ones afterwards.
+  * Before Stage 8, sweep EVERY video and assert Description, Topics, Media.SHA256
+    and Demand are all present and non-empty. Do not trust that a directory with ten
+    files in it is complete. This exact sweep caught two videos in the run that
+    produced this file — one whose sidecar was never written and one whose
+    description was wiped by a regeneration.
+
 7.1b PARSE WHAT YOU WROTE
 
 Read transcription.yaml back with a real YAML parser before calling the video DONE.
@@ -975,6 +992,24 @@ does not run. A transcript added to this repo and NOT added here is invisible, a
     way and do not create one — unless the citizen asked for an index, in which case
     build a complete one covering EVERY transcript in the repo, not just this run's.
   * Either way, update `user_repo.updated_at`.
+
+8.1b APPEND AS TEXT. NEVER ROUND-TRIP THE MANIFEST THROUGH A YAML DUMPER
+
+{MANIFEST_FILE} is heavily commented, and those comments are the spec citations that
+explain why the file says what it says — which §, which reader function, why THIS
+person key and not that one, which hash was verified and when.
+
+A YAML dumper drops every one of them. Read-modify-dump produces a file that parses,
+validates and looks correct, and has silently destroyed the documentation. In the run
+that produced this prompt that cost 68 comment lines on the first attempt, and it was
+only caught by reading the diff.
+
+  * Split the file TEXTUALLY at the final `updated_at:` line.
+  * Append the new entries as formatted text after the existing ones.
+  * Rewrite `updated_at:`.
+  * Then parse the result to prove it is valid, and `git diff` it to prove the only
+    removed line is the old `updated_at`. If anything else shows as removed, restore
+    from git and do it again.
 
 8.2 THE ENTRY
 
