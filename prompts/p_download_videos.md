@@ -1079,13 +1079,43 @@ Claude-Session: <the session URL for this run>
 MSG
 )"
 
-9.3 PUSH
+9.3 PUSH — ONLY IF THE CITIZEN ASKS. DO NOT PUSH BY DEFAULT.
+
+{ROOT_DIR}/CLAUDE.md says, under GIT BRANCH RULES:
+
+        No `git checkout -b`, `git switch -c`, `git branch`, `git checkout <other>`,
+        or `git push` unless the user explicitly asks for it.
+
+That is a standing instruction from the repo owner and it OUTRANKS this prompt.
+Running this prompt is not itself a request to push: pushing publishes a citizen's
+transcripts to a public repo, and that is the citizen's call to make each time.
+
+  * DEFAULT: commit, then STOP. Print Z31 with the exact push command and the
+    number of commits waiting.
+  * ONLY if the citizen asked for a push in the text they typed with the command:
 
         git -C {ROOT_DIR} push
 
   * Current branch only. Never create or switch a branch.
-  * If the push is rejected, `git pull --rebase` and retry ONCE. If it fails again,
-    print Z17 and stop — never force.
+  * If a requested push is rejected, `git pull --rebase` and retry ONCE. If it fails
+    again, print Z17 and stop — never force.
+
+9.4 THIS MACHINE HAS AN AUTOMATIC COMMITTER — EXPECT IT
+
+{ROOT_DIR} is swept by an external auto-committer (its commits are titled
+"Bryan 26 Tower"). It knows nothing about this prompt's rules, and during the run
+that produced this file it committed 189 files at 09:04:44 while transcriptions were
+still running — capturing directories whose sidecars had not been written yet.
+
+That directly defeats the hard rule about never committing a partial transcription,
+and nothing in this prompt can prevent it.
+
+  * Re-read `git log` before Stage 9.1. Work already committed is normal, not an
+    error, and it is not a reason to stop.
+  * Commit the REMAINDER so the tree ends complete, and say in the run report that
+    an auto-commit landed mid-run and what this commit closed.
+  * Never `git reset` or amend the auto-committer's commits to "tidy up". They may
+    already have been pushed, and they are not this prompt's to rewrite.
 
 
 ====================================================================
@@ -1093,6 +1123,7 @@ STAGE 10 — REPORT
 ====================================================================
 
 Print Z30 — the counts, then the failures by roster_key/video_key with the reason.
+Then Z31, unless the citizen asked for a push and it succeeded.
 
 Then say, in plain sentences and only where there is something to say:
 
@@ -1632,6 +1663,16 @@ Z19 — a video produced far fewer words than its length suggests.
       ============================================================
 
 
+Z31 — committed but not pushed. This is the DEFAULT ending of a successful run.
+
+      ============================================================
+      Committed to {branch}. NOT pushed — pushing publishes these
+      transcripts to a public repo, so it is your call. {N} commits
+      are waiting:
+      ============================================================
+      cd {ROOT_DIR} && git push
+
+
 Z30 — the final report. Always printed.
 
       ============================================================
@@ -1641,7 +1682,7 @@ Z30 — the final report. Always printed.
       Downloaded   18      (2 already on disk)
       Transcribed  17
       Failed        3      artefacts under {VIDEO_DOWNLOAD_ROOT}
-      Committed    17      pushed to {branch}
+      Committed    17      on {branch}, not pushed (see below)
       ------------------------------------------------------------
       Failures:
         kari_lake_us_pres / -EZZ6G-xuyk   yt-dlp: video unavailable
