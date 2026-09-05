@@ -1,20 +1,21 @@
-# Stage 7.1 of prompts/p_download_videos.md. Absent is absent: a field whose
-# value this run could not establish is omitted, never given a placeholder.
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
 Transcription:
 
   Video:
     Title: "Jayapal SLAMS Hegseth Testosterone Plan, Defends Gender-Affirming Care | Judiciary Markup"
     Description: >-
-      Rep. Pramila Jayapal speaking against a bill during a House Judiciary Committee
-      markup, recorded July 2026. She opposes the measure as a manufactured culture
-      war targeting transgender young people, whom she puts at under half of one
-      percent of the population, and argues the committee's time would be better
-      spent on the cost of living. In doing so she asserts a set of contested
-      claims — that an ongoing war in Iran is illegal and is driving up gas and
-      grocery prices, that Republican legislation and ACA subsidy cuts have raised
-      health care costs, and that President Trump personally enriched himself by
-      $2.2 billion. Each of those is her characterisation, offered in adversarial
-      debate, and none is established by the transcript.
+      Rep. Pramila Jayapal speaking against a bill during a House Judiciary Committee markup, recorded July 2026. She opposes the measure as a manufactured culture war targeting transgender young people, whom she puts at under half of one percent of the population, and argues the committee's time would be better spent on the cost of living. In doing so she asserts a set of contested claims — that an ongoing war in Iran is illegal and is driving up gas and grocery prices, that Republican legislation and ACA subsidy cuts have raised health care costs, and that President Trump personally enriched himself by $2.2 billion. Each of those is her characterisation, offered in adversarial debate, and none is established by the transcript.
     URL: "https://www.youtube.com/watch?v=07FKfIs6kZ0"
     Video_ID: "07FKfIs6kZ0"
     Show: "Representative Pramila Jayapal"
@@ -34,19 +35,37 @@ Transcription:
     Metadata_From: "07FKfIs6kZ0.info.json"
     Stored_At: "/Users/bryan/T/_we_citizens/download/videos/pramila_jayapal_wa_07/07FKfIs6kZ0/"
 
-  # No cluster could be matched to a named human: the transcript never
-  # identifies a speaker by name. Subject is therefore OMITTED on every
-  # entry rather than assigned to whichever cluster happened to sort first.
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCmyD0_-2Oowkfwc_Raghclw"
+    Uploader_ID: "@RepJayapal"
+    View_Count: 4386
+    Like_Count: 389
+    Comment_Count: 65
+    Availability: "public"
+    Published_At: "2026-07-17T16:31:12+00:00"
+    Captured_At: "2026-09-05T08:41:10-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
   People_in_Video:
     Person_1:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_00"
       Share_Of_Speech: "12.8%"
       Turns: 3
     Person_2:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_01"
       Share_Of_Speech: "87.2%"
       Turns: 8
@@ -71,7 +90,7 @@ Transcription:
   Timestamps:
     Downloaded_At: "2026-09-05T08:41:14.237346-07:00"
     Transcription_Finished: "2026-09-05T09:01:35.540673-07:00"
-    Recorded: "2026-07-17"
+    Recorded: "2026-07-17"   # from upload_date. NEVER the decode date.
 
   Files:
     Word_Timings_CTM: "07FKfIs6kZ0.ctm"
@@ -85,7 +104,7 @@ Transcription:
     Subtitles_VTT: "07FKfIs6kZ0.vtt"
     Transcript_SHA256: "cae2905ff953855b8766e6a003458333b4b62ac7f25fbf53cf0157e0a23f3041"
 
-  Demand:
+  Demand:   # the join back to the server: which request this answers
     roster_key: "pramila_jayapal_wa_07"
     video_uid: "pramila_jayapal_wa_07::07FKfIs6kZ0"
     video_key: "07FKfIs6kZ0"

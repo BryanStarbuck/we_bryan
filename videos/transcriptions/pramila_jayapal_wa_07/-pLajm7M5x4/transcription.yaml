@@ -1,19 +1,21 @@
-# Stage 7.1 of prompts/p_download_videos.md. Absent is absent: a field whose
-# value this run could not establish is omitted, never given a placeholder.
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
 Transcription:
 
   Video:
     Title: "Rep. Jayapal on CNN Special Report"
     Description: >-
-      A CNN panel segment from May 2017 in which Rep. Pramila Jayapal, then a
-      Democrat on the House Judiciary Committee, appears opposite Rep. Jim Banks,
-      an Indiana Republican on Armed Services. The anchor opens with CNN and
-      Washington Post reporting that President Trump asked Director of National
-      Intelligence Dan Coats and Admiral Mike Rogers to publicly push back on the
-      investigation into possible Trump campaign contacts with Russia, and both
-      members are asked to react. The reporting described is contemporaneous news
-      attributed to those outlets, and the members' readings of it are partisan and
-      opposed.
+      A CNN panel segment from May 2017 in which Rep. Pramila Jayapal, then a Democrat on the House Judiciary Committee, appears opposite Rep. Jim Banks, an Indiana Republican on Armed Services. The anchor opens with CNN and Washington Post reporting that President Trump asked Director of National Intelligence Dan Coats and Admiral Mike Rogers to publicly push back on the investigation into possible Trump campaign contacts with Russia, and both members are asked to react. The reporting described is contemporaneous news attributed to those outlets, and the members' readings of it are partisan and opposed.
     URL: "https://www.youtube.com/watch?v=-pLajm7M5x4"
     Video_ID: "-pLajm7M5x4"
     Show: "Representative Pramila Jayapal"
@@ -33,139 +35,157 @@ Transcription:
     Metadata_From: "-pLajm7M5x4.info.json"
     Stored_At: "/Users/bryan/T/_we_citizens/download/videos/pramila_jayapal_wa_07/-pLajm7M5x4/"
 
-  # No cluster could be matched to a named human: the transcript never
-  # identifies a speaker by name. Subject is therefore OMITTED on every
-  # entry rather than assigned to whichever cluster happened to sort first.
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCmyD0_-2Oowkfwc_Raghclw"
+    Uploader_ID: "@RepJayapal"
+    View_Count: 1929
+    Like_Count: 4
+    Comment_Count: 1
+    Availability: "public"
+    Published_At: "2017-05-23T04:31:25+00:00"
+    Captured_At: "2026-09-05T08:41:07-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
   People_in_Video:
     Person_1:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_00"
       Share_Of_Speech: "4.4%"
       Turns: 3
     Person_2:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_01"
       Share_Of_Speech: "13.1%"
       Turns: 7
     Person_3:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_04"
       Share_Of_Speech: "27.6%"
       Turns: 7
     Person_4:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_06"
       Share_Of_Speech: "0.9%"
       Turns: 2
     Person_5:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_08"
       Share_Of_Speech: "6.9%"
       Turns: 4
     Person_6:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_11"
       Share_Of_Speech: "5.5%"
       Turns: 4
     Person_7:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_13"
       Share_Of_Speech: "2.1%"
       Turns: 2
     Person_8:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_15"
       Share_Of_Speech: "1.5%"
       Turns: 1
     Person_9:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_18"
       Share_Of_Speech: "24.9%"
       Turns: 9
     Person_10:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_21"
       Share_Of_Speech: "1.0%"
       Turns: 1
     Person_11:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_33"
       Share_Of_Speech: "0.6%"
       Turns: 1
     Person_12:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_35"
       Share_Of_Speech: "2.4%"
       Turns: 2
     Person_13:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_36"
       Share_Of_Speech: "0.9%"
       Turns: 1
     Person_14:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_39"
       Share_Of_Speech: "0.9%"
       Turns: 1
     Person_15:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_40"
       Share_Of_Speech: "0.1%"
       Turns: 1
     Person_16:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_43"
       Share_Of_Speech: "0.4%"
       Turns: 1
     Person_17:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_45"
       Share_Of_Speech: "1.9%"
       Turns: 1
     Person_18:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_46"
       Share_Of_Speech: "1.1%"
       Turns: 2
     Person_19:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_49"
       Share_Of_Speech: "0.3%"
       Turns: 1
     Person_20:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_51"
       Share_Of_Speech: "2.0%"
       Turns: 2
     Person_21:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_55"
       Share_Of_Speech: "0.5%"
       Turns: 1
     Person_22:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_58"
       Share_Of_Speech: "1.1%"
       Turns: 1
@@ -188,7 +208,7 @@ Transcription:
   Timestamps:
     Downloaded_At: "2026-09-05T08:41:08.607382-07:00"
     Transcription_Finished: "2026-09-05T09:02:35.327682-07:00"
-    Recorded: "2017-05-23"
+    Recorded: "2017-05-23"   # from upload_date. NEVER the decode date.
 
   Files:
     Word_Timings_CTM: "-pLajm7M5x4.ctm"
@@ -202,7 +222,7 @@ Transcription:
     Subtitles_VTT: "-pLajm7M5x4.vtt"
     Transcript_SHA256: "48f6ee6385d1b06e5a28b6424d414285540de731432f4863c5ada96d3646e16a"
 
-  Demand:
+  Demand:   # the join back to the server: which request this answers
     roster_key: "pramila_jayapal_wa_07"
     video_uid: "pramila_jayapal_wa_07::-pLajm7M5x4"
     video_key: "-pLajm7M5x4"

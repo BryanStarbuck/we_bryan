@@ -1,19 +1,21 @@
-# Stage 7.1 of prompts/p_download_videos.md. Absent is absent: a field whose
-# value this run could not establish is omitted, never given a placeholder.
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
 Transcription:
 
   Video:
     Title: "Kari Lake Responds To Joe Biden's 'State of Confusion'"
     Description: >-
-      Kari Lake's scripted response to President Joe Biden's 2024 State of the Union
-      address, delivered to camera as a single-speaker rebuttal. She calls the speech
-      a "state of confusion", contrasts the Biden economy with the Trump years on
-      inflation, housing, crime and energy, and puts the cost to a family at roughly
-      $12,000 a year. A substantial passage is devoted to the killing of nursing
-      student Laken Riley, which Lake attributes to failures of border enforcement and
-      accuses the national press of downplaying. The video is campaign advocacy
-      throughout; the figures and attributions are hers and are not independently
-      established in the transcript.
+      Kari Lake's scripted response to President Joe Biden's 2024 State of the Union address, delivered to camera as a single-speaker rebuttal. She calls the speech a "state of confusion", contrasts the Biden economy with the Trump years on inflation, housing, crime and energy, and puts the cost to a family at roughly $12,000 a year. A substantial passage is devoted to the killing of nursing student Laken Riley, which Lake attributes to failures of border enforcement and accuses the national press of downplaying. The video is campaign advocacy throughout; the figures and attributions are hers and are not independently established in the transcript.
     URL: "https://www.youtube.com/watch?v=05TFP7Ns0YQ"
     Video_ID: "05TFP7Ns0YQ"
     Show: "Kari Lake"
@@ -33,13 +35,31 @@ Transcription:
     Metadata_From: "05TFP7Ns0YQ.info.json"
     Stored_At: "/Users/bryan/T/_we_citizens/download/videos/kari_lake_us_pres/05TFP7Ns0YQ/"
 
-  # No cluster could be matched to a named human: the transcript never
-  # identifies a speaker by name. Subject is therefore OMITTED on every
-  # entry rather than assigned to whichever cluster happened to sort first.
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCakn6ZCwlFA6Ct6XSU-HmtQ"
+    Uploader_ID: "@karilake"
+    View_Count: 27782
+    Like_Count: 4952
+    Comment_Count: 882
+    Availability: "public"
+    Published_At: "2024-03-08T04:47:48+00:00"
+    Captured_At: "2026-09-05T08:39:14-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
   People_in_Video:
     Person_1:
       Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not identify a name"
+      Role: "Diarized speaker cluster; the transcript does not name it"
       Speaker_Label: "SPEAKER_00"
       Share_Of_Speech: "100.0%"
       Turns: 22
@@ -64,7 +84,7 @@ Transcription:
   Timestamps:
     Downloaded_At: "2026-09-05T08:39:15.946734-07:00"
     Transcription_Finished: "2026-09-05T08:43:07.960715-07:00"
-    Recorded: "2024-03-08"
+    Recorded: "2024-03-08"   # from upload_date. NEVER the decode date.
 
   Files:
     Word_Timings_CTM: "05TFP7Ns0YQ.ctm"
@@ -78,7 +98,7 @@ Transcription:
     Subtitles_VTT: "05TFP7Ns0YQ.vtt"
     Transcript_SHA256: "412c36a454bd37105f6f800fcdf687fca8e0f1bde8e709a3c7da937d14b0962a"
 
-  Demand:
+  Demand:   # the join back to the server: which request this answers
     roster_key: "kari_lake_us_pres"
     video_uid: "kari_lake_us_pres::05TFP7Ns0YQ"
     video_key: "05TFP7Ns0YQ"
