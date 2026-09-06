@@ -1,0 +1,188 @@
+# speaking_v2_combined.yaml — THE FOLD FOR ONE SOURCE.
+# Written by ai/smart_contracts/v2/p_run_v2_contracts.md (user_repo sweep, APPENDIX U)
+# and by nothing else. DERIVED: always rebuilt from speaking_v2.csv, never patched.
+#
+# IT COMPUTES NO AWARD. `rows` is a count and `sum_score` is a raw column sum — both
+# re-derivable from the CSV in one line, which is why they are allowed here. Turning
+# rows into a {qualification, knowledge} pair, and that pair into a Flamingo, is the
+# `speaking_calc` engine's job, in code: pm/calc_engine_speaking.mdx,
+# pm/calc_engine_flamingo.mdx §3.0.
+#
+# A SILENT AREA IS NAMED, NEVER FILLED. An area with no rows is in major_areas_silent[]
+# and never appears as `rows: 0` — on the -100..100 scale 0 is a REAL READING, and an
+# absent reading means we have not heard them on this at all (pm/coverage.mdx).
+
+schema_version: 1
+person_key: ro_khanna
+politician_key: ro_khanna_ca_17
+video_key: -ONkkFgs6L8
+video_uid: ro_khanna::-ONkkFgs6L8
+generated_at: '2026-09-06T04:01:29.091Z'
+run_id: v2all_20260905T2343Z_5598
+subject_attribution:
+  method: not_separable
+  speaker_ids: []
+  share_pct: null
+  is_guess: true
+  confidence: low
+  caveat: This recording carries no speaker labels. The words scored here are read as the subject's on
+    the basis stated in `method`. That reading may be wrong, and every row derived from it inherits that
+    doubt. The labels this recording does carry are an over-clustered diarisation artefact — 20 clusters,
+    top share 28.1% — and are not a partition of humans.
+  subject_person_key: ro_khanna
+  subject_politician_key: ro_khanna_ca_17
+  cluster_count: 20
+  top_cluster_share_pct: 28.1
+  speaker_ids_withheld_note: EMPTY ON PURPOSE. Listing the largest clusters would ASSERT they are the
+    subject's, and on at least one source in this sweep the top cluster is the HOST. On a not_separable
+    resolution nobody knows which clusters are the subject's — that is what the method means — so no row
+    here rests on a speaker label at all.
+  clusters_observed:
+  - SPEAKER_25
+  - SPEAKER_00
+  - SPEAKER_11
+  share_pct_unknown: true
+  share_pct_note: 'UNKNOWN, AND DELIBERATELY NOT A NUMBER. An earlier revision of this sweep carried the
+    largest cluster''s share here as a ''floor''. MEASURED, and it is worse than a blank: on a local-news
+    package this block claimed 49.3% where the subject''s real share of the words is about 1.3%. A floor
+    computed from an over-clustered label set does not bound the subject''s share from below — it invites
+    a downstream reader to believe we heard a great deal of a named living person when we heard a sentence.
+    The cluster statistic is kept below as `top_cluster_share_pct`, which is what it actually is.'
+source:
+  source_kind: transcription
+  source_key: -ONkkFgs6L8
+  source_dir: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/ro_khanna_ca_17/-ONkkFgs6L8
+  input_file: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/ro_khanna_ca_17/-ONkkFgs6L8/-ONkkFgs6L8.transcription
+  content_sha256: 15e37b3e030462d20f639c3e55576158266c75d7438cf3b0fc370afdca93b34d
+  words: 1175
+  chars: 6411
+  has_sidecar: true
+  lines: 61
+  lines_derived: false
+  evidence_grade: aligned
+  duration_s: 377.03
+contract:
+  source_kind: transcription
+  contract_version: '1.0'
+  status: ran
+  csv: speaking_v2.csv
+  run_id: v2all_20260905T2343Z_5598
+  assessed_at: '2026-09-05T23:43:11.652Z'
+  appendix_version: '1.0'
+  appendix_sha256: 2f331dbf75749201201c30e6e9280b2293eecc97f7f0683e7fb31295c00b6b8a
+  abstraction_rule_sha256: 05485415fa4887688b8b0b2090e87849c2bbeb7fdce1b268eb99f6bb3bb38dfc
+  inline_appendix: false
+rows:
+  total: 10
+  major_areas_hit: 4
+  sub_areas_hit: 7
+major_areas:
+- major_area: domestic_policy
+  rows: 4
+  sum_score: 140
+  sub_areas_hit: 2
+  sub_areas_total: 10
+- major_area: economics
+  rows: 4
+  sum_score: 135
+  sub_areas_hit: 3
+  sub_areas_total: 11
+- major_area: policy_wonk
+  rows: 1
+  sum_score: 0
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: representation_leadership
+  rows: 1
+  sum_score: 30
+  sub_areas_hit: 1
+  sub_areas_total: 10
+major_areas_silent:
+- major_area: anti_corruption
+  reason: no_rows
+- major_area: citizens_rights
+  reason: no_rows
+- major_area: constitutional_governing_competence
+  reason: no_rows
+- major_area: foreign_policy
+  reason: no_rows
+- major_area: governance_constitutional_law
+  reason: no_rows
+- major_area: great_life_experience
+  reason: no_rows
+- major_area: intellectual_rigor
+  reason: no_rows
+- major_area: loyalty_to_the_usa
+  reason: no_rows
+- major_area: management
+  reason: no_rows
+- major_area: national_security
+  reason: no_rows
+- major_area: not_controlled_not_influenced
+  reason: no_rows
+- major_area: public_speaking
+  reason: no_rows
+- major_area: us_gov_controlled
+  reason: no_rows
+- major_area: we_the_citizens
+  reason: no_rows
+coverage:
+  major_areas_expected: 18
+  major_areas_present: 4
+  major_areas_silent: 14
+  sub_areas_expected: 184
+  sub_areas_hit: 7
+contract_missing:
+- source_kind: posts
+  reason: skip_scaffold
+  detail: 'assess_v2_posts.yaml carries `status: scaffold`; the posts medium has not been calibrated.
+    No posts batch exists for this person either, so nothing of that kind was skipped as work.'
+gaps:
+- kind: no_v1_fold_user_repo_source
+  detail: This source lives in a citizen's User Data Repo and has never been through the v1 sweep, so
+    Stage 0b rung 1 (v1_fold_copied) could not fire. Attribution was resolved by the orchestrator under
+    p_run_v2_contracts.md APPENDIX U §U4.
+- kind: source_not_landed_in_data_repo
+  detail: The words are at /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/ro_khanna_ca_17/-ONkkFgs6L8,
+    inside the user repo. `user_repo_ingest` has not landed or published them into the data repo, and
+    this run does not land anything.
+- kind: demand_video_uid_is_roster_scoped
+  detail: transcription.yaml Demand.video_uid is 'ro_khanna_ca_17::-ONkkFgs6L8', built from the roster
+    key. video_uid is PERSON-scoped, so this run wrote 'ro_khanna::-ONkkFgs6L8'. The yaml was not edited.
+- kind: played_clip_excluded
+  detail: 'Lines L4-L9 are a PLAYED CLIP of President Biden, not the subject, and carry no row. The anchor
+    introduces it in the third person at L2-L3 (''President Biden did'' / ''speak at the White House about
+    the lack of progress a little bit'') and the clip then runs: ''I told congressional leaders that I''m
+    prepared to begin a separate discussion about my budget and the spending priorities, but not under
+    the threat of default. As I said, I''ve already cut the deficit by $1.7 trillion in my first two years
+    in office.'' That clip contains the only hard fiscal number in the first minute of the tape ($1.7
+    trillion) and would have read as the subject''s own debt-ceiling evidence under any label-driven reading.
+    Excluded as another named living person''s words.'
+- kind: host_lines_excluded
+  detail: 'The CNBC anchor''s cold open and setup (L1-L3, L10-L16), his questions (L20-L21, L26, L32-L35,
+    L41-L45, L50-L52, L55) and his sign-off (L59-L60) carry no rows. Two of them are sharp enough to have
+    been mistaken for the subject''s: L26, ''I''m not sure you want to do that congressman because you
+    may not like what you find. You can search who took COVID money on its public data'', and L52, the
+    anchor''s own $1,084 sinus-visit bill. Both are context for reading the answers and are never evidence
+    about the subject.'
+- kind: attribution_low_confidence
+  detail: 'The attribution block resolves method not_separable at confidence low: 20 diarisation clusters,
+    top share 28.1%, and 48 of 60 label changes fall mid-sentence. No row here rests on a speaker label.
+    Whose words are whose was read from the discourse structure of a two-person television interview --
+    the anchor''s setup, the played clip, the anchor''s questions, and the guest''s first-person answers
+    -- and every row carries confidence low as the ceiling. The label track is noise: the same cluster
+    id, SPEAKER_25, sits on the subject''s answers at L30, L38, L47 and L58 and also on his single word
+    ''you.'' at L61, while SPEAKER_02 carries the President''s clip and SPEAKER_00 carries the anchor.'
+- kind: span_carries_one_foreign_word
+  detail: The EC08JLFC row spans L22-L25 and the flat text of that run ends in the single word 'i'm',
+    which begins the anchor's next sentence ('I'm not sure you want to do that congressman'). The label
+    split is mid-sentence and the fragment is one word; the row's quote is taken from the subject's own
+    clause and no reading rests on the fragment. Reported rather than silently trimmed. The same shape
+    appears at the end of the L56-L58 span, which ends in 'Congressman', the first word of the anchor's
+    sign-off.
+- kind: sub_area_missing_from_appendix_a
+  detail: Medical debt as a household consumer-credit object -- collection practice, credit reporting,
+    and a debt-cancellation vehicle -- has no home among the 184. DP04E76M is the coverage card and the
+    payer, DP05ZX8Q is provider and drug prices, EC07Y0BC is the cost of becoming a household, and none
+    of them asks about a collection agency, a credit file, or a purchase-and-forgive vehicle. The subject's
+    central proposal on this tape lives in that hole and had to be routed to two adjacent sub areas.

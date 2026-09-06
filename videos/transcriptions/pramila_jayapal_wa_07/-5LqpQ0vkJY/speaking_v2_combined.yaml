@@ -1,0 +1,157 @@
+# speaking_v2_combined.yaml — THE FOLD FOR ONE SOURCE.
+# Written by ai/smart_contracts/v2/p_run_v2_contracts.md (user_repo sweep, APPENDIX U)
+# and by nothing else. DERIVED: always rebuilt from speaking_v2.csv, never patched.
+#
+# IT COMPUTES NO AWARD. `rows` is a count and `sum_score` is a raw column sum — both
+# re-derivable from the CSV in one line, which is why they are allowed here. Turning
+# rows into a {qualification, knowledge} pair, and that pair into a Flamingo, is the
+# `speaking_calc` engine's job, in code: pm/calc_engine_speaking.mdx,
+# pm/calc_engine_flamingo.mdx §3.0.
+#
+# A SILENT AREA IS NAMED, NEVER FILLED. An area with no rows is in major_areas_silent[]
+# and never appears as `rows: 0` — on the -100..100 scale 0 is a REAL READING, and an
+# absent reading means we have not heard them on this at all (pm/coverage.mdx).
+
+schema_version: 1
+person_key: pramila_jayapal_wa_07
+politician_key: pramila_jayapal_wa_07
+video_key: -5LqpQ0vkJY
+video_uid: pramila_jayapal_wa_07::-5LqpQ0vkJY
+generated_at: '2026-09-06T04:05:37.210Z'
+run_id: v2all_20260905T2343Z_5598
+subject_attribution:
+  method: no_diarisation_assumed_single
+  speaker_ids: []
+  share_pct: 100
+  is_guess: true
+  confidence: medium
+  caveat: 'This recording carries no speaker labels. The words scored here are read as the subject''s
+    on the basis stated in `method`. That reading may be wrong, and every row derived from it inherits
+    that doubt. The labels this recording does carry split ONE voice: 2 of the sidecar''s speaker changes
+    fall mid-sentence, and the sentence completes across the change, so they are not a partition of humans.
+    The record describes a solo statement and the whole tape is read as the subject''s.'
+  subject_person_key: pramila_jayapal_wa_07
+  subject_politician_key: pramila_jayapal_wa_07
+  cluster_count: 2
+  top_cluster_share_pct: 94.0
+  method_superseded: sidecar_dominant_speaker
+  clusters_observed: []
+  revision_note: Superseded `sidecar_dominant_speaker` mid-sweep. That rung handed the minority cluster
+    to nobody and so DELETED the subject's own words — measured on a sibling source of this same person,
+    where it withheld the statement's opening, its sharpest claim and its entire closing. p_run_v2_contracts.md
+    APPENDIX U §U4.
+source:
+  source_kind: transcription
+  source_key: -5LqpQ0vkJY
+  source_dir: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/pramila_jayapal_wa_07/-5LqpQ0vkJY
+  input_file: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/pramila_jayapal_wa_07/-5LqpQ0vkJY/-5LqpQ0vkJY.transcription
+  content_sha256: 7ff7c346da3b715cc5399b68627b227acdfed91a5a37c3b1e30c755da3093f28
+  words: 172
+  chars: 953
+  has_sidecar: true
+  lines: 4
+  lines_derived: false
+  evidence_grade: aligned
+  duration_s: 63.51
+contract:
+  source_kind: transcription
+  contract_version: '1.0'
+  status: ran
+  csv: speaking_v2.csv
+  run_id: v2all_20260905T2343Z_5598
+  assessed_at: '2026-09-05T23:43:11.652Z'
+  appendix_version: '1.0'
+  appendix_sha256: 2f331dbf75749201201c30e6e9280b2293eecc97f7f0683e7fb31295c00b6b8a
+  abstraction_rule_sha256: 05485415fa4887688b8b0b2090e87849c2bbeb7fdce1b268eb99f6bb3bb38dfc
+  inline_appendix: false
+rows:
+  total: 5
+  major_areas_hit: 3
+  sub_areas_hit: 5
+major_areas:
+- major_area: domestic_policy
+  rows: 1
+  sum_score: 45
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: economics
+  rows: 2
+  sum_score: 30
+  sub_areas_hit: 2
+  sub_areas_total: 11
+- major_area: public_speaking
+  rows: 2
+  sum_score: 100
+  sub_areas_hit: 2
+  sub_areas_total: 11
+major_areas_silent:
+- major_area: anti_corruption
+  reason: no_rows
+- major_area: citizens_rights
+  reason: no_rows
+- major_area: constitutional_governing_competence
+  reason: no_rows
+- major_area: foreign_policy
+  reason: no_rows
+- major_area: governance_constitutional_law
+  reason: no_rows
+- major_area: great_life_experience
+  reason: no_rows
+- major_area: intellectual_rigor
+  reason: no_rows
+- major_area: loyalty_to_the_usa
+  reason: no_rows
+- major_area: management
+  reason: no_rows
+- major_area: national_security
+  reason: no_rows
+- major_area: not_controlled_not_influenced
+  reason: no_rows
+- major_area: policy_wonk
+  reason: no_rows
+- major_area: representation_leadership
+  reason: no_rows
+- major_area: us_gov_controlled
+  reason: no_rows
+- major_area: we_the_citizens
+  reason: no_rows
+coverage:
+  major_areas_expected: 18
+  major_areas_present: 3
+  major_areas_silent: 15
+  sub_areas_expected: 184
+  sub_areas_hit: 5
+contract_missing:
+- source_kind: posts
+  reason: skip_scaffold
+  detail: 'assess_v2_posts.yaml carries `status: scaffold`; the posts medium has not been calibrated.
+    No posts batch exists for this person either, so nothing of that kind was skipped as work.'
+gaps:
+- kind: no_v1_fold_user_repo_source
+  detail: This source lives in a citizen's User Data Repo and has never been through the v1 sweep, so
+    Stage 0b rung 1 (v1_fold_copied) could not fire. Attribution was resolved by the orchestrator under
+    p_run_v2_contracts.md APPENDIX U §U4.
+- kind: source_not_landed_in_data_repo
+  detail: The words are at /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/pramila_jayapal_wa_07/-5LqpQ0vkJY,
+    inside the user repo. `user_repo_ingest` has not landed or published them into the data repo, and
+    this run does not land anything.
+- kind: attribution_is_a_guess
+  detail: The identity file carries method `no_diarisation_assumed_single` with is_guess true and a medium
+    confidence ceiling. The sidecar names nobody; the record describes a solo statement and the whole
+    tape is read as the subject's. Every row inherits that doubt and every row carries confidence `medium`.
+- kind: speaker_labels_are_noise
+  detail: All 3 speaker-label changes on this sidecar fall mid-sentence (100%). L2 ends 'For instance,
+    the top', L3 is '4% of income earners who earn more than $300' labelled SPEAKER_01, and L4 opens 'million
+    a year will get a total tax break of $275 million' back under SPEAKER_00. One sentence, three labels,
+    two speakers claimed. The labels are not a partition of humans and were not used to slice the tape.
+- kind: no_authority_named_anywhere
+  detail: Across the whole source no statute, agency, section, CBO score, roll call or legal authority
+    is named for any claim. Every figure ($600 billion, the top 4% band, $275 million, about $200,000,
+    24 million) is spoken without a source. That is the ceiling on all five rows and it is a property
+    of a one-minute floor statement, not a finding about the speaker.
+- kind: figures_do_not_reconcile_as_transcribed
+  detail: 'The worked example as it stands in the flat text is internally inconsistent: a top 4% band
+    of earners ''who earn more than $300 million a year'' receiving ''a total tax break of $275 million,
+    or about $200,000 a year each'' cannot all three be true. It is scored as it was transcribed and treated
+    as a limit on the anchor, not as an inversion of any instrument. Whether the speech or the transcription
+    carries the error cannot be settled from files on disk.'

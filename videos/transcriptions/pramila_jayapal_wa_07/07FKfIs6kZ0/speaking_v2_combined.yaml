@@ -1,0 +1,172 @@
+# speaking_v2_combined.yaml — THE FOLD FOR ONE SOURCE.
+# Written by ai/smart_contracts/v2/p_run_v2_contracts.md (user_repo sweep, APPENDIX U)
+# and by nothing else. DERIVED: always rebuilt from speaking_v2.csv, never patched.
+#
+# IT COMPUTES NO AWARD. `rows` is a count and `sum_score` is a raw column sum — both
+# re-derivable from the CSV in one line, which is why they are allowed here. Turning
+# rows into a {qualification, knowledge} pair, and that pair into a Flamingo, is the
+# `speaking_calc` engine's job, in code: pm/calc_engine_speaking.mdx,
+# pm/calc_engine_flamingo.mdx §3.0.
+#
+# A SILENT AREA IS NAMED, NEVER FILLED. An area with no rows is in major_areas_silent[]
+# and never appears as `rows: 0` — on the -100..100 scale 0 is a REAL READING, and an
+# absent reading means we have not heard them on this at all (pm/coverage.mdx).
+
+schema_version: 1
+person_key: pramila_jayapal_wa_07
+politician_key: pramila_jayapal_wa_07
+video_key: 07FKfIs6kZ0
+video_uid: pramila_jayapal_wa_07::07FKfIs6kZ0
+generated_at: '2026-09-06T04:05:37.667Z'
+run_id: v2all_20260905T2343Z_5598
+subject_attribution:
+  method: no_diarisation_assumed_single
+  speaker_ids: []
+  share_pct: 100
+  is_guess: true
+  confidence: medium
+  caveat: 'This recording carries no speaker labels. The words scored here are read as the subject''s
+    on the basis stated in `method`. That reading may be wrong, and every row derived from it inherits
+    that doubt. The labels this recording does carry split ONE voice: 2 of the sidecar''s speaker changes
+    fall mid-sentence, and the sentence completes across the change, so they are not a partition of humans.
+    The record describes a solo statement and the whole tape is read as the subject''s.'
+  subject_person_key: pramila_jayapal_wa_07
+  subject_politician_key: pramila_jayapal_wa_07
+  cluster_count: 2
+  top_cluster_share_pct: 87.2
+  method_superseded: sidecar_dominant_speaker
+  clusters_observed: []
+  revision_note: Superseded `sidecar_dominant_speaker` mid-sweep. That rung handed the minority cluster
+    to nobody and so DELETED the subject's own words — measured on a sibling source of this same person,
+    where it withheld the statement's opening, its sharpest claim and its entire closing. p_run_v2_contracts.md
+    APPENDIX U §U4.
+source:
+  source_kind: transcription
+  source_key: 07FKfIs6kZ0
+  source_dir: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/pramila_jayapal_wa_07/07FKfIs6kZ0
+  input_file: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/pramila_jayapal_wa_07/07FKfIs6kZ0/07FKfIs6kZ0.transcription
+  content_sha256: cae2905ff953855b8766e6a003458333b4b62ac7f25fbf53cf0157e0a23f3041
+  words: 685
+  chars: 4073
+  has_sidecar: true
+  lines: 19
+  lines_derived: false
+  evidence_grade: aligned
+  duration_s: 298.86
+contract:
+  source_kind: transcription
+  contract_version: '1.0'
+  status: ran
+  csv: speaking_v2.csv
+  run_id: v2all_20260905T2343Z_5598
+  assessed_at: '2026-09-05T23:43:11.652Z'
+  appendix_version: '1.0'
+  appendix_sha256: 2f331dbf75749201201c30e6e9280b2293eecc97f7f0683e7fb31295c00b6b8a
+  abstraction_rule_sha256: 05485415fa4887688b8b0b2090e87849c2bbeb7fdce1b268eb99f6bb3bb38dfc
+  inline_appendix: false
+rows:
+  total: 17
+  major_areas_hit: 7
+  sub_areas_hit: 16
+major_areas:
+- major_area: anti_corruption
+  rows: 1
+  sum_score: 10
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: citizens_rights
+  rows: 1
+  sum_score: 20
+  sub_areas_hit: 1
+  sub_areas_total: 11
+- major_area: constitutional_governing_competence
+  rows: 2
+  sum_score: 50
+  sub_areas_hit: 2
+  sub_areas_total: 10
+- major_area: domestic_policy
+  rows: 1
+  sum_score: 20
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: economics
+  rows: 2
+  sum_score: 20
+  sub_areas_hit: 2
+  sub_areas_total: 11
+- major_area: intellectual_rigor
+  rows: 7
+  sum_score: 195
+  sub_areas_hit: 6
+  sub_areas_total: 10
+- major_area: public_speaking
+  rows: 3
+  sum_score: 140
+  sub_areas_hit: 3
+  sub_areas_total: 11
+major_areas_silent:
+- major_area: foreign_policy
+  reason: no_rows
+- major_area: governance_constitutional_law
+  reason: no_rows
+- major_area: great_life_experience
+  reason: no_rows
+- major_area: loyalty_to_the_usa
+  reason: no_rows
+- major_area: management
+  reason: no_rows
+- major_area: national_security
+  reason: no_rows
+- major_area: not_controlled_not_influenced
+  reason: no_rows
+- major_area: policy_wonk
+  reason: no_rows
+- major_area: representation_leadership
+  reason: no_rows
+- major_area: us_gov_controlled
+  reason: no_rows
+- major_area: we_the_citizens
+  reason: no_rows
+coverage:
+  major_areas_expected: 18
+  major_areas_present: 7
+  major_areas_silent: 11
+  sub_areas_expected: 184
+  sub_areas_hit: 16
+contract_missing:
+- source_kind: posts
+  reason: skip_scaffold
+  detail: 'assess_v2_posts.yaml carries `status: scaffold`; the posts medium has not been calibrated.
+    No posts batch exists for this person either, so nothing of that kind was skipped as work.'
+gaps:
+- kind: no_v1_fold_user_repo_source
+  detail: This source lives in a citizen's User Data Repo and has never been through the v1 sweep, so
+    Stage 0b rung 1 (v1_fold_copied) could not fire. Attribution was resolved by the orchestrator under
+    p_run_v2_contracts.md APPENDIX U §U4.
+- kind: source_not_landed_in_data_repo
+  detail: The words are at /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/pramila_jayapal_wa_07/07FKfIs6kZ0,
+    inside the user repo. `user_repo_ingest` has not landed or published them into the data repo, and
+    this run does not land anything.
+- kind: attribution_is_a_reading
+  detail: 'The identity file carries subject_attribution method `no_diarisation_assumed_single`, share_pct
+    100, is_guess true, confidence ceiling medium -- superseding `sidecar_dominant_speaker`. Every row
+    here carries confidence `medium` as a ceiling and none carries `high`. The sidecar''s two speaker
+    labels are not a partition of humans on this tape: both label changes fall mid-sentence (L1 ends ''as
+    Americans pay tens of thousands'' and L2 continues ''of dollars for health care''; L16 ends ''even
+    mental health professionals could'' and L17 continues ''face legal action for talking to trans youth'').
+    The whole tape was read as one continuous first-person markup statement, per the corrected block.
+    That reading may be wrong and every row inherits the doubt.'
+- kind: sub_area_missing
+  detail: 'No citizens_rights sub area covers government intrusion into a medical decision or bodily autonomy,
+    which is the central rights claim of this statement: ''Do you really want the government getting into
+    your business, taking your testosterone levels and determining whether or not you have enough testosterone?''
+    The eleven CR sub areas cover surveillance, bulk collection, financial reporting, speech, assembly,
+    firearms, detention, emergency powers, property, the own-party test, and devices. The passage was
+    routed to CG08WNWA as a second-order reading of a live proposal, which scores the analysis and not
+    the right.'
+- kind: sub_area_missing
+  detail: No sub area covers the clinical evidence base or standard of care for a treatment. DP04E76M
+    is coverage and who pays, DP05ZX8Q is price, PW05KP9Q is the coverage statutes and PW06Q714 is 340B/EUA/PREP.
+    The whole substantive core of L10-L14 -- what the treatment is, who consults on it, that the same
+    medications are given at the same doses to non-transgender children for decades -- has no substantive
+    home and was scoreable only as method (IR06UFQY) and delivery (PS01OQH0).

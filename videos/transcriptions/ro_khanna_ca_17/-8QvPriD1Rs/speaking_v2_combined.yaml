@@ -1,0 +1,166 @@
+# speaking_v2_combined.yaml — THE FOLD FOR ONE SOURCE.
+# Written by ai/smart_contracts/v2/p_run_v2_contracts.md (user_repo sweep, APPENDIX U)
+# and by nothing else. DERIVED: always rebuilt from speaking_v2.csv, never patched.
+#
+# IT COMPUTES NO AWARD. `rows` is a count and `sum_score` is a raw column sum — both
+# re-derivable from the CSV in one line, which is why they are allowed here. Turning
+# rows into a {qualification, knowledge} pair, and that pair into a Flamingo, is the
+# `speaking_calc` engine's job, in code: pm/calc_engine_speaking.mdx,
+# pm/calc_engine_flamingo.mdx §3.0.
+#
+# A SILENT AREA IS NAMED, NEVER FILLED. An area with no rows is in major_areas_silent[]
+# and never appears as `rows: 0` — on the -100..100 scale 0 is a REAL READING, and an
+# absent reading means we have not heard them on this at all (pm/coverage.mdx).
+
+schema_version: 1
+person_key: ro_khanna
+politician_key: ro_khanna_ca_17
+video_key: -8QvPriD1Rs
+video_uid: ro_khanna::-8QvPriD1Rs
+generated_at: '2026-09-06T04:01:28.431Z'
+run_id: v2all_20260905T2343Z_5598
+subject_attribution:
+  method: not_separable
+  speaker_ids: []
+  share_pct: null
+  is_guess: true
+  confidence: low
+  caveat: This recording carries no speaker labels. The words scored here are read as the subject's on
+    the basis stated in `method`. That reading may be wrong, and every row derived from it inherits that
+    doubt. The labels this recording does carry are an over-clustered diarisation artefact — 3 clusters,
+    top share 51.0% — and are not a partition of humans.
+  subject_person_key: ro_khanna
+  subject_politician_key: ro_khanna_ca_17
+  cluster_count: 3
+  top_cluster_share_pct: 51.0
+  speaker_ids_withheld_note: EMPTY ON PURPOSE. Listing the largest clusters would ASSERT they are the
+    subject's, and on at least one source in this sweep the top cluster is the HOST. On a not_separable
+    resolution nobody knows which clusters are the subject's — that is what the method means — so no row
+    here rests on a speaker label at all.
+  clusters_observed:
+  - SPEAKER_01
+  - SPEAKER_02
+  - SPEAKER_00
+  share_pct_unknown: true
+  share_pct_note: 'UNKNOWN, AND DELIBERATELY NOT A NUMBER. An earlier revision of this sweep carried the
+    largest cluster''s share here as a ''floor''. MEASURED, and it is worse than a blank: on a local-news
+    package this block claimed 49.3% where the subject''s real share of the words is about 1.3%. A floor
+    computed from an over-clustered label set does not bound the subject''s share from below — it invites
+    a downstream reader to believe we heard a great deal of a named living person when we heard a sentence.
+    The cluster statistic is kept below as `top_cluster_share_pct`, which is what it actually is.'
+source:
+  source_kind: transcription
+  source_key: -8QvPriD1Rs
+  source_dir: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/ro_khanna_ca_17/-8QvPriD1Rs
+  input_file: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/ro_khanna_ca_17/-8QvPriD1Rs/-8QvPriD1Rs.transcription
+  content_sha256: c931c4dbfd764e3e5d2b078e6e1c1ec6f02e05a57f3184c5978e89d26cfdc0ac
+  words: 111
+  chars: 614
+  has_sidecar: true
+  lines: 5
+  lines_derived: false
+  evidence_grade: aligned
+  duration_s: 41.16
+contract:
+  source_kind: transcription
+  contract_version: '1.0'
+  status: ran
+  csv: speaking_v2.csv
+  run_id: v2all_20260905T2343Z_5598
+  assessed_at: ''
+  appendix_version: '1.0'
+  appendix_sha256: 2f331dbf75749201201c30e6e9280b2293eecc97f7f0683e7fb31295c00b6b8a
+  abstraction_rule_sha256: 05485415fa4887688b8b0b2090e87849c2bbeb7fdce1b268eb99f6bb3bb38dfc
+  inline_appendix: false
+rows:
+  total: 0
+  major_areas_hit: 0
+  sub_areas_hit: 0
+major_areas: []
+major_areas_silent:
+- major_area: anti_corruption
+  reason: no_rows
+- major_area: citizens_rights
+  reason: no_rows
+- major_area: constitutional_governing_competence
+  reason: no_rows
+- major_area: domestic_policy
+  reason: no_rows
+- major_area: economics
+  reason: no_rows
+- major_area: foreign_policy
+  reason: no_rows
+- major_area: governance_constitutional_law
+  reason: no_rows
+- major_area: great_life_experience
+  reason: no_rows
+- major_area: intellectual_rigor
+  reason: no_rows
+- major_area: loyalty_to_the_usa
+  reason: no_rows
+- major_area: management
+  reason: no_rows
+- major_area: national_security
+  reason: no_rows
+- major_area: not_controlled_not_influenced
+  reason: no_rows
+- major_area: policy_wonk
+  reason: no_rows
+- major_area: public_speaking
+  reason: no_rows
+- major_area: representation_leadership
+  reason: no_rows
+- major_area: us_gov_controlled
+  reason: no_rows
+- major_area: we_the_citizens
+  reason: no_rows
+coverage:
+  major_areas_expected: 18
+  major_areas_present: 0
+  major_areas_silent: 18
+  sub_areas_expected: 184
+  sub_areas_hit: 0
+contract_missing:
+- source_kind: posts
+  reason: skip_scaffold
+  detail: 'assess_v2_posts.yaml carries `status: scaffold`; the posts medium has not been calibrated.
+    No posts batch exists for this person either, so nothing of that kind was skipped as work.'
+gaps:
+- kind: no_v1_fold_user_repo_source
+  detail: This source lives in a citizen's User Data Repo and has never been through the v1 sweep, so
+    Stage 0b rung 1 (v1_fold_copied) could not fire. Attribution was resolved by the orchestrator under
+    p_run_v2_contracts.md APPENDIX U §U4.
+- kind: source_not_landed_in_data_repo
+  detail: The words are at /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/ro_khanna_ca_17/-8QvPriD1Rs,
+    inside the user repo. `user_repo_ingest` has not landed or published them into the data repo, and
+    this run does not land anything.
+- kind: demand_video_uid_is_roster_scoped
+  detail: transcription.yaml Demand.video_uid is 'ro_khanna_ca_17::-8QvPriD1Rs', built from the roster
+    key. video_uid is PERSON-scoped, so this run wrote 'ro_khanna::-8QvPriD1Rs'. The yaml was not edited.
+- kind: subject_does_not_speak
+  detail: 'All five transcription lines of this 41-second source are read, in order, and NONE of them
+    carries the subject''s own words. L1-L2 and L5 are a KTVU reporter''s voice-over that refers to the
+    subject in the THIRD PERSON (''Congressman Ro Khanna hosted a roundtable discussion today''). L3-L4
+    is a roundtable participant''s sound-bite spoken from inside a grocery store''s ordering position
+    (''we get products and we don''t have what we order ... it results on less sales''), and L5 names
+    that participant: ''Lupe Lopez, owner of Artigas Food Center''. Ro Khanna is the SUBJECT of the reporter''s
+    sentence, never a speaker in the recording. Zero rows here therefore does NOT mean ''this person said
+    nothing that triggers''; it means this source contains none of his speech to assess. The typed-gap
+    vocabulary in the contract (no_transcript, no_sidecar_lines_are_derived, attribution_none, attribution_absent,
+    source_truncated, segments_unaligned) has no term for this state, so it is named in full here rather
+    than left quiet.'
+- kind: attribution_block_is_wrong_for_this_source
+  detail: 'The subject_attribution block resolved upstream reads method ''not_separable'', share_pct 51.0
+    as a FLOOR, is_guess true, confidence low, and its caveat states that the words scored are ''read
+    as the subject''s''. Measured against the content, that premise does not hold on this source: the
+    three diarisation clusters map cleanly onto three real discourse roles (reporter narration, interviewee
+    sound-bite, reporter narration) and the subject is in none of them. The 51.0% floor presumes the subject
+    IS one of the clusters. A run that took the block at face value and scored the top cluster would have
+    published a reporter''s numbers and a grocery-store owner''s words under a named living Congressman''s
+    name. Reported, not silently corrected: the block was reused as the contract requires and no speaker
+    map was re-derived here.'
+- kind: unassessed_not_absent
+  detail: 'Coverage consequence, stated so the denominator stays honest (pm/coverage.mdx): this video
+    contributes ZERO evidence about ro_khanna to any of the 18 major areas or 184 sub areas. The header-only
+    CSV records that the source was ASSESSED rather than SKIPPED; it must not be read downstream as eighteen
+    silences by this person.'

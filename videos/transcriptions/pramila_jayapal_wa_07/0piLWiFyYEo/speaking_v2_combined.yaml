@@ -1,0 +1,186 @@
+# speaking_v2_combined.yaml — THE FOLD FOR ONE SOURCE.
+# Written by ai/smart_contracts/v2/p_run_v2_contracts.md (user_repo sweep, APPENDIX U)
+# and by nothing else. DERIVED: always rebuilt from speaking_v2.csv, never patched.
+#
+# IT COMPUTES NO AWARD. `rows` is a count and `sum_score` is a raw column sum — both
+# re-derivable from the CSV in one line, which is why they are allowed here. Turning
+# rows into a {qualification, knowledge} pair, and that pair into a Flamingo, is the
+# `speaking_calc` engine's job, in code: pm/calc_engine_speaking.mdx,
+# pm/calc_engine_flamingo.mdx §3.0.
+#
+# A SILENT AREA IS NAMED, NEVER FILLED. An area with no rows is in major_areas_silent[]
+# and never appears as `rows: 0` — on the -100..100 scale 0 is a REAL READING, and an
+# absent reading means we have not heard them on this at all (pm/coverage.mdx).
+
+schema_version: 1
+person_key: pramila_jayapal_wa_07
+politician_key: pramila_jayapal_wa_07
+video_key: 0piLWiFyYEo
+video_uid: pramila_jayapal_wa_07::0piLWiFyYEo
+generated_at: '2026-09-06T04:05:38.124Z'
+run_id: v2all_20260905T2343Z_5598
+subject_attribution:
+  method: not_separable
+  speaker_ids: []
+  share_pct: null
+  is_guess: true
+  confidence: low
+  caveat: This recording carries no speaker labels. The words scored here are read as the subject's on
+    the basis stated in `method`. That reading may be wrong, and every row derived from it inherits that
+    doubt. The labels this recording does carry are an over-clustered diarisation artefact — 10 clusters,
+    top share 21.4% — and are not a partition of humans.
+  subject_person_key: pramila_jayapal_wa_07
+  subject_politician_key: pramila_jayapal_wa_07
+  cluster_count: 10
+  top_cluster_share_pct: 21.4
+  speaker_ids_withheld_note: EMPTY ON PURPOSE. Listing the largest clusters would ASSERT they are the
+    subject's, and on at least one source in this sweep the top cluster is the HOST. On a not_separable
+    resolution nobody knows which clusters are the subject's — that is what the method means — so no row
+    here rests on a speaker label at all.
+  clusters_observed:
+  - SPEAKER_01
+  - SPEAKER_00
+  - SPEAKER_05
+  share_pct_unknown: true
+  share_pct_note: 'UNKNOWN, AND DELIBERATELY NOT A NUMBER. An earlier revision of this sweep carried the
+    largest cluster''s share here as a ''floor''. MEASURED, and it is worse than a blank: on a local-news
+    package this block claimed 49.3% where the subject''s real share of the words is about 1.3%. A floor
+    computed from an over-clustered label set does not bound the subject''s share from below — it invites
+    a downstream reader to believe we heard a great deal of a named living person when we heard a sentence.
+    The cluster statistic is kept below as `top_cluster_share_pct`, which is what it actually is.'
+source:
+  source_kind: transcription
+  source_key: 0piLWiFyYEo
+  source_dir: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/pramila_jayapal_wa_07/0piLWiFyYEo
+  input_file: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/pramila_jayapal_wa_07/0piLWiFyYEo/0piLWiFyYEo.transcription
+  content_sha256: adfe328605029cbd9d612488ab227a66bdec282ab9e47b1c5d49249db44d5d65
+  words: 1709
+  chars: 9826
+  has_sidecar: true
+  lines: 89
+  lines_derived: false
+  evidence_grade: aligned
+  duration_s: 700.19
+contract:
+  source_kind: transcription
+  contract_version: '1.0'
+  status: ran
+  csv: speaking_v2.csv
+  run_id: v2all_20260905T2343Z_5598
+  assessed_at: '2026-09-05T23:43:11.652Z'
+  appendix_version: '1.0'
+  appendix_sha256: 2f331dbf75749201201c30e6e9280b2293eecc97f7f0683e7fb31295c00b6b8a
+  abstraction_rule_sha256: 05485415fa4887688b8b0b2090e87849c2bbeb7fdce1b268eb99f6bb3bb38dfc
+  inline_appendix: false
+rows:
+  total: 17
+  major_areas_hit: 7
+  sub_areas_hit: 12
+major_areas:
+- major_area: constitutional_governing_competence
+  rows: 2
+  sum_score: 85
+  sub_areas_hit: 2
+  sub_areas_total: 10
+- major_area: domestic_policy
+  rows: 4
+  sum_score: 200
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: economics
+  rows: 2
+  sum_score: 20
+  sub_areas_hit: 1
+  sub_areas_total: 11
+- major_area: intellectual_rigor
+  rows: 5
+  sum_score: 130
+  sub_areas_hit: 4
+  sub_areas_total: 10
+- major_area: public_speaking
+  rows: 2
+  sum_score: 115
+  sub_areas_hit: 2
+  sub_areas_total: 11
+- major_area: representation_leadership
+  rows: 1
+  sum_score: 20
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: us_gov_controlled
+  rows: 1
+  sum_score: 35
+  sub_areas_hit: 1
+  sub_areas_total: 10
+major_areas_silent:
+- major_area: anti_corruption
+  reason: no_rows
+- major_area: citizens_rights
+  reason: no_rows
+- major_area: foreign_policy
+  reason: no_rows
+- major_area: governance_constitutional_law
+  reason: no_rows
+- major_area: great_life_experience
+  reason: no_rows
+- major_area: loyalty_to_the_usa
+  reason: no_rows
+- major_area: management
+  reason: no_rows
+- major_area: national_security
+  reason: no_rows
+- major_area: not_controlled_not_influenced
+  reason: no_rows
+- major_area: policy_wonk
+  reason: no_rows
+- major_area: we_the_citizens
+  reason: no_rows
+coverage:
+  major_areas_expected: 18
+  major_areas_present: 7
+  major_areas_silent: 11
+  sub_areas_expected: 184
+  sub_areas_hit: 12
+contract_missing:
+- source_kind: posts
+  reason: skip_scaffold
+  detail: 'assess_v2_posts.yaml carries `status: scaffold`; the posts medium has not been calibrated.
+    No posts batch exists for this person either, so nothing of that kind was skipped as work.'
+gaps:
+- kind: no_v1_fold_user_repo_source
+  detail: This source lives in a citizen's User Data Repo and has never been through the v1 sweep, so
+    Stage 0b rung 1 (v1_fold_copied) could not fire. Attribution was resolved by the orchestrator under
+    p_run_v2_contracts.md APPENDIX U §U4.
+- kind: source_not_landed_in_data_repo
+  detail: The words are at /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/pramila_jayapal_wa_07/0piLWiFyYEo,
+    inside the user repo. `user_repo_ingest` has not landed or published them into the data repo, and
+    this run does not land anything.
+- kind: speaker_labels_unusable
+  detail: 'The sidecar''s speaker track cannot be used to decide whose words these are: 74 of 88 label
+    changes (84%) fall mid-sentence, and the diariser produced 10 clusters with a top share of 21.4% over
+    what is plainly one continuous voice. Attribution was therefore made from the discourse structure,
+    per the orchestrator''s instruction, and the structure is unambiguous: this is one member''s Special
+    Order Hour floor statement, opened with thanks to the presiding member ([L2] ''Thank you so much,
+    Representative Raskin and Mr. Speaker''), carried in continuous first person throughout, anchored
+    to the subject''s own state ([L68] ''in Washington state, my home state''), and closed with the standard
+    yield-back ([L89] ''I thank the gentleman for yielding and yield back''). No second speaker takes
+    a turn anywhere on the tape. Every row nonetheless carries confidence ''low'' as the ceiling requires.'
+- kind: read_aloud_material_excluded
+  detail: 'Three passages inside the subject''s own speech are other people''s words read aloud and were
+    excluded from every quote and scored nowhere. (1) [L9-L10] a New York Times sentence, quoted verbatim
+    by the subject: ''the Senate bill, once promised as a top-to-bottom revamp of the health bill passed
+    by the House, instead maintains its structure with modest adjustments.'' Only her attributive framing
+    was scored. (2) [L16-L17] a 2010 statement she attributes to Speaker Paul Ryan, beginning ''after
+    months of twisting arms, Democratic leaders convinced enough members of their party to defy the will
+    of the American people''. (3) [L17] a statement she attributes to Senate Majority Leader Mitch McConnell,
+    beginning ''when it comes to solving problems, Americans want us to listen first''. Also excluded:
+    [L66] a claim she attributes to another member, ''as Mr. Raskin said, this health care bill has had
+    such low approval ratings''. The Ryan and McConnell passages are the sharpest process language on
+    the tape and would have read as the subject''s own evidence had they been scored; they are not hers
+    and no row cites them.'
+- kind: transcription_defect_in_a_scored_span
+  detail: '[L61] has lost words inside a scored span: ''I want to tell you what Medicaid actually of all
+    nursing home residents, it covers'' — the verb and the nursing-home percentage are missing from the
+    flat text. The figure she gave for the Medicaid share of nursing-home residents is therefore unrecoverable
+    and is not quoted or counted in any row; the DP04E76M row at [L54-L65] cites only the figures that
+    survive in the text.'

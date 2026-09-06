@@ -1,0 +1,174 @@
+# speaking_v2_combined.yaml — THE FOLD FOR ONE SOURCE.
+# Written by ai/smart_contracts/v2/p_run_v2_contracts.md (user_repo sweep, APPENDIX U)
+# and by nothing else. DERIVED: always rebuilt from speaking_v2.csv, never patched.
+#
+# IT COMPUTES NO AWARD. `rows` is a count and `sum_score` is a raw column sum — both
+# re-derivable from the CSV in one line, which is why they are allowed here. Turning
+# rows into a {qualification, knowledge} pair, and that pair into a Flamingo, is the
+# `speaking_calc` engine's job, in code: pm/calc_engine_speaking.mdx,
+# pm/calc_engine_flamingo.mdx §3.0.
+#
+# A SILENT AREA IS NAMED, NEVER FILLED. An area with no rows is in major_areas_silent[]
+# and never appears as `rows: 0` — on the -100..100 scale 0 is a REAL READING, and an
+# absent reading means we have not heard them on this at all (pm/coverage.mdx).
+
+schema_version: 1
+person_key: kari_lake_us_pres
+politician_key: kari_lake_us_pres
+video_key: 05TFP7Ns0YQ
+video_uid: kari_lake_us_pres::05TFP7Ns0YQ
+generated_at: '2026-09-06T04:16:56.898Z'
+run_id: v2all_20260905T2343Z_5598
+subject_attribution:
+  method: sidecar_single_speaker
+  speaker_ids:
+  - SPEAKER_00
+  share_pct: 100.0
+  is_guess: true
+  confidence: medium
+  caveat: This recording carries no speaker labels. The words scored here are read as the subject's on
+    the basis stated in `method`. That reading may be wrong, and every row derived from it inherits that
+    doubt.
+  subject_person_key: kari_lake_us_pres
+  subject_politician_key: kari_lake_us_pres
+  cluster_count: 1
+  top_cluster_share_pct: 100.0
+source:
+  source_kind: transcription
+  source_key: 05TFP7Ns0YQ
+  source_dir: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/kari_lake_us_pres/05TFP7Ns0YQ
+  input_file: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/kari_lake_us_pres/05TFP7Ns0YQ/05TFP7Ns0YQ.transcription
+  content_sha256: 412c36a454bd37105f6f800fcdf687fca8e0f1bde8e709a3c7da937d14b0962a
+  words: 1297
+  chars: 7509
+  has_sidecar: true
+  lines: 41
+  lines_derived: false
+  evidence_grade: aligned
+  duration_s: 489.02
+contract:
+  source_kind: transcription
+  contract_version: '1.0'
+  status: ran
+  csv: speaking_v2.csv
+  run_id: v2all_20260905T2343Z_5598
+  assessed_at: '2026-09-05T23:43:11.652Z'
+  appendix_version: '1.0'
+  appendix_sha256: 2f331dbf75749201201c30e6e9280b2293eecc97f7f0683e7fb31295c00b6b8a
+  abstraction_rule_sha256: 05485415fa4887688b8b0b2090e87849c2bbeb7fdce1b268eb99f6bb3bb38dfc
+  inline_appendix: false
+rows:
+  total: 16
+  major_areas_hit: 9
+  sub_areas_hit: 16
+major_areas:
+- major_area: anti_corruption
+  rows: 1
+  sum_score: -45
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: domestic_policy
+  rows: 1
+  sum_score: 10
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: economics
+  rows: 2
+  sum_score: 10
+  sub_areas_hit: 2
+  sub_areas_total: 11
+- major_area: foreign_policy
+  rows: 4
+  sum_score: -105
+  sub_areas_hit: 4
+  sub_areas_total: 10
+- major_area: great_life_experience
+  rows: 1
+  sum_score: 25
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: intellectual_rigor
+  rows: 2
+  sum_score: -20
+  sub_areas_hit: 2
+  sub_areas_total: 10
+- major_area: national_security
+  rows: 1
+  sum_score: -10
+  sub_areas_hit: 1
+  sub_areas_total: 11
+- major_area: policy_wonk
+  rows: 2
+  sum_score: 40
+  sub_areas_hit: 2
+  sub_areas_total: 10
+- major_area: public_speaking
+  rows: 2
+  sum_score: 10
+  sub_areas_hit: 2
+  sub_areas_total: 11
+major_areas_silent:
+- major_area: citizens_rights
+  reason: no_rows
+- major_area: constitutional_governing_competence
+  reason: no_rows
+- major_area: governance_constitutional_law
+  reason: no_rows
+- major_area: loyalty_to_the_usa
+  reason: no_rows
+- major_area: management
+  reason: no_rows
+- major_area: not_controlled_not_influenced
+  reason: no_rows
+- major_area: representation_leadership
+  reason: no_rows
+- major_area: us_gov_controlled
+  reason: no_rows
+- major_area: we_the_citizens
+  reason: no_rows
+coverage:
+  major_areas_expected: 18
+  major_areas_present: 9
+  major_areas_silent: 9
+  sub_areas_expected: 184
+  sub_areas_hit: 16
+contract_missing:
+- source_kind: posts
+  reason: skip_scaffold
+  detail: 'assess_v2_posts.yaml carries `status: scaffold`; the posts medium has not been calibrated.
+    No posts batch exists for this person either, so nothing of that kind was skipped as work.'
+gaps:
+- kind: no_v1_fold_user_repo_source
+  detail: This source lives in a citizen's User Data Repo and has never been through the v1 sweep, so
+    Stage 0b rung 1 (v1_fold_copied) could not fire. Attribution was resolved by the orchestrator under
+    p_run_v2_contracts.md APPENDIX U §U4.
+- kind: source_not_landed_in_data_repo
+  detail: The words are at /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/kari_lake_us_pres/05TFP7Ns0YQ,
+    inside the user repo. `user_repo_ingest` has not landed or published them into the data repo, and
+    this run does not land anything.
+- kind: attribution_is_a_guess
+  detail: 'The subject_attribution block is method sidecar_single_speaker with is_guess true and confidence
+    medium: the sidecar names nobody, so the words are read as Kari Lake''s on the basis of the block.
+    Every row inherits that doubt and no row carries better than medium. The block was NOT re-derived
+    and NOT rewritten. The internal evidence is strongly consistent with it - the speaker names ''my opponent,
+    Ruben Gallego'', ''my own daughter, Ruby'', 27 years covering Arizona as a journalist, and ''As a
+    U.S. Senator, I will work tirelessly with my Republican colleagues'' - but that corroboration was
+    not used to raise the ceiling, because the ceiling is the orchestrator''s to set.'
+- kind: sidecar_speaker_labels_are_noise
+  detail: 'Measured on this file, confirming the orchestrator''s finding. The .rttm carries exactly ONE
+    speaker label across all 22 turns: SPEAKER_00. There is no second speaker anywhere in this recording.
+    Yet 20 of the 41 transcription lines (every even line, L2-L40) carry an EMPTY speaker value rather
+    than SPEAKER_00, and every one of them is a one-to-three-word fragment torn out of the middle of a
+    sentence: L10 ''I had'' / L11 ''the opportunity to cover the state of Arizona...''; L14 ''Biden came''
+    / L15 ''into office and used 96 executive orders...''; L24 ''Since'' / L25 ''Biden entered office,
+    home heating oil prices up 44%...''; L28 ''Joe'' / L29 ''Biden continues to threaten to send...'';
+    L30 ''on the'' / L31 ''verge of World War III...''. Not one fragment carries an independent claim.
+    Attribution was therefore taken from the discourse structure - one continuous first-person direct-to-camera
+    address - and not from the labels, and seven rows are cited across a label change so that the subject''s
+    own sentence is not truncated at the tear. Those seven rows carry an empty `speaker` column, which
+    is the honest marker of this condition.'
+- kind: no_sub_area_for_passage
+  detail: 'Two substantial passages found no home in Appendix A and were written as near misses rather
+    than rows: the cartel/''military-age fighting men'' border-as-invasion material, which PW014J8E''s
+    own triggers_when routes to national_security, where no border or invasion sub area exists; and the
+    Afghanistan withdrawal passage at L25. Detail and reasoning in the report.'

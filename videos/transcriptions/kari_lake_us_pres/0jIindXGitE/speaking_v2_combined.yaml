@@ -1,0 +1,207 @@
+# speaking_v2_combined.yaml — THE FOLD FOR ONE SOURCE.
+# Written by ai/smart_contracts/v2/p_run_v2_contracts.md (user_repo sweep, APPENDIX U)
+# and by nothing else. DERIVED: always rebuilt from speaking_v2.csv, never patched.
+#
+# IT COMPUTES NO AWARD. `rows` is a count and `sum_score` is a raw column sum — both
+# re-derivable from the CSV in one line, which is why they are allowed here. Turning
+# rows into a {qualification, knowledge} pair, and that pair into a Flamingo, is the
+# `speaking_calc` engine's job, in code: pm/calc_engine_speaking.mdx,
+# pm/calc_engine_flamingo.mdx §3.0.
+#
+# A SILENT AREA IS NAMED, NEVER FILLED. An area with no rows is in major_areas_silent[]
+# and never appears as `rows: 0` — on the -100..100 scale 0 is a REAL READING, and an
+# absent reading means we have not heard them on this at all (pm/coverage.mdx).
+
+schema_version: 1
+person_key: kari_lake_us_pres
+politician_key: kari_lake_us_pres
+video_key: 0jIindXGitE
+video_uid: kari_lake_us_pres::0jIindXGitE
+generated_at: '2026-09-06T04:16:57.124Z'
+run_id: v2all_20260905T2343Z_5598
+subject_attribution:
+  method: not_separable
+  speaker_ids: []
+  share_pct: null
+  is_guess: true
+  confidence: low
+  caveat: This recording carries no speaker labels. The words scored here are read as the subject's on
+    the basis stated in `method`. That reading may be wrong, and every row derived from it inherits that
+    doubt. The labels this recording does carry are an over-clustered diarisation artefact — 59 clusters,
+    top share 16.5% — and are not a partition of humans.
+  subject_person_key: kari_lake_us_pres
+  subject_politician_key: kari_lake_us_pres
+  cluster_count: 59
+  top_cluster_share_pct: 16.5
+  speaker_ids_withheld_note: EMPTY ON PURPOSE. Listing the largest clusters would ASSERT they are the
+    subject's, and on at least one source in this sweep the top cluster is the HOST. On a not_separable
+    resolution nobody knows which clusters are the subject's — that is what the method means — so no row
+    here rests on a speaker label at all.
+  clusters_observed:
+  - SPEAKER_19
+  - SPEAKER_27
+  - SPEAKER_43
+  share_pct_unknown: true
+  share_pct_note: 'UNKNOWN, AND DELIBERATELY NOT A NUMBER. An earlier revision of this sweep carried the
+    largest cluster''s share here as a ''floor''. MEASURED, and it is worse than a blank: on a local-news
+    package this block claimed 49.3% where the subject''s real share of the words is about 1.3%. A floor
+    computed from an over-clustered label set does not bound the subject''s share from below — it invites
+    a downstream reader to believe we heard a great deal of a named living person when we heard a sentence.
+    The cluster statistic is kept below as `top_cluster_share_pct`, which is what it actually is.'
+source:
+  source_kind: transcription
+  source_key: 0jIindXGitE
+  source_dir: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/kari_lake_us_pres/0jIindXGitE
+  input_file: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/kari_lake_us_pres/0jIindXGitE/0jIindXGitE.transcription
+  content_sha256: 8a491749e5ba0627b5fb8d887f9972efe03a781a4c800b9c813bd638e657693f
+  words: 4159
+  chars: 22391
+  has_sidecar: true
+  lines: 343
+  lines_derived: false
+  evidence_grade: aligned
+  duration_s: 1750.16
+contract:
+  source_kind: transcription
+  contract_version: '1.0'
+  status: ran
+  csv: speaking_v2.csv
+  run_id: v2all_20260905T2343Z_5598
+  assessed_at: '2026-09-05T23:43:11.652Z'
+  appendix_version: '1.0'
+  appendix_sha256: 2f331dbf75749201201c30e6e9280b2293eecc97f7f0683e7fb31295c00b6b8a
+  abstraction_rule_sha256: 05485415fa4887688b8b0b2090e87849c2bbeb7fdce1b268eb99f6bb3bb38dfc
+  inline_appendix: false
+rows:
+  total: 20
+  major_areas_hit: 10
+  sub_areas_hit: 19
+major_areas:
+- major_area: anti_corruption
+  rows: 2
+  sum_score: -80
+  sub_areas_hit: 2
+  sub_areas_total: 10
+- major_area: economics
+  rows: 2
+  sum_score: -47
+  sub_areas_hit: 2
+  sub_areas_total: 11
+- major_area: governance_constitutional_law
+  rows: 1
+  sum_score: 50
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: great_life_experience
+  rows: 2
+  sum_score: -45
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: intellectual_rigor
+  rows: 3
+  sum_score: -105
+  sub_areas_hit: 3
+  sub_areas_total: 10
+- major_area: loyalty_to_the_usa
+  rows: 1
+  sum_score: 10
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: management
+  rows: 2
+  sum_score: -20
+  sub_areas_hit: 2
+  sub_areas_total: 10
+- major_area: policy_wonk
+  rows: 3
+  sum_score: -130
+  sub_areas_hit: 3
+  sub_areas_total: 10
+- major_area: public_speaking
+  rows: 3
+  sum_score: 30
+  sub_areas_hit: 3
+  sub_areas_total: 11
+- major_area: representation_leadership
+  rows: 1
+  sum_score: -30
+  sub_areas_hit: 1
+  sub_areas_total: 10
+major_areas_silent:
+- major_area: citizens_rights
+  reason: no_rows
+- major_area: constitutional_governing_competence
+  reason: no_rows
+- major_area: domestic_policy
+  reason: no_rows
+- major_area: foreign_policy
+  reason: no_rows
+- major_area: national_security
+  reason: no_rows
+- major_area: not_controlled_not_influenced
+  reason: no_rows
+- major_area: us_gov_controlled
+  reason: no_rows
+- major_area: we_the_citizens
+  reason: no_rows
+coverage:
+  major_areas_expected: 18
+  major_areas_present: 10
+  major_areas_silent: 8
+  sub_areas_expected: 184
+  sub_areas_hit: 19
+contract_missing:
+- source_kind: posts
+  reason: skip_scaffold
+  detail: 'assess_v2_posts.yaml carries `status: scaffold`; the posts medium has not been calibrated.
+    No posts batch exists for this person either, so nothing of that kind was skipped as work.'
+gaps:
+- kind: no_v1_fold_user_repo_source
+  detail: This source lives in a citizen's User Data Repo and has never been through the v1 sweep, so
+    Stage 0b rung 1 (v1_fold_copied) could not fire. Attribution was resolved by the orchestrator under
+    p_run_v2_contracts.md APPENDIX U §U4.
+- kind: source_not_landed_in_data_repo
+  detail: The words are at /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/kari_lake_us_pres/0jIindXGitE,
+    inside the user repo. `user_repo_ingest` has not landed or published them into the data repo, and
+    this run does not land anything.
+- kind: untranscribed_stretch_in_source
+  detail: 'at char 2366: [29 s not transcribed — chunk rejected (repetition_loop)]'
+- kind: untranscribed_stretch_in_source
+  detail: 'at char 12859: [24 s not transcribed — chunk rejected (repetition_loop)]'
+- kind: untranscribed_stretch_in_source
+  detail: 'at char 21181: [30 s not transcribed — chunk rejected (repetition_loop)]'
+- kind: asr_gaps_in_source
+  detail: 'The flat .transcription carries THREE machine-inserted gap markers, all ''chunk rejected (repetition_loop)'':
+    29 s at char 2364 (between L40 and L41), 24 s at char 12857 (between L202 and L203), and 30 s at char
+    21179 (between L334 and L335). That is 83 seconds of audio for which no words exist. They are holes
+    in the evidence, not speech; nothing was quoted from them and no scored span crosses one. The 24-second
+    hole falls immediately after the police-funding passage and immediately before the locker-room passage,
+    so whatever bridged those two subjects is unrecoverable from this file.'
+- kind: attribution_low
+  detail: 'subject_attribution.method is not_separable and confidence is low. Carried as a ceiling: every
+    one of the 20 rows is written at confidence low, with no exceptions.'
+- kind: speaker_labels_are_noise
+  detail: '59 diarisation clusters with a top share of 16.5%, and 264 of 342 label changes fall mid-sentence.
+    No row rests on a speaker label. Attribution was done from the discourse structure instead: this is
+    a single-speaker victory speech delivered from a stage, in continuous first person, whose speaker
+    accepts the Republican nomination for the United States Senate from Arizona (L57), names her husband
+    Jeff and children Ruby and Leo (L24-L36), and states a 27-year Arizona television career (L119) —
+    all of which identify the subject and none of which depends on a cluster id. The `speaker` column
+    is empty on most rows because the spans disagree with themselves, which is expected.'
+- kind: non_subject_audio_excluded
+  detail: 'FOUR things inside the recording are not the subject''s evidence and were excluded from every
+    span. (1) L1-L2 and L335 are recorded music played into the room — walk-on and walk-off tracks whose
+    lyrics the transcriber captured as speech; they are a played recording, nobody in the room said them.
+    (2) L86-L87 is a friend''s text message read aloud; she adopts its conclusion in her own words at
+    L88 and that adoption, not the reading, is what could have been scored. (3) L120-L125 quotes grocery-store
+    dialogue by unnamed members of the public. (4) L44 quotes a third party (''Somebody said to me the
+    other day...''), which she then answers in her own words at L46-L48. Excluding these does not lower
+    the subject''s evidentiary share meaningfully: this is a monologue and the great majority of the 343
+    lines are hers.'
+- kind: source_kind_limits_coverage
+  detail: No question the subject did not write occurs anywhere in this recording, and no adversary is
+    present. Five public_speaking sub areas that require an unwritten question or a hostile room (unscripted_engagement,
+    adversarial_composure, listening_in_the_room, correction_and_not_knowing, composure_across_rooms),
+    both intellectual_rigor sub areas that require a push (i_dont_know_then_follow_up, pressure_without_slogans),
+    and briefing_resistance are unreadable from this source in principle. Their absence from the CSV is
+    a fact about a victory speech, not about the person.

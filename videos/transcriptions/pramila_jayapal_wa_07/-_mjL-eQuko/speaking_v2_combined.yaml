@@ -1,0 +1,161 @@
+# speaking_v2_combined.yaml — THE FOLD FOR ONE SOURCE.
+# Written by ai/smart_contracts/v2/p_run_v2_contracts.md (user_repo sweep, APPENDIX U)
+# and by nothing else. DERIVED: always rebuilt from speaking_v2.csv, never patched.
+#
+# IT COMPUTES NO AWARD. `rows` is a count and `sum_score` is a raw column sum — both
+# re-derivable from the CSV in one line, which is why they are allowed here. Turning
+# rows into a {qualification, knowledge} pair, and that pair into a Flamingo, is the
+# `speaking_calc` engine's job, in code: pm/calc_engine_speaking.mdx,
+# pm/calc_engine_flamingo.mdx §3.0.
+#
+# A SILENT AREA IS NAMED, NEVER FILLED. An area with no rows is in major_areas_silent[]
+# and never appears as `rows: 0` — on the -100..100 scale 0 is a REAL READING, and an
+# absent reading means we have not heard them on this at all (pm/coverage.mdx).
+
+schema_version: 1
+person_key: pramila_jayapal_wa_07
+politician_key: pramila_jayapal_wa_07
+video_key: -_mjL-eQuko
+video_uid: pramila_jayapal_wa_07::-_mjL-eQuko
+generated_at: '2026-09-06T04:05:37.437Z'
+run_id: v2all_20260905T2343Z_5598
+subject_attribution:
+  method: no_diarisation_assumed_single
+  speaker_ids: []
+  share_pct: 100
+  is_guess: true
+  confidence: medium
+  caveat: 'This recording carries no speaker labels. The words scored here are read as the subject''s
+    on the basis stated in `method`. That reading may be wrong, and every row derived from it inherits
+    that doubt. The labels this recording does carry split ONE voice: 2 of the sidecar''s speaker changes
+    fall mid-sentence, and the sentence completes across the change, so they are not a partition of humans.
+    The record describes a solo statement and the whole tape is read as the subject''s.'
+  subject_person_key: pramila_jayapal_wa_07
+  subject_politician_key: pramila_jayapal_wa_07
+  cluster_count: 2
+  top_cluster_share_pct: 88.3
+  method_superseded: sidecar_dominant_speaker
+  clusters_observed: []
+  revision_note: Superseded `sidecar_dominant_speaker` mid-sweep. That rung handed the minority cluster
+    to nobody and so DELETED the subject's own words — measured on a sibling source of this same person,
+    where it withheld the statement's opening, its sharpest claim and its entire closing. p_run_v2_contracts.md
+    APPENDIX U §U4.
+source:
+  source_kind: transcription
+  source_key: -_mjL-eQuko
+  source_dir: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/pramila_jayapal_wa_07/-_mjL-eQuko
+  input_file: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/pramila_jayapal_wa_07/-_mjL-eQuko/-_mjL-eQuko.transcription
+  content_sha256: e91c82c627c4e624c76b91e0849348070e687feb406814660f7860c64de35b6c
+  words: 446
+  chars: 2561
+  has_sidecar: true
+  lines: 7
+  lines_derived: false
+  evidence_grade: aligned
+  duration_s: 181.17
+contract:
+  source_kind: transcription
+  contract_version: '1.0'
+  status: ran
+  csv: speaking_v2.csv
+  run_id: v2all_20260905T2343Z_5598
+  assessed_at: '2026-09-05T23:43:11.652Z'
+  appendix_version: '1.0'
+  appendix_sha256: 2f331dbf75749201201c30e6e9280b2293eecc97f7f0683e7fb31295c00b6b8a
+  abstraction_rule_sha256: 05485415fa4887688b8b0b2090e87849c2bbeb7fdce1b268eb99f6bb3bb38dfc
+  inline_appendix: false
+rows:
+  total: 8
+  major_areas_hit: 6
+  sub_areas_hit: 7
+major_areas:
+- major_area: constitutional_governing_competence
+  rows: 1
+  sum_score: 20
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: domestic_policy
+  rows: 1
+  sum_score: 20
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: national_security
+  rows: 1
+  sum_score: 0
+  sub_areas_hit: 1
+  sub_areas_total: 11
+- major_area: policy_wonk
+  rows: 3
+  sum_score: 90
+  sub_areas_hit: 2
+  sub_areas_total: 10
+- major_area: public_speaking
+  rows: 1
+  sum_score: 40
+  sub_areas_hit: 1
+  sub_areas_total: 11
+- major_area: representation_leadership
+  rows: 1
+  sum_score: 35
+  sub_areas_hit: 1
+  sub_areas_total: 10
+major_areas_silent:
+- major_area: anti_corruption
+  reason: no_rows
+- major_area: citizens_rights
+  reason: no_rows
+- major_area: economics
+  reason: no_rows
+- major_area: foreign_policy
+  reason: no_rows
+- major_area: governance_constitutional_law
+  reason: no_rows
+- major_area: great_life_experience
+  reason: no_rows
+- major_area: intellectual_rigor
+  reason: no_rows
+- major_area: loyalty_to_the_usa
+  reason: no_rows
+- major_area: management
+  reason: no_rows
+- major_area: not_controlled_not_influenced
+  reason: no_rows
+- major_area: us_gov_controlled
+  reason: no_rows
+- major_area: we_the_citizens
+  reason: no_rows
+coverage:
+  major_areas_expected: 18
+  major_areas_present: 6
+  major_areas_silent: 12
+  sub_areas_expected: 184
+  sub_areas_hit: 7
+contract_missing:
+- source_kind: posts
+  reason: skip_scaffold
+  detail: 'assess_v2_posts.yaml carries `status: scaffold`; the posts medium has not been calibrated.
+    No posts batch exists for this person either, so nothing of that kind was skipped as work.'
+gaps:
+- kind: no_v1_fold_user_repo_source
+  detail: This source lives in a citizen's User Data Repo and has never been through the v1 sweep, so
+    Stage 0b rung 1 (v1_fold_copied) could not fire. Attribution was resolved by the orchestrator under
+    p_run_v2_contracts.md APPENDIX U §U4.
+- kind: source_not_landed_in_data_repo
+  detail: The words are at /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/pramila_jayapal_wa_07/-_mjL-eQuko,
+    inside the user repo. `user_repo_ingest` has not landed or published them into the data repo, and
+    this run does not land anything.
+- kind: attribution_is_a_guess
+  detail: The identity block carries method `no_diarisation_assumed_single`, is_guess true, confidence
+    medium, superseding `sidecar_dominant_speaker`. The sidecar names nobody; the reading that these are
+    the subject's words rests on the recording being a solo first-person statement. Every row inherits
+    that doubt and every row carries confidence `medium`, the ceiling.
+- kind: diarisation_labels_split_one_voice
+  detail: 'The sidecar''s labels are not a partition of humans on this tape. Speaker changes fall mid-sentence
+    at least twice: L1 ends ''And it is simply insulting that even the so-called'' and L2 (SPEAKER_03)
+    opens ''exceptions that are in this bill are not thought out''; L4 (SPEAKER_03) ends ''how is that
+    at all a solution to'' and L5 (SPEAKER_00) opens ''the lives of the people who defended the United
+    States in Afghanistan?''. L3 and L6 carry no label at all and are mid-sentence fragments (''military
+    to'', ''an honor''). Scored as one voice per the orchestrator''s correction; not re-derived here.'
+- kind: no_sub_area_for_right_to_counsel_at_the_port_of_entry
+  detail: The access-to-counsel legislation is the second of the two instruments she names and no sub
+    area in Appendix A owns it cleanly. See report section 5.

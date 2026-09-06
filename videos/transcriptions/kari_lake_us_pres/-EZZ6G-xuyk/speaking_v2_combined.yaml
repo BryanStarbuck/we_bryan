@@ -1,0 +1,197 @@
+# speaking_v2_combined.yaml — THE FOLD FOR ONE SOURCE.
+# Written by ai/smart_contracts/v2/p_run_v2_contracts.md (user_repo sweep, APPENDIX U)
+# and by nothing else. DERIVED: always rebuilt from speaking_v2.csv, never patched.
+#
+# IT COMPUTES NO AWARD. `rows` is a count and `sum_score` is a raw column sum — both
+# re-derivable from the CSV in one line, which is why they are allowed here. Turning
+# rows into a {qualification, knowledge} pair, and that pair into a Flamingo, is the
+# `speaking_calc` engine's job, in code: pm/calc_engine_speaking.mdx,
+# pm/calc_engine_flamingo.mdx §3.0.
+#
+# A SILENT AREA IS NAMED, NEVER FILLED. An area with no rows is in major_areas_silent[]
+# and never appears as `rows: 0` — on the -100..100 scale 0 is a REAL READING, and an
+# absent reading means we have not heard them on this at all (pm/coverage.mdx).
+
+schema_version: 1
+person_key: kari_lake_us_pres
+politician_key: kari_lake_us_pres
+video_key: -EZZ6G-xuyk
+video_uid: kari_lake_us_pres::-EZZ6G-xuyk
+generated_at: '2026-09-06T04:16:56.450Z'
+run_id: v2all_20260905T2343Z_5598
+subject_attribution:
+  method: not_separable
+  speaker_ids: []
+  share_pct: null
+  is_guess: true
+  confidence: low
+  caveat: This recording carries no speaker labels. The words scored here are read as the subject's on
+    the basis stated in `method`. That reading may be wrong, and every row derived from it inherits that
+    doubt. The labels this recording does carry are an over-clustered diarisation artefact — 20 clusters,
+    top share 38.2% — and are not a partition of humans.
+  subject_person_key: kari_lake_us_pres
+  subject_politician_key: kari_lake_us_pres
+  cluster_count: 20
+  top_cluster_share_pct: 38.2
+  speaker_ids_withheld_note: EMPTY ON PURPOSE. Listing the largest clusters would ASSERT they are the
+    subject's, and on at least one source in this sweep the top cluster is the HOST. On a not_separable
+    resolution nobody knows which clusters are the subject's — that is what the method means — so no row
+    here rests on a speaker label at all.
+  clusters_observed:
+  - SPEAKER_04
+  - SPEAKER_21
+  - SPEAKER_00
+  share_pct_unknown: true
+  share_pct_note: 'UNKNOWN, AND DELIBERATELY NOT A NUMBER. An earlier revision of this sweep carried the
+    largest cluster''s share here as a ''floor''. MEASURED, and it is worse than a blank: on a local-news
+    package this block claimed 49.3% where the subject''s real share of the words is about 1.3%. A floor
+    computed from an over-clustered label set does not bound the subject''s share from below — it invites
+    a downstream reader to believe we heard a great deal of a named living person when we heard a sentence.
+    The cluster statistic is kept below as `top_cluster_share_pct`, which is what it actually is.'
+source:
+  source_kind: transcription
+  source_key: -EZZ6G-xuyk
+  source_dir: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/kari_lake_us_pres/-EZZ6G-xuyk
+  input_file: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/kari_lake_us_pres/-EZZ6G-xuyk/-EZZ6G-xuyk.transcription
+  content_sha256: 76a84bef202dc7f0194a5f14b381c1543f73c500541102e842c30664ce99dc65
+  words: 1180
+  chars: 6452
+  has_sidecar: true
+  lines: 57
+  lines_derived: false
+  evidence_grade: aligned
+  duration_s: 365.58
+contract:
+  source_kind: transcription
+  contract_version: '1.0'
+  status: ran
+  csv: speaking_v2.csv
+  run_id: v2all_20260905T2343Z_5598
+  assessed_at: '2026-09-05T23:43:11.652Z'
+  appendix_version: '1.0'
+  appendix_sha256: 2f331dbf75749201201c30e6e9280b2293eecc97f7f0683e7fb31295c00b6b8a
+  abstraction_rule_sha256: 05485415fa4887688b8b0b2090e87849c2bbeb7fdce1b268eb99f6bb3bb38dfc
+  inline_appendix: false
+rows:
+  total: 11
+  major_areas_hit: 5
+  sub_areas_hit: 11
+major_areas:
+- major_area: constitutional_governing_competence
+  rows: 1
+  sum_score: -80
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: economics
+  rows: 1
+  sum_score: -20
+  sub_areas_hit: 1
+  sub_areas_total: 11
+- major_area: intellectual_rigor
+  rows: 2
+  sum_score: -15
+  sub_areas_hit: 2
+  sub_areas_total: 10
+- major_area: policy_wonk
+  rows: 4
+  sum_score: -130
+  sub_areas_hit: 4
+  sub_areas_total: 10
+- major_area: public_speaking
+  rows: 3
+  sum_score: -70
+  sub_areas_hit: 3
+  sub_areas_total: 11
+major_areas_silent:
+- major_area: anti_corruption
+  reason: no_rows
+- major_area: citizens_rights
+  reason: no_rows
+- major_area: domestic_policy
+  reason: no_rows
+- major_area: foreign_policy
+  reason: no_rows
+- major_area: governance_constitutional_law
+  reason: no_rows
+- major_area: great_life_experience
+  reason: no_rows
+- major_area: loyalty_to_the_usa
+  reason: no_rows
+- major_area: management
+  reason: no_rows
+- major_area: national_security
+  reason: no_rows
+- major_area: not_controlled_not_influenced
+  reason: no_rows
+- major_area: representation_leadership
+  reason: no_rows
+- major_area: us_gov_controlled
+  reason: no_rows
+- major_area: we_the_citizens
+  reason: no_rows
+coverage:
+  major_areas_expected: 18
+  major_areas_present: 5
+  major_areas_silent: 13
+  sub_areas_expected: 184
+  sub_areas_hit: 11
+contract_missing:
+- source_kind: posts
+  reason: skip_scaffold
+  detail: 'assess_v2_posts.yaml carries `status: scaffold`; the posts medium has not been calibrated.
+    No posts batch exists for this person either, so nothing of that kind was skipped as work.'
+gaps:
+- kind: no_v1_fold_user_repo_source
+  detail: This source lives in a citizen's User Data Repo and has never been through the v1 sweep, so
+    Stage 0b rung 1 (v1_fold_copied) could not fire. Attribution was resolved by the orchestrator under
+    p_run_v2_contracts.md APPENDIX U §U4.
+- kind: source_not_landed_in_data_repo
+  detail: The words are at /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/kari_lake_us_pres/-EZZ6G-xuyk,
+    inside the user repo. `user_repo_ingest` has not landed or published them into the data repo, and
+    this run does not land anything.
+- kind: attribution_low_confidence_diarisation_noise
+  detail: 'The subject_attribution block resolves method not_separable at confidence low: 20 speaker clusters
+    with a top share of 38.2%, and the orchestrator measured 45 of 56 label changes (80%) falling mid-sentence.
+    Every row above therefore carries confidence low as a ceiling, and no row rests on a speaker label.
+    Whose words are whose was read from the discourse structure of the piece only: this is a Newsmax interview
+    in which a host asks and a guest answers, and the host closes it by naming the guest - L50, ''Republican
+    Senate candidate Carrie Lake, thank you so much for taking time'' - which is the subject under an
+    ASR spelling of Kari Lake. Only the answers are scored.'
+- kind: played_clip_excluded
+  detail: 'A PLAYED SOUND BITE OF ANOTHER NAMED LIVING PERSON runs from L35 to the first clause of L39
+    and is excluded from every row. The host announces it at L33-L34: ''he calls it operation aurora he
+    brought this up over the last few days i''m to play that sound bite and get your reaction to it.''
+    The clip is Donald Trump: ''will invoke the Alien Enemies Act of 1798 to target and dismantle every
+    migrant criminal network operating on American soil. And we will call it Operation Aurora... it''s
+    an automatic 10 years in jail with no possibility of parole and i''m hereby calling for the death
+    penalty for any migrant that kills an american citizen or law enforcement officer.'' This matters
+    more than an ordinary exclusion: the clip contains THE ONLY NAMED STATUTE ON THE WHOLE TAPE, and a
+    named statute with a named authority is exactly the anchor class that separates the low rungs from
+    +50. Scored as the subject''s it would have lifted the immigration rows by two rungs and published
+    another person''s specificity under her name.'
+- kind: host_lines_excluded
+  detail: 'Host turns excluded and never scored: L1-L2 (opening question about the debate), L12 (question
+    about the Trump rally), L19-L21 (the request to walk through the opponent''s record), L32-L34 (the
+    setup for the sound bite), the second clause of L39 through L41 (the follow-up question), L50 (the
+    wrap and the guest''s name), L54 and L56-L57 (thanks and the outro). L3, L4''s first word ''bit.'',
+    L6, L8, L11, L14, L16, L34, L37, L40, L42, L47 and L52 are one- to three-word label-flip fragments
+    carrying no reading either way.'
+- kind: subject_does_not_speak_does_not_apply
+  detail: 'Stated explicitly because the sweep has hit the opposite case: the subject DOES speak here,
+    and she is the guest, not a third-person reference. Roughly two thirds of the words on the tape are
+    hers, in four sustained answers (L4-L10, L13-L18, L22-L31, L42-L49) plus a closing fundraising ask
+    at L53. Zero rows would have been the wrong result on this source.'
+- kind: catalogue_gap_lived_crime
+  detail: L43-L44 describe a named crime pattern - Tren de Aragua, Chilean burglary crews, 'the dinnertime
+    bandits', a three-and-a-half-year window - and Appendix A has nowhere to put the SUBSTANCE of it.
+    PW0942KW public_safety_statutes says in its own what_it_tests that 'Lived I do not feel safe is not
+    this area' and scores only the federal levers; domestic_policy has no public-safety sub area at all;
+    representation_leadership scores the representation choice, not the crime. The passage was scored
+    only for DELIVERY under PS01OQH0, which means a substantive claim about local crime by a Senate candidate
+    leaves no substantive row anywhere in the catalogue.
+- kind: catalogue_gap_border_as_invasion
+  detail: PW014J8E's what_it_tests routes 'border-as-invasion' to national_security. national_security
+    has eleven sub areas and not one of them covers the border or immigration - they are war powers, Title
+    10/50, nuclear command, procurement, alliances, 702, cyber, civil liberties, economic security, the
+    industrial base and the crisis desk. So 'the Biden invasion' (L48-L49) has a named destination that
+    does not exist, and the framing itself is scored nowhere.

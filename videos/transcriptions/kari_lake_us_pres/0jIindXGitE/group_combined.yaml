@@ -1,0 +1,102 @@
+schema_version: 1
+video_key: 0jIindXGitE
+person_key: kari_lake_us_pres
+politician_key: kari_lake_us_pres
+generated_at: 2026-09-06T03:41:02.071Z
+run_id: grpall_20260905T2336Z_4286
+subject_attribution:
+  subject_person_key: kari_lake_us_pres
+  subject_politician_key: kari_lake_us_pres
+  method: solo_address_labels_unusable
+  speaker_ids: []
+  share_pct: 90
+  is_guess: true
+  confidence: medium
+  caveat: "This recording carries no speaker labels. The words scored here are read as the subject's on the basis stated in `method`. That reading may be wrong, and every row derived from it inherits that doubt."
+source:
+  source_kind: transcription
+  source_key: 0jIindXGitE
+  source_dir: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/kari_lake_us_pres/0jIindXGitE
+  input_file: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/kari_lake_us_pres/0jIindXGitE/0jIindXGitE.transcription
+  content_sha256: 8a491749e5ba0627b5fb8d887f9972efe03a781a4c800b9c813bd638e657693f
+  words: 4159
+  chars: 22391
+  has_sidecar: true
+  lines: 343
+  lines_derived: false
+  evidence_grade: aligned
+  duration_s: 1750.16
+letters:
+  - letter: a
+    group_label: "A — the deep state"
+    contract_version: "1.0"
+    status: ran
+    csv: group_a.csv
+    hits: 5
+    sum_score: 12
+    criteria_total: 21
+    criteria_hit: 4
+    run_id: grp_a_20260905T2336Z_4286
+    assessed_at: 2026-09-05T23:47:24.000Z
+  - letter: g
+    group_label: "G — government propaganda narratives"
+    contract_version: "1.0"
+    status: ran
+    csv: group_g.csv
+    hits: 0
+    sum_score: 0
+    criteria_total: 20
+    criteria_hit: 0
+    run_id: 
+    assessed_at: 
+  - letter: i
+    group_label: "I — prioritizing a foreign country over U.S. citizens"
+    contract_version: "1.0"
+    status: ran
+    csv: group_i.csv
+    hits: 1
+    sum_score: -5
+    criteria_total: 28
+    criteria_hit: 1
+    run_id: grp_i_20260905T2336Z_4286
+    assessed_at: 2026-09-05T23:47:24.000Z
+  - letter: n
+    group_label: "N — neutral"
+    contract_version: "1.0"
+    status: ran
+    csv: group_n.csv
+    hits: 9
+    sum_score: -52
+    criteria_total: 18
+    criteria_hit: 7
+    run_id: grp_n_20260905T2336Z_4286
+    assessed_at: 2026-09-05T23:47:24.000Z
+  - letter: x
+    group_label: "X — advocating past what citizens vote for"
+    contract_version: "1.0"
+    status: ran
+    csv: group_x.csv
+    hits: 0
+    sum_score: 0
+    criteria_total: 17
+    criteria_hit: 0
+    run_id: 
+    assessed_at: 
+letters_missing: []
+coverage:
+  letters_expected: 5
+  letters_present: 5
+  letters_missing: 0
+gaps:
+  - kind: subject_attribution_is_a_declared_guess
+    detail: >
+      Primary-night victory speech. Walk-on music and crowd noise shredded diarization into 66 clusters; the address itself is one voice.
+  - kind: diarization_over_clustered
+    detail: >
+      66 diarization clusters on a 1750s recording; the speaker labels flip mid-sentence and are not usable as speaker identities. Merging clusters to humans is speaker_map's job and no speaker_map exists for this source.
+  - kind: source_lives_in_a_user_repo_not_the_data_repo
+    detail: >
+      This source is in the citizen user repo ~/BGit/Bryan_git/we_bryan and has not been landed into data_we_citizens by the user_repo_ingest calc engine. Nothing was written to the data repo.
+  - kind: person_record_absent_identity_map_assumed
+    detail: >
+      data_we_citizens/people/ holds no PublicPersonSeed for roster record kari_lake_us_pres, so person_key falls back to the roster key per the identity map. A person record is an admin decision and this run may not mint one.

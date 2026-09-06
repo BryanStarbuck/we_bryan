@@ -1,0 +1,175 @@
+# speaking_v2_combined.yaml — THE FOLD FOR ONE SOURCE.
+# Written by ai/smart_contracts/v2/p_run_v2_contracts.md (user_repo sweep, APPENDIX U)
+# and by nothing else. DERIVED: always rebuilt from speaking_v2.csv, never patched.
+#
+# IT COMPUTES NO AWARD. `rows` is a count and `sum_score` is a raw column sum — both
+# re-derivable from the CSV in one line, which is why they are allowed here. Turning
+# rows into a {qualification, knowledge} pair, and that pair into a Flamingo, is the
+# `speaking_calc` engine's job, in code: pm/calc_engine_speaking.mdx,
+# pm/calc_engine_flamingo.mdx §3.0.
+#
+# A SILENT AREA IS NAMED, NEVER FILLED. An area with no rows is in major_areas_silent[]
+# and never appears as `rows: 0` — on the -100..100 scale 0 is a REAL READING, and an
+# absent reading means we have not heard them on this at all (pm/coverage.mdx).
+
+schema_version: 1
+person_key: casey_putsch
+politician_key: casey_putsch_oh_gov
+video_key: -ZOvpUpWQdo
+video_uid: casey_putsch::-ZOvpUpWQdo
+generated_at: '2026-09-06T04:16:55.541Z'
+run_id: v2all_20260905T2343Z_5598
+subject_attribution:
+  method: not_separable
+  speaker_ids: []
+  share_pct: null
+  is_guess: true
+  confidence: low
+  caveat: This recording carries no speaker labels. The words scored here are read as the subject's on
+    the basis stated in `method`. That reading may be wrong, and every row derived from it inherits that
+    doubt. The labels this recording does carry are an over-clustered diarisation artefact — 13 clusters,
+    top share 41.6% — and are not a partition of humans.
+  subject_person_key: casey_putsch
+  subject_politician_key: casey_putsch_oh_gov
+  cluster_count: 13
+  top_cluster_share_pct: 41.6
+  speaker_ids_withheld_note: EMPTY ON PURPOSE. Listing the largest clusters would ASSERT they are the
+    subject's, and on at least one source in this sweep the top cluster is the HOST. On a not_separable
+    resolution nobody knows which clusters are the subject's — that is what the method means — so no row
+    here rests on a speaker label at all.
+  clusters_observed:
+  - SPEAKER_05
+  - SPEAKER_01
+  - SPEAKER_02
+  share_pct_unknown: true
+  share_pct_note: 'UNKNOWN, AND DELIBERATELY NOT A NUMBER. An earlier revision of this sweep carried the
+    largest cluster''s share here as a ''floor''. MEASURED, and it is worse than a blank: on a local-news
+    package this block claimed 49.3% where the subject''s real share of the words is about 1.3%. A floor
+    computed from an over-clustered label set does not bound the subject''s share from below — it invites
+    a downstream reader to believe we heard a great deal of a named living person when we heard a sentence.
+    The cluster statistic is kept below as `top_cluster_share_pct`, which is what it actually is.'
+source:
+  source_kind: transcription
+  source_key: -ZOvpUpWQdo
+  source_dir: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/casey_putsch_oh_gov/-ZOvpUpWQdo
+  input_file: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/casey_putsch_oh_gov/-ZOvpUpWQdo/-ZOvpUpWQdo.transcription
+  content_sha256: 85437491b9a97801ad2165e44acb960f8ff90187fdb7e7d2f1db4f7950c6ae6b
+  words: 2727
+  chars: 14321
+  has_sidecar: true
+  lines: 91
+  lines_derived: false
+  evidence_grade: aligned
+  duration_s: 775.52
+contract:
+  source_kind: transcription
+  contract_version: '1.0'
+  status: ran
+  csv: speaking_v2.csv
+  run_id: v2all_20260905T2343Z_5598
+  assessed_at: '2026-09-05T23:43:11.652Z'
+  appendix_version: '1.0'
+  appendix_sha256: 2f331dbf75749201201c30e6e9280b2293eecc97f7f0683e7fb31295c00b6b8a
+  abstraction_rule_sha256: 05485415fa4887688b8b0b2090e87849c2bbeb7fdce1b268eb99f6bb3bb38dfc
+  inline_appendix: false
+rows:
+  total: 4
+  major_areas_hit: 2
+  sub_areas_hit: 4
+major_areas:
+- major_area: intellectual_rigor
+  rows: 2
+  sum_score: 77
+  sub_areas_hit: 2
+  sub_areas_total: 10
+- major_area: public_speaking
+  rows: 2
+  sum_score: 95
+  sub_areas_hit: 2
+  sub_areas_total: 11
+major_areas_silent:
+- major_area: anti_corruption
+  reason: no_rows
+- major_area: citizens_rights
+  reason: no_rows
+- major_area: constitutional_governing_competence
+  reason: no_rows
+- major_area: domestic_policy
+  reason: no_rows
+- major_area: economics
+  reason: no_rows
+- major_area: foreign_policy
+  reason: no_rows
+- major_area: governance_constitutional_law
+  reason: no_rows
+- major_area: great_life_experience
+  reason: no_rows
+- major_area: loyalty_to_the_usa
+  reason: no_rows
+- major_area: management
+  reason: no_rows
+- major_area: national_security
+  reason: no_rows
+- major_area: not_controlled_not_influenced
+  reason: no_rows
+- major_area: policy_wonk
+  reason: no_rows
+- major_area: representation_leadership
+  reason: no_rows
+- major_area: us_gov_controlled
+  reason: no_rows
+- major_area: we_the_citizens
+  reason: no_rows
+coverage:
+  major_areas_expected: 18
+  major_areas_present: 2
+  major_areas_silent: 16
+  sub_areas_expected: 184
+  sub_areas_hit: 4
+contract_missing:
+- source_kind: posts
+  reason: skip_scaffold
+  detail: 'assess_v2_posts.yaml carries `status: scaffold`; the posts medium has not been calibrated.
+    No posts batch exists for this person either, so nothing of that kind was skipped as work.'
+gaps:
+- kind: no_v1_fold_user_repo_source
+  detail: This source lives in a citizen's User Data Repo and has never been through the v1 sweep, so
+    Stage 0b rung 1 (v1_fold_copied) could not fire. Attribution was resolved by the orchestrator under
+    p_run_v2_contracts.md APPENDIX U §U4.
+- kind: source_not_landed_in_data_repo
+  detail: The words are at /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/casey_putsch_oh_gov/-ZOvpUpWQdo,
+    inside the user repo. `user_repo_ingest` has not landed or published them into the data repo, and
+    this run does not land anything.
+- kind: demand_video_uid_is_roster_scoped
+  detail: transcription.yaml Demand.video_uid is 'casey_putsch_oh_gov::-ZOvpUpWQdo', built from the roster
+    key. video_uid is PERSON-scoped, so this run wrote 'casey_putsch::-ZOvpUpWQdo'. The yaml was not edited.
+- kind: attribution_low
+  detail: 'The subject_attribution block resolves method not_separable, confidence low, speaker_ids empty
+    on purpose. Every row above carries confidence low as a ceiling, per Stage 0.7. Attribution to the
+    subject is made FROM THE CONTENT, not from any label: the recording is a first-person monologue on
+    a channel the speaker names as his own (''Casey''s public service announcement'', ''this channel right
+    now is a 97.5% sausage fest'', ''you should totally subscribe to my channel too''), and the subject
+    of the run is casey_putsch. No row rests on a speaker label.'
+- kind: speaker_labels_are_noise
+  detail: 13 diarisation clusters over a single-voice monologue, 79 of 90 label changes falling mid-sentence.
+    Labels flip inside continuous first-person narration — L70 to L71 splits one sentence ('If you've
+    got like this kind of funny feeling because a woman has a car that you like or admire' / 'and want,
+    don't immediately interpersonally hate on her'). The tape was read as one continuous speaker and the
+    labels were disregarded entirely. The `speaker` column is empty on the three spanned rows for exactly
+    this reason.
+- kind: advertisement_read_excluded
+  detail: 'Two sponsor reads were excluded as not the subject''s evidence about the world. L14-L17, Policy
+    Genius: ''on average, they''re saving their clients $1,250 a year on their home and auto insurance.
+    Basically, how it works is that Policy Genius works as a broker or a marketer.'' That passage carries
+    a mechanism, a dollar figure and a named loser-of-sorts and would otherwise have looked like a scoreable
+    reading of a consumer insurance market; it is read copy and is not scored. L89-L91, Crushproof Tubing,
+    same treatment. Excluding them lowers the subject''s real evidentiary share of this tape by roughly
+    1,300 characters of 14,321.'
+- kind: no_substantive_government_content
+  detail: 'The recording is a car-culture monologue about how strangers directed compliments about a Maserati
+    to the speaker rather than to his wife, who owns it. Nothing in it touches a statute, an authority,
+    a vote, a budget, an office, a district or any instrument of government. Sixteen of the eighteen major
+    areas were walked and produced nothing, which is a fact about this source and not about the person:
+    two rows sit in intellectual_rigor and two in public_speaking, and both of those areas score METHOD
+    and DELIVERY rather than subject matter. No absence here should be read as a silence on economics,
+    foreign policy, anti-corruption or any other area — the tape never approaches them.'

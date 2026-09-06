@@ -1,0 +1,171 @@
+# speaking_v2_combined.yaml — THE FOLD FOR ONE SOURCE.
+# Written by ai/smart_contracts/v2/p_run_v2_contracts.md (user_repo sweep, APPENDIX U)
+# and by nothing else. DERIVED: always rebuilt from speaking_v2.csv, never patched.
+#
+# IT COMPUTES NO AWARD. `rows` is a count and `sum_score` is a raw column sum — both
+# re-derivable from the CSV in one line, which is why they are allowed here. Turning
+# rows into a {qualification, knowledge} pair, and that pair into a Flamingo, is the
+# `speaking_calc` engine's job, in code: pm/calc_engine_speaking.mdx,
+# pm/calc_engine_flamingo.mdx §3.0.
+#
+# A SILENT AREA IS NAMED, NEVER FILLED. An area with no rows is in major_areas_silent[]
+# and never appears as `rows: 0` — on the -100..100 scale 0 is a REAL READING, and an
+# absent reading means we have not heard them on this at all (pm/coverage.mdx).
+
+schema_version: 1
+person_key: ro_khanna
+politician_key: ro_khanna_ca_17
+video_key: -n1yO61yRXY
+video_uid: ro_khanna::-n1yO61yRXY
+generated_at: '2026-09-06T04:01:28.878Z'
+run_id: v2all_20260905T2343Z_5598
+subject_attribution:
+  method: not_separable
+  speaker_ids: []
+  share_pct: null
+  is_guess: true
+  confidence: low
+  caveat: This recording carries no speaker labels. The words scored here are read as the subject's on
+    the basis stated in `method`. That reading may be wrong, and every row derived from it inherits that
+    doubt. The labels this recording does carry are an over-clustered diarisation artefact — 8 clusters,
+    top share 49.3% — and are not a partition of humans.
+  subject_person_key: ro_khanna
+  subject_politician_key: ro_khanna_ca_17
+  cluster_count: 8
+  top_cluster_share_pct: 49.3
+  speaker_ids_withheld_note: EMPTY ON PURPOSE. Listing the largest clusters would ASSERT they are the
+    subject's, and on at least one source in this sweep the top cluster is the HOST. On a not_separable
+    resolution nobody knows which clusters are the subject's — that is what the method means — so no row
+    here rests on a speaker label at all.
+  clusters_observed:
+  - SPEAKER_00
+  - SPEAKER_04
+  - SPEAKER_06
+  share_pct_unknown: true
+  share_pct_note: 'UNKNOWN, AND DELIBERATELY NOT A NUMBER. An earlier revision of this sweep carried the
+    largest cluster''s share here as a ''floor''. MEASURED, and it is worse than a blank: on a local-news
+    package this block claimed 49.3% where the subject''s real share of the words is about 1.3%. A floor
+    computed from an over-clustered label set does not bound the subject''s share from below — it invites
+    a downstream reader to believe we heard a great deal of a named living person when we heard a sentence.
+    The cluster statistic is kept below as `top_cluster_share_pct`, which is what it actually is.'
+source:
+  source_kind: transcription
+  source_key: -n1yO61yRXY
+  source_dir: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/ro_khanna_ca_17/-n1yO61yRXY
+  input_file: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/ro_khanna_ca_17/-n1yO61yRXY/-n1yO61yRXY.transcription
+  content_sha256: 75bb94346c08b103eeffbb1cd0a6388bf7efc7625b7e6235c0979c1384ea9062
+  words: 481
+  chars: 2941
+  has_sidecar: true
+  lines: 23
+  lines_derived: false
+  evidence_grade: aligned
+  duration_s: 182.03
+contract:
+  source_kind: transcription
+  contract_version: '1.0'
+  status: ran
+  csv: speaking_v2.csv
+  run_id: v2all_20260905T2343Z_5598
+  assessed_at: '2026-09-05T23:43:11.652Z'
+  appendix_version: '1.0'
+  appendix_sha256: 2f331dbf75749201201c30e6e9280b2293eecc97f7f0683e7fb31295c00b6b8a
+  abstraction_rule_sha256: 05485415fa4887688b8b0b2090e87849c2bbeb7fdce1b268eb99f6bb3bb38dfc
+  inline_appendix: false
+rows:
+  total: 1
+  major_areas_hit: 1
+  sub_areas_hit: 1
+major_areas:
+- major_area: economics
+  rows: 1
+  sum_score: 15
+  sub_areas_hit: 1
+  sub_areas_total: 11
+major_areas_silent:
+- major_area: anti_corruption
+  reason: no_rows
+- major_area: citizens_rights
+  reason: no_rows
+- major_area: constitutional_governing_competence
+  reason: no_rows
+- major_area: domestic_policy
+  reason: no_rows
+- major_area: foreign_policy
+  reason: no_rows
+- major_area: governance_constitutional_law
+  reason: no_rows
+- major_area: great_life_experience
+  reason: no_rows
+- major_area: intellectual_rigor
+  reason: no_rows
+- major_area: loyalty_to_the_usa
+  reason: no_rows
+- major_area: management
+  reason: no_rows
+- major_area: national_security
+  reason: no_rows
+- major_area: not_controlled_not_influenced
+  reason: no_rows
+- major_area: policy_wonk
+  reason: no_rows
+- major_area: public_speaking
+  reason: no_rows
+- major_area: representation_leadership
+  reason: no_rows
+- major_area: us_gov_controlled
+  reason: no_rows
+- major_area: we_the_citizens
+  reason: no_rows
+coverage:
+  major_areas_expected: 18
+  major_areas_present: 1
+  major_areas_silent: 17
+  sub_areas_expected: 184
+  sub_areas_hit: 1
+contract_missing:
+- source_kind: posts
+  reason: skip_scaffold
+  detail: 'assess_v2_posts.yaml carries `status: scaffold`; the posts medium has not been calibrated.
+    No posts batch exists for this person either, so nothing of that kind was skipped as work.'
+gaps:
+- kind: no_v1_fold_user_repo_source
+  detail: This source lives in a citizen's User Data Repo and has never been through the v1 sweep, so
+    Stage 0b rung 1 (v1_fold_copied) could not fire. Attribution was resolved by the orchestrator under
+    p_run_v2_contracts.md APPENDIX U §U4.
+- kind: source_not_landed_in_data_repo
+  detail: The words are at /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/ro_khanna_ca_17/-n1yO61yRXY,
+    inside the user repo. `user_repo_ingest` has not landed or published them into the data repo, and
+    this run does not land anything.
+- kind: demand_video_uid_is_roster_scoped
+  detail: transcription.yaml Demand.video_uid is 'ro_khanna_ca_17::-n1yO61yRXY', built from the roster
+    key. video_uid is PERSON-scoped, so this run wrote 'ro_khanna::-n1yO61yRXY'. The yaml was not edited.
+- kind: subject_barely_speaks
+  detail: 'The source is a 3-minute KRON4 local-news package, not an interview with the subject. Of 23
+    transcription lines the subject speaks two soundbites totalling about 14 seconds and 39 words of a
+    481-word transcript: L20-L21 (''The wildfire issue isn''t going away, especially with climate change
+    as temperatures get hotter and the air is drier.'') and L23 (''It''s really devastating. And there
+    are times in Silicon Valley where we''ve gotten up and walked out and it''s covered with smoke.'').
+    Everything else is the anchor (L1-L6), the Washington correspondent''s narration (L7, L9, L11, L15,
+    L17, L19, L22), Agriculture Secretary Tom Vilsack (L8, L10, L18), and two other interviewees (L14,
+    L16). The subject is also referred to in the THIRD PERSON twice by the reporter (''California Congressman
+    Ro Khanna wants to do that.'' L19; ''Khanna says people can feel the impacts, even far from the flames.''
+    L22). He is on this tape, but this is a poor source for assessing him and the low row count is a fact
+    about the recording, not about him.'
+- kind: speaker_labels_unreliable
+  detail: 'The sidecar''s labels are an over-clustered diarisation artefact and were not used to decide
+    whose words these are. The single sentence ''The wildfire issue / isn''t going away...'' is torn across
+    two different labels (L20 SPEAKER_02, which elsewhere on this tape carries Secretary Vilsack''s soundbites,
+    and L21 SPEAKER_15). Attribution was taken from the discourse structure instead: the reporter''s third-person
+    introduction at L19 and L22 is immediately followed by a first-person soundbite, and the content of
+    L23 (''Silicon Valley... we''ve'') matches the subject''s own district. Because L20 and L21 disagree
+    with themselves on the label, the row''s `speaker` column is correctly empty. The attribution block
+    was NOT re-derived and was not rewritten.'
+- kind: no_sub_area_for_wildfire_or_disaster_policy
+  detail: Appendix A's 184 sub areas have no home for wildfire, forest management or climate adaptation
+    as a policy subject. Climate appears only as one leaf title inside EC10H2L6 (growth, demographics
+    and long-run civilization economics), which is where the one row had to be routed; DP099P6D is the
+    electricity bill and reliability, DP10EH8V is permitting clocks, and RL08CCI6 (crisis representation)
+    requires a named decision sequence — Stafford, the Governor's request — that this soundbite never
+    begins. A member of Congress talking about prescribed burns, fuel loads, federal fire appropriations
+    and who is exposed to the smoke has no natural sub area to land in.

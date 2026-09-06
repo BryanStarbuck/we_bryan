@@ -1,0 +1,190 @@
+# speaking_v2_combined.yaml — THE FOLD FOR ONE SOURCE.
+# Written by ai/smart_contracts/v2/p_run_v2_contracts.md (user_repo sweep, APPENDIX U)
+# and by nothing else. DERIVED: always rebuilt from speaking_v2.csv, never patched.
+#
+# IT COMPUTES NO AWARD. `rows` is a count and `sum_score` is a raw column sum — both
+# re-derivable from the CSV in one line, which is why they are allowed here. Turning
+# rows into a {qualification, knowledge} pair, and that pair into a Flamingo, is the
+# `speaking_calc` engine's job, in code: pm/calc_engine_speaking.mdx,
+# pm/calc_engine_flamingo.mdx §3.0.
+#
+# A SILENT AREA IS NAMED, NEVER FILLED. An area with no rows is in major_areas_silent[]
+# and never appears as `rows: 0` — on the -100..100 scale 0 is a REAL READING, and an
+# absent reading means we have not heard them on this at all (pm/coverage.mdx).
+
+schema_version: 1
+person_key: tucker_carlson
+politician_key: tucker_carlson_us_pres
+video_key: 1cbw1utqzHg
+video_uid: tucker_carlson::1cbw1utqzHg
+generated_at: '2026-09-06T04:19:27.473Z'
+run_id: v2all_20260905T2343Z_5598
+subject_attribution:
+  method: manifest_declared_speaker_map
+  speaker_ids:
+  - SPEAKER_00
+  share_pct: 42.8
+  is_guess: false
+  confidence: high
+  subject_person_key: tucker_carlson
+  subject_politician_key: tucker_carlson_us_pres
+  cluster_count: 3
+  top_cluster_share_pct: 54.8
+source:
+  source_kind: transcription
+  source_key: 1cbw1utqzHg
+  source_dir: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/tucker/joe_kent
+  input_file: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/tucker/joe_kent/1cbw1utqzHg.transcription
+  content_sha256: 43201be4e1a85af110ceabadfae2b6ee9236c84bf594d4e5e3b90ed313621e18
+  words: 24112
+  chars: 132335
+  has_sidecar: true
+  lines: 848
+  lines_derived: false
+  evidence_grade: aligned
+  duration_s: 7537.69
+contract:
+  source_kind: transcription
+  contract_version: '1.0'
+  status: ran
+  csv: speaking_v2.csv
+  run_id: v2all_20260905T2343Z_5598
+  assessed_at: '2026-09-05T23:43:11.652Z'
+  appendix_version: '1.0'
+  appendix_sha256: 2f331dbf75749201201c30e6e9280b2293eecc97f7f0683e7fb31295c00b6b8a
+  abstraction_rule_sha256: 05485415fa4887688b8b0b2090e87849c2bbeb7fdce1b268eb99f6bb3bb38dfc
+  inline_appendix: false
+rows:
+  total: 35
+  major_areas_hit: 11
+  sub_areas_hit: 23
+major_areas:
+- major_area: anti_corruption
+  rows: 6
+  sum_score: 305
+  sub_areas_hit: 5
+  sub_areas_total: 10
+- major_area: constitutional_governing_competence
+  rows: 2
+  sum_score: 90
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: economics
+  rows: 1
+  sum_score: 40
+  sub_areas_hit: 1
+  sub_areas_total: 11
+- major_area: foreign_policy
+  rows: 1
+  sum_score: 35
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: intellectual_rigor
+  rows: 13
+  sum_score: 385
+  sub_areas_hit: 6
+  sub_areas_total: 10
+- major_area: loyalty_to_the_usa
+  rows: 2
+  sum_score: 90
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: national_security
+  rows: 1
+  sum_score: 25
+  sub_areas_hit: 1
+  sub_areas_total: 11
+- major_area: not_controlled_not_influenced
+  rows: 1
+  sum_score: 50
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: representation_leadership
+  rows: 1
+  sum_score: 50
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: us_gov_controlled
+  rows: 6
+  sum_score: 215
+  sub_areas_hit: 4
+  sub_areas_total: 10
+- major_area: we_the_citizens
+  rows: 1
+  sum_score: 35
+  sub_areas_hit: 1
+  sub_areas_total: 10
+major_areas_silent:
+- major_area: citizens_rights
+  reason: no_rows
+- major_area: domestic_policy
+  reason: no_rows
+- major_area: governance_constitutional_law
+  reason: no_rows
+- major_area: great_life_experience
+  reason: no_rows
+- major_area: management
+  reason: no_rows
+- major_area: policy_wonk
+  reason: no_rows
+- major_area: public_speaking
+  reason: no_rows
+coverage:
+  major_areas_expected: 18
+  major_areas_present: 11
+  major_areas_silent: 7
+  sub_areas_expected: 184
+  sub_areas_hit: 23
+contract_missing:
+- source_kind: posts
+  reason: skip_scaffold
+  detail: 'assess_v2_posts.yaml carries `status: scaffold`; the posts medium has not been calibrated.
+    No posts batch exists for this person either, so nothing of that kind was skipped as work.'
+gaps:
+- kind: no_v1_fold_user_repo_source
+  detail: This source lives in a citizen's User Data Repo and has never been through the v1 sweep, so
+    Stage 0b rung 1 (v1_fold_copied) could not fire. Attribution was resolved by the orchestrator under
+    p_run_v2_contracts.md APPENDIX U §U4.
+- kind: source_not_landed_in_data_repo
+  detail: The words are at /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/tucker/joe_kent,
+    inside the user repo. `user_repo_ingest` has not landed or published them into the data repo, and
+    this run does not land anything.
+- kind: legacy_layout_not_migrated
+  detail: The source directory's basename is 'joe_kent', not the VIDEO_KEY '1cbw1utqzHg'. A user repo
+    is organised for a human, so a directory may be named for the show and its child for a person. SERVED
+    WHERE IT LIES AND NOT MOVED (p_run_v2_contracts.md APPENDIX U §U6); the video key comes from the manifest
+    and the filenames, never from the directory name. Note the deepest segment here names the GUEST and
+    the subject of this source is the HOST.
+- kind: speaker_label_bleed
+  detail: 'Diarisation labels on this sidecar are noise at the sentence level: SPEAKER_00 lines repeatedly
+    carry the guest''s fragments (L190 ''- So I appreciate this.'', L219 ''- NCO and Warrant Officer.'',
+    L229 ''That''s fair. Yeah.'', L292 ''president.'' completing the guest''s sentence, L350 ''- Right.
+    - Okay.'', L357 which is the tail of the guest''s sentence, L530 ''- It''s dangerous, yeah, yeah,
+    yeah.'', L846 ''Thank you, Tucker''), and SPEAKER_01 lines carry the subject''s (L234 ''And we gave
+    him the Nobel Peace Prize?'', L265 ''Well, okay. Right, of course.'', L267 ''you.'' completing the
+    subject''s sentence). 224 of the 848 lines carry no speaker label at all. I attributed from the discourse
+    structure of an interview rather than from the label, and every quote written sits wholly inside the
+    subject''s own words; where a sentence straddled a boundary (L266) I cut the quote at the boundary
+    and said so in the rationale. I did not re-derive or rewrite the attribution block.'
+- kind: third_party_audio_inside_subject_cluster
+  detail: L202, labelled SPEAKER_01, is not the guest at all — it is the played clip of Secretary of State
+    Marco Rubio. L4 is the played January 2024 clip of Joe Kent. Neither is scoreable for anyone, and
+    no row cites either; the rows at L198-200 and L204 score only the subject's own framing and parsing
+    of the Rubio clip.
+- kind: read_aloud_sponsor_scripts_excluded
+  detail: 'Four advertising reads sit inside the subject''s lines and were excluded as read-aloud sponsor
+    copy rather than his own evidence: L208-L210 (Ethos life insurance), L257 (Audion hearing aids), L327-L333
+    (Dutch Pet), L411-L417 (Joy & Blokes). Together they are roughly six minutes of SPEAKER_00 speech.
+    Excluding them lowers the subject''s effective share below the 42.8 percent in the attribution block.'
+- kind: another_persons_text_read_aloud_excluded
+  detail: L452-L454 is the subject reading the guest's resignation letter aloud, verbatim, including the
+    passage about a misinformation campaign and the Iraq war. It is another person's written text in the
+    subject's mouth and no row cites it. Where he later adopted parts of that argument in his own words
+    (L456-L460, L536, L540) those passages are scored instead.
+- kind: guest_material_withheld_from_the_subject
+  detail: 'Large stretches of the substantive argument on this tape belong to the guest and are not scored:
+    the escalation-ladder account of Iranian behaviour, the fatwa and enrichment timeline, the information-laundering
+    ecosystem, the NCTC investigation of the Kirk killing, and the whole proposed exit plan. Where the
+    subject only restated the guest''s point back as a question (L310, L400-L402), the row is scored low
+    and the rationale says the mechanism came from the other speaker; where he added nothing of his own,
+    no row was written.'

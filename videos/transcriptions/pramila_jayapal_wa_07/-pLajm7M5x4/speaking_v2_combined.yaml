@@ -1,0 +1,175 @@
+# speaking_v2_combined.yaml — THE FOLD FOR ONE SOURCE.
+# Written by ai/smart_contracts/v2/p_run_v2_contracts.md (user_repo sweep, APPENDIX U)
+# and by nothing else. DERIVED: always rebuilt from speaking_v2.csv, never patched.
+#
+# IT COMPUTES NO AWARD. `rows` is a count and `sum_score` is a raw column sum — both
+# re-derivable from the CSV in one line, which is why they are allowed here. Turning
+# rows into a {qualification, knowledge} pair, and that pair into a Flamingo, is the
+# `speaking_calc` engine's job, in code: pm/calc_engine_speaking.mdx,
+# pm/calc_engine_flamingo.mdx §3.0.
+#
+# A SILENT AREA IS NAMED, NEVER FILLED. An area with no rows is in major_areas_silent[]
+# and never appears as `rows: 0` — on the -100..100 scale 0 is a REAL READING, and an
+# absent reading means we have not heard them on this at all (pm/coverage.mdx).
+
+schema_version: 1
+person_key: pramila_jayapal_wa_07
+politician_key: pramila_jayapal_wa_07
+video_key: -pLajm7M5x4
+video_uid: pramila_jayapal_wa_07::-pLajm7M5x4
+generated_at: '2026-09-06T04:05:37.898Z'
+run_id: v2all_20260905T2343Z_5598
+subject_attribution:
+  method: not_separable
+  speaker_ids: []
+  share_pct: null
+  is_guess: true
+  confidence: low
+  caveat: This recording carries no speaker labels. The words scored here are read as the subject's on
+    the basis stated in `method`. That reading may be wrong, and every row derived from it inherits that
+    doubt. The labels this recording does carry are an over-clustered diarisation artefact — 22 clusters,
+    top share 27.6% — and are not a partition of humans.
+  subject_person_key: pramila_jayapal_wa_07
+  subject_politician_key: pramila_jayapal_wa_07
+  cluster_count: 22
+  top_cluster_share_pct: 27.6
+  speaker_ids_withheld_note: EMPTY ON PURPOSE. Listing the largest clusters would ASSERT they are the
+    subject's, and on at least one source in this sweep the top cluster is the HOST. On a not_separable
+    resolution nobody knows which clusters are the subject's — that is what the method means — so no row
+    here rests on a speaker label at all.
+  clusters_observed:
+  - SPEAKER_04
+  - SPEAKER_18
+  - SPEAKER_01
+  share_pct_unknown: true
+  share_pct_note: 'UNKNOWN, AND DELIBERATELY NOT A NUMBER. An earlier revision of this sweep carried the
+    largest cluster''s share here as a ''floor''. MEASURED, and it is worse than a blank: on a local-news
+    package this block claimed 49.3% where the subject''s real share of the words is about 1.3%. A floor
+    computed from an over-clustered label set does not bound the subject''s share from below — it invites
+    a downstream reader to believe we heard a great deal of a named living person when we heard a sentence.
+    The cluster statistic is kept below as `top_cluster_share_pct`, which is what it actually is.'
+source:
+  source_kind: transcription
+  source_key: -pLajm7M5x4
+  source_dir: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/pramila_jayapal_wa_07/-pLajm7M5x4
+  input_file: /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/pramila_jayapal_wa_07/-pLajm7M5x4/-pLajm7M5x4.transcription
+  content_sha256: 48f6ee6385d1b06e5a28b6424d414285540de731432f4863c5ada96d3646e16a
+  words: 1687
+  chars: 9636
+  has_sidecar: true
+  lines: 74
+  lines_derived: false
+  evidence_grade: aligned
+  duration_s: 533.21
+contract:
+  source_kind: transcription
+  contract_version: '1.0'
+  status: ran
+  csv: speaking_v2.csv
+  run_id: v2all_20260905T2343Z_5598
+  assessed_at: '2026-09-05T23:43:11.652Z'
+  appendix_version: '1.0'
+  appendix_sha256: 2f331dbf75749201201c30e6e9280b2293eecc97f7f0683e7fb31295c00b6b8a
+  abstraction_rule_sha256: 05485415fa4887688b8b0b2090e87849c2bbeb7fdce1b268eb99f6bb3bb38dfc
+  inline_appendix: false
+rows:
+  total: 7
+  major_areas_hit: 4
+  sub_areas_hit: 5
+major_areas:
+- major_area: anti_corruption
+  rows: 1
+  sum_score: 40
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: constitutional_governing_competence
+  rows: 3
+  sum_score: 110
+  sub_areas_hit: 1
+  sub_areas_total: 10
+- major_area: intellectual_rigor
+  rows: 2
+  sum_score: 65
+  sub_areas_hit: 2
+  sub_areas_total: 10
+- major_area: public_speaking
+  rows: 1
+  sum_score: 40
+  sub_areas_hit: 1
+  sub_areas_total: 11
+major_areas_silent:
+- major_area: citizens_rights
+  reason: no_rows
+- major_area: domestic_policy
+  reason: no_rows
+- major_area: economics
+  reason: no_rows
+- major_area: foreign_policy
+  reason: no_rows
+- major_area: governance_constitutional_law
+  reason: no_rows
+- major_area: great_life_experience
+  reason: no_rows
+- major_area: loyalty_to_the_usa
+  reason: no_rows
+- major_area: management
+  reason: no_rows
+- major_area: national_security
+  reason: no_rows
+- major_area: not_controlled_not_influenced
+  reason: no_rows
+- major_area: policy_wonk
+  reason: no_rows
+- major_area: representation_leadership
+  reason: no_rows
+- major_area: us_gov_controlled
+  reason: no_rows
+- major_area: we_the_citizens
+  reason: no_rows
+coverage:
+  major_areas_expected: 18
+  major_areas_present: 4
+  major_areas_silent: 14
+  sub_areas_expected: 184
+  sub_areas_hit: 5
+contract_missing:
+- source_kind: posts
+  reason: skip_scaffold
+  detail: 'assess_v2_posts.yaml carries `status: scaffold`; the posts medium has not been calibrated.
+    No posts batch exists for this person either, so nothing of that kind was skipped as work.'
+gaps:
+- kind: no_v1_fold_user_repo_source
+  detail: This source lives in a citizen's User Data Repo and has never been through the v1 sweep, so
+    Stage 0b rung 1 (v1_fold_copied) could not fire. Attribution was resolved by the orchestrator under
+    p_run_v2_contracts.md APPENDIX U §U4.
+- kind: source_not_landed_in_data_repo
+  detail: The words are at /Users/bryanstarbuck/BGit/Bryan_git/we_bryan/videos/transcriptions/pramila_jayapal_wa_07/-pLajm7M5x4,
+    inside the user repo. `user_repo_ingest` has not landed or published them into the data repo, and
+    this run does not land anything.
+- kind: speaker_labels_unreliable
+  detail: 'The orchestrator measured 57 of 73 speaker-label changes (78%) falling mid-sentence, over 22
+    clusters with a 27.6% top share. No row here rests on a speaker label. Whose words are whose was read
+    from the discourse structure of a CNN two-guest panel: the host introduces both members by name and
+    party at L2, addresses ''Congresswoman'' at L2 and L69 and ''Congressman Banks'' at L15 and L52, and
+    the answers follow. The subject IS on this tape and speaks at length -- this is not a package about
+    her.'
+- kind: played_clip_excluded
+  detail: 'L45-L50 is a PLAYED CLIP of President Trump''s campaign remarks about people taking the Fifth
+    Amendment, introduced by the host at L43-L44: ''this is what President Trump said during the campaign
+    about those who take the fifth let''s listen''. The clip runs ''here''s people taking the Fifth Amendment
+    ... four people plus the guy who illegally did the server ... like you see on the mob, right? ...
+    If you''re innocent, why are you taking the Fifth Amendment?'' Those are a third party''s words played
+    into the room. NO ROW, and they are not the subject''s evidence in either direction.'
+- kind: other_speaker_excluded
+  detail: 'Rep. Jim Banks (R-IN), the second guest, holds L17-L23, L29, L53-L57, L64 and L68 -- every
+    ''allow the investigations to work their way through the process'' passage, the Flynn Fifth Amendment
+    answer, and the ''distraction from our ability to do that'' answer, which is the sentence the subject
+    later argues against at L71. Attribution is from content, not labels: L64 answers a question expressly
+    about ''your own caucus'' put to the Republican, and L37''s ''we can''t afford to wait'' contradicts
+    Banks''s stated position in the same breath. The host holds L1-L4, L7-L8, L15-L16, L24-L28, L30-L36
+    (first clause), L41-L44, L51-L52, L56, L58-L63, L65-L67 and L69. NO ROWS for any of it.'
+- kind: host_words_inside_a_line
+  detail: L36 begins with the host's 'going to work?' and only then turns to the subject's 'It is a challenging
+    situation. We saw just a tiny hint of it when Rod Rosenstein came'. No span starts at L36, because
+    a span containing a host's sentence puts another person's words into line_text. The subject's answer
+    is therefore cited from L37, and the loss is the four opening words of it.
