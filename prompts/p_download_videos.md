@@ -114,6 +114,14 @@ MEDIA_FILE is RESOLVED PER VIDEO, in STAGE 2.3 or STAGE 4
     assumed to be under {VIDEO_DOWNLOAD_ROOT}: a video found in the legacy root is
     transcribed in place. Every later stage refers to this, never to a rebuilt path.
 
+STAGE_DIR is {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/out/, PER VIDEO
+  * Where the CLI writes its nine output files (STAGE 6.2). OUTSIDE every repo.
+  * A transcription takes minutes to hours. Writing it straight into
+    {TRANSCRIPTIONS_ROOT} leaves a half-finished directory inside the repo for that
+    whole window, where the auto-committer of STAGE 9.4 can and does commit it.
+    Staging outside and moving in on success (STAGE 7.1) costs one rename.
+  * On failure it stays exactly where it is, beside the media, as the evidence.
+
 MEDIA_ROOTS is the ordered list [{VIDEO_DOWNLOAD_ROOT}, {VIDEO_DOWNLOAD_ROOT_LEGACY}]
   * Searched in this order whenever the question is "does this machine already hold
     the media for {roster_key}/{video_key}?".
@@ -130,8 +138,14 @@ MANIFEST_FILE is file {ROOT_DIR}/user_repo.yaml
     INVISIBLE to the movement's scanner. See STAGE 8 and APPENDIX C.
 
 SIDECAR_TOOL is file {ROOT_DIR}/tools/wtc_sidecar.py
-  * The CHECKED-IN builder and verifier for transcription.yaml. Stage 7 calls it;
-    Stage 7.5 gates on it. It is committed code with a test beside it
+  * The CHECKED-IN builder and verifier for transcription.yaml. Three verbs:
+      seed    {roster_key}/{video_key}   Stage 3.2. Snapshots the demand row BESIDE
+                                         THE MEDIA, outside every repo. It refuses
+                                         to write under {TRANSCRIPTIONS_ROOT}.
+      write   {roster_key}/{video_key}   Stage 7.1. Creates the repo directory and
+                                         writes the complete sidecar, merging every
+                                         hand-written field already there.
+      verify  --all                      Stage 7.5. The gate. It is committed code with a test beside it
     ({ROOT_DIR}/tools/test_wtc_sidecar.py) precisely so this prompt never has to
     describe a schema that nothing implements.
   * WHY IT EXISTS: before it, the writer was improvised in /tmp on every run. The
@@ -208,10 +222,18 @@ HARD RULES — VIOLATING ANY OF THESE FAILS THE RUN
 * NEVER write application code into {WTC_REPO}. `just build` and `just run` are the
   only things this prompt does there.
 
-* NEVER commit a PARTIAL or FAILED transcription into {ROOT_DIR}. A failed
-  transcription's artefacts move OUT of the repo and next to the video (STAGE 7.4).
-  A half-written directory in the repo is worse than an absent one: the scanner
-  cannot tell it from a complete one.
+* NEVER PUT A PARTIAL OR FAILED TRANSCRIPTION INTO {ROOT_DIR} — and the way to
+  honour that is to never write it there in the first place, not to write it and
+  clean up afterwards. Nothing enters {TRANSCRIPTIONS_ROOT} until the words exist
+  (STAGE 3, STAGE 7.1); a failed transcription's artefacts are written beside the
+  video, outside every repo (STAGE 7.4). A half-written directory in the repo is
+  worse than an absent one: the scanner cannot tell it from a complete one.
+
+* NEVER DELETE A TRANSCRIPT OR A TRACKED FILE UNDER {ROOT_DIR}. "Clean up the
+  partial" is how fifteen committed transcription.yaml files were destroyed on
+  2026-09-07. If a path under {TRANSCRIPTIONS_ROOT} is tracked by git, or holds a
+  {video_key}.transcription, it is not this run's to remove — whatever state it is
+  in. STAGE 7.4a is the guard and it is two commands.
 
 * NEVER download in violation of a site's Terms of Service. If a URL cannot be
   fetched lawfully, skip it, record the reason in {RUN_LOG}, and move on.
@@ -392,6 +414,15 @@ Walk the chosen traversal and, for each row, skip it if ANY of these is true:
   * {MANIFEST_FILE} already lists that video_key.
   * The row is marked unobtainable, satisfied, or carries a closed_reason.
 
+A DIRECTORY IS NOT A TRANSCRIPT. The test above is for {video_key}.transcription
+and it is deliberately not "does the directory exist": runs before Stage 3 was
+fixed left seed-only directories holding a stub transcription.yaml and no words,
+and treating those as done would skip a video the movement is still waiting for.
+Such a directory is neither a skip nor an error. Note it on the row, work the video
+normally, and let Stage 7.1 overwrite the stub with the real record — the tool
+merges, so anything a human wrote into that stub survives. List them in Stage 10;
+Stage 7.4b says when one may be cleared and when it must be left alone.
+
 Do NOT skip a row merely because the media is on disk. Media without words is work
 still to do. Instead, resolve it now and carry it forward:
 
@@ -447,39 +478,67 @@ Status brackets used through the rest of this run:
 
 
 ====================================================================
-STAGE 3 — CREATE THE DESTINATION AND SEED transcription.yaml
+STAGE 3 — SEED THE DEMAND ROW, OUTSIDE THE REPO
 ====================================================================
 
-For each selected video, before downloading anything:
+THE ONE RULE THIS STAGE EXISTS TO ENFORCE:
 
-3.1 CREATE THE DIRECTORIES
+        NOTHING IS WRITTEN INTO {TRANSCRIPTIONS_ROOT} UNTIL THE WORDS EXIST.
 
-  * {TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/
+Not a directory, not a .gitkeep, not a stub transcription.yaml. Stage 7.1 creates
+the directory and writes the sidecar in one step, when there is a complete record
+to put there. Until then this run leaves no trace inside {ROOT_DIR}.
+
+WHY, AND IT IS NOT HYPOTHETICAL. This stage used to seed a stub transcription.yaml
+into the repo before the download. On 2026-09-07 that produced this sequence:
+
+  1. Twenty stubs were seeded into {TRANSCRIPTIONS_ROOT}. Each held Video.URL,
+     Video_ID and a partial Demand block — sixteen lines, no words.
+  2. The external auto-committer (Stage 9.4, commits titled "Bryan 26 Tower")
+     swept mid-run and COMMITTED FIFTEEN OF THEM. It knows nothing about this
+     prompt and nothing here can stop it.
+  3. The app on :9333 would not stay up and those fifteen transcriptions failed.
+  4. Stage 7.4 did what it is told — "a failed transcription leaves NOTHING behind
+     in {ROOT_DIR}" — and removed the directories.
+  5. Fifteen committed transcription.yaml files were therefore DELETED from the
+     repo (901615a created them, d4452fa removed them), which reads in the history
+     as this pipeline destroying its own sidecars.
+
+Every step of that was individually correct. The mistake was upstream of all of
+them: a file that had not earned its place in the repo was put in the repo, and
+from that moment every later rule had to choose between committing a partial
+transcript and deleting a tracked file. Do not recreate that choice.
+
+3.1 CREATE ONLY THE MEDIA DIRECTORY
+
   * {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/ — ONLY when this run is going to
     download. A video already on disk keeps the directory it is already in.
+  * DO NOT create {TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/. Stage 7.1 does,
+    on success, and nothing else does.
   * The directory name IS the video_key from the CSV, byte for byte. Not a title,
     not a slug, not a guest's name. The video_key is the join key everywhere else in
     this product and a directory named anything else is invisible to every reader.
 
-3.2 SEED transcription.yaml
+3.2 SNAPSHOT THE DEMAND ROW BESIDE THE MEDIA
 
-Write {TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/transcription.yaml with
-everything KNOWN AT THIS POINT — the schema is APPENDIX D.
+        python3 {SIDECAR_TOOL} seed {roster_key}/{video_key}
 
-At seed time that is: Video.URL, Video.Video_ID, Video.Title (only if the CSV, a
-legacy {video_key}.video.yaml or an existing .info.json gives one — otherwise leave
-it out entirely), and the Demand block carrying the row this video came from.
+That writes {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/{video_key}.demand.yaml
+— outside every repo, beside the media it belongs to.
 
-Rules for this file, and they hold at every stage that touches it:
+This is not a placeholder standing in for the sidecar. It does a job nothing else
+does: {VIDEO_DEMAND_CSV} IS REGENERATED EVERY ENGINE RUN, so by the time a
+twenty-video batch reaches Stage 7 the row it was selected from may carry a
+different priority, a different status, or be gone. The seed is what that row
+actually said when the work started, and Stage 7.1 falls back to it when the live
+CSV no longer has the row.
 
-  * ABSENT IS ABSENT. A field whose value is not yet known is OMITTED. Never write
-    "unknown", "", "TBD" or 0 as a placeholder — a zero read later is a measurement,
-    and it will be believed.
-  * The schema is EXPANDABLE. If this run learns a fact that APPENDIX D has no field
-    for, add a field for it rather than dropping the fact, and say in the run report
-    which field was added so the schema can be folded back into the appendix.
-  * Every property the server side needs to reconnect this transcript to its demand
-    row must survive into this file. That is what the Demand block is for.
+  * If the seed cannot be written, LOG IT AND CARRY ON. It is a debugging aid and a
+    fallback, not a gate. A run must never fail because a scratch directory was
+    not writable.
+  * If {SIDECAR_TOOL} reports no row for {roster_key}::{video_key}, that is a
+    SELECTION bug, not a seed bug — Stage 2 chose a row that is not in the CSV.
+    Drop the video, log it, and say so in Stage 10.
 
 
 ====================================================================
@@ -549,9 +608,12 @@ Run `which yt-dlp` and `which ffmpeg` and `which ffprobe`.
     full-video run may hold a .mkv or .mp4 plus its pre-merge parts (.f136.mp4,
     .f251.webm). Those still transcribe fine and Stage 2.3 still finds them. Only
     the merged file is MEDIA_FILE — never a .fNNN part.
-  * A download that fails: log the reason in {RUN_LOG}, mark the row [FAIL ], delete
-    the seeded {TRANSCRIPTIONS_ROOT} directory for that video so nothing partial is
-    left in the repo, and move to the next video. One bad URL never stops a run.
+  * A download that fails: log the reason in {RUN_LOG}, mark the row [FAIL ], and
+    move to the next video. One bad URL never stops a run.
+    THERE IS NOTHING TO DELETE. Stage 3 wrote nothing into {ROOT_DIR}, so a failed
+    download leaves the repo exactly as it found it. If you find yourself about to
+    remove a path under {TRANSCRIPTIONS_ROOT} here, STOP — that path was not made
+    by this run, and Stage 7.4's guard applies.
 
 4.3 SET MEDIA_FILE — NO RENAME, NO RE-ENCODE
 
@@ -748,20 +810,34 @@ answer for twenty long-form interviews — say hours when it is hours.
 If the estimate exceeds 3 hours, print Z21 and ask whether to continue, reduce
 VIDEO_COUNT, or stop. Do not start a multi-hour run nobody agreed to.
 
-6.2 THE COMMAND
+6.2 THE COMMAND — --out IS A STAGING DIRECTORY, NOT THE REPO
 
 For each video, one call. Every path is ABSOLUTE — `just citizens` changes directory
 before it runs, so a relative --out lands somewhere nobody asked for. The input is
 MEDIA_FILE as resolved in Stage 2.3 or Stage 4, which may be under EITHER media root;
 it is never assumed to be under {VIDEO_DOWNLOAD_ROOT}.
 
+STAGE_DIR is {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/out/
+  * Outside every repo, beside the media and the Stage 3.2 seed.
+  * `mkdir -p` it before the call.
+
         {CITIZENS_CLI} transcribe "{MEDIA_FILE}" \
           --create \
           --local \
-          --out "{TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}" \
+          --out "{STAGE_DIR}" \
           --name "{video_key}" \
           --also rttm,ctm \
           --media-url "https://www.youtube.com/watch?v={youtube_id}"
+
+DO NOT POINT --out AT {TRANSCRIPTIONS_ROOT}. It used to, and that is a second way
+into the same failure Stage 3 describes: a job takes minutes to hours, and for that
+whole window a half-written directory sits inside the repo where the auto-committer
+can reach it. Nine files appearing one at a time is exactly the partial state the
+scanner cannot distinguish from a finished one.
+
+Staging outside costs one `mv` in Stage 7.1 — both paths are on the same volume, so
+it is a rename, not a copy — and buys the invariant that a directory under
+{TRANSCRIPTIONS_ROOT} always holds a finished transcript.
 
 Add --title "<title>" and --recorded <ISO date> when Stage 4.6 resolved them. Omit
 either flag entirely when it did not — an absent value is printed as absent, and
@@ -772,8 +848,10 @@ What each flag is doing, because omitting one silently changes the result:
   * --create      LOCATE is the default. Without --create nothing is transcribed and
                   the command just prints where a transcript WOULD be.
   * --local       THE HARD RULE. Without it this is a production call.
-  * --out         writes the COMPLETE FILE SET into the citizen's repo, derived from
-                  the sidecar this run produced. Nothing is re-decoded.
+  * --out         writes the COMPLETE FILE SET into STAGE_DIR, derived from the
+                  sidecar this run produced. Nothing is re-decoded. Stage 7.1 moves
+                  it into the repo once it is complete; a failed run leaves it here,
+                  outside every repo, for debugging.
   * --name        the base name for those files. Without it the media file's stem is
                   used — which is right only when Stage 4.3 renamed the media to the
                   video key, and is WRONG for legacy media whose stem may differ.
@@ -782,7 +860,7 @@ What each flag is doing, because omitting one silently changes the result:
                   compute DER against our diarization and WER against our words.
   * --media-url   index data only. It is NEVER fetched. The CLI does not download.
 
-Nine files land in the out directory:
+Nine files land in STAGE_DIR:
 
         {video_key}.transcription     the words — the authority, byte-identical forever
         {video_key}.segments.json     the sidecar: timings, speakers, provenance
@@ -797,8 +875,9 @@ Nine files land in the out directory:
 DO NOT pass --person / --video unless the citizen explicitly asks. Those flags file
 the result under a person AND MIRROR IT INTO THE SHARED DATA REPO — a write this
 prompt's hard rules forbid. Without them the run produces a hash-keyed adhoc
-transcript in the app's state root PLUS the full file set in the citizen's own repo.
-The repo copy is the deliverable; the manifest in Stage 8 is what makes it visible.
+transcript in the app's state root PLUS the full file set in STAGE_DIR. The copy
+Stage 7.1 moves into the repo is the deliverable; the manifest in Stage 8 is what
+makes it visible.
 
 6.3 PARALLELISM — IT IS REQUEST CONCURRENCY, NOT LOCAL CPU
 
@@ -838,9 +917,13 @@ jobs the server is asked to carry at once, and adding more does not add workers.
 
 A transcription PASSED only if all of these hold:
 
-  * {video_key}.transcription exists in the out directory and is non-empty.
+  * {video_key}.transcription exists in STAGE_DIR and is non-empty.
   * {video_key}.segments.json exists and parses.
   * The CLI exited 0.
+
+These are checked in STAGE_DIR, before anything moves. That ordering is the point:
+the verdict is reached entirely outside the repo, so a FAILURE never has to be
+undone inside it.
 
 Anything else is a FAILURE. In particular, the CLI writes the words and NAMES the
 absent derivations when the sidecar is missing — a directory with a .transcription
@@ -849,15 +932,30 @@ purposes because a transcript with no timings cannot be cited.
 
 
 ====================================================================
-STAGE 7 — COMPLETE transcription.yaml, OR CLEAN UP THE FAILURE
+STAGE 7 — PUT THE RESULT IN THE REPO, OR LEAVE IT OUTSIDE
 ====================================================================
 
-7.1 ON SUCCESS — FILL IN transcription.yaml
+7.1 ON SUCCESS — CREATE THE DIRECTORY AND WRITE transcription.yaml
+
+THIS IS THE FIRST AND ONLY MOMENT ANYTHING ENTERS {TRANSCRIPTIONS_ROOT}. The words
+now exist, so the record has earned its place in the repo. Create
+{TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/, move all nine files from STAGE_DIR
+into it, and write the sidecar — in that order, in one go, only after Stage 6.4's
+checks passed. A directory that exists under {TRANSCRIPTIONS_ROOT} always holds a
+real transcript; there is no window in which a partial one is visible to the
+auto-committer.
+
+Move, do not copy. Both paths are under $HOME on one volume, so it is a rename: the
+nine files appear together rather than growing one at a time inside the repo.
 
 RUN THE TOOL. Do not hand-roll a writer and do not improvise one in a scratch
 directory:
 
         python3 {SIDECAR_TOOL} write {roster_key}/{video_key} [...]
+
+The tool creates the directory itself, reads the demand row by video_uid, falls
+back to Stage 3.2's seed when the CSV has moved on, and carries forward every
+hand-written field already in the file.
 
 It gathers every mechanical field itself — SHA-256, bytes, duration, codecs,
 word count, speaker shares from the .rttm, the Capture block, the demand row —
@@ -1021,28 +1119,72 @@ adverts, montages and music beds, and the honest record of one is a short transc
 and a pile of spurious speaker clusters. Say so rather than letting a reader assume
 the transcription underperformed.
 
-7.4 ON FAILURE — MOVE EVERYTHING OUT OF THE REPO
+7.4 ON FAILURE — THE REPO WAS NEVER TOUCHED, SO LEAVE IT THAT WAY
 
-This is the rule that keeps the repo trustworthy. A failed transcription leaves
-NOTHING behind in {ROOT_DIR}.
+A failed transcription leaves NOTHING behind in {ROOT_DIR}, and since Stage 3 the
+way it achieves that is BY NOT HAVING WRITTEN ANYTHING, not by deleting.
 
-  * Move every file the failed run wrote in
-    {TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/ — including the seeded
-    transcription.yaml — into MEDIA_FILE's own directory, beside the video it came
-    from. That directory is outside every repo, so the evidence survives for
-    debugging and nothing partial is ever committed.
+  * LEAVE STAGE_DIR WHERE IT IS. Whatever the CLI managed to write is already
+    outside every repo, beside the seed from Stage 3.2 and the media it came from,
+    so the evidence survives for debugging and nothing partial is ever committed.
+    There is nothing to move and nothing to remove.
     If MEDIA_FILE is under {VIDEO_DOWNLOAD_ROOT_LEGACY}, which this prompt never
-    writes to, put them under
-    {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/ instead and say where the media
-    actually is in the FAILED file.
+    writes to, STAGE_DIR is under {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/
+    anyway — say where the media actually is in the FAILED file.
   * Write a {video_key}.FAILED.txt beside them: the command that was run verbatim,
     the CLI's exit code, its stderr, which of Stage 6.4's checks failed, and the
     timestamp.
-  * Remove the now-empty {TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/ directory.
-    Remove the {roster_key} directory too if this run created it and it is now empty.
   * Mark the row [FAIL ] and append the reason to {RUN_LOG}.
   * Do NOT retry automatically. A silent retry loop burns an hour of CPU against a
     cause that has not changed.
+
+7.4a THE DELETION GUARD — READ THIS BEFORE REMOVING ANY PATH UNDER {ROOT_DIR}
+
+This prompt has exactly one legitimate reason to remove a path under
+{TRANSCRIPTIONS_ROOT}, and it is Stage 7.4b. Everywhere else, deleting there is a
+bug. It has already cost this repo fifteen committed sidecars once (Stage 3's
+preamble has the sequence), and the failure mode is nasty because every individual
+step looked right.
+
+BEFORE removing anything under {ROOT_DIR}, run BOTH checks and pass BOTH:
+
+  1. GIT DOES NOT KNOW ABOUT IT.
+
+        git -C {ROOT_DIR} ls-files --error-unmatch -- "<path>"
+
+     Exit 0 means git TRACKS it. A tracked file is committed work — someone else's,
+     or an earlier run's, or a mid-run auto-commit's. STOP. Do not remove it, do not
+     `git rm` it, do not "tidy" it. Print Z22, leave it exactly where it is, and say
+     so in Stage 10. Removing it does not undo the commit; it adds a deletion on top
+     of it, which is what the history shows for 2026-09-07.
+
+  2. THERE ARE NO WORDS IN IT.
+
+        find "<path>" -name "*.transcription"
+
+     Any hit means a transcript lives there. Those are the words this whole pipeline
+     exists to produce and they are never collateral. STOP, and print Z22.
+
+Neither check needs judgement and both are one command. Run them.
+
+7.4b THE ONE PERMITTED CLEANUP — A STRANDED SEED-ONLY DIRECTORY
+
+An older run of this prompt, before Stage 3 was fixed, could leave
+{TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/ holding a stub transcription.yaml
+and NOTHING ELSE. It is invisible to Stage 2.3's skip test, which looks for
+{video_key}.transcription, so it is re-selected and re-stranded on every run.
+
+Such a directory may be cleared ONLY when ALL of these hold:
+
+  * it contains no {video_key}.transcription and no other output file — the only
+    thing in it is transcription.yaml
+  * that transcription.yaml has no Media.SHA256 and no Source block, i.e. it is a
+    seed and not a real record
+  * `git ls-files` shows it as UNTRACKED
+
+If git tracks it, it is committed history: leave it, name it in the Stage 10
+report, and let the citizen decide. This prompt does not delete a citizen's
+committed files to make its own bookkeeping tidy.
 
 
 7.5 THE GATE — NOTHING REACHES STAGE 8 UNTIL THIS IS GREEN
@@ -1190,12 +1332,21 @@ transcripts to a public repo, and that is the citizen's call to make each time.
 9.4 THIS MACHINE HAS AN AUTOMATIC COMMITTER — EXPECT IT
 
 {ROOT_DIR} is swept by an external auto-committer (its commits are titled
-"Bryan 26 Tower"). It knows nothing about this prompt's rules, and during the run
-that produced this file it committed 189 files at 09:04:44 while transcriptions were
-still running — capturing directories whose sidecars had not been written yet.
+"Bryan 26 Tower"). It knows nothing about this prompt's rules and it will commit
+whatever it finds, mid-run, at any moment. Nothing in this prompt can prevent it.
 
-That directly defeats the hard rule about never committing a partial transcription,
-and nothing in this prompt can prevent it.
+SO THE DEFENCE IS NOT TO TRY. It is to make sure there is never anything partial
+for it to find: Stage 3 writes nothing into {ROOT_DIR}, and Stage 7.1 creates the
+directory and the sidecar together only once the words exist. An auto-commit that
+lands between two videos therefore captures completed transcripts and nothing else,
+which is a harmless early commit rather than a published partial.
+
+That defence is the whole reason Stage 3 works the way it does. Two earlier runs
+show what happens without it: one committed 189 files at 09:04:44 while
+transcriptions were still running, capturing directories whose sidecars had not
+been written; the next (901615a) committed fifteen stub sidecars that Stage 7.4
+then deleted. If a future edit ever moves the seed back into {TRANSCRIPTIONS_ROOT},
+both failures return together.
 
   * Re-read `git log` before Stage 9.1. Work already committed is normal, not an
     error, and it is not a reason to stop.
@@ -1216,6 +1367,13 @@ Then say, in plain sentences and only where there is something to say:
 
   * whether {CONFIG_FILE} was changed, and whether .gitignore was created
   * whether {WTC_REPO} is behind and needs a pull
+  * ANY DELETION THIS RUN REFUSED (Z22), by path and reason. Never leave this
+    silent: a refusal means something under {ROOT_DIR} is in a state this prompt
+    would not touch, and only the citizen can settle it.
+  * ANY STRANDED SEED-ONLY DIRECTORY found in Stage 2.3, by roster_key/video_key,
+    and whether git tracks it. Those are the residue of runs that predate Stage 3's
+    fix. Say which ones Stage 7.4b cleared and which were left because they are
+    committed.
   * any transcription.yaml FIELD THAT WAS ADDED beyond APPENDIX D
   * how many entries could not resolve a person_key, and Z15 if it applies
   * Z18 if superseded video files are sitting on disk, Z19 for any low-word video
@@ -1472,16 +1630,56 @@ added. ABSENT IS ABSENT: omit what is not known; never write a placeholder.
         Subtitles_VTT: "1cbw1utqzHg.vtt"
         Transcript_SHA256: "43201be4..."
 
-      Demand:
-        roster_key: "tucker_carlson_us_pres"
+      Demand:                       # THE WHOLE CSV ROW. See below.
+        roster_key: "tucker_carlson_us_pres"        # the CSV's person_key column
         video_uid: "tucker_carlson_us_pres::1cbw1utqzHg"
         video_key: "1cbw1utqzHg"
+        youtube_id: "1cbw1utqzHg"
+        duration_seconds: 7538
         priority: 850
+        ceiling: 1000
+        raw_score: 850             # the CSV's `raw` column, renamed: `raw` alone
+                                   # reads as a YAML scalar style, not a score
+        bound_by: "raw"
+        transcripts_held: 0
+        trusted_transcripts_held: 0
+        person_transcripts_held: 3
         seat_rank: 300
         challenger: true
         round: 1
-        demand_run_id: "job_1788525549225_32"
-        demand_generated_at: "2026-09-04T12:39:10.038Z"
+        status: "open"
+        closed_reason: omitted unless the CSV carries one
+        notes: omitted unless the CSV carries one
+        demand_generated_at: "2026-09-04T12:39:10.038Z"   # the CSV's computed_at
+        demand_run_id: "job_1788525549225_32"             # the CSV's run_id
+        source_type: "youtube"
+        source_url: "https://www.youtube.com/watch?v=1cbw1utqzHg"
+        ipfs_cid: omitted unless the CSV carries one
+        source_ref: "1cbw1utqzHg"
+
+CARRY THE WHOLE DEMAND ROW, NOT A SELECTION FROM IT. Every column in APPENDIX B
+gets a home here. {VIDEO_DEMAND_CSV} is REGENERATED on every engine run: today's
+priority, transcripts_held and status are overwritten by tomorrow's, and the values
+that were true WHEN THIS TRANSCRIPT WAS MADE then exist nowhere on earth. This block
+is the only record of why this video was worked on, and a column dropped from it is
+a fact destroyed, not a fact stored elsewhere.
+
+ABSENT IS ABSENT APPLIES HARDEST HERE. A blank cell is OMITTED. seat_rank is the one
+that bites — APPENDIX B says "BLANK IS AN ABSENCE, NOT A ZERO", and a 0 written into
+this block reads to every later reader as "the least important seat there is".
+
+A COLUMN THE ENGINE ADDS LATER is carried through under its own name rather than
+dropped. {SIDECAR_TOOL} does this automatically; it is written down here so a reader
+of the appendix knows the block is not a fixed list.
+
+THE JOIN KEY IS video_uid, NEVER video_key. The demand engine issues placeholder
+keys — v0001, v0002 — one per person, so `v0001` appears against dozens of different
+roster_keys, each with a DIFFERENT youtube_id. Matching a demand row on a bare
+video_key returns whichever person sorted first and attaches their video's URL to
+this person's transcript, in Video.URL, which is one of the four fields the product
+actually reads. {SIDECAR_TOOL} joins on video_uid; anything else that reads this CSV
+must too. The data repo states the same rule in
+{DATA_REPO}/prompts/p_transcriptions_speakers_to_people.md.
 
 
 ====================================================================
@@ -1710,6 +1908,20 @@ Z16 — media was about to be committed. FATAL, commit nothing.
       ============================================================
 
 
+Z22 — a deletion under {ROOT_DIR} was refused. The run continues.
+
+      ============================================================
+      REFUSED to remove a path inside the user repo:
+        {path}
+      Reason: {tracked by git | it holds {n} transcript file(s)}
+      Left exactly as it was. This prompt does not delete a
+      citizen's committed transcripts to tidy its own bookkeeping.
+      Fifteen sidecars were destroyed this way on 2026-09-07.
+      Look at it by hand:
+        git -C {ROOT_DIR} log --oneline -- "{path}"
+      ============================================================
+
+
 Z17 — the push failed twice.
 
       ============================================================
@@ -1801,7 +2013,7 @@ OTHER SITUATIONS, AND WHAT TO DO — no banner, just log it and carry on
   `citizens` exits 69
     * The CLI is not built. Build it (Stage 5.3) and continue. No banner needed.
 
-  The out directory has a .transcription and nothing else
+  STAGE_DIR has a .transcription and nothing else
     * The sidecar was missing, so nothing could be derived. This is a real state the
       CLI reports, and for this prompt it is a FAILURE — Stage 7.4 applies. Do not
       commit words that cannot be cited.

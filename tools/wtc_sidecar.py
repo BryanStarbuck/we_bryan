@@ -40,8 +40,13 @@ THE TWO RULES THAT SHAPE THE CODE
    in the Capture block. See UNRECOVERABLE.
 
 USAGE
-    python3 tools/wtc_sidecar.py write  <roster_key> <video_key> [...]
+    python3 tools/wtc_sidecar.py seed   <roster_key>/<video_key> [...]
+    python3 tools/wtc_sidecar.py write  <roster_key>/<video_key> [...]
     python3 tools/wtc_sidecar.py verify [--all | <roster_key>/<video_key> ...]
+
+`seed` records the demand row beside the media, OUTSIDE every repo. NOTHING is
+written into {TRANSCRIPTIONS_ROOT} until `write` has a complete sidecar to put
+there — see seed_path_for() for the incident that rule comes from.
 
 `verify` exits non-zero if anything is missing. It is the gate before Stage 8.
 
@@ -58,9 +63,11 @@ import hashlib
 import json
 import os
 import re
+import stat
 import subprocess
 import sys
 import tempfile
+import textwrap
 
 try:
     import yaml
@@ -203,12 +210,33 @@ def media_file_for(roster_key: str, video_key: str):
     return None
 
 
-def demand_row_for(video_key: str, csv_path: str):
+def demand_row_for(roster_key: str, video_key: str, csv_path: str):
+    """Find this video's demand row. THE JOIN KEY IS video_uid, NEVER video_key.
+
+    A bare video_key is NOT unique across the CSV and matching on it silently
+    attaches another politician's row. The demand engine issues placeholder keys
+    — v0001, v0002 ... — one per person, so `v0001` appears against dozens of
+    roster_keys, each carrying a DIFFERENT youtube_id. render() builds Video.URL
+    out of the matched row's youtube_id, and Video.URL is one of the four fields
+    the product actually reads, so a bare-key match publishes a sidecar whose URL
+    points at a different human's video. data_we_citizens/prompts/
+    p_transcriptions_speakers_to_people.md states the same rule: join on
+    video_uid — <person_key>::<video_key> — never on a bare video_key.
+
+    Returns None when the row is absent, which is an absence, not a zero.
+    """
     if not os.path.exists(csv_path):
         return None
+    uid = f"{roster_key}::{video_key}"
     with open(csv_path, newline="") as fh:
         for row in csv.DictReader(fh):
-            if row.get("video_key") == video_key:
+            if row.get("video_uid") == uid:
+                return row
+            # Older snapshots predate the video_uid column. Fall back to the
+            # PAIR, which is still unique; never to video_key alone.
+            if (not row.get("video_uid")
+                    and row.get("person_key") == roster_key
+                    and row.get("video_key") == video_key):
                 return row
     return None
 
@@ -240,6 +268,20 @@ def load_existing(path):
         return None
 
 
+def _default_file_mode() -> int:
+    """0666 minus the umask — exactly what open(path, "w") would have produced.
+
+    The atomic write must be indistinguishable from a plain one in every way a
+    reader can observe, and the mode is one of those ways. The mode of the file
+    being replaced is deliberately NOT preserved: an owner-only sidecar is the
+    fingerprint of the mkstemp bug this function fixes, not a citizen's choice,
+    and preserving it would carry the bug forward on every re-run.
+    """
+    cur = os.umask(0)
+    os.umask(cur)
+    return 0o666 & ~cur
+
+
 def atomic_write(path: str, text: str) -> None:
     """Write via a temp file in the same directory, then rename.
 
@@ -251,6 +293,12 @@ def atomic_write(path: str, text: str) -> None:
     try:
         with os.fdopen(fd, "w") as fh:
             fh.write(text)
+        # mkstemp creates 0600 and os.replace carries that mode onto the sidecar,
+        # so an unfixed atomic write silently makes this one file unreadable to
+        # everyone but the owner while every hand-written sidecar beside it is
+        # 0644. These files are meant to be published; give them the mode a
+        # normal `open(path, "w")` would have produced.
+        os.chmod(tmp, _default_file_mode())
         os.replace(tmp, path)
     except BaseException:
         if os.path.exists(tmp):
@@ -383,7 +431,11 @@ def gather(roster_key: str, video_key: str, demand_csv: str) -> dict:
         f for f in os.listdir(out)
         if f.startswith(video_key + ".") and f[len(video_key) + 1:] in FILE_LABELS
     )
-    facts["demand"] = demand_row_for(video_key, demand_csv)
+    # The CSV is regenerated every engine run, so a long batch can reach here
+    # after its row changed or closed. The selection-time seed is what the row
+    # actually said when the work started; prefer the live row, fall back to it.
+    facts["demand"] = (demand_row_for(roster_key, video_key, demand_csv)
+                       or load_seed(roster_key, video_key))
     return facts
 
 
@@ -438,8 +490,87 @@ def merge_preserving(existing, facts) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# The demand row
+# ---------------------------------------------------------------------------
+
+# Every column of {DATA_REPO}/video_demand.csv, in CSV order, with the name it
+# takes in the sidecar and whether it is emitted bare (numbers, booleans) or
+# quoted. The whole row is carried: the CSV is regenerated each engine run, so
+# a column dropped here is a fact that can never be recovered for this date.
+# "bare" values are written unquoted so a reader gets a number or a boolean
+# rather than a string; anything free-text is quoted.
+DEMAND_COLUMNS = [
+    ("person_key",               "roster_key",               "quoted"),
+    ("video_uid",                "video_uid",                "quoted"),
+    ("video_key",                "video_key",                "quoted"),
+    ("youtube_id",               "youtube_id",               "quoted"),
+    ("duration_seconds",         "duration_seconds",         "bare"),
+    ("priority",                 "priority",                 "bare"),
+    ("ceiling",                  "ceiling",                  "bare"),
+    ("raw",                      "raw_score",                "bare"),
+    ("bound_by",                 "bound_by",                 "quoted"),
+    ("transcripts_held",         "transcripts_held",         "bare"),
+    ("trusted_transcripts_held", "trusted_transcripts_held", "bare"),
+    ("person_transcripts_held",  "person_transcripts_held",  "bare"),
+    ("seat_rank",                "seat_rank",                "bare"),
+    ("challenger",               "challenger",               "bare"),
+    ("round",                    "round",                    "bare"),
+    ("status",                   "status",                   "quoted"),
+    ("closed_reason",            "closed_reason",            "quoted"),
+    ("notes",                    "notes",                    "quoted"),
+    ("computed_at",              "demand_generated_at",      "quoted"),
+    ("run_id",                   "demand_run_id",            "quoted"),
+    ("source_type",              "source_type",              "quoted"),
+    ("source_url",               "source_url",               "quoted"),
+    ("ipfs_cid",                 "ipfs_cid",                 "quoted"),
+    ("source_ref",               "source_ref",               "quoted"),
+]
+
+DEMAND_KNOWN = {c for c, _, _ in DEMAND_COLUMNS}
+
+
+def _norm_col(col: str) -> str:
+    """A CSV header this table has no name for, made safe as a YAML key."""
+    return re.sub(r"[^A-Za-z0-9_]+", "_", col.strip()).strip("_") or "unnamed_column"
+
+
+# ---------------------------------------------------------------------------
 # Rendering
 # ---------------------------------------------------------------------------
+
+def render_demand(row) -> list:
+    """The Demand block: THE WHOLE CSV ROW, not a selection from it.
+
+    video_demand.csv is REGENERATED every engine run. Today's priority,
+    transcripts_held and status are overwritten by tomorrow's, and the values
+    that were true WHEN THIS TRANSCRIPT WAS MADE then exist nowhere else. This
+    block is the only record of why this video was worked on.
+
+    ABSENT IS ABSENT: a blank cell is omitted, never written as 0. seat_rank is
+    the one that bites — blank means "no office rank", and a 0 would be read as
+    "the least important seat there is", which is a measurement, not an absence.
+    """
+    L = ["  Demand:   # the join back to the server: which request this answers",
+         "    # The WHOLE demand row. The CSV is regenerated every engine run, so",
+         "    # this is the only record of what it said when the work was done.",
+         f"    roster_key: {yq(row['person_key'])}"]
+    for col, key, kind in DEMAND_COLUMNS:
+        if col == "person_key":
+            continue
+        raw = (row.get(col) or "").strip()
+        if raw == "":
+            continue
+        L.append(f"    {key}: " + (raw if kind == "bare" else yq(raw)))
+    # Any column a newer engine added that DEMAND_COLUMNS has no name for. The
+    # schema is expandable and a dropped column is a fact destroyed.
+    for col, val in row.items():
+        if col in DEMAND_KNOWN or col is None:
+            continue
+        val = (val or "").strip()
+        if val:
+            L.append(f"    {_norm_col(col)}: {yq(val)}")
+    return L
+
 
 def render(facts, kept) -> str:
     vk = facts["video_key"]
@@ -467,9 +598,14 @@ def render(facts, kept) -> str:
     if facts["title"]:
         A(f"    Title: {yq(facts['title'])}")
     if kept["Description"]:
+        # A ">-" folded scalar comes back from the parser as ONE long line, so
+        # re-emitting it verbatim collapses the wrapping a little more on every
+        # run until the description is a single 900-character line. Re-wrap it.
+        # This is the one block a human is actually meant to read.
         A("    Description: >-")
-        for line in str(kept["Description"]).strip().splitlines():
-            A("      " + line.strip())
+        body = " ".join(str(kept["Description"]).split())
+        for line in textwrap.wrap(body, width=104) or [""]:
+            A("      " + line)
     A(f"    URL: {yq(url)}")
     A(f"    Video_ID: {yq(vk)}")
     if facts["channel"]:
@@ -573,21 +709,9 @@ def render(facts, kept) -> str:
     A(f"    Transcript_SHA256: {yq(facts['transcript_sha256'])}")
     A("")
 
-    row = facts["demand"]
-    if row:
-        A("  Demand:   # the join back to the server: which request this answers")
-        A(f"    roster_key: {yq(row['person_key'])}")
-        A(f"    video_uid: {yq(row['video_uid'])}")
-        A(f"    video_key: {yq(row['video_key'])}")
-        A(f"    priority: {row['priority']}")
-        if row.get("seat_rank"):
-            A(f"    seat_rank: {row['seat_rank']}")
-        if row.get("challenger"):
-            A(f"    challenger: {row['challenger']}")
-        if row.get("round"):
-            A(f"    round: {row['round']}")
-        A(f"    demand_run_id: {yq(row['run_id'])}")
-        A(f"    demand_generated_at: {yq(row['computed_at'])}")
+    if facts["demand"]:
+        for line in render_demand(facts["demand"]):
+            A(line)
         A("")
 
     if kept["extra"]:
@@ -606,6 +730,88 @@ def render(facts, kept) -> str:
 # ---------------------------------------------------------------------------
 # Commands
 # ---------------------------------------------------------------------------
+
+def seed_path_for(roster_key: str, video_key: str) -> str:
+    """Where the selection-time demand snapshot goes: BESIDE THE MEDIA, OUTSIDE
+    THE REPO.
+
+    It is deliberately not {TRANSCRIPTIONS_ROOT}. A file placed in the repo
+    before the words exist is a partial transcript, and the machine running this
+    is swept by an external auto-committer that knows nothing about this run: it
+    will commit the stub, the transcription will then fail, and the failure path
+    will delete a file that is by then part of the repo's history. That is
+    exactly what happened on 2026-09-07 — fifteen stubs committed by
+    "Bryan 26 Tower" (901615a) and removed again by d4452fa. Nothing enters the
+    repo until it is complete.
+    """
+    return os.path.join(MEDIA_ROOTS[0], roster_key, video_key,
+                        f"{video_key}.demand.yaml")
+
+
+def load_seed(roster_key: str, video_key: str):
+    """The demand row as it read AT SELECTION TIME, if a seed was written.
+
+    The demand CSV is regenerated every engine run, so by the time a long batch
+    reaches Stage 7 the row it selected may have a different priority, a
+    different status, or be gone. The seed is what that row actually said.
+    """
+    doc = load_existing(seed_path_for(roster_key, video_key))
+    if isinstance(doc, dict):
+        row = doc.get("demand_row")
+        if isinstance(row, dict):
+            return {k: ("" if v is None else str(v)) for k, v in row.items()}
+    return None
+
+
+def cmd_seed(args) -> int:
+    rc = 0
+    for target in args.targets:
+        roster_key, video_key = split_target(target, must_exist=False)
+        row = demand_row_for(roster_key, video_key, args.demand_csv)
+        if row is None:
+            print(f"  FAIL  {roster_key}/{video_key}: no row in {args.demand_csv} "
+                  f"for video_uid {roster_key}::{video_key}")
+            rc = 1
+            continue
+        path = seed_path_for(roster_key, video_key)
+        # Belt and braces: this must never land in the repo, whatever the roots
+        # are set to. A seed inside {TRANSCRIPTIONS_ROOT} is the bug this
+        # command exists to remove.
+        if os.path.abspath(path).startswith(os.path.abspath(TRANSCRIPTIONS_ROOT) + os.sep):
+            print(f"  FAIL  {roster_key}/{video_key}: refusing to seed inside the repo")
+            rc = 1
+            continue
+        now = datetime.datetime.now().astimezone().isoformat()
+        L = ["# Demand snapshot, captured when this video was SELECTED.",
+             "#",
+             "# Written by tools/wtc_sidecar.py seed. It lives beside the media,",
+             "# OUTSIDE every repo, on purpose: until the words exist there is",
+             "# nothing to commit, and a stub inside the repo is a partial",
+             "# transcript that an auto-committer will publish and a failure path",
+             "# will then delete.",
+             "#",
+             "# video_demand.csv is REGENERATED every engine run. This is the only",
+             "# record of what the row said when the work was started.",
+             f"selected_at: {yq(now)}",
+             f"roster_key: {yq(roster_key)}",
+             f"video_key: {yq(video_key)}",
+             f"video_uid: {yq(row.get('video_uid') or f'{roster_key}::{video_key}')}",
+             f"demand_csv: {yq(os.path.abspath(args.demand_csv))}",
+             "demand_row:"]
+        for col, _, _ in DEMAND_COLUMNS:
+            val = (row.get(col) or "").strip()
+            if val:
+                L.append(f"  {col}: {yq(val)}")
+        for col, val in row.items():
+            if col in DEMAND_KNOWN or col is None:
+                continue
+            val = (val or "").strip()
+            if val:
+                L.append(f"  {_norm_col(col)}: {yq(val)}")
+        atomic_write(path, "\n".join(L) + "\n")
+        print(f"  seeded {roster_key}/{video_key} -> {path}")
+    return rc
+
 
 def cmd_write(args) -> int:
     rc = 0
@@ -748,14 +954,21 @@ def cmd_verify(args) -> int:
     return 1 if problems else 0
 
 
-def split_target(target: str):
+def split_target(target: str, must_exist: bool = True):
     if "/" in target:
         rk, vk = target.split("/", 1)
         return rk, vk
-    # Bare video key: find its roster directory.
+    # Bare video key: find its roster directory. `seed` runs before any repo
+    # directory exists, so it passes must_exist=False and requires the pair.
     for rk in sorted(os.listdir(TRANSCRIPTIONS_ROOT)):
         if os.path.isdir(os.path.join(TRANSCRIPTIONS_ROOT, rk, target)):
             return rk, target
+    if not must_exist:
+        raise SystemExit(
+            f"wtc_sidecar: give this one as roster_key/{target} — the roster key "
+            "cannot be inferred before the directory exists, and it is the "
+            "directory segment everywhere else in this product."
+        )
     raise SystemExit(f"wtc_sidecar: cannot locate {target} under {TRANSCRIPTIONS_ROOT}")
 
 
@@ -768,6 +981,11 @@ def main(argv=None) -> int:
     w.add_argument("targets", nargs="+", metavar="roster_key/video_key")
     w.add_argument("--demand-csv", default=DEFAULT_DEMAND_CSV)
     w.set_defaults(func=cmd_write)
+
+    sd = sub.add_parser("seed", help="record the demand row beside the media, OUTSIDE the repo")
+    sd.add_argument("targets", nargs="+", metavar="roster_key/video_key")
+    sd.add_argument("--demand-csv", default=DEFAULT_DEMAND_CSV)
+    sd.set_defaults(func=cmd_seed)
 
     v = sub.add_parser("verify", help="assert every sidecar is complete; exits non-zero if not")
     v.add_argument("targets", nargs="*", metavar="roster_key/video_key")
