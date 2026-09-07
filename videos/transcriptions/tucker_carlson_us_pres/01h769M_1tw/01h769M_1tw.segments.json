@@ -1,0 +1,1169 @@
+{
+  "schema_version": 2,
+  "canonical_id": "23a81061fb7827e1",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 39.28,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-07T21:42:40.395Z",
+  "text_sha256": "e86fffc8fab43e2a1de274cd923fd0515c06d4be60d967fc1b748642bcca0460",
+  "segments_sha256": "5a097766fbdca01952f481309beba47df1726d620b66ca4b2d26c81792ab5bcc",
+  "words_sha256": "5a4a5811ffd1ace567ef62165b579516d323c6bfb025ec82f0742fdb29c38719",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 1,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 12,
+    "clusters": 6,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 18.6
+      },
+      "clean_s": 18.6,
+      "speaking_s": 19.1,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.9
+      },
+      "clean_s": 0.9,
+      "speaking_s": 0.9,
+      "first_s": 10.38
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.9
+      },
+      "clean_s": 1.9,
+      "speaking_s": 2.3,
+      "first_s": 14.97
+    },
+    {
+      "id": "SPEAKER_04",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 7.4
+      },
+      "clean_s": 7.4,
+      "speaking_s": 7.8,
+      "first_s": 15.91
+    },
+    {
+      "id": "SPEAKER_05",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.3
+      },
+      "clean_s": 5.3,
+      "speaking_s": 5.3,
+      "first_s": 24.75
+    },
+    {
+      "id": "SPEAKER_08",
+      "n": 6,
+      "label": "Speaker 6",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4
+      },
+      "clean_s": 4,
+      "speaking_s": 4.5,
+      "first_s": 33.97
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 18.77,
+      "end_s": 18.98,
+      "segment_i": 5,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 38.6,
+      "end_s": 38.6,
+      "segment_i": 11,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.11,
+      "end_s": 10.33,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The facts of this case do not lead up to there was one bomber that came into Oklahoma City and blew the building up. They didn't think it was important to talk to Strassmeyer. Who was",
+      "words": [
+        {
+          "w": "The",
+          "s": 0.11,
+          "e": 0.23,
+          "c": 0.864503
+        },
+        {
+          "w": "facts",
+          "s": 0.44,
+          "e": 0.67,
+          "c": 0.99879
+        },
+        {
+          "w": "of",
+          "s": 0.79,
+          "e": 0.99,
+          "c": 0.998765
+        },
+        {
+          "w": "this",
+          "s": 0.99,
+          "e": 1.38,
+          "c": 0.998696
+        },
+        {
+          "w": "case",
+          "s": 1.38,
+          "e": 1.78,
+          "c": 0.998833
+        },
+        {
+          "w": "do",
+          "s": 1.85,
+          "e": 2.01,
+          "c": 0.975833
+        },
+        {
+          "w": "not",
+          "s": 2.01,
+          "e": 2.32,
+          "c": 0.998904
+        },
+        {
+          "w": "lead",
+          "s": 2.32,
+          "e": 2.74,
+          "c": 0.992625
+        },
+        {
+          "w": "up",
+          "s": 2.74,
+          "e": 2.87,
+          "c": 0.995175
+        },
+        {
+          "w": "to",
+          "s": 3.04,
+          "e": 3.14,
+          "c": 0.962017
+        },
+        {
+          "w": "there",
+          "s": 3.14,
+          "e": 3.42,
+          "c": 0.816361
+        },
+        {
+          "w": "was",
+          "s": 3.42,
+          "e": 3.6,
+          "c": 0.997971
+        },
+        {
+          "w": "one",
+          "s": 3.74,
+          "e": 4,
+          "c": 0.950864
+        },
+        {
+          "w": "bomber",
+          "s": 4,
+          "e": 4.59,
+          "c": 0.964006
+        },
+        {
+          "w": "that",
+          "s": 4.59,
+          "e": 4.93,
+          "c": 0.924322
+        },
+        {
+          "w": "came",
+          "s": 4.93,
+          "e": 5.26,
+          "c": 0.992691
+        },
+        {
+          "w": "into",
+          "s": 5.26,
+          "e": 5.6,
+          "c": 0.978777
+        },
+        {
+          "w": "Oklahoma",
+          "s": 5.6,
+          "e": 5.96,
+          "c": 0.943603
+        },
+        {
+          "w": "City",
+          "s": 5.96,
+          "e": 6.26,
+          "c": 0.952797
+        },
+        {
+          "w": "and",
+          "s": 6.26,
+          "e": 6.51,
+          "c": 0.837976
+        },
+        {
+          "w": "blew",
+          "s": 6.63,
+          "e": 6.72,
+          "c": 0.999834
+        },
+        {
+          "w": "the",
+          "s": 6.72,
+          "e": 6.74,
+          "c": 0.999996
+        },
+        {
+          "w": "building",
+          "s": 6.96,
+          "e": 7.19,
+          "c": 0.999992
+        },
+        {
+          "w": "up.",
+          "s": 7.3,
+          "e": 7.52,
+          "c": 0.991915
+        },
+        {
+          "w": "They",
+          "s": 7.52,
+          "e": 7.72,
+          "c": 0.999087
+        },
+        {
+          "w": "didn't",
+          "s": 7.72,
+          "e": 8.02,
+          "c": 0.999956
+        },
+        {
+          "w": "think",
+          "s": 8.02,
+          "e": 8.25,
+          "c": 0.999992
+        },
+        {
+          "w": "it",
+          "s": 8.3,
+          "e": 8.32,
+          "c": 0.999996
+        },
+        {
+          "w": "was",
+          "s": 8.37,
+          "e": 8.52,
+          "c": 0.999992
+        },
+        {
+          "w": "important",
+          "s": 8.52,
+          "e": 8.97,
+          "c": 0.999975
+        },
+        {
+          "w": "to",
+          "s": 8.97,
+          "e": 9.07,
+          "c": 1
+        },
+        {
+          "w": "talk",
+          "s": 9.07,
+          "e": 9.27,
+          "c": 0.999954
+        },
+        {
+          "w": "to",
+          "s": 9.27,
+          "e": 9.36,
+          "c": 0.999994
+        },
+        {
+          "w": "Strassmeyer.",
+          "s": 9.36,
+          "e": 10.1,
+          "c": 0.492116
+        },
+        {
+          "w": "Who",
+          "s": 10.22,
+          "e": 10.25,
+          "c": 0.99772
+        },
+        {
+          "w": "was",
+          "s": 10.25,
+          "e": 10.33,
+          "c": 0.964751
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 10.54,
+      "end_s": 11.33,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Strassmeyer? He",
+      "words": [
+        {
+          "w": "Strassmeyer?",
+          "s": 10.54,
+          "e": 11.16,
+          "c": 0.996179
+        },
+        {
+          "w": "He",
+          "s": 11.27,
+          "e": 11.33,
+          "c": 0.999891
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 11.33,
+      "end_s": 14.74,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "was taking these trips to Oklahoma, planning a",
+      "words": [
+        {
+          "w": "was",
+          "s": 11.33,
+          "e": 11.38,
+          "c": 0.999998
+        },
+        {
+          "w": "taking",
+          "s": 11.6,
+          "e": 12.09,
+          "c": 0.999939
+        },
+        {
+          "w": "these",
+          "s": 12.09,
+          "e": 12.52,
+          "c": 0.999973
+        },
+        {
+          "w": "trips",
+          "s": 12.52,
+          "e": 12.89,
+          "c": 0.999954
+        },
+        {
+          "w": "to",
+          "s": 12.96,
+          "e": 13.12,
+          "c": 0.999998
+        },
+        {
+          "w": "Oklahoma,",
+          "s": 13.12,
+          "e": 13.98,
+          "c": 0.807346
+        },
+        {
+          "w": "planning",
+          "s": 13.98,
+          "e": 14.65,
+          "c": 0.995501
+        },
+        {
+          "w": "a",
+          "s": 14.72,
+          "e": 14.74,
+          "c": 0.99999
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 14.9,
+      "end_s": 15.89,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "bombing. And the",
+      "words": [
+        {
+          "w": "bombing.",
+          "s": 14.9,
+          "e": 15.66,
+          "c": 0.999661
+        },
+        {
+          "w": "And",
+          "s": 15.78,
+          "e": 15.81,
+          "c": 0.99975
+        },
+        {
+          "w": "the",
+          "s": 15.81,
+          "e": 15.89,
+          "c": 0.999985
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 16.1,
+      "end_s": 18.54,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "FBI never interviewed him. Now, he was a German national.",
+      "words": [
+        {
+          "w": "FBI",
+          "s": 16.1,
+          "e": 16.11,
+          "c": 0.999969
+        },
+        {
+          "w": "never",
+          "s": 16.11,
+          "e": 16.33,
+          "c": 0.999952
+        },
+        {
+          "w": "interviewed",
+          "s": 16.47,
+          "e": 16.91,
+          "c": 0.999794
+        },
+        {
+          "w": "him.",
+          "s": 16.91,
+          "e": 17.21,
+          "c": 0.884477
+        },
+        {
+          "w": "Now,",
+          "s": 17.21,
+          "e": 17.39,
+          "c": 0.686042
+        },
+        {
+          "w": "he",
+          "s": 17.46,
+          "e": 17.55,
+          "c": 0.999743
+        },
+        {
+          "w": "was",
+          "s": 17.59,
+          "e": 17.71,
+          "c": 0.999994
+        },
+        {
+          "w": "a",
+          "s": 17.71,
+          "e": 17.76,
+          "c": 0.99975
+        },
+        {
+          "w": "German",
+          "s": 17.76,
+          "e": 17.98,
+          "c": 0.999718
+        },
+        {
+          "w": "national.",
+          "s": 18.08,
+          "e": 18.54,
+          "c": 0.915398
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 18.77,
+      "end_s": 18.98,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "He was a",
+      "words": [
+        {
+          "w": "He",
+          "s": 18.77,
+          "e": 18.77,
+          "c": 0.999935
+        },
+        {
+          "w": "was",
+          "s": 18.77,
+          "e": 18.89,
+          "c": 0.99999
+        },
+        {
+          "w": "a",
+          "s": 18.98,
+          "e": 18.98,
+          "c": 0.998262
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 19.1,
+      "end_s": 19.93,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "German national.",
+      "words": [
+        {
+          "w": "German",
+          "s": 19.1,
+          "e": 19.31,
+          "c": 0.999895
+        },
+        {
+          "w": "national.",
+          "s": 19.31,
+          "e": 19.93,
+          "c": 0.91364
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 20.06,
+      "end_s": 24.64,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Logically, the only reason I can think of that they wouldn't interview him would be that he was working for them.",
+      "words": [
+        {
+          "w": "Logically,",
+          "s": 20.06,
+          "e": 20.46,
+          "c": 0.996116
+        },
+        {
+          "w": "the",
+          "s": 20.46,
+          "e": 20.6,
+          "c": 0.999979
+        },
+        {
+          "w": "only",
+          "s": 20.6,
+          "e": 20.61,
+          "c": 0.999979
+        },
+        {
+          "w": "reason",
+          "s": 20.83,
+          "e": 21,
+          "c": 0.999981
+        },
+        {
+          "w": "I",
+          "s": 21.08,
+          "e": 21.12,
+          "c": 0.999977
+        },
+        {
+          "w": "can",
+          "s": 21.12,
+          "e": 21.21,
+          "c": 0.999064
+        },
+        {
+          "w": "think",
+          "s": 21.28,
+          "e": 21.5,
+          "c": 0.999971
+        },
+        {
+          "w": "of",
+          "s": 21.5,
+          "e": 21.59,
+          "c": 0.999969
+        },
+        {
+          "w": "that",
+          "s": 21.59,
+          "e": 21.67,
+          "c": 0.999929
+        },
+        {
+          "w": "they",
+          "s": 21.79,
+          "e": 21.97,
+          "c": 0.99975
+        },
+        {
+          "w": "wouldn't",
+          "s": 21.97,
+          "e": 22.26,
+          "c": 0.843988
+        },
+        {
+          "w": "interview",
+          "s": 22.36,
+          "e": 22.78,
+          "c": 0.999756
+        },
+        {
+          "w": "him",
+          "s": 22.78,
+          "e": 23.01,
+          "c": 0.999519
+        },
+        {
+          "w": "would",
+          "s": 23.13,
+          "e": 23.25,
+          "c": 0.999763
+        },
+        {
+          "w": "be",
+          "s": 23.35,
+          "e": 23.35,
+          "c": 0.999994
+        },
+        {
+          "w": "that",
+          "s": 23.46,
+          "e": 23.54,
+          "c": 1
+        },
+        {
+          "w": "he",
+          "s": 23.54,
+          "e": 23.63,
+          "c": 0.999996
+        },
+        {
+          "w": "was",
+          "s": 23.63,
+          "e": 23.69,
+          "c": 0.999994
+        },
+        {
+          "w": "working",
+          "s": 23.83,
+          "e": 24.08,
+          "c": 0.999969
+        },
+        {
+          "w": "for",
+          "s": 24.16,
+          "e": 24.25,
+          "c": 0.999987
+        },
+        {
+          "w": "them.",
+          "s": 24.25,
+          "e": 24.64,
+          "c": 0.999767
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 24.75,
+      "end_s": 30,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "That would seem logical to me. I mean, McVeigh calls him two minutes after calling the Ryder Truck Company.",
+      "words": [
+        {
+          "w": "That",
+          "s": 24.75,
+          "e": 24.87,
+          "c": 0.98046
+        },
+        {
+          "w": "would",
+          "s": 25.08,
+          "e": 25.2,
+          "c": 0.999985
+        },
+        {
+          "w": "seem",
+          "s": 25.2,
+          "e": 25.31,
+          "c": 0.999872
+        },
+        {
+          "w": "logical",
+          "s": 25.44,
+          "e": 25.89,
+          "c": 0.999922
+        },
+        {
+          "w": "to",
+          "s": 25.89,
+          "e": 26.01,
+          "c": 0.999992
+        },
+        {
+          "w": "me.",
+          "s": 26.01,
+          "e": 26.34,
+          "c": 0.999992
+        },
+        {
+          "w": "I",
+          "s": 26.34,
+          "e": 26.37,
+          "c": 0.643804
+        },
+        {
+          "w": "mean,",
+          "s": 26.49,
+          "e": 26.72,
+          "c": 0.99923
+        },
+        {
+          "w": "McVeigh",
+          "s": 26.72,
+          "e": 27.21,
+          "c": 0.829228
+        },
+        {
+          "w": "calls",
+          "s": 27.21,
+          "e": 27.48,
+          "c": 0.997801
+        },
+        {
+          "w": "him",
+          "s": 27.68,
+          "e": 27.78,
+          "c": 0.998001
+        },
+        {
+          "w": "two",
+          "s": 27.78,
+          "e": 27.96,
+          "c": 0.881747
+        },
+        {
+          "w": "minutes",
+          "s": 27.96,
+          "e": 28.4,
+          "c": 0.994596
+        },
+        {
+          "w": "after",
+          "s": 28.4,
+          "e": 28.68,
+          "c": 0.935663
+        },
+        {
+          "w": "calling",
+          "s": 28.68,
+          "e": 28.94,
+          "c": 0.894417
+        },
+        {
+          "w": "the",
+          "s": 29.06,
+          "e": 29.08,
+          "c": 0.953403
+        },
+        {
+          "w": "Ryder",
+          "s": 29.08,
+          "e": 29.31,
+          "c": 0.937863
+        },
+        {
+          "w": "Truck",
+          "s": 29.38,
+          "e": 29.54,
+          "c": 0.699336
+        },
+        {
+          "w": "Company.",
+          "s": 29.54,
+          "e": 30,
+          "c": 0.98263
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 30.07,
+      "end_s": 33.9,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "There has to be some kind of connection, but he just disappeared. Is he",
+      "words": [
+        {
+          "w": "There",
+          "s": 30.07,
+          "e": 30.35,
+          "c": 0.934501
+        },
+        {
+          "w": "has",
+          "s": 30.43,
+          "e": 30.53,
+          "c": 0.999786
+        },
+        {
+          "w": "to",
+          "s": 30.53,
+          "e": 30.65,
+          "c": 0.999878
+        },
+        {
+          "w": "be",
+          "s": 30.65,
+          "e": 30.74,
+          "c": 0.999975
+        },
+        {
+          "w": "some",
+          "s": 30.79,
+          "e": 31.02,
+          "c": 0.999439
+        },
+        {
+          "w": "kind",
+          "s": 31.02,
+          "e": 31.26,
+          "c": 0.999491
+        },
+        {
+          "w": "of",
+          "s": 31.36,
+          "e": 31.39,
+          "c": 0.99954
+        },
+        {
+          "w": "connection,",
+          "s": 31.39,
+          "e": 32.18,
+          "c": 0.650235
+        },
+        {
+          "w": "but",
+          "s": 32.18,
+          "e": 32.43,
+          "c": 0.903258
+        },
+        {
+          "w": "he",
+          "s": 32.43,
+          "e": 32.54,
+          "c": 0.997145
+        },
+        {
+          "w": "just",
+          "s": 32.68,
+          "e": 32.94,
+          "c": 0.996586
+        },
+        {
+          "w": "disappeared.",
+          "s": 32.94,
+          "e": 33.68,
+          "c": 0.731641
+        },
+        {
+          "w": "Is",
+          "s": 33.79,
+          "e": 33.79,
+          "c": 0.999401
+        },
+        {
+          "w": "he",
+          "s": 33.79,
+          "e": 33.9,
+          "c": 0.999992
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 33.9,
+      "end_s": 38.47,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "still alive? Yes. Has he ever been interviewed by the FBI that you know of in person? Not to",
+      "words": [
+        {
+          "w": "still",
+          "s": 33.9,
+          "e": 34.19,
+          "c": 0.99999
+        },
+        {
+          "w": "alive?",
+          "s": 34.19,
+          "e": 34.68,
+          "c": 0.995701
+        },
+        {
+          "w": "Yes.",
+          "s": 34.79,
+          "e": 34.9,
+          "c": 0.999746
+        },
+        {
+          "w": "Has",
+          "s": 35.2,
+          "e": 35.24,
+          "c": 0.997352
+        },
+        {
+          "w": "he",
+          "s": 35.24,
+          "e": 35.31,
+          "c": 0.999992
+        },
+        {
+          "w": "ever",
+          "s": 35.52,
+          "e": 35.57,
+          "c": 0.999876
+        },
+        {
+          "w": "been",
+          "s": 35.57,
+          "e": 35.75,
+          "c": 0.999979
+        },
+        {
+          "w": "interviewed",
+          "s": 35.89,
+          "e": 36.35,
+          "c": 0.999939
+        },
+        {
+          "w": "by",
+          "s": 36.41,
+          "e": 36.49,
+          "c": 0.999937
+        },
+        {
+          "w": "the",
+          "s": 36.57,
+          "e": 36.67,
+          "c": 0.99999
+        },
+        {
+          "w": "FBI",
+          "s": 36.67,
+          "e": 36.81,
+          "c": 0.999945
+        },
+        {
+          "w": "that",
+          "s": 36.93,
+          "e": 37.05,
+          "c": 0.998856
+        },
+        {
+          "w": "you",
+          "s": 37.05,
+          "e": 37.21,
+          "c": 0.999563
+        },
+        {
+          "w": "know",
+          "s": 37.21,
+          "e": 37.4,
+          "c": 0.999899
+        },
+        {
+          "w": "of",
+          "s": 37.5,
+          "e": 37.54,
+          "c": 0.843472
+        },
+        {
+          "w": "in",
+          "s": 37.54,
+          "e": 37.65,
+          "c": 0.993377
+        },
+        {
+          "w": "person?",
+          "s": 37.65,
+          "e": 38.24,
+          "c": 0.999563
+        },
+        {
+          "w": "Not",
+          "s": 38.36,
+          "e": 38.4,
+          "c": 0.999916
+        },
+        {
+          "w": "to",
+          "s": 38.4,
+          "e": 38.47,
+          "c": 0.999689
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 38.6,
+      "end_s": 38.61,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "my",
+      "words": [
+        {
+          "w": "my",
+          "s": 38.6,
+          "e": 38.6,
+          "c": 0.999985
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 38.68,
+      "end_s": 39.28,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "knowledge.",
+      "words": [
+        {
+          "w": "knowledge.",
+          "s": 38.68,
+          "e": 39.28,
+          "c": 0.999943
+        }
+      ]
+    }
+  ]
+}

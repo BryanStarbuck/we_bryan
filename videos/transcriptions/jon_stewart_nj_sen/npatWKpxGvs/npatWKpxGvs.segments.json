@@ -1,0 +1,1426 @@
+{
+  "schema_version": 2,
+  "canonical_id": "020fec848cfff6a7",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 62.65,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-07T21:41:42.711Z",
+  "text_sha256": "6fac62671fbe3eea9a11a38ee6678ba9aeb2df56459208b17f7ead00c53c97d8",
+  "segments_sha256": "f77924ce378c8edd7a7a8c486f92567cdfce2111984828d5a6ef6eedaafcb0af",
+  "words_sha256": "3c139c3ec86966d7d5cde44919c0c997843c283ce4eccc9dc282546a9d65aafe",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 2,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 11,
+    "clusters": 5,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 21.2
+      },
+      "clean_s": 21.2,
+      "speaking_s": 22,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.5
+      },
+      "clean_s": 4.5,
+      "speaking_s": 4.5,
+      "first_s": 4.57
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 17.5
+      },
+      "clean_s": 17.5,
+      "speaking_s": 17.8,
+      "first_s": 9.09
+    },
+    {
+      "id": "SPEAKER_04",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.7
+      },
+      "clean_s": 4.7,
+      "speaking_s": 4.7,
+      "first_s": 14.97
+    },
+    {
+      "id": "SPEAKER_08",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 6.6
+      },
+      "clean_s": 6.6,
+      "speaking_s": 7.8,
+      "first_s": 32.18
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.05,
+      "end_s": 0.05,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 9.25,
+      "end_s": 9.25,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 19.79,
+      "end_s": 21.13,
+      "segment_i": 6,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 52.69,
+      "end_s": 53.29,
+      "segment_i": 11,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 58.55,
+      "end_s": 59.15,
+      "segment_i": 13,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.05,
+      "end_s": 0.06,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "-",
+      "words": [
+        {
+          "w": "-",
+          "s": 0.05,
+          "e": 0.05,
+          "c": 0.700594
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.11,
+      "end_s": 4.22,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Based on what I've seen, Chuck E. Cheese is the last place where adults should",
+      "words": [
+        {
+          "w": "Based",
+          "s": 0.11,
+          "e": 0.3,
+          "c": 0.934349
+        },
+        {
+          "w": "on",
+          "s": 0.3,
+          "e": 0.4,
+          "c": 0.999119
+        },
+        {
+          "w": "what",
+          "s": 0.4,
+          "e": 0.6,
+          "c": 0.9991
+        },
+        {
+          "w": "I've",
+          "s": 0.6,
+          "e": 0.8,
+          "c": 0.991423
+        },
+        {
+          "w": "seen,",
+          "s": 0.8,
+          "e": 1.13,
+          "c": 0.857143
+        },
+        {
+          "w": "Chuck",
+          "s": 1.13,
+          "e": 1.36,
+          "c": 0.59878
+        },
+        {
+          "w": "E.",
+          "s": 1.36,
+          "e": 1.4,
+          "c": 0.476507
+        },
+        {
+          "w": "Cheese",
+          "s": 1.56,
+          "e": 2.14,
+          "c": 0.897602
+        },
+        {
+          "w": "is",
+          "s": 2.25,
+          "e": 2.27,
+          "c": 0.998618
+        },
+        {
+          "w": "the",
+          "s": 2.27,
+          "e": 2.47,
+          "c": 0.998719
+        },
+        {
+          "w": "last",
+          "s": 2.47,
+          "e": 2.74,
+          "c": 0.99918
+        },
+        {
+          "w": "place",
+          "s": 2.74,
+          "e": 3.08,
+          "c": 0.999224
+        },
+        {
+          "w": "where",
+          "s": 3.08,
+          "e": 3.42,
+          "c": 0.986538
+        },
+        {
+          "w": "adults",
+          "s": 3.42,
+          "e": 3.82,
+          "c": 0.992833
+        },
+        {
+          "w": "should",
+          "s": 3.82,
+          "e": 4.22,
+          "c": 0.99834
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 4.22,
+      "end_s": 9.18,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "be. - A woman got stuck inside a money grabbing machine at a Chuck E. Cheese restaurant in Burbank.",
+      "words": [
+        {
+          "w": "be.",
+          "s": 4.22,
+          "e": 4.6,
+          "c": 0.996846
+        },
+        {
+          "w": "-",
+          "s": 4.66,
+          "e": 4.66,
+          "c": 0.96331
+        },
+        {
+          "w": "A",
+          "s": 4.71,
+          "e": 4.72,
+          "c": 0.989451
+        },
+        {
+          "w": "woman",
+          "s": 4.72,
+          "e": 5.04,
+          "c": 0.99593
+        },
+        {
+          "w": "got",
+          "s": 5.04,
+          "e": 5.2,
+          "c": 0.844723
+        },
+        {
+          "w": "stuck",
+          "s": 5.24,
+          "e": 5.6,
+          "c": 0.995758
+        },
+        {
+          "w": "inside",
+          "s": 5.6,
+          "e": 5.62,
+          "c": 0.964354
+        },
+        {
+          "w": "a",
+          "s": 5.65,
+          "e": 5.74,
+          "c": 0.926443
+        },
+        {
+          "w": "money",
+          "s": 5.74,
+          "e": 6.24,
+          "c": 0.991208
+        },
+        {
+          "w": "grabbing",
+          "s": 6.24,
+          "e": 6.64,
+          "c": 0.559212
+        },
+        {
+          "w": "machine",
+          "s": 6.64,
+          "e": 7.04,
+          "c": 0.972047
+        },
+        {
+          "w": "at",
+          "s": 7.14,
+          "e": 7.14,
+          "c": 0.998197
+        },
+        {
+          "w": "a",
+          "s": 7.15,
+          "e": 7.19,
+          "c": 0.991446
+        },
+        {
+          "w": "Chuck",
+          "s": 7.19,
+          "e": 7.45,
+          "c": 0.984035
+        },
+        {
+          "w": "E.",
+          "s": 7.45,
+          "e": 7.64,
+          "c": 0.985051
+        },
+        {
+          "w": "Cheese",
+          "s": 7.68,
+          "e": 7.98,
+          "c": 0.998395
+        },
+        {
+          "w": "restaurant",
+          "s": 7.98,
+          "e": 8.45,
+          "c": 0.982751
+        },
+        {
+          "w": "in",
+          "s": 8.6,
+          "e": 8.61,
+          "c": 0.991558
+        },
+        {
+          "w": "Burbank.",
+          "s": 8.61,
+          "e": 9.18,
+          "c": 0.973108
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 9.25,
+      "end_s": 9.26,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "-",
+      "words": [
+        {
+          "w": "-",
+          "s": 9.25,
+          "e": 9.25,
+          "c": 0.980125
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 9.25,
+      "end_s": 14.79,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "A still unidentified woman inside the Snow Day game console on her knees, her",
+      "words": [
+        {
+          "w": "A",
+          "s": 9.25,
+          "e": 9.32,
+          "c": 0.996058
+        },
+        {
+          "w": "still",
+          "s": 9.32,
+          "e": 9.68,
+          "c": 0.998803
+        },
+        {
+          "w": "unidentified",
+          "s": 9.68,
+          "e": 10.54,
+          "c": 0.893939
+        },
+        {
+          "w": "woman",
+          "s": 10.54,
+          "e": 10.92,
+          "c": 0.99755
+        },
+        {
+          "w": "inside",
+          "s": 11.03,
+          "e": 11.45,
+          "c": 0.998809
+        },
+        {
+          "w": "the",
+          "s": 11.45,
+          "e": 11.71,
+          "c": 0.992831
+        },
+        {
+          "w": "Snow",
+          "s": 11.71,
+          "e": 12.06,
+          "c": 0.748663
+        },
+        {
+          "w": "Day",
+          "s": 12.06,
+          "e": 12.32,
+          "c": 0.899167
+        },
+        {
+          "w": "game",
+          "s": 12.32,
+          "e": 12.67,
+          "c": 0.902087
+        },
+        {
+          "w": "console",
+          "s": 12.67,
+          "e": 13.32,
+          "c": 0.995682
+        },
+        {
+          "w": "on",
+          "s": 13.32,
+          "e": 13.53,
+          "c": 0.728629
+        },
+        {
+          "w": "her",
+          "s": 13.71,
+          "e": 13.92,
+          "c": 0.999741
+        },
+        {
+          "w": "knees,",
+          "s": 13.92,
+          "e": 14.52,
+          "c": 0.837808
+        },
+        {
+          "w": "her",
+          "s": 14.63,
+          "e": 14.79,
+          "c": 0.99456
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 14.79,
+      "end_s": 19.57,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "right hand stuck in a hole. Burbank firefighters took 22 minutes to free her.",
+      "words": [
+        {
+          "w": "right",
+          "s": 14.79,
+          "e": 15.2,
+          "c": 0.999182
+        },
+        {
+          "w": "hand",
+          "s": 15.23,
+          "e": 15.59,
+          "c": 0.924771
+        },
+        {
+          "w": "stuck",
+          "s": 15.6,
+          "e": 15.93,
+          "c": 0.973153
+        },
+        {
+          "w": "in",
+          "s": 16.08,
+          "e": 16.21,
+          "c": 0.99934
+        },
+        {
+          "w": "a",
+          "s": 16.26,
+          "e": 16.32,
+          "c": 0.999321
+        },
+        {
+          "w": "hole.",
+          "s": 16.32,
+          "e": 16.96,
+          "c": 0.957545
+        },
+        {
+          "w": "Burbank",
+          "s": 17.07,
+          "e": 17.35,
+          "c": 0.916917
+        },
+        {
+          "w": "firefighters",
+          "s": 17.35,
+          "e": 18.03,
+          "c": 0.926196
+        },
+        {
+          "w": "took",
+          "s": 18.03,
+          "e": 18.26,
+          "c": 0.992882
+        },
+        {
+          "w": "22",
+          "s": 18.26,
+          "e": 18.6,
+          "c": 0.993335
+        },
+        {
+          "w": "minutes",
+          "s": 18.6,
+          "e": 19,
+          "c": 0.998015
+        },
+        {
+          "w": "to",
+          "s": 19,
+          "e": 19.11,
+          "c": 0.988963
+        },
+        {
+          "w": "free",
+          "s": 19.11,
+          "e": 19.34,
+          "c": 0.996086
+        },
+        {
+          "w": "her.",
+          "s": 19.34,
+          "e": 19.57,
+          "c": 0.994797
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 19.79,
+      "end_s": 21.13,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "- Look, you",
+      "words": [
+        {
+          "w": "-",
+          "s": 19.79,
+          "e": 19.86,
+          "c": 0.963119
+        },
+        {
+          "w": "Look,",
+          "s": 19.86,
+          "e": 20.72,
+          "c": 0.867917
+        },
+        {
+          "w": "you",
+          "s": 20.72,
+          "e": 21.13,
+          "c": 0.994463
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 21.28,
+      "end_s": 26.76,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "can't just call the fire department to save this imbecile, okay?",
+      "words": [
+        {
+          "w": "can't",
+          "s": 21.28,
+          "e": 21.86,
+          "c": 0.99731
+        },
+        {
+          "w": "just",
+          "s": 21.86,
+          "e": 22.33,
+          "c": 0.996077
+        },
+        {
+          "w": "call",
+          "s": 22.52,
+          "e": 23.04,
+          "c": 0.989759
+        },
+        {
+          "w": "the",
+          "s": 23.08,
+          "e": 23.25,
+          "c": 0.935146
+        },
+        {
+          "w": "fire",
+          "s": 23.25,
+          "e": 23.5,
+          "c": 0.953575
+        },
+        {
+          "w": "department",
+          "s": 23.5,
+          "e": 23.8,
+          "c": 0.997092
+        },
+        {
+          "w": "to",
+          "s": 24.27,
+          "e": 24.35,
+          "c": 0.999586
+        },
+        {
+          "w": "save",
+          "s": 24.35,
+          "e": 24.73,
+          "c": 0.998494
+        },
+        {
+          "w": "this",
+          "s": 24.73,
+          "e": 25.11,
+          "c": 0.997948
+        },
+        {
+          "w": "imbecile,",
+          "s": 25.11,
+          "e": 26.06,
+          "c": 0.953081
+        },
+        {
+          "w": "okay?",
+          "s": 26.06,
+          "e": 26.76,
+          "c": 0.903914
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 26.75,
+      "end_s": 32.27,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "This is Chuck E. Cheese. You have to win her. Okay? Fair",
+      "words": [
+        {
+          "w": "This",
+          "s": 26.752,
+          "e": 27.002,
+          "c": 0.975805
+        },
+        {
+          "w": "is",
+          "s": 27.002,
+          "e": 27.112,
+          "c": 0.999365
+        },
+        {
+          "w": "Chuck",
+          "s": 27.152,
+          "e": 27.442,
+          "c": 0.985295
+        },
+        {
+          "w": "E.",
+          "s": 27.442,
+          "e": 27.692,
+          "c": 0.97853
+        },
+        {
+          "w": "Cheese.",
+          "s": 27.692,
+          "e": 28.292,
+          "c": 0.973641
+        },
+        {
+          "w": "You",
+          "s": 28.292,
+          "e": 28.552,
+          "c": 0.99995
+        },
+        {
+          "w": "have",
+          "s": 28.552,
+          "e": 28.902,
+          "c": 0.999977
+        },
+        {
+          "w": "to",
+          "s": 28.902,
+          "e": 29.072,
+          "c": 0.999844
+        },
+        {
+          "w": "win",
+          "s": 29.072,
+          "e": 29.282,
+          "c": 0.999752
+        },
+        {
+          "w": "her.",
+          "s": 29.332,
+          "e": 29.892,
+          "c": 0.982103
+        },
+        {
+          "w": "Okay?",
+          "s": 29.892,
+          "e": 31.652,
+          "c": 0.439245
+        },
+        {
+          "w": "Fair",
+          "s": 31.852,
+          "e": 32.272,
+          "c": 0.998748
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 32.27,
+      "end_s": 40.66,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and square. But hey, maybe I'm being too hard on this dumbass woman, okay? I'm sure this happens all the time. Snow",
+      "words": [
+        {
+          "w": "and",
+          "s": 32.272,
+          "e": 32.582,
+          "c": 0.999798
+        },
+        {
+          "w": "square.",
+          "s": 32.582,
+          "e": 33.552,
+          "c": 0.998811
+        },
+        {
+          "w": "But",
+          "s": 33.552,
+          "e": 33.832,
+          "c": 0.999933
+        },
+        {
+          "w": "hey,",
+          "s": 33.832,
+          "e": 34.292,
+          "c": 0.734059
+        },
+        {
+          "w": "maybe",
+          "s": 34.292,
+          "e": 34.762,
+          "c": 0.993576
+        },
+        {
+          "w": "I'm",
+          "s": 34.762,
+          "e": 35.032,
+          "c": 0.99976
+        },
+        {
+          "w": "being",
+          "s": 35.032,
+          "e": 35.382,
+          "c": 0.998976
+        },
+        {
+          "w": "too",
+          "s": 35.732,
+          "e": 35.782,
+          "c": 0.992682
+        },
+        {
+          "w": "hard",
+          "s": 35.782,
+          "e": 36.212,
+          "c": 0.625343
+        },
+        {
+          "w": "on",
+          "s": 36.212,
+          "e": 36.312,
+          "c": 0.836569
+        },
+        {
+          "w": "this",
+          "s": 36.312,
+          "e": 36.532,
+          "c": 0.997143
+        },
+        {
+          "w": "dumbass",
+          "s": 36.532,
+          "e": 36.832,
+          "c": 0.977775
+        },
+        {
+          "w": "woman,",
+          "s": 36.832,
+          "e": 37.132,
+          "c": 0.53985
+        },
+        {
+          "w": "okay?",
+          "s": 37.132,
+          "e": 37.472,
+          "c": 0.990947
+        },
+        {
+          "w": "I'm",
+          "s": 37.472,
+          "e": 37.742,
+          "c": 0.999971
+        },
+        {
+          "w": "sure",
+          "s": 37.742,
+          "e": 38.092,
+          "c": 0.999943
+        },
+        {
+          "w": "this",
+          "s": 38.142,
+          "e": 38.462,
+          "c": 0.55781
+        },
+        {
+          "w": "happens",
+          "s": 38.462,
+          "e": 39.102,
+          "c": 0.999855
+        },
+        {
+          "w": "all",
+          "s": 39.102,
+          "e": 39.292,
+          "c": 0.999666
+        },
+        {
+          "w": "the",
+          "s": 39.642,
+          "e": 39.642,
+          "c": 0.999941
+        },
+        {
+          "w": "time.",
+          "s": 39.652,
+          "e": 40.312,
+          "c": 0.999969
+        },
+        {
+          "w": "Snow",
+          "s": 40.312,
+          "e": 40.662,
+          "c": 0.994798
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 40.69,
+      "end_s": 52.69,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Day is manufactured by a company called Coastal Amusements, said company president Michael Dean. There are hundreds of these games and Chuck E. Cheese's throughout the country, and we've never seen something like this happen before. Wow,",
+      "words": [
+        {
+          "w": "Day",
+          "s": 40.692,
+          "e": 40.932,
+          "c": 0.968361
+        },
+        {
+          "w": "is",
+          "s": 40.982,
+          "e": 41.122,
+          "c": 0.999886
+        },
+        {
+          "w": "manufactured",
+          "s": 41.122,
+          "e": 42.062,
+          "c": 0.999729
+        },
+        {
+          "w": "by",
+          "s": 42.232,
+          "e": 42.382,
+          "c": 0.987504
+        },
+        {
+          "w": "a",
+          "s": 42.442,
+          "e": 42.442,
+          "c": 0.999579
+        },
+        {
+          "w": "company",
+          "s": 42.492,
+          "e": 42.902,
+          "c": 0.999819
+        },
+        {
+          "w": "called",
+          "s": 42.912,
+          "e": 43.252,
+          "c": 0.97935
+        },
+        {
+          "w": "Coastal",
+          "s": 43.252,
+          "e": 43.622,
+          "c": 0.975965
+        },
+        {
+          "w": "Amusements,",
+          "s": 43.622,
+          "e": 44.292,
+          "c": 0.862886
+        },
+        {
+          "w": "said",
+          "s": 44.292,
+          "e": 44.512,
+          "c": 0.999805
+        },
+        {
+          "w": "company",
+          "s": 44.512,
+          "e": 44.892,
+          "c": 0.971504
+        },
+        {
+          "w": "president",
+          "s": 44.892,
+          "e": 45.382,
+          "c": 0.99617
+        },
+        {
+          "w": "Michael",
+          "s": 45.382,
+          "e": 45.692,
+          "c": 0.99526
+        },
+        {
+          "w": "Dean.",
+          "s": 45.752,
+          "e": 46.122,
+          "c": 0.965543
+        },
+        {
+          "w": "There",
+          "s": 46.172,
+          "e": 46.492,
+          "c": 0.997718
+        },
+        {
+          "w": "are",
+          "s": 46.552,
+          "e": 46.692,
+          "c": 0.999989
+        },
+        {
+          "w": "hundreds",
+          "s": 46.692,
+          "e": 47.222,
+          "c": 0.999943
+        },
+        {
+          "w": "of",
+          "s": 47.222,
+          "e": 47.352,
+          "c": 0.999996
+        },
+        {
+          "w": "these",
+          "s": 47.352,
+          "e": 47.682,
+          "c": 0.999962
+        },
+        {
+          "w": "games",
+          "s": 47.682,
+          "e": 47.992,
+          "c": 0.999407
+        },
+        {
+          "w": "and",
+          "s": 47.992,
+          "e": 48.162,
+          "c": 0.70186
+        },
+        {
+          "w": "Chuck",
+          "s": 48.352,
+          "e": 48.392,
+          "c": 0.995718
+        },
+        {
+          "w": "E.",
+          "s": 48.392,
+          "e": 48.522,
+          "c": 0.997622
+        },
+        {
+          "w": "Cheese's",
+          "s": 48.612,
+          "e": 48.952,
+          "c": 0.847738
+        },
+        {
+          "w": "throughout",
+          "s": 48.952,
+          "e": 49.242,
+          "c": 0.91346
+        },
+        {
+          "w": "the",
+          "s": 49.292,
+          "e": 49.382,
+          "c": 0.999245
+        },
+        {
+          "w": "country,",
+          "s": 49.382,
+          "e": 49.632,
+          "c": 0.920843
+        },
+        {
+          "w": "and",
+          "s": 49.632,
+          "e": 49.782,
+          "c": 0.999987
+        },
+        {
+          "w": "we've",
+          "s": 49.782,
+          "e": 50.032,
+          "c": 0.99918
+        },
+        {
+          "w": "never",
+          "s": 50.032,
+          "e": 50.252,
+          "c": 0.999992
+        },
+        {
+          "w": "seen",
+          "s": 50.302,
+          "e": 50.452,
+          "c": 0.999983
+        },
+        {
+          "w": "something",
+          "s": 50.532,
+          "e": 50.952,
+          "c": 0.999979
+        },
+        {
+          "w": "like",
+          "s": 50.952,
+          "e": 51.152,
+          "c": 0.999996
+        },
+        {
+          "w": "this",
+          "s": 51.152,
+          "e": 51.352,
+          "c": 0.999973
+        },
+        {
+          "w": "happen",
+          "s": 51.352,
+          "e": 51.632,
+          "c": 0.999115
+        },
+        {
+          "w": "before.",
+          "s": 51.812,
+          "e": 52.192,
+          "c": 0.999983
+        },
+        {
+          "w": "Wow,",
+          "s": 52.192,
+          "e": 52.692,
+          "c": 0.991968
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 52.69,
+      "end_s": 53.29,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "this is",
+      "words": [
+        {
+          "w": "this",
+          "s": 52.692,
+          "e": 53.012,
+          "c": 0.999983
+        },
+        {
+          "w": "is",
+          "s": 53.092,
+          "e": 53.292,
+          "c": 0.999992
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 53.29,
+      "end_s": 58.55,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "really exciting. I mean, she found a completely undiscovered way to be an idiot. Give",
+      "words": [
+        {
+          "w": "really",
+          "s": 53.292,
+          "e": 53.902,
+          "c": 0.999981
+        },
+        {
+          "w": "exciting.",
+          "s": 53.902,
+          "e": 55.052,
+          "c": 0.999916
+        },
+        {
+          "w": "I",
+          "s": 55.272,
+          "e": 55.312,
+          "c": 0.99983
+        },
+        {
+          "w": "mean,",
+          "s": 55.312,
+          "e": 55.582,
+          "c": 0.998224
+        },
+        {
+          "w": "she",
+          "s": 55.652,
+          "e": 55.732,
+          "c": 0.999893
+        },
+        {
+          "w": "found",
+          "s": 55.732,
+          "e": 55.972,
+          "c": 0.998616
+        },
+        {
+          "w": "a",
+          "s": 55.972,
+          "e": 56.012,
+          "c": 0.998344
+        },
+        {
+          "w": "completely",
+          "s": 56.012,
+          "e": 56.492,
+          "c": 0.999962
+        },
+        {
+          "w": "undiscovered",
+          "s": 56.492,
+          "e": 57.042,
+          "c": 0.998321
+        },
+        {
+          "w": "way",
+          "s": 57.052,
+          "e": 57.152,
+          "c": 0.999981
+        },
+        {
+          "w": "to",
+          "s": 57.192,
+          "e": 57.292,
+          "c": 0.999802
+        },
+        {
+          "w": "be",
+          "s": 57.302,
+          "e": 57.372,
+          "c": 0.999979
+        },
+        {
+          "w": "an",
+          "s": 57.452,
+          "e": 57.472,
+          "c": 0.999989
+        },
+        {
+          "w": "idiot.",
+          "s": 57.472,
+          "e": 57.952,
+          "c": 0.999901
+        },
+        {
+          "w": "Give",
+          "s": 57.952,
+          "e": 58.552,
+          "c": 0.999579
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 58.55,
+      "end_s": 59.15,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "her a",
+      "words": [
+        {
+          "w": "her",
+          "s": 58.552,
+          "e": 59.002,
+          "c": 0.999918
+        },
+        {
+          "w": "a",
+          "s": 59.002,
+          "e": 59.152,
+          "c": 0.99984
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 59.15,
+      "end_s": 62.65,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Nobel Prize, preferably one with no sharp edges.",
+      "words": [
+        {
+          "w": "Nobel",
+          "s": 59.152,
+          "e": 59.712,
+          "c": 0.999786
+        },
+        {
+          "w": "Prize,",
+          "s": 60.132,
+          "e": 60.952,
+          "c": 0.645786
+        },
+        {
+          "w": "preferably",
+          "s": 60.952,
+          "e": 61.482,
+          "c": 0.958148
+        },
+        {
+          "w": "one",
+          "s": 61.502,
+          "e": 61.632,
+          "c": 0.999969
+        },
+        {
+          "w": "with",
+          "s": 61.632,
+          "e": 61.842,
+          "c": 0.999989
+        },
+        {
+          "w": "no",
+          "s": 61.842,
+          "e": 61.942,
+          "c": 0.999968
+        },
+        {
+          "w": "sharp",
+          "s": 61.942,
+          "e": 62.202,
+          "c": 0.999527
+        },
+        {
+          "w": "edges.",
+          "s": 62.202,
+          "e": 62.652,
+          "c": 0.999748
+        }
+      ]
+    }
+  ]
+}
