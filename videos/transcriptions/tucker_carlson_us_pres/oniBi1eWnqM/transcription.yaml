@@ -1,10 +1,109 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
 Transcription:
 
   Video:
+    Title: "Nobody Is Taking This Seriously Enough"
+    Description: >-
+      A 30-second monologue clip in which the speaker argues that the President of the United States has
+      repeatedly suggested using nuclear weapons against Iran. He acknowledges that the White House press
+      office denies this, and says that denial is untrue; his reasoning is that posts threatening the total
+      destruction of Iran and of its civilization could only be carried out with nuclear weapons rather than
+      conventional ones, and he concludes the possibility should be treated as real. The inference from
+      'total destruction' to nuclear intent is the speaker's own and is contested; no White House response
+      beyond the denial he characterises appears in the clip, and no official named in the claim is present
+      to answer it. Diarization returned a single speaker for the whole clip.
     URL: "https://www.youtube.com/watch?v=oniBi1eWnqM"
     Video_ID: "oniBi1eWnqM"
+    Show: "Tucker Carlson"
+    Runtime: "00:00:30"
+    Language: "en"
 
-  Demand:
+  Media:
+    File: "oniBi1eWnqM.m4a"
+    SHA256: "02e99f69b84571478faa150ac21dd21c243c0f8c62b76e419f078cfa557d3071"
+    Bytes: 487030
+    Duration_Seconds: 30
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=oniBi1eWnqM"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "oniBi1eWnqM.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/tucker_carlson_us_pres/oniBi1eWnqM/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCGttrUON87gWfU6dMWm1fcA"
+    Uploader_ID: "@TuckerCarlson"
+    View_Count: 131808
+    Like_Count: 5614
+    Comment_Count: 619
+    Availability: "public"
+    Published_At: "2026-09-05T18:40:29+00:00"
+    Captured_At: "2026-09-07T14:36:25-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 1
+
+  Topics:
+    - 'U.S. threats against Iran'
+    - 'Nuclear weapons rhetoric'
+    - 'White House press-office denials'
+    - 'Presidential social-media statements'
+
+  Source:
+    Canonical_ID: "464b9d0687c1e507"
+    Transcribed: "2026-09-07T14:41:00.086626-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 110
+    Segments: 1
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T14:36:25.843259-07:00"
+    Transcription_Finished: "2026-09-07T14:41:00.086626-07:00"
+    Recorded: "2026-09-05"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "oniBi1eWnqM.ctm"
+    Fountain: "oniBi1eWnqM.fountain"
+    Diarization_RTTM: "oniBi1eWnqM.rttm"
+    As_Broadcast_Script: "oniBi1eWnqM.script.txt"
+    Segments_JSON: "oniBi1eWnqM.segments.json"
+    Segments_JSONL: "oniBi1eWnqM.segments.jsonl"
+    Subtitles_SRT: "oniBi1eWnqM.srt"
+    Plain_Text: "oniBi1eWnqM.transcription"
+    Subtitles_VTT: "oniBi1eWnqM.vtt"
+    Transcript_SHA256: "403f6e842b6626773646e17f3e618258053cc04b319022ac57898a280260df5f"
+
+  Demand:   # the join back to the server: which request this answers
     roster_key: "tucker_carlson_us_pres"
     video_uid: "tucker_carlson_us_pres::oniBi1eWnqM"
     video_key: "oniBi1eWnqM"

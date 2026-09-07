@@ -1,10 +1,141 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
 Transcription:
 
   Video:
+    Title: "Something Dark Happened Here…"
+    Description: >-
+      A 43-second excerpt from an interview about the 1995 Oklahoma City bombing. The interviewee disputes
+      the account that a single bomber acted alone, and focuses on a German national referred to as
+      Strassmeyer, whom he says took trips to Oklahoma while a bombing was being planned and was never
+      interviewed by the FBI in person. He says the only explanation he can think of for the FBI not
+      interviewing him would be that the man was working for them, and adds that McVeigh telephoned him two
+      minutes after calling the Ryder truck company. Each of these is the interviewee's own assertion,
+      offered as inference rather than established fact, and it is contested; the man named is described as
+      still alive and is not present to answer it, and no FBI response appears in the clip. Diarization
+      returned six clusters for 43 seconds of two-person interview, which is more speakers than there are
+      humans.
     URL: "https://www.youtube.com/watch?v=01h769M_1tw"
     Video_ID: "01h769M_1tw"
+    Show: "Tucker Carlson"
+    Runtime: "00:00:43"
+    Language: "en"
 
-  Demand:
+  Media:
+    File: "01h769M_1tw.m4a"
+    SHA256: "191b31c9514f4a440317e972c31efae3b169375c1e6600fe9c231aabbecc5bab"
+    Bytes: 698569
+    Duration_Seconds: 43
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=01h769M_1tw"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "01h769M_1tw.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/tucker_carlson_us_pres/01h769M_1tw/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCGttrUON87gWfU6dMWm1fcA"
+    Uploader_ID: "@TuckerCarlson"
+    View_Count: 12055
+    Like_Count: 1003
+    Comment_Count: 55
+    Availability: "public"
+    Published_At: "2026-09-07T17:00:11+00:00"
+    Captured_At: "2026-09-07T14:36:22-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "48.1%"
+      Turns: 4
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "2.1%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "4.9%"
+      Turns: 2
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "18.7%"
+      Turns: 2
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "14.0%"
+      Turns: 1
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "12.2%"
+      Turns: 1
+
+  Topics:
+    - 'Oklahoma City bombing'
+    - 'Alleged FBI failure to interview a witness'
+    - 'Timothy McVeigh'
+    - 'Claims of an undisclosed accomplice'
+
+  Source:
+    Canonical_ID: "23a81061fb7827e1"
+    Transcribed: "2026-09-07T14:42:41.338178-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 139
+    Segments: 13
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T14:36:23.023365-07:00"
+    Transcription_Finished: "2026-09-07T14:42:41.338178-07:00"
+    Recorded: "2026-09-07"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "01h769M_1tw.ctm"
+    Fountain: "01h769M_1tw.fountain"
+    Diarization_RTTM: "01h769M_1tw.rttm"
+    As_Broadcast_Script: "01h769M_1tw.script.txt"
+    Segments_JSON: "01h769M_1tw.segments.json"
+    Segments_JSONL: "01h769M_1tw.segments.jsonl"
+    Subtitles_SRT: "01h769M_1tw.srt"
+    Plain_Text: "01h769M_1tw.transcription"
+    Subtitles_VTT: "01h769M_1tw.vtt"
+    Transcript_SHA256: "e86fffc8fab43e2a1de274cd923fd0515c06d4be60d967fc1b748642bcca0460"
+
+  Demand:   # the join back to the server: which request this answers
     roster_key: "tucker_carlson_us_pres"
     video_uid: "tucker_carlson_us_pres::01h769M_1tw"
     video_key: "01h769M_1tw"

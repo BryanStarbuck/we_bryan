@@ -1,10 +1,132 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
 Transcription:
 
   Video:
+    Title: "A woman got stuck in a Chuck E. Cheese arcade game and Ronny Chieng would like to know HOW"
+    Description: >-
+      A 63-second late-night comedy segment with no political content. It reports that a woman became stuck
+      inside a claw-style arcade machine, the Snow Day console, at a Chuck E. Cheese in Burbank, and that
+      Burbank firefighters took 22 minutes to free her. A news clip and a statement attributed to Michael
+      Dean, president of the manufacturer Coastal Amusements, saying nothing like it had been seen before,
+      are used as setups for the comedian's jokes, which mock the woman at her expense. This clip appears in
+      the demand list because it comes from the channel of a person on the roster; it carries no policy or
+      campaign material of any kind. Diarization returned five clusters, which reflects the segment cutting
+      between the host, news audio and the correspondent rather than five distinct interviewees.
     URL: "https://www.youtube.com/watch?v=npatWKpxGvs"
     Video_ID: "npatWKpxGvs"
+    Show: "The Daily Show"
+    Runtime: "00:01:03"
+    Language: "en"
 
-  Demand:
+  Media:
+    File: "npatWKpxGvs.m4a"
+    SHA256: "e1e4dd9e926de793bfef114c83212507e554a34307ef55c2530c5f1f74670899"
+    Bytes: 1032871
+    Duration_Seconds: 63
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=npatWKpxGvs"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "npatWKpxGvs.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/jon_stewart_nj_sen/npatWKpxGvs/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCwWhs_6x42TyRM4Wstoq8HA"
+    Uploader_ID: "@TheDailyShow"
+    View_Count: 101458
+    Like_Count: 4505
+    Comment_Count: 66
+    Availability: "public"
+    Published_At: "2026-09-06T15:00:03+00:00"
+    Captured_At: "2026-09-07T14:36:37-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "40.1%"
+      Turns: 4
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "8.3%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "29.5%"
+      Turns: 2
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "8.0%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "14.1%"
+      Turns: 1
+
+  Topics:
+    - 'Late-night comedy segment'
+    - 'Arcade machine rescue in Burbank, California'
+    - 'Non-political content from a roster channel'
+
+  Source:
+    Canonical_ID: "020fec848cfff6a7"
+    Transcribed: "2026-09-07T14:41:42.834360-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 176
+    Segments: 15
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T14:36:37.977854-07:00"
+    Transcription_Finished: "2026-09-07T14:41:42.834360-07:00"
+    Recorded: "2026-09-06"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "npatWKpxGvs.ctm"
+    Fountain: "npatWKpxGvs.fountain"
+    Diarization_RTTM: "npatWKpxGvs.rttm"
+    As_Broadcast_Script: "npatWKpxGvs.script.txt"
+    Segments_JSON: "npatWKpxGvs.segments.json"
+    Segments_JSONL: "npatWKpxGvs.segments.jsonl"
+    Subtitles_SRT: "npatWKpxGvs.srt"
+    Plain_Text: "npatWKpxGvs.transcription"
+    Subtitles_VTT: "npatWKpxGvs.vtt"
+    Transcript_SHA256: "6fac62671fbe3eea9a11a38ee6678ba9aeb2df56459208b17f7ead00c53c97d8"
+
+  Demand:   # the join back to the server: which request this answers
     roster_key: "jon_stewart_nj_sen"
     video_uid: "jon_stewart_nj_sen::npatWKpxGvs"
     video_key: "npatWKpxGvs"

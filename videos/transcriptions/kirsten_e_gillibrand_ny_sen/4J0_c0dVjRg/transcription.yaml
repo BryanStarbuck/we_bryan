@@ -1,10 +1,135 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
 Transcription:
 
   Video:
+    Title: "Sen. Gillibrand, Tiffany Muller: End Citizens United and Off The Sidelines Will Join Forces in 2020"
+    Description: >-
+      An 87-second promotional video announcing a 2020 partnership between the advocacy group End Citizens
+      United and the Off The Sidelines project. Speakers argue that people across the country have lost
+      faith in government because the political system is fundamentally corrupted, and that money is at the
+      core of that corruption. They state the aim of electing candidates who will stand up to big money and
+      work to end Citizens United, of flipping the U.S. Senate and holding the House, and of protecting
+      newly elected reform candidates. The clip closes by directing viewers to endcitizensunited.org and
+      offthesidelines.org and to the Twitter account it names as Stop Big Money. The characterisation of the
+      political system as corrupted is the speakers' own advocacy position and is contested. Diarization
+      returned five clusters for what is presented as a two-speaker announcement.
     URL: "https://www.youtube.com/watch?v=4J0_c0dVjRg"
     Video_ID: "4J0_c0dVjRg"
+    Show: "Kirsten Gillibrand"
+    Runtime: "00:01:27"
+    Language: "en"
 
-  Demand:
+  Media:
+    File: "4J0_c0dVjRg.m4a"
+    SHA256: "1e87984c4fec2b51a4ce7c9013b410daea7cd0a831b3b9e31435bdb8dfb7abb0"
+    Bytes: 1412447
+    Duration_Seconds: 87
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=4J0_c0dVjRg"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "4J0_c0dVjRg.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/kirsten_e_gillibrand_ny_sen/4J0_c0dVjRg/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCrb97Wllb6zA2tLx_gKfO9Q"
+    Uploader_ID: "@KirstenGillibrand"
+    View_Count: 362
+    Like_Count: 5
+    Comment_Count: 3
+    Availability: "public"
+    Published_At: "2024-09-19T21:10:46+00:00"
+    Captured_At: "2026-09-07T14:36:48-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "49.4%"
+      Turns: 2
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "16.5%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "16.6%"
+      Turns: 1
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "11.7%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_09"
+      Share_Of_Speech: "5.7%"
+      Turns: 1
+
+  Topics:
+    - 'Campaign finance reform'
+    - 'Citizens United'
+    - 'End Citizens United and Off The Sidelines partnership'
+    - '2020 House and Senate elections'
+    - 'Political fundraising appeals'
+
+  Source:
+    Canonical_ID: "043e2a9554e2d444"
+    Transcribed: "2026-09-07T14:52:33.741407-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 270
+    Segments: 10
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T14:36:49.062030-07:00"
+    Transcription_Finished: "2026-09-07T14:52:33.741407-07:00"
+    Recorded: "2024-09-19"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "4J0_c0dVjRg.ctm"
+    Fountain: "4J0_c0dVjRg.fountain"
+    Diarization_RTTM: "4J0_c0dVjRg.rttm"
+    As_Broadcast_Script: "4J0_c0dVjRg.script.txt"
+    Segments_JSON: "4J0_c0dVjRg.segments.json"
+    Segments_JSONL: "4J0_c0dVjRg.segments.jsonl"
+    Subtitles_SRT: "4J0_c0dVjRg.srt"
+    Plain_Text: "4J0_c0dVjRg.transcription"
+    Subtitles_VTT: "4J0_c0dVjRg.vtt"
+    Transcript_SHA256: "8949ec5f6705f817d78564c65cbe647ad637f84b7fe1a3e8d5166e4bfa1be398"
+
+  Demand:   # the join back to the server: which request this answers
     roster_key: "kirsten_e_gillibrand_ny_sen"
     video_uid: "kirsten_e_gillibrand_ny_sen::4J0_c0dVjRg"
     video_key: "4J0_c0dVjRg"
@@ -13,4 +138,4 @@ Transcription:
     challenger: false
     round: 1
     demand_run_id: "job_1788776100068_62"
-    demand_generated_at: "2026-09-07T21:12:40.989Z"
+    demand_generated_at: "2026-09-07T10:15:03.048Z"
