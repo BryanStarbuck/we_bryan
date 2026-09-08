@@ -1,0 +1,137 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Republicans blocked our plan to keep the government open and protect Americans’ health care"
+    Description: >-
+      Senator Chris Van Hollen explains two votes he cast in the Senate:
+      one against what he calls a one-way, entirely partisan Republican
+      budget, and one for a Democratic proposal to keep the government
+      open. He argues Senate Republicans say they want a bipartisan
+      agreement but that Donald Trump is setting the terms, and that
+      congressional Republicans have contracted out their votes to him. He
+      says he will not write a blank check to what he calls a lawless
+      president, and that guardrails are needed because the president is
+      refusing to spend appropriated funds for health care at NIH and for
+      public safety through FEMA. He then describes the health care
+      element of the Democratic proposal: the Affordable Care Act premium
+      tax credits expire at the end of the year, which he says will
+      immediately cost millions of Americans their insurance and push
+      premiums up across the board. He concludes that Republicans are
+      heading toward a shutdown and that bipartisanship is the way to
+      avoid it. The characterisations of Republican motives and of the
+      president are his own and are contested.
+    URL: "https://www.youtube.com/watch?v=-U9ymKI6Fjc"
+    Video_ID: "-U9ymKI6Fjc"
+    Show: "Senator Chris Van Hollen"
+    Runtime: "00:02:32"
+    Language: "en"
+
+  Media:
+    File: "-U9ymKI6Fjc.m4a"
+    SHA256: "7722f149939e0dd606b0cfff13d14769678f5c23aa9b4616f3683fdc247aada1"
+    Bytes: 2473293
+    Duration_Seconds: 152
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-U9ymKI6Fjc"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-U9ymKI6Fjc.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/chris_van_hollen_md_sen/-U9ymKI6Fjc/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCkpfJWu1N9Okd6PE_NidtBQ"
+    Uploader_ID: "@senatorvanhollen"
+    View_Count: 92374
+    Like_Count: 6649
+    Comment_Count: 469
+    Availability: "public"
+    Published_At: "2025-09-20T02:56:47+00:00"
+    Captured_At: "2026-09-07T19:50:22-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 8
+
+  Topics:
+    - "Government shutdown and budget votes"
+    - "Affordable Care Act premium tax credits"
+    - "Impoundment of appropriated funds at NIH and FEMA"
+    - "Bipartisanship and congressional independence"
+
+  Source:
+    Canonical_ID: "19394a75ba118343"
+    Transcribed: "2026-09-07T19:55:22.881682-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 347
+    Segments: 15
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T19:50:23.360461-07:00"
+    Transcription_Finished: "2026-09-07T19:55:22.881682-07:00"
+    Recorded: "2025-09-20"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-U9ymKI6Fjc.ctm"
+    Fountain: "-U9ymKI6Fjc.fountain"
+    Diarization_RTTM: "-U9ymKI6Fjc.rttm"
+    As_Broadcast_Script: "-U9ymKI6Fjc.script.txt"
+    Segments_JSON: "-U9ymKI6Fjc.segments.json"
+    Segments_JSONL: "-U9ymKI6Fjc.segments.jsonl"
+    Subtitles_SRT: "-U9ymKI6Fjc.srt"
+    Plain_Text: "-U9ymKI6Fjc.transcription"
+    Subtitles_VTT: "-U9ymKI6Fjc.vtt"
+    Transcript_SHA256: "80a07d4eaf08a44ddb173c017ff563b44c3d5fd76b062a6de714f9293b75f3aa"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "chris_van_hollen_md_sen"
+    video_uid: "chris_van_hollen_md_sen::-U9ymKI6Fjc"
+    video_key: "-U9ymKI6Fjc"
+    youtube_id: "-U9ymKI6Fjc"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-U9ymKI6Fjc"
+    source_ref: "-U9ymKI6Fjc"

@@ -1,0 +1,199 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Fox Outnumbered Discusses Senator Hawley's Stance on Masculinity"
+    Description: >-
+      A daytime panel show segment reacting to a Washington Post opinion
+      column by Jonathan Capehart titled "Josh Hawley's Problem with
+      Masculinity," which the hosts quote as calling Hawley a manhood-
+      obsessed hypocrite selling a vision of masculinity to white America
+      that has more to do with prejudice than manliness. Hawley himself
+      does not appear; the segment is entirely about him. The panelists
+      reject the column's racial framing, one arguing that invoking racism
+      is a sign of having lost an argument and that strong male role
+      models benefit children across racial lines, another invoking
+      grandfathers who fought in the Second World War, and several asking
+      when masculinity became a bad thing while affirming that society
+      needs both men and women and needs fathers in the home. A portion of
+      the segment is banter about Hawley's appearance. One panelist reads
+      the column's praise of an alternative model of masculinity that
+      treats vulnerability as a virtue and argues it describes what Hawley
+      is already advocating, and objects that the column's references to
+      labor organizing and marriage are proxies for ideology. The claims
+      about the column's content are the panel's characterisation of it,
+      and its author is not present to respond.
+    URL: "https://www.youtube.com/watch?v=-9minI8fgmU"
+    Video_ID: "-9minI8fgmU"
+    Show: "Senator Josh Hawley"
+    Runtime: "00:05:23"
+    Language: "en"
+
+  Media:
+    File: "-9minI8fgmU.m4a"
+    SHA256: "5be3503a381a03d1278de7cb42a215473e6550e0bbce7fa03256bc850c14edb2"
+    Bytes: 5231400
+    Duration_Seconds: 323
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-9minI8fgmU"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-9minI8fgmU.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/josh_hawley_mo_sen/-9minI8fgmU/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCMzt8xq6qQ3XQ_DlNfJx0-w"
+    Uploader_ID: "@SenatorJoshHawley"
+    View_Count: 4156
+    Like_Count: 252
+    Comment_Count: 71
+    Availability: "public"
+    Published_At: "2022-08-04T16:42:24+00:00"
+    Captured_At: "2026-09-07T19:50:56-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "28.2%"
+      Turns: 7
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "11.1%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "0.6%"
+      Turns: 1
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_11"
+      Share_Of_Speech: "19.4%"
+      Turns: 1
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_17"
+      Share_Of_Speech: "0.4%"
+      Turns: 2
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_18"
+      Share_Of_Speech: "1.5%"
+      Turns: 2
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_19"
+      Share_Of_Speech: "3.7%"
+      Turns: 1
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_22"
+      Share_Of_Speech: "15.0%"
+      Turns: 1
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_24"
+      Share_Of_Speech: "0.8%"
+      Turns: 1
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_28"
+      Share_Of_Speech: "19.1%"
+      Turns: 2
+
+  Topics:
+    - "Commentary on masculinity and gender roles"
+    - "A Washington Post opinion column about Josh Hawley"
+    - "Media criticism and partisan framing"
+    - "Fatherhood and male role models"
+
+  Source:
+    Canonical_ID: "2c9aa85d6e44aaa4"
+    Transcribed: "2026-09-07T19:58:00.973257-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1088
+    Segments: 32
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T19:50:57.295801-07:00"
+    Transcription_Finished: "2026-09-07T19:58:00.973257-07:00"
+    Recorded: "2022-08-04"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-9minI8fgmU.ctm"
+    Fountain: "-9minI8fgmU.fountain"
+    Diarization_RTTM: "-9minI8fgmU.rttm"
+    As_Broadcast_Script: "-9minI8fgmU.script.txt"
+    Segments_JSON: "-9minI8fgmU.segments.json"
+    Segments_JSONL: "-9minI8fgmU.segments.jsonl"
+    Subtitles_SRT: "-9minI8fgmU.srt"
+    Plain_Text: "-9minI8fgmU.transcription"
+    Subtitles_VTT: "-9minI8fgmU.vtt"
+    Transcript_SHA256: "91275a90d1e8ae59e531d5028b72bcb7be1da4caecfc4dfb79cdb314a07a9e04"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "josh_hawley_mo_sen"
+    video_uid: "josh_hawley_mo_sen::-9minI8fgmU"
+    video_key: "-9minI8fgmU"
+    youtube_id: "-9minI8fgmU"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-9minI8fgmU"
+    source_ref: "-9minI8fgmU"

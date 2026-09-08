@@ -1,0 +1,648 @@
+{
+  "schema_version": 2,
+  "canonical_id": "8ac139152689d8aa",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 25.57,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T02:54:02.733Z",
+  "text_sha256": "b708b3d84c1ad48efbfc03598cec3c6e13dfdb618e12ab9be0a442546be786fb",
+  "segments_sha256": "a936d92ca7b3ed1b974d2883ffdc26a3a14d01f3deae20817cc8405331b255fb",
+  "words_sha256": "8bbba46786c57fd16ea8846abafcc769262e37c8e6806c8444e096fa0e7d6ab9",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 1,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 2,
+    "clusters": 2,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.76,
+        "confidence": "low",
+        "clean_s": 24.9
+      },
+      "clean_s": 24.9,
+      "speaking_s": 24.9,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.7
+      },
+      "clean_s": 0.7,
+      "speaking_s": 0.7,
+      "first_s": 24.97
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.09,
+      "end_s": 0.09,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.09,
+      "end_s": 0.1,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "A",
+      "words": [
+        {
+          "w": "A",
+          "s": 0.09,
+          "e": 0.09,
+          "c": 0.641484
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.09,
+      "end_s": 25.05,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "bill that is going to result in millions of children going hungry to fund tax breaks for the richest Americans and that some 14 million people are going to lose health care coverage and that has a huge impact on the health of their families in order to fund tax breaks for billionaires. Big beautiful bill, big beautiful betrayal might be a better thing to call it because Trump campaigned on being there for families but in the end it's families lose and billionaires",
+      "words": [
+        {
+          "w": "bill",
+          "s": 0.09,
+          "e": 0.46,
+          "c": 0.990915
+        },
+        {
+          "w": "that",
+          "s": 0.53,
+          "e": 0.83,
+          "c": 0.990121
+        },
+        {
+          "w": "is",
+          "s": 0.83,
+          "e": 1.01,
+          "c": 0.984342
+        },
+        {
+          "w": "going",
+          "s": 1.01,
+          "e": 1.47,
+          "c": 0.995923
+        },
+        {
+          "w": "to",
+          "s": 1.47,
+          "e": 1.63,
+          "c": 0.996213
+        },
+        {
+          "w": "result",
+          "s": 1.74,
+          "e": 2.21,
+          "c": 0.989511
+        },
+        {
+          "w": "in",
+          "s": 2.33,
+          "e": 2.44,
+          "c": 0.95605
+        },
+        {
+          "w": "millions",
+          "s": 2.44,
+          "e": 2.84,
+          "c": 0.938681
+        },
+        {
+          "w": "of",
+          "s": 2.84,
+          "e": 2.99,
+          "c": 0.963049
+        },
+        {
+          "w": "children",
+          "s": 3,
+          "e": 3.3,
+          "c": 0.984429
+        },
+        {
+          "w": "going",
+          "s": 3.3,
+          "e": 3.5,
+          "c": 0.871386
+        },
+        {
+          "w": "hungry",
+          "s": 3.5,
+          "e": 3.84,
+          "c": 0.976595
+        },
+        {
+          "w": "to",
+          "s": 3.84,
+          "e": 3.98,
+          "c": 0.781339
+        },
+        {
+          "w": "fund",
+          "s": 4.01,
+          "e": 4.24,
+          "c": 0.945755
+        },
+        {
+          "w": "tax",
+          "s": 4.24,
+          "e": 4.5,
+          "c": 0.751448
+        },
+        {
+          "w": "breaks",
+          "s": 4.67,
+          "e": 4.91,
+          "c": 0.985817
+        },
+        {
+          "w": "for",
+          "s": 4.95,
+          "e": 5.22,
+          "c": 0.749101
+        },
+        {
+          "w": "the",
+          "s": 5.22,
+          "e": 5.44,
+          "c": 0.933836
+        },
+        {
+          "w": "richest",
+          "s": 5.44,
+          "e": 5.79,
+          "c": 0.982934
+        },
+        {
+          "w": "Americans",
+          "s": 5.79,
+          "e": 6.24,
+          "c": 0.980794
+        },
+        {
+          "w": "and",
+          "s": 6.24,
+          "e": 6.33,
+          "c": 0.113466
+        },
+        {
+          "w": "that",
+          "s": 6.8,
+          "e": 6.82,
+          "c": 0.922353
+        },
+        {
+          "w": "some",
+          "s": 6.82,
+          "e": 7.2,
+          "c": 0.560003
+        },
+        {
+          "w": "14",
+          "s": 7.2,
+          "e": 7.44,
+          "c": 0.962825
+        },
+        {
+          "w": "million",
+          "s": 7.55,
+          "e": 7.88,
+          "c": 0.992082
+        },
+        {
+          "w": "people",
+          "s": 7.88,
+          "e": 8.21,
+          "c": 0.975733
+        },
+        {
+          "w": "are",
+          "s": 8.21,
+          "e": 8.37,
+          "c": 0.995186
+        },
+        {
+          "w": "going",
+          "s": 8.37,
+          "e": 8.64,
+          "c": 0.996827
+        },
+        {
+          "w": "to",
+          "s": 8.64,
+          "e": 8.75,
+          "c": 0.993047
+        },
+        {
+          "w": "lose",
+          "s": 8.75,
+          "e": 8.94,
+          "c": 0.998843
+        },
+        {
+          "w": "health",
+          "s": 9.12,
+          "e": 9.27,
+          "c": 0.911052
+        },
+        {
+          "w": "care",
+          "s": 9.47,
+          "e": 9.52,
+          "c": 0.9964
+        },
+        {
+          "w": "coverage",
+          "s": 9.52,
+          "e": 10,
+          "c": 0.995528
+        },
+        {
+          "w": "and",
+          "s": 10,
+          "e": 10.17,
+          "c": 0.247464
+        },
+        {
+          "w": "that",
+          "s": 10.17,
+          "e": 10.39,
+          "c": 0.998993
+        },
+        {
+          "w": "has",
+          "s": 10.39,
+          "e": 10.56,
+          "c": 0.999535
+        },
+        {
+          "w": "a",
+          "s": 10.56,
+          "e": 10.61,
+          "c": 0.999949
+        },
+        {
+          "w": "huge",
+          "s": 10.61,
+          "e": 10.83,
+          "c": 0.999535
+        },
+        {
+          "w": "impact",
+          "s": 10.83,
+          "e": 11.08,
+          "c": 0.99958
+        },
+        {
+          "w": "on",
+          "s": 11.21,
+          "e": 11.28,
+          "c": 0.999866
+        },
+        {
+          "w": "the",
+          "s": 11.28,
+          "e": 11.45,
+          "c": 0.999579
+        },
+        {
+          "w": "health",
+          "s": 11.45,
+          "e": 11.78,
+          "c": 0.999743
+        },
+        {
+          "w": "of",
+          "s": 11.79,
+          "e": 11.9,
+          "c": 0.999918
+        },
+        {
+          "w": "their",
+          "s": 11.9,
+          "e": 12.18,
+          "c": 0.999777
+        },
+        {
+          "w": "families",
+          "s": 12.18,
+          "e": 12.63,
+          "c": 0.998332
+        },
+        {
+          "w": "in",
+          "s": 12.63,
+          "e": 12.74,
+          "c": 0.986391
+        },
+        {
+          "w": "order",
+          "s": 12.74,
+          "e": 13.02,
+          "c": 0.999563
+        },
+        {
+          "w": "to",
+          "s": 13.02,
+          "e": 13.13,
+          "c": 0.999973
+        },
+        {
+          "w": "fund",
+          "s": 13.13,
+          "e": 13.34,
+          "c": 0.9996
+        },
+        {
+          "w": "tax",
+          "s": 13.46,
+          "e": 13.52,
+          "c": 0.999319
+        },
+        {
+          "w": "breaks",
+          "s": 13.52,
+          "e": 13.79,
+          "c": 0.999106
+        },
+        {
+          "w": "for",
+          "s": 14.03,
+          "e": 14.03,
+          "c": 0.999775
+        },
+        {
+          "w": "billionaires.",
+          "s": 14.03,
+          "e": 14.91,
+          "c": 0.960972
+        },
+        {
+          "w": "Big",
+          "s": 15.18,
+          "e": 15.2,
+          "c": 0.830004
+        },
+        {
+          "w": "beautiful",
+          "s": 15.2,
+          "e": 15.8,
+          "c": 0.633158
+        },
+        {
+          "w": "bill,",
+          "s": 15.84,
+          "e": 16.19,
+          "c": 0.740176
+        },
+        {
+          "w": "big",
+          "s": 16.19,
+          "e": 16.21,
+          "c": 0.998115
+        },
+        {
+          "w": "beautiful",
+          "s": 16.39,
+          "e": 16.99,
+          "c": 0.9977
+        },
+        {
+          "w": "betrayal",
+          "s": 16.99,
+          "e": 17.52,
+          "c": 0.99903
+        },
+        {
+          "w": "might",
+          "s": 17.52,
+          "e": 17.54,
+          "c": 0.820949
+        },
+        {
+          "w": "be",
+          "s": 17.85,
+          "e": 17.97,
+          "c": 0.999983
+        },
+        {
+          "w": "a",
+          "s": 18.04,
+          "e": 18.04,
+          "c": 0.999998
+        },
+        {
+          "w": "better",
+          "s": 18.09,
+          "e": 18.44,
+          "c": 0.999939
+        },
+        {
+          "w": "thing",
+          "s": 18.44,
+          "e": 18.77,
+          "c": 0.999863
+        },
+        {
+          "w": "to",
+          "s": 18.77,
+          "e": 18.9,
+          "c": 0.999996
+        },
+        {
+          "w": "call",
+          "s": 18.9,
+          "e": 19.02,
+          "c": 0.999981
+        },
+        {
+          "w": "it",
+          "s": 19.26,
+          "e": 19.29,
+          "c": 0.999989
+        },
+        {
+          "w": "because",
+          "s": 19.29,
+          "e": 19.76,
+          "c": 0.996675
+        },
+        {
+          "w": "Trump",
+          "s": 19.76,
+          "e": 20.09,
+          "c": 0.99651
+        },
+        {
+          "w": "campaigned",
+          "s": 20.09,
+          "e": 20.75,
+          "c": 0.997109
+        },
+        {
+          "w": "on",
+          "s": 20.76,
+          "e": 20.88,
+          "c": 0.99987
+        },
+        {
+          "w": "being",
+          "s": 20.88,
+          "e": 21.19,
+          "c": 0.999962
+        },
+        {
+          "w": "there",
+          "s": 21.29,
+          "e": 21.54,
+          "c": 0.999817
+        },
+        {
+          "w": "for",
+          "s": 21.54,
+          "e": 21.74,
+          "c": 0.999985
+        },
+        {
+          "w": "families",
+          "s": 21.74,
+          "e": 22.27,
+          "c": 0.999662
+        },
+        {
+          "w": "but",
+          "s": 22.27,
+          "e": 22.47,
+          "c": 0.746216
+        },
+        {
+          "w": "in",
+          "s": 22.47,
+          "e": 22.52,
+          "c": 0.999983
+        },
+        {
+          "w": "the",
+          "s": 22.66,
+          "e": 22.8,
+          "c": 0.999985
+        },
+        {
+          "w": "end",
+          "s": 22.8,
+          "e": 23,
+          "c": 0.999954
+        },
+        {
+          "w": "it's",
+          "s": 23,
+          "e": 23.26,
+          "c": 0.991227
+        },
+        {
+          "w": "families",
+          "s": 23.26,
+          "e": 23.79,
+          "c": 0.999053
+        },
+        {
+          "w": "lose",
+          "s": 23.79,
+          "e": 23.98,
+          "c": 0.998487
+        },
+        {
+          "w": "and",
+          "s": 24.09,
+          "e": 24.25,
+          "c": 0.999931
+        },
+        {
+          "w": "billionaires",
+          "s": 24.25,
+          "e": 25.05,
+          "c": 0.997255
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 25.05,
+      "end_s": 25.57,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "win.",
+      "words": [
+        {
+          "w": "win.",
+          "s": 25.05,
+          "e": 25.57,
+          "c": 0.997059
+        }
+      ]
+    }
+  ]
+}

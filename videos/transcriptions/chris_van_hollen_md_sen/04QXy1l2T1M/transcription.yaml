@@ -1,0 +1,130 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Van Hollen demands transparency on Jeffrey Epstein investigations"
+    Description: >-
+      Senator Chris Van Hollen describes an amendment he offered in the
+      Senate Appropriations Committee, which he says passed, requiring the
+      Department of Justice to preserve all documents related to the
+      Jeffrey Epstein cases and to report to Congress on the
+      investigations. He says most Americans are familiar with Epstein's
+      crimes but that the public does not know the full story of what the
+      U.S. government did about them, who else was investigated, or who
+      Epstein's associates were. His stated purpose is transparency and
+      accountability. He names no individual as a subject of
+      investigation.
+    URL: "https://www.youtube.com/watch?v=04QXy1l2T1M"
+    Video_ID: "04QXy1l2T1M"
+    Show: "Senator Chris Van Hollen"
+    Runtime: "00:00:46"
+    Language: "en"
+
+  Media:
+    File: "04QXy1l2T1M.m4a"
+    SHA256: "507c045c293269cbd39248f787cd0f32b14329a1b513dad0b670c147ccadc1ec"
+    Bytes: 760558
+    Duration_Seconds: 46
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=04QXy1l2T1M"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "04QXy1l2T1M.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/chris_van_hollen_md_sen/04QXy1l2T1M/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCkpfJWu1N9Okd6PE_NidtBQ"
+    Uploader_ID: "@senatorvanhollen"
+    View_Count: 50731
+    Like_Count: 2400
+    Comment_Count: 108
+    Availability: "public"
+    Published_At: "2025-07-11T00:57:56+00:00"
+    Captured_At: "2026-09-07T19:50:24-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 1
+
+  Topics:
+    - "Jeffrey Epstein investigations"
+    - "Department of Justice document preservation"
+    - "Senate Appropriations Committee amendment"
+    - "Government transparency and congressional oversight"
+
+  Source:
+    Canonical_ID: "6b2d5be452577e92"
+    Transcribed: "2026-09-07T19:54:39.176842-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 102
+    Segments: 3
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T19:50:25.073056-07:00"
+    Transcription_Finished: "2026-09-07T19:54:39.176842-07:00"
+    Recorded: "2025-07-11"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "04QXy1l2T1M.ctm"
+    Fountain: "04QXy1l2T1M.fountain"
+    Diarization_RTTM: "04QXy1l2T1M.rttm"
+    As_Broadcast_Script: "04QXy1l2T1M.script.txt"
+    Segments_JSON: "04QXy1l2T1M.segments.json"
+    Segments_JSONL: "04QXy1l2T1M.segments.jsonl"
+    Subtitles_SRT: "04QXy1l2T1M.srt"
+    Plain_Text: "04QXy1l2T1M.transcription"
+    Subtitles_VTT: "04QXy1l2T1M.vtt"
+    Transcript_SHA256: "375ffcbe97693d646bb449a97ba6492729be951b8cefaf247288ce73a62513f2"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "chris_van_hollen_md_sen"
+    video_uid: "chris_van_hollen_md_sen::04QXy1l2T1M"
+    video_key: "04QXy1l2T1M"
+    youtube_id: "04QXy1l2T1M"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=04QXy1l2T1M"
+    source_ref: "04QXy1l2T1M"

@@ -1,0 +1,206 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Merkley: Russian Hacking is an Attack on Democracy"
+    Description: >-
+      A television interview with Senator Jeff Merkley, introduced as a
+      former national security analyst at the Pentagon, recorded in
+      December 2016 about Russian interference in the presidential
+      election. Merkley calls it "the political equivalent of 9/11,"
+      saying a hostile foreign power attacked the core process behind the
+      presidency, and calls for declassification and for a bipartisan
+      independent commission modelled on the 9/11 Commission. He cites New
+      York Times reporting that the hacking extended to congressional
+      races. The interviewer presses him on the gap between his tone and
+      the outgoing president's more measured remarks; Merkley replies that
+      the president feels a responsibility to a gracious transition while
+      the Senate's role is to recognise the system was hacked, and says it
+      compromises the legitimacy of the incoming presidency. Asked whether
+      the leaks were definitive in the outcome, he declines to go that
+      far, citing other late factors including the FBI director's actions,
+      whom he says history will judge one of the worst directors ever for
+      not briefing the DNC about the hacking and for intervening eleven
+      days before the election. Asked to answer Republicans who call this
+      sour grapes, he says a patriotic American cares when America is
+      attacked. The judgements throughout are his own and are contested.
+    URL: "https://www.youtube.com/watch?v=-RPUZNKq64g"
+    Video_ID: "-RPUZNKq64g"
+    Show: "Senator Jeff Merkley"
+    Runtime: "00:04:15"
+    Language: "en"
+
+  Media:
+    File: "-RPUZNKq64g.m4a"
+    SHA256: "25aed2d00ea61cfd44598427d2db1e8a136fafbd7bce0c6b51062e287da4bc51"
+    Bytes: 4126547
+    Duration_Seconds: 255
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-RPUZNKq64g"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-RPUZNKq64g.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/jeff_merkley_or_sen/-RPUZNKq64g/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCRoXttCJhMnLVCxCaa6VnNQ"
+    Uploader_ID: "@SenatorJeffMerkleyYT"
+    View_Count: 661
+    Like_Count: 9
+    Availability: "public"
+    Published_At: "2016-12-17T20:59:23+00:00"
+    Captured_At: "2026-09-07T19:50:44-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "15.7%"
+      Turns: 3
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "3.0%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "1.2%"
+      Turns: 2
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "39.8%"
+      Turns: 2
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "20.6%"
+      Turns: 6
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "10.0%"
+      Turns: 3
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "2.3%"
+      Turns: 1
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_10"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_11"
+      Share_Of_Speech: "2.8%"
+      Turns: 1
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_16"
+      Share_Of_Speech: "1.9%"
+      Turns: 1
+    Person_12:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_17"
+      Share_Of_Speech: "1.7%"
+      Turns: 1
+
+  Topics:
+    - "Russian interference in the 2016 election"
+    - "Proposed bipartisan independent commission"
+    - "Conduct of the FBI and its director"
+    - "Legitimacy of a presidential transition"
+    - "Hacking of congressional campaigns"
+
+  Source:
+    Canonical_ID: "f9dacb6de5d6c483"
+    Transcribed: "2026-09-07T19:56:12.621033-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 767
+    Segments: 36
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T19:50:44.856922-07:00"
+    Transcription_Finished: "2026-09-07T19:56:12.621033-07:00"
+    Recorded: "2016-12-17"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-RPUZNKq64g.ctm"
+    Fountain: "-RPUZNKq64g.fountain"
+    Diarization_RTTM: "-RPUZNKq64g.rttm"
+    As_Broadcast_Script: "-RPUZNKq64g.script.txt"
+    Segments_JSON: "-RPUZNKq64g.segments.json"
+    Segments_JSONL: "-RPUZNKq64g.segments.jsonl"
+    Subtitles_SRT: "-RPUZNKq64g.srt"
+    Plain_Text: "-RPUZNKq64g.transcription"
+    Subtitles_VTT: "-RPUZNKq64g.vtt"
+    Transcript_SHA256: "4154f8411c8b8075fac24926b0615beff39138c3164931443183328b06819b3b"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "jeff_merkley_or_sen"
+    video_uid: "jeff_merkley_or_sen::-RPUZNKq64g"
+    video_key: "-RPUZNKq64g"
+    youtube_id: "-RPUZNKq64g"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-RPUZNKq64g"
+    source_ref: "-RPUZNKq64g"

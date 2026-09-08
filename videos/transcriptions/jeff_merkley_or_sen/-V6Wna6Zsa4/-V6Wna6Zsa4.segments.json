@@ -1,0 +1,3442 @@
+{
+  "schema_version": 2,
+  "canonical_id": "9d2254de2e546a87",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 181.01,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T02:55:41.031Z",
+  "text_sha256": "ceac581bfcfe98d74afd5290a749d327885ebd8c5f8a0a1430a27aeafcf2c18c",
+  "segments_sha256": "eeb75f834f0b719f26e88b37776a60ab44abafdef484d427311fc285c005ed0c",
+  "words_sha256": "a21a48a3fa71bad486a203ad2bbabb7c615d36a57a16097467e526bcb5c51cad",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 6,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 39,
+    "clusters": 5,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 23.5
+      },
+      "clean_s": 23.5,
+      "speaking_s": 23.5,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 82.1
+      },
+      "clean_s": 82.1,
+      "speaking_s": 82.1,
+      "first_s": 28.47
+    },
+    {
+      "id": "SPEAKER_02",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 21.8
+      },
+      "clean_s": 21.8,
+      "speaking_s": 21.8,
+      "first_s": 54.71
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 4,
+      "label": "Speaker 4 (higher-pitched voice)",
+      "voice": {
+        "descriptor": "woman",
+        "p": 0.81,
+        "confidence": "low",
+        "clean_s": 11.8
+      },
+      "clean_s": 11.8,
+      "speaking_s": 11.8,
+      "first_s": 92.98
+    },
+    {
+      "id": "SPEAKER_04",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 7.8
+      },
+      "clean_s": 7.8,
+      "speaking_s": 7.8,
+      "first_s": 173.29
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 25.36,
+      "end_s": 26.56,
+      "segment_i": 1,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 31.98,
+      "end_s": 32.36,
+      "segment_i": 7,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 50.17,
+      "end_s": 50.67,
+      "segment_i": 9,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 76.01,
+      "end_s": 76.77,
+      "segment_i": 14,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 83.4,
+      "end_s": 83.9,
+      "segment_i": 16,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 84.02,
+      "end_s": 84.33,
+      "segment_i": 17,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 113.25,
+      "end_s": 113.7,
+      "segment_i": 22,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 117.69,
+      "end_s": 118.24,
+      "segment_i": 24,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 136.49,
+      "end_s": 137,
+      "segment_i": 27,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 140.24,
+      "end_s": 140.24,
+      "segment_i": 29,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 142.66,
+      "end_s": 144.43,
+      "segment_i": 31,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 162.05,
+      "end_s": 162.89,
+      "segment_i": 33,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 165.22,
+      "end_s": 166.44,
+      "segment_i": 35,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.91,
+      "end_s": 25.22,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Now, you may think that I'm raising this document before you, this plan for how to kill healthcare, and that maybe it doesn't have any bearance on the real debate here, but it absolutely does. These talking points are being echoed in this very chamber. In this very chamber, in order to kill healthcare. Let's see. Well, here",
+      "words": [
+        {
+          "w": "Now,",
+          "s": 0.91,
+          "e": 1.59,
+          "c": 0.769391
+        },
+        {
+          "w": "you",
+          "s": 1.59,
+          "e": 1.77,
+          "c": 0.940602
+        },
+        {
+          "w": "may",
+          "s": 1.95,
+          "e": 1.95,
+          "c": 0.996006
+        },
+        {
+          "w": "think",
+          "s": 1.96,
+          "e": 2.24,
+          "c": 0.997761
+        },
+        {
+          "w": "that",
+          "s": 2.24,
+          "e": 2.48,
+          "c": 0.962146
+        },
+        {
+          "w": "I'm",
+          "s": 2.48,
+          "e": 2.68,
+          "c": 0.904192
+        },
+        {
+          "w": "raising",
+          "s": 2.68,
+          "e": 3.07,
+          "c": 0.958215
+        },
+        {
+          "w": "this",
+          "s": 3.1,
+          "e": 3.32,
+          "c": 0.980135
+        },
+        {
+          "w": "document",
+          "s": 3.32,
+          "e": 3.8,
+          "c": 0.985461
+        },
+        {
+          "w": "before",
+          "s": 3.8,
+          "e": 4.14,
+          "c": 0.971625
+        },
+        {
+          "w": "you,",
+          "s": 4.14,
+          "e": 4.32,
+          "c": 0.612963
+        },
+        {
+          "w": "this",
+          "s": 4.42,
+          "e": 5.24,
+          "c": 0.677199
+        },
+        {
+          "w": "plan",
+          "s": 5.24,
+          "e": 5.63,
+          "c": 0.86609
+        },
+        {
+          "w": "for",
+          "s": 5.79,
+          "e": 5.84,
+          "c": 0.938263
+        },
+        {
+          "w": "how",
+          "s": 5.84,
+          "e": 5.92,
+          "c": 0.883999
+        },
+        {
+          "w": "to",
+          "s": 5.92,
+          "e": 6.04,
+          "c": 0.934409
+        },
+        {
+          "w": "kill",
+          "s": 6.04,
+          "e": 6.12,
+          "c": 0.819061
+        },
+        {
+          "w": "healthcare,",
+          "s": 6.21,
+          "e": 7.19,
+          "c": 0.469448
+        },
+        {
+          "w": "and",
+          "s": 7.35,
+          "e": 7.44,
+          "c": 0.851559
+        },
+        {
+          "w": "that",
+          "s": 7.71,
+          "e": 7.71,
+          "c": 0.840921
+        },
+        {
+          "w": "maybe",
+          "s": 7.71,
+          "e": 8.03,
+          "c": 0.981418
+        },
+        {
+          "w": "it",
+          "s": 8.03,
+          "e": 8.17,
+          "c": 0.951401
+        },
+        {
+          "w": "doesn't",
+          "s": 8.17,
+          "e": 8.63,
+          "c": 0.993212
+        },
+        {
+          "w": "have",
+          "s": 8.76,
+          "e": 8.9,
+          "c": 0.9979
+        },
+        {
+          "w": "any",
+          "s": 8.9,
+          "e": 9.05,
+          "c": 0.988749
+        },
+        {
+          "w": "bearance",
+          "s": 9.12,
+          "e": 9.63,
+          "c": 0.423365
+        },
+        {
+          "w": "on",
+          "s": 9.63,
+          "e": 9.76,
+          "c": 0.991089
+        },
+        {
+          "w": "the",
+          "s": 9.76,
+          "e": 9.96,
+          "c": 0.988979
+        },
+        {
+          "w": "real",
+          "s": 9.96,
+          "e": 10.19,
+          "c": 0.995281
+        },
+        {
+          "w": "debate",
+          "s": 10.23,
+          "e": 10.63,
+          "c": 0.999216
+        },
+        {
+          "w": "here,",
+          "s": 10.63,
+          "e": 10.99,
+          "c": 0.747035
+        },
+        {
+          "w": "but",
+          "s": 11,
+          "e": 11.11,
+          "c": 0.719206
+        },
+        {
+          "w": "it",
+          "s": 11.22,
+          "e": 11.3,
+          "c": 0.99635
+        },
+        {
+          "w": "absolutely",
+          "s": 11.3,
+          "e": 11.77,
+          "c": 0.997581
+        },
+        {
+          "w": "does.",
+          "s": 11.96,
+          "e": 13.08,
+          "c": 0.748316
+        },
+        {
+          "w": "These",
+          "s": 13.55,
+          "e": 13.56,
+          "c": 0.996322
+        },
+        {
+          "w": "talking",
+          "s": 13.56,
+          "e": 14.16,
+          "c": 0.976885
+        },
+        {
+          "w": "points",
+          "s": 14.59,
+          "e": 14.81,
+          "c": 0.999211
+        },
+        {
+          "w": "are",
+          "s": 14.81,
+          "e": 15.1,
+          "c": 0.996662
+        },
+        {
+          "w": "being",
+          "s": 15.1,
+          "e": 15.58,
+          "c": 0.997759
+        },
+        {
+          "w": "echoed",
+          "s": 15.58,
+          "e": 16.15,
+          "c": 0.998471
+        },
+        {
+          "w": "in",
+          "s": 16.15,
+          "e": 16.3,
+          "c": 0.996865
+        },
+        {
+          "w": "this",
+          "s": 16.38,
+          "e": 16.72,
+          "c": 0.998352
+        },
+        {
+          "w": "very",
+          "s": 16.72,
+          "e": 17.1,
+          "c": 0.995716
+        },
+        {
+          "w": "chamber.",
+          "s": 17.1,
+          "e": 17.82,
+          "c": 0.264605
+        },
+        {
+          "w": "In",
+          "s": 17.93,
+          "e": 17.99,
+          "c": 0.985346
+        },
+        {
+          "w": "this",
+          "s": 18.29,
+          "e": 18.33,
+          "c": 0.989513
+        },
+        {
+          "w": "very",
+          "s": 18.33,
+          "e": 18.64,
+          "c": 0.97386
+        },
+        {
+          "w": "chamber,",
+          "s": 18.64,
+          "e": 19.44,
+          "c": 0.538339
+        },
+        {
+          "w": "in",
+          "s": 19.44,
+          "e": 19.61,
+          "c": 0.991215
+        },
+        {
+          "w": "order",
+          "s": 19.61,
+          "e": 20.04,
+          "c": 0.999182
+        },
+        {
+          "w": "to",
+          "s": 20.04,
+          "e": 20.21,
+          "c": 0.999699
+        },
+        {
+          "w": "kill",
+          "s": 20.21,
+          "e": 20.55,
+          "c": 0.997463
+        },
+        {
+          "w": "healthcare.",
+          "s": 20.55,
+          "e": 21.69,
+          "c": 0.941198
+        },
+        {
+          "w": "Let's",
+          "s": 22.19,
+          "e": 22.65,
+          "c": 0.942173
+        },
+        {
+          "w": "see.",
+          "s": 22.66,
+          "e": 23.8,
+          "c": 0.587091
+        },
+        {
+          "w": "Well,",
+          "s": 24.31,
+          "e": 24.63,
+          "c": 0.647692
+        },
+        {
+          "w": "here",
+          "s": 24.63,
+          "e": 25.22,
+          "c": 0.999266
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 25.36,
+      "end_s": 26.56,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "we go. Frank",
+      "words": [
+        {
+          "w": "we",
+          "s": 25.36,
+          "e": 25.6,
+          "c": 0.999487
+        },
+        {
+          "w": "go.",
+          "s": 25.6,
+          "e": 26.35,
+          "c": 0.924373
+        },
+        {
+          "w": "Frank",
+          "s": 26.56,
+          "e": 26.56,
+          "c": 0.560255
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 26.83,
+      "end_s": 28.44,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Lunt's memo, that's his",
+      "words": [
+        {
+          "w": "Lunt's",
+          "s": 26.83,
+          "e": 27.23,
+          "c": 0.799747
+        },
+        {
+          "w": "memo,",
+          "s": 27.23,
+          "e": 27.71,
+          "c": 0.290892
+        },
+        {
+          "w": "that's",
+          "s": 27.88,
+          "e": 28.17,
+          "c": 0.988712
+        },
+        {
+          "w": "his",
+          "s": 28.24,
+          "e": 28.44,
+          "c": 0.957905
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 28.44,
+      "end_s": 28.8,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "memo.",
+      "words": [
+        {
+          "w": "memo.",
+          "s": 28.44,
+          "e": 28.8,
+          "c": 0.818953
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 28.78,
+      "end_s": 28.83,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "on",
+      "words": [
+        {
+          "w": "on",
+          "s": 28.784,
+          "e": 28.834,
+          "c": 0.878655
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 29.04,
+      "end_s": 30.07,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "how to kill health",
+      "words": [
+        {
+          "w": "how",
+          "s": 29.044,
+          "e": 29.194,
+          "c": 0.741756
+        },
+        {
+          "w": "to",
+          "s": 29.194,
+          "e": 29.354,
+          "c": 0.995824
+        },
+        {
+          "w": "kill",
+          "s": 29.354,
+          "e": 29.684,
+          "c": 0.99087
+        },
+        {
+          "w": "health",
+          "s": 29.684,
+          "e": 30.074,
+          "c": 0.450992
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 30.17,
+      "end_s": 31.78,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "care came out in April.",
+      "words": [
+        {
+          "w": "care",
+          "s": 30.174,
+          "e": 30.204,
+          "c": 0.993655
+        },
+        {
+          "w": "came",
+          "s": 30.604,
+          "e": 30.884,
+          "c": 0.364563
+        },
+        {
+          "w": "out",
+          "s": 30.924,
+          "e": 31.084,
+          "c": 0.993887
+        },
+        {
+          "w": "in",
+          "s": 31.174,
+          "e": 31.324,
+          "c": 0.973566
+        },
+        {
+          "w": "April.",
+          "s": 31.324,
+          "e": 31.784,
+          "c": 0.698597
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 31.98,
+      "end_s": 32.36,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "It says",
+      "words": [
+        {
+          "w": "It",
+          "s": 31.984,
+          "e": 31.984,
+          "c": 0.943838
+        },
+        {
+          "w": "says",
+          "s": 32.044,
+          "e": 32.364,
+          "c": 0.97997
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 32.46,
+      "end_s": 50.16,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "talking point number five, health care denial horror stories from Canada and other countries do resonate, but you have to humanize them. You'll notice we recommend the phrase \"government takeover\" rather than \"government run\" or \"government controlled.\" Why? Because \"government takeover\" sounds even scarier.",
+      "words": [
+        {
+          "w": "talking",
+          "s": 32.464,
+          "e": 33.064,
+          "c": 0.524692
+        },
+        {
+          "w": "point",
+          "s": 33.604,
+          "e": 33.614,
+          "c": 0.980423
+        },
+        {
+          "w": "number",
+          "s": 33.614,
+          "e": 34.224,
+          "c": 0.870819
+        },
+        {
+          "w": "five,",
+          "s": 34.224,
+          "e": 34.704,
+          "c": 0.177863
+        },
+        {
+          "w": "health",
+          "s": 34.704,
+          "e": 35.134,
+          "c": 0.393539
+        },
+        {
+          "w": "care",
+          "s": 35.134,
+          "e": 35.424,
+          "c": 0.980205
+        },
+        {
+          "w": "denial",
+          "s": 35.614,
+          "e": 36.064,
+          "c": 0.782937
+        },
+        {
+          "w": "horror",
+          "s": 36.324,
+          "e": 36.354,
+          "c": 0.97323
+        },
+        {
+          "w": "stories",
+          "s": 36.354,
+          "e": 36.644,
+          "c": 0.982309
+        },
+        {
+          "w": "from",
+          "s": 36.744,
+          "e": 36.874,
+          "c": 0.984737
+        },
+        {
+          "w": "Canada",
+          "s": 36.874,
+          "e": 37.164,
+          "c": 0.961899
+        },
+        {
+          "w": "and",
+          "s": 37.164,
+          "e": 37.304,
+          "c": 0.970293
+        },
+        {
+          "w": "other",
+          "s": 37.304,
+          "e": 37.364,
+          "c": 0.996111
+        },
+        {
+          "w": "countries",
+          "s": 37.884,
+          "e": 37.974,
+          "c": 0.993462
+        },
+        {
+          "w": "do",
+          "s": 37.974,
+          "e": 38.064,
+          "c": 0.941161
+        },
+        {
+          "w": "resonate,",
+          "s": 38.064,
+          "e": 38.534,
+          "c": 0.441557
+        },
+        {
+          "w": "but",
+          "s": 38.534,
+          "e": 38.614,
+          "c": 0.980017
+        },
+        {
+          "w": "you",
+          "s": 38.814,
+          "e": 38.814,
+          "c": 0.989244
+        },
+        {
+          "w": "have",
+          "s": 38.814,
+          "e": 39.034,
+          "c": 0.992767
+        },
+        {
+          "w": "to",
+          "s": 39.034,
+          "e": 39.124,
+          "c": 0.983584
+        },
+        {
+          "w": "humanize",
+          "s": 39.384,
+          "e": 39.694,
+          "c": 0.976308
+        },
+        {
+          "w": "them.",
+          "s": 39.804,
+          "e": 40.144,
+          "c": 0.882364
+        },
+        {
+          "w": "You'll",
+          "s": 40.334,
+          "e": 40.524,
+          "c": 0.980284
+        },
+        {
+          "w": "notice",
+          "s": 40.524,
+          "e": 40.914,
+          "c": 0.996421
+        },
+        {
+          "w": "we",
+          "s": 40.914,
+          "e": 41.044,
+          "c": 0.870099
+        },
+        {
+          "w": "recommend",
+          "s": 41.044,
+          "e": 41.444,
+          "c": 0.993517
+        },
+        {
+          "w": "the",
+          "s": 41.614,
+          "e": 41.824,
+          "c": 0.993193
+        },
+        {
+          "w": "phrase",
+          "s": 41.964,
+          "e": 42.244,
+          "c": 0.997341
+        },
+        {
+          "w": "\"government",
+          "s": 42.284,
+          "e": 43.174,
+          "c": 0.367186
+        },
+        {
+          "w": "takeover\"",
+          "s": 43.444,
+          "e": 44.084,
+          "c": 0.795482
+        },
+        {
+          "w": "rather",
+          "s": 44.084,
+          "e": 44.484,
+          "c": 0.979965
+        },
+        {
+          "w": "than",
+          "s": 45.004,
+          "e": 45.124,
+          "c": 0.989934
+        },
+        {
+          "w": "\"government",
+          "s": 45.124,
+          "e": 45.484,
+          "c": 0.440009
+        },
+        {
+          "w": "run\"",
+          "s": 45.574,
+          "e": 45.734,
+          "c": 0.303482
+        },
+        {
+          "w": "or",
+          "s": 45.734,
+          "e": 45.734,
+          "c": 0.982751
+        },
+        {
+          "w": "\"government",
+          "s": 45.854,
+          "e": 46.304,
+          "c": 0.977004
+        },
+        {
+          "w": "controlled.\"",
+          "s": 46.304,
+          "e": 46.944,
+          "c": 0.537983
+        },
+        {
+          "w": "Why?",
+          "s": 47.204,
+          "e": 47.874,
+          "c": 0.985191
+        },
+        {
+          "w": "Because",
+          "s": 48.034,
+          "e": 48.244,
+          "c": 0.802165
+        },
+        {
+          "w": "\"government",
+          "s": 48.314,
+          "e": 48.824,
+          "c": 0.555886
+        },
+        {
+          "w": "takeover\"",
+          "s": 48.824,
+          "e": 49.224,
+          "c": 0.958327
+        },
+        {
+          "w": "sounds",
+          "s": 49.224,
+          "e": 49.494,
+          "c": 0.967252
+        },
+        {
+          "w": "even",
+          "s": 49.494,
+          "e": 49.504,
+          "c": 0.996761
+        },
+        {
+          "w": "scarier.",
+          "s": 49.504,
+          "e": 50.164,
+          "c": 0.889591
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 50.17,
+      "end_s": 50.67,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "So what",
+      "words": [
+        {
+          "w": "So",
+          "s": 50.174,
+          "e": 50.174,
+          "c": 0.975334
+        },
+        {
+          "w": "what",
+          "s": 50.424,
+          "e": 50.674,
+          "c": 0.898501
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 50.67,
+      "end_s": 54.78,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "did we hear on the floor of this chamber from our minority leader",
+      "words": [
+        {
+          "w": "did",
+          "s": 50.674,
+          "e": 50.934,
+          "c": 0.949492
+        },
+        {
+          "w": "we",
+          "s": 50.934,
+          "e": 51.094,
+          "c": 0.998605
+        },
+        {
+          "w": "hear",
+          "s": 51.254,
+          "e": 51.434,
+          "c": 0.962748
+        },
+        {
+          "w": "on",
+          "s": 51.434,
+          "e": 51.464,
+          "c": 0.993644
+        },
+        {
+          "w": "the",
+          "s": 51.464,
+          "e": 51.854,
+          "c": 0.996234
+        },
+        {
+          "w": "floor",
+          "s": 51.984,
+          "e": 52.304,
+          "c": 0.990193
+        },
+        {
+          "w": "of",
+          "s": 52.304,
+          "e": 52.464,
+          "c": 0.573656
+        },
+        {
+          "w": "this",
+          "s": 52.464,
+          "e": 52.714,
+          "c": 0.986098
+        },
+        {
+          "w": "chamber",
+          "s": 52.794,
+          "e": 53.194,
+          "c": 0.912458
+        },
+        {
+          "w": "from",
+          "s": 53.744,
+          "e": 53.754,
+          "c": 0.994089
+        },
+        {
+          "w": "our",
+          "s": 53.754,
+          "e": 53.954,
+          "c": 0.991578
+        },
+        {
+          "w": "minority",
+          "s": 53.954,
+          "e": 54.414,
+          "c": 0.78508
+        },
+        {
+          "w": "leader",
+          "s": 54.574,
+          "e": 54.784,
+          "c": 0.990698
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 55.3,
+      "end_s": 58.22,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "just recently? I quote:",
+      "words": [
+        {
+          "w": "just",
+          "s": 55.304,
+          "e": 55.724,
+          "c": 0.800952
+        },
+        {
+          "w": "recently?",
+          "s": 55.724,
+          "e": 56.444,
+          "c": 0.931674
+        },
+        {
+          "w": "I",
+          "s": 56.704,
+          "e": 56.734,
+          "c": 0.935101
+        },
+        {
+          "w": "quote:",
+          "s": 56.734,
+          "e": 58.224,
+          "c": 0.485546
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 58.5,
+      "end_s": 59.93,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Americans are concerned",
+      "words": [
+        {
+          "w": "Americans",
+          "s": 58.496,
+          "e": 58.896,
+          "c": 0.883393
+        },
+        {
+          "w": "are",
+          "s": 58.986,
+          "e": 59.176,
+          "c": 0.996556
+        },
+        {
+          "w": "concerned",
+          "s": 59.176,
+          "e": 59.926,
+          "c": 0.998112
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 59.93,
+      "end_s": 76.01,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "about a government takeover of healthcare, and for good reason. And it goes on. So recognize that that is a point that's coming from a document about how to kill healthcare, not a responsible debate about the plan we have",
+      "words": [
+        {
+          "w": "about",
+          "s": 59.926,
+          "e": 60.156,
+          "c": 0.994505
+        },
+        {
+          "w": "a",
+          "s": 60.156,
+          "e": 60.426,
+          "c": 0.91311
+        },
+        {
+          "w": "government",
+          "s": 60.576,
+          "e": 61.106,
+          "c": 0.975364
+        },
+        {
+          "w": "takeover",
+          "s": 61.196,
+          "e": 61.736,
+          "c": 0.85284
+        },
+        {
+          "w": "of",
+          "s": 61.736,
+          "e": 61.846,
+          "c": 0.96217
+        },
+        {
+          "w": "healthcare,",
+          "s": 61.846,
+          "e": 62.476,
+          "c": 0.373084
+        },
+        {
+          "w": "and",
+          "s": 62.476,
+          "e": 62.596,
+          "c": 0.612268
+        },
+        {
+          "w": "for",
+          "s": 62.686,
+          "e": 62.776,
+          "c": 0.957474
+        },
+        {
+          "w": "good",
+          "s": 62.776,
+          "e": 63.036,
+          "c": 0.899328
+        },
+        {
+          "w": "reason.",
+          "s": 63.036,
+          "e": 64.126,
+          "c": 0.546125
+        },
+        {
+          "w": "And",
+          "s": 65.116,
+          "e": 65.206,
+          "c": 0.918561
+        },
+        {
+          "w": "it",
+          "s": 65.216,
+          "e": 65.476,
+          "c": 0.992411
+        },
+        {
+          "w": "goes",
+          "s": 65.476,
+          "e": 66.026,
+          "c": 0.998847
+        },
+        {
+          "w": "on.",
+          "s": 66.026,
+          "e": 66.736,
+          "c": 0.894251
+        },
+        {
+          "w": "So",
+          "s": 66.736,
+          "e": 66.946,
+          "c": 0.984596
+        },
+        {
+          "w": "recognize",
+          "s": 67.056,
+          "e": 67.886,
+          "c": 0.738915
+        },
+        {
+          "w": "that",
+          "s": 67.936,
+          "e": 68.176,
+          "c": 0.969934
+        },
+        {
+          "w": "that",
+          "s": 68.176,
+          "e": 68.416,
+          "c": 0.869846
+        },
+        {
+          "w": "is",
+          "s": 68.416,
+          "e": 68.496,
+          "c": 0.972756
+        },
+        {
+          "w": "a",
+          "s": 68.556,
+          "e": 68.596,
+          "c": 0.982484
+        },
+        {
+          "w": "point",
+          "s": 68.596,
+          "e": 68.716,
+          "c": 0.998729
+        },
+        {
+          "w": "that's",
+          "s": 68.926,
+          "e": 69.236,
+          "c": 0.771853
+        },
+        {
+          "w": "coming",
+          "s": 69.316,
+          "e": 69.616,
+          "c": 0.995835
+        },
+        {
+          "w": "from",
+          "s": 69.616,
+          "e": 69.856,
+          "c": 0.994476
+        },
+        {
+          "w": "a",
+          "s": 69.856,
+          "e": 69.916,
+          "c": 0.990613
+        },
+        {
+          "w": "document",
+          "s": 69.916,
+          "e": 70.456,
+          "c": 0.995718
+        },
+        {
+          "w": "about",
+          "s": 70.456,
+          "e": 70.796,
+          "c": 0.861426
+        },
+        {
+          "w": "how",
+          "s": 70.796,
+          "e": 71.026,
+          "c": 0.969638
+        },
+        {
+          "w": "to",
+          "s": 71.026,
+          "e": 71.156,
+          "c": 0.992763
+        },
+        {
+          "w": "kill",
+          "s": 71.246,
+          "e": 71.476,
+          "c": 0.98672
+        },
+        {
+          "w": "healthcare,",
+          "s": 71.476,
+          "e": 72.716,
+          "c": 0.807145
+        },
+        {
+          "w": "not",
+          "s": 72.966,
+          "e": 72.966,
+          "c": 0.993625
+        },
+        {
+          "w": "a",
+          "s": 73.036,
+          "e": 73.046,
+          "c": 0.99416
+        },
+        {
+          "w": "responsible",
+          "s": 73.046,
+          "e": 73.976,
+          "c": 0.991463
+        },
+        {
+          "w": "debate",
+          "s": 73.976,
+          "e": 74.476,
+          "c": 0.999336
+        },
+        {
+          "w": "about",
+          "s": 74.486,
+          "e": 74.696,
+          "c": 0.992956
+        },
+        {
+          "w": "the",
+          "s": 74.906,
+          "e": 75.156,
+          "c": 0.997246
+        },
+        {
+          "w": "plan",
+          "s": 75.156,
+          "e": 75.496,
+          "c": 0.994437
+        },
+        {
+          "w": "we",
+          "s": 75.496,
+          "e": 75.636,
+          "c": 0.986694
+        },
+        {
+          "w": "have",
+          "s": 75.736,
+          "e": 76.006,
+          "c": 0.998428
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 76.01,
+      "end_s": 76.77,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "in front of",
+      "words": [
+        {
+          "w": "in",
+          "s": 76.006,
+          "e": 76.176,
+          "c": 0.996605
+        },
+        {
+          "w": "front",
+          "s": 76.176,
+          "e": 76.486,
+          "c": 0.999579
+        },
+        {
+          "w": "of",
+          "s": 76.636,
+          "e": 76.766,
+          "c": 0.998574
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 76.77,
+      "end_s": 82.98,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "us. Well, let's take a look at another example: Franklin's memo. His memo, talking points three",
+      "words": [
+        {
+          "w": "us.",
+          "s": 76.766,
+          "e": 77.236,
+          "c": 0.99744
+        },
+        {
+          "w": "Well,",
+          "s": 77.236,
+          "e": 77.476,
+          "c": 0.550134
+        },
+        {
+          "w": "let's",
+          "s": 77.556,
+          "e": 77.676,
+          "c": 0.996343
+        },
+        {
+          "w": "take",
+          "s": 77.676,
+          "e": 77.836,
+          "c": 0.991408
+        },
+        {
+          "w": "a",
+          "s": 77.836,
+          "e": 77.876,
+          "c": 0.997236
+        },
+        {
+          "w": "look",
+          "s": 77.876,
+          "e": 77.956,
+          "c": 0.999624
+        },
+        {
+          "w": "at",
+          "s": 78.036,
+          "e": 78.116,
+          "c": 0.990841
+        },
+        {
+          "w": "another",
+          "s": 78.116,
+          "e": 78.386,
+          "c": 0.99398
+        },
+        {
+          "w": "example:",
+          "s": 78.436,
+          "e": 78.756,
+          "c": 0.302715
+        },
+        {
+          "w": "Franklin's",
+          "s": 78.756,
+          "e": 80.066,
+          "c": 0.7566
+        },
+        {
+          "w": "memo.",
+          "s": 80.066,
+          "e": 80.996,
+          "c": 0.945314
+        },
+        {
+          "w": "His",
+          "s": 81.246,
+          "e": 81.246,
+          "c": 0.913426
+        },
+        {
+          "w": "memo,",
+          "s": 81.326,
+          "e": 81.716,
+          "c": 0.748503
+        },
+        {
+          "w": "talking",
+          "s": 81.796,
+          "e": 82.346,
+          "c": 0.581926
+        },
+        {
+          "w": "points",
+          "s": 82.346,
+          "e": 82.856,
+          "c": 0.995036
+        },
+        {
+          "w": "three",
+          "s": 82.856,
+          "e": 82.976,
+          "c": 0.722927
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 83.4,
+      "end_s": 83.9,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and four,",
+      "words": [
+        {
+          "w": "and",
+          "s": 83.396,
+          "e": 83.496,
+          "c": 0.995723
+        },
+        {
+          "w": "four,",
+          "s": 83.576,
+          "e": 83.896,
+          "c": 0.494816
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 84.02,
+      "end_s": 84.33,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Time is a",
+      "words": [
+        {
+          "w": "Time",
+          "s": 84.016,
+          "e": 84.126,
+          "c": 0.671791
+        },
+        {
+          "w": "is",
+          "s": 84.126,
+          "e": 84.256,
+          "c": 0.984724
+        },
+        {
+          "w": "a",
+          "s": 84.256,
+          "e": 84.326,
+          "c": 0.915253
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 84.59,
+      "end_s": 86.74,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "government healthcare killer. Nothing else",
+      "words": [
+        {
+          "w": "government",
+          "s": 84.586,
+          "e": 84.996,
+          "c": 0.976052
+        },
+        {
+          "w": "healthcare",
+          "s": 85.026,
+          "e": 85.656,
+          "c": 0.497873
+        },
+        {
+          "w": "killer.",
+          "s": 85.796,
+          "e": 86.356,
+          "c": 0.658933
+        },
+        {
+          "w": "Nothing",
+          "s": 86.356,
+          "e": 86.626,
+          "c": 0.553286
+        },
+        {
+          "w": "else",
+          "s": 86.626,
+          "e": 86.736,
+          "c": 0.994964
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 86.92,
+      "end_s": 93.04,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "turns people against government takeover of healthcare than the expectation that this plan will result in delayed and",
+      "words": [
+        {
+          "w": "turns",
+          "s": 86.916,
+          "e": 87.046,
+          "c": 0.964969
+        },
+        {
+          "w": "people",
+          "s": 87.046,
+          "e": 87.346,
+          "c": 0.979544
+        },
+        {
+          "w": "against",
+          "s": 87.346,
+          "e": 87.616,
+          "c": 0.982566
+        },
+        {
+          "w": "government",
+          "s": 87.736,
+          "e": 88.016,
+          "c": 0.915872
+        },
+        {
+          "w": "takeover",
+          "s": 88.116,
+          "e": 88.476,
+          "c": 0.860428
+        },
+        {
+          "w": "of",
+          "s": 88.636,
+          "e": 88.656,
+          "c": 0.990006
+        },
+        {
+          "w": "healthcare",
+          "s": 89.206,
+          "e": 89.616,
+          "c": 0.903004
+        },
+        {
+          "w": "than",
+          "s": 89.646,
+          "e": 89.876,
+          "c": 0.847534
+        },
+        {
+          "w": "the",
+          "s": 89.876,
+          "e": 90.066,
+          "c": 0.993964
+        },
+        {
+          "w": "expectation",
+          "s": 90.066,
+          "e": 90.786,
+          "c": 0.993055
+        },
+        {
+          "w": "that",
+          "s": 90.786,
+          "e": 91.046,
+          "c": 0.990815
+        },
+        {
+          "w": "this",
+          "s": 91.046,
+          "e": 91.306,
+          "c": 0.988184
+        },
+        {
+          "w": "plan",
+          "s": 91.306,
+          "e": 91.566,
+          "c": 0.992428
+        },
+        {
+          "w": "will",
+          "s": 91.566,
+          "e": 91.826,
+          "c": 0.968795
+        },
+        {
+          "w": "result",
+          "s": 91.826,
+          "e": 92.216,
+          "c": 0.994791
+        },
+        {
+          "w": "in",
+          "s": 92.216,
+          "e": 92.236,
+          "c": 0.992167
+        },
+        {
+          "w": "delayed",
+          "s": 92.356,
+          "e": 92.806,
+          "c": 0.986585
+        },
+        {
+          "w": "and",
+          "s": 92.806,
+          "e": 93.036,
+          "c": 0.980518
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 93.04,
+      "end_s": 100.23,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "denied treatment. The arguments against the plan—now note that this is about a plan that wasn't",
+      "words": [
+        {
+          "w": "denied",
+          "s": 93.036,
+          "e": 93.386,
+          "c": 0.975069
+        },
+        {
+          "w": "treatment.",
+          "s": 93.536,
+          "e": 95.196,
+          "c": 0.957832
+        },
+        {
+          "w": "The",
+          "s": 95.356,
+          "e": 95.416,
+          "c": 0.997592
+        },
+        {
+          "w": "arguments",
+          "s": 95.926,
+          "e": 96.096,
+          "c": 0.99219
+        },
+        {
+          "w": "against",
+          "s": 96.096,
+          "e": 96.626,
+          "c": 0.991289
+        },
+        {
+          "w": "the",
+          "s": 96.626,
+          "e": 96.786,
+          "c": 0.857358
+        },
+        {
+          "w": "plan—now",
+          "s": 96.876,
+          "e": 97.586,
+          "c": 0.203915
+        },
+        {
+          "w": "note",
+          "s": 97.586,
+          "e": 97.886,
+          "c": 0.657396
+        },
+        {
+          "w": "that",
+          "s": 97.886,
+          "e": 98.076,
+          "c": 0.946003
+        },
+        {
+          "w": "this",
+          "s": 98.216,
+          "e": 98.416,
+          "c": 0.986653
+        },
+        {
+          "w": "is",
+          "s": 98.516,
+          "e": 98.606,
+          "c": 0.931074
+        },
+        {
+          "w": "about",
+          "s": 98.656,
+          "e": 98.976,
+          "c": 0.974987
+        },
+        {
+          "w": "a",
+          "s": 99.076,
+          "e": 99.086,
+          "c": 0.992456
+        },
+        {
+          "w": "plan",
+          "s": 99.086,
+          "e": 99.356,
+          "c": 0.998485
+        },
+        {
+          "w": "that",
+          "s": 99.456,
+          "e": 99.686,
+          "c": 0.992735
+        },
+        {
+          "w": "wasn't",
+          "s": 99.686,
+          "e": 100.226,
+          "c": 0.97819
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 100.24,
+      "end_s": 113.3,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "written. It's about any plan put forward. The arguments against this plan, but it's also centered around politicians, bureaucrats in Washington. Note the emphasis on saying that the plan will result in delays and denied treatment.",
+      "words": [
+        {
+          "w": "written.",
+          "s": 100.236,
+          "e": 100.466,
+          "c": 0.561185
+        },
+        {
+          "w": "It's",
+          "s": 100.786,
+          "e": 100.916,
+          "c": 0.975513
+        },
+        {
+          "w": "about",
+          "s": 100.916,
+          "e": 101.236,
+          "c": 0.997643
+        },
+        {
+          "w": "any",
+          "s": 101.386,
+          "e": 101.426,
+          "c": 0.99412
+        },
+        {
+          "w": "plan",
+          "s": 101.426,
+          "e": 101.686,
+          "c": 0.998039
+        },
+        {
+          "w": "put",
+          "s": 101.686,
+          "e": 101.866,
+          "c": 0.971851
+        },
+        {
+          "w": "forward.",
+          "s": 101.876,
+          "e": 102.456,
+          "c": 0.846846
+        },
+        {
+          "w": "The",
+          "s": 102.596,
+          "e": 102.666,
+          "c": 0.655618
+        },
+        {
+          "w": "arguments",
+          "s": 102.666,
+          "e": 103.006,
+          "c": 0.984917
+        },
+        {
+          "w": "against",
+          "s": 103.006,
+          "e": 103.236,
+          "c": 0.986927
+        },
+        {
+          "w": "this",
+          "s": 103.306,
+          "e": 103.416,
+          "c": 0.952926
+        },
+        {
+          "w": "plan,",
+          "s": 103.416,
+          "e": 103.636,
+          "c": 0.243294
+        },
+        {
+          "w": "but",
+          "s": 103.686,
+          "e": 103.746,
+          "c": 0.496698
+        },
+        {
+          "w": "it's",
+          "s": 103.746,
+          "e": 103.856,
+          "c": 0.634238
+        },
+        {
+          "w": "also",
+          "s": 103.976,
+          "e": 104.036,
+          "c": 0.977954
+        },
+        {
+          "w": "centered",
+          "s": 104.036,
+          "e": 104.236,
+          "c": 0.849633
+        },
+        {
+          "w": "around",
+          "s": 104.396,
+          "e": 104.726,
+          "c": 0.996981
+        },
+        {
+          "w": "politicians,",
+          "s": 104.966,
+          "e": 105.776,
+          "c": 0.745174
+        },
+        {
+          "w": "bureaucrats",
+          "s": 105.776,
+          "e": 106.666,
+          "c": 0.992428
+        },
+        {
+          "w": "in",
+          "s": 106.666,
+          "e": 106.816,
+          "c": 0.744154
+        },
+        {
+          "w": "Washington.",
+          "s": 106.876,
+          "e": 107.916,
+          "c": 0.791453
+        },
+        {
+          "w": "Note",
+          "s": 108.076,
+          "e": 108.216,
+          "c": 0.996485
+        },
+        {
+          "w": "the",
+          "s": 108.216,
+          "e": 108.446,
+          "c": 0.996913
+        },
+        {
+          "w": "emphasis",
+          "s": 108.646,
+          "e": 109.036,
+          "c": 0.997345
+        },
+        {
+          "w": "on",
+          "s": 109.086,
+          "e": 109.206,
+          "c": 0.989948
+        },
+        {
+          "w": "saying",
+          "s": 109.206,
+          "e": 109.666,
+          "c": 0.997729
+        },
+        {
+          "w": "that",
+          "s": 109.666,
+          "e": 109.966,
+          "c": 0.977616
+        },
+        {
+          "w": "the",
+          "s": 109.966,
+          "e": 110.196,
+          "c": 0.979105
+        },
+        {
+          "w": "plan",
+          "s": 110.196,
+          "e": 110.496,
+          "c": 0.998235
+        },
+        {
+          "w": "will",
+          "s": 110.496,
+          "e": 110.796,
+          "c": 0.976245
+        },
+        {
+          "w": "result",
+          "s": 110.796,
+          "e": 111.256,
+          "c": 0.997739
+        },
+        {
+          "w": "in",
+          "s": 111.256,
+          "e": 111.406,
+          "c": 0.998755
+        },
+        {
+          "w": "delays",
+          "s": 111.406,
+          "e": 111.866,
+          "c": 0.93211
+        },
+        {
+          "w": "and",
+          "s": 111.866,
+          "e": 112.076,
+          "c": 0.971232
+        },
+        {
+          "w": "denied",
+          "s": 112.176,
+          "e": 112.556,
+          "c": 0.986491
+        },
+        {
+          "w": "treatment.",
+          "s": 112.556,
+          "e": 113.296,
+          "c": 0.793457
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 113.25,
+      "end_s": 113.7,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And what",
+      "words": [
+        {
+          "w": "And",
+          "s": 113.248,
+          "e": 113.438,
+          "c": 0.801876
+        },
+        {
+          "w": "what",
+          "s": 113.698,
+          "e": 113.698,
+          "c": 0.956532
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 113.75,
+      "end_s": 117.68,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "have we heard on the floor of this chamber from the minority leader?",
+      "words": [
+        {
+          "w": "have",
+          "s": 113.748,
+          "e": 113.958,
+          "c": 0.956001
+        },
+        {
+          "w": "we",
+          "s": 113.958,
+          "e": 114.068,
+          "c": 0.996997
+        },
+        {
+          "w": "heard",
+          "s": 114.098,
+          "e": 114.408,
+          "c": 0.995053
+        },
+        {
+          "w": "on",
+          "s": 114.408,
+          "e": 114.538,
+          "c": 0.926402
+        },
+        {
+          "w": "the",
+          "s": 114.538,
+          "e": 114.618,
+          "c": 0.982725
+        },
+        {
+          "w": "floor",
+          "s": 114.728,
+          "e": 115.038,
+          "c": 0.987455
+        },
+        {
+          "w": "of",
+          "s": 115.088,
+          "e": 115.178,
+          "c": 0.932398
+        },
+        {
+          "w": "this",
+          "s": 115.178,
+          "e": 115.438,
+          "c": 0.884782
+        },
+        {
+          "w": "chamber",
+          "s": 115.438,
+          "e": 115.818,
+          "c": 0.866831
+        },
+        {
+          "w": "from",
+          "s": 116.188,
+          "e": 116.238,
+          "c": 0.780276
+        },
+        {
+          "w": "the",
+          "s": 116.238,
+          "e": 116.448,
+          "c": 0.980237
+        },
+        {
+          "w": "minority",
+          "s": 116.448,
+          "e": 116.948,
+          "c": 0.723087
+        },
+        {
+          "w": "leader?",
+          "s": 117.018,
+          "e": 117.678,
+          "c": 0.949108
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 117.69,
+      "end_s": 118.24,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We have",
+      "words": [
+        {
+          "w": "We",
+          "s": 117.688,
+          "e": 117.868,
+          "c": 0.985024
+        },
+        {
+          "w": "have",
+          "s": 118.168,
+          "e": 118.238,
+          "c": 0.977497
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 118.24,
+      "end_s": 124.23,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "heard, just recently, and I quote, \"Americans don't want to be forced by bureaucrats,\"",
+      "words": [
+        {
+          "w": "heard,",
+          "s": 118.238,
+          "e": 118.878,
+          "c": 0.374265
+        },
+        {
+          "w": "just",
+          "s": 118.878,
+          "e": 119.248,
+          "c": 0.960693
+        },
+        {
+          "w": "recently,",
+          "s": 119.248,
+          "e": 120.188,
+          "c": 0.748043
+        },
+        {
+          "w": "and",
+          "s": 120.188,
+          "e": 120.308,
+          "c": 0.819721
+        },
+        {
+          "w": "I",
+          "s": 120.558,
+          "e": 120.558,
+          "c": 0.994558
+        },
+        {
+          "w": "quote,",
+          "s": 120.638,
+          "e": 121.048,
+          "c": 0.604508
+        },
+        {
+          "w": "\"Americans",
+          "s": 121.048,
+          "e": 121.768,
+          "c": 0.900906
+        },
+        {
+          "w": "don't",
+          "s": 121.768,
+          "e": 122.118,
+          "c": 0.994052
+        },
+        {
+          "w": "want",
+          "s": 122.118,
+          "e": 122.398,
+          "c": 0.963196
+        },
+        {
+          "w": "to",
+          "s": 122.398,
+          "e": 122.538,
+          "c": 0.995087
+        },
+        {
+          "w": "be",
+          "s": 122.538,
+          "e": 122.678,
+          "c": 0.997956
+        },
+        {
+          "w": "forced",
+          "s": 122.678,
+          "e": 123.108,
+          "c": 0.955421
+        },
+        {
+          "w": "by",
+          "s": 123.108,
+          "e": 123.248,
+          "c": 0.961722
+        },
+        {
+          "w": "bureaucrats,\"",
+          "s": 123.248,
+          "e": 124.228,
+          "c": 0.19453
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 124.23,
+      "end_s": 136.41,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that comes right out of those talking points, \"to give up their private health care plan, to be pushed into a Washington-run government plan,\" right out of those talking points. They don't want to wait two years for surgery.",
+      "words": [
+        {
+          "w": "that",
+          "s": 124.228,
+          "e": 124.418,
+          "c": 0.457088
+        },
+        {
+          "w": "comes",
+          "s": 124.418,
+          "e": 124.658,
+          "c": 0.98933
+        },
+        {
+          "w": "right",
+          "s": 124.658,
+          "e": 124.798,
+          "c": 0.961975
+        },
+        {
+          "w": "out",
+          "s": 124.858,
+          "e": 125.028,
+          "c": 0.985817
+        },
+        {
+          "w": "of",
+          "s": 125.028,
+          "e": 125.128,
+          "c": 0.974778
+        },
+        {
+          "w": "those",
+          "s": 125.128,
+          "e": 125.368,
+          "c": 0.963674
+        },
+        {
+          "w": "talking",
+          "s": 125.368,
+          "e": 125.698,
+          "c": 0.989015
+        },
+        {
+          "w": "points,",
+          "s": 125.698,
+          "e": 126.008,
+          "c": 0.901062
+        },
+        {
+          "w": "\"to",
+          "s": 126.008,
+          "e": 126.148,
+          "c": 0.626217
+        },
+        {
+          "w": "give",
+          "s": 126.148,
+          "e": 126.338,
+          "c": 0.987487
+        },
+        {
+          "w": "up",
+          "s": 126.428,
+          "e": 126.428,
+          "c": 0.996312
+        },
+        {
+          "w": "their",
+          "s": 126.508,
+          "e": 126.668,
+          "c": 0.983817
+        },
+        {
+          "w": "private",
+          "s": 126.668,
+          "e": 127.008,
+          "c": 0.978556
+        },
+        {
+          "w": "health",
+          "s": 127.008,
+          "e": 127.298,
+          "c": 0.639592
+        },
+        {
+          "w": "care",
+          "s": 127.298,
+          "e": 127.378,
+          "c": 0.916644
+        },
+        {
+          "w": "plan,",
+          "s": 127.488,
+          "e": 127.788,
+          "c": 0.488267
+        },
+        {
+          "w": "to",
+          "s": 127.848,
+          "e": 127.968,
+          "c": 0.877766
+        },
+        {
+          "w": "be",
+          "s": 127.968,
+          "e": 128.088,
+          "c": 0.973521
+        },
+        {
+          "w": "pushed",
+          "s": 128.088,
+          "e": 128.278,
+          "c": 0.946882
+        },
+        {
+          "w": "into",
+          "s": 128.438,
+          "e": 128.628,
+          "c": 0.80577
+        },
+        {
+          "w": "a",
+          "s": 128.688,
+          "e": 128.758,
+          "c": 0.979475
+        },
+        {
+          "w": "Washington-run",
+          "s": 128.948,
+          "e": 129.608,
+          "c": 0.7748
+        },
+        {
+          "w": "government",
+          "s": 129.608,
+          "e": 129.758,
+          "c": 0.966441
+        },
+        {
+          "w": "plan,\"",
+          "s": 129.758,
+          "e": 130.688,
+          "c": 0.752519
+        },
+        {
+          "w": "right",
+          "s": 130.688,
+          "e": 131.008,
+          "c": 0.972626
+        },
+        {
+          "w": "out",
+          "s": 131.168,
+          "e": 131.198,
+          "c": 0.993765
+        },
+        {
+          "w": "of",
+          "s": 131.198,
+          "e": 131.328,
+          "c": 0.995433
+        },
+        {
+          "w": "those",
+          "s": 131.328,
+          "e": 131.648,
+          "c": 0.995923
+        },
+        {
+          "w": "talking",
+          "s": 131.648,
+          "e": 132.058,
+          "c": 0.999024
+        },
+        {
+          "w": "points.",
+          "s": 132.168,
+          "e": 132.708,
+          "c": 0.950177
+        },
+        {
+          "w": "They",
+          "s": 132.708,
+          "e": 133.078,
+          "c": 0.828937
+        },
+        {
+          "w": "don't",
+          "s": 133.208,
+          "e": 133.528,
+          "c": 0.998969
+        },
+        {
+          "w": "want",
+          "s": 133.538,
+          "e": 133.908,
+          "c": 0.998412
+        },
+        {
+          "w": "to",
+          "s": 133.908,
+          "e": 134.078,
+          "c": 0.986284
+        },
+        {
+          "w": "wait",
+          "s": 134.188,
+          "e": 134.458,
+          "c": 0.598938
+        },
+        {
+          "w": "two",
+          "s": 134.458,
+          "e": 134.738,
+          "c": 0.91407
+        },
+        {
+          "w": "years",
+          "s": 134.738,
+          "e": 135.198,
+          "c": 0.998068
+        },
+        {
+          "w": "for",
+          "s": 135.198,
+          "e": 135.328,
+          "c": 0.997685
+        },
+        {
+          "w": "surgery.",
+          "s": 135.648,
+          "e": 136.408,
+          "c": 0.405924
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 136.49,
+      "end_s": 137,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And they",
+      "words": [
+        {
+          "w": "And",
+          "s": 136.488,
+          "e": 136.708,
+          "c": 0.965733
+        },
+        {
+          "w": "they",
+          "s": 136.968,
+          "e": 136.998,
+          "c": 0.983806
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "start_s": 137,
+      "end_s": 140.01,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "don't want to be told they're too old for surgery.",
+      "words": [
+        {
+          "w": "don't",
+          "s": 136.998,
+          "e": 137.358,
+          "c": 0.998599
+        },
+        {
+          "w": "want",
+          "s": 137.358,
+          "e": 137.648,
+          "c": 0.988812
+        },
+        {
+          "w": "to",
+          "s": 137.648,
+          "e": 137.788,
+          "c": 0.996348
+        },
+        {
+          "w": "be",
+          "s": 137.788,
+          "e": 137.858,
+          "c": 0.996679
+        },
+        {
+          "w": "told",
+          "s": 137.968,
+          "e": 138.238,
+          "c": 0.998287
+        },
+        {
+          "w": "they're",
+          "s": 138.238,
+          "e": 138.738,
+          "c": 0.906713
+        },
+        {
+          "w": "too",
+          "s": 138.738,
+          "e": 138.968,
+          "c": 0.929897
+        },
+        {
+          "w": "old",
+          "s": 138.968,
+          "e": 139.108,
+          "c": 0.995095
+        },
+        {
+          "w": "for",
+          "s": 139.408,
+          "e": 139.408,
+          "c": 0.999397
+        },
+        {
+          "w": "surgery.",
+          "s": 139.438,
+          "e": 140.008,
+          "c": 0.906542
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "start_s": 140.24,
+      "end_s": 140.25,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "All",
+      "words": [
+        {
+          "w": "All",
+          "s": 140.238,
+          "e": 140.238,
+          "c": 0.736218
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "start_s": 140.39,
+      "end_s": 142.66,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "of this, straight out of",
+      "words": [
+        {
+          "w": "of",
+          "s": 140.388,
+          "e": 140.528,
+          "c": 0.956081
+        },
+        {
+          "w": "this,",
+          "s": 140.528,
+          "e": 141.198,
+          "c": 0.676302
+        },
+        {
+          "w": "straight",
+          "s": 141.198,
+          "e": 142.108,
+          "c": 0.993612
+        },
+        {
+          "w": "out",
+          "s": 142.108,
+          "e": 142.198,
+          "c": 0.990601
+        },
+        {
+          "w": "of",
+          "s": 142.198,
+          "e": 142.658,
+          "c": 0.996286
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "start_s": 142.66,
+      "end_s": 144.43,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "this roadmap, my",
+      "words": [
+        {
+          "w": "this",
+          "s": 142.658,
+          "e": 143.108,
+          "c": 0.992797
+        },
+        {
+          "w": "roadmap,",
+          "s": 143.118,
+          "e": 144.198,
+          "c": 0.260242
+        },
+        {
+          "w": "my",
+          "s": 144.198,
+          "e": 144.428,
+          "c": 0.720788
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "start_s": 144.86,
+      "end_s": 162.05,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "friends, it is irresponsible, in the face of 50 million Americans without health care, with working Americans in every one of our states going bankrupt as they struggle with health care expenses, it's irresponsible to utilize a",
+      "words": [
+        {
+          "w": "friends,",
+          "s": 144.858,
+          "e": 145.478,
+          "c": 0.91107
+        },
+        {
+          "w": "it",
+          "s": 145.478,
+          "e": 145.678,
+          "c": 0.957454
+        },
+        {
+          "w": "is",
+          "s": 145.978,
+          "e": 146.578,
+          "c": 0.981648
+        },
+        {
+          "w": "irresponsible,",
+          "s": 147.478,
+          "e": 150.198,
+          "c": 0.166054
+        },
+        {
+          "w": "in",
+          "s": 150.198,
+          "e": 150.268,
+          "c": 0.90117
+        },
+        {
+          "w": "the",
+          "s": 150.268,
+          "e": 150.288,
+          "c": 0.993523
+        },
+        {
+          "w": "face",
+          "s": 150.378,
+          "e": 150.528,
+          "c": 0.995205
+        },
+        {
+          "w": "of",
+          "s": 150.548,
+          "e": 150.628,
+          "c": 0.997778
+        },
+        {
+          "w": "50",
+          "s": 150.928,
+          "e": 150.938,
+          "c": 0.894185
+        },
+        {
+          "w": "million",
+          "s": 150.948,
+          "e": 151.298,
+          "c": 0.993985
+        },
+        {
+          "w": "Americans",
+          "s": 151.298,
+          "e": 151.758,
+          "c": 0.974135
+        },
+        {
+          "w": "without",
+          "s": 151.758,
+          "e": 152.098,
+          "c": 0.989872
+        },
+        {
+          "w": "health",
+          "s": 152.118,
+          "e": 152.428,
+          "c": 0.664881
+        },
+        {
+          "w": "care,",
+          "s": 152.428,
+          "e": 152.728,
+          "c": 0.917821
+        },
+        {
+          "w": "with",
+          "s": 152.728,
+          "e": 152.768,
+          "c": 0.964345
+        },
+        {
+          "w": "working",
+          "s": 152.768,
+          "e": 153.218,
+          "c": 0.980029
+        },
+        {
+          "w": "Americans",
+          "s": 153.278,
+          "e": 153.748,
+          "c": 0.990803
+        },
+        {
+          "w": "in",
+          "s": 153.748,
+          "e": 153.848,
+          "c": 0.990052
+        },
+        {
+          "w": "every",
+          "s": 153.848,
+          "e": 154.098,
+          "c": 0.985596
+        },
+        {
+          "w": "one",
+          "s": 154.098,
+          "e": 154.248,
+          "c": 0.996749
+        },
+        {
+          "w": "of",
+          "s": 154.248,
+          "e": 154.348,
+          "c": 0.993875
+        },
+        {
+          "w": "our",
+          "s": 154.348,
+          "e": 154.568,
+          "c": 0.993165
+        },
+        {
+          "w": "states",
+          "s": 154.968,
+          "e": 155.068,
+          "c": 0.959413
+        },
+        {
+          "w": "going",
+          "s": 155.068,
+          "e": 155.478,
+          "c": 0.937267
+        },
+        {
+          "w": "bankrupt",
+          "s": 155.478,
+          "e": 156.148,
+          "c": 0.998182
+        },
+        {
+          "w": "as",
+          "s": 156.148,
+          "e": 156.278,
+          "c": 0.958365
+        },
+        {
+          "w": "they",
+          "s": 156.378,
+          "e": 156.658,
+          "c": 0.990529
+        },
+        {
+          "w": "struggle",
+          "s": 156.658,
+          "e": 156.828,
+          "c": 0.992392
+        },
+        {
+          "w": "with",
+          "s": 157.318,
+          "e": 157.658,
+          "c": 0.995292
+        },
+        {
+          "w": "health",
+          "s": 157.658,
+          "e": 158.158,
+          "c": 0.952047
+        },
+        {
+          "w": "care",
+          "s": 158.158,
+          "e": 158.488,
+          "c": 0.9802
+        },
+        {
+          "w": "expenses,",
+          "s": 158.488,
+          "e": 159.318,
+          "c": 0.672086
+        },
+        {
+          "w": "it's",
+          "s": 159.458,
+          "e": 159.648,
+          "c": 0.759245
+        },
+        {
+          "w": "irresponsible",
+          "s": 159.648,
+          "e": 160.168,
+          "c": 0.990403
+        },
+        {
+          "w": "to",
+          "s": 160.868,
+          "e": 161.088,
+          "c": 0.981894
+        },
+        {
+          "w": "utilize",
+          "s": 161.248,
+          "e": 161.828,
+          "c": 0.952051
+        },
+        {
+          "w": "a",
+          "s": 161.948,
+          "e": 162.048,
+          "c": 0.980873
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "start_s": 162.05,
+      "end_s": 162.89,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "roadmap",
+      "words": [
+        {
+          "w": "roadmap",
+          "s": 162.048,
+          "e": 162.888,
+          "c": 0.582844
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "start_s": 162.89,
+      "end_s": 165.17,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "of rhetoric that comes",
+      "words": [
+        {
+          "w": "of",
+          "s": 162.888,
+          "e": 163.068,
+          "c": 0.984987
+        },
+        {
+          "w": "rhetoric",
+          "s": 163.068,
+          "e": 163.488,
+          "c": 0.974316
+        },
+        {
+          "w": "that",
+          "s": 164.058,
+          "e": 164.568,
+          "c": 0.936901
+        },
+        {
+          "w": "comes",
+          "s": 164.568,
+          "e": 165.168,
+          "c": 0.992917
+        }
+      ]
+    },
+    {
+      "i": 35,
+      "start_s": 165.22,
+      "end_s": 166.44,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "from polling",
+      "words": [
+        {
+          "w": "from",
+          "s": 165.218,
+          "e": 165.638,
+          "c": 0.994035
+        },
+        {
+          "w": "polling",
+          "s": 165.738,
+          "e": 166.438,
+          "c": 0.948095
+        }
+      ]
+    },
+    {
+      "i": 36,
+      "start_s": 166.44,
+      "end_s": 173.27,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "about how to scare people. That's irresponsible.",
+      "words": [
+        {
+          "w": "about",
+          "s": 166.438,
+          "e": 167.038,
+          "c": 0.978931
+        },
+        {
+          "w": "how",
+          "s": 167.068,
+          "e": 167.448,
+          "c": 0.995393
+        },
+        {
+          "w": "to",
+          "s": 167.448,
+          "e": 167.688,
+          "c": 0.998569
+        },
+        {
+          "w": "scare",
+          "s": 168.328,
+          "e": 168.328,
+          "c": 0.998232
+        },
+        {
+          "w": "people.",
+          "s": 168.358,
+          "e": 171.048,
+          "c": 0.511978
+        },
+        {
+          "w": "That's",
+          "s": 171.448,
+          "e": 171.698,
+          "c": 0.968538
+        },
+        {
+          "w": "irresponsible.",
+          "s": 171.698,
+          "e": 173.268,
+          "c": 0.93217
+        }
+      ]
+    },
+    {
+      "i": 37,
+      "start_s": 173.61,
+      "end_s": 181.01,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "What we need to do today is lay out a plan on how we can create affordable, accessible health care for every single American.",
+      "words": [
+        {
+          "w": "What",
+          "s": 173.608,
+          "e": 173.768,
+          "c": 0.99831
+        },
+        {
+          "w": "we",
+          "s": 173.868,
+          "e": 173.918,
+          "c": 0.999609
+        },
+        {
+          "w": "need",
+          "s": 173.918,
+          "e": 174.178,
+          "c": 0.998767
+        },
+        {
+          "w": "to",
+          "s": 174.218,
+          "e": 174.368,
+          "c": 0.995699
+        },
+        {
+          "w": "do",
+          "s": 174.368,
+          "e": 174.498,
+          "c": 0.998098
+        },
+        {
+          "w": "today",
+          "s": 174.658,
+          "e": 174.898,
+          "c": 0.996208
+        },
+        {
+          "w": "is",
+          "s": 174.898,
+          "e": 175.038,
+          "c": 0.95287
+        },
+        {
+          "w": "lay",
+          "s": 175.048,
+          "e": 175.168,
+          "c": 0.815618
+        },
+        {
+          "w": "out",
+          "s": 175.278,
+          "e": 175.508,
+          "c": 0.994116
+        },
+        {
+          "w": "a",
+          "s": 175.508,
+          "e": 175.578,
+          "c": 0.997533
+        },
+        {
+          "w": "plan",
+          "s": 175.578,
+          "e": 175.688,
+          "c": 0.999335
+        },
+        {
+          "w": "on",
+          "s": 175.688,
+          "e": 176.028,
+          "c": 0.985381
+        },
+        {
+          "w": "how",
+          "s": 176.028,
+          "e": 176.248,
+          "c": 0.998929
+        },
+        {
+          "w": "we",
+          "s": 176.248,
+          "e": 176.408,
+          "c": 0.994393
+        },
+        {
+          "w": "can",
+          "s": 176.408,
+          "e": 176.638,
+          "c": 0.991942
+        },
+        {
+          "w": "create",
+          "s": 176.638,
+          "e": 177.098,
+          "c": 0.994569
+        },
+        {
+          "w": "affordable,",
+          "s": 177.098,
+          "e": 178.018,
+          "c": 0.868128
+        },
+        {
+          "w": "accessible",
+          "s": 178.358,
+          "e": 178.868,
+          "c": 0.987997
+        },
+        {
+          "w": "health",
+          "s": 179.228,
+          "e": 179.228,
+          "c": 0.824977
+        },
+        {
+          "w": "care",
+          "s": 179.288,
+          "e": 179.468,
+          "c": 0.999256
+        },
+        {
+          "w": "for",
+          "s": 179.468,
+          "e": 179.638,
+          "c": 0.991618
+        },
+        {
+          "w": "every",
+          "s": 179.638,
+          "e": 179.878,
+          "c": 0.998009
+        },
+        {
+          "w": "single",
+          "s": 180.058,
+          "e": 180.308,
+          "c": 0.994573
+        },
+        {
+          "w": "American.",
+          "s": 180.308,
+          "e": 181.008,
+          "c": 0.989661
+        }
+      ]
+    }
+  ]
+}

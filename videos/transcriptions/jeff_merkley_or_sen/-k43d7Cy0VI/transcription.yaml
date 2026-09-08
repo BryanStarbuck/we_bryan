@@ -1,0 +1,137 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Members of Congress were elected to serve the people—not to line their own pockets."
+    Description: >-
+      Senator Jeff Merkley argues for an amendment barring members of
+      Congress and their spouses from trading individual stocks. His case
+      is about the appearance and the psychology of conflict: he says that
+      a member holding a concentrated portfolio inevitably has "a voice in
+      your head" weighing how legislation would affect those holdings,
+      offering renewable energy tax credits, bank stocks and fossil fuel
+      holdings as examples. He notes public regard for Congress is very
+      low and that articles about well-timed trades ahead of public action
+      recur every few months. He draws on his own record as Speaker of the
+      Oregon House, where he says the chamber adopted a gift rule known as
+      the $10 standard that permitted small items but barred trips and
+      event tickets, and which he credits with changing the culture and
+      leading Oregon to adopt a similar law. He acknowledges the amendment
+      would not reach the House, credits a colleague from Georgia with
+      driving the issue this year, and asks that the measure be debated
+      and voted on rather than tabled.
+    URL: "https://www.youtube.com/watch?v=-k43d7Cy0VI"
+    Video_ID: "-k43d7Cy0VI"
+    Show: "Senator Jeff Merkley"
+    Runtime: "00:02:07"
+    Language: "en"
+
+  Media:
+    File: "-k43d7Cy0VI.m4a"
+    SHA256: "1ba9221e5889c943bef2ed765a29db0c81e02b2fcffb7a565eda3e64fc759611"
+    Bytes: 2068104
+    Duration_Seconds: 127
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-k43d7Cy0VI"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-k43d7Cy0VI.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/jeff_merkley_or_sen/-k43d7Cy0VI/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCRoXttCJhMnLVCxCaa6VnNQ"
+    Uploader_ID: "@SenatorJeffMerkleyYT"
+    View_Count: 3554
+    Like_Count: 316
+    Comment_Count: 34
+    Availability: "public"
+    Published_At: "2025-12-17T17:43:09+00:00"
+    Captured_At: "2026-09-07T19:50:48-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 4
+
+  Topics:
+    - "Congressional stock trading ban"
+    - "Conflicts of interest for members of Congress and spouses"
+    - "Public trust in Congress"
+    - "Oregon legislative gift rules as precedent"
+    - "Senate floor procedure and motions to table"
+
+  Source:
+    Canonical_ID: "855d3ee4666860ba"
+    Transcribed: "2026-09-07T19:55:07.847569-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 375
+    Segments: 10
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T19:50:49.368242-07:00"
+    Transcription_Finished: "2026-09-07T19:55:07.847569-07:00"
+    Recorded: "2025-12-17"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-k43d7Cy0VI.ctm"
+    Fountain: "-k43d7Cy0VI.fountain"
+    Diarization_RTTM: "-k43d7Cy0VI.rttm"
+    As_Broadcast_Script: "-k43d7Cy0VI.script.txt"
+    Segments_JSON: "-k43d7Cy0VI.segments.json"
+    Segments_JSONL: "-k43d7Cy0VI.segments.jsonl"
+    Subtitles_SRT: "-k43d7Cy0VI.srt"
+    Plain_Text: "-k43d7Cy0VI.transcription"
+    Subtitles_VTT: "-k43d7Cy0VI.vtt"
+    Transcript_SHA256: "21dea6d82a423167c1e2b4ad4ff492675aa68f61d0b847dbbcfd194a5cc1c432"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "jeff_merkley_or_sen"
+    video_uid: "jeff_merkley_or_sen::-k43d7Cy0VI"
+    video_key: "-k43d7Cy0VI"
+    youtube_id: "-k43d7Cy0VI"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-k43d7Cy0VI"
+    source_ref: "-k43d7Cy0VI"

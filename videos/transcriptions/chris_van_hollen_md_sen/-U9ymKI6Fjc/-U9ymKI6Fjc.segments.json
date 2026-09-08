@@ -1,0 +1,2410 @@
+{
+  "schema_version": 2,
+  "canonical_id": "19394a75ba118343",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 152.66,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T02:55:22.744Z",
+  "text_sha256": "80a07d4eaf08a44ddb173c017ff563b44c3d5fd76b062a6de714f9293b75f3aa",
+  "segments_sha256": "29eca070222908243be5e1c4c8d116e7b04d8335c844f89a16145e1f9285a165",
+  "words_sha256": "48fe0eb86f1a06faf226aa79a67dff1ab903dfb153b8ceca9b513e0799cc48d7",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 6,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 24,
+    "clusters": 1,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 137.5
+      },
+      "clean_s": 137.5,
+      "speaking_s": 137.5,
+      "first_s": 0.03
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 28.26,
+      "end_s": 28.53,
+      "segment_i": 1,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 53.71,
+      "end_s": 53.99,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 55.89,
+      "end_s": 56.15,
+      "segment_i": 5,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 78.2,
+      "end_s": 78.41,
+      "segment_i": 7,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 101.73,
+      "end_s": 102.21,
+      "segment_i": 9,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 107.55,
+      "end_s": 107.55,
+      "segment_i": 11,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 135.14,
+      "end_s": 135.14,
+      "segment_i": 13,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.21,
+      "end_s": 27.66,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Republicans just voted to push the country toward a government shutdown. Let me explain. Just a little while ago, I cast two votes in the United States Senate. One was against the one-way, completely partisan Republican budget. The other was a proposal that we have made to Republicans in the Senate. I voted for that proposal to keep the government",
+      "words": [
+        {
+          "w": "Republicans",
+          "s": 0.21,
+          "e": 0.88,
+          "c": 0.788605
+        },
+        {
+          "w": "just",
+          "s": 0.96,
+          "e": 1.24,
+          "c": 0.99602
+        },
+        {
+          "w": "voted",
+          "s": 1.24,
+          "e": 1.47,
+          "c": 0.998411
+        },
+        {
+          "w": "to",
+          "s": 1.72,
+          "e": 2.04,
+          "c": 0.948242
+        },
+        {
+          "w": "push",
+          "s": 2.04,
+          "e": 2.3,
+          "c": 0.994097
+        },
+        {
+          "w": "the",
+          "s": 2.88,
+          "e": 2.88,
+          "c": 0.881394
+        },
+        {
+          "w": "country",
+          "s": 2.9,
+          "e": 3.49,
+          "c": 0.977575
+        },
+        {
+          "w": "toward",
+          "s": 3.51,
+          "e": 3.84,
+          "c": 0.823816
+        },
+        {
+          "w": "a",
+          "s": 3.84,
+          "e": 3.89,
+          "c": 0.966387
+        },
+        {
+          "w": "government",
+          "s": 3.89,
+          "e": 4.51,
+          "c": 0.986451
+        },
+        {
+          "w": "shutdown.",
+          "s": 4.51,
+          "e": 5.08,
+          "c": 0.931173
+        },
+        {
+          "w": "Let",
+          "s": 5.28,
+          "e": 5.28,
+          "c": 0.964317
+        },
+        {
+          "w": "me",
+          "s": 5.29,
+          "e": 5.35,
+          "c": 0.9996
+        },
+        {
+          "w": "explain.",
+          "s": 5.48,
+          "e": 6.08,
+          "c": 0.923974
+        },
+        {
+          "w": "Just",
+          "s": 6.28,
+          "e": 6.3,
+          "c": 0.998388
+        },
+        {
+          "w": "a",
+          "s": 6.3,
+          "e": 6.35,
+          "c": 0.99947
+        },
+        {
+          "w": "little",
+          "s": 6.48,
+          "e": 6.68,
+          "c": 0.997246
+        },
+        {
+          "w": "while",
+          "s": 6.68,
+          "e": 6.95,
+          "c": 0.999011
+        },
+        {
+          "w": "ago,",
+          "s": 6.95,
+          "e": 7.17,
+          "c": 0.520005
+        },
+        {
+          "w": "I",
+          "s": 7.27,
+          "e": 7.39,
+          "c": 0.922099
+        },
+        {
+          "w": "cast",
+          "s": 7.39,
+          "e": 7.99,
+          "c": 0.955819
+        },
+        {
+          "w": "two",
+          "s": 8.07,
+          "e": 8.36,
+          "c": 0.980094
+        },
+        {
+          "w": "votes",
+          "s": 8.98,
+          "e": 9.24,
+          "c": 0.999375
+        },
+        {
+          "w": "in",
+          "s": 9.24,
+          "e": 9.35,
+          "c": 0.976781
+        },
+        {
+          "w": "the",
+          "s": 9.37,
+          "e": 9.59,
+          "c": 0.998378
+        },
+        {
+          "w": "United",
+          "s": 9.76,
+          "e": 10.04,
+          "c": 0.984703
+        },
+        {
+          "w": "States",
+          "s": 10.04,
+          "e": 10.48,
+          "c": 0.989451
+        },
+        {
+          "w": "Senate.",
+          "s": 10.48,
+          "e": 11.15,
+          "c": 0.981871
+        },
+        {
+          "w": "One",
+          "s": 11.38,
+          "e": 11.56,
+          "c": 0.997552
+        },
+        {
+          "w": "was",
+          "s": 11.58,
+          "e": 11.96,
+          "c": 0.998866
+        },
+        {
+          "w": "against",
+          "s": 11.96,
+          "e": 12.65,
+          "c": 0.999163
+        },
+        {
+          "w": "the",
+          "s": 12.9,
+          "e": 13.27,
+          "c": 0.997973
+        },
+        {
+          "w": "one-way,",
+          "s": 13.27,
+          "e": 14.46,
+          "c": 0.597296
+        },
+        {
+          "w": "completely",
+          "s": 14.48,
+          "e": 15.69,
+          "c": 0.923491
+        },
+        {
+          "w": "partisan",
+          "s": 15.7,
+          "e": 16.68,
+          "c": 0.984273
+        },
+        {
+          "w": "Republican",
+          "s": 16.68,
+          "e": 17.94,
+          "c": 0.682907
+        },
+        {
+          "w": "budget.",
+          "s": 17.94,
+          "e": 19.08,
+          "c": 0.986254
+        },
+        {
+          "w": "The",
+          "s": 19.28,
+          "e": 19.35,
+          "c": 0.997763
+        },
+        {
+          "w": "other",
+          "s": 19.48,
+          "e": 19.96,
+          "c": 0.999868
+        },
+        {
+          "w": "was",
+          "s": 20.04,
+          "e": 20.32,
+          "c": 0.997107
+        },
+        {
+          "w": "a",
+          "s": 20.32,
+          "e": 20.43,
+          "c": 0.999203
+        },
+        {
+          "w": "proposal",
+          "s": 20.43,
+          "e": 21.36,
+          "c": 0.999775
+        },
+        {
+          "w": "that",
+          "s": 21.36,
+          "e": 21.39,
+          "c": 0.986111
+        },
+        {
+          "w": "we",
+          "s": 21.39,
+          "e": 21.66,
+          "c": 0.998464
+        },
+        {
+          "w": "have",
+          "s": 21.66,
+          "e": 21.86,
+          "c": 0.661323
+        },
+        {
+          "w": "made",
+          "s": 21.98,
+          "e": 22.04,
+          "c": 0.998841
+        },
+        {
+          "w": "to",
+          "s": 22.09,
+          "e": 22.32,
+          "c": 0.976144
+        },
+        {
+          "w": "Republicans",
+          "s": 22.32,
+          "e": 23.6,
+          "c": 0.987848
+        },
+        {
+          "w": "in",
+          "s": 23.71,
+          "e": 23.84,
+          "c": 0.996548
+        },
+        {
+          "w": "the",
+          "s": 23.88,
+          "e": 23.89,
+          "c": 0.99943
+        },
+        {
+          "w": "Senate.",
+          "s": 24.34,
+          "e": 25.36,
+          "c": 0.994313
+        },
+        {
+          "w": "I",
+          "s": 25.41,
+          "e": 25.42,
+          "c": 0.999607
+        },
+        {
+          "w": "voted",
+          "s": 25.56,
+          "e": 25.74,
+          "c": 0.997537
+        },
+        {
+          "w": "for",
+          "s": 25.76,
+          "e": 25.95,
+          "c": 0.999826
+        },
+        {
+          "w": "that",
+          "s": 25.95,
+          "e": 26.22,
+          "c": 0.999413
+        },
+        {
+          "w": "proposal",
+          "s": 26.22,
+          "e": 26.76,
+          "c": 0.999794
+        },
+        {
+          "w": "to",
+          "s": 26.76,
+          "e": 26.83,
+          "c": 0.986291
+        },
+        {
+          "w": "keep",
+          "s": 26.88,
+          "e": 27.16,
+          "c": 0.999735
+        },
+        {
+          "w": "the",
+          "s": 27.27,
+          "e": 27.36,
+          "c": 0.999407
+        },
+        {
+          "w": "government",
+          "s": 27.36,
+          "e": 27.66,
+          "c": 0.996778
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 28.26,
+      "end_s": 28.53,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "open.",
+      "words": [
+        {
+          "w": "open.",
+          "s": 28.26,
+          "e": 28.53,
+          "c": 0.91606
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 28.94,
+      "end_s": 53.71,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Here's the problem: Senate Republicans say they want a bipartisan budget agreement. But they're not calling the shots. Donald Trump is calling all the shots because Republicans in the House and the Senate, at the end of the day, they have contracted out their votes and their responsibilities to Donald Trump. I am not going to write a blank check",
+      "words": [
+        {
+          "w": "Here's",
+          "s": 28.944,
+          "e": 29.144,
+          "c": 0.91741
+        },
+        {
+          "w": "the",
+          "s": 29.144,
+          "e": 29.444,
+          "c": 0.998763
+        },
+        {
+          "w": "problem:",
+          "s": 29.444,
+          "e": 30.234,
+          "c": 0.405808
+        },
+        {
+          "w": "Senate",
+          "s": 30.444,
+          "e": 30.694,
+          "c": 0.917375
+        },
+        {
+          "w": "Republicans",
+          "s": 30.694,
+          "e": 31.474,
+          "c": 0.981988
+        },
+        {
+          "w": "say",
+          "s": 31.704,
+          "e": 31.844,
+          "c": 0.949008
+        },
+        {
+          "w": "they",
+          "s": 31.864,
+          "e": 32.194,
+          "c": 0.983003
+        },
+        {
+          "w": "want",
+          "s": 32.194,
+          "e": 32.474,
+          "c": 0.996183
+        },
+        {
+          "w": "a",
+          "s": 32.584,
+          "e": 32.584,
+          "c": 0.971456
+        },
+        {
+          "w": "bipartisan",
+          "s": 32.844,
+          "e": 33.534,
+          "c": 0.949793
+        },
+        {
+          "w": "budget",
+          "s": 33.544,
+          "e": 34.184,
+          "c": 0.971282
+        },
+        {
+          "w": "agreement.",
+          "s": 34.184,
+          "e": 35.724,
+          "c": 0.330318
+        },
+        {
+          "w": "But",
+          "s": 35.724,
+          "e": 35.914,
+          "c": 0.997004
+        },
+        {
+          "w": "they're",
+          "s": 36.164,
+          "e": 36.354,
+          "c": 0.965118
+        },
+        {
+          "w": "not",
+          "s": 36.364,
+          "e": 36.464,
+          "c": 0.999601
+        },
+        {
+          "w": "calling",
+          "s": 36.554,
+          "e": 36.744,
+          "c": 0.998666
+        },
+        {
+          "w": "the",
+          "s": 36.984,
+          "e": 37.004,
+          "c": 0.989944
+        },
+        {
+          "w": "shots.",
+          "s": 37.004,
+          "e": 37.704,
+          "c": 0.975556
+        },
+        {
+          "w": "Donald",
+          "s": 38.134,
+          "e": 38.134,
+          "c": 0.999253
+        },
+        {
+          "w": "Trump",
+          "s": 38.174,
+          "e": 38.444,
+          "c": 0.998412
+        },
+        {
+          "w": "is",
+          "s": 38.544,
+          "e": 38.634,
+          "c": 0.997368
+        },
+        {
+          "w": "calling",
+          "s": 38.634,
+          "e": 38.824,
+          "c": 0.999133
+        },
+        {
+          "w": "all",
+          "s": 38.824,
+          "e": 39.344,
+          "c": 0.946636
+        },
+        {
+          "w": "the",
+          "s": 39.554,
+          "e": 39.554,
+          "c": 0.988536
+        },
+        {
+          "w": "shots",
+          "s": 39.614,
+          "e": 39.894,
+          "c": 0.998717
+        },
+        {
+          "w": "because",
+          "s": 39.914,
+          "e": 40.414,
+          "c": 0.446481
+        },
+        {
+          "w": "Republicans",
+          "s": 40.414,
+          "e": 41.204,
+          "c": 0.982768
+        },
+        {
+          "w": "in",
+          "s": 41.224,
+          "e": 41.344,
+          "c": 0.970695
+        },
+        {
+          "w": "the",
+          "s": 41.344,
+          "e": 41.554,
+          "c": 0.998668
+        },
+        {
+          "w": "House",
+          "s": 41.554,
+          "e": 41.644,
+          "c": 0.970478
+        },
+        {
+          "w": "and",
+          "s": 42.004,
+          "e": 42.084,
+          "c": 0.929902
+        },
+        {
+          "w": "the",
+          "s": 42.154,
+          "e": 42.294,
+          "c": 0.921932
+        },
+        {
+          "w": "Senate,",
+          "s": 42.424,
+          "e": 42.884,
+          "c": 0.755652
+        },
+        {
+          "w": "at",
+          "s": 43.044,
+          "e": 43.044,
+          "c": 0.969879
+        },
+        {
+          "w": "the",
+          "s": 43.044,
+          "e": 43.284,
+          "c": 0.998711
+        },
+        {
+          "w": "end",
+          "s": 43.504,
+          "e": 43.544,
+          "c": 0.99955
+        },
+        {
+          "w": "of",
+          "s": 43.544,
+          "e": 43.694,
+          "c": 0.998449
+        },
+        {
+          "w": "the",
+          "s": 43.754,
+          "e": 43.954,
+          "c": 0.997478
+        },
+        {
+          "w": "day,",
+          "s": 43.954,
+          "e": 44.244,
+          "c": 0.940266
+        },
+        {
+          "w": "they",
+          "s": 44.244,
+          "e": 44.694,
+          "c": 0.970254
+        },
+        {
+          "w": "have",
+          "s": 44.944,
+          "e": 45.024,
+          "c": 0.99567
+        },
+        {
+          "w": "contracted",
+          "s": 45.024,
+          "e": 45.854,
+          "c": 0.998285
+        },
+        {
+          "w": "out",
+          "s": 45.854,
+          "e": 45.994,
+          "c": 0.991578
+        },
+        {
+          "w": "their",
+          "s": 46.204,
+          "e": 46.534,
+          "c": 0.996367
+        },
+        {
+          "w": "votes",
+          "s": 46.564,
+          "e": 46.944,
+          "c": 0.998652
+        },
+        {
+          "w": "and",
+          "s": 46.944,
+          "e": 46.994,
+          "c": 0.981543
+        },
+        {
+          "w": "their",
+          "s": 47.344,
+          "e": 47.624,
+          "c": 0.88487
+        },
+        {
+          "w": "responsibilities",
+          "s": 47.624,
+          "e": 48.684,
+          "c": 0.994044
+        },
+        {
+          "w": "to",
+          "s": 49.044,
+          "e": 49.144,
+          "c": 0.959913
+        },
+        {
+          "w": "Donald",
+          "s": 49.584,
+          "e": 49.884,
+          "c": 0.999127
+        },
+        {
+          "w": "Trump.",
+          "s": 49.894,
+          "e": 50.904,
+          "c": 0.993699
+        },
+        {
+          "w": "I",
+          "s": 50.904,
+          "e": 50.994,
+          "c": 0.99967
+        },
+        {
+          "w": "am",
+          "s": 50.994,
+          "e": 51.184,
+          "c": 0.973353
+        },
+        {
+          "w": "not",
+          "s": 51.364,
+          "e": 51.474,
+          "c": 0.970976
+        },
+        {
+          "w": "going",
+          "s": 51.474,
+          "e": 51.904,
+          "c": 0.998077
+        },
+        {
+          "w": "to",
+          "s": 51.954,
+          "e": 52.034,
+          "c": 0.999302
+        },
+        {
+          "w": "write",
+          "s": 52.034,
+          "e": 52.634,
+          "c": 0.99898
+        },
+        {
+          "w": "a",
+          "s": 52.734,
+          "e": 52.734,
+          "c": 0.99882
+        },
+        {
+          "w": "blank",
+          "s": 52.814,
+          "e": 53.194,
+          "c": 0.995752
+        },
+        {
+          "w": "check",
+          "s": 53.254,
+          "e": 53.714,
+          "c": 0.966802
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 53.71,
+      "end_s": 53.99,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to a",
+      "words": [
+        {
+          "w": "to",
+          "s": 53.714,
+          "e": 53.854,
+          "c": 0.995632
+        },
+        {
+          "w": "a",
+          "s": 53.994,
+          "e": 53.994,
+          "c": 0.997632
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 54.06,
+      "end_s": 55.92,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "lawless president.",
+      "words": [
+        {
+          "w": "lawless",
+          "s": 54.064,
+          "e": 54.674,
+          "c": 0.997116
+        },
+        {
+          "w": "president.",
+          "s": 54.674,
+          "e": 55.924,
+          "c": 0.828948
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 55.89,
+      "end_s": 56.15,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We",
+      "words": [
+        {
+          "w": "We",
+          "s": 55.888,
+          "e": 56.148,
+          "c": 0.875524
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 56.41,
+      "end_s": 78.09,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "need guardrails, we need safeguards, because right now the president is refusing to spend funds that we've invested in Americans' healthcare at NIH and other places. And he's refusing to spend monies for public safety through FEMA. So that's why the democratic proposal that I voted",
+      "words": [
+        {
+          "w": "need",
+          "s": 56.408,
+          "e": 56.668,
+          "c": 0.999142
+        },
+        {
+          "w": "guardrails,",
+          "s": 56.668,
+          "e": 57.978,
+          "c": 0.460801
+        },
+        {
+          "w": "we",
+          "s": 58.278,
+          "e": 58.358,
+          "c": 0.969675
+        },
+        {
+          "w": "need",
+          "s": 58.358,
+          "e": 58.628,
+          "c": 0.999026
+        },
+        {
+          "w": "safeguards,",
+          "s": 58.628,
+          "e": 59.308,
+          "c": 0.469666
+        },
+        {
+          "w": "because",
+          "s": 59.818,
+          "e": 59.998,
+          "c": 0.999327
+        },
+        {
+          "w": "right",
+          "s": 59.998,
+          "e": 60.338,
+          "c": 0.97389
+        },
+        {
+          "w": "now",
+          "s": 60.658,
+          "e": 60.808,
+          "c": 0.999619
+        },
+        {
+          "w": "the",
+          "s": 60.808,
+          "e": 60.998,
+          "c": 0.556783
+        },
+        {
+          "w": "president",
+          "s": 60.998,
+          "e": 61.368,
+          "c": 0.725082
+        },
+        {
+          "w": "is",
+          "s": 61.698,
+          "e": 61.938,
+          "c": 0.911796
+        },
+        {
+          "w": "refusing",
+          "s": 61.998,
+          "e": 62.748,
+          "c": 0.988123
+        },
+        {
+          "w": "to",
+          "s": 62.748,
+          "e": 62.968,
+          "c": 0.999641
+        },
+        {
+          "w": "spend",
+          "s": 63.268,
+          "e": 63.528,
+          "c": 0.999508
+        },
+        {
+          "w": "funds",
+          "s": 63.528,
+          "e": 63.758,
+          "c": 0.996961
+        },
+        {
+          "w": "that",
+          "s": 64.108,
+          "e": 64.528,
+          "c": 0.990883
+        },
+        {
+          "w": "we've",
+          "s": 64.528,
+          "e": 64.838,
+          "c": 0.984975
+        },
+        {
+          "w": "invested",
+          "s": 65.138,
+          "e": 66.008,
+          "c": 0.99779
+        },
+        {
+          "w": "in",
+          "s": 66.008,
+          "e": 66.198,
+          "c": 0.999739
+        },
+        {
+          "w": "Americans'",
+          "s": 66.528,
+          "e": 67.088,
+          "c": 0.554889
+        },
+        {
+          "w": "healthcare",
+          "s": 67.358,
+          "e": 68.058,
+          "c": 0.67132
+        },
+        {
+          "w": "at",
+          "s": 68.058,
+          "e": 68.108,
+          "c": 0.325355
+        },
+        {
+          "w": "NIH",
+          "s": 68.398,
+          "e": 68.608,
+          "c": 0.994057
+        },
+        {
+          "w": "and",
+          "s": 68.608,
+          "e": 68.968,
+          "c": 0.956937
+        },
+        {
+          "w": "other",
+          "s": 68.968,
+          "e": 69.488,
+          "c": 0.999264
+        },
+        {
+          "w": "places.",
+          "s": 69.588,
+          "e": 70.288,
+          "c": 0.794317
+        },
+        {
+          "w": "And",
+          "s": 70.288,
+          "e": 70.478,
+          "c": 0.998927
+        },
+        {
+          "w": "he's",
+          "s": 70.478,
+          "e": 70.718,
+          "c": 0.994353
+        },
+        {
+          "w": "refusing",
+          "s": 70.808,
+          "e": 71.218,
+          "c": 0.999314
+        },
+        {
+          "w": "to",
+          "s": 71.218,
+          "e": 71.318,
+          "c": 0.99875
+        },
+        {
+          "w": "spend",
+          "s": 71.638,
+          "e": 71.648,
+          "c": 0.999527
+        },
+        {
+          "w": "monies",
+          "s": 71.648,
+          "e": 72.068,
+          "c": 0.895723
+        },
+        {
+          "w": "for",
+          "s": 72.068,
+          "e": 72.338,
+          "c": 0.999783
+        },
+        {
+          "w": "public",
+          "s": 72.588,
+          "e": 72.888,
+          "c": 0.993076
+        },
+        {
+          "w": "safety",
+          "s": 72.888,
+          "e": 73.438,
+          "c": 0.999712
+        },
+        {
+          "w": "through",
+          "s": 73.438,
+          "e": 74.078,
+          "c": 0.960873
+        },
+        {
+          "w": "FEMA.",
+          "s": 74.078,
+          "e": 74.768,
+          "c": 0.949307
+        },
+        {
+          "w": "So",
+          "s": 74.768,
+          "e": 74.918,
+          "c": 0.99907
+        },
+        {
+          "w": "that's",
+          "s": 75.228,
+          "e": 75.378,
+          "c": 0.954469
+        },
+        {
+          "w": "why",
+          "s": 75.378,
+          "e": 75.608,
+          "c": 0.999279
+        },
+        {
+          "w": "the",
+          "s": 75.608,
+          "e": 75.778,
+          "c": 0.997938
+        },
+        {
+          "w": "democratic",
+          "s": 76.118,
+          "e": 76.618,
+          "c": 0.584636
+        },
+        {
+          "w": "proposal",
+          "s": 76.618,
+          "e": 77.268,
+          "c": 0.998982
+        },
+        {
+          "w": "that",
+          "s": 77.268,
+          "e": 77.618,
+          "c": 0.959825
+        },
+        {
+          "w": "I",
+          "s": 77.618,
+          "e": 77.698,
+          "c": 0.99971
+        },
+        {
+          "w": "voted",
+          "s": 77.698,
+          "e": 78.088,
+          "c": 0.997057
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 78.2,
+      "end_s": 78.41,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "for",
+      "words": [
+        {
+          "w": "for",
+          "s": 78.198,
+          "e": 78.408,
+          "c": 0.999213
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 78.79,
+      "end_s": 101.63,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "includes those guardrails, but it also includes something else. It addresses some of the big critical healthcare issues we're facing in this country. Because Republicans have left a ticking time bomb on important healthcare for America. Specifically, at the end of this year, the premium tax credits for people on the Affordable Care Act will",
+      "words": [
+        {
+          "w": "includes",
+          "s": 78.786,
+          "e": 78.966,
+          "c": 0.661125
+        },
+        {
+          "w": "those",
+          "s": 79.016,
+          "e": 79.326,
+          "c": 0.998569
+        },
+        {
+          "w": "guardrails,",
+          "s": 79.326,
+          "e": 80.036,
+          "c": 0.750142
+        },
+        {
+          "w": "but",
+          "s": 80.036,
+          "e": 80.156,
+          "c": 0.99943
+        },
+        {
+          "w": "it",
+          "s": 80.156,
+          "e": 80.236,
+          "c": 0.995211
+        },
+        {
+          "w": "also",
+          "s": 80.386,
+          "e": 80.406,
+          "c": 0.993775
+        },
+        {
+          "w": "includes",
+          "s": 80.406,
+          "e": 80.746,
+          "c": 0.987342
+        },
+        {
+          "w": "something",
+          "s": 80.746,
+          "e": 81.056,
+          "c": 0.998612
+        },
+        {
+          "w": "else.",
+          "s": 81.136,
+          "e": 81.456,
+          "c": 0.920332
+        },
+        {
+          "w": "It",
+          "s": 81.456,
+          "e": 81.566,
+          "c": 0.998298
+        },
+        {
+          "w": "addresses",
+          "s": 81.826,
+          "e": 82.086,
+          "c": 0.998812
+        },
+        {
+          "w": "some",
+          "s": 82.086,
+          "e": 82.336,
+          "c": 0.998041
+        },
+        {
+          "w": "of",
+          "s": 82.336,
+          "e": 82.476,
+          "c": 0.987408
+        },
+        {
+          "w": "the",
+          "s": 82.556,
+          "e": 82.716,
+          "c": 0.991195
+        },
+        {
+          "w": "big",
+          "s": 82.776,
+          "e": 82.966,
+          "c": 0.99602
+        },
+        {
+          "w": "critical",
+          "s": 83.106,
+          "e": 83.576,
+          "c": 0.76587
+        },
+        {
+          "w": "healthcare",
+          "s": 83.626,
+          "e": 84.096,
+          "c": 0.642483
+        },
+        {
+          "w": "issues",
+          "s": 84.096,
+          "e": 84.396,
+          "c": 0.941523
+        },
+        {
+          "w": "we're",
+          "s": 84.456,
+          "e": 84.946,
+          "c": 0.990123
+        },
+        {
+          "w": "facing",
+          "s": 85.056,
+          "e": 85.476,
+          "c": 0.999676
+        },
+        {
+          "w": "in",
+          "s": 85.556,
+          "e": 85.716,
+          "c": 0.997942
+        },
+        {
+          "w": "this",
+          "s": 85.776,
+          "e": 86.136,
+          "c": 0.999548
+        },
+        {
+          "w": "country.",
+          "s": 86.136,
+          "e": 86.856,
+          "c": 0.413131
+        },
+        {
+          "w": "Because",
+          "s": 87.226,
+          "e": 87.466,
+          "c": 0.99575
+        },
+        {
+          "w": "Republicans",
+          "s": 87.466,
+          "e": 88.356,
+          "c": 0.978618
+        },
+        {
+          "w": "have",
+          "s": 88.506,
+          "e": 88.776,
+          "c": 0.995932
+        },
+        {
+          "w": "left",
+          "s": 88.776,
+          "e": 89.136,
+          "c": 0.998969
+        },
+        {
+          "w": "a",
+          "s": 89.136,
+          "e": 89.286,
+          "c": 0.959574
+        },
+        {
+          "w": "ticking",
+          "s": 89.306,
+          "e": 90.456,
+          "c": 0.998702
+        },
+        {
+          "w": "time",
+          "s": 90.456,
+          "e": 90.916,
+          "c": 0.994105
+        },
+        {
+          "w": "bomb",
+          "s": 91.146,
+          "e": 91.796,
+          "c": 0.966398
+        },
+        {
+          "w": "on",
+          "s": 91.796,
+          "e": 91.986,
+          "c": 0.9998
+        },
+        {
+          "w": "important",
+          "s": 92.166,
+          "e": 92.826,
+          "c": 0.999144
+        },
+        {
+          "w": "healthcare",
+          "s": 92.896,
+          "e": 93.846,
+          "c": 0.966864
+        },
+        {
+          "w": "for",
+          "s": 93.846,
+          "e": 94.126,
+          "c": 0.998418
+        },
+        {
+          "w": "America.",
+          "s": 94.186,
+          "e": 95.136,
+          "c": 0.891032
+        },
+        {
+          "w": "Specifically,",
+          "s": 95.506,
+          "e": 96.536,
+          "c": 0.490793
+        },
+        {
+          "w": "at",
+          "s": 96.536,
+          "e": 96.686,
+          "c": 0.997029
+        },
+        {
+          "w": "the",
+          "s": 96.786,
+          "e": 97.036,
+          "c": 0.999699
+        },
+        {
+          "w": "end",
+          "s": 97.036,
+          "e": 97.256,
+          "c": 0.99984
+        },
+        {
+          "w": "of",
+          "s": 97.366,
+          "e": 97.526,
+          "c": 0.99915
+        },
+        {
+          "w": "this",
+          "s": 97.536,
+          "e": 97.886,
+          "c": 0.998738
+        },
+        {
+          "w": "year,",
+          "s": 97.996,
+          "e": 98.356,
+          "c": 0.917737
+        },
+        {
+          "w": "the",
+          "s": 98.356,
+          "e": 98.546,
+          "c": 0.998702
+        },
+        {
+          "w": "premium",
+          "s": 98.726,
+          "e": 98.986,
+          "c": 0.990388
+        },
+        {
+          "w": "tax",
+          "s": 98.986,
+          "e": 99.096,
+          "c": 0.999703
+        },
+        {
+          "w": "credits",
+          "s": 99.216,
+          "e": 99.616,
+          "c": 0.997805
+        },
+        {
+          "w": "for",
+          "s": 99.686,
+          "e": 99.776,
+          "c": 0.882891
+        },
+        {
+          "w": "people",
+          "s": 99.776,
+          "e": 100.066,
+          "c": 0.997291
+        },
+        {
+          "w": "on",
+          "s": 100.076,
+          "e": 100.196,
+          "c": 0.743561
+        },
+        {
+          "w": "the",
+          "s": 100.376,
+          "e": 100.376,
+          "c": 0.995494
+        },
+        {
+          "w": "Affordable",
+          "s": 100.446,
+          "e": 100.996,
+          "c": 0.942825
+        },
+        {
+          "w": "Care",
+          "s": 100.996,
+          "e": 101.246,
+          "c": 0.999274
+        },
+        {
+          "w": "Act",
+          "s": 101.246,
+          "e": 101.426,
+          "c": 0.998447
+        },
+        {
+          "w": "will",
+          "s": 101.426,
+          "e": 101.626,
+          "c": 0.994055
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 101.73,
+      "end_s": 102.21,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "go away.",
+      "words": [
+        {
+          "w": "go",
+          "s": 101.726,
+          "e": 101.786,
+          "c": 0.99964
+        },
+        {
+          "w": "away.",
+          "s": 101.796,
+          "e": 102.206,
+          "c": 0.993748
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 102.28,
+      "end_s": 107.34,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "That will immediately mean millions of Americans will lose access to health insurance.",
+      "words": [
+        {
+          "w": "That",
+          "s": 102.276,
+          "e": 102.496,
+          "c": 0.999659
+        },
+        {
+          "w": "will",
+          "s": 102.626,
+          "e": 102.716,
+          "c": 0.998742
+        },
+        {
+          "w": "immediately",
+          "s": 102.716,
+          "e": 103.296,
+          "c": 0.999703
+        },
+        {
+          "w": "mean",
+          "s": 103.376,
+          "e": 103.536,
+          "c": 0.995308
+        },
+        {
+          "w": "millions",
+          "s": 103.606,
+          "e": 103.986,
+          "c": 0.873427
+        },
+        {
+          "w": "of",
+          "s": 103.996,
+          "e": 104.096,
+          "c": 0.952963
+        },
+        {
+          "w": "Americans",
+          "s": 104.096,
+          "e": 104.556,
+          "c": 0.99839
+        },
+        {
+          "w": "will",
+          "s": 104.906,
+          "e": 104.906,
+          "c": 0.999474
+        },
+        {
+          "w": "lose",
+          "s": 104.926,
+          "e": 105.256,
+          "c": 0.997841
+        },
+        {
+          "w": "access",
+          "s": 105.256,
+          "e": 105.786,
+          "c": 0.99964
+        },
+        {
+          "w": "to",
+          "s": 105.786,
+          "e": 105.956,
+          "c": 0.998696
+        },
+        {
+          "w": "health",
+          "s": 105.956,
+          "e": 106.476,
+          "c": 0.999106
+        },
+        {
+          "w": "insurance.",
+          "s": 106.476,
+          "e": 107.336,
+          "c": 0.610038
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 107.55,
+      "end_s": 107.56,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "but",
+      "words": [
+        {
+          "w": "but",
+          "s": 107.554,
+          "e": 107.554,
+          "c": 0.497069
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 107.64,
+      "end_s": 134.73,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "it actually will impact everybody in a harmful way because insurance rates and premiums are going to go up across the board. So we want to turn off this ticking time bomb so it doesn't blow up access to healthcare for America. That's the proposal we put forward, but Donald Trump, he's taken the position that he's king and it's his way",
+      "words": [
+        {
+          "w": "it",
+          "s": 107.644,
+          "e": 107.694,
+          "c": 0.994621
+        },
+        {
+          "w": "actually",
+          "s": 107.694,
+          "e": 108.254,
+          "c": 0.977892
+        },
+        {
+          "w": "will",
+          "s": 108.254,
+          "e": 108.534,
+          "c": 0.998658
+        },
+        {
+          "w": "impact",
+          "s": 108.534,
+          "e": 108.804,
+          "c": 0.996458
+        },
+        {
+          "w": "everybody",
+          "s": 109.094,
+          "e": 109.674,
+          "c": 0.978771
+        },
+        {
+          "w": "in",
+          "s": 109.984,
+          "e": 110.134,
+          "c": 0.893211
+        },
+        {
+          "w": "a",
+          "s": 110.134,
+          "e": 110.224,
+          "c": 0.996343
+        },
+        {
+          "w": "harmful",
+          "s": 110.224,
+          "e": 110.754,
+          "c": 0.993911
+        },
+        {
+          "w": "way",
+          "s": 110.884,
+          "e": 111.184,
+          "c": 0.997581
+        },
+        {
+          "w": "because",
+          "s": 111.484,
+          "e": 112.004,
+          "c": 0.994698
+        },
+        {
+          "w": "insurance",
+          "s": 112.004,
+          "e": 113.044,
+          "c": 0.98641
+        },
+        {
+          "w": "rates",
+          "s": 113.124,
+          "e": 113.494,
+          "c": 0.998068
+        },
+        {
+          "w": "and",
+          "s": 113.824,
+          "e": 113.904,
+          "c": 0.96257
+        },
+        {
+          "w": "premiums",
+          "s": 113.904,
+          "e": 114.604,
+          "c": 0.990879
+        },
+        {
+          "w": "are",
+          "s": 114.904,
+          "e": 114.964,
+          "c": 0.999613
+        },
+        {
+          "w": "going",
+          "s": 114.964,
+          "e": 115.564,
+          "c": 0.61395
+        },
+        {
+          "w": "to",
+          "s": 115.564,
+          "e": 115.804,
+          "c": 0.998896
+        },
+        {
+          "w": "go",
+          "s": 115.804,
+          "e": 116.044,
+          "c": 0.998441
+        },
+        {
+          "w": "up",
+          "s": 116.044,
+          "e": 116.064,
+          "c": 0.999661
+        },
+        {
+          "w": "across",
+          "s": 116.354,
+          "e": 116.924,
+          "c": 0.994622
+        },
+        {
+          "w": "the",
+          "s": 117.244,
+          "e": 117.364,
+          "c": 0.996113
+        },
+        {
+          "w": "board.",
+          "s": 117.364,
+          "e": 117.984,
+          "c": 0.933104
+        },
+        {
+          "w": "So",
+          "s": 118.194,
+          "e": 118.194,
+          "c": 0.995395
+        },
+        {
+          "w": "we",
+          "s": 118.284,
+          "e": 118.404,
+          "c": 0.823212
+        },
+        {
+          "w": "want",
+          "s": 118.404,
+          "e": 118.824,
+          "c": 0.804518
+        },
+        {
+          "w": "to",
+          "s": 118.824,
+          "e": 119.034,
+          "c": 0.999457
+        },
+        {
+          "w": "turn",
+          "s": 119.034,
+          "e": 119.434,
+          "c": 0.998713
+        },
+        {
+          "w": "off",
+          "s": 119.734,
+          "e": 119.764,
+          "c": 0.996084
+        },
+        {
+          "w": "this",
+          "s": 119.764,
+          "e": 120.184,
+          "c": 0.991667
+        },
+        {
+          "w": "ticking",
+          "s": 120.184,
+          "e": 120.924,
+          "c": 0.998521
+        },
+        {
+          "w": "time",
+          "s": 120.924,
+          "e": 121.344,
+          "c": 0.981342
+        },
+        {
+          "w": "bomb",
+          "s": 121.344,
+          "e": 121.434,
+          "c": 0.973559
+        },
+        {
+          "w": "so",
+          "s": 121.804,
+          "e": 121.984,
+          "c": 0.999173
+        },
+        {
+          "w": "it",
+          "s": 122.104,
+          "e": 122.164,
+          "c": 0.996943
+        },
+        {
+          "w": "doesn't",
+          "s": 122.164,
+          "e": 122.804,
+          "c": 0.998896
+        },
+        {
+          "w": "blow",
+          "s": 122.804,
+          "e": 123.174,
+          "c": 0.99854
+        },
+        {
+          "w": "up",
+          "s": 123.174,
+          "e": 123.274,
+          "c": 0.99612
+        },
+        {
+          "w": "access",
+          "s": 123.554,
+          "e": 123.844,
+          "c": 0.92098
+        },
+        {
+          "w": "to",
+          "s": 123.844,
+          "e": 124.014,
+          "c": 0.977898
+        },
+        {
+          "w": "healthcare",
+          "s": 124.014,
+          "e": 124.814,
+          "c": 0.558434
+        },
+        {
+          "w": "for",
+          "s": 124.904,
+          "e": 125.234,
+          "c": 0.95488
+        },
+        {
+          "w": "America.",
+          "s": 125.924,
+          "e": 126.544,
+          "c": 0.994207
+        },
+        {
+          "w": "That's",
+          "s": 126.944,
+          "e": 127.074,
+          "c": 0.998525
+        },
+        {
+          "w": "the",
+          "s": 127.074,
+          "e": 127.264,
+          "c": 0.9995
+        },
+        {
+          "w": "proposal",
+          "s": 127.264,
+          "e": 127.734,
+          "c": 0.999262
+        },
+        {
+          "w": "we",
+          "s": 127.774,
+          "e": 127.914,
+          "c": 0.996012
+        },
+        {
+          "w": "put",
+          "s": 127.914,
+          "e": 128.104,
+          "c": 0.952897
+        },
+        {
+          "w": "forward,",
+          "s": 128.104,
+          "e": 128.744,
+          "c": 0.448195
+        },
+        {
+          "w": "but",
+          "s": 128.754,
+          "e": 128.994,
+          "c": 0.505741
+        },
+        {
+          "w": "Donald",
+          "s": 129.014,
+          "e": 129.504,
+          "c": 0.996014
+        },
+        {
+          "w": "Trump,",
+          "s": 129.534,
+          "e": 129.984,
+          "c": 0.816555
+        },
+        {
+          "w": "he's",
+          "s": 130.154,
+          "e": 130.364,
+          "c": 0.994852
+        },
+        {
+          "w": "taken",
+          "s": 130.364,
+          "e": 130.854,
+          "c": 0.777971
+        },
+        {
+          "w": "the",
+          "s": 130.854,
+          "e": 131.144,
+          "c": 0.99732
+        },
+        {
+          "w": "position",
+          "s": 131.144,
+          "e": 131.944,
+          "c": 0.999239
+        },
+        {
+          "w": "that",
+          "s": 131.944,
+          "e": 132.304,
+          "c": 0.944971
+        },
+        {
+          "w": "he's",
+          "s": 132.624,
+          "e": 132.904,
+          "c": 0.995864
+        },
+        {
+          "w": "king",
+          "s": 132.904,
+          "e": 133.394,
+          "c": 0.892094
+        },
+        {
+          "w": "and",
+          "s": 133.394,
+          "e": 133.444,
+          "c": 0.449072
+        },
+        {
+          "w": "it's",
+          "s": 134.004,
+          "e": 134.234,
+          "c": 0.996905
+        },
+        {
+          "w": "his",
+          "s": 134.354,
+          "e": 134.604,
+          "c": 0.999169
+        },
+        {
+          "w": "way",
+          "s": 134.604,
+          "e": 134.734,
+          "c": 0.99963
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 135.14,
+      "end_s": 135.15,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "or",
+      "words": [
+        {
+          "w": "or",
+          "s": 135.136,
+          "e": 135.136,
+          "c": 0.808841
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 135.21,
+      "end_s": 152.66,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "nothing. And sadly, Republicans are going along. They are clearly heading toward a government shutdown for this country. And there's a way to avoid it through bipartisanship, but that requires people to come together for the good of the country.",
+      "words": [
+        {
+          "w": "nothing.",
+          "s": 135.206,
+          "e": 135.766,
+          "c": 0.33421
+        },
+        {
+          "w": "And",
+          "s": 136.186,
+          "e": 136.316,
+          "c": 0.843677
+        },
+        {
+          "w": "sadly,",
+          "s": 136.316,
+          "e": 136.986,
+          "c": 0.793445
+        },
+        {
+          "w": "Republicans",
+          "s": 137.326,
+          "e": 138.226,
+          "c": 0.896207
+        },
+        {
+          "w": "are",
+          "s": 138.556,
+          "e": 138.776,
+          "c": 0.972401
+        },
+        {
+          "w": "going",
+          "s": 138.776,
+          "e": 139.106,
+          "c": 0.998032
+        },
+        {
+          "w": "along.",
+          "s": 139.476,
+          "e": 140.016,
+          "c": 0.956094
+        },
+        {
+          "w": "They",
+          "s": 140.436,
+          "e": 140.666,
+          "c": 0.932093
+        },
+        {
+          "w": "are",
+          "s": 140.716,
+          "e": 141.006,
+          "c": 0.986327
+        },
+        {
+          "w": "clearly",
+          "s": 141.006,
+          "e": 141.436,
+          "c": 0.996227
+        },
+        {
+          "w": "heading",
+          "s": 141.956,
+          "e": 142.176,
+          "c": 0.970334
+        },
+        {
+          "w": "toward",
+          "s": 142.176,
+          "e": 143.216,
+          "c": 0.880986
+        },
+        {
+          "w": "a",
+          "s": 143.216,
+          "e": 143.376,
+          "c": 0.976442
+        },
+        {
+          "w": "government",
+          "s": 143.376,
+          "e": 143.696,
+          "c": 0.936591
+        },
+        {
+          "w": "shutdown",
+          "s": 143.926,
+          "e": 144.186,
+          "c": 0.991265
+        },
+        {
+          "w": "for",
+          "s": 144.266,
+          "e": 144.466,
+          "c": 0.993155
+        },
+        {
+          "w": "this",
+          "s": 144.466,
+          "e": 144.506,
+          "c": 0.994918
+        },
+        {
+          "w": "country.",
+          "s": 144.916,
+          "e": 145.446,
+          "c": 0.375308
+        },
+        {
+          "w": "And",
+          "s": 145.446,
+          "e": 145.656,
+          "c": 0.977735
+        },
+        {
+          "w": "there's",
+          "s": 145.656,
+          "e": 146.146,
+          "c": 0.951462
+        },
+        {
+          "w": "a",
+          "s": 146.206,
+          "e": 146.206,
+          "c": 0.999706
+        },
+        {
+          "w": "way",
+          "s": 146.236,
+          "e": 146.396,
+          "c": 0.999903
+        },
+        {
+          "w": "to",
+          "s": 146.436,
+          "e": 146.516,
+          "c": 0.999754
+        },
+        {
+          "w": "avoid",
+          "s": 146.586,
+          "e": 146.916,
+          "c": 0.999617
+        },
+        {
+          "w": "it",
+          "s": 146.916,
+          "e": 146.946,
+          "c": 0.999022
+        },
+        {
+          "w": "through",
+          "s": 147.266,
+          "e": 147.546,
+          "c": 0.980237
+        },
+        {
+          "w": "bipartisanship,",
+          "s": 147.546,
+          "e": 148.576,
+          "c": 0.714273
+        },
+        {
+          "w": "but",
+          "s": 148.776,
+          "e": 148.776,
+          "c": 0.987419
+        },
+        {
+          "w": "that",
+          "s": 148.806,
+          "e": 149.046,
+          "c": 0.999224
+        },
+        {
+          "w": "requires",
+          "s": 149.046,
+          "e": 149.346,
+          "c": 0.999445
+        },
+        {
+          "w": "people",
+          "s": 149.796,
+          "e": 149.986,
+          "c": 0.997784
+        },
+        {
+          "w": "to",
+          "s": 149.986,
+          "e": 150.116,
+          "c": 0.989095
+        },
+        {
+          "w": "come",
+          "s": 150.116,
+          "e": 150.386,
+          "c": 0.9998
+        },
+        {
+          "w": "together",
+          "s": 150.386,
+          "e": 150.586,
+          "c": 0.99971
+        },
+        {
+          "w": "for",
+          "s": 150.926,
+          "e": 151.126,
+          "c": 0.986973
+        },
+        {
+          "w": "the",
+          "s": 151.126,
+          "e": 151.326,
+          "c": 0.999794
+        },
+        {
+          "w": "good",
+          "s": 151.326,
+          "e": 151.596,
+          "c": 0.99963
+        },
+        {
+          "w": "of",
+          "s": 151.596,
+          "e": 151.716,
+          "c": 0.999405
+        },
+        {
+          "w": "the",
+          "s": 151.716,
+          "e": 151.826,
+          "c": 0.999121
+        },
+        {
+          "w": "country.",
+          "s": 152.146,
+          "e": 152.656,
+          "c": 0.980638
+        }
+      ]
+    }
+  ]
+}

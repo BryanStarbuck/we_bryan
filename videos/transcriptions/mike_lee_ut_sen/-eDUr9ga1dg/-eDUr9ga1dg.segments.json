@@ -1,0 +1,6959 @@
+{
+  "schema_version": 2,
+  "canonical_id": "64eda9875a59ecfd",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 375.28,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T02:59:23.831Z",
+  "text_sha256": "b3d7ea6891d5eda1cb6a123bcf7d93433fd0af2959cfca2456e05076e7022644",
+  "segments_sha256": "a92d1b668d18242064188a28b39d614282de48fa275191a01644c682af95520e",
+  "words_sha256": "07f1925b2bbf54f85ef075ddfa607911f4b77d0d1b8e916a39a60824c7ada75f",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 15,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 48,
+    "clusters": 14,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.87,
+        "confidence": "low",
+        "clean_s": 96.9
+      },
+      "clean_s": 96.9,
+      "speaking_s": 96.9,
+      "first_s": 1.13
+    },
+    {
+      "id": "SPEAKER_02",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.8
+      },
+      "clean_s": 1.8,
+      "speaking_s": 1.8,
+      "first_s": 76.96
+    },
+    {
+      "id": "SPEAKER_04",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 142
+      },
+      "clean_s": 142,
+      "speaking_s": 143,
+      "first_s": 80.14
+    },
+    {
+      "id": "SPEAKER_05",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.8
+      },
+      "clean_s": 5.8,
+      "speaking_s": 5.8,
+      "first_s": 110.97
+    },
+    {
+      "id": "SPEAKER_07",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 7.1
+      },
+      "clean_s": 7.1,
+      "speaking_s": 7.1,
+      "first_s": 116.86
+    },
+    {
+      "id": "SPEAKER_09",
+      "n": 6,
+      "label": "Speaker 6 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.87,
+        "confidence": "low",
+        "clean_s": 12.2
+      },
+      "clean_s": 12.2,
+      "speaking_s": 12.2,
+      "first_s": 123.98
+    },
+    {
+      "id": "SPEAKER_11",
+      "n": 7,
+      "label": "Speaker 7",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 10
+      },
+      "clean_s": 10,
+      "speaking_s": 10,
+      "first_s": 140.97
+    },
+    {
+      "id": "SPEAKER_06",
+      "n": 8,
+      "label": "Speaker 8",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.8
+      },
+      "clean_s": 0.8,
+      "speaking_s": 0.8,
+      "first_s": 151.26
+    },
+    {
+      "id": "SPEAKER_12",
+      "n": 9,
+      "label": "Speaker 9",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.1
+      },
+      "clean_s": 5.1,
+      "speaking_s": 5.1,
+      "first_s": 162.98
+    },
+    {
+      "id": "SPEAKER_13",
+      "n": 10,
+      "label": "Speaker 10 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.84,
+        "confidence": "low",
+        "clean_s": 50.5
+      },
+      "clean_s": 50.5,
+      "speaking_s": 50.5,
+      "first_s": 188.96
+    },
+    {
+      "id": "SPEAKER_14",
+      "n": 11,
+      "label": "Speaker 11",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.9
+      },
+      "clean_s": 4.9,
+      "speaking_s": 5.2,
+      "first_s": 228.15
+    },
+    {
+      "id": "SPEAKER_20",
+      "n": 12,
+      "label": "Speaker 12",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 3.2
+      },
+      "clean_s": 3.2,
+      "speaking_s": 3.8,
+      "first_s": 283.58
+    },
+    {
+      "id": "SPEAKER_23",
+      "n": 13,
+      "label": "Speaker 13",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4
+      },
+      "clean_s": 4,
+      "speaking_s": 4,
+      "first_s": 320.03
+    },
+    {
+      "id": "SPEAKER_25",
+      "n": 14,
+      "label": "Speaker 14",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.7
+      },
+      "clean_s": 1.7,
+      "speaking_s": 1.7,
+      "first_s": 373.59
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 1,
+      "end_s": 1,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 71.18,
+      "end_s": 71.18,
+      "segment_i": 4,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 79.28,
+      "end_s": 79.8,
+      "segment_i": 7,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 125.5,
+      "end_s": 125.5,
+      "segment_i": 13,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 151,
+      "end_s": 151.19,
+      "segment_i": 17,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 176.83,
+      "end_s": 176.83,
+      "segment_i": 22,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 177.02,
+      "end_s": 177.7,
+      "segment_i": 23,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 211.34,
+      "end_s": 211.9,
+      "segment_i": 27,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 227.62,
+      "end_s": 228.13,
+      "segment_i": 31,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 233.61,
+      "end_s": 233.61,
+      "segment_i": 33,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 260.22,
+      "end_s": 260.97,
+      "segment_i": 36,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 272.3,
+      "end_s": 272.55,
+      "segment_i": 38,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 272.66,
+      "end_s": 272.66,
+      "segment_i": 39,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 280.44,
+      "end_s": 280.82,
+      "segment_i": 41,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 318.42,
+      "end_s": 319.31,
+      "segment_i": 46,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 319.28,
+      "end_s": 319.96,
+      "segment_i": 47,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 341.28,
+      "end_s": 341.68,
+      "segment_i": 50,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 372.6,
+      "end_s": 373.52,
+      "segment_i": 52,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 1,
+      "end_s": 1.01,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you,",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 1,
+          "e": 1,
+          "c": 0.835348
+        },
+        {
+          "w": "you,",
+          "s": 1,
+          "e": 1,
+          "c": 0.590197
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 1.03,
+      "end_s": 26.56,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Mr. Chairman. Thank you for being here today to answer our questions. Since 2014, the Department of Homeland Security, and in particular the Office of Inspector General at the Department of Homeland Security, has been covertly auditing and inspecting security-related aspects of TSA. And it's done so, as far as I'm aware, about four times.",
+      "words": [
+        {
+          "w": "Mr.",
+          "s": 1.03,
+          "e": 1.29,
+          "c": 0.931759
+        },
+        {
+          "w": "Chairman.",
+          "s": 1.29,
+          "e": 2,
+          "c": 0.719459
+        },
+        {
+          "w": "Thank",
+          "s": 2.06,
+          "e": 2.3,
+          "c": 0.993998
+        },
+        {
+          "w": "you",
+          "s": 2.31,
+          "e": 2.5,
+          "c": 0.998915
+        },
+        {
+          "w": "for",
+          "s": 2.52,
+          "e": 2.69,
+          "c": 0.991238
+        },
+        {
+          "w": "being",
+          "s": 2.69,
+          "e": 2.99,
+          "c": 0.998717
+        },
+        {
+          "w": "here",
+          "s": 3.17,
+          "e": 3.25,
+          "c": 0.997959
+        },
+        {
+          "w": "today",
+          "s": 3.25,
+          "e": 3.59,
+          "c": 0.974137
+        },
+        {
+          "w": "to",
+          "s": 3.61,
+          "e": 3.72,
+          "c": 0.948071
+        },
+        {
+          "w": "answer",
+          "s": 3.72,
+          "e": 4.08,
+          "c": 0.993513
+        },
+        {
+          "w": "our",
+          "s": 4.08,
+          "e": 4.24,
+          "c": 0.947178
+        },
+        {
+          "w": "questions.",
+          "s": 4.32,
+          "e": 4.84,
+          "c": 0.985821
+        },
+        {
+          "w": "Since",
+          "s": 5.06,
+          "e": 5.5,
+          "c": 0.995268
+        },
+        {
+          "w": "2014,",
+          "s": 6.17,
+          "e": 6.91,
+          "c": 0.859842
+        },
+        {
+          "w": "the",
+          "s": 7,
+          "e": 7.19,
+          "c": 0.953432
+        },
+        {
+          "w": "Department",
+          "s": 7.19,
+          "e": 7.82,
+          "c": 0.992451
+        },
+        {
+          "w": "of",
+          "s": 7.82,
+          "e": 7.85,
+          "c": 0.997898
+        },
+        {
+          "w": "Homeland",
+          "s": 8.01,
+          "e": 8.46,
+          "c": 0.991706
+        },
+        {
+          "w": "Security,",
+          "s": 8.46,
+          "e": 9,
+          "c": 0.47163
+        },
+        {
+          "w": "and",
+          "s": 9.05,
+          "e": 9.28,
+          "c": 0.90148
+        },
+        {
+          "w": "in",
+          "s": 9.28,
+          "e": 9.47,
+          "c": 0.552746
+        },
+        {
+          "w": "particular",
+          "s": 10.17,
+          "e": 10.42,
+          "c": 0.986039
+        },
+        {
+          "w": "the",
+          "s": 10.42,
+          "e": 10.66,
+          "c": 0.710792
+        },
+        {
+          "w": "Office",
+          "s": 10.7,
+          "e": 11.25,
+          "c": 0.89369
+        },
+        {
+          "w": "of",
+          "s": 11.32,
+          "e": 11.39,
+          "c": 0.995847
+        },
+        {
+          "w": "Inspector",
+          "s": 11.46,
+          "e": 12.2,
+          "c": 0.980485
+        },
+        {
+          "w": "General",
+          "s": 12.33,
+          "e": 13,
+          "c": 0.994844
+        },
+        {
+          "w": "at",
+          "s": 13,
+          "e": 13.65,
+          "c": 0.467522
+        },
+        {
+          "w": "the",
+          "s": 14,
+          "e": 14.09,
+          "c": 0.916434
+        },
+        {
+          "w": "Department",
+          "s": 14.09,
+          "e": 14.39,
+          "c": 0.977973
+        },
+        {
+          "w": "of",
+          "s": 14.43,
+          "e": 14.47,
+          "c": 0.990146
+        },
+        {
+          "w": "Homeland",
+          "s": 14.47,
+          "e": 14.72,
+          "c": 0.997471
+        },
+        {
+          "w": "Security,",
+          "s": 14.86,
+          "e": 15,
+          "c": 0.693018
+        },
+        {
+          "w": "has",
+          "s": 15.06,
+          "e": 15.32,
+          "c": 0.970387
+        },
+        {
+          "w": "been",
+          "s": 15.33,
+          "e": 15.77,
+          "c": 0.998207
+        },
+        {
+          "w": "covertly",
+          "s": 16.17,
+          "e": 16.65,
+          "c": 0.996704
+        },
+        {
+          "w": "auditing",
+          "s": 16.65,
+          "e": 17.53,
+          "c": 0.996232
+        },
+        {
+          "w": "and",
+          "s": 17.53,
+          "e": 17.84,
+          "c": 0.986105
+        },
+        {
+          "w": "inspecting",
+          "s": 18.01,
+          "e": 19,
+          "c": 0.996533
+        },
+        {
+          "w": "security-related",
+          "s": 19,
+          "e": 21.27,
+          "c": 0.710083
+        },
+        {
+          "w": "aspects",
+          "s": 21.27,
+          "e": 22.05,
+          "c": 0.997584
+        },
+        {
+          "w": "of",
+          "s": 22.4,
+          "e": 22.54,
+          "c": 0.996031
+        },
+        {
+          "w": "TSA.",
+          "s": 22.58,
+          "e": 23,
+          "c": 0.486587
+        },
+        {
+          "w": "And",
+          "s": 23.05,
+          "e": 23.23,
+          "c": 0.557858
+        },
+        {
+          "w": "it's",
+          "s": 23.23,
+          "e": 23.52,
+          "c": 0.85324
+        },
+        {
+          "w": "done",
+          "s": 23.53,
+          "e": 23.83,
+          "c": 0.999085
+        },
+        {
+          "w": "so,",
+          "s": 23.83,
+          "e": 24.13,
+          "c": 0.918806
+        },
+        {
+          "w": "as",
+          "s": 24.17,
+          "e": 24.28,
+          "c": 0.997305
+        },
+        {
+          "w": "far",
+          "s": 24.28,
+          "e": 24.51,
+          "c": 0.994448
+        },
+        {
+          "w": "as",
+          "s": 24.51,
+          "e": 24.66,
+          "c": 0.994071
+        },
+        {
+          "w": "I'm",
+          "s": 24.66,
+          "e": 24.88,
+          "c": 0.975725
+        },
+        {
+          "w": "aware,",
+          "s": 24.88,
+          "e": 25.39,
+          "c": 0.992947
+        },
+        {
+          "w": "about",
+          "s": 25.46,
+          "e": 25.79,
+          "c": 0.989119
+        },
+        {
+          "w": "four",
+          "s": 25.79,
+          "e": 26.09,
+          "c": 0.969888
+        },
+        {
+          "w": "times.",
+          "s": 26.09,
+          "e": 26.56,
+          "c": 0.831874
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 26.83,
+      "end_s": 49.15,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The IG's findings have revealed some very alarming rates of failure, of failure due to both human and technology-based failures. Most recently, in February of this year, the IG conducted covert testing on procedures to safeguard the so-called secure",
+      "words": [
+        {
+          "w": "The",
+          "s": 26.83,
+          "e": 26.84,
+          "c": 0.695284
+        },
+        {
+          "w": "IG's",
+          "s": 26.84,
+          "e": 27.21,
+          "c": 0.928046
+        },
+        {
+          "w": "findings",
+          "s": 27.21,
+          "e": 27.89,
+          "c": 0.996381
+        },
+        {
+          "w": "have",
+          "s": 28.3,
+          "e": 28.33,
+          "c": 0.996282
+        },
+        {
+          "w": "revealed",
+          "s": 28.33,
+          "e": 29.12,
+          "c": 0.994746
+        },
+        {
+          "w": "some",
+          "s": 29.12,
+          "e": 29.34,
+          "c": 0.986417
+        },
+        {
+          "w": "very",
+          "s": 29.34,
+          "e": 29.56,
+          "c": 0.990665
+        },
+        {
+          "w": "alarming",
+          "s": 29.56,
+          "e": 30.06,
+          "c": 0.988235
+        },
+        {
+          "w": "rates",
+          "s": 30.53,
+          "e": 33.03,
+          "c": 0.981293
+        },
+        {
+          "w": "of",
+          "s": 33.04,
+          "e": 33.34,
+          "c": 0.868174
+        },
+        {
+          "w": "failure,",
+          "s": 33.5,
+          "e": 33.85,
+          "c": 0.55779
+        },
+        {
+          "w": "of",
+          "s": 34.04,
+          "e": 34.17,
+          "c": 0.223051
+        },
+        {
+          "w": "failure",
+          "s": 34.17,
+          "e": 34.94,
+          "c": 0.984605
+        },
+        {
+          "w": "due",
+          "s": 35.1,
+          "e": 35.23,
+          "c": 0.952924
+        },
+        {
+          "w": "to",
+          "s": 35.49,
+          "e": 35.49,
+          "c": 0.999355
+        },
+        {
+          "w": "both",
+          "s": 35.51,
+          "e": 35.94,
+          "c": 0.998272
+        },
+        {
+          "w": "human",
+          "s": 36.08,
+          "e": 36.58,
+          "c": 0.998422
+        },
+        {
+          "w": "and",
+          "s": 36.62,
+          "e": 37,
+          "c": 0.882445
+        },
+        {
+          "w": "technology-based",
+          "s": 37.01,
+          "e": 38.74,
+          "c": 0.813958
+        },
+        {
+          "w": "failures.",
+          "s": 39.21,
+          "e": 40.44,
+          "c": 0.996462
+        },
+        {
+          "w": "Most",
+          "s": 40.71,
+          "e": 40.73,
+          "c": 0.998856
+        },
+        {
+          "w": "recently,",
+          "s": 40.73,
+          "e": 41.45,
+          "c": 0.457202
+        },
+        {
+          "w": "in",
+          "s": 41.45,
+          "e": 41.59,
+          "c": 0.999016
+        },
+        {
+          "w": "February",
+          "s": 41.59,
+          "e": 41.8,
+          "c": 0.998024
+        },
+        {
+          "w": "of",
+          "s": 42.2,
+          "e": 42.31,
+          "c": 0.989189
+        },
+        {
+          "w": "this",
+          "s": 42.31,
+          "e": 42.55,
+          "c": 0.999106
+        },
+        {
+          "w": "year,",
+          "s": 42.72,
+          "e": 43.03,
+          "c": 0.974983
+        },
+        {
+          "w": "the",
+          "s": 43.03,
+          "e": 43.25,
+          "c": 0.991365
+        },
+        {
+          "w": "IG",
+          "s": 43.25,
+          "e": 43.39,
+          "c": 0.997236
+        },
+        {
+          "w": "conducted",
+          "s": 43.39,
+          "e": 43.94,
+          "c": 0.995422
+        },
+        {
+          "w": "covert",
+          "s": 44.41,
+          "e": 44.49,
+          "c": 0.994197
+        },
+        {
+          "w": "testing",
+          "s": 44.49,
+          "e": 44.92,
+          "c": 0.997891
+        },
+        {
+          "w": "on",
+          "s": 45.14,
+          "e": 45.14,
+          "c": 0.993212
+        },
+        {
+          "w": "procedures",
+          "s": 45.48,
+          "e": 45.96,
+          "c": 0.996208
+        },
+        {
+          "w": "to",
+          "s": 46.18,
+          "e": 46.18,
+          "c": 0.999851
+        },
+        {
+          "w": "safeguard",
+          "s": 46.23,
+          "e": 47.17,
+          "c": 0.996213
+        },
+        {
+          "w": "the",
+          "s": 47.17,
+          "e": 47.32,
+          "c": 0.997044
+        },
+        {
+          "w": "so-called",
+          "s": 47.7,
+          "e": 48.49,
+          "c": 0.968836
+        },
+        {
+          "w": "secure",
+          "s": 48.49,
+          "e": 49.15,
+          "c": 0.620247
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 49.34,
+      "end_s": 70.88,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "areas of airports, finding both human-based and technology-based vulnerabilities at various points. And the IG made a series of six recommendations in response to the perception of those failures. As of two months ago, each of the six recommendations made by the IG were still open.",
+      "words": [
+        {
+          "w": "areas",
+          "s": 49.34,
+          "e": 49.6,
+          "c": 0.904247
+        },
+        {
+          "w": "of",
+          "s": 49.6,
+          "e": 49.79,
+          "c": 0.991618
+        },
+        {
+          "w": "airports,",
+          "s": 49.79,
+          "e": 50.75,
+          "c": 0.702336
+        },
+        {
+          "w": "finding",
+          "s": 50.76,
+          "e": 51.62,
+          "c": 0.8873
+        },
+        {
+          "w": "both",
+          "s": 51.62,
+          "e": 51.82,
+          "c": 0.992123
+        },
+        {
+          "w": "human-based",
+          "s": 52.4,
+          "e": 52.95,
+          "c": 0.885051
+        },
+        {
+          "w": "and",
+          "s": 52.95,
+          "e": 53.2,
+          "c": 0.96497
+        },
+        {
+          "w": "technology-based",
+          "s": 53.2,
+          "e": 54.2,
+          "c": 0.969585
+        },
+        {
+          "w": "vulnerabilities",
+          "s": 54.49,
+          "e": 55.25,
+          "c": 0.881462
+        },
+        {
+          "w": "at",
+          "s": 55.3,
+          "e": 55.44,
+          "c": 0.952323
+        },
+        {
+          "w": "various",
+          "s": 55.44,
+          "e": 55.8,
+          "c": 0.979505
+        },
+        {
+          "w": "points.",
+          "s": 56.02,
+          "e": 57.04,
+          "c": 0.847649
+        },
+        {
+          "w": "And",
+          "s": 57.26,
+          "e": 57.32,
+          "c": 0.972776
+        },
+        {
+          "w": "the",
+          "s": 57.32,
+          "e": 57.59,
+          "c": 0.994772
+        },
+        {
+          "w": "IG",
+          "s": 57.59,
+          "e": 57.79,
+          "c": 0.941172
+        },
+        {
+          "w": "made",
+          "s": 57.79,
+          "e": 58.16,
+          "c": 0.993648
+        },
+        {
+          "w": "a",
+          "s": 58.17,
+          "e": 58.26,
+          "c": 0.99782
+        },
+        {
+          "w": "series",
+          "s": 58.26,
+          "e": 58.8,
+          "c": 0.998951
+        },
+        {
+          "w": "of",
+          "s": 58.94,
+          "e": 59.02,
+          "c": 0.999384
+        },
+        {
+          "w": "six",
+          "s": 59.02,
+          "e": 59.3,
+          "c": 0.98192
+        },
+        {
+          "w": "recommendations",
+          "s": 59.3,
+          "e": 60.74,
+          "c": 0.998911
+        },
+        {
+          "w": "in",
+          "s": 60.74,
+          "e": 60.92,
+          "c": 0.992557
+        },
+        {
+          "w": "response",
+          "s": 60.92,
+          "e": 61.69,
+          "c": 0.997493
+        },
+        {
+          "w": "to",
+          "s": 61.72,
+          "e": 61.83,
+          "c": 0.998864
+        },
+        {
+          "w": "the",
+          "s": 61.89,
+          "e": 62.12,
+          "c": 0.957561
+        },
+        {
+          "w": "perception",
+          "s": 62.41,
+          "e": 63.12,
+          "c": 0.989838
+        },
+        {
+          "w": "of",
+          "s": 63.12,
+          "e": 63.32,
+          "c": 0.998178
+        },
+        {
+          "w": "those",
+          "s": 63.32,
+          "e": 63.78,
+          "c": 0.995668
+        },
+        {
+          "w": "failures.",
+          "s": 63.8,
+          "e": 64.94,
+          "c": 0.991775
+        },
+        {
+          "w": "As",
+          "s": 65.09,
+          "e": 65.09,
+          "c": 0.999735
+        },
+        {
+          "w": "of",
+          "s": 65.16,
+          "e": 65.26,
+          "c": 0.998077
+        },
+        {
+          "w": "two",
+          "s": 65.26,
+          "e": 65.49,
+          "c": 0.986423
+        },
+        {
+          "w": "months",
+          "s": 65.49,
+          "e": 65.99,
+          "c": 0.99644
+        },
+        {
+          "w": "ago,",
+          "s": 65.99,
+          "e": 66.27,
+          "c": 0.93098
+        },
+        {
+          "w": "each",
+          "s": 66.4,
+          "e": 66.71,
+          "c": 0.999169
+        },
+        {
+          "w": "of",
+          "s": 66.84,
+          "e": 66.88,
+          "c": 0.999108
+        },
+        {
+          "w": "the",
+          "s": 66.88,
+          "e": 67.12,
+          "c": 0.984598
+        },
+        {
+          "w": "six",
+          "s": 67.12,
+          "e": 67.23,
+          "c": 0.997347
+        },
+        {
+          "w": "recommendations",
+          "s": 67.42,
+          "e": 68.59,
+          "c": 0.998782
+        },
+        {
+          "w": "made",
+          "s": 68.59,
+          "e": 68.89,
+          "c": 0.98887
+        },
+        {
+          "w": "by",
+          "s": 68.94,
+          "e": 69.08,
+          "c": 0.996886
+        },
+        {
+          "w": "the",
+          "s": 69.08,
+          "e": 69.25,
+          "c": 0.997586
+        },
+        {
+          "w": "IG",
+          "s": 69.35,
+          "e": 69.48,
+          "c": 0.987347
+        },
+        {
+          "w": "were",
+          "s": 69.48,
+          "e": 69.81,
+          "c": 0.960347
+        },
+        {
+          "w": "still",
+          "s": 69.81,
+          "e": 70.02,
+          "c": 0.998037
+        },
+        {
+          "w": "open.",
+          "s": 70.31,
+          "e": 70.88,
+          "c": 0.987907
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 71.18,
+      "end_s": 71.19,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "What",
+      "words": [
+        {
+          "w": "What",
+          "s": 71.18,
+          "e": 71.18,
+          "c": 0.719081
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 71.21,
+      "end_s": 76.8,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "can you tell us about the current status of the IG's recommendations, and when can we",
+      "words": [
+        {
+          "w": "can",
+          "s": 71.21,
+          "e": 71.4,
+          "c": 0.9943
+        },
+        {
+          "w": "you",
+          "s": 71.4,
+          "e": 71.53,
+          "c": 0.996846
+        },
+        {
+          "w": "tell",
+          "s": 71.74,
+          "e": 71.92,
+          "c": 0.999155
+        },
+        {
+          "w": "us",
+          "s": 71.92,
+          "e": 72,
+          "c": 0.996212
+        },
+        {
+          "w": "about",
+          "s": 72.09,
+          "e": 72.4,
+          "c": 0.996189
+        },
+        {
+          "w": "the",
+          "s": 72.45,
+          "e": 72.67,
+          "c": 0.996386
+        },
+        {
+          "w": "current",
+          "s": 72.67,
+          "e": 73.2,
+          "c": 0.995008
+        },
+        {
+          "w": "status",
+          "s": 73.2,
+          "e": 73.65,
+          "c": 0.997018
+        },
+        {
+          "w": "of",
+          "s": 73.65,
+          "e": 73.77,
+          "c": 0.99621
+        },
+        {
+          "w": "the",
+          "s": 73.87,
+          "e": 74.02,
+          "c": 0.989423
+        },
+        {
+          "w": "IG's",
+          "s": 74.02,
+          "e": 74.32,
+          "c": 0.55776
+        },
+        {
+          "w": "recommendations,",
+          "s": 74.32,
+          "e": 75.84,
+          "c": 0.405603
+        },
+        {
+          "w": "and",
+          "s": 75.84,
+          "e": 75.93,
+          "c": 0.956625
+        },
+        {
+          "w": "when",
+          "s": 76,
+          "e": 76.43,
+          "c": 0.968457
+        },
+        {
+          "w": "can",
+          "s": 76.61,
+          "e": 76.66,
+          "c": 0.965228
+        },
+        {
+          "w": "we",
+          "s": 76.66,
+          "e": 76.8,
+          "c": 0.997933
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 76.99,
+      "end_s": 79.25,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "expect that those will be closed?",
+      "words": [
+        {
+          "w": "expect",
+          "s": 76.99,
+          "e": 77.31,
+          "c": 0.99767
+        },
+        {
+          "w": "that",
+          "s": 77.31,
+          "e": 77.6,
+          "c": 0.941067
+        },
+        {
+          "w": "those",
+          "s": 77.66,
+          "e": 78.01,
+          "c": 0.99677
+        },
+        {
+          "w": "will",
+          "s": 78.03,
+          "e": 78.27,
+          "c": 0.995247
+        },
+        {
+          "w": "be",
+          "s": 78.35,
+          "e": 78.51,
+          "c": 0.999655
+        },
+        {
+          "w": "closed?",
+          "s": 78.51,
+          "e": 79.25,
+          "c": 0.956503
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 79.28,
+      "end_s": 79.8,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We have",
+      "words": [
+        {
+          "w": "We",
+          "s": 79.28,
+          "e": 79.42,
+          "c": 0.223292
+        },
+        {
+          "w": "have",
+          "s": 79.61,
+          "e": 79.8,
+          "c": 0.99677
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 79.8,
+      "end_s": 93.91,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "concurred with all of the recommendations, individual recommendations, and are actively working to address them. A number of these recommendations are ones highlighting some areas that we also believe",
+      "words": [
+        {
+          "w": "concurred",
+          "s": 79.8,
+          "e": 80.59,
+          "c": 0.992479
+        },
+        {
+          "w": "with",
+          "s": 80.59,
+          "e": 80.89,
+          "c": 0.997868
+        },
+        {
+          "w": "all",
+          "s": 80.96,
+          "e": 81.2,
+          "c": 0.99246
+        },
+        {
+          "w": "of",
+          "s": 81.2,
+          "e": 81.37,
+          "c": 0.961144
+        },
+        {
+          "w": "the",
+          "s": 81.37,
+          "e": 81.62,
+          "c": 0.995579
+        },
+        {
+          "w": "recommendations,",
+          "s": 81.63,
+          "e": 83.2,
+          "c": 0.655572
+        },
+        {
+          "w": "individual",
+          "s": 83.2,
+          "e": 83.47,
+          "c": 0.693717
+        },
+        {
+          "w": "recommendations,",
+          "s": 83.47,
+          "e": 84.28,
+          "c": 0.745076
+        },
+        {
+          "w": "and",
+          "s": 84.28,
+          "e": 84.3,
+          "c": 0.813852
+        },
+        {
+          "w": "are",
+          "s": 84.33,
+          "e": 84.44,
+          "c": 0.86426
+        },
+        {
+          "w": "actively",
+          "s": 84.44,
+          "e": 84.83,
+          "c": 0.947771
+        },
+        {
+          "w": "working",
+          "s": 85.33,
+          "e": 85.55,
+          "c": 0.99939
+        },
+        {
+          "w": "to",
+          "s": 85.55,
+          "e": 85.65,
+          "c": 0.998178
+        },
+        {
+          "w": "address",
+          "s": 85.86,
+          "e": 86.25,
+          "c": 0.999119
+        },
+        {
+          "w": "them.",
+          "s": 86.25,
+          "e": 86.82,
+          "c": 0.998664
+        },
+        {
+          "w": "A",
+          "s": 86.82,
+          "e": 86.91,
+          "c": 0.998824
+        },
+        {
+          "w": "number",
+          "s": 87.15,
+          "e": 87.48,
+          "c": 0.999617
+        },
+        {
+          "w": "of",
+          "s": 87.48,
+          "e": 87.49,
+          "c": 0.999186
+        },
+        {
+          "w": "these",
+          "s": 87.68,
+          "e": 88.14,
+          "c": 0.991287
+        },
+        {
+          "w": "recommendations",
+          "s": 88.14,
+          "e": 89.56,
+          "c": 0.99882
+        },
+        {
+          "w": "are",
+          "s": 89.57,
+          "e": 89.85,
+          "c": 0.994035
+        },
+        {
+          "w": "ones",
+          "s": 89.85,
+          "e": 90.22,
+          "c": 0.939232
+        },
+        {
+          "w": "highlighting",
+          "s": 90.22,
+          "e": 91.09,
+          "c": 0.994019
+        },
+        {
+          "w": "some",
+          "s": 91.57,
+          "e": 91.76,
+          "c": 0.997801
+        },
+        {
+          "w": "areas",
+          "s": 91.76,
+          "e": 92.23,
+          "c": 0.99865
+        },
+        {
+          "w": "that",
+          "s": 92.23,
+          "e": 92.61,
+          "c": 0.996763
+        },
+        {
+          "w": "we",
+          "s": 92.61,
+          "e": 92.8,
+          "c": 0.998352
+        },
+        {
+          "w": "also",
+          "s": 92.8,
+          "e": 93.15,
+          "c": 0.991278
+        },
+        {
+          "w": "believe",
+          "s": 93.28,
+          "e": 93.91,
+          "c": 0.998454
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 94.09,
+      "end_s": 111.02,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "into the larger discussion we are having around insider threat and the need to do more in insider threat. Not only are we looking to rapidly respond to those requirements, we are also looking at what this tells us and how it informs our wider recognition. We would be happy to provide you",
+      "words": [
+        {
+          "w": "into",
+          "s": 94.088,
+          "e": 94.218,
+          "c": 0.184983
+        },
+        {
+          "w": "the",
+          "s": 94.218,
+          "e": 94.278,
+          "c": 0.996603
+        },
+        {
+          "w": "larger",
+          "s": 94.518,
+          "e": 94.968,
+          "c": 0.997329
+        },
+        {
+          "w": "discussion",
+          "s": 94.968,
+          "e": 95.808,
+          "c": 0.992769
+        },
+        {
+          "w": "we",
+          "s": 95.828,
+          "e": 95.908,
+          "c": 0.972672
+        },
+        {
+          "w": "are",
+          "s": 95.908,
+          "e": 96.028,
+          "c": 0.947925
+        },
+        {
+          "w": "having",
+          "s": 96.028,
+          "e": 96.388,
+          "c": 0.986718
+        },
+        {
+          "w": "around",
+          "s": 96.388,
+          "e": 96.648,
+          "c": 0.872666
+        },
+        {
+          "w": "insider",
+          "s": 96.648,
+          "e": 97.068,
+          "c": 0.96505
+        },
+        {
+          "w": "threat",
+          "s": 97.068,
+          "e": 97.388,
+          "c": 0.959691
+        },
+        {
+          "w": "and",
+          "s": 97.388,
+          "e": 97.608,
+          "c": 0.720295
+        },
+        {
+          "w": "the",
+          "s": 97.608,
+          "e": 97.648,
+          "c": 0.900466
+        },
+        {
+          "w": "need",
+          "s": 97.648,
+          "e": 97.828,
+          "c": 0.943349
+        },
+        {
+          "w": "to",
+          "s": 97.828,
+          "e": 97.918,
+          "c": 0.871459
+        },
+        {
+          "w": "do",
+          "s": 97.948,
+          "e": 98.128,
+          "c": 0.937517
+        },
+        {
+          "w": "more",
+          "s": 98.128,
+          "e": 98.388,
+          "c": 0.839531
+        },
+        {
+          "w": "in",
+          "s": 98.388,
+          "e": 98.588,
+          "c": 0.83228
+        },
+        {
+          "w": "insider",
+          "s": 98.588,
+          "e": 98.998,
+          "c": 0.777807
+        },
+        {
+          "w": "threat.",
+          "s": 99.228,
+          "e": 100.018,
+          "c": 0.968542
+        },
+        {
+          "w": "Not",
+          "s": 100.228,
+          "e": 100.238,
+          "c": 0.455324
+        },
+        {
+          "w": "only",
+          "s": 100.238,
+          "e": 100.428,
+          "c": 0.999466
+        },
+        {
+          "w": "are",
+          "s": 100.658,
+          "e": 100.738,
+          "c": 0.99811
+        },
+        {
+          "w": "we",
+          "s": 100.738,
+          "e": 100.878,
+          "c": 0.999266
+        },
+        {
+          "w": "looking",
+          "s": 100.878,
+          "e": 101.378,
+          "c": 0.996202
+        },
+        {
+          "w": "to",
+          "s": 101.378,
+          "e": 101.488,
+          "c": 0.993847
+        },
+        {
+          "w": "rapidly",
+          "s": 101.528,
+          "e": 102.018,
+          "c": 0.99782
+        },
+        {
+          "w": "respond",
+          "s": 102.018,
+          "e": 102.518,
+          "c": 0.99802
+        },
+        {
+          "w": "to",
+          "s": 102.518,
+          "e": 102.658,
+          "c": 0.998951
+        },
+        {
+          "w": "those",
+          "s": 102.658,
+          "e": 103.018,
+          "c": 0.996782
+        },
+        {
+          "w": "requirements,",
+          "s": 103.018,
+          "e": 103.998,
+          "c": 0.896967
+        },
+        {
+          "w": "we",
+          "s": 104.058,
+          "e": 104.128,
+          "c": 0.993638
+        },
+        {
+          "w": "are",
+          "s": 104.168,
+          "e": 104.378,
+          "c": 0.982053
+        },
+        {
+          "w": "also",
+          "s": 104.378,
+          "e": 104.638,
+          "c": 0.9943
+        },
+        {
+          "w": "looking",
+          "s": 104.658,
+          "e": 105.258,
+          "c": 0.989476
+        },
+        {
+          "w": "at",
+          "s": 105.408,
+          "e": 105.408,
+          "c": 0.999643
+        },
+        {
+          "w": "what",
+          "s": 105.468,
+          "e": 105.668,
+          "c": 0.998786
+        },
+        {
+          "w": "this",
+          "s": 105.898,
+          "e": 105.968,
+          "c": 0.998093
+        },
+        {
+          "w": "tells",
+          "s": 105.968,
+          "e": 106.288,
+          "c": 0.996565
+        },
+        {
+          "w": "us",
+          "s": 106.338,
+          "e": 106.458,
+          "c": 0.99617
+        },
+        {
+          "w": "and",
+          "s": 106.458,
+          "e": 106.668,
+          "c": 0.971816
+        },
+        {
+          "w": "how",
+          "s": 106.668,
+          "e": 106.858,
+          "c": 0.998519
+        },
+        {
+          "w": "it",
+          "s": 106.888,
+          "e": 106.998,
+          "c": 0.997339
+        },
+        {
+          "w": "informs",
+          "s": 107.048,
+          "e": 107.508,
+          "c": 0.998218
+        },
+        {
+          "w": "our",
+          "s": 107.508,
+          "e": 107.718,
+          "c": 0.99527
+        },
+        {
+          "w": "wider",
+          "s": 107.718,
+          "e": 108.058,
+          "c": 0.999363
+        },
+        {
+          "w": "recognition.",
+          "s": 108.068,
+          "e": 109.128,
+          "c": 0.994872
+        },
+        {
+          "w": "We",
+          "s": 109.268,
+          "e": 109.268,
+          "c": 0.999213
+        },
+        {
+          "w": "would",
+          "s": 109.328,
+          "e": 109.528,
+          "c": 0.980583
+        },
+        {
+          "w": "be",
+          "s": 109.758,
+          "e": 109.778,
+          "c": 0.998331
+        },
+        {
+          "w": "happy",
+          "s": 109.778,
+          "e": 110.148,
+          "c": 0.99807
+        },
+        {
+          "w": "to",
+          "s": 110.148,
+          "e": 110.288,
+          "c": 0.99963
+        },
+        {
+          "w": "provide",
+          "s": 110.288,
+          "e": 110.798,
+          "c": 0.998942
+        },
+        {
+          "w": "you",
+          "s": 110.798,
+          "e": 111.018,
+          "c": 0.994228
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 111.02,
+      "end_s": 116.87,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "some additional discussion in perhaps a different setting as to some of the details of the requirement.",
+      "words": [
+        {
+          "w": "some",
+          "s": 111.018,
+          "e": 111.308,
+          "c": 0.951023
+        },
+        {
+          "w": "additional",
+          "s": 111.308,
+          "e": 112.048,
+          "c": 0.998734
+        },
+        {
+          "w": "discussion",
+          "s": 112.048,
+          "e": 112.788,
+          "c": 0.991448
+        },
+        {
+          "w": "in",
+          "s": 112.788,
+          "e": 112.928,
+          "c": 0.922648
+        },
+        {
+          "w": "perhaps",
+          "s": 112.928,
+          "e": 113.438,
+          "c": 0.941756
+        },
+        {
+          "w": "a",
+          "s": 113.438,
+          "e": 113.508,
+          "c": 0.990414
+        },
+        {
+          "w": "different",
+          "s": 113.508,
+          "e": 114.168,
+          "c": 0.995606
+        },
+        {
+          "w": "setting",
+          "s": 114.168,
+          "e": 114.758,
+          "c": 0.996955
+        },
+        {
+          "w": "as",
+          "s": 114.758,
+          "e": 114.888,
+          "c": 0.862686
+        },
+        {
+          "w": "to",
+          "s": 114.938,
+          "e": 114.978,
+          "c": 0.953977
+        },
+        {
+          "w": "some",
+          "s": 115.088,
+          "e": 115.198,
+          "c": 0.99612
+        },
+        {
+          "w": "of",
+          "s": 115.198,
+          "e": 115.278,
+          "c": 0.997354
+        },
+        {
+          "w": "the",
+          "s": 115.458,
+          "e": 115.458,
+          "c": 0.999308
+        },
+        {
+          "w": "details",
+          "s": 115.518,
+          "e": 115.828,
+          "c": 0.994691
+        },
+        {
+          "w": "of",
+          "s": 115.828,
+          "e": 115.918,
+          "c": 0.99678
+        },
+        {
+          "w": "the",
+          "s": 115.958,
+          "e": 116.088,
+          "c": 0.997676
+        },
+        {
+          "w": "requirement.",
+          "s": 116.088,
+          "e": 116.868,
+          "c": 0.818343
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 116.89,
+      "end_s": 123.89,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you. Overall, we have seen this several times in the last few years. What do you feel about the overall trajectory of how",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 116.893,
+          "e": 117.213,
+          "c": 0.83528
+        },
+        {
+          "w": "you.",
+          "s": 117.263,
+          "e": 117.813,
+          "c": 0.907479
+        },
+        {
+          "w": "Overall,",
+          "s": 117.813,
+          "e": 118.533,
+          "c": 0.284087
+        },
+        {
+          "w": "we",
+          "s": 118.543,
+          "e": 118.703,
+          "c": 0.99233
+        },
+        {
+          "w": "have",
+          "s": 118.703,
+          "e": 119.033,
+          "c": 0.973881
+        },
+        {
+          "w": "seen",
+          "s": 119.033,
+          "e": 119.363,
+          "c": 0.990973
+        },
+        {
+          "w": "this",
+          "s": 119.363,
+          "e": 119.693,
+          "c": 0.988791
+        },
+        {
+          "w": "several",
+          "s": 120.013,
+          "e": 120.213,
+          "c": 0.964033
+        },
+        {
+          "w": "times",
+          "s": 120.213,
+          "e": 120.463,
+          "c": 0.98676
+        },
+        {
+          "w": "in",
+          "s": 120.513,
+          "e": 120.513,
+          "c": 0.928205
+        },
+        {
+          "w": "the",
+          "s": 120.533,
+          "e": 120.573,
+          "c": 0.985785
+        },
+        {
+          "w": "last",
+          "s": 120.573,
+          "e": 120.813,
+          "c": 0.98438
+        },
+        {
+          "w": "few",
+          "s": 120.943,
+          "e": 120.973,
+          "c": 0.983693
+        },
+        {
+          "w": "years.",
+          "s": 120.973,
+          "e": 121.283,
+          "c": 0.888691
+        },
+        {
+          "w": "What",
+          "s": 121.373,
+          "e": 121.523,
+          "c": 0.998203
+        },
+        {
+          "w": "do",
+          "s": 121.543,
+          "e": 121.643,
+          "c": 0.999908
+        },
+        {
+          "w": "you",
+          "s": 121.653,
+          "e": 121.813,
+          "c": 0.999981
+        },
+        {
+          "w": "feel",
+          "s": 122.073,
+          "e": 122.073,
+          "c": 0.999672
+        },
+        {
+          "w": "about",
+          "s": 122.123,
+          "e": 122.313,
+          "c": 0.999958
+        },
+        {
+          "w": "the",
+          "s": 122.383,
+          "e": 122.523,
+          "c": 0.999971
+        },
+        {
+          "w": "overall",
+          "s": 122.633,
+          "e": 122.993,
+          "c": 0.999893
+        },
+        {
+          "w": "trajectory",
+          "s": 122.993,
+          "e": 123.613,
+          "c": 0.999817
+        },
+        {
+          "w": "of",
+          "s": 123.613,
+          "e": 123.733,
+          "c": 0.999891
+        },
+        {
+          "w": "how",
+          "s": 123.733,
+          "e": 123.893,
+          "c": 0.999947
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 123.91,
+      "end_s": 125.26,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "it's going? Overall,",
+      "words": [
+        {
+          "w": "it's",
+          "s": 123.913,
+          "e": 124.153,
+          "c": 0.998702
+        },
+        {
+          "w": "going?",
+          "s": 124.153,
+          "e": 124.713,
+          "c": 0.999918
+        },
+        {
+          "w": "Overall,",
+          "s": 124.793,
+          "e": 125.263,
+          "c": 0.998942
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 125.5,
+      "end_s": 125.51,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "we",
+      "words": [
+        {
+          "w": "we",
+          "s": 125.503,
+          "e": 125.503,
+          "c": 0.999981
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 125.54,
+      "end_s": 140.99,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "believe that it's critically important that not only the Inspector General, but we ourselves do continual covert testing on our own programs and own processes. We look at not only how are we performing against the standards we set ourselves originally, how we were set up",
+      "words": [
+        {
+          "w": "believe",
+          "s": 125.543,
+          "e": 125.943,
+          "c": 0.999964
+        },
+        {
+          "w": "that",
+          "s": 126.053,
+          "e": 126.303,
+          "c": 0.999939
+        },
+        {
+          "w": "it's",
+          "s": 126.303,
+          "e": 126.583,
+          "c": 0.999865
+        },
+        {
+          "w": "critically",
+          "s": 126.583,
+          "e": 127.313,
+          "c": 0.999933
+        },
+        {
+          "w": "important",
+          "s": 127.313,
+          "e": 128.013,
+          "c": 0.999987
+        },
+        {
+          "w": "that",
+          "s": 128.013,
+          "e": 128.143,
+          "c": 0.946492
+        },
+        {
+          "w": "not",
+          "s": 128.223,
+          "e": 128.353,
+          "c": 0.999371
+        },
+        {
+          "w": "only",
+          "s": 128.363,
+          "e": 128.563,
+          "c": 0.999926
+        },
+        {
+          "w": "the",
+          "s": 128.563,
+          "e": 128.703,
+          "c": 0.996244
+        },
+        {
+          "w": "Inspector",
+          "s": 128.843,
+          "e": 129.163,
+          "c": 0.726765
+        },
+        {
+          "w": "General,",
+          "s": 129.163,
+          "e": 129.533,
+          "c": 0.890191
+        },
+        {
+          "w": "but",
+          "s": 129.613,
+          "e": 129.693,
+          "c": 0.999989
+        },
+        {
+          "w": "we",
+          "s": 129.693,
+          "e": 129.803,
+          "c": 0.999945
+        },
+        {
+          "w": "ourselves",
+          "s": 129.803,
+          "e": 130.053,
+          "c": 0.999455
+        },
+        {
+          "w": "do",
+          "s": 130.363,
+          "e": 130.413,
+          "c": 0.997533
+        },
+        {
+          "w": "continual",
+          "s": 130.413,
+          "e": 130.903,
+          "c": 0.998382
+        },
+        {
+          "w": "covert",
+          "s": 130.903,
+          "e": 131.233,
+          "c": 0.998515
+        },
+        {
+          "w": "testing",
+          "s": 131.233,
+          "e": 131.623,
+          "c": 0.999893
+        },
+        {
+          "w": "on",
+          "s": 131.623,
+          "e": 131.733,
+          "c": 0.999941
+        },
+        {
+          "w": "our",
+          "s": 131.733,
+          "e": 131.893,
+          "c": 0.999992
+        },
+        {
+          "w": "own",
+          "s": 131.893,
+          "e": 132.053,
+          "c": 0.999939
+        },
+        {
+          "w": "programs",
+          "s": 132.053,
+          "e": 132.413,
+          "c": 0.999655
+        },
+        {
+          "w": "and",
+          "s": 132.663,
+          "e": 132.663,
+          "c": 0.979933
+        },
+        {
+          "w": "own",
+          "s": 132.743,
+          "e": 132.823,
+          "c": 0.839067
+        },
+        {
+          "w": "processes.",
+          "s": 132.823,
+          "e": 133.523,
+          "c": 0.999811
+        },
+        {
+          "w": "We",
+          "s": 133.673,
+          "e": 133.743,
+          "c": 0.999825
+        },
+        {
+          "w": "look",
+          "s": 133.743,
+          "e": 133.993,
+          "c": 0.99992
+        },
+        {
+          "w": "at",
+          "s": 134.043,
+          "e": 134.123,
+          "c": 0.999973
+        },
+        {
+          "w": "not",
+          "s": 134.413,
+          "e": 134.413,
+          "c": 0.999355
+        },
+        {
+          "w": "only",
+          "s": 134.423,
+          "e": 134.713,
+          "c": 0.999985
+        },
+        {
+          "w": "how",
+          "s": 134.713,
+          "e": 134.823,
+          "c": 0.999714
+        },
+        {
+          "w": "are",
+          "s": 134.943,
+          "e": 135.153,
+          "c": 0.997299
+        },
+        {
+          "w": "we",
+          "s": 135.153,
+          "e": 135.303,
+          "c": 0.999985
+        },
+        {
+          "w": "performing",
+          "s": 135.303,
+          "e": 136.063,
+          "c": 0.999882
+        },
+        {
+          "w": "against",
+          "s": 136.063,
+          "e": 136.473,
+          "c": 0.999335
+        },
+        {
+          "w": "the",
+          "s": 136.793,
+          "e": 136.813,
+          "c": 0.998959
+        },
+        {
+          "w": "standards",
+          "s": 136.813,
+          "e": 137.493,
+          "c": 0.999945
+        },
+        {
+          "w": "we",
+          "s": 137.493,
+          "e": 137.583,
+          "c": 0.990272
+        },
+        {
+          "w": "set",
+          "s": 137.723,
+          "e": 137.863,
+          "c": 0.999786
+        },
+        {
+          "w": "ourselves",
+          "s": 137.863,
+          "e": 138.403,
+          "c": 0.999525
+        },
+        {
+          "w": "originally,",
+          "s": 138.543,
+          "e": 139.513,
+          "c": 0.988789
+        },
+        {
+          "w": "how",
+          "s": 139.633,
+          "e": 139.863,
+          "c": 0.901167
+        },
+        {
+          "w": "we",
+          "s": 139.863,
+          "e": 140.073,
+          "c": 0.999964
+        },
+        {
+          "w": "were",
+          "s": 140.073,
+          "e": 140.483,
+          "c": 0.999969
+        },
+        {
+          "w": "set",
+          "s": 140.483,
+          "e": 140.783,
+          "c": 0.999899
+        },
+        {
+          "w": "up",
+          "s": 140.893,
+          "e": 140.993,
+          "c": 0.999987
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 141.03,
+      "end_s": 146.83,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to meet threats, are we meeting the threats we were set up for, but also as the threats changed,",
+      "words": [
+        {
+          "w": "to",
+          "s": 141.033,
+          "e": 141.213,
+          "c": 1
+        },
+        {
+          "w": "meet",
+          "s": 141.213,
+          "e": 141.613,
+          "c": 0.999912
+        },
+        {
+          "w": "threats,",
+          "s": 141.613,
+          "e": 142.453,
+          "c": 0.980301
+        },
+        {
+          "w": "are",
+          "s": 142.723,
+          "e": 142.723,
+          "c": 0.989132
+        },
+        {
+          "w": "we",
+          "s": 142.763,
+          "e": 142.803,
+          "c": 0.99999
+        },
+        {
+          "w": "meeting",
+          "s": 142.823,
+          "e": 143.123,
+          "c": 0.99979
+        },
+        {
+          "w": "the",
+          "s": 143.123,
+          "e": 143.203,
+          "c": 0.999987
+        },
+        {
+          "w": "threats",
+          "s": 143.273,
+          "e": 143.553,
+          "c": 0.999958
+        },
+        {
+          "w": "we",
+          "s": 143.653,
+          "e": 143.653,
+          "c": 0.999741
+        },
+        {
+          "w": "were",
+          "s": 143.683,
+          "e": 143.833,
+          "c": 0.817282
+        },
+        {
+          "w": "set",
+          "s": 143.833,
+          "e": 143.963,
+          "c": 0.999928
+        },
+        {
+          "w": "up",
+          "s": 143.963,
+          "e": 144.053,
+          "c": 0.999964
+        },
+        {
+          "w": "for,",
+          "s": 144.173,
+          "e": 144.313,
+          "c": 0.950815
+        },
+        {
+          "w": "but",
+          "s": 144.693,
+          "e": 144.843,
+          "c": 0.725067
+        },
+        {
+          "w": "also",
+          "s": 144.863,
+          "e": 145.143,
+          "c": 0.987031
+        },
+        {
+          "w": "as",
+          "s": 145.373,
+          "e": 145.373,
+          "c": 0.676106
+        },
+        {
+          "w": "the",
+          "s": 145.443,
+          "e": 145.623,
+          "c": 0.992265
+        },
+        {
+          "w": "threats",
+          "s": 145.623,
+          "e": 146.213,
+          "c": 0.99529
+        },
+        {
+          "w": "changed,",
+          "s": 146.213,
+          "e": 146.833,
+          "c": 0.721142
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 146.93,
+      "end_s": 150.85,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "How are we positioned against those new threats, the ones we weren't designed originally to meet?",
+      "words": [
+        {
+          "w": "How",
+          "s": 146.933,
+          "e": 146.953,
+          "c": 0.661533
+        },
+        {
+          "w": "are",
+          "s": 146.953,
+          "e": 147.093,
+          "c": 0.973073
+        },
+        {
+          "w": "we",
+          "s": 147.093,
+          "e": 147.183,
+          "c": 0.997994
+        },
+        {
+          "w": "positioned",
+          "s": 147.183,
+          "e": 147.643,
+          "c": 0.997849
+        },
+        {
+          "w": "against",
+          "s": 147.643,
+          "e": 147.943,
+          "c": 0.994431
+        },
+        {
+          "w": "those",
+          "s": 148.003,
+          "e": 148.173,
+          "c": 0.996588
+        },
+        {
+          "w": "new",
+          "s": 148.213,
+          "e": 148.333,
+          "c": 0.991577
+        },
+        {
+          "w": "threats,",
+          "s": 148.333,
+          "e": 148.723,
+          "c": 0.876557
+        },
+        {
+          "w": "the",
+          "s": 148.793,
+          "e": 148.883,
+          "c": 0.647894
+        },
+        {
+          "w": "ones",
+          "s": 148.883,
+          "e": 149.043,
+          "c": 0.9925
+        },
+        {
+          "w": "we",
+          "s": 149.113,
+          "e": 149.143,
+          "c": 0.975327
+        },
+        {
+          "w": "weren't",
+          "s": 149.143,
+          "e": 149.443,
+          "c": 0.994232
+        },
+        {
+          "w": "designed",
+          "s": 149.523,
+          "e": 149.873,
+          "c": 0.98553
+        },
+        {
+          "w": "originally",
+          "s": 149.873,
+          "e": 150.493,
+          "c": 0.9331
+        },
+        {
+          "w": "to",
+          "s": 150.583,
+          "e": 150.623,
+          "c": 0.974003
+        },
+        {
+          "w": "meet?",
+          "s": 150.653,
+          "e": 150.853,
+          "c": 0.777231
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 151,
+      "end_s": 151.19,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 151.003,
+          "e": 151.193,
+          "c": 0.995989
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 151.19,
+      "end_s": 152.14,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you. I'd encourage",
+      "words": [
+        {
+          "w": "you.",
+          "s": 151.193,
+          "e": 151.583,
+          "c": 0.986991
+        },
+        {
+          "w": "I'd",
+          "s": 151.593,
+          "e": 151.723,
+          "c": 0.698485
+        },
+        {
+          "w": "encourage",
+          "s": 151.723,
+          "e": 152.143,
+          "c": 0.999746
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 152.14,
+      "end_s": 163.11,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you to do that. As you can imagine, there is a significant deprivation of a person's privacy and liberty when a person is stopped",
+      "words": [
+        {
+          "w": "you",
+          "s": 152.143,
+          "e": 152.283,
+          "c": 0.999992
+        },
+        {
+          "w": "to",
+          "s": 152.283,
+          "e": 152.373,
+          "c": 0.999996
+        },
+        {
+          "w": "do",
+          "s": 152.373,
+          "e": 152.463,
+          "c": 0.999989
+        },
+        {
+          "w": "that.",
+          "s": 152.463,
+          "e": 152.793,
+          "c": 0.999931
+        },
+        {
+          "w": "As",
+          "s": 152.953,
+          "e": 152.973,
+          "c": 0.983252
+        },
+        {
+          "w": "you",
+          "s": 152.973,
+          "e": 153.183,
+          "c": 0.999983
+        },
+        {
+          "w": "can",
+          "s": 153.183,
+          "e": 153.393,
+          "c": 0.999981
+        },
+        {
+          "w": "imagine,",
+          "s": 153.393,
+          "e": 154.053,
+          "c": 0.998529
+        },
+        {
+          "w": "there",
+          "s": 154.053,
+          "e": 154.743,
+          "c": 0.97523
+        },
+        {
+          "w": "is",
+          "s": 154.813,
+          "e": 155.043,
+          "c": 0.999815
+        },
+        {
+          "w": "a",
+          "s": 155.043,
+          "e": 155.183,
+          "c": 0.999304
+        },
+        {
+          "w": "significant",
+          "s": 155.183,
+          "e": 156.743,
+          "c": 0.999943
+        },
+        {
+          "w": "deprivation",
+          "s": 156.743,
+          "e": 158.303,
+          "c": 0.999804
+        },
+        {
+          "w": "of",
+          "s": 158.303,
+          "e": 158.583,
+          "c": 0.99863
+        },
+        {
+          "w": "a",
+          "s": 158.583,
+          "e": 158.723,
+          "c": 0.999989
+        },
+        {
+          "w": "person's",
+          "s": 158.723,
+          "e": 159.853,
+          "c": 0.999939
+        },
+        {
+          "w": "privacy",
+          "s": 159.853,
+          "e": 160.883,
+          "c": 0.998643
+        },
+        {
+          "w": "and",
+          "s": 160.893,
+          "e": 161.193,
+          "c": 0.974843
+        },
+        {
+          "w": "liberty",
+          "s": 161.193,
+          "e": 161.283,
+          "c": 0.998978
+        },
+        {
+          "w": "when",
+          "s": 162.033,
+          "e": 162.153,
+          "c": 0.999966
+        },
+        {
+          "w": "a",
+          "s": 162.153,
+          "e": 162.213,
+          "c": 0.99999
+        },
+        {
+          "w": "person",
+          "s": 162.213,
+          "e": 162.573,
+          "c": 0.999956
+        },
+        {
+          "w": "is",
+          "s": 162.573,
+          "e": 162.683,
+          "c": 0.953128
+        },
+        {
+          "w": "stopped",
+          "s": 162.693,
+          "e": 163.113,
+          "c": 0.999914
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 163.11,
+      "end_s": 168.09,
+      "speaker": "SPEAKER_12",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "along the way, and most of the time, the way these things work, the overwhelming majority of the",
+      "words": [
+        {
+          "w": "along",
+          "s": 163.113,
+          "e": 163.413,
+          "c": 0.999897
+        },
+        {
+          "w": "the",
+          "s": 163.413,
+          "e": 163.503,
+          "c": 0.999981
+        },
+        {
+          "w": "way,",
+          "s": 163.583,
+          "e": 163.933,
+          "c": 0.334644
+        },
+        {
+          "w": "and",
+          "s": 163.933,
+          "e": 164.113,
+          "c": 0.968332
+        },
+        {
+          "w": "most",
+          "s": 164.123,
+          "e": 164.373,
+          "c": 0.724211
+        },
+        {
+          "w": "of",
+          "s": 164.373,
+          "e": 164.493,
+          "c": 0.999996
+        },
+        {
+          "w": "the",
+          "s": 164.493,
+          "e": 164.683,
+          "c": 0.999996
+        },
+        {
+          "w": "time,",
+          "s": 164.683,
+          "e": 165.033,
+          "c": 0.857127
+        },
+        {
+          "w": "the",
+          "s": 165.073,
+          "e": 165.293,
+          "c": 0.967049
+        },
+        {
+          "w": "way",
+          "s": 165.293,
+          "e": 165.513,
+          "c": 0.999844
+        },
+        {
+          "w": "these",
+          "s": 165.513,
+          "e": 165.893,
+          "c": 0.999689
+        },
+        {
+          "w": "things",
+          "s": 165.893,
+          "e": 166.343,
+          "c": 0.999935
+        },
+        {
+          "w": "work,",
+          "s": 166.423,
+          "e": 166.833,
+          "c": 0.997786
+        },
+        {
+          "w": "the",
+          "s": 166.953,
+          "e": 166.963,
+          "c": 0.999975
+        },
+        {
+          "w": "overwhelming",
+          "s": 166.963,
+          "e": 167.513,
+          "c": 0.999752
+        },
+        {
+          "w": "majority",
+          "s": 167.513,
+          "e": 167.873,
+          "c": 0.999983
+        },
+        {
+          "w": "of",
+          "s": 167.873,
+          "e": 167.963,
+          "c": 1
+        },
+        {
+          "w": "the",
+          "s": 167.963,
+          "e": 168.093,
+          "c": 0.999641
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 168.09,
+      "end_s": 176.83,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "people you're stopping, inconveniencing, and people whose privacy is being violated are the innocent people. So",
+      "words": [
+        {
+          "w": "people",
+          "s": 168.093,
+          "e": 168.363,
+          "c": 0.999998
+        },
+        {
+          "w": "you're",
+          "s": 168.363,
+          "e": 168.623,
+          "c": 0.999777
+        },
+        {
+          "w": "stopping,",
+          "s": 168.683,
+          "e": 169.063,
+          "c": 0.559797
+        },
+        {
+          "w": "inconveniencing,",
+          "s": 169.133,
+          "e": 169.833,
+          "c": 0.982154
+        },
+        {
+          "w": "and",
+          "s": 169.963,
+          "e": 170.103,
+          "c": 0.995357
+        },
+        {
+          "w": "people",
+          "s": 170.103,
+          "e": 170.643,
+          "c": 0.99984
+        },
+        {
+          "w": "whose",
+          "s": 170.643,
+          "e": 171.093,
+          "c": 0.999748
+        },
+        {
+          "w": "privacy",
+          "s": 171.093,
+          "e": 171.713,
+          "c": 0.99958
+        },
+        {
+          "w": "is",
+          "s": 171.743,
+          "e": 171.903,
+          "c": 0.999847
+        },
+        {
+          "w": "being",
+          "s": 171.903,
+          "e": 172.353,
+          "c": 0.999979
+        },
+        {
+          "w": "violated",
+          "s": 172.353,
+          "e": 173.073,
+          "c": 0.99992
+        },
+        {
+          "w": "are",
+          "s": 173.073,
+          "e": 173.343,
+          "c": 0.997689
+        },
+        {
+          "w": "the",
+          "s": 173.343,
+          "e": 173.613,
+          "c": 0.999971
+        },
+        {
+          "w": "innocent",
+          "s": 173.613,
+          "e": 174.263,
+          "c": 0.999968
+        },
+        {
+          "w": "people.",
+          "s": 174.343,
+          "e": 175.103,
+          "c": 0.991949
+        },
+        {
+          "w": "So",
+          "s": 175.953,
+          "e": 176.833,
+          "c": 0.844039
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 176.83,
+      "end_s": 176.84,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": ".",
+      "words": [
+        {
+          "w": ".",
+          "s": 176.833,
+          "e": 176.833,
+          "c": 0.0203322
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 177.02,
+      "end_s": 177.7,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And in order",
+      "words": [
+        {
+          "w": "And",
+          "s": 177.023,
+          "e": 177.083,
+          "c": 0.0837892
+        },
+        {
+          "w": "in",
+          "s": 177.083,
+          "e": 177.253,
+          "c": 0.931262
+        },
+        {
+          "w": "order",
+          "s": 177.263,
+          "e": 177.703,
+          "c": 0.99959
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 177.73,
+      "end_s": 188.92,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to do that, we need to make sure that whatever we're doing is working and is done in the most minimally invasive means possible. TSA has recently been collaborating with U.S.",
+      "words": [
+        {
+          "w": "to",
+          "s": 177.733,
+          "e": 177.873,
+          "c": 0.998015
+        },
+        {
+          "w": "do",
+          "s": 177.903,
+          "e": 178.073,
+          "c": 0.997674
+        },
+        {
+          "w": "that,",
+          "s": 178.073,
+          "e": 178.613,
+          "c": 0.773421
+        },
+        {
+          "w": "we",
+          "s": 178.743,
+          "e": 178.743,
+          "c": 0.98058
+        },
+        {
+          "w": "need",
+          "s": 178.773,
+          "e": 178.933,
+          "c": 0.996968
+        },
+        {
+          "w": "to",
+          "s": 178.983,
+          "e": 179.023,
+          "c": 0.996846
+        },
+        {
+          "w": "make",
+          "s": 179.023,
+          "e": 179.173,
+          "c": 0.996462
+        },
+        {
+          "w": "sure",
+          "s": 179.223,
+          "e": 179.433,
+          "c": 0.996943
+        },
+        {
+          "w": "that",
+          "s": 179.433,
+          "e": 179.623,
+          "c": 0.963336
+        },
+        {
+          "w": "whatever",
+          "s": 180.283,
+          "e": 180.703,
+          "c": 0.92799
+        },
+        {
+          "w": "we're",
+          "s": 180.793,
+          "e": 180.853,
+          "c": 0.963473
+        },
+        {
+          "w": "doing",
+          "s": 180.853,
+          "e": 181.133,
+          "c": 0.984123
+        },
+        {
+          "w": "is",
+          "s": 181.133,
+          "e": 181.213,
+          "c": 0.969572
+        },
+        {
+          "w": "working",
+          "s": 181.213,
+          "e": 181.573,
+          "c": 0.957282
+        },
+        {
+          "w": "and",
+          "s": 181.573,
+          "e": 181.753,
+          "c": 0.711639
+        },
+        {
+          "w": "is",
+          "s": 181.753,
+          "e": 181.883,
+          "c": 0.840752
+        },
+        {
+          "w": "done",
+          "s": 181.973,
+          "e": 182.113,
+          "c": 0.575899
+        },
+        {
+          "w": "in",
+          "s": 182.113,
+          "e": 182.233,
+          "c": 0.866819
+        },
+        {
+          "w": "the",
+          "s": 182.233,
+          "e": 182.403,
+          "c": 0.993947
+        },
+        {
+          "w": "most",
+          "s": 182.403,
+          "e": 182.573,
+          "c": 0.990968
+        },
+        {
+          "w": "minimally",
+          "s": 182.803,
+          "e": 183.333,
+          "c": 0.979971
+        },
+        {
+          "w": "invasive",
+          "s": 183.333,
+          "e": 183.923,
+          "c": 0.978857
+        },
+        {
+          "w": "means",
+          "s": 183.933,
+          "e": 184.323,
+          "c": 0.990317
+        },
+        {
+          "w": "possible.",
+          "s": 184.323,
+          "e": 185.173,
+          "c": 0.999058
+        },
+        {
+          "w": "TSA",
+          "s": 185.173,
+          "e": 185.403,
+          "c": 0.966479
+        },
+        {
+          "w": "has",
+          "s": 185.423,
+          "e": 185.683,
+          "c": 0.999985
+        },
+        {
+          "w": "recently",
+          "s": 185.863,
+          "e": 186.393,
+          "c": 0.999968
+        },
+        {
+          "w": "been",
+          "s": 186.393,
+          "e": 186.743,
+          "c": 0.999983
+        },
+        {
+          "w": "collaborating",
+          "s": 186.743,
+          "e": 187.853,
+          "c": 0.999807
+        },
+        {
+          "w": "with",
+          "s": 187.893,
+          "e": 187.983,
+          "c": 0.999939
+        },
+        {
+          "w": "U.S.",
+          "s": 188.243,
+          "e": 188.923,
+          "c": 0.96939
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 188.92,
+      "end_s": 203.82,
+      "speaker": "SPEAKER_13",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Customs and Border Protection over the testing of facial recognition technology. Can you tell me a little bit about what the TSA's timeline is for the widespread adoption of facial recognition technology and...",
+      "words": [
+        {
+          "w": "Customs",
+          "s": 188.923,
+          "e": 189.533,
+          "c": 0.978131
+        },
+        {
+          "w": "and",
+          "s": 189.533,
+          "e": 189.793,
+          "c": 0.997841
+        },
+        {
+          "w": "Border",
+          "s": 189.793,
+          "e": 190.233,
+          "c": 0.998961
+        },
+        {
+          "w": "Protection",
+          "s": 190.333,
+          "e": 191.313,
+          "c": 0.999066
+        },
+        {
+          "w": "over",
+          "s": 191.313,
+          "e": 191.673,
+          "c": 0.938963
+        },
+        {
+          "w": "the",
+          "s": 191.673,
+          "e": 191.943,
+          "c": 0.999994
+        },
+        {
+          "w": "testing",
+          "s": 191.943,
+          "e": 192.563,
+          "c": 0.999945
+        },
+        {
+          "w": "of",
+          "s": 192.563,
+          "e": 192.733,
+          "c": 0.999943
+        },
+        {
+          "w": "facial",
+          "s": 192.743,
+          "e": 193.283,
+          "c": 0.999153
+        },
+        {
+          "w": "recognition",
+          "s": 193.283,
+          "e": 194.173,
+          "c": 0.999802
+        },
+        {
+          "w": "technology.",
+          "s": 194.353,
+          "e": 195.453,
+          "c": 0.999958
+        },
+        {
+          "w": "Can",
+          "s": 195.653,
+          "e": 195.653,
+          "c": 0.999804
+        },
+        {
+          "w": "you",
+          "s": 195.663,
+          "e": 195.853,
+          "c": 0.99999
+        },
+        {
+          "w": "tell",
+          "s": 195.853,
+          "e": 196.123,
+          "c": 0.999973
+        },
+        {
+          "w": "me",
+          "s": 196.123,
+          "e": 196.243,
+          "c": 0.999994
+        },
+        {
+          "w": "a",
+          "s": 196.253,
+          "e": 196.303,
+          "c": 0.999985
+        },
+        {
+          "w": "little",
+          "s": 196.493,
+          "e": 196.713,
+          "c": 0.999947
+        },
+        {
+          "w": "bit",
+          "s": 196.713,
+          "e": 196.903,
+          "c": 0.999897
+        },
+        {
+          "w": "about",
+          "s": 196.903,
+          "e": 197.243,
+          "c": 0.999588
+        },
+        {
+          "w": "what",
+          "s": 197.253,
+          "e": 197.523,
+          "c": 0.999977
+        },
+        {
+          "w": "the",
+          "s": 197.523,
+          "e": 197.723,
+          "c": 0.998953
+        },
+        {
+          "w": "TSA's",
+          "s": 197.723,
+          "e": 198.043,
+          "c": 0.997718
+        },
+        {
+          "w": "timeline",
+          "s": 198.043,
+          "e": 198.263,
+          "c": 0.999939
+        },
+        {
+          "w": "is",
+          "s": 198.583,
+          "e": 198.713,
+          "c": 0.999981
+        },
+        {
+          "w": "for",
+          "s": 198.913,
+          "e": 198.913,
+          "c": 0.999851
+        },
+        {
+          "w": "the",
+          "s": 198.923,
+          "e": 199.113,
+          "c": 0.999994
+        },
+        {
+          "w": "widespread",
+          "s": 199.113,
+          "e": 199.783,
+          "c": 0.999897
+        },
+        {
+          "w": "adoption",
+          "s": 199.783,
+          "e": 200.313,
+          "c": 0.999954
+        },
+        {
+          "w": "of",
+          "s": 200.313,
+          "e": 200.453,
+          "c": 0.999554
+        },
+        {
+          "w": "facial",
+          "s": 200.453,
+          "e": 200.843,
+          "c": 0.99991
+        },
+        {
+          "w": "recognition",
+          "s": 200.853,
+          "e": 201.593,
+          "c": 0.999971
+        },
+        {
+          "w": "technology",
+          "s": 201.593,
+          "e": 202.383,
+          "c": 0.99991
+        },
+        {
+          "w": "and...",
+          "s": 202.383,
+          "e": 203.823,
+          "c": 0.160247
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 203.95,
+      "end_s": 211.33,
+      "speaker": "SPEAKER_13",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I'd also like to know what the TSA does when it collects this information. Does it collect it",
+      "words": [
+        {
+          "w": "I'd",
+          "s": 203.952,
+          "e": 204.292,
+          "c": 0.820162
+        },
+        {
+          "w": "also",
+          "s": 204.292,
+          "e": 204.762,
+          "c": 0.995642
+        },
+        {
+          "w": "like",
+          "s": 204.762,
+          "e": 205.232,
+          "c": 0.996578
+        },
+        {
+          "w": "to",
+          "s": 205.232,
+          "e": 205.462,
+          "c": 0.998751
+        },
+        {
+          "w": "know",
+          "s": 205.462,
+          "e": 205.952,
+          "c": 0.998498
+        },
+        {
+          "w": "what",
+          "s": 205.952,
+          "e": 206.222,
+          "c": 0.97647
+        },
+        {
+          "w": "the",
+          "s": 206.832,
+          "e": 207.202,
+          "c": 0.981339
+        },
+        {
+          "w": "TSA",
+          "s": 207.202,
+          "e": 207.622,
+          "c": 0.991955
+        },
+        {
+          "w": "does",
+          "s": 207.902,
+          "e": 208.262,
+          "c": 0.953239
+        },
+        {
+          "w": "when",
+          "s": 208.262,
+          "e": 208.452,
+          "c": 0.767414
+        },
+        {
+          "w": "it",
+          "s": 208.452,
+          "e": 208.522,
+          "c": 0.986036
+        },
+        {
+          "w": "collects",
+          "s": 208.712,
+          "e": 208.942,
+          "c": 0.95043
+        },
+        {
+          "w": "this",
+          "s": 209.012,
+          "e": 209.052,
+          "c": 0.95386
+        },
+        {
+          "w": "information.",
+          "s": 209.052,
+          "e": 209.912,
+          "c": 0.793235
+        },
+        {
+          "w": "Does",
+          "s": 210.172,
+          "e": 210.292,
+          "c": 0.995942
+        },
+        {
+          "w": "it",
+          "s": 210.292,
+          "e": 210.482,
+          "c": 0.998729
+        },
+        {
+          "w": "collect",
+          "s": 210.482,
+          "e": 211.152,
+          "c": 0.990254
+        },
+        {
+          "w": "it",
+          "s": 211.152,
+          "e": 211.332,
+          "c": 0.985242
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 211.34,
+      "end_s": 211.9,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "for any",
+      "words": [
+        {
+          "w": "for",
+          "s": 211.342,
+          "e": 211.542,
+          "c": 0.998167
+        },
+        {
+          "w": "any",
+          "s": 211.652,
+          "e": 211.902,
+          "c": 0.998093
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "start_s": 211.9,
+      "end_s": 215.47,
+      "speaker": "SPEAKER_13",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "purpose other than as a verification for the person's",
+      "words": [
+        {
+          "w": "purpose",
+          "s": 211.902,
+          "e": 212.182,
+          "c": 0.997449
+        },
+        {
+          "w": "other",
+          "s": 212.792,
+          "e": 213.052,
+          "c": 0.836659
+        },
+        {
+          "w": "than",
+          "s": 213.052,
+          "e": 213.472,
+          "c": 0.991457
+        },
+        {
+          "w": "as",
+          "s": 213.472,
+          "e": 213.562,
+          "c": 0.584973
+        },
+        {
+          "w": "a",
+          "s": 213.582,
+          "e": 213.582,
+          "c": 0.989115
+        },
+        {
+          "w": "verification",
+          "s": 213.862,
+          "e": 214.242,
+          "c": 0.991942
+        },
+        {
+          "w": "for",
+          "s": 214.282,
+          "e": 214.472,
+          "c": 0.953552
+        },
+        {
+          "w": "the",
+          "s": 214.472,
+          "e": 214.742,
+          "c": 0.962428
+        },
+        {
+          "w": "person's",
+          "s": 214.742,
+          "e": 215.472,
+          "c": 0.687154
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "start_s": 215.47,
+      "end_s": 220.85,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "ID? Does it now or will it in the future be keeping that data?",
+      "words": [
+        {
+          "w": "ID?",
+          "s": 215.472,
+          "e": 216.692,
+          "c": 0.459673
+        },
+        {
+          "w": "Does",
+          "s": 216.952,
+          "e": 217.032,
+          "c": 0.997343
+        },
+        {
+          "w": "it",
+          "s": 217.032,
+          "e": 217.202,
+          "c": 0.999386
+        },
+        {
+          "w": "now",
+          "s": 217.202,
+          "e": 217.462,
+          "c": 0.997681
+        },
+        {
+          "w": "or",
+          "s": 217.462,
+          "e": 217.552,
+          "c": 0.850566
+        },
+        {
+          "w": "will",
+          "s": 217.652,
+          "e": 217.972,
+          "c": 0.997638
+        },
+        {
+          "w": "it",
+          "s": 217.972,
+          "e": 218.112,
+          "c": 0.988689
+        },
+        {
+          "w": "in",
+          "s": 218.162,
+          "e": 218.312,
+          "c": 0.950108
+        },
+        {
+          "w": "the",
+          "s": 218.312,
+          "e": 218.572,
+          "c": 0.999167
+        },
+        {
+          "w": "future",
+          "s": 218.572,
+          "e": 218.952,
+          "c": 0.999928
+        },
+        {
+          "w": "be",
+          "s": 219.072,
+          "e": 219.252,
+          "c": 0.98727
+        },
+        {
+          "w": "keeping",
+          "s": 219.442,
+          "e": 219.852,
+          "c": 0.999243
+        },
+        {
+          "w": "that",
+          "s": 219.852,
+          "e": 220.192,
+          "c": 0.995533
+        },
+        {
+          "w": "data?",
+          "s": 220.192,
+          "e": 220.852,
+          "c": 0.772162
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "start_s": 221.06,
+      "end_s": 227.6,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "for any longer than is necessary to perform the task at hand, or how long do they keep it?",
+      "words": [
+        {
+          "w": "for",
+          "s": 221.06,
+          "e": 221.41,
+          "c": 0.658622
+        },
+        {
+          "w": "any",
+          "s": 221.41,
+          "e": 222.02,
+          "c": 0.983786
+        },
+        {
+          "w": "longer",
+          "s": 222.02,
+          "e": 223.24,
+          "c": 0.998942
+        },
+        {
+          "w": "than",
+          "s": 223.24,
+          "e": 223.53,
+          "c": 0.966744
+        },
+        {
+          "w": "is",
+          "s": 223.54,
+          "e": 223.69,
+          "c": 0.965897
+        },
+        {
+          "w": "necessary",
+          "s": 223.69,
+          "e": 224.39,
+          "c": 0.991429
+        },
+        {
+          "w": "to",
+          "s": 224.4,
+          "e": 224.79,
+          "c": 0.764827
+        },
+        {
+          "w": "perform",
+          "s": 224.81,
+          "e": 225.16,
+          "c": 0.949259
+        },
+        {
+          "w": "the",
+          "s": 225.16,
+          "e": 225.3,
+          "c": 0.950307
+        },
+        {
+          "w": "task",
+          "s": 225.41,
+          "e": 225.56,
+          "c": 0.984874
+        },
+        {
+          "w": "at",
+          "s": 225.56,
+          "e": 225.68,
+          "c": 0.940383
+        },
+        {
+          "w": "hand,",
+          "s": 225.71,
+          "e": 226.15,
+          "c": 0.358098
+        },
+        {
+          "w": "or",
+          "s": 226.15,
+          "e": 226.34,
+          "c": 0.859052
+        },
+        {
+          "w": "how",
+          "s": 226.34,
+          "e": 226.52,
+          "c": 0.926231
+        },
+        {
+          "w": "long",
+          "s": 226.52,
+          "e": 226.68,
+          "c": 0.980806
+        },
+        {
+          "w": "do",
+          "s": 226.68,
+          "e": 226.79,
+          "c": 0.929291
+        },
+        {
+          "w": "they",
+          "s": 226.8,
+          "e": 226.92,
+          "c": 0.942948
+        },
+        {
+          "w": "keep",
+          "s": 226.92,
+          "e": 227.12,
+          "c": 0.961619
+        },
+        {
+          "w": "it?",
+          "s": 227.12,
+          "e": 227.6,
+          "c": 0.852447
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "start_s": 227.62,
+      "end_s": 228.13,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "So we are",
+      "words": [
+        {
+          "w": "So",
+          "s": 227.62,
+          "e": 227.73,
+          "c": 0.652675
+        },
+        {
+          "w": "we",
+          "s": 227.86,
+          "e": 227.9,
+          "c": 0.777
+        },
+        {
+          "w": "are",
+          "s": 227.9,
+          "e": 228.13,
+          "c": 0.996056
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "start_s": 228.13,
+      "end_s": 233.41,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "conducting two types of pilots. The first one, as you noted, is with Customs and Border Protection.",
+      "words": [
+        {
+          "w": "conducting",
+          "s": 228.13,
+          "e": 228.92,
+          "c": 0.99606
+        },
+        {
+          "w": "two",
+          "s": 228.92,
+          "e": 229.07,
+          "c": 0.983211
+        },
+        {
+          "w": "types",
+          "s": 229.4,
+          "e": 229.54,
+          "c": 0.998104
+        },
+        {
+          "w": "of",
+          "s": 229.54,
+          "e": 229.69,
+          "c": 0.998001
+        },
+        {
+          "w": "pilots.",
+          "s": 229.69,
+          "e": 230.46,
+          "c": 0.860726
+        },
+        {
+          "w": "The",
+          "s": 230.46,
+          "e": 230.6,
+          "c": 0.99835
+        },
+        {
+          "w": "first",
+          "s": 230.72,
+          "e": 230.84,
+          "c": 0.999232
+        },
+        {
+          "w": "one,",
+          "s": 230.84,
+          "e": 231.07,
+          "c": 0.898695
+        },
+        {
+          "w": "as",
+          "s": 231.07,
+          "e": 231.16,
+          "c": 0.999352
+        },
+        {
+          "w": "you",
+          "s": 231.16,
+          "e": 231.26,
+          "c": 0.998774
+        },
+        {
+          "w": "noted,",
+          "s": 231.29,
+          "e": 231.63,
+          "c": 0.979651
+        },
+        {
+          "w": "is",
+          "s": 231.63,
+          "e": 231.72,
+          "c": 0.993062
+        },
+        {
+          "w": "with",
+          "s": 231.72,
+          "e": 231.91,
+          "c": 0.997278
+        },
+        {
+          "w": "Customs",
+          "s": 231.91,
+          "e": 232.24,
+          "c": 0.856699
+        },
+        {
+          "w": "and",
+          "s": 232.26,
+          "e": 232.38,
+          "c": 0.977759
+        },
+        {
+          "w": "Border",
+          "s": 232.38,
+          "e": 232.67,
+          "c": 0.994169
+        },
+        {
+          "w": "Protection.",
+          "s": 232.67,
+          "e": 233.41,
+          "c": 0.968632
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "start_s": 233.61,
+      "end_s": 233.62,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The",
+      "words": [
+        {
+          "w": "The",
+          "s": 233.61,
+          "e": 233.61,
+          "c": 0.999306
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "start_s": 233.68,
+      "end_s": 242.62,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "way that process works is based on how many people who we think is going to be flying any individual day, based on who the carriers tell us have bought tickets.",
+      "words": [
+        {
+          "w": "way",
+          "s": 233.68,
+          "e": 233.8,
+          "c": 0.9995
+        },
+        {
+          "w": "that",
+          "s": 233.8,
+          "e": 234.06,
+          "c": 0.996652
+        },
+        {
+          "w": "process",
+          "s": 234.06,
+          "e": 234.52,
+          "c": 0.991771
+        },
+        {
+          "w": "works",
+          "s": 234.52,
+          "e": 234.85,
+          "c": 0.999104
+        },
+        {
+          "w": "is",
+          "s": 234.85,
+          "e": 234.91,
+          "c": 0.976941
+        },
+        {
+          "w": "based",
+          "s": 235.22,
+          "e": 235.31,
+          "c": 0.632544
+        },
+        {
+          "w": "on",
+          "s": 235.31,
+          "e": 235.38,
+          "c": 0.997016
+        },
+        {
+          "w": "how",
+          "s": 235.45,
+          "e": 235.63,
+          "c": 0.995347
+        },
+        {
+          "w": "many",
+          "s": 235.63,
+          "e": 235.89,
+          "c": 0.998382
+        },
+        {
+          "w": "people",
+          "s": 235.89,
+          "e": 236.28,
+          "c": 0.998835
+        },
+        {
+          "w": "who",
+          "s": 236.28,
+          "e": 236.46,
+          "c": 0.471358
+        },
+        {
+          "w": "we",
+          "s": 236.47,
+          "e": 236.59,
+          "c": 0.996086
+        },
+        {
+          "w": "think",
+          "s": 236.6,
+          "e": 236.9,
+          "c": 0.999102
+        },
+        {
+          "w": "is",
+          "s": 236.93,
+          "e": 237.05,
+          "c": 0.958449
+        },
+        {
+          "w": "going",
+          "s": 237.06,
+          "e": 237.39,
+          "c": 0.997014
+        },
+        {
+          "w": "to",
+          "s": 237.39,
+          "e": 237.5,
+          "c": 0.993142
+        },
+        {
+          "w": "be",
+          "s": 237.53,
+          "e": 237.61,
+          "c": 0.991838
+        },
+        {
+          "w": "flying",
+          "s": 237.71,
+          "e": 238.12,
+          "c": 0.994794
+        },
+        {
+          "w": "any",
+          "s": 238.33,
+          "e": 238.33,
+          "c": 0.9931
+        },
+        {
+          "w": "individual",
+          "s": 238.38,
+          "e": 238.92,
+          "c": 0.99823
+        },
+        {
+          "w": "day,",
+          "s": 239.02,
+          "e": 239.38,
+          "c": 0.742154
+        },
+        {
+          "w": "based",
+          "s": 239.38,
+          "e": 239.59,
+          "c": 0.996755
+        },
+        {
+          "w": "on",
+          "s": 239.87,
+          "e": 239.87,
+          "c": 0.997027
+        },
+        {
+          "w": "who",
+          "s": 239.92,
+          "e": 240.07,
+          "c": 0.994452
+        },
+        {
+          "w": "the",
+          "s": 240.08,
+          "e": 240.29,
+          "c": 0.998483
+        },
+        {
+          "w": "carriers",
+          "s": 240.29,
+          "e": 240.84,
+          "c": 0.990378
+        },
+        {
+          "w": "tell",
+          "s": 240.84,
+          "e": 241.13,
+          "c": 0.993619
+        },
+        {
+          "w": "us",
+          "s": 241.13,
+          "e": 241.27,
+          "c": 0.99803
+        },
+        {
+          "w": "have",
+          "s": 241.27,
+          "e": 241.55,
+          "c": 0.916384
+        },
+        {
+          "w": "bought",
+          "s": 241.55,
+          "e": 241.96,
+          "c": 0.994188
+        },
+        {
+          "w": "tickets.",
+          "s": 242.09,
+          "e": 242.62,
+          "c": 0.743281
+        }
+      ]
+    },
+    {
+      "i": 35,
+      "start_s": 242.84,
+      "end_s": 260.22,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "CBP helps pre-position a gallery of photos of individuals whose passports are already on file, passport photos. As they approach a checkpoint, we are able to do a match against that smaller number of parties. So we are not widely screening against large sets of data. We are looking for you to match",
+      "words": [
+        {
+          "w": "CBP",
+          "s": 242.839,
+          "e": 242.919,
+          "c": 0.83155
+        },
+        {
+          "w": "helps",
+          "s": 242.919,
+          "e": 243.359,
+          "c": 0.994459
+        },
+        {
+          "w": "pre-position",
+          "s": 243.359,
+          "e": 244.429,
+          "c": 0.649823
+        },
+        {
+          "w": "a",
+          "s": 244.429,
+          "e": 244.509,
+          "c": 0.972516
+        },
+        {
+          "w": "gallery",
+          "s": 244.509,
+          "e": 245.069,
+          "c": 0.989479
+        },
+        {
+          "w": "of",
+          "s": 245.069,
+          "e": 245.309,
+          "c": 0.977808
+        },
+        {
+          "w": "photos",
+          "s": 245.309,
+          "e": 245.949,
+          "c": 0.983874
+        },
+        {
+          "w": "of",
+          "s": 246.329,
+          "e": 246.609,
+          "c": 0.715308
+        },
+        {
+          "w": "individuals",
+          "s": 246.609,
+          "e": 247.149,
+          "c": 0.932999
+        },
+        {
+          "w": "whose",
+          "s": 247.239,
+          "e": 247.389,
+          "c": 0.747762
+        },
+        {
+          "w": "passports",
+          "s": 247.389,
+          "e": 247.919,
+          "c": 0.930502
+        },
+        {
+          "w": "are",
+          "s": 247.959,
+          "e": 248.049,
+          "c": 0.909809
+        },
+        {
+          "w": "already",
+          "s": 248.049,
+          "e": 248.409,
+          "c": 0.929686
+        },
+        {
+          "w": "on",
+          "s": 248.529,
+          "e": 248.529,
+          "c": 0.998557
+        },
+        {
+          "w": "file,",
+          "s": 248.609,
+          "e": 248.859,
+          "c": 0.534321
+        },
+        {
+          "w": "passport",
+          "s": 248.869,
+          "e": 249.319,
+          "c": 0.967574
+        },
+        {
+          "w": "photos.",
+          "s": 249.479,
+          "e": 249.899,
+          "c": 0.93687
+        },
+        {
+          "w": "As",
+          "s": 250.039,
+          "e": 250.039,
+          "c": 0.999312
+        },
+        {
+          "w": "they",
+          "s": 250.109,
+          "e": 250.299,
+          "c": 0.997221
+        },
+        {
+          "w": "approach",
+          "s": 250.299,
+          "e": 250.809,
+          "c": 0.996618
+        },
+        {
+          "w": "a",
+          "s": 250.809,
+          "e": 250.859,
+          "c": 0.986017
+        },
+        {
+          "w": "checkpoint,",
+          "s": 250.979,
+          "e": 251.659,
+          "c": 0.705304
+        },
+        {
+          "w": "we",
+          "s": 251.659,
+          "e": 251.789,
+          "c": 0.998169
+        },
+        {
+          "w": "are",
+          "s": 251.789,
+          "e": 251.929,
+          "c": 0.914622
+        },
+        {
+          "w": "able",
+          "s": 251.979,
+          "e": 252.239,
+          "c": 0.998953
+        },
+        {
+          "w": "to",
+          "s": 252.239,
+          "e": 252.369,
+          "c": 0.998439
+        },
+        {
+          "w": "do",
+          "s": 252.369,
+          "e": 252.499,
+          "c": 0.996917
+        },
+        {
+          "w": "a",
+          "s": 252.499,
+          "e": 252.549,
+          "c": 0.998746
+        },
+        {
+          "w": "match",
+          "s": 252.549,
+          "e": 252.879,
+          "c": 0.995116
+        },
+        {
+          "w": "against",
+          "s": 252.879,
+          "e": 253.199,
+          "c": 0.997016
+        },
+        {
+          "w": "that",
+          "s": 253.569,
+          "e": 253.589,
+          "c": 0.994387
+        },
+        {
+          "w": "smaller",
+          "s": 253.589,
+          "e": 254.039,
+          "c": 0.991635
+        },
+        {
+          "w": "number",
+          "s": 254.039,
+          "e": 254.389,
+          "c": 0.997672
+        },
+        {
+          "w": "of",
+          "s": 254.649,
+          "e": 254.649,
+          "c": 0.998873
+        },
+        {
+          "w": "parties.",
+          "s": 254.689,
+          "e": 255.409,
+          "c": 0.785304
+        },
+        {
+          "w": "So",
+          "s": 255.529,
+          "e": 255.539,
+          "c": 0.690972
+        },
+        {
+          "w": "we",
+          "s": 255.679,
+          "e": 255.689,
+          "c": 0.865309
+        },
+        {
+          "w": "are",
+          "s": 255.689,
+          "e": 255.839,
+          "c": 0.988657
+        },
+        {
+          "w": "not",
+          "s": 255.839,
+          "e": 255.939,
+          "c": 0.999657
+        },
+        {
+          "w": "widely",
+          "s": 256.019,
+          "e": 256.249,
+          "c": 0.996042
+        },
+        {
+          "w": "screening",
+          "s": 256.329,
+          "e": 256.749,
+          "c": 0.994486
+        },
+        {
+          "w": "against",
+          "s": 256.749,
+          "e": 257.099,
+          "c": 0.997864
+        },
+        {
+          "w": "large",
+          "s": 257.099,
+          "e": 257.349,
+          "c": 0.99689
+        },
+        {
+          "w": "sets",
+          "s": 257.349,
+          "e": 257.509,
+          "c": 0.991465
+        },
+        {
+          "w": "of",
+          "s": 257.559,
+          "e": 257.649,
+          "c": 0.998237
+        },
+        {
+          "w": "data.",
+          "s": 257.649,
+          "e": 258.049,
+          "c": 0.698997
+        },
+        {
+          "w": "We",
+          "s": 258.219,
+          "e": 258.219,
+          "c": 0.999615
+        },
+        {
+          "w": "are",
+          "s": 258.249,
+          "e": 258.479,
+          "c": 0.996848
+        },
+        {
+          "w": "looking",
+          "s": 258.479,
+          "e": 258.959,
+          "c": 0.999544
+        },
+        {
+          "w": "for",
+          "s": 259.119,
+          "e": 259.349,
+          "c": 0.99874
+        },
+        {
+          "w": "you",
+          "s": 259.349,
+          "e": 259.609,
+          "c": 0.972372
+        },
+        {
+          "w": "to",
+          "s": 259.609,
+          "e": 259.769,
+          "c": 0.996586
+        },
+        {
+          "w": "match",
+          "s": 259.789,
+          "e": 260.219,
+          "c": 0.999335
+        }
+      ]
+    },
+    {
+      "i": 36,
+      "start_s": 260.22,
+      "end_s": 260.97,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you. The",
+      "words": [
+        {
+          "w": "you.",
+          "s": 260.219,
+          "e": 260.689,
+          "c": 0.989955
+        },
+        {
+          "w": "The",
+          "s": 260.969,
+          "e": 260.969,
+          "c": 0.999426
+        }
+      ]
+    },
+    {
+      "i": 37,
+      "start_s": 260.99,
+      "end_s": 272.3,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "second type of pilot we are doing just started recently out at McCarran Airport in Las Vegas. That one, using our credential authentication technology, looks at matching you",
+      "words": [
+        {
+          "w": "second",
+          "s": 260.989,
+          "e": 261.339,
+          "c": 0.999028
+        },
+        {
+          "w": "type",
+          "s": 261.339,
+          "e": 261.549,
+          "c": 0.997084
+        },
+        {
+          "w": "of",
+          "s": 261.599,
+          "e": 261.709,
+          "c": 0.998091
+        },
+        {
+          "w": "pilot",
+          "s": 261.829,
+          "e": 262.019,
+          "c": 0.987353
+        },
+        {
+          "w": "we",
+          "s": 262.019,
+          "e": 262.139,
+          "c": 0.981513
+        },
+        {
+          "w": "are",
+          "s": 262.139,
+          "e": 262.309,
+          "c": 0.992294
+        },
+        {
+          "w": "doing",
+          "s": 262.319,
+          "e": 262.629,
+          "c": 0.996922
+        },
+        {
+          "w": "just",
+          "s": 262.629,
+          "e": 262.879,
+          "c": 0.927534
+        },
+        {
+          "w": "started",
+          "s": 262.879,
+          "e": 263.309,
+          "c": 0.993322
+        },
+        {
+          "w": "recently",
+          "s": 263.309,
+          "e": 263.799,
+          "c": 0.981903
+        },
+        {
+          "w": "out",
+          "s": 263.799,
+          "e": 263.989,
+          "c": 0.982002
+        },
+        {
+          "w": "at",
+          "s": 263.989,
+          "e": 264.079,
+          "c": 0.98871
+        },
+        {
+          "w": "McCarran",
+          "s": 264.289,
+          "e": 264.569,
+          "c": 0.690393
+        },
+        {
+          "w": "Airport",
+          "s": 264.639,
+          "e": 265.119,
+          "c": 0.934776
+        },
+        {
+          "w": "in",
+          "s": 265.119,
+          "e": 265.229,
+          "c": 0.947569
+        },
+        {
+          "w": "Las",
+          "s": 265.419,
+          "e": 265.639,
+          "c": 0.996966
+        },
+        {
+          "w": "Vegas.",
+          "s": 265.639,
+          "e": 266.749,
+          "c": 0.9873
+        },
+        {
+          "w": "That",
+          "s": 266.949,
+          "e": 267.059,
+          "c": 0.999228
+        },
+        {
+          "w": "one,",
+          "s": 267.059,
+          "e": 267.439,
+          "c": 0.671265
+        },
+        {
+          "w": "using",
+          "s": 267.439,
+          "e": 267.829,
+          "c": 0.99914
+        },
+        {
+          "w": "our",
+          "s": 267.909,
+          "e": 268.059,
+          "c": 0.997096
+        },
+        {
+          "w": "credential",
+          "s": 268.059,
+          "e": 268.849,
+          "c": 0.892636
+        },
+        {
+          "w": "authentication",
+          "s": 268.849,
+          "e": 269.959,
+          "c": 0.968834
+        },
+        {
+          "w": "technology,",
+          "s": 269.959,
+          "e": 270.889,
+          "c": 0.941115
+        },
+        {
+          "w": "looks",
+          "s": 270.889,
+          "e": 271.229,
+          "c": 0.998213
+        },
+        {
+          "w": "at",
+          "s": 271.319,
+          "e": 271.439,
+          "c": 0.998694
+        },
+        {
+          "w": "matching",
+          "s": 271.439,
+          "e": 272.069,
+          "c": 0.9985
+        },
+        {
+          "w": "you",
+          "s": 272.069,
+          "e": 272.299,
+          "c": 0.992218
+        }
+      ]
+    },
+    {
+      "i": 38,
+      "start_s": 272.3,
+      "end_s": 272.55,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to your",
+      "words": [
+        {
+          "w": "to",
+          "s": 272.299,
+          "e": 272.549,
+          "c": 0.985537
+        },
+        {
+          "w": "your",
+          "s": 272.549,
+          "e": 272.549,
+          "c": 0.144041
+        }
+      ]
+    },
+    {
+      "i": 39,
+      "start_s": 272.66,
+      "end_s": 272.67,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the",
+      "words": [
+        {
+          "w": "the",
+          "s": 272.658,
+          "e": 272.658,
+          "c": 0.681193
+        }
+      ]
+    },
+    {
+      "i": 40,
+      "start_s": 272.78,
+      "end_s": 280.13,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "facial image on your driver's license or other document under both circumstances we retain long enough to do the",
+      "words": [
+        {
+          "w": "facial",
+          "s": 272.778,
+          "e": 273.018,
+          "c": 0.995678
+        },
+        {
+          "w": "image",
+          "s": 273.128,
+          "e": 273.408,
+          "c": 0.999007
+        },
+        {
+          "w": "on",
+          "s": 273.468,
+          "e": 273.558,
+          "c": 0.994029
+        },
+        {
+          "w": "your",
+          "s": 273.558,
+          "e": 273.768,
+          "c": 0.99735
+        },
+        {
+          "w": "driver's",
+          "s": 273.828,
+          "e": 274.338,
+          "c": 0.895747
+        },
+        {
+          "w": "license",
+          "s": 274.338,
+          "e": 274.808,
+          "c": 0.988762
+        },
+        {
+          "w": "or",
+          "s": 274.808,
+          "e": 274.928,
+          "c": 0.929716
+        },
+        {
+          "w": "other",
+          "s": 274.958,
+          "e": 275.268,
+          "c": 0.987939
+        },
+        {
+          "w": "document",
+          "s": 275.308,
+          "e": 275.608,
+          "c": 0.966746
+        },
+        {
+          "w": "under",
+          "s": 276.318,
+          "e": 276.318,
+          "c": 0.0434395
+        },
+        {
+          "w": "both",
+          "s": 276.328,
+          "e": 276.648,
+          "c": 0.988927
+        },
+        {
+          "w": "circumstances",
+          "s": 276.898,
+          "e": 277.838,
+          "c": 0.998471
+        },
+        {
+          "w": "we",
+          "s": 277.878,
+          "e": 278.028,
+          "c": 0.934427
+        },
+        {
+          "w": "retain",
+          "s": 278.028,
+          "e": 278.578,
+          "c": 0.87094
+        },
+        {
+          "w": "long",
+          "s": 278.578,
+          "e": 278.948,
+          "c": 0.999295
+        },
+        {
+          "w": "enough",
+          "s": 278.948,
+          "e": 279.488,
+          "c": 0.99958
+        },
+        {
+          "w": "to",
+          "s": 279.488,
+          "e": 279.678,
+          "c": 0.998464
+        },
+        {
+          "w": "do",
+          "s": 279.678,
+          "e": 279.778,
+          "c": 0.998683
+        },
+        {
+          "w": "the",
+          "s": 279.858,
+          "e": 280.128,
+          "c": 0.998984
+        }
+      ]
+    },
+    {
+      "i": 41,
+      "start_s": 280.44,
+      "end_s": 280.82,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "match for",
+      "words": [
+        {
+          "w": "match",
+          "s": 280.438,
+          "e": 280.628,
+          "c": 0.994186
+        },
+        {
+          "w": "for",
+          "s": 280.628,
+          "e": 280.818,
+          "c": 0.962186
+        }
+      ]
+    },
+    {
+      "i": 42,
+      "start_s": 280.82,
+      "end_s": 283.65,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "initial auditing and then we are not storing and in that",
+      "words": [
+        {
+          "w": "initial",
+          "s": 280.818,
+          "e": 281.258,
+          "c": 0.994912
+        },
+        {
+          "w": "auditing",
+          "s": 281.258,
+          "e": 281.768,
+          "c": 0.998117
+        },
+        {
+          "w": "and",
+          "s": 281.768,
+          "e": 281.878,
+          "c": 0.968529
+        },
+        {
+          "w": "then",
+          "s": 282.148,
+          "e": 282.158,
+          "c": 0.999327
+        },
+        {
+          "w": "we",
+          "s": 282.158,
+          "e": 282.278,
+          "c": 0.99923
+        },
+        {
+          "w": "are",
+          "s": 282.278,
+          "e": 282.388,
+          "c": 0.999703
+        },
+        {
+          "w": "not",
+          "s": 282.508,
+          "e": 282.658,
+          "c": 0.999169
+        },
+        {
+          "w": "storing",
+          "s": 282.658,
+          "e": 283.098,
+          "c": 0.996164
+        },
+        {
+          "w": "and",
+          "s": 283.098,
+          "e": 283.288,
+          "c": 0.580103
+        },
+        {
+          "w": "in",
+          "s": 283.288,
+          "e": 283.408,
+          "c": 0.806737
+        },
+        {
+          "w": "that",
+          "s": 283.408,
+          "e": 283.648,
+          "c": 0.990692
+        }
+      ]
+    },
+    {
+      "i": 43,
+      "start_s": 283.65,
+      "end_s": 288.63,
+      "speaker": "SPEAKER_20",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "sense what happens in Vegas stays in Vegas yes",
+      "words": [
+        {
+          "w": "sense",
+          "s": 283.648,
+          "e": 283.968,
+          "c": 0.997988
+        },
+        {
+          "w": "what",
+          "s": 283.968,
+          "e": 284.218,
+          "c": 0.988738
+        },
+        {
+          "w": "happens",
+          "s": 284.218,
+          "e": 284.648,
+          "c": 0.998203
+        },
+        {
+          "w": "in",
+          "s": 284.718,
+          "e": 284.748,
+          "c": 0.95478
+        },
+        {
+          "w": "Vegas",
+          "s": 284.758,
+          "e": 284.988,
+          "c": 0.951354
+        },
+        {
+          "w": "stays",
+          "s": 285.068,
+          "e": 285.398,
+          "c": 0.98606
+        },
+        {
+          "w": "in",
+          "s": 285.398,
+          "e": 285.548,
+          "c": 0.966545
+        },
+        {
+          "w": "Vegas",
+          "s": 285.858,
+          "e": 288.248,
+          "c": 0.982819
+        },
+        {
+          "w": "yes",
+          "s": 288.248,
+          "e": 288.628,
+          "c": 0.804311
+        }
+      ]
+    },
+    {
+      "i": 44,
+      "start_s": 289.4,
+      "end_s": 296.65,
+      "speaker": "SPEAKER_13",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "until 2016 new TSOs often completed their",
+      "words": [
+        {
+          "w": "until",
+          "s": 289.398,
+          "e": 289.578,
+          "c": 0.744794
+        },
+        {
+          "w": "2016",
+          "s": 289.578,
+          "e": 291.568,
+          "c": 0.994715
+        },
+        {
+          "w": "new",
+          "s": 291.988,
+          "e": 292.338,
+          "c": 0.914747
+        },
+        {
+          "w": "TSOs",
+          "s": 292.478,
+          "e": 293.018,
+          "c": 0.812662
+        },
+        {
+          "w": "often",
+          "s": 293.068,
+          "e": 293.348,
+          "c": 0.985605
+        },
+        {
+          "w": "completed",
+          "s": 294.118,
+          "e": 295.688,
+          "c": 0.996807
+        },
+        {
+          "w": "their",
+          "s": 295.688,
+          "e": 296.648,
+          "c": 0.956754
+        }
+      ]
+    },
+    {
+      "i": 45,
+      "start_s": 296.95,
+      "end_s": 318.42,
+      "speaker": "SPEAKER_13",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "training requirements at or near their home airports. It's my understanding that TSOs now receive training at a centralized TSA academy located at the Federal Law Enforcement Training Center in Georgia. Since this has happened, has TSA had any budget savings as a result of",
+      "words": [
+        {
+          "w": "training",
+          "s": 296.946,
+          "e": 297.396,
+          "c": 0.851985
+        },
+        {
+          "w": "requirements",
+          "s": 297.796,
+          "e": 298.466,
+          "c": 0.964615
+        },
+        {
+          "w": "at",
+          "s": 298.686,
+          "e": 298.786,
+          "c": 0.960655
+        },
+        {
+          "w": "or",
+          "s": 298.896,
+          "e": 298.916,
+          "c": 0.974927
+        },
+        {
+          "w": "near",
+          "s": 298.916,
+          "e": 299.176,
+          "c": 0.996658
+        },
+        {
+          "w": "their",
+          "s": 299.186,
+          "e": 299.556,
+          "c": 0.990718
+        },
+        {
+          "w": "home",
+          "s": 299.556,
+          "e": 299.756,
+          "c": 0.981466
+        },
+        {
+          "w": "airports.",
+          "s": 299.756,
+          "e": 300.776,
+          "c": 0.9239
+        },
+        {
+          "w": "It's",
+          "s": 300.776,
+          "e": 301.056,
+          "c": 0.938913
+        },
+        {
+          "w": "my",
+          "s": 301.156,
+          "e": 301.196,
+          "c": 0.998051
+        },
+        {
+          "w": "understanding",
+          "s": 301.196,
+          "e": 302.156,
+          "c": 0.992826
+        },
+        {
+          "w": "that",
+          "s": 302.156,
+          "e": 302.446,
+          "c": 0.973073
+        },
+        {
+          "w": "TSOs",
+          "s": 302.446,
+          "e": 302.706,
+          "c": 0.674085
+        },
+        {
+          "w": "now",
+          "s": 302.946,
+          "e": 302.946,
+          "c": 0.979215
+        },
+        {
+          "w": "receive",
+          "s": 303.026,
+          "e": 303.536,
+          "c": 0.963269
+        },
+        {
+          "w": "training",
+          "s": 303.536,
+          "e": 303.976,
+          "c": 0.914129
+        },
+        {
+          "w": "at",
+          "s": 303.976,
+          "e": 304.076,
+          "c": 0.852097
+        },
+        {
+          "w": "a",
+          "s": 304.076,
+          "e": 304.086,
+          "c": 0.988157
+        },
+        {
+          "w": "centralized",
+          "s": 304.216,
+          "e": 305.196,
+          "c": 0.943093
+        },
+        {
+          "w": "TSA",
+          "s": 305.196,
+          "e": 305.656,
+          "c": 0.909224
+        },
+        {
+          "w": "academy",
+          "s": 305.656,
+          "e": 306.176,
+          "c": 0.698536
+        },
+        {
+          "w": "located",
+          "s": 306.176,
+          "e": 306.676,
+          "c": 0.728374
+        },
+        {
+          "w": "at",
+          "s": 306.706,
+          "e": 306.846,
+          "c": 0.996029
+        },
+        {
+          "w": "the",
+          "s": 307.046,
+          "e": 307.176,
+          "c": 0.992188
+        },
+        {
+          "w": "Federal",
+          "s": 307.176,
+          "e": 307.846,
+          "c": 0.830132
+        },
+        {
+          "w": "Law",
+          "s": 307.846,
+          "e": 308.146,
+          "c": 0.988671
+        },
+        {
+          "w": "Enforcement",
+          "s": 308.146,
+          "e": 309.156,
+          "c": 0.978771
+        },
+        {
+          "w": "Training",
+          "s": 309.216,
+          "e": 309.986,
+          "c": 0.981384
+        },
+        {
+          "w": "Center",
+          "s": 309.986,
+          "e": 310.426,
+          "c": 0.981982
+        },
+        {
+          "w": "in",
+          "s": 310.726,
+          "e": 310.756,
+          "c": 0.986263
+        },
+        {
+          "w": "Georgia.",
+          "s": 310.756,
+          "e": 311.776,
+          "c": 0.992999
+        },
+        {
+          "w": "Since",
+          "s": 312.126,
+          "e": 312.346,
+          "c": 0.99851
+        },
+        {
+          "w": "this",
+          "s": 312.346,
+          "e": 312.516,
+          "c": 0.998504
+        },
+        {
+          "w": "has",
+          "s": 312.916,
+          "e": 313.146,
+          "c": 0.987894
+        },
+        {
+          "w": "happened,",
+          "s": 313.146,
+          "e": 314.196,
+          "c": 0.915552
+        },
+        {
+          "w": "has",
+          "s": 314.296,
+          "e": 314.626,
+          "c": 0.996156
+        },
+        {
+          "w": "TSA",
+          "s": 314.636,
+          "e": 314.976,
+          "c": 0.997621
+        },
+        {
+          "w": "had",
+          "s": 314.976,
+          "e": 315.296,
+          "c": 0.986814
+        },
+        {
+          "w": "any",
+          "s": 315.296,
+          "e": 315.516,
+          "c": 0.995205
+        },
+        {
+          "w": "budget",
+          "s": 315.816,
+          "e": 316.346,
+          "c": 0.997329
+        },
+        {
+          "w": "savings",
+          "s": 316.346,
+          "e": 317.156,
+          "c": 0.99184
+        },
+        {
+          "w": "as",
+          "s": 317.156,
+          "e": 317.386,
+          "c": 0.99423
+        },
+        {
+          "w": "a",
+          "s": 317.386,
+          "e": 317.496,
+          "c": 0.995697
+        },
+        {
+          "w": "result",
+          "s": 317.496,
+          "e": 317.886,
+          "c": 0.999073
+        },
+        {
+          "w": "of",
+          "s": 318.376,
+          "e": 318.416,
+          "c": 0.996098
+        }
+      ]
+    },
+    {
+      "i": 46,
+      "start_s": 318.42,
+      "end_s": 319.31,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that?",
+      "words": [
+        {
+          "w": "that?",
+          "s": 318.416,
+          "e": 319.306,
+          "c": 0.979578
+        }
+      ]
+    },
+    {
+      "i": 47,
+      "start_s": 319.28,
+      "end_s": 319.96,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "So, as you",
+      "words": [
+        {
+          "w": "So,",
+          "s": 319.28,
+          "e": 319.58,
+          "c": 0.423079
+        },
+        {
+          "w": "as",
+          "s": 319.59,
+          "e": 319.73,
+          "c": 0.996698
+        },
+        {
+          "w": "you",
+          "s": 319.73,
+          "e": 319.96,
+          "c": 0.999464
+        }
+      ]
+    },
+    {
+      "i": 48,
+      "start_s": 320.1,
+      "end_s": 324.1,
+      "speaker": "SPEAKER_23",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "correctly know, we changed our process and we've changed it slightly again",
+      "words": [
+        {
+          "w": "correctly",
+          "s": 320.1,
+          "e": 320.67,
+          "c": 0.999045
+        },
+        {
+          "w": "know,",
+          "s": 320.67,
+          "e": 321.05,
+          "c": 0.786928
+        },
+        {
+          "w": "we",
+          "s": 321.14,
+          "e": 321.28,
+          "c": 0.990956
+        },
+        {
+          "w": "changed",
+          "s": 321.28,
+          "e": 321.83,
+          "c": 0.889615
+        },
+        {
+          "w": "our",
+          "s": 321.83,
+          "e": 322.06,
+          "c": 0.991395
+        },
+        {
+          "w": "process",
+          "s": 322.06,
+          "e": 322.68,
+          "c": 0.992103
+        },
+        {
+          "w": "and",
+          "s": 322.68,
+          "e": 322.92,
+          "c": 0.594481
+        },
+        {
+          "w": "we've",
+          "s": 322.92,
+          "e": 323.04,
+          "c": 0.918275
+        },
+        {
+          "w": "changed",
+          "s": 323.04,
+          "e": 323.36,
+          "c": 0.963471
+        },
+        {
+          "w": "it",
+          "s": 323.36,
+          "e": 323.48,
+          "c": 0.943617
+        },
+        {
+          "w": "slightly",
+          "s": 323.48,
+          "e": 323.82,
+          "c": 0.928795
+        },
+        {
+          "w": "again",
+          "s": 323.82,
+          "e": 324.1,
+          "c": 0.731755
+        }
+      ]
+    },
+    {
+      "i": 49,
+      "start_s": 324.1,
+      "end_s": 341.23,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "in this past year. What we have done is as a new TSO comes on board, they first are at their home airport for a period of time, about six months, and then they go off to the Federal Law Enforcement Training Center in Glencoe. This lets us go through an initial process and procedure to bring them on",
+      "words": [
+        {
+          "w": "in",
+          "s": 324.1,
+          "e": 324.29,
+          "c": 0.998015
+        },
+        {
+          "w": "this",
+          "s": 324.33,
+          "e": 324.68,
+          "c": 0.991391
+        },
+        {
+          "w": "past",
+          "s": 324.91,
+          "e": 325.07,
+          "c": 0.996177
+        },
+        {
+          "w": "year.",
+          "s": 325.07,
+          "e": 325.78,
+          "c": 0.992218
+        },
+        {
+          "w": "What",
+          "s": 325.78,
+          "e": 326.08,
+          "c": 0.998738
+        },
+        {
+          "w": "we",
+          "s": 326.09,
+          "e": 326.23,
+          "c": 0.999767
+        },
+        {
+          "w": "have",
+          "s": 326.23,
+          "e": 326.3,
+          "c": 0.997406
+        },
+        {
+          "w": "done",
+          "s": 326.6,
+          "e": 326.83,
+          "c": 0.999174
+        },
+        {
+          "w": "is",
+          "s": 326.83,
+          "e": 326.98,
+          "c": 0.976334
+        },
+        {
+          "w": "as",
+          "s": 326.98,
+          "e": 327.05,
+          "c": 0.583606
+        },
+        {
+          "w": "a",
+          "s": 327.11,
+          "e": 327.2,
+          "c": 0.6917
+        },
+        {
+          "w": "new",
+          "s": 327.2,
+          "e": 327.43,
+          "c": 0.995156
+        },
+        {
+          "w": "TSO",
+          "s": 327.43,
+          "e": 327.62,
+          "c": 0.989375
+        },
+        {
+          "w": "comes",
+          "s": 327.66,
+          "e": 328.03,
+          "c": 0.996685
+        },
+        {
+          "w": "on",
+          "s": 328.03,
+          "e": 328.18,
+          "c": 0.839005
+        },
+        {
+          "w": "board,",
+          "s": 328.18,
+          "e": 328.67,
+          "c": 0.840894
+        },
+        {
+          "w": "they",
+          "s": 328.71,
+          "e": 329.01,
+          "c": 0.988508
+        },
+        {
+          "w": "first",
+          "s": 329.01,
+          "e": 329.39,
+          "c": 0.979658
+        },
+        {
+          "w": "are",
+          "s": 329.39,
+          "e": 329.54,
+          "c": 0.994757
+        },
+        {
+          "w": "at",
+          "s": 329.62,
+          "e": 329.77,
+          "c": 0.997
+        },
+        {
+          "w": "their",
+          "s": 329.77,
+          "e": 330.12,
+          "c": 0.997122
+        },
+        {
+          "w": "home",
+          "s": 330.15,
+          "e": 330.45,
+          "c": 0.991889
+        },
+        {
+          "w": "airport",
+          "s": 330.45,
+          "e": 331.1,
+          "c": 0.98287
+        },
+        {
+          "w": "for",
+          "s": 331.1,
+          "e": 331.26,
+          "c": 0.999418
+        },
+        {
+          "w": "a",
+          "s": 331.26,
+          "e": 331.31,
+          "c": 0.996533
+        },
+        {
+          "w": "period",
+          "s": 331.33,
+          "e": 331.63,
+          "c": 0.998561
+        },
+        {
+          "w": "of",
+          "s": 331.63,
+          "e": 331.73,
+          "c": 0.998485
+        },
+        {
+          "w": "time,",
+          "s": 331.91,
+          "e": 332.04,
+          "c": 0.914327
+        },
+        {
+          "w": "about",
+          "s": 332.04,
+          "e": 332.31,
+          "c": 0.9991
+        },
+        {
+          "w": "six",
+          "s": 332.31,
+          "e": 332.47,
+          "c": 0.90803
+        },
+        {
+          "w": "months,",
+          "s": 332.47,
+          "e": 332.87,
+          "c": 0.798918
+        },
+        {
+          "w": "and",
+          "s": 332.9,
+          "e": 333.05,
+          "c": 0.992521
+        },
+        {
+          "w": "then",
+          "s": 333.05,
+          "e": 333.26,
+          "c": 0.99735
+        },
+        {
+          "w": "they",
+          "s": 333.26,
+          "e": 333.47,
+          "c": 0.995742
+        },
+        {
+          "w": "go",
+          "s": 333.47,
+          "e": 333.55,
+          "c": 0.99593
+        },
+        {
+          "w": "off",
+          "s": 333.57,
+          "e": 333.73,
+          "c": 0.995194
+        },
+        {
+          "w": "to",
+          "s": 333.73,
+          "e": 333.83,
+          "c": 0.996691
+        },
+        {
+          "w": "the",
+          "s": 333.83,
+          "e": 333.98,
+          "c": 0.996225
+        },
+        {
+          "w": "Federal",
+          "s": 333.98,
+          "e": 334.36,
+          "c": 0.795814
+        },
+        {
+          "w": "Law",
+          "s": 334.36,
+          "e": 334.51,
+          "c": 0.976114
+        },
+        {
+          "w": "Enforcement",
+          "s": 334.52,
+          "e": 335.22,
+          "c": 0.983237
+        },
+        {
+          "w": "Training",
+          "s": 335.3,
+          "e": 335.76,
+          "c": 0.988549
+        },
+        {
+          "w": "Center",
+          "s": 336.03,
+          "e": 336.17,
+          "c": 0.964356
+        },
+        {
+          "w": "in",
+          "s": 336.17,
+          "e": 336.28,
+          "c": 0.940767
+        },
+        {
+          "w": "Glencoe.",
+          "s": 336.3,
+          "e": 336.99,
+          "c": 0.952276
+        },
+        {
+          "w": "This",
+          "s": 337,
+          "e": 337.28,
+          "c": 0.999577
+        },
+        {
+          "w": "lets",
+          "s": 337.29,
+          "e": 337.56,
+          "c": 0.911828
+        },
+        {
+          "w": "us",
+          "s": 337.56,
+          "e": 337.7,
+          "c": 0.998951
+        },
+        {
+          "w": "go",
+          "s": 337.81,
+          "e": 337.84,
+          "c": 0.99514
+        },
+        {
+          "w": "through",
+          "s": 337.84,
+          "e": 338.28,
+          "c": 0.998199
+        },
+        {
+          "w": "an",
+          "s": 338.34,
+          "e": 338.45,
+          "c": 0.993155
+        },
+        {
+          "w": "initial",
+          "s": 338.5,
+          "e": 338.98,
+          "c": 0.99911
+        },
+        {
+          "w": "process",
+          "s": 338.98,
+          "e": 339.48,
+          "c": 0.993686
+        },
+        {
+          "w": "and",
+          "s": 339.48,
+          "e": 339.69,
+          "c": 0.988776
+        },
+        {
+          "w": "procedure",
+          "s": 339.69,
+          "e": 340.29,
+          "c": 0.988896
+        },
+        {
+          "w": "to",
+          "s": 340.33,
+          "e": 340.47,
+          "c": 0.998049
+        },
+        {
+          "w": "bring",
+          "s": 340.47,
+          "e": 340.76,
+          "c": 0.99939
+        },
+        {
+          "w": "them",
+          "s": 340.84,
+          "e": 341.08,
+          "c": 0.99906
+        },
+        {
+          "w": "on",
+          "s": 341.1,
+          "e": 341.23,
+          "c": 0.980815
+        }
+      ]
+    },
+    {
+      "i": 50,
+      "start_s": 341.28,
+      "end_s": 341.68,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "board.",
+      "words": [
+        {
+          "w": "board.",
+          "s": 341.28,
+          "e": 341.68,
+          "c": 0.823535
+        }
+      ]
+    },
+    {
+      "i": 51,
+      "start_s": 341.89,
+      "end_s": 372.49,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "continue to ensure that they are a good fit for the position that we are tracking them for prior to undergoing the two-week training down in Glencoe. What we have seen coming out of the training in Glencoe is not as much a budgetary savings per se as a consistency of training and camaraderie of spirit as people meet and retain those relationships across multiple airports. It enables them to know what another airport is doing against the same problem as well as what their home airport does. I",
+      "words": [
+        {
+          "w": "continue",
+          "s": 341.887,
+          "e": 342.447,
+          "c": 0.772239
+        },
+        {
+          "w": "to",
+          "s": 342.447,
+          "e": 342.637,
+          "c": 0.999293
+        },
+        {
+          "w": "ensure",
+          "s": 342.637,
+          "e": 343.187,
+          "c": 0.985316
+        },
+        {
+          "w": "that",
+          "s": 343.527,
+          "e": 343.527,
+          "c": 0.982828
+        },
+        {
+          "w": "they",
+          "s": 343.587,
+          "e": 343.817,
+          "c": 0.996962
+        },
+        {
+          "w": "are",
+          "s": 343.817,
+          "e": 344.017,
+          "c": 0.995993
+        },
+        {
+          "w": "a",
+          "s": 344.017,
+          "e": 344.097,
+          "c": 0.990363
+        },
+        {
+          "w": "good",
+          "s": 344.097,
+          "e": 344.307,
+          "c": 0.994408
+        },
+        {
+          "w": "fit",
+          "s": 344.477,
+          "e": 344.597,
+          "c": 0.9911
+        },
+        {
+          "w": "for",
+          "s": 344.767,
+          "e": 344.767,
+          "c": 0.944076
+        },
+        {
+          "w": "the",
+          "s": 344.797,
+          "e": 344.917,
+          "c": 0.993659
+        },
+        {
+          "w": "position",
+          "s": 344.917,
+          "e": 345.317,
+          "c": 0.992313
+        },
+        {
+          "w": "that",
+          "s": 345.317,
+          "e": 345.697,
+          "c": 0.931754
+        },
+        {
+          "w": "we",
+          "s": 345.697,
+          "e": 345.887,
+          "c": 0.99493
+        },
+        {
+          "w": "are",
+          "s": 345.887,
+          "e": 346.107,
+          "c": 0.994025
+        },
+        {
+          "w": "tracking",
+          "s": 346.437,
+          "e": 347.477,
+          "c": 0.668468
+        },
+        {
+          "w": "them",
+          "s": 347.477,
+          "e": 347.597,
+          "c": 0.699786
+        },
+        {
+          "w": "for",
+          "s": 347.597,
+          "e": 347.957,
+          "c": 0.647566
+        },
+        {
+          "w": "prior",
+          "s": 347.957,
+          "e": 348.677,
+          "c": 0.451818
+        },
+        {
+          "w": "to",
+          "s": 348.677,
+          "e": 349.197,
+          "c": 0.705309
+        },
+        {
+          "w": "undergoing",
+          "s": 349.197,
+          "e": 349.657,
+          "c": 0.629512
+        },
+        {
+          "w": "the",
+          "s": 349.657,
+          "e": 349.827,
+          "c": 0.930923
+        },
+        {
+          "w": "two-week",
+          "s": 349.877,
+          "e": 350.117,
+          "c": 0.745206
+        },
+        {
+          "w": "training",
+          "s": 350.117,
+          "e": 350.557,
+          "c": 0.96202
+        },
+        {
+          "w": "down",
+          "s": 350.557,
+          "e": 350.757,
+          "c": 0.967791
+        },
+        {
+          "w": "in",
+          "s": 350.757,
+          "e": 350.857,
+          "c": 0.989714
+        },
+        {
+          "w": "Glencoe.",
+          "s": 350.857,
+          "e": 351.357,
+          "c": 0.911829
+        },
+        {
+          "w": "What",
+          "s": 351.537,
+          "e": 351.647,
+          "c": 0.998233
+        },
+        {
+          "w": "we",
+          "s": 351.647,
+          "e": 351.777,
+          "c": 0.999979
+        },
+        {
+          "w": "have",
+          "s": 351.827,
+          "e": 352.077,
+          "c": 0.999641
+        },
+        {
+          "w": "seen",
+          "s": 352.077,
+          "e": 352.347,
+          "c": 0.999868
+        },
+        {
+          "w": "coming",
+          "s": 352.367,
+          "e": 352.807,
+          "c": 0.999762
+        },
+        {
+          "w": "out",
+          "s": 352.807,
+          "e": 352.877,
+          "c": 0.999968
+        },
+        {
+          "w": "of",
+          "s": 352.927,
+          "e": 353.117,
+          "c": 0.999914
+        },
+        {
+          "w": "the",
+          "s": 353.267,
+          "e": 353.357,
+          "c": 0.999769
+        },
+        {
+          "w": "training",
+          "s": 353.447,
+          "e": 353.977,
+          "c": 0.999838
+        },
+        {
+          "w": "in",
+          "s": 353.977,
+          "e": 353.987,
+          "c": 0.996369
+        },
+        {
+          "w": "Glencoe",
+          "s": 354.157,
+          "e": 354.597,
+          "c": 0.99975
+        },
+        {
+          "w": "is",
+          "s": 354.677,
+          "e": 354.747,
+          "c": 0.994359
+        },
+        {
+          "w": "not",
+          "s": 354.757,
+          "e": 354.977,
+          "c": 0.999968
+        },
+        {
+          "w": "as",
+          "s": 354.977,
+          "e": 355.117,
+          "c": 0.999767
+        },
+        {
+          "w": "much",
+          "s": 355.117,
+          "e": 355.407,
+          "c": 0.999962
+        },
+        {
+          "w": "a",
+          "s": 355.407,
+          "e": 355.477,
+          "c": 0.955345
+        },
+        {
+          "w": "budgetary",
+          "s": 355.477,
+          "e": 356.137,
+          "c": 0.999331
+        },
+        {
+          "w": "savings",
+          "s": 356.137,
+          "e": 356.527,
+          "c": 0.995241
+        },
+        {
+          "w": "per",
+          "s": 356.877,
+          "e": 356.877,
+          "c": 0.813384
+        },
+        {
+          "w": "se",
+          "s": 356.907,
+          "e": 357.177,
+          "c": 0.988612
+        },
+        {
+          "w": "as",
+          "s": 357.177,
+          "e": 357.597,
+          "c": 0.909431
+        },
+        {
+          "w": "a",
+          "s": 357.597,
+          "e": 357.687,
+          "c": 0.999714
+        },
+        {
+          "w": "consistency",
+          "s": 358.147,
+          "e": 358.747,
+          "c": 0.983841
+        },
+        {
+          "w": "of",
+          "s": 358.747,
+          "e": 358.917,
+          "c": 0.99902
+        },
+        {
+          "w": "training",
+          "s": 358.917,
+          "e": 359.597,
+          "c": 0.998607
+        },
+        {
+          "w": "and",
+          "s": 359.597,
+          "e": 359.827,
+          "c": 0.571591
+        },
+        {
+          "w": "camaraderie",
+          "s": 359.887,
+          "e": 360.817,
+          "c": 0.989848
+        },
+        {
+          "w": "of",
+          "s": 360.857,
+          "e": 361.037,
+          "c": 0.997229
+        },
+        {
+          "w": "spirit",
+          "s": 361.417,
+          "e": 361.597,
+          "c": 0.998683
+        },
+        {
+          "w": "as",
+          "s": 361.747,
+          "e": 361.747,
+          "c": 0.987926
+        },
+        {
+          "w": "people",
+          "s": 361.807,
+          "e": 362.207,
+          "c": 0.999985
+        },
+        {
+          "w": "meet",
+          "s": 362.207,
+          "e": 362.517,
+          "c": 0.999956
+        },
+        {
+          "w": "and",
+          "s": 362.517,
+          "e": 362.747,
+          "c": 0.999992
+        },
+        {
+          "w": "retain",
+          "s": 362.747,
+          "e": 363.117,
+          "c": 0.999931
+        },
+        {
+          "w": "those",
+          "s": 363.507,
+          "e": 363.587,
+          "c": 0.999983
+        },
+        {
+          "w": "relationships",
+          "s": 363.587,
+          "e": 364.467,
+          "c": 0.999926
+        },
+        {
+          "w": "across",
+          "s": 364.717,
+          "e": 365.057,
+          "c": 0.999893
+        },
+        {
+          "w": "multiple",
+          "s": 365.057,
+          "e": 365.677,
+          "c": 0.999983
+        },
+        {
+          "w": "airports.",
+          "s": 365.677,
+          "e": 366.577,
+          "c": 0.998597
+        },
+        {
+          "w": "It",
+          "s": 366.687,
+          "e": 366.687,
+          "c": 0.977266
+        },
+        {
+          "w": "enables",
+          "s": 366.777,
+          "e": 367.087,
+          "c": 0.991117
+        },
+        {
+          "w": "them",
+          "s": 367.087,
+          "e": 367.317,
+          "c": 0.998329
+        },
+        {
+          "w": "to",
+          "s": 367.317,
+          "e": 367.427,
+          "c": 0.994774
+        },
+        {
+          "w": "know",
+          "s": 367.427,
+          "e": 367.657,
+          "c": 0.998154
+        },
+        {
+          "w": "what",
+          "s": 367.657,
+          "e": 367.887,
+          "c": 0.9969
+        },
+        {
+          "w": "another",
+          "s": 367.887,
+          "e": 368.097,
+          "c": 0.968561
+        },
+        {
+          "w": "airport",
+          "s": 368.487,
+          "e": 368.687,
+          "c": 0.972129
+        },
+        {
+          "w": "is",
+          "s": 368.687,
+          "e": 368.797,
+          "c": 0.997895
+        },
+        {
+          "w": "doing",
+          "s": 368.797,
+          "e": 369.047,
+          "c": 0.997786
+        },
+        {
+          "w": "against",
+          "s": 369.087,
+          "e": 369.457,
+          "c": 0.99624
+        },
+        {
+          "w": "the",
+          "s": 369.657,
+          "e": 369.657,
+          "c": 0.991399
+        },
+        {
+          "w": "same",
+          "s": 369.697,
+          "e": 369.827,
+          "c": 0.999582
+        },
+        {
+          "w": "problem",
+          "s": 369.897,
+          "e": 370.287,
+          "c": 0.9991
+        },
+        {
+          "w": "as",
+          "s": 370.287,
+          "e": 370.397,
+          "c": 0.894824
+        },
+        {
+          "w": "well",
+          "s": 370.397,
+          "e": 370.627,
+          "c": 0.997822
+        },
+        {
+          "w": "as",
+          "s": 370.627,
+          "e": 370.737,
+          "c": 0.996567
+        },
+        {
+          "w": "what",
+          "s": 370.737,
+          "e": 370.967,
+          "c": 0.98429
+        },
+        {
+          "w": "their",
+          "s": 370.967,
+          "e": 371.017,
+          "c": 0.996639
+        },
+        {
+          "w": "home",
+          "s": 371.317,
+          "e": 371.457,
+          "c": 0.99507
+        },
+        {
+          "w": "airport",
+          "s": 371.497,
+          "e": 371.747,
+          "c": 0.986237
+        },
+        {
+          "w": "does.",
+          "s": 372.117,
+          "e": 372.417,
+          "c": 0.984949
+        },
+        {
+          "w": "I",
+          "s": 372.447,
+          "e": 372.487,
+          "c": 0.876246
+        }
+      ]
+    },
+    {
+      "i": 52,
+      "start_s": 372.6,
+      "end_s": 373.52,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "see my time's",
+      "words": [
+        {
+          "w": "see",
+          "s": 372.597,
+          "e": 372.777,
+          "c": 0.973177
+        },
+        {
+          "w": "my",
+          "s": 372.837,
+          "e": 372.967,
+          "c": 0.917368
+        },
+        {
+          "w": "time's",
+          "s": 372.967,
+          "e": 373.517,
+          "c": 0.492691
+        }
+      ]
+    },
+    {
+      "i": 53,
+      "start_s": 373.52,
+      "end_s": 375.28,
+      "speaker": "SPEAKER_25",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "expired. Thank you very much.",
+      "words": [
+        {
+          "w": "expired.",
+          "s": 373.517,
+          "e": 374.417,
+          "c": 0.951758
+        },
+        {
+          "w": "Thank",
+          "s": 374.507,
+          "e": 374.697,
+          "c": 0.770959
+        },
+        {
+          "w": "you",
+          "s": 374.697,
+          "e": 374.807,
+          "c": 0.999916
+        },
+        {
+          "w": "very",
+          "s": 374.807,
+          "e": 374.977,
+          "c": 0.999804
+        },
+        {
+          "w": "much.",
+          "s": 374.977,
+          "e": 375.277,
+          "c": 0.999378
+        }
+      ]
+    }
+  ]
+}

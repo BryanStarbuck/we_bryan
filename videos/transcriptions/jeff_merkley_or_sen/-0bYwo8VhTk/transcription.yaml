@@ -1,0 +1,137 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Trump’s Goal: Families Lose, Billionaires Win"
+    Description: >-
+      A short clip of Senator Jeff Merkley speaking against a Republican
+      budget reconciliation bill. He argues the bill will leave millions
+      of children hungry and cause some 14 million people to lose health
+      coverage in order to fund tax breaks for the richest Americans. The
+      figures and the causal claim are his own characterisation of the
+      legislation and are contested by the bill's supporters, who are not
+      present. He closes on a play on the bill's promotional name, saying
+      "big beautiful bill" would better be called "big beautiful betrayal"
+      because Trump campaigned on being there for families and, in
+      Merkley's telling, the outcome is that families lose and
+      billionaires win.
+    URL: "https://www.youtube.com/watch?v=-0bYwo8VhTk"
+    Video_ID: "-0bYwo8VhTk"
+    Show: "Senator Jeff Merkley"
+    Runtime: "00:00:25"
+    Language: "en"
+
+  Media:
+    File: "-0bYwo8VhTk.m4a"
+    SHA256: "99dc715decbd5ffdb62b2686f06ba79d38b61d05ac3f3b5a22305f2189f8dd79"
+    Bytes: 416117
+    Duration_Seconds: 25
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-0bYwo8VhTk"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-0bYwo8VhTk.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/jeff_merkley_or_sen/-0bYwo8VhTk/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCRoXttCJhMnLVCxCaa6VnNQ"
+    Uploader_ID: "@SenatorJeffMerkleyYT"
+    View_Count: 8574
+    Like_Count: 145
+    Comment_Count: 16
+    Availability: "public"
+    Published_At: "2025-06-05T20:27:07+00:00"
+    Captured_At: "2026-09-07T19:50:30-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "98.0%"
+      Turns: 1
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "2.0%"
+      Turns: 1
+
+  Topics:
+    - "Republican budget reconciliation bill"
+    - "Health insurance coverage losses"
+    - "Tax policy and tax breaks for high earners"
+    - "Child hunger and nutrition programs"
+
+  Source:
+    Canonical_ID: "8ac139152689d8aa"
+    Transcribed: "2026-09-07T19:54:03.103479-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 86
+    Segments: 3
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T19:50:30.933007-07:00"
+    Transcription_Finished: "2026-09-07T19:54:03.103479-07:00"
+    Recorded: "2025-06-05"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-0bYwo8VhTk.ctm"
+    Fountain: "-0bYwo8VhTk.fountain"
+    Diarization_RTTM: "-0bYwo8VhTk.rttm"
+    As_Broadcast_Script: "-0bYwo8VhTk.script.txt"
+    Segments_JSON: "-0bYwo8VhTk.segments.json"
+    Segments_JSONL: "-0bYwo8VhTk.segments.jsonl"
+    Subtitles_SRT: "-0bYwo8VhTk.srt"
+    Plain_Text: "-0bYwo8VhTk.transcription"
+    Subtitles_VTT: "-0bYwo8VhTk.vtt"
+    Transcript_SHA256: "b708b3d84c1ad48efbfc03598cec3c6e13dfdb618e12ab9be0a442546be786fb"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "jeff_merkley_or_sen"
+    video_uid: "jeff_merkley_or_sen::-0bYwo8VhTk"
+    video_key: "-0bYwo8VhTk"
+    youtube_id: "-0bYwo8VhTk"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-0bYwo8VhTk"
+    source_ref: "-0bYwo8VhTk"

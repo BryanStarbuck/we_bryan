@@ -1,0 +1,6091 @@
+{
+  "schema_version": 2,
+  "canonical_id": "3b24a0d8c7474672",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 331.68,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T02:58:40.076Z",
+  "text_sha256": "33cae32efd1464dec541cca8a68066cffef61201e9e8682446adf60c6dcd7eb3",
+  "segments_sha256": "d8bd052d46634a7c737ee12066e7fbe06d4ac52a2b25049b54ac0d74c6dcdb94",
+  "words_sha256": "cbfc584f86c76930ef221a110aee1030e52b27c672f5da06d21ef8cf49e6205c",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 14,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 24,
+    "clusters": 11,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.79,
+        "confidence": "low",
+        "clean_s": 49.2
+      },
+      "clean_s": 49.2,
+      "speaking_s": 49.3,
+      "first_s": 0.89
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.85,
+        "confidence": "low",
+        "clean_s": 16.2
+      },
+      "clean_s": 16.2,
+      "speaking_s": 16.3,
+      "first_s": 24.97
+    },
+    {
+      "id": "SPEAKER_05",
+      "n": 3,
+      "label": "Speaker 3 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.88,
+        "confidence": "low",
+        "clean_s": 35.7
+      },
+      "clean_s": 35.7,
+      "speaking_s": 35.7,
+      "first_s": 70.53
+    },
+    {
+      "id": "SPEAKER_08",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 27.2
+      },
+      "clean_s": 27.2,
+      "speaking_s": 27.2,
+      "first_s": 107.39
+    },
+    {
+      "id": "SPEAKER_12",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 2.1
+      },
+      "clean_s": 2.1,
+      "speaking_s": 2.1,
+      "first_s": 135.87
+    },
+    {
+      "id": "SPEAKER_14",
+      "n": 6,
+      "label": "Speaker 6 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.82,
+        "confidence": "low",
+        "clean_s": 44
+      },
+      "clean_s": 44,
+      "speaking_s": 44,
+      "first_s": 137.97
+    },
+    {
+      "id": "SPEAKER_16",
+      "n": 7,
+      "label": "Speaker 7",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 3
+      },
+      "clean_s": 3,
+      "speaking_s": 3,
+      "first_s": 181.98
+    },
+    {
+      "id": "SPEAKER_17",
+      "n": 8,
+      "label": "Speaker 8 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.8,
+        "confidence": "low",
+        "clean_s": 32
+      },
+      "clean_s": 32,
+      "speaking_s": 32,
+      "first_s": 184.96
+    },
+    {
+      "id": "SPEAKER_18",
+      "n": 9,
+      "label": "Speaker 9",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 7
+      },
+      "clean_s": 7,
+      "speaking_s": 7,
+      "first_s": 216.98
+    },
+    {
+      "id": "SPEAKER_19",
+      "n": 10,
+      "label": "Speaker 10 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.84,
+        "confidence": "low",
+        "clean_s": 56.3
+      },
+      "clean_s": 56.3,
+      "speaking_s": 56.9,
+      "first_s": 223.96
+    },
+    {
+      "id": "SPEAKER_21",
+      "n": 11,
+      "label": "Speaker 11 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.85,
+        "confidence": "low",
+        "clean_s": 48.5
+      },
+      "clean_s": 48.5,
+      "speaking_s": 49,
+      "first_s": 281.71
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.88,
+      "end_s": 0.88,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 18.02,
+      "end_s": 18.23,
+      "segment_i": 2,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 30.48,
+      "end_s": 31.18,
+      "segment_i": 5,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 57.57,
+      "end_s": 57.66,
+      "segment_i": 9,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 112.93,
+      "end_s": 112.93,
+      "segment_i": 15,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 134.75,
+      "end_s": 135.32,
+      "segment_i": 17,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 227.38,
+      "end_s": 227.65,
+      "segment_i": 28,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 242.88,
+      "end_s": 242.88,
+      "segment_i": 30,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.88,
+      "end_s": 0.89,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "- Hi, I'm",
+      "words": [
+        {
+          "w": "-",
+          "s": 0.88,
+          "e": 0.88,
+          "c": 0.37572
+        },
+        {
+          "w": "Hi,",
+          "s": 0.88,
+          "e": 0.88,
+          "c": 0.879242
+        },
+        {
+          "w": "I'm",
+          "s": 0.88,
+          "e": 0.88,
+          "c": 0.994046
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.96,
+      "end_s": 18.04,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Senator Mike Lee. Laborers of Utah started as an opportunity to celebrate Pioneer Day, the 24th of July, in Washington, D.C. We started by serving homemade root beer. Little by little, we got interest from Utah food producers and it turned into an opportunity to showcase",
+      "words": [
+        {
+          "w": "Senator",
+          "s": 0.96,
+          "e": 1.66,
+          "c": 0.96913
+        },
+        {
+          "w": "Mike",
+          "s": 1.8,
+          "e": 2.09,
+          "c": 0.989285
+        },
+        {
+          "w": "Lee.",
+          "s": 2.1,
+          "e": 2.79,
+          "c": 0.862496
+        },
+        {
+          "w": "Laborers",
+          "s": 2.88,
+          "e": 3.25,
+          "c": 0.643193
+        },
+        {
+          "w": "of",
+          "s": 3.25,
+          "e": 3.36,
+          "c": 0.991147
+        },
+        {
+          "w": "Utah",
+          "s": 3.36,
+          "e": 3.58,
+          "c": 0.995718
+        },
+        {
+          "w": "started",
+          "s": 3.72,
+          "e": 4,
+          "c": 0.99083
+        },
+        {
+          "w": "as",
+          "s": 4,
+          "e": 4.12,
+          "c": 0.982287
+        },
+        {
+          "w": "an",
+          "s": 4.12,
+          "e": 4.24,
+          "c": 0.992203
+        },
+        {
+          "w": "opportunity",
+          "s": 4.24,
+          "e": 4.89,
+          "c": 0.997474
+        },
+        {
+          "w": "to",
+          "s": 4.98,
+          "e": 5.03,
+          "c": 0.999807
+        },
+        {
+          "w": "celebrate",
+          "s": 5.06,
+          "e": 5.65,
+          "c": 0.998182
+        },
+        {
+          "w": "Pioneer",
+          "s": 5.82,
+          "e": 6.1,
+          "c": 0.904947
+        },
+        {
+          "w": "Day,",
+          "s": 6.11,
+          "e": 6.51,
+          "c": 0.437025
+        },
+        {
+          "w": "the",
+          "s": 6.51,
+          "e": 6.74,
+          "c": 0.866294
+        },
+        {
+          "w": "24th",
+          "s": 6.74,
+          "e": 7.35,
+          "c": 0.995634
+        },
+        {
+          "w": "of",
+          "s": 7.35,
+          "e": 7.49,
+          "c": 0.995243
+        },
+        {
+          "w": "July,",
+          "s": 7.74,
+          "e": 7.82,
+          "c": 0.621278
+        },
+        {
+          "w": "in",
+          "s": 7.9,
+          "e": 7.93,
+          "c": 0.998614
+        },
+        {
+          "w": "Washington,",
+          "s": 7.98,
+          "e": 8.6,
+          "c": 0.714237
+        },
+        {
+          "w": "D.C.",
+          "s": 8.65,
+          "e": 9.02,
+          "c": 0.62131
+        },
+        {
+          "w": "We",
+          "s": 9.14,
+          "e": 9.21,
+          "c": 0.989415
+        },
+        {
+          "w": "started",
+          "s": 9.22,
+          "e": 9.75,
+          "c": 0.999184
+        },
+        {
+          "w": "by",
+          "s": 9.75,
+          "e": 9.83,
+          "c": 0.998881
+        },
+        {
+          "w": "serving",
+          "s": 9.98,
+          "e": 10.44,
+          "c": 0.998037
+        },
+        {
+          "w": "homemade",
+          "s": 10.44,
+          "e": 11.01,
+          "c": 0.987074
+        },
+        {
+          "w": "root",
+          "s": 11.05,
+          "e": 11.36,
+          "c": 0.997107
+        },
+        {
+          "w": "beer.",
+          "s": 11.36,
+          "e": 11.96,
+          "c": 0.994203
+        },
+        {
+          "w": "Little",
+          "s": 12.04,
+          "e": 12.23,
+          "c": 0.998112
+        },
+        {
+          "w": "by",
+          "s": 12.27,
+          "e": 12.33,
+          "c": 0.993672
+        },
+        {
+          "w": "little,",
+          "s": 12.33,
+          "e": 12.72,
+          "c": 0.754549
+        },
+        {
+          "w": "we",
+          "s": 12.87,
+          "e": 12.87,
+          "c": 0.980497
+        },
+        {
+          "w": "got",
+          "s": 12.88,
+          "e": 13.09,
+          "c": 0.996383
+        },
+        {
+          "w": "interest",
+          "s": 13.09,
+          "e": 13.68,
+          "c": 0.989604
+        },
+        {
+          "w": "from",
+          "s": 13.72,
+          "e": 13.92,
+          "c": 0.559526
+        },
+        {
+          "w": "Utah",
+          "s": 13.92,
+          "e": 14.25,
+          "c": 0.921416
+        },
+        {
+          "w": "food",
+          "s": 14.25,
+          "e": 14.58,
+          "c": 0.981186
+        },
+        {
+          "w": "producers",
+          "s": 14.8,
+          "e": 15.35,
+          "c": 0.995579
+        },
+        {
+          "w": "and",
+          "s": 15.44,
+          "e": 15.56,
+          "c": 0.998894
+        },
+        {
+          "w": "it",
+          "s": 15.57,
+          "e": 15.71,
+          "c": 0.932335
+        },
+        {
+          "w": "turned",
+          "s": 15.71,
+          "e": 16.13,
+          "c": 0.996099
+        },
+        {
+          "w": "into",
+          "s": 16.28,
+          "e": 16.41,
+          "c": 0.981124
+        },
+        {
+          "w": "an",
+          "s": 16.41,
+          "e": 16.53,
+          "c": 0.996179
+        },
+        {
+          "w": "opportunity",
+          "s": 16.53,
+          "e": 17.31,
+          "c": 0.999619
+        },
+        {
+          "w": "to",
+          "s": 17.31,
+          "e": 17.46,
+          "c": 0.993193
+        },
+        {
+          "w": "showcase",
+          "s": 17.46,
+          "e": 18.04,
+          "c": 0.998704
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 18.02,
+      "end_s": 18.23,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Food",
+      "words": [
+        {
+          "w": "Food",
+          "s": 18.02,
+          "e": 18.23,
+          "c": 0.800579
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 18.31,
+      "end_s": 24.89,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "produced in Utah to Washington DC has become known far and wide on both ends of the Capitol in both political",
+      "words": [
+        {
+          "w": "produced",
+          "s": 18.31,
+          "e": 18.93,
+          "c": 0.977618
+        },
+        {
+          "w": "in",
+          "s": 18.93,
+          "e": 19.08,
+          "c": 0.995816
+        },
+        {
+          "w": "Utah",
+          "s": 19.08,
+          "e": 19.39,
+          "c": 0.99179
+        },
+        {
+          "w": "to",
+          "s": 19.39,
+          "e": 19.53,
+          "c": 0.733638
+        },
+        {
+          "w": "Washington",
+          "s": 19.6,
+          "e": 20.32,
+          "c": 0.992937
+        },
+        {
+          "w": "DC",
+          "s": 20.32,
+          "e": 20.5,
+          "c": 0.330027
+        },
+        {
+          "w": "has",
+          "s": 20.5,
+          "e": 20.63,
+          "c": 0.407037
+        },
+        {
+          "w": "become",
+          "s": 20.65,
+          "e": 21.04,
+          "c": 0.958961
+        },
+        {
+          "w": "known",
+          "s": 21.04,
+          "e": 21.29,
+          "c": 0.913782
+        },
+        {
+          "w": "far",
+          "s": 21.31,
+          "e": 21.66,
+          "c": 0.839556
+        },
+        {
+          "w": "and",
+          "s": 21.66,
+          "e": 21.72,
+          "c": 0.921915
+        },
+        {
+          "w": "wide",
+          "s": 21.72,
+          "e": 21.92,
+          "c": 0.981189
+        },
+        {
+          "w": "on",
+          "s": 21.92,
+          "e": 22.02,
+          "c": 0.795844
+        },
+        {
+          "w": "both",
+          "s": 22.02,
+          "e": 22.2,
+          "c": 0.957302
+        },
+        {
+          "w": "ends",
+          "s": 22.2,
+          "e": 22.48,
+          "c": 0.888869
+        },
+        {
+          "w": "of",
+          "s": 22.48,
+          "e": 22.6,
+          "c": 0.900991
+        },
+        {
+          "w": "the",
+          "s": 22.6,
+          "e": 22.73,
+          "c": 0.877443
+        },
+        {
+          "w": "Capitol",
+          "s": 22.87,
+          "e": 23.44,
+          "c": 0.586214
+        },
+        {
+          "w": "in",
+          "s": 23.44,
+          "e": 23.62,
+          "c": 0.363756
+        },
+        {
+          "w": "both",
+          "s": 23.68,
+          "e": 24,
+          "c": 0.997154
+        },
+        {
+          "w": "political",
+          "s": 24.01,
+          "e": 24.89,
+          "c": 0.998729
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 24.89,
+      "end_s": 30.48,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "parties as one of the best events of the year to sample good food and its food from",
+      "words": [
+        {
+          "w": "parties",
+          "s": 24.89,
+          "e": 25.6,
+          "c": 0.998542
+        },
+        {
+          "w": "as",
+          "s": 25.6,
+          "e": 25.75,
+          "c": 0.859116
+        },
+        {
+          "w": "one",
+          "s": 25.75,
+          "e": 25.98,
+          "c": 0.979454
+        },
+        {
+          "w": "of",
+          "s": 25.98,
+          "e": 26.13,
+          "c": 0.993578
+        },
+        {
+          "w": "the",
+          "s": 26.13,
+          "e": 26.36,
+          "c": 0.994789
+        },
+        {
+          "w": "best",
+          "s": 26.36,
+          "e": 26.67,
+          "c": 0.996586
+        },
+        {
+          "w": "events",
+          "s": 26.67,
+          "e": 27.14,
+          "c": 0.98805
+        },
+        {
+          "w": "of",
+          "s": 27.14,
+          "e": 27.29,
+          "c": 0.985667
+        },
+        {
+          "w": "the",
+          "s": 27.29,
+          "e": 27.49,
+          "c": 0.983866
+        },
+        {
+          "w": "year",
+          "s": 27.57,
+          "e": 27.88,
+          "c": 0.991074
+        },
+        {
+          "w": "to",
+          "s": 27.88,
+          "e": 28.06,
+          "c": 0.817272
+        },
+        {
+          "w": "sample",
+          "s": 28.06,
+          "e": 28.6,
+          "c": 0.97533
+        },
+        {
+          "w": "good",
+          "s": 28.6,
+          "e": 28.76,
+          "c": 0.966527
+        },
+        {
+          "w": "food",
+          "s": 28.78,
+          "e": 29.14,
+          "c": 0.998824
+        },
+        {
+          "w": "and",
+          "s": 29.14,
+          "e": 29.43,
+          "c": 0.60785
+        },
+        {
+          "w": "its",
+          "s": 29.43,
+          "e": 29.72,
+          "c": 0.645721
+        },
+        {
+          "w": "food",
+          "s": 29.72,
+          "e": 30.1,
+          "c": 0.986137
+        },
+        {
+          "w": "from",
+          "s": 30.1,
+          "e": 30.48,
+          "c": 0.984384
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 30.48,
+      "end_s": 31.18,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Utah.",
+      "words": [
+        {
+          "w": "Utah.",
+          "s": 30.48,
+          "e": 31.18,
+          "c": 0.983928
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 31.18,
+      "end_s": 38.91,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I want to thank the Utah food producers who contributed to this year's event and made it possible for us.",
+      "words": [
+        {
+          "w": "I",
+          "s": 31.18,
+          "e": 31.25,
+          "c": 0.998616
+        },
+        {
+          "w": "want",
+          "s": 31.29,
+          "e": 31.63,
+          "c": 0.951535
+        },
+        {
+          "w": "to",
+          "s": 31.63,
+          "e": 31.81,
+          "c": 0.998281
+        },
+        {
+          "w": "thank",
+          "s": 31.81,
+          "e": 32.26,
+          "c": 0.990656
+        },
+        {
+          "w": "the",
+          "s": 32.26,
+          "e": 32.53,
+          "c": 0.991769
+        },
+        {
+          "w": "Utah",
+          "s": 32.53,
+          "e": 32.89,
+          "c": 0.991841
+        },
+        {
+          "w": "food",
+          "s": 32.89,
+          "e": 33.25,
+          "c": 0.842478
+        },
+        {
+          "w": "producers",
+          "s": 33.25,
+          "e": 34.06,
+          "c": 0.997872
+        },
+        {
+          "w": "who",
+          "s": 34.06,
+          "e": 34.34,
+          "c": 0.938512
+        },
+        {
+          "w": "contributed",
+          "s": 34.34,
+          "e": 35.32,
+          "c": 0.969646
+        },
+        {
+          "w": "to",
+          "s": 35.32,
+          "e": 35.49,
+          "c": 0.987336
+        },
+        {
+          "w": "this",
+          "s": 35.49,
+          "e": 35.84,
+          "c": 0.996143
+        },
+        {
+          "w": "year's",
+          "s": 35.84,
+          "e": 36.36,
+          "c": 0.943644
+        },
+        {
+          "w": "event",
+          "s": 36.36,
+          "e": 36.78,
+          "c": 0.986218
+        },
+        {
+          "w": "and",
+          "s": 36.85,
+          "e": 37.06,
+          "c": 0.969777
+        },
+        {
+          "w": "made",
+          "s": 37.06,
+          "e": 37.48,
+          "c": 0.99096
+        },
+        {
+          "w": "it",
+          "s": 37.48,
+          "e": 37.64,
+          "c": 0.998788
+        },
+        {
+          "w": "possible",
+          "s": 37.64,
+          "e": 38.27,
+          "c": 0.998209
+        },
+        {
+          "w": "for",
+          "s": 38.27,
+          "e": 38.51,
+          "c": 0.994628
+        },
+        {
+          "w": "us.",
+          "s": 38.51,
+          "e": 38.91,
+          "c": 0.929413
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 38.88,
+      "end_s": 51.84,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to donate these gift bags to our doctors, nurses, and first responders to every registered certified accredited hospital in the state. These are the men and women who are keeping us afloat,",
+      "words": [
+        {
+          "w": "to",
+          "s": 38.88,
+          "e": 39.09,
+          "c": 0.778029
+        },
+        {
+          "w": "donate",
+          "s": 39.09,
+          "e": 39.7,
+          "c": 0.997588
+        },
+        {
+          "w": "these",
+          "s": 39.74,
+          "e": 40.24,
+          "c": 0.996105
+        },
+        {
+          "w": "gift",
+          "s": 40.25,
+          "e": 40.67,
+          "c": 0.982392
+        },
+        {
+          "w": "bags",
+          "s": 40.67,
+          "e": 41.11,
+          "c": 0.96749
+        },
+        {
+          "w": "to",
+          "s": 41.12,
+          "e": 41.28,
+          "c": 0.926966
+        },
+        {
+          "w": "our",
+          "s": 41.28,
+          "e": 41.54,
+          "c": 0.984509
+        },
+        {
+          "w": "doctors,",
+          "s": 41.54,
+          "e": 42.41,
+          "c": 0.920376
+        },
+        {
+          "w": "nurses,",
+          "s": 42.41,
+          "e": 42.94,
+          "c": 0.550051
+        },
+        {
+          "w": "and",
+          "s": 42.94,
+          "e": 43.04,
+          "c": 0.65769
+        },
+        {
+          "w": "first",
+          "s": 43.04,
+          "e": 43.35,
+          "c": 0.96989
+        },
+        {
+          "w": "responders",
+          "s": 43.39,
+          "e": 44,
+          "c": 0.986925
+        },
+        {
+          "w": "to",
+          "s": 44.02,
+          "e": 44.16,
+          "c": 0.264009
+        },
+        {
+          "w": "every",
+          "s": 44.16,
+          "e": 44.64,
+          "c": 0.907473
+        },
+        {
+          "w": "registered",
+          "s": 44.64,
+          "e": 45.88,
+          "c": 0.683751
+        },
+        {
+          "w": "certified",
+          "s": 45.96,
+          "e": 46.4,
+          "c": 0.220682
+        },
+        {
+          "w": "accredited",
+          "s": 46.4,
+          "e": 47.04,
+          "c": 0.994621
+        },
+        {
+          "w": "hospital",
+          "s": 47.04,
+          "e": 47.55,
+          "c": 0.994693
+        },
+        {
+          "w": "in",
+          "s": 47.55,
+          "e": 47.62,
+          "c": 0.997046
+        },
+        {
+          "w": "the",
+          "s": 47.69,
+          "e": 47.88,
+          "c": 0.794746
+        },
+        {
+          "w": "state.",
+          "s": 47.88,
+          "e": 48.38,
+          "c": 0.914491
+        },
+        {
+          "w": "These",
+          "s": 48.39,
+          "e": 48.71,
+          "c": 0.981396
+        },
+        {
+          "w": "are",
+          "s": 48.71,
+          "e": 48.9,
+          "c": 0.999763
+        },
+        {
+          "w": "the",
+          "s": 48.9,
+          "e": 49.08,
+          "c": 0.998456
+        },
+        {
+          "w": "men",
+          "s": 49.11,
+          "e": 49.28,
+          "c": 0.999148
+        },
+        {
+          "w": "and",
+          "s": 49.28,
+          "e": 49.47,
+          "c": 0.999277
+        },
+        {
+          "w": "women",
+          "s": 49.47,
+          "e": 49.78,
+          "c": 0.999106
+        },
+        {
+          "w": "who",
+          "s": 49.8,
+          "e": 49.98,
+          "c": 0.987803
+        },
+        {
+          "w": "are",
+          "s": 49.98,
+          "e": 50.23,
+          "c": 0.968823
+        },
+        {
+          "w": "keeping",
+          "s": 50.23,
+          "e": 51.2,
+          "c": 0.986081
+        },
+        {
+          "w": "us",
+          "s": 51.2,
+          "e": 51.36,
+          "c": 0.989402
+        },
+        {
+          "w": "afloat,",
+          "s": 51.36,
+          "e": 51.84,
+          "c": 0.768099
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 51.85,
+      "end_s": 57.56,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "keeping us going during the global pandemic and I thank them and all the food producers who participated.",
+      "words": [
+        {
+          "w": "keeping",
+          "s": 51.85,
+          "e": 52.31,
+          "c": 0.999295
+        },
+        {
+          "w": "us",
+          "s": 52.31,
+          "e": 52.44,
+          "c": 0.999743
+        },
+        {
+          "w": "going",
+          "s": 52.44,
+          "e": 52.77,
+          "c": 0.999811
+        },
+        {
+          "w": "during",
+          "s": 52.77,
+          "e": 53.17,
+          "c": 0.976721
+        },
+        {
+          "w": "the",
+          "s": 53.17,
+          "e": 53.37,
+          "c": 0.99855
+        },
+        {
+          "w": "global",
+          "s": 53.37,
+          "e": 53.77,
+          "c": 0.997122
+        },
+        {
+          "w": "pandemic",
+          "s": 53.77,
+          "e": 54.3,
+          "c": 0.999542
+        },
+        {
+          "w": "and",
+          "s": 54.3,
+          "e": 54.49,
+          "c": 0.45002
+        },
+        {
+          "w": "I",
+          "s": 54.55,
+          "e": 54.56,
+          "c": 0.895407
+        },
+        {
+          "w": "thank",
+          "s": 54.56,
+          "e": 54.89,
+          "c": 0.994368
+        },
+        {
+          "w": "them",
+          "s": 54.89,
+          "e": 55.19,
+          "c": 0.999026
+        },
+        {
+          "w": "and",
+          "s": 55.22,
+          "e": 55.36,
+          "c": 0.926123
+        },
+        {
+          "w": "all",
+          "s": 55.36,
+          "e": 55.52,
+          "c": 0.99731
+        },
+        {
+          "w": "the",
+          "s": 55.52,
+          "e": 55.68,
+          "c": 0.985302
+        },
+        {
+          "w": "food",
+          "s": 55.68,
+          "e": 55.9,
+          "c": 0.968415
+        },
+        {
+          "w": "producers",
+          "s": 55.9,
+          "e": 56.4,
+          "c": 0.991234
+        },
+        {
+          "w": "who",
+          "s": 56.4,
+          "e": 56.64,
+          "c": 0.94042
+        },
+        {
+          "w": "participated.",
+          "s": 56.64,
+          "e": 57.56,
+          "c": 0.629578
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 57.57,
+      "end_s": 57.66,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "To",
+      "words": [
+        {
+          "w": "To",
+          "s": 57.568,
+          "e": 57.658,
+          "c": 0.871227
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 57.75,
+      "end_s": 64.12,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the doctors, nurses, and first responders throughout our state, thank you for all you do. Thank you for keeping",
+      "words": [
+        {
+          "w": "the",
+          "s": 57.748,
+          "e": 57.888,
+          "c": 0.997299
+        },
+        {
+          "w": "doctors,",
+          "s": 57.888,
+          "e": 58.468,
+          "c": 0.979512
+        },
+        {
+          "w": "nurses,",
+          "s": 58.478,
+          "e": 59.008,
+          "c": 0.534293
+        },
+        {
+          "w": "and",
+          "s": 59.018,
+          "e": 59.178,
+          "c": 0.973449
+        },
+        {
+          "w": "first",
+          "s": 59.198,
+          "e": 59.458,
+          "c": 0.991521
+        },
+        {
+          "w": "responders",
+          "s": 59.458,
+          "e": 59.998,
+          "c": 0.982988
+        },
+        {
+          "w": "throughout",
+          "s": 60.098,
+          "e": 60.328,
+          "c": 0.783512
+        },
+        {
+          "w": "our",
+          "s": 60.328,
+          "e": 60.408,
+          "c": 0.981172
+        },
+        {
+          "w": "state,",
+          "s": 60.408,
+          "e": 61.228,
+          "c": 0.639844
+        },
+        {
+          "w": "thank",
+          "s": 61.228,
+          "e": 61.628,
+          "c": 0.923625
+        },
+        {
+          "w": "you",
+          "s": 61.628,
+          "e": 61.868,
+          "c": 0.997598
+        },
+        {
+          "w": "for",
+          "s": 61.868,
+          "e": 62.108,
+          "c": 0.988333
+        },
+        {
+          "w": "all",
+          "s": 62.108,
+          "e": 62.348,
+          "c": 0.998894
+        },
+        {
+          "w": "you",
+          "s": 62.348,
+          "e": 62.568,
+          "c": 0.994169
+        },
+        {
+          "w": "do.",
+          "s": 62.588,
+          "e": 63.028,
+          "c": 0.927978
+        },
+        {
+          "w": "Thank",
+          "s": 63.028,
+          "e": 63.338,
+          "c": 0.998504
+        },
+        {
+          "w": "you",
+          "s": 63.338,
+          "e": 63.518,
+          "c": 0.998664
+        },
+        {
+          "w": "for",
+          "s": 63.518,
+          "e": 63.688,
+          "c": 0.999098
+        },
+        {
+          "w": "keeping",
+          "s": 63.688,
+          "e": 64.118,
+          "c": 0.99919
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 64.13,
+      "end_s": 70.47,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "us healthy. Thank you for keeping us safe and giving us the confidence that we need to move forward.",
+      "words": [
+        {
+          "w": "us",
+          "s": 64.128,
+          "e": 64.248,
+          "c": 0.999228
+        },
+        {
+          "w": "healthy.",
+          "s": 64.248,
+          "e": 64.888,
+          "c": 0.842279
+        },
+        {
+          "w": "Thank",
+          "s": 64.908,
+          "e": 65.278,
+          "c": 0.998386
+        },
+        {
+          "w": "you",
+          "s": 65.278,
+          "e": 65.498,
+          "c": 0.999327
+        },
+        {
+          "w": "for",
+          "s": 65.498,
+          "e": 65.718,
+          "c": 0.999115
+        },
+        {
+          "w": "keeping",
+          "s": 65.718,
+          "e": 66.238,
+          "c": 0.999142
+        },
+        {
+          "w": "us",
+          "s": 66.268,
+          "e": 66.388,
+          "c": 0.998542
+        },
+        {
+          "w": "safe",
+          "s": 66.388,
+          "e": 66.708,
+          "c": 0.999424
+        },
+        {
+          "w": "and",
+          "s": 66.708,
+          "e": 66.908,
+          "c": 0.551324
+        },
+        {
+          "w": "giving",
+          "s": 66.908,
+          "e": 67.268,
+          "c": 0.934152
+        },
+        {
+          "w": "us",
+          "s": 67.268,
+          "e": 67.448,
+          "c": 0.98528
+        },
+        {
+          "w": "the",
+          "s": 67.448,
+          "e": 67.598,
+          "c": 0.896469
+        },
+        {
+          "w": "confidence",
+          "s": 67.598,
+          "e": 68.108,
+          "c": 0.989034
+        },
+        {
+          "w": "that",
+          "s": 68.108,
+          "e": 68.218,
+          "c": 0.762617
+        },
+        {
+          "w": "we",
+          "s": 68.218,
+          "e": 68.348,
+          "c": 0.987189
+        },
+        {
+          "w": "need",
+          "s": 68.348,
+          "e": 68.628,
+          "c": 0.989049
+        },
+        {
+          "w": "to",
+          "s": 68.628,
+          "e": 68.858,
+          "c": 0.984902
+        },
+        {
+          "w": "move",
+          "s": 68.858,
+          "e": 69.278,
+          "c": 0.98057
+        },
+        {
+          "w": "forward.",
+          "s": 69.368,
+          "e": 70.468,
+          "c": 0.990442
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 70.47,
+      "end_s": 82.91,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Hi, my name is Chris Bowler. I am the CEO of Creminelli Fine Meats. And Creminelli Fine Meats dry cures Italian charcuterie products like salami,",
+      "words": [
+        {
+          "w": "Hi,",
+          "s": 70.468,
+          "e": 70.858,
+          "c": 0.684641
+        },
+        {
+          "w": "my",
+          "s": 70.858,
+          "e": 71.058,
+          "c": 0.988003
+        },
+        {
+          "w": "name",
+          "s": 71.058,
+          "e": 71.388,
+          "c": 0.999638
+        },
+        {
+          "w": "is",
+          "s": 71.498,
+          "e": 71.658,
+          "c": 0.998515
+        },
+        {
+          "w": "Chris",
+          "s": 71.658,
+          "e": 72.118,
+          "c": 0.966471
+        },
+        {
+          "w": "Bowler.",
+          "s": 72.158,
+          "e": 73.068,
+          "c": 0.591265
+        },
+        {
+          "w": "I",
+          "s": 73.068,
+          "e": 73.148,
+          "c": 0.999651
+        },
+        {
+          "w": "am",
+          "s": 73.148,
+          "e": 73.308,
+          "c": 0.994182
+        },
+        {
+          "w": "the",
+          "s": 73.308,
+          "e": 73.558,
+          "c": 0.995285
+        },
+        {
+          "w": "CEO",
+          "s": 73.558,
+          "e": 73.808,
+          "c": 0.99643
+        },
+        {
+          "w": "of",
+          "s": 73.808,
+          "e": 73.968,
+          "c": 0.999512
+        },
+        {
+          "w": "Creminelli",
+          "s": 73.968,
+          "e": 74.768,
+          "c": 0.586225
+        },
+        {
+          "w": "Fine",
+          "s": 74.768,
+          "e": 75.098,
+          "c": 0.97791
+        },
+        {
+          "w": "Meats.",
+          "s": 75.098,
+          "e": 75.568,
+          "c": 0.486659
+        },
+        {
+          "w": "And",
+          "s": 75.568,
+          "e": 75.978,
+          "c": 0.87461
+        },
+        {
+          "w": "Creminelli",
+          "s": 75.998,
+          "e": 77.348,
+          "c": 0.910087
+        },
+        {
+          "w": "Fine",
+          "s": 77.348,
+          "e": 77.898,
+          "c": 0.983732
+        },
+        {
+          "w": "Meats",
+          "s": 77.898,
+          "e": 78.628,
+          "c": 0.998713
+        },
+        {
+          "w": "dry",
+          "s": 78.628,
+          "e": 79.018,
+          "c": 0.899879
+        },
+        {
+          "w": "cures",
+          "s": 79.018,
+          "e": 79.708,
+          "c": 0.927741
+        },
+        {
+          "w": "Italian",
+          "s": 79.708,
+          "e": 80.208,
+          "c": 0.976663
+        },
+        {
+          "w": "charcuterie",
+          "s": 80.208,
+          "e": 80.978,
+          "c": 0.971173
+        },
+        {
+          "w": "products",
+          "s": 80.978,
+          "e": 81.568,
+          "c": 0.996595
+        },
+        {
+          "w": "like",
+          "s": 81.568,
+          "e": 82.098,
+          "c": 0.907056
+        },
+        {
+          "w": "salami,",
+          "s": 82.098,
+          "e": 82.908,
+          "c": 0.768258
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 82.91,
+      "end_s": 107.39,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "prosciutto and pancetta and other wonderful specialty food products of Italian origin and we do that right here in Salt Lake City, Utah. It's a unique year everything is a little bit different this year and we're glad that we're able to do something in celebration of Utah's food and it feels all the more meaningful to do it in celebration and in gratitude of our frontline workers.",
+      "words": [
+        {
+          "w": "prosciutto",
+          "s": 82.912,
+          "e": 83.622,
+          "c": 0.545177
+        },
+        {
+          "w": "and",
+          "s": 83.642,
+          "e": 83.842,
+          "c": 0.818872
+        },
+        {
+          "w": "pancetta",
+          "s": 83.842,
+          "e": 84.402,
+          "c": 0.954062
+        },
+        {
+          "w": "and",
+          "s": 84.412,
+          "e": 84.622,
+          "c": 0.967445
+        },
+        {
+          "w": "other",
+          "s": 84.622,
+          "e": 85.032,
+          "c": 0.997466
+        },
+        {
+          "w": "wonderful",
+          "s": 85.032,
+          "e": 85.932,
+          "c": 0.95048
+        },
+        {
+          "w": "specialty",
+          "s": 85.932,
+          "e": 86.332,
+          "c": 0.902696
+        },
+        {
+          "w": "food",
+          "s": 86.332,
+          "e": 86.512,
+          "c": 0.987585
+        },
+        {
+          "w": "products",
+          "s": 86.512,
+          "e": 87.312,
+          "c": 0.978643
+        },
+        {
+          "w": "of",
+          "s": 87.312,
+          "e": 87.672,
+          "c": 0.936455
+        },
+        {
+          "w": "Italian",
+          "s": 87.672,
+          "e": 88.162,
+          "c": 0.976392
+        },
+        {
+          "w": "origin",
+          "s": 88.212,
+          "e": 88.602,
+          "c": 0.992201
+        },
+        {
+          "w": "and",
+          "s": 88.602,
+          "e": 88.792,
+          "c": 0.588898
+        },
+        {
+          "w": "we",
+          "s": 88.802,
+          "e": 88.922,
+          "c": 0.99934
+        },
+        {
+          "w": "do",
+          "s": 88.952,
+          "e": 89.092,
+          "c": 0.999235
+        },
+        {
+          "w": "that",
+          "s": 89.092,
+          "e": 89.372,
+          "c": 0.999683
+        },
+        {
+          "w": "right",
+          "s": 89.372,
+          "e": 89.732,
+          "c": 0.999016
+        },
+        {
+          "w": "here",
+          "s": 89.732,
+          "e": 90.012,
+          "c": 0.999565
+        },
+        {
+          "w": "in",
+          "s": 90.012,
+          "e": 90.152,
+          "c": 0.990352
+        },
+        {
+          "w": "Salt",
+          "s": 90.152,
+          "e": 90.432,
+          "c": 0.97444
+        },
+        {
+          "w": "Lake",
+          "s": 90.432,
+          "e": 90.712,
+          "c": 0.997957
+        },
+        {
+          "w": "City,",
+          "s": 90.712,
+          "e": 91.132,
+          "c": 0.674593
+        },
+        {
+          "w": "Utah.",
+          "s": 91.132,
+          "e": 91.702,
+          "c": 0.908916
+        },
+        {
+          "w": "It's",
+          "s": 91.702,
+          "e": 91.952,
+          "c": 0.78847
+        },
+        {
+          "w": "a",
+          "s": 91.952,
+          "e": 92.022,
+          "c": 0.997857
+        },
+        {
+          "w": "unique",
+          "s": 92.032,
+          "e": 92.322,
+          "c": 0.925925
+        },
+        {
+          "w": "year",
+          "s": 92.332,
+          "e": 92.552,
+          "c": 0.998877
+        },
+        {
+          "w": "everything",
+          "s": 92.562,
+          "e": 93.122,
+          "c": 0.509903
+        },
+        {
+          "w": "is",
+          "s": 93.122,
+          "e": 93.232,
+          "c": 0.99756
+        },
+        {
+          "w": "a",
+          "s": 93.232,
+          "e": 93.282,
+          "c": 0.999762
+        },
+        {
+          "w": "little",
+          "s": 93.282,
+          "e": 93.572,
+          "c": 0.999573
+        },
+        {
+          "w": "bit",
+          "s": 93.612,
+          "e": 93.792,
+          "c": 0.999489
+        },
+        {
+          "w": "different",
+          "s": 93.792,
+          "e": 94.292,
+          "c": 0.999733
+        },
+        {
+          "w": "this",
+          "s": 94.302,
+          "e": 94.522,
+          "c": 0.994968
+        },
+        {
+          "w": "year",
+          "s": 94.522,
+          "e": 94.792,
+          "c": 0.997137
+        },
+        {
+          "w": "and",
+          "s": 94.792,
+          "e": 95.112,
+          "c": 0.958111
+        },
+        {
+          "w": "we're",
+          "s": 95.112,
+          "e": 95.642,
+          "c": 0.996413
+        },
+        {
+          "w": "glad",
+          "s": 95.642,
+          "e": 96.072,
+          "c": 0.998866
+        },
+        {
+          "w": "that",
+          "s": 96.072,
+          "e": 96.532,
+          "c": 0.997672
+        },
+        {
+          "w": "we're",
+          "s": 96.532,
+          "e": 96.912,
+          "c": 0.956552
+        },
+        {
+          "w": "able",
+          "s": 96.912,
+          "e": 97.222,
+          "c": 0.999754
+        },
+        {
+          "w": "to",
+          "s": 97.222,
+          "e": 97.372,
+          "c": 0.999609
+        },
+        {
+          "w": "do",
+          "s": 97.372,
+          "e": 97.522,
+          "c": 0.999729
+        },
+        {
+          "w": "something",
+          "s": 97.522,
+          "e": 98.222,
+          "c": 0.999651
+        },
+        {
+          "w": "in",
+          "s": 98.222,
+          "e": 98.372,
+          "c": 0.99504
+        },
+        {
+          "w": "celebration",
+          "s": 98.372,
+          "e": 99.232,
+          "c": 0.995885
+        },
+        {
+          "w": "of",
+          "s": 99.232,
+          "e": 99.382,
+          "c": 0.9976
+        },
+        {
+          "w": "Utah's",
+          "s": 99.382,
+          "e": 99.842,
+          "c": 0.978218
+        },
+        {
+          "w": "food",
+          "s": 99.842,
+          "e": 100.152,
+          "c": 0.994898
+        },
+        {
+          "w": "and",
+          "s": 100.152,
+          "e": 100.382,
+          "c": 0.956674
+        },
+        {
+          "w": "it",
+          "s": 100.382,
+          "e": 100.592,
+          "c": 0.997668
+        },
+        {
+          "w": "feels",
+          "s": 100.612,
+          "e": 101.422,
+          "c": 0.987229
+        },
+        {
+          "w": "all",
+          "s": 101.432,
+          "e": 101.682,
+          "c": 0.999123
+        },
+        {
+          "w": "the",
+          "s": 101.682,
+          "e": 101.922,
+          "c": 0.997438
+        },
+        {
+          "w": "more",
+          "s": 101.972,
+          "e": 102.262,
+          "c": 0.999825
+        },
+        {
+          "w": "meaningful",
+          "s": 102.262,
+          "e": 103.092,
+          "c": 0.999573
+        },
+        {
+          "w": "to",
+          "s": 103.092,
+          "e": 103.272,
+          "c": 0.997584
+        },
+        {
+          "w": "do",
+          "s": 103.272,
+          "e": 103.412,
+          "c": 0.998159
+        },
+        {
+          "w": "it",
+          "s": 103.462,
+          "e": 103.612,
+          "c": 0.997727
+        },
+        {
+          "w": "in",
+          "s": 103.612,
+          "e": 103.782,
+          "c": 0.998795
+        },
+        {
+          "w": "celebration",
+          "s": 103.782,
+          "e": 104.712,
+          "c": 0.997959
+        },
+        {
+          "w": "and",
+          "s": 104.712,
+          "e": 104.952,
+          "c": 0.983147
+        },
+        {
+          "w": "in",
+          "s": 104.962,
+          "e": 105.122,
+          "c": 0.870977
+        },
+        {
+          "w": "gratitude",
+          "s": 105.142,
+          "e": 105.892,
+          "c": 0.996797
+        },
+        {
+          "w": "of",
+          "s": 105.892,
+          "e": 106.062,
+          "c": 0.986818
+        },
+        {
+          "w": "our",
+          "s": 106.062,
+          "e": 106.352,
+          "c": 0.99721
+        },
+        {
+          "w": "frontline",
+          "s": 106.352,
+          "e": 106.842,
+          "c": 0.881578
+        },
+        {
+          "w": "workers.",
+          "s": 106.892,
+          "e": 107.392,
+          "c": 0.970096
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 107.39,
+      "end_s": 112.93,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Hi, I'm Rowena Montoya, the owner of Julie Ann Carmel's. We make over 40 different",
+      "words": [
+        {
+          "w": "Hi,",
+          "s": 107.392,
+          "e": 107.612,
+          "c": 0.459192
+        },
+        {
+          "w": "I'm",
+          "s": 107.672,
+          "e": 107.882,
+          "c": 0.982757
+        },
+        {
+          "w": "Rowena",
+          "s": 107.902,
+          "e": 108.322,
+          "c": 0.98175
+        },
+        {
+          "w": "Montoya,",
+          "s": 108.382,
+          "e": 108.982,
+          "c": 0.522599
+        },
+        {
+          "w": "the",
+          "s": 108.982,
+          "e": 109.212,
+          "c": 0.980393
+        },
+        {
+          "w": "owner",
+          "s": 109.212,
+          "e": 109.582,
+          "c": 0.992411
+        },
+        {
+          "w": "of",
+          "s": 109.582,
+          "e": 109.792,
+          "c": 0.991705
+        },
+        {
+          "w": "Julie",
+          "s": 109.792,
+          "e": 110.232,
+          "c": 0.375687
+        },
+        {
+          "w": "Ann",
+          "s": 110.232,
+          "e": 110.352,
+          "c": 0.368956
+        },
+        {
+          "w": "Carmel's.",
+          "s": 110.352,
+          "e": 111.382,
+          "c": 0.678772
+        },
+        {
+          "w": "We",
+          "s": 111.382,
+          "e": 111.652,
+          "c": 0.669844
+        },
+        {
+          "w": "make",
+          "s": 111.652,
+          "e": 111.872,
+          "c": 0.718399
+        },
+        {
+          "w": "over",
+          "s": 111.872,
+          "e": 112.092,
+          "c": 0.129826
+        },
+        {
+          "w": "40",
+          "s": 112.102,
+          "e": 112.422,
+          "c": 0.954512
+        },
+        {
+          "w": "different",
+          "s": 112.422,
+          "e": 112.932,
+          "c": 0.985675
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 112.93,
+      "end_s": 112.94,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "places",
+      "words": [
+        {
+          "w": "places",
+          "s": 112.932,
+          "e": 112.932,
+          "c": 0.344808
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 112.93,
+      "end_s": 134.75,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "flavors of caramel. We're a local company here in Salt Lake City, Utah. We use a local dairy. Our caramels are really fresh. There's no preservatives in it. We keep it really simple with five ingredients. Utah brings people together. You know, we are big into family. We love helping one another. You can't have a better cheerleader than someone in Utah.",
+      "words": [
+        {
+          "w": "flavors",
+          "s": 112.912,
+          "e": 113.352,
+          "c": 0.516989
+        },
+        {
+          "w": "of",
+          "s": 113.362,
+          "e": 113.492,
+          "c": 0.966105
+        },
+        {
+          "w": "caramel.",
+          "s": 113.492,
+          "e": 113.952,
+          "c": 0.655063
+        },
+        {
+          "w": "We're",
+          "s": 113.952,
+          "e": 114.332,
+          "c": 0.965642
+        },
+        {
+          "w": "a",
+          "s": 114.332,
+          "e": 114.392,
+          "c": 0.992657
+        },
+        {
+          "w": "local",
+          "s": 114.422,
+          "e": 114.792,
+          "c": 0.995507
+        },
+        {
+          "w": "company",
+          "s": 114.792,
+          "e": 115.372,
+          "c": 0.991357
+        },
+        {
+          "w": "here",
+          "s": 115.372,
+          "e": 115.672,
+          "c": 0.927191
+        },
+        {
+          "w": "in",
+          "s": 115.672,
+          "e": 115.792,
+          "c": 0.905201
+        },
+        {
+          "w": "Salt",
+          "s": 115.792,
+          "e": 115.982,
+          "c": 0.958348
+        },
+        {
+          "w": "Lake",
+          "s": 115.992,
+          "e": 116.192,
+          "c": 0.996394
+        },
+        {
+          "w": "City,",
+          "s": 116.192,
+          "e": 116.512,
+          "c": 0.936803
+        },
+        {
+          "w": "Utah.",
+          "s": 116.512,
+          "e": 117.172,
+          "c": 0.967176
+        },
+        {
+          "w": "We",
+          "s": 117.172,
+          "e": 117.412,
+          "c": 0.998207
+        },
+        {
+          "w": "use",
+          "s": 117.412,
+          "e": 117.772,
+          "c": 0.998454
+        },
+        {
+          "w": "a",
+          "s": 117.772,
+          "e": 117.892,
+          "c": 0.948326
+        },
+        {
+          "w": "local",
+          "s": 117.892,
+          "e": 118.482,
+          "c": 0.998548
+        },
+        {
+          "w": "dairy.",
+          "s": 118.482,
+          "e": 119.452,
+          "c": 0.492799
+        },
+        {
+          "w": "Our",
+          "s": 119.452,
+          "e": 119.682,
+          "c": 0.999226
+        },
+        {
+          "w": "caramels",
+          "s": 119.682,
+          "e": 120.292,
+          "c": 0.961667
+        },
+        {
+          "w": "are",
+          "s": 120.292,
+          "e": 120.522,
+          "c": 0.996841
+        },
+        {
+          "w": "really",
+          "s": 120.522,
+          "e": 120.982,
+          "c": 0.998066
+        },
+        {
+          "w": "fresh.",
+          "s": 120.982,
+          "e": 121.612,
+          "c": 0.951326
+        },
+        {
+          "w": "There's",
+          "s": 121.612,
+          "e": 121.972,
+          "c": 0.991961
+        },
+        {
+          "w": "no",
+          "s": 121.972,
+          "e": 122.062,
+          "c": 0.998622
+        },
+        {
+          "w": "preservatives",
+          "s": 122.082,
+          "e": 122.742,
+          "c": 0.997126
+        },
+        {
+          "w": "in",
+          "s": 122.742,
+          "e": 122.842,
+          "c": 0.989168
+        },
+        {
+          "w": "it.",
+          "s": 122.842,
+          "e": 122.972,
+          "c": 0.91543
+        },
+        {
+          "w": "We",
+          "s": 122.972,
+          "e": 123.072,
+          "c": 0.98296
+        },
+        {
+          "w": "keep",
+          "s": 123.072,
+          "e": 123.272,
+          "c": 0.999001
+        },
+        {
+          "w": "it",
+          "s": 123.272,
+          "e": 123.372,
+          "c": 0.990698
+        },
+        {
+          "w": "really",
+          "s": 123.372,
+          "e": 123.682,
+          "c": 0.997293
+        },
+        {
+          "w": "simple",
+          "s": 123.682,
+          "e": 124.002,
+          "c": 0.997191
+        },
+        {
+          "w": "with",
+          "s": 124.012,
+          "e": 124.302,
+          "c": 0.966379
+        },
+        {
+          "w": "five",
+          "s": 124.302,
+          "e": 124.592,
+          "c": 0.966767
+        },
+        {
+          "w": "ingredients.",
+          "s": 124.592,
+          "e": 125.632,
+          "c": 0.978435
+        },
+        {
+          "w": "Utah",
+          "s": 125.632,
+          "e": 126.032,
+          "c": 0.997575
+        },
+        {
+          "w": "brings",
+          "s": 126.032,
+          "e": 126.642,
+          "c": 0.989861
+        },
+        {
+          "w": "people",
+          "s": 126.642,
+          "e": 127.252,
+          "c": 0.999594
+        },
+        {
+          "w": "together.",
+          "s": 127.252,
+          "e": 128.392,
+          "c": 0.938256
+        },
+        {
+          "w": "You",
+          "s": 128.392,
+          "e": 128.572,
+          "c": 0.961867
+        },
+        {
+          "w": "know,",
+          "s": 128.572,
+          "e": 128.922,
+          "c": 0.933003
+        },
+        {
+          "w": "we",
+          "s": 128.932,
+          "e": 129.052,
+          "c": 0.996738
+        },
+        {
+          "w": "are",
+          "s": 129.052,
+          "e": 129.232,
+          "c": 0.998378
+        },
+        {
+          "w": "big",
+          "s": 129.232,
+          "e": 129.412,
+          "c": 0.993123
+        },
+        {
+          "w": "into",
+          "s": 129.412,
+          "e": 129.652,
+          "c": 0.995194
+        },
+        {
+          "w": "family.",
+          "s": 129.652,
+          "e": 130.252,
+          "c": 0.859919
+        },
+        {
+          "w": "We",
+          "s": 130.252,
+          "e": 130.382,
+          "c": 0.999289
+        },
+        {
+          "w": "love",
+          "s": 130.382,
+          "e": 130.642,
+          "c": 0.988474
+        },
+        {
+          "w": "helping",
+          "s": 130.642,
+          "e": 131.102,
+          "c": 0.999184
+        },
+        {
+          "w": "one",
+          "s": 131.102,
+          "e": 131.302,
+          "c": 0.999319
+        },
+        {
+          "w": "another.",
+          "s": 131.302,
+          "e": 131.992,
+          "c": 0.993231
+        },
+        {
+          "w": "You",
+          "s": 131.992,
+          "e": 132.132,
+          "c": 0.984649
+        },
+        {
+          "w": "can't",
+          "s": 132.132,
+          "e": 132.362,
+          "c": 0.998673
+        },
+        {
+          "w": "have",
+          "s": 132.362,
+          "e": 132.542,
+          "c": 0.999516
+        },
+        {
+          "w": "a",
+          "s": 132.542,
+          "e": 132.582,
+          "c": 0.995949
+        },
+        {
+          "w": "better",
+          "s": 132.582,
+          "e": 132.842,
+          "c": 0.998919
+        },
+        {
+          "w": "cheerleader",
+          "s": 132.852,
+          "e": 133.342,
+          "c": 0.993345
+        },
+        {
+          "w": "than",
+          "s": 133.392,
+          "e": 133.602,
+          "c": 0.509805
+        },
+        {
+          "w": "someone",
+          "s": 133.602,
+          "e": 133.962,
+          "c": 0.984977
+        },
+        {
+          "w": "in",
+          "s": 133.972,
+          "e": 134.142,
+          "c": 0.919267
+        },
+        {
+          "w": "Utah.",
+          "s": 134.142,
+          "e": 134.752,
+          "c": 0.99567
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 134.75,
+      "end_s": 135.32,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "- I'm",
+      "words": [
+        {
+          "w": "-",
+          "s": 134.752,
+          "e": 134.892,
+          "c": 0.83581
+        },
+        {
+          "w": "I'm",
+          "s": 134.892,
+          "e": 135.322,
+          "c": 0.996518
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 135.32,
+      "end_s": 137.81,
+      "speaker": "SPEAKER_12",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Alan Lauer. - I'm Chad",
+      "words": [
+        {
+          "w": "Alan",
+          "s": 135.322,
+          "e": 135.912,
+          "c": 0.623624
+        },
+        {
+          "w": "Lauer.",
+          "s": 135.912,
+          "e": 137.132,
+          "c": 0.668139
+        },
+        {
+          "w": "-",
+          "s": 137.132,
+          "e": 137.212,
+          "c": 0.969477
+        },
+        {
+          "w": "I'm",
+          "s": 137.212,
+          "e": 137.462,
+          "c": 0.999537
+        },
+        {
+          "w": "Chad",
+          "s": 137.462,
+          "e": 137.812,
+          "c": 0.972164
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 137.81,
+      "end_s": 141.97,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Lauer. We represent Lauer Family Foods in Richmond, Utah.",
+      "words": [
+        {
+          "w": "Lauer.",
+          "s": 137.812,
+          "e": 138.552,
+          "c": 0.987359
+        },
+        {
+          "w": "We",
+          "s": 138.552,
+          "e": 138.702,
+          "c": 0.914951
+        },
+        {
+          "w": "represent",
+          "s": 138.702,
+          "e": 139.402,
+          "c": 0.989034
+        },
+        {
+          "w": "Lauer",
+          "s": 139.402,
+          "e": 139.782,
+          "c": 0.906841
+        },
+        {
+          "w": "Family",
+          "s": 139.782,
+          "e": 140.252,
+          "c": 0.956645
+        },
+        {
+          "w": "Foods",
+          "s": 140.252,
+          "e": 140.672,
+          "c": 0.933879
+        },
+        {
+          "w": "in",
+          "s": 140.672,
+          "e": 140.802,
+          "c": 0.951139
+        },
+        {
+          "w": "Richmond,",
+          "s": 140.802,
+          "e": 141.472,
+          "c": 0.989885
+        },
+        {
+          "w": "Utah.",
+          "s": 141.472,
+          "e": 141.972,
+          "c": 0.982231
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 141.95,
+      "end_s": 168.51,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you know we're in the cache valley which is a beautiful valley here nestled in the northern part of the state with you know gorgeous mountains and it's green and it's it's lush and it's it's beautiful but not just the beauty um in this valley and not just the valley of the state of utah i think there's a sense of community a sense of unity especially here recently with the challenges that we've all been struggling with with covid",
+      "words": [
+        {
+          "w": "you",
+          "s": 141.952,
+          "e": 142.132,
+          "c": 0.172353
+        },
+        {
+          "w": "know",
+          "s": 142.132,
+          "e": 142.362,
+          "c": 0.998338
+        },
+        {
+          "w": "we're",
+          "s": 142.362,
+          "e": 142.652,
+          "c": 0.935688
+        },
+        {
+          "w": "in",
+          "s": 142.652,
+          "e": 142.772,
+          "c": 0.999773
+        },
+        {
+          "w": "the",
+          "s": 142.772,
+          "e": 142.952,
+          "c": 0.997328
+        },
+        {
+          "w": "cache",
+          "s": 142.952,
+          "e": 143.242,
+          "c": 0.698622
+        },
+        {
+          "w": "valley",
+          "s": 143.242,
+          "e": 143.592,
+          "c": 0.99419
+        },
+        {
+          "w": "which",
+          "s": 143.592,
+          "e": 143.882,
+          "c": 0.986147
+        },
+        {
+          "w": "is",
+          "s": 143.882,
+          "e": 144.002,
+          "c": 0.998155
+        },
+        {
+          "w": "a",
+          "s": 144.002,
+          "e": 144.102,
+          "c": 0.998087
+        },
+        {
+          "w": "beautiful",
+          "s": 144.112,
+          "e": 144.732,
+          "c": 0.947243
+        },
+        {
+          "w": "valley",
+          "s": 144.732,
+          "e": 145.142,
+          "c": 0.994732
+        },
+        {
+          "w": "here",
+          "s": 145.152,
+          "e": 145.392,
+          "c": 0.792046
+        },
+        {
+          "w": "nestled",
+          "s": 145.392,
+          "e": 145.872,
+          "c": 0.967829
+        },
+        {
+          "w": "in",
+          "s": 145.872,
+          "e": 145.952,
+          "c": 0.956678
+        },
+        {
+          "w": "the",
+          "s": 145.952,
+          "e": 146.032,
+          "c": 0.921147
+        },
+        {
+          "w": "northern",
+          "s": 146.032,
+          "e": 146.432,
+          "c": 0.887377
+        },
+        {
+          "w": "part",
+          "s": 146.432,
+          "e": 146.702,
+          "c": 0.99958
+        },
+        {
+          "w": "of",
+          "s": 146.702,
+          "e": 146.832,
+          "c": 0.999889
+        },
+        {
+          "w": "the",
+          "s": 146.832,
+          "e": 147.032,
+          "c": 0.99984
+        },
+        {
+          "w": "state",
+          "s": 147.032,
+          "e": 147.372,
+          "c": 0.999142
+        },
+        {
+          "w": "with",
+          "s": 147.372,
+          "e": 147.642,
+          "c": 0.997248
+        },
+        {
+          "w": "you",
+          "s": 147.642,
+          "e": 147.842,
+          "c": 0.978543
+        },
+        {
+          "w": "know",
+          "s": 147.842,
+          "e": 148.102,
+          "c": 0.999863
+        },
+        {
+          "w": "gorgeous",
+          "s": 148.102,
+          "e": 148.662,
+          "c": 0.999152
+        },
+        {
+          "w": "mountains",
+          "s": 148.662,
+          "e": 149.272,
+          "c": 0.999592
+        },
+        {
+          "w": "and",
+          "s": 149.272,
+          "e": 149.472,
+          "c": 0.993142
+        },
+        {
+          "w": "it's",
+          "s": 149.472,
+          "e": 149.702,
+          "c": 0.977937
+        },
+        {
+          "w": "green",
+          "s": 149.732,
+          "e": 150.072,
+          "c": 0.995395
+        },
+        {
+          "w": "and",
+          "s": 150.072,
+          "e": 150.272,
+          "c": 0.995554
+        },
+        {
+          "w": "it's",
+          "s": 150.272,
+          "e": 150.532,
+          "c": 0.998881
+        },
+        {
+          "w": "it's",
+          "s": 150.532,
+          "e": 150.912,
+          "c": 0.432623
+        },
+        {
+          "w": "lush",
+          "s": 150.912,
+          "e": 151.232,
+          "c": 0.807732
+        },
+        {
+          "w": "and",
+          "s": 151.232,
+          "e": 151.392,
+          "c": 0.766794
+        },
+        {
+          "w": "it's",
+          "s": 151.392,
+          "e": 151.632,
+          "c": 0.93509
+        },
+        {
+          "w": "it's",
+          "s": 151.632,
+          "e": 151.872,
+          "c": 0.761322
+        },
+        {
+          "w": "beautiful",
+          "s": 151.872,
+          "e": 152.572,
+          "c": 0.999851
+        },
+        {
+          "w": "but",
+          "s": 152.572,
+          "e": 152.802,
+          "c": 0.993731
+        },
+        {
+          "w": "not",
+          "s": 152.802,
+          "e": 153.022,
+          "c": 0.999922
+        },
+        {
+          "w": "just",
+          "s": 153.032,
+          "e": 153.342,
+          "c": 0.999977
+        },
+        {
+          "w": "the",
+          "s": 153.342,
+          "e": 153.572,
+          "c": 0.999802
+        },
+        {
+          "w": "beauty",
+          "s": 153.572,
+          "e": 154.032,
+          "c": 0.999826
+        },
+        {
+          "w": "um",
+          "s": 154.042,
+          "e": 154.192,
+          "c": 0.607698
+        },
+        {
+          "w": "in",
+          "s": 154.192,
+          "e": 154.342,
+          "c": 0.999674
+        },
+        {
+          "w": "this",
+          "s": 154.342,
+          "e": 154.652,
+          "c": 0.999969
+        },
+        {
+          "w": "valley",
+          "s": 154.652,
+          "e": 155.112,
+          "c": 0.999138
+        },
+        {
+          "w": "and",
+          "s": 155.122,
+          "e": 155.352,
+          "c": 0.999049
+        },
+        {
+          "w": "not",
+          "s": 155.352,
+          "e": 155.582,
+          "c": 0.999958
+        },
+        {
+          "w": "just",
+          "s": 155.582,
+          "e": 155.892,
+          "c": 0.9989
+        },
+        {
+          "w": "the",
+          "s": 155.892,
+          "e": 156.122,
+          "c": 0.99134
+        },
+        {
+          "w": "valley",
+          "s": 156.122,
+          "e": 156.592,
+          "c": 0.97966
+        },
+        {
+          "w": "of",
+          "s": 156.592,
+          "e": 156.742,
+          "c": 0.925496
+        },
+        {
+          "w": "the",
+          "s": 156.742,
+          "e": 156.972,
+          "c": 0.992617
+        },
+        {
+          "w": "state",
+          "s": 156.972,
+          "e": 157.472,
+          "c": 0.985788
+        },
+        {
+          "w": "of",
+          "s": 157.472,
+          "e": 157.632,
+          "c": 0.817975
+        },
+        {
+          "w": "utah",
+          "s": 157.632,
+          "e": 158.012,
+          "c": 0.968886
+        },
+        {
+          "w": "i",
+          "s": 158.012,
+          "e": 158.102,
+          "c": 0.995194
+        },
+        {
+          "w": "think",
+          "s": 158.102,
+          "e": 158.582,
+          "c": 0.999886
+        },
+        {
+          "w": "there's",
+          "s": 158.582,
+          "e": 159.252,
+          "c": 0.99898
+        },
+        {
+          "w": "a",
+          "s": 159.252,
+          "e": 159.342,
+          "c": 0.999996
+        },
+        {
+          "w": "sense",
+          "s": 159.342,
+          "e": 159.822,
+          "c": 0.999958
+        },
+        {
+          "w": "of",
+          "s": 159.822,
+          "e": 160.012,
+          "c": 0.999985
+        },
+        {
+          "w": "community",
+          "s": 160.012,
+          "e": 160.872,
+          "c": 0.999645
+        },
+        {
+          "w": "a",
+          "s": 160.872,
+          "e": 160.972,
+          "c": 0.999397
+        },
+        {
+          "w": "sense",
+          "s": 160.972,
+          "e": 161.452,
+          "c": 0.999966
+        },
+        {
+          "w": "of",
+          "s": 161.452,
+          "e": 161.642,
+          "c": 0.999983
+        },
+        {
+          "w": "unity",
+          "s": 161.642,
+          "e": 162.172,
+          "c": 0.997546
+        },
+        {
+          "w": "especially",
+          "s": 162.182,
+          "e": 163.622,
+          "c": 0.729734
+        },
+        {
+          "w": "here",
+          "s": 163.622,
+          "e": 163.872,
+          "c": 0.922099
+        },
+        {
+          "w": "recently",
+          "s": 163.872,
+          "e": 164.352,
+          "c": 0.988878
+        },
+        {
+          "w": "with",
+          "s": 164.352,
+          "e": 164.642,
+          "c": 0.999968
+        },
+        {
+          "w": "the",
+          "s": 164.642,
+          "e": 164.862,
+          "c": 0.999989
+        },
+        {
+          "w": "challenges",
+          "s": 164.862,
+          "e": 165.602,
+          "c": 0.999699
+        },
+        {
+          "w": "that",
+          "s": 165.602,
+          "e": 165.892,
+          "c": 0.999973
+        },
+        {
+          "w": "we've",
+          "s": 165.892,
+          "e": 166.252,
+          "c": 0.999868
+        },
+        {
+          "w": "all",
+          "s": 166.252,
+          "e": 166.472,
+          "c": 0.999786
+        },
+        {
+          "w": "been",
+          "s": 166.472,
+          "e": 166.762,
+          "c": 0.999895
+        },
+        {
+          "w": "struggling",
+          "s": 166.762,
+          "e": 167.502,
+          "c": 0.999846
+        },
+        {
+          "w": "with",
+          "s": 167.502,
+          "e": 167.792,
+          "c": 0.99996
+        },
+        {
+          "w": "with",
+          "s": 167.792,
+          "e": 168.082,
+          "c": 0.998232
+        },
+        {
+          "w": "covid",
+          "s": 168.082,
+          "e": 168.512,
+          "c": 0.606801
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 168.49,
+      "end_s": 181.97,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "19 and the effects of that you know you kind of get the feeling that we're all in this together you know so we're we're not just a community a state we're a family and you know i feel that here in in the state of utah",
+      "words": [
+        {
+          "w": "19",
+          "s": 168.493,
+          "e": 168.963,
+          "c": 0.654061
+        },
+        {
+          "w": "and",
+          "s": 168.963,
+          "e": 169.203,
+          "c": 0.875746
+        },
+        {
+          "w": "the",
+          "s": 169.203,
+          "e": 169.443,
+          "c": 0.973589
+        },
+        {
+          "w": "effects",
+          "s": 169.443,
+          "e": 169.993,
+          "c": 0.98448
+        },
+        {
+          "w": "of",
+          "s": 169.993,
+          "e": 170.153,
+          "c": 0.980778
+        },
+        {
+          "w": "that",
+          "s": 170.153,
+          "e": 170.493,
+          "c": 0.997069
+        },
+        {
+          "w": "you",
+          "s": 170.493,
+          "e": 170.653,
+          "c": 0.472543
+        },
+        {
+          "w": "know",
+          "s": 170.663,
+          "e": 170.893,
+          "c": 0.884269
+        },
+        {
+          "w": "you",
+          "s": 170.893,
+          "e": 171.003,
+          "c": 0.7919
+        },
+        {
+          "w": "kind",
+          "s": 171.003,
+          "e": 171.153,
+          "c": 0.903582
+        },
+        {
+          "w": "of",
+          "s": 171.153,
+          "e": 171.223,
+          "c": 0.993568
+        },
+        {
+          "w": "get",
+          "s": 171.223,
+          "e": 171.333,
+          "c": 0.952071
+        },
+        {
+          "w": "the",
+          "s": 171.333,
+          "e": 171.443,
+          "c": 0.837956
+        },
+        {
+          "w": "feeling",
+          "s": 171.443,
+          "e": 171.703,
+          "c": 0.996829
+        },
+        {
+          "w": "that",
+          "s": 171.703,
+          "e": 171.853,
+          "c": 0.990106
+        },
+        {
+          "w": "we're",
+          "s": 171.853,
+          "e": 172.033,
+          "c": 0.98156
+        },
+        {
+          "w": "all",
+          "s": 172.033,
+          "e": 172.173,
+          "c": 0.994666
+        },
+        {
+          "w": "in",
+          "s": 172.173,
+          "e": 172.353,
+          "c": 0.968908
+        },
+        {
+          "w": "this",
+          "s": 172.353,
+          "e": 172.553,
+          "c": 0.941129
+        },
+        {
+          "w": "together",
+          "s": 172.553,
+          "e": 172.973,
+          "c": 0.912206
+        },
+        {
+          "w": "you",
+          "s": 172.973,
+          "e": 173.633,
+          "c": 0.527611
+        },
+        {
+          "w": "know",
+          "s": 173.633,
+          "e": 173.793,
+          "c": 0.988201
+        },
+        {
+          "w": "so",
+          "s": 173.793,
+          "e": 173.993,
+          "c": 0.571961
+        },
+        {
+          "w": "we're",
+          "s": 173.993,
+          "e": 174.213,
+          "c": 0.876446
+        },
+        {
+          "w": "we're",
+          "s": 174.213,
+          "e": 174.813,
+          "c": 0.529518
+        },
+        {
+          "w": "not",
+          "s": 174.813,
+          "e": 174.953,
+          "c": 0.940988
+        },
+        {
+          "w": "just",
+          "s": 174.953,
+          "e": 175.173,
+          "c": 0.868961
+        },
+        {
+          "w": "a",
+          "s": 175.173,
+          "e": 175.353,
+          "c": 0.481782
+        },
+        {
+          "w": "community",
+          "s": 175.353,
+          "e": 176.483,
+          "c": 0.677469
+        },
+        {
+          "w": "a",
+          "s": 176.483,
+          "e": 176.603,
+          "c": 0.79681
+        },
+        {
+          "w": "state",
+          "s": 176.603,
+          "e": 177.253,
+          "c": 0.872193
+        },
+        {
+          "w": "we're",
+          "s": 177.253,
+          "e": 177.653,
+          "c": 0.775768
+        },
+        {
+          "w": "a",
+          "s": 177.653,
+          "e": 177.733,
+          "c": 0.957057
+        },
+        {
+          "w": "family",
+          "s": 177.733,
+          "e": 178.223,
+          "c": 0.993606
+        },
+        {
+          "w": "and",
+          "s": 178.223,
+          "e": 178.423,
+          "c": 0.853214
+        },
+        {
+          "w": "you",
+          "s": 178.423,
+          "e": 178.613,
+          "c": 0.894543
+        },
+        {
+          "w": "know",
+          "s": 178.613,
+          "e": 178.893,
+          "c": 0.999289
+        },
+        {
+          "w": "i",
+          "s": 178.893,
+          "e": 178.983,
+          "c": 0.213519
+        },
+        {
+          "w": "feel",
+          "s": 178.983,
+          "e": 179.373,
+          "c": 0.994509
+        },
+        {
+          "w": "that",
+          "s": 179.373,
+          "e": 179.773,
+          "c": 0.9953
+        },
+        {
+          "w": "here",
+          "s": 179.773,
+          "e": 180.273,
+          "c": 0.949224
+        },
+        {
+          "w": "in",
+          "s": 180.273,
+          "e": 180.453,
+          "c": 0.923136
+        },
+        {
+          "w": "in",
+          "s": 180.453,
+          "e": 180.643,
+          "c": 0.682107
+        },
+        {
+          "w": "the",
+          "s": 180.643,
+          "e": 180.933,
+          "c": 0.990193
+        },
+        {
+          "w": "state",
+          "s": 180.933,
+          "e": 181.423,
+          "c": 0.97797
+        },
+        {
+          "w": "of",
+          "s": 181.423,
+          "e": 181.633,
+          "c": 0.993023
+        },
+        {
+          "w": "utah",
+          "s": 181.633,
+          "e": 181.973,
+          "c": 0.94798
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 181.97,
+      "end_s": 185.24,
+      "speaker": "SPEAKER_16",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "My name is Jason Glade. I'm the president",
+      "words": [
+        {
+          "w": "My",
+          "s": 181.973,
+          "e": 182.173,
+          "c": 0.841784
+        },
+        {
+          "w": "name",
+          "s": 182.173,
+          "e": 182.583,
+          "c": 0.980381
+        },
+        {
+          "w": "is",
+          "s": 182.583,
+          "e": 182.773,
+          "c": 0.999201
+        },
+        {
+          "w": "Jason",
+          "s": 182.783,
+          "e": 183.303,
+          "c": 0.689506
+        },
+        {
+          "w": "Glade.",
+          "s": 183.303,
+          "e": 184.083,
+          "c": 0.457757
+        },
+        {
+          "w": "I'm",
+          "s": 184.083,
+          "e": 184.303,
+          "c": 0.974825
+        },
+        {
+          "w": "the",
+          "s": 184.303,
+          "e": 184.523,
+          "c": 0.975013
+        },
+        {
+          "w": "president",
+          "s": 184.533,
+          "e": 185.243,
+          "c": 0.798441
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 185.24,
+      "end_s": 195.81,
+      "speaker": "SPEAKER_17",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "CEO of Taffy Town Taffy Town is a fourth generation family business that makes saltwater taffy and We make the best in the country. We're proud of it",
+      "words": [
+        {
+          "w": "CEO",
+          "s": 185.243,
+          "e": 185.473,
+          "c": 0.576387
+        },
+        {
+          "w": "of",
+          "s": 185.473,
+          "e": 185.623,
+          "c": 0.996354
+        },
+        {
+          "w": "Taffy",
+          "s": 185.623,
+          "e": 185.993,
+          "c": 0.804012
+        },
+        {
+          "w": "Town",
+          "s": 185.993,
+          "e": 186.393,
+          "c": 0.796034
+        },
+        {
+          "w": "Taffy",
+          "s": 186.393,
+          "e": 186.793,
+          "c": 0.992752
+        },
+        {
+          "w": "Town",
+          "s": 186.793,
+          "e": 187.123,
+          "c": 0.882911
+        },
+        {
+          "w": "is",
+          "s": 187.123,
+          "e": 187.283,
+          "c": 0.994053
+        },
+        {
+          "w": "a",
+          "s": 187.283,
+          "e": 187.353,
+          "c": 0.992138
+        },
+        {
+          "w": "fourth",
+          "s": 187.363,
+          "e": 187.853,
+          "c": 0.981899
+        },
+        {
+          "w": "generation",
+          "s": 187.853,
+          "e": 188.673,
+          "c": 0.622429
+        },
+        {
+          "w": "family",
+          "s": 188.673,
+          "e": 189.163,
+          "c": 0.966718
+        },
+        {
+          "w": "business",
+          "s": 189.163,
+          "e": 189.873,
+          "c": 0.994892
+        },
+        {
+          "w": "that",
+          "s": 189.873,
+          "e": 190.253,
+          "c": 0.859886
+        },
+        {
+          "w": "makes",
+          "s": 190.253,
+          "e": 190.733,
+          "c": 0.983558
+        },
+        {
+          "w": "saltwater",
+          "s": 190.733,
+          "e": 191.613,
+          "c": 0.70231
+        },
+        {
+          "w": "taffy",
+          "s": 191.613,
+          "e": 192.093,
+          "c": 0.769732
+        },
+        {
+          "w": "and",
+          "s": 192.093,
+          "e": 192.333,
+          "c": 0.758393
+        },
+        {
+          "w": "We",
+          "s": 192.333,
+          "e": 192.503,
+          "c": 0.807183
+        },
+        {
+          "w": "make",
+          "s": 192.503,
+          "e": 192.853,
+          "c": 0.988766
+        },
+        {
+          "w": "the",
+          "s": 192.853,
+          "e": 193.113,
+          "c": 0.999765
+        },
+        {
+          "w": "best",
+          "s": 193.113,
+          "e": 193.463,
+          "c": 0.998866
+        },
+        {
+          "w": "in",
+          "s": 193.463,
+          "e": 193.633,
+          "c": 0.998388
+        },
+        {
+          "w": "the",
+          "s": 193.633,
+          "e": 193.883,
+          "c": 0.999685
+        },
+        {
+          "w": "country.",
+          "s": 193.883,
+          "e": 194.643,
+          "c": 0.344262
+        },
+        {
+          "w": "We're",
+          "s": 194.643,
+          "e": 194.793,
+          "c": 0.98999
+        },
+        {
+          "w": "proud",
+          "s": 194.793,
+          "e": 194.973,
+          "c": 0.997978
+        },
+        {
+          "w": "of",
+          "s": 194.973,
+          "e": 195.393,
+          "c": 0.98599
+        },
+        {
+          "w": "it",
+          "s": 195.393,
+          "e": 195.813,
+          "c": 0.995125
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 195.78,
+      "end_s": 216.84,
+      "speaker": "SPEAKER_17",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We love the state of Utah. My great-grandfather started the business over 100 years ago here in the state and we fall in love with this state and what it does for us. We love the values the state brings, the family core values, the environment, the beauty of the scenery here in the state and it serves as a great crossroads for",
+      "words": [
+        {
+          "w": "We",
+          "s": 195.776,
+          "e": 195.976,
+          "c": 0.867638
+        },
+        {
+          "w": "love",
+          "s": 196.056,
+          "e": 196.366,
+          "c": 0.994863
+        },
+        {
+          "w": "the",
+          "s": 196.366,
+          "e": 196.666,
+          "c": 0.99624
+        },
+        {
+          "w": "state",
+          "s": 196.666,
+          "e": 197.156,
+          "c": 0.888669
+        },
+        {
+          "w": "of",
+          "s": 197.156,
+          "e": 197.356,
+          "c": 0.998016
+        },
+        {
+          "w": "Utah.",
+          "s": 197.356,
+          "e": 197.876,
+          "c": 0.86152
+        },
+        {
+          "w": "My",
+          "s": 197.876,
+          "e": 197.936,
+          "c": 0.631541
+        },
+        {
+          "w": "great-grandfather",
+          "s": 197.946,
+          "e": 198.576,
+          "c": 0.681919
+        },
+        {
+          "w": "started",
+          "s": 198.576,
+          "e": 198.906,
+          "c": 0.979198
+        },
+        {
+          "w": "the",
+          "s": 198.906,
+          "e": 199.046,
+          "c": 0.910943
+        },
+        {
+          "w": "business",
+          "s": 199.046,
+          "e": 199.396,
+          "c": 0.982948
+        },
+        {
+          "w": "over",
+          "s": 199.396,
+          "e": 199.616,
+          "c": 0.939053
+        },
+        {
+          "w": "100",
+          "s": 199.616,
+          "e": 199.936,
+          "c": 0.372531
+        },
+        {
+          "w": "years",
+          "s": 199.936,
+          "e": 200.096,
+          "c": 0.937222
+        },
+        {
+          "w": "ago",
+          "s": 200.096,
+          "e": 200.336,
+          "c": 0.982903
+        },
+        {
+          "w": "here",
+          "s": 200.336,
+          "e": 200.536,
+          "c": 0.849366
+        },
+        {
+          "w": "in",
+          "s": 200.536,
+          "e": 200.646,
+          "c": 0.883485
+        },
+        {
+          "w": "the",
+          "s": 200.646,
+          "e": 200.736,
+          "c": 0.631422
+        },
+        {
+          "w": "state",
+          "s": 200.736,
+          "e": 201.366,
+          "c": 0.935338
+        },
+        {
+          "w": "and",
+          "s": 201.376,
+          "e": 201.636,
+          "c": 0.87007
+        },
+        {
+          "w": "we",
+          "s": 201.636,
+          "e": 201.806,
+          "c": 0.997582
+        },
+        {
+          "w": "fall",
+          "s": 201.806,
+          "e": 202.146,
+          "c": 0.629548
+        },
+        {
+          "w": "in",
+          "s": 202.146,
+          "e": 202.316,
+          "c": 0.993925
+        },
+        {
+          "w": "love",
+          "s": 202.316,
+          "e": 202.646,
+          "c": 0.998708
+        },
+        {
+          "w": "with",
+          "s": 202.646,
+          "e": 202.996,
+          "c": 0.994247
+        },
+        {
+          "w": "this",
+          "s": 202.996,
+          "e": 203.376,
+          "c": 0.961817
+        },
+        {
+          "w": "state",
+          "s": 203.376,
+          "e": 203.796,
+          "c": 0.671264
+        },
+        {
+          "w": "and",
+          "s": 203.806,
+          "e": 204.056,
+          "c": 0.955252
+        },
+        {
+          "w": "what",
+          "s": 204.066,
+          "e": 204.406,
+          "c": 0.99212
+        },
+        {
+          "w": "it",
+          "s": 204.406,
+          "e": 204.576,
+          "c": 0.997149
+        },
+        {
+          "w": "does",
+          "s": 204.576,
+          "e": 204.916,
+          "c": 0.998273
+        },
+        {
+          "w": "for",
+          "s": 204.916,
+          "e": 205.166,
+          "c": 0.997124
+        },
+        {
+          "w": "us.",
+          "s": 205.176,
+          "e": 205.376,
+          "c": 0.956426
+        },
+        {
+          "w": "We",
+          "s": 205.376,
+          "e": 205.576,
+          "c": 0.994273
+        },
+        {
+          "w": "love",
+          "s": 205.656,
+          "e": 205.986,
+          "c": 0.994945
+        },
+        {
+          "w": "the",
+          "s": 205.986,
+          "e": 206.296,
+          "c": 0.995683
+        },
+        {
+          "w": "values",
+          "s": 206.296,
+          "e": 206.906,
+          "c": 0.988106
+        },
+        {
+          "w": "the",
+          "s": 206.916,
+          "e": 207.226,
+          "c": 0.427362
+        },
+        {
+          "w": "state",
+          "s": 207.226,
+          "e": 207.736,
+          "c": 0.985955
+        },
+        {
+          "w": "brings,",
+          "s": 207.736,
+          "e": 208.576,
+          "c": 0.782697
+        },
+        {
+          "w": "the",
+          "s": 208.576,
+          "e": 208.876,
+          "c": 0.598822
+        },
+        {
+          "w": "family",
+          "s": 208.886,
+          "e": 209.506,
+          "c": 0.98225
+        },
+        {
+          "w": "core",
+          "s": 209.506,
+          "e": 209.916,
+          "c": 0.983573
+        },
+        {
+          "w": "values,",
+          "s": 209.916,
+          "e": 210.766,
+          "c": 0.971245
+        },
+        {
+          "w": "the",
+          "s": 210.766,
+          "e": 211.096,
+          "c": 0.773007
+        },
+        {
+          "w": "environment,",
+          "s": 211.116,
+          "e": 212.186,
+          "c": 0.951196
+        },
+        {
+          "w": "the",
+          "s": 212.186,
+          "e": 212.206,
+          "c": 0.69813
+        },
+        {
+          "w": "beauty",
+          "s": 212.206,
+          "e": 212.566,
+          "c": 0.978028
+        },
+        {
+          "w": "of",
+          "s": 212.576,
+          "e": 212.766,
+          "c": 0.953273
+        },
+        {
+          "w": "the",
+          "s": 212.776,
+          "e": 212.866,
+          "c": 0.972112
+        },
+        {
+          "w": "scenery",
+          "s": 212.906,
+          "e": 213.376,
+          "c": 0.947223
+        },
+        {
+          "w": "here",
+          "s": 213.376,
+          "e": 213.536,
+          "c": 0.920277
+        },
+        {
+          "w": "in",
+          "s": 213.536,
+          "e": 213.696,
+          "c": 0.982705
+        },
+        {
+          "w": "the",
+          "s": 213.696,
+          "e": 213.936,
+          "c": 0.886132
+        },
+        {
+          "w": "state",
+          "s": 213.946,
+          "e": 214.376,
+          "c": 0.992437
+        },
+        {
+          "w": "and",
+          "s": 214.376,
+          "e": 214.596,
+          "c": 0.970661
+        },
+        {
+          "w": "it",
+          "s": 214.616,
+          "e": 214.756,
+          "c": 0.957119
+        },
+        {
+          "w": "serves",
+          "s": 214.806,
+          "e": 215.146,
+          "c": 0.962643
+        },
+        {
+          "w": "as",
+          "s": 215.236,
+          "e": 215.366,
+          "c": 0.446641
+        },
+        {
+          "w": "a",
+          "s": 215.366,
+          "e": 215.436,
+          "c": 0.952574
+        },
+        {
+          "w": "great",
+          "s": 215.436,
+          "e": 215.826,
+          "c": 0.997759
+        },
+        {
+          "w": "crossroads",
+          "s": 215.826,
+          "e": 216.606,
+          "c": 0.964694
+        },
+        {
+          "w": "for",
+          "s": 216.606,
+          "e": 216.836,
+          "c": 0.992377
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 216.84,
+      "end_s": 221.38,
+      "speaker": "SPEAKER_18",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "distribution, marketing and travel around the country.",
+      "words": [
+        {
+          "w": "distribution,",
+          "s": 216.836,
+          "e": 217.976,
+          "c": 0.969903
+        },
+        {
+          "w": "marketing",
+          "s": 217.976,
+          "e": 218.866,
+          "c": 0.972187
+        },
+        {
+          "w": "and",
+          "s": 218.866,
+          "e": 219.166,
+          "c": 0.61584
+        },
+        {
+          "w": "travel",
+          "s": 219.166,
+          "e": 219.746,
+          "c": 0.99111
+        },
+        {
+          "w": "around",
+          "s": 219.746,
+          "e": 220.346,
+          "c": 0.983798
+        },
+        {
+          "w": "the",
+          "s": 220.406,
+          "e": 220.646,
+          "c": 0.998466
+        },
+        {
+          "w": "country.",
+          "s": 220.646,
+          "e": 221.376,
+          "c": 0.948932
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 221.74,
+      "end_s": 223.91,
+      "speaker": "SPEAKER_18",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Dave Davis, president and",
+      "words": [
+        {
+          "w": "Dave",
+          "s": 221.736,
+          "e": 221.856,
+          "c": 0.867369
+        },
+        {
+          "w": "Davis,",
+          "s": 221.856,
+          "e": 222.706,
+          "c": 0.858844
+        },
+        {
+          "w": "president",
+          "s": 222.846,
+          "e": 223.606,
+          "c": 0.472689
+        },
+        {
+          "w": "and",
+          "s": 223.606,
+          "e": 223.906,
+          "c": 0.961682
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 223.91,
+      "end_s": 227.38,
+      "speaker": "SPEAKER_19",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "CEO of the Utah Food Industry Association.",
+      "words": [
+        {
+          "w": "CEO",
+          "s": 223.906,
+          "e": 224.206,
+          "c": 0.984231
+        },
+        {
+          "w": "of",
+          "s": 224.206,
+          "e": 224.376,
+          "c": 0.96808
+        },
+        {
+          "w": "the",
+          "s": 224.376,
+          "e": 224.476,
+          "c": 0.97748
+        },
+        {
+          "w": "Utah",
+          "s": 224.476,
+          "e": 224.876,
+          "c": 0.947988
+        },
+        {
+          "w": "Food",
+          "s": 224.876,
+          "e": 225.276,
+          "c": 0.981059
+        },
+        {
+          "w": "Industry",
+          "s": 225.276,
+          "e": 226.076,
+          "c": 0.970026
+        },
+        {
+          "w": "Association.",
+          "s": 226.076,
+          "e": 227.376,
+          "c": 0.878125
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "start_s": 227.38,
+      "end_s": 227.65,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "So I",
+      "words": [
+        {
+          "w": "So",
+          "s": 227.376,
+          "e": 227.556,
+          "c": 0.859975
+        },
+        {
+          "w": "I",
+          "s": 227.556,
+          "e": 227.646,
+          "c": 0.859885
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "start_s": 227.75,
+      "end_s": 242.88,
+      "speaker": "SPEAKER_19",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "think it's more important this year to be involved than ever before. With the onset of the COVID-19 pandemic, it would have been really easy for",
+      "words": [
+        {
+          "w": "think",
+          "s": 227.746,
+          "e": 228.096,
+          "c": 0.999413
+        },
+        {
+          "w": "it's",
+          "s": 228.096,
+          "e": 228.456,
+          "c": 0.975247
+        },
+        {
+          "w": "more",
+          "s": 228.456,
+          "e": 228.696,
+          "c": 0.998173
+        },
+        {
+          "w": "important",
+          "s": 228.856,
+          "e": 229.626,
+          "c": 0.998559
+        },
+        {
+          "w": "this",
+          "s": 229.626,
+          "e": 229.986,
+          "c": 0.990322
+        },
+        {
+          "w": "year",
+          "s": 229.986,
+          "e": 230.366,
+          "c": 0.998957
+        },
+        {
+          "w": "to",
+          "s": 230.366,
+          "e": 230.526,
+          "c": 0.975428
+        },
+        {
+          "w": "be",
+          "s": 230.526,
+          "e": 230.666,
+          "c": 0.996409
+        },
+        {
+          "w": "involved",
+          "s": 230.726,
+          "e": 231.286,
+          "c": 0.98963
+        },
+        {
+          "w": "than",
+          "s": 231.286,
+          "e": 231.576,
+          "c": 0.959734
+        },
+        {
+          "w": "ever",
+          "s": 231.576,
+          "e": 231.876,
+          "c": 0.986767
+        },
+        {
+          "w": "before.",
+          "s": 231.886,
+          "e": 232.376,
+          "c": 0.703951
+        },
+        {
+          "w": "With",
+          "s": 232.736,
+          "e": 232.916,
+          "c": 0.993852
+        },
+        {
+          "w": "the",
+          "s": 232.916,
+          "e": 233.246,
+          "c": 0.999476
+        },
+        {
+          "w": "onset",
+          "s": 233.296,
+          "e": 233.986,
+          "c": 0.998085
+        },
+        {
+          "w": "of",
+          "s": 233.986,
+          "e": 234.256,
+          "c": 0.99926
+        },
+        {
+          "w": "the",
+          "s": 234.256,
+          "e": 234.656,
+          "c": 0.996255
+        },
+        {
+          "w": "COVID-19",
+          "s": 234.656,
+          "e": 236.256,
+          "c": 0.817215
+        },
+        {
+          "w": "pandemic,",
+          "s": 236.256,
+          "e": 237.736,
+          "c": 0.799886
+        },
+        {
+          "w": "it",
+          "s": 237.736,
+          "e": 238.056,
+          "c": 0.642705
+        },
+        {
+          "w": "would",
+          "s": 238.116,
+          "e": 239.006,
+          "c": 0.998831
+        },
+        {
+          "w": "have",
+          "s": 239.006,
+          "e": 239.736,
+          "c": 0.923007
+        },
+        {
+          "w": "been",
+          "s": 239.736,
+          "e": 240.466,
+          "c": 0.996546
+        },
+        {
+          "w": "really",
+          "s": 240.466,
+          "e": 241.556,
+          "c": 0.987507
+        },
+        {
+          "w": "easy",
+          "s": 241.556,
+          "e": 242.286,
+          "c": 0.993966
+        },
+        {
+          "w": "for",
+          "s": 242.286,
+          "e": 242.876,
+          "c": 0.990458
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "start_s": 242.88,
+      "end_s": 242.89,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "us and the",
+      "words": [
+        {
+          "w": "us",
+          "s": 242.876,
+          "e": 242.876,
+          "c": 0.979038
+        },
+        {
+          "w": "and",
+          "s": 242.876,
+          "e": 242.876,
+          "c": 0.853641
+        },
+        {
+          "w": "the",
+          "s": 242.876,
+          "e": 242.876,
+          "c": 0.764822
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "start_s": 242.88,
+      "end_s": 263.01,
+      "speaker": "SPEAKER_19",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the team to just fold up shop and say we're going to come back next year and do this but I think there was a strong feeling that we wanted to do something to give back to the community and so we feel like it's really important to be involved in rewarding and recognizing our medical first responders.",
+      "words": [
+        {
+          "w": "the",
+          "s": 242.858,
+          "e": 243.178,
+          "c": 0.713193
+        },
+        {
+          "w": "team",
+          "s": 243.178,
+          "e": 243.618,
+          "c": 0.997543
+        },
+        {
+          "w": "to",
+          "s": 243.618,
+          "e": 243.768,
+          "c": 0.960549
+        },
+        {
+          "w": "just",
+          "s": 243.838,
+          "e": 244.268,
+          "c": 0.996845
+        },
+        {
+          "w": "fold",
+          "s": 244.358,
+          "e": 244.718,
+          "c": 0.99065
+        },
+        {
+          "w": "up",
+          "s": 244.718,
+          "e": 244.938,
+          "c": 0.929464
+        },
+        {
+          "w": "shop",
+          "s": 244.938,
+          "e": 245.308,
+          "c": 0.978313
+        },
+        {
+          "w": "and",
+          "s": 245.418,
+          "e": 245.728,
+          "c": 0.821189
+        },
+        {
+          "w": "say",
+          "s": 245.728,
+          "e": 245.888,
+          "c": 0.980604
+        },
+        {
+          "w": "we're",
+          "s": 245.888,
+          "e": 246.128,
+          "c": 0.545035
+        },
+        {
+          "w": "going",
+          "s": 246.128,
+          "e": 246.288,
+          "c": 0.721983
+        },
+        {
+          "w": "to",
+          "s": 246.288,
+          "e": 246.358,
+          "c": 0.978528
+        },
+        {
+          "w": "come",
+          "s": 246.368,
+          "e": 246.528,
+          "c": 0.977384
+        },
+        {
+          "w": "back",
+          "s": 246.528,
+          "e": 246.768,
+          "c": 0.968493
+        },
+        {
+          "w": "next",
+          "s": 246.768,
+          "e": 247.068,
+          "c": 0.951555
+        },
+        {
+          "w": "year",
+          "s": 247.088,
+          "e": 247.408,
+          "c": 0.986384
+        },
+        {
+          "w": "and",
+          "s": 247.408,
+          "e": 247.568,
+          "c": 0.92082
+        },
+        {
+          "w": "do",
+          "s": 247.568,
+          "e": 247.728,
+          "c": 0.910092
+        },
+        {
+          "w": "this",
+          "s": 247.728,
+          "e": 248.348,
+          "c": 0.937099
+        },
+        {
+          "w": "but",
+          "s": 248.428,
+          "e": 248.518,
+          "c": 0.0740816
+        },
+        {
+          "w": "I",
+          "s": 248.538,
+          "e": 248.608,
+          "c": 0.465864
+        },
+        {
+          "w": "think",
+          "s": 248.608,
+          "e": 248.848,
+          "c": 0.803499
+        },
+        {
+          "w": "there",
+          "s": 248.858,
+          "e": 249.168,
+          "c": 0.848801
+        },
+        {
+          "w": "was",
+          "s": 249.168,
+          "e": 249.358,
+          "c": 0.99946
+        },
+        {
+          "w": "a",
+          "s": 249.358,
+          "e": 249.418,
+          "c": 0.999784
+        },
+        {
+          "w": "strong",
+          "s": 249.418,
+          "e": 249.758,
+          "c": 0.999857
+        },
+        {
+          "w": "feeling",
+          "s": 249.808,
+          "e": 250.248,
+          "c": 0.999411
+        },
+        {
+          "w": "that",
+          "s": 250.358,
+          "e": 250.518,
+          "c": 0.997917
+        },
+        {
+          "w": "we",
+          "s": 250.518,
+          "e": 250.618,
+          "c": 0.999844
+        },
+        {
+          "w": "wanted",
+          "s": 250.638,
+          "e": 251.038,
+          "c": 0.999417
+        },
+        {
+          "w": "to",
+          "s": 251.038,
+          "e": 251.168,
+          "c": 0.99954
+        },
+        {
+          "w": "do",
+          "s": 251.168,
+          "e": 251.298,
+          "c": 0.999763
+        },
+        {
+          "w": "something",
+          "s": 251.298,
+          "e": 251.878,
+          "c": 0.99987
+        },
+        {
+          "w": "to",
+          "s": 251.878,
+          "e": 251.998,
+          "c": 0.998938
+        },
+        {
+          "w": "give",
+          "s": 252.008,
+          "e": 252.268,
+          "c": 0.93215
+        },
+        {
+          "w": "back",
+          "s": 252.268,
+          "e": 252.528,
+          "c": 0.999523
+        },
+        {
+          "w": "to",
+          "s": 252.528,
+          "e": 252.658,
+          "c": 0.998896
+        },
+        {
+          "w": "the",
+          "s": 252.658,
+          "e": 252.838,
+          "c": 0.999091
+        },
+        {
+          "w": "community",
+          "s": 252.838,
+          "e": 253.488,
+          "c": 0.996864
+        },
+        {
+          "w": "and",
+          "s": 253.488,
+          "e": 254.288,
+          "c": 0.513493
+        },
+        {
+          "w": "so",
+          "s": 254.288,
+          "e": 254.608,
+          "c": 0.901153
+        },
+        {
+          "w": "we",
+          "s": 254.608,
+          "e": 254.848,
+          "c": 0.745209
+        },
+        {
+          "w": "feel",
+          "s": 254.858,
+          "e": 255.188,
+          "c": 0.999714
+        },
+        {
+          "w": "like",
+          "s": 255.278,
+          "e": 255.528,
+          "c": 0.996607
+        },
+        {
+          "w": "it's",
+          "s": 255.528,
+          "e": 255.848,
+          "c": 0.998607
+        },
+        {
+          "w": "really",
+          "s": 255.908,
+          "e": 256.368,
+          "c": 0.999781
+        },
+        {
+          "w": "important",
+          "s": 256.368,
+          "e": 257.128,
+          "c": 0.99992
+        },
+        {
+          "w": "to",
+          "s": 257.128,
+          "e": 257.298,
+          "c": 0.99988
+        },
+        {
+          "w": "be",
+          "s": 257.298,
+          "e": 257.468,
+          "c": 0.999887
+        },
+        {
+          "w": "involved",
+          "s": 257.468,
+          "e": 258.138,
+          "c": 0.999775
+        },
+        {
+          "w": "in",
+          "s": 258.148,
+          "e": 258.318,
+          "c": 0.998096
+        },
+        {
+          "w": "rewarding",
+          "s": 258.318,
+          "e": 259.028,
+          "c": 0.998702
+        },
+        {
+          "w": "and",
+          "s": 259.098,
+          "e": 259.328,
+          "c": 0.999371
+        },
+        {
+          "w": "recognizing",
+          "s": 259.328,
+          "e": 260.248,
+          "c": 0.997198
+        },
+        {
+          "w": "our",
+          "s": 260.258,
+          "e": 260.498,
+          "c": 0.995902
+        },
+        {
+          "w": "medical",
+          "s": 260.518,
+          "e": 261.098,
+          "c": 0.989017
+        },
+        {
+          "w": "first",
+          "s": 261.098,
+          "e": 261.568,
+          "c": 0.990403
+        },
+        {
+          "w": "responders.",
+          "s": 261.568,
+          "e": 263.008,
+          "c": 0.773054
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "start_s": 263.12,
+      "end_s": 282.71,
+      "speaker": "SPEAKER_19",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We would extend our gratitude to those on the front lines of our medical facilities, those that are treating and attending to COVID-19 patients and are going out there and every day putting themselves at risk to serve their communities. I'm Scott",
+      "words": [
+        {
+          "w": "We",
+          "s": 263.119,
+          "e": 263.229,
+          "c": 0.861751
+        },
+        {
+          "w": "would",
+          "s": 263.229,
+          "e": 263.829,
+          "c": 0.998026
+        },
+        {
+          "w": "extend",
+          "s": 263.829,
+          "e": 264.549,
+          "c": 0.99774
+        },
+        {
+          "w": "our",
+          "s": 264.549,
+          "e": 264.909,
+          "c": 0.993908
+        },
+        {
+          "w": "gratitude",
+          "s": 264.909,
+          "e": 266.029,
+          "c": 0.99814
+        },
+        {
+          "w": "to",
+          "s": 266.029,
+          "e": 266.469,
+          "c": 0.947225
+        },
+        {
+          "w": "those",
+          "s": 266.469,
+          "e": 267.869,
+          "c": 0.732832
+        },
+        {
+          "w": "on",
+          "s": 267.869,
+          "e": 267.979,
+          "c": 0.911329
+        },
+        {
+          "w": "the",
+          "s": 267.979,
+          "e": 268.069,
+          "c": 0.984588
+        },
+        {
+          "w": "front",
+          "s": 268.069,
+          "e": 268.469,
+          "c": 0.973
+        },
+        {
+          "w": "lines",
+          "s": 268.469,
+          "e": 268.869,
+          "c": 0.786112
+        },
+        {
+          "w": "of",
+          "s": 268.869,
+          "e": 268.929,
+          "c": 0.898431
+        },
+        {
+          "w": "our",
+          "s": 268.929,
+          "e": 269.789,
+          "c": 0.981162
+        },
+        {
+          "w": "medical",
+          "s": 269.849,
+          "e": 270.579,
+          "c": 0.935477
+        },
+        {
+          "w": "facilities,",
+          "s": 270.589,
+          "e": 271.489,
+          "c": 0.584483
+        },
+        {
+          "w": "those",
+          "s": 271.619,
+          "e": 271.899,
+          "c": 0.996489
+        },
+        {
+          "w": "that",
+          "s": 271.899,
+          "e": 272.229,
+          "c": 0.985139
+        },
+        {
+          "w": "are",
+          "s": 272.229,
+          "e": 272.479,
+          "c": 0.999283
+        },
+        {
+          "w": "treating",
+          "s": 272.479,
+          "e": 273.139,
+          "c": 0.998862
+        },
+        {
+          "w": "and",
+          "s": 273.139,
+          "e": 273.379,
+          "c": 0.991989
+        },
+        {
+          "w": "attending",
+          "s": 273.379,
+          "e": 274.119,
+          "c": 0.993273
+        },
+        {
+          "w": "to",
+          "s": 274.119,
+          "e": 274.289,
+          "c": 0.981706
+        },
+        {
+          "w": "COVID-19",
+          "s": 274.289,
+          "e": 275.269,
+          "c": 0.895031
+        },
+        {
+          "w": "patients",
+          "s": 275.269,
+          "e": 275.919,
+          "c": 0.989993
+        },
+        {
+          "w": "and",
+          "s": 276.119,
+          "e": 276.199,
+          "c": 0.997057
+        },
+        {
+          "w": "are",
+          "s": 276.199,
+          "e": 276.409,
+          "c": 0.991915
+        },
+        {
+          "w": "going",
+          "s": 276.409,
+          "e": 276.749,
+          "c": 0.999296
+        },
+        {
+          "w": "out",
+          "s": 276.769,
+          "e": 276.969,
+          "c": 0.999479
+        },
+        {
+          "w": "there",
+          "s": 276.969,
+          "e": 277.319,
+          "c": 0.99827
+        },
+        {
+          "w": "and",
+          "s": 277.319,
+          "e": 277.529,
+          "c": 0.831395
+        },
+        {
+          "w": "every",
+          "s": 277.529,
+          "e": 277.869,
+          "c": 0.680245
+        },
+        {
+          "w": "day",
+          "s": 277.879,
+          "e": 278.129,
+          "c": 0.999464
+        },
+        {
+          "w": "putting",
+          "s": 278.129,
+          "e": 278.649,
+          "c": 0.874453
+        },
+        {
+          "w": "themselves",
+          "s": 278.689,
+          "e": 279.489,
+          "c": 0.996048
+        },
+        {
+          "w": "at",
+          "s": 279.489,
+          "e": 279.769,
+          "c": 0.931068
+        },
+        {
+          "w": "risk",
+          "s": 279.769,
+          "e": 280.329,
+          "c": 0.994829
+        },
+        {
+          "w": "to",
+          "s": 280.329,
+          "e": 280.439,
+          "c": 0.921734
+        },
+        {
+          "w": "serve",
+          "s": 280.499,
+          "e": 280.819,
+          "c": 0.996873
+        },
+        {
+          "w": "their",
+          "s": 280.819,
+          "e": 281.159,
+          "c": 0.998001
+        },
+        {
+          "w": "communities.",
+          "s": 281.169,
+          "e": 282.189,
+          "c": 0.965283
+        },
+        {
+          "w": "I'm",
+          "s": 282.189,
+          "e": 282.379,
+          "c": 0.975178
+        },
+        {
+          "w": "Scott",
+          "s": 282.379,
+          "e": 282.709,
+          "c": 0.980795
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "start_s": 282.71,
+      "end_s": 286.15,
+      "speaker": "SPEAKER_21",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Anderson, President and CEO of Zions Bank.",
+      "words": [
+        {
+          "w": "Anderson,",
+          "s": 282.709,
+          "e": 283.359,
+          "c": 0.78375
+        },
+        {
+          "w": "President",
+          "s": 283.439,
+          "e": 284.339,
+          "c": 0.567004
+        },
+        {
+          "w": "and",
+          "s": 284.339,
+          "e": 284.649,
+          "c": 0.993807
+        },
+        {
+          "w": "CEO",
+          "s": 284.649,
+          "e": 284.959,
+          "c": 0.996415
+        },
+        {
+          "w": "of",
+          "s": 284.959,
+          "e": 285.149,
+          "c": 0.629582
+        },
+        {
+          "w": "Zions",
+          "s": 285.169,
+          "e": 285.689,
+          "c": 0.578743
+        },
+        {
+          "w": "Bank.",
+          "s": 285.689,
+          "e": 286.149,
+          "c": 0.902168
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "start_s": 286.13,
+      "end_s": 303.41,
+      "speaker": "SPEAKER_21",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and zions bank is the oldest banking operation in utah it's been around for almost 150 years and we are happy to be in this community i have the honor of being on the board of intermountain healthcare and so i see from that position",
+      "words": [
+        {
+          "w": "and",
+          "s": 286.128,
+          "e": 286.448,
+          "c": 0.380544
+        },
+        {
+          "w": "zions",
+          "s": 286.448,
+          "e": 286.978,
+          "c": 0.248457
+        },
+        {
+          "w": "bank",
+          "s": 286.978,
+          "e": 287.408,
+          "c": 0.939703
+        },
+        {
+          "w": "is",
+          "s": 287.408,
+          "e": 287.618,
+          "c": 0.999255
+        },
+        {
+          "w": "the",
+          "s": 287.618,
+          "e": 287.938,
+          "c": 0.999893
+        },
+        {
+          "w": "oldest",
+          "s": 287.938,
+          "e": 288.578,
+          "c": 0.999148
+        },
+        {
+          "w": "banking",
+          "s": 288.708,
+          "e": 289.168,
+          "c": 0.979388
+        },
+        {
+          "w": "operation",
+          "s": 289.168,
+          "e": 289.968,
+          "c": 0.978821
+        },
+        {
+          "w": "in",
+          "s": 289.968,
+          "e": 290.208,
+          "c": 0.986291
+        },
+        {
+          "w": "utah",
+          "s": 290.208,
+          "e": 290.688,
+          "c": 0.925544
+        },
+        {
+          "w": "it's",
+          "s": 290.688,
+          "e": 290.848,
+          "c": 0.936147
+        },
+        {
+          "w": "been",
+          "s": 290.848,
+          "e": 291.008,
+          "c": 0.984699
+        },
+        {
+          "w": "around",
+          "s": 291.008,
+          "e": 291.328,
+          "c": 0.980662
+        },
+        {
+          "w": "for",
+          "s": 291.328,
+          "e": 291.568,
+          "c": 0.981888
+        },
+        {
+          "w": "almost",
+          "s": 291.568,
+          "e": 291.968,
+          "c": 0.844729
+        },
+        {
+          "w": "150",
+          "s": 291.968,
+          "e": 292.888,
+          "c": 0.867923
+        },
+        {
+          "w": "years",
+          "s": 292.888,
+          "e": 293.408,
+          "c": 0.994964
+        },
+        {
+          "w": "and",
+          "s": 293.408,
+          "e": 293.748,
+          "c": 0.999626
+        },
+        {
+          "w": "we",
+          "s": 293.748,
+          "e": 293.978,
+          "c": 0.999926
+        },
+        {
+          "w": "are",
+          "s": 293.978,
+          "e": 294.318,
+          "c": 0.999956
+        },
+        {
+          "w": "happy",
+          "s": 294.318,
+          "e": 294.888,
+          "c": 0.999886
+        },
+        {
+          "w": "to",
+          "s": 294.888,
+          "e": 295.118,
+          "c": 0.999968
+        },
+        {
+          "w": "be",
+          "s": 295.118,
+          "e": 295.348,
+          "c": 0.999985
+        },
+        {
+          "w": "in",
+          "s": 295.348,
+          "e": 295.538,
+          "c": 0.999987
+        },
+        {
+          "w": "this",
+          "s": 295.578,
+          "e": 296.028,
+          "c": 0.999876
+        },
+        {
+          "w": "community",
+          "s": 296.028,
+          "e": 297.088,
+          "c": 0.999516
+        },
+        {
+          "w": "i",
+          "s": 297.088,
+          "e": 297.248,
+          "c": 0.605176
+        },
+        {
+          "w": "have",
+          "s": 297.248,
+          "e": 297.328,
+          "c": 0.972039
+        },
+        {
+          "w": "the",
+          "s": 297.328,
+          "e": 297.508,
+          "c": 0.983931
+        },
+        {
+          "w": "honor",
+          "s": 297.508,
+          "e": 297.808,
+          "c": 0.98621
+        },
+        {
+          "w": "of",
+          "s": 297.808,
+          "e": 297.968,
+          "c": 0.977169
+        },
+        {
+          "w": "being",
+          "s": 297.968,
+          "e": 298.158,
+          "c": 0.798757
+        },
+        {
+          "w": "on",
+          "s": 298.228,
+          "e": 298.288,
+          "c": 0.820343
+        },
+        {
+          "w": "the",
+          "s": 298.288,
+          "e": 298.448,
+          "c": 0.916083
+        },
+        {
+          "w": "board",
+          "s": 298.448,
+          "e": 298.688,
+          "c": 0.963051
+        },
+        {
+          "w": "of",
+          "s": 298.688,
+          "e": 298.848,
+          "c": 0.656632
+        },
+        {
+          "w": "intermountain",
+          "s": 298.858,
+          "e": 300.068,
+          "c": 0.933919
+        },
+        {
+          "w": "healthcare",
+          "s": 300.068,
+          "e": 300.968,
+          "c": 0.543642
+        },
+        {
+          "w": "and",
+          "s": 301.008,
+          "e": 301.288,
+          "c": 0.999047
+        },
+        {
+          "w": "so",
+          "s": 301.288,
+          "e": 301.478,
+          "c": 0.999887
+        },
+        {
+          "w": "i",
+          "s": 301.478,
+          "e": 301.568,
+          "c": 0.997472
+        },
+        {
+          "w": "see",
+          "s": 301.568,
+          "e": 301.848,
+          "c": 0.999634
+        },
+        {
+          "w": "from",
+          "s": 301.848,
+          "e": 302.228,
+          "c": 0.999144
+        },
+        {
+          "w": "that",
+          "s": 302.228,
+          "e": 302.608,
+          "c": 0.99975
+        },
+        {
+          "w": "position",
+          "s": 302.608,
+          "e": 303.408,
+          "c": 0.999746
+        }
+      ]
+    },
+    {
+      "i": 35,
+      "start_s": 303.36,
+      "end_s": 331.68,
+      "speaker": "SPEAKER_21",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the hours, the work, the risk, the doctors and nurses and all of the caregivers put themselves at. And they do it because they have compassion, they want to help people, and I appreciate that. And I want them to know that we all appreciate it and we all recognize it. So to all of you caregivers, thank you so much. And to Senator Lee, thank you for honoring them in this way.",
+      "words": [
+        {
+          "w": "the",
+          "s": 303.36,
+          "e": 303.67,
+          "c": 0.657582
+        },
+        {
+          "w": "hours,",
+          "s": 303.67,
+          "e": 304.4,
+          "c": 0.941652
+        },
+        {
+          "w": "the",
+          "s": 304.4,
+          "e": 304.71,
+          "c": 0.991234
+        },
+        {
+          "w": "work,",
+          "s": 304.71,
+          "e": 305.31,
+          "c": 0.983686
+        },
+        {
+          "w": "the",
+          "s": 305.43,
+          "e": 305.76,
+          "c": 0.977674
+        },
+        {
+          "w": "risk,",
+          "s": 305.76,
+          "e": 306.41,
+          "c": 0.402973
+        },
+        {
+          "w": "the",
+          "s": 306.41,
+          "e": 306.6,
+          "c": 0.584953
+        },
+        {
+          "w": "doctors",
+          "s": 306.6,
+          "e": 307.24,
+          "c": 0.981818
+        },
+        {
+          "w": "and",
+          "s": 307.24,
+          "e": 307.44,
+          "c": 0.787916
+        },
+        {
+          "w": "nurses",
+          "s": 307.44,
+          "e": 307.94,
+          "c": 0.967566
+        },
+        {
+          "w": "and",
+          "s": 307.94,
+          "e": 308.16,
+          "c": 0.577525
+        },
+        {
+          "w": "all",
+          "s": 308.16,
+          "e": 308.36,
+          "c": 0.947744
+        },
+        {
+          "w": "of",
+          "s": 308.36,
+          "e": 308.54,
+          "c": 0.887155
+        },
+        {
+          "w": "the",
+          "s": 308.56,
+          "e": 308.7,
+          "c": 0.956733
+        },
+        {
+          "w": "caregivers",
+          "s": 308.7,
+          "e": 309.76,
+          "c": 0.947367
+        },
+        {
+          "w": "put",
+          "s": 309.76,
+          "e": 310.24,
+          "c": 0.634984
+        },
+        {
+          "w": "themselves",
+          "s": 310.24,
+          "e": 310.8,
+          "c": 0.871963
+        },
+        {
+          "w": "at.",
+          "s": 310.8,
+          "e": 311.19,
+          "c": 0.542397
+        },
+        {
+          "w": "And",
+          "s": 311.2,
+          "e": 311.43,
+          "c": 0.952808
+        },
+        {
+          "w": "they",
+          "s": 311.43,
+          "e": 311.68,
+          "c": 0.986666
+        },
+        {
+          "w": "do",
+          "s": 311.74,
+          "e": 311.89,
+          "c": 0.999464
+        },
+        {
+          "w": "it",
+          "s": 311.89,
+          "e": 312.04,
+          "c": 0.976323
+        },
+        {
+          "w": "because",
+          "s": 312.04,
+          "e": 312.58,
+          "c": 0.993911
+        },
+        {
+          "w": "they",
+          "s": 312.58,
+          "e": 312.89,
+          "c": 0.99855
+        },
+        {
+          "w": "have",
+          "s": 312.89,
+          "e": 313.13,
+          "c": 0.999268
+        },
+        {
+          "w": "compassion,",
+          "s": 313.26,
+          "e": 314.15,
+          "c": 0.634496
+        },
+        {
+          "w": "they",
+          "s": 314.16,
+          "e": 314.54,
+          "c": 0.873178
+        },
+        {
+          "w": "want",
+          "s": 314.55,
+          "e": 314.91,
+          "c": 0.998342
+        },
+        {
+          "w": "to",
+          "s": 314.91,
+          "e": 315.11,
+          "c": 0.998866
+        },
+        {
+          "w": "help",
+          "s": 315.11,
+          "e": 315.49,
+          "c": 0.998757
+        },
+        {
+          "w": "people,",
+          "s": 315.49,
+          "e": 316.26,
+          "c": 0.549527
+        },
+        {
+          "w": "and",
+          "s": 316.26,
+          "e": 316.54,
+          "c": 0.696819
+        },
+        {
+          "w": "I",
+          "s": 316.54,
+          "e": 316.62,
+          "c": 0.989136
+        },
+        {
+          "w": "appreciate",
+          "s": 316.62,
+          "e": 317.6,
+          "c": 0.993474
+        },
+        {
+          "w": "that.",
+          "s": 317.6,
+          "e": 317.92,
+          "c": 0.726963
+        },
+        {
+          "w": "And",
+          "s": 317.92,
+          "e": 318.16,
+          "c": 0.988857
+        },
+        {
+          "w": "I",
+          "s": 318.16,
+          "e": 318.24,
+          "c": 0.993367
+        },
+        {
+          "w": "want",
+          "s": 318.24,
+          "e": 318.56,
+          "c": 0.999462
+        },
+        {
+          "w": "them",
+          "s": 318.56,
+          "e": 318.88,
+          "c": 0.998854
+        },
+        {
+          "w": "to",
+          "s": 318.88,
+          "e": 319.04,
+          "c": 0.999373
+        },
+        {
+          "w": "know",
+          "s": 319.04,
+          "e": 319.36,
+          "c": 0.999725
+        },
+        {
+          "w": "that",
+          "s": 319.36,
+          "e": 319.67,
+          "c": 0.979309
+        },
+        {
+          "w": "we",
+          "s": 319.67,
+          "e": 319.83,
+          "c": 0.999094
+        },
+        {
+          "w": "all",
+          "s": 319.83,
+          "e": 320.08,
+          "c": 0.999144
+        },
+        {
+          "w": "appreciate",
+          "s": 320.08,
+          "e": 320.87,
+          "c": 0.999094
+        },
+        {
+          "w": "it",
+          "s": 320.88,
+          "e": 320.97,
+          "c": 0.995125
+        },
+        {
+          "w": "and",
+          "s": 321.05,
+          "e": 321.29,
+          "c": 0.75624
+        },
+        {
+          "w": "we",
+          "s": 321.29,
+          "e": 321.45,
+          "c": 0.987112
+        },
+        {
+          "w": "all",
+          "s": 321.45,
+          "e": 321.69,
+          "c": 0.999525
+        },
+        {
+          "w": "recognize",
+          "s": 321.69,
+          "e": 322.42,
+          "c": 0.995017
+        },
+        {
+          "w": "it.",
+          "s": 322.42,
+          "e": 322.88,
+          "c": 0.990635
+        },
+        {
+          "w": "So",
+          "s": 322.88,
+          "e": 323.09,
+          "c": 0.991495
+        },
+        {
+          "w": "to",
+          "s": 323.09,
+          "e": 323.3,
+          "c": 0.828359
+        },
+        {
+          "w": "all",
+          "s": 323.31,
+          "e": 323.61,
+          "c": 0.999102
+        },
+        {
+          "w": "of",
+          "s": 323.61,
+          "e": 323.82,
+          "c": 0.975578
+        },
+        {
+          "w": "you",
+          "s": 323.82,
+          "e": 324.12,
+          "c": 0.993455
+        },
+        {
+          "w": "caregivers,",
+          "s": 324.13,
+          "e": 325.38,
+          "c": 0.824401
+        },
+        {
+          "w": "thank",
+          "s": 325.38,
+          "e": 325.89,
+          "c": 0.985105
+        },
+        {
+          "w": "you",
+          "s": 325.89,
+          "e": 326.2,
+          "c": 0.998761
+        },
+        {
+          "w": "so",
+          "s": 326.23,
+          "e": 326.42,
+          "c": 0.995642
+        },
+        {
+          "w": "much.",
+          "s": 326.42,
+          "e": 326.88,
+          "c": 0.803138
+        },
+        {
+          "w": "And",
+          "s": 326.88,
+          "e": 327.15,
+          "c": 0.949852
+        },
+        {
+          "w": "to",
+          "s": 327.15,
+          "e": 327.32,
+          "c": 0.972758
+        },
+        {
+          "w": "Senator",
+          "s": 327.33,
+          "e": 327.96,
+          "c": 0.977111
+        },
+        {
+          "w": "Lee,",
+          "s": 327.96,
+          "e": 328.42,
+          "c": 0.952699
+        },
+        {
+          "w": "thank",
+          "s": 328.42,
+          "e": 328.81,
+          "c": 0.995459
+        },
+        {
+          "w": "you",
+          "s": 328.94,
+          "e": 329.14,
+          "c": 0.999367
+        },
+        {
+          "w": "for",
+          "s": 329.15,
+          "e": 329.42,
+          "c": 0.998062
+        },
+        {
+          "w": "honoring",
+          "s": 329.42,
+          "e": 330.15,
+          "c": 0.983333
+        },
+        {
+          "w": "them",
+          "s": 330.15,
+          "e": 330.51,
+          "c": 0.999483
+        },
+        {
+          "w": "in",
+          "s": 330.51,
+          "e": 330.69,
+          "c": 0.996383
+        },
+        {
+          "w": "this",
+          "s": 330.69,
+          "e": 331.05,
+          "c": 0.999643
+        },
+        {
+          "w": "way.",
+          "s": 331.05,
+          "e": 331.68,
+          "c": 0.984143
+        }
+      ]
+    }
+  ]
+}

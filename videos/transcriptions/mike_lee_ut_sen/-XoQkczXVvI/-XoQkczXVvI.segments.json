@@ -1,0 +1,7884 @@
+{
+  "schema_version": 2,
+  "canonical_id": "d79c5539d9dcf04d",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 480.65,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T03:01:50.215Z",
+  "text_sha256": "9a21fa954715f3aa523555647ceea45aaed6ac395e1a960db7d3fb3dacab0a80",
+  "segments_sha256": "dbfe0e8c8806eaa74d0da154f1adb940da298c77a9e25d788ff8378e3065500f",
+  "words_sha256": "d4125d793c6a2fa6e437e66a9e39606e43093208fc66a16f0bffd6bb3778dcbb",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 18,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 97,
+    "clusters": 8,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_01",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.4
+      },
+      "clean_s": 1.4,
+      "speaking_s": 1.4,
+      "first_s": 0.33
+    },
+    {
+      "id": "SPEAKER_00",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 259.3
+      },
+      "clean_s": 259.3,
+      "speaking_s": 259.6,
+      "first_s": 2.85
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 20.7
+      },
+      "clean_s": 20.7,
+      "speaking_s": 20.7,
+      "first_s": 36.97
+    },
+    {
+      "id": "SPEAKER_04",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 72
+      },
+      "clean_s": 72,
+      "speaking_s": 72.3,
+      "first_s": 134.98
+    },
+    {
+      "id": "SPEAKER_05",
+      "n": 5,
+      "label": "Speaker 5 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.78,
+        "confidence": "low",
+        "clean_s": 18
+      },
+      "clean_s": 18,
+      "speaking_s": 18,
+      "first_s": 142.05
+    },
+    {
+      "id": "SPEAKER_06",
+      "n": 6,
+      "label": "Speaker 6 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.83,
+        "confidence": "low",
+        "clean_s": 24.2
+      },
+      "clean_s": 24.2,
+      "speaking_s": 24.2,
+      "first_s": 152.97
+    },
+    {
+      "id": "SPEAKER_11",
+      "n": 7,
+      "label": "Speaker 7",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.5
+      },
+      "clean_s": 4.5,
+      "speaking_s": 4.5,
+      "first_s": 286.97
+    },
+    {
+      "id": "SPEAKER_12",
+      "n": 8,
+      "label": "Speaker 8",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 6.9
+      },
+      "clean_s": 6.9,
+      "speaking_s": 6.9,
+      "first_s": 388.63
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.07,
+      "end_s": 0.09,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 2.05,
+      "end_s": 2.53,
+      "segment_i": 2,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 6.03,
+      "end_s": 7.08,
+      "segment_i": 4,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 14.05,
+      "end_s": 17.42,
+      "segment_i": 6,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 23.04,
+      "end_s": 23.63,
+      "segment_i": 8,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 26.05,
+      "end_s": 26.92,
+      "segment_i": 10,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 44.28,
+      "end_s": 45.2,
+      "segment_i": 14,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 55.17,
+      "end_s": 55.17,
+      "segment_i": 16,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 109.98,
+      "end_s": 109.98,
+      "segment_i": 19,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 134.48,
+      "end_s": 134.92,
+      "segment_i": 21,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 154.22,
+      "end_s": 154.65,
+      "segment_i": 26,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 170.37,
+      "end_s": 170.39,
+      "segment_i": 29,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 218.11,
+      "end_s": 218.7,
+      "segment_i": 34,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 247.83,
+      "end_s": 247.83,
+      "segment_i": 38,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 266.82,
+      "end_s": 267.85,
+      "segment_i": 41,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 276.75,
+      "end_s": 277.04,
+      "segment_i": 44,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 299.94,
+      "end_s": 300.15,
+      "segment_i": 48,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 307.94,
+      "end_s": 308.27,
+      "segment_i": 50,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 336.47,
+      "end_s": 337.22,
+      "segment_i": 54,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 345.89,
+      "end_s": 347.03,
+      "segment_i": 57,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 349.47,
+      "end_s": 349.47,
+      "segment_i": 59,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 379.41,
+      "end_s": 379.67,
+      "segment_i": 62,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 391.22,
+      "end_s": 392.48,
+      "segment_i": 65,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 434.05,
+      "end_s": 434.05,
+      "segment_i": 69,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 457.81,
+      "end_s": 458.7,
+      "segment_i": 74,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 465.48,
+      "end_s": 465.75,
+      "segment_i": 76,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 465.86,
+      "end_s": 465.97,
+      "segment_i": 77,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.07,
+      "end_s": 0.09,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The",
+      "words": [
+        {
+          "w": "The",
+          "s": 0.07,
+          "e": 0.09,
+          "c": 0.608215
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.36,
+      "end_s": 2,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Senator from Utah.",
+      "words": [
+        {
+          "w": "Senator",
+          "s": 0.36,
+          "e": 0.97,
+          "c": 0.542423
+        },
+        {
+          "w": "from",
+          "s": 1.1,
+          "e": 1.54,
+          "c": 0.984164
+        },
+        {
+          "w": "Utah.",
+          "s": 1.54,
+          "e": 2,
+          "c": 0.823588
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 2.05,
+      "end_s": 2.53,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Mr.",
+      "words": [
+        {
+          "w": "Mr.",
+          "s": 2.05,
+          "e": 2.53,
+          "c": 0.93815
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 2.53,
+      "end_s": 5.98,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "President, the budget deal before the Senate today",
+      "words": [
+        {
+          "w": "President,",
+          "s": 2.53,
+          "e": 3.98,
+          "c": 0.872487
+        },
+        {
+          "w": "the",
+          "s": 3.98,
+          "e": 4.11,
+          "c": 0.8188
+        },
+        {
+          "w": "budget",
+          "s": 4.11,
+          "e": 4.33,
+          "c": 0.969609
+        },
+        {
+          "w": "deal",
+          "s": 4.33,
+          "e": 4.47,
+          "c": 0.898565
+        },
+        {
+          "w": "before",
+          "s": 4.47,
+          "e": 4.7,
+          "c": 0.701932
+        },
+        {
+          "w": "the",
+          "s": 4.8,
+          "e": 4.8,
+          "c": 0.894327
+        },
+        {
+          "w": "Senate",
+          "s": 4.87,
+          "e": 4.99,
+          "c": 0.958356
+        },
+        {
+          "w": "today",
+          "s": 5.02,
+          "e": 5.98,
+          "c": 0.919799
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 6.03,
+      "end_s": 7.08,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "is not just a",
+      "words": [
+        {
+          "w": "is",
+          "s": 6.03,
+          "e": 6.2,
+          "c": 0.991592
+        },
+        {
+          "w": "not",
+          "s": 6.34,
+          "e": 6.53,
+          "c": 0.997851
+        },
+        {
+          "w": "just",
+          "s": 6.56,
+          "e": 6.95,
+          "c": 0.994222
+        },
+        {
+          "w": "a",
+          "s": 7.08,
+          "e": 7.08,
+          "c": 0.991242
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 7.08,
+      "end_s": 13.98,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "horrible piece of legislation that is undeserving of this Chamber's support.",
+      "words": [
+        {
+          "w": "horrible",
+          "s": 7.08,
+          "e": 7.63,
+          "c": 0.995017
+        },
+        {
+          "w": "piece",
+          "s": 7.95,
+          "e": 8.51,
+          "c": 0.995674
+        },
+        {
+          "w": "of",
+          "s": 8.51,
+          "e": 8.73,
+          "c": 0.996075
+        },
+        {
+          "w": "legislation",
+          "s": 8.85,
+          "e": 9.97,
+          "c": 0.9938
+        },
+        {
+          "w": "that",
+          "s": 10.05,
+          "e": 10.45,
+          "c": 0.997973
+        },
+        {
+          "w": "is",
+          "s": 10.45,
+          "e": 10.68,
+          "c": 0.998458
+        },
+        {
+          "w": "undeserving",
+          "s": 10.68,
+          "e": 11.63,
+          "c": 0.990176
+        },
+        {
+          "w": "of",
+          "s": 11.96,
+          "e": 12.16,
+          "c": 0.98296
+        },
+        {
+          "w": "this",
+          "s": 12.16,
+          "e": 12.52,
+          "c": 0.986389
+        },
+        {
+          "w": "Chamber's",
+          "s": 12.85,
+          "e": 13.33,
+          "c": 0.281872
+        },
+        {
+          "w": "support.",
+          "s": 13.33,
+          "e": 13.98,
+          "c": 0.954094
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 14.05,
+      "end_s": 17.42,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "It also represents the",
+      "words": [
+        {
+          "w": "It",
+          "s": 14.05,
+          "e": 14.35,
+          "c": 0.998254
+        },
+        {
+          "w": "also",
+          "s": 14.35,
+          "e": 15.1,
+          "c": 0.998833
+        },
+        {
+          "w": "represents",
+          "s": 15.1,
+          "e": 16.98,
+          "c": 0.999462
+        },
+        {
+          "w": "the",
+          "s": 17,
+          "e": 17.42,
+          "c": 0.897093
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 17.58,
+      "end_s": 22.98,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "last gasping breath of a disgraced bipartisan Beltway establishment",
+      "words": [
+        {
+          "w": "last",
+          "s": 17.58,
+          "e": 17.97,
+          "c": 0.998319
+        },
+        {
+          "w": "gasping",
+          "s": 18.12,
+          "e": 19.06,
+          "c": 0.988026
+        },
+        {
+          "w": "breath",
+          "s": 19.07,
+          "e": 19.59,
+          "c": 0.98114
+        },
+        {
+          "w": "of",
+          "s": 20.03,
+          "e": 20.12,
+          "c": 0.999144
+        },
+        {
+          "w": "a",
+          "s": 20.12,
+          "e": 20.19,
+          "c": 0.987622
+        },
+        {
+          "w": "disgraced",
+          "s": 20.34,
+          "e": 20.82,
+          "c": 0.998831
+        },
+        {
+          "w": "bipartisan",
+          "s": 20.82,
+          "e": 21.53,
+          "c": 0.909891
+        },
+        {
+          "w": "Beltway",
+          "s": 21.53,
+          "e": 22.02,
+          "c": 0.71209
+        },
+        {
+          "w": "establishment",
+          "s": 22.85,
+          "e": 22.98,
+          "c": 0.913391
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 23.04,
+      "end_s": 23.63,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "on the",
+      "words": [
+        {
+          "w": "on",
+          "s": 23.04,
+          "e": 23.21,
+          "c": 0.998058
+        },
+        {
+          "w": "the",
+          "s": 23.34,
+          "e": 23.63,
+          "c": 0.998681
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 23.63,
+      "end_s": 25.98,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "verge of collapse.",
+      "words": [
+        {
+          "w": "verge",
+          "s": 23.63,
+          "e": 24.28,
+          "c": 0.998449
+        },
+        {
+          "w": "of",
+          "s": 24.28,
+          "e": 24.54,
+          "c": 0.999744
+        },
+        {
+          "w": "collapse.",
+          "s": 24.54,
+          "e": 25.98,
+          "c": 0.996229
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 26.05,
+      "end_s": 26.92,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The bill is",
+      "words": [
+        {
+          "w": "The",
+          "s": 26.05,
+          "e": 26.07,
+          "c": 0.994038
+        },
+        {
+          "w": "bill",
+          "s": 26.34,
+          "e": 26.71,
+          "c": 0.965178
+        },
+        {
+          "w": "is",
+          "s": 26.71,
+          "e": 26.92,
+          "c": 0.969376
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 26.92,
+      "end_s": 29.82,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the product of an unfair, dysfunctional,",
+      "words": [
+        {
+          "w": "the",
+          "s": 26.92,
+          "e": 27.23,
+          "c": 0.708128
+        },
+        {
+          "w": "product",
+          "s": 27.23,
+          "e": 27.63,
+          "c": 0.997836
+        },
+        {
+          "w": "of",
+          "s": 27.96,
+          "e": 28.12,
+          "c": 0.986361
+        },
+        {
+          "w": "an",
+          "s": 28.12,
+          "e": 28.26,
+          "c": 0.954061
+        },
+        {
+          "w": "unfair,",
+          "s": 28.26,
+          "e": 28.84,
+          "c": 0.905985
+        },
+        {
+          "w": "dysfunctional,",
+          "s": 28.85,
+          "e": 29.82,
+          "c": 0.915837
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 30.01,
+      "end_s": 36.93,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and fundamentally undemocratic process, a process that is virtually indistinguishable from",
+      "words": [
+        {
+          "w": "and",
+          "s": 30.014,
+          "e": 30.174,
+          "c": 0.736061
+        },
+        {
+          "w": "fundamentally",
+          "s": 30.174,
+          "e": 31.694,
+          "c": 0.9823
+        },
+        {
+          "w": "undemocratic",
+          "s": 31.694,
+          "e": 33.014,
+          "c": 0.97669
+        },
+        {
+          "w": "process,",
+          "s": 33.014,
+          "e": 33.934,
+          "c": 0.494681
+        },
+        {
+          "w": "a",
+          "s": 33.944,
+          "e": 34.004,
+          "c": 0.997442
+        },
+        {
+          "w": "process",
+          "s": 34.134,
+          "e": 34.394,
+          "c": 0.99958
+        },
+        {
+          "w": "that",
+          "s": 34.444,
+          "e": 34.594,
+          "c": 0.994814
+        },
+        {
+          "w": "is",
+          "s": 34.814,
+          "e": 34.814,
+          "c": 0.995866
+        },
+        {
+          "w": "virtually",
+          "s": 34.874,
+          "e": 35.384,
+          "c": 0.996535
+        },
+        {
+          "w": "indistinguishable",
+          "s": 35.384,
+          "e": 36.484,
+          "c": 0.98593
+        },
+        {
+          "w": "from",
+          "s": 36.674,
+          "e": 36.934,
+          "c": 0.998473
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 37.41,
+      "end_s": 44.28,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "what we promised the American people, a GOP-controlled Congress, would bring to",
+      "words": [
+        {
+          "w": "what",
+          "s": 37.414,
+          "e": 37.464,
+          "c": 0.998849
+        },
+        {
+          "w": "we",
+          "s": 37.464,
+          "e": 37.704,
+          "c": 0.997837
+        },
+        {
+          "w": "promised",
+          "s": 37.704,
+          "e": 38.704,
+          "c": 0.984609
+        },
+        {
+          "w": "the",
+          "s": 38.704,
+          "e": 38.994,
+          "c": 0.91482
+        },
+        {
+          "w": "American",
+          "s": 38.994,
+          "e": 39.764,
+          "c": 0.996316
+        },
+        {
+          "w": "people,",
+          "s": 39.764,
+          "e": 40.564,
+          "c": 0.550751
+        },
+        {
+          "w": "a",
+          "s": 40.564,
+          "e": 40.654,
+          "c": 0.90685
+        },
+        {
+          "w": "GOP-controlled",
+          "s": 40.754,
+          "e": 41.974,
+          "c": 0.853766
+        },
+        {
+          "w": "Congress,",
+          "s": 41.974,
+          "e": 42.874,
+          "c": 0.519053
+        },
+        {
+          "w": "would",
+          "s": 43.014,
+          "e": 43.504,
+          "c": 0.96412
+        },
+        {
+          "w": "bring",
+          "s": 43.504,
+          "e": 43.894,
+          "c": 0.999296
+        },
+        {
+          "w": "to",
+          "s": 44.054,
+          "e": 44.284,
+          "c": 0.998953
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 44.28,
+      "end_s": 45.2,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "an end.",
+      "words": [
+        {
+          "w": "an",
+          "s": 44.284,
+          "e": 44.504,
+          "c": 0.997721
+        },
+        {
+          "w": "end.",
+          "s": 44.784,
+          "e": 45.204,
+          "c": 0.993165
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 45.39,
+      "end_s": 54.98,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We made that promise precisely because negotiating legislation behind closed doors, without input from the majority of members,",
+      "words": [
+        {
+          "w": "We",
+          "s": 45.394,
+          "e": 45.404,
+          "c": 0.999504
+        },
+        {
+          "w": "made",
+          "s": 45.404,
+          "e": 45.654,
+          "c": 0.995484
+        },
+        {
+          "w": "that",
+          "s": 46.134,
+          "e": 46.204,
+          "c": 0.998306
+        },
+        {
+          "w": "promise",
+          "s": 46.204,
+          "e": 46.824,
+          "c": 0.997712
+        },
+        {
+          "w": "precisely",
+          "s": 46.984,
+          "e": 47.514,
+          "c": 0.668168
+        },
+        {
+          "w": "because",
+          "s": 47.654,
+          "e": 47.844,
+          "c": 0.898702
+        },
+        {
+          "w": "negotiating",
+          "s": 48.024,
+          "e": 48.534,
+          "c": 0.694518
+        },
+        {
+          "w": "legislation",
+          "s": 48.604,
+          "e": 49.304,
+          "c": 0.791744
+        },
+        {
+          "w": "behind",
+          "s": 49.514,
+          "e": 49.804,
+          "c": 0.99867
+        },
+        {
+          "w": "closed",
+          "s": 50.254,
+          "e": 50.784,
+          "c": 0.99842
+        },
+        {
+          "w": "doors,",
+          "s": 50.784,
+          "e": 51.564,
+          "c": 0.61823
+        },
+        {
+          "w": "without",
+          "s": 51.564,
+          "e": 52.154,
+          "c": 0.530145
+        },
+        {
+          "w": "input",
+          "s": 52.154,
+          "e": 52.514,
+          "c": 0.996702
+        },
+        {
+          "w": "from",
+          "s": 52.574,
+          "e": 52.864,
+          "c": 0.954447
+        },
+        {
+          "w": "the",
+          "s": 52.864,
+          "e": 53.074,
+          "c": 0.989698
+        },
+        {
+          "w": "majority",
+          "s": 53.544,
+          "e": 53.654,
+          "c": 0.998114
+        },
+        {
+          "w": "of",
+          "s": 53.744,
+          "e": 53.914,
+          "c": 0.987875
+        },
+        {
+          "w": "members,",
+          "s": 53.944,
+          "e": 54.984,
+          "c": 0.643128
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 55.17,
+      "end_s": 55.18,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and",
+      "words": [
+        {
+          "w": "and",
+          "s": 55.168,
+          "e": 55.168,
+          "c": 0.869132
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 55.23,
+      "end_s": 83.67,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "then rushing it through to final passage without debate or opportunity for amendments violates our party's core principles. It also inevitably leads to bad policy. The Bipartisan Budget Act of 2015 is a case in point. This bill would suspend the debt limit for 17 months and increase government spending beyond its already unsustainable levels.",
+      "words": [
+        {
+          "w": "then",
+          "s": 55.228,
+          "e": 55.488,
+          "c": 0.941289
+        },
+        {
+          "w": "rushing",
+          "s": 55.488,
+          "e": 56.048,
+          "c": 0.986722
+        },
+        {
+          "w": "it",
+          "s": 56.048,
+          "e": 56.218,
+          "c": 0.989785
+        },
+        {
+          "w": "through",
+          "s": 56.218,
+          "e": 56.758,
+          "c": 0.976286
+        },
+        {
+          "w": "to",
+          "s": 56.878,
+          "e": 56.948,
+          "c": 0.988995
+        },
+        {
+          "w": "final",
+          "s": 56.948,
+          "e": 57.358,
+          "c": 0.986286
+        },
+        {
+          "w": "passage",
+          "s": 57.358,
+          "e": 57.778,
+          "c": 0.991266
+        },
+        {
+          "w": "without",
+          "s": 58.218,
+          "e": 58.438,
+          "c": 0.525715
+        },
+        {
+          "w": "debate",
+          "s": 58.538,
+          "e": 58.928,
+          "c": 0.98222
+        },
+        {
+          "w": "or",
+          "s": 58.928,
+          "e": 59.168,
+          "c": 0.926228
+        },
+        {
+          "w": "opportunity",
+          "s": 59.168,
+          "e": 59.918,
+          "c": 0.946479
+        },
+        {
+          "w": "for",
+          "s": 60.058,
+          "e": 60.128,
+          "c": 0.972314
+        },
+        {
+          "w": "amendments",
+          "s": 60.128,
+          "e": 60.708,
+          "c": 0.974665
+        },
+        {
+          "w": "violates",
+          "s": 61.368,
+          "e": 62.058,
+          "c": 0.781094
+        },
+        {
+          "w": "our",
+          "s": 62.058,
+          "e": 62.378,
+          "c": 0.987458
+        },
+        {
+          "w": "party's",
+          "s": 62.568,
+          "e": 63.288,
+          "c": 0.677201
+        },
+        {
+          "w": "core",
+          "s": 63.288,
+          "e": 63.788,
+          "c": 0.995761
+        },
+        {
+          "w": "principles.",
+          "s": 63.788,
+          "e": 65.148,
+          "c": 0.923013
+        },
+        {
+          "w": "It",
+          "s": 65.418,
+          "e": 65.418,
+          "c": 0.992576
+        },
+        {
+          "w": "also",
+          "s": 65.448,
+          "e": 65.968,
+          "c": 0.980658
+        },
+        {
+          "w": "inevitably",
+          "s": 65.978,
+          "e": 67.348,
+          "c": 0.976166
+        },
+        {
+          "w": "leads",
+          "s": 67.348,
+          "e": 67.988,
+          "c": 0.997398
+        },
+        {
+          "w": "to",
+          "s": 67.988,
+          "e": 68.298,
+          "c": 0.997896
+        },
+        {
+          "w": "bad",
+          "s": 68.438,
+          "e": 68.658,
+          "c": 0.996185
+        },
+        {
+          "w": "policy.",
+          "s": 68.758,
+          "e": 69.988,
+          "c": 0.986352
+        },
+        {
+          "w": "The",
+          "s": 70.238,
+          "e": 70.238,
+          "c": 0.992479
+        },
+        {
+          "w": "Bipartisan",
+          "s": 70.288,
+          "e": 71.048,
+          "c": 0.891443
+        },
+        {
+          "w": "Budget",
+          "s": 71.048,
+          "e": 71.548,
+          "c": 0.990642
+        },
+        {
+          "w": "Act",
+          "s": 71.548,
+          "e": 71.798,
+          "c": 0.990733
+        },
+        {
+          "w": "of",
+          "s": 71.798,
+          "e": 71.958,
+          "c": 0.975604
+        },
+        {
+          "w": "2015",
+          "s": 71.958,
+          "e": 72.828,
+          "c": 0.998365
+        },
+        {
+          "w": "is",
+          "s": 73.248,
+          "e": 73.248,
+          "c": 0.956059
+        },
+        {
+          "w": "a",
+          "s": 73.278,
+          "e": 73.348,
+          "c": 0.992615
+        },
+        {
+          "w": "case",
+          "s": 73.398,
+          "e": 73.908,
+          "c": 0.996886
+        },
+        {
+          "w": "in",
+          "s": 73.908,
+          "e": 74.168,
+          "c": 0.983295
+        },
+        {
+          "w": "point.",
+          "s": 74.168,
+          "e": 75.248,
+          "c": 0.972303
+        },
+        {
+          "w": "This",
+          "s": 75.538,
+          "e": 75.538,
+          "c": 0.99166
+        },
+        {
+          "w": "bill",
+          "s": 75.548,
+          "e": 75.828,
+          "c": 0.986041
+        },
+        {
+          "w": "would",
+          "s": 75.828,
+          "e": 76.198,
+          "c": 0.993722
+        },
+        {
+          "w": "suspend",
+          "s": 76.198,
+          "e": 76.558,
+          "c": 0.998432
+        },
+        {
+          "w": "the",
+          "s": 76.748,
+          "e": 76.928,
+          "c": 0.994053
+        },
+        {
+          "w": "debt",
+          "s": 77.018,
+          "e": 77.228,
+          "c": 0.999251
+        },
+        {
+          "w": "limit",
+          "s": 77.228,
+          "e": 77.468,
+          "c": 0.989434
+        },
+        {
+          "w": "for",
+          "s": 77.608,
+          "e": 77.808,
+          "c": 0.996516
+        },
+        {
+          "w": "17",
+          "s": 77.808,
+          "e": 78.098,
+          "c": 0.919453
+        },
+        {
+          "w": "months",
+          "s": 78.538,
+          "e": 78.748,
+          "c": 0.995302
+        },
+        {
+          "w": "and",
+          "s": 78.978,
+          "e": 78.978,
+          "c": 0.996664
+        },
+        {
+          "w": "increase",
+          "s": 79.048,
+          "e": 79.578,
+          "c": 0.993492
+        },
+        {
+          "w": "government",
+          "s": 79.588,
+          "e": 80.348,
+          "c": 0.992517
+        },
+        {
+          "w": "spending",
+          "s": 80.348,
+          "e": 80.958,
+          "c": 0.981109
+        },
+        {
+          "w": "beyond",
+          "s": 80.958,
+          "e": 81.368,
+          "c": 0.991773
+        },
+        {
+          "w": "its",
+          "s": 81.368,
+          "e": 81.618,
+          "c": 0.989938
+        },
+        {
+          "w": "already",
+          "s": 82.038,
+          "e": 82.178,
+          "c": 0.950664
+        },
+        {
+          "w": "unsustainable",
+          "s": 82.178,
+          "e": 83.168,
+          "c": 0.982189
+        },
+        {
+          "w": "levels.",
+          "s": 83.168,
+          "e": 83.668,
+          "c": 0.721051
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 83.93,
+      "end_s": 109.98,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And it would do so, while failing to make reforms, that would put us on a path toward fiscal sustainability. Many proponents of this budget deal challenge this claim. They say, well, the bill isn't perfect, but while it isn't perfect, it does include some meaningful entitlement reforms. The sales pitch we hear most often alleges",
+      "words": [
+        {
+          "w": "And",
+          "s": 83.926,
+          "e": 83.936,
+          "c": 0.586496
+        },
+        {
+          "w": "it",
+          "s": 83.966,
+          "e": 84.166,
+          "c": 0.956807
+        },
+        {
+          "w": "would",
+          "s": 84.166,
+          "e": 84.726,
+          "c": 0.991951
+        },
+        {
+          "w": "do",
+          "s": 84.726,
+          "e": 84.946,
+          "c": 0.994311
+        },
+        {
+          "w": "so,",
+          "s": 84.946,
+          "e": 85.246,
+          "c": 0.189223
+        },
+        {
+          "w": "while",
+          "s": 85.456,
+          "e": 85.856,
+          "c": 0.968252
+        },
+        {
+          "w": "failing",
+          "s": 85.856,
+          "e": 86.426,
+          "c": 0.997141
+        },
+        {
+          "w": "to",
+          "s": 86.536,
+          "e": 86.636,
+          "c": 0.989991
+        },
+        {
+          "w": "make",
+          "s": 86.636,
+          "e": 86.866,
+          "c": 0.982701
+        },
+        {
+          "w": "reforms,",
+          "s": 86.936,
+          "e": 87.656,
+          "c": 0.540983
+        },
+        {
+          "w": "that",
+          "s": 87.726,
+          "e": 87.776,
+          "c": 0.520188
+        },
+        {
+          "w": "would",
+          "s": 87.776,
+          "e": 87.936,
+          "c": 0.969781
+        },
+        {
+          "w": "put",
+          "s": 87.936,
+          "e": 88.236,
+          "c": 0.964871
+        },
+        {
+          "w": "us",
+          "s": 88.236,
+          "e": 88.366,
+          "c": 0.972088
+        },
+        {
+          "w": "on",
+          "s": 88.416,
+          "e": 88.656,
+          "c": 0.958561
+        },
+        {
+          "w": "a",
+          "s": 88.656,
+          "e": 88.786,
+          "c": 0.959472
+        },
+        {
+          "w": "path",
+          "s": 88.786,
+          "e": 89.156,
+          "c": 0.992579
+        },
+        {
+          "w": "toward",
+          "s": 89.466,
+          "e": 89.766,
+          "c": 0.882882
+        },
+        {
+          "w": "fiscal",
+          "s": 90.286,
+          "e": 90.776,
+          "c": 0.980626
+        },
+        {
+          "w": "sustainability.",
+          "s": 90.776,
+          "e": 93.056,
+          "c": 0.988942
+        },
+        {
+          "w": "Many",
+          "s": 93.366,
+          "e": 93.366,
+          "c": 0.997105
+        },
+        {
+          "w": "proponents",
+          "s": 93.366,
+          "e": 94.136,
+          "c": 0.989697
+        },
+        {
+          "w": "of",
+          "s": 94.136,
+          "e": 94.286,
+          "c": 0.95666
+        },
+        {
+          "w": "this",
+          "s": 94.286,
+          "e": 94.456,
+          "c": 0.860953
+        },
+        {
+          "w": "budget",
+          "s": 94.886,
+          "e": 95.066,
+          "c": 0.959858
+        },
+        {
+          "w": "deal",
+          "s": 95.066,
+          "e": 95.376,
+          "c": 0.875601
+        },
+        {
+          "w": "challenge",
+          "s": 95.376,
+          "e": 96.076,
+          "c": 0.868091
+        },
+        {
+          "w": "this",
+          "s": 96.076,
+          "e": 96.296,
+          "c": 0.933474
+        },
+        {
+          "w": "claim.",
+          "s": 96.376,
+          "e": 97.016,
+          "c": 0.819119
+        },
+        {
+          "w": "They",
+          "s": 97.336,
+          "e": 97.336,
+          "c": 0.99575
+        },
+        {
+          "w": "say,",
+          "s": 97.366,
+          "e": 97.646,
+          "c": 0.498647
+        },
+        {
+          "w": "well,",
+          "s": 97.776,
+          "e": 98.106,
+          "c": 0.492751
+        },
+        {
+          "w": "the",
+          "s": 98.116,
+          "e": 98.316,
+          "c": 0.970426
+        },
+        {
+          "w": "bill",
+          "s": 98.316,
+          "e": 98.456,
+          "c": 0.989453
+        },
+        {
+          "w": "isn't",
+          "s": 98.586,
+          "e": 98.946,
+          "c": 0.960702
+        },
+        {
+          "w": "perfect,",
+          "s": 98.946,
+          "e": 99.576,
+          "c": 0.543051
+        },
+        {
+          "w": "but",
+          "s": 99.576,
+          "e": 99.686,
+          "c": 0.958844
+        },
+        {
+          "w": "while",
+          "s": 99.786,
+          "e": 100.136,
+          "c": 0.890868
+        },
+        {
+          "w": "it",
+          "s": 100.136,
+          "e": 100.226,
+          "c": 0.973209
+        },
+        {
+          "w": "isn't",
+          "s": 100.236,
+          "e": 100.626,
+          "c": 0.940256
+        },
+        {
+          "w": "perfect,",
+          "s": 101.116,
+          "e": 101.336,
+          "c": 0.72063
+        },
+        {
+          "w": "it",
+          "s": 101.336,
+          "e": 101.406,
+          "c": 0.981985
+        },
+        {
+          "w": "does",
+          "s": 101.636,
+          "e": 102.116,
+          "c": 0.942044
+        },
+        {
+          "w": "include",
+          "s": 102.116,
+          "e": 102.526,
+          "c": 0.961436
+        },
+        {
+          "w": "some",
+          "s": 102.526,
+          "e": 102.636,
+          "c": 0.576928
+        },
+        {
+          "w": "meaningful",
+          "s": 103.106,
+          "e": 103.846,
+          "c": 0.999005
+        },
+        {
+          "w": "entitlement",
+          "s": 103.846,
+          "e": 104.996,
+          "c": 0.994788
+        },
+        {
+          "w": "reforms.",
+          "s": 104.996,
+          "e": 106.036,
+          "c": 0.943838
+        },
+        {
+          "w": "The",
+          "s": 106.366,
+          "e": 106.376,
+          "c": 0.998919
+        },
+        {
+          "w": "sales",
+          "s": 106.406,
+          "e": 106.886,
+          "c": 0.974654
+        },
+        {
+          "w": "pitch",
+          "s": 106.986,
+          "e": 107.446,
+          "c": 0.997046
+        },
+        {
+          "w": "we",
+          "s": 107.486,
+          "e": 107.676,
+          "c": 0.926144
+        },
+        {
+          "w": "hear",
+          "s": 107.896,
+          "e": 108.116,
+          "c": 0.988325
+        },
+        {
+          "w": "most",
+          "s": 108.226,
+          "e": 108.586,
+          "c": 0.994649
+        },
+        {
+          "w": "often",
+          "s": 108.586,
+          "e": 109.136,
+          "c": 0.997929
+        },
+        {
+          "w": "alleges",
+          "s": 109.136,
+          "e": 109.976,
+          "c": 0.969559
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 109.98,
+      "end_s": 109.99,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that",
+      "words": [
+        {
+          "w": "that",
+          "s": 109.976,
+          "e": 109.976,
+          "c": 0.898191
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 110.18,
+      "end_s": 134.53,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "This budget deal will save the Social Security Disability Trust Fund from insolvency. But we're never told exactly how this bill would do this. That's because, as always, the devil is in the details. Now, Mr. President, I rise today to discuss these very details, details that prove this budget deal's so-called entitlement reforms are nothing of the sort.",
+      "words": [
+        {
+          "w": "This",
+          "s": 110.182,
+          "e": 110.302,
+          "c": 0.579266
+        },
+        {
+          "w": "budget",
+          "s": 110.302,
+          "e": 110.822,
+          "c": 0.968902
+        },
+        {
+          "w": "deal",
+          "s": 110.822,
+          "e": 111.172,
+          "c": 0.986145
+        },
+        {
+          "w": "will",
+          "s": 111.172,
+          "e": 111.522,
+          "c": 0.989272
+        },
+        {
+          "w": "save",
+          "s": 111.522,
+          "e": 111.742,
+          "c": 0.989959
+        },
+        {
+          "w": "the",
+          "s": 111.972,
+          "e": 112.132,
+          "c": 0.960472
+        },
+        {
+          "w": "Social",
+          "s": 112.132,
+          "e": 112.622,
+          "c": 0.961508
+        },
+        {
+          "w": "Security",
+          "s": 112.692,
+          "e": 113.102,
+          "c": 0.995118
+        },
+        {
+          "w": "Disability",
+          "s": 113.542,
+          "e": 114.122,
+          "c": 0.882127
+        },
+        {
+          "w": "Trust",
+          "s": 114.312,
+          "e": 114.602,
+          "c": 0.932395
+        },
+        {
+          "w": "Fund",
+          "s": 114.612,
+          "e": 114.942,
+          "c": 0.957014
+        },
+        {
+          "w": "from",
+          "s": 115.122,
+          "e": 115.292,
+          "c": 0.959929
+        },
+        {
+          "w": "insolvency.",
+          "s": 115.292,
+          "e": 116.752,
+          "c": 0.901882
+        },
+        {
+          "w": "But",
+          "s": 116.972,
+          "e": 117.022,
+          "c": 0.959036
+        },
+        {
+          "w": "we're",
+          "s": 117.022,
+          "e": 117.432,
+          "c": 0.784527
+        },
+        {
+          "w": "never",
+          "s": 117.552,
+          "e": 117.922,
+          "c": 0.992521
+        },
+        {
+          "w": "told",
+          "s": 117.922,
+          "e": 118.282,
+          "c": 0.992892
+        },
+        {
+          "w": "exactly",
+          "s": 118.282,
+          "e": 118.912,
+          "c": 0.949331
+        },
+        {
+          "w": "how",
+          "s": 118.912,
+          "e": 119.152,
+          "c": 0.980546
+        },
+        {
+          "w": "this",
+          "s": 119.192,
+          "e": 119.542,
+          "c": 0.969028
+        },
+        {
+          "w": "bill",
+          "s": 119.542,
+          "e": 119.832,
+          "c": 0.994253
+        },
+        {
+          "w": "would",
+          "s": 119.892,
+          "e": 120.352,
+          "c": 0.953963
+        },
+        {
+          "w": "do",
+          "s": 120.352,
+          "e": 120.532,
+          "c": 0.994837
+        },
+        {
+          "w": "this.",
+          "s": 120.532,
+          "e": 121.162,
+          "c": 0.954684
+        },
+        {
+          "w": "That's",
+          "s": 121.392,
+          "e": 121.492,
+          "c": 0.965932
+        },
+        {
+          "w": "because,",
+          "s": 121.492,
+          "e": 121.882,
+          "c": 0.865471
+        },
+        {
+          "w": "as",
+          "s": 121.992,
+          "e": 122.042,
+          "c": 0.997992
+        },
+        {
+          "w": "always,",
+          "s": 122.042,
+          "e": 122.442,
+          "c": 0.988506
+        },
+        {
+          "w": "the",
+          "s": 122.442,
+          "e": 122.592,
+          "c": 0.99289
+        },
+        {
+          "w": "devil",
+          "s": 122.592,
+          "e": 122.842,
+          "c": 0.959655
+        },
+        {
+          "w": "is",
+          "s": 122.842,
+          "e": 122.942,
+          "c": 0.986611
+        },
+        {
+          "w": "in",
+          "s": 122.942,
+          "e": 122.992,
+          "c": 0.998428
+        },
+        {
+          "w": "the",
+          "s": 123.052,
+          "e": 123.052,
+          "c": 0.995363
+        },
+        {
+          "w": "details.",
+          "s": 123.212,
+          "e": 123.712,
+          "c": 0.996077
+        },
+        {
+          "w": "Now,",
+          "s": 123.932,
+          "e": 124.062,
+          "c": 0.890162
+        },
+        {
+          "w": "Mr.",
+          "s": 124.162,
+          "e": 124.392,
+          "c": 0.97652
+        },
+        {
+          "w": "President,",
+          "s": 124.512,
+          "e": 125.282,
+          "c": 0.987413
+        },
+        {
+          "w": "I",
+          "s": 125.282,
+          "e": 125.352,
+          "c": 0.990533
+        },
+        {
+          "w": "rise",
+          "s": 125.352,
+          "e": 125.502,
+          "c": 0.993995
+        },
+        {
+          "w": "today",
+          "s": 125.732,
+          "e": 126.022,
+          "c": 0.992951
+        },
+        {
+          "w": "to",
+          "s": 126.022,
+          "e": 126.172,
+          "c": 0.990261
+        },
+        {
+          "w": "discuss",
+          "s": 126.172,
+          "e": 126.692,
+          "c": 0.999022
+        },
+        {
+          "w": "these",
+          "s": 126.692,
+          "e": 126.962,
+          "c": 0.991686
+        },
+        {
+          "w": "very",
+          "s": 127.302,
+          "e": 127.362,
+          "c": 0.994884
+        },
+        {
+          "w": "details,",
+          "s": 127.362,
+          "e": 127.952,
+          "c": 0.327647
+        },
+        {
+          "w": "details",
+          "s": 128.182,
+          "e": 128.482,
+          "c": 0.97311
+        },
+        {
+          "w": "that",
+          "s": 128.482,
+          "e": 128.782,
+          "c": 0.998673
+        },
+        {
+          "w": "prove",
+          "s": 128.782,
+          "e": 129.162,
+          "c": 0.996538
+        },
+        {
+          "w": "this",
+          "s": 129.162,
+          "e": 129.452,
+          "c": 0.962955
+        },
+        {
+          "w": "budget",
+          "s": 129.462,
+          "e": 129.742,
+          "c": 0.981225
+        },
+        {
+          "w": "deal's",
+          "s": 129.972,
+          "e": 130.312,
+          "c": 0.949378
+        },
+        {
+          "w": "so-called",
+          "s": 130.362,
+          "e": 131.032,
+          "c": 0.984465
+        },
+        {
+          "w": "entitlement",
+          "s": 131.032,
+          "e": 131.862,
+          "c": 0.930306
+        },
+        {
+          "w": "reforms",
+          "s": 131.862,
+          "e": 132.452,
+          "c": 0.937745
+        },
+        {
+          "w": "are",
+          "s": 132.452,
+          "e": 132.552,
+          "c": 0.827572
+        },
+        {
+          "w": "nothing",
+          "s": 132.732,
+          "e": 133.382,
+          "c": 0.995271
+        },
+        {
+          "w": "of",
+          "s": 133.392,
+          "e": 133.572,
+          "c": 0.996354
+        },
+        {
+          "w": "the",
+          "s": 133.572,
+          "e": 133.852,
+          "c": 0.94852
+        },
+        {
+          "w": "sort.",
+          "s": 133.852,
+          "e": 134.532,
+          "c": 0.922476
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 134.48,
+      "end_s": 134.92,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "At best,",
+      "words": [
+        {
+          "w": "At",
+          "s": 134.48,
+          "e": 134.59,
+          "c": 0.924948
+        },
+        {
+          "w": "best,",
+          "s": 134.59,
+          "e": 134.92,
+          "c": 0.765231
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 135,
+      "end_s": 141.36,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "they're well-intentioned but ineffectual tweaks to a program that desperately needs fundamental structural",
+      "words": [
+        {
+          "w": "they're",
+          "s": 135,
+          "e": 135.33,
+          "c": 0.804922
+        },
+        {
+          "w": "well-intentioned",
+          "s": 135.33,
+          "e": 136.28,
+          "c": 0.804634
+        },
+        {
+          "w": "but",
+          "s": 136.28,
+          "e": 136.44,
+          "c": 0.730027
+        },
+        {
+          "w": "ineffectual",
+          "s": 136.58,
+          "e": 137.17,
+          "c": 0.982799
+        },
+        {
+          "w": "tweaks",
+          "s": 137.18,
+          "e": 137.77,
+          "c": 0.826394
+        },
+        {
+          "w": "to",
+          "s": 137.88,
+          "e": 137.94,
+          "c": 0.591283
+        },
+        {
+          "w": "a",
+          "s": 137.94,
+          "e": 138,
+          "c": 0.980679
+        },
+        {
+          "w": "program",
+          "s": 138,
+          "e": 138.42,
+          "c": 0.987776
+        },
+        {
+          "w": "that",
+          "s": 138.42,
+          "e": 138.59,
+          "c": 0.829023
+        },
+        {
+          "w": "desperately",
+          "s": 139.09,
+          "e": 139.52,
+          "c": 0.894469
+        },
+        {
+          "w": "needs",
+          "s": 139.52,
+          "e": 139.91,
+          "c": 0.961224
+        },
+        {
+          "w": "fundamental",
+          "s": 139.91,
+          "e": 140.64,
+          "c": 0.789368
+        },
+        {
+          "w": "structural",
+          "s": 140.64,
+          "e": 141.36,
+          "c": 0.670834
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 142.09,
+      "end_s": 146.65,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "overhaul. At worst, they're accounting gimmicks,",
+      "words": [
+        {
+          "w": "overhaul.",
+          "s": 142.09,
+          "e": 143.22,
+          "c": 0.943124
+        },
+        {
+          "w": "At",
+          "s": 143.22,
+          "e": 143.41,
+          "c": 0.994025
+        },
+        {
+          "w": "worst,",
+          "s": 143.65,
+          "e": 144.08,
+          "c": 0.958354
+        },
+        {
+          "w": "they're",
+          "s": 144.21,
+          "e": 144.74,
+          "c": 0.953034
+        },
+        {
+          "w": "accounting",
+          "s": 144.74,
+          "e": 145.69,
+          "c": 0.982601
+        },
+        {
+          "w": "gimmicks,",
+          "s": 145.73,
+          "e": 146.65,
+          "c": 0.610264
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 146.65,
+      "end_s": 153.24,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "unbecoming, of the United States Congress. According to the Social Security",
+      "words": [
+        {
+          "w": "unbecoming,",
+          "s": 146.65,
+          "e": 147.79,
+          "c": 0.700127
+        },
+        {
+          "w": "of",
+          "s": 147.83,
+          "e": 147.98,
+          "c": 0.992472
+        },
+        {
+          "w": "the",
+          "s": 147.98,
+          "e": 148.25,
+          "c": 0.991614
+        },
+        {
+          "w": "United",
+          "s": 148.26,
+          "e": 148.71,
+          "c": 0.961642
+        },
+        {
+          "w": "States",
+          "s": 148.83,
+          "e": 149.4,
+          "c": 0.997052
+        },
+        {
+          "w": "Congress.",
+          "s": 149.4,
+          "e": 150.4,
+          "c": 0.969496
+        },
+        {
+          "w": "According",
+          "s": 150.97,
+          "e": 151.43,
+          "c": 0.997033
+        },
+        {
+          "w": "to",
+          "s": 151.45,
+          "e": 151.63,
+          "c": 0.998502
+        },
+        {
+          "w": "the",
+          "s": 151.63,
+          "e": 151.93,
+          "c": 0.979389
+        },
+        {
+          "w": "Social",
+          "s": 151.93,
+          "e": 152.5,
+          "c": 0.869898
+        },
+        {
+          "w": "Security",
+          "s": 152.64,
+          "e": 153.24,
+          "c": 0.99902
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 153.38,
+      "end_s": 154.22,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Trustees,",
+      "words": [
+        {
+          "w": "Trustees,",
+          "s": 153.38,
+          "e": 154.22,
+          "c": 0.812194
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 154.22,
+      "end_s": 154.65,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the Social",
+      "words": [
+        {
+          "w": "the",
+          "s": 154.22,
+          "e": 154.51,
+          "c": 0.671126
+        },
+        {
+          "w": "Social",
+          "s": 154.51,
+          "e": 154.65,
+          "c": 0.97816
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 155.15,
+      "end_s": 162.26,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Security Disability Insurance Program, or SSDI, is scheduled to run out of money in 2016.",
+      "words": [
+        {
+          "w": "Security",
+          "s": 155.15,
+          "e": 155.89,
+          "c": 0.998998
+        },
+        {
+          "w": "Disability",
+          "s": 155.89,
+          "e": 156.77,
+          "c": 0.95649
+        },
+        {
+          "w": "Insurance",
+          "s": 156.9,
+          "e": 157.42,
+          "c": 0.970292
+        },
+        {
+          "w": "Program,",
+          "s": 158.15,
+          "e": 158.5,
+          "c": 0.676931
+        },
+        {
+          "w": "or",
+          "s": 158.5,
+          "e": 158.52,
+          "c": 0.972185
+        },
+        {
+          "w": "SSDI,",
+          "s": 158.52,
+          "e": 158.62,
+          "c": 0.969683
+        },
+        {
+          "w": "is",
+          "s": 158.62,
+          "e": 158.65,
+          "c": 0.826063
+        },
+        {
+          "w": "scheduled",
+          "s": 158.65,
+          "e": 159.46,
+          "c": 0.995516
+        },
+        {
+          "w": "to",
+          "s": 159.6,
+          "e": 159.79,
+          "c": 0.997333
+        },
+        {
+          "w": "run",
+          "s": 160,
+          "e": 160.06,
+          "c": 0.997427
+        },
+        {
+          "w": "out",
+          "s": 160.06,
+          "e": 160.33,
+          "c": 0.997364
+        },
+        {
+          "w": "of",
+          "s": 160.33,
+          "e": 160.44,
+          "c": 0.996611
+        },
+        {
+          "w": "money",
+          "s": 160.44,
+          "e": 160.73,
+          "c": 0.998978
+        },
+        {
+          "w": "in",
+          "s": 160.73,
+          "e": 161.14,
+          "c": 0.993856
+        },
+        {
+          "w": "2016.",
+          "s": 161.51,
+          "e": 162.26,
+          "c": 0.964304
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "start_s": 162.27,
+      "end_s": 170.32,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "which means that without serious reform, disability benefits would be slashed across the board by nearly 20%.",
+      "words": [
+        {
+          "w": "which",
+          "s": 162.274,
+          "e": 162.514,
+          "c": 0.498747
+        },
+        {
+          "w": "means",
+          "s": 162.514,
+          "e": 162.804,
+          "c": 0.994503
+        },
+        {
+          "w": "that",
+          "s": 162.804,
+          "e": 163.034,
+          "c": 0.910476
+        },
+        {
+          "w": "without",
+          "s": 163.034,
+          "e": 163.444,
+          "c": 0.891045
+        },
+        {
+          "w": "serious",
+          "s": 163.444,
+          "e": 163.804,
+          "c": 0.989753
+        },
+        {
+          "w": "reform,",
+          "s": 163.914,
+          "e": 164.334,
+          "c": 0.87738
+        },
+        {
+          "w": "disability",
+          "s": 164.344,
+          "e": 164.854,
+          "c": 0.754048
+        },
+        {
+          "w": "benefits",
+          "s": 164.924,
+          "e": 165.184,
+          "c": 0.993941
+        },
+        {
+          "w": "would",
+          "s": 165.534,
+          "e": 165.604,
+          "c": 0.871466
+        },
+        {
+          "w": "be",
+          "s": 165.604,
+          "e": 165.684,
+          "c": 0.995178
+        },
+        {
+          "w": "slashed",
+          "s": 165.684,
+          "e": 166.124,
+          "c": 0.980219
+        },
+        {
+          "w": "across",
+          "s": 166.154,
+          "e": 166.464,
+          "c": 0.855476
+        },
+        {
+          "w": "the",
+          "s": 166.464,
+          "e": 166.854,
+          "c": 0.968694
+        },
+        {
+          "w": "board",
+          "s": 166.854,
+          "e": 167.124,
+          "c": 0.975109
+        },
+        {
+          "w": "by",
+          "s": 167.634,
+          "e": 167.834,
+          "c": 0.826623
+        },
+        {
+          "w": "nearly",
+          "s": 167.834,
+          "e": 168.664,
+          "c": 0.981897
+        },
+        {
+          "w": "20%.",
+          "s": 168.764,
+          "e": 170.324,
+          "c": 0.673854
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "start_s": 170.37,
+      "end_s": 170.39,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Under",
+      "words": [
+        {
+          "w": "Under",
+          "s": 170.374,
+          "e": 170.394,
+          "c": 0.995
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "start_s": 170.6,
+      "end_s": 179.76,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the Bipartisan Budget Act of 2015, the bankruptcy deadline of SSDI would be pushed off for an additional six years until 2022. But here's the",
+      "words": [
+        {
+          "w": "the",
+          "s": 170.604,
+          "e": 170.694,
+          "c": 0.990159
+        },
+        {
+          "w": "Bipartisan",
+          "s": 170.764,
+          "e": 171.194,
+          "c": 0.884884
+        },
+        {
+          "w": "Budget",
+          "s": 171.254,
+          "e": 171.544,
+          "c": 0.986176
+        },
+        {
+          "w": "Act",
+          "s": 171.544,
+          "e": 171.694,
+          "c": 0.991132
+        },
+        {
+          "w": "of",
+          "s": 171.694,
+          "e": 171.734,
+          "c": 0.967342
+        },
+        {
+          "w": "2015,",
+          "s": 171.824,
+          "e": 172.564,
+          "c": 0.96486
+        },
+        {
+          "w": "the",
+          "s": 172.564,
+          "e": 172.744,
+          "c": 0.937571
+        },
+        {
+          "w": "bankruptcy",
+          "s": 172.804,
+          "e": 173.274,
+          "c": 0.984213
+        },
+        {
+          "w": "deadline",
+          "s": 173.634,
+          "e": 174.224,
+          "c": 0.998325
+        },
+        {
+          "w": "of",
+          "s": 174.224,
+          "e": 174.354,
+          "c": 0.985817
+        },
+        {
+          "w": "SSDI",
+          "s": 174.444,
+          "e": 174.724,
+          "c": 0.984072
+        },
+        {
+          "w": "would",
+          "s": 174.724,
+          "e": 174.984,
+          "c": 0.765285
+        },
+        {
+          "w": "be",
+          "s": 174.984,
+          "e": 175.054,
+          "c": 0.99336
+        },
+        {
+          "w": "pushed",
+          "s": 175.074,
+          "e": 175.294,
+          "c": 0.988474
+        },
+        {
+          "w": "off",
+          "s": 175.394,
+          "e": 175.524,
+          "c": 0.976181
+        },
+        {
+          "w": "for",
+          "s": 175.734,
+          "e": 175.794,
+          "c": 0.831384
+        },
+        {
+          "w": "an",
+          "s": 175.794,
+          "e": 175.904,
+          "c": 0.970331
+        },
+        {
+          "w": "additional",
+          "s": 175.904,
+          "e": 176.344,
+          "c": 0.995751
+        },
+        {
+          "w": "six",
+          "s": 176.534,
+          "e": 176.664,
+          "c": 0.866297
+        },
+        {
+          "w": "years",
+          "s": 176.664,
+          "e": 176.944,
+          "c": 0.993636
+        },
+        {
+          "w": "until",
+          "s": 176.974,
+          "e": 177.314,
+          "c": 0.885329
+        },
+        {
+          "w": "2022.",
+          "s": 177.444,
+          "e": 178.914,
+          "c": 0.974065
+        },
+        {
+          "w": "But",
+          "s": 178.974,
+          "e": 178.994,
+          "c": 0.948288
+        },
+        {
+          "w": "here's",
+          "s": 179.204,
+          "e": 179.544,
+          "c": 0.943176
+        },
+        {
+          "w": "the",
+          "s": 179.594,
+          "e": 179.764,
+          "c": 0.997798
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "start_s": 179.76,
+      "end_s": 188.72,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "kicker. It would do so by raiding the Social Security Trust Fund to the tune of $150 billion.",
+      "words": [
+        {
+          "w": "kicker.",
+          "s": 179.764,
+          "e": 180.344,
+          "c": 0.437925
+        },
+        {
+          "w": "It",
+          "s": 180.424,
+          "e": 180.524,
+          "c": 0.776705
+        },
+        {
+          "w": "would",
+          "s": 180.614,
+          "e": 181.014,
+          "c": 0.996394
+        },
+        {
+          "w": "do",
+          "s": 181.014,
+          "e": 181.184,
+          "c": 0.996331
+        },
+        {
+          "w": "so",
+          "s": 181.184,
+          "e": 181.344,
+          "c": 0.998447
+        },
+        {
+          "w": "by",
+          "s": 181.404,
+          "e": 181.524,
+          "c": 0.994674
+        },
+        {
+          "w": "raiding",
+          "s": 181.524,
+          "e": 181.884,
+          "c": 0.644117
+        },
+        {
+          "w": "the",
+          "s": 182.234,
+          "e": 182.334,
+          "c": 0.990437
+        },
+        {
+          "w": "Social",
+          "s": 182.364,
+          "e": 182.824,
+          "c": 0.935363
+        },
+        {
+          "w": "Security",
+          "s": 182.854,
+          "e": 183.534,
+          "c": 0.998995
+        },
+        {
+          "w": "Trust",
+          "s": 183.534,
+          "e": 183.784,
+          "c": 0.89422
+        },
+        {
+          "w": "Fund",
+          "s": 184.324,
+          "e": 184.324,
+          "c": 0.982257
+        },
+        {
+          "w": "to",
+          "s": 184.334,
+          "e": 184.624,
+          "c": 0.856815
+        },
+        {
+          "w": "the",
+          "s": 184.634,
+          "e": 184.944,
+          "c": 0.998152
+        },
+        {
+          "w": "tune",
+          "s": 185.134,
+          "e": 185.724,
+          "c": 0.994622
+        },
+        {
+          "w": "of",
+          "s": 185.724,
+          "e": 185.914,
+          "c": 0.998828
+        },
+        {
+          "w": "$150",
+          "s": 185.914,
+          "e": 187.594,
+          "c": 0.811459
+        },
+        {
+          "w": "billion.",
+          "s": 187.594,
+          "e": 188.724,
+          "c": 0.886676
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "start_s": 188.72,
+      "end_s": 210.11,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "That's right, our grand bipartisan solution to the impending insolvency of our nation's largest disability insurance program amounts to stealing $150 billion from our nation's largest retirement insurance program. And this isn't the only phony pay-for in this budget deal. There are others that simply",
+      "words": [
+        {
+          "w": "That's",
+          "s": 188.72,
+          "e": 189.23,
+          "c": 0.931198
+        },
+        {
+          "w": "right,",
+          "s": 189.26,
+          "e": 189.71,
+          "c": 0.409053
+        },
+        {
+          "w": "our",
+          "s": 189.82,
+          "e": 190.07,
+          "c": 0.96348
+        },
+        {
+          "w": "grand",
+          "s": 190.07,
+          "e": 190.49,
+          "c": 0.994761
+        },
+        {
+          "w": "bipartisan",
+          "s": 190.49,
+          "e": 191.34,
+          "c": 0.683721
+        },
+        {
+          "w": "solution",
+          "s": 191.34,
+          "e": 192.06,
+          "c": 0.98642
+        },
+        {
+          "w": "to",
+          "s": 192.06,
+          "e": 192.14,
+          "c": 0.810527
+        },
+        {
+          "w": "the",
+          "s": 192.18,
+          "e": 192.29,
+          "c": 0.973257
+        },
+        {
+          "w": "impending",
+          "s": 192.29,
+          "e": 192.72,
+          "c": 0.989743
+        },
+        {
+          "w": "insolvency",
+          "s": 192.72,
+          "e": 193.4,
+          "c": 0.982213
+        },
+        {
+          "w": "of",
+          "s": 193.4,
+          "e": 193.59,
+          "c": 0.855728
+        },
+        {
+          "w": "our",
+          "s": 193.6,
+          "e": 193.96,
+          "c": 0.91819
+        },
+        {
+          "w": "nation's",
+          "s": 194.32,
+          "e": 194.81,
+          "c": 0.919288
+        },
+        {
+          "w": "largest",
+          "s": 195.43,
+          "e": 195.43,
+          "c": 0.997158
+        },
+        {
+          "w": "disability",
+          "s": 195.44,
+          "e": 195.89,
+          "c": 0.956659
+        },
+        {
+          "w": "insurance",
+          "s": 196.23,
+          "e": 196.87,
+          "c": 0.973832
+        },
+        {
+          "w": "program",
+          "s": 196.87,
+          "e": 197.4,
+          "c": 0.971973
+        },
+        {
+          "w": "amounts",
+          "s": 197.4,
+          "e": 197.93,
+          "c": 0.866126
+        },
+        {
+          "w": "to",
+          "s": 197.93,
+          "e": 198.08,
+          "c": 0.99739
+        },
+        {
+          "w": "stealing",
+          "s": 198.08,
+          "e": 198.63,
+          "c": 0.939143
+        },
+        {
+          "w": "$150",
+          "s": 198.74,
+          "e": 199.44,
+          "c": 0.82339
+        },
+        {
+          "w": "billion",
+          "s": 199.44,
+          "e": 199.97,
+          "c": 0.990063
+        },
+        {
+          "w": "from",
+          "s": 199.97,
+          "e": 200.14,
+          "c": 0.910177
+        },
+        {
+          "w": "our",
+          "s": 200.49,
+          "e": 200.49,
+          "c": 0.972055
+        },
+        {
+          "w": "nation's",
+          "s": 200.5,
+          "e": 201.16,
+          "c": 0.987677
+        },
+        {
+          "w": "largest",
+          "s": 201.7,
+          "e": 201.85,
+          "c": 0.993955
+        },
+        {
+          "w": "retirement",
+          "s": 201.85,
+          "e": 202.84,
+          "c": 0.994837
+        },
+        {
+          "w": "insurance",
+          "s": 202.84,
+          "e": 203.73,
+          "c": 0.978937
+        },
+        {
+          "w": "program.",
+          "s": 203.73,
+          "e": 204.74,
+          "c": 0.97291
+        },
+        {
+          "w": "And",
+          "s": 204.74,
+          "e": 204.95,
+          "c": 0.969525
+        },
+        {
+          "w": "this",
+          "s": 205.24,
+          "e": 205.24,
+          "c": 0.99042
+        },
+        {
+          "w": "isn't",
+          "s": 205.28,
+          "e": 205.59,
+          "c": 0.992934
+        },
+        {
+          "w": "the",
+          "s": 205.59,
+          "e": 205.66,
+          "c": 0.994903
+        },
+        {
+          "w": "only",
+          "s": 205.76,
+          "e": 206.09,
+          "c": 0.996987
+        },
+        {
+          "w": "phony",
+          "s": 206.09,
+          "e": 206.44,
+          "c": 0.944045
+        },
+        {
+          "w": "pay-for",
+          "s": 206.44,
+          "e": 206.79,
+          "c": 0.785213
+        },
+        {
+          "w": "in",
+          "s": 206.96,
+          "e": 207.07,
+          "c": 0.981562
+        },
+        {
+          "w": "this",
+          "s": 207.07,
+          "e": 207.36,
+          "c": 0.959422
+        },
+        {
+          "w": "budget",
+          "s": 207.36,
+          "e": 207.79,
+          "c": 0.995801
+        },
+        {
+          "w": "deal.",
+          "s": 207.79,
+          "e": 208.4,
+          "c": 0.838382
+        },
+        {
+          "w": "There",
+          "s": 208.4,
+          "e": 208.76,
+          "c": 0.999474
+        },
+        {
+          "w": "are",
+          "s": 208.94,
+          "e": 208.97,
+          "c": 0.998626
+        },
+        {
+          "w": "others",
+          "s": 208.97,
+          "e": 209.32,
+          "c": 0.986636
+        },
+        {
+          "w": "that",
+          "s": 209.38,
+          "e": 209.64,
+          "c": 0.950456
+        },
+        {
+          "w": "simply",
+          "s": 209.72,
+          "e": 210.11,
+          "c": 0.988583
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "start_s": 210.11,
+      "end_s": 218.15,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "move around money from elsewhere in the federal budget, like the Crime Victims Fund and the Asset Forfeiture Fund.",
+      "words": [
+        {
+          "w": "move",
+          "s": 210.11,
+          "e": 210.39,
+          "c": 0.994072
+        },
+        {
+          "w": "around",
+          "s": 210.39,
+          "e": 210.76,
+          "c": 0.992939
+        },
+        {
+          "w": "money",
+          "s": 210.87,
+          "e": 211.14,
+          "c": 0.994421
+        },
+        {
+          "w": "from",
+          "s": 211.18,
+          "e": 211.46,
+          "c": 0.985738
+        },
+        {
+          "w": "elsewhere",
+          "s": 211.46,
+          "e": 212.1,
+          "c": 0.985825
+        },
+        {
+          "w": "in",
+          "s": 212.1,
+          "e": 212.13,
+          "c": 0.986363
+        },
+        {
+          "w": "the",
+          "s": 212.24,
+          "e": 212.45,
+          "c": 0.996371
+        },
+        {
+          "w": "federal",
+          "s": 212.45,
+          "e": 212.95,
+          "c": 0.893169
+        },
+        {
+          "w": "budget,",
+          "s": 212.95,
+          "e": 213.56,
+          "c": 0.800701
+        },
+        {
+          "w": "like",
+          "s": 213.6,
+          "e": 213.94,
+          "c": 0.998283
+        },
+        {
+          "w": "the",
+          "s": 214.14,
+          "e": 214.21,
+          "c": 0.988908
+        },
+        {
+          "w": "Crime",
+          "s": 214.21,
+          "e": 214.52,
+          "c": 0.945328
+        },
+        {
+          "w": "Victims",
+          "s": 214.66,
+          "e": 215.16,
+          "c": 0.980943
+        },
+        {
+          "w": "Fund",
+          "s": 215.27,
+          "e": 215.61,
+          "c": 0.964209
+        },
+        {
+          "w": "and",
+          "s": 215.61,
+          "e": 215.87,
+          "c": 0.944384
+        },
+        {
+          "w": "the",
+          "s": 215.87,
+          "e": 216.13,
+          "c": 0.951344
+        },
+        {
+          "w": "Asset",
+          "s": 216.13,
+          "e": 216.56,
+          "c": 0.980193
+        },
+        {
+          "w": "Forfeiture",
+          "s": 216.56,
+          "e": 217.33,
+          "c": 0.965348
+        },
+        {
+          "w": "Fund.",
+          "s": 217.44,
+          "e": 218.15,
+          "c": 0.976963
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "start_s": 218.11,
+      "end_s": 218.7,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "There are",
+      "words": [
+        {
+          "w": "There",
+          "s": 218.112,
+          "e": 218.482,
+          "c": 0.933369
+        },
+        {
+          "w": "are",
+          "s": 218.702,
+          "e": 218.702,
+          "c": 0.982289
+        }
+      ]
+    },
+    {
+      "i": 35,
+      "start_s": 218.7,
+      "end_s": 224.54,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "also new heavy-handed bureaucratic instruments that purport to implement cost savings in Medicaid",
+      "words": [
+        {
+          "w": "also",
+          "s": 218.702,
+          "e": 218.992,
+          "c": 0.984314
+        },
+        {
+          "w": "new",
+          "s": 218.992,
+          "e": 219.212,
+          "c": 0.978429
+        },
+        {
+          "w": "heavy-handed",
+          "s": 219.212,
+          "e": 220.112,
+          "c": 0.817998
+        },
+        {
+          "w": "bureaucratic",
+          "s": 220.112,
+          "e": 220.752,
+          "c": 0.869818
+        },
+        {
+          "w": "instruments",
+          "s": 220.752,
+          "e": 221.272,
+          "c": 0.967743
+        },
+        {
+          "w": "that",
+          "s": 221.272,
+          "e": 221.392,
+          "c": 0.492981
+        },
+        {
+          "w": "purport",
+          "s": 221.392,
+          "e": 221.832,
+          "c": 0.852897
+        },
+        {
+          "w": "to",
+          "s": 221.832,
+          "e": 221.842,
+          "c": 0.9105
+        },
+        {
+          "w": "implement",
+          "s": 222.012,
+          "e": 222.512,
+          "c": 0.818288
+        },
+        {
+          "w": "cost",
+          "s": 222.902,
+          "e": 223.152,
+          "c": 0.887084
+        },
+        {
+          "w": "savings",
+          "s": 223.722,
+          "e": 223.722,
+          "c": 0.99512
+        },
+        {
+          "w": "in",
+          "s": 223.742,
+          "e": 223.882,
+          "c": 0.972264
+        },
+        {
+          "w": "Medicaid",
+          "s": 223.882,
+          "e": 224.542,
+          "c": 0.953094
+        }
+      ]
+    },
+    {
+      "i": 36,
+      "start_s": 224.54,
+      "end_s": 231.2,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "reimbursements, but really only impose misguided price controls on the generic drug",
+      "words": [
+        {
+          "w": "reimbursements,",
+          "s": 224.542,
+          "e": 225.802,
+          "c": 0.667564
+        },
+        {
+          "w": "but",
+          "s": 225.882,
+          "e": 226.042,
+          "c": 0.986338
+        },
+        {
+          "w": "really",
+          "s": 226.082,
+          "e": 226.582,
+          "c": 0.964639
+        },
+        {
+          "w": "only",
+          "s": 226.582,
+          "e": 226.892,
+          "c": 0.954278
+        },
+        {
+          "w": "impose",
+          "s": 227.052,
+          "e": 227.402,
+          "c": 0.926556
+        },
+        {
+          "w": "misguided",
+          "s": 227.402,
+          "e": 228.132,
+          "c": 0.993083
+        },
+        {
+          "w": "price",
+          "s": 228.132,
+          "e": 228.532,
+          "c": 0.992528
+        },
+        {
+          "w": "controls",
+          "s": 228.572,
+          "e": 229.272,
+          "c": 0.981794
+        },
+        {
+          "w": "on",
+          "s": 229.272,
+          "e": 229.302,
+          "c": 0.969468
+        },
+        {
+          "w": "the",
+          "s": 229.412,
+          "e": 229.622,
+          "c": 0.995182
+        },
+        {
+          "w": "generic",
+          "s": 230.222,
+          "e": 230.612,
+          "c": 0.998392
+        },
+        {
+          "w": "drug",
+          "s": 230.632,
+          "e": 231.202,
+          "c": 0.991718
+        }
+      ]
+    },
+    {
+      "i": 37,
+      "start_s": 231.2,
+      "end_s": 247.54,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "industry. Only in Washington, D.C. could something so deceptive and ineffective, something so unfair to America's seniors and future generations, be considered a reform.",
+      "words": [
+        {
+          "w": "industry.",
+          "s": 231.202,
+          "e": 232.762,
+          "c": 0.994158
+        },
+        {
+          "w": "Only",
+          "s": 232.792,
+          "e": 233.152,
+          "c": 0.998479
+        },
+        {
+          "w": "in",
+          "s": 233.332,
+          "e": 233.332,
+          "c": 0.998759
+        },
+        {
+          "w": "Washington,",
+          "s": 233.382,
+          "e": 234.372,
+          "c": 0.636656
+        },
+        {
+          "w": "D.C.",
+          "s": 234.412,
+          "e": 235.082,
+          "c": 0.718456
+        },
+        {
+          "w": "could",
+          "s": 235.082,
+          "e": 235.532,
+          "c": 0.982577
+        },
+        {
+          "w": "something",
+          "s": 235.532,
+          "e": 236.252,
+          "c": 0.997457
+        },
+        {
+          "w": "so",
+          "s": 236.392,
+          "e": 236.512,
+          "c": 0.990728
+        },
+        {
+          "w": "deceptive",
+          "s": 236.512,
+          "e": 237.192,
+          "c": 0.982519
+        },
+        {
+          "w": "and",
+          "s": 237.302,
+          "e": 237.432,
+          "c": 0.951526
+        },
+        {
+          "w": "ineffective,",
+          "s": 237.582,
+          "e": 238.612,
+          "c": 0.630998
+        },
+        {
+          "w": "something",
+          "s": 238.732,
+          "e": 239.512,
+          "c": 0.993024
+        },
+        {
+          "w": "so",
+          "s": 239.592,
+          "e": 239.732,
+          "c": 0.990675
+        },
+        {
+          "w": "unfair",
+          "s": 239.812,
+          "e": 240.152,
+          "c": 0.95686
+        },
+        {
+          "w": "to",
+          "s": 240.392,
+          "e": 240.622,
+          "c": 0.998344
+        },
+        {
+          "w": "America's",
+          "s": 240.982,
+          "e": 241.652,
+          "c": 0.962303
+        },
+        {
+          "w": "seniors",
+          "s": 241.652,
+          "e": 242.412,
+          "c": 0.986256
+        },
+        {
+          "w": "and",
+          "s": 242.562,
+          "e": 242.742,
+          "c": 0.97918
+        },
+        {
+          "w": "future",
+          "s": 242.852,
+          "e": 243.482,
+          "c": 0.99515
+        },
+        {
+          "w": "generations,",
+          "s": 243.482,
+          "e": 244.882,
+          "c": 0.572507
+        },
+        {
+          "w": "be",
+          "s": 244.972,
+          "e": 245.192,
+          "c": 0.99862
+        },
+        {
+          "w": "considered",
+          "s": 245.202,
+          "e": 246.352,
+          "c": 0.999321
+        },
+        {
+          "w": "a",
+          "s": 246.352,
+          "e": 246.462,
+          "c": 0.990178
+        },
+        {
+          "w": "reform.",
+          "s": 246.462,
+          "e": 247.542,
+          "c": 0.968485
+        }
+      ]
+    },
+    {
+      "i": 38,
+      "start_s": 247.83,
+      "end_s": 247.84,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "There",
+      "words": [
+        {
+          "w": "There",
+          "s": 247.826,
+          "e": 247.826,
+          "c": 0.885522
+        }
+      ]
+    },
+    {
+      "i": 39,
+      "start_s": 247.83,
+      "end_s": 264.02,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "are a couple of sound entitlement reforms in this budget deal that deserve to be commended. First, there is a provision that would correct a design error in the Social Security program that amounts to an unfair and wasteful loophole. Fixing this would save",
+      "words": [
+        {
+          "w": "are",
+          "s": 247.826,
+          "e": 247.996,
+          "c": 0.994076
+        },
+        {
+          "w": "a",
+          "s": 247.996,
+          "e": 248.046,
+          "c": 0.990135
+        },
+        {
+          "w": "couple",
+          "s": 248.046,
+          "e": 248.396,
+          "c": 0.997234
+        },
+        {
+          "w": "of",
+          "s": 248.396,
+          "e": 248.426,
+          "c": 0.992333
+        },
+        {
+          "w": "sound",
+          "s": 248.516,
+          "e": 248.796,
+          "c": 0.989111
+        },
+        {
+          "w": "entitlement",
+          "s": 248.796,
+          "e": 249.486,
+          "c": 0.989718
+        },
+        {
+          "w": "reforms",
+          "s": 249.496,
+          "e": 249.936,
+          "c": 0.964074
+        },
+        {
+          "w": "in",
+          "s": 249.936,
+          "e": 250.036,
+          "c": 0.786211
+        },
+        {
+          "w": "this",
+          "s": 250.036,
+          "e": 250.236,
+          "c": 0.964661
+        },
+        {
+          "w": "budget",
+          "s": 250.236,
+          "e": 250.556,
+          "c": 0.963803
+        },
+        {
+          "w": "deal",
+          "s": 250.676,
+          "e": 250.876,
+          "c": 0.959204
+        },
+        {
+          "w": "that",
+          "s": 250.876,
+          "e": 251.026,
+          "c": 0.849859
+        },
+        {
+          "w": "deserve",
+          "s": 251.036,
+          "e": 251.416,
+          "c": 0.924439
+        },
+        {
+          "w": "to",
+          "s": 251.416,
+          "e": 251.446,
+          "c": 0.962164
+        },
+        {
+          "w": "be",
+          "s": 251.556,
+          "e": 251.626,
+          "c": 0.995072
+        },
+        {
+          "w": "commended.",
+          "s": 251.636,
+          "e": 252.556,
+          "c": 0.942083
+        },
+        {
+          "w": "First,",
+          "s": 253.026,
+          "e": 253.226,
+          "c": 0.971795
+        },
+        {
+          "w": "there",
+          "s": 253.226,
+          "e": 253.426,
+          "c": 0.984812
+        },
+        {
+          "w": "is",
+          "s": 253.566,
+          "e": 253.626,
+          "c": 0.984934
+        },
+        {
+          "w": "a",
+          "s": 253.716,
+          "e": 253.786,
+          "c": 0.981849
+        },
+        {
+          "w": "provision",
+          "s": 253.786,
+          "e": 254.376,
+          "c": 0.996246
+        },
+        {
+          "w": "that",
+          "s": 254.466,
+          "e": 254.696,
+          "c": 0.985831
+        },
+        {
+          "w": "would",
+          "s": 254.706,
+          "e": 255.046,
+          "c": 0.991055
+        },
+        {
+          "w": "correct",
+          "s": 255.056,
+          "e": 255.426,
+          "c": 0.990427
+        },
+        {
+          "w": "a",
+          "s": 255.566,
+          "e": 255.626,
+          "c": 0.964201
+        },
+        {
+          "w": "design",
+          "s": 255.626,
+          "e": 256.056,
+          "c": 0.991484
+        },
+        {
+          "w": "error",
+          "s": 256.056,
+          "e": 256.456,
+          "c": 0.978775
+        },
+        {
+          "w": "in",
+          "s": 256.476,
+          "e": 256.566,
+          "c": 0.951442
+        },
+        {
+          "w": "the",
+          "s": 256.566,
+          "e": 256.646,
+          "c": 0.973495
+        },
+        {
+          "w": "Social",
+          "s": 256.766,
+          "e": 256.946,
+          "c": 0.614818
+        },
+        {
+          "w": "Security",
+          "s": 257.036,
+          "e": 257.346,
+          "c": 0.996724
+        },
+        {
+          "w": "program",
+          "s": 257.346,
+          "e": 257.756,
+          "c": 0.668684
+        },
+        {
+          "w": "that",
+          "s": 258.146,
+          "e": 258.306,
+          "c": 0.998542
+        },
+        {
+          "w": "amounts",
+          "s": 258.306,
+          "e": 259.096,
+          "c": 0.992288
+        },
+        {
+          "w": "to",
+          "s": 259.096,
+          "e": 259.316,
+          "c": 0.997721
+        },
+        {
+          "w": "an",
+          "s": 259.316,
+          "e": 259.496,
+          "c": 0.981611
+        },
+        {
+          "w": "unfair",
+          "s": 259.586,
+          "e": 260.216,
+          "c": 0.996799
+        },
+        {
+          "w": "and",
+          "s": 260.216,
+          "e": 260.546,
+          "c": 0.964084
+        },
+        {
+          "w": "wasteful",
+          "s": 260.556,
+          "e": 261.356,
+          "c": 0.988323
+        },
+        {
+          "w": "loophole.",
+          "s": 261.466,
+          "e": 262.466,
+          "c": 0.994846
+        },
+        {
+          "w": "Fixing",
+          "s": 262.746,
+          "e": 263.136,
+          "c": 0.999012
+        },
+        {
+          "w": "this",
+          "s": 263.136,
+          "e": 263.406,
+          "c": 0.997427
+        },
+        {
+          "w": "would",
+          "s": 263.406,
+          "e": 263.746,
+          "c": 0.997234
+        },
+        {
+          "w": "save",
+          "s": 263.746,
+          "e": 264.016,
+          "c": 0.997185
+        }
+      ]
+    },
+    {
+      "i": 40,
+      "start_s": 264.02,
+      "end_s": 266.81,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "a significant amount of money over a 75-year",
+      "words": [
+        {
+          "w": "a",
+          "s": 264.016,
+          "e": 264.086,
+          "c": 0.992971
+        },
+        {
+          "w": "significant",
+          "s": 264.086,
+          "e": 264.836,
+          "c": 0.998209
+        },
+        {
+          "w": "amount",
+          "s": 264.946,
+          "e": 265.256,
+          "c": 0.997118
+        },
+        {
+          "w": "of",
+          "s": 265.256,
+          "e": 265.396,
+          "c": 0.996824
+        },
+        {
+          "w": "money",
+          "s": 265.396,
+          "e": 265.736,
+          "c": 0.99968
+        },
+        {
+          "w": "over",
+          "s": 265.736,
+          "e": 266.006,
+          "c": 0.982173
+        },
+        {
+          "w": "a",
+          "s": 266.006,
+          "e": 266.076,
+          "c": 0.98947
+        },
+        {
+          "w": "75-year",
+          "s": 266.076,
+          "e": 266.806,
+          "c": 0.892925
+        }
+      ]
+    },
+    {
+      "i": 41,
+      "start_s": 266.82,
+      "end_s": 267.85,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "window. There",
+      "words": [
+        {
+          "w": "window.",
+          "s": 266.816,
+          "e": 267.346,
+          "c": 0.985988
+        },
+        {
+          "w": "There",
+          "s": 267.846,
+          "e": 267.846,
+          "c": 0.999012
+        }
+      ]
+    },
+    {
+      "i": 42,
+      "start_s": 267.85,
+      "end_s": 273.98,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "are also measures that would increase the penalties for fraud, create new pilot programs, and prohibit doctors with",
+      "words": [
+        {
+          "w": "are",
+          "s": 267.846,
+          "e": 268.016,
+          "c": 0.941686
+        },
+        {
+          "w": "also",
+          "s": 268.016,
+          "e": 268.246,
+          "c": 0.996386
+        },
+        {
+          "w": "measures",
+          "s": 268.246,
+          "e": 268.686,
+          "c": 0.994431
+        },
+        {
+          "w": "that",
+          "s": 268.766,
+          "e": 268.946,
+          "c": 0.994476
+        },
+        {
+          "w": "would",
+          "s": 268.946,
+          "e": 269.196,
+          "c": 0.986124
+        },
+        {
+          "w": "increase",
+          "s": 269.286,
+          "e": 269.656,
+          "c": 0.997213
+        },
+        {
+          "w": "the",
+          "s": 269.766,
+          "e": 269.866,
+          "c": 0.952637
+        },
+        {
+          "w": "penalties",
+          "s": 269.876,
+          "e": 270.406,
+          "c": 0.992977
+        },
+        {
+          "w": "for",
+          "s": 270.406,
+          "e": 270.566,
+          "c": 0.995327
+        },
+        {
+          "w": "fraud,",
+          "s": 270.576,
+          "e": 271.046,
+          "c": 0.984996
+        },
+        {
+          "w": "create",
+          "s": 271.056,
+          "e": 271.406,
+          "c": 0.966285
+        },
+        {
+          "w": "new",
+          "s": 271.406,
+          "e": 271.466,
+          "c": 0.993341
+        },
+        {
+          "w": "pilot",
+          "s": 271.596,
+          "e": 271.876,
+          "c": 0.995291
+        },
+        {
+          "w": "programs,",
+          "s": 272.166,
+          "e": 272.546,
+          "c": 0.624126
+        },
+        {
+          "w": "and",
+          "s": 272.546,
+          "e": 272.746,
+          "c": 0.987118
+        },
+        {
+          "w": "prohibit",
+          "s": 272.746,
+          "e": 273.276,
+          "c": 0.990815
+        },
+        {
+          "w": "doctors",
+          "s": 273.276,
+          "e": 273.736,
+          "c": 0.992892
+        },
+        {
+          "w": "with",
+          "s": 273.746,
+          "e": 273.976,
+          "c": 0.989646
+        }
+      ]
+    },
+    {
+      "i": 43,
+      "start_s": 274.09,
+      "end_s": 276.72,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "felonies from submitting medical evidence.",
+      "words": [
+        {
+          "w": "felonies",
+          "s": 274.086,
+          "e": 274.546,
+          "c": 0.99475
+        },
+        {
+          "w": "from",
+          "s": 274.546,
+          "e": 274.816,
+          "c": 0.996075
+        },
+        {
+          "w": "submitting",
+          "s": 274.816,
+          "e": 275.496,
+          "c": 0.994856
+        },
+        {
+          "w": "medical",
+          "s": 275.496,
+          "e": 275.956,
+          "c": 0.997752
+        },
+        {
+          "w": "evidence.",
+          "s": 275.966,
+          "e": 276.716,
+          "c": 0.994808
+        }
+      ]
+    },
+    {
+      "i": 44,
+      "start_s": 276.75,
+      "end_s": 277.04,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "But",
+      "words": [
+        {
+          "w": "But",
+          "s": 276.752,
+          "e": 277.042,
+          "c": 0.879315
+        }
+      ]
+    },
+    {
+      "i": 45,
+      "start_s": 277.16,
+      "end_s": 287.04,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "these minor changes don't even come close to putting SSDI on a path toward fiscal sustainability and sanity. And they represent",
+      "words": [
+        {
+          "w": "these",
+          "s": 277.162,
+          "e": 277.552,
+          "c": 0.958484
+        },
+        {
+          "w": "minor",
+          "s": 277.552,
+          "e": 278.052,
+          "c": 0.994814
+        },
+        {
+          "w": "changes",
+          "s": 278.052,
+          "e": 278.372,
+          "c": 0.996508
+        },
+        {
+          "w": "don't",
+          "s": 278.742,
+          "e": 279.132,
+          "c": 0.96202
+        },
+        {
+          "w": "even",
+          "s": 279.332,
+          "e": 279.442,
+          "c": 0.975135
+        },
+        {
+          "w": "come",
+          "s": 279.442,
+          "e": 279.682,
+          "c": 0.983457
+        },
+        {
+          "w": "close",
+          "s": 279.792,
+          "e": 280.152,
+          "c": 0.985912
+        },
+        {
+          "w": "to",
+          "s": 280.152,
+          "e": 280.162,
+          "c": 0.906345
+        },
+        {
+          "w": "putting",
+          "s": 280.252,
+          "e": 280.592,
+          "c": 0.987827
+        },
+        {
+          "w": "SSDI",
+          "s": 280.592,
+          "e": 281.462,
+          "c": 0.93303
+        },
+        {
+          "w": "on",
+          "s": 281.862,
+          "e": 281.872,
+          "c": 0.901266
+        },
+        {
+          "w": "a",
+          "s": 281.872,
+          "e": 281.932,
+          "c": 0.987652
+        },
+        {
+          "w": "path",
+          "s": 281.932,
+          "e": 282.182,
+          "c": 0.996307
+        },
+        {
+          "w": "toward",
+          "s": 282.182,
+          "e": 282.592,
+          "c": 0.90172
+        },
+        {
+          "w": "fiscal",
+          "s": 282.592,
+          "e": 282.992,
+          "c": 0.977228
+        },
+        {
+          "w": "sustainability",
+          "s": 282.992,
+          "e": 284.232,
+          "c": 0.928294
+        },
+        {
+          "w": "and",
+          "s": 284.322,
+          "e": 284.432,
+          "c": 0.792736
+        },
+        {
+          "w": "sanity.",
+          "s": 284.432,
+          "e": 285.752,
+          "c": 0.601599
+        },
+        {
+          "w": "And",
+          "s": 285.752,
+          "e": 285.992,
+          "c": 0.942133
+        },
+        {
+          "w": "they",
+          "s": 286.162,
+          "e": 286.232,
+          "c": 0.941311
+        },
+        {
+          "w": "represent",
+          "s": 286.322,
+          "e": 287.042,
+          "c": 0.992612
+        }
+      ]
+    },
+    {
+      "i": 46,
+      "start_s": 287.04,
+      "end_s": 291.85,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "only a tiny fraction of the sensible reform proposals put forth by",
+      "words": [
+        {
+          "w": "only",
+          "s": 287.042,
+          "e": 287.332,
+          "c": 0.921867
+        },
+        {
+          "w": "a",
+          "s": 287.332,
+          "e": 287.432,
+          "c": 0.997997
+        },
+        {
+          "w": "tiny",
+          "s": 287.432,
+          "e": 287.732,
+          "c": 0.988966
+        },
+        {
+          "w": "fraction",
+          "s": 288.332,
+          "e": 288.412,
+          "c": 0.998887
+        },
+        {
+          "w": "of",
+          "s": 288.412,
+          "e": 288.552,
+          "c": 0.993083
+        },
+        {
+          "w": "the",
+          "s": 288.562,
+          "e": 288.812,
+          "c": 0.990563
+        },
+        {
+          "w": "sensible",
+          "s": 288.812,
+          "e": 289.452,
+          "c": 0.993392
+        },
+        {
+          "w": "reform",
+          "s": 289.462,
+          "e": 289.842,
+          "c": 0.989538
+        },
+        {
+          "w": "proposals",
+          "s": 289.992,
+          "e": 290.462,
+          "c": 0.995989
+        },
+        {
+          "w": "put",
+          "s": 290.862,
+          "e": 291.022,
+          "c": 0.976721
+        },
+        {
+          "w": "forth",
+          "s": 291.092,
+          "e": 291.622,
+          "c": 0.996829
+        },
+        {
+          "w": "by",
+          "s": 291.752,
+          "e": 291.852,
+          "c": 0.986175
+        }
+      ]
+    },
+    {
+      "i": 47,
+      "start_s": 291.85,
+      "end_s": 299.99,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "our conference. Many of my colleagues, like Senator Lankford and Senator Cotton, have already spoken or will soon speak.",
+      "words": [
+        {
+          "w": "our",
+          "s": 291.852,
+          "e": 292.182,
+          "c": 0.994393
+        },
+        {
+          "w": "conference.",
+          "s": 292.222,
+          "e": 293.652,
+          "c": 0.911502
+        },
+        {
+          "w": "Many",
+          "s": 293.652,
+          "e": 293.892,
+          "c": 0.99354
+        },
+        {
+          "w": "of",
+          "s": 294.012,
+          "e": 294.012,
+          "c": 0.995607
+        },
+        {
+          "w": "my",
+          "s": 294.062,
+          "e": 294.132,
+          "c": 0.997857
+        },
+        {
+          "w": "colleagues,",
+          "s": 294.222,
+          "e": 294.852,
+          "c": 0.670497
+        },
+        {
+          "w": "like",
+          "s": 294.852,
+          "e": 295.092,
+          "c": 0.992326
+        },
+        {
+          "w": "Senator",
+          "s": 295.092,
+          "e": 295.382,
+          "c": 0.948264
+        },
+        {
+          "w": "Lankford",
+          "s": 295.482,
+          "e": 296.002,
+          "c": 0.888094
+        },
+        {
+          "w": "and",
+          "s": 296.182,
+          "e": 296.182,
+          "c": 0.979673
+        },
+        {
+          "w": "Senator",
+          "s": 296.232,
+          "e": 296.592,
+          "c": 0.93904
+        },
+        {
+          "w": "Cotton,",
+          "s": 296.692,
+          "e": 297.082,
+          "c": 0.840212
+        },
+        {
+          "w": "have",
+          "s": 297.152,
+          "e": 297.502,
+          "c": 0.975806
+        },
+        {
+          "w": "already",
+          "s": 297.502,
+          "e": 298.122,
+          "c": 0.930671
+        },
+        {
+          "w": "spoken",
+          "s": 298.122,
+          "e": 298.362,
+          "c": 0.99466
+        },
+        {
+          "w": "or",
+          "s": 298.762,
+          "e": 298.822,
+          "c": 0.742113
+        },
+        {
+          "w": "will",
+          "s": 298.822,
+          "e": 299.172,
+          "c": 0.975703
+        },
+        {
+          "w": "soon",
+          "s": 299.172,
+          "e": 299.522,
+          "c": 0.972164
+        },
+        {
+          "w": "speak.",
+          "s": 299.522,
+          "e": 299.992,
+          "c": 0.745478
+        }
+      ]
+    },
+    {
+      "i": 48,
+      "start_s": 299.94,
+      "end_s": 300.15,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "on",
+      "words": [
+        {
+          "w": "on",
+          "s": 299.936,
+          "e": 300.146,
+          "c": 0.788768
+        }
+      ]
+    },
+    {
+      "i": 49,
+      "start_s": 300.32,
+      "end_s": 307.93,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the floor about the long list of structural reform ideas that are still sitting on the sidelines of this debate.",
+      "words": [
+        {
+          "w": "the",
+          "s": 300.316,
+          "e": 300.466,
+          "c": 0.996472
+        },
+        {
+          "w": "floor",
+          "s": 300.466,
+          "e": 301.006,
+          "c": 0.996776
+        },
+        {
+          "w": "about",
+          "s": 301.006,
+          "e": 301.296,
+          "c": 0.928829
+        },
+        {
+          "w": "the",
+          "s": 301.636,
+          "e": 301.796,
+          "c": 0.974177
+        },
+        {
+          "w": "long",
+          "s": 301.796,
+          "e": 302.086,
+          "c": 0.994806
+        },
+        {
+          "w": "list",
+          "s": 302.086,
+          "e": 302.386,
+          "c": 0.993121
+        },
+        {
+          "w": "of",
+          "s": 302.386,
+          "e": 302.436,
+          "c": 0.844085
+        },
+        {
+          "w": "structural",
+          "s": 302.436,
+          "e": 302.966,
+          "c": 0.937779
+        },
+        {
+          "w": "reform",
+          "s": 303.006,
+          "e": 303.576,
+          "c": 0.925828
+        },
+        {
+          "w": "ideas",
+          "s": 303.576,
+          "e": 303.926,
+          "c": 0.957964
+        },
+        {
+          "w": "that",
+          "s": 303.936,
+          "e": 304.056,
+          "c": 0.997584
+        },
+        {
+          "w": "are",
+          "s": 304.316,
+          "e": 304.476,
+          "c": 0.996883
+        },
+        {
+          "w": "still",
+          "s": 304.476,
+          "e": 304.866,
+          "c": 0.99456
+        },
+        {
+          "w": "sitting",
+          "s": 304.866,
+          "e": 305.296,
+          "c": 0.994033
+        },
+        {
+          "w": "on",
+          "s": 305.576,
+          "e": 305.576,
+          "c": 0.972765
+        },
+        {
+          "w": "the",
+          "s": 305.636,
+          "e": 305.786,
+          "c": 0.99899
+        },
+        {
+          "w": "sidelines",
+          "s": 305.786,
+          "e": 306.436,
+          "c": 0.98353
+        },
+        {
+          "w": "of",
+          "s": 306.436,
+          "e": 306.636,
+          "c": 0.978129
+        },
+        {
+          "w": "this",
+          "s": 306.646,
+          "e": 307.036,
+          "c": 0.993923
+        },
+        {
+          "w": "debate.",
+          "s": 307.036,
+          "e": 307.926,
+          "c": 0.979688
+        }
+      ]
+    },
+    {
+      "i": 50,
+      "start_s": 307.94,
+      "end_s": 308.27,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I'd like",
+      "words": [
+        {
+          "w": "I'd",
+          "s": 307.936,
+          "e": 308.076,
+          "c": 0.932825
+        },
+        {
+          "w": "like",
+          "s": 308.266,
+          "e": 308.266,
+          "c": 0.999096
+        }
+      ]
+    },
+    {
+      "i": 51,
+      "start_s": 308.32,
+      "end_s": 320.62,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to take a moment to touch on just a few of them. Senator Coates has a proposal that would protect the SSDI Trust Fund from being drawn down by fugitive felons illegally receiving disability benefits.",
+      "words": [
+        {
+          "w": "to",
+          "s": 308.316,
+          "e": 308.366,
+          "c": 0.998491
+        },
+        {
+          "w": "take",
+          "s": 308.366,
+          "e": 308.556,
+          "c": 0.995547
+        },
+        {
+          "w": "a",
+          "s": 308.556,
+          "e": 308.576,
+          "c": 0.998645
+        },
+        {
+          "w": "moment",
+          "s": 308.716,
+          "e": 308.936,
+          "c": 0.999523
+        },
+        {
+          "w": "to",
+          "s": 308.936,
+          "e": 309.056,
+          "c": 0.983543
+        },
+        {
+          "w": "touch",
+          "s": 309.136,
+          "e": 309.296,
+          "c": 0.998774
+        },
+        {
+          "w": "on",
+          "s": 309.616,
+          "e": 309.616,
+          "c": 0.986066
+        },
+        {
+          "w": "just",
+          "s": 309.636,
+          "e": 309.916,
+          "c": 0.975543
+        },
+        {
+          "w": "a",
+          "s": 309.916,
+          "e": 309.986,
+          "c": 0.998178
+        },
+        {
+          "w": "few",
+          "s": 309.986,
+          "e": 310.216,
+          "c": 0.999605
+        },
+        {
+          "w": "of",
+          "s": 310.216,
+          "e": 310.306,
+          "c": 0.998062
+        },
+        {
+          "w": "them.",
+          "s": 310.386,
+          "e": 310.936,
+          "c": 0.995002
+        },
+        {
+          "w": "Senator",
+          "s": 311.306,
+          "e": 311.486,
+          "c": 0.975007
+        },
+        {
+          "w": "Coates",
+          "s": 311.486,
+          "e": 311.956,
+          "c": 0.435941
+        },
+        {
+          "w": "has",
+          "s": 311.956,
+          "e": 312.196,
+          "c": 0.995034
+        },
+        {
+          "w": "a",
+          "s": 312.196,
+          "e": 312.276,
+          "c": 0.998226
+        },
+        {
+          "w": "proposal",
+          "s": 312.276,
+          "e": 312.936,
+          "c": 0.998374
+        },
+        {
+          "w": "that",
+          "s": 312.936,
+          "e": 313.056,
+          "c": 0.723121
+        },
+        {
+          "w": "would",
+          "s": 313.056,
+          "e": 313.196,
+          "c": 0.982967
+        },
+        {
+          "w": "protect",
+          "s": 313.196,
+          "e": 313.436,
+          "c": 0.977478
+        },
+        {
+          "w": "the",
+          "s": 313.436,
+          "e": 313.636,
+          "c": 0.81841
+        },
+        {
+          "w": "SSDI",
+          "s": 313.636,
+          "e": 313.916,
+          "c": 0.953703
+        },
+        {
+          "w": "Trust",
+          "s": 314.006,
+          "e": 314.486,
+          "c": 0.661627
+        },
+        {
+          "w": "Fund",
+          "s": 314.486,
+          "e": 314.926,
+          "c": 0.974896
+        },
+        {
+          "w": "from",
+          "s": 315.286,
+          "e": 315.286,
+          "c": 0.998643
+        },
+        {
+          "w": "being",
+          "s": 315.316,
+          "e": 315.726,
+          "c": 0.999548
+        },
+        {
+          "w": "drawn",
+          "s": 315.726,
+          "e": 316.166,
+          "c": 0.997385
+        },
+        {
+          "w": "down",
+          "s": 316.166,
+          "e": 316.306,
+          "c": 0.990854
+        },
+        {
+          "w": "by",
+          "s": 316.636,
+          "e": 316.686,
+          "c": 0.997251
+        },
+        {
+          "w": "fugitive",
+          "s": 316.686,
+          "e": 317.226,
+          "c": 0.996757
+        },
+        {
+          "w": "felons",
+          "s": 317.386,
+          "e": 317.936,
+          "c": 0.998287
+        },
+        {
+          "w": "illegally",
+          "s": 318.006,
+          "e": 318.436,
+          "c": 0.43609
+        },
+        {
+          "w": "receiving",
+          "s": 318.436,
+          "e": 318.926,
+          "c": 0.977272
+        },
+        {
+          "w": "disability",
+          "s": 318.936,
+          "e": 319.736,
+          "c": 0.977588
+        },
+        {
+          "w": "benefits.",
+          "s": 319.736,
+          "e": 320.616,
+          "c": 0.975411
+        }
+      ]
+    },
+    {
+      "i": 52,
+      "start_s": 321.02,
+      "end_s": 333.08,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Senator Hatch has put forth a plan that would prevent an individual from receiving both unemployment insurance and disability insurance simultaneously, ensuring that SSDI funds would remain",
+      "words": [
+        {
+          "w": "Senator",
+          "s": 321.018,
+          "e": 321.208,
+          "c": 0.949371
+        },
+        {
+          "w": "Hatch",
+          "s": 321.208,
+          "e": 321.578,
+          "c": 0.984533
+        },
+        {
+          "w": "has",
+          "s": 321.638,
+          "e": 321.838,
+          "c": 0.95538
+        },
+        {
+          "w": "put",
+          "s": 321.948,
+          "e": 322.128,
+          "c": 0.995655
+        },
+        {
+          "w": "forth",
+          "s": 322.148,
+          "e": 322.578,
+          "c": 0.992754
+        },
+        {
+          "w": "a",
+          "s": 322.608,
+          "e": 322.678,
+          "c": 0.970632
+        },
+        {
+          "w": "plan",
+          "s": 322.868,
+          "e": 323.408,
+          "c": 0.994995
+        },
+        {
+          "w": "that",
+          "s": 323.408,
+          "e": 323.528,
+          "c": 0.687266
+        },
+        {
+          "w": "would",
+          "s": 323.608,
+          "e": 323.878,
+          "c": 0.931252
+        },
+        {
+          "w": "prevent",
+          "s": 323.878,
+          "e": 324.128,
+          "c": 0.903021
+        },
+        {
+          "w": "an",
+          "s": 324.338,
+          "e": 324.448,
+          "c": 0.68281
+        },
+        {
+          "w": "individual",
+          "s": 324.448,
+          "e": 325.008,
+          "c": 0.943611
+        },
+        {
+          "w": "from",
+          "s": 325.008,
+          "e": 325.268,
+          "c": 0.681028
+        },
+        {
+          "w": "receiving",
+          "s": 325.638,
+          "e": 325.948,
+          "c": 0.612727
+        },
+        {
+          "w": "both",
+          "s": 325.948,
+          "e": 326.108,
+          "c": 0.680839
+        },
+        {
+          "w": "unemployment",
+          "s": 326.108,
+          "e": 326.748,
+          "c": 0.559496
+        },
+        {
+          "w": "insurance",
+          "s": 326.748,
+          "e": 327.168,
+          "c": 0.877976
+        },
+        {
+          "w": "and",
+          "s": 327.208,
+          "e": 327.408,
+          "c": 0.795515
+        },
+        {
+          "w": "disability",
+          "s": 327.408,
+          "e": 327.948,
+          "c": 0.965475
+        },
+        {
+          "w": "insurance",
+          "s": 327.948,
+          "e": 328.428,
+          "c": 0.982146
+        },
+        {
+          "w": "simultaneously,",
+          "s": 328.938,
+          "e": 330.048,
+          "c": 0.587891
+        },
+        {
+          "w": "ensuring",
+          "s": 330.458,
+          "e": 330.808,
+          "c": 0.990084
+        },
+        {
+          "w": "that",
+          "s": 330.808,
+          "e": 331.168,
+          "c": 0.988137
+        },
+        {
+          "w": "SSDI",
+          "s": 331.168,
+          "e": 331.478,
+          "c": 0.950348
+        },
+        {
+          "w": "funds",
+          "s": 331.568,
+          "e": 332.018,
+          "c": 0.992224
+        },
+        {
+          "w": "would",
+          "s": 332.298,
+          "e": 332.378,
+          "c": 0.980943
+        },
+        {
+          "w": "remain",
+          "s": 332.508,
+          "e": 333.078,
+          "c": 0.99572
+        }
+      ]
+    },
+    {
+      "i": 53,
+      "start_s": 333.08,
+      "end_s": 336.47,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "focused on their intended population.",
+      "words": [
+        {
+          "w": "focused",
+          "s": 333.078,
+          "e": 333.638,
+          "c": 0.987683
+        },
+        {
+          "w": "on",
+          "s": 333.778,
+          "e": 333.938,
+          "c": 0.99583
+        },
+        {
+          "w": "their",
+          "s": 333.938,
+          "e": 334.408,
+          "c": 0.988666
+        },
+        {
+          "w": "intended",
+          "s": 334.408,
+          "e": 335.168,
+          "c": 0.995571
+        },
+        {
+          "w": "population.",
+          "s": 335.168,
+          "e": 336.468,
+          "c": 0.990193
+        }
+      ]
+    },
+    {
+      "i": 54,
+      "start_s": 336.47,
+      "end_s": 337.22,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I also have",
+      "words": [
+        {
+          "w": "I",
+          "s": 336.468,
+          "e": 336.548,
+          "c": 0.997347
+        },
+        {
+          "w": "also",
+          "s": 336.878,
+          "e": 336.888,
+          "c": 0.989321
+        },
+        {
+          "w": "have",
+          "s": 336.888,
+          "e": 337.218,
+          "c": 0.998361
+        }
+      ]
+    },
+    {
+      "i": 55,
+      "start_s": 337.24,
+      "end_s": 341.88,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "a proposal that would expand the footprint of private disability",
+      "words": [
+        {
+          "w": "a",
+          "s": 337.238,
+          "e": 337.308,
+          "c": 0.997581
+        },
+        {
+          "w": "proposal",
+          "s": 337.308,
+          "e": 337.888,
+          "c": 0.997373
+        },
+        {
+          "w": "that",
+          "s": 337.988,
+          "e": 338.328,
+          "c": 0.979649
+        },
+        {
+          "w": "would",
+          "s": 338.328,
+          "e": 338.748,
+          "c": 0.989538
+        },
+        {
+          "w": "expand",
+          "s": 338.748,
+          "e": 339.258,
+          "c": 0.9964
+        },
+        {
+          "w": "the",
+          "s": 339.258,
+          "e": 339.508,
+          "c": 0.997265
+        },
+        {
+          "w": "footprint",
+          "s": 339.508,
+          "e": 340.268,
+          "c": 0.995383
+        },
+        {
+          "w": "of",
+          "s": 340.268,
+          "e": 340.438,
+          "c": 0.996936
+        },
+        {
+          "w": "private",
+          "s": 340.438,
+          "e": 340.908,
+          "c": 0.970826
+        },
+        {
+          "w": "disability",
+          "s": 341.028,
+          "e": 341.878,
+          "c": 0.997919
+        }
+      ]
+    },
+    {
+      "i": 56,
+      "start_s": 341.88,
+      "end_s": 345.82,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "insurance, which I intend to file as an amendment to this",
+      "words": [
+        {
+          "w": "insurance,",
+          "s": 341.878,
+          "e": 342.868,
+          "c": 0.781062
+        },
+        {
+          "w": "which",
+          "s": 342.868,
+          "e": 343.278,
+          "c": 0.835099
+        },
+        {
+          "w": "I",
+          "s": 343.278,
+          "e": 343.328,
+          "c": 0.993136
+        },
+        {
+          "w": "intend",
+          "s": 343.378,
+          "e": 343.858,
+          "c": 0.995144
+        },
+        {
+          "w": "to",
+          "s": 343.858,
+          "e": 343.938,
+          "c": 0.998281
+        },
+        {
+          "w": "file",
+          "s": 343.968,
+          "e": 344.288,
+          "c": 0.993877
+        },
+        {
+          "w": "as",
+          "s": 344.348,
+          "e": 344.498,
+          "c": 0.9763
+        },
+        {
+          "w": "an",
+          "s": 344.498,
+          "e": 344.668,
+          "c": 0.970273
+        },
+        {
+          "w": "amendment",
+          "s": 344.808,
+          "e": 345.398,
+          "c": 0.99735
+        },
+        {
+          "w": "to",
+          "s": 345.398,
+          "e": 345.578,
+          "c": 0.992602
+        },
+        {
+          "w": "this",
+          "s": 345.578,
+          "e": 345.818,
+          "c": 0.996109
+        }
+      ]
+    },
+    {
+      "i": 57,
+      "start_s": 345.89,
+      "end_s": 347.03,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "bill. And",
+      "words": [
+        {
+          "w": "bill.",
+          "s": 345.888,
+          "e": 346.548,
+          "c": 0.979311
+        },
+        {
+          "w": "And",
+          "s": 346.958,
+          "e": 347.028,
+          "c": 0.859604
+        }
+      ]
+    },
+    {
+      "i": 58,
+      "start_s": 347.03,
+      "end_s": 349.46,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that's not all.",
+      "words": [
+        {
+          "w": "that's",
+          "s": 347.028,
+          "e": 347.978,
+          "c": 0.941311
+        },
+        {
+          "w": "not",
+          "s": 348.068,
+          "e": 348.468,
+          "c": 0.999026
+        },
+        {
+          "w": "all.",
+          "s": 348.468,
+          "e": 349.458,
+          "c": 0.887504
+        }
+      ]
+    },
+    {
+      "i": 59,
+      "start_s": 349.47,
+      "end_s": 349.48,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "My friends,",
+      "words": [
+        {
+          "w": "My",
+          "s": 349.468,
+          "e": 349.468,
+          "c": 0.563763
+        },
+        {
+          "w": "friends,",
+          "s": 349.468,
+          "e": 349.468,
+          "c": 0.768622
+        }
+      ]
+    },
+    {
+      "i": 60,
+      "start_s": 349.77,
+      "end_s": 366.94,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Senator Cotton and Senator Lankford have their own proposals, and there have been an equal amount of policy innovation by our colleagues in the House of Representatives. They're all common sense ideas that would bring us much closer to real SSDI reform than",
+      "words": [
+        {
+          "w": "Senator",
+          "s": 349.77,
+          "e": 349.87,
+          "c": 0.553564
+        },
+        {
+          "w": "Cotton",
+          "s": 349.87,
+          "e": 350.24,
+          "c": 0.935525
+        },
+        {
+          "w": "and",
+          "s": 350.24,
+          "e": 350.42,
+          "c": 0.988418
+        },
+        {
+          "w": "Senator",
+          "s": 350.42,
+          "e": 350.85,
+          "c": 0.689135
+        },
+        {
+          "w": "Lankford",
+          "s": 350.85,
+          "e": 351.38,
+          "c": 0.941085
+        },
+        {
+          "w": "have",
+          "s": 351.38,
+          "e": 351.61,
+          "c": 0.972959
+        },
+        {
+          "w": "their",
+          "s": 351.69,
+          "e": 352.07,
+          "c": 0.986417
+        },
+        {
+          "w": "own",
+          "s": 352.07,
+          "e": 352.31,
+          "c": 0.987656
+        },
+        {
+          "w": "proposals,",
+          "s": 352.31,
+          "e": 353.22,
+          "c": 0.480891
+        },
+        {
+          "w": "and",
+          "s": 353.37,
+          "e": 353.52,
+          "c": 0.673289
+        },
+        {
+          "w": "there",
+          "s": 353.52,
+          "e": 353.64,
+          "c": 0.943045
+        },
+        {
+          "w": "have",
+          "s": 353.64,
+          "e": 353.78,
+          "c": 0.733208
+        },
+        {
+          "w": "been",
+          "s": 353.78,
+          "e": 353.92,
+          "c": 0.988504
+        },
+        {
+          "w": "an",
+          "s": 353.92,
+          "e": 354.06,
+          "c": 0.90922
+        },
+        {
+          "w": "equal",
+          "s": 354.42,
+          "e": 354.53,
+          "c": 0.998399
+        },
+        {
+          "w": "amount",
+          "s": 354.53,
+          "e": 355.07,
+          "c": 0.991312
+        },
+        {
+          "w": "of",
+          "s": 355.07,
+          "e": 355.25,
+          "c": 0.995771
+        },
+        {
+          "w": "policy",
+          "s": 355.25,
+          "e": 355.76,
+          "c": 0.98468
+        },
+        {
+          "w": "innovation",
+          "s": 355.82,
+          "e": 356.69,
+          "c": 0.986436
+        },
+        {
+          "w": "by",
+          "s": 356.69,
+          "e": 356.87,
+          "c": 0.958678
+        },
+        {
+          "w": "our",
+          "s": 356.87,
+          "e": 357.14,
+          "c": 0.989108
+        },
+        {
+          "w": "colleagues",
+          "s": 357.14,
+          "e": 358.04,
+          "c": 0.988088
+        },
+        {
+          "w": "in",
+          "s": 358.04,
+          "e": 358.22,
+          "c": 0.980325
+        },
+        {
+          "w": "the",
+          "s": 358.22,
+          "e": 358.42,
+          "c": 0.99655
+        },
+        {
+          "w": "House",
+          "s": 358.5,
+          "e": 358.87,
+          "c": 0.987159
+        },
+        {
+          "w": "of",
+          "s": 358.95,
+          "e": 359.12,
+          "c": 0.996079
+        },
+        {
+          "w": "Representatives.",
+          "s": 359.12,
+          "e": 360.78,
+          "c": 0.98641
+        },
+        {
+          "w": "They're",
+          "s": 361.1,
+          "e": 361.34,
+          "c": 0.867997
+        },
+        {
+          "w": "all",
+          "s": 361.34,
+          "e": 361.58,
+          "c": 0.985013
+        },
+        {
+          "w": "common",
+          "s": 361.58,
+          "e": 362.06,
+          "c": 0.84816
+        },
+        {
+          "w": "sense",
+          "s": 362.06,
+          "e": 362.46,
+          "c": 0.549286
+        },
+        {
+          "w": "ideas",
+          "s": 362.46,
+          "e": 362.72,
+          "c": 0.998096
+        },
+        {
+          "w": "that",
+          "s": 362.86,
+          "e": 363.18,
+          "c": 0.936438
+        },
+        {
+          "w": "would",
+          "s": 363.18,
+          "e": 363.58,
+          "c": 0.972552
+        },
+        {
+          "w": "bring",
+          "s": 363.58,
+          "e": 363.94,
+          "c": 0.994012
+        },
+        {
+          "w": "us",
+          "s": 363.97,
+          "e": 364.14,
+          "c": 0.996046
+        },
+        {
+          "w": "much",
+          "s": 364.14,
+          "e": 364.46,
+          "c": 0.909245
+        },
+        {
+          "w": "closer",
+          "s": 364.71,
+          "e": 364.94,
+          "c": 0.997115
+        },
+        {
+          "w": "to",
+          "s": 364.94,
+          "e": 365.09,
+          "c": 0.998477
+        },
+        {
+          "w": "real",
+          "s": 365.09,
+          "e": 365.4,
+          "c": 0.990994
+        },
+        {
+          "w": "SSDI",
+          "s": 365.42,
+          "e": 365.82,
+          "c": 0.979206
+        },
+        {
+          "w": "reform",
+          "s": 365.82,
+          "e": 366.54,
+          "c": 0.954896
+        },
+        {
+          "w": "than",
+          "s": 366.54,
+          "e": 366.94,
+          "c": 0.905457
+        }
+      ]
+    },
+    {
+      "i": 61,
+      "start_s": 367.27,
+      "end_s": 379.46,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "what's found in this budget deal. But you won't hear much about them in this debate, because there won't be any real debate the Bipartisan Budget Act of 2015.",
+      "words": [
+        {
+          "w": "what's",
+          "s": 367.27,
+          "e": 367.51,
+          "c": 0.809054
+        },
+        {
+          "w": "found",
+          "s": 367.51,
+          "e": 367.99,
+          "c": 0.99165
+        },
+        {
+          "w": "in",
+          "s": 367.99,
+          "e": 368.18,
+          "c": 0.984844
+        },
+        {
+          "w": "this",
+          "s": 368.18,
+          "e": 368.56,
+          "c": 0.977892
+        },
+        {
+          "w": "budget",
+          "s": 368.56,
+          "e": 369.11,
+          "c": 0.986513
+        },
+        {
+          "w": "deal.",
+          "s": 369.19,
+          "e": 369.84,
+          "c": 0.777834
+        },
+        {
+          "w": "But",
+          "s": 369.84,
+          "e": 370.04,
+          "c": 0.988542
+        },
+        {
+          "w": "you",
+          "s": 370.18,
+          "e": 370.3,
+          "c": 0.996626
+        },
+        {
+          "w": "won't",
+          "s": 370.3,
+          "e": 370.68,
+          "c": 0.997122
+        },
+        {
+          "w": "hear",
+          "s": 370.68,
+          "e": 370.96,
+          "c": 0.995583
+        },
+        {
+          "w": "much",
+          "s": 370.99,
+          "e": 371.29,
+          "c": 0.990764
+        },
+        {
+          "w": "about",
+          "s": 371.3,
+          "e": 371.68,
+          "c": 0.994954
+        },
+        {
+          "w": "them",
+          "s": 371.68,
+          "e": 371.99,
+          "c": 0.988423
+        },
+        {
+          "w": "in",
+          "s": 371.99,
+          "e": 372.14,
+          "c": 0.98265
+        },
+        {
+          "w": "this",
+          "s": 372.14,
+          "e": 372.45,
+          "c": 0.994567
+        },
+        {
+          "w": "debate,",
+          "s": 372.45,
+          "e": 373.01,
+          "c": 0.470161
+        },
+        {
+          "w": "because",
+          "s": 373.03,
+          "e": 373.59,
+          "c": 0.993631
+        },
+        {
+          "w": "there",
+          "s": 373.77,
+          "e": 373.98,
+          "c": 0.995342
+        },
+        {
+          "w": "won't",
+          "s": 373.98,
+          "e": 374.36,
+          "c": 0.993714
+        },
+        {
+          "w": "be",
+          "s": 374.36,
+          "e": 374.48,
+          "c": 0.986084
+        },
+        {
+          "w": "any",
+          "s": 374.55,
+          "e": 374.82,
+          "c": 0.991874
+        },
+        {
+          "w": "real",
+          "s": 374.82,
+          "e": 375.06,
+          "c": 0.936938
+        },
+        {
+          "w": "debate",
+          "s": 375.06,
+          "e": 375.92,
+          "c": 0.758834
+        },
+        {
+          "w": "the",
+          "s": 376.21,
+          "e": 376.21,
+          "c": 0.634179
+        },
+        {
+          "w": "Bipartisan",
+          "s": 376.26,
+          "e": 377.17,
+          "c": 0.839446
+        },
+        {
+          "w": "Budget",
+          "s": 377.17,
+          "e": 377.76,
+          "c": 0.992593
+        },
+        {
+          "w": "Act",
+          "s": 377.76,
+          "e": 378.05,
+          "c": 0.992619
+        },
+        {
+          "w": "of",
+          "s": 378.05,
+          "e": 378.24,
+          "c": 0.981528
+        },
+        {
+          "w": "2015.",
+          "s": 378.24,
+          "e": 379.46,
+          "c": 0.764468
+        }
+      ]
+    },
+    {
+      "i": 62,
+      "start_s": 379.41,
+      "end_s": 379.67,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "No",
+      "words": [
+        {
+          "w": "No",
+          "s": 379.408,
+          "e": 379.668,
+          "c": 0.675767
+        }
+      ]
+    },
+    {
+      "i": 63,
+      "start_s": 379.9,
+      "end_s": 388.38,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "amendments, a fast approaching deadline, and in the end a take-it-or-leave-it choice forced upon us on our",
+      "words": [
+        {
+          "w": "amendments,",
+          "s": 379.898,
+          "e": 381.048,
+          "c": 0.833538
+        },
+        {
+          "w": "a",
+          "s": 381.328,
+          "e": 381.348,
+          "c": 0.959256
+        },
+        {
+          "w": "fast",
+          "s": 381.348,
+          "e": 381.668,
+          "c": 0.99831
+        },
+        {
+          "w": "approaching",
+          "s": 381.668,
+          "e": 382.558,
+          "c": 0.777936
+        },
+        {
+          "w": "deadline,",
+          "s": 382.558,
+          "e": 383.388,
+          "c": 0.73724
+        },
+        {
+          "w": "and",
+          "s": 383.388,
+          "e": 383.588,
+          "c": 0.995708
+        },
+        {
+          "w": "in",
+          "s": 383.588,
+          "e": 383.738,
+          "c": 0.856746
+        },
+        {
+          "w": "the",
+          "s": 383.878,
+          "e": 383.948,
+          "c": 0.99887
+        },
+        {
+          "w": "end",
+          "s": 383.948,
+          "e": 384.138,
+          "c": 0.999279
+        },
+        {
+          "w": "a",
+          "s": 384.178,
+          "e": 384.228,
+          "c": 0.486649
+        },
+        {
+          "w": "take-it-or-leave-it",
+          "s": 384.228,
+          "e": 385.558,
+          "c": 0.328817
+        },
+        {
+          "w": "choice",
+          "s": 385.558,
+          "e": 386.048,
+          "c": 0.993436
+        },
+        {
+          "w": "forced",
+          "s": 386.538,
+          "e": 386.918,
+          "c": 0.994833
+        },
+        {
+          "w": "upon",
+          "s": 386.918,
+          "e": 387.258,
+          "c": 0.995854
+        },
+        {
+          "w": "us",
+          "s": 387.258,
+          "e": 387.798,
+          "c": 0.995887
+        },
+        {
+          "w": "on",
+          "s": 387.968,
+          "e": 388.038,
+          "c": 0.588133
+        },
+        {
+          "w": "our",
+          "s": 388.038,
+          "e": 388.378,
+          "c": 0.999011
+        }
+      ]
+    },
+    {
+      "i": 64,
+      "start_s": 388.38,
+      "end_s": 390.73,
+      "speaker": "SPEAKER_12",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "backs up against a cliff.",
+      "words": [
+        {
+          "w": "backs",
+          "s": 388.378,
+          "e": 388.958,
+          "c": 0.995159
+        },
+        {
+          "w": "up",
+          "s": 388.998,
+          "e": 389.158,
+          "c": 0.771808
+        },
+        {
+          "w": "against",
+          "s": 389.158,
+          "e": 389.528,
+          "c": 0.995298
+        },
+        {
+          "w": "a",
+          "s": 389.528,
+          "e": 389.928,
+          "c": 0.99386
+        },
+        {
+          "w": "cliff.",
+          "s": 390.078,
+          "e": 390.728,
+          "c": 0.991891
+        }
+      ]
+    },
+    {
+      "i": 65,
+      "start_s": 391.22,
+      "end_s": 392.48,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "This is not how",
+      "words": [
+        {
+          "w": "This",
+          "s": 391.218,
+          "e": 391.318,
+          "c": 0.999371
+        },
+        {
+          "w": "is",
+          "s": 391.318,
+          "e": 391.608,
+          "c": 0.999601
+        },
+        {
+          "w": "not",
+          "s": 391.608,
+          "e": 391.928,
+          "c": 0.998953
+        },
+        {
+          "w": "how",
+          "s": 391.928,
+          "e": 392.478,
+          "c": 0.997411
+        }
+      ]
+    },
+    {
+      "i": 66,
+      "start_s": 392.66,
+      "end_s": 398.07,
+      "speaker": "SPEAKER_12",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Congress is supposed to operate. This is not how we",
+      "words": [
+        {
+          "w": "Congress",
+          "s": 392.658,
+          "e": 393.638,
+          "c": 0.956138
+        },
+        {
+          "w": "is",
+          "s": 393.678,
+          "e": 393.968,
+          "c": 0.991495
+        },
+        {
+          "w": "supposed",
+          "s": 393.968,
+          "e": 395.158,
+          "c": 0.995737
+        },
+        {
+          "w": "to",
+          "s": 395.158,
+          "e": 395.438,
+          "c": 0.998761
+        },
+        {
+          "w": "operate.",
+          "s": 395.448,
+          "e": 396.808,
+          "c": 0.959507
+        },
+        {
+          "w": "This",
+          "s": 397.008,
+          "e": 397.318,
+          "c": 0.999628
+        },
+        {
+          "w": "is",
+          "s": 397.318,
+          "e": 397.318,
+          "c": 0.99968
+        },
+        {
+          "w": "not",
+          "s": 397.498,
+          "e": 397.698,
+          "c": 0.999567
+        },
+        {
+          "w": "how",
+          "s": 397.698,
+          "e": 397.918,
+          "c": 0.998595
+        },
+        {
+          "w": "we",
+          "s": 397.918,
+          "e": 398.068,
+          "c": 0.997778
+        }
+      ]
+    },
+    {
+      "i": 67,
+      "start_s": 398.07,
+      "end_s": 408.41,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "promised the country we would conduct the American people's business if given control of the House and the Senate. We should be the party of ideas.",
+      "words": [
+        {
+          "w": "promised",
+          "s": 398.068,
+          "e": 398.298,
+          "c": 0.838827
+        },
+        {
+          "w": "the",
+          "s": 398.928,
+          "e": 398.928,
+          "c": 0.987524
+        },
+        {
+          "w": "country",
+          "s": 398.938,
+          "e": 399.508,
+          "c": 0.995254
+        },
+        {
+          "w": "we",
+          "s": 399.528,
+          "e": 399.678,
+          "c": 0.995609
+        },
+        {
+          "w": "would",
+          "s": 400.018,
+          "e": 400.048,
+          "c": 0.996654
+        },
+        {
+          "w": "conduct",
+          "s": 400.048,
+          "e": 400.568,
+          "c": 0.998203
+        },
+        {
+          "w": "the",
+          "s": 400.568,
+          "e": 400.758,
+          "c": 0.997116
+        },
+        {
+          "w": "American",
+          "s": 400.758,
+          "e": 401.078,
+          "c": 0.993854
+        },
+        {
+          "w": "people's",
+          "s": 401.458,
+          "e": 401.898,
+          "c": 0.863371
+        },
+        {
+          "w": "business",
+          "s": 401.978,
+          "e": 402.598,
+          "c": 0.996854
+        },
+        {
+          "w": "if",
+          "s": 402.608,
+          "e": 402.738,
+          "c": 0.998614
+        },
+        {
+          "w": "given",
+          "s": 402.748,
+          "e": 402.918,
+          "c": 0.998818
+        },
+        {
+          "w": "control",
+          "s": 403.098,
+          "e": 403.518,
+          "c": 0.998051
+        },
+        {
+          "w": "of",
+          "s": 403.518,
+          "e": 403.658,
+          "c": 0.998068
+        },
+        {
+          "w": "the",
+          "s": 403.658,
+          "e": 403.838,
+          "c": 0.998633
+        },
+        {
+          "w": "House",
+          "s": 403.838,
+          "e": 404.158,
+          "c": 0.942194
+        },
+        {
+          "w": "and",
+          "s": 404.158,
+          "e": 404.388,
+          "c": 0.996529
+        },
+        {
+          "w": "the",
+          "s": 404.528,
+          "e": 404.588,
+          "c": 0.99346
+        },
+        {
+          "w": "Senate.",
+          "s": 404.588,
+          "e": 405.208,
+          "c": 0.994975
+        },
+        {
+          "w": "We",
+          "s": 405.208,
+          "e": 405.458,
+          "c": 0.999491
+        },
+        {
+          "w": "should",
+          "s": 405.698,
+          "e": 406.218,
+          "c": 0.999632
+        },
+        {
+          "w": "be",
+          "s": 406.218,
+          "e": 406.428,
+          "c": 0.999607
+        },
+        {
+          "w": "the",
+          "s": 406.428,
+          "e": 406.778,
+          "c": 0.997535
+        },
+        {
+          "w": "party",
+          "s": 407.138,
+          "e": 407.478,
+          "c": 0.974641
+        },
+        {
+          "w": "of",
+          "s": 407.478,
+          "e": 407.698,
+          "c": 0.999607
+        },
+        {
+          "w": "ideas.",
+          "s": 407.798,
+          "e": 408.408,
+          "c": 0.63066
+        }
+      ]
+    },
+    {
+      "i": 68,
+      "start_s": 408.73,
+      "end_s": 433.9,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "But we won't be, so long as we continue to tolerate a legislative process that stifles our most innovative proposals from even getting a fair hearing. We should be the party of reform, but we won't be, so long as individual senators are blocked from offering amendments to legislation. We should be the party of fiscal sanity and responsible governance, but we won't be so long as we continue to govern",
+      "words": [
+        {
+          "w": "But",
+          "s": 408.728,
+          "e": 408.798,
+          "c": 0.730847
+        },
+        {
+          "w": "we",
+          "s": 408.818,
+          "e": 409.098,
+          "c": 0.968086
+        },
+        {
+          "w": "won't",
+          "s": 409.098,
+          "e": 409.828,
+          "c": 0.987272
+        },
+        {
+          "w": "be,",
+          "s": 409.828,
+          "e": 410.208,
+          "c": 0.562171
+        },
+        {
+          "w": "so",
+          "s": 410.248,
+          "e": 410.368,
+          "c": 0.896973
+        },
+        {
+          "w": "long",
+          "s": 410.368,
+          "e": 410.678,
+          "c": 0.998184
+        },
+        {
+          "w": "as",
+          "s": 410.678,
+          "e": 410.838,
+          "c": 0.983948
+        },
+        {
+          "w": "we",
+          "s": 410.838,
+          "e": 411.008,
+          "c": 0.994141
+        },
+        {
+          "w": "continue",
+          "s": 411.008,
+          "e": 411.368,
+          "c": 0.978898
+        },
+        {
+          "w": "to",
+          "s": 411.368,
+          "e": 411.478,
+          "c": 0.848792
+        },
+        {
+          "w": "tolerate",
+          "s": 411.488,
+          "e": 411.968,
+          "c": 0.970845
+        },
+        {
+          "w": "a",
+          "s": 411.968,
+          "e": 412.048,
+          "c": 0.847132
+        },
+        {
+          "w": "legislative",
+          "s": 412.048,
+          "e": 412.568,
+          "c": 0.976405
+        },
+        {
+          "w": "process",
+          "s": 412.568,
+          "e": 413.018,
+          "c": 0.972565
+        },
+        {
+          "w": "that",
+          "s": 413.478,
+          "e": 413.528,
+          "c": 0.618025
+        },
+        {
+          "w": "stifles",
+          "s": 413.528,
+          "e": 414.028,
+          "c": 0.941836
+        },
+        {
+          "w": "our",
+          "s": 414.028,
+          "e": 414.258,
+          "c": 0.997107
+        },
+        {
+          "w": "most",
+          "s": 414.388,
+          "e": 414.568,
+          "c": 0.994626
+        },
+        {
+          "w": "innovative",
+          "s": 414.568,
+          "e": 415.048,
+          "c": 0.996402
+        },
+        {
+          "w": "proposals",
+          "s": 415.898,
+          "e": 416.068,
+          "c": 0.993125
+        },
+        {
+          "w": "from",
+          "s": 416.068,
+          "e": 416.378,
+          "c": 0.62057
+        },
+        {
+          "w": "even",
+          "s": 416.378,
+          "e": 416.668,
+          "c": 0.981429
+        },
+        {
+          "w": "getting",
+          "s": 416.758,
+          "e": 417.208,
+          "c": 0.997605
+        },
+        {
+          "w": "a",
+          "s": 417.308,
+          "e": 417.308,
+          "c": 0.995097
+        },
+        {
+          "w": "fair",
+          "s": 417.338,
+          "e": 417.618,
+          "c": 0.926584
+        },
+        {
+          "w": "hearing.",
+          "s": 417.618,
+          "e": 418.468,
+          "c": 0.992657
+        },
+        {
+          "w": "We",
+          "s": 418.468,
+          "e": 418.638,
+          "c": 0.999228
+        },
+        {
+          "w": "should",
+          "s": 418.828,
+          "e": 419.158,
+          "c": 0.994581
+        },
+        {
+          "w": "be",
+          "s": 419.158,
+          "e": 419.268,
+          "c": 0.999079
+        },
+        {
+          "w": "the",
+          "s": 419.318,
+          "e": 419.508,
+          "c": 0.991329
+        },
+        {
+          "w": "party",
+          "s": 419.508,
+          "e": 419.928,
+          "c": 0.962034
+        },
+        {
+          "w": "of",
+          "s": 420.008,
+          "e": 420.188,
+          "c": 0.994074
+        },
+        {
+          "w": "reform,",
+          "s": 420.348,
+          "e": 420.878,
+          "c": 0.555175
+        },
+        {
+          "w": "but",
+          "s": 420.878,
+          "e": 421.108,
+          "c": 0.983389
+        },
+        {
+          "w": "we",
+          "s": 421.198,
+          "e": 421.278,
+          "c": 0.996377
+        },
+        {
+          "w": "won't",
+          "s": 421.388,
+          "e": 421.648,
+          "c": 0.991902
+        },
+        {
+          "w": "be,",
+          "s": 421.778,
+          "e": 422.098,
+          "c": 0.663059
+        },
+        {
+          "w": "so",
+          "s": 422.128,
+          "e": 422.248,
+          "c": 0.98317
+        },
+        {
+          "w": "long",
+          "s": 422.248,
+          "e": 422.488,
+          "c": 0.998492
+        },
+        {
+          "w": "as",
+          "s": 422.488,
+          "e": 422.608,
+          "c": 0.996229
+        },
+        {
+          "w": "individual",
+          "s": 422.608,
+          "e": 423.118,
+          "c": 0.955448
+        },
+        {
+          "w": "senators",
+          "s": 423.578,
+          "e": 423.688,
+          "c": 0.856854
+        },
+        {
+          "w": "are",
+          "s": 423.688,
+          "e": 423.768,
+          "c": 0.907101
+        },
+        {
+          "w": "blocked",
+          "s": 423.828,
+          "e": 424.488,
+          "c": 0.820579
+        },
+        {
+          "w": "from",
+          "s": 424.938,
+          "e": 424.938,
+          "c": 0.996468
+        },
+        {
+          "w": "offering",
+          "s": 425.008,
+          "e": 425.448,
+          "c": 0.988704
+        },
+        {
+          "w": "amendments",
+          "s": 425.528,
+          "e": 425.908,
+          "c": 0.989289
+        },
+        {
+          "w": "to",
+          "s": 426.238,
+          "e": 426.408,
+          "c": 0.989719
+        },
+        {
+          "w": "legislation.",
+          "s": 426.528,
+          "e": 427.458,
+          "c": 0.985075
+        },
+        {
+          "w": "We",
+          "s": 427.468,
+          "e": 427.598,
+          "c": 0.999346
+        },
+        {
+          "w": "should",
+          "s": 427.828,
+          "e": 427.978,
+          "c": 0.996748
+        },
+        {
+          "w": "be",
+          "s": 427.978,
+          "e": 428.108,
+          "c": 0.998586
+        },
+        {
+          "w": "the",
+          "s": 428.108,
+          "e": 428.258,
+          "c": 0.99127
+        },
+        {
+          "w": "party",
+          "s": 428.298,
+          "e": 428.498,
+          "c": 0.994336
+        },
+        {
+          "w": "of",
+          "s": 428.498,
+          "e": 428.748,
+          "c": 0.994074
+        },
+        {
+          "w": "fiscal",
+          "s": 428.748,
+          "e": 429.128,
+          "c": 0.992017
+        },
+        {
+          "w": "sanity",
+          "s": 429.348,
+          "e": 429.508,
+          "c": 0.960715
+        },
+        {
+          "w": "and",
+          "s": 429.508,
+          "e": 429.698,
+          "c": 0.992742
+        },
+        {
+          "w": "responsible",
+          "s": 429.698,
+          "e": 430.408,
+          "c": 0.986207
+        },
+        {
+          "w": "governance,",
+          "s": 430.408,
+          "e": 431.168,
+          "c": 0.885355
+        },
+        {
+          "w": "but",
+          "s": 431.168,
+          "e": 431.348,
+          "c": 0.994353
+        },
+        {
+          "w": "we",
+          "s": 431.358,
+          "e": 431.488,
+          "c": 0.997434
+        },
+        {
+          "w": "won't",
+          "s": 431.488,
+          "e": 431.798,
+          "c": 0.996846
+        },
+        {
+          "w": "be",
+          "s": 431.798,
+          "e": 432.008,
+          "c": 0.988859
+        },
+        {
+          "w": "so",
+          "s": 432.008,
+          "e": 432.148,
+          "c": 0.228159
+        },
+        {
+          "w": "long",
+          "s": 432.478,
+          "e": 432.478,
+          "c": 0.999455
+        },
+        {
+          "w": "as",
+          "s": 432.548,
+          "e": 432.618,
+          "c": 0.998115
+        },
+        {
+          "w": "we",
+          "s": 432.638,
+          "e": 432.758,
+          "c": 0.997929
+        },
+        {
+          "w": "continue",
+          "s": 432.758,
+          "e": 433.208,
+          "c": 0.995383
+        },
+        {
+          "w": "to",
+          "s": 433.208,
+          "e": 433.468,
+          "c": 0.997695
+        },
+        {
+          "w": "govern",
+          "s": 433.468,
+          "e": 433.898,
+          "c": 0.993684
+        }
+      ]
+    },
+    {
+      "i": 69,
+      "start_s": 434.05,
+      "end_s": 434.06,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "by",
+      "words": [
+        {
+          "w": "by",
+          "s": 434.048,
+          "e": 434.048,
+          "c": 0.994131
+        }
+      ]
+    },
+    {
+      "i": 70,
+      "start_s": 434.07,
+      "end_s": 437.81,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "crisis and by cliff, delaying the inevitable while working",
+      "words": [
+        {
+          "w": "crisis",
+          "s": 434.068,
+          "e": 434.478,
+          "c": 0.966973
+        },
+        {
+          "w": "and",
+          "s": 434.478,
+          "e": 434.658,
+          "c": 0.856663
+        },
+        {
+          "w": "by",
+          "s": 434.758,
+          "e": 434.828,
+          "c": 0.996255
+        },
+        {
+          "w": "cliff,",
+          "s": 434.828,
+          "e": 435.328,
+          "c": 0.833823
+        },
+        {
+          "w": "delaying",
+          "s": 435.328,
+          "e": 435.898,
+          "c": 0.994393
+        },
+        {
+          "w": "the",
+          "s": 435.898,
+          "e": 436.108,
+          "c": 0.997044
+        },
+        {
+          "w": "inevitable",
+          "s": 436.108,
+          "e": 436.828,
+          "c": 0.9987
+        },
+        {
+          "w": "while",
+          "s": 436.828,
+          "e": 437.158,
+          "c": 0.899508
+        },
+        {
+          "w": "working",
+          "s": 437.298,
+          "e": 437.808,
+          "c": 0.996033
+        }
+      ]
+    },
+    {
+      "i": 71,
+      "start_s": 437.96,
+      "end_s": 450.2,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "only three days a week in our legislative calendar. We should be the party that looks out for the most vulnerable among us, but we won't be so long as we lack the courage to enact the",
+      "words": [
+        {
+          "w": "only",
+          "s": 437.96,
+          "e": 438.08,
+          "c": 0.882382
+        },
+        {
+          "w": "three",
+          "s": 438.08,
+          "e": 438.48,
+          "c": 0.941562
+        },
+        {
+          "w": "days",
+          "s": 438.48,
+          "e": 438.8,
+          "c": 0.997172
+        },
+        {
+          "w": "a",
+          "s": 438.8,
+          "e": 438.88,
+          "c": 0.996082
+        },
+        {
+          "w": "week",
+          "s": 438.88,
+          "e": 439.03,
+          "c": 0.999748
+        },
+        {
+          "w": "in",
+          "s": 439.31,
+          "e": 439.45,
+          "c": 0.858702
+        },
+        {
+          "w": "our",
+          "s": 439.45,
+          "e": 439.78,
+          "c": 0.997101
+        },
+        {
+          "w": "legislative",
+          "s": 439.78,
+          "e": 440.55,
+          "c": 0.9613
+        },
+        {
+          "w": "calendar.",
+          "s": 440.55,
+          "e": 442,
+          "c": 0.972458
+        },
+        {
+          "w": "We",
+          "s": 442.16,
+          "e": 442.16,
+          "c": 0.998308
+        },
+        {
+          "w": "should",
+          "s": 442.2,
+          "e": 442.63,
+          "c": 0.999174
+        },
+        {
+          "w": "be",
+          "s": 442.64,
+          "e": 442.8,
+          "c": 0.999682
+        },
+        {
+          "w": "the",
+          "s": 442.8,
+          "e": 443.04,
+          "c": 0.998647
+        },
+        {
+          "w": "party",
+          "s": 443.04,
+          "e": 443.27,
+          "c": 0.992951
+        },
+        {
+          "w": "that",
+          "s": 443.55,
+          "e": 443.67,
+          "c": 0.927143
+        },
+        {
+          "w": "looks",
+          "s": 443.67,
+          "e": 443.94,
+          "c": 0.99318
+        },
+        {
+          "w": "out",
+          "s": 443.94,
+          "e": 444.16,
+          "c": 0.967244
+        },
+        {
+          "w": "for",
+          "s": 444.16,
+          "e": 444.25,
+          "c": 0.535341
+        },
+        {
+          "w": "the",
+          "s": 444.37,
+          "e": 444.46,
+          "c": 0.871717
+        },
+        {
+          "w": "most",
+          "s": 444.46,
+          "e": 444.66,
+          "c": 0.954884
+        },
+        {
+          "w": "vulnerable",
+          "s": 444.66,
+          "e": 444.97,
+          "c": 0.919198
+        },
+        {
+          "w": "among",
+          "s": 444.97,
+          "e": 446.29,
+          "c": 0.931781
+        },
+        {
+          "w": "us,",
+          "s": 446.41,
+          "e": 446.76,
+          "c": 0.524924
+        },
+        {
+          "w": "but",
+          "s": 446.96,
+          "e": 447.04,
+          "c": 0.997849
+        },
+        {
+          "w": "we",
+          "s": 447.04,
+          "e": 447.15,
+          "c": 0.99886
+        },
+        {
+          "w": "won't",
+          "s": 447.28,
+          "e": 447.69,
+          "c": 0.997419
+        },
+        {
+          "w": "be",
+          "s": 447.69,
+          "e": 447.89,
+          "c": 0.997792
+        },
+        {
+          "w": "so",
+          "s": 447.89,
+          "e": 447.93,
+          "c": 0.637927
+        },
+        {
+          "w": "long",
+          "s": 448,
+          "e": 448.22,
+          "c": 0.999556
+        },
+        {
+          "w": "as",
+          "s": 448.31,
+          "e": 448.34,
+          "c": 0.996649
+        },
+        {
+          "w": "we",
+          "s": 448.34,
+          "e": 448.45,
+          "c": 0.99842
+        },
+        {
+          "w": "lack",
+          "s": 448.45,
+          "e": 448.66,
+          "c": 0.996225
+        },
+        {
+          "w": "the",
+          "s": 448.67,
+          "e": 448.78,
+          "c": 0.992082
+        },
+        {
+          "w": "courage",
+          "s": 448.85,
+          "e": 449.26,
+          "c": 0.998458
+        },
+        {
+          "w": "to",
+          "s": 449.26,
+          "e": 449.47,
+          "c": 0.730462
+        },
+        {
+          "w": "enact",
+          "s": 449.47,
+          "e": 449.79,
+          "c": 0.989121
+        },
+        {
+          "w": "the",
+          "s": 449.79,
+          "e": 450.2,
+          "c": 0.603864
+        }
+      ]
+    },
+    {
+      "i": 72,
+      "start_s": 450.2,
+      "end_s": 456.25,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "structural reforms that our retirement and disability insurance programs need to survive",
+      "words": [
+        {
+          "w": "structural",
+          "s": 450.2,
+          "e": 450.7,
+          "c": 0.986734
+        },
+        {
+          "w": "reforms",
+          "s": 451.16,
+          "e": 451.16,
+          "c": 0.981922
+        },
+        {
+          "w": "that",
+          "s": 451.36,
+          "e": 451.45,
+          "c": 0.99011
+        },
+        {
+          "w": "our",
+          "s": 451.45,
+          "e": 451.55,
+          "c": 0.974728
+        },
+        {
+          "w": "retirement",
+          "s": 451.68,
+          "e": 452.3,
+          "c": 0.986716
+        },
+        {
+          "w": "and",
+          "s": 452.4,
+          "e": 452.62,
+          "c": 0.995051
+        },
+        {
+          "w": "disability",
+          "s": 452.71,
+          "e": 453.37,
+          "c": 0.99361
+        },
+        {
+          "w": "insurance",
+          "s": 453.37,
+          "e": 453.92,
+          "c": 0.987737
+        },
+        {
+          "w": "programs",
+          "s": 453.92,
+          "e": 454.56,
+          "c": 0.97523
+        },
+        {
+          "w": "need",
+          "s": 454.56,
+          "e": 454.96,
+          "c": 0.973268
+        },
+        {
+          "w": "to",
+          "s": 454.96,
+          "e": 455.24,
+          "c": 0.597265
+        },
+        {
+          "w": "survive",
+          "s": 455.57,
+          "e": 456.25,
+          "c": 0.994677
+        }
+      ]
+    },
+    {
+      "i": 73,
+      "start_s": 456.26,
+      "end_s": 457.65,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "for generations",
+      "words": [
+        {
+          "w": "for",
+          "s": 456.26,
+          "e": 456.56,
+          "c": 0.563756
+        },
+        {
+          "w": "generations",
+          "s": 456.56,
+          "e": 457.65,
+          "c": 0.99646
+        }
+      ]
+    },
+    {
+      "i": 74,
+      "start_s": 457.81,
+      "end_s": 458.7,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to come.",
+      "words": [
+        {
+          "w": "to",
+          "s": 457.81,
+          "e": 457.94,
+          "c": 0.998957
+        },
+        {
+          "w": "come.",
+          "s": 457.94,
+          "e": 458.7,
+          "c": 0.998772
+        }
+      ]
+    },
+    {
+      "i": 75,
+      "start_s": 458.84,
+      "end_s": 465.47,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Mr. President, we can be all of these things. I know we can. But it's going to take hard",
+      "words": [
+        {
+          "w": "Mr.",
+          "s": 458.84,
+          "e": 459.05,
+          "c": 0.978845
+        },
+        {
+          "w": "President,",
+          "s": 459.05,
+          "e": 459.82,
+          "c": 0.983325
+        },
+        {
+          "w": "we",
+          "s": 459.82,
+          "e": 459.87,
+          "c": 0.993976
+        },
+        {
+          "w": "can",
+          "s": 459.96,
+          "e": 460.16,
+          "c": 0.982255
+        },
+        {
+          "w": "be",
+          "s": 460.25,
+          "e": 460.31,
+          "c": 0.997449
+        },
+        {
+          "w": "all",
+          "s": 460.31,
+          "e": 460.52,
+          "c": 0.998925
+        },
+        {
+          "w": "of",
+          "s": 460.52,
+          "e": 460.66,
+          "c": 0.975805
+        },
+        {
+          "w": "these",
+          "s": 460.66,
+          "e": 460.95,
+          "c": 0.998083
+        },
+        {
+          "w": "things.",
+          "s": 461.07,
+          "e": 461.59,
+          "c": 0.79379
+        },
+        {
+          "w": "I",
+          "s": 461.59,
+          "e": 461.8,
+          "c": 0.686918
+        },
+        {
+          "w": "know",
+          "s": 461.8,
+          "e": 462.35,
+          "c": 0.99962
+        },
+        {
+          "w": "we",
+          "s": 462.35,
+          "e": 462.64,
+          "c": 0.998094
+        },
+        {
+          "w": "can.",
+          "s": 463.06,
+          "e": 463.5,
+          "c": 0.657212
+        },
+        {
+          "w": "But",
+          "s": 463.7,
+          "e": 463.77,
+          "c": 0.996675
+        },
+        {
+          "w": "it's",
+          "s": 463.77,
+          "e": 464.13,
+          "c": 0.917184
+        },
+        {
+          "w": "going",
+          "s": 464.13,
+          "e": 464.58,
+          "c": 0.999279
+        },
+        {
+          "w": "to",
+          "s": 464.58,
+          "e": 464.67,
+          "c": 0.999596
+        },
+        {
+          "w": "take",
+          "s": 464.77,
+          "e": 465.12,
+          "c": 0.999199
+        },
+        {
+          "w": "hard",
+          "s": 465.12,
+          "e": 465.47,
+          "c": 0.99659
+        }
+      ]
+    },
+    {
+      "i": 76,
+      "start_s": 465.48,
+      "end_s": 465.75,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "work",
+      "words": [
+        {
+          "w": "work",
+          "s": 465.48,
+          "e": 465.75,
+          "c": 0.999293
+        }
+      ]
+    },
+    {
+      "i": 77,
+      "start_s": 465.86,
+      "end_s": 465.97,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "A",
+      "words": [
+        {
+          "w": "A",
+          "s": 465.856,
+          "e": 465.966,
+          "c": 0.679392
+        }
+      ]
+    },
+    {
+      "i": 78,
+      "start_s": 466.39,
+      "end_s": 476.82,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "fair, open, and inclusive legislative process, and all the policy innovation we can muster. It's going to take something",
+      "words": [
+        {
+          "w": "fair,",
+          "s": 466.386,
+          "e": 466.466,
+          "c": 0.976626
+        },
+        {
+          "w": "open,",
+          "s": 466.656,
+          "e": 467.346,
+          "c": 0.493183
+        },
+        {
+          "w": "and",
+          "s": 467.346,
+          "e": 467.686,
+          "c": 0.95628
+        },
+        {
+          "w": "inclusive",
+          "s": 467.686,
+          "e": 468.726,
+          "c": 0.996354
+        },
+        {
+          "w": "legislative",
+          "s": 468.726,
+          "e": 469.996,
+          "c": 0.978122
+        },
+        {
+          "w": "process,",
+          "s": 469.996,
+          "e": 471.046,
+          "c": 0.220256
+        },
+        {
+          "w": "and",
+          "s": 471.266,
+          "e": 471.336,
+          "c": 0.758223
+        },
+        {
+          "w": "all",
+          "s": 471.336,
+          "e": 471.466,
+          "c": 0.966698
+        },
+        {
+          "w": "the",
+          "s": 471.656,
+          "e": 471.936,
+          "c": 0.893552
+        },
+        {
+          "w": "policy",
+          "s": 471.936,
+          "e": 472.396,
+          "c": 0.98335
+        },
+        {
+          "w": "innovation",
+          "s": 472.466,
+          "e": 473.056,
+          "c": 0.93928
+        },
+        {
+          "w": "we",
+          "s": 473.056,
+          "e": 473.196,
+          "c": 0.967268
+        },
+        {
+          "w": "can",
+          "s": 473.196,
+          "e": 473.756,
+          "c": 0.950003
+        },
+        {
+          "w": "muster.",
+          "s": 473.756,
+          "e": 475.096,
+          "c": 0.935937
+        },
+        {
+          "w": "It's",
+          "s": 475.096,
+          "e": 475.376,
+          "c": 0.866578
+        },
+        {
+          "w": "going",
+          "s": 475.626,
+          "e": 475.736,
+          "c": 0.998176
+        },
+        {
+          "w": "to",
+          "s": 475.876,
+          "e": 475.876,
+          "c": 0.998527
+        },
+        {
+          "w": "take",
+          "s": 475.896,
+          "e": 476.166,
+          "c": 0.996118
+        },
+        {
+          "w": "something",
+          "s": 476.166,
+          "e": 476.816,
+          "c": 0.980634
+        }
+      ]
+    },
+    {
+      "i": 79,
+      "start_s": 476.82,
+      "end_s": 480.65,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "more, something better, than this budget deal. I yield the floor.",
+      "words": [
+        {
+          "w": "more,",
+          "s": 476.816,
+          "e": 477.246,
+          "c": 0.716564
+        },
+        {
+          "w": "something",
+          "s": 477.256,
+          "e": 477.896,
+          "c": 0.989791
+        },
+        {
+          "w": "better,",
+          "s": 477.896,
+          "e": 478.466,
+          "c": 0.480879
+        },
+        {
+          "w": "than",
+          "s": 478.506,
+          "e": 478.756,
+          "c": 0.98485
+        },
+        {
+          "w": "this",
+          "s": 478.756,
+          "e": 479.006,
+          "c": 0.994966
+        },
+        {
+          "w": "budget",
+          "s": 479.146,
+          "e": 479.476,
+          "c": 0.980443
+        },
+        {
+          "w": "deal.",
+          "s": 479.476,
+          "e": 480.036,
+          "c": 0.987922
+        },
+        {
+          "w": "I",
+          "s": 480.036,
+          "e": 480.076,
+          "c": 0.99787
+        },
+        {
+          "w": "yield",
+          "s": 480.076,
+          "e": 480.296,
+          "c": 0.992813
+        },
+        {
+          "w": "the",
+          "s": 480.296,
+          "e": 480.416,
+          "c": 0.99648
+        },
+        {
+          "w": "floor.",
+          "s": 480.566,
+          "e": 480.646,
+          "c": 0.990052
+        }
+      ]
+    }
+  ]
+}

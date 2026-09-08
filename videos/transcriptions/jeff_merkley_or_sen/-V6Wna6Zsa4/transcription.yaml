@@ -1,0 +1,162 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Merkley Takes Aim at Opponents of Health Care Reform"
+    Description: >-
+      A 2009 Senate floor speech in which Senator Jeff Merkley argues that
+      arguments being made against health care reform in the chamber are
+      drawn from a political messaging document rather than from the
+      substance of the legislation. He reads from what he identifies as a
+      Frank Luntz memo on how to oppose health care legislation, quoting
+      its advice that denial stories from Canada and other countries
+      resonate if humanized, and its explicit recommendation of the phrase
+      "government takeover" over "government run" or "government
+      controlled" because it sounds scarier. He then quotes the minority
+      leader using that phrasing on the floor. He does the same with
+      further talking points about delayed and denied treatment and about
+      bureaucrats in Washington, noting the memo was written about a plan
+      that had not yet been drafted, and matches them to floor remarks
+      about being forced by bureaucrats into a Washington-run plan and
+      waiting two years for surgery. He calls the use of poll-tested
+      language irresponsible given 50 million Americans without coverage,
+      and says the chamber's task is to lay out a plan for affordable,
+      accessible care. The attribution of the floor remarks to the memo is
+      Merkley's argument; the colleagues he quotes do not respond here.
+    URL: "https://www.youtube.com/watch?v=-V6Wna6Zsa4"
+    Video_ID: "-V6Wna6Zsa4"
+    Show: "Senator Jeff Merkley"
+    Runtime: "00:03:01"
+    Language: "en"
+
+  Media:
+    File: "-V6Wna6Zsa4.m4a"
+    SHA256: "f188a6ba60ff9bd148237539e4095ddf30d179bb03707375698bada1a2f920ec"
+    Bytes: 2932178
+    Duration_Seconds: 181
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-V6Wna6Zsa4"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-V6Wna6Zsa4.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/jeff_merkley_or_sen/-V6Wna6Zsa4/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCRoXttCJhMnLVCxCaa6VnNQ"
+    Uploader_ID: "@SenatorJeffMerkleyYT"
+    View_Count: 14124
+    Like_Count: 68
+    Availability: "public"
+    Published_At: "2009-06-10T18:57:52+00:00"
+    Captured_At: "2026-09-07T19:50:46-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "16.1%"
+      Turns: 3
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "56.0%"
+      Turns: 13
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "13.7%"
+      Turns: 3
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "9.7%"
+      Turns: 3
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "4.4%"
+      Turns: 1
+
+  Topics:
+    - "Health care reform debate of 2009"
+    - "Frank Luntz messaging memo and poll-tested language"
+    - "Rhetoric of 'government takeover' of health care"
+    - "The uninsured and medical bankruptcy"
+
+  Source:
+    Canonical_ID: "9d2254de2e546a87"
+    Transcribed: "2026-09-07T19:55:41.056831-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 449
+    Segments: 38
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T19:50:46.811215-07:00"
+    Transcription_Finished: "2026-09-07T19:55:41.056831-07:00"
+    Recorded: "2009-06-10"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-V6Wna6Zsa4.ctm"
+    Fountain: "-V6Wna6Zsa4.fountain"
+    Diarization_RTTM: "-V6Wna6Zsa4.rttm"
+    As_Broadcast_Script: "-V6Wna6Zsa4.script.txt"
+    Segments_JSON: "-V6Wna6Zsa4.segments.json"
+    Segments_JSONL: "-V6Wna6Zsa4.segments.jsonl"
+    Subtitles_SRT: "-V6Wna6Zsa4.srt"
+    Plain_Text: "-V6Wna6Zsa4.transcription"
+    Subtitles_VTT: "-V6Wna6Zsa4.vtt"
+    Transcript_SHA256: "ceac581bfcfe98d74afd5290a749d327885ebd8c5f8a0a1430a27aeafcf2c18c"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "jeff_merkley_or_sen"
+    video_uid: "jeff_merkley_or_sen::-V6Wna6Zsa4"
+    video_key: "-V6Wna6Zsa4"
+    youtube_id: "-V6Wna6Zsa4"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-V6Wna6Zsa4"
+    source_ref: "-V6Wna6Zsa4"

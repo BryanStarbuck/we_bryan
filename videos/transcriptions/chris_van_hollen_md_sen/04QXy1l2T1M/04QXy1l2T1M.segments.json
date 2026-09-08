@@ -1,0 +1,730 @@
+{
+  "schema_version": 2,
+  "canonical_id": "6b2d5be452577e92",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 46.57,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T02:54:38.545Z",
+  "text_sha256": "375ffcbe97693d646bb449a97ba6492729be951b8cefaf247288ce73a62513f2",
+  "segments_sha256": "412730c44df4f34fb43a5d175ced4f26d3c527c60fe417476302c5679dbf63ee",
+  "words_sha256": "e0cdfaf45a9b81c88ada45fc257acf956e8ccd0a377eed9e08eb6deaa944ea0d",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 2,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 6,
+    "clusters": 1,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.77,
+        "confidence": "low",
+        "clean_s": 43.7
+      },
+      "clean_s": 43.7,
+      "speaking_s": 43.7,
+      "first_s": 0.03
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.05,
+      "end_s": 0.05,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.05,
+      "end_s": 0.06,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I",
+      "words": [
+        {
+          "w": "I",
+          "s": 0.05,
+          "e": 0.05,
+          "c": 0.800331
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.17,
+      "end_s": 24.52,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "think most Americans are familiar with the horrendous crimes committed by Jeffrey Epstein. What we don't know is the full story of what the U.S. government did about them, who else was investigated, who Epstein's associates were, and so we need transparency. And that's why I offered an amendment today in the Senate Appropriations Committee.",
+      "words": [
+        {
+          "w": "think",
+          "s": 0.17,
+          "e": 0.39,
+          "c": 0.999415
+        },
+        {
+          "w": "most",
+          "s": 0.39,
+          "e": 0.65,
+          "c": 0.99445
+        },
+        {
+          "w": "Americans",
+          "s": 0.65,
+          "e": 1.22,
+          "c": 0.990403
+        },
+        {
+          "w": "are",
+          "s": 1.29,
+          "e": 1.44,
+          "c": 0.991314
+        },
+        {
+          "w": "familiar",
+          "s": 1.44,
+          "e": 2,
+          "c": 0.988959
+        },
+        {
+          "w": "with",
+          "s": 2,
+          "e": 2.29,
+          "c": 0.962656
+        },
+        {
+          "w": "the",
+          "s": 2.4,
+          "e": 2.4,
+          "c": 0.970595
+        },
+        {
+          "w": "horrendous",
+          "s": 2.4,
+          "e": 3,
+          "c": 0.969679
+        },
+        {
+          "w": "crimes",
+          "s": 3,
+          "e": 3.65,
+          "c": 0.978356
+        },
+        {
+          "w": "committed",
+          "s": 3.83,
+          "e": 4.2,
+          "c": 0.797803
+        },
+        {
+          "w": "by",
+          "s": 4.2,
+          "e": 4.41,
+          "c": 0.977998
+        },
+        {
+          "w": "Jeffrey",
+          "s": 4.42,
+          "e": 5.17,
+          "c": 0.97137
+        },
+        {
+          "w": "Epstein.",
+          "s": 5.19,
+          "e": 6.3,
+          "c": 0.94179
+        },
+        {
+          "w": "What",
+          "s": 6.47,
+          "e": 6.58,
+          "c": 0.996084
+        },
+        {
+          "w": "we",
+          "s": 6.67,
+          "e": 6.81,
+          "c": 0.999714
+        },
+        {
+          "w": "don't",
+          "s": 6.88,
+          "e": 7.3,
+          "c": 0.998357
+        },
+        {
+          "w": "know",
+          "s": 7.3,
+          "e": 7.67,
+          "c": 0.999571
+        },
+        {
+          "w": "is",
+          "s": 7.67,
+          "e": 7.85,
+          "c": 0.983975
+        },
+        {
+          "w": "the",
+          "s": 7.85,
+          "e": 8.12,
+          "c": 0.997248
+        },
+        {
+          "w": "full",
+          "s": 8.12,
+          "e": 8.49,
+          "c": 0.998462
+        },
+        {
+          "w": "story",
+          "s": 8.49,
+          "e": 9,
+          "c": 0.998195
+        },
+        {
+          "w": "of",
+          "s": 9,
+          "e": 9.13,
+          "c": 0.986075
+        },
+        {
+          "w": "what",
+          "s": 9.13,
+          "e": 9.36,
+          "c": 0.989666
+        },
+        {
+          "w": "the",
+          "s": 9.47,
+          "e": 9.6,
+          "c": 0.995919
+        },
+        {
+          "w": "U.S.",
+          "s": 9.6,
+          "e": 10.15,
+          "c": 0.636313
+        },
+        {
+          "w": "government",
+          "s": 10.18,
+          "e": 10.84,
+          "c": 0.9207
+        },
+        {
+          "w": "did",
+          "s": 10.84,
+          "e": 11.13,
+          "c": 0.982885
+        },
+        {
+          "w": "about",
+          "s": 11.13,
+          "e": 11.61,
+          "c": 0.996094
+        },
+        {
+          "w": "them,",
+          "s": 11.61,
+          "e": 12,
+          "c": 0.49324
+        },
+        {
+          "w": "who",
+          "s": 12.17,
+          "e": 12.28,
+          "c": 0.98792
+        },
+        {
+          "w": "else",
+          "s": 12.37,
+          "e": 12.72,
+          "c": 0.997255
+        },
+        {
+          "w": "was",
+          "s": 12.72,
+          "e": 13.03,
+          "c": 0.997394
+        },
+        {
+          "w": "investigated,",
+          "s": 13.03,
+          "e": 14.5,
+          "c": 0.993401
+        },
+        {
+          "w": "who",
+          "s": 14.5,
+          "e": 14.84,
+          "c": 0.923088
+        },
+        {
+          "w": "Epstein's",
+          "s": 14.84,
+          "e": 15.86,
+          "c": 0.992649
+        },
+        {
+          "w": "associates",
+          "s": 15.88,
+          "e": 16.88,
+          "c": 0.991726
+        },
+        {
+          "w": "were,",
+          "s": 17.09,
+          "e": 17.68,
+          "c": 0.56157
+        },
+        {
+          "w": "and",
+          "s": 17.69,
+          "e": 17.99,
+          "c": 0.745948
+        },
+        {
+          "w": "so",
+          "s": 17.99,
+          "e": 18.19,
+          "c": 0.996514
+        },
+        {
+          "w": "we",
+          "s": 18.19,
+          "e": 18.39,
+          "c": 0.95078
+        },
+        {
+          "w": "need",
+          "s": 18.56,
+          "e": 18.79,
+          "c": 0.998978
+        },
+        {
+          "w": "transparency.",
+          "s": 18.79,
+          "e": 20.04,
+          "c": 0.910304
+        },
+        {
+          "w": "And",
+          "s": 20.31,
+          "e": 20.32,
+          "c": 0.874878
+        },
+        {
+          "w": "that's",
+          "s": 20.32,
+          "e": 20.65,
+          "c": 0.987167
+        },
+        {
+          "w": "why",
+          "s": 20.72,
+          "e": 20.87,
+          "c": 0.999685
+        },
+        {
+          "w": "I",
+          "s": 20.87,
+          "e": 20.93,
+          "c": 0.997956
+        },
+        {
+          "w": "offered",
+          "s": 20.93,
+          "e": 21.36,
+          "c": 0.994808
+        },
+        {
+          "w": "an",
+          "s": 21.36,
+          "e": 21.48,
+          "c": 0.991802
+        },
+        {
+          "w": "amendment",
+          "s": 21.48,
+          "e": 22.04,
+          "c": 0.993195
+        },
+        {
+          "w": "today",
+          "s": 22.04,
+          "e": 22.35,
+          "c": 0.990172
+        },
+        {
+          "w": "in",
+          "s": 22.35,
+          "e": 22.43,
+          "c": 0.929762
+        },
+        {
+          "w": "the",
+          "s": 22.54,
+          "e": 22.65,
+          "c": 0.998858
+        },
+        {
+          "w": "Senate",
+          "s": 22.76,
+          "e": 23.02,
+          "c": 0.991675
+        },
+        {
+          "w": "Appropriations",
+          "s": 23.02,
+          "e": 23.79,
+          "c": 0.965048
+        },
+        {
+          "w": "Committee.",
+          "s": 23.97,
+          "e": 24.52,
+          "c": 0.32683
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 24.77,
+      "end_s": 46.57,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "which passed that requires the Department of Justice to preserve all the documents related to the Jeffrey Epstein cases and to report to Congress answering very important questions about this case. The American people deserve transparency and they deserve accountability. That's what this is all about.",
+      "words": [
+        {
+          "w": "which",
+          "s": 24.772,
+          "e": 24.972,
+          "c": 0.929021
+        },
+        {
+          "w": "passed",
+          "s": 25.032,
+          "e": 25.502,
+          "c": 0.991185
+        },
+        {
+          "w": "that",
+          "s": 25.562,
+          "e": 25.582,
+          "c": 0.529063
+        },
+        {
+          "w": "requires",
+          "s": 25.982,
+          "e": 26.752,
+          "c": 0.997096
+        },
+        {
+          "w": "the",
+          "s": 26.752,
+          "e": 26.872,
+          "c": 0.974775
+        },
+        {
+          "w": "Department",
+          "s": 26.982,
+          "e": 27.272,
+          "c": 0.969889
+        },
+        {
+          "w": "of",
+          "s": 27.272,
+          "e": 27.432,
+          "c": 0.97675
+        },
+        {
+          "w": "Justice",
+          "s": 27.432,
+          "e": 27.892,
+          "c": 0.991256
+        },
+        {
+          "w": "to",
+          "s": 28.182,
+          "e": 28.182,
+          "c": 0.99729
+        },
+        {
+          "w": "preserve",
+          "s": 28.262,
+          "e": 28.972,
+          "c": 0.998875
+        },
+        {
+          "w": "all",
+          "s": 28.972,
+          "e": 29.062,
+          "c": 0.99728
+        },
+        {
+          "w": "the",
+          "s": 29.452,
+          "e": 29.542,
+          "c": 0.984741
+        },
+        {
+          "w": "documents",
+          "s": 29.612,
+          "e": 30.472,
+          "c": 0.998894
+        },
+        {
+          "w": "related",
+          "s": 30.472,
+          "e": 31.012,
+          "c": 0.662515
+        },
+        {
+          "w": "to",
+          "s": 31.012,
+          "e": 31.192,
+          "c": 0.721427
+        },
+        {
+          "w": "the",
+          "s": 31.192,
+          "e": 31.272,
+          "c": 0.903808
+        },
+        {
+          "w": "Jeffrey",
+          "s": 31.272,
+          "e": 31.402,
+          "c": 0.953881
+        },
+        {
+          "w": "Epstein",
+          "s": 31.852,
+          "e": 32.312,
+          "c": 0.957492
+        },
+        {
+          "w": "cases",
+          "s": 32.312,
+          "e": 32.992,
+          "c": 0.936586
+        },
+        {
+          "w": "and",
+          "s": 33.252,
+          "e": 33.342,
+          "c": 0.978651
+        },
+        {
+          "w": "to",
+          "s": 33.382,
+          "e": 33.562,
+          "c": 0.953261
+        },
+        {
+          "w": "report",
+          "s": 33.572,
+          "e": 34.062,
+          "c": 0.948384
+        },
+        {
+          "w": "to",
+          "s": 34.452,
+          "e": 34.512,
+          "c": 0.996487
+        },
+        {
+          "w": "Congress",
+          "s": 34.512,
+          "e": 35.492,
+          "c": 0.913978
+        },
+        {
+          "w": "answering",
+          "s": 35.492,
+          "e": 36.372,
+          "c": 0.744511
+        },
+        {
+          "w": "very",
+          "s": 36.812,
+          "e": 36.812,
+          "c": 0.904019
+        },
+        {
+          "w": "important",
+          "s": 36.852,
+          "e": 37.392,
+          "c": 0.891356
+        },
+        {
+          "w": "questions",
+          "s": 37.392,
+          "e": 38.102,
+          "c": 0.977235
+        },
+        {
+          "w": "about",
+          "s": 38.372,
+          "e": 38.662,
+          "c": 0.999262
+        },
+        {
+          "w": "this",
+          "s": 38.662,
+          "e": 39.102,
+          "c": 0.998692
+        },
+        {
+          "w": "case.",
+          "s": 39.102,
+          "e": 39.882,
+          "c": 0.948017
+        },
+        {
+          "w": "The",
+          "s": 39.972,
+          "e": 40.132,
+          "c": 0.872673
+        },
+        {
+          "w": "American",
+          "s": 40.132,
+          "e": 40.772,
+          "c": 0.99441
+        },
+        {
+          "w": "people",
+          "s": 40.772,
+          "e": 41.252,
+          "c": 0.995761
+        },
+        {
+          "w": "deserve",
+          "s": 41.252,
+          "e": 41.522,
+          "c": 0.989414
+        },
+        {
+          "w": "transparency",
+          "s": 41.972,
+          "e": 42.912,
+          "c": 0.907476
+        },
+        {
+          "w": "and",
+          "s": 43.112,
+          "e": 43.112,
+          "c": 0.998969
+        },
+        {
+          "w": "they",
+          "s": 43.172,
+          "e": 43.372,
+          "c": 0.998561
+        },
+        {
+          "w": "deserve",
+          "s": 43.442,
+          "e": 43.852,
+          "c": 0.999256
+        },
+        {
+          "w": "accountability.",
+          "s": 43.852,
+          "e": 45.012,
+          "c": 0.803946
+        },
+        {
+          "w": "That's",
+          "s": 45.012,
+          "e": 45.262,
+          "c": 0.960516
+        },
+        {
+          "w": "what",
+          "s": 45.382,
+          "e": 45.572,
+          "c": 0.999232
+        },
+        {
+          "w": "this",
+          "s": 45.582,
+          "e": 45.812,
+          "c": 0.99786
+        },
+        {
+          "w": "is",
+          "s": 45.812,
+          "e": 45.922,
+          "c": 0.995695
+        },
+        {
+          "w": "all",
+          "s": 45.922,
+          "e": 46.092,
+          "c": 0.990405
+        },
+        {
+          "w": "about.",
+          "s": 46.092,
+          "e": 46.572,
+          "c": 0.937205
+        }
+      ]
+    }
+  ]
+}

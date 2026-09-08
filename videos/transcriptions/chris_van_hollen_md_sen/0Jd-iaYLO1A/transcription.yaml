@@ -1,0 +1,234 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "The GOP's little rule change they hoped you wouldn't notice"
+    Description: >-
+      A House floor exchange from the October 2013 government shutdown,
+      recorded when Chris Van Hollen was a member of the House rather than
+      a senator. He moves, under Clause 4 of Rule 22, that the House take
+      up the Senate amendment and reopen the government, and is told the
+      motion may be offered only by the Majority Leader or his designee
+      under Section 2 of House Resolution 368. Through a sustained series
+      of parliamentary inquiries he establishes on the record what that
+      resolution did: he reads the standing rule aloud, gets the chair to
+      confirm the House "altered the operation of that standing rule,"
+      identifies H. Res. 368 of October 1st by name, and presses until the
+      chair concedes the House adopted it. The chair repeatedly declines
+      to give an advisory opinion on whether any member would otherwise
+      have had the privilege. Van Hollen asks whether the Majority Leader
+      or his designee is on the floor, renews his motion, is refused again
+      on the same ground, and asks why the rules were rigged to keep the
+      government shut down. He is told to suspend, and answers that
+      democracy has been suspended. The characterisation of the rule
+      change as rigging is his own.
+    URL: "https://www.youtube.com/watch?v=0Jd-iaYLO1A"
+    Video_ID: "0Jd-iaYLO1A"
+    Show: "Senator Chris Van Hollen"
+    Runtime: "00:05:16"
+    Language: "en"
+
+  Media:
+    File: "0Jd-iaYLO1A.m4a"
+    SHA256: "99118a3090a77197f81fa34960d455086ed9b72c86a45e0f02c684adc241bfab"
+    Bytes: 5124855
+    Duration_Seconds: 316
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=0Jd-iaYLO1A"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "0Jd-iaYLO1A.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/chris_van_hollen_md_sen/0Jd-iaYLO1A/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCkpfJWu1N9Okd6PE_NidtBQ"
+    Uploader_ID: "@senatorvanhollen"
+    View_Count: 3621947
+    Like_Count: 19622
+    Comment_Count: 9200
+    Availability: "public"
+    Published_At: "2013-10-12T15:51:15+00:00"
+    Captured_At: "2026-09-07T19:50:27-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "11.2%"
+      Turns: 4
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "7.6%"
+      Turns: 3
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "3.7%"
+      Turns: 1
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "2.2%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "19.4%"
+      Turns: 7
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "31.3%"
+      Turns: 9
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "10.4%"
+      Turns: 6
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_10"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_16"
+      Share_Of_Speech: "1.3%"
+      Turns: 1
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_17"
+      Share_Of_Speech: "1.0%"
+      Turns: 1
+    Person_12:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_21"
+      Share_Of_Speech: "0.8%"
+      Turns: 1
+    Person_13:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_23"
+      Share_Of_Speech: "2.7%"
+      Turns: 1
+    Person_14:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_25"
+      Share_Of_Speech: "1.4%"
+      Turns: 2
+    Person_15:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_32"
+      Share_Of_Speech: "2.5%"
+      Turns: 1
+    Person_16:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_36"
+      Share_Of_Speech: "2.3%"
+      Turns: 1
+    Person_17:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_39"
+      Share_Of_Speech: "1.2%"
+      Turns: 1
+
+  Topics:
+    - "The October 2013 government shutdown"
+    - "House Resolution 368 and Clause 4 of Rule 22"
+    - "Privileged motions and who may offer them"
+    - "Parliamentary inquiry as a floor tactic"
+
+  Source:
+    Canonical_ID: "cce05236facc98fd"
+    Transcribed: "2026-09-07T19:57:20.250294-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 723
+    Segments: 60
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T19:50:28.596520-07:00"
+    Transcription_Finished: "2026-09-07T19:57:20.250294-07:00"
+    Recorded: "2013-10-12"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "0Jd-iaYLO1A.ctm"
+    Fountain: "0Jd-iaYLO1A.fountain"
+    Diarization_RTTM: "0Jd-iaYLO1A.rttm"
+    As_Broadcast_Script: "0Jd-iaYLO1A.script.txt"
+    Segments_JSON: "0Jd-iaYLO1A.segments.json"
+    Segments_JSONL: "0Jd-iaYLO1A.segments.jsonl"
+    Subtitles_SRT: "0Jd-iaYLO1A.srt"
+    Plain_Text: "0Jd-iaYLO1A.transcription"
+    Subtitles_VTT: "0Jd-iaYLO1A.vtt"
+    Transcript_SHA256: "8577c036f896b3ff9d03d100a9281174612f4517c996acd21d09fe0901c6ce52"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "chris_van_hollen_md_sen"
+    video_uid: "chris_van_hollen_md_sen::0Jd-iaYLO1A"
+    video_key: "0Jd-iaYLO1A"
+    youtube_id: "0Jd-iaYLO1A"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=0Jd-iaYLO1A"
+    source_ref: "0Jd-iaYLO1A"

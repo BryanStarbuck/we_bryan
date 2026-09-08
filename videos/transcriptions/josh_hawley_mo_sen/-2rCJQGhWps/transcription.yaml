@@ -1,0 +1,141 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "'Tracked My Cell Phone Without Any Criminal Predicate': Hawley Exchange with Andrew Duva | 10.21.25"
+    Description: >-
+      An exchange at a Senate committee hearing in which Senator Josh
+      Hawley questions a Justice Department witness about the collection
+      of phone records belonging to eight United States senators. Hawley
+      asserts the Department sought to track senators' cell phones without
+      criminal predicate, without notice to the senators, and without
+      legal process served on them, and says the collection covered
+      incoming and outgoing calls, call metadata, location and duration.
+      He includes himself among those targeted and says several sit on the
+      committee. The witness does not accept the characterisation: he
+      replies that what is being described is a grand jury subpoena for
+      cell phone records, and that under the justice manual and 18 U.S.C.
+      2703 such a subpoena requires specific and articulable facts and
+      does not get served without them. The factual dispute is left
+      unresolved in the clip.
+    URL: "https://www.youtube.com/watch?v=-2rCJQGhWps"
+    Video_ID: "-2rCJQGhWps"
+    Show: "Senator Josh Hawley"
+    Runtime: "00:01:11"
+    Language: "en"
+
+  Media:
+    File: "-2rCJQGhWps.m4a"
+    SHA256: "7bcd40c0a871fe2f93be2267addbf882ae91ed8e691dd745ccb2d1d3f7e6eb7d"
+    Bytes: 1151837
+    Duration_Seconds: 71
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-2rCJQGhWps"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-2rCJQGhWps.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/josh_hawley_mo_sen/-2rCJQGhWps/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCMzt8xq6qQ3XQ_DlNfJx0-w"
+    Uploader_ID: "@SenatorJoshHawley"
+    View_Count: 5017
+    Like_Count: 393
+    Comment_Count: 118
+    Availability: "public"
+    Published_At: "2025-12-05T16:26:30+00:00"
+    Captured_At: "2026-09-07T19:50:51-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "52.1%"
+      Turns: 2
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "47.9%"
+      Turns: 1
+
+  Topics:
+    - "Justice Department collection of senators' phone records"
+    - "Grand jury subpoenas for cell phone metadata"
+    - "18 U.S.C. 2703 and legal process"
+    - "Congressional oversight of DOJ"
+    - "Separation of powers and surveillance of legislators"
+
+  Source:
+    Canonical_ID: "cefd1e9e1d1c5806"
+    Transcribed: "2026-09-07T19:54:46.695773-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 189
+    Segments: 6
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T19:50:51.722680-07:00"
+    Transcription_Finished: "2026-09-07T19:54:46.695773-07:00"
+    Recorded: "2025-12-05"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-2rCJQGhWps.ctm"
+    Fountain: "-2rCJQGhWps.fountain"
+    Diarization_RTTM: "-2rCJQGhWps.rttm"
+    As_Broadcast_Script: "-2rCJQGhWps.script.txt"
+    Segments_JSON: "-2rCJQGhWps.segments.json"
+    Segments_JSONL: "-2rCJQGhWps.segments.jsonl"
+    Subtitles_SRT: "-2rCJQGhWps.srt"
+    Plain_Text: "-2rCJQGhWps.transcription"
+    Subtitles_VTT: "-2rCJQGhWps.vtt"
+    Transcript_SHA256: "4b29c1cbbdec012c471a54562cfcd7482ddaf3fac4210d45b50e816c6d2ee4f6"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "josh_hawley_mo_sen"
+    video_uid: "josh_hawley_mo_sen::-2rCJQGhWps"
+    video_key: "-2rCJQGhWps"
+    youtube_id: "-2rCJQGhWps"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-2rCJQGhWps"
+    source_ref: "-2rCJQGhWps"

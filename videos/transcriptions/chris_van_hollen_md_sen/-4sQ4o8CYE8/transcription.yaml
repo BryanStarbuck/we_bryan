@@ -1,0 +1,475 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Addressing the Long-Term Unemployment Crisis"
+    Description: >-
+      A recorded conversation hosted by Senator Chris Van Hollen in
+      December 2020 on long-term unemployment, with Marc Morial, president
+      of the National Urban League, and Melissa Young, senior director of
+      research and policy at the Heartland Alliance. Van Hollen frames the
+      problem — people out of work and seeking it for more than six
+      months, whose prospects worsen the longer it lasts — and says the
+      number rose from over a million before the pandemic to about 3.5
+      million. The discussion is tied to legislation he introduced with
+      Senator Ron Wyden, the Long-Term Unemployment Elimination Act.
+      Morial describes the trajectory of a stably employed airline or
+      hospitality worker laid off into foreclosure, food insecurity or
+      eviction, argues the service sector jobs affected are
+      disproportionately held by Black and brown workers and by young
+      women with children, and says the stereotype of the long-term
+      unemployed as unmotivated must be disavowed. He describes the
+      National Urban League's individually assessed programs — addressing
+      addiction, literacy or soft skills as needed — and argues their
+      limitation is scale, saying such work is funded as pilots and
+      demonstrations rather than at a size that moves the needle. Young
+      argues the barriers are the same ordinary supports that let anyone
+      work — transportation, jobs paying enough for rent and food — and
+      adds that criminal records bar many from employment long after any
+      involvement with the system. She recalls drafting subsidized
+      employment provisions in the 2009 recovery act, says those programs
+      placed roughly 260,000 people in red and blue states, and argues the
+      lesson is that they ended too soon, so scope, scale and duration all
+      matter. Morial cites his organisation's chief economics advisor on
+      public service jobs as powerful stimulus because earnings are spent
+      back into the economy, and recalls an Obama-era public service jobs
+      initiative that got no traction. Van Hollen outlines the bill's
+      mechanism — federal subsidy of employment costs on a sliding match,
+      up to two-thirds when unemployment is low, over two years, across
+      private, public and nonprofit employers, paired with supports like
+      transportation — and says the aim is system-wide rather than grant-
+      by-grant change. The three close on strategy: Morial suggests the
+      airline and hospitality industries could be allies, notes a
+      generational change among chief executives, and urges pushing for
+      inclusion in early-2021 legislation; Van Hollen says members of the
+      incoming administration's economic team have worked on the proposal.
+      The political characterisations, including Morial's remarks about
+      members of Congress still in the Reagan era, are the speakers' own.
+    URL: "https://www.youtube.com/watch?v=-4sQ4o8CYE8"
+    Video_ID: "-4sQ4o8CYE8"
+    Show: "Senator Chris Van Hollen"
+    Runtime: "00:35:58"
+    Language: "en"
+
+  Media:
+    File: "-4sQ4o8CYE8.m4a"
+    SHA256: "82c47e41450f4396e6a963b9afc553e8e829262aa00179193618d9b5c4955436"
+    Bytes: 34912087
+    Duration_Seconds: 2158
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-4sQ4o8CYE8"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-4sQ4o8CYE8.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/chris_van_hollen_md_sen/-4sQ4o8CYE8/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCkpfJWu1N9Okd6PE_NidtBQ"
+    Uploader_ID: "@senatorvanhollen"
+    View_Count: 97
+    Like_Count: 3
+    Comment_Count: 1
+    Availability: "public"
+    Published_At: "2020-12-11T22:58:16+00:00"
+    Captured_At: "2026-09-07T19:50:12-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "6.6%"
+      Turns: 9
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "17.2%"
+      Turns: 26
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "5.4%"
+      Turns: 14
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "0.3%"
+      Turns: 2
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "23.6%"
+      Turns: 49
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_09"
+      Share_Of_Speech: "7.6%"
+      Turns: 28
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_10"
+      Share_Of_Speech: "3.8%"
+      Turns: 8
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_11"
+      Share_Of_Speech: "1.0%"
+      Turns: 6
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_114"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_119"
+      Share_Of_Speech: "0.4%"
+      Turns: 4
+    Person_12:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_120"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_13:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_123"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_14:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_126"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_15:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_129"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_16:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "0.6%"
+      Turns: 2
+    Person_17:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_132"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_18:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_133"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_19:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_14"
+      Share_Of_Speech: "0.7%"
+      Turns: 3
+    Person_20:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_141"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_21:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_145"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_22:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_148"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_23:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_150"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_24:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_151"
+      Share_Of_Speech: "0.3%"
+      Turns: 2
+    Person_25:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_152"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_26:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_154"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_27:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_17"
+      Share_Of_Speech: "0.5%"
+      Turns: 3
+    Person_28:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_22"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_29:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_25"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_30:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_30"
+      Share_Of_Speech: "1.1%"
+      Turns: 2
+    Person_31:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_32"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_32:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_34"
+      Share_Of_Speech: "8.9%"
+      Turns: 11
+    Person_33:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_35"
+      Share_Of_Speech: "3.9%"
+      Turns: 6
+    Person_34:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_37"
+      Share_Of_Speech: "8.5%"
+      Turns: 15
+    Person_35:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_38"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_36:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_39"
+      Share_Of_Speech: "1.9%"
+      Turns: 5
+    Person_37:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_43"
+      Share_Of_Speech: "0.5%"
+      Turns: 2
+    Person_38:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_47"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_39:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_49"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_40:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_53"
+      Share_Of_Speech: "0.4%"
+      Turns: 3
+    Person_41:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_59"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_42:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_61"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_43:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_63"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_44:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_67"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_45:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_70"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_46:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_71"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_47:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_80"
+      Share_Of_Speech: "0.8%"
+      Turns: 2
+    Person_48:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_82"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_49:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_85"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_50:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_87"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_51:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_88"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_52:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_91"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_53:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_92"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+
+  Topics:
+    - "Long-term unemployment during the COVID-19 pandemic"
+    - "The Long-Term Unemployment Elimination Act"
+    - "Subsidized and public service employment programs"
+    - "Racial and gender disparities in job loss"
+    - "Criminal records as a barrier to employment"
+    - "Scale and duration of anti-poverty programs"
+
+  Source:
+    Canonical_ID: "c3927fd55e8b6918"
+    Transcribed: "2026-09-07T20:06:12.973792-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 4988
+    Segments: 384
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T19:50:17.124916-07:00"
+    Transcription_Finished: "2026-09-07T20:06:12.973792-07:00"
+    Recorded: "2020-12-11"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-4sQ4o8CYE8.ctm"
+    Fountain: "-4sQ4o8CYE8.fountain"
+    Diarization_RTTM: "-4sQ4o8CYE8.rttm"
+    As_Broadcast_Script: "-4sQ4o8CYE8.script.txt"
+    Segments_JSON: "-4sQ4o8CYE8.segments.json"
+    Segments_JSONL: "-4sQ4o8CYE8.segments.jsonl"
+    Subtitles_SRT: "-4sQ4o8CYE8.srt"
+    Plain_Text: "-4sQ4o8CYE8.transcription"
+    Subtitles_VTT: "-4sQ4o8CYE8.vtt"
+    Transcript_SHA256: "df03eef750319f45b755f211acd0b5cd89aa0231527d339f19ae6fe361cfb96c"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "chris_van_hollen_md_sen"
+    video_uid: "chris_van_hollen_md_sen::-4sQ4o8CYE8"
+    video_key: "-4sQ4o8CYE8"
+    youtube_id: "-4sQ4o8CYE8"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-4sQ4o8CYE8"
+    source_ref: "-4sQ4o8CYE8"

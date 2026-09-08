@@ -1,0 +1,5666 @@
+{
+  "schema_version": 2,
+  "canonical_id": "430cb22a090bdd2b",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 277.97,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T02:56:45.993Z",
+  "text_sha256": "f0748f04a05a6bd61f369cc3159eb4ab92e40e6973ba0757b7a688af33abc8ab",
+  "segments_sha256": "5d130a975ef651d73ca9a6b958acb2a5163138e8927910944f380632a7cb05db",
+  "words_sha256": "a1f94aa788c48653c549a200e5baa2f70ea3bcb9fe73635b47f4172502f8c184",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 11,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 23,
+    "clusters": 10,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 128.5
+      },
+      "clean_s": 128.5,
+      "speaking_s": 128.8,
+      "first_s": 2.68
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 17
+      },
+      "clean_s": 17,
+      "speaking_s": 17,
+      "first_s": 14.97
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 30.7
+      },
+      "clean_s": 30.7,
+      "speaking_s": 30.7,
+      "first_s": 20.75
+    },
+    {
+      "id": "SPEAKER_05",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.4
+      },
+      "clean_s": 4.4,
+      "speaking_s": 4.4,
+      "first_s": 37.46
+    },
+    {
+      "id": "SPEAKER_06",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.1
+      },
+      "clean_s": 5.1,
+      "speaking_s": 5.1,
+      "first_s": 42.88
+    },
+    {
+      "id": "SPEAKER_11",
+      "n": 6,
+      "label": "Speaker 6",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 2.8
+      },
+      "clean_s": 2.8,
+      "speaking_s": 3.1,
+      "first_s": 91.97
+    },
+    {
+      "id": "SPEAKER_12",
+      "n": 7,
+      "label": "Speaker 7 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.8,
+        "confidence": "low",
+        "clean_s": 67.2
+      },
+      "clean_s": 67.2,
+      "speaking_s": 67.2,
+      "first_s": 133.11
+    },
+    {
+      "id": "SPEAKER_14",
+      "n": 8,
+      "label": "Speaker 8",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.2
+      },
+      "clean_s": 4.2,
+      "speaking_s": 4.2,
+      "first_s": 169.96
+    },
+    {
+      "id": "SPEAKER_16",
+      "n": 9,
+      "label": "Speaker 9",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 2.8
+      },
+      "clean_s": 2.8,
+      "speaking_s": 2.8,
+      "first_s": 222.97
+    },
+    {
+      "id": "SPEAKER_19",
+      "n": 10,
+      "label": "Speaker 10",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1
+      },
+      "clean_s": 1,
+      "speaking_s": 1,
+      "first_s": 257.97
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 37.52,
+      "end_s": 37.52,
+      "segment_i": 4,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 56.1,
+      "end_s": 56.1,
+      "segment_i": 8,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 56.05,
+      "end_s": 56.32,
+      "segment_i": 9,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 75.81,
+      "end_s": 75.81,
+      "segment_i": 12,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 131.62,
+      "end_s": 132.76,
+      "segment_i": 19,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 134.49,
+      "end_s": 134.84,
+      "segment_i": 21,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 227.4,
+      "end_s": 227.55,
+      "segment_i": 28,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 231.67,
+      "end_s": 231.75,
+      "segment_i": 30,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 259.05,
+      "end_s": 259.41,
+      "segment_i": 34,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.05,
+      "end_s": 14.95,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "- The left isn't giving up on the Smithsonian. They're preparing to take it back. And we know exactly what they think they're saving. In a resurfaced presentation to UCLA students, National Museum of American History director",
+      "words": [
+        {
+          "w": "-",
+          "s": 0.05,
+          "e": 2.76,
+          "c": 0.15336
+        },
+        {
+          "w": "The",
+          "s": 2.76,
+          "e": 2.91,
+          "c": 0.740609
+        },
+        {
+          "w": "left",
+          "s": 2.91,
+          "e": 3.11,
+          "c": 0.838548
+        },
+        {
+          "w": "isn't",
+          "s": 3.11,
+          "e": 3.36,
+          "c": 0.97669
+        },
+        {
+          "w": "giving",
+          "s": 3.36,
+          "e": 3.67,
+          "c": 0.992443
+        },
+        {
+          "w": "up",
+          "s": 3.67,
+          "e": 3.8,
+          "c": 0.995389
+        },
+        {
+          "w": "on",
+          "s": 3.8,
+          "e": 3.92,
+          "c": 0.951885
+        },
+        {
+          "w": "the",
+          "s": 3.92,
+          "e": 4.1,
+          "c": 0.978434
+        },
+        {
+          "w": "Smithsonian.",
+          "s": 4.1,
+          "e": 4.76,
+          "c": 0.535168
+        },
+        {
+          "w": "They're",
+          "s": 4.81,
+          "e": 5.23,
+          "c": 0.992824
+        },
+        {
+          "w": "preparing",
+          "s": 5.23,
+          "e": 5.84,
+          "c": 0.999005
+        },
+        {
+          "w": "to",
+          "s": 5.84,
+          "e": 5.97,
+          "c": 0.998553
+        },
+        {
+          "w": "take",
+          "s": 5.97,
+          "e": 6.24,
+          "c": 0.994313
+        },
+        {
+          "w": "it",
+          "s": 6.24,
+          "e": 6.37,
+          "c": 0.998635
+        },
+        {
+          "w": "back.",
+          "s": 6.37,
+          "e": 6.66,
+          "c": 0.606392
+        },
+        {
+          "w": "And",
+          "s": 6.71,
+          "e": 6.88,
+          "c": 0.995974
+        },
+        {
+          "w": "we",
+          "s": 6.88,
+          "e": 7.03,
+          "c": 0.996884
+        },
+        {
+          "w": "know",
+          "s": 7.03,
+          "e": 7.33,
+          "c": 0.999438
+        },
+        {
+          "w": "exactly",
+          "s": 7.33,
+          "e": 7.88,
+          "c": 0.998652
+        },
+        {
+          "w": "what",
+          "s": 7.88,
+          "e": 8.17,
+          "c": 0.975578
+        },
+        {
+          "w": "they",
+          "s": 8.17,
+          "e": 8.46,
+          "c": 0.99514
+        },
+        {
+          "w": "think",
+          "s": 8.46,
+          "e": 8.84,
+          "c": 0.998098
+        },
+        {
+          "w": "they're",
+          "s": 8.84,
+          "e": 9.45,
+          "c": 0.979581
+        },
+        {
+          "w": "saving.",
+          "s": 9.45,
+          "e": 10,
+          "c": 0.96221
+        },
+        {
+          "w": "In",
+          "s": 10.05,
+          "e": 10.11,
+          "c": 0.710704
+        },
+        {
+          "w": "a",
+          "s": 10.11,
+          "e": 10.16,
+          "c": 0.991302
+        },
+        {
+          "w": "resurfaced",
+          "s": 10.16,
+          "e": 10.71,
+          "c": 0.903049
+        },
+        {
+          "w": "presentation",
+          "s": 10.71,
+          "e": 11.4,
+          "c": 0.999136
+        },
+        {
+          "w": "to",
+          "s": 11.4,
+          "e": 11.56,
+          "c": 0.964131
+        },
+        {
+          "w": "UCLA",
+          "s": 11.56,
+          "e": 11.88,
+          "c": 0.994569
+        },
+        {
+          "w": "students,",
+          "s": 11.88,
+          "e": 12.52,
+          "c": 0.923051
+        },
+        {
+          "w": "National",
+          "s": 12.57,
+          "e": 13.03,
+          "c": 0.98454
+        },
+        {
+          "w": "Museum",
+          "s": 13.03,
+          "e": 13.41,
+          "c": 0.998887
+        },
+        {
+          "w": "of",
+          "s": 13.41,
+          "e": 13.53,
+          "c": 0.996618
+        },
+        {
+          "w": "American",
+          "s": 13.53,
+          "e": 14.04,
+          "c": 0.996465
+        },
+        {
+          "w": "History",
+          "s": 14.04,
+          "e": 14.5,
+          "c": 0.955629
+        },
+        {
+          "w": "director",
+          "s": 14.5,
+          "e": 14.95,
+          "c": 0.518408
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 15.01,
+      "end_s": 20.8,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Anthea Hardig proudly laid out her version of history for the museum.",
+      "words": [
+        {
+          "w": "Anthea",
+          "s": 15.01,
+          "e": 15.58,
+          "c": 0.822807
+        },
+        {
+          "w": "Hardig",
+          "s": 15.58,
+          "e": 16.22,
+          "c": 0.570065
+        },
+        {
+          "w": "proudly",
+          "s": 16.22,
+          "e": 16.91,
+          "c": 0.884828
+        },
+        {
+          "w": "laid",
+          "s": 16.91,
+          "e": 17.31,
+          "c": 0.99774
+        },
+        {
+          "w": "out",
+          "s": 17.31,
+          "e": 17.61,
+          "c": 0.998254
+        },
+        {
+          "w": "her",
+          "s": 17.62,
+          "e": 18.04,
+          "c": 0.565627
+        },
+        {
+          "w": "version",
+          "s": 18.04,
+          "e": 18.6,
+          "c": 0.98041
+        },
+        {
+          "w": "of",
+          "s": 18.6,
+          "e": 18.71,
+          "c": 0.543248
+        },
+        {
+          "w": "history",
+          "s": 18.72,
+          "e": 19.23,
+          "c": 0.981051
+        },
+        {
+          "w": "for",
+          "s": 19.29,
+          "e": 19.55,
+          "c": 0.999045
+        },
+        {
+          "w": "the",
+          "s": 19.55,
+          "e": 19.86,
+          "c": 0.997544
+        },
+        {
+          "w": "museum.",
+          "s": 19.86,
+          "e": 20.8,
+          "c": 0.98266
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 20.85,
+      "end_s": 29.96,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "- I want to take this time to share a number of ways in which your National Museum of American History is taking an equity-based",
+      "words": [
+        {
+          "w": "-",
+          "s": 20.85,
+          "e": 20.86,
+          "c": 0.97275
+        },
+        {
+          "w": "I",
+          "s": 20.86,
+          "e": 20.92,
+          "c": 0.983873
+        },
+        {
+          "w": "want",
+          "s": 20.92,
+          "e": 21.17,
+          "c": 0.996288
+        },
+        {
+          "w": "to",
+          "s": 21.17,
+          "e": 21.29,
+          "c": 0.998504
+        },
+        {
+          "w": "take",
+          "s": 21.29,
+          "e": 21.54,
+          "c": 0.999634
+        },
+        {
+          "w": "this",
+          "s": 21.54,
+          "e": 21.79,
+          "c": 0.994524
+        },
+        {
+          "w": "time",
+          "s": 21.79,
+          "e": 22.08,
+          "c": 0.999247
+        },
+        {
+          "w": "to",
+          "s": 22.08,
+          "e": 22.29,
+          "c": 0.947719
+        },
+        {
+          "w": "share",
+          "s": 22.29,
+          "e": 22.84,
+          "c": 0.999565
+        },
+        {
+          "w": "a",
+          "s": 22.84,
+          "e": 23.07,
+          "c": 0.620493
+        },
+        {
+          "w": "number",
+          "s": 23.07,
+          "e": 24.46,
+          "c": 0.998593
+        },
+        {
+          "w": "of",
+          "s": 24.46,
+          "e": 24.6,
+          "c": 0.970386
+        },
+        {
+          "w": "ways",
+          "s": 24.6,
+          "e": 24.86,
+          "c": 0.99883
+        },
+        {
+          "w": "in",
+          "s": 24.93,
+          "e": 25.03,
+          "c": 0.999256
+        },
+        {
+          "w": "which",
+          "s": 25.03,
+          "e": 25.42,
+          "c": 0.999304
+        },
+        {
+          "w": "your",
+          "s": 25.42,
+          "e": 25.73,
+          "c": 0.981045
+        },
+        {
+          "w": "National",
+          "s": 25.73,
+          "e": 26.35,
+          "c": 0.977208
+        },
+        {
+          "w": "Museum",
+          "s": 26.35,
+          "e": 26.84,
+          "c": 0.999028
+        },
+        {
+          "w": "of",
+          "s": 26.84,
+          "e": 26.94,
+          "c": 0.967521
+        },
+        {
+          "w": "American",
+          "s": 26.94,
+          "e": 27.37,
+          "c": 0.998239
+        },
+        {
+          "w": "History",
+          "s": 27.37,
+          "e": 27.76,
+          "c": 0.779562
+        },
+        {
+          "w": "is",
+          "s": 27.81,
+          "e": 27.96,
+          "c": 0.882483
+        },
+        {
+          "w": "taking",
+          "s": 27.96,
+          "e": 28.55,
+          "c": 0.999239
+        },
+        {
+          "w": "an",
+          "s": 28.55,
+          "e": 28.75,
+          "c": 0.990955
+        },
+        {
+          "w": "equity-based",
+          "s": 28.75,
+          "e": 29.96,
+          "c": 0.861738
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 30.14,
+      "end_s": 37.33,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "justice-forward, community-driven, and necessarily humble approach to public history.",
+      "words": [
+        {
+          "w": "justice-forward,",
+          "s": 30.14,
+          "e": 31.26,
+          "c": 0.469971
+        },
+        {
+          "w": "community-driven,",
+          "s": 31.26,
+          "e": 32.38,
+          "c": 0.471914
+        },
+        {
+          "w": "and",
+          "s": 32.38,
+          "e": 32.66,
+          "c": 0.698972
+        },
+        {
+          "w": "necessarily",
+          "s": 33.21,
+          "e": 33.96,
+          "c": 0.730904
+        },
+        {
+          "w": "humble",
+          "s": 33.96,
+          "e": 34.6,
+          "c": 0.85811
+        },
+        {
+          "w": "approach",
+          "s": 34.6,
+          "e": 34.92,
+          "c": 0.756057
+        },
+        {
+          "w": "to",
+          "s": 34.92,
+          "e": 35.19,
+          "c": 0.923344
+        },
+        {
+          "w": "public",
+          "s": 35.25,
+          "e": 35.6,
+          "c": 0.983709
+        },
+        {
+          "w": "history.",
+          "s": 35.6,
+          "e": 37.33,
+          "c": 0.967864
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 37.52,
+      "end_s": 37.53,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Now",
+      "words": [
+        {
+          "w": "Now",
+          "s": 37.52,
+          "e": 37.52,
+          "c": 0.731949
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 37.56,
+      "end_s": 42.76,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "comes my favorite part. Apparently, history really is not about facts anymore.",
+      "words": [
+        {
+          "w": "comes",
+          "s": 37.56,
+          "e": 37.81,
+          "c": 0.983472
+        },
+        {
+          "w": "my",
+          "s": 37.82,
+          "e": 37.94,
+          "c": 0.998449
+        },
+        {
+          "w": "favorite",
+          "s": 37.94,
+          "e": 38.41,
+          "c": 0.993045
+        },
+        {
+          "w": "part.",
+          "s": 38.41,
+          "e": 38.84,
+          "c": 0.685681
+        },
+        {
+          "w": "Apparently,",
+          "s": 38.84,
+          "e": 39.34,
+          "c": 0.588248
+        },
+        {
+          "w": "history",
+          "s": 39.34,
+          "e": 39.91,
+          "c": 0.971364
+        },
+        {
+          "w": "really",
+          "s": 39.91,
+          "e": 40.08,
+          "c": 0.911862
+        },
+        {
+          "w": "is",
+          "s": 40.58,
+          "e": 40.58,
+          "c": 0.962882
+        },
+        {
+          "w": "not",
+          "s": 40.63,
+          "e": 40.86,
+          "c": 0.997269
+        },
+        {
+          "w": "about",
+          "s": 40.86,
+          "e": 41.33,
+          "c": 0.99747
+        },
+        {
+          "w": "facts",
+          "s": 41.33,
+          "e": 41.8,
+          "c": 0.994973
+        },
+        {
+          "w": "anymore.",
+          "s": 41.8,
+          "e": 42.76,
+          "c": 0.980799
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 42.98,
+      "end_s": 47.91,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "History as a practice is, for me, a prime tool of social",
+      "words": [
+        {
+          "w": "History",
+          "s": 42.98,
+          "e": 43.46,
+          "c": 0.98785
+        },
+        {
+          "w": "as",
+          "s": 43.56,
+          "e": 43.66,
+          "c": 0.933063
+        },
+        {
+          "w": "a",
+          "s": 43.66,
+          "e": 43.76,
+          "c": 0.999615
+        },
+        {
+          "w": "practice",
+          "s": 43.76,
+          "e": 44.56,
+          "c": 0.99943
+        },
+        {
+          "w": "is,",
+          "s": 44.56,
+          "e": 44.96,
+          "c": 0.603034
+        },
+        {
+          "w": "for",
+          "s": 44.96,
+          "e": 45.26,
+          "c": 0.992816
+        },
+        {
+          "w": "me,",
+          "s": 45.26,
+          "e": 45.53,
+          "c": 0.987805
+        },
+        {
+          "w": "a",
+          "s": 45.71,
+          "e": 45.8,
+          "c": 0.98571
+        },
+        {
+          "w": "prime",
+          "s": 46.05,
+          "e": 46.42,
+          "c": 0.997206
+        },
+        {
+          "w": "tool",
+          "s": 46.42,
+          "e": 46.91,
+          "c": 0.996246
+        },
+        {
+          "w": "of",
+          "s": 46.92,
+          "e": 47.17,
+          "c": 0.996704
+        },
+        {
+          "w": "social",
+          "s": 47.17,
+          "e": 47.91,
+          "c": 0.997609
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 47.91,
+      "end_s": 55.54,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "justice. It's also in a way in which I've grown personally. It continues to grow resolute in my",
+      "words": [
+        {
+          "w": "justice.",
+          "s": 47.91,
+          "e": 49.11,
+          "c": 0.99201
+        },
+        {
+          "w": "It's",
+          "s": 49.33,
+          "e": 49.48,
+          "c": 0.983928
+        },
+        {
+          "w": "also",
+          "s": 49.48,
+          "e": 49.78,
+          "c": 0.997626
+        },
+        {
+          "w": "in",
+          "s": 49.78,
+          "e": 49.87,
+          "c": 0.537479
+        },
+        {
+          "w": "a",
+          "s": 49.98,
+          "e": 50,
+          "c": 0.572304
+        },
+        {
+          "w": "way",
+          "s": 50,
+          "e": 50.22,
+          "c": 0.999685
+        },
+        {
+          "w": "in",
+          "s": 50.22,
+          "e": 50.37,
+          "c": 0.948286
+        },
+        {
+          "w": "which",
+          "s": 50.37,
+          "e": 50.74,
+          "c": 0.999497
+        },
+        {
+          "w": "I've",
+          "s": 50.74,
+          "e": 51.02,
+          "c": 0.980658
+        },
+        {
+          "w": "grown",
+          "s": 51.11,
+          "e": 51.4,
+          "c": 0.99858
+        },
+        {
+          "w": "personally.",
+          "s": 51.4,
+          "e": 52.44,
+          "c": 0.796627
+        },
+        {
+          "w": "It",
+          "s": 52.47,
+          "e": 52.66,
+          "c": 0.576909
+        },
+        {
+          "w": "continues",
+          "s": 52.66,
+          "e": 53.65,
+          "c": 0.999308
+        },
+        {
+          "w": "to",
+          "s": 53.65,
+          "e": 53.87,
+          "c": 0.999417
+        },
+        {
+          "w": "grow",
+          "s": 53.87,
+          "e": 54.31,
+          "c": 0.999218
+        },
+        {
+          "w": "resolute",
+          "s": 54.31,
+          "e": 55.19,
+          "c": 0.99011
+        },
+        {
+          "w": "in",
+          "s": 55.19,
+          "e": 55.41,
+          "c": 0.998352
+        },
+        {
+          "w": "my",
+          "s": 55.41,
+          "e": 55.54,
+          "c": 0.999519
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 56.1,
+      "end_s": 56.11,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "mind.",
+      "words": [
+        {
+          "w": "mind.",
+          "s": 56.1,
+          "e": 56.1,
+          "c": 0.636073
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 56.1,
+      "end_s": 56.32,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And",
+      "words": [
+        {
+          "w": "And",
+          "s": 56.048,
+          "e": 56.318,
+          "c": 0.740653
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 56.46,
+      "end_s": 66.55,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "it is the key that unlocks the mysteries of humanity, of meaning, of place, of conquest, of love, of power, authority, and",
+      "words": [
+        {
+          "w": "it",
+          "s": 56.458,
+          "e": 56.498,
+          "c": 0.98878
+        },
+        {
+          "w": "is",
+          "s": 56.498,
+          "e": 56.678,
+          "c": 0.993462
+        },
+        {
+          "w": "the",
+          "s": 56.678,
+          "e": 56.938,
+          "c": 0.996274
+        },
+        {
+          "w": "key",
+          "s": 56.938,
+          "e": 57.208,
+          "c": 0.995011
+        },
+        {
+          "w": "that",
+          "s": 57.228,
+          "e": 57.578,
+          "c": 0.992856
+        },
+        {
+          "w": "unlocks",
+          "s": 57.578,
+          "e": 58.238,
+          "c": 0.995983
+        },
+        {
+          "w": "the",
+          "s": 58.238,
+          "e": 58.428,
+          "c": 0.987924
+        },
+        {
+          "w": "mysteries",
+          "s": 58.428,
+          "e": 58.988,
+          "c": 0.995158
+        },
+        {
+          "w": "of",
+          "s": 58.988,
+          "e": 59.158,
+          "c": 0.964823
+        },
+        {
+          "w": "humanity,",
+          "s": 59.158,
+          "e": 60.048,
+          "c": 0.950363
+        },
+        {
+          "w": "of",
+          "s": 60.048,
+          "e": 60.158,
+          "c": 0.750594
+        },
+        {
+          "w": "meaning,",
+          "s": 60.228,
+          "e": 60.838,
+          "c": 0.984866
+        },
+        {
+          "w": "of",
+          "s": 60.838,
+          "e": 60.938,
+          "c": 0.907644
+        },
+        {
+          "w": "place,",
+          "s": 61.038,
+          "e": 61.428,
+          "c": 0.988704
+        },
+        {
+          "w": "of",
+          "s": 61.428,
+          "e": 61.718,
+          "c": 0.936518
+        },
+        {
+          "w": "conquest,",
+          "s": 61.808,
+          "e": 62.648,
+          "c": 0.969011
+        },
+        {
+          "w": "of",
+          "s": 62.648,
+          "e": 62.898,
+          "c": 0.998567
+        },
+        {
+          "w": "love,",
+          "s": 63.068,
+          "e": 63.588,
+          "c": 0.987639
+        },
+        {
+          "w": "of",
+          "s": 63.658,
+          "e": 63.888,
+          "c": 0.644562
+        },
+        {
+          "w": "power,",
+          "s": 63.908,
+          "e": 64.768,
+          "c": 0.993913
+        },
+        {
+          "w": "authority,",
+          "s": 64.788,
+          "e": 66.168,
+          "c": 0.666937
+        },
+        {
+          "w": "and",
+          "s": 66.168,
+          "e": 66.548,
+          "c": 0.996976
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 66.55,
+      "end_s": 75.69,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "self.\" Social justice. You bet. That's the philosophy that President Trump is trying to root out. And that's exactly why the left is panicking.",
+      "words": [
+        {
+          "w": "self.\"",
+          "s": 66.548,
+          "e": 67.658,
+          "c": 0.176851
+        },
+        {
+          "w": "Social",
+          "s": 67.738,
+          "e": 68.178,
+          "c": 0.973245
+        },
+        {
+          "w": "justice.",
+          "s": 68.178,
+          "e": 68.928,
+          "c": 0.405505
+        },
+        {
+          "w": "You",
+          "s": 68.938,
+          "e": 69.118,
+          "c": 0.998704
+        },
+        {
+          "w": "bet.",
+          "s": 69.348,
+          "e": 69.868,
+          "c": 0.914805
+        },
+        {
+          "w": "That's",
+          "s": 69.928,
+          "e": 70.288,
+          "c": 0.991333
+        },
+        {
+          "w": "the",
+          "s": 70.338,
+          "e": 70.468,
+          "c": 0.997531
+        },
+        {
+          "w": "philosophy",
+          "s": 70.468,
+          "e": 71.008,
+          "c": 0.9983
+        },
+        {
+          "w": "that",
+          "s": 71.118,
+          "e": 71.308,
+          "c": 0.986282
+        },
+        {
+          "w": "President",
+          "s": 71.308,
+          "e": 71.848,
+          "c": 0.940058
+        },
+        {
+          "w": "Trump",
+          "s": 71.848,
+          "e": 72.138,
+          "c": 0.998731
+        },
+        {
+          "w": "is",
+          "s": 72.138,
+          "e": 72.268,
+          "c": 0.996449
+        },
+        {
+          "w": "trying",
+          "s": 72.268,
+          "e": 72.628,
+          "c": 0.999115
+        },
+        {
+          "w": "to",
+          "s": 72.628,
+          "e": 72.748,
+          "c": 0.998951
+        },
+        {
+          "w": "root",
+          "s": 72.748,
+          "e": 72.988,
+          "c": 0.993263
+        },
+        {
+          "w": "out.",
+          "s": 72.988,
+          "e": 73.368,
+          "c": 0.718303
+        },
+        {
+          "w": "And",
+          "s": 73.368,
+          "e": 73.538,
+          "c": 0.998929
+        },
+        {
+          "w": "that's",
+          "s": 73.768,
+          "e": 73.878,
+          "c": 0.9965
+        },
+        {
+          "w": "exactly",
+          "s": 73.878,
+          "e": 74.278,
+          "c": 0.998096
+        },
+        {
+          "w": "why",
+          "s": 74.278,
+          "e": 74.448,
+          "c": 0.997704
+        },
+        {
+          "w": "the",
+          "s": 74.448,
+          "e": 74.608,
+          "c": 0.997961
+        },
+        {
+          "w": "left",
+          "s": 74.628,
+          "e": 74.838,
+          "c": 0.908157
+        },
+        {
+          "w": "is",
+          "s": 74.878,
+          "e": 74.958,
+          "c": 0.916289
+        },
+        {
+          "w": "panicking.",
+          "s": 74.958,
+          "e": 75.688,
+          "c": 0.994406
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 75.81,
+      "end_s": 75.82,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Now",
+      "words": [
+        {
+          "w": "Now",
+          "s": 75.814,
+          "e": 75.814,
+          "c": 0.967757
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 75.88,
+      "end_s": 91.58,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that they've got a plan, they've got a budget, they have a volunteer army at the Smithsonian. Hundreds of activists from citizen historians for the Smithsonian have run through the galleries with cell phones, taking more than 50,000 photos and videos. Not saving history to make sure nobody",
+      "words": [
+        {
+          "w": "that",
+          "s": 75.884,
+          "e": 76.014,
+          "c": 0.962505
+        },
+        {
+          "w": "they've",
+          "s": 76.014,
+          "e": 76.354,
+          "c": 0.967722
+        },
+        {
+          "w": "got",
+          "s": 76.354,
+          "e": 76.484,
+          "c": 0.995209
+        },
+        {
+          "w": "a",
+          "s": 76.554,
+          "e": 76.554,
+          "c": 0.99445
+        },
+        {
+          "w": "plan,",
+          "s": 76.644,
+          "e": 76.864,
+          "c": 0.910608
+        },
+        {
+          "w": "they've",
+          "s": 76.864,
+          "e": 77.084,
+          "c": 0.712621
+        },
+        {
+          "w": "got",
+          "s": 77.084,
+          "e": 77.114,
+          "c": 0.996213
+        },
+        {
+          "w": "a",
+          "s": 77.204,
+          "e": 77.204,
+          "c": 0.994918
+        },
+        {
+          "w": "budget,",
+          "s": 77.214,
+          "e": 77.494,
+          "c": 0.795065
+        },
+        {
+          "w": "they",
+          "s": 77.544,
+          "e": 77.694,
+          "c": 0.816216
+        },
+        {
+          "w": "have",
+          "s": 77.694,
+          "e": 77.874,
+          "c": 0.984819
+        },
+        {
+          "w": "a",
+          "s": 77.874,
+          "e": 77.914,
+          "c": 0.991403
+        },
+        {
+          "w": "volunteer",
+          "s": 77.914,
+          "e": 78.324,
+          "c": 0.989455
+        },
+        {
+          "w": "army",
+          "s": 78.324,
+          "e": 78.544,
+          "c": 0.985487
+        },
+        {
+          "w": "at",
+          "s": 78.544,
+          "e": 78.704,
+          "c": 0.97491
+        },
+        {
+          "w": "the",
+          "s": 78.704,
+          "e": 78.704,
+          "c": 0.974663
+        },
+        {
+          "w": "Smithsonian.",
+          "s": 78.794,
+          "e": 79.504,
+          "c": 0.847058
+        },
+        {
+          "w": "Hundreds",
+          "s": 79.724,
+          "e": 80.094,
+          "c": 0.988954
+        },
+        {
+          "w": "of",
+          "s": 80.094,
+          "e": 80.234,
+          "c": 0.999754
+        },
+        {
+          "w": "activists",
+          "s": 80.234,
+          "e": 80.894,
+          "c": 0.982793
+        },
+        {
+          "w": "from",
+          "s": 80.894,
+          "e": 81.184,
+          "c": 0.850024
+        },
+        {
+          "w": "citizen",
+          "s": 81.184,
+          "e": 81.694,
+          "c": 0.67148
+        },
+        {
+          "w": "historians",
+          "s": 81.694,
+          "e": 82.464,
+          "c": 0.971211
+        },
+        {
+          "w": "for",
+          "s": 82.464,
+          "e": 82.664,
+          "c": 0.918112
+        },
+        {
+          "w": "the",
+          "s": 82.664,
+          "e": 82.864,
+          "c": 0.990265
+        },
+        {
+          "w": "Smithsonian",
+          "s": 82.864,
+          "e": 83.504,
+          "c": 0.978168
+        },
+        {
+          "w": "have",
+          "s": 83.504,
+          "e": 83.744,
+          "c": 0.860884
+        },
+        {
+          "w": "run",
+          "s": 83.744,
+          "e": 83.974,
+          "c": 0.959798
+        },
+        {
+          "w": "through",
+          "s": 83.994,
+          "e": 84.174,
+          "c": 0.950209
+        },
+        {
+          "w": "the",
+          "s": 84.294,
+          "e": 84.384,
+          "c": 0.979963
+        },
+        {
+          "w": "galleries",
+          "s": 84.384,
+          "e": 84.944,
+          "c": 0.909445
+        },
+        {
+          "w": "with",
+          "s": 85.164,
+          "e": 85.164,
+          "c": 0.999077
+        },
+        {
+          "w": "cell",
+          "s": 85.164,
+          "e": 85.384,
+          "c": 0.996239
+        },
+        {
+          "w": "phones,",
+          "s": 85.384,
+          "e": 85.764,
+          "c": 0.362623
+        },
+        {
+          "w": "taking",
+          "s": 85.924,
+          "e": 86.154,
+          "c": 0.998302
+        },
+        {
+          "w": "more",
+          "s": 86.154,
+          "e": 86.374,
+          "c": 0.993229
+        },
+        {
+          "w": "than",
+          "s": 86.374,
+          "e": 86.594,
+          "c": 0.998894
+        },
+        {
+          "w": "50,000",
+          "s": 86.594,
+          "e": 87.524,
+          "c": 0.9568
+        },
+        {
+          "w": "photos",
+          "s": 87.524,
+          "e": 87.854,
+          "c": 0.998616
+        },
+        {
+          "w": "and",
+          "s": 87.854,
+          "e": 87.984,
+          "c": 0.996289
+        },
+        {
+          "w": "videos.",
+          "s": 88.074,
+          "e": 88.544,
+          "c": 0.578826
+        },
+        {
+          "w": "Not",
+          "s": 88.544,
+          "e": 88.794,
+          "c": 0.470243
+        },
+        {
+          "w": "saving",
+          "s": 88.824,
+          "e": 89.324,
+          "c": 0.984434
+        },
+        {
+          "w": "history",
+          "s": 89.374,
+          "e": 89.814,
+          "c": 0.984831
+        },
+        {
+          "w": "to",
+          "s": 89.814,
+          "e": 89.904,
+          "c": 0.284162
+        },
+        {
+          "w": "make",
+          "s": 89.904,
+          "e": 90.384,
+          "c": 0.764524
+        },
+        {
+          "w": "sure",
+          "s": 90.384,
+          "e": 90.624,
+          "c": 0.973645
+        },
+        {
+          "w": "nobody",
+          "s": 90.624,
+          "e": 91.584,
+          "c": 0.695728
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 92.12,
+      "end_s": 94.94,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "edits their restorative version of it.",
+      "words": [
+        {
+          "w": "edits",
+          "s": 92.124,
+          "e": 92.334,
+          "c": 0.998999
+        },
+        {
+          "w": "their",
+          "s": 92.334,
+          "e": 92.724,
+          "c": 0.997984
+        },
+        {
+          "w": "restorative",
+          "s": 92.884,
+          "e": 93.714,
+          "c": 0.948645
+        },
+        {
+          "w": "version",
+          "s": 93.714,
+          "e": 94.314,
+          "c": 0.998466
+        },
+        {
+          "w": "of",
+          "s": 94.314,
+          "e": 94.484,
+          "c": 0.997495
+        },
+        {
+          "w": "it.",
+          "s": 94.484,
+          "e": 94.944,
+          "c": 0.992987
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 94.94,
+      "end_s": 99.02,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "One organizer admits it's designed to be a check on the administration.",
+      "words": [
+        {
+          "w": "One",
+          "s": 94.944,
+          "e": 95.104,
+          "c": 0.978023
+        },
+        {
+          "w": "organizer",
+          "s": 95.104,
+          "e": 95.604,
+          "c": 0.968103
+        },
+        {
+          "w": "admits",
+          "s": 95.604,
+          "e": 95.934,
+          "c": 0.992926
+        },
+        {
+          "w": "it's",
+          "s": 95.934,
+          "e": 96.154,
+          "c": 0.967111
+        },
+        {
+          "w": "designed",
+          "s": 96.154,
+          "e": 96.574,
+          "c": 0.986907
+        },
+        {
+          "w": "to",
+          "s": 96.694,
+          "e": 96.704,
+          "c": 0.976539
+        },
+        {
+          "w": "be",
+          "s": 96.704,
+          "e": 96.864,
+          "c": 0.973437
+        },
+        {
+          "w": "a",
+          "s": 96.864,
+          "e": 97.104,
+          "c": 0.926995
+        },
+        {
+          "w": "check",
+          "s": 97.104,
+          "e": 97.504,
+          "c": 0.959572
+        },
+        {
+          "w": "on",
+          "s": 97.504,
+          "e": 97.584,
+          "c": 0.849646
+        },
+        {
+          "w": "the",
+          "s": 97.584,
+          "e": 97.734,
+          "c": 0.937038
+        },
+        {
+          "w": "administration.",
+          "s": 97.744,
+          "e": 99.024,
+          "c": 0.91235
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 99.02,
+      "end_s": 127.06,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "But it's not about protecting artifacts. It's about preserving their narrative. It's anti-American. It's deeply, deeply cynical. And it's about restructuring history for a new age. Here to react is Missouri Senator Josh Hawley. Senator, look, they have the media lined up on their side, don't they? We have, you know, most Americans think President Trump shouldn't be involved in museums. They have this survey from YouGov obviously priming the pump here",
+      "words": [
+        {
+          "w": "But",
+          "s": 99.024,
+          "e": 99.154,
+          "c": 0.88216
+        },
+        {
+          "w": "it's",
+          "s": 99.154,
+          "e": 99.334,
+          "c": 0.999706
+        },
+        {
+          "w": "not",
+          "s": 99.354,
+          "e": 99.464,
+          "c": 0.999964
+        },
+        {
+          "w": "about",
+          "s": 99.464,
+          "e": 99.684,
+          "c": 0.999903
+        },
+        {
+          "w": "protecting",
+          "s": 99.684,
+          "e": 100.134,
+          "c": 0.998858
+        },
+        {
+          "w": "artifacts.",
+          "s": 100.134,
+          "e": 100.704,
+          "c": 0.888547
+        },
+        {
+          "w": "It's",
+          "s": 100.704,
+          "e": 100.964,
+          "c": 0.999916
+        },
+        {
+          "w": "about",
+          "s": 101.034,
+          "e": 101.304,
+          "c": 0.99996
+        },
+        {
+          "w": "preserving",
+          "s": 101.304,
+          "e": 101.984,
+          "c": 0.999952
+        },
+        {
+          "w": "their",
+          "s": 101.984,
+          "e": 102.244,
+          "c": 0.997725
+        },
+        {
+          "w": "narrative.",
+          "s": 102.334,
+          "e": 103.164,
+          "c": 0.998529
+        },
+        {
+          "w": "It's",
+          "s": 103.164,
+          "e": 103.444,
+          "c": 0.999975
+        },
+        {
+          "w": "anti-American.",
+          "s": 103.494,
+          "e": 104.624,
+          "c": 0.98484
+        },
+        {
+          "w": "It's",
+          "s": 104.624,
+          "e": 104.904,
+          "c": 0.999985
+        },
+        {
+          "w": "deeply,",
+          "s": 104.954,
+          "e": 105.474,
+          "c": 0.999519
+        },
+        {
+          "w": "deeply",
+          "s": 105.474,
+          "e": 105.904,
+          "c": 0.99976
+        },
+        {
+          "w": "cynical.",
+          "s": 105.904,
+          "e": 106.644,
+          "c": 0.965552
+        },
+        {
+          "w": "And",
+          "s": 106.734,
+          "e": 106.814,
+          "c": 0.999954
+        },
+        {
+          "w": "it's",
+          "s": 106.974,
+          "e": 107.154,
+          "c": 0.999992
+        },
+        {
+          "w": "about",
+          "s": 107.154,
+          "e": 107.504,
+          "c": 0.999992
+        },
+        {
+          "w": "restructuring",
+          "s": 107.614,
+          "e": 108.424,
+          "c": 0.999836
+        },
+        {
+          "w": "history",
+          "s": 108.514,
+          "e": 108.864,
+          "c": 0.997803
+        },
+        {
+          "w": "for",
+          "s": 109.054,
+          "e": 109.354,
+          "c": 0.974513
+        },
+        {
+          "w": "a",
+          "s": 109.354,
+          "e": 109.454,
+          "c": 0.999989
+        },
+        {
+          "w": "new",
+          "s": 109.454,
+          "e": 109.754,
+          "c": 0.998974
+        },
+        {
+          "w": "age.",
+          "s": 109.754,
+          "e": 110.424,
+          "c": 0.998045
+        },
+        {
+          "w": "Here",
+          "s": 110.664,
+          "e": 110.664,
+          "c": 0.998003
+        },
+        {
+          "w": "to",
+          "s": 110.754,
+          "e": 110.784,
+          "c": 0.999935
+        },
+        {
+          "w": "react",
+          "s": 110.784,
+          "e": 111.084,
+          "c": 0.977191
+        },
+        {
+          "w": "is",
+          "s": 111.084,
+          "e": 111.204,
+          "c": 0.984568
+        },
+        {
+          "w": "Missouri",
+          "s": 111.204,
+          "e": 111.684,
+          "c": 0.999689
+        },
+        {
+          "w": "Senator",
+          "s": 111.684,
+          "e": 112.104,
+          "c": 0.998483
+        },
+        {
+          "w": "Josh",
+          "s": 112.104,
+          "e": 112.344,
+          "c": 0.994583
+        },
+        {
+          "w": "Hawley.",
+          "s": 112.344,
+          "e": 112.924,
+          "c": 0.999161
+        },
+        {
+          "w": "Senator,",
+          "s": 113.254,
+          "e": 113.754,
+          "c": 0.998171
+        },
+        {
+          "w": "look,",
+          "s": 113.754,
+          "e": 114.304,
+          "c": 0.99806
+        },
+        {
+          "w": "they",
+          "s": 114.314,
+          "e": 114.684,
+          "c": 0.997438
+        },
+        {
+          "w": "have",
+          "s": 114.684,
+          "e": 115.054,
+          "c": 0.999998
+        },
+        {
+          "w": "the",
+          "s": 115.054,
+          "e": 115.144,
+          "c": 0.999996
+        },
+        {
+          "w": "media",
+          "s": 115.334,
+          "e": 115.794,
+          "c": 0.999994
+        },
+        {
+          "w": "lined",
+          "s": 115.794,
+          "e": 116.064,
+          "c": 0.992025
+        },
+        {
+          "w": "up",
+          "s": 116.394,
+          "e": 116.524,
+          "c": 0.999565
+        },
+        {
+          "w": "on",
+          "s": 116.524,
+          "e": 116.624,
+          "c": 0.970976
+        },
+        {
+          "w": "their",
+          "s": 116.624,
+          "e": 116.884,
+          "c": 0.999992
+        },
+        {
+          "w": "side,",
+          "s": 116.884,
+          "e": 117.154,
+          "c": 0.996774
+        },
+        {
+          "w": "don't",
+          "s": 117.184,
+          "e": 117.414,
+          "c": 0.986671
+        },
+        {
+          "w": "they?",
+          "s": 117.564,
+          "e": 117.714,
+          "c": 0.999943
+        },
+        {
+          "w": "We",
+          "s": 117.724,
+          "e": 117.864,
+          "c": 0.992104
+        },
+        {
+          "w": "have,",
+          "s": 118.054,
+          "e": 118.294,
+          "c": 0.975924
+        },
+        {
+          "w": "you",
+          "s": 118.294,
+          "e": 118.504,
+          "c": 0.999687
+        },
+        {
+          "w": "know,",
+          "s": 118.504,
+          "e": 118.884,
+          "c": 0.99999
+        },
+        {
+          "w": "most",
+          "s": 118.964,
+          "e": 119.224,
+          "c": 0.99716
+        },
+        {
+          "w": "Americans",
+          "s": 119.224,
+          "e": 119.874,
+          "c": 0.999945
+        },
+        {
+          "w": "think",
+          "s": 119.874,
+          "e": 120.234,
+          "c": 0.999945
+        },
+        {
+          "w": "President",
+          "s": 120.234,
+          "e": 120.854,
+          "c": 0.995017
+        },
+        {
+          "w": "Trump",
+          "s": 121.174,
+          "e": 121.284,
+          "c": 0.999563
+        },
+        {
+          "w": "shouldn't",
+          "s": 121.284,
+          "e": 121.794,
+          "c": 0.868012
+        },
+        {
+          "w": "be",
+          "s": 121.794,
+          "e": 121.904,
+          "c": 0.999809
+        },
+        {
+          "w": "involved",
+          "s": 121.904,
+          "e": 122.364,
+          "c": 0.999722
+        },
+        {
+          "w": "in",
+          "s": 122.424,
+          "e": 122.514,
+          "c": 0.999878
+        },
+        {
+          "w": "museums.",
+          "s": 122.554,
+          "e": 122.944,
+          "c": 0.985438
+        },
+        {
+          "w": "They",
+          "s": 123.234,
+          "e": 123.234,
+          "c": 0.998993
+        },
+        {
+          "w": "have",
+          "s": 123.274,
+          "e": 123.524,
+          "c": 0.999228
+        },
+        {
+          "w": "this",
+          "s": 123.524,
+          "e": 123.804,
+          "c": 0.899376
+        },
+        {
+          "w": "survey",
+          "s": 123.914,
+          "e": 124.254,
+          "c": 0.999102
+        },
+        {
+          "w": "from",
+          "s": 124.254,
+          "e": 124.484,
+          "c": 0.998232
+        },
+        {
+          "w": "YouGov",
+          "s": 124.574,
+          "e": 124.974,
+          "c": 0.958755
+        },
+        {
+          "w": "obviously",
+          "s": 124.974,
+          "e": 125.644,
+          "c": 0.472248
+        },
+        {
+          "w": "priming",
+          "s": 125.644,
+          "e": 126.084,
+          "c": 0.996748
+        },
+        {
+          "w": "the",
+          "s": 126.374,
+          "e": 126.374,
+          "c": 0.979763
+        },
+        {
+          "w": "pump",
+          "s": 126.414,
+          "e": 126.664,
+          "c": 0.993951
+        },
+        {
+          "w": "here",
+          "s": 126.664,
+          "e": 127.064,
+          "c": 0.996109
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 127.06,
+      "end_s": 129.04,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that Trump's trying to rewrite history.",
+      "words": [
+        {
+          "w": "that",
+          "s": 127.064,
+          "e": 127.174,
+          "c": 0.960503
+        },
+        {
+          "w": "Trump's",
+          "s": 127.584,
+          "e": 127.714,
+          "c": 0.959613
+        },
+        {
+          "w": "trying",
+          "s": 127.774,
+          "e": 128.084,
+          "c": 0.995096
+        },
+        {
+          "w": "to",
+          "s": 128.084,
+          "e": 128.204,
+          "c": 0.990255
+        },
+        {
+          "w": "rewrite",
+          "s": 128.204,
+          "e": 128.644,
+          "c": 0.973708
+        },
+        {
+          "w": "history.",
+          "s": 128.644,
+          "e": 129.044,
+          "c": 0.602705
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 129.02,
+      "end_s": 131.42,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "What's really going on at this museum?",
+      "words": [
+        {
+          "w": "What's",
+          "s": 129.024,
+          "e": 129.474,
+          "c": 0.667112
+        },
+        {
+          "w": "really",
+          "s": 129.564,
+          "e": 129.924,
+          "c": 0.997594
+        },
+        {
+          "w": "going",
+          "s": 129.924,
+          "e": 130.304,
+          "c": 0.996595
+        },
+        {
+          "w": "on",
+          "s": 130.304,
+          "e": 130.454,
+          "c": 0.996803
+        },
+        {
+          "w": "at",
+          "s": 130.454,
+          "e": 130.604,
+          "c": 0.994474
+        },
+        {
+          "w": "this",
+          "s": 130.604,
+          "e": 130.904,
+          "c": 0.997978
+        },
+        {
+          "w": "museum?",
+          "s": 130.904,
+          "e": 131.424,
+          "c": 0.967392
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 131.62,
+      "end_s": 132.76,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "- Yeah, I can",
+      "words": [
+        {
+          "w": "-",
+          "s": 131.624,
+          "e": 131.724,
+          "c": 0.950815
+        },
+        {
+          "w": "Yeah,",
+          "s": 131.724,
+          "e": 132.354,
+          "c": 0.877944
+        },
+        {
+          "w": "I",
+          "s": 132.354,
+          "e": 132.454,
+          "c": 0.999453
+        },
+        {
+          "w": "can",
+          "s": 132.454,
+          "e": 132.764,
+          "c": 0.98263
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 132.77,
+      "end_s": 134.46,
+      "speaker": "SPEAKER_12",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "tell you for sure that",
+      "words": [
+        {
+          "w": "tell",
+          "s": 132.774,
+          "e": 133.194,
+          "c": 0.999478
+        },
+        {
+          "w": "you",
+          "s": 133.194,
+          "e": 133.504,
+          "c": 0.994181
+        },
+        {
+          "w": "for",
+          "s": 133.504,
+          "e": 133.834,
+          "c": 0.989649
+        },
+        {
+          "w": "sure",
+          "s": 133.834,
+          "e": 134.024,
+          "c": 0.999784
+        },
+        {
+          "w": "that",
+          "s": 134.304,
+          "e": 134.464,
+          "c": 0.998277
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 134.49,
+      "end_s": 134.84,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "what most",
+      "words": [
+        {
+          "w": "what",
+          "s": 134.494,
+          "e": 134.494,
+          "c": 0.993866
+        },
+        {
+          "w": "most",
+          "s": 134.844,
+          "e": 134.844,
+          "c": 0.997522
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 134.84,
+      "end_s": 153.6,
+      "speaker": "SPEAKER_12",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Americans think is that their tax money shouldn't go to people who hate America and shouldn't be paying for exhibits about how horrible America is. I listened to that word salad gobbledygook that you just played from the director. I think the translation is real simple. These people hate the United States of America. I can never figure out why liberals hate this country so much.",
+      "words": [
+        {
+          "w": "Americans",
+          "s": 134.844,
+          "e": 135.244,
+          "c": 0.994666
+        },
+        {
+          "w": "think",
+          "s": 135.244,
+          "e": 135.484,
+          "c": 0.99779
+        },
+        {
+          "w": "is",
+          "s": 135.484,
+          "e": 135.584,
+          "c": 0.998458
+        },
+        {
+          "w": "that",
+          "s": 135.584,
+          "e": 135.654,
+          "c": 0.990707
+        },
+        {
+          "w": "their",
+          "s": 136.024,
+          "e": 136.054,
+          "c": 0.774214
+        },
+        {
+          "w": "tax",
+          "s": 136.054,
+          "e": 136.204,
+          "c": 0.999291
+        },
+        {
+          "w": "money",
+          "s": 136.204,
+          "e": 136.484,
+          "c": 0.998273
+        },
+        {
+          "w": "shouldn't",
+          "s": 136.484,
+          "e": 136.784,
+          "c": 0.904968
+        },
+        {
+          "w": "go",
+          "s": 136.784,
+          "e": 136.944,
+          "c": 0.975986
+        },
+        {
+          "w": "to",
+          "s": 136.944,
+          "e": 137.044,
+          "c": 0.743067
+        },
+        {
+          "w": "people",
+          "s": 137.044,
+          "e": 137.364,
+          "c": 0.993818
+        },
+        {
+          "w": "who",
+          "s": 137.364,
+          "e": 137.534,
+          "c": 0.999157
+        },
+        {
+          "w": "hate",
+          "s": 137.904,
+          "e": 137.954,
+          "c": 0.999283
+        },
+        {
+          "w": "America",
+          "s": 137.954,
+          "e": 138.564,
+          "c": 0.998671
+        },
+        {
+          "w": "and",
+          "s": 138.564,
+          "e": 138.674,
+          "c": 0.415098
+        },
+        {
+          "w": "shouldn't",
+          "s": 138.674,
+          "e": 139.014,
+          "c": 0.985287
+        },
+        {
+          "w": "be",
+          "s": 139.014,
+          "e": 139.074,
+          "c": 0.992528
+        },
+        {
+          "w": "paying",
+          "s": 139.154,
+          "e": 139.344,
+          "c": 0.997394
+        },
+        {
+          "w": "for",
+          "s": 139.344,
+          "e": 139.514,
+          "c": 0.814233
+        },
+        {
+          "w": "exhibits",
+          "s": 139.514,
+          "e": 139.764,
+          "c": 0.986826
+        },
+        {
+          "w": "about",
+          "s": 139.984,
+          "e": 140.154,
+          "c": 0.999561
+        },
+        {
+          "w": "how",
+          "s": 140.254,
+          "e": 140.374,
+          "c": 0.999104
+        },
+        {
+          "w": "horrible",
+          "s": 140.524,
+          "e": 140.844,
+          "c": 0.999472
+        },
+        {
+          "w": "America",
+          "s": 140.844,
+          "e": 141.214,
+          "c": 0.997352
+        },
+        {
+          "w": "is.",
+          "s": 141.214,
+          "e": 141.504,
+          "c": 0.994423
+        },
+        {
+          "w": "I",
+          "s": 141.504,
+          "e": 141.574,
+          "c": 0.999533
+        },
+        {
+          "w": "listened",
+          "s": 141.574,
+          "e": 142.154,
+          "c": 0.855197
+        },
+        {
+          "w": "to",
+          "s": 142.194,
+          "e": 142.304,
+          "c": 0.999468
+        },
+        {
+          "w": "that",
+          "s": 142.304,
+          "e": 142.594,
+          "c": 0.998553
+        },
+        {
+          "w": "word",
+          "s": 142.594,
+          "e": 142.874,
+          "c": 0.909008
+        },
+        {
+          "w": "salad",
+          "s": 142.874,
+          "e": 143.214,
+          "c": 0.927385
+        },
+        {
+          "w": "gobbledygook",
+          "s": 143.294,
+          "e": 143.924,
+          "c": 0.921896
+        },
+        {
+          "w": "that",
+          "s": 144.164,
+          "e": 144.334,
+          "c": 0.99743
+        },
+        {
+          "w": "you",
+          "s": 144.604,
+          "e": 144.604,
+          "c": 0.996618
+        },
+        {
+          "w": "just",
+          "s": 144.704,
+          "e": 144.854,
+          "c": 0.933448
+        },
+        {
+          "w": "played",
+          "s": 144.854,
+          "e": 145.234,
+          "c": 0.998936
+        },
+        {
+          "w": "from",
+          "s": 145.234,
+          "e": 145.484,
+          "c": 0.993919
+        },
+        {
+          "w": "the",
+          "s": 145.484,
+          "e": 145.674,
+          "c": 0.998439
+        },
+        {
+          "w": "director.",
+          "s": 145.674,
+          "e": 146.384,
+          "c": 0.898102
+        },
+        {
+          "w": "I",
+          "s": 146.384,
+          "e": 146.434,
+          "c": 0.999739
+        },
+        {
+          "w": "think",
+          "s": 146.434,
+          "e": 146.554,
+          "c": 0.997868
+        },
+        {
+          "w": "the",
+          "s": 146.864,
+          "e": 146.864,
+          "c": 0.993007
+        },
+        {
+          "w": "translation",
+          "s": 146.924,
+          "e": 147.464,
+          "c": 0.996443
+        },
+        {
+          "w": "is",
+          "s": 147.464,
+          "e": 147.574,
+          "c": 0.566235
+        },
+        {
+          "w": "real",
+          "s": 147.574,
+          "e": 147.784,
+          "c": 0.99721
+        },
+        {
+          "w": "simple.",
+          "s": 147.784,
+          "e": 148.294,
+          "c": 0.870185
+        },
+        {
+          "w": "These",
+          "s": 148.324,
+          "e": 148.494,
+          "c": 0.98404
+        },
+        {
+          "w": "people",
+          "s": 148.864,
+          "e": 148.894,
+          "c": 0.999645
+        },
+        {
+          "w": "hate",
+          "s": 148.894,
+          "e": 149.074,
+          "c": 0.999371
+        },
+        {
+          "w": "the",
+          "s": 149.104,
+          "e": 149.254,
+          "c": 0.997472
+        },
+        {
+          "w": "United",
+          "s": 149.254,
+          "e": 149.564,
+          "c": 0.997957
+        },
+        {
+          "w": "States",
+          "s": 149.564,
+          "e": 149.874,
+          "c": 0.997818
+        },
+        {
+          "w": "of",
+          "s": 149.874,
+          "e": 149.974,
+          "c": 0.998184
+        },
+        {
+          "w": "America.",
+          "s": 149.974,
+          "e": 150.544,
+          "c": 0.978491
+        },
+        {
+          "w": "I",
+          "s": 150.544,
+          "e": 150.584,
+          "c": 0.999792
+        },
+        {
+          "w": "can",
+          "s": 150.584,
+          "e": 150.704,
+          "c": 0.975085
+        },
+        {
+          "w": "never",
+          "s": 150.724,
+          "e": 150.744,
+          "c": 0.999415
+        },
+        {
+          "w": "figure",
+          "s": 151.084,
+          "e": 151.254,
+          "c": 0.998889
+        },
+        {
+          "w": "out",
+          "s": 151.254,
+          "e": 151.424,
+          "c": 0.999001
+        },
+        {
+          "w": "why",
+          "s": 151.424,
+          "e": 151.554,
+          "c": 0.738176
+        },
+        {
+          "w": "liberals",
+          "s": 151.554,
+          "e": 151.904,
+          "c": 0.989756
+        },
+        {
+          "w": "hate",
+          "s": 151.904,
+          "e": 152.074,
+          "c": 0.999784
+        },
+        {
+          "w": "this",
+          "s": 152.444,
+          "e": 152.544,
+          "c": 0.996546
+        },
+        {
+          "w": "country",
+          "s": 152.594,
+          "e": 153.104,
+          "c": 0.999617
+        },
+        {
+          "w": "so",
+          "s": 153.104,
+          "e": 153.264,
+          "c": 0.9993
+        },
+        {
+          "w": "much.",
+          "s": 153.264,
+          "e": 153.604,
+          "c": 0.805757
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 153.63,
+      "end_s": 169.76,
+      "speaker": "SPEAKER_12",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "But they now want to use as much tax money as possible to force this anti-American propaganda down our throats. And I think the American people are saying no more. I'm glad President Trump is standing up to these people. And my question is, why does this Smithsonian director still have a job? Why isn't she fired and why",
+      "words": [
+        {
+          "w": "But",
+          "s": 153.635,
+          "e": 153.775,
+          "c": 0.591771
+        },
+        {
+          "w": "they",
+          "s": 153.775,
+          "e": 154.055,
+          "c": 0.995053
+        },
+        {
+          "w": "now",
+          "s": 154.055,
+          "e": 154.245,
+          "c": 0.998618
+        },
+        {
+          "w": "want",
+          "s": 154.265,
+          "e": 154.545,
+          "c": 0.964827
+        },
+        {
+          "w": "to",
+          "s": 154.545,
+          "e": 154.675,
+          "c": 0.999498
+        },
+        {
+          "w": "use",
+          "s": 154.685,
+          "e": 154.875,
+          "c": 0.999346
+        },
+        {
+          "w": "as",
+          "s": 154.955,
+          "e": 155.035,
+          "c": 0.993944
+        },
+        {
+          "w": "much",
+          "s": 155.035,
+          "e": 155.315,
+          "c": 0.998725
+        },
+        {
+          "w": "tax",
+          "s": 155.315,
+          "e": 155.525,
+          "c": 0.991102
+        },
+        {
+          "w": "money",
+          "s": 155.525,
+          "e": 155.905,
+          "c": 0.994596
+        },
+        {
+          "w": "as",
+          "s": 155.905,
+          "e": 156.015,
+          "c": 0.988088
+        },
+        {
+          "w": "possible",
+          "s": 156.085,
+          "e": 156.505,
+          "c": 0.998146
+        },
+        {
+          "w": "to",
+          "s": 156.505,
+          "e": 156.615,
+          "c": 0.729738
+        },
+        {
+          "w": "force",
+          "s": 157.005,
+          "e": 157.465,
+          "c": 0.995984
+        },
+        {
+          "w": "this",
+          "s": 157.495,
+          "e": 157.645,
+          "c": 0.985342
+        },
+        {
+          "w": "anti-American",
+          "s": 157.645,
+          "e": 158.305,
+          "c": 0.972507
+        },
+        {
+          "w": "propaganda",
+          "s": 158.305,
+          "e": 158.785,
+          "c": 0.948847
+        },
+        {
+          "w": "down",
+          "s": 158.785,
+          "e": 158.955,
+          "c": 0.856598
+        },
+        {
+          "w": "our",
+          "s": 158.965,
+          "e": 159.105,
+          "c": 0.998121
+        },
+        {
+          "w": "throats.",
+          "s": 159.105,
+          "e": 159.545,
+          "c": 0.983192
+        },
+        {
+          "w": "And",
+          "s": 159.655,
+          "e": 159.715,
+          "c": 0.979535
+        },
+        {
+          "w": "I",
+          "s": 159.765,
+          "e": 159.785,
+          "c": 0.999985
+        },
+        {
+          "w": "think",
+          "s": 159.785,
+          "e": 160.025,
+          "c": 0.999996
+        },
+        {
+          "w": "the",
+          "s": 160.025,
+          "e": 160.175,
+          "c": 0.999987
+        },
+        {
+          "w": "American",
+          "s": 160.175,
+          "e": 160.565,
+          "c": 0.999788
+        },
+        {
+          "w": "people",
+          "s": 160.565,
+          "e": 160.855,
+          "c": 0.999981
+        },
+        {
+          "w": "are",
+          "s": 160.855,
+          "e": 161.005,
+          "c": 0.999985
+        },
+        {
+          "w": "saying",
+          "s": 161.005,
+          "e": 161.255,
+          "c": 0.999983
+        },
+        {
+          "w": "no",
+          "s": 161.325,
+          "e": 161.365,
+          "c": 0.805327
+        },
+        {
+          "w": "more.",
+          "s": 161.415,
+          "e": 161.785,
+          "c": 0.999771
+        },
+        {
+          "w": "I'm",
+          "s": 161.825,
+          "e": 161.915,
+          "c": 0.999971
+        },
+        {
+          "w": "glad",
+          "s": 161.915,
+          "e": 162.085,
+          "c": 0.999977
+        },
+        {
+          "w": "President",
+          "s": 162.095,
+          "e": 162.495,
+          "c": 0.995701
+        },
+        {
+          "w": "Trump",
+          "s": 162.495,
+          "e": 162.715,
+          "c": 0.999937
+        },
+        {
+          "w": "is",
+          "s": 162.715,
+          "e": 162.805,
+          "c": 0.974193
+        },
+        {
+          "w": "standing",
+          "s": 162.805,
+          "e": 163.085,
+          "c": 0.999952
+        },
+        {
+          "w": "up",
+          "s": 163.165,
+          "e": 163.255,
+          "c": 0.999998
+        },
+        {
+          "w": "to",
+          "s": 163.255,
+          "e": 163.345,
+          "c": 0.999985
+        },
+        {
+          "w": "these",
+          "s": 163.345,
+          "e": 163.565,
+          "c": 0.999985
+        },
+        {
+          "w": "people.",
+          "s": 163.565,
+          "e": 164.005,
+          "c": 0.999182
+        },
+        {
+          "w": "And",
+          "s": 164.075,
+          "e": 164.185,
+          "c": 0.999989
+        },
+        {
+          "w": "my",
+          "s": 164.195,
+          "e": 164.325,
+          "c": 0.999989
+        },
+        {
+          "w": "question",
+          "s": 164.325,
+          "e": 164.835,
+          "c": 0.999994
+        },
+        {
+          "w": "is,",
+          "s": 164.835,
+          "e": 165.095,
+          "c": 0.986483
+        },
+        {
+          "w": "why",
+          "s": 165.095,
+          "e": 165.295,
+          "c": 0.999908
+        },
+        {
+          "w": "does",
+          "s": 165.295,
+          "e": 165.555,
+          "c": 0.999905
+        },
+        {
+          "w": "this",
+          "s": 165.555,
+          "e": 165.785,
+          "c": 0.855347
+        },
+        {
+          "w": "Smithsonian",
+          "s": 165.845,
+          "e": 166.525,
+          "c": 0.996949
+        },
+        {
+          "w": "director",
+          "s": 166.545,
+          "e": 167.055,
+          "c": 0.973894
+        },
+        {
+          "w": "still",
+          "s": 167.055,
+          "e": 167.065,
+          "c": 0.999992
+        },
+        {
+          "w": "have",
+          "s": 167.445,
+          "e": 167.555,
+          "c": 0.999994
+        },
+        {
+          "w": "a",
+          "s": 167.675,
+          "e": 167.695,
+          "c": 1
+        },
+        {
+          "w": "job?",
+          "s": 167.695,
+          "e": 168.145,
+          "c": 0.999973
+        },
+        {
+          "w": "Why",
+          "s": 168.215,
+          "e": 168.365,
+          "c": 0.99964
+        },
+        {
+          "w": "isn't",
+          "s": 168.365,
+          "e": 168.735,
+          "c": 0.998475
+        },
+        {
+          "w": "she",
+          "s": 168.735,
+          "e": 168.925,
+          "c": 0.999914
+        },
+        {
+          "w": "fired",
+          "s": 168.955,
+          "e": 169.325,
+          "c": 0.999729
+        },
+        {
+          "w": "and",
+          "s": 169.325,
+          "e": 169.545,
+          "c": 0.522551
+        },
+        {
+          "w": "why",
+          "s": 169.545,
+          "e": 169.765,
+          "c": 0.999975
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 169.76,
+      "end_s": 174.06,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "doesn't she give back every dime of taxpayer money she has taken?",
+      "words": [
+        {
+          "w": "doesn't",
+          "s": 169.765,
+          "e": 170.275,
+          "c": 0.998262
+        },
+        {
+          "w": "she",
+          "s": 170.275,
+          "e": 170.505,
+          "c": 0.999975
+        },
+        {
+          "w": "give",
+          "s": 170.505,
+          "e": 170.805,
+          "c": 0.998738
+        },
+        {
+          "w": "back",
+          "s": 170.805,
+          "e": 171.105,
+          "c": 0.999989
+        },
+        {
+          "w": "every",
+          "s": 171.105,
+          "e": 171.205,
+          "c": 0.999969
+        },
+        {
+          "w": "dime",
+          "s": 171.585,
+          "e": 171.695,
+          "c": 0.999956
+        },
+        {
+          "w": "of",
+          "s": 171.815,
+          "e": 171.925,
+          "c": 0.999994
+        },
+        {
+          "w": "taxpayer",
+          "s": 171.925,
+          "e": 172.525,
+          "c": 0.995233
+        },
+        {
+          "w": "money",
+          "s": 172.525,
+          "e": 172.895,
+          "c": 0.999985
+        },
+        {
+          "w": "she",
+          "s": 172.895,
+          "e": 173.115,
+          "c": 0.999773
+        },
+        {
+          "w": "has",
+          "s": 173.115,
+          "e": 173.335,
+          "c": 0.99999
+        },
+        {
+          "w": "taken?",
+          "s": 173.335,
+          "e": 174.065,
+          "c": 0.999786
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 174.57,
+      "end_s": 200.68,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Well, I want to get to that. So the woman we just heard with the restorative history gobbledygook, Anthea Hardig, OK, she testified before Congress recently. She puts on kind of a very demure kind of presentation, \"Oh, I'm not a threat.\" But only the secretary of the Smithsonian, this guy Lonnie Bunch III, could fire her under the trust that the Smithsonian is organized under.",
+      "words": [
+        {
+          "w": "Well,",
+          "s": 174.571,
+          "e": 174.661,
+          "c": 0.587153
+        },
+        {
+          "w": "I",
+          "s": 174.661,
+          "e": 174.701,
+          "c": 0.969459
+        },
+        {
+          "w": "want",
+          "s": 174.701,
+          "e": 174.891,
+          "c": 0.908649
+        },
+        {
+          "w": "to",
+          "s": 174.891,
+          "e": 174.961,
+          "c": 0.99819
+        },
+        {
+          "w": "get",
+          "s": 175.001,
+          "e": 175.111,
+          "c": 0.999148
+        },
+        {
+          "w": "to",
+          "s": 175.111,
+          "e": 175.211,
+          "c": 0.998294
+        },
+        {
+          "w": "that.",
+          "s": 175.211,
+          "e": 175.621,
+          "c": 0.913056
+        },
+        {
+          "w": "So",
+          "s": 175.641,
+          "e": 175.741,
+          "c": 0.515981
+        },
+        {
+          "w": "the",
+          "s": 175.741,
+          "e": 175.891,
+          "c": 0.813492
+        },
+        {
+          "w": "woman",
+          "s": 175.951,
+          "e": 176.241,
+          "c": 0.986454
+        },
+        {
+          "w": "we",
+          "s": 176.241,
+          "e": 176.361,
+          "c": 0.976332
+        },
+        {
+          "w": "just",
+          "s": 176.361,
+          "e": 176.601,
+          "c": 0.988359
+        },
+        {
+          "w": "heard",
+          "s": 176.651,
+          "e": 176.921,
+          "c": 0.982919
+        },
+        {
+          "w": "with",
+          "s": 176.921,
+          "e": 177.111,
+          "c": 0.885688
+        },
+        {
+          "w": "the",
+          "s": 177.221,
+          "e": 177.881,
+          "c": 0.955993
+        },
+        {
+          "w": "restorative",
+          "s": 177.881,
+          "e": 179.081,
+          "c": 0.748724
+        },
+        {
+          "w": "history",
+          "s": 179.201,
+          "e": 179.581,
+          "c": 0.908119
+        },
+        {
+          "w": "gobbledygook,",
+          "s": 179.581,
+          "e": 180.561,
+          "c": 0.828927
+        },
+        {
+          "w": "Anthea",
+          "s": 180.691,
+          "e": 180.941,
+          "c": 0.915644
+        },
+        {
+          "w": "Hardig,",
+          "s": 180.941,
+          "e": 181.451,
+          "c": 0.632376
+        },
+        {
+          "w": "OK,",
+          "s": 181.451,
+          "e": 181.671,
+          "c": 0.216609
+        },
+        {
+          "w": "she",
+          "s": 181.771,
+          "e": 181.921,
+          "c": 0.989302
+        },
+        {
+          "w": "testified",
+          "s": 181.921,
+          "e": 182.511,
+          "c": 0.999325
+        },
+        {
+          "w": "before",
+          "s": 182.511,
+          "e": 182.901,
+          "c": 0.999428
+        },
+        {
+          "w": "Congress",
+          "s": 182.901,
+          "e": 183.431,
+          "c": 0.986845
+        },
+        {
+          "w": "recently.",
+          "s": 183.431,
+          "e": 184.211,
+          "c": 0.797274
+        },
+        {
+          "w": "She",
+          "s": 184.421,
+          "e": 184.461,
+          "c": 0.997822
+        },
+        {
+          "w": "puts",
+          "s": 184.461,
+          "e": 184.781,
+          "c": 0.998371
+        },
+        {
+          "w": "on",
+          "s": 184.781,
+          "e": 184.941,
+          "c": 0.996744
+        },
+        {
+          "w": "kind",
+          "s": 184.941,
+          "e": 185.261,
+          "c": 0.949325
+        },
+        {
+          "w": "of",
+          "s": 185.261,
+          "e": 185.411,
+          "c": 0.999256
+        },
+        {
+          "w": "a",
+          "s": 185.431,
+          "e": 185.501,
+          "c": 0.999436
+        },
+        {
+          "w": "very",
+          "s": 185.501,
+          "e": 185.821,
+          "c": 0.996244
+        },
+        {
+          "w": "demure",
+          "s": 185.821,
+          "e": 186.271,
+          "c": 0.991261
+        },
+        {
+          "w": "kind",
+          "s": 186.291,
+          "e": 186.611,
+          "c": 0.97609
+        },
+        {
+          "w": "of",
+          "s": 186.611,
+          "e": 186.771,
+          "c": 0.999676
+        },
+        {
+          "w": "presentation,",
+          "s": 186.771,
+          "e": 187.881,
+          "c": 0.237471
+        },
+        {
+          "w": "\"Oh,",
+          "s": 187.931,
+          "e": 188.171,
+          "c": 0.62589
+        },
+        {
+          "w": "I'm",
+          "s": 188.171,
+          "e": 188.331,
+          "c": 0.996291
+        },
+        {
+          "w": "not",
+          "s": 188.331,
+          "e": 188.491,
+          "c": 0.998875
+        },
+        {
+          "w": "a",
+          "s": 188.491,
+          "e": 188.521,
+          "c": 0.99907
+        },
+        {
+          "w": "threat.\"",
+          "s": 188.621,
+          "e": 189.141,
+          "c": 0.609534
+        },
+        {
+          "w": "But",
+          "s": 189.341,
+          "e": 189.471,
+          "c": 0.98831
+        },
+        {
+          "w": "only",
+          "s": 189.471,
+          "e": 189.861,
+          "c": 0.991771
+        },
+        {
+          "w": "the",
+          "s": 189.941,
+          "e": 190.231,
+          "c": 0.784207
+        },
+        {
+          "w": "secretary",
+          "s": 190.351,
+          "e": 191.231,
+          "c": 0.776434
+        },
+        {
+          "w": "of",
+          "s": 191.231,
+          "e": 191.451,
+          "c": 0.998534
+        },
+        {
+          "w": "the",
+          "s": 191.451,
+          "e": 191.781,
+          "c": 0.994236
+        },
+        {
+          "w": "Smithsonian,",
+          "s": 191.781,
+          "e": 193.231,
+          "c": 0.822231
+        },
+        {
+          "w": "this",
+          "s": 193.241,
+          "e": 193.701,
+          "c": 0.964582
+        },
+        {
+          "w": "guy",
+          "s": 193.701,
+          "e": 194.051,
+          "c": 0.998214
+        },
+        {
+          "w": "Lonnie",
+          "s": 194.051,
+          "e": 194.751,
+          "c": 0.723926
+        },
+        {
+          "w": "Bunch",
+          "s": 194.751,
+          "e": 195.011,
+          "c": 0.970237
+        },
+        {
+          "w": "III,",
+          "s": 195.471,
+          "e": 195.701,
+          "c": 0.80135
+        },
+        {
+          "w": "could",
+          "s": 195.901,
+          "e": 196.101,
+          "c": 0.998742
+        },
+        {
+          "w": "fire",
+          "s": 196.101,
+          "e": 196.421,
+          "c": 0.999504
+        },
+        {
+          "w": "her",
+          "s": 196.421,
+          "e": 196.661,
+          "c": 0.999197
+        },
+        {
+          "w": "under",
+          "s": 196.661,
+          "e": 197.061,
+          "c": 0.987182
+        },
+        {
+          "w": "the",
+          "s": 197.061,
+          "e": 197.301,
+          "c": 0.999302
+        },
+        {
+          "w": "trust",
+          "s": 197.301,
+          "e": 197.701,
+          "c": 0.987103
+        },
+        {
+          "w": "that",
+          "s": 197.701,
+          "e": 198.021,
+          "c": 0.994046
+        },
+        {
+          "w": "the",
+          "s": 198.021,
+          "e": 198.251,
+          "c": 0.9959
+        },
+        {
+          "w": "Smithsonian",
+          "s": 198.291,
+          "e": 199.121,
+          "c": 0.998963
+        },
+        {
+          "w": "is",
+          "s": 199.151,
+          "e": 199.301,
+          "c": 0.966444
+        },
+        {
+          "w": "organized",
+          "s": 199.301,
+          "e": 199.991,
+          "c": 0.988152
+        },
+        {
+          "w": "under.",
+          "s": 200.101,
+          "e": 200.681,
+          "c": 0.917664
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 200.95,
+      "end_s": 223.27,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Unless the Board of Regents, which includes, you know, the Supreme Court chief justice includes, I believe, J.D. Vance, a few members of Congress, a few people from both parties, some others, unless they step forward and say, we have no confidence in Lonnie Bunch, who's in on the whole, you know, anti-American game here, then she gets to keep her position and continues",
+      "words": [
+        {
+          "w": "Unless",
+          "s": 200.952,
+          "e": 201.202,
+          "c": 0.447238
+        },
+        {
+          "w": "the",
+          "s": 201.202,
+          "e": 201.372,
+          "c": 0.990879
+        },
+        {
+          "w": "Board",
+          "s": 201.462,
+          "e": 201.902,
+          "c": 0.62189
+        },
+        {
+          "w": "of",
+          "s": 201.902,
+          "e": 202.072,
+          "c": 0.999022
+        },
+        {
+          "w": "Regents,",
+          "s": 202.072,
+          "e": 202.832,
+          "c": 0.908216
+        },
+        {
+          "w": "which",
+          "s": 203.052,
+          "e": 203.462,
+          "c": 0.961646
+        },
+        {
+          "w": "includes,",
+          "s": 203.462,
+          "e": 204.382,
+          "c": 0.471895
+        },
+        {
+          "w": "you",
+          "s": 204.382,
+          "e": 204.432,
+          "c": 0.890328
+        },
+        {
+          "w": "know,",
+          "s": 204.432,
+          "e": 204.512,
+          "c": 0.984573
+        },
+        {
+          "w": "the",
+          "s": 204.592,
+          "e": 204.732,
+          "c": 0.955518
+        },
+        {
+          "w": "Supreme",
+          "s": 204.732,
+          "e": 205.152,
+          "c": 0.990357
+        },
+        {
+          "w": "Court",
+          "s": 205.152,
+          "e": 205.332,
+          "c": 0.991438
+        },
+        {
+          "w": "chief",
+          "s": 205.522,
+          "e": 205.912,
+          "c": 0.285624
+        },
+        {
+          "w": "justice",
+          "s": 205.912,
+          "e": 206.532,
+          "c": 0.922076
+        },
+        {
+          "w": "includes,",
+          "s": 206.862,
+          "e": 207.212,
+          "c": 0.466275
+        },
+        {
+          "w": "I",
+          "s": 207.212,
+          "e": 207.242,
+          "c": 0.999968
+        },
+        {
+          "w": "believe,",
+          "s": 207.492,
+          "e": 207.582,
+          "c": 0.906492
+        },
+        {
+          "w": "J.D.",
+          "s": 207.582,
+          "e": 207.902,
+          "c": 0.92192
+        },
+        {
+          "w": "Vance,",
+          "s": 207.902,
+          "e": 208.362,
+          "c": 0.966614
+        },
+        {
+          "w": "a",
+          "s": 208.362,
+          "e": 208.422,
+          "c": 0.999931
+        },
+        {
+          "w": "few",
+          "s": 208.422,
+          "e": 208.622,
+          "c": 0.999992
+        },
+        {
+          "w": "members",
+          "s": 208.622,
+          "e": 209.082,
+          "c": 0.999746
+        },
+        {
+          "w": "of",
+          "s": 209.082,
+          "e": 209.212,
+          "c": 0.999979
+        },
+        {
+          "w": "Congress,",
+          "s": 209.212,
+          "e": 209.872,
+          "c": 0.998498
+        },
+        {
+          "w": "a",
+          "s": 209.872,
+          "e": 209.922,
+          "c": 0.962348
+        },
+        {
+          "w": "few",
+          "s": 209.942,
+          "e": 210.132,
+          "c": 0.99999
+        },
+        {
+          "w": "people",
+          "s": 210.132,
+          "e": 210.522,
+          "c": 0.999985
+        },
+        {
+          "w": "from",
+          "s": 210.522,
+          "e": 210.572,
+          "c": 0.999989
+        },
+        {
+          "w": "both",
+          "s": 210.822,
+          "e": 211.052,
+          "c": 0.999981
+        },
+        {
+          "w": "parties,",
+          "s": 211.052,
+          "e": 211.732,
+          "c": 0.998936
+        },
+        {
+          "w": "some",
+          "s": 211.732,
+          "e": 211.872,
+          "c": 0.981689
+        },
+        {
+          "w": "others,",
+          "s": 212.062,
+          "e": 212.462,
+          "c": 0.851208
+        },
+        {
+          "w": "unless",
+          "s": 212.762,
+          "e": 212.942,
+          "c": 0.999802
+        },
+        {
+          "w": "they",
+          "s": 212.942,
+          "e": 213.172,
+          "c": 0.999996
+        },
+        {
+          "w": "step",
+          "s": 213.262,
+          "e": 213.562,
+          "c": 0.999651
+        },
+        {
+          "w": "forward",
+          "s": 213.562,
+          "e": 214.112,
+          "c": 0.999981
+        },
+        {
+          "w": "and",
+          "s": 214.112,
+          "e": 214.342,
+          "c": 0.999998
+        },
+        {
+          "w": "say,",
+          "s": 214.342,
+          "e": 214.642,
+          "c": 0.728665
+        },
+        {
+          "w": "we",
+          "s": 214.842,
+          "e": 214.872,
+          "c": 0.994879
+        },
+        {
+          "w": "have",
+          "s": 214.872,
+          "e": 215.182,
+          "c": 0.999998
+        },
+        {
+          "w": "no",
+          "s": 215.202,
+          "e": 215.332,
+          "c": 0.999987
+        },
+        {
+          "w": "confidence",
+          "s": 215.332,
+          "e": 216.112,
+          "c": 0.999905
+        },
+        {
+          "w": "in",
+          "s": 216.112,
+          "e": 216.262,
+          "c": 0.999886
+        },
+        {
+          "w": "Lonnie",
+          "s": 216.262,
+          "e": 216.722,
+          "c": 0.839282
+        },
+        {
+          "w": "Bunch,",
+          "s": 216.722,
+          "e": 217.132,
+          "c": 0.979019
+        },
+        {
+          "w": "who's",
+          "s": 217.352,
+          "e": 217.612,
+          "c": 0.833535
+        },
+        {
+          "w": "in",
+          "s": 217.612,
+          "e": 217.712,
+          "c": 0.999949
+        },
+        {
+          "w": "on",
+          "s": 217.712,
+          "e": 217.832,
+          "c": 0.998946
+        },
+        {
+          "w": "the",
+          "s": 217.832,
+          "e": 217.932,
+          "c": 0.940232
+        },
+        {
+          "w": "whole,",
+          "s": 218.212,
+          "e": 218.362,
+          "c": 0.571831
+        },
+        {
+          "w": "you",
+          "s": 218.362,
+          "e": 218.542,
+          "c": 0.999952
+        },
+        {
+          "w": "know,",
+          "s": 218.562,
+          "e": 218.922,
+          "c": 0.999996
+        },
+        {
+          "w": "anti-American",
+          "s": 218.922,
+          "e": 219.722,
+          "c": 0.998395
+        },
+        {
+          "w": "game",
+          "s": 219.722,
+          "e": 219.982,
+          "c": 0.999838
+        },
+        {
+          "w": "here,",
+          "s": 219.982,
+          "e": 220.352,
+          "c": 0.965565
+        },
+        {
+          "w": "then",
+          "s": 220.352,
+          "e": 220.602,
+          "c": 0.999798
+        },
+        {
+          "w": "she",
+          "s": 220.602,
+          "e": 220.792,
+          "c": 0.999975
+        },
+        {
+          "w": "gets",
+          "s": 220.792,
+          "e": 221.042,
+          "c": 0.999973
+        },
+        {
+          "w": "to",
+          "s": 221.042,
+          "e": 221.162,
+          "c": 0.999998
+        },
+        {
+          "w": "keep",
+          "s": 221.162,
+          "e": 221.292,
+          "c": 0.999969
+        },
+        {
+          "w": "her",
+          "s": 221.542,
+          "e": 221.602,
+          "c": 0.999994
+        },
+        {
+          "w": "position",
+          "s": 221.602,
+          "e": 222.192,
+          "c": 0.999933
+        },
+        {
+          "w": "and",
+          "s": 222.192,
+          "e": 222.462,
+          "c": 0.958203
+        },
+        {
+          "w": "continues",
+          "s": 222.462,
+          "e": 223.272,
+          "c": 0.998605
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 223.27,
+      "end_s": 225.64,
+      "speaker": "SPEAKER_16",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to undermine the objective telling of history.",
+      "words": [
+        {
+          "w": "to",
+          "s": 223.272,
+          "e": 223.482,
+          "c": 0.74253
+        },
+        {
+          "w": "undermine",
+          "s": 223.802,
+          "e": 223.992,
+          "c": 0.998253
+        },
+        {
+          "w": "the",
+          "s": 223.992,
+          "e": 224.142,
+          "c": 0.999998
+        },
+        {
+          "w": "objective",
+          "s": 224.152,
+          "e": 224.632,
+          "c": 0.99988
+        },
+        {
+          "w": "telling",
+          "s": 224.632,
+          "e": 225.002,
+          "c": 0.999849
+        },
+        {
+          "w": "of",
+          "s": 225.002,
+          "e": 225.102,
+          "c": 0.99999
+        },
+        {
+          "w": "history.",
+          "s": 225.102,
+          "e": 225.642,
+          "c": 0.978329
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "start_s": 227.4,
+      "end_s": 227.55,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Yeah, I think",
+      "words": [
+        {
+          "w": "Yeah,",
+          "s": 227.404,
+          "e": 227.124,
+          "c": 0.987199
+        },
+        {
+          "w": "I",
+          "s": 227.404,
+          "e": 227.194,
+          "c": 0.997733
+        },
+        {
+          "w": "think",
+          "s": 227.404,
+          "e": 227.554,
+          "c": 0.999842
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "start_s": 227.55,
+      "end_s": 231.5,
+      "speaker": "SPEAKER_12",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "it's ridiculous, and maybe it's time for Congress to change that statute. I mean, maybe it's",
+      "words": [
+        {
+          "w": "it's",
+          "s": 227.554,
+          "e": 227.834,
+          "c": 0.999249
+        },
+        {
+          "w": "ridiculous,",
+          "s": 228.314,
+          "e": 228.614,
+          "c": 0.25914
+        },
+        {
+          "w": "and",
+          "s": 228.674,
+          "e": 228.784,
+          "c": 0.800251
+        },
+        {
+          "w": "maybe",
+          "s": 228.784,
+          "e": 228.984,
+          "c": 0.993064
+        },
+        {
+          "w": "it's",
+          "s": 228.984,
+          "e": 229.104,
+          "c": 0.994615
+        },
+        {
+          "w": "time",
+          "s": 229.194,
+          "e": 229.304,
+          "c": 0.998361
+        },
+        {
+          "w": "for",
+          "s": 229.304,
+          "e": 229.424,
+          "c": 0.994135
+        },
+        {
+          "w": "Congress",
+          "s": 229.424,
+          "e": 229.784,
+          "c": 0.997697
+        },
+        {
+          "w": "to",
+          "s": 229.784,
+          "e": 229.844,
+          "c": 0.974591
+        },
+        {
+          "w": "change",
+          "s": 229.894,
+          "e": 230.154,
+          "c": 0.999302
+        },
+        {
+          "w": "that",
+          "s": 230.154,
+          "e": 230.344,
+          "c": 0.997919
+        },
+        {
+          "w": "statute.",
+          "s": 230.344,
+          "e": 230.844,
+          "c": 0.990148
+        },
+        {
+          "w": "I",
+          "s": 230.844,
+          "e": 230.884,
+          "c": 0.991115
+        },
+        {
+          "w": "mean,",
+          "s": 230.884,
+          "e": 231.134,
+          "c": 0.998841
+        },
+        {
+          "w": "maybe",
+          "s": 231.134,
+          "e": 231.344,
+          "c": 0.999956
+        },
+        {
+          "w": "it's",
+          "s": 231.344,
+          "e": 231.504,
+          "c": 0.999994
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "start_s": 231.67,
+      "end_s": 231.75,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "time to",
+      "words": [
+        {
+          "w": "time",
+          "s": 231.674,
+          "e": 231.674,
+          "c": 0.999992
+        },
+        {
+          "w": "to",
+          "s": 231.754,
+          "e": 231.754,
+          "c": 0.999996
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "start_s": 231.76,
+      "end_s": 256.69,
+      "speaker": "SPEAKER_12",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "say that if you hate this country, you shouldn't be getting paid with taxpayer money. Maybe it's time to say that we shouldn't be spending Americans' hard-earned cash to tell Americans how terrible their country is. The whole thing is a farce, Laura. It's a scam. It's a scam that the left has used. They've captured all these institutions. Now they want to capture the Smithsonian. Trump is trying to hold them accountable. You know, maybe it's time for Congress to do something about it. I know this for sure, she ought to be gone and every dime of taxpayer",
+      "words": [
+        {
+          "w": "say",
+          "s": 231.764,
+          "e": 231.884,
+          "c": 0.999996
+        },
+        {
+          "w": "that",
+          "s": 231.884,
+          "e": 232.054,
+          "c": 0.999996
+        },
+        {
+          "w": "if",
+          "s": 232.054,
+          "e": 232.134,
+          "c": 0.999887
+        },
+        {
+          "w": "you",
+          "s": 232.134,
+          "e": 232.264,
+          "c": 0.999996
+        },
+        {
+          "w": "hate",
+          "s": 232.264,
+          "e": 232.424,
+          "c": 0.999983
+        },
+        {
+          "w": "this",
+          "s": 232.434,
+          "e": 232.554,
+          "c": 0.999969
+        },
+        {
+          "w": "country,",
+          "s": 232.634,
+          "e": 233.084,
+          "c": 0.988335
+        },
+        {
+          "w": "you",
+          "s": 233.084,
+          "e": 233.184,
+          "c": 0.771391
+        },
+        {
+          "w": "shouldn't",
+          "s": 233.184,
+          "e": 233.474,
+          "c": 0.999664
+        },
+        {
+          "w": "be",
+          "s": 233.474,
+          "e": 233.504,
+          "c": 0.999298
+        },
+        {
+          "w": "getting",
+          "s": 233.554,
+          "e": 233.804,
+          "c": 0.994406
+        },
+        {
+          "w": "paid",
+          "s": 233.804,
+          "e": 234.184,
+          "c": 0.76392
+        },
+        {
+          "w": "with",
+          "s": 234.184,
+          "e": 234.364,
+          "c": 0.934618
+        },
+        {
+          "w": "taxpayer",
+          "s": 234.404,
+          "e": 234.754,
+          "c": 0.890343
+        },
+        {
+          "w": "money.",
+          "s": 234.754,
+          "e": 235.124,
+          "c": 0.999066
+        },
+        {
+          "w": "Maybe",
+          "s": 235.124,
+          "e": 235.374,
+          "c": 0.999968
+        },
+        {
+          "w": "it's",
+          "s": 235.374,
+          "e": 235.574,
+          "c": 0.999994
+        },
+        {
+          "w": "time",
+          "s": 235.574,
+          "e": 235.774,
+          "c": 0.999992
+        },
+        {
+          "w": "to",
+          "s": 235.774,
+          "e": 235.874,
+          "c": 1
+        },
+        {
+          "w": "say",
+          "s": 236.024,
+          "e": 236.024,
+          "c": 0.999998
+        },
+        {
+          "w": "that",
+          "s": 236.044,
+          "e": 236.224,
+          "c": 0.999996
+        },
+        {
+          "w": "we",
+          "s": 236.224,
+          "e": 236.314,
+          "c": 0.999992
+        },
+        {
+          "w": "shouldn't",
+          "s": 236.314,
+          "e": 236.774,
+          "c": 0.999969
+        },
+        {
+          "w": "be",
+          "s": 236.774,
+          "e": 236.834,
+          "c": 0.999998
+        },
+        {
+          "w": "spending",
+          "s": 236.914,
+          "e": 237.274,
+          "c": 0.999922
+        },
+        {
+          "w": "Americans'",
+          "s": 237.274,
+          "e": 237.774,
+          "c": 0.646868
+        },
+        {
+          "w": "hard-earned",
+          "s": 237.784,
+          "e": 238.334,
+          "c": 0.989825
+        },
+        {
+          "w": "cash",
+          "s": 238.334,
+          "e": 238.604,
+          "c": 0.999531
+        },
+        {
+          "w": "to",
+          "s": 238.604,
+          "e": 238.694,
+          "c": 0.926341
+        },
+        {
+          "w": "tell",
+          "s": 238.694,
+          "e": 238.904,
+          "c": 0.999851
+        },
+        {
+          "w": "Americans",
+          "s": 238.904,
+          "e": 239.354,
+          "c": 0.999226
+        },
+        {
+          "w": "how",
+          "s": 239.384,
+          "e": 239.414,
+          "c": 0.985122
+        },
+        {
+          "w": "terrible",
+          "s": 239.544,
+          "e": 239.844,
+          "c": 0.999386
+        },
+        {
+          "w": "their",
+          "s": 239.884,
+          "e": 240.004,
+          "c": 0.999893
+        },
+        {
+          "w": "country",
+          "s": 240.084,
+          "e": 240.364,
+          "c": 0.999849
+        },
+        {
+          "w": "is.",
+          "s": 240.364,
+          "e": 240.594,
+          "c": 0.999987
+        },
+        {
+          "w": "The",
+          "s": 240.604,
+          "e": 240.784,
+          "c": 0.999975
+        },
+        {
+          "w": "whole",
+          "s": 240.784,
+          "e": 241.084,
+          "c": 0.999996
+        },
+        {
+          "w": "thing",
+          "s": 241.084,
+          "e": 241.384,
+          "c": 0.999996
+        },
+        {
+          "w": "is",
+          "s": 241.504,
+          "e": 241.504,
+          "c": 1
+        },
+        {
+          "w": "a",
+          "s": 241.514,
+          "e": 241.564,
+          "c": 1
+        },
+        {
+          "w": "farce,",
+          "s": 241.564,
+          "e": 241.984,
+          "c": 0.87024
+        },
+        {
+          "w": "Laura.",
+          "s": 241.984,
+          "e": 242.524,
+          "c": 0.99059
+        },
+        {
+          "w": "It's",
+          "s": 242.524,
+          "e": 242.744,
+          "c": 0.999985
+        },
+        {
+          "w": "a",
+          "s": 242.744,
+          "e": 242.794,
+          "c": 0.999996
+        },
+        {
+          "w": "scam.",
+          "s": 242.794,
+          "e": 243.204,
+          "c": 0.995072
+        },
+        {
+          "w": "It's",
+          "s": 243.204,
+          "e": 243.404,
+          "c": 0.999985
+        },
+        {
+          "w": "a",
+          "s": 243.404,
+          "e": 243.454,
+          "c": 0.999996
+        },
+        {
+          "w": "scam",
+          "s": 243.454,
+          "e": 243.654,
+          "c": 0.999901
+        },
+        {
+          "w": "that",
+          "s": 243.654,
+          "e": 243.854,
+          "c": 0.999964
+        },
+        {
+          "w": "the",
+          "s": 243.854,
+          "e": 244.004,
+          "c": 0.999985
+        },
+        {
+          "w": "left",
+          "s": 244.114,
+          "e": 244.204,
+          "c": 0.995197
+        },
+        {
+          "w": "has",
+          "s": 244.204,
+          "e": 244.354,
+          "c": 0.999441
+        },
+        {
+          "w": "used.",
+          "s": 244.354,
+          "e": 244.744,
+          "c": 0.999571
+        },
+        {
+          "w": "They've",
+          "s": 244.744,
+          "e": 245.004,
+          "c": 0.99984
+        },
+        {
+          "w": "captured",
+          "s": 245.004,
+          "e": 245.304,
+          "c": 0.999918
+        },
+        {
+          "w": "all",
+          "s": 245.304,
+          "e": 245.414,
+          "c": 0.999996
+        },
+        {
+          "w": "these",
+          "s": 245.594,
+          "e": 245.594,
+          "c": 0.99987
+        },
+        {
+          "w": "institutions.",
+          "s": 245.654,
+          "e": 246.174,
+          "c": 0.998997
+        },
+        {
+          "w": "Now",
+          "s": 246.184,
+          "e": 246.344,
+          "c": 0.999964
+        },
+        {
+          "w": "they",
+          "s": 246.344,
+          "e": 246.554,
+          "c": 0.99616
+        },
+        {
+          "w": "want",
+          "s": 246.554,
+          "e": 246.764,
+          "c": 0.999727
+        },
+        {
+          "w": "to",
+          "s": 246.764,
+          "e": 246.864,
+          "c": 0.999765
+        },
+        {
+          "w": "capture",
+          "s": 247.094,
+          "e": 247.244,
+          "c": 0.999649
+        },
+        {
+          "w": "the",
+          "s": 247.244,
+          "e": 247.394,
+          "c": 0.999899
+        },
+        {
+          "w": "Smithsonian.",
+          "s": 247.454,
+          "e": 248.204,
+          "c": 0.999781
+        },
+        {
+          "w": "Trump",
+          "s": 248.204,
+          "e": 248.444,
+          "c": 0.999918
+        },
+        {
+          "w": "is",
+          "s": 248.444,
+          "e": 248.534,
+          "c": 0.999973
+        },
+        {
+          "w": "trying",
+          "s": 248.534,
+          "e": 248.824,
+          "c": 0.999985
+        },
+        {
+          "w": "to",
+          "s": 248.824,
+          "e": 248.914,
+          "c": 1
+        },
+        {
+          "w": "hold",
+          "s": 249.104,
+          "e": 249.104,
+          "c": 0.999937
+        },
+        {
+          "w": "them",
+          "s": 249.124,
+          "e": 249.294,
+          "c": 0.979783
+        },
+        {
+          "w": "accountable.",
+          "s": 249.294,
+          "e": 250.044,
+          "c": 0.99999
+        },
+        {
+          "w": "You",
+          "s": 250.044,
+          "e": 250.164,
+          "c": 0.995228
+        },
+        {
+          "w": "know,",
+          "s": 250.164,
+          "e": 250.414,
+          "c": 0.999994
+        },
+        {
+          "w": "maybe",
+          "s": 250.414,
+          "e": 250.624,
+          "c": 0.999914
+        },
+        {
+          "w": "it's",
+          "s": 250.624,
+          "e": 250.784,
+          "c": 0.999994
+        },
+        {
+          "w": "time",
+          "s": 250.954,
+          "e": 250.954,
+          "c": 0.999973
+        },
+        {
+          "w": "for",
+          "s": 250.964,
+          "e": 251.074,
+          "c": 0.999981
+        },
+        {
+          "w": "Congress",
+          "s": 251.074,
+          "e": 251.404,
+          "c": 0.999891
+        },
+        {
+          "w": "to",
+          "s": 251.404,
+          "e": 251.474,
+          "c": 0.999962
+        },
+        {
+          "w": "do",
+          "s": 251.514,
+          "e": 251.564,
+          "c": 0.999718
+        },
+        {
+          "w": "something",
+          "s": 251.574,
+          "e": 251.954,
+          "c": 0.999949
+        },
+        {
+          "w": "about",
+          "s": 251.954,
+          "e": 252.164,
+          "c": 0.999855
+        },
+        {
+          "w": "it.",
+          "s": 252.164,
+          "e": 252.434,
+          "c": 0.999859
+        },
+        {
+          "w": "I",
+          "s": 252.464,
+          "e": 252.544,
+          "c": 0.698299
+        },
+        {
+          "w": "know",
+          "s": 252.544,
+          "e": 252.874,
+          "c": 0.993204
+        },
+        {
+          "w": "this",
+          "s": 252.874,
+          "e": 253.204,
+          "c": 0.996964
+        },
+        {
+          "w": "for",
+          "s": 253.374,
+          "e": 253.454,
+          "c": 0.994873
+        },
+        {
+          "w": "sure,",
+          "s": 253.454,
+          "e": 253.944,
+          "c": 0.446631
+        },
+        {
+          "w": "she",
+          "s": 253.944,
+          "e": 254.164,
+          "c": 0.759037
+        },
+        {
+          "w": "ought",
+          "s": 254.164,
+          "e": 254.364,
+          "c": 0.974544
+        },
+        {
+          "w": "to",
+          "s": 254.364,
+          "e": 254.424,
+          "c": 0.900734
+        },
+        {
+          "w": "be",
+          "s": 254.424,
+          "e": 254.564,
+          "c": 0.977838
+        },
+        {
+          "w": "gone",
+          "s": 254.564,
+          "e": 255.114,
+          "c": 0.942672
+        },
+        {
+          "w": "and",
+          "s": 255.164,
+          "e": 255.374,
+          "c": 0.428085
+        },
+        {
+          "w": "every",
+          "s": 255.374,
+          "e": 255.714,
+          "c": 0.992559
+        },
+        {
+          "w": "dime",
+          "s": 255.724,
+          "e": 255.984,
+          "c": 0.99318
+        },
+        {
+          "w": "of",
+          "s": 256.024,
+          "e": 256.144,
+          "c": 0.98812
+        },
+        {
+          "w": "taxpayer",
+          "s": 256.144,
+          "e": 256.694,
+          "c": 0.856504
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "start_s": 256.7,
+      "end_s": 257.84,
+      "speaker": "SPEAKER_12",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "money she's been paid. She",
+      "words": [
+        {
+          "w": "money",
+          "s": 256.704,
+          "e": 256.964,
+          "c": 0.87223
+        },
+        {
+          "w": "she's",
+          "s": 256.964,
+          "e": 257.174,
+          "c": 0.750596
+        },
+        {
+          "w": "been",
+          "s": 257.244,
+          "e": 257.354,
+          "c": 0.998858
+        },
+        {
+          "w": "paid.",
+          "s": 257.424,
+          "e": 257.794,
+          "c": 0.415504
+        },
+        {
+          "w": "She",
+          "s": 257.794,
+          "e": 257.844,
+          "c": 0.909634
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "start_s": 258.14,
+      "end_s": 259.05,
+      "speaker": "SPEAKER_19",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "ought to pay back. I",
+      "words": [
+        {
+          "w": "ought",
+          "s": 258.144,
+          "e": 258.314,
+          "c": 0.899573
+        },
+        {
+          "w": "to",
+          "s": 258.314,
+          "e": 258.424,
+          "c": 0.995871
+        },
+        {
+          "w": "pay",
+          "s": 258.504,
+          "e": 258.644,
+          "c": 0.997908
+        },
+        {
+          "w": "back.",
+          "s": 258.644,
+          "e": 258.894,
+          "c": 0.980413
+        },
+        {
+          "w": "I",
+          "s": 258.954,
+          "e": 259.054,
+          "c": 0.887965
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "start_s": 259.05,
+      "end_s": 259.41,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "think",
+      "words": [
+        {
+          "w": "think",
+          "s": 259.054,
+          "e": 259.414,
+          "c": 0.999691
+        }
+      ]
+    },
+    {
+      "i": 35,
+      "start_s": 259.6,
+      "end_s": 266.91,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you have a lot more than Anthea Hartig over there. You have mid-level leadership. You have her. You have Lonnie Bunch. I mean, this whole crowd",
+      "words": [
+        {
+          "w": "you",
+          "s": 259.604,
+          "e": 259.634,
+          "c": 0.999525
+        },
+        {
+          "w": "have",
+          "s": 259.634,
+          "e": 259.924,
+          "c": 0.999748
+        },
+        {
+          "w": "a",
+          "s": 259.924,
+          "e": 259.994,
+          "c": 0.999144
+        },
+        {
+          "w": "lot",
+          "s": 259.994,
+          "e": 260.214,
+          "c": 0.999331
+        },
+        {
+          "w": "more",
+          "s": 260.214,
+          "e": 260.504,
+          "c": 0.998673
+        },
+        {
+          "w": "than",
+          "s": 260.504,
+          "e": 260.824,
+          "c": 0.996614
+        },
+        {
+          "w": "Anthea",
+          "s": 260.824,
+          "e": 261.224,
+          "c": 0.933243
+        },
+        {
+          "w": "Hartig",
+          "s": 261.274,
+          "e": 261.574,
+          "c": 0.580912
+        },
+        {
+          "w": "over",
+          "s": 261.584,
+          "e": 261.804,
+          "c": 0.997434
+        },
+        {
+          "w": "there.",
+          "s": 261.804,
+          "e": 262.244,
+          "c": 0.99855
+        },
+        {
+          "w": "You",
+          "s": 262.304,
+          "e": 262.424,
+          "c": 0.999937
+        },
+        {
+          "w": "have",
+          "s": 262.424,
+          "e": 262.644,
+          "c": 0.999992
+        },
+        {
+          "w": "mid-level",
+          "s": 262.644,
+          "e": 263.144,
+          "c": 0.98528
+        },
+        {
+          "w": "leadership.",
+          "s": 263.144,
+          "e": 263.774,
+          "c": 0.945498
+        },
+        {
+          "w": "You",
+          "s": 263.824,
+          "e": 264.054,
+          "c": 0.999973
+        },
+        {
+          "w": "have",
+          "s": 264.054,
+          "e": 264.274,
+          "c": 0.999996
+        },
+        {
+          "w": "her.",
+          "s": 264.444,
+          "e": 264.614,
+          "c": 0.925433
+        },
+        {
+          "w": "You",
+          "s": 264.614,
+          "e": 264.784,
+          "c": 0.999969
+        },
+        {
+          "w": "have",
+          "s": 264.784,
+          "e": 265.004,
+          "c": 0.999996
+        },
+        {
+          "w": "Lonnie",
+          "s": 265.004,
+          "e": 265.344,
+          "c": 0.939771
+        },
+        {
+          "w": "Bunch.",
+          "s": 265.344,
+          "e": 265.784,
+          "c": 0.986579
+        },
+        {
+          "w": "I",
+          "s": 265.784,
+          "e": 265.834,
+          "c": 0.968211
+        },
+        {
+          "w": "mean,",
+          "s": 265.834,
+          "e": 266.264,
+          "c": 0.994473
+        },
+        {
+          "w": "this",
+          "s": 266.264,
+          "e": 266.464,
+          "c": 0.999989
+        },
+        {
+          "w": "whole",
+          "s": 266.464,
+          "e": 266.714,
+          "c": 0.999983
+        },
+        {
+          "w": "crowd",
+          "s": 266.714,
+          "e": 266.914,
+          "c": 0.999977
+        }
+      ]
+    },
+    {
+      "i": 36,
+      "start_s": 266.98,
+      "end_s": 277.97,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "has to be replaced by people who just have an objective view of history, but love the country because we want everyone in the world to see how great this country is, flaws and all. Senator, thank you very much. We're going to keep following this.",
+      "words": [
+        {
+          "w": "has",
+          "s": 266.984,
+          "e": 267.114,
+          "c": 0.999992
+        },
+        {
+          "w": "to",
+          "s": 267.114,
+          "e": 267.214,
+          "c": 0.999996
+        },
+        {
+          "w": "be",
+          "s": 267.214,
+          "e": 267.314,
+          "c": 1
+        },
+        {
+          "w": "replaced",
+          "s": 267.314,
+          "e": 267.714,
+          "c": 0.999975
+        },
+        {
+          "w": "by",
+          "s": 267.714,
+          "e": 267.814,
+          "c": 0.999996
+        },
+        {
+          "w": "people",
+          "s": 267.814,
+          "e": 268.114,
+          "c": 0.999996
+        },
+        {
+          "w": "who",
+          "s": 268.114,
+          "e": 268.264,
+          "c": 0.999996
+        },
+        {
+          "w": "just",
+          "s": 268.264,
+          "e": 268.444,
+          "c": 0.99999
+        },
+        {
+          "w": "have",
+          "s": 268.444,
+          "e": 268.544,
+          "c": 0.999992
+        },
+        {
+          "w": "an",
+          "s": 268.544,
+          "e": 268.764,
+          "c": 0.999996
+        },
+        {
+          "w": "objective",
+          "s": 269.164,
+          "e": 269.214,
+          "c": 0.999868
+        },
+        {
+          "w": "view",
+          "s": 269.214,
+          "e": 269.404,
+          "c": 0.999939
+        },
+        {
+          "w": "of",
+          "s": 269.454,
+          "e": 269.514,
+          "c": 0.999821
+        },
+        {
+          "w": "history,",
+          "s": 269.514,
+          "e": 269.884,
+          "c": 0.714029
+        },
+        {
+          "w": "but",
+          "s": 269.884,
+          "e": 270.034,
+          "c": 0.999966
+        },
+        {
+          "w": "love",
+          "s": 270.034,
+          "e": 270.234,
+          "c": 0.999929
+        },
+        {
+          "w": "the",
+          "s": 270.234,
+          "e": 270.354,
+          "c": 0.999943
+        },
+        {
+          "w": "country",
+          "s": 270.424,
+          "e": 270.734,
+          "c": 0.999981
+        },
+        {
+          "w": "because",
+          "s": 270.734,
+          "e": 271.024,
+          "c": 0.840276
+        },
+        {
+          "w": "we",
+          "s": 271.094,
+          "e": 271.134,
+          "c": 0.999996
+        },
+        {
+          "w": "want",
+          "s": 271.314,
+          "e": 271.384,
+          "c": 0.999994
+        },
+        {
+          "w": "everyone",
+          "s": 271.384,
+          "e": 271.784,
+          "c": 0.999973
+        },
+        {
+          "w": "in",
+          "s": 271.784,
+          "e": 271.854,
+          "c": 0.992097
+        },
+        {
+          "w": "the",
+          "s": 271.874,
+          "e": 272.024,
+          "c": 0.999998
+        },
+        {
+          "w": "world",
+          "s": 272.024,
+          "e": 272.144,
+          "c": 0.99999
+        },
+        {
+          "w": "to",
+          "s": 272.144,
+          "e": 272.384,
+          "c": 0.99992
+        },
+        {
+          "w": "see",
+          "s": 272.384,
+          "e": 272.534,
+          "c": 0.999887
+        },
+        {
+          "w": "how",
+          "s": 272.534,
+          "e": 272.684,
+          "c": 0.999394
+        },
+        {
+          "w": "great",
+          "s": 272.784,
+          "e": 272.984,
+          "c": 0.999085
+        },
+        {
+          "w": "this",
+          "s": 272.984,
+          "e": 273.134,
+          "c": 0.98789
+        },
+        {
+          "w": "country",
+          "s": 273.134,
+          "e": 273.404,
+          "c": 0.99834
+        },
+        {
+          "w": "is,",
+          "s": 273.404,
+          "e": 273.724,
+          "c": 0.661366
+        },
+        {
+          "w": "flaws",
+          "s": 273.724,
+          "e": 274.004,
+          "c": 0.99285
+        },
+        {
+          "w": "and",
+          "s": 274.004,
+          "e": 274.174,
+          "c": 0.991036
+        },
+        {
+          "w": "all.",
+          "s": 274.174,
+          "e": 274.514,
+          "c": 0.998986
+        },
+        {
+          "w": "Senator,",
+          "s": 274.514,
+          "e": 274.964,
+          "c": 0.999479
+        },
+        {
+          "w": "thank",
+          "s": 275.164,
+          "e": 275.304,
+          "c": 0.999706
+        },
+        {
+          "w": "you",
+          "s": 275.304,
+          "e": 275.444,
+          "c": 0.999998
+        },
+        {
+          "w": "very",
+          "s": 275.524,
+          "e": 275.664,
+          "c": 0.999989
+        },
+        {
+          "w": "much.",
+          "s": 275.704,
+          "e": 276.004,
+          "c": 0.999655
+        },
+        {
+          "w": "We're",
+          "s": 276.054,
+          "e": 276.384,
+          "c": 0.998258
+        },
+        {
+          "w": "going",
+          "s": 276.624,
+          "e": 276.664,
+          "c": 0.995986
+        },
+        {
+          "w": "to",
+          "s": 276.664,
+          "e": 276.774,
+          "c": 0.999949
+        },
+        {
+          "w": "keep",
+          "s": 276.774,
+          "e": 277.004,
+          "c": 0.954067
+        },
+        {
+          "w": "following",
+          "s": 277.004,
+          "e": 277.524,
+          "c": 0.999897
+        },
+        {
+          "w": "this.",
+          "s": 277.524,
+          "e": 277.974,
+          "c": 0.57439
+        }
+      ]
+    }
+  ]
+}

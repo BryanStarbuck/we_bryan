@@ -1,0 +1,7255 @@
+{
+  "schema_version": 2,
+  "canonical_id": "2c9aa85d6e44aaa4",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 323.2,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T02:58:00.116Z",
+  "text_sha256": "91275a90d1e8ae59e531d5028b72bcb7be1da4caecfc4dfb79cdb314a07a9e04",
+  "segments_sha256": "ca244bbf7d2e8330bbadafa6c89cbbc6d38d602fe741222f3503bca2dd2eea80",
+  "words_sha256": "d3b0bf2913679c221adda1e25f629e7134e413db3bd32eb4561647819dad306f",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 11,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 25,
+    "clusters": 14,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (higher-pitched voice)",
+      "voice": {
+        "descriptor": "woman",
+        "p": 0.85,
+        "confidence": "low",
+        "clean_s": 87.5
+      },
+      "clean_s": 87.5,
+      "speaking_s": 92.6,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 35.3
+      },
+      "clean_s": 35.3,
+      "speaking_s": 35.3,
+      "first_s": 46.2
+    },
+    {
+      "id": "SPEAKER_08",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.7
+      },
+      "clean_s": 0.7,
+      "speaking_s": 1.2,
+      "first_s": 81.98
+    },
+    {
+      "id": "SPEAKER_07",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.8
+      },
+      "clean_s": 1.8,
+      "speaking_s": 1.8,
+      "first_s": 82.36
+    },
+    {
+      "id": "SPEAKER_11",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 61.9
+      },
+      "clean_s": 61.9,
+      "speaking_s": 65.1,
+      "first_s": 88.89
+    },
+    {
+      "id": "SPEAKER_12",
+      "n": 6,
+      "label": "Speaker 6",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0
+      },
+      "clean_s": 0,
+      "speaking_s": 0.4,
+      "first_s": 89.25
+    },
+    {
+      "id": "SPEAKER_18",
+      "n": 7,
+      "label": "Speaker 7",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.6
+      },
+      "clean_s": 4.6,
+      "speaking_s": 6.2,
+      "first_s": 153.69
+    },
+    {
+      "id": "SPEAKER_17",
+      "n": 8,
+      "label": "Speaker 8",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1
+      },
+      "clean_s": 1,
+      "speaking_s": 1.9,
+      "first_s": 154.62
+    },
+    {
+      "id": "SPEAKER_19",
+      "n": 9,
+      "label": "Speaker 9",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 11.9
+      },
+      "clean_s": 11.9,
+      "speaking_s": 11.9,
+      "first_s": 177.03
+    },
+    {
+      "id": "SPEAKER_22",
+      "n": 10,
+      "label": "Speaker 10",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 47.2
+      },
+      "clean_s": 47.2,
+      "speaking_s": 48.9,
+      "first_s": 188.96
+    },
+    {
+      "id": "SPEAKER_23",
+      "n": 11,
+      "label": "Speaker 11",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0
+      },
+      "clean_s": 0,
+      "speaking_s": 1.1,
+      "first_s": 224.08
+    },
+    {
+      "id": "SPEAKER_24",
+      "n": 12,
+      "label": "Speaker 12",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 2.1
+      },
+      "clean_s": 2.1,
+      "speaking_s": 2.7,
+      "first_s": 237.29
+    },
+    {
+      "id": "SPEAKER_28",
+      "n": 13,
+      "label": "Speaker 13",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 60.4
+      },
+      "clean_s": 60.4,
+      "speaking_s": 61.3,
+      "first_s": 252.11
+    },
+    {
+      "id": "SPEAKER_30",
+      "n": 14,
+      "label": "Speaker 14",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0
+      },
+      "clean_s": 0,
+      "speaking_s": 0.4,
+      "first_s": 316.22
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 154.66,
+      "end_s": 154.66,
+      "segment_i": 13,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 155.99,
+      "end_s": 155.99,
+      "segment_i": 15,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 168.87,
+      "end_s": 168.87,
+      "segment_i": 19,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 285.14,
+      "end_s": 285.14,
+      "segment_i": 29,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.05,
+      "end_s": 30.02,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "An associate editor at The Washington Post is going after Missouri Senator Josh Hawley, accusing the conservative Republican of being a, quote, manhood-obsessed hypocrite in an op-ed titled Josh Hawley's Problem with Masculinity. In the piece, Jonathan Capehart vilifies Hawley and claims that he is advocating for masculinity based on racial resentment. He wrote this, but as clownish as Hawley comes across, we dismiss him at our own risk. He is selling a vision",
+      "words": [
+        {
+          "w": "An",
+          "s": 0.05,
+          "e": 0.15,
+          "c": 0.977059
+        },
+        {
+          "w": "associate",
+          "s": 0.55,
+          "e": 0.82,
+          "c": 0.998519
+        },
+        {
+          "w": "editor",
+          "s": 0.82,
+          "e": 1.27,
+          "c": 0.999823
+        },
+        {
+          "w": "at",
+          "s": 1.27,
+          "e": 1.42,
+          "c": 0.999687
+        },
+        {
+          "w": "The",
+          "s": 1.42,
+          "e": 1.63,
+          "c": 0.647187
+        },
+        {
+          "w": "Washington",
+          "s": 1.63,
+          "e": 2.38,
+          "c": 0.999493
+        },
+        {
+          "w": "Post",
+          "s": 2.51,
+          "e": 2.72,
+          "c": 0.999584
+        },
+        {
+          "w": "is",
+          "s": 2.72,
+          "e": 2.82,
+          "c": 0.982866
+        },
+        {
+          "w": "going",
+          "s": 2.87,
+          "e": 3.22,
+          "c": 0.999912
+        },
+        {
+          "w": "after",
+          "s": 3.22,
+          "e": 3.52,
+          "c": 0.999872
+        },
+        {
+          "w": "Missouri",
+          "s": 3.64,
+          "e": 4.13,
+          "c": 0.998845
+        },
+        {
+          "w": "Senator",
+          "s": 4.24,
+          "e": 4.59,
+          "c": 0.97653
+        },
+        {
+          "w": "Josh",
+          "s": 4.68,
+          "e": 4.95,
+          "c": 0.994014
+        },
+        {
+          "w": "Hawley,",
+          "s": 5.12,
+          "e": 5.44,
+          "c": 0.941999
+        },
+        {
+          "w": "accusing",
+          "s": 5.5,
+          "e": 5.88,
+          "c": 0.999355
+        },
+        {
+          "w": "the",
+          "s": 5.99,
+          "e": 6.08,
+          "c": 0.999981
+        },
+        {
+          "w": "conservative",
+          "s": 6.08,
+          "e": 6.77,
+          "c": 0.996305
+        },
+        {
+          "w": "Republican",
+          "s": 6.77,
+          "e": 7.36,
+          "c": 0.999104
+        },
+        {
+          "w": "of",
+          "s": 7.36,
+          "e": 7.47,
+          "c": 0.999994
+        },
+        {
+          "w": "being",
+          "s": 7.47,
+          "e": 7.76,
+          "c": 0.999998
+        },
+        {
+          "w": "a,",
+          "s": 7.76,
+          "e": 7.82,
+          "c": 0.872798
+        },
+        {
+          "w": "quote,",
+          "s": 7.95,
+          "e": 8.38,
+          "c": 0.999392
+        },
+        {
+          "w": "manhood-obsessed",
+          "s": 8.38,
+          "e": 9.81,
+          "c": 0.611201
+        },
+        {
+          "w": "hypocrite",
+          "s": 9.81,
+          "e": 10.64,
+          "c": 0.997854
+        },
+        {
+          "w": "in",
+          "s": 10.64,
+          "e": 10.79,
+          "c": 0.6427
+        },
+        {
+          "w": "an",
+          "s": 10.79,
+          "e": 10.94,
+          "c": 0.999809
+        },
+        {
+          "w": "op-ed",
+          "s": 10.94,
+          "e": 11.28,
+          "c": 0.915424
+        },
+        {
+          "w": "titled",
+          "s": 11.33,
+          "e": 11.7,
+          "c": 0.997533
+        },
+        {
+          "w": "Josh",
+          "s": 11.83,
+          "e": 11.98,
+          "c": 0.863543
+        },
+        {
+          "w": "Hawley's",
+          "s": 12,
+          "e": 12.53,
+          "c": 0.999819
+        },
+        {
+          "w": "Problem",
+          "s": 12.54,
+          "e": 13.04,
+          "c": 0.993604
+        },
+        {
+          "w": "with",
+          "s": 13.04,
+          "e": 13.32,
+          "c": 0.984776
+        },
+        {
+          "w": "Masculinity.",
+          "s": 13.32,
+          "e": 14.36,
+          "c": 0.995173
+        },
+        {
+          "w": "In",
+          "s": 14.43,
+          "e": 14.52,
+          "c": 0.979879
+        },
+        {
+          "w": "the",
+          "s": 14.52,
+          "e": 14.77,
+          "c": 0.999985
+        },
+        {
+          "w": "piece,",
+          "s": 14.77,
+          "e": 15.35,
+          "c": 0.997847
+        },
+        {
+          "w": "Jonathan",
+          "s": 15.35,
+          "e": 16.02,
+          "c": 0.999247
+        },
+        {
+          "w": "Capehart",
+          "s": 16.02,
+          "e": 16.68,
+          "c": 0.992467
+        },
+        {
+          "w": "vilifies",
+          "s": 16.68,
+          "e": 17.4,
+          "c": 0.998441
+        },
+        {
+          "w": "Hawley",
+          "s": 17.4,
+          "e": 17.96,
+          "c": 0.872742
+        },
+        {
+          "w": "and",
+          "s": 18.01,
+          "e": 18.17,
+          "c": 0.999424
+        },
+        {
+          "w": "claims",
+          "s": 18.5,
+          "e": 18.59,
+          "c": 0.999952
+        },
+        {
+          "w": "that",
+          "s": 18.59,
+          "e": 18.8,
+          "c": 0.999992
+        },
+        {
+          "w": "he",
+          "s": 18.87,
+          "e": 19,
+          "c": 0.999996
+        },
+        {
+          "w": "is",
+          "s": 19.05,
+          "e": 19.15,
+          "c": 0.999992
+        },
+        {
+          "w": "advocating",
+          "s": 19.15,
+          "e": 19.86,
+          "c": 0.999979
+        },
+        {
+          "w": "for",
+          "s": 19.86,
+          "e": 20.01,
+          "c": 0.999994
+        },
+        {
+          "w": "masculinity",
+          "s": 20.14,
+          "e": 20.84,
+          "c": 0.999939
+        },
+        {
+          "w": "based",
+          "s": 20.85,
+          "e": 21.2,
+          "c": 0.999916
+        },
+        {
+          "w": "on",
+          "s": 21.2,
+          "e": 21.34,
+          "c": 0.999996
+        },
+        {
+          "w": "racial",
+          "s": 21.34,
+          "e": 21.76,
+          "c": 0.999983
+        },
+        {
+          "w": "resentment.",
+          "s": 21.76,
+          "e": 22.68,
+          "c": 0.999518
+        },
+        {
+          "w": "He",
+          "s": 22.68,
+          "e": 22.81,
+          "c": 0.995433
+        },
+        {
+          "w": "wrote",
+          "s": 23.08,
+          "e": 23.17,
+          "c": 0.999954
+        },
+        {
+          "w": "this,",
+          "s": 23.17,
+          "e": 23.66,
+          "c": 0.959823
+        },
+        {
+          "w": "but",
+          "s": 23.73,
+          "e": 23.92,
+          "c": 0.382982
+        },
+        {
+          "w": "as",
+          "s": 23.92,
+          "e": 24.08,
+          "c": 0.984656
+        },
+        {
+          "w": "clownish",
+          "s": 24.23,
+          "e": 24.72,
+          "c": 0.990548
+        },
+        {
+          "w": "as",
+          "s": 24.72,
+          "e": 24.88,
+          "c": 0.999173
+        },
+        {
+          "w": "Hawley",
+          "s": 24.88,
+          "e": 25.32,
+          "c": 0.993782
+        },
+        {
+          "w": "comes",
+          "s": 25.42,
+          "e": 25.73,
+          "c": 0.998298
+        },
+        {
+          "w": "across,",
+          "s": 25.86,
+          "e": 26.4,
+          "c": 0.953272
+        },
+        {
+          "w": "we",
+          "s": 26.4,
+          "e": 26.56,
+          "c": 0.998559
+        },
+        {
+          "w": "dismiss",
+          "s": 26.57,
+          "e": 27.12,
+          "c": 0.999569
+        },
+        {
+          "w": "him",
+          "s": 27.12,
+          "e": 27.36,
+          "c": 0.999298
+        },
+        {
+          "w": "at",
+          "s": 27.36,
+          "e": 27.52,
+          "c": 0.999277
+        },
+        {
+          "w": "our",
+          "s": 27.52,
+          "e": 27.76,
+          "c": 0.999331
+        },
+        {
+          "w": "own",
+          "s": 27.76,
+          "e": 28,
+          "c": 0.999565
+        },
+        {
+          "w": "risk.",
+          "s": 28,
+          "e": 28.53,
+          "c": 0.993055
+        },
+        {
+          "w": "He",
+          "s": 28.62,
+          "e": 28.62,
+          "c": 0.999171
+        },
+        {
+          "w": "is",
+          "s": 28.8,
+          "e": 28.88,
+          "c": 0.996128
+        },
+        {
+          "w": "selling",
+          "s": 28.88,
+          "e": 29.18,
+          "c": 0.999537
+        },
+        {
+          "w": "a",
+          "s": 29.26,
+          "e": 29.52,
+          "c": 0.998411
+        },
+        {
+          "w": "vision",
+          "s": 29.66,
+          "e": 30.02,
+          "c": 0.973438
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 30,
+      "end_s": 46.3,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "of masculinity to white America that has more to do with prejudice than manliness. Harris, they always come up with a new, more far-fetched liberal lunacy. I mean, this is another example. It's all about prejudice, apparently. Yeah,",
+      "words": [
+        {
+          "w": "of",
+          "s": 30,
+          "e": 30.1,
+          "c": 0.68947
+        },
+        {
+          "w": "masculinity",
+          "s": 30.1,
+          "e": 30.68,
+          "c": 0.998491
+        },
+        {
+          "w": "to",
+          "s": 30.68,
+          "e": 30.88,
+          "c": 0.984782
+        },
+        {
+          "w": "white",
+          "s": 30.88,
+          "e": 31.37,
+          "c": 0.994118
+        },
+        {
+          "w": "America",
+          "s": 31.37,
+          "e": 31.99,
+          "c": 0.901922
+        },
+        {
+          "w": "that",
+          "s": 32.08,
+          "e": 32.29,
+          "c": 0.815908
+        },
+        {
+          "w": "has",
+          "s": 32.89,
+          "e": 33.04,
+          "c": 0.998515
+        },
+        {
+          "w": "more",
+          "s": 33.05,
+          "e": 33.59,
+          "c": 0.996964
+        },
+        {
+          "w": "to",
+          "s": 33.59,
+          "e": 33.86,
+          "c": 0.995213
+        },
+        {
+          "w": "do",
+          "s": 33.86,
+          "e": 34.16,
+          "c": 0.997845
+        },
+        {
+          "w": "with",
+          "s": 34.16,
+          "e": 34.35,
+          "c": 0.985158
+        },
+        {
+          "w": "prejudice",
+          "s": 34.58,
+          "e": 35.06,
+          "c": 0.998521
+        },
+        {
+          "w": "than",
+          "s": 35.29,
+          "e": 35.53,
+          "c": 0.991658
+        },
+        {
+          "w": "manliness.",
+          "s": 35.68,
+          "e": 36.66,
+          "c": 0.867811
+        },
+        {
+          "w": "Harris,",
+          "s": 36.66,
+          "e": 37.39,
+          "c": 0.993371
+        },
+        {
+          "w": "they",
+          "s": 37.39,
+          "e": 37.75,
+          "c": 0.999743
+        },
+        {
+          "w": "always",
+          "s": 37.75,
+          "e": 38.3,
+          "c": 0.987345
+        },
+        {
+          "w": "come",
+          "s": 38.3,
+          "e": 38.65,
+          "c": 0.999994
+        },
+        {
+          "w": "up",
+          "s": 38.75,
+          "e": 38.84,
+          "c": 0.999966
+        },
+        {
+          "w": "with",
+          "s": 38.84,
+          "e": 38.95,
+          "c": 0.999992
+        },
+        {
+          "w": "a",
+          "s": 39,
+          "e": 39.29,
+          "c": 0.999989
+        },
+        {
+          "w": "new,",
+          "s": 39.55,
+          "e": 39.74,
+          "c": 0.964593
+        },
+        {
+          "w": "more",
+          "s": 39.75,
+          "e": 40.1,
+          "c": 0.999561
+        },
+        {
+          "w": "far-fetched",
+          "s": 40.1,
+          "e": 41.01,
+          "c": 0.916149
+        },
+        {
+          "w": "liberal",
+          "s": 41.24,
+          "e": 41.69,
+          "c": 0.936108
+        },
+        {
+          "w": "lunacy.",
+          "s": 41.69,
+          "e": 43.12,
+          "c": 0.982291
+        },
+        {
+          "w": "I",
+          "s": 43.12,
+          "e": 43.17,
+          "c": 0.541778
+        },
+        {
+          "w": "mean,",
+          "s": 43.17,
+          "e": 43.5,
+          "c": 0.996141
+        },
+        {
+          "w": "this",
+          "s": 43.5,
+          "e": 43.66,
+          "c": 0.999966
+        },
+        {
+          "w": "is",
+          "s": 43.66,
+          "e": 43.74,
+          "c": 0.999996
+        },
+        {
+          "w": "another",
+          "s": 43.74,
+          "e": 44.03,
+          "c": 0.99999
+        },
+        {
+          "w": "example.",
+          "s": 44.03,
+          "e": 44.42,
+          "c": 0.99914
+        },
+        {
+          "w": "It's",
+          "s": 44.52,
+          "e": 44.6,
+          "c": 0.999947
+        },
+        {
+          "w": "all",
+          "s": 44.6,
+          "e": 44.7,
+          "c": 0.999977
+        },
+        {
+          "w": "about",
+          "s": 44.74,
+          "e": 44.92,
+          "c": 0.999998
+        },
+        {
+          "w": "prejudice,",
+          "s": 44.92,
+          "e": 45.37,
+          "c": 0.965661
+        },
+        {
+          "w": "apparently.",
+          "s": 45.37,
+          "e": 45.79,
+          "c": 0.999968
+        },
+        {
+          "w": "Yeah,",
+          "s": 45.96,
+          "e": 46.3,
+          "c": 0.892603
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 46.48,
+      "end_s": 59.98,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "everything comes down to race. I'm not exactly sure how this does in this occasion, but I get it because the R word is what gets everybody's attention. So when did masculinity turn out to be such a horrible thing? them.",
+      "words": [
+        {
+          "w": "everything",
+          "s": 46.48,
+          "e": 47.25,
+          "c": 0.999952
+        },
+        {
+          "w": "comes",
+          "s": 47.25,
+          "e": 47.66,
+          "c": 0.99996
+        },
+        {
+          "w": "down",
+          "s": 47.66,
+          "e": 47.95,
+          "c": 0.999994
+        },
+        {
+          "w": "to",
+          "s": 48.05,
+          "e": 48.14,
+          "c": 1
+        },
+        {
+          "w": "race.",
+          "s": 48.14,
+          "e": 48.7,
+          "c": 0.999949
+        },
+        {
+          "w": "I'm",
+          "s": 48.78,
+          "e": 48.94,
+          "c": 0.999813
+        },
+        {
+          "w": "not",
+          "s": 48.94,
+          "e": 49.18,
+          "c": 0.999941
+        },
+        {
+          "w": "exactly",
+          "s": 49.18,
+          "e": 49.67,
+          "c": 0.999966
+        },
+        {
+          "w": "sure",
+          "s": 49.78,
+          "e": 50.07,
+          "c": 0.999987
+        },
+        {
+          "w": "how",
+          "s": 50.07,
+          "e": 50.29,
+          "c": 0.998171
+        },
+        {
+          "w": "this",
+          "s": 50.3,
+          "e": 50.63,
+          "c": 0.999788
+        },
+        {
+          "w": "does",
+          "s": 50.63,
+          "e": 50.95,
+          "c": 0.999813
+        },
+        {
+          "w": "in",
+          "s": 50.95,
+          "e": 51,
+          "c": 0.99229
+        },
+        {
+          "w": "this",
+          "s": 51,
+          "e": 51.42,
+          "c": 0.999859
+        },
+        {
+          "w": "occasion,",
+          "s": 51.64,
+          "e": 52.36,
+          "c": 0.977077
+        },
+        {
+          "w": "but",
+          "s": 52.36,
+          "e": 52.54,
+          "c": 0.999985
+        },
+        {
+          "w": "I",
+          "s": 52.54,
+          "e": 52.6,
+          "c": 0.999996
+        },
+        {
+          "w": "get",
+          "s": 52.6,
+          "e": 52.7,
+          "c": 0.999981
+        },
+        {
+          "w": "it",
+          "s": 52.77,
+          "e": 52.9,
+          "c": 1
+        },
+        {
+          "w": "because",
+          "s": 52.9,
+          "e": 53.28,
+          "c": 0.739785
+        },
+        {
+          "w": "the",
+          "s": 53.39,
+          "e": 53.5,
+          "c": 0.999977
+        },
+        {
+          "w": "R",
+          "s": 53.5,
+          "e": 53.55,
+          "c": 0.993176
+        },
+        {
+          "w": "word",
+          "s": 53.56,
+          "e": 53.8,
+          "c": 0.840913
+        },
+        {
+          "w": "is",
+          "s": 53.8,
+          "e": 53.83,
+          "c": 1
+        },
+        {
+          "w": "what",
+          "s": 53.92,
+          "e": 54.16,
+          "c": 0.999996
+        },
+        {
+          "w": "gets",
+          "s": 54.16,
+          "e": 54.35,
+          "c": 0.999975
+        },
+        {
+          "w": "everybody's",
+          "s": 54.39,
+          "e": 55.06,
+          "c": 0.999956
+        },
+        {
+          "w": "attention.",
+          "s": 55.25,
+          "e": 55.8,
+          "c": 0.999985
+        },
+        {
+          "w": "So",
+          "s": 55.8,
+          "e": 55.94,
+          "c": 0.634039
+        },
+        {
+          "w": "when",
+          "s": 55.94,
+          "e": 56.13,
+          "c": 0.958131
+        },
+        {
+          "w": "did",
+          "s": 56.31,
+          "e": 56.45,
+          "c": 0.999975
+        },
+        {
+          "w": "masculinity",
+          "s": 56.45,
+          "e": 57.25,
+          "c": 0.999958
+        },
+        {
+          "w": "turn",
+          "s": 57.26,
+          "e": 57.55,
+          "c": 0.999924
+        },
+        {
+          "w": "out",
+          "s": 57.55,
+          "e": 57.77,
+          "c": 0.999989
+        },
+        {
+          "w": "to",
+          "s": 57.77,
+          "e": 57.91,
+          "c": 1
+        },
+        {
+          "w": "be",
+          "s": 57.91,
+          "e": 58.05,
+          "c": 1
+        },
+        {
+          "w": "such",
+          "s": 58.05,
+          "e": 58.09,
+          "c": 0.99995
+        },
+        {
+          "w": "a",
+          "s": 58.14,
+          "e": 58.41,
+          "c": 0.999992
+        },
+        {
+          "w": "horrible",
+          "s": 58.69,
+          "e": 59,
+          "c": 0.999815
+        },
+        {
+          "w": "thing?",
+          "s": 59,
+          "e": 59.64,
+          "c": 0.995657
+        },
+        {
+          "w": "them.",
+          "s": 59.64,
+          "e": 59.98,
+          "c": 0.00878213
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 60,
+      "end_s": 82.25,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "did femininity turn out to be because i always think that if you hate one thing then you must hate the other right so i don't understand how we got to the point in this day and age of talking about masculinity and femininity when we are talking about pronouns and everything else so it comes down to race it comes down to gender and these are all ways to cancel people and i say just step away and and apparently",
+      "words": [
+        {
+          "w": "did",
+          "s": 60,
+          "e": 60.17,
+          "c": 0.363296
+        },
+        {
+          "w": "femininity",
+          "s": 60.33,
+          "e": 60.96,
+          "c": 0.994986
+        },
+        {
+          "w": "turn",
+          "s": 61.49,
+          "e": 61.52,
+          "c": 0.990605
+        },
+        {
+          "w": "out",
+          "s": 61.52,
+          "e": 61.76,
+          "c": 0.998163
+        },
+        {
+          "w": "to",
+          "s": 61.85,
+          "e": 61.92,
+          "c": 0.984975
+        },
+        {
+          "w": "be",
+          "s": 61.92,
+          "e": 62.03,
+          "c": 0.972077
+        },
+        {
+          "w": "because",
+          "s": 62.08,
+          "e": 62.41,
+          "c": 0.312853
+        },
+        {
+          "w": "i",
+          "s": 62.44,
+          "e": 62.47,
+          "c": 0.727952
+        },
+        {
+          "w": "always",
+          "s": 62.47,
+          "e": 62.79,
+          "c": 0.998801
+        },
+        {
+          "w": "think",
+          "s": 62.79,
+          "e": 63.06,
+          "c": 0.998992
+        },
+        {
+          "w": "that",
+          "s": 63.06,
+          "e": 63.27,
+          "c": 0.997438
+        },
+        {
+          "w": "if",
+          "s": 63.27,
+          "e": 63.31,
+          "c": 0.998706
+        },
+        {
+          "w": "you",
+          "s": 63.42,
+          "e": 63.53,
+          "c": 0.999575
+        },
+        {
+          "w": "hate",
+          "s": 63.53,
+          "e": 63.6,
+          "c": 0.991819
+        },
+        {
+          "w": "one",
+          "s": 63.77,
+          "e": 63.9,
+          "c": 0.9991
+        },
+        {
+          "w": "thing",
+          "s": 63.9,
+          "e": 64.17,
+          "c": 0.997381
+        },
+        {
+          "w": "then",
+          "s": 64.17,
+          "e": 64.38,
+          "c": 0.996246
+        },
+        {
+          "w": "you",
+          "s": 64.38,
+          "e": 64.54,
+          "c": 0.999979
+        },
+        {
+          "w": "must",
+          "s": 64.54,
+          "e": 64.75,
+          "c": 0.999542
+        },
+        {
+          "w": "hate",
+          "s": 64.82,
+          "e": 64.99,
+          "c": 0.979976
+        },
+        {
+          "w": "the",
+          "s": 65.15,
+          "e": 65.38,
+          "c": 0.999996
+        },
+        {
+          "w": "other",
+          "s": 65.38,
+          "e": 65.76,
+          "c": 0.999989
+        },
+        {
+          "w": "right",
+          "s": 65.76,
+          "e": 66.09,
+          "c": 0.999234
+        },
+        {
+          "w": "so",
+          "s": 66.31,
+          "e": 66.34,
+          "c": 0.965274
+        },
+        {
+          "w": "i",
+          "s": 66.35,
+          "e": 66.42,
+          "c": 0.999994
+        },
+        {
+          "w": "don't",
+          "s": 66.42,
+          "e": 66.82,
+          "c": 0.999998
+        },
+        {
+          "w": "understand",
+          "s": 66.82,
+          "e": 67.63,
+          "c": 0.999983
+        },
+        {
+          "w": "how",
+          "s": 67.63,
+          "e": 67.87,
+          "c": 0.999998
+        },
+        {
+          "w": "we",
+          "s": 67.87,
+          "e": 68.03,
+          "c": 0.999981
+        },
+        {
+          "w": "got",
+          "s": 68.03,
+          "e": 68.27,
+          "c": 0.999992
+        },
+        {
+          "w": "to",
+          "s": 68.27,
+          "e": 68.42,
+          "c": 0.999989
+        },
+        {
+          "w": "the",
+          "s": 68.59,
+          "e": 68.62,
+          "c": 0.999893
+        },
+        {
+          "w": "point",
+          "s": 68.68,
+          "e": 69.03,
+          "c": 0.999994
+        },
+        {
+          "w": "in",
+          "s": 69.09,
+          "e": 69.23,
+          "c": 0.994698
+        },
+        {
+          "w": "this",
+          "s": 69.23,
+          "e": 69.55,
+          "c": 0.999998
+        },
+        {
+          "w": "day",
+          "s": 69.55,
+          "e": 69.78,
+          "c": 0.999985
+        },
+        {
+          "w": "and",
+          "s": 69.87,
+          "e": 70.03,
+          "c": 0.997607
+        },
+        {
+          "w": "age",
+          "s": 70.03,
+          "e": 70.31,
+          "c": 0.999985
+        },
+        {
+          "w": "of",
+          "s": 70.36,
+          "e": 70.48,
+          "c": 0.999966
+        },
+        {
+          "w": "talking",
+          "s": 70.48,
+          "e": 70.92,
+          "c": 0.999987
+        },
+        {
+          "w": "about",
+          "s": 70.92,
+          "e": 71.23,
+          "c": 0.999998
+        },
+        {
+          "w": "masculinity",
+          "s": 71.23,
+          "e": 71.93,
+          "c": 0.999794
+        },
+        {
+          "w": "and",
+          "s": 71.93,
+          "e": 72.12,
+          "c": 0.999998
+        },
+        {
+          "w": "femininity",
+          "s": 72.12,
+          "e": 72.74,
+          "c": 0.999907
+        },
+        {
+          "w": "when",
+          "s": 72.74,
+          "e": 72.99,
+          "c": 0.999994
+        },
+        {
+          "w": "we",
+          "s": 72.99,
+          "e": 73.11,
+          "c": 1
+        },
+        {
+          "w": "are",
+          "s": 73.11,
+          "e": 73.21,
+          "c": 0.99995
+        },
+        {
+          "w": "talking",
+          "s": 73.32,
+          "e": 73.67,
+          "c": 0.999983
+        },
+        {
+          "w": "about",
+          "s": 73.78,
+          "e": 73.96,
+          "c": 0.999998
+        },
+        {
+          "w": "pronouns",
+          "s": 74.13,
+          "e": 74.56,
+          "c": 0.999781
+        },
+        {
+          "w": "and",
+          "s": 74.56,
+          "e": 74.75,
+          "c": 0.999983
+        },
+        {
+          "w": "everything",
+          "s": 74.75,
+          "e": 75.31,
+          "c": 0.999073
+        },
+        {
+          "w": "else",
+          "s": 75.4,
+          "e": 75.72,
+          "c": 0.995813
+        },
+        {
+          "w": "so",
+          "s": 75.72,
+          "e": 75.84,
+          "c": 0.999958
+        },
+        {
+          "w": "it",
+          "s": 75.84,
+          "e": 75.89,
+          "c": 0.999992
+        },
+        {
+          "w": "comes",
+          "s": 76.05,
+          "e": 76.26,
+          "c": 0.999987
+        },
+        {
+          "w": "down",
+          "s": 76.26,
+          "e": 76.5,
+          "c": 0.999996
+        },
+        {
+          "w": "to",
+          "s": 76.5,
+          "e": 76.62,
+          "c": 1
+        },
+        {
+          "w": "race",
+          "s": 76.62,
+          "e": 76.69,
+          "c": 0.999973
+        },
+        {
+          "w": "it",
+          "s": 76.85,
+          "e": 76.98,
+          "c": 0.99995
+        },
+        {
+          "w": "comes",
+          "s": 77.21,
+          "e": 77.28,
+          "c": 0.999981
+        },
+        {
+          "w": "down",
+          "s": 77.28,
+          "e": 77.48,
+          "c": 0.999998
+        },
+        {
+          "w": "to",
+          "s": 77.57,
+          "e": 77.64,
+          "c": 0.999996
+        },
+        {
+          "w": "gender",
+          "s": 77.64,
+          "e": 78,
+          "c": 0.999975
+        },
+        {
+          "w": "and",
+          "s": 78,
+          "e": 78.18,
+          "c": 0.999996
+        },
+        {
+          "w": "these",
+          "s": 78.18,
+          "e": 78.48,
+          "c": 0.999981
+        },
+        {
+          "w": "are",
+          "s": 78.48,
+          "e": 78.57,
+          "c": 0.999996
+        },
+        {
+          "w": "all",
+          "s": 78.68,
+          "e": 78.81,
+          "c": 0.971838
+        },
+        {
+          "w": "ways",
+          "s": 78.87,
+          "e": 79.03,
+          "c": 0.999937
+        },
+        {
+          "w": "to",
+          "s": 79.14,
+          "e": 79.2,
+          "c": 0.999998
+        },
+        {
+          "w": "cancel",
+          "s": 79.2,
+          "e": 79.52,
+          "c": 0.999929
+        },
+        {
+          "w": "people",
+          "s": 79.58,
+          "e": 80.04,
+          "c": 0.999964
+        },
+        {
+          "w": "and",
+          "s": 80.04,
+          "e": 80.21,
+          "c": 0.999952
+        },
+        {
+          "w": "i",
+          "s": 80.29,
+          "e": 80.29,
+          "c": 0.999989
+        },
+        {
+          "w": "say",
+          "s": 80.37,
+          "e": 80.48,
+          "c": 0.999956
+        },
+        {
+          "w": "just",
+          "s": 80.48,
+          "e": 80.73,
+          "c": 0.999989
+        },
+        {
+          "w": "step",
+          "s": 80.73,
+          "e": 80.97,
+          "c": 0.999931
+        },
+        {
+          "w": "away",
+          "s": 80.97,
+          "e": 81.01,
+          "c": 0.999977
+        },
+        {
+          "w": "and",
+          "s": 81.21,
+          "e": 81.42,
+          "c": 0.99999
+        },
+        {
+          "w": "and",
+          "s": 81.53,
+          "e": 81.61,
+          "c": 0.987992
+        },
+        {
+          "w": "apparently",
+          "s": 81.61,
+          "e": 82.25,
+          "c": 0.999987
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 82.25,
+      "end_s": 82.38,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "he",
+      "words": [
+        {
+          "w": "he",
+          "s": 82.25,
+          "e": 82.38,
+          "c": 0.999996
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 82.38,
+      "end_s": 84.32,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "has because he's been pretty quiet",
+      "words": [
+        {
+          "w": "has",
+          "s": 82.38,
+          "e": 82.57,
+          "c": 0.999977
+        },
+        {
+          "w": "because",
+          "s": 82.57,
+          "e": 83.02,
+          "c": 0.999828
+        },
+        {
+          "w": "he's",
+          "s": 83.02,
+          "e": 83.26,
+          "c": 0.999367
+        },
+        {
+          "w": "been",
+          "s": 83.27,
+          "e": 83.52,
+          "c": 0.999989
+        },
+        {
+          "w": "pretty",
+          "s": 83.52,
+          "e": 83.84,
+          "c": 0.999975
+        },
+        {
+          "w": "quiet",
+          "s": 83.9,
+          "e": 84.32,
+          "c": 0.999832
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 84.32,
+      "end_s": 84.5,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "he",
+      "words": [
+        {
+          "w": "he",
+          "s": 84.32,
+          "e": 84.5,
+          "c": 0.984757
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 84.5,
+      "end_s": 89.37,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "has been We do have a resident expert on masculinity who happens to be in the middle seat.",
+      "words": [
+        {
+          "w": "has",
+          "s": 84.5,
+          "e": 84.77,
+          "c": 0.999844
+        },
+        {
+          "w": "been",
+          "s": 84.77,
+          "e": 85.16,
+          "c": 0.99253
+        },
+        {
+          "w": "We",
+          "s": 85.16,
+          "e": 85.28,
+          "c": 0.534836
+        },
+        {
+          "w": "do",
+          "s": 85.28,
+          "e": 85.33,
+          "c": 0.90322
+        },
+        {
+          "w": "have",
+          "s": 85.49,
+          "e": 85.65,
+          "c": 0.997449
+        },
+        {
+          "w": "a",
+          "s": 85.65,
+          "e": 85.71,
+          "c": 0.994991
+        },
+        {
+          "w": "resident",
+          "s": 85.71,
+          "e": 86.1,
+          "c": 0.996547
+        },
+        {
+          "w": "expert",
+          "s": 86.62,
+          "e": 86.62,
+          "c": 0.994856
+        },
+        {
+          "w": "on",
+          "s": 86.68,
+          "e": 86.74,
+          "c": 0.982281
+        },
+        {
+          "w": "masculinity",
+          "s": 86.74,
+          "e": 87.44,
+          "c": 0.973924
+        },
+        {
+          "w": "who",
+          "s": 87.49,
+          "e": 87.8,
+          "c": 0.371405
+        },
+        {
+          "w": "happens",
+          "s": 87.8,
+          "e": 88.01,
+          "c": 0.907997
+        },
+        {
+          "w": "to",
+          "s": 88.12,
+          "e": 88.16,
+          "c": 0.901398
+        },
+        {
+          "w": "be",
+          "s": 88.16,
+          "e": 88.36,
+          "c": 0.98814
+        },
+        {
+          "w": "in",
+          "s": 88.36,
+          "e": 88.46,
+          "c": 0.961447
+        },
+        {
+          "w": "the",
+          "s": 88.46,
+          "e": 88.69,
+          "c": 0.980876
+        },
+        {
+          "w": "middle",
+          "s": 88.69,
+          "e": 89.14,
+          "c": 0.92448
+        },
+        {
+          "w": "seat.",
+          "s": 89.21,
+          "e": 89.37,
+          "c": 0.541045
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 90,
+      "end_s": 91.37,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "it is it's funny because i",
+      "words": [
+        {
+          "w": "it",
+          "s": 90,
+          "e": 90.13,
+          "c": 0.0760825
+        },
+        {
+          "w": "is",
+          "s": 90.13,
+          "e": 90.26,
+          "c": 0.894577
+        },
+        {
+          "w": "it's",
+          "s": 90.26,
+          "e": 90.52,
+          "c": 0.517466
+        },
+        {
+          "w": "funny",
+          "s": 90.52,
+          "e": 90.85,
+          "c": 0.997546
+        },
+        {
+          "w": "because",
+          "s": 90.85,
+          "e": 91.31,
+          "c": 0.925608
+        },
+        {
+          "w": "i",
+          "s": 91.31,
+          "e": 91.37,
+          "c": 0.712443
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 91.37,
+      "end_s": 120.02,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "married a woman who grew up on a dairy farm so i'm actually more of like a housewife but uh no i get it and i'm with holly on this one and you know this is the frustration okay masculinity is why we're here in the overall scheme of things we're here as a free country because our grandparents stormed the beach and saved private ryan this generation is watching private ryan and complaining that the cast isn't inclusive enough you know what i mean But the thing is, when you try to break this down",
+      "words": [
+        {
+          "w": "married",
+          "s": 91.37,
+          "e": 91.83,
+          "c": 0.989488
+        },
+        {
+          "w": "a",
+          "s": 91.83,
+          "e": 91.86,
+          "c": 0.998921
+        },
+        {
+          "w": "woman",
+          "s": 91.9,
+          "e": 92.22,
+          "c": 0.997147
+        },
+        {
+          "w": "who",
+          "s": 92.22,
+          "e": 92.42,
+          "c": 0.994401
+        },
+        {
+          "w": "grew",
+          "s": 92.42,
+          "e": 92.68,
+          "c": 0.999045
+        },
+        {
+          "w": "up",
+          "s": 92.68,
+          "e": 92.81,
+          "c": 0.998999
+        },
+        {
+          "w": "on",
+          "s": 92.81,
+          "e": 92.91,
+          "c": 0.998607
+        },
+        {
+          "w": "a",
+          "s": 92.98,
+          "e": 93,
+          "c": 0.999596
+        },
+        {
+          "w": "dairy",
+          "s": 93,
+          "e": 93.33,
+          "c": 0.997457
+        },
+        {
+          "w": "farm",
+          "s": 93.33,
+          "e": 93.58,
+          "c": 0.999192
+        },
+        {
+          "w": "so",
+          "s": 93.67,
+          "e": 93.72,
+          "c": 0.991123
+        },
+        {
+          "w": "i'm",
+          "s": 93.72,
+          "e": 93.91,
+          "c": 0.994875
+        },
+        {
+          "w": "actually",
+          "s": 93.91,
+          "e": 94.56,
+          "c": 0.996787
+        },
+        {
+          "w": "more",
+          "s": 94.56,
+          "e": 94.8,
+          "c": 0.968629
+        },
+        {
+          "w": "of",
+          "s": 94.8,
+          "e": 94.89,
+          "c": 0.971693
+        },
+        {
+          "w": "like",
+          "s": 94.9,
+          "e": 95.22,
+          "c": 0.964352
+        },
+        {
+          "w": "a",
+          "s": 95.22,
+          "e": 95.3,
+          "c": 0.999996
+        },
+        {
+          "w": "housewife",
+          "s": 95.3,
+          "e": 96.02,
+          "c": 0.996242
+        },
+        {
+          "w": "but",
+          "s": 96.02,
+          "e": 96.26,
+          "c": 0.999908
+        },
+        {
+          "w": "uh",
+          "s": 96.26,
+          "e": 96.42,
+          "c": 0.997236
+        },
+        {
+          "w": "no",
+          "s": 96.42,
+          "e": 96.48,
+          "c": 0.999952
+        },
+        {
+          "w": "i",
+          "s": 96.6,
+          "e": 96.66,
+          "c": 0.999739
+        },
+        {
+          "w": "get",
+          "s": 96.66,
+          "e": 96.9,
+          "c": 0.999971
+        },
+        {
+          "w": "it",
+          "s": 96.9,
+          "e": 97.06,
+          "c": 0.999996
+        },
+        {
+          "w": "and",
+          "s": 97.06,
+          "e": 97.3,
+          "c": 0.999994
+        },
+        {
+          "w": "i'm",
+          "s": 97.3,
+          "e": 97.54,
+          "c": 0.999947
+        },
+        {
+          "w": "with",
+          "s": 97.54,
+          "e": 97.81,
+          "c": 0.798397
+        },
+        {
+          "w": "holly",
+          "s": 97.88,
+          "e": 98.26,
+          "c": 0.563187
+        },
+        {
+          "w": "on",
+          "s": 98.26,
+          "e": 98.42,
+          "c": 0.999992
+        },
+        {
+          "w": "this",
+          "s": 98.42,
+          "e": 98.74,
+          "c": 0.999998
+        },
+        {
+          "w": "one",
+          "s": 98.74,
+          "e": 98.92,
+          "c": 0.99999
+        },
+        {
+          "w": "and",
+          "s": 99,
+          "e": 99.22,
+          "c": 0.999994
+        },
+        {
+          "w": "you",
+          "s": 99.22,
+          "e": 99.46,
+          "c": 0.999983
+        },
+        {
+          "w": "know",
+          "s": 99.46,
+          "e": 99.78,
+          "c": 0.999998
+        },
+        {
+          "w": "this",
+          "s": 99.78,
+          "e": 100.1,
+          "c": 0.999977
+        },
+        {
+          "w": "is",
+          "s": 100.1,
+          "e": 100.18,
+          "c": 0.999987
+        },
+        {
+          "w": "the",
+          "s": 100.28,
+          "e": 100.51,
+          "c": 0.990514
+        },
+        {
+          "w": "frustration",
+          "s": 100.52,
+          "e": 101.49,
+          "c": 0.99732
+        },
+        {
+          "w": "okay",
+          "s": 101.49,
+          "e": 101.84,
+          "c": 0.99859
+        },
+        {
+          "w": "masculinity",
+          "s": 101.84,
+          "e": 102.81,
+          "c": 0.997459
+        },
+        {
+          "w": "is",
+          "s": 102.81,
+          "e": 102.98,
+          "c": 0.999996
+        },
+        {
+          "w": "why",
+          "s": 102.98,
+          "e": 103.23,
+          "c": 0.999987
+        },
+        {
+          "w": "we're",
+          "s": 103.23,
+          "e": 103.67,
+          "c": 0.999989
+        },
+        {
+          "w": "here",
+          "s": 103.67,
+          "e": 104.02,
+          "c": 0.999981
+        },
+        {
+          "w": "in",
+          "s": 104.02,
+          "e": 104.1,
+          "c": 0.999987
+        },
+        {
+          "w": "the",
+          "s": 104.19,
+          "e": 104.45,
+          "c": 1
+        },
+        {
+          "w": "overall",
+          "s": 104.45,
+          "e": 105.06,
+          "c": 0.999964
+        },
+        {
+          "w": "scheme",
+          "s": 105.06,
+          "e": 105.58,
+          "c": 0.998999
+        },
+        {
+          "w": "of",
+          "s": 105.58,
+          "e": 105.75,
+          "c": 1
+        },
+        {
+          "w": "things",
+          "s": 105.75,
+          "e": 106.26,
+          "c": 0.999989
+        },
+        {
+          "w": "we're",
+          "s": 106.26,
+          "e": 106.7,
+          "c": 0.999943
+        },
+        {
+          "w": "here",
+          "s": 106.7,
+          "e": 107.05,
+          "c": 0.999796
+        },
+        {
+          "w": "as",
+          "s": 107.05,
+          "e": 107.32,
+          "c": 0.997193
+        },
+        {
+          "w": "a",
+          "s": 107.32,
+          "e": 107.42,
+          "c": 0.97516
+        },
+        {
+          "w": "free",
+          "s": 107.42,
+          "e": 107.6,
+          "c": 0.812166
+        },
+        {
+          "w": "country",
+          "s": 107.6,
+          "e": 108.07,
+          "c": 0.999636
+        },
+        {
+          "w": "because",
+          "s": 108.07,
+          "e": 108.54,
+          "c": 0.99999
+        },
+        {
+          "w": "our",
+          "s": 108.54,
+          "e": 108.74,
+          "c": 0.99999
+        },
+        {
+          "w": "grandparents",
+          "s": 108.74,
+          "e": 109.54,
+          "c": 0.997809
+        },
+        {
+          "w": "stormed",
+          "s": 109.54,
+          "e": 110,
+          "c": 0.999403
+        },
+        {
+          "w": "the",
+          "s": 110,
+          "e": 110.2,
+          "c": 0.999989
+        },
+        {
+          "w": "beach",
+          "s": 110.2,
+          "e": 110.51,
+          "c": 0.999969
+        },
+        {
+          "w": "and",
+          "s": 110.58,
+          "e": 110.73,
+          "c": 0.999996
+        },
+        {
+          "w": "saved",
+          "s": 110.73,
+          "e": 111.06,
+          "c": 0.999878
+        },
+        {
+          "w": "private",
+          "s": 111.06,
+          "e": 111.53,
+          "c": 0.999592
+        },
+        {
+          "w": "ryan",
+          "s": 111.53,
+          "e": 111.79,
+          "c": 0.994154
+        },
+        {
+          "w": "this",
+          "s": 111.79,
+          "e": 112.05,
+          "c": 0.999579
+        },
+        {
+          "w": "generation",
+          "s": 112.05,
+          "e": 112.78,
+          "c": 0.999941
+        },
+        {
+          "w": "is",
+          "s": 112.78,
+          "e": 113.08,
+          "c": 0.958082
+        },
+        {
+          "w": "watching",
+          "s": 113.08,
+          "e": 113.5,
+          "c": 0.99984
+        },
+        {
+          "w": "private",
+          "s": 113.5,
+          "e": 113.87,
+          "c": 0.999887
+        },
+        {
+          "w": "ryan",
+          "s": 113.87,
+          "e": 114.07,
+          "c": 0.999125
+        },
+        {
+          "w": "and",
+          "s": 114.07,
+          "e": 114.22,
+          "c": 0.999949
+        },
+        {
+          "w": "complaining",
+          "s": 114.22,
+          "e": 114.8,
+          "c": 0.999889
+        },
+        {
+          "w": "that",
+          "s": 114.8,
+          "e": 115.01,
+          "c": 0.99674
+        },
+        {
+          "w": "the",
+          "s": 115.01,
+          "e": 115.16,
+          "c": 0.999889
+        },
+        {
+          "w": "cast",
+          "s": 115.16,
+          "e": 115.36,
+          "c": 0.994325
+        },
+        {
+          "w": "isn't",
+          "s": 115.37,
+          "e": 115.62,
+          "c": 0.999626
+        },
+        {
+          "w": "inclusive",
+          "s": 115.62,
+          "e": 116.09,
+          "c": 0.999842
+        },
+        {
+          "w": "enough",
+          "s": 116.09,
+          "e": 116.4,
+          "c": 0.999994
+        },
+        {
+          "w": "you",
+          "s": 116.4,
+          "e": 116.55,
+          "c": 0.999979
+        },
+        {
+          "w": "know",
+          "s": 116.55,
+          "e": 116.76,
+          "c": 0.999205
+        },
+        {
+          "w": "what",
+          "s": 116.76,
+          "e": 116.97,
+          "c": 0.999842
+        },
+        {
+          "w": "i",
+          "s": 116.97,
+          "e": 117.02,
+          "c": 0.999706
+        },
+        {
+          "w": "mean",
+          "s": 117.02,
+          "e": 117.34,
+          "c": 0.998544
+        },
+        {
+          "w": "But",
+          "s": 117.34,
+          "e": 117.57,
+          "c": 0.465368
+        },
+        {
+          "w": "the",
+          "s": 117.57,
+          "e": 117.8,
+          "c": 0.979918
+        },
+        {
+          "w": "thing",
+          "s": 117.8,
+          "e": 118.18,
+          "c": 0.997362
+        },
+        {
+          "w": "is,",
+          "s": 118.18,
+          "e": 118.6,
+          "c": 0.657329
+        },
+        {
+          "w": "when",
+          "s": 118.6,
+          "e": 118.73,
+          "c": 0.932784
+        },
+        {
+          "w": "you",
+          "s": 118.73,
+          "e": 118.76,
+          "c": 0.99747
+        },
+        {
+          "w": "try",
+          "s": 118.85,
+          "e": 118.92,
+          "c": 0.990441
+        },
+        {
+          "w": "to",
+          "s": 119.04,
+          "e": 119.08,
+          "c": 0.977143
+        },
+        {
+          "w": "break",
+          "s": 119.08,
+          "e": 119.43,
+          "c": 0.982077
+        },
+        {
+          "w": "this",
+          "s": 119.43,
+          "e": 119.71,
+          "c": 0.99732
+        },
+        {
+          "w": "down",
+          "s": 119.71,
+          "e": 120.02,
+          "c": 0.989336
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 120,
+      "end_s": 138.79,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "racial lines this is the real hustle because minority children suffer from a strong male presence in the home at a much higher rate than anybody else so if you're going to get out there and champion strong male role models it's only going to help communities as studies show across all racial barriers that's why when they say like oh you know race",
+      "words": [
+        {
+          "w": "racial",
+          "s": 120,
+          "e": 120.45,
+          "c": 0.896414
+        },
+        {
+          "w": "lines",
+          "s": 120.45,
+          "e": 120.84,
+          "c": 0.997659
+        },
+        {
+          "w": "this",
+          "s": 120.84,
+          "e": 121.16,
+          "c": 0.503152
+        },
+        {
+          "w": "is",
+          "s": 121.16,
+          "e": 121.32,
+          "c": 0.998471
+        },
+        {
+          "w": "the",
+          "s": 121.32,
+          "e": 121.56,
+          "c": 0.998679
+        },
+        {
+          "w": "real",
+          "s": 121.56,
+          "e": 121.88,
+          "c": 0.996904
+        },
+        {
+          "w": "hustle",
+          "s": 121.88,
+          "e": 122.2,
+          "c": 0.984911
+        },
+        {
+          "w": "because",
+          "s": 122.54,
+          "e": 122.8,
+          "c": 0.931601
+        },
+        {
+          "w": "minority",
+          "s": 122.8,
+          "e": 123.44,
+          "c": 0.974287
+        },
+        {
+          "w": "children",
+          "s": 123.47,
+          "e": 124.16,
+          "c": 0.990151
+        },
+        {
+          "w": "suffer",
+          "s": 124.16,
+          "e": 124.47,
+          "c": 0.98688
+        },
+        {
+          "w": "from",
+          "s": 124.56,
+          "e": 124.8,
+          "c": 0.997109
+        },
+        {
+          "w": "a",
+          "s": 124.8,
+          "e": 124.96,
+          "c": 0.968967
+        },
+        {
+          "w": "strong",
+          "s": 124.96,
+          "e": 125.36,
+          "c": 0.955998
+        },
+        {
+          "w": "male",
+          "s": 125.36,
+          "e": 125.6,
+          "c": 0.987164
+        },
+        {
+          "w": "presence",
+          "s": 125.6,
+          "e": 126.04,
+          "c": 0.999813
+        },
+        {
+          "w": "in",
+          "s": 126.04,
+          "e": 126.15,
+          "c": 0.999846
+        },
+        {
+          "w": "the",
+          "s": 126.15,
+          "e": 126.31,
+          "c": 0.999735
+        },
+        {
+          "w": "home",
+          "s": 126.31,
+          "e": 126.53,
+          "c": 0.999876
+        },
+        {
+          "w": "at",
+          "s": 126.53,
+          "e": 126.64,
+          "c": 0.999285
+        },
+        {
+          "w": "a",
+          "s": 126.64,
+          "e": 126.67,
+          "c": 0.999805
+        },
+        {
+          "w": "much",
+          "s": 126.7,
+          "e": 126.9,
+          "c": 0.999834
+        },
+        {
+          "w": "higher",
+          "s": 126.91,
+          "e": 127.24,
+          "c": 0.999874
+        },
+        {
+          "w": "rate",
+          "s": 127.24,
+          "e": 127.46,
+          "c": 0.999647
+        },
+        {
+          "w": "than",
+          "s": 127.46,
+          "e": 127.68,
+          "c": 0.999224
+        },
+        {
+          "w": "anybody",
+          "s": 127.68,
+          "e": 127.8,
+          "c": 0.999598
+        },
+        {
+          "w": "else",
+          "s": 128.14,
+          "e": 128.27,
+          "c": 0.999815
+        },
+        {
+          "w": "so",
+          "s": 128.29,
+          "e": 128.39,
+          "c": 0.974962
+        },
+        {
+          "w": "if",
+          "s": 128.39,
+          "e": 128.5,
+          "c": 0.999516
+        },
+        {
+          "w": "you're",
+          "s": 128.5,
+          "e": 128.82,
+          "c": 0.99983
+        },
+        {
+          "w": "going",
+          "s": 128.82,
+          "e": 129.09,
+          "c": 0.916943
+        },
+        {
+          "w": "to",
+          "s": 129.09,
+          "e": 129.19,
+          "c": 0.998237
+        },
+        {
+          "w": "get",
+          "s": 129.25,
+          "e": 129.44,
+          "c": 0.996259
+        },
+        {
+          "w": "out",
+          "s": 129.44,
+          "e": 129.6,
+          "c": 0.859337
+        },
+        {
+          "w": "there",
+          "s": 129.6,
+          "e": 129.76,
+          "c": 0.984399
+        },
+        {
+          "w": "and",
+          "s": 129.76,
+          "e": 129.92,
+          "c": 0.999295
+        },
+        {
+          "w": "champion",
+          "s": 129.92,
+          "e": 130.35,
+          "c": 0.997817
+        },
+        {
+          "w": "strong",
+          "s": 130.35,
+          "e": 130.69,
+          "c": 0.997847
+        },
+        {
+          "w": "male",
+          "s": 130.7,
+          "e": 130.9,
+          "c": 0.999205
+        },
+        {
+          "w": "role",
+          "s": 130.91,
+          "e": 131.13,
+          "c": 0.999563
+        },
+        {
+          "w": "models",
+          "s": 131.13,
+          "e": 131.45,
+          "c": 0.999842
+        },
+        {
+          "w": "it's",
+          "s": 131.46,
+          "e": 131.66,
+          "c": 0.996706
+        },
+        {
+          "w": "only",
+          "s": 131.71,
+          "e": 131.9,
+          "c": 0.999859
+        },
+        {
+          "w": "going",
+          "s": 131.9,
+          "e": 132.12,
+          "c": 0.997653
+        },
+        {
+          "w": "to",
+          "s": 132.29,
+          "e": 132.29,
+          "c": 0.999865
+        },
+        {
+          "w": "help",
+          "s": 132.3,
+          "e": 132.51,
+          "c": 0.99991
+        },
+        {
+          "w": "communities",
+          "s": 132.51,
+          "e": 133.12,
+          "c": 0.999312
+        },
+        {
+          "w": "as",
+          "s": 133.12,
+          "e": 133.2,
+          "c": 0.984541
+        },
+        {
+          "w": "studies",
+          "s": 133.23,
+          "e": 133.68,
+          "c": 0.992373
+        },
+        {
+          "w": "show",
+          "s": 133.68,
+          "e": 134.23,
+          "c": 0.967767
+        },
+        {
+          "w": "across",
+          "s": 134.32,
+          "e": 134.77,
+          "c": 0.997175
+        },
+        {
+          "w": "all",
+          "s": 134.77,
+          "e": 134.99,
+          "c": 0.999926
+        },
+        {
+          "w": "racial",
+          "s": 134.99,
+          "e": 135.44,
+          "c": 0.999744
+        },
+        {
+          "w": "barriers",
+          "s": 135.47,
+          "e": 136.01,
+          "c": 0.9998
+        },
+        {
+          "w": "that's",
+          "s": 136.03,
+          "e": 136.49,
+          "c": 0.996101
+        },
+        {
+          "w": "why",
+          "s": 136.49,
+          "e": 136.68,
+          "c": 0.999834
+        },
+        {
+          "w": "when",
+          "s": 136.86,
+          "e": 137.01,
+          "c": 0.999609
+        },
+        {
+          "w": "they",
+          "s": 137.01,
+          "e": 137.31,
+          "c": 0.999975
+        },
+        {
+          "w": "say",
+          "s": 137.31,
+          "e": 137.53,
+          "c": 0.999941
+        },
+        {
+          "w": "like",
+          "s": 137.53,
+          "e": 137.83,
+          "c": 0.998494
+        },
+        {
+          "w": "oh",
+          "s": 137.83,
+          "e": 137.98,
+          "c": 0.722637
+        },
+        {
+          "w": "you",
+          "s": 137.98,
+          "e": 138.2,
+          "c": 0.996006
+        },
+        {
+          "w": "know",
+          "s": 138.2,
+          "e": 138.5,
+          "c": 0.983802
+        },
+        {
+          "w": "race",
+          "s": 138.5,
+          "e": 138.79,
+          "c": 0.995485
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 138.97,
+      "end_s": 153.69,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "When you go to race now, everybody knows it's because you've lost the argument. You know, they say in comedy you're not supposed to open with your closer. Calling things racist in this day and age is the closer. And if you're opening with it, it means you don't have anything else. So I'm going Hawley. Even though he doesn't look terribly masculine, he's got very pretty hair. But",
+      "words": [
+        {
+          "w": "When",
+          "s": 138.965,
+          "e": 139.045,
+          "c": 0.93008
+        },
+        {
+          "w": "you",
+          "s": 139.095,
+          "e": 139.285,
+          "c": 0.998416
+        },
+        {
+          "w": "go",
+          "s": 139.285,
+          "e": 139.415,
+          "c": 0.997092
+        },
+        {
+          "w": "to",
+          "s": 139.415,
+          "e": 139.545,
+          "c": 0.999478
+        },
+        {
+          "w": "race",
+          "s": 139.545,
+          "e": 139.795,
+          "c": 0.994486
+        },
+        {
+          "w": "now,",
+          "s": 139.795,
+          "e": 140.145,
+          "c": 0.988274
+        },
+        {
+          "w": "everybody",
+          "s": 140.145,
+          "e": 140.375,
+          "c": 0.898214
+        },
+        {
+          "w": "knows",
+          "s": 140.375,
+          "e": 140.675,
+          "c": 0.989272
+        },
+        {
+          "w": "it's",
+          "s": 140.675,
+          "e": 140.805,
+          "c": 0.920613
+        },
+        {
+          "w": "because",
+          "s": 140.875,
+          "e": 141.075,
+          "c": 0.98593
+        },
+        {
+          "w": "you've",
+          "s": 141.075,
+          "e": 141.275,
+          "c": 0.993195
+        },
+        {
+          "w": "lost",
+          "s": 141.275,
+          "e": 141.395,
+          "c": 0.997554
+        },
+        {
+          "w": "the",
+          "s": 141.395,
+          "e": 141.505,
+          "c": 0.997495
+        },
+        {
+          "w": "argument.",
+          "s": 141.505,
+          "e": 141.885,
+          "c": 0.996837
+        },
+        {
+          "w": "You",
+          "s": 141.995,
+          "e": 141.995,
+          "c": 0.853276
+        },
+        {
+          "w": "know,",
+          "s": 142.005,
+          "e": 142.245,
+          "c": 0.996111
+        },
+        {
+          "w": "they",
+          "s": 142.245,
+          "e": 142.405,
+          "c": 0.999897
+        },
+        {
+          "w": "say",
+          "s": 142.405,
+          "e": 142.525,
+          "c": 0.99999
+        },
+        {
+          "w": "in",
+          "s": 142.525,
+          "e": 142.595,
+          "c": 0.999931
+        },
+        {
+          "w": "comedy",
+          "s": 142.595,
+          "e": 142.845,
+          "c": 0.999918
+        },
+        {
+          "w": "you're",
+          "s": 142.845,
+          "e": 143.085,
+          "c": 0.66398
+        },
+        {
+          "w": "not",
+          "s": 143.085,
+          "e": 143.205,
+          "c": 0.999998
+        },
+        {
+          "w": "supposed",
+          "s": 143.205,
+          "e": 143.525,
+          "c": 0.999952
+        },
+        {
+          "w": "to",
+          "s": 143.525,
+          "e": 143.605,
+          "c": 0.999994
+        },
+        {
+          "w": "open",
+          "s": 143.605,
+          "e": 143.765,
+          "c": 0.999966
+        },
+        {
+          "w": "with",
+          "s": 143.765,
+          "e": 143.925,
+          "c": 0.999765
+        },
+        {
+          "w": "your",
+          "s": 143.925,
+          "e": 144.075,
+          "c": 0.999683
+        },
+        {
+          "w": "closer.",
+          "s": 144.085,
+          "e": 144.435,
+          "c": 0.984941
+        },
+        {
+          "w": "Calling",
+          "s": 144.605,
+          "e": 144.865,
+          "c": 0.999253
+        },
+        {
+          "w": "things",
+          "s": 144.865,
+          "e": 145.185,
+          "c": 0.999981
+        },
+        {
+          "w": "racist",
+          "s": 145.185,
+          "e": 145.505,
+          "c": 0.999657
+        },
+        {
+          "w": "in",
+          "s": 145.505,
+          "e": 145.595,
+          "c": 0.999964
+        },
+        {
+          "w": "this",
+          "s": 145.645,
+          "e": 145.815,
+          "c": 0.999985
+        },
+        {
+          "w": "day",
+          "s": 145.815,
+          "e": 145.975,
+          "c": 0.999981
+        },
+        {
+          "w": "and",
+          "s": 145.975,
+          "e": 146.135,
+          "c": 0.999968
+        },
+        {
+          "w": "age",
+          "s": 146.135,
+          "e": 146.295,
+          "c": 0.999977
+        },
+        {
+          "w": "is",
+          "s": 146.295,
+          "e": 146.395,
+          "c": 0.999632
+        },
+        {
+          "w": "the",
+          "s": 146.395,
+          "e": 146.555,
+          "c": 0.99996
+        },
+        {
+          "w": "closer.",
+          "s": 146.555,
+          "e": 147.035,
+          "c": 0.765952
+        },
+        {
+          "w": "And",
+          "s": 147.215,
+          "e": 147.235,
+          "c": 0.999966
+        },
+        {
+          "w": "if",
+          "s": 147.235,
+          "e": 147.305,
+          "c": 0.999615
+        },
+        {
+          "w": "you're",
+          "s": 147.355,
+          "e": 147.555,
+          "c": 0.999989
+        },
+        {
+          "w": "opening",
+          "s": 147.605,
+          "e": 147.875,
+          "c": 0.999916
+        },
+        {
+          "w": "with",
+          "s": 147.875,
+          "e": 148.045,
+          "c": 0.957225
+        },
+        {
+          "w": "it,",
+          "s": 148.045,
+          "e": 148.205,
+          "c": 0.999947
+        },
+        {
+          "w": "it",
+          "s": 148.205,
+          "e": 148.285,
+          "c": 0.999924
+        },
+        {
+          "w": "means",
+          "s": 148.285,
+          "e": 148.495,
+          "c": 0.999979
+        },
+        {
+          "w": "you",
+          "s": 148.495,
+          "e": 148.625,
+          "c": 1
+        },
+        {
+          "w": "don't",
+          "s": 148.625,
+          "e": 148.835,
+          "c": 0.999996
+        },
+        {
+          "w": "have",
+          "s": 148.835,
+          "e": 149.005,
+          "c": 0.999998
+        },
+        {
+          "w": "anything",
+          "s": 149.005,
+          "e": 149.355,
+          "c": 0.999966
+        },
+        {
+          "w": "else.",
+          "s": 149.355,
+          "e": 149.745,
+          "c": 0.999996
+        },
+        {
+          "w": "So",
+          "s": 149.855,
+          "e": 149.875,
+          "c": 0.999992
+        },
+        {
+          "w": "I'm",
+          "s": 149.875,
+          "e": 150.075,
+          "c": 0.888322
+        },
+        {
+          "w": "going",
+          "s": 150.075,
+          "e": 150.415,
+          "c": 0.999855
+        },
+        {
+          "w": "Hawley.",
+          "s": 150.415,
+          "e": 151.065,
+          "c": 0.917706
+        },
+        {
+          "w": "Even",
+          "s": 151.175,
+          "e": 151.195,
+          "c": 0.999916
+        },
+        {
+          "w": "though",
+          "s": 151.195,
+          "e": 151.395,
+          "c": 0.999971
+        },
+        {
+          "w": "he",
+          "s": 151.395,
+          "e": 151.455,
+          "c": 0.999802
+        },
+        {
+          "w": "doesn't",
+          "s": 151.455,
+          "e": 151.675,
+          "c": 0.999943
+        },
+        {
+          "w": "look",
+          "s": 151.675,
+          "e": 151.795,
+          "c": 0.999981
+        },
+        {
+          "w": "terribly",
+          "s": 151.795,
+          "e": 152.065,
+          "c": 0.999975
+        },
+        {
+          "w": "masculine,",
+          "s": 152.065,
+          "e": 152.465,
+          "c": 0.983475
+        },
+        {
+          "w": "he's",
+          "s": 152.465,
+          "e": 152.635,
+          "c": 0.980828
+        },
+        {
+          "w": "got",
+          "s": 152.635,
+          "e": 152.765,
+          "c": 0.999994
+        },
+        {
+          "w": "very",
+          "s": 152.765,
+          "e": 152.945,
+          "c": 0.999918
+        },
+        {
+          "w": "pretty",
+          "s": 152.945,
+          "e": 153.205,
+          "c": 0.999985
+        },
+        {
+          "w": "hair.",
+          "s": 153.205,
+          "e": 153.545,
+          "c": 0.951268
+        },
+        {
+          "w": "But",
+          "s": 153.655,
+          "e": 153.695,
+          "c": 0.983759
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 153.69,
+      "end_s": 154.54,
+      "speaker": "SPEAKER_18",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I'm just saying.",
+      "words": [
+        {
+          "w": "I'm",
+          "s": 153.695,
+          "e": 153.845,
+          "c": 0.999989
+        },
+        {
+          "w": "just",
+          "s": 153.845,
+          "e": 154.055,
+          "c": 0.999992
+        },
+        {
+          "w": "saying.",
+          "s": 154.055,
+          "e": 154.545,
+          "c": 0.998525
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 154.66,
+      "end_s": 154.67,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "He",
+      "words": [
+        {
+          "w": "He",
+          "s": 154.655,
+          "e": 154.655,
+          "c": 0.999605
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 154.66,
+      "end_s": 155.94,
+      "speaker": "SPEAKER_17",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "does. You do too.",
+      "words": [
+        {
+          "w": "does.",
+          "s": 154.665,
+          "e": 155.085,
+          "c": 0.80457
+        },
+        {
+          "w": "You",
+          "s": 155.205,
+          "e": 155.285,
+          "c": 0.883915
+        },
+        {
+          "w": "do",
+          "s": 155.335,
+          "e": 155.465,
+          "c": 0.983956
+        },
+        {
+          "w": "too.",
+          "s": 155.465,
+          "e": 155.945,
+          "c": 0.713409
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 155.99,
+      "end_s": 156,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I",
+      "words": [
+        {
+          "w": "I",
+          "s": 155.985,
+          "e": 155.985,
+          "c": 0.999916
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 156.06,
+      "end_s": 160.16,
+      "speaker": "SPEAKER_18",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "mean, I'm pretty enough, you know, but I got a makeup team. Hawley's full-time pretty. He's a snack.",
+      "words": [
+        {
+          "w": "mean,",
+          "s": 156.065,
+          "e": 156.255,
+          "c": 0.985534
+        },
+        {
+          "w": "I'm",
+          "s": 156.255,
+          "e": 156.385,
+          "c": 0.99995
+        },
+        {
+          "w": "pretty",
+          "s": 156.445,
+          "e": 156.655,
+          "c": 0.999928
+        },
+        {
+          "w": "enough,",
+          "s": 156.655,
+          "e": 157.005,
+          "c": 0.541012
+        },
+        {
+          "w": "you",
+          "s": 157.025,
+          "e": 157.155,
+          "c": 0.997014
+        },
+        {
+          "w": "know,",
+          "s": 157.155,
+          "e": 157.425,
+          "c": 0.85006
+        },
+        {
+          "w": "but",
+          "s": 157.425,
+          "e": 157.565,
+          "c": 0.999129
+        },
+        {
+          "w": "I",
+          "s": 157.565,
+          "e": 157.605,
+          "c": 0.999996
+        },
+        {
+          "w": "got",
+          "s": 157.605,
+          "e": 157.745,
+          "c": 0.847085
+        },
+        {
+          "w": "a",
+          "s": 157.745,
+          "e": 157.785,
+          "c": 0.999512
+        },
+        {
+          "w": "makeup",
+          "s": 157.785,
+          "e": 158.055,
+          "c": 0.986135
+        },
+        {
+          "w": "team.",
+          "s": 158.055,
+          "e": 158.445,
+          "c": 0.999979
+        },
+        {
+          "w": "Hawley's",
+          "s": 158.575,
+          "e": 158.835,
+          "c": 0.998652
+        },
+        {
+          "w": "full-time",
+          "s": 158.835,
+          "e": 159.255,
+          "c": 0.81951
+        },
+        {
+          "w": "pretty.",
+          "s": 159.255,
+          "e": 159.725,
+          "c": 0.999062
+        },
+        {
+          "w": "He's",
+          "s": 159.785,
+          "e": 159.835,
+          "c": 0.999849
+        },
+        {
+          "w": "a",
+          "s": 159.845,
+          "e": 159.875,
+          "c": 0.979537
+        },
+        {
+          "w": "snack.",
+          "s": 159.875,
+          "e": 160.165,
+          "c": 0.913339
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 160.25,
+      "end_s": 160.32,
+      "speaker": "SPEAKER_17",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "He's",
+      "words": [
+        {
+          "w": "He's",
+          "s": 160.245,
+          "e": 160.325,
+          "c": 0.447357
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 160.32,
+      "end_s": 168.87,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "pretty in that suit. He's a snack. Oh, my gosh. Laura, Senator Hawley, I mean, what a conservative rock star. I got to interview him at Turning Point. -",
+      "words": [
+        {
+          "w": "pretty",
+          "s": 160.325,
+          "e": 160.585,
+          "c": 0.984874
+        },
+        {
+          "w": "in",
+          "s": 160.585,
+          "e": 160.605,
+          "c": 0.99984
+        },
+        {
+          "w": "that",
+          "s": 160.665,
+          "e": 160.835,
+          "c": 0.999989
+        },
+        {
+          "w": "suit.",
+          "s": 160.835,
+          "e": 161.185,
+          "c": 0.999895
+        },
+        {
+          "w": "He's",
+          "s": 161.305,
+          "e": 161.565,
+          "c": 0.999916
+        },
+        {
+          "w": "a",
+          "s": 161.565,
+          "e": 161.625,
+          "c": 0.999584
+        },
+        {
+          "w": "snack.",
+          "s": 161.685,
+          "e": 162.465,
+          "c": 0.996814
+        },
+        {
+          "w": "Oh,",
+          "s": 162.575,
+          "e": 162.715,
+          "c": 0.756691
+        },
+        {
+          "w": "my",
+          "s": 162.725,
+          "e": 162.855,
+          "c": 0.999592
+        },
+        {
+          "w": "gosh.",
+          "s": 162.855,
+          "e": 163.325,
+          "c": 0.996219
+        },
+        {
+          "w": "Laura,",
+          "s": 163.445,
+          "e": 163.765,
+          "c": 0.858729
+        },
+        {
+          "w": "Senator",
+          "s": 163.825,
+          "e": 164.225,
+          "c": 0.997893
+        },
+        {
+          "w": "Hawley,",
+          "s": 164.225,
+          "e": 164.745,
+          "c": 0.889091
+        },
+        {
+          "w": "I",
+          "s": 164.745,
+          "e": 164.805,
+          "c": 0.999929
+        },
+        {
+          "w": "mean,",
+          "s": 164.805,
+          "e": 165.195,
+          "c": 0.999531
+        },
+        {
+          "w": "what",
+          "s": 165.195,
+          "e": 165.455,
+          "c": 0.999924
+        },
+        {
+          "w": "a",
+          "s": 165.455,
+          "e": 165.505,
+          "c": 0.999992
+        },
+        {
+          "w": "conservative",
+          "s": 165.505,
+          "e": 166.295,
+          "c": 0.999825
+        },
+        {
+          "w": "rock",
+          "s": 166.305,
+          "e": 166.415,
+          "c": 0.998024
+        },
+        {
+          "w": "star.",
+          "s": 166.595,
+          "e": 167.085,
+          "c": 0.995325
+        },
+        {
+          "w": "I",
+          "s": 167.125,
+          "e": 167.125,
+          "c": 0.930328
+        },
+        {
+          "w": "got",
+          "s": 167.195,
+          "e": 167.245,
+          "c": 0.997427
+        },
+        {
+          "w": "to",
+          "s": 167.245,
+          "e": 167.275,
+          "c": 0.999987
+        },
+        {
+          "w": "interview",
+          "s": 167.345,
+          "e": 167.705,
+          "c": 0.99987
+        },
+        {
+          "w": "him",
+          "s": 167.705,
+          "e": 167.815,
+          "c": 0.999973
+        },
+        {
+          "w": "at",
+          "s": 167.815,
+          "e": 167.895,
+          "c": 0.999714
+        },
+        {
+          "w": "Turning",
+          "s": 167.905,
+          "e": 168.195,
+          "c": 0.986956
+        },
+        {
+          "w": "Point.",
+          "s": 168.195,
+          "e": 168.585,
+          "c": 0.998168
+        },
+        {
+          "w": "-",
+          "s": 168.805,
+          "e": 168.865,
+          "c": 0.0699243
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 168.87,
+      "end_s": 168.88,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "Right.",
+      "words": [
+        {
+          "w": "Right.",
+          "s": 168.865,
+          "e": 168.865,
+          "c": 0.201253
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 168.87,
+      "end_s": 176.68,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "guys going after big tech, he told me, you know, Afghanistan, that's something that's going to be investigated in a Republican Congress. I think that's at the root of the problem",
+      "words": [
+        {
+          "w": "guys",
+          "s": 168.855,
+          "e": 169.065,
+          "c": 0.123179
+        },
+        {
+          "w": "going",
+          "s": 169.195,
+          "e": 169.525,
+          "c": 0.933724
+        },
+        {
+          "w": "after",
+          "s": 169.655,
+          "e": 169.985,
+          "c": 0.997451
+        },
+        {
+          "w": "big",
+          "s": 170.015,
+          "e": 170.235,
+          "c": 0.731718
+        },
+        {
+          "w": "tech,",
+          "s": 170.305,
+          "e": 170.685,
+          "c": 0.184442
+        },
+        {
+          "w": "he",
+          "s": 170.705,
+          "e": 170.765,
+          "c": 0.819669
+        },
+        {
+          "w": "told",
+          "s": 170.835,
+          "e": 171.005,
+          "c": 0.93686
+        },
+        {
+          "w": "me,",
+          "s": 171.005,
+          "e": 171.385,
+          "c": 0.57598
+        },
+        {
+          "w": "you",
+          "s": 171.385,
+          "e": 171.445,
+          "c": 0.537603
+        },
+        {
+          "w": "know,",
+          "s": 171.445,
+          "e": 171.655,
+          "c": 0.966875
+        },
+        {
+          "w": "Afghanistan,",
+          "s": 171.765,
+          "e": 172.355,
+          "c": 0.615107
+        },
+        {
+          "w": "that's",
+          "s": 172.355,
+          "e": 172.585,
+          "c": 0.609487
+        },
+        {
+          "w": "something",
+          "s": 172.595,
+          "e": 172.745,
+          "c": 0.87453
+        },
+        {
+          "w": "that's",
+          "s": 172.745,
+          "e": 172.845,
+          "c": 0.88595
+        },
+        {
+          "w": "going",
+          "s": 172.875,
+          "e": 173.095,
+          "c": 0.9876
+        },
+        {
+          "w": "to",
+          "s": 173.215,
+          "e": 173.225,
+          "c": 0.99915
+        },
+        {
+          "w": "be",
+          "s": 173.225,
+          "e": 173.325,
+          "c": 0.995864
+        },
+        {
+          "w": "investigated",
+          "s": 173.325,
+          "e": 173.935,
+          "c": 0.997754
+        },
+        {
+          "w": "in",
+          "s": 173.995,
+          "e": 174.005,
+          "c": 0.71716
+        },
+        {
+          "w": "a",
+          "s": 174.045,
+          "e": 174.095,
+          "c": 0.997826
+        },
+        {
+          "w": "Republican",
+          "s": 174.095,
+          "e": 174.335,
+          "c": 0.976723
+        },
+        {
+          "w": "Congress.",
+          "s": 174.725,
+          "e": 175.205,
+          "c": 0.876731
+        },
+        {
+          "w": "I",
+          "s": 175.215,
+          "e": 175.255,
+          "c": 0.999317
+        },
+        {
+          "w": "think",
+          "s": 175.255,
+          "e": 175.425,
+          "c": 0.999632
+        },
+        {
+          "w": "that's",
+          "s": 175.555,
+          "e": 175.865,
+          "c": 0.995505
+        },
+        {
+          "w": "at",
+          "s": 175.865,
+          "e": 175.885,
+          "c": 0.995397
+        },
+        {
+          "w": "the",
+          "s": 176.015,
+          "e": 176.115,
+          "c": 0.999121
+        },
+        {
+          "w": "root",
+          "s": 176.145,
+          "e": 176.345,
+          "c": 0.999458
+        },
+        {
+          "w": "of",
+          "s": 176.385,
+          "e": 176.465,
+          "c": 0.998744
+        },
+        {
+          "w": "the",
+          "s": 176.465,
+          "e": 176.595,
+          "c": 0.997872
+        },
+        {
+          "w": "problem",
+          "s": 176.665,
+          "e": 176.675,
+          "c": 0.999298
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 177.06,
+      "end_s": 188.88,
+      "speaker": "SPEAKER_19",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "is he's one of the best and brightest in our party, in my view. Oh, yeah. Well, they always go after. I look the way they went after my father-in-law, look at the way they go after Ron DeSantis. Senator Hawley is no different, obviously. But, Jimmy, I love",
+      "words": [
+        {
+          "w": "is",
+          "s": 177.065,
+          "e": 177.125,
+          "c": 0.62462
+        },
+        {
+          "w": "he's",
+          "s": 177.125,
+          "e": 177.345,
+          "c": 0.977215
+        },
+        {
+          "w": "one",
+          "s": 177.345,
+          "e": 177.505,
+          "c": 0.994289
+        },
+        {
+          "w": "of",
+          "s": 177.505,
+          "e": 177.615,
+          "c": 0.998828
+        },
+        {
+          "w": "the",
+          "s": 177.615,
+          "e": 177.775,
+          "c": 0.999077
+        },
+        {
+          "w": "best",
+          "s": 177.775,
+          "e": 177.995,
+          "c": 0.995524
+        },
+        {
+          "w": "and",
+          "s": 177.995,
+          "e": 178.155,
+          "c": 0.996153
+        },
+        {
+          "w": "brightest",
+          "s": 178.155,
+          "e": 178.745,
+          "c": 0.993793
+        },
+        {
+          "w": "in",
+          "s": 178.745,
+          "e": 178.815,
+          "c": 0.974018
+        },
+        {
+          "w": "our",
+          "s": 178.815,
+          "e": 178.845,
+          "c": 0.992237
+        },
+        {
+          "w": "party,",
+          "s": 178.935,
+          "e": 179.305,
+          "c": 0.540717
+        },
+        {
+          "w": "in",
+          "s": 179.305,
+          "e": 179.415,
+          "c": 0.996833
+        },
+        {
+          "w": "my",
+          "s": 179.415,
+          "e": 179.525,
+          "c": 0.999247
+        },
+        {
+          "w": "view.",
+          "s": 179.525,
+          "e": 179.925,
+          "c": 0.993843
+        },
+        {
+          "w": "Oh,",
+          "s": 179.935,
+          "e": 180.285,
+          "c": 0.734867
+        },
+        {
+          "w": "yeah.",
+          "s": 180.285,
+          "e": 180.925,
+          "c": 0.856067
+        },
+        {
+          "w": "Well,",
+          "s": 180.935,
+          "e": 181.145,
+          "c": 0.974085
+        },
+        {
+          "w": "they",
+          "s": 181.145,
+          "e": 181.295,
+          "c": 0.999192
+        },
+        {
+          "w": "always",
+          "s": 181.295,
+          "e": 181.525,
+          "c": 0.998875
+        },
+        {
+          "w": "go",
+          "s": 181.525,
+          "e": 181.595,
+          "c": 0.997942
+        },
+        {
+          "w": "after.",
+          "s": 181.595,
+          "e": 181.925,
+          "c": 0.327111
+        },
+        {
+          "w": "I",
+          "s": 181.935,
+          "e": 181.965,
+          "c": 0.919975
+        },
+        {
+          "w": "look",
+          "s": 181.965,
+          "e": 182.155,
+          "c": 0.641862
+        },
+        {
+          "w": "the",
+          "s": 182.275,
+          "e": 182.295,
+          "c": 0.806128
+        },
+        {
+          "w": "way",
+          "s": 182.295,
+          "e": 182.435,
+          "c": 0.999352
+        },
+        {
+          "w": "they",
+          "s": 182.435,
+          "e": 182.595,
+          "c": 0.991628
+        },
+        {
+          "w": "went",
+          "s": 182.735,
+          "e": 182.815,
+          "c": 0.997126
+        },
+        {
+          "w": "after",
+          "s": 182.815,
+          "e": 182.995,
+          "c": 0.998296
+        },
+        {
+          "w": "my",
+          "s": 183.055,
+          "e": 183.145,
+          "c": 0.996774
+        },
+        {
+          "w": "father-in-law,",
+          "s": 183.145,
+          "e": 183.835,
+          "c": 0.3626
+        },
+        {
+          "w": "look",
+          "s": 183.835,
+          "e": 184.025,
+          "c": 0.766219
+        },
+        {
+          "w": "at",
+          "s": 184.025,
+          "e": 184.115,
+          "c": 0.985846
+        },
+        {
+          "w": "the",
+          "s": 184.115,
+          "e": 184.255,
+          "c": 0.997571
+        },
+        {
+          "w": "way",
+          "s": 184.255,
+          "e": 184.385,
+          "c": 0.999405
+        },
+        {
+          "w": "they",
+          "s": 184.395,
+          "e": 184.575,
+          "c": 0.994408
+        },
+        {
+          "w": "go",
+          "s": 184.575,
+          "e": 184.675,
+          "c": 0.997156
+        },
+        {
+          "w": "after",
+          "s": 184.675,
+          "e": 184.915,
+          "c": 0.974117
+        },
+        {
+          "w": "Ron",
+          "s": 184.915,
+          "e": 185.035,
+          "c": 0.976802
+        },
+        {
+          "w": "DeSantis.",
+          "s": 185.125,
+          "e": 185.925,
+          "c": 0.880814
+        },
+        {
+          "w": "Senator",
+          "s": 185.975,
+          "e": 186.185,
+          "c": 0.994025
+        },
+        {
+          "w": "Hawley",
+          "s": 186.315,
+          "e": 186.545,
+          "c": 0.901371
+        },
+        {
+          "w": "is",
+          "s": 186.545,
+          "e": 186.635,
+          "c": 0.997288
+        },
+        {
+          "w": "no",
+          "s": 186.635,
+          "e": 186.645,
+          "c": 0.99878
+        },
+        {
+          "w": "different,",
+          "s": 186.775,
+          "e": 187.225,
+          "c": 0.953166
+        },
+        {
+          "w": "obviously.",
+          "s": 187.225,
+          "e": 187.805,
+          "c": 0.947739
+        },
+        {
+          "w": "But,",
+          "s": 187.815,
+          "e": 188.025,
+          "c": 0.787054
+        },
+        {
+          "w": "Jimmy,",
+          "s": 188.155,
+          "e": 188.485,
+          "c": 0.95923
+        },
+        {
+          "w": "I",
+          "s": 188.605,
+          "e": 188.635,
+          "c": 0.999575
+        },
+        {
+          "w": "love",
+          "s": 188.635,
+          "e": 188.875,
+          "c": 0.929729
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 188.94,
+      "end_s": 197,
+      "speaker": "SPEAKER_22",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the point you brought up when I was reading this. And by the way, it's The Washington Post. So let's take it all with a huge grain of salt, everything that they've said in there.",
+      "words": [
+        {
+          "w": "the",
+          "s": 188.935,
+          "e": 189.085,
+          "c": 0.999714
+        },
+        {
+          "w": "point",
+          "s": 189.085,
+          "e": 189.275,
+          "c": 0.999783
+        },
+        {
+          "w": "you",
+          "s": 189.515,
+          "e": 189.525,
+          "c": 0.998125
+        },
+        {
+          "w": "brought",
+          "s": 189.665,
+          "e": 190.045,
+          "c": 0.998807
+        },
+        {
+          "w": "up",
+          "s": 190.045,
+          "e": 190.175,
+          "c": 0.998759
+        },
+        {
+          "w": "when",
+          "s": 190.175,
+          "e": 190.435,
+          "c": 0.693317
+        },
+        {
+          "w": "I",
+          "s": 190.435,
+          "e": 190.485,
+          "c": 0.998704
+        },
+        {
+          "w": "was",
+          "s": 190.495,
+          "e": 190.605,
+          "c": 0.999693
+        },
+        {
+          "w": "reading",
+          "s": 190.725,
+          "e": 191.135,
+          "c": 0.999567
+        },
+        {
+          "w": "this.",
+          "s": 191.135,
+          "e": 191.665,
+          "c": 0.725338
+        },
+        {
+          "w": "And",
+          "s": 191.675,
+          "e": 191.765,
+          "c": 0.995239
+        },
+        {
+          "w": "by",
+          "s": 191.765,
+          "e": 191.835,
+          "c": 0.883647
+        },
+        {
+          "w": "the",
+          "s": 191.835,
+          "e": 191.895,
+          "c": 0.999691
+        },
+        {
+          "w": "way,",
+          "s": 192.015,
+          "e": 192.105,
+          "c": 0.997436
+        },
+        {
+          "w": "it's",
+          "s": 192.105,
+          "e": 192.245,
+          "c": 0.991185
+        },
+        {
+          "w": "The",
+          "s": 192.245,
+          "e": 192.345,
+          "c": 0.645827
+        },
+        {
+          "w": "Washington",
+          "s": 192.345,
+          "e": 192.695,
+          "c": 0.999249
+        },
+        {
+          "w": "Post.",
+          "s": 192.695,
+          "e": 192.965,
+          "c": 0.562964
+        },
+        {
+          "w": "So",
+          "s": 192.975,
+          "e": 193.075,
+          "c": 0.985819
+        },
+        {
+          "w": "let's",
+          "s": 193.075,
+          "e": 193.355,
+          "c": 0.886669
+        },
+        {
+          "w": "take",
+          "s": 193.355,
+          "e": 193.585,
+          "c": 0.999148
+        },
+        {
+          "w": "it",
+          "s": 193.585,
+          "e": 193.645,
+          "c": 0.999041
+        },
+        {
+          "w": "all",
+          "s": 193.775,
+          "e": 193.865,
+          "c": 0.995196
+        },
+        {
+          "w": "with",
+          "s": 193.865,
+          "e": 194.035,
+          "c": 0.991815
+        },
+        {
+          "w": "a",
+          "s": 194.095,
+          "e": 194.135,
+          "c": 0.998216
+        },
+        {
+          "w": "huge",
+          "s": 194.135,
+          "e": 194.355,
+          "c": 0.99697
+        },
+        {
+          "w": "grain",
+          "s": 194.425,
+          "e": 194.435,
+          "c": 0.998553
+        },
+        {
+          "w": "of",
+          "s": 194.765,
+          "e": 194.765,
+          "c": 0.998026
+        },
+        {
+          "w": "salt,",
+          "s": 194.825,
+          "e": 195.105,
+          "c": 0.388271
+        },
+        {
+          "w": "everything",
+          "s": 195.105,
+          "e": 195.665,
+          "c": 0.998327
+        },
+        {
+          "w": "that",
+          "s": 195.685,
+          "e": 195.905,
+          "c": 0.999053
+        },
+        {
+          "w": "they've",
+          "s": 195.905,
+          "e": 196.305,
+          "c": 0.992341
+        },
+        {
+          "w": "said",
+          "s": 196.305,
+          "e": 196.535,
+          "c": 0.995059
+        },
+        {
+          "w": "in",
+          "s": 196.535,
+          "e": 196.605,
+          "c": 0.996495
+        },
+        {
+          "w": "there.",
+          "s": 196.715,
+          "e": 197.005,
+          "c": 0.757054
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 197.06,
+      "end_s": 227.01,
+      "speaker": "SPEAKER_22",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "All I could think about was my grandfather who fought in World War II and the men that died young and old to form our country. And they're the reason that our society has been able to progress truly as much as we have so that we have individuals at The Washington Post able to write such ridiculous columns like this. It is because of masculinity. Harris, I agree with you. When did it become a bad thing? We need men in our society. We need women in our society. We need everybody. We do. We need everyone. We need fathers.",
+      "words": [
+        {
+          "w": "All",
+          "s": 197.059,
+          "e": 197.159,
+          "c": 0.826911
+        },
+        {
+          "w": "I",
+          "s": 197.159,
+          "e": 197.209,
+          "c": 0.99968
+        },
+        {
+          "w": "could",
+          "s": 197.209,
+          "e": 197.499,
+          "c": 0.987824
+        },
+        {
+          "w": "think",
+          "s": 197.499,
+          "e": 197.789,
+          "c": 0.999952
+        },
+        {
+          "w": "about",
+          "s": 197.789,
+          "e": 198.079,
+          "c": 0.999723
+        },
+        {
+          "w": "was",
+          "s": 198.079,
+          "e": 198.249,
+          "c": 0.989687
+        },
+        {
+          "w": "my",
+          "s": 198.249,
+          "e": 198.359,
+          "c": 0.998582
+        },
+        {
+          "w": "grandfather",
+          "s": 198.359,
+          "e": 199.019,
+          "c": 0.996139
+        },
+        {
+          "w": "who",
+          "s": 199.019,
+          "e": 199.179,
+          "c": 0.481954
+        },
+        {
+          "w": "fought",
+          "s": 199.229,
+          "e": 199.639,
+          "c": 0.999615
+        },
+        {
+          "w": "in",
+          "s": 199.639,
+          "e": 199.769,
+          "c": 0.997935
+        },
+        {
+          "w": "World",
+          "s": 199.769,
+          "e": 200.109,
+          "c": 0.993955
+        },
+        {
+          "w": "War",
+          "s": 200.109,
+          "e": 200.289,
+          "c": 0.999767
+        },
+        {
+          "w": "II",
+          "s": 200.329,
+          "e": 200.469,
+          "c": 0.942137
+        },
+        {
+          "w": "and",
+          "s": 200.529,
+          "e": 200.819,
+          "c": 0.999706
+        },
+        {
+          "w": "the",
+          "s": 200.819,
+          "e": 201.169,
+          "c": 0.999985
+        },
+        {
+          "w": "men",
+          "s": 201.169,
+          "e": 201.519,
+          "c": 0.999979
+        },
+        {
+          "w": "that",
+          "s": 201.519,
+          "e": 201.969,
+          "c": 0.999975
+        },
+        {
+          "w": "died",
+          "s": 201.979,
+          "e": 202.439,
+          "c": 0.999872
+        },
+        {
+          "w": "young",
+          "s": 202.439,
+          "e": 203.019,
+          "c": 0.693927
+        },
+        {
+          "w": "and",
+          "s": 203.019,
+          "e": 203.369,
+          "c": 0.999676
+        },
+        {
+          "w": "old",
+          "s": 203.369,
+          "e": 203.659,
+          "c": 0.99976
+        },
+        {
+          "w": "to",
+          "s": 203.739,
+          "e": 203.949,
+          "c": 0.991945
+        },
+        {
+          "w": "form",
+          "s": 203.949,
+          "e": 204.049,
+          "c": 0.99911
+        },
+        {
+          "w": "our",
+          "s": 204.449,
+          "e": 204.679,
+          "c": 0.999041
+        },
+        {
+          "w": "country.",
+          "s": 204.779,
+          "e": 205.609,
+          "c": 0.794388
+        },
+        {
+          "w": "And",
+          "s": 205.679,
+          "e": 205.819,
+          "c": 0.993191
+        },
+        {
+          "w": "they're",
+          "s": 205.819,
+          "e": 206.299,
+          "c": 0.99984
+        },
+        {
+          "w": "the",
+          "s": 206.299,
+          "e": 206.509,
+          "c": 0.999992
+        },
+        {
+          "w": "reason",
+          "s": 206.509,
+          "e": 206.919,
+          "c": 0.999977
+        },
+        {
+          "w": "that",
+          "s": 206.919,
+          "e": 207.119,
+          "c": 0.999985
+        },
+        {
+          "w": "our",
+          "s": 207.209,
+          "e": 207.409,
+          "c": 0.99999
+        },
+        {
+          "w": "society",
+          "s": 207.409,
+          "e": 207.889,
+          "c": 0.99999
+        },
+        {
+          "w": "has",
+          "s": 207.889,
+          "e": 208.099,
+          "c": 0.997387
+        },
+        {
+          "w": "been",
+          "s": 208.099,
+          "e": 208.379,
+          "c": 0.99999
+        },
+        {
+          "w": "able",
+          "s": 208.379,
+          "e": 208.659,
+          "c": 0.999929
+        },
+        {
+          "w": "to",
+          "s": 208.659,
+          "e": 208.799,
+          "c": 0.999314
+        },
+        {
+          "w": "progress",
+          "s": 208.799,
+          "e": 209.189,
+          "c": 0.99987
+        },
+        {
+          "w": "truly",
+          "s": 209.589,
+          "e": 209.829,
+          "c": 0.65902
+        },
+        {
+          "w": "as",
+          "s": 209.919,
+          "e": 209.999,
+          "c": 0.995478
+        },
+        {
+          "w": "much",
+          "s": 209.999,
+          "e": 210.349,
+          "c": 0.998405
+        },
+        {
+          "w": "as",
+          "s": 210.349,
+          "e": 210.429,
+          "c": 0.991921
+        },
+        {
+          "w": "we",
+          "s": 210.689,
+          "e": 210.689,
+          "c": 0.999161
+        },
+        {
+          "w": "have",
+          "s": 210.719,
+          "e": 211.069,
+          "c": 0.993477
+        },
+        {
+          "w": "so",
+          "s": 211.139,
+          "e": 211.189,
+          "c": 0.999962
+        },
+        {
+          "w": "that",
+          "s": 211.189,
+          "e": 211.419,
+          "c": 1
+        },
+        {
+          "w": "we",
+          "s": 211.499,
+          "e": 211.549,
+          "c": 1
+        },
+        {
+          "w": "have",
+          "s": 211.549,
+          "e": 211.789,
+          "c": 0.999996
+        },
+        {
+          "w": "individuals",
+          "s": 211.789,
+          "e": 212.459,
+          "c": 0.999975
+        },
+        {
+          "w": "at",
+          "s": 212.459,
+          "e": 212.559,
+          "c": 0.999969
+        },
+        {
+          "w": "The",
+          "s": 212.579,
+          "e": 212.759,
+          "c": 0.76541
+        },
+        {
+          "w": "Washington",
+          "s": 212.759,
+          "e": 213.369,
+          "c": 0.999886
+        },
+        {
+          "w": "Post",
+          "s": 213.369,
+          "e": 213.649,
+          "c": 0.999929
+        },
+        {
+          "w": "able",
+          "s": 213.649,
+          "e": 213.939,
+          "c": 0.911582
+        },
+        {
+          "w": "to",
+          "s": 213.939,
+          "e": 214.079,
+          "c": 0.999994
+        },
+        {
+          "w": "write",
+          "s": 214.079,
+          "e": 214.439,
+          "c": 0.999977
+        },
+        {
+          "w": "such",
+          "s": 214.439,
+          "e": 214.649,
+          "c": 0.998972
+        },
+        {
+          "w": "ridiculous",
+          "s": 215.049,
+          "e": 215.449,
+          "c": 0.999872
+        },
+        {
+          "w": "columns",
+          "s": 215.449,
+          "e": 215.889,
+          "c": 0.99987
+        },
+        {
+          "w": "like",
+          "s": 216.179,
+          "e": 216.439,
+          "c": 0.975048
+        },
+        {
+          "w": "this.",
+          "s": 216.439,
+          "e": 216.909,
+          "c": 0.980555
+        },
+        {
+          "w": "It",
+          "s": 216.979,
+          "e": 217.049,
+          "c": 0.99999
+        },
+        {
+          "w": "is",
+          "s": 217.049,
+          "e": 217.169,
+          "c": 0.999996
+        },
+        {
+          "w": "because",
+          "s": 217.229,
+          "e": 217.679,
+          "c": 0.999996
+        },
+        {
+          "w": "of",
+          "s": 217.679,
+          "e": 217.819,
+          "c": 0.999996
+        },
+        {
+          "w": "masculinity.",
+          "s": 217.819,
+          "e": 218.739,
+          "c": 0.998026
+        },
+        {
+          "w": "Harris,",
+          "s": 218.879,
+          "e": 219.069,
+          "c": 0.99708
+        },
+        {
+          "w": "I",
+          "s": 219.129,
+          "e": 219.129,
+          "c": 0.999979
+        },
+        {
+          "w": "agree",
+          "s": 219.129,
+          "e": 219.319,
+          "c": 0.999981
+        },
+        {
+          "w": "with",
+          "s": 219.319,
+          "e": 219.469,
+          "c": 0.999996
+        },
+        {
+          "w": "you.",
+          "s": 219.469,
+          "e": 219.719,
+          "c": 0.92826
+        },
+        {
+          "w": "When",
+          "s": 219.799,
+          "e": 219.959,
+          "c": 0.999901
+        },
+        {
+          "w": "did",
+          "s": 219.959,
+          "e": 220.079,
+          "c": 0.999994
+        },
+        {
+          "w": "it",
+          "s": 220.159,
+          "e": 220.239,
+          "c": 0.999996
+        },
+        {
+          "w": "become",
+          "s": 220.239,
+          "e": 220.589,
+          "c": 0.999971
+        },
+        {
+          "w": "a",
+          "s": 220.589,
+          "e": 220.639,
+          "c": 1
+        },
+        {
+          "w": "bad",
+          "s": 220.639,
+          "e": 220.809,
+          "c": 0.999989
+        },
+        {
+          "w": "thing?",
+          "s": 220.809,
+          "e": 221.219,
+          "c": 0.999968
+        },
+        {
+          "w": "We",
+          "s": 221.379,
+          "e": 221.439,
+          "c": 0.99996
+        },
+        {
+          "w": "need",
+          "s": 221.439,
+          "e": 221.659,
+          "c": 0.999992
+        },
+        {
+          "w": "men",
+          "s": 221.739,
+          "e": 221.909,
+          "c": 0.999992
+        },
+        {
+          "w": "in",
+          "s": 221.909,
+          "e": 222.039,
+          "c": 0.999996
+        },
+        {
+          "w": "our",
+          "s": 222.039,
+          "e": 222.219,
+          "c": 0.999996
+        },
+        {
+          "w": "society.",
+          "s": 222.319,
+          "e": 222.949,
+          "c": 0.99959
+        },
+        {
+          "w": "We",
+          "s": 223.019,
+          "e": 223.039,
+          "c": 0.999958
+        },
+        {
+          "w": "need",
+          "s": 223.039,
+          "e": 223.209,
+          "c": 0.999989
+        },
+        {
+          "w": "women",
+          "s": 223.269,
+          "e": 223.469,
+          "c": 0.999956
+        },
+        {
+          "w": "in",
+          "s": 223.469,
+          "e": 223.559,
+          "c": 0.999996
+        },
+        {
+          "w": "our",
+          "s": 223.559,
+          "e": 223.699,
+          "c": 0.999992
+        },
+        {
+          "w": "society.",
+          "s": 223.699,
+          "e": 224.209,
+          "c": 0.999975
+        },
+        {
+          "w": "We",
+          "s": 224.269,
+          "e": 224.269,
+          "c": 0.999498
+        },
+        {
+          "w": "need",
+          "s": 224.279,
+          "e": 224.389,
+          "c": 0.998405
+        },
+        {
+          "w": "everybody.",
+          "s": 224.389,
+          "e": 224.749,
+          "c": 0.998588
+        },
+        {
+          "w": "We",
+          "s": 224.819,
+          "e": 224.919,
+          "c": 0.993752
+        },
+        {
+          "w": "do.",
+          "s": 224.919,
+          "e": 225.369,
+          "c": 0.999258
+        },
+        {
+          "w": "We",
+          "s": 225.439,
+          "e": 225.439,
+          "c": 0.97418
+        },
+        {
+          "w": "need",
+          "s": 225.439,
+          "e": 225.579,
+          "c": 0.999893
+        },
+        {
+          "w": "everyone.",
+          "s": 225.579,
+          "e": 225.989,
+          "c": 0.999251
+        },
+        {
+          "w": "We",
+          "s": 226.199,
+          "e": 226.259,
+          "c": 0.151097
+        },
+        {
+          "w": "need",
+          "s": 226.259,
+          "e": 226.479,
+          "c": 0.854858
+        },
+        {
+          "w": "fathers.",
+          "s": 226.569,
+          "e": 227.009,
+          "c": 0.402518
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 226.99,
+      "end_s": 237.19,
+      "speaker": "SPEAKER_22",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "in the home for children, Jimmy, like you're saying. And I just think it's so crazy to try and attack something that actually has been very beneficial in such a huge part, truly, of our history. If",
+      "words": [
+        {
+          "w": "in",
+          "s": 226.989,
+          "e": 227.149,
+          "c": 0.977823
+        },
+        {
+          "w": "the",
+          "s": 227.149,
+          "e": 227.399,
+          "c": 0.999367
+        },
+        {
+          "w": "home",
+          "s": 227.399,
+          "e": 227.749,
+          "c": 0.997864
+        },
+        {
+          "w": "for",
+          "s": 227.749,
+          "e": 227.909,
+          "c": 0.980913
+        },
+        {
+          "w": "children,",
+          "s": 227.909,
+          "e": 228.449,
+          "c": 0.972218
+        },
+        {
+          "w": "Jimmy,",
+          "s": 228.449,
+          "e": 228.729,
+          "c": 0.93368
+        },
+        {
+          "w": "like",
+          "s": 228.729,
+          "e": 228.989,
+          "c": 0.754765
+        },
+        {
+          "w": "you're",
+          "s": 229.089,
+          "e": 229.209,
+          "c": 0.898205
+        },
+        {
+          "w": "saying.",
+          "s": 229.309,
+          "e": 229.509,
+          "c": 0.918997
+        },
+        {
+          "w": "And",
+          "s": 229.509,
+          "e": 229.729,
+          "c": 0.998751
+        },
+        {
+          "w": "I",
+          "s": 229.729,
+          "e": 229.799,
+          "c": 0.999969
+        },
+        {
+          "w": "just",
+          "s": 229.799,
+          "e": 230.089,
+          "c": 0.999989
+        },
+        {
+          "w": "think",
+          "s": 230.089,
+          "e": 230.459,
+          "c": 0.999998
+        },
+        {
+          "w": "it's",
+          "s": 230.459,
+          "e": 230.739,
+          "c": 0.999954
+        },
+        {
+          "w": "so",
+          "s": 230.739,
+          "e": 230.869,
+          "c": 0.999992
+        },
+        {
+          "w": "crazy",
+          "s": 230.889,
+          "e": 231.289,
+          "c": 0.999842
+        },
+        {
+          "w": "to",
+          "s": 231.289,
+          "e": 231.449,
+          "c": 0.817433
+        },
+        {
+          "w": "try",
+          "s": 231.449,
+          "e": 231.709,
+          "c": 0.999859
+        },
+        {
+          "w": "and",
+          "s": 231.709,
+          "e": 231.839,
+          "c": 0.989678
+        },
+        {
+          "w": "attack",
+          "s": 231.839,
+          "e": 232.059,
+          "c": 0.999245
+        },
+        {
+          "w": "something",
+          "s": 232.289,
+          "e": 232.529,
+          "c": 0.993923
+        },
+        {
+          "w": "that",
+          "s": 232.529,
+          "e": 232.819,
+          "c": 0.999985
+        },
+        {
+          "w": "actually",
+          "s": 232.819,
+          "e": 233.329,
+          "c": 0.999966
+        },
+        {
+          "w": "has",
+          "s": 233.439,
+          "e": 233.629,
+          "c": 0.999985
+        },
+        {
+          "w": "been",
+          "s": 233.629,
+          "e": 233.919,
+          "c": 0.999996
+        },
+        {
+          "w": "very",
+          "s": 233.919,
+          "e": 234.209,
+          "c": 0.999977
+        },
+        {
+          "w": "beneficial",
+          "s": 234.209,
+          "e": 234.989,
+          "c": 0.999994
+        },
+        {
+          "w": "in",
+          "s": 234.989,
+          "e": 235.069,
+          "c": 0.599435
+        },
+        {
+          "w": "such",
+          "s": 235.139,
+          "e": 235.299,
+          "c": 0.999979
+        },
+        {
+          "w": "a",
+          "s": 235.299,
+          "e": 235.349,
+          "c": 0.999996
+        },
+        {
+          "w": "huge",
+          "s": 235.349,
+          "e": 235.559,
+          "c": 0.999964
+        },
+        {
+          "w": "part,",
+          "s": 235.559,
+          "e": 235.789,
+          "c": 0.77384
+        },
+        {
+          "w": "truly,",
+          "s": 235.899,
+          "e": 236.239,
+          "c": 0.999466
+        },
+        {
+          "w": "of",
+          "s": 236.239,
+          "e": 236.339,
+          "c": 0.999985
+        },
+        {
+          "w": "our",
+          "s": 236.339,
+          "e": 236.499,
+          "c": 0.999989
+        },
+        {
+          "w": "history.",
+          "s": 236.499,
+          "e": 237.109,
+          "c": 0.999975
+        },
+        {
+          "w": "If",
+          "s": 237.109,
+          "e": 237.189,
+          "c": 0.991452
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 237.31,
+      "end_s": 239.93,
+      "speaker": "SPEAKER_24",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you don't appreciate our men, then I doubt that you appreciate",
+      "words": [
+        {
+          "w": "you",
+          "s": 237.309,
+          "e": 237.409,
+          "c": 0.556172
+        },
+        {
+          "w": "don't",
+          "s": 237.409,
+          "e": 237.699,
+          "c": 0.999941
+        },
+        {
+          "w": "appreciate",
+          "s": 237.699,
+          "e": 238.249,
+          "c": 0.999889
+        },
+        {
+          "w": "our",
+          "s": 238.289,
+          "e": 238.469,
+          "c": 0.999983
+        },
+        {
+          "w": "men,",
+          "s": 238.469,
+          "e": 238.789,
+          "c": 0.998944
+        },
+        {
+          "w": "then",
+          "s": 238.789,
+          "e": 238.949,
+          "c": 0.999981
+        },
+        {
+          "w": "I",
+          "s": 238.989,
+          "e": 238.999,
+          "c": 0.999992
+        },
+        {
+          "w": "doubt",
+          "s": 238.999,
+          "e": 239.209,
+          "c": 0.999987
+        },
+        {
+          "w": "that",
+          "s": 239.319,
+          "e": 239.389,
+          "c": 0.999971
+        },
+        {
+          "w": "you",
+          "s": 239.389,
+          "e": 239.519,
+          "c": 0.999996
+        },
+        {
+          "w": "appreciate",
+          "s": 239.519,
+          "e": 239.929,
+          "c": 0.999636
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 239.97,
+      "end_s": 252.12,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "our women. That's probably true. You know, the Washington Post, democracy dies in darkness, they say. Well, common sense dies in darkness, and we're putting light on this, but this toxic masculinity nonsense, it's everywhere. And",
+      "words": [
+        {
+          "w": "our",
+          "s": 239.969,
+          "e": 240.089,
+          "c": 0.999996
+        },
+        {
+          "w": "women.",
+          "s": 240.089,
+          "e": 240.469,
+          "c": 0.999981
+        },
+        {
+          "w": "That's",
+          "s": 240.469,
+          "e": 240.689,
+          "c": 0.999866
+        },
+        {
+          "w": "probably",
+          "s": 240.689,
+          "e": 240.879,
+          "c": 0.99999
+        },
+        {
+          "w": "true.",
+          "s": 240.999,
+          "e": 241.269,
+          "c": 0.99999
+        },
+        {
+          "w": "You",
+          "s": 241.269,
+          "e": 241.349,
+          "c": 0.995053
+        },
+        {
+          "w": "know,",
+          "s": 241.469,
+          "e": 241.589,
+          "c": 0.999802
+        },
+        {
+          "w": "the",
+          "s": 241.589,
+          "e": 241.679,
+          "c": 0.931759
+        },
+        {
+          "w": "Washington",
+          "s": 241.799,
+          "e": 242.059,
+          "c": 0.999807
+        },
+        {
+          "w": "Post,",
+          "s": 242.059,
+          "e": 242.249,
+          "c": 0.364328
+        },
+        {
+          "w": "democracy",
+          "s": 242.249,
+          "e": 242.659,
+          "c": 0.898294
+        },
+        {
+          "w": "dies",
+          "s": 242.779,
+          "e": 242.869,
+          "c": 0.997832
+        },
+        {
+          "w": "in",
+          "s": 242.869,
+          "e": 242.959,
+          "c": 0.999996
+        },
+        {
+          "w": "darkness,",
+          "s": 242.959,
+          "e": 243.409,
+          "c": 0.9979
+        },
+        {
+          "w": "they",
+          "s": 243.429,
+          "e": 243.609,
+          "c": 0.999981
+        },
+        {
+          "w": "say.",
+          "s": 243.629,
+          "e": 243.929,
+          "c": 0.990484
+        },
+        {
+          "w": "Well,",
+          "s": 243.929,
+          "e": 244.329,
+          "c": 0.999805
+        },
+        {
+          "w": "common",
+          "s": 244.329,
+          "e": 244.729,
+          "c": 0.999394
+        },
+        {
+          "w": "sense",
+          "s": 244.729,
+          "e": 245.059,
+          "c": 0.999928
+        },
+        {
+          "w": "dies",
+          "s": 245.059,
+          "e": 245.329,
+          "c": 0.999272
+        },
+        {
+          "w": "in",
+          "s": 245.329,
+          "e": 245.459,
+          "c": 0.999996
+        },
+        {
+          "w": "darkness,",
+          "s": 245.459,
+          "e": 246.029,
+          "c": 0.491021
+        },
+        {
+          "w": "and",
+          "s": 246.029,
+          "e": 246.249,
+          "c": 0.999969
+        },
+        {
+          "w": "we're",
+          "s": 246.249,
+          "e": 246.609,
+          "c": 0.996008
+        },
+        {
+          "w": "putting",
+          "s": 246.609,
+          "e": 247.119,
+          "c": 0.999868
+        },
+        {
+          "w": "light",
+          "s": 247.119,
+          "e": 247.479,
+          "c": 0.999933
+        },
+        {
+          "w": "on",
+          "s": 247.479,
+          "e": 247.619,
+          "c": 1
+        },
+        {
+          "w": "this,",
+          "s": 247.619,
+          "e": 248.029,
+          "c": 0.841067
+        },
+        {
+          "w": "but",
+          "s": 248.089,
+          "e": 248.359,
+          "c": 0.99992
+        },
+        {
+          "w": "this",
+          "s": 248.359,
+          "e": 248.719,
+          "c": 0.999584
+        },
+        {
+          "w": "toxic",
+          "s": 248.719,
+          "e": 249.099,
+          "c": 0.999918
+        },
+        {
+          "w": "masculinity",
+          "s": 249.169,
+          "e": 250.089,
+          "c": 0.999756
+        },
+        {
+          "w": "nonsense,",
+          "s": 250.189,
+          "e": 251.069,
+          "c": 0.98215
+        },
+        {
+          "w": "it's",
+          "s": 251.069,
+          "e": 251.229,
+          "c": 0.971269
+        },
+        {
+          "w": "everywhere.",
+          "s": 251.229,
+          "e": 251.699,
+          "c": 0.99996
+        },
+        {
+          "w": "And",
+          "s": 251.829,
+          "e": 252.119,
+          "c": 0.999907
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 252.12,
+      "end_s": 255.15,
+      "speaker": "SPEAKER_28",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "really, I think the yardage claimed...",
+      "words": [
+        {
+          "w": "really,",
+          "s": 252.119,
+          "e": 252.849,
+          "c": 0.995112
+        },
+        {
+          "w": "I",
+          "s": 252.909,
+          "e": 252.979,
+          "c": 1
+        },
+        {
+          "w": "think",
+          "s": 252.979,
+          "e": 253.459,
+          "c": 0.999996
+        },
+        {
+          "w": "the",
+          "s": 253.459,
+          "e": 253.749,
+          "c": 0.995748
+        },
+        {
+          "w": "yardage",
+          "s": 253.749,
+          "e": 254.379,
+          "c": 0.998784
+        },
+        {
+          "w": "claimed...",
+          "s": 254.609,
+          "e": 255.149,
+          "c": 0.297797
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "start_s": 255.29,
+      "end_s": 285.14,
+      "speaker": "SPEAKER_28",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "by this op-ed was really astounding it was like 20 football fields and what i mean by that is the lengths that this author went to and inciting another author as well in deconstructing and pushing holly into a box and then they had the nerve to do exactly the same thing that they were accusing him of which was being unwielding right so they said you know incidentally jason candor presents a refreshing version of masculinity um that views vulnerability vulnerability as a virtue you can be the best man one can be for one's family and community. No, that's exactly what",
+      "words": [
+        {
+          "w": "by",
+          "s": 255.287,
+          "e": 255.347,
+          "c": 0.819359
+        },
+        {
+          "w": "this",
+          "s": 255.347,
+          "e": 255.717,
+          "c": 0.997482
+        },
+        {
+          "w": "op-ed",
+          "s": 255.807,
+          "e": 256.397,
+          "c": 0.879011
+        },
+        {
+          "w": "was",
+          "s": 256.397,
+          "e": 256.487,
+          "c": 0.88812
+        },
+        {
+          "w": "really",
+          "s": 256.587,
+          "e": 256.877,
+          "c": 0.995268
+        },
+        {
+          "w": "astounding",
+          "s": 256.877,
+          "e": 257.377,
+          "c": 0.991137
+        },
+        {
+          "w": "it",
+          "s": 257.467,
+          "e": 257.507,
+          "c": 0.1723
+        },
+        {
+          "w": "was",
+          "s": 257.577,
+          "e": 257.707,
+          "c": 0.998778
+        },
+        {
+          "w": "like",
+          "s": 257.707,
+          "e": 257.877,
+          "c": 0.996645
+        },
+        {
+          "w": "20",
+          "s": 257.997,
+          "e": 258.257,
+          "c": 0.990048
+        },
+        {
+          "w": "football",
+          "s": 258.257,
+          "e": 258.647,
+          "c": 0.995487
+        },
+        {
+          "w": "fields",
+          "s": 258.737,
+          "e": 258.957,
+          "c": 0.996595
+        },
+        {
+          "w": "and",
+          "s": 259.177,
+          "e": 259.177,
+          "c": 0.931173
+        },
+        {
+          "w": "what",
+          "s": 259.197,
+          "e": 259.367,
+          "c": 0.997154
+        },
+        {
+          "w": "i",
+          "s": 259.367,
+          "e": 259.437,
+          "c": 0.905616
+        },
+        {
+          "w": "mean",
+          "s": 259.437,
+          "e": 259.697,
+          "c": 0.971382
+        },
+        {
+          "w": "by",
+          "s": 259.697,
+          "e": 259.837,
+          "c": 0.992218
+        },
+        {
+          "w": "that",
+          "s": 259.837,
+          "e": 260.077,
+          "c": 0.96086
+        },
+        {
+          "w": "is",
+          "s": 260.077,
+          "e": 260.317,
+          "c": 0.980903
+        },
+        {
+          "w": "the",
+          "s": 260.447,
+          "e": 260.637,
+          "c": 0.758971
+        },
+        {
+          "w": "lengths",
+          "s": 260.807,
+          "e": 261.117,
+          "c": 0.9917
+        },
+        {
+          "w": "that",
+          "s": 261.217,
+          "e": 261.457,
+          "c": 0.999945
+        },
+        {
+          "w": "this",
+          "s": 261.457,
+          "e": 261.757,
+          "c": 0.999933
+        },
+        {
+          "w": "author",
+          "s": 261.757,
+          "e": 262.187,
+          "c": 0.99984
+        },
+        {
+          "w": "went",
+          "s": 262.247,
+          "e": 262.507,
+          "c": 0.999916
+        },
+        {
+          "w": "to",
+          "s": 262.507,
+          "e": 262.577,
+          "c": 0.999655
+        },
+        {
+          "w": "and",
+          "s": 262.697,
+          "e": 262.877,
+          "c": 0.997562
+        },
+        {
+          "w": "inciting",
+          "s": 262.877,
+          "e": 263.407,
+          "c": 0.939558
+        },
+        {
+          "w": "another",
+          "s": 263.517,
+          "e": 263.987,
+          "c": 0.999912
+        },
+        {
+          "w": "author",
+          "s": 263.987,
+          "e": 264.397,
+          "c": 0.999823
+        },
+        {
+          "w": "as",
+          "s": 264.437,
+          "e": 264.587,
+          "c": 0.999916
+        },
+        {
+          "w": "well",
+          "s": 264.717,
+          "e": 264.887,
+          "c": 0.999886
+        },
+        {
+          "w": "in",
+          "s": 264.887,
+          "e": 265.037,
+          "c": 0.995264
+        },
+        {
+          "w": "deconstructing",
+          "s": 265.037,
+          "e": 266.157,
+          "c": 0.999365
+        },
+        {
+          "w": "and",
+          "s": 266.157,
+          "e": 266.397,
+          "c": 0.957717
+        },
+        {
+          "w": "pushing",
+          "s": 266.567,
+          "e": 266.817,
+          "c": 0.999905
+        },
+        {
+          "w": "holly",
+          "s": 266.817,
+          "e": 267.117,
+          "c": 0.993375
+        },
+        {
+          "w": "into",
+          "s": 267.117,
+          "e": 267.237,
+          "c": 0.999842
+        },
+        {
+          "w": "a",
+          "s": 267.417,
+          "e": 267.417,
+          "c": 0.999989
+        },
+        {
+          "w": "box",
+          "s": 267.427,
+          "e": 267.597,
+          "c": 0.999928
+        },
+        {
+          "w": "and",
+          "s": 267.597,
+          "e": 267.707,
+          "c": 0.999882
+        },
+        {
+          "w": "then",
+          "s": 267.777,
+          "e": 268.017,
+          "c": 0.999924
+        },
+        {
+          "w": "they",
+          "s": 268.017,
+          "e": 268.257,
+          "c": 0.999901
+        },
+        {
+          "w": "had",
+          "s": 268.257,
+          "e": 268.337,
+          "c": 0.999508
+        },
+        {
+          "w": "the",
+          "s": 268.457,
+          "e": 268.617,
+          "c": 0.999847
+        },
+        {
+          "w": "nerve",
+          "s": 268.617,
+          "e": 268.917,
+          "c": 0.999603
+        },
+        {
+          "w": "to",
+          "s": 268.917,
+          "e": 269.037,
+          "c": 0.999971
+        },
+        {
+          "w": "do",
+          "s": 269.037,
+          "e": 269.157,
+          "c": 0.99995
+        },
+        {
+          "w": "exactly",
+          "s": 269.157,
+          "e": 269.577,
+          "c": 0.999882
+        },
+        {
+          "w": "the",
+          "s": 269.577,
+          "e": 269.747,
+          "c": 0.999868
+        },
+        {
+          "w": "same",
+          "s": 269.747,
+          "e": 269.937,
+          "c": 0.999931
+        },
+        {
+          "w": "thing",
+          "s": 270.017,
+          "e": 270.237,
+          "c": 0.999569
+        },
+        {
+          "w": "that",
+          "s": 270.477,
+          "e": 270.557,
+          "c": 0.999106
+        },
+        {
+          "w": "they",
+          "s": 270.557,
+          "e": 270.637,
+          "c": 0.946223
+        },
+        {
+          "w": "were",
+          "s": 270.637,
+          "e": 270.797,
+          "c": 0.908871
+        },
+        {
+          "w": "accusing",
+          "s": 270.967,
+          "e": 271.277,
+          "c": 0.999836
+        },
+        {
+          "w": "him",
+          "s": 271.387,
+          "e": 271.397,
+          "c": 0.999836
+        },
+        {
+          "w": "of",
+          "s": 271.487,
+          "e": 271.587,
+          "c": 0.999863
+        },
+        {
+          "w": "which",
+          "s": 271.587,
+          "e": 271.887,
+          "c": 0.999863
+        },
+        {
+          "w": "was",
+          "s": 271.887,
+          "e": 272.067,
+          "c": 0.999886
+        },
+        {
+          "w": "being",
+          "s": 272.067,
+          "e": 272.357,
+          "c": 0.999876
+        },
+        {
+          "w": "unwielding",
+          "s": 272.407,
+          "e": 272.967,
+          "c": 0.965707
+        },
+        {
+          "w": "right",
+          "s": 272.967,
+          "e": 273.267,
+          "c": 0.999243
+        },
+        {
+          "w": "so",
+          "s": 273.267,
+          "e": 273.387,
+          "c": 0.999523
+        },
+        {
+          "w": "they",
+          "s": 273.387,
+          "e": 273.557,
+          "c": 0.99995
+        },
+        {
+          "w": "said",
+          "s": 273.677,
+          "e": 273.867,
+          "c": 0.999928
+        },
+        {
+          "w": "you",
+          "s": 273.867,
+          "e": 274.027,
+          "c": 0.999134
+        },
+        {
+          "w": "know",
+          "s": 274.097,
+          "e": 274.287,
+          "c": 0.999924
+        },
+        {
+          "w": "incidentally",
+          "s": 274.287,
+          "e": 275.117,
+          "c": 0.997172
+        },
+        {
+          "w": "jason",
+          "s": 275.117,
+          "e": 275.517,
+          "c": 0.962862
+        },
+        {
+          "w": "candor",
+          "s": 275.517,
+          "e": 275.917,
+          "c": 0.686979
+        },
+        {
+          "w": "presents",
+          "s": 276.087,
+          "e": 276.387,
+          "c": 0.998654
+        },
+        {
+          "w": "a",
+          "s": 276.387,
+          "e": 276.397,
+          "c": 0.999964
+        },
+        {
+          "w": "refreshing",
+          "s": 276.507,
+          "e": 277.037,
+          "c": 0.999866
+        },
+        {
+          "w": "version",
+          "s": 277.037,
+          "e": 277.447,
+          "c": 0.999489
+        },
+        {
+          "w": "of",
+          "s": 277.447,
+          "e": 277.557,
+          "c": 0.999941
+        },
+        {
+          "w": "masculinity",
+          "s": 277.557,
+          "e": 278.167,
+          "c": 0.999032
+        },
+        {
+          "w": "um",
+          "s": 278.207,
+          "e": 278.307,
+          "c": 0.99526
+        },
+        {
+          "w": "that",
+          "s": 278.377,
+          "e": 278.547,
+          "c": 0.999277
+        },
+        {
+          "w": "views",
+          "s": 278.547,
+          "e": 278.817,
+          "c": 0.944483
+        },
+        {
+          "w": "vulnerability",
+          "s": 278.827,
+          "e": 279.657,
+          "c": 0.906175
+        },
+        {
+          "w": "vulnerability",
+          "s": 279.997,
+          "e": 280.397,
+          "c": 0.900574
+        },
+        {
+          "w": "as",
+          "s": 280.397,
+          "e": 280.477,
+          "c": 0.541405
+        },
+        {
+          "w": "a",
+          "s": 280.477,
+          "e": 280.557,
+          "c": 0.864311
+        },
+        {
+          "w": "virtue",
+          "s": 280.557,
+          "e": 281.097,
+          "c": 0.746297
+        },
+        {
+          "w": "you",
+          "s": 281.357,
+          "e": 281.357,
+          "c": 0.252661
+        },
+        {
+          "w": "can",
+          "s": 281.367,
+          "e": 281.517,
+          "c": 0.782028
+        },
+        {
+          "w": "be",
+          "s": 281.517,
+          "e": 281.627,
+          "c": 0.993953
+        },
+        {
+          "w": "the",
+          "s": 281.627,
+          "e": 281.787,
+          "c": 0.996656
+        },
+        {
+          "w": "best",
+          "s": 281.787,
+          "e": 282.007,
+          "c": 0.998296
+        },
+        {
+          "w": "man",
+          "s": 282.007,
+          "e": 282.037,
+          "c": 0.983313
+        },
+        {
+          "w": "one",
+          "s": 282.227,
+          "e": 282.367,
+          "c": 0.946843
+        },
+        {
+          "w": "can",
+          "s": 282.367,
+          "e": 282.507,
+          "c": 0.98682
+        },
+        {
+          "w": "be",
+          "s": 282.557,
+          "e": 282.637,
+          "c": 0.99076
+        },
+        {
+          "w": "for",
+          "s": 282.657,
+          "e": 282.757,
+          "c": 0.831266
+        },
+        {
+          "w": "one's",
+          "s": 282.807,
+          "e": 283.037,
+          "c": 0.918519
+        },
+        {
+          "w": "family",
+          "s": 283.037,
+          "e": 283.297,
+          "c": 0.967376
+        },
+        {
+          "w": "and",
+          "s": 283.297,
+          "e": 283.437,
+          "c": 0.870975
+        },
+        {
+          "w": "community.",
+          "s": 283.437,
+          "e": 283.957,
+          "c": 0.553771
+        },
+        {
+          "w": "No,",
+          "s": 284.077,
+          "e": 284.227,
+          "c": 0.544443
+        },
+        {
+          "w": "that's",
+          "s": 284.227,
+          "e": 284.537,
+          "c": 0.991278
+        },
+        {
+          "w": "exactly",
+          "s": 284.537,
+          "e": 284.897,
+          "c": 0.996003
+        },
+        {
+          "w": "what",
+          "s": 284.897,
+          "e": 285.137,
+          "c": 0.994215
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "start_s": 285.14,
+      "end_s": 285.15,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Josh",
+      "words": [
+        {
+          "w": "Josh",
+          "s": 285.137,
+          "e": 285.137,
+          "c": 0.622584
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "start_s": 285.14,
+      "end_s": 313.36,
+      "speaker": "SPEAKER_28",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "holly's doing that's exactly what masculinity is is through that strength being the best man you can be so here are they saying that instead aversion to labor organizing support exclusively for heterosexual marriage i mean they were in the weeds here absolutely attacking this man for daring to put forth his faith and his vision of masculinity and they're saying the exact same things that he did i find it preposterous um and really curious that anyone would accept this argument whatsoever yeah and",
+      "words": [
+        {
+          "w": "holly's",
+          "s": 285.117,
+          "e": 285.567,
+          "c": 0.0995539
+        },
+        {
+          "w": "doing",
+          "s": 285.647,
+          "e": 285.897,
+          "c": 0.997727
+        },
+        {
+          "w": "that's",
+          "s": 286.237,
+          "e": 286.327,
+          "c": 0.976794
+        },
+        {
+          "w": "exactly",
+          "s": 286.387,
+          "e": 286.867,
+          "c": 0.999569
+        },
+        {
+          "w": "what",
+          "s": 286.867,
+          "e": 287.117,
+          "c": 0.999024
+        },
+        {
+          "w": "masculinity",
+          "s": 287.257,
+          "e": 287.927,
+          "c": 0.992913
+        },
+        {
+          "w": "is",
+          "s": 287.927,
+          "e": 287.997,
+          "c": 0.998715
+        },
+        {
+          "w": "is",
+          "s": 288.087,
+          "e": 288.207,
+          "c": 0.96563
+        },
+        {
+          "w": "through",
+          "s": 288.317,
+          "e": 288.527,
+          "c": 0.997737
+        },
+        {
+          "w": "that",
+          "s": 288.807,
+          "e": 288.977,
+          "c": 0.998776
+        },
+        {
+          "w": "strength",
+          "s": 288.977,
+          "e": 289.567,
+          "c": 0.99807
+        },
+        {
+          "w": "being",
+          "s": 289.757,
+          "e": 289.867,
+          "c": 0.872112
+        },
+        {
+          "w": "the",
+          "s": 289.867,
+          "e": 290.017,
+          "c": 0.997
+        },
+        {
+          "w": "best",
+          "s": 290.017,
+          "e": 290.187,
+          "c": 0.999847
+        },
+        {
+          "w": "man",
+          "s": 290.327,
+          "e": 290.477,
+          "c": 0.979281
+        },
+        {
+          "w": "you",
+          "s": 290.477,
+          "e": 290.637,
+          "c": 0.955223
+        },
+        {
+          "w": "can",
+          "s": 290.637,
+          "e": 290.797,
+          "c": 0.818123
+        },
+        {
+          "w": "be",
+          "s": 290.797,
+          "e": 290.807,
+          "c": 0.999805
+        },
+        {
+          "w": "so",
+          "s": 290.957,
+          "e": 291.077,
+          "c": 0.99959
+        },
+        {
+          "w": "here",
+          "s": 291.077,
+          "e": 291.247,
+          "c": 0.999615
+        },
+        {
+          "w": "are",
+          "s": 291.337,
+          "e": 291.557,
+          "c": 0.999884
+        },
+        {
+          "w": "they",
+          "s": 291.557,
+          "e": 291.837,
+          "c": 0.999746
+        },
+        {
+          "w": "saying",
+          "s": 291.937,
+          "e": 292.277,
+          "c": 0.999619
+        },
+        {
+          "w": "that",
+          "s": 292.277,
+          "e": 292.557,
+          "c": 0.999897
+        },
+        {
+          "w": "instead",
+          "s": 292.557,
+          "e": 293.057,
+          "c": 0.999748
+        },
+        {
+          "w": "aversion",
+          "s": 293.057,
+          "e": 293.627,
+          "c": 0.991132
+        },
+        {
+          "w": "to",
+          "s": 293.627,
+          "e": 293.677,
+          "c": 0.999918
+        },
+        {
+          "w": "labor",
+          "s": 293.997,
+          "e": 294.117,
+          "c": 0.996101
+        },
+        {
+          "w": "organizing",
+          "s": 294.487,
+          "e": 294.827,
+          "c": 0.999624
+        },
+        {
+          "w": "support",
+          "s": 294.827,
+          "e": 295.247,
+          "c": 0.848132
+        },
+        {
+          "w": "exclusively",
+          "s": 295.437,
+          "e": 296.107,
+          "c": 0.998913
+        },
+        {
+          "w": "for",
+          "s": 296.107,
+          "e": 296.347,
+          "c": 0.996099
+        },
+        {
+          "w": "heterosexual",
+          "s": 296.397,
+          "e": 297.057,
+          "c": 0.999506
+        },
+        {
+          "w": "marriage",
+          "s": 297.097,
+          "e": 297.567,
+          "c": 0.999769
+        },
+        {
+          "w": "i",
+          "s": 297.567,
+          "e": 297.607,
+          "c": 0.994055
+        },
+        {
+          "w": "mean",
+          "s": 297.667,
+          "e": 297.847,
+          "c": 0.999949
+        },
+        {
+          "w": "they",
+          "s": 297.847,
+          "e": 298.077,
+          "c": 0.999952
+        },
+        {
+          "w": "were",
+          "s": 298.077,
+          "e": 298.307,
+          "c": 0.99992
+        },
+        {
+          "w": "in",
+          "s": 298.307,
+          "e": 298.407,
+          "c": 0.999996
+        },
+        {
+          "w": "the",
+          "s": 298.537,
+          "e": 298.587,
+          "c": 0.999983
+        },
+        {
+          "w": "weeds",
+          "s": 298.587,
+          "e": 298.877,
+          "c": 0.99883
+        },
+        {
+          "w": "here",
+          "s": 298.877,
+          "e": 299.107,
+          "c": 0.999876
+        },
+        {
+          "w": "absolutely",
+          "s": 299.107,
+          "e": 299.697,
+          "c": 0.999689
+        },
+        {
+          "w": "attacking",
+          "s": 299.697,
+          "e": 300.227,
+          "c": 0.99991
+        },
+        {
+          "w": "this",
+          "s": 300.227,
+          "e": 300.467,
+          "c": 0.999682
+        },
+        {
+          "w": "man",
+          "s": 300.657,
+          "e": 300.717,
+          "c": 0.987387
+        },
+        {
+          "w": "for",
+          "s": 300.717,
+          "e": 300.847,
+          "c": 0.985925
+        },
+        {
+          "w": "daring",
+          "s": 300.877,
+          "e": 301.297,
+          "c": 0.999752
+        },
+        {
+          "w": "to",
+          "s": 301.297,
+          "e": 301.327,
+          "c": 0.99999
+        },
+        {
+          "w": "put",
+          "s": 301.417,
+          "e": 301.637,
+          "c": 0.999916
+        },
+        {
+          "w": "forth",
+          "s": 301.647,
+          "e": 301.657,
+          "c": 0.999609
+        },
+        {
+          "w": "his",
+          "s": 302.017,
+          "e": 302.207,
+          "c": 0.999899
+        },
+        {
+          "w": "faith",
+          "s": 302.207,
+          "e": 302.557,
+          "c": 0.998529
+        },
+        {
+          "w": "and",
+          "s": 302.557,
+          "e": 302.767,
+          "c": 0.999857
+        },
+        {
+          "w": "his",
+          "s": 302.767,
+          "e": 302.887,
+          "c": 0.999935
+        },
+        {
+          "w": "vision",
+          "s": 303.017,
+          "e": 303.397,
+          "c": 0.999914
+        },
+        {
+          "w": "of",
+          "s": 303.397,
+          "e": 303.537,
+          "c": 0.999975
+        },
+        {
+          "w": "masculinity",
+          "s": 303.537,
+          "e": 304.247,
+          "c": 0.999821
+        },
+        {
+          "w": "and",
+          "s": 304.517,
+          "e": 304.517,
+          "c": 0.999802
+        },
+        {
+          "w": "they're",
+          "s": 304.567,
+          "e": 304.947,
+          "c": 0.998186
+        },
+        {
+          "w": "saying",
+          "s": 305.137,
+          "e": 305.327,
+          "c": 0.999119
+        },
+        {
+          "w": "the",
+          "s": 305.517,
+          "e": 305.627,
+          "c": 0.999186
+        },
+        {
+          "w": "exact",
+          "s": 305.627,
+          "e": 305.937,
+          "c": 0.999676
+        },
+        {
+          "w": "same",
+          "s": 306.087,
+          "e": 306.317,
+          "c": 0.86123
+        },
+        {
+          "w": "things",
+          "s": 306.317,
+          "e": 306.767,
+          "c": 0.999952
+        },
+        {
+          "w": "that",
+          "s": 306.767,
+          "e": 307.057,
+          "c": 0.999907
+        },
+        {
+          "w": "he",
+          "s": 307.057,
+          "e": 307.207,
+          "c": 0.999989
+        },
+        {
+          "w": "did",
+          "s": 307.437,
+          "e": 307.437,
+          "c": 0.999952
+        },
+        {
+          "w": "i",
+          "s": 307.457,
+          "e": 307.507,
+          "c": 0.999863
+        },
+        {
+          "w": "find",
+          "s": 307.507,
+          "e": 307.807,
+          "c": 0.999781
+        },
+        {
+          "w": "it",
+          "s": 307.807,
+          "e": 307.957,
+          "c": 0.999889
+        },
+        {
+          "w": "preposterous",
+          "s": 307.957,
+          "e": 308.847,
+          "c": 0.998108
+        },
+        {
+          "w": "um",
+          "s": 308.847,
+          "e": 308.997,
+          "c": 0.835557
+        },
+        {
+          "w": "and",
+          "s": 308.997,
+          "e": 309.187,
+          "c": 0.990284
+        },
+        {
+          "w": "really",
+          "s": 309.527,
+          "e": 309.667,
+          "c": 0.999945
+        },
+        {
+          "w": "curious",
+          "s": 310.007,
+          "e": 310.187,
+          "c": 0.999897
+        },
+        {
+          "w": "that",
+          "s": 310.187,
+          "e": 310.387,
+          "c": 0.999905
+        },
+        {
+          "w": "anyone",
+          "s": 310.577,
+          "e": 310.767,
+          "c": 0.999617
+        },
+        {
+          "w": "would",
+          "s": 310.957,
+          "e": 311.307,
+          "c": 0.999939
+        },
+        {
+          "w": "accept",
+          "s": 311.307,
+          "e": 311.837,
+          "c": 0.997413
+        },
+        {
+          "w": "this",
+          "s": 311.837,
+          "e": 312.057,
+          "c": 0.999114
+        },
+        {
+          "w": "argument",
+          "s": 312.057,
+          "e": 312.497,
+          "c": 0.999641
+        },
+        {
+          "w": "whatsoever",
+          "s": 312.497,
+          "e": 313.047,
+          "c": 0.994573
+        },
+        {
+          "w": "yeah",
+          "s": 313.107,
+          "e": 313.277,
+          "c": 0.867972
+        },
+        {
+          "w": "and",
+          "s": 313.277,
+          "e": 313.357,
+          "c": 0.929989
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "start_s": 313.44,
+      "end_s": 323.2,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "their issues like labor organizing these are all code for liberalism i mean so that's at the root of this is he's not a liberal and therefore the washington post is going to write hit pieces well done i guess",
+      "words": [
+        {
+          "w": "their",
+          "s": 313.437,
+          "e": 313.717,
+          "c": 0.550283
+        },
+        {
+          "w": "issues",
+          "s": 313.717,
+          "e": 314.047,
+          "c": 0.998186
+        },
+        {
+          "w": "like",
+          "s": 314.047,
+          "e": 314.267,
+          "c": 0.999479
+        },
+        {
+          "w": "labor",
+          "s": 314.267,
+          "e": 314.547,
+          "c": 0.998433
+        },
+        {
+          "w": "organizing",
+          "s": 314.547,
+          "e": 315.107,
+          "c": 0.998896
+        },
+        {
+          "w": "these",
+          "s": 315.107,
+          "e": 315.207,
+          "c": 0.999243
+        },
+        {
+          "w": "are",
+          "s": 315.527,
+          "e": 315.547,
+          "c": 0.999409
+        },
+        {
+          "w": "all",
+          "s": 315.547,
+          "e": 315.707,
+          "c": 0.997666
+        },
+        {
+          "w": "code",
+          "s": 315.707,
+          "e": 315.897,
+          "c": 0.988637
+        },
+        {
+          "w": "for",
+          "s": 316.097,
+          "e": 316.157,
+          "c": 0.99736
+        },
+        {
+          "w": "liberalism",
+          "s": 316.157,
+          "e": 316.837,
+          "c": 0.995951
+        },
+        {
+          "w": "i",
+          "s": 316.847,
+          "e": 316.917,
+          "c": 0.999224
+        },
+        {
+          "w": "mean",
+          "s": 316.917,
+          "e": 317.197,
+          "c": 0.999928
+        },
+        {
+          "w": "so",
+          "s": 317.297,
+          "e": 317.347,
+          "c": 0.999874
+        },
+        {
+          "w": "that's",
+          "s": 317.347,
+          "e": 317.767,
+          "c": 0.999975
+        },
+        {
+          "w": "at",
+          "s": 317.767,
+          "e": 317.907,
+          "c": 0.999815
+        },
+        {
+          "w": "the",
+          "s": 317.907,
+          "e": 318.117,
+          "c": 0.999975
+        },
+        {
+          "w": "root",
+          "s": 318.117,
+          "e": 318.397,
+          "c": 0.999723
+        },
+        {
+          "w": "of",
+          "s": 318.397,
+          "e": 318.537,
+          "c": 0.999937
+        },
+        {
+          "w": "this",
+          "s": 318.537,
+          "e": 318.817,
+          "c": 0.999641
+        },
+        {
+          "w": "is",
+          "s": 318.817,
+          "e": 318.957,
+          "c": 0.993316
+        },
+        {
+          "w": "he's",
+          "s": 318.957,
+          "e": 319.207,
+          "c": 0.996411
+        },
+        {
+          "w": "not",
+          "s": 319.357,
+          "e": 319.447,
+          "c": 0.998731
+        },
+        {
+          "w": "a",
+          "s": 319.447,
+          "e": 319.507,
+          "c": 0.997065
+        },
+        {
+          "w": "liberal",
+          "s": 319.847,
+          "e": 320.047,
+          "c": 0.995592
+        },
+        {
+          "w": "and",
+          "s": 320.097,
+          "e": 320.157,
+          "c": 0.966499
+        },
+        {
+          "w": "therefore",
+          "s": 320.157,
+          "e": 320.227,
+          "c": 0.932186
+        },
+        {
+          "w": "the",
+          "s": 320.417,
+          "e": 320.477,
+          "c": 0.73666
+        },
+        {
+          "w": "washington",
+          "s": 320.477,
+          "e": 320.877,
+          "c": 0.495155
+        },
+        {
+          "w": "post",
+          "s": 320.877,
+          "e": 321.097,
+          "c": 0.984791
+        },
+        {
+          "w": "is",
+          "s": 321.097,
+          "e": 321.207,
+          "c": 0.869868
+        },
+        {
+          "w": "going",
+          "s": 321.207,
+          "e": 321.487,
+          "c": 0.996293
+        },
+        {
+          "w": "to",
+          "s": 321.487,
+          "e": 321.597,
+          "c": 0.944539
+        },
+        {
+          "w": "write",
+          "s": 321.597,
+          "e": 321.877,
+          "c": 0.979415
+        },
+        {
+          "w": "hit",
+          "s": 322.017,
+          "e": 322.037,
+          "c": 0.952854
+        },
+        {
+          "w": "pieces",
+          "s": 322.037,
+          "e": 322.367,
+          "c": 0.994541
+        },
+        {
+          "w": "well",
+          "s": 322.367,
+          "e": 322.587,
+          "c": 0.999689
+        },
+        {
+          "w": "done",
+          "s": 322.587,
+          "e": 322.807,
+          "c": 0.99954
+        },
+        {
+          "w": "i",
+          "s": 322.807,
+          "e": 322.857,
+          "c": 0.999527
+        },
+        {
+          "w": "guess",
+          "s": 322.857,
+          "e": 323.197,
+          "c": 0.998997
+        }
+      ]
+    }
+  ]
+}

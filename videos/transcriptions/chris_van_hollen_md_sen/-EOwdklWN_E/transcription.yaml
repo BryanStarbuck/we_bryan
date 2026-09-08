@@ -1,0 +1,134 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "TRUMP is using AMERICAN TROOPS to boost oil company profits."
+    Description: >-
+      Senator Chris Van Hollen accuses the Trump administration of lying
+      to the American people about its military posture toward Venezuela.
+      He argues the operation has never been about interdicting drugs — a
+      goal he says everyone supports — but about removing Nicolas Maduro
+      and securing Venezuelan oil for American oil companies and, in his
+      words, Trump's billionaire friends. He argues Trump's claim to have
+      opposed the Iraq war from the beginning was untrue, and points to
+      Trump's remark that having gone into Iraq the United States should
+      have taken its oil as evidence of the motive he ascribes. He praises
+      the performance of American service members while calling it
+      outrageous that the President would put American lives at risk for
+      corporate profit. Every claim of motive here is Van Hollen's own
+      characterisation; the administration officials he describes are
+      absent and do not answer it.
+    URL: "https://www.youtube.com/watch?v=-EOwdklWN_E"
+    Video_ID: "-EOwdklWN_E"
+    Show: "Senator Chris Van Hollen"
+    Runtime: "00:00:45"
+    Language: "en"
+
+  Media:
+    File: "-EOwdklWN_E.m4a"
+    SHA256: "1b8a279b4885551c705977443f7fe898f0c55a9809b5727331edad3a7a2fd8f1"
+    Bytes: 743489
+    Duration_Seconds: 45
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-EOwdklWN_E"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-EOwdklWN_E.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/chris_van_hollen_md_sen/-EOwdklWN_E/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCkpfJWu1N9Okd6PE_NidtBQ"
+    Uploader_ID: "@senatorvanhollen"
+    View_Count: 1479
+    Like_Count: 139
+    Availability: "public"
+    Published_At: "2026-01-04T23:45:18+00:00"
+    Captured_At: "2026-09-07T19:50:19-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 1
+
+  Topics:
+    - "U.S. military action toward Venezuela"
+    - "Nicolas Maduro and regime change"
+    - "Oil interests and foreign policy motives"
+    - "Comparisons to the Iraq war"
+    - "Risk to American service members"
+
+  Source:
+    Canonical_ID: "81d0d8d4bdbec061"
+    Transcribed: "2026-09-07T19:54:52.708179-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 134
+    Segments: 2
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T19:50:20.300740-07:00"
+    Transcription_Finished: "2026-09-07T19:54:52.708179-07:00"
+    Recorded: "2026-01-04"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-EOwdklWN_E.ctm"
+    Fountain: "-EOwdklWN_E.fountain"
+    Diarization_RTTM: "-EOwdklWN_E.rttm"
+    As_Broadcast_Script: "-EOwdklWN_E.script.txt"
+    Segments_JSON: "-EOwdklWN_E.segments.json"
+    Segments_JSONL: "-EOwdklWN_E.segments.jsonl"
+    Subtitles_SRT: "-EOwdklWN_E.srt"
+    Plain_Text: "-EOwdklWN_E.transcription"
+    Subtitles_VTT: "-EOwdklWN_E.vtt"
+    Transcript_SHA256: "fc56adb0e87c91e8edf28f918d5edab72175b8d4915e26470919094a23997f14"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "chris_van_hollen_md_sen"
+    video_uid: "chris_van_hollen_md_sen::-EOwdklWN_E"
+    video_key: "-EOwdklWN_E"
+    youtube_id: "-EOwdklWN_E"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-EOwdklWN_E"
+    source_ref: "-EOwdklWN_E"
