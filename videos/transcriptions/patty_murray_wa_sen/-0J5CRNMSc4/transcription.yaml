@@ -1,0 +1,139 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "I pressed Trump's Secretary of Labor nominee if she would commit to simply following the law."
+    Description: >-
+      A 32-second clip of a Senate confirmation hearing exchange in which the questioning senator presses
+      President Trump's nominee for Secretary of Labor on what she would do if directed to violate
+      appropriations law and withhold funding for workers. The nominee twice answers that she does not believe
+      the president would ever ask her to break the law, calls the question a hypothetical, and says she has
+      not discussed the issue with the president; pressed again, she says she will commit to following the
+      law. The senator asserts that the administration has been violating that law 'across the board' since
+      taking office - that characterisation is the questioner's own and is contested, and the nominee is not
+      named anywhere in the audio.
+    URL: "https://www.youtube.com/watch?v=-0J5CRNMSc4"
+    Video_ID: "-0J5CRNMSc4"
+    Show: "Senator Patty Murray"
+    Runtime: "00:00:32"
+    Language: "en"
+
+  Media:
+    File: "-0J5CRNMSc4.m4a"
+    SHA256: "94207bb10db0252caf065099c619a0844dfe73d2e4c39289b71a51429d319cd9"
+    Bytes: 520949
+    Duration_Seconds: 32
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-0J5CRNMSc4"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-0J5CRNMSc4.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/patty_murray_wa_sen/-0J5CRNMSc4/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCb8jq3TvQ3AzKsexhWfFLoA"
+    Uploader_ID: "@pattymurray"
+    View_Count: 1097
+    Like_Count: 65
+    Comment_Count: 14
+    Availability: "public"
+    Published_At: "2025-02-19T18:03:06+00:00"
+    Captured_At: "2026-09-08T04:14:47-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "73.1%"
+      Turns: 3
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "13.5%"
+      Turns: 2
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "13.5%"
+      Turns: 1
+
+  Topics:
+    - "Senate confirmation hearing for Secretary of Labor"
+    - "Appropriations law and withholding of worker funding"
+    - "Executive branch compliance with spending law"
+
+  Source:
+    Canonical_ID: "a6e20ed8a453d4d8"
+    Transcribed: "2026-09-08T04:17:08.187841-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 125
+    Segments: 9
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T04:14:48.476686-07:00"
+    Transcription_Finished: "2026-09-08T04:17:08.187841-07:00"
+    Recorded: "2025-02-19"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-0J5CRNMSc4.ctm"
+    Fountain: "-0J5CRNMSc4.fountain"
+    Diarization_RTTM: "-0J5CRNMSc4.rttm"
+    As_Broadcast_Script: "-0J5CRNMSc4.script.txt"
+    Segments_JSON: "-0J5CRNMSc4.segments.json"
+    Segments_JSONL: "-0J5CRNMSc4.segments.jsonl"
+    Subtitles_SRT: "-0J5CRNMSc4.srt"
+    Plain_Text: "-0J5CRNMSc4.transcription"
+    Subtitles_VTT: "-0J5CRNMSc4.vtt"
+    Transcript_SHA256: "c1798754b86be0f3d965dbcc3fc5ed20b485eee2e1d740aab15a8c169646a79b"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "patty_murray_wa_sen"
+    video_uid: "patty_murray_wa_sen::-0J5CRNMSc4"
+    video_key: "-0J5CRNMSc4"
+    youtube_id: "-0J5CRNMSc4"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T10:15:03.132Z"
+    demand_run_id: "job_1788862500006_165"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-0J5CRNMSc4"
+    source_ref: "-0J5CRNMSc4"

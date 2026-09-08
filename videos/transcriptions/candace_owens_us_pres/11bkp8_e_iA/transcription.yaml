@@ -1,0 +1,178 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "I Have a Dream"
+    Description: >-
+      A montage assembled around Candace Owens's repeated statement that she had a vivid dream in which
+      Charlie Kirk said he had been betrayed by people closest to him. Owens says she feels as strongly about
+      the dream as about anything, urges viewers never to ignore the subconscious, says people at Turning
+      Point email her their own dreams, and says that in the third week after Kirk's death one face finally
+      came through clearly in the dream - the clip does not say whose. The montage intercuts critics mocking
+      the claim, saying she is 'just going on vibes' and 'blindly pointing the finger at everybody', alongside
+      Owens answering that people can paint her as a crazy person and she is sticking with the dream. The
+      betrayal claim is Owens's own, is offered as a dream rather than as evidence, and anyone it might
+      implicate is unnamed here and does not answer it. Diarization returned nine clusters for under two
+      minutes of cut-together clips.
+    URL: "https://www.youtube.com/watch?v=11bkp8_e_iA"
+    Video_ID: "11bkp8_e_iA"
+    Show: "Candace Owens Podcast"
+    Runtime: "00:01:50"
+    Language: "en"
+
+  Media:
+    File: "11bkp8_e_iA.m4a"
+    SHA256: "46ee82ad559dd61a4cc5ba680c9d09f768cfac59d172228e3ce6ad1a4999cb8f"
+    Bytes: 1782948
+    Duration_Seconds: 110
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=11bkp8_e_iA"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "11bkp8_e_iA.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/candace_owens_us_pres/11bkp8_e_iA/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCkY4fdKOFk3Kiq7g5LLKYLw"
+    Uploader_ID: "@CandaceOwensPodcast"
+    View_Count: 19796
+    Like_Count: 947
+    Comment_Count: 1000
+    Availability: "public"
+    Published_At: "2026-01-19T14:00:04+00:00"
+    Captured_At: "2026-09-08T04:14:33-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "31.2%"
+      Turns: 3
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "2.8%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "15.2%"
+      Turns: 3
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "2.1%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "21.8%"
+      Turns: 3
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "7.9%"
+      Turns: 2
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "8.9%"
+      Turns: 2
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_10"
+      Share_Of_Speech: "4.5%"
+      Turns: 1
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "5.6%"
+      Turns: 2
+
+  Topics:
+    - "Candace Owens's dream claims about Charlie Kirk"
+    - "Alleged betrayal of Charlie Kirk by people close to him"
+    - "Turning Point USA"
+    - "Media criticism of Candace Owens"
+
+  Source:
+    Canonical_ID: "c73bcf7d65ed5e00"
+    Transcribed: "2026-09-08T04:18:59.256633-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 382
+    Segments: 22
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T04:14:34.244439-07:00"
+    Transcription_Finished: "2026-09-08T04:18:59.256633-07:00"
+    Recorded: "2026-01-19"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "11bkp8_e_iA.ctm"
+    Fountain: "11bkp8_e_iA.fountain"
+    Diarization_RTTM: "11bkp8_e_iA.rttm"
+    As_Broadcast_Script: "11bkp8_e_iA.script.txt"
+    Segments_JSON: "11bkp8_e_iA.segments.json"
+    Segments_JSONL: "11bkp8_e_iA.segments.jsonl"
+    Subtitles_SRT: "11bkp8_e_iA.srt"
+    Plain_Text: "11bkp8_e_iA.transcription"
+    Subtitles_VTT: "11bkp8_e_iA.vtt"
+    Transcript_SHA256: "612e39495d2bdb93efb9506206a2a36008e700c127908cf9e4f1b6f8d8c5c051"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "candace_owens_us_pres"
+    video_uid: "candace_owens_us_pres::11bkp8_e_iA"
+    video_key: "11bkp8_e_iA"
+    youtube_id: "11bkp8_e_iA"
+    priority: 850
+    ceiling: 1000
+    raw_score: 850
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 300
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T10:15:03.132Z"
+    demand_run_id: "job_1788862500006_165"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=11bkp8_e_iA"
+    source_ref: "11bkp8_e_iA"

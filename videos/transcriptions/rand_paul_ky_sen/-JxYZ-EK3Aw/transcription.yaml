@@ -1,0 +1,122 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Team Rand at the 2016 Knob Creek Machine Gun Shoot"
+    Description: >-
+      An 83-second campaign clip of 'Team Rand' at the 2016 Knob Creek Machine Gun Shoot in Kentucky. Almost
+      the whole soundtrack is gunfire and range noise. The only speech captured is a range officer's command
+      to lock and load, repeated, and a short 'we'll be right back' aside - 29 words in total. Nothing
+      political is said and no candidate speaks on the record here; the clip is campaign event footage, not an
+      argument. Diarization returned a single cluster holding 100 percent of the speech.
+    URL: "https://www.youtube.com/watch?v=-JxYZ-EK3Aw"
+    Video_ID: "-JxYZ-EK3Aw"
+    Show: "Rand Paul"
+    Runtime: "00:01:23"
+    Language: "en"
+
+  Media:
+    File: "-JxYZ-EK3Aw.m4a"
+    SHA256: "bc2e9de6864f3755679d0f1de397bb9aac99bc8fa30953def4b026aa2ceb79f6"
+    Bytes: 1357633
+    Duration_Seconds: 83
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-JxYZ-EK3Aw"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-JxYZ-EK3Aw.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/rand_paul_ky_sen/-JxYZ-EK3Aw/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC_8WUrPbi8clO6sWt_FDvuA"
+    Uploader_ID: "@randpaul"
+    View_Count: 4683
+    Availability: "public"
+    Published_At: "2016-04-10T17:44:43+00:00"
+    Captured_At: "2026-09-08T04:15:02-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 2
+
+  Topics:
+    - "2016 Rand Paul campaign outreach"
+    - "Knob Creek Machine Gun Shoot"
+    - "Firearms range event - no policy content"
+
+  Source:
+    Canonical_ID: "45f2cc7a34dfcb0d"
+    Transcribed: "2026-09-08T04:17:58.014982-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 29
+    Segments: 6
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T04:15:02.950025-07:00"
+    Transcription_Finished: "2026-09-08T04:17:58.014982-07:00"
+    Recorded: "2016-04-10"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-JxYZ-EK3Aw.ctm"
+    Fountain: "-JxYZ-EK3Aw.fountain"
+    Diarization_RTTM: "-JxYZ-EK3Aw.rttm"
+    As_Broadcast_Script: "-JxYZ-EK3Aw.script.txt"
+    Segments_JSON: "-JxYZ-EK3Aw.segments.json"
+    Segments_JSONL: "-JxYZ-EK3Aw.segments.jsonl"
+    Subtitles_SRT: "-JxYZ-EK3Aw.srt"
+    Plain_Text: "-JxYZ-EK3Aw.transcription"
+    Subtitles_VTT: "-JxYZ-EK3Aw.vtt"
+    Transcript_SHA256: "85ecdc56180d95d5d599c08acd145eb4998ad2fd6dbfaebf679b069298d72678"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "rand_paul_ky_sen"
+    video_uid: "rand_paul_ky_sen::-JxYZ-EK3Aw"
+    video_key: "-JxYZ-EK3Aw"
+    youtube_id: "-JxYZ-EK3Aw"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T10:15:03.132Z"
+    demand_run_id: "job_1788862500006_165"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-JxYZ-EK3Aw"
+    source_ref: "-JxYZ-EK3Aw"

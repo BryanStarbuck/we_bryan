@@ -1,0 +1,1007 @@
+{
+  "schema_version": 2,
+  "canonical_id": "8672e7970fbae53e",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 52.96,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T11:17:31.916Z",
+  "text_sha256": "d4d58f38c5cc49a0cb8518ef0cc19c6099fd3d44a59adebd5348e5a2cb05d930",
+  "segments_sha256": "55209dba0631bc41df9d323b425a852f4a2d2bd70839bf6c3202206f68acc862",
+  "words_sha256": "cc28eb82d2a70355a4a1042cef0118b4f464557753d3776a8f5c309c3d7e9d57",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 2,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 4,
+    "clusters": 3,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.3
+      },
+      "clean_s": 1.3,
+      "speaking_s": 1.3,
+      "first_s": 2.04
+    },
+    {
+      "id": "SPEAKER_02",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 8.5
+      },
+      "clean_s": 8.5,
+      "speaking_s": 8.5,
+      "first_s": 9.94
+    },
+    {
+      "id": "SPEAKER_04",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 30.1
+      },
+      "clean_s": 30.1,
+      "speaking_s": 30.1,
+      "first_s": 20.13
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0,
+      "end_s": 1.27,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 4.96,
+      "end_s": 5.45,
+      "segment_i": 2,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 18.54,
+      "end_s": 20.01,
+      "segment_i": 4,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 30.51,
+      "end_s": 33.06,
+      "segment_i": 7,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0,
+      "end_s": 1.27,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "are we",
+      "words": [
+        {
+          "w": "are",
+          "s": 0,
+          "e": 0.76,
+          "c": 0.052053
+        },
+        {
+          "w": "we",
+          "s": 0.76,
+          "e": 1.27,
+          "c": 0.992618
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 2.06,
+      "end_s": 2.9,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "good guys are we rolling",
+      "words": [
+        {
+          "w": "good",
+          "s": 2.06,
+          "e": 2.3,
+          "c": 0.982273
+        },
+        {
+          "w": "guys",
+          "s": 2.3,
+          "e": 2.5,
+          "c": 0.974912
+        },
+        {
+          "w": "are",
+          "s": 2.54,
+          "e": 2.61,
+          "c": 0.738278
+        },
+        {
+          "w": "we",
+          "s": 2.61,
+          "e": 2.68,
+          "c": 0.992225
+        },
+        {
+          "w": "rolling",
+          "s": 2.68,
+          "e": 2.9,
+          "c": 0.935041
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 4.96,
+      "end_s": 5.45,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "in",
+      "words": [
+        {
+          "w": "in",
+          "s": 4.96,
+          "e": 5.45,
+          "c": 0.930199
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 5.45,
+      "end_s": 18.26,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "this age of propaganda and the media has done a really good job of creating a caricature of candace owens",
+      "words": [
+        {
+          "w": "this",
+          "s": 5.45,
+          "e": 10.56,
+          "c": 0.998489
+        },
+        {
+          "w": "age",
+          "s": 10.56,
+          "e": 11.14,
+          "c": 0.983624
+        },
+        {
+          "w": "of",
+          "s": 11.17,
+          "e": 11.62,
+          "c": 0.963957
+        },
+        {
+          "w": "propaganda",
+          "s": 11.62,
+          "e": 12.25,
+          "c": 0.659403
+        },
+        {
+          "w": "and",
+          "s": 12.26,
+          "e": 12.66,
+          "c": 0.846382
+        },
+        {
+          "w": "the",
+          "s": 12.66,
+          "e": 12.88,
+          "c": 0.982478
+        },
+        {
+          "w": "media",
+          "s": 12.88,
+          "e": 13.24,
+          "c": 0.950915
+        },
+        {
+          "w": "has",
+          "s": 13.24,
+          "e": 13.51,
+          "c": 0.932677
+        },
+        {
+          "w": "done",
+          "s": 13.59,
+          "e": 13.64,
+          "c": 0.977437
+        },
+        {
+          "w": "a",
+          "s": 13.64,
+          "e": 13.69,
+          "c": 0.98828
+        },
+        {
+          "w": "really",
+          "s": 13.69,
+          "e": 14.04,
+          "c": 0.99128
+        },
+        {
+          "w": "good",
+          "s": 14.04,
+          "e": 14.28,
+          "c": 0.971326
+        },
+        {
+          "w": "job",
+          "s": 14.28,
+          "e": 14.68,
+          "c": 0.986325
+        },
+        {
+          "w": "of",
+          "s": 14.68,
+          "e": 15.1,
+          "c": 0.787595
+        },
+        {
+          "w": "creating",
+          "s": 15.1,
+          "e": 15.57,
+          "c": 0.915765
+        },
+        {
+          "w": "a",
+          "s": 15.58,
+          "e": 15.92,
+          "c": 0.933866
+        },
+        {
+          "w": "caricature",
+          "s": 15.92,
+          "e": 16.48,
+          "c": 0.926604
+        },
+        {
+          "w": "of",
+          "s": 16.48,
+          "e": 16.73,
+          "c": 0.994936
+        },
+        {
+          "w": "candace",
+          "s": 16.73,
+          "e": 17.61,
+          "c": 0.799986
+        },
+        {
+          "w": "owens",
+          "s": 17.61,
+          "e": 18.26,
+          "c": 0.998414
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 18.54,
+      "end_s": 20.01,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "what's going to be",
+      "words": [
+        {
+          "w": "what's",
+          "s": 18.54,
+          "e": 18.96,
+          "c": 0.633701
+        },
+        {
+          "w": "going",
+          "s": 18.96,
+          "e": 19.55,
+          "c": 0.76027
+        },
+        {
+          "w": "to",
+          "s": 19.55,
+          "e": 19.78,
+          "c": 0.999979
+        },
+        {
+          "w": "be",
+          "s": 19.78,
+          "e": 20.01,
+          "c": 0.999907
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 20.01,
+      "end_s": 21.7,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "different about",
+      "words": [
+        {
+          "w": "different",
+          "s": 20.01,
+          "e": 21.07,
+          "c": 0.999748
+        },
+        {
+          "w": "about",
+          "s": 21.07,
+          "e": 21.7,
+          "c": 0.999323
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 21.83,
+      "end_s": 30.48,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Candace at The Daily Wire. The timing right now is really crucial to stand up on a platform and to say, I'm here, I'm a conservative, I'm not apologizing. I",
+      "words": [
+        {
+          "w": "Candace",
+          "s": 21.83,
+          "e": 22.17,
+          "c": 0.428814
+        },
+        {
+          "w": "at",
+          "s": 22.17,
+          "e": 22.3,
+          "c": 0.935251
+        },
+        {
+          "w": "The",
+          "s": 22.3,
+          "e": 22.52,
+          "c": 0.663425
+        },
+        {
+          "w": "Daily",
+          "s": 22.52,
+          "e": 22.87,
+          "c": 0.994824
+        },
+        {
+          "w": "Wire.",
+          "s": 22.87,
+          "e": 23.28,
+          "c": 0.88243
+        },
+        {
+          "w": "The",
+          "s": 23.28,
+          "e": 23.46,
+          "c": 0.993436
+        },
+        {
+          "w": "timing",
+          "s": 23.46,
+          "e": 23.81,
+          "c": 0.997917
+        },
+        {
+          "w": "right",
+          "s": 23.81,
+          "e": 24.09,
+          "c": 0.990662
+        },
+        {
+          "w": "now",
+          "s": 24.1,
+          "e": 24.24,
+          "c": 0.998694
+        },
+        {
+          "w": "is",
+          "s": 24.29,
+          "e": 24.4,
+          "c": 0.980071
+        },
+        {
+          "w": "really",
+          "s": 24.4,
+          "e": 24.75,
+          "c": 0.99222
+        },
+        {
+          "w": "crucial",
+          "s": 24.75,
+          "e": 25.2,
+          "c": 0.995503
+        },
+        {
+          "w": "to",
+          "s": 25.2,
+          "e": 25.33,
+          "c": 0.99771
+        },
+        {
+          "w": "stand",
+          "s": 25.35,
+          "e": 25.7,
+          "c": 0.999588
+        },
+        {
+          "w": "up",
+          "s": 25.7,
+          "e": 25.84,
+          "c": 0.997811
+        },
+        {
+          "w": "on",
+          "s": 25.84,
+          "e": 25.97,
+          "c": 0.996748
+        },
+        {
+          "w": "a",
+          "s": 25.97,
+          "e": 26.04,
+          "c": 0.993009
+        },
+        {
+          "w": "platform",
+          "s": 26.05,
+          "e": 26.66,
+          "c": 0.998999
+        },
+        {
+          "w": "and",
+          "s": 26.66,
+          "e": 26.97,
+          "c": 0.882038
+        },
+        {
+          "w": "to",
+          "s": 26.97,
+          "e": 27.18,
+          "c": 0.986464
+        },
+        {
+          "w": "say,",
+          "s": 27.18,
+          "e": 27.5,
+          "c": 0.71004
+        },
+        {
+          "w": "I'm",
+          "s": 27.5,
+          "e": 27.77,
+          "c": 0.856204
+        },
+        {
+          "w": "here,",
+          "s": 27.77,
+          "e": 28.34,
+          "c": 0.749363
+        },
+        {
+          "w": "I'm",
+          "s": 28.34,
+          "e": 28.46,
+          "c": 0.97701
+        },
+        {
+          "w": "a",
+          "s": 28.51,
+          "e": 28.51,
+          "c": 0.996955
+        },
+        {
+          "w": "conservative,",
+          "s": 28.51,
+          "e": 29.2,
+          "c": 0.897539
+        },
+        {
+          "w": "I'm",
+          "s": 29.2,
+          "e": 29.36,
+          "c": 0.85583
+        },
+        {
+          "w": "not",
+          "s": 29.36,
+          "e": 29.53,
+          "c": 0.999779
+        },
+        {
+          "w": "apologizing.",
+          "s": 29.53,
+          "e": 30.36,
+          "c": 0.98622
+        },
+        {
+          "w": "I",
+          "s": 30.36,
+          "e": 30.48,
+          "c": 0.991993
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 30.51,
+      "end_s": 33.06,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "am really committed to",
+      "words": [
+        {
+          "w": "am",
+          "s": 30.51,
+          "e": 30.76,
+          "c": 0.610917
+        },
+        {
+          "w": "really",
+          "s": 30.76,
+          "e": 31.58,
+          "c": 0.999493
+        },
+        {
+          "w": "committed",
+          "s": 31.58,
+          "e": 32.8,
+          "c": 0.997695
+        },
+        {
+          "w": "to",
+          "s": 32.8,
+          "e": 33.06,
+          "c": 0.997151
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 33.07,
+      "end_s": 52.96,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "changing things. I have the courage to stand by my convictions and genuinely believe in the importance of challenging ideas and the importance of debate. And that's why I'm really excited to join The Daily Wire team. This show is going to be uplifting, funny, political. This show is going to be all of the pieces of me.",
+      "words": [
+        {
+          "w": "changing",
+          "s": 33.07,
+          "e": 34.16,
+          "c": 0.998843
+        },
+        {
+          "w": "things.",
+          "s": 34.16,
+          "e": 35.42,
+          "c": 0.958066
+        },
+        {
+          "w": "I",
+          "s": 35.42,
+          "e": 35.49,
+          "c": 0.997883
+        },
+        {
+          "w": "have",
+          "s": 35.57,
+          "e": 35.8,
+          "c": 0.99967
+        },
+        {
+          "w": "the",
+          "s": 35.8,
+          "e": 36,
+          "c": 0.998641
+        },
+        {
+          "w": "courage",
+          "s": 36.03,
+          "e": 36.57,
+          "c": 0.99976
+        },
+        {
+          "w": "to",
+          "s": 36.57,
+          "e": 36.72,
+          "c": 0.998671
+        },
+        {
+          "w": "stand",
+          "s": 36.72,
+          "e": 37.11,
+          "c": 0.995448
+        },
+        {
+          "w": "by",
+          "s": 37.11,
+          "e": 37.26,
+          "c": 0.997577
+        },
+        {
+          "w": "my",
+          "s": 37.26,
+          "e": 37.41,
+          "c": 0.997906
+        },
+        {
+          "w": "convictions",
+          "s": 37.41,
+          "e": 38.32,
+          "c": 0.991667
+        },
+        {
+          "w": "and",
+          "s": 38.32,
+          "e": 38.55,
+          "c": 0.999807
+        },
+        {
+          "w": "genuinely",
+          "s": 38.55,
+          "e": 39.25,
+          "c": 0.996345
+        },
+        {
+          "w": "believe",
+          "s": 39.25,
+          "e": 39.8,
+          "c": 0.997175
+        },
+        {
+          "w": "in",
+          "s": 39.8,
+          "e": 39.9,
+          "c": 0.968755
+        },
+        {
+          "w": "the",
+          "s": 39.91,
+          "e": 40.08,
+          "c": 0.99452
+        },
+        {
+          "w": "importance",
+          "s": 40.08,
+          "e": 40.68,
+          "c": 0.989978
+        },
+        {
+          "w": "of",
+          "s": 40.68,
+          "e": 40.76,
+          "c": 0.999676
+        },
+        {
+          "w": "challenging",
+          "s": 40.83,
+          "e": 41.31,
+          "c": 0.998506
+        },
+        {
+          "w": "ideas",
+          "s": 41.31,
+          "e": 41.55,
+          "c": 0.998426
+        },
+        {
+          "w": "and",
+          "s": 41.55,
+          "e": 41.63,
+          "c": 0.791551
+        },
+        {
+          "w": "the",
+          "s": 41.69,
+          "e": 41.83,
+          "c": 0.979157
+        },
+        {
+          "w": "importance",
+          "s": 41.83,
+          "e": 42.36,
+          "c": 0.997109
+        },
+        {
+          "w": "of",
+          "s": 42.36,
+          "e": 42.53,
+          "c": 0.988455
+        },
+        {
+          "w": "debate.",
+          "s": 42.53,
+          "e": 43.06,
+          "c": 0.517098
+        },
+        {
+          "w": "And",
+          "s": 43.06,
+          "e": 43.15,
+          "c": 0.988706
+        },
+        {
+          "w": "that's",
+          "s": 43.16,
+          "e": 43.36,
+          "c": 0.996871
+        },
+        {
+          "w": "why",
+          "s": 43.37,
+          "e": 43.47,
+          "c": 0.998971
+        },
+        {
+          "w": "I'm",
+          "s": 43.47,
+          "e": 43.57,
+          "c": 0.993187
+        },
+        {
+          "w": "really",
+          "s": 43.57,
+          "e": 43.78,
+          "c": 0.968416
+        },
+        {
+          "w": "excited",
+          "s": 43.78,
+          "e": 44,
+          "c": 0.998487
+        },
+        {
+          "w": "to",
+          "s": 44.06,
+          "e": 44.17,
+          "c": 0.99983
+        },
+        {
+          "w": "join",
+          "s": 44.21,
+          "e": 44.4,
+          "c": 0.99942
+        },
+        {
+          "w": "The",
+          "s": 44.4,
+          "e": 44.57,
+          "c": 0.728095
+        },
+        {
+          "w": "Daily",
+          "s": 44.57,
+          "e": 44.85,
+          "c": 0.998641
+        },
+        {
+          "w": "Wire",
+          "s": 44.85,
+          "e": 45.09,
+          "c": 0.998281
+        },
+        {
+          "w": "team.",
+          "s": 45.09,
+          "e": 45.54,
+          "c": 0.968232
+        },
+        {
+          "w": "This",
+          "s": 45.69,
+          "e": 45.86,
+          "c": 0.998938
+        },
+        {
+          "w": "show",
+          "s": 45.86,
+          "e": 46.18,
+          "c": 0.999542
+        },
+        {
+          "w": "is",
+          "s": 46.18,
+          "e": 46.34,
+          "c": 0.999232
+        },
+        {
+          "w": "going",
+          "s": 46.34,
+          "e": 46.74,
+          "c": 0.997818
+        },
+        {
+          "w": "to",
+          "s": 46.74,
+          "e": 46.9,
+          "c": 0.998513
+        },
+        {
+          "w": "be",
+          "s": 46.9,
+          "e": 47.05,
+          "c": 0.995617
+        },
+        {
+          "w": "uplifting,",
+          "s": 47.06,
+          "e": 47.96,
+          "c": 0.97587
+        },
+        {
+          "w": "funny,",
+          "s": 47.96,
+          "e": 48.6,
+          "c": 0.860917
+        },
+        {
+          "w": "political.",
+          "s": 48.6,
+          "e": 49.82,
+          "c": 0.974838
+        },
+        {
+          "w": "This",
+          "s": 49.97,
+          "e": 50.19,
+          "c": 0.92895
+        },
+        {
+          "w": "show",
+          "s": 50.19,
+          "e": 50.55,
+          "c": 0.99862
+        },
+        {
+          "w": "is",
+          "s": 50.55,
+          "e": 50.74,
+          "c": 0.999295
+        },
+        {
+          "w": "going",
+          "s": 50.74,
+          "e": 51.21,
+          "c": 0.999024
+        },
+        {
+          "w": "to",
+          "s": 51.21,
+          "e": 51.37,
+          "c": 0.998077
+        },
+        {
+          "w": "be",
+          "s": 51.39,
+          "e": 51.62,
+          "c": 0.999392
+        },
+        {
+          "w": "all",
+          "s": 51.62,
+          "e": 51.81,
+          "c": 0.897402
+        },
+        {
+          "w": "of",
+          "s": 51.81,
+          "e": 51.93,
+          "c": 0.98469
+        },
+        {
+          "w": "the",
+          "s": 51.93,
+          "e": 52.12,
+          "c": 0.973773
+        },
+        {
+          "w": "pieces",
+          "s": 52.12,
+          "e": 52.5,
+          "c": 0.996434
+        },
+        {
+          "w": "of",
+          "s": 52.5,
+          "e": 52.62,
+          "c": 0.994841
+        },
+        {
+          "w": "me.",
+          "s": 52.62,
+          "e": 52.96,
+          "c": 0.833283
+        }
+      ]
+    }
+  ]
+}

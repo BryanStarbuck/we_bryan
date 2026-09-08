@@ -1,0 +1,2412 @@
+{
+  "schema_version": 2,
+  "canonical_id": "f06b86c3c6ab22e0",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 149.32,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T11:19:39.526Z",
+  "text_sha256": "9ec28f8d414c25adc7b50a25d12314e257c39602eb1c225d440cf1c2ec82cf09",
+  "segments_sha256": "39514dbd4859337b96cca8e2508008e31b3fe1dbce85556ec61a3a70c428db3c",
+  "words_sha256": "76d607de45cdb64c88baf3e8f9c092e8fff989ba988db0aaa35fcce4162ae76d",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 5,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 6,
+    "clusters": 3,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_01",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.6
+      },
+      "clean_s": 0.6,
+      "speaking_s": 0.6,
+      "first_s": 0.22
+    },
+    {
+      "id": "SPEAKER_00",
+      "n": 2,
+      "label": "Speaker 2 (higher-pitched voice)",
+      "voice": {
+        "descriptor": "woman",
+        "p": 0.82,
+        "confidence": "low",
+        "clean_s": 133.7
+      },
+      "clean_s": 133.7,
+      "speaking_s": 134,
+      "first_s": 3.44
+    },
+    {
+      "id": "SPEAKER_02",
+      "n": 3,
+      "label": "Speaker 3 (higher-pitched voice)",
+      "voice": {
+        "descriptor": "woman",
+        "p": 0.85,
+        "confidence": "low",
+        "clean_s": 11.4
+      },
+      "clean_s": 11.4,
+      "speaking_s": 11.7,
+      "first_s": 10.16
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.87,
+      "end_s": 2.65,
+      "segment_i": 1,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 33.02,
+      "end_s": 33.02,
+      "segment_i": 6,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 114.34,
+      "end_s": 114.34,
+      "segment_i": 11,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.17,
+      "end_s": 0.8,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "Thank",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 0.17,
+          "e": 0.8,
+          "c": 0.123928
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.87,
+      "end_s": 2.65,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you, Mr.",
+      "words": [
+        {
+          "w": "you,",
+          "s": 0.87,
+          "e": 1.77,
+          "c": 0.737224
+        },
+        {
+          "w": "Mr.",
+          "s": 1.77,
+          "e": 2.65,
+          "c": 0.958107
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 3.19,
+      "end_s": 9.94,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "President. Mr. President, I'm here to lift up the voices of the families that I represent in the state of Washington",
+      "words": [
+        {
+          "w": "President.",
+          "s": 3.19,
+          "e": 4.32,
+          "c": 0.95373
+        },
+        {
+          "w": "Mr.",
+          "s": 4.43,
+          "e": 4.64,
+          "c": 0.852789
+        },
+        {
+          "w": "President,",
+          "s": 4.64,
+          "e": 5.34,
+          "c": 0.968697
+        },
+        {
+          "w": "I'm",
+          "s": 5.34,
+          "e": 5.59,
+          "c": 0.881938
+        },
+        {
+          "w": "here",
+          "s": 5.59,
+          "e": 5.94,
+          "c": 0.998241
+        },
+        {
+          "w": "to",
+          "s": 5.94,
+          "e": 6.06,
+          "c": 0.968908
+        },
+        {
+          "w": "lift",
+          "s": 6.06,
+          "e": 6.3,
+          "c": 0.990182
+        },
+        {
+          "w": "up",
+          "s": 6.3,
+          "e": 6.44,
+          "c": 0.988037
+        },
+        {
+          "w": "the",
+          "s": 6.44,
+          "e": 6.62,
+          "c": 0.973034
+        },
+        {
+          "w": "voices",
+          "s": 6.62,
+          "e": 7,
+          "c": 0.988139
+        },
+        {
+          "w": "of",
+          "s": 7,
+          "e": 7.14,
+          "c": 0.918874
+        },
+        {
+          "w": "the",
+          "s": 7.14,
+          "e": 7.2,
+          "c": 0.954997
+        },
+        {
+          "w": "families",
+          "s": 7.32,
+          "e": 7.7,
+          "c": 0.953815
+        },
+        {
+          "w": "that",
+          "s": 7.82,
+          "e": 7.9,
+          "c": 0.789421
+        },
+        {
+          "w": "I",
+          "s": 7.9,
+          "e": 8.06,
+          "c": 0.981343
+        },
+        {
+          "w": "represent",
+          "s": 8.06,
+          "e": 8.74,
+          "c": 0.960236
+        },
+        {
+          "w": "in",
+          "s": 8.74,
+          "e": 8.78,
+          "c": 0.874127
+        },
+        {
+          "w": "the",
+          "s": 8.94,
+          "e": 8.97,
+          "c": 0.921032
+        },
+        {
+          "w": "state",
+          "s": 8.97,
+          "e": 9.06,
+          "c": 0.729121
+        },
+        {
+          "w": "of",
+          "s": 9.23,
+          "e": 9.3,
+          "c": 0.998986
+        },
+        {
+          "w": "Washington",
+          "s": 9.3,
+          "e": 9.94,
+          "c": 0.999296
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 10.11,
+      "end_s": 15.25,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "who, like so many other Americans, agree the Internet should be free and",
+      "words": [
+        {
+          "w": "who,",
+          "s": 10.11,
+          "e": 10.44,
+          "c": 0.709287
+        },
+        {
+          "w": "like",
+          "s": 10.44,
+          "e": 10.69,
+          "c": 0.992218
+        },
+        {
+          "w": "so",
+          "s": 10.69,
+          "e": 10.81,
+          "c": 0.982201
+        },
+        {
+          "w": "many",
+          "s": 10.81,
+          "e": 11.06,
+          "c": 0.998744
+        },
+        {
+          "w": "other",
+          "s": 11.06,
+          "e": 11.37,
+          "c": 0.968496
+        },
+        {
+          "w": "Americans,",
+          "s": 11.37,
+          "e": 12.09,
+          "c": 0.842277
+        },
+        {
+          "w": "agree",
+          "s": 12.12,
+          "e": 12.48,
+          "c": 0.947842
+        },
+        {
+          "w": "the",
+          "s": 12.62,
+          "e": 12.71,
+          "c": 0.882209
+        },
+        {
+          "w": "Internet",
+          "s": 12.71,
+          "e": 13.32,
+          "c": 0.744302
+        },
+        {
+          "w": "should",
+          "s": 13.32,
+          "e": 13.78,
+          "c": 0.990726
+        },
+        {
+          "w": "be",
+          "s": 13.78,
+          "e": 13.96,
+          "c": 0.994588
+        },
+        {
+          "w": "free",
+          "s": 13.96,
+          "e": 14.66,
+          "c": 0.9577
+        },
+        {
+          "w": "and",
+          "s": 15.12,
+          "e": 15.25,
+          "c": 0.986905
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 15.25,
+      "end_s": 25.96,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "open, who agree our country should support small business owners and entrepreneurs and students and middle-class families, not big corporations and special interests.",
+      "words": [
+        {
+          "w": "open,",
+          "s": 15.25,
+          "e": 16.1,
+          "c": 0.539484
+        },
+        {
+          "w": "who",
+          "s": 16.2,
+          "e": 16.3,
+          "c": 0.994696
+        },
+        {
+          "w": "agree",
+          "s": 16.32,
+          "e": 16.63,
+          "c": 0.997474
+        },
+        {
+          "w": "our",
+          "s": 16.63,
+          "e": 16.73,
+          "c": 0.981206
+        },
+        {
+          "w": "country",
+          "s": 16.81,
+          "e": 17.29,
+          "c": 0.996212
+        },
+        {
+          "w": "should",
+          "s": 17.29,
+          "e": 17.7,
+          "c": 0.996449
+        },
+        {
+          "w": "support",
+          "s": 17.7,
+          "e": 18.17,
+          "c": 0.997963
+        },
+        {
+          "w": "small",
+          "s": 18.17,
+          "e": 18.5,
+          "c": 0.996175
+        },
+        {
+          "w": "business",
+          "s": 18.5,
+          "e": 19.03,
+          "c": 0.969997
+        },
+        {
+          "w": "owners",
+          "s": 19.08,
+          "e": 19.44,
+          "c": 0.994856
+        },
+        {
+          "w": "and",
+          "s": 19.58,
+          "e": 19.64,
+          "c": 0.778287
+        },
+        {
+          "w": "entrepreneurs",
+          "s": 19.64,
+          "e": 20.53,
+          "c": 0.989436
+        },
+        {
+          "w": "and",
+          "s": 20.7,
+          "e": 20.84,
+          "c": 0.968642
+        },
+        {
+          "w": "students",
+          "s": 20.9,
+          "e": 21.62,
+          "c": 0.986242
+        },
+        {
+          "w": "and",
+          "s": 21.76,
+          "e": 21.85,
+          "c": 0.999161
+        },
+        {
+          "w": "middle-class",
+          "s": 21.88,
+          "e": 22.46,
+          "c": 0.644717
+        },
+        {
+          "w": "families,",
+          "s": 22.58,
+          "e": 23.29,
+          "c": 0.778581
+        },
+        {
+          "w": "not",
+          "s": 23.29,
+          "e": 23.48,
+          "c": 0.995547
+        },
+        {
+          "w": "big",
+          "s": 23.48,
+          "e": 23.67,
+          "c": 0.993407
+        },
+        {
+          "w": "corporations",
+          "s": 23.67,
+          "e": 24.46,
+          "c": 0.998106
+        },
+        {
+          "w": "and",
+          "s": 24.46,
+          "e": 24.65,
+          "c": 0.947531
+        },
+        {
+          "w": "special",
+          "s": 24.77,
+          "e": 25.05,
+          "c": 0.991316
+        },
+        {
+          "w": "interests.",
+          "s": 25.14,
+          "e": 25.96,
+          "c": 0.939393
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 26.19,
+      "end_s": 32.51,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Who agree that consumers, not broadband providers, should get to pick the websites that they visit",
+      "words": [
+        {
+          "w": "Who",
+          "s": 26.194,
+          "e": 26.244,
+          "c": 0.381438
+        },
+        {
+          "w": "agree",
+          "s": 26.244,
+          "e": 26.664,
+          "c": 0.993798
+        },
+        {
+          "w": "that",
+          "s": 26.664,
+          "e": 27.014,
+          "c": 0.993144
+        },
+        {
+          "w": "consumers,",
+          "s": 27.014,
+          "e": 27.824,
+          "c": 0.757168
+        },
+        {
+          "w": "not",
+          "s": 28.054,
+          "e": 28.234,
+          "c": 0.985316
+        },
+        {
+          "w": "broadband",
+          "s": 28.234,
+          "e": 28.984,
+          "c": 0.986141
+        },
+        {
+          "w": "providers,",
+          "s": 28.984,
+          "e": 29.804,
+          "c": 0.946308
+        },
+        {
+          "w": "should",
+          "s": 29.914,
+          "e": 30.224,
+          "c": 0.79221
+        },
+        {
+          "w": "get",
+          "s": 30.224,
+          "e": 30.404,
+          "c": 0.97055
+        },
+        {
+          "w": "to",
+          "s": 30.404,
+          "e": 30.524,
+          "c": 0.989485
+        },
+        {
+          "w": "pick",
+          "s": 30.524,
+          "e": 30.674,
+          "c": 0.992752
+        },
+        {
+          "w": "the",
+          "s": 30.884,
+          "e": 30.994,
+          "c": 0.957603
+        },
+        {
+          "w": "websites",
+          "s": 30.994,
+          "e": 31.524,
+          "c": 0.946202
+        },
+        {
+          "w": "that",
+          "s": 31.734,
+          "e": 31.784,
+          "c": 0.851231
+        },
+        {
+          "w": "they",
+          "s": 31.784,
+          "e": 31.984,
+          "c": 0.992867
+        },
+        {
+          "w": "visit",
+          "s": 31.984,
+          "e": 32.514,
+          "c": 0.752548
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 33.02,
+      "end_s": 33.03,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "or",
+      "words": [
+        {
+          "w": "or",
+          "s": 33.024,
+          "e": 33.024,
+          "c": 0.524611
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 33.02,
+      "end_s": 38.78,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "applications that they use. Who agree the Internet should be a level playing field",
+      "words": [
+        {
+          "w": "applications",
+          "s": 33.024,
+          "e": 33.904,
+          "c": 0.907379
+        },
+        {
+          "w": "that",
+          "s": 34.034,
+          "e": 34.154,
+          "c": 0.951909
+        },
+        {
+          "w": "they",
+          "s": 34.354,
+          "e": 34.664,
+          "c": 0.994086
+        },
+        {
+          "w": "use.",
+          "s": 34.664,
+          "e": 35.184,
+          "c": 0.902307
+        },
+        {
+          "w": "Who",
+          "s": 35.394,
+          "e": 35.444,
+          "c": 0.995156
+        },
+        {
+          "w": "agree",
+          "s": 35.444,
+          "e": 35.864,
+          "c": 0.997636
+        },
+        {
+          "w": "the",
+          "s": 35.864,
+          "e": 35.974,
+          "c": 0.752522
+        },
+        {
+          "w": "Internet",
+          "s": 36.144,
+          "e": 36.824,
+          "c": 0.597876
+        },
+        {
+          "w": "should",
+          "s": 36.824,
+          "e": 37.344,
+          "c": 0.996595
+        },
+        {
+          "w": "be",
+          "s": 37.344,
+          "e": 37.514,
+          "c": 0.998805
+        },
+        {
+          "w": "a",
+          "s": 37.514,
+          "e": 37.584,
+          "c": 0.992227
+        },
+        {
+          "w": "level",
+          "s": 37.724,
+          "e": 38.024,
+          "c": 0.987619
+        },
+        {
+          "w": "playing",
+          "s": 38.024,
+          "e": 38.634,
+          "c": 0.939141
+        },
+        {
+          "w": "field",
+          "s": 38.634,
+          "e": 38.784,
+          "c": 0.992939
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 39.12,
+      "end_s": 56,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that benefits end users and not slanted by broadband providers blocking content or charging for prioritized access. That's why so many of us are here on the floor today. To give a voice to the vast majority of Americans who want the Internet",
+      "words": [
+        {
+          "w": "that",
+          "s": 39.124,
+          "e": 39.404,
+          "c": 0.99141
+        },
+        {
+          "w": "benefits",
+          "s": 39.404,
+          "e": 40.094,
+          "c": 0.994218
+        },
+        {
+          "w": "end",
+          "s": 40.094,
+          "e": 40.354,
+          "c": 0.983567
+        },
+        {
+          "w": "users",
+          "s": 40.354,
+          "e": 40.724,
+          "c": 0.819069
+        },
+        {
+          "w": "and",
+          "s": 40.934,
+          "e": 41.184,
+          "c": 0.251065
+        },
+        {
+          "w": "not",
+          "s": 41.184,
+          "e": 41.714,
+          "c": 0.980178
+        },
+        {
+          "w": "slanted",
+          "s": 41.744,
+          "e": 42.224,
+          "c": 0.855332
+        },
+        {
+          "w": "by",
+          "s": 42.224,
+          "e": 42.384,
+          "c": 0.955469
+        },
+        {
+          "w": "broadband",
+          "s": 42.384,
+          "e": 43.064,
+          "c": 0.98019
+        },
+        {
+          "w": "providers",
+          "s": 43.064,
+          "e": 43.744,
+          "c": 0.989928
+        },
+        {
+          "w": "blocking",
+          "s": 43.744,
+          "e": 44.064,
+          "c": 0.797689
+        },
+        {
+          "w": "content",
+          "s": 44.644,
+          "e": 45.184,
+          "c": 0.991434
+        },
+        {
+          "w": "or",
+          "s": 45.184,
+          "e": 45.374,
+          "c": 0.951893
+        },
+        {
+          "w": "charging",
+          "s": 45.374,
+          "e": 46.134,
+          "c": 0.997269
+        },
+        {
+          "w": "for",
+          "s": 46.134,
+          "e": 46.414,
+          "c": 0.992103
+        },
+        {
+          "w": "prioritized",
+          "s": 46.414,
+          "e": 47.464,
+          "c": 0.985644
+        },
+        {
+          "w": "access.",
+          "s": 47.464,
+          "e": 48.344,
+          "c": 0.987999
+        },
+        {
+          "w": "That's",
+          "s": 48.554,
+          "e": 48.724,
+          "c": 0.914224
+        },
+        {
+          "w": "why",
+          "s": 48.794,
+          "e": 49.014,
+          "c": 0.998077
+        },
+        {
+          "w": "so",
+          "s": 49.014,
+          "e": 49.134,
+          "c": 0.990125
+        },
+        {
+          "w": "many",
+          "s": 49.304,
+          "e": 49.464,
+          "c": 0.998127
+        },
+        {
+          "w": "of",
+          "s": 49.464,
+          "e": 49.474,
+          "c": 0.992324
+        },
+        {
+          "w": "us",
+          "s": 49.664,
+          "e": 49.764,
+          "c": 0.998119
+        },
+        {
+          "w": "are",
+          "s": 49.764,
+          "e": 49.984,
+          "c": 0.98338
+        },
+        {
+          "w": "here",
+          "s": 49.984,
+          "e": 50.094,
+          "c": 0.956499
+        },
+        {
+          "w": "on",
+          "s": 50.404,
+          "e": 50.434,
+          "c": 0.978941
+        },
+        {
+          "w": "the",
+          "s": 50.434,
+          "e": 50.654,
+          "c": 0.996438
+        },
+        {
+          "w": "floor",
+          "s": 50.654,
+          "e": 51.024,
+          "c": 0.993627
+        },
+        {
+          "w": "today.",
+          "s": 51.024,
+          "e": 51.684,
+          "c": 0.249982
+        },
+        {
+          "w": "To",
+          "s": 51.684,
+          "e": 51.824,
+          "c": 0.980494
+        },
+        {
+          "w": "give",
+          "s": 51.824,
+          "e": 51.974,
+          "c": 0.999441
+        },
+        {
+          "w": "a",
+          "s": 52.054,
+          "e": 52.174,
+          "c": 0.996588
+        },
+        {
+          "w": "voice",
+          "s": 52.274,
+          "e": 52.554,
+          "c": 0.999624
+        },
+        {
+          "w": "to",
+          "s": 52.554,
+          "e": 52.614,
+          "c": 0.993233
+        },
+        {
+          "w": "the",
+          "s": 52.704,
+          "e": 52.874,
+          "c": 0.990488
+        },
+        {
+          "w": "vast",
+          "s": 52.924,
+          "e": 53.024,
+          "c": 0.998508
+        },
+        {
+          "w": "majority",
+          "s": 53.244,
+          "e": 53.794,
+          "c": 0.999308
+        },
+        {
+          "w": "of",
+          "s": 53.794,
+          "e": 53.884,
+          "c": 0.9931
+        },
+        {
+          "w": "Americans",
+          "s": 54.094,
+          "e": 54.594,
+          "c": 0.995435
+        },
+        {
+          "w": "who",
+          "s": 54.594,
+          "e": 54.814,
+          "c": 0.986909
+        },
+        {
+          "w": "want",
+          "s": 54.814,
+          "e": 54.964,
+          "c": 0.998306
+        },
+        {
+          "w": "the",
+          "s": 55.324,
+          "e": 55.324,
+          "c": 0.995845
+        },
+        {
+          "w": "Internet",
+          "s": 55.384,
+          "e": 56.004,
+          "c": 0.916272
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 55.98,
+      "end_s": 85.6,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "net to remain a place that fosters innovation and economic opportunity and robust consumer choice and the free flow of knowledge. Mr. President, these things are not a luxury. They are what makes American ingenuity possible. And I just have to say, as a former preschool teacher, I support net neutrality because it helps the next generation of innovators, our students, especially those in rural and low-income areas.",
+      "words": [
+        {
+          "w": "net",
+          "s": 55.984,
+          "e": 56.214,
+          "c": 0.148019
+        },
+        {
+          "w": "to",
+          "s": 56.504,
+          "e": 56.634,
+          "c": 0.566735
+        },
+        {
+          "w": "remain",
+          "s": 56.634,
+          "e": 57.334,
+          "c": 0.989347
+        },
+        {
+          "w": "a",
+          "s": 57.414,
+          "e": 57.544,
+          "c": 0.992114
+        },
+        {
+          "w": "place",
+          "s": 57.544,
+          "e": 57.824,
+          "c": 0.996892
+        },
+        {
+          "w": "that",
+          "s": 58.254,
+          "e": 58.584,
+          "c": 0.975993
+        },
+        {
+          "w": "fosters",
+          "s": 58.584,
+          "e": 59.044,
+          "c": 0.979636
+        },
+        {
+          "w": "innovation",
+          "s": 59.314,
+          "e": 59.984,
+          "c": 0.954397
+        },
+        {
+          "w": "and",
+          "s": 59.984,
+          "e": 60.224,
+          "c": 0.821253
+        },
+        {
+          "w": "economic",
+          "s": 60.314,
+          "e": 60.824,
+          "c": 0.908644
+        },
+        {
+          "w": "opportunity",
+          "s": 60.824,
+          "e": 61.714,
+          "c": 0.96387
+        },
+        {
+          "w": "and",
+          "s": 61.994,
+          "e": 62.144,
+          "c": 0.71916
+        },
+        {
+          "w": "robust",
+          "s": 62.144,
+          "e": 62.534,
+          "c": 0.941642
+        },
+        {
+          "w": "consumer",
+          "s": 62.764,
+          "e": 63.124,
+          "c": 0.990535
+        },
+        {
+          "w": "choice",
+          "s": 63.124,
+          "e": 63.654,
+          "c": 0.999235
+        },
+        {
+          "w": "and",
+          "s": 63.714,
+          "e": 63.914,
+          "c": 0.978248
+        },
+        {
+          "w": "the",
+          "s": 63.914,
+          "e": 64.174,
+          "c": 0.942761
+        },
+        {
+          "w": "free",
+          "s": 64.174,
+          "e": 64.474,
+          "c": 0.996936
+        },
+        {
+          "w": "flow",
+          "s": 64.474,
+          "e": 64.844,
+          "c": 0.989863
+        },
+        {
+          "w": "of",
+          "s": 64.844,
+          "e": 65.014,
+          "c": 0.999165
+        },
+        {
+          "w": "knowledge.",
+          "s": 65.394,
+          "e": 66.074,
+          "c": 0.915657
+        },
+        {
+          "w": "Mr.",
+          "s": 66.144,
+          "e": 66.314,
+          "c": 0.937567
+        },
+        {
+          "w": "President,",
+          "s": 66.664,
+          "e": 67.144,
+          "c": 0.977581
+        },
+        {
+          "w": "these",
+          "s": 67.144,
+          "e": 67.454,
+          "c": 0.996483
+        },
+        {
+          "w": "things",
+          "s": 67.454,
+          "e": 67.794,
+          "c": 0.960052
+        },
+        {
+          "w": "are",
+          "s": 67.834,
+          "e": 67.984,
+          "c": 0.99236
+        },
+        {
+          "w": "not",
+          "s": 67.984,
+          "e": 68.214,
+          "c": 0.997739
+        },
+        {
+          "w": "a",
+          "s": 68.214,
+          "e": 68.274,
+          "c": 0.995811
+        },
+        {
+          "w": "luxury.",
+          "s": 68.414,
+          "e": 68.884,
+          "c": 0.66258
+        },
+        {
+          "w": "They",
+          "s": 68.884,
+          "e": 69.114,
+          "c": 0.999428
+        },
+        {
+          "w": "are",
+          "s": 69.404,
+          "e": 69.494,
+          "c": 0.996799
+        },
+        {
+          "w": "what",
+          "s": 69.494,
+          "e": 69.844,
+          "c": 0.998477
+        },
+        {
+          "w": "makes",
+          "s": 69.844,
+          "e": 70.234,
+          "c": 0.990427
+        },
+        {
+          "w": "American",
+          "s": 70.234,
+          "e": 70.724,
+          "c": 0.97867
+        },
+        {
+          "w": "ingenuity",
+          "s": 71.154,
+          "e": 71.634,
+          "c": 0.968165
+        },
+        {
+          "w": "possible.",
+          "s": 71.824,
+          "e": 72.734,
+          "c": 0.940281
+        },
+        {
+          "w": "And",
+          "s": 72.744,
+          "e": 72.874,
+          "c": 0.9311
+        },
+        {
+          "w": "I",
+          "s": 72.944,
+          "e": 72.994,
+          "c": 0.983877
+        },
+        {
+          "w": "just",
+          "s": 73.254,
+          "e": 73.274,
+          "c": 0.94709
+        },
+        {
+          "w": "have",
+          "s": 73.334,
+          "e": 73.544,
+          "c": 0.997714
+        },
+        {
+          "w": "to",
+          "s": 73.544,
+          "e": 73.674,
+          "c": 0.998974
+        },
+        {
+          "w": "say,",
+          "s": 73.674,
+          "e": 74.004,
+          "c": 0.72093
+        },
+        {
+          "w": "as",
+          "s": 74.004,
+          "e": 74.094,
+          "c": 0.998159
+        },
+        {
+          "w": "a",
+          "s": 74.194,
+          "e": 74.194,
+          "c": 0.997586
+        },
+        {
+          "w": "former",
+          "s": 74.194,
+          "e": 74.584,
+          "c": 0.994416
+        },
+        {
+          "w": "preschool",
+          "s": 75.004,
+          "e": 75.104,
+          "c": 0.958938
+        },
+        {
+          "w": "teacher,",
+          "s": 75.294,
+          "e": 75.794,
+          "c": 0.962742
+        },
+        {
+          "w": "I",
+          "s": 75.794,
+          "e": 75.854,
+          "c": 0.984356
+        },
+        {
+          "w": "support",
+          "s": 76.074,
+          "e": 76.324,
+          "c": 0.992475
+        },
+        {
+          "w": "net",
+          "s": 76.324,
+          "e": 76.504,
+          "c": 0.965297
+        },
+        {
+          "w": "neutrality",
+          "s": 76.524,
+          "e": 77.154,
+          "c": 0.9981
+        },
+        {
+          "w": "because",
+          "s": 77.254,
+          "e": 77.744,
+          "c": 0.969721
+        },
+        {
+          "w": "it",
+          "s": 77.744,
+          "e": 77.864,
+          "c": 0.99875
+        },
+        {
+          "w": "helps",
+          "s": 78.264,
+          "e": 78.314,
+          "c": 0.995184
+        },
+        {
+          "w": "the",
+          "s": 78.344,
+          "e": 78.584,
+          "c": 0.991304
+        },
+        {
+          "w": "next",
+          "s": 78.584,
+          "e": 78.924,
+          "c": 0.99631
+        },
+        {
+          "w": "generation",
+          "s": 78.924,
+          "e": 79.434,
+          "c": 0.99208
+        },
+        {
+          "w": "of",
+          "s": 79.944,
+          "e": 79.944,
+          "c": 0.998199
+        },
+        {
+          "w": "innovators,",
+          "s": 80.014,
+          "e": 80.934,
+          "c": 0.435338
+        },
+        {
+          "w": "our",
+          "s": 81.074,
+          "e": 81.204,
+          "c": 0.991834
+        },
+        {
+          "w": "students,",
+          "s": 81.204,
+          "e": 81.984,
+          "c": 0.843924
+        },
+        {
+          "w": "especially",
+          "s": 82.074,
+          "e": 82.904,
+          "c": 0.990574
+        },
+        {
+          "w": "those",
+          "s": 82.904,
+          "e": 83.324,
+          "c": 0.981036
+        },
+        {
+          "w": "in",
+          "s": 83.324,
+          "e": 83.474,
+          "c": 0.99186
+        },
+        {
+          "w": "rural",
+          "s": 83.754,
+          "e": 83.914,
+          "c": 0.994738
+        },
+        {
+          "w": "and",
+          "s": 83.914,
+          "e": 84.224,
+          "c": 0.985272
+        },
+        {
+          "w": "low-income",
+          "s": 84.224,
+          "e": 85.054,
+          "c": 0.783271
+        },
+        {
+          "w": "areas.",
+          "s": 85.054,
+          "e": 85.604,
+          "c": 0.986139
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 86.1,
+      "end_s": 114.15,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Schools have worked very hard to improve access to high-speed connectivity for all students because they know from early education through higher education and through workforce training, students need high-speed Internet in order to learn and get the skills that they need. Their teachers need the Internet to collaborate with colleagues, access educational materials, help students learn valuable research and Internet safety skills,",
+      "words": [
+        {
+          "w": "Schools",
+          "s": 86.098,
+          "e": 86.318,
+          "c": 0.931417
+        },
+        {
+          "w": "have",
+          "s": 86.318,
+          "e": 86.658,
+          "c": 0.998618
+        },
+        {
+          "w": "worked",
+          "s": 86.658,
+          "e": 87.168,
+          "c": 0.998037
+        },
+        {
+          "w": "very",
+          "s": 87.168,
+          "e": 87.508,
+          "c": 0.987608
+        },
+        {
+          "w": "hard",
+          "s": 87.508,
+          "e": 87.698,
+          "c": 0.999152
+        },
+        {
+          "w": "to",
+          "s": 88.008,
+          "e": 88.028,
+          "c": 0.897575
+        },
+        {
+          "w": "improve",
+          "s": 88.078,
+          "e": 88.428,
+          "c": 0.983723
+        },
+        {
+          "w": "access",
+          "s": 88.428,
+          "e": 88.958,
+          "c": 0.955445
+        },
+        {
+          "w": "to",
+          "s": 88.958,
+          "e": 89.088,
+          "c": 0.848019
+        },
+        {
+          "w": "high-speed",
+          "s": 89.088,
+          "e": 89.668,
+          "c": 0.732919
+        },
+        {
+          "w": "connectivity",
+          "s": 89.668,
+          "e": 90.388,
+          "c": 0.954822
+        },
+        {
+          "w": "for",
+          "s": 90.388,
+          "e": 90.608,
+          "c": 0.927966
+        },
+        {
+          "w": "all",
+          "s": 90.718,
+          "e": 90.948,
+          "c": 0.977493
+        },
+        {
+          "w": "students",
+          "s": 90.948,
+          "e": 91.468,
+          "c": 0.967795
+        },
+        {
+          "w": "because",
+          "s": 92.098,
+          "e": 92.248,
+          "c": 0.995993
+        },
+        {
+          "w": "they",
+          "s": 92.248,
+          "e": 92.528,
+          "c": 0.998169
+        },
+        {
+          "w": "know",
+          "s": 92.528,
+          "e": 92.688,
+          "c": 0.998308
+        },
+        {
+          "w": "from",
+          "s": 92.918,
+          "e": 93.118,
+          "c": 0.646522
+        },
+        {
+          "w": "early",
+          "s": 93.118,
+          "e": 93.488,
+          "c": 0.940276
+        },
+        {
+          "w": "education",
+          "s": 93.488,
+          "e": 94.158,
+          "c": 0.994287
+        },
+        {
+          "w": "through",
+          "s": 94.158,
+          "e": 94.678,
+          "c": 0.94069
+        },
+        {
+          "w": "higher",
+          "s": 94.678,
+          "e": 95.118,
+          "c": 0.992388
+        },
+        {
+          "w": "education",
+          "s": 95.118,
+          "e": 95.828,
+          "c": 0.998717
+        },
+        {
+          "w": "and",
+          "s": 95.828,
+          "e": 96.028,
+          "c": 0.642477
+        },
+        {
+          "w": "through",
+          "s": 96.168,
+          "e": 96.448,
+          "c": 0.974909
+        },
+        {
+          "w": "workforce",
+          "s": 96.558,
+          "e": 96.988,
+          "c": 0.9635
+        },
+        {
+          "w": "training,",
+          "s": 97.148,
+          "e": 97.728,
+          "c": 0.707639
+        },
+        {
+          "w": "students",
+          "s": 98.098,
+          "e": 98.348,
+          "c": 0.996856
+        },
+        {
+          "w": "need",
+          "s": 98.408,
+          "e": 98.678,
+          "c": 0.998319
+        },
+        {
+          "w": "high-speed",
+          "s": 98.878,
+          "e": 99.488,
+          "c": 0.922024
+        },
+        {
+          "w": "Internet",
+          "s": 99.488,
+          "e": 100.128,
+          "c": 0.697301
+        },
+        {
+          "w": "in",
+          "s": 100.128,
+          "e": 100.228,
+          "c": 0.992839
+        },
+        {
+          "w": "order",
+          "s": 100.318,
+          "e": 100.678,
+          "c": 0.999521
+        },
+        {
+          "w": "to",
+          "s": 100.678,
+          "e": 100.688,
+          "c": 0.9996
+        },
+        {
+          "w": "learn",
+          "s": 100.858,
+          "e": 101.248,
+          "c": 0.997381
+        },
+        {
+          "w": "and",
+          "s": 101.248,
+          "e": 101.358,
+          "c": 0.996217
+        },
+        {
+          "w": "get",
+          "s": 101.528,
+          "e": 101.678,
+          "c": 0.990756
+        },
+        {
+          "w": "the",
+          "s": 101.748,
+          "e": 101.968,
+          "c": 0.99545
+        },
+        {
+          "w": "skills",
+          "s": 101.968,
+          "e": 102.448,
+          "c": 0.996527
+        },
+        {
+          "w": "that",
+          "s": 102.558,
+          "e": 102.768,
+          "c": 0.913063
+        },
+        {
+          "w": "they",
+          "s": 102.768,
+          "e": 102.988,
+          "c": 0.999514
+        },
+        {
+          "w": "need.",
+          "s": 103.168,
+          "e": 103.568,
+          "c": 0.990577
+        },
+        {
+          "w": "Their",
+          "s": 103.958,
+          "e": 104.008,
+          "c": 0.987244
+        },
+        {
+          "w": "teachers",
+          "s": 104.098,
+          "e": 104.638,
+          "c": 0.998454
+        },
+        {
+          "w": "need",
+          "s": 104.638,
+          "e": 104.918,
+          "c": 0.998847
+        },
+        {
+          "w": "the",
+          "s": 104.988,
+          "e": 105.128,
+          "c": 0.985379
+        },
+        {
+          "w": "Internet",
+          "s": 105.128,
+          "e": 105.628,
+          "c": 0.979438
+        },
+        {
+          "w": "to",
+          "s": 105.678,
+          "e": 105.788,
+          "c": 0.9977
+        },
+        {
+          "w": "collaborate",
+          "s": 106.028,
+          "e": 106.598,
+          "c": 0.998074
+        },
+        {
+          "w": "with",
+          "s": 106.598,
+          "e": 106.878,
+          "c": 0.999171
+        },
+        {
+          "w": "colleagues,",
+          "s": 106.878,
+          "e": 107.678,
+          "c": 0.977254
+        },
+        {
+          "w": "access",
+          "s": 107.748,
+          "e": 108.028,
+          "c": 0.535975
+        },
+        {
+          "w": "educational",
+          "s": 108.178,
+          "e": 108.928,
+          "c": 0.980186
+        },
+        {
+          "w": "materials,",
+          "s": 108.928,
+          "e": 109.728,
+          "c": 0.996789
+        },
+        {
+          "w": "help",
+          "s": 109.948,
+          "e": 110.018,
+          "c": 0.992538
+        },
+        {
+          "w": "students",
+          "s": 110.098,
+          "e": 110.668,
+          "c": 0.998713
+        },
+        {
+          "w": "learn",
+          "s": 110.668,
+          "e": 111.058,
+          "c": 0.993055
+        },
+        {
+          "w": "valuable",
+          "s": 111.058,
+          "e": 111.628,
+          "c": 0.999375
+        },
+        {
+          "w": "research",
+          "s": 112.008,
+          "e": 112.308,
+          "c": 0.998536
+        },
+        {
+          "w": "and",
+          "s": 112.318,
+          "e": 112.548,
+          "c": 0.984005
+        },
+        {
+          "w": "Internet",
+          "s": 112.548,
+          "e": 113.158,
+          "c": 0.905032
+        },
+        {
+          "w": "safety",
+          "s": 113.198,
+          "e": 113.648,
+          "c": 0.987409
+        },
+        {
+          "w": "skills,",
+          "s": 113.648,
+          "e": 114.148,
+          "c": 0.858611
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 114.34,
+      "end_s": 114.35,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and",
+      "words": [
+        {
+          "w": "and",
+          "s": 114.338,
+          "e": 114.338,
+          "c": 0.829759
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 114.38,
+      "end_s": 149.32,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "expand access to a high-quality education for students with disabilities and English learners. Rolling back net neutrality threatens that educational equity and worsens the digital divide. So let's protect the free and open Internet, not just for today's consumers, but for our students, the next generation of American innovators. The choice couldn't be easier. Either we stand with everyday Americans or with the massive corporations that have found a new way to make more money off of them. Thank you, Mr. President. I yield the floor.",
+      "words": [
+        {
+          "w": "expand",
+          "s": 114.378,
+          "e": 114.578,
+          "c": 0.979411
+        },
+        {
+          "w": "access",
+          "s": 114.758,
+          "e": 115.178,
+          "c": 0.997775
+        },
+        {
+          "w": "to",
+          "s": 115.178,
+          "e": 115.188,
+          "c": 0.994541
+        },
+        {
+          "w": "a",
+          "s": 115.328,
+          "e": 115.388,
+          "c": 0.946877
+        },
+        {
+          "w": "high-quality",
+          "s": 115.388,
+          "e": 116.268,
+          "c": 0.658312
+        },
+        {
+          "w": "education",
+          "s": 116.268,
+          "e": 116.788,
+          "c": 0.985562
+        },
+        {
+          "w": "for",
+          "s": 116.828,
+          "e": 117.028,
+          "c": 0.783963
+        },
+        {
+          "w": "students",
+          "s": 117.028,
+          "e": 117.428,
+          "c": 0.96011
+        },
+        {
+          "w": "with",
+          "s": 117.498,
+          "e": 117.578,
+          "c": 0.95772
+        },
+        {
+          "w": "disabilities",
+          "s": 117.668,
+          "e": 118.288,
+          "c": 0.99499
+        },
+        {
+          "w": "and",
+          "s": 118.288,
+          "e": 118.418,
+          "c": 0.873033
+        },
+        {
+          "w": "English",
+          "s": 118.418,
+          "e": 118.748,
+          "c": 0.990893
+        },
+        {
+          "w": "learners.",
+          "s": 118.748,
+          "e": 119.828,
+          "c": 0.946377
+        },
+        {
+          "w": "Rolling",
+          "s": 120.078,
+          "e": 120.278,
+          "c": 0.992523
+        },
+        {
+          "w": "back",
+          "s": 120.458,
+          "e": 120.758,
+          "c": 0.974107
+        },
+        {
+          "w": "net",
+          "s": 120.758,
+          "e": 120.888,
+          "c": 0.948173
+        },
+        {
+          "w": "neutrality",
+          "s": 121.028,
+          "e": 121.848,
+          "c": 0.995581
+        },
+        {
+          "w": "threatens",
+          "s": 121.848,
+          "e": 122.608,
+          "c": 0.99243
+        },
+        {
+          "w": "that",
+          "s": 122.608,
+          "e": 122.948,
+          "c": 0.969751
+        },
+        {
+          "w": "educational",
+          "s": 122.948,
+          "e": 123.878,
+          "c": 0.986256
+        },
+        {
+          "w": "equity",
+          "s": 123.878,
+          "e": 124.428,
+          "c": 0.995215
+        },
+        {
+          "w": "and",
+          "s": 124.428,
+          "e": 124.698,
+          "c": 0.705168
+        },
+        {
+          "w": "worsens",
+          "s": 124.698,
+          "e": 125.338,
+          "c": 0.996077
+        },
+        {
+          "w": "the",
+          "s": 125.338,
+          "e": 125.568,
+          "c": 0.992072
+        },
+        {
+          "w": "digital",
+          "s": 125.698,
+          "e": 126.248,
+          "c": 0.995439
+        },
+        {
+          "w": "divide.",
+          "s": 126.248,
+          "e": 127.108,
+          "c": 0.983029
+        },
+        {
+          "w": "So",
+          "s": 127.138,
+          "e": 127.268,
+          "c": 0.985543
+        },
+        {
+          "w": "let's",
+          "s": 127.378,
+          "e": 127.578,
+          "c": 0.835829
+        },
+        {
+          "w": "protect",
+          "s": 127.758,
+          "e": 128.118,
+          "c": 0.998732
+        },
+        {
+          "w": "the",
+          "s": 128.118,
+          "e": 128.188,
+          "c": 0.997788
+        },
+        {
+          "w": "free",
+          "s": 128.328,
+          "e": 128.608,
+          "c": 0.983363
+        },
+        {
+          "w": "and",
+          "s": 128.608,
+          "e": 128.818,
+          "c": 0.987001
+        },
+        {
+          "w": "open",
+          "s": 128.818,
+          "e": 129.098,
+          "c": 0.994622
+        },
+        {
+          "w": "Internet,",
+          "s": 129.098,
+          "e": 129.818,
+          "c": 0.604843
+        },
+        {
+          "w": "not",
+          "s": 129.878,
+          "e": 130.118,
+          "c": 0.839559
+        },
+        {
+          "w": "just",
+          "s": 130.228,
+          "e": 130.428,
+          "c": 0.997956
+        },
+        {
+          "w": "for",
+          "s": 130.498,
+          "e": 130.678,
+          "c": 0.99875
+        },
+        {
+          "w": "today's",
+          "s": 130.678,
+          "e": 131.218,
+          "c": 0.997668
+        },
+        {
+          "w": "consumers,",
+          "s": 131.228,
+          "e": 132.118,
+          "c": 0.690494
+        },
+        {
+          "w": "but",
+          "s": 132.118,
+          "e": 132.228,
+          "c": 0.768214
+        },
+        {
+          "w": "for",
+          "s": 132.318,
+          "e": 132.578,
+          "c": 0.992377
+        },
+        {
+          "w": "our",
+          "s": 132.578,
+          "e": 132.808,
+          "c": 0.994004
+        },
+        {
+          "w": "students,",
+          "s": 132.998,
+          "e": 133.428,
+          "c": 0.638553
+        },
+        {
+          "w": "the",
+          "s": 133.638,
+          "e": 133.638,
+          "c": 0.993318
+        },
+        {
+          "w": "next",
+          "s": 133.678,
+          "e": 133.878,
+          "c": 0.996421
+        },
+        {
+          "w": "generation",
+          "s": 134.058,
+          "e": 134.648,
+          "c": 0.98963
+        },
+        {
+          "w": "of",
+          "s": 134.648,
+          "e": 134.728,
+          "c": 0.980172
+        },
+        {
+          "w": "American",
+          "s": 134.868,
+          "e": 135.358,
+          "c": 0.993534
+        },
+        {
+          "w": "innovators.",
+          "s": 135.358,
+          "e": 136.328,
+          "c": 0.962518
+        },
+        {
+          "w": "The",
+          "s": 136.388,
+          "e": 136.388,
+          "c": 0.985355
+        },
+        {
+          "w": "choice",
+          "s": 136.578,
+          "e": 136.778,
+          "c": 0.99866
+        },
+        {
+          "w": "couldn't",
+          "s": 136.958,
+          "e": 137.388,
+          "c": 0.988506
+        },
+        {
+          "w": "be",
+          "s": 137.518,
+          "e": 137.518,
+          "c": 0.999338
+        },
+        {
+          "w": "easier.",
+          "s": 137.528,
+          "e": 138.098,
+          "c": 0.72941
+        },
+        {
+          "w": "Either",
+          "s": 138.378,
+          "e": 138.558,
+          "c": 0.970168
+        },
+        {
+          "w": "we",
+          "s": 138.558,
+          "e": 138.578,
+          "c": 0.998405
+        },
+        {
+          "w": "stand",
+          "s": 138.758,
+          "e": 139.058,
+          "c": 0.996947
+        },
+        {
+          "w": "with",
+          "s": 139.058,
+          "e": 139.348,
+          "c": 0.997752
+        },
+        {
+          "w": "everyday",
+          "s": 139.348,
+          "e": 139.898,
+          "c": 0.95521
+        },
+        {
+          "w": "Americans",
+          "s": 139.968,
+          "e": 140.528,
+          "c": 0.997259
+        },
+        {
+          "w": "or",
+          "s": 140.598,
+          "e": 140.718,
+          "c": 0.824796
+        },
+        {
+          "w": "with",
+          "s": 140.718,
+          "e": 140.998,
+          "c": 0.987097
+        },
+        {
+          "w": "the",
+          "s": 141.008,
+          "e": 141.108,
+          "c": 0.866277
+        },
+        {
+          "w": "massive",
+          "s": 141.218,
+          "e": 141.718,
+          "c": 0.889186
+        },
+        {
+          "w": "corporations",
+          "s": 141.718,
+          "e": 142.628,
+          "c": 0.996538
+        },
+        {
+          "w": "that",
+          "s": 142.628,
+          "e": 142.808,
+          "c": 0.981706
+        },
+        {
+          "w": "have",
+          "s": 142.868,
+          "e": 143.048,
+          "c": 0.995038
+        },
+        {
+          "w": "found",
+          "s": 143.048,
+          "e": 143.218,
+          "c": 0.993394
+        },
+        {
+          "w": "a",
+          "s": 143.318,
+          "e": 143.468,
+          "c": 0.966009
+        },
+        {
+          "w": "new",
+          "s": 143.468,
+          "e": 143.888,
+          "c": 0.986924
+        },
+        {
+          "w": "way",
+          "s": 143.998,
+          "e": 144.328,
+          "c": 0.996987
+        },
+        {
+          "w": "to",
+          "s": 144.328,
+          "e": 144.498,
+          "c": 0.855569
+        },
+        {
+          "w": "make",
+          "s": 144.498,
+          "e": 144.838,
+          "c": 0.987961
+        },
+        {
+          "w": "more",
+          "s": 144.838,
+          "e": 145.178,
+          "c": 0.980028
+        },
+        {
+          "w": "money",
+          "s": 145.178,
+          "e": 145.598,
+          "c": 0.996942
+        },
+        {
+          "w": "off",
+          "s": 145.598,
+          "e": 145.838,
+          "c": 0.994298
+        },
+        {
+          "w": "of",
+          "s": 145.838,
+          "e": 145.968,
+          "c": 0.988186
+        },
+        {
+          "w": "them.",
+          "s": 146.108,
+          "e": 146.628,
+          "c": 0.997877
+        },
+        {
+          "w": "Thank",
+          "s": 146.678,
+          "e": 146.688,
+          "c": 0.98606
+        },
+        {
+          "w": "you,",
+          "s": 146.878,
+          "e": 146.988,
+          "c": 0.926952
+        },
+        {
+          "w": "Mr.",
+          "s": 146.988,
+          "e": 147.078,
+          "c": 0.992584
+        },
+        {
+          "w": "President.",
+          "s": 147.258,
+          "e": 147.628,
+          "c": 0.872622
+        },
+        {
+          "w": "I",
+          "s": 147.628,
+          "e": 147.688,
+          "c": 0.679416
+        },
+        {
+          "w": "yield",
+          "s": 147.828,
+          "e": 148.188,
+          "c": 0.997916
+        },
+        {
+          "w": "the",
+          "s": 148.258,
+          "e": 148.478,
+          "c": 0.994209
+        },
+        {
+          "w": "floor.",
+          "s": 148.538,
+          "e": 149.318,
+          "c": 0.998091
+        }
+      ]
+    }
+  ]
+}

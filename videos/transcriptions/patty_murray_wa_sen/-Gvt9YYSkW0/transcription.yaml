@@ -1,0 +1,144 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Senator Murray Urges Senate Republicans to Restore Critical Net Neutrality Rules"
+    Description: >-
+      A Senate floor speech urging Senate Republicans to restore net neutrality rules. The speaker says she is
+      lifting up the voices of families in Washington State and argues that the internet should be free and
+      open, that the country should back small business owners, entrepreneurs, students and middle-class
+      families rather than large corporations and special interests, and that consumers rather than broadband
+      providers should choose the sites and applications they use - without providers blocking content or
+      charging for prioritized access. Drawing on her stated background as a former preschool teacher, she
+      argues that students from early education through workforce training need high-speed internet, that
+      teachers need it to collaborate and to reach students with disabilities and English learners, and that
+      rolling back net neutrality threatens educational equity and worsens the digital divide in rural and
+      low-income areas. She frames the vote as a choice between everyday Americans and large corporations;
+      that framing is her own and is disputed by the other side, which is not heard here.
+    URL: "https://www.youtube.com/watch?v=-Gvt9YYSkW0"
+    Video_ID: "-Gvt9YYSkW0"
+    Show: "Senator Patty Murray"
+    Runtime: "00:02:29"
+    Language: "en"
+
+  Media:
+    File: "-Gvt9YYSkW0.m4a"
+    SHA256: "9ef2a4a7533787b1e250b1a5f3bd967a14f92c63a98e41f9247e327e8fe96cc6"
+    Bytes: 2416978
+    Duration_Seconds: 149
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-Gvt9YYSkW0"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-Gvt9YYSkW0.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/patty_murray_wa_sen/-Gvt9YYSkW0/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCb8jq3TvQ3AzKsexhWfFLoA"
+    Uploader_ID: "@pattymurray"
+    View_Count: 145
+    Like_Count: 6
+    Comment_Count: 3
+    Availability: "public"
+    Published_At: "2018-05-16T17:46:05+00:00"
+    Captured_At: "2026-09-08T04:14:50-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "92.1%"
+      Turns: 4
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "7.5%"
+      Turns: 2
+
+  Topics:
+    - "Net neutrality"
+    - "FCC open internet rules"
+    - "Broadband providers and paid prioritization"
+    - "Digital divide and school connectivity"
+    - "Educational equity"
+
+  Source:
+    Canonical_ID: "f06b86c3c6ab22e0"
+    Transcribed: "2026-09-08T04:19:40.596192-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 352
+    Segments: 13
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T04:14:51.168823-07:00"
+    Transcription_Finished: "2026-09-08T04:19:40.596192-07:00"
+    Recorded: "2018-05-16"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-Gvt9YYSkW0.ctm"
+    Fountain: "-Gvt9YYSkW0.fountain"
+    Diarization_RTTM: "-Gvt9YYSkW0.rttm"
+    As_Broadcast_Script: "-Gvt9YYSkW0.script.txt"
+    Segments_JSON: "-Gvt9YYSkW0.segments.json"
+    Segments_JSONL: "-Gvt9YYSkW0.segments.jsonl"
+    Subtitles_SRT: "-Gvt9YYSkW0.srt"
+    Plain_Text: "-Gvt9YYSkW0.transcription"
+    Subtitles_VTT: "-Gvt9YYSkW0.vtt"
+    Transcript_SHA256: "9ec28f8d414c25adc7b50a25d12314e257c39602eb1c225d440cf1c2ec82cf09"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "patty_murray_wa_sen"
+    video_uid: "patty_murray_wa_sen::-Gvt9YYSkW0"
+    video_key: "-Gvt9YYSkW0"
+    youtube_id: "-Gvt9YYSkW0"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T10:15:03.132Z"
+    demand_run_id: "job_1788862500006_165"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-Gvt9YYSkW0"
+    source_ref: "-Gvt9YYSkW0"

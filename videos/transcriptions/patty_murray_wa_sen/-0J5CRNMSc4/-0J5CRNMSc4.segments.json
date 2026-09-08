@@ -1,0 +1,1022 @@
+{
+  "schema_version": 2,
+  "canonical_id": "a6e20ed8a453d4d8",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 32.12,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T11:17:07.099Z",
+  "text_sha256": "c1798754b86be0f3d965dbcc3fc5ed20b485eee2e1d740aab15a8c169646a79b",
+  "segments_sha256": "f1c16b9cf5dbad0a97310d33e41ead079d09109dabb2ce7f01c21e576a4a611d",
+  "words_sha256": "7d47c0c9c3ee9b7ca59246323eb30fc83d9bcbadab7f1e4def31648d1c9f0340",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 1,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 7,
+    "clusters": 5,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 20.5
+      },
+      "clean_s": 20.5,
+      "speaking_s": 21.4,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0
+      },
+      "clean_s": 0,
+      "speaking_s": 0.9,
+      "first_s": 10.12
+    },
+    {
+      "id": "SPEAKER_02",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 3.5
+      },
+      "clean_s": 3.5,
+      "speaking_s": 4.2,
+      "first_s": 16.97
+    },
+    {
+      "id": "SPEAKER_04",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 3.4
+      },
+      "clean_s": 3.4,
+      "speaking_s": 4.1,
+      "first_s": 19.03
+    },
+    {
+      "id": "SPEAKER_06",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.9
+      },
+      "clean_s": 0.9,
+      "speaking_s": 0.9,
+      "first_s": 31.1
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 22.84,
+      "end_s": 22.84,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 27.48,
+      "end_s": 27.56,
+      "segment_i": 6,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 29.52,
+      "end_s": 32.12,
+      "segment_i": 8,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.13,
+      "end_s": 17.04,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "If you receive a directive to violate appropriations laws and withhold funding for workers, what will you do? I do not believe the president is going to ask me to break the law, 100%. We have seen that across the board since he was put into office where he is violating that law. So you will",
+      "words": [
+        {
+          "w": "If",
+          "s": 0.13,
+          "e": 0.15,
+          "c": 0.903245
+        },
+        {
+          "w": "you",
+          "s": 0.15,
+          "e": 0.38,
+          "c": 0.999905
+        },
+        {
+          "w": "receive",
+          "s": 0.38,
+          "e": 0.87,
+          "c": 0.998972
+        },
+        {
+          "w": "a",
+          "s": 0.93,
+          "e": 0.98,
+          "c": 0.999836
+        },
+        {
+          "w": "directive",
+          "s": 0.98,
+          "e": 1.64,
+          "c": 0.998392
+        },
+        {
+          "w": "to",
+          "s": 1.77,
+          "e": 1.82,
+          "c": 0.997999
+        },
+        {
+          "w": "violate",
+          "s": 1.82,
+          "e": 2.35,
+          "c": 0.999462
+        },
+        {
+          "w": "appropriations",
+          "s": 2.35,
+          "e": 3.4,
+          "c": 0.980289
+        },
+        {
+          "w": "laws",
+          "s": 3.42,
+          "e": 3.75,
+          "c": 0.996841
+        },
+        {
+          "w": "and",
+          "s": 3.82,
+          "e": 3.91,
+          "c": 0.966295
+        },
+        {
+          "w": "withhold",
+          "s": 3.91,
+          "e": 4.32,
+          "c": 0.996909
+        },
+        {
+          "w": "funding",
+          "s": 4.32,
+          "e": 4.77,
+          "c": 0.947223
+        },
+        {
+          "w": "for",
+          "s": 4.91,
+          "e": 4.96,
+          "c": 0.494094
+        },
+        {
+          "w": "workers,",
+          "s": 4.96,
+          "e": 5.51,
+          "c": 0.936179
+        },
+        {
+          "w": "what",
+          "s": 5.51,
+          "e": 5.76,
+          "c": 0.999981
+        },
+        {
+          "w": "will",
+          "s": 5.76,
+          "e": 5.95,
+          "c": 0.999336
+        },
+        {
+          "w": "you",
+          "s": 6.02,
+          "e": 6.18,
+          "c": 0.999992
+        },
+        {
+          "w": "do?",
+          "s": 6.2,
+          "e": 6.41,
+          "c": 0.999962
+        },
+        {
+          "w": "I",
+          "s": 6.55,
+          "e": 6.62,
+          "c": 0.860559
+        },
+        {
+          "w": "do",
+          "s": 6.62,
+          "e": 6.74,
+          "c": 0.999796
+        },
+        {
+          "w": "not",
+          "s": 6.85,
+          "e": 6.98,
+          "c": 0.999989
+        },
+        {
+          "w": "believe",
+          "s": 7.05,
+          "e": 7.53,
+          "c": 0.999943
+        },
+        {
+          "w": "the",
+          "s": 7.65,
+          "e": 7.73,
+          "c": 0.999729
+        },
+        {
+          "w": "president",
+          "s": 7.84,
+          "e": 8.53,
+          "c": 0.671437
+        },
+        {
+          "w": "is",
+          "s": 8.6,
+          "e": 8.74,
+          "c": 0.997173
+        },
+        {
+          "w": "going",
+          "s": 8.74,
+          "e": 8.84,
+          "c": 0.981905
+        },
+        {
+          "w": "to",
+          "s": 8.84,
+          "e": 8.86,
+          "c": 0.910755
+        },
+        {
+          "w": "ask",
+          "s": 8.96,
+          "e": 9.12,
+          "c": 0.882994
+        },
+        {
+          "w": "me",
+          "s": 9.24,
+          "e": 9.32,
+          "c": 0.908647
+        },
+        {
+          "w": "to",
+          "s": 9.32,
+          "e": 9.46,
+          "c": 0.748837
+        },
+        {
+          "w": "break",
+          "s": 9.46,
+          "e": 9.55,
+          "c": 0.986833
+        },
+        {
+          "w": "the",
+          "s": 9.62,
+          "e": 9.72,
+          "c": 0.999844
+        },
+        {
+          "w": "law,",
+          "s": 9.92,
+          "e": 9.92,
+          "c": 0.56278
+        },
+        {
+          "w": "100%.",
+          "s": 10.06,
+          "e": 10.79,
+          "c": 0.727144
+        },
+        {
+          "w": "We",
+          "s": 10.85,
+          "e": 10.98,
+          "c": 0.876893
+        },
+        {
+          "w": "have",
+          "s": 10.98,
+          "e": 11.25,
+          "c": 0.999558
+        },
+        {
+          "w": "seen",
+          "s": 11.26,
+          "e": 11.54,
+          "c": 0.999941
+        },
+        {
+          "w": "that",
+          "s": 11.54,
+          "e": 11.82,
+          "c": 0.999975
+        },
+        {
+          "w": "across",
+          "s": 11.82,
+          "e": 12.24,
+          "c": 0.999958
+        },
+        {
+          "w": "the",
+          "s": 12.24,
+          "e": 12.45,
+          "c": 0.999996
+        },
+        {
+          "w": "board",
+          "s": 12.45,
+          "e": 12.8,
+          "c": 0.999798
+        },
+        {
+          "w": "since",
+          "s": 12.8,
+          "e": 13.15,
+          "c": 0.99613
+        },
+        {
+          "w": "he",
+          "s": 13.15,
+          "e": 13.29,
+          "c": 0.997257
+        },
+        {
+          "w": "was",
+          "s": 13.29,
+          "e": 13.5,
+          "c": 0.999954
+        },
+        {
+          "w": "put",
+          "s": 13.5,
+          "e": 13.67,
+          "c": 0.999011
+        },
+        {
+          "w": "into",
+          "s": 13.74,
+          "e": 13.99,
+          "c": 0.999945
+        },
+        {
+          "w": "office",
+          "s": 13.99,
+          "e": 14.41,
+          "c": 0.999878
+        },
+        {
+          "w": "where",
+          "s": 14.41,
+          "e": 14.69,
+          "c": 0.69323
+        },
+        {
+          "w": "he",
+          "s": 14.77,
+          "e": 14.8,
+          "c": 0.999973
+        },
+        {
+          "w": "is",
+          "s": 15.1,
+          "e": 15.12,
+          "c": 0.999937
+        },
+        {
+          "w": "violating",
+          "s": 15.12,
+          "e": 15.82,
+          "c": 0.52632
+        },
+        {
+          "w": "that",
+          "s": 15.96,
+          "e": 16.2,
+          "c": 0.867581
+        },
+        {
+          "w": "law.",
+          "s": 16.33,
+          "e": 16.54,
+          "c": 0.607072
+        },
+        {
+          "w": "So",
+          "s": 16.54,
+          "e": 16.65,
+          "c": 0.998624
+        },
+        {
+          "w": "you",
+          "s": 16.65,
+          "e": 16.82,
+          "c": 0.962289
+        },
+        {
+          "w": "will",
+          "s": 16.82,
+          "e": 17.04,
+          "c": 0.9998
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 17.05,
+      "end_s": 18.81,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "likely be asked, what will you do?",
+      "words": [
+        {
+          "w": "likely",
+          "s": 17.05,
+          "e": 17.37,
+          "c": 0.999966
+        },
+        {
+          "w": "be",
+          "s": 17.44,
+          "e": 17.5,
+          "c": 0.999992
+        },
+        {
+          "w": "asked,",
+          "s": 17.5,
+          "e": 17.84,
+          "c": 0.828253
+        },
+        {
+          "w": "what",
+          "s": 17.97,
+          "e": 18.13,
+          "c": 0.999529
+        },
+        {
+          "w": "will",
+          "s": 18.13,
+          "e": 18.36,
+          "c": 0.999821
+        },
+        {
+          "w": "you",
+          "s": 18.36,
+          "e": 18.53,
+          "c": 0.999992
+        },
+        {
+          "w": "do?",
+          "s": 18.53,
+          "e": 18.81,
+          "c": 0.999945
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 18.81,
+      "end_s": 22.72,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Well, it's a hypothetical. I have not talked to the president on this issue, and I do not believe...",
+      "words": [
+        {
+          "w": "Well,",
+          "s": 18.81,
+          "e": 19.15,
+          "c": 0.954006
+        },
+        {
+          "w": "it's",
+          "s": 19.15,
+          "e": 19.37,
+          "c": 0.999558
+        },
+        {
+          "w": "a",
+          "s": 19.37,
+          "e": 19.4,
+          "c": 0.99803
+        },
+        {
+          "w": "hypothetical.",
+          "s": 19.44,
+          "e": 20.28,
+          "c": 0.998757
+        },
+        {
+          "w": "I",
+          "s": 20.28,
+          "e": 20.28,
+          "c": 0.999908
+        },
+        {
+          "w": "have",
+          "s": 20.38,
+          "e": 20.54,
+          "c": 0.999973
+        },
+        {
+          "w": "not",
+          "s": 20.66,
+          "e": 20.86,
+          "c": 0.999943
+        },
+        {
+          "w": "talked",
+          "s": 20.86,
+          "e": 20.97,
+          "c": 0.935497
+        },
+        {
+          "w": "to",
+          "s": 21.14,
+          "e": 21.14,
+          "c": 0.998946
+        },
+        {
+          "w": "the",
+          "s": 21.21,
+          "e": 21.24,
+          "c": 0.999996
+        },
+        {
+          "w": "president",
+          "s": 21.24,
+          "e": 21.54,
+          "c": 0.999847
+        },
+        {
+          "w": "on",
+          "s": 21.54,
+          "e": 21.6,
+          "c": 0.999996
+        },
+        {
+          "w": "this",
+          "s": 21.6,
+          "e": 21.71,
+          "c": 0.999996
+        },
+        {
+          "w": "issue,",
+          "s": 21.78,
+          "e": 21.95,
+          "c": 0.471653
+        },
+        {
+          "w": "and",
+          "s": 22.01,
+          "e": 22.06,
+          "c": 0.999952
+        },
+        {
+          "w": "I",
+          "s": 22.06,
+          "e": 22.09,
+          "c": 0.999472
+        },
+        {
+          "w": "do",
+          "s": 22.09,
+          "e": 22.15,
+          "c": 0.998338
+        },
+        {
+          "w": "not",
+          "s": 22.15,
+          "e": 22.2,
+          "c": 0.999596
+        },
+        {
+          "w": "believe...",
+          "s": 22.25,
+          "e": 22.72,
+          "c": 0.694549
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 22.84,
+      "end_s": 22.85,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "So",
+      "words": [
+        {
+          "w": "So",
+          "s": 22.84,
+          "e": 22.84,
+          "c": 0.964851
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 22.85,
+      "end_s": 24.99,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you won't commit to following the law if the president tells you",
+      "words": [
+        {
+          "w": "you",
+          "s": 22.85,
+          "e": 22.94,
+          "c": 0.999375
+        },
+        {
+          "w": "won't",
+          "s": 22.94,
+          "e": 23.04,
+          "c": 0.937285
+        },
+        {
+          "w": "commit",
+          "s": 23.15,
+          "e": 23.28,
+          "c": 0.989993
+        },
+        {
+          "w": "to",
+          "s": 23.35,
+          "e": 23.36,
+          "c": 0.999918
+        },
+        {
+          "w": "following",
+          "s": 23.36,
+          "e": 23.78,
+          "c": 0.99958
+        },
+        {
+          "w": "the",
+          "s": 23.78,
+          "e": 23.98,
+          "c": 0.981586
+        },
+        {
+          "w": "law",
+          "s": 24.1,
+          "e": 24.1,
+          "c": 0.999201
+        },
+        {
+          "w": "if",
+          "s": 24.11,
+          "e": 24.18,
+          "c": 0.999897
+        },
+        {
+          "w": "the",
+          "s": 24.18,
+          "e": 24.25,
+          "c": 0.99999
+        },
+        {
+          "w": "president",
+          "s": 24.3,
+          "e": 24.62,
+          "c": 0.999954
+        },
+        {
+          "w": "tells",
+          "s": 24.68,
+          "e": 24.85,
+          "c": 0.99995
+        },
+        {
+          "w": "you",
+          "s": 24.91,
+          "e": 24.99,
+          "c": 0.99999
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 24.99,
+      "end_s": 27.43,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to violate it? I will commit to following the law, and I do not",
+      "words": [
+        {
+          "w": "to",
+          "s": 24.99,
+          "e": 25.07,
+          "c": 1
+        },
+        {
+          "w": "violate",
+          "s": 25.07,
+          "e": 25.33,
+          "c": 0.999928
+        },
+        {
+          "w": "it?",
+          "s": 25.37,
+          "e": 25.55,
+          "c": 0.990883
+        },
+        {
+          "w": "I",
+          "s": 25.55,
+          "e": 25.59,
+          "c": 0.999975
+        },
+        {
+          "w": "will",
+          "s": 25.59,
+          "e": 25.61,
+          "c": 0.999941
+        },
+        {
+          "w": "commit",
+          "s": 25.75,
+          "e": 25.95,
+          "c": 0.999876
+        },
+        {
+          "w": "to",
+          "s": 26.05,
+          "e": 26.07,
+          "c": 1
+        },
+        {
+          "w": "following",
+          "s": 26.08,
+          "e": 26.44,
+          "c": 0.997381
+        },
+        {
+          "w": "the",
+          "s": 26.44,
+          "e": 26.56,
+          "c": 0.999966
+        },
+        {
+          "w": "law,",
+          "s": 26.56,
+          "e": 26.73,
+          "c": 0.997099
+        },
+        {
+          "w": "and",
+          "s": 26.85,
+          "e": 26.93,
+          "c": 0.818369
+        },
+        {
+          "w": "I",
+          "s": 27.04,
+          "e": 27.11,
+          "c": 0.999912
+        },
+        {
+          "w": "do",
+          "s": 27.11,
+          "e": 27.25,
+          "c": 0.99971
+        },
+        {
+          "w": "not",
+          "s": 27.26,
+          "e": 27.43,
+          "c": 0.899983
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 27.48,
+      "end_s": 27.56,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "I do",
+      "words": [
+        {
+          "w": "I",
+          "s": 27.48,
+          "e": 27.48,
+          "c": 0.234393
+        },
+        {
+          "w": "do",
+          "s": 27.56,
+          "e": 27.56,
+          "c": 0.665193
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 27.57,
+      "end_s": 29.4,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "not believe the president would ever ask me to break",
+      "words": [
+        {
+          "w": "not",
+          "s": 27.57,
+          "e": 27.68,
+          "c": 0.997312
+        },
+        {
+          "w": "believe",
+          "s": 27.76,
+          "e": 27.95,
+          "c": 0.99482
+        },
+        {
+          "w": "the",
+          "s": 27.95,
+          "e": 28.07,
+          "c": 0.961475
+        },
+        {
+          "w": "president",
+          "s": 28.07,
+          "e": 28.44,
+          "c": 0.704702
+        },
+        {
+          "w": "would",
+          "s": 28.44,
+          "e": 28.55,
+          "c": 0.96159
+        },
+        {
+          "w": "ever",
+          "s": 28.56,
+          "e": 28.61,
+          "c": 0.964956
+        },
+        {
+          "w": "ask",
+          "s": 28.68,
+          "e": 28.72,
+          "c": 0.98145
+        },
+        {
+          "w": "me",
+          "s": 28.72,
+          "e": 28.78,
+          "c": 0.990561
+        },
+        {
+          "w": "to",
+          "s": 28.78,
+          "e": 28.88,
+          "c": 0.937222
+        },
+        {
+          "w": "break",
+          "s": 28.88,
+          "e": 29.4,
+          "c": 0.974331
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 29.52,
+      "end_s": 32.12,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the law. Well, okay.",
+      "words": [
+        {
+          "w": "the",
+          "s": 29.52,
+          "e": 29.85,
+          "c": 0.986079
+        },
+        {
+          "w": "law.",
+          "s": 29.85,
+          "e": 30.6,
+          "c": 0.928754
+        },
+        {
+          "w": "Well,",
+          "s": 30.74,
+          "e": 32.12,
+          "c": 0.698882
+        },
+        {
+          "w": "okay.",
+          "s": 32.12,
+          "e": 32.12,
+          "c": 0.820699
+        }
+      ]
+    }
+  ]
+}

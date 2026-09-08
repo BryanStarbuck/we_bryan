@@ -1,0 +1,2130 @@
+{
+  "schema_version": 2,
+  "canonical_id": "470b861891f616fa",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 109.98,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T11:18:25.007Z",
+  "text_sha256": "75089f71b7bb7d450ca63d0fd5dff5e3a99e1c32f409c7b811345b871e40cb36",
+  "segments_sha256": "704fb2fe63a1f90b1551f0c2863dfb7ca2e98fb27ea5a140e5c46d83228236b8",
+  "words_sha256": "088e9ae7ac898ad6c87d3f5224256d50a6f95b298eb982d18125248accc3202f",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 4,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 19,
+    "clusters": 4,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Man 1",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.93,
+        "confidence": "high",
+        "clean_s": 43.7
+      },
+      "clean_s": 43.7,
+      "speaking_s": 43.7,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.7
+      },
+      "clean_s": 5.7,
+      "speaking_s": 5.7,
+      "first_s": 52.68
+    },
+    {
+      "id": "SPEAKER_05",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 38.8
+      },
+      "clean_s": 38.8,
+      "speaking_s": 38.8,
+      "first_s": 59.92
+    },
+    {
+      "id": "SPEAKER_07",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5
+      },
+      "clean_s": 5,
+      "speaking_s": 5,
+      "first_s": 104.94
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.99,
+      "end_s": 1.53,
+      "segment_i": 1,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 6.43,
+      "end_s": 6.84,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 19.4,
+      "end_s": 21.16,
+      "segment_i": 5,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 29.59,
+      "end_s": 30.02,
+      "segment_i": 7,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 29.97,
+      "end_s": 30.12,
+      "segment_i": 8,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 59.46,
+      "end_s": 59.77,
+      "segment_i": 11,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 83.34,
+      "end_s": 84.03,
+      "segment_i": 13,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.07,
+      "end_s": 0.93,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Ms. Romero,",
+      "words": [
+        {
+          "w": "Ms.",
+          "s": 0.07,
+          "e": 0.38,
+          "c": 0.354473
+        },
+        {
+          "w": "Romero,",
+          "s": 0.38,
+          "e": 0.93,
+          "c": 0.94194
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.99,
+      "end_s": 1.53,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I'm a",
+      "words": [
+        {
+          "w": "I'm",
+          "s": 0.99,
+          "e": 1.4,
+          "c": 0.977517
+        },
+        {
+          "w": "a",
+          "s": 1.4,
+          "e": 1.53,
+          "c": 0.999237
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 1.75,
+      "end_s": 6.43,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "dad. I have four children. They're now in their 30s, but I can remember well",
+      "words": [
+        {
+          "w": "dad.",
+          "s": 1.75,
+          "e": 2.37,
+          "c": 0.710251
+        },
+        {
+          "w": "I",
+          "s": 2.37,
+          "e": 2.4,
+          "c": 0.79093
+        },
+        {
+          "w": "have",
+          "s": 2.46,
+          "e": 2.47,
+          "c": 0.998155
+        },
+        {
+          "w": "four",
+          "s": 2.65,
+          "e": 2.78,
+          "c": 0.977225
+        },
+        {
+          "w": "children.",
+          "s": 2.93,
+          "e": 3.5,
+          "c": 0.971319
+        },
+        {
+          "w": "They're",
+          "s": 3.5,
+          "e": 3.84,
+          "c": 0.704696
+        },
+        {
+          "w": "now",
+          "s": 4.13,
+          "e": 4.17,
+          "c": 0.994761
+        },
+        {
+          "w": "in",
+          "s": 4.17,
+          "e": 4.3,
+          "c": 0.997044
+        },
+        {
+          "w": "their",
+          "s": 4.3,
+          "e": 4.63,
+          "c": 0.99582
+        },
+        {
+          "w": "30s,",
+          "s": 4.63,
+          "e": 5.2,
+          "c": 0.876378
+        },
+        {
+          "w": "but",
+          "s": 5.33,
+          "e": 5.4,
+          "c": 0.965265
+        },
+        {
+          "w": "I",
+          "s": 5.4,
+          "e": 5.5,
+          "c": 0.988557
+        },
+        {
+          "w": "can",
+          "s": 5.59,
+          "e": 5.66,
+          "c": 0.936368
+        },
+        {
+          "w": "remember",
+          "s": 5.66,
+          "e": 6.06,
+          "c": 0.950789
+        },
+        {
+          "w": "well",
+          "s": 6.13,
+          "e": 6.43,
+          "c": 0.999916
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 6.43,
+      "end_s": 6.84,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "what they",
+      "words": [
+        {
+          "w": "what",
+          "s": 6.43,
+          "e": 6.79,
+          "c": 0.998795
+        },
+        {
+          "w": "they",
+          "s": 6.79,
+          "e": 6.84,
+          "c": 0.999992
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 7.17,
+      "end_s": 19.4,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "were like at the age of your children. And I can't imagine what it would be like to be assaulted, zip-tied,",
+      "words": [
+        {
+          "w": "were",
+          "s": 7.17,
+          "e": 7.54,
+          "c": 0.999996
+        },
+        {
+          "w": "like",
+          "s": 7.81,
+          "e": 7.91,
+          "c": 0.999987
+        },
+        {
+          "w": "at",
+          "s": 7.91,
+          "e": 8.06,
+          "c": 0.999979
+        },
+        {
+          "w": "the",
+          "s": 8.11,
+          "e": 8.37,
+          "c": 0.999994
+        },
+        {
+          "w": "age",
+          "s": 8.37,
+          "e": 8.45,
+          "c": 0.999979
+        },
+        {
+          "w": "of",
+          "s": 8.7,
+          "e": 8.83,
+          "c": 0.999998
+        },
+        {
+          "w": "your",
+          "s": 8.83,
+          "e": 9.13,
+          "c": 0.99988
+        },
+        {
+          "w": "children.",
+          "s": 9.21,
+          "e": 10.28,
+          "c": 0.883108
+        },
+        {
+          "w": "And",
+          "s": 10.28,
+          "e": 10.8,
+          "c": 0.922212
+        },
+        {
+          "w": "I",
+          "s": 10.8,
+          "e": 10.86,
+          "c": 0.999815
+        },
+        {
+          "w": "can't",
+          "s": 10.99,
+          "e": 11.84,
+          "c": 0.992797
+        },
+        {
+          "w": "imagine",
+          "s": 11.84,
+          "e": 12.21,
+          "c": 0.999823
+        },
+        {
+          "w": "what",
+          "s": 13.06,
+          "e": 13.41,
+          "c": 0.990025
+        },
+        {
+          "w": "it",
+          "s": 13.81,
+          "e": 14.11,
+          "c": 0.995444
+        },
+        {
+          "w": "would",
+          "s": 14.11,
+          "e": 15.02,
+          "c": 0.994093
+        },
+        {
+          "w": "be",
+          "s": 15.09,
+          "e": 15.3,
+          "c": 0.995587
+        },
+        {
+          "w": "like",
+          "s": 15.3,
+          "e": 15.76,
+          "c": 0.999947
+        },
+        {
+          "w": "to",
+          "s": 15.76,
+          "e": 15.97,
+          "c": 1
+        },
+        {
+          "w": "be",
+          "s": 16.14,
+          "e": 16.43,
+          "c": 0.999971
+        },
+        {
+          "w": "assaulted,",
+          "s": 16.77,
+          "e": 17.99,
+          "c": 0.997221
+        },
+        {
+          "w": "zip-tied,",
+          "s": 17.99,
+          "e": 19.4,
+          "c": 0.926505
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 19.4,
+      "end_s": 21.16,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and completely",
+      "words": [
+        {
+          "w": "and",
+          "s": 19.4,
+          "e": 19.82,
+          "c": 0.999153
+        },
+        {
+          "w": "completely",
+          "s": 19.82,
+          "e": 21.16,
+          "c": 0.999859
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 22.02,
+      "end_s": 29.59,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "unable to reach my children as masked agents began rounding up everyone around",
+      "words": [
+        {
+          "w": "unable",
+          "s": 22.02,
+          "e": 22.11,
+          "c": 0.999926
+        },
+        {
+          "w": "to",
+          "s": 22.11,
+          "e": 22.33,
+          "c": 0.999989
+        },
+        {
+          "w": "reach",
+          "s": 22.53,
+          "e": 23.1,
+          "c": 0.999908
+        },
+        {
+          "w": "my",
+          "s": 23.1,
+          "e": 23.38,
+          "c": 0.999971
+        },
+        {
+          "w": "children",
+          "s": 23.38,
+          "e": 24.38,
+          "c": 0.995074
+        },
+        {
+          "w": "as",
+          "s": 24.78,
+          "e": 25.39,
+          "c": 0.879976
+        },
+        {
+          "w": "masked",
+          "s": 25.74,
+          "e": 26.31,
+          "c": 0.705612
+        },
+        {
+          "w": "agents",
+          "s": 26.62,
+          "e": 26.84,
+          "c": 0.998348
+        },
+        {
+          "w": "began",
+          "s": 26.91,
+          "e": 27.2,
+          "c": 0.652116
+        },
+        {
+          "w": "rounding",
+          "s": 27.2,
+          "e": 27.58,
+          "c": 0.998875
+        },
+        {
+          "w": "up",
+          "s": 27.58,
+          "e": 27.94,
+          "c": 0.997877
+        },
+        {
+          "w": "everyone",
+          "s": 27.94,
+          "e": 28.32,
+          "c": 0.981211
+        },
+        {
+          "w": "around",
+          "s": 28.59,
+          "e": 29.59,
+          "c": 0.983604
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 29.59,
+      "end_s": 30.02,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "me.",
+      "words": [
+        {
+          "w": "me.",
+          "s": 29.59,
+          "e": 30.02,
+          "c": 0.880033
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 29.97,
+      "end_s": 30.12,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I",
+      "words": [
+        {
+          "w": "I",
+          "s": 29.968,
+          "e": 30.118,
+          "c": 0.833583
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 30.48,
+      "end_s": 52.56,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "have a picture here, which I believe that you took. This picture is of the marks on the hands of your 14-year-old daughter after she too was zip-tied. You also spoke of your younger children being forced from your truck at gunpoint. Maybe you can describe what it was like to see your daughter zip-tied and your children treated this way right in front of you.",
+      "words": [
+        {
+          "w": "have",
+          "s": 30.478,
+          "e": 30.728,
+          "c": 0.996179
+        },
+        {
+          "w": "a",
+          "s": 30.728,
+          "e": 30.838,
+          "c": 0.997725
+        },
+        {
+          "w": "picture",
+          "s": 31.118,
+          "e": 31.948,
+          "c": 0.9991
+        },
+        {
+          "w": "here,",
+          "s": 32.918,
+          "e": 33.318,
+          "c": 0.347654
+        },
+        {
+          "w": "which",
+          "s": 33.328,
+          "e": 33.648,
+          "c": 0.785767
+        },
+        {
+          "w": "I",
+          "s": 33.648,
+          "e": 33.708,
+          "c": 0.991047
+        },
+        {
+          "w": "believe",
+          "s": 33.708,
+          "e": 34.138,
+          "c": 0.996236
+        },
+        {
+          "w": "that",
+          "s": 34.178,
+          "e": 34.458,
+          "c": 0.936515
+        },
+        {
+          "w": "you",
+          "s": 34.458,
+          "e": 34.638,
+          "c": 0.997449
+        },
+        {
+          "w": "took.",
+          "s": 34.848,
+          "e": 34.968,
+          "c": 0.954631
+        },
+        {
+          "w": "This",
+          "s": 34.968,
+          "e": 35.368,
+          "c": 0.999323
+        },
+        {
+          "w": "picture",
+          "s": 35.478,
+          "e": 35.838,
+          "c": 0.999068
+        },
+        {
+          "w": "is",
+          "s": 36.118,
+          "e": 36.288,
+          "c": 0.997234
+        },
+        {
+          "w": "of",
+          "s": 36.288,
+          "e": 36.488,
+          "c": 0.996373
+        },
+        {
+          "w": "the",
+          "s": 36.488,
+          "e": 36.788,
+          "c": 0.997221
+        },
+        {
+          "w": "marks",
+          "s": 36.788,
+          "e": 36.958,
+          "c": 0.998951
+        },
+        {
+          "w": "on",
+          "s": 36.958,
+          "e": 37.468,
+          "c": 0.910912
+        },
+        {
+          "w": "the",
+          "s": 37.468,
+          "e": 37.678,
+          "c": 0.994915
+        },
+        {
+          "w": "hands",
+          "s": 37.918,
+          "e": 38.068,
+          "c": 0.996696
+        },
+        {
+          "w": "of",
+          "s": 38.068,
+          "e": 38.158,
+          "c": 0.999895
+        },
+        {
+          "w": "your",
+          "s": 38.158,
+          "e": 38.348,
+          "c": 0.99778
+        },
+        {
+          "w": "14-year-old",
+          "s": 38.578,
+          "e": 38.938,
+          "c": 0.631266
+        },
+        {
+          "w": "daughter",
+          "s": 39.218,
+          "e": 39.458,
+          "c": 0.999479
+        },
+        {
+          "w": "after",
+          "s": 39.528,
+          "e": 40.048,
+          "c": 0.734459
+        },
+        {
+          "w": "she",
+          "s": 40.348,
+          "e": 40.828,
+          "c": 0.971615
+        },
+        {
+          "w": "too",
+          "s": 41.028,
+          "e": 41.338,
+          "c": 0.55869
+        },
+        {
+          "w": "was",
+          "s": 41.348,
+          "e": 41.498,
+          "c": 0.948741
+        },
+        {
+          "w": "zip-tied.",
+          "s": 41.598,
+          "e": 42.388,
+          "c": 0.64314
+        },
+        {
+          "w": "You",
+          "s": 42.388,
+          "e": 42.598,
+          "c": 0.998536
+        },
+        {
+          "w": "also",
+          "s": 42.868,
+          "e": 42.868,
+          "c": 0.999234
+        },
+        {
+          "w": "spoke",
+          "s": 42.898,
+          "e": 43.228,
+          "c": 0.999213
+        },
+        {
+          "w": "of",
+          "s": 43.228,
+          "e": 43.268,
+          "c": 0.998233
+        },
+        {
+          "w": "your",
+          "s": 43.538,
+          "e": 43.648,
+          "c": 0.995573
+        },
+        {
+          "w": "younger",
+          "s": 43.648,
+          "e": 44.138,
+          "c": 0.998835
+        },
+        {
+          "w": "children",
+          "s": 44.138,
+          "e": 44.378,
+          "c": 0.997605
+        },
+        {
+          "w": "being",
+          "s": 44.728,
+          "e": 44.998,
+          "c": 0.999863
+        },
+        {
+          "w": "forced",
+          "s": 45.238,
+          "e": 45.328,
+          "c": 0.999016
+        },
+        {
+          "w": "from",
+          "s": 45.328,
+          "e": 45.548,
+          "c": 0.999342
+        },
+        {
+          "w": "your",
+          "s": 45.548,
+          "e": 45.598,
+          "c": 0.995617
+        },
+        {
+          "w": "truck",
+          "s": 45.878,
+          "e": 46.038,
+          "c": 0.999388
+        },
+        {
+          "w": "at",
+          "s": 46.038,
+          "e": 46.108,
+          "c": 0.998597
+        },
+        {
+          "w": "gunpoint.",
+          "s": 46.228,
+          "e": 46.708,
+          "c": 0.956747
+        },
+        {
+          "w": "Maybe",
+          "s": 46.768,
+          "e": 46.998,
+          "c": 0.998896
+        },
+        {
+          "w": "you",
+          "s": 46.998,
+          "e": 47.128,
+          "c": 0.998711
+        },
+        {
+          "w": "can",
+          "s": 47.258,
+          "e": 47.258,
+          "c": 0.992865
+        },
+        {
+          "w": "describe",
+          "s": 47.278,
+          "e": 47.628,
+          "c": 0.998904
+        },
+        {
+          "w": "what",
+          "s": 47.628,
+          "e": 47.648,
+          "c": 0.994086
+        },
+        {
+          "w": "it",
+          "s": 47.898,
+          "e": 47.898,
+          "c": 0.997657
+        },
+        {
+          "w": "was",
+          "s": 47.918,
+          "e": 48.068,
+          "c": 0.997501
+        },
+        {
+          "w": "like",
+          "s": 48.068,
+          "e": 48.338,
+          "c": 0.985398
+        },
+        {
+          "w": "to",
+          "s": 48.408,
+          "e": 48.538,
+          "c": 0.999882
+        },
+        {
+          "w": "see",
+          "s": 48.538,
+          "e": 48.738,
+          "c": 0.999641
+        },
+        {
+          "w": "your",
+          "s": 48.918,
+          "e": 49.008,
+          "c": 0.997465
+        },
+        {
+          "w": "daughter",
+          "s": 49.008,
+          "e": 49.268,
+          "c": 0.88772
+        },
+        {
+          "w": "zip-tied",
+          "s": 49.558,
+          "e": 49.978,
+          "c": 0.892848
+        },
+        {
+          "w": "and",
+          "s": 50.148,
+          "e": 50.308,
+          "c": 0.688653
+        },
+        {
+          "w": "your",
+          "s": 50.308,
+          "e": 50.388,
+          "c": 0.991219
+        },
+        {
+          "w": "children",
+          "s": 50.388,
+          "e": 50.968,
+          "c": 0.998064
+        },
+        {
+          "w": "treated",
+          "s": 50.988,
+          "e": 51.338,
+          "c": 0.998633
+        },
+        {
+          "w": "this",
+          "s": 51.498,
+          "e": 51.538,
+          "c": 0.999491
+        },
+        {
+          "w": "way",
+          "s": 51.538,
+          "e": 51.688,
+          "c": 0.99972
+        },
+        {
+          "w": "right",
+          "s": 51.688,
+          "e": 51.858,
+          "c": 0.839975
+        },
+        {
+          "w": "in",
+          "s": 52.038,
+          "e": 52.038,
+          "c": 0.998393
+        },
+        {
+          "w": "front",
+          "s": 52.138,
+          "e": 52.288,
+          "c": 0.999722
+        },
+        {
+          "w": "of",
+          "s": 52.288,
+          "e": 52.368,
+          "c": 0.999224
+        },
+        {
+          "w": "you.",
+          "s": 52.488,
+          "e": 52.558,
+          "c": 0.910299
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 52.71,
+      "end_s": 59.47,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "- Honestly, I felt helpless. Like I couldn't do anything to help 'em. Like, as a mom,",
+      "words": [
+        {
+          "w": "-",
+          "s": 52.708,
+          "e": 52.808,
+          "c": 0.850865
+        },
+        {
+          "w": "Honestly,",
+          "s": 53.218,
+          "e": 53.818,
+          "c": 0.935014
+        },
+        {
+          "w": "I",
+          "s": 53.858,
+          "e": 53.918,
+          "c": 0.998782
+        },
+        {
+          "w": "felt",
+          "s": 53.918,
+          "e": 54.298,
+          "c": 0.998614
+        },
+        {
+          "w": "helpless.",
+          "s": 54.378,
+          "e": 55.148,
+          "c": 0.663047
+        },
+        {
+          "w": "Like",
+          "s": 55.148,
+          "e": 55.398,
+          "c": 0.982362
+        },
+        {
+          "w": "I",
+          "s": 55.398,
+          "e": 55.458,
+          "c": 0.782443
+        },
+        {
+          "w": "couldn't",
+          "s": 55.658,
+          "e": 55.958,
+          "c": 0.998906
+        },
+        {
+          "w": "do",
+          "s": 55.958,
+          "e": 56.018,
+          "c": 0.999624
+        },
+        {
+          "w": "anything",
+          "s": 56.298,
+          "e": 56.528,
+          "c": 0.999784
+        },
+        {
+          "w": "to",
+          "s": 56.648,
+          "e": 56.708,
+          "c": 0.997586
+        },
+        {
+          "w": "help",
+          "s": 56.708,
+          "e": 56.958,
+          "c": 0.999655
+        },
+        {
+          "w": "'em.",
+          "s": 56.958,
+          "e": 57.138,
+          "c": 0.444283
+        },
+        {
+          "w": "Like,",
+          "s": 57.918,
+          "e": 58.278,
+          "c": 0.497777
+        },
+        {
+          "w": "as",
+          "s": 58.558,
+          "e": 58.768,
+          "c": 0.997642
+        },
+        {
+          "w": "a",
+          "s": 58.768,
+          "e": 58.938,
+          "c": 0.999678
+        },
+        {
+          "w": "mom,",
+          "s": 58.938,
+          "e": 59.468,
+          "c": 0.733337
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 59.46,
+      "end_s": 59.77,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "you",
+      "words": [
+        {
+          "w": "you",
+          "s": 59.456,
+          "e": 59.766,
+          "c": 0.454976
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 59.99,
+      "end_s": 83.25,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "want to protect your children. I saw after I repeatedly told the official that she was 14, she was having a panic attack in front of her. They wouldn't listen. I felt so useless as a mom. I wanted to protect my daughter, and I couldn't. And for them to tell me that my kids were brought out of gunpoint, it just...",
+      "words": [
+        {
+          "w": "want",
+          "s": 59.986,
+          "e": 60.246,
+          "c": 0.862776
+        },
+        {
+          "w": "to",
+          "s": 60.306,
+          "e": 60.486,
+          "c": 0.996854
+        },
+        {
+          "w": "protect",
+          "s": 60.486,
+          "e": 61.246,
+          "c": 0.997503
+        },
+        {
+          "w": "your",
+          "s": 61.346,
+          "e": 61.426,
+          "c": 0.988649
+        },
+        {
+          "w": "children.",
+          "s": 61.426,
+          "e": 61.816,
+          "c": 0.970421
+        },
+        {
+          "w": "I",
+          "s": 61.816,
+          "e": 61.926,
+          "c": 0.962397
+        },
+        {
+          "w": "saw",
+          "s": 62.226,
+          "e": 62.266,
+          "c": 0.999552
+        },
+        {
+          "w": "after",
+          "s": 62.356,
+          "e": 62.826,
+          "c": 0.54165
+        },
+        {
+          "w": "I",
+          "s": 62.826,
+          "e": 62.936,
+          "c": 0.999884
+        },
+        {
+          "w": "repeatedly",
+          "s": 62.936,
+          "e": 64.066,
+          "c": 0.99899
+        },
+        {
+          "w": "told",
+          "s": 64.066,
+          "e": 64.536,
+          "c": 0.989987
+        },
+        {
+          "w": "the",
+          "s": 64.536,
+          "e": 64.866,
+          "c": 0.973688
+        },
+        {
+          "w": "official",
+          "s": 64.866,
+          "e": 65.756,
+          "c": 0.996204
+        },
+        {
+          "w": "that",
+          "s": 65.756,
+          "e": 65.956,
+          "c": 0.923389
+        },
+        {
+          "w": "she",
+          "s": 66.096,
+          "e": 66.126,
+          "c": 0.999666
+        },
+        {
+          "w": "was",
+          "s": 66.126,
+          "e": 66.286,
+          "c": 0.999983
+        },
+        {
+          "w": "14,",
+          "s": 66.286,
+          "e": 66.736,
+          "c": 0.979666
+        },
+        {
+          "w": "she",
+          "s": 66.736,
+          "e": 66.876,
+          "c": 0.999954
+        },
+        {
+          "w": "was",
+          "s": 66.876,
+          "e": 67.016,
+          "c": 0.999998
+        },
+        {
+          "w": "having",
+          "s": 67.166,
+          "e": 67.296,
+          "c": 0.99999
+        },
+        {
+          "w": "a",
+          "s": 67.296,
+          "e": 67.336,
+          "c": 0.999996
+        },
+        {
+          "w": "panic",
+          "s": 67.336,
+          "e": 67.516,
+          "c": 0.999886
+        },
+        {
+          "w": "attack",
+          "s": 67.586,
+          "e": 67.846,
+          "c": 0.999987
+        },
+        {
+          "w": "in",
+          "s": 67.846,
+          "e": 67.936,
+          "c": 0.999947
+        },
+        {
+          "w": "front",
+          "s": 67.936,
+          "e": 68.156,
+          "c": 0.999996
+        },
+        {
+          "w": "of",
+          "s": 68.156,
+          "e": 68.226,
+          "c": 1
+        },
+        {
+          "w": "her.",
+          "s": 68.256,
+          "e": 68.536,
+          "c": 0.865852
+        },
+        {
+          "w": "They",
+          "s": 68.596,
+          "e": 68.816,
+          "c": 0.999964
+        },
+        {
+          "w": "wouldn't",
+          "s": 69.026,
+          "e": 69.256,
+          "c": 0.999863
+        },
+        {
+          "w": "listen.",
+          "s": 69.256,
+          "e": 69.776,
+          "c": 0.999771
+        },
+        {
+          "w": "I",
+          "s": 69.776,
+          "e": 69.886,
+          "c": 0.999973
+        },
+        {
+          "w": "felt",
+          "s": 70.206,
+          "e": 70.356,
+          "c": 0.999773
+        },
+        {
+          "w": "so",
+          "s": 70.356,
+          "e": 70.556,
+          "c": 0.999971
+        },
+        {
+          "w": "useless",
+          "s": 70.626,
+          "e": 71.406,
+          "c": 0.999958
+        },
+        {
+          "w": "as",
+          "s": 71.406,
+          "e": 71.576,
+          "c": 0.999607
+        },
+        {
+          "w": "a",
+          "s": 71.666,
+          "e": 71.746,
+          "c": 0.999992
+        },
+        {
+          "w": "mom.",
+          "s": 71.746,
+          "e": 72.496,
+          "c": 0.977452
+        },
+        {
+          "w": "I",
+          "s": 72.496,
+          "e": 72.556,
+          "c": 0.747684
+        },
+        {
+          "w": "wanted",
+          "s": 72.666,
+          "e": 72.916,
+          "c": 0.999397
+        },
+        {
+          "w": "to",
+          "s": 72.926,
+          "e": 73.036,
+          "c": 0.999983
+        },
+        {
+          "w": "protect",
+          "s": 73.036,
+          "e": 73.456,
+          "c": 0.999952
+        },
+        {
+          "w": "my",
+          "s": 73.456,
+          "e": 73.576,
+          "c": 0.999969
+        },
+        {
+          "w": "daughter,",
+          "s": 73.576,
+          "e": 74.176,
+          "c": 0.776137
+        },
+        {
+          "w": "and",
+          "s": 74.176,
+          "e": 74.296,
+          "c": 0.994658
+        },
+        {
+          "w": "I",
+          "s": 74.396,
+          "e": 74.406,
+          "c": 0.9995
+        },
+        {
+          "w": "couldn't.",
+          "s": 74.436,
+          "e": 74.966,
+          "c": 0.971358
+        },
+        {
+          "w": "And",
+          "s": 75.526,
+          "e": 75.616,
+          "c": 0.831138
+        },
+        {
+          "w": "for",
+          "s": 75.636,
+          "e": 76.136,
+          "c": 0.999958
+        },
+        {
+          "w": "them",
+          "s": 76.136,
+          "e": 76.786,
+          "c": 0.999989
+        },
+        {
+          "w": "to",
+          "s": 76.796,
+          "e": 77.126,
+          "c": 0.999975
+        },
+        {
+          "w": "tell",
+          "s": 77.176,
+          "e": 77.846,
+          "c": 0.999992
+        },
+        {
+          "w": "me",
+          "s": 77.886,
+          "e": 78.236,
+          "c": 0.999996
+        },
+        {
+          "w": "that",
+          "s": 78.236,
+          "e": 78.286,
+          "c": 0.987754
+        },
+        {
+          "w": "my",
+          "s": 78.416,
+          "e": 78.526,
+          "c": 0.999928
+        },
+        {
+          "w": "kids",
+          "s": 78.646,
+          "e": 78.736,
+          "c": 0.999786
+        },
+        {
+          "w": "were",
+          "s": 78.736,
+          "e": 78.936,
+          "c": 0.983369
+        },
+        {
+          "w": "brought",
+          "s": 78.936,
+          "e": 79.236,
+          "c": 0.998971
+        },
+        {
+          "w": "out",
+          "s": 79.376,
+          "e": 79.436,
+          "c": 0.930889
+        },
+        {
+          "w": "of",
+          "s": 79.436,
+          "e": 79.536,
+          "c": 0.759131
+        },
+        {
+          "w": "gunpoint,",
+          "s": 79.536,
+          "e": 80.056,
+          "c": 0.978614
+        },
+        {
+          "w": "it",
+          "s": 80.106,
+          "e": 80.496,
+          "c": 0.98233
+        },
+        {
+          "w": "just...",
+          "s": 80.596,
+          "e": 83.246,
+          "c": 0.710811
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 83.34,
+      "end_s": 84.03,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "it's the",
+      "words": [
+        {
+          "w": "it's",
+          "s": 83.344,
+          "e": 83.734,
+          "c": 0.373847
+        },
+        {
+          "w": "the",
+          "s": 83.734,
+          "e": 84.034,
+          "c": 0.990189
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 84.35,
+      "end_s": 105.02,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "hardest thing for me to process still to this day. I have never left a bruise on my daughter, never have done anything to my kids to cause them trauma or anything. Why are other people doing this to children? Not just my children, but to other children. It's a mother's worst fear for your kids to be traumatized, to get hurt or anything.",
+      "words": [
+        {
+          "w": "hardest",
+          "s": 84.354,
+          "e": 84.724,
+          "c": 0.998721
+        },
+        {
+          "w": "thing",
+          "s": 84.724,
+          "e": 85.244,
+          "c": 0.998511
+        },
+        {
+          "w": "for",
+          "s": 85.244,
+          "e": 85.434,
+          "c": 0.970604
+        },
+        {
+          "w": "me",
+          "s": 85.434,
+          "e": 85.564,
+          "c": 0.998407
+        },
+        {
+          "w": "to",
+          "s": 85.564,
+          "e": 85.624,
+          "c": 0.975474
+        },
+        {
+          "w": "process",
+          "s": 85.744,
+          "e": 86.064,
+          "c": 0.993098
+        },
+        {
+          "w": "still",
+          "s": 86.064,
+          "e": 86.444,
+          "c": 0.935505
+        },
+        {
+          "w": "to",
+          "s": 86.444,
+          "e": 86.594,
+          "c": 0.93549
+        },
+        {
+          "w": "this",
+          "s": 86.594,
+          "e": 86.784,
+          "c": 0.995921
+        },
+        {
+          "w": "day.",
+          "s": 86.924,
+          "e": 87.314,
+          "c": 0.820526
+        },
+        {
+          "w": "I",
+          "s": 87.404,
+          "e": 87.464,
+          "c": 0.999609
+        },
+        {
+          "w": "have",
+          "s": 87.464,
+          "e": 87.704,
+          "c": 0.996022
+        },
+        {
+          "w": "never",
+          "s": 87.704,
+          "e": 88.004,
+          "c": 0.999495
+        },
+        {
+          "w": "left",
+          "s": 88.004,
+          "e": 88.244,
+          "c": 0.996949
+        },
+        {
+          "w": "a",
+          "s": 88.304,
+          "e": 88.304,
+          "c": 0.995579
+        },
+        {
+          "w": "bruise",
+          "s": 88.404,
+          "e": 88.654,
+          "c": 0.997501
+        },
+        {
+          "w": "on",
+          "s": 88.764,
+          "e": 88.784,
+          "c": 0.997501
+        },
+        {
+          "w": "my",
+          "s": 88.784,
+          "e": 88.904,
+          "c": 0.999258
+        },
+        {
+          "w": "daughter,",
+          "s": 88.904,
+          "e": 89.404,
+          "c": 0.780457
+        },
+        {
+          "w": "never",
+          "s": 89.404,
+          "e": 89.734,
+          "c": 0.998708
+        },
+        {
+          "w": "have",
+          "s": 89.734,
+          "e": 90.004,
+          "c": 0.994277
+        },
+        {
+          "w": "done",
+          "s": 90.004,
+          "e": 90.274,
+          "c": 0.998721
+        },
+        {
+          "w": "anything",
+          "s": 90.414,
+          "e": 90.814,
+          "c": 0.998201
+        },
+        {
+          "w": "to",
+          "s": 90.814,
+          "e": 90.944,
+          "c": 0.993165
+        },
+        {
+          "w": "my",
+          "s": 90.944,
+          "e": 91.044,
+          "c": 0.99441
+        },
+        {
+          "w": "kids",
+          "s": 91.064,
+          "e": 91.324,
+          "c": 0.995923
+        },
+        {
+          "w": "to",
+          "s": 91.364,
+          "e": 91.494,
+          "c": 0.99956
+        },
+        {
+          "w": "cause",
+          "s": 91.494,
+          "e": 91.824,
+          "c": 0.997746
+        },
+        {
+          "w": "them",
+          "s": 91.824,
+          "e": 92.084,
+          "c": 0.987811
+        },
+        {
+          "w": "trauma",
+          "s": 92.374,
+          "e": 92.474,
+          "c": 0.99744
+        },
+        {
+          "w": "or",
+          "s": 92.474,
+          "e": 92.604,
+          "c": 0.981974
+        },
+        {
+          "w": "anything.",
+          "s": 92.604,
+          "e": 93.284,
+          "c": 0.966223
+        },
+        {
+          "w": "Why",
+          "s": 93.344,
+          "e": 93.644,
+          "c": 0.999491
+        },
+        {
+          "w": "are",
+          "s": 93.644,
+          "e": 93.944,
+          "c": 0.997676
+        },
+        {
+          "w": "other",
+          "s": 93.954,
+          "e": 94.444,
+          "c": 0.998123
+        },
+        {
+          "w": "people",
+          "s": 94.444,
+          "e": 94.984,
+          "c": 0.999861
+        },
+        {
+          "w": "doing",
+          "s": 95.074,
+          "e": 95.544,
+          "c": 0.992945
+        },
+        {
+          "w": "this",
+          "s": 95.544,
+          "e": 95.874,
+          "c": 0.998951
+        },
+        {
+          "w": "to",
+          "s": 95.974,
+          "e": 96.144,
+          "c": 0.996645
+        },
+        {
+          "w": "children?",
+          "s": 96.144,
+          "e": 97.264,
+          "c": 0.749864
+        },
+        {
+          "w": "Not",
+          "s": 97.264,
+          "e": 97.404,
+          "c": 0.999378
+        },
+        {
+          "w": "just",
+          "s": 97.404,
+          "e": 97.584,
+          "c": 0.999445
+        },
+        {
+          "w": "my",
+          "s": 97.584,
+          "e": 97.674,
+          "c": 0.990879
+        },
+        {
+          "w": "children,",
+          "s": 97.674,
+          "e": 98.164,
+          "c": 0.778082
+        },
+        {
+          "w": "but",
+          "s": 98.264,
+          "e": 98.294,
+          "c": 0.977446
+        },
+        {
+          "w": "to",
+          "s": 98.294,
+          "e": 98.374,
+          "c": 0.990871
+        },
+        {
+          "w": "other",
+          "s": 98.454,
+          "e": 98.514,
+          "c": 0.999447
+        },
+        {
+          "w": "children.",
+          "s": 98.614,
+          "e": 99.084,
+          "c": 0.842685
+        },
+        {
+          "w": "It's",
+          "s": 99.084,
+          "e": 99.504,
+          "c": 0.995558
+        },
+        {
+          "w": "a",
+          "s": 99.504,
+          "e": 99.604,
+          "c": 0.993125
+        },
+        {
+          "w": "mother's",
+          "s": 99.694,
+          "e": 100.454,
+          "c": 0.99073
+        },
+        {
+          "w": "worst",
+          "s": 100.454,
+          "e": 100.984,
+          "c": 0.863178
+        },
+        {
+          "w": "fear",
+          "s": 100.984,
+          "e": 101.364,
+          "c": 0.996599
+        },
+        {
+          "w": "for",
+          "s": 101.484,
+          "e": 101.624,
+          "c": 0.853286
+        },
+        {
+          "w": "your",
+          "s": 101.724,
+          "e": 101.944,
+          "c": 0.979107
+        },
+        {
+          "w": "kids",
+          "s": 101.944,
+          "e": 102.194,
+          "c": 0.990947
+        },
+        {
+          "w": "to",
+          "s": 102.244,
+          "e": 102.334,
+          "c": 0.99979
+        },
+        {
+          "w": "be",
+          "s": 102.334,
+          "e": 102.424,
+          "c": 0.994245
+        },
+        {
+          "w": "traumatized,",
+          "s": 102.424,
+          "e": 103.084,
+          "c": 0.483758
+        },
+        {
+          "w": "to",
+          "s": 103.244,
+          "e": 103.254,
+          "c": 0.957485
+        },
+        {
+          "w": "get",
+          "s": 103.254,
+          "e": 103.504,
+          "c": 0.913577
+        },
+        {
+          "w": "hurt",
+          "s": 103.594,
+          "e": 103.834,
+          "c": 0.998965
+        },
+        {
+          "w": "or",
+          "s": 103.854,
+          "e": 104.034,
+          "c": 0.757366
+        },
+        {
+          "w": "anything.",
+          "s": 104.034,
+          "e": 105.024,
+          "c": 0.99332
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 105.02,
+      "end_s": 109.98,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Why are other people doing this to our children when we're trying to do the best to protect our children?",
+      "words": [
+        {
+          "w": "Why",
+          "s": 105.024,
+          "e": 105.204,
+          "c": 0.999464
+        },
+        {
+          "w": "are",
+          "s": 105.204,
+          "e": 105.384,
+          "c": 0.997864
+        },
+        {
+          "w": "other",
+          "s": 105.384,
+          "e": 105.694,
+          "c": 0.996601
+        },
+        {
+          "w": "people",
+          "s": 106.024,
+          "e": 106.064,
+          "c": 0.999866
+        },
+        {
+          "w": "doing",
+          "s": 106.064,
+          "e": 106.274,
+          "c": 0.996947
+        },
+        {
+          "w": "this",
+          "s": 106.374,
+          "e": 106.614,
+          "c": 0.999174
+        },
+        {
+          "w": "to",
+          "s": 106.634,
+          "e": 106.694,
+          "c": 0.993652
+        },
+        {
+          "w": "our",
+          "s": 106.744,
+          "e": 106.924,
+          "c": 0.999285
+        },
+        {
+          "w": "children",
+          "s": 106.924,
+          "e": 107.484,
+          "c": 0.998428
+        },
+        {
+          "w": "when",
+          "s": 107.484,
+          "e": 107.684,
+          "c": 0.999659
+        },
+        {
+          "w": "we're",
+          "s": 107.684,
+          "e": 107.934,
+          "c": 0.99586
+        },
+        {
+          "w": "trying",
+          "s": 107.934,
+          "e": 108.234,
+          "c": 0.998755
+        },
+        {
+          "w": "to",
+          "s": 108.234,
+          "e": 108.334,
+          "c": 0.997803
+        },
+        {
+          "w": "do",
+          "s": 108.434,
+          "e": 108.434,
+          "c": 0.998788
+        },
+        {
+          "w": "the",
+          "s": 108.494,
+          "e": 108.584,
+          "c": 0.993155
+        },
+        {
+          "w": "best",
+          "s": 108.584,
+          "e": 108.734,
+          "c": 0.999569
+        },
+        {
+          "w": "to",
+          "s": 108.844,
+          "e": 108.934,
+          "c": 0.94601
+        },
+        {
+          "w": "protect",
+          "s": 108.934,
+          "e": 109.334,
+          "c": 0.999133
+        },
+        {
+          "w": "our",
+          "s": 109.334,
+          "e": 109.504,
+          "c": 0.998761
+        },
+        {
+          "w": "children?",
+          "s": 109.504,
+          "e": 109.984,
+          "c": 0.934581
+        }
+      ]
+    }
+  ]
+}

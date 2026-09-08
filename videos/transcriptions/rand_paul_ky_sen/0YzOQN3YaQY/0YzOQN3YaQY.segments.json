@@ -1,0 +1,3173 @@
+{
+  "schema_version": 2,
+  "canonical_id": "959f1d43abf6c62e",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 184.53,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T11:22:11.315Z",
+  "text_sha256": "f11b733f1f89604d3ed3e12c5432b7f48798b5e7e24f01e050c6ddc6045ccc74",
+  "segments_sha256": "55024118c8cc8765e3784136ff156e7a7a4f7fa4135d3c99fa570f77f11e8ce6",
+  "words_sha256": "95a3b7e5dbea4b14e59f5cffb18edaedf5b11d6556a9d3dd35bd77b21e65a77c",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 7,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 39,
+    "clusters": 18,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.89,
+        "confidence": "low",
+        "clean_s": 42.1
+      },
+      "clean_s": 42.1,
+      "speaking_s": 42.5,
+      "first_s": 0.62
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0
+      },
+      "clean_s": 0,
+      "speaking_s": 0.5,
+      "first_s": 6.76
+    },
+    {
+      "id": "SPEAKER_06",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.8
+      },
+      "clean_s": 5.8,
+      "speaking_s": 5.8,
+      "first_s": 49.15
+    },
+    {
+      "id": "SPEAKER_08",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 22.5
+      },
+      "clean_s": 22.5,
+      "speaking_s": 22.5,
+      "first_s": 54.98
+    },
+    {
+      "id": "SPEAKER_11",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.2
+      },
+      "clean_s": 5.2,
+      "speaking_s": 5.2,
+      "first_s": 78.77
+    },
+    {
+      "id": "SPEAKER_13",
+      "n": 6,
+      "label": "Speaker 6",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 9.3
+      },
+      "clean_s": 9.3,
+      "speaking_s": 9.5,
+      "first_s": 83.97
+    },
+    {
+      "id": "SPEAKER_14",
+      "n": 7,
+      "label": "Speaker 7",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 3
+      },
+      "clean_s": 3,
+      "speaking_s": 3.2,
+      "first_s": 93.27
+    },
+    {
+      "id": "SPEAKER_16",
+      "n": 8,
+      "label": "Speaker 8",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.5
+      },
+      "clean_s": 5.5,
+      "speaking_s": 5.5,
+      "first_s": 99.49
+    },
+    {
+      "id": "SPEAKER_18",
+      "n": 9,
+      "label": "Speaker 9",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 3.2
+      },
+      "clean_s": 3.2,
+      "speaking_s": 3.2,
+      "first_s": 104.98
+    },
+    {
+      "id": "SPEAKER_19",
+      "n": 10,
+      "label": "Speaker 10",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.9
+      },
+      "clean_s": 5.9,
+      "speaking_s": 5.9,
+      "first_s": 108.18
+    },
+    {
+      "id": "SPEAKER_20",
+      "n": 11,
+      "label": "Speaker 11",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1
+      },
+      "clean_s": 1,
+      "speaking_s": 1,
+      "first_s": 114.06
+    },
+    {
+      "id": "SPEAKER_22",
+      "n": 12,
+      "label": "Speaker 12",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.9
+      },
+      "clean_s": 5.9,
+      "speaking_s": 5.9,
+      "first_s": 115.03
+    },
+    {
+      "id": "SPEAKER_23",
+      "n": 13,
+      "label": "Speaker 13",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 2
+      },
+      "clean_s": 2,
+      "speaking_s": 2,
+      "first_s": 120.97
+    },
+    {
+      "id": "SPEAKER_24",
+      "n": 14,
+      "label": "Speaker 14",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 10.6
+      },
+      "clean_s": 10.6,
+      "speaking_s": 10.6,
+      "first_s": 122.97
+    },
+    {
+      "id": "SPEAKER_26",
+      "n": 15,
+      "label": "Speaker 15",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.8
+      },
+      "clean_s": 0.8,
+      "speaking_s": 0.8,
+      "first_s": 134.54
+    },
+    {
+      "id": "SPEAKER_28",
+      "n": 16,
+      "label": "Speaker 16 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.9,
+        "confidence": "low",
+        "clean_s": 16.7
+      },
+      "clean_s": 16.7,
+      "speaking_s": 16.7,
+      "first_s": 138.61
+    },
+    {
+      "id": "SPEAKER_30",
+      "n": 17,
+      "label": "Speaker 17 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.9,
+        "confidence": "low",
+        "clean_s": 10.3
+      },
+      "clean_s": 10.3,
+      "speaking_s": 10.3,
+      "first_s": 148.55
+    },
+    {
+      "id": "SPEAKER_33",
+      "n": 18,
+      "label": "Speaker 18",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.4
+      },
+      "clean_s": 4.4,
+      "speaking_s": 4.4,
+      "first_s": 170.97
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.57,
+      "end_s": 0.57,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 26.85,
+      "end_s": 27.11,
+      "segment_i": 2,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 56.87,
+      "end_s": 56.87,
+      "segment_i": 6,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 97.4,
+      "end_s": 98.69,
+      "segment_i": 11,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 98.66,
+      "end_s": 98.98,
+      "segment_i": 12,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 133.73,
+      "end_s": 137.55,
+      "segment_i": 20,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 160.54,
+      "end_s": 160.86,
+      "segment_i": 24,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 182.54,
+      "end_s": 184.53,
+      "segment_i": 27,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.57,
+      "end_s": 0.58,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "This",
+      "words": [
+        {
+          "w": "This",
+          "s": 0.57,
+          "e": 0.57,
+          "c": 0.833775
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.63,
+      "end_s": 26.88,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "is a place of promise, a way of life and hope for the future. Here we harvest God's gifts from above and below. Here we give thanks for our blessings, celebrate our heritage, honor tradition. Here we salute the flag and honor those who fought for it. This is our land, our people, our Kentucky.",
+      "words": [
+        {
+          "w": "is",
+          "s": 0.63,
+          "e": 0.86,
+          "c": 0.993167
+        },
+        {
+          "w": "a",
+          "s": 0.86,
+          "e": 1,
+          "c": 0.995137
+        },
+        {
+          "w": "place",
+          "s": 1.16,
+          "e": 1.72,
+          "c": 0.995589
+        },
+        {
+          "w": "of",
+          "s": 1.72,
+          "e": 2.01,
+          "c": 0.995135
+        },
+        {
+          "w": "promise,",
+          "s": 2.01,
+          "e": 3.12,
+          "c": 0.555911
+        },
+        {
+          "w": "a",
+          "s": 3.12,
+          "e": 3.27,
+          "c": 0.615174
+        },
+        {
+          "w": "way",
+          "s": 3.27,
+          "e": 3.72,
+          "c": 0.997438
+        },
+        {
+          "w": "of",
+          "s": 3.72,
+          "e": 4.02,
+          "c": 0.995511
+        },
+        {
+          "w": "life",
+          "s": 4.02,
+          "e": 4.64,
+          "c": 0.993852
+        },
+        {
+          "w": "and",
+          "s": 4.64,
+          "e": 4.94,
+          "c": 0.372875
+        },
+        {
+          "w": "hope",
+          "s": 4.94,
+          "e": 5.36,
+          "c": 0.987681
+        },
+        {
+          "w": "for",
+          "s": 5.36,
+          "e": 5.7,
+          "c": 0.985571
+        },
+        {
+          "w": "the",
+          "s": 5.7,
+          "e": 6.04,
+          "c": 0.996175
+        },
+        {
+          "w": "future.",
+          "s": 6.04,
+          "e": 6.76,
+          "c": 0.949135
+        },
+        {
+          "w": "Here",
+          "s": 6.83,
+          "e": 7.19,
+          "c": 0.996628
+        },
+        {
+          "w": "we",
+          "s": 7.35,
+          "e": 7.4,
+          "c": 0.524217
+        },
+        {
+          "w": "harvest",
+          "s": 7.4,
+          "e": 8.16,
+          "c": 0.997704
+        },
+        {
+          "w": "God's",
+          "s": 8.16,
+          "e": 8.69,
+          "c": 0.973232
+        },
+        {
+          "w": "gifts",
+          "s": 8.69,
+          "e": 9.23,
+          "c": 0.992971
+        },
+        {
+          "w": "from",
+          "s": 9.23,
+          "e": 9.66,
+          "c": 0.99644
+        },
+        {
+          "w": "above",
+          "s": 9.66,
+          "e": 10.2,
+          "c": 0.986071
+        },
+        {
+          "w": "and",
+          "s": 10.2,
+          "e": 10.52,
+          "c": 0.982055
+        },
+        {
+          "w": "below.",
+          "s": 10.52,
+          "e": 11.12,
+          "c": 0.959582
+        },
+        {
+          "w": "Here",
+          "s": 11.19,
+          "e": 11.51,
+          "c": 0.998329
+        },
+        {
+          "w": "we",
+          "s": 11.7,
+          "e": 11.7,
+          "c": 0.907937
+        },
+        {
+          "w": "give",
+          "s": 11.73,
+          "e": 12.09,
+          "c": 0.999361
+        },
+        {
+          "w": "thanks",
+          "s": 12.09,
+          "e": 12.67,
+          "c": 0.998809
+        },
+        {
+          "w": "for",
+          "s": 12.67,
+          "e": 12.96,
+          "c": 0.998007
+        },
+        {
+          "w": "our",
+          "s": 12.96,
+          "e": 13.25,
+          "c": 0.99751
+        },
+        {
+          "w": "blessings,",
+          "s": 13.25,
+          "e": 14.2,
+          "c": 0.885737
+        },
+        {
+          "w": "celebrate",
+          "s": 14.2,
+          "e": 14.87,
+          "c": 0.700262
+        },
+        {
+          "w": "our",
+          "s": 14.87,
+          "e": 15.09,
+          "c": 0.989659
+        },
+        {
+          "w": "heritage,",
+          "s": 15.09,
+          "e": 15.84,
+          "c": 0.987741
+        },
+        {
+          "w": "honor",
+          "s": 15.84,
+          "e": 16.27,
+          "c": 0.912425
+        },
+        {
+          "w": "tradition.",
+          "s": 16.27,
+          "e": 17.36,
+          "c": 0.960614
+        },
+        {
+          "w": "Here",
+          "s": 17.43,
+          "e": 17.75,
+          "c": 0.998222
+        },
+        {
+          "w": "we",
+          "s": 17.94,
+          "e": 17.94,
+          "c": 0.963824
+        },
+        {
+          "w": "salute",
+          "s": 17.97,
+          "e": 18.52,
+          "c": 0.999146
+        },
+        {
+          "w": "the",
+          "s": 18.52,
+          "e": 18.81,
+          "c": 0.997407
+        },
+        {
+          "w": "flag",
+          "s": 18.81,
+          "e": 19.2,
+          "c": 0.992623
+        },
+        {
+          "w": "and",
+          "s": 19.2,
+          "e": 19.49,
+          "c": 0.94699
+        },
+        {
+          "w": "honor",
+          "s": 19.49,
+          "e": 19.97,
+          "c": 0.997912
+        },
+        {
+          "w": "those",
+          "s": 19.97,
+          "e": 20.45,
+          "c": 0.998091
+        },
+        {
+          "w": "who",
+          "s": 20.45,
+          "e": 20.74,
+          "c": 0.993439
+        },
+        {
+          "w": "fought",
+          "s": 20.74,
+          "e": 21.32,
+          "c": 0.988896
+        },
+        {
+          "w": "for",
+          "s": 21.32,
+          "e": 21.61,
+          "c": 0.999497
+        },
+        {
+          "w": "it.",
+          "s": 21.61,
+          "e": 22.16,
+          "c": 0.993997
+        },
+        {
+          "w": "This",
+          "s": 22.23,
+          "e": 22.65,
+          "c": 0.997556
+        },
+        {
+          "w": "is",
+          "s": 22.76,
+          "e": 22.89,
+          "c": 0.998591
+        },
+        {
+          "w": "our",
+          "s": 22.89,
+          "e": 23.25,
+          "c": 0.994679
+        },
+        {
+          "w": "land,",
+          "s": 23.25,
+          "e": 24,
+          "c": 0.886915
+        },
+        {
+          "w": "our",
+          "s": 24,
+          "e": 24.37,
+          "c": 0.983868
+        },
+        {
+          "w": "people,",
+          "s": 24.37,
+          "e": 25.36,
+          "c": 0.96342
+        },
+        {
+          "w": "our",
+          "s": 25.36,
+          "e": 25.77,
+          "c": 0.970989
+        },
+        {
+          "w": "Kentucky.",
+          "s": 25.77,
+          "e": 26.88,
+          "c": 0.910055
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 26.85,
+      "end_s": 27.11,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And",
+      "words": [
+        {
+          "w": "And",
+          "s": 26.848,
+          "e": 27.108,
+          "c": 0.756844
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 27.12,
+      "end_s": 49.2,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "this is where Rand Paul lives, works, raises his family, and serves our community. From Bowling Green to Paducah, Glasgow to Lexington, Corbin and Louisville, Rand Paul has provided free eye surgery for uninsured patients, and Rand Paul restores the gift of sight to God's newest creation. Rand",
+      "words": [
+        {
+          "w": "this",
+          "s": 27.118,
+          "e": 27.458,
+          "c": 0.99307
+        },
+        {
+          "w": "is",
+          "s": 27.458,
+          "e": 27.628,
+          "c": 0.996204
+        },
+        {
+          "w": "where",
+          "s": 27.628,
+          "e": 28.068,
+          "c": 0.997792
+        },
+        {
+          "w": "Rand",
+          "s": 28.068,
+          "e": 28.408,
+          "c": 0.991506
+        },
+        {
+          "w": "Paul",
+          "s": 28.408,
+          "e": 28.768,
+          "c": 0.996073
+        },
+        {
+          "w": "lives,",
+          "s": 28.768,
+          "e": 29.428,
+          "c": 0.608389
+        },
+        {
+          "w": "works,",
+          "s": 29.428,
+          "e": 30.088,
+          "c": 0.885019
+        },
+        {
+          "w": "raises",
+          "s": 30.088,
+          "e": 30.848,
+          "c": 0.863997
+        },
+        {
+          "w": "his",
+          "s": 30.848,
+          "e": 31.058,
+          "c": 0.980273
+        },
+        {
+          "w": "family,",
+          "s": 31.068,
+          "e": 31.668,
+          "c": 0.838074
+        },
+        {
+          "w": "and",
+          "s": 31.668,
+          "e": 31.878,
+          "c": 0.53952
+        },
+        {
+          "w": "serves",
+          "s": 31.878,
+          "e": 32.308,
+          "c": 0.995612
+        },
+        {
+          "w": "our",
+          "s": 32.308,
+          "e": 32.548,
+          "c": 0.992137
+        },
+        {
+          "w": "community.",
+          "s": 32.548,
+          "e": 33.208,
+          "c": 0.954624
+        },
+        {
+          "w": "From",
+          "s": 33.208,
+          "e": 33.558,
+          "c": 0.99992
+        },
+        {
+          "w": "Bowling",
+          "s": 33.558,
+          "e": 34.158,
+          "c": 0.99751
+        },
+        {
+          "w": "Green",
+          "s": 34.168,
+          "e": 34.598,
+          "c": 0.999274
+        },
+        {
+          "w": "to",
+          "s": 34.598,
+          "e": 34.758,
+          "c": 0.999981
+        },
+        {
+          "w": "Paducah,",
+          "s": 34.758,
+          "e": 35.538,
+          "c": 0.903218
+        },
+        {
+          "w": "Glasgow",
+          "s": 35.538,
+          "e": 36.148,
+          "c": 0.734519
+        },
+        {
+          "w": "to",
+          "s": 36.148,
+          "e": 36.318,
+          "c": 0.999331
+        },
+        {
+          "w": "Lexington,",
+          "s": 36.318,
+          "e": 37.268,
+          "c": 0.999542
+        },
+        {
+          "w": "Corbin",
+          "s": 37.268,
+          "e": 37.788,
+          "c": 0.857539
+        },
+        {
+          "w": "and",
+          "s": 37.788,
+          "e": 38.048,
+          "c": 0.955651
+        },
+        {
+          "w": "Louisville,",
+          "s": 38.048,
+          "e": 39.168,
+          "c": 0.899836
+        },
+        {
+          "w": "Rand",
+          "s": 39.168,
+          "e": 39.948,
+          "c": 0.570629
+        },
+        {
+          "w": "Paul",
+          "s": 39.948,
+          "e": 40.728,
+          "c": 0.999792
+        },
+        {
+          "w": "has",
+          "s": 40.728,
+          "e": 40.958,
+          "c": 0.999316
+        },
+        {
+          "w": "provided",
+          "s": 40.968,
+          "e": 41.578,
+          "c": 0.999758
+        },
+        {
+          "w": "free",
+          "s": 41.578,
+          "e": 41.888,
+          "c": 0.999689
+        },
+        {
+          "w": "eye",
+          "s": 41.888,
+          "e": 42.118,
+          "c": 0.997948
+        },
+        {
+          "w": "surgery",
+          "s": 42.118,
+          "e": 42.648,
+          "c": 0.999926
+        },
+        {
+          "w": "for",
+          "s": 42.648,
+          "e": 42.888,
+          "c": 0.999981
+        },
+        {
+          "w": "uninsured",
+          "s": 42.888,
+          "e": 43.578,
+          "c": 0.999195
+        },
+        {
+          "w": "patients,",
+          "s": 43.578,
+          "e": 44.338,
+          "c": 0.626483
+        },
+        {
+          "w": "and",
+          "s": 44.348,
+          "e": 44.578,
+          "c": 0.999805
+        },
+        {
+          "w": "Rand",
+          "s": 44.578,
+          "e": 44.888,
+          "c": 0.999886
+        },
+        {
+          "w": "Paul",
+          "s": 44.888,
+          "e": 45.198,
+          "c": 0.999939
+        },
+        {
+          "w": "restores",
+          "s": 45.198,
+          "e": 45.818,
+          "c": 0.999186
+        },
+        {
+          "w": "the",
+          "s": 45.818,
+          "e": 46.048,
+          "c": 0.999769
+        },
+        {
+          "w": "gift",
+          "s": 46.048,
+          "e": 46.448,
+          "c": 0.999884
+        },
+        {
+          "w": "of",
+          "s": 46.448,
+          "e": 46.598,
+          "c": 0.999912
+        },
+        {
+          "w": "sight",
+          "s": 46.598,
+          "e": 46.978,
+          "c": 0.999394
+        },
+        {
+          "w": "to",
+          "s": 46.978,
+          "e": 47.128,
+          "c": 0.999975
+        },
+        {
+          "w": "God's",
+          "s": 47.128,
+          "e": 47.508,
+          "c": 0.999947
+        },
+        {
+          "w": "newest",
+          "s": 47.508,
+          "e": 47.968,
+          "c": 0.999855
+        },
+        {
+          "w": "creation.",
+          "s": 47.968,
+          "e": 48.848,
+          "c": 0.999741
+        },
+        {
+          "w": "Rand",
+          "s": 48.848,
+          "e": 49.198,
+          "c": 0.99862
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 49.2,
+      "end_s": 54.93,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "never forgot how sad it was for him to watch his grandmother lose her vision,",
+      "words": [
+        {
+          "w": "never",
+          "s": 49.198,
+          "e": 49.638,
+          "c": 0.99803
+        },
+        {
+          "w": "forgot",
+          "s": 49.638,
+          "e": 50.168,
+          "c": 0.999807
+        },
+        {
+          "w": "how",
+          "s": 50.168,
+          "e": 50.428,
+          "c": 0.999981
+        },
+        {
+          "w": "sad",
+          "s": 50.428,
+          "e": 50.688,
+          "c": 0.999973
+        },
+        {
+          "w": "it",
+          "s": 50.688,
+          "e": 50.858,
+          "c": 0.999985
+        },
+        {
+          "w": "was",
+          "s": 50.858,
+          "e": 51.118,
+          "c": 0.999989
+        },
+        {
+          "w": "for",
+          "s": 51.118,
+          "e": 51.378,
+          "c": 0.999821
+        },
+        {
+          "w": "him",
+          "s": 51.378,
+          "e": 51.638,
+          "c": 0.999823
+        },
+        {
+          "w": "to",
+          "s": 51.638,
+          "e": 51.808,
+          "c": 0.999996
+        },
+        {
+          "w": "watch",
+          "s": 51.808,
+          "e": 52.238,
+          "c": 0.999863
+        },
+        {
+          "w": "his",
+          "s": 52.248,
+          "e": 52.508,
+          "c": 0.999928
+        },
+        {
+          "w": "grandmother",
+          "s": 52.508,
+          "e": 53.488,
+          "c": 0.999613
+        },
+        {
+          "w": "lose",
+          "s": 53.488,
+          "e": 53.838,
+          "c": 0.999933
+        },
+        {
+          "w": "her",
+          "s": 53.838,
+          "e": 54.098,
+          "c": 0.992693
+        },
+        {
+          "w": "vision,",
+          "s": 54.098,
+          "e": 54.928,
+          "c": 0.825306
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 54.93,
+      "end_s": 56.87,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and And I think that really",
+      "words": [
+        {
+          "w": "and",
+          "s": 54.928,
+          "e": 55.708,
+          "c": 0.952641
+        },
+        {
+          "w": "And",
+          "s": 55.708,
+          "e": 55.888,
+          "c": 0.437586
+        },
+        {
+          "w": "I",
+          "s": 55.888,
+          "e": 55.948,
+          "c": 0.993945
+        },
+        {
+          "w": "think",
+          "s": 55.948,
+          "e": 56.248,
+          "c": 0.998313
+        },
+        {
+          "w": "that",
+          "s": 56.248,
+          "e": 56.488,
+          "c": 0.990688
+        },
+        {
+          "w": "really",
+          "s": 56.488,
+          "e": 56.868,
+          "c": 0.987368
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 56.87,
+      "end_s": 56.88,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "cemented",
+      "words": [
+        {
+          "w": "cemented",
+          "s": 56.868,
+          "e": 56.868,
+          "c": 0.734137
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 56.87,
+      "end_s": 78.61,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "in him, the desire to be an ophthalmologist. One of the most gratifying things for Rand in his career has been the ability to do eye surgery on children from Guatemala. Being a physician gives Rand a unique perspective in Washington, simply because he's trained to diagnose a problem and find a solution.",
+      "words": [
+        {
+          "w": "in",
+          "s": 56.848,
+          "e": 56.998,
+          "c": 0.577389
+        },
+        {
+          "w": "him,",
+          "s": 56.998,
+          "e": 57.368,
+          "c": 0.295279
+        },
+        {
+          "w": "the",
+          "s": 57.368,
+          "e": 57.588,
+          "c": 0.985261
+        },
+        {
+          "w": "desire",
+          "s": 57.588,
+          "e": 58.018,
+          "c": 0.99914
+        },
+        {
+          "w": "to",
+          "s": 58.038,
+          "e": 58.188,
+          "c": 0.99586
+        },
+        {
+          "w": "be",
+          "s": 58.188,
+          "e": 58.338,
+          "c": 0.996136
+        },
+        {
+          "w": "an",
+          "s": 58.338,
+          "e": 58.488,
+          "c": 0.977241
+        },
+        {
+          "w": "ophthalmologist.",
+          "s": 58.488,
+          "e": 59.848,
+          "c": 0.941503
+        },
+        {
+          "w": "One",
+          "s": 59.908,
+          "e": 60.098,
+          "c": 0.997427
+        },
+        {
+          "w": "of",
+          "s": 60.098,
+          "e": 60.228,
+          "c": 0.999104
+        },
+        {
+          "w": "the",
+          "s": 60.228,
+          "e": 60.418,
+          "c": 0.99902
+        },
+        {
+          "w": "most",
+          "s": 60.418,
+          "e": 60.678,
+          "c": 0.998658
+        },
+        {
+          "w": "gratifying",
+          "s": 60.678,
+          "e": 61.328,
+          "c": 0.996991
+        },
+        {
+          "w": "things",
+          "s": 61.358,
+          "e": 61.678,
+          "c": 0.985109
+        },
+        {
+          "w": "for",
+          "s": 61.688,
+          "e": 61.998,
+          "c": 0.898416
+        },
+        {
+          "w": "Rand",
+          "s": 61.998,
+          "e": 62.418,
+          "c": 0.956225
+        },
+        {
+          "w": "in",
+          "s": 62.418,
+          "e": 62.548,
+          "c": 0.61594
+        },
+        {
+          "w": "his",
+          "s": 62.548,
+          "e": 62.748,
+          "c": 0.980325
+        },
+        {
+          "w": "career",
+          "s": 62.748,
+          "e": 63.348,
+          "c": 0.98153
+        },
+        {
+          "w": "has",
+          "s": 63.348,
+          "e": 63.588,
+          "c": 0.998982
+        },
+        {
+          "w": "been",
+          "s": 63.588,
+          "e": 63.918,
+          "c": 0.998803
+        },
+        {
+          "w": "the",
+          "s": 63.918,
+          "e": 64.158,
+          "c": 0.996079
+        },
+        {
+          "w": "ability",
+          "s": 64.158,
+          "e": 64.728,
+          "c": 0.999495
+        },
+        {
+          "w": "to",
+          "s": 64.728,
+          "e": 64.888,
+          "c": 0.987379
+        },
+        {
+          "w": "do",
+          "s": 64.888,
+          "e": 65.048,
+          "c": 0.98325
+        },
+        {
+          "w": "eye",
+          "s": 65.048,
+          "e": 65.288,
+          "c": 0.988236
+        },
+        {
+          "w": "surgery",
+          "s": 65.288,
+          "e": 65.908,
+          "c": 0.994052
+        },
+        {
+          "w": "on",
+          "s": 65.908,
+          "e": 66.088,
+          "c": 0.999348
+        },
+        {
+          "w": "children",
+          "s": 66.088,
+          "e": 66.808,
+          "c": 0.998957
+        },
+        {
+          "w": "from",
+          "s": 66.808,
+          "e": 67.168,
+          "c": 0.999169
+        },
+        {
+          "w": "Guatemala.",
+          "s": 67.168,
+          "e": 68.268,
+          "c": 0.99448
+        },
+        {
+          "w": "Being",
+          "s": 68.268,
+          "e": 68.598,
+          "c": 0.999302
+        },
+        {
+          "w": "a",
+          "s": 68.598,
+          "e": 68.648,
+          "c": 0.999567
+        },
+        {
+          "w": "physician",
+          "s": 68.678,
+          "e": 69.248,
+          "c": 0.998127
+        },
+        {
+          "w": "gives",
+          "s": 69.248,
+          "e": 69.578,
+          "c": 0.982536
+        },
+        {
+          "w": "Rand",
+          "s": 69.578,
+          "e": 69.868,
+          "c": 0.998906
+        },
+        {
+          "w": "a",
+          "s": 69.868,
+          "e": 69.928,
+          "c": 0.818138
+        },
+        {
+          "w": "unique",
+          "s": 69.928,
+          "e": 70.288,
+          "c": 0.996004
+        },
+        {
+          "w": "perspective",
+          "s": 70.288,
+          "e": 70.888,
+          "c": 0.949249
+        },
+        {
+          "w": "in",
+          "s": 70.888,
+          "e": 71.138,
+          "c": 0.973145
+        },
+        {
+          "w": "Washington,",
+          "s": 71.138,
+          "e": 72.548,
+          "c": 0.473331
+        },
+        {
+          "w": "simply",
+          "s": 72.548,
+          "e": 72.998,
+          "c": 0.941688
+        },
+        {
+          "w": "because",
+          "s": 73.038,
+          "e": 73.628,
+          "c": 0.999009
+        },
+        {
+          "w": "he's",
+          "s": 73.628,
+          "e": 73.928,
+          "c": 0.970654
+        },
+        {
+          "w": "trained",
+          "s": 73.948,
+          "e": 74.478,
+          "c": 0.968864
+        },
+        {
+          "w": "to",
+          "s": 74.488,
+          "e": 74.708,
+          "c": 0.999893
+        },
+        {
+          "w": "diagnose",
+          "s": 74.708,
+          "e": 75.588,
+          "c": 0.999039
+        },
+        {
+          "w": "a",
+          "s": 75.598,
+          "e": 75.708,
+          "c": 0.88763
+        },
+        {
+          "w": "problem",
+          "s": 75.708,
+          "e": 76.478,
+          "c": 0.999853
+        },
+        {
+          "w": "and",
+          "s": 76.478,
+          "e": 76.808,
+          "c": 0.975673
+        },
+        {
+          "w": "find",
+          "s": 76.808,
+          "e": 77.248,
+          "c": 0.998452
+        },
+        {
+          "w": "a",
+          "s": 77.248,
+          "e": 77.348,
+          "c": 0.998184
+        },
+        {
+          "w": "solution.",
+          "s": 77.358,
+          "e": 78.608,
+          "c": 0.982701
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 78.59,
+      "end_s": 84.17,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Today, we need solutions more than ever to stop Washington and restore liberty.",
+      "words": [
+        {
+          "w": "Today,",
+          "s": 78.592,
+          "e": 79.222,
+          "c": 0.544329
+        },
+        {
+          "w": "we",
+          "s": 79.222,
+          "e": 79.392,
+          "c": 0.993871
+        },
+        {
+          "w": "need",
+          "s": 79.422,
+          "e": 79.762,
+          "c": 0.996822
+        },
+        {
+          "w": "solutions",
+          "s": 79.762,
+          "e": 80.592,
+          "c": 0.993693
+        },
+        {
+          "w": "more",
+          "s": 80.592,
+          "e": 80.922,
+          "c": 0.866848
+        },
+        {
+          "w": "than",
+          "s": 80.922,
+          "e": 81.252,
+          "c": 0.99681
+        },
+        {
+          "w": "ever",
+          "s": 81.252,
+          "e": 81.592,
+          "c": 0.997605
+        },
+        {
+          "w": "to",
+          "s": 81.592,
+          "e": 81.722,
+          "c": 0.82049
+        },
+        {
+          "w": "stop",
+          "s": 81.722,
+          "e": 81.992,
+          "c": 0.988581
+        },
+        {
+          "w": "Washington",
+          "s": 81.992,
+          "e": 82.582,
+          "c": 0.984007
+        },
+        {
+          "w": "and",
+          "s": 82.592,
+          "e": 82.992,
+          "c": 0.842059
+        },
+        {
+          "w": "restore",
+          "s": 82.992,
+          "e": 83.542,
+          "c": 0.981599
+        },
+        {
+          "w": "liberty.",
+          "s": 83.542,
+          "e": 84.172,
+          "c": 0.781209
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 84.17,
+      "end_s": 93.46,
+      "speaker": "SPEAKER_13",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And one leader stands in Washington's way. One fighting the Washington machine. One who will never give up, no matter the cost. And",
+      "words": [
+        {
+          "w": "And",
+          "s": 84.172,
+          "e": 84.392,
+          "c": 0.970047
+        },
+        {
+          "w": "one",
+          "s": 84.392,
+          "e": 84.612,
+          "c": 0.97954
+        },
+        {
+          "w": "leader",
+          "s": 84.612,
+          "e": 85.042,
+          "c": 0.987086
+        },
+        {
+          "w": "stands",
+          "s": 85.062,
+          "e": 85.482,
+          "c": 0.991028
+        },
+        {
+          "w": "in",
+          "s": 85.492,
+          "e": 85.622,
+          "c": 0.812339
+        },
+        {
+          "w": "Washington's",
+          "s": 85.632,
+          "e": 86.512,
+          "c": 0.990184
+        },
+        {
+          "w": "way.",
+          "s": 86.512,
+          "e": 87.012,
+          "c": 0.700029
+        },
+        {
+          "w": "One",
+          "s": 87.012,
+          "e": 87.252,
+          "c": 0.995357
+        },
+        {
+          "w": "fighting",
+          "s": 87.252,
+          "e": 87.872,
+          "c": 0.992157
+        },
+        {
+          "w": "the",
+          "s": 87.882,
+          "e": 88.122,
+          "c": 0.970686
+        },
+        {
+          "w": "Washington",
+          "s": 88.122,
+          "e": 88.912,
+          "c": 0.995524
+        },
+        {
+          "w": "machine.",
+          "s": 88.912,
+          "e": 89.732,
+          "c": 0.841183
+        },
+        {
+          "w": "One",
+          "s": 89.732,
+          "e": 89.972,
+          "c": 0.997674
+        },
+        {
+          "w": "who",
+          "s": 89.992,
+          "e": 90.212,
+          "c": 0.98218
+        },
+        {
+          "w": "will",
+          "s": 90.212,
+          "e": 90.502,
+          "c": 0.992131
+        },
+        {
+          "w": "never",
+          "s": 90.532,
+          "e": 90.912,
+          "c": 0.997843
+        },
+        {
+          "w": "give",
+          "s": 90.912,
+          "e": 91.222,
+          "c": 0.999193
+        },
+        {
+          "w": "up,",
+          "s": 91.222,
+          "e": 91.572,
+          "c": 0.711777
+        },
+        {
+          "w": "no",
+          "s": 91.572,
+          "e": 91.732,
+          "c": 0.985229
+        },
+        {
+          "w": "matter",
+          "s": 91.732,
+          "e": 92.222,
+          "c": 0.999548
+        },
+        {
+          "w": "the",
+          "s": 92.222,
+          "e": 92.472,
+          "c": 0.993203
+        },
+        {
+          "w": "cost.",
+          "s": 92.472,
+          "e": 93.072,
+          "c": 0.949981
+        },
+        {
+          "w": "And",
+          "s": 93.072,
+          "e": 93.462,
+          "c": 0.985759
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 93.46,
+      "end_s": 97.4,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "one who stands for us. Rand",
+      "words": [
+        {
+          "w": "one",
+          "s": 93.462,
+          "e": 93.842,
+          "c": 0.995002
+        },
+        {
+          "w": "who",
+          "s": 93.872,
+          "e": 94.242,
+          "c": 0.98921
+        },
+        {
+          "w": "stands",
+          "s": 94.242,
+          "e": 95.032,
+          "c": 0.996487
+        },
+        {
+          "w": "for",
+          "s": 95.032,
+          "e": 95.422,
+          "c": 0.997048
+        },
+        {
+          "w": "us.",
+          "s": 95.422,
+          "e": 96.112,
+          "c": 0.78723
+        },
+        {
+          "w": "Rand",
+          "s": 96.112,
+          "e": 97.402,
+          "c": 0.867309
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 97.4,
+      "end_s": 98.69,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Paul.",
+      "words": [
+        {
+          "w": "Paul.",
+          "s": 97.402,
+          "e": 98.692,
+          "c": 0.600982
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 98.66,
+      "end_s": 98.98,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I'll",
+      "words": [
+        {
+          "w": "I'll",
+          "s": 98.656,
+          "e": 98.976,
+          "c": 0.715148
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 98.98,
+      "end_s": 105.12,
+      "speaker": "SPEAKER_16",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "continue to advocate for balanced budgets. I'll continue to advocate and fight against president's",
+      "words": [
+        {
+          "w": "continue",
+          "s": 98.976,
+          "e": 99.616,
+          "c": 0.996284
+        },
+        {
+          "w": "to",
+          "s": 99.616,
+          "e": 99.776,
+          "c": 0.99632
+        },
+        {
+          "w": "advocate",
+          "s": 99.776,
+          "e": 100.416,
+          "c": 0.991581
+        },
+        {
+          "w": "for",
+          "s": 100.416,
+          "e": 100.656,
+          "c": 0.991599
+        },
+        {
+          "w": "balanced",
+          "s": 100.656,
+          "e": 101.286,
+          "c": 0.864569
+        },
+        {
+          "w": "budgets.",
+          "s": 101.296,
+          "e": 101.916,
+          "c": 0.694031
+        },
+        {
+          "w": "I'll",
+          "s": 101.916,
+          "e": 102.206,
+          "c": 0.982982
+        },
+        {
+          "w": "continue",
+          "s": 102.206,
+          "e": 102.796,
+          "c": 0.998605
+        },
+        {
+          "w": "to",
+          "s": 102.796,
+          "e": 102.936,
+          "c": 0.998763
+        },
+        {
+          "w": "advocate",
+          "s": 102.936,
+          "e": 103.556,
+          "c": 0.996329
+        },
+        {
+          "w": "and",
+          "s": 103.556,
+          "e": 103.996,
+          "c": 0.88459
+        },
+        {
+          "w": "fight",
+          "s": 103.996,
+          "e": 104.256,
+          "c": 0.983918
+        },
+        {
+          "w": "against",
+          "s": 104.256,
+          "e": 104.616,
+          "c": 0.932725
+        },
+        {
+          "w": "president's",
+          "s": 104.616,
+          "e": 105.116,
+          "c": 0.134694
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 105.12,
+      "end_s": 108.18,
+      "speaker": "SPEAKER_18",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "war on coal, the president's war on Kentucky jobs.",
+      "words": [
+        {
+          "w": "war",
+          "s": 105.116,
+          "e": 105.346,
+          "c": 0.867328
+        },
+        {
+          "w": "on",
+          "s": 105.356,
+          "e": 105.586,
+          "c": 0.911468
+        },
+        {
+          "w": "coal,",
+          "s": 105.586,
+          "e": 106.056,
+          "c": 0.848467
+        },
+        {
+          "w": "the",
+          "s": 106.056,
+          "e": 106.236,
+          "c": 0.979669
+        },
+        {
+          "w": "president's",
+          "s": 106.236,
+          "e": 106.916,
+          "c": 0.939318
+        },
+        {
+          "w": "war",
+          "s": 106.916,
+          "e": 107.096,
+          "c": 0.993225
+        },
+        {
+          "w": "on",
+          "s": 107.096,
+          "e": 107.216,
+          "c": 0.995313
+        },
+        {
+          "w": "Kentucky",
+          "s": 107.216,
+          "e": 107.706,
+          "c": 0.996111
+        },
+        {
+          "w": "jobs.",
+          "s": 107.706,
+          "e": 108.176,
+          "c": 0.94076
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 108.18,
+      "end_s": 114.25,
+      "speaker": "SPEAKER_19",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Rand Paul headlined a panel of people connected to the coal industry as part of a forum. I think",
+      "words": [
+        {
+          "w": "Rand",
+          "s": 108.176,
+          "e": 108.516,
+          "c": 0.854317
+        },
+        {
+          "w": "Paul",
+          "s": 108.516,
+          "e": 108.856,
+          "c": 0.995433
+        },
+        {
+          "w": "headlined",
+          "s": 108.856,
+          "e": 109.636,
+          "c": 0.984264
+        },
+        {
+          "w": "a",
+          "s": 109.636,
+          "e": 109.716,
+          "c": 0.96572
+        },
+        {
+          "w": "panel",
+          "s": 109.716,
+          "e": 110.156,
+          "c": 0.996799
+        },
+        {
+          "w": "of",
+          "s": 110.156,
+          "e": 110.296,
+          "c": 0.967301
+        },
+        {
+          "w": "people",
+          "s": 110.296,
+          "e": 110.716,
+          "c": 0.986378
+        },
+        {
+          "w": "connected",
+          "s": 110.716,
+          "e": 111.296,
+          "c": 0.879115
+        },
+        {
+          "w": "to",
+          "s": 111.296,
+          "e": 111.376,
+          "c": 0.812233
+        },
+        {
+          "w": "the",
+          "s": 111.376,
+          "e": 111.496,
+          "c": 0.931703
+        },
+        {
+          "w": "coal",
+          "s": 111.496,
+          "e": 111.836,
+          "c": 0.980273
+        },
+        {
+          "w": "industry",
+          "s": 111.836,
+          "e": 112.496,
+          "c": 0.972029
+        },
+        {
+          "w": "as",
+          "s": 112.496,
+          "e": 112.776,
+          "c": 0.675502
+        },
+        {
+          "w": "part",
+          "s": 112.776,
+          "e": 113.016,
+          "c": 0.976539
+        },
+        {
+          "w": "of",
+          "s": 113.016,
+          "e": 113.146,
+          "c": 0.969973
+        },
+        {
+          "w": "a",
+          "s": 113.146,
+          "e": 113.206,
+          "c": 0.977732
+        },
+        {
+          "w": "forum.",
+          "s": 113.206,
+          "e": 113.756,
+          "c": 0.982152
+        },
+        {
+          "w": "I",
+          "s": 113.756,
+          "e": 113.836,
+          "c": 0.977747
+        },
+        {
+          "w": "think",
+          "s": 113.836,
+          "e": 114.246,
+          "c": 0.999108
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 114.25,
+      "end_s": 115.08,
+      "speaker": "SPEAKER_20",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the time for",
+      "words": [
+        {
+          "w": "the",
+          "s": 114.246,
+          "e": 114.496,
+          "c": 0.993765
+        },
+        {
+          "w": "time",
+          "s": 114.496,
+          "e": 114.826,
+          "c": 0.998393
+        },
+        {
+          "w": "for",
+          "s": 114.826,
+          "e": 115.076,
+          "c": 0.980009
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 115.08,
+      "end_s": 121.02,
+      "speaker": "SPEAKER_22",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "talk is over, the time is to resist the president. I will be a loud and vocal opponent of anybody he",
+      "words": [
+        {
+          "w": "talk",
+          "s": 115.076,
+          "e": 115.406,
+          "c": 0.995
+        },
+        {
+          "w": "is",
+          "s": 115.406,
+          "e": 115.556,
+          "c": 0.997967
+        },
+        {
+          "w": "over,",
+          "s": 115.556,
+          "e": 116.096,
+          "c": 0.108893
+        },
+        {
+          "w": "the",
+          "s": 116.096,
+          "e": 116.266,
+          "c": 0.816994
+        },
+        {
+          "w": "time",
+          "s": 116.266,
+          "e": 116.496,
+          "c": 0.99962
+        },
+        {
+          "w": "is",
+          "s": 116.496,
+          "e": 116.606,
+          "c": 0.993068
+        },
+        {
+          "w": "to",
+          "s": 116.606,
+          "e": 116.716,
+          "c": 0.997642
+        },
+        {
+          "w": "resist",
+          "s": 116.716,
+          "e": 117.066,
+          "c": 0.997984
+        },
+        {
+          "w": "the",
+          "s": 117.066,
+          "e": 117.236,
+          "c": 0.994344
+        },
+        {
+          "w": "president.",
+          "s": 117.236,
+          "e": 117.996,
+          "c": 0.956784
+        },
+        {
+          "w": "I",
+          "s": 117.996,
+          "e": 118.066,
+          "c": 0.980093
+        },
+        {
+          "w": "will",
+          "s": 118.066,
+          "e": 118.376,
+          "c": 0.913851
+        },
+        {
+          "w": "be",
+          "s": 118.376,
+          "e": 118.526,
+          "c": 0.998062
+        },
+        {
+          "w": "a",
+          "s": 118.526,
+          "e": 118.596,
+          "c": 0.988007
+        },
+        {
+          "w": "loud",
+          "s": 118.596,
+          "e": 118.906,
+          "c": 0.999125
+        },
+        {
+          "w": "and",
+          "s": 118.906,
+          "e": 119.136,
+          "c": 0.992862
+        },
+        {
+          "w": "vocal",
+          "s": 119.136,
+          "e": 119.516,
+          "c": 0.998731
+        },
+        {
+          "w": "opponent",
+          "s": 119.516,
+          "e": 120.176,
+          "c": 0.997305
+        },
+        {
+          "w": "of",
+          "s": 120.176,
+          "e": 120.436,
+          "c": 0.955177
+        },
+        {
+          "w": "anybody",
+          "s": 120.436,
+          "e": 120.916,
+          "c": 0.958248
+        },
+        {
+          "w": "he",
+          "s": 120.916,
+          "e": 121.016,
+          "c": 0.661508
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 121.02,
+      "end_s": 122.86,
+      "speaker": "SPEAKER_23",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "wants to appoint to the Supreme Court.",
+      "words": [
+        {
+          "w": "wants",
+          "s": 121.016,
+          "e": 121.296,
+          "c": 0.985859
+        },
+        {
+          "w": "to",
+          "s": 121.296,
+          "e": 121.376,
+          "c": 0.985599
+        },
+        {
+          "w": "appoint",
+          "s": 121.376,
+          "e": 121.696,
+          "c": 0.981495
+        },
+        {
+          "w": "to",
+          "s": 121.696,
+          "e": 121.826,
+          "c": 0.892755
+        },
+        {
+          "w": "the",
+          "s": 121.826,
+          "e": 122.026,
+          "c": 0.992398
+        },
+        {
+          "w": "Supreme",
+          "s": 122.026,
+          "e": 122.496,
+          "c": 0.964493
+        },
+        {
+          "w": "Court.",
+          "s": 122.496,
+          "e": 122.856,
+          "c": 0.970299
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 122.83,
+      "end_s": 133.73,
+      "speaker": "SPEAKER_24",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Most people in Lexington, most people really in Kentucky want someone who will stand up against the president's policies. If you could have just one constitutional amendment, what would it be?",
+      "words": [
+        {
+          "w": "Most",
+          "s": 122.829,
+          "e": 123.159,
+          "c": 0.815049
+        },
+        {
+          "w": "people",
+          "s": 123.159,
+          "e": 123.659,
+          "c": 0.999102
+        },
+        {
+          "w": "in",
+          "s": 123.659,
+          "e": 123.819,
+          "c": 0.99304
+        },
+        {
+          "w": "Lexington,",
+          "s": 123.819,
+          "e": 124.719,
+          "c": 0.820394
+        },
+        {
+          "w": "most",
+          "s": 124.719,
+          "e": 124.979,
+          "c": 0.760864
+        },
+        {
+          "w": "people",
+          "s": 124.979,
+          "e": 125.369,
+          "c": 0.99073
+        },
+        {
+          "w": "really",
+          "s": 125.369,
+          "e": 125.759,
+          "c": 0.870485
+        },
+        {
+          "w": "in",
+          "s": 125.759,
+          "e": 125.889,
+          "c": 0.961287
+        },
+        {
+          "w": "Kentucky",
+          "s": 125.889,
+          "e": 126.429,
+          "c": 0.991777
+        },
+        {
+          "w": "want",
+          "s": 126.429,
+          "e": 126.669,
+          "c": 0.179101
+        },
+        {
+          "w": "someone",
+          "s": 126.669,
+          "e": 126.909,
+          "c": 0.947632
+        },
+        {
+          "w": "who",
+          "s": 126.909,
+          "e": 127.069,
+          "c": 0.765419
+        },
+        {
+          "w": "will",
+          "s": 127.069,
+          "e": 127.149,
+          "c": 0.828128
+        },
+        {
+          "w": "stand",
+          "s": 127.149,
+          "e": 127.469,
+          "c": 0.951849
+        },
+        {
+          "w": "up",
+          "s": 127.469,
+          "e": 127.749,
+          "c": 0.961122
+        },
+        {
+          "w": "against",
+          "s": 127.749,
+          "e": 128.189,
+          "c": 0.550687
+        },
+        {
+          "w": "the",
+          "s": 128.189,
+          "e": 128.349,
+          "c": 0.93782
+        },
+        {
+          "w": "president's",
+          "s": 128.349,
+          "e": 128.929,
+          "c": 0.554602
+        },
+        {
+          "w": "policies.",
+          "s": 128.929,
+          "e": 129.519,
+          "c": 0.837606
+        },
+        {
+          "w": "If",
+          "s": 129.529,
+          "e": 129.669,
+          "c": 0.967989
+        },
+        {
+          "w": "you",
+          "s": 129.669,
+          "e": 129.879,
+          "c": 0.998534
+        },
+        {
+          "w": "could",
+          "s": 129.879,
+          "e": 130.229,
+          "c": 0.840958
+        },
+        {
+          "w": "have",
+          "s": 130.229,
+          "e": 130.509,
+          "c": 0.991318
+        },
+        {
+          "w": "just",
+          "s": 130.509,
+          "e": 130.789,
+          "c": 0.993741
+        },
+        {
+          "w": "one",
+          "s": 130.789,
+          "e": 130.999,
+          "c": 0.991974
+        },
+        {
+          "w": "constitutional",
+          "s": 130.999,
+          "e": 131.999,
+          "c": 0.905693
+        },
+        {
+          "w": "amendment,",
+          "s": 131.999,
+          "e": 132.829,
+          "c": 0.842748
+        },
+        {
+          "w": "what",
+          "s": 132.829,
+          "e": 133.049,
+          "c": 0.978153
+        },
+        {
+          "w": "would",
+          "s": 133.049,
+          "e": 133.329,
+          "c": 0.998075
+        },
+        {
+          "w": "it",
+          "s": 133.329,
+          "e": 133.439,
+          "c": 0.996677
+        },
+        {
+          "w": "be?",
+          "s": 133.439,
+          "e": 133.729,
+          "c": 0.992614
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 133.73,
+      "end_s": 137.55,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Term limits. Rand Paul is",
+      "words": [
+        {
+          "w": "Term",
+          "s": 133.729,
+          "e": 134.449,
+          "c": 0.966067
+        },
+        {
+          "w": "limits.",
+          "s": 134.449,
+          "e": 135.529,
+          "c": 0.869063
+        },
+        {
+          "w": "Rand",
+          "s": 135.529,
+          "e": 136.339,
+          "c": 0.983429
+        },
+        {
+          "w": "Paul",
+          "s": 136.339,
+          "e": 137.149,
+          "c": 0.997078
+        },
+        {
+          "w": "is",
+          "s": 137.149,
+          "e": 137.549,
+          "c": 0.996696
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 137.55,
+      "end_s": 148.57,
+      "speaker": "SPEAKER_28",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "standing with us. This is our country, built by our forefathers, not government. This is our home,",
+      "words": [
+        {
+          "w": "standing",
+          "s": 137.549,
+          "e": 139.169,
+          "c": 0.999399
+        },
+        {
+          "w": "with",
+          "s": 139.169,
+          "e": 139.979,
+          "c": 0.999722
+        },
+        {
+          "w": "us.",
+          "s": 139.979,
+          "e": 141.029,
+          "c": 0.972821
+        },
+        {
+          "w": "This",
+          "s": 141.029,
+          "e": 141.569,
+          "c": 0.997099
+        },
+        {
+          "w": "is",
+          "s": 141.579,
+          "e": 141.849,
+          "c": 0.998374
+        },
+        {
+          "w": "our",
+          "s": 141.849,
+          "e": 142.259,
+          "c": 0.998801
+        },
+        {
+          "w": "country,",
+          "s": 142.259,
+          "e": 143.379,
+          "c": 0.610314
+        },
+        {
+          "w": "built",
+          "s": 143.379,
+          "e": 143.779,
+          "c": 0.91149
+        },
+        {
+          "w": "by",
+          "s": 143.779,
+          "e": 143.919,
+          "c": 0.999384
+        },
+        {
+          "w": "our",
+          "s": 143.939,
+          "e": 144.179,
+          "c": 0.99839
+        },
+        {
+          "w": "forefathers,",
+          "s": 144.179,
+          "e": 145.229,
+          "c": 0.799972
+        },
+        {
+          "w": "not",
+          "s": 145.229,
+          "e": 145.559,
+          "c": 0.966
+        },
+        {
+          "w": "government.",
+          "s": 145.559,
+          "e": 147.029,
+          "c": 0.989942
+        },
+        {
+          "w": "This",
+          "s": 147.029,
+          "e": 147.439,
+          "c": 0.999121
+        },
+        {
+          "w": "is",
+          "s": 147.439,
+          "e": 147.649,
+          "c": 0.998616
+        },
+        {
+          "w": "our",
+          "s": 147.649,
+          "e": 147.959,
+          "c": 0.999283
+        },
+        {
+          "w": "home,",
+          "s": 147.959,
+          "e": 148.569,
+          "c": 0.701659
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 148.57,
+      "end_s": 152.59,
+      "speaker": "SPEAKER_30",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "earned through effort, not entitlement.",
+      "words": [
+        {
+          "w": "earned",
+          "s": 148.569,
+          "e": 149.189,
+          "c": 0.979468
+        },
+        {
+          "w": "through",
+          "s": 149.189,
+          "e": 149.909,
+          "c": 0.967193
+        },
+        {
+          "w": "effort,",
+          "s": 149.909,
+          "e": 150.739,
+          "c": 0.932037
+        },
+        {
+          "w": "not",
+          "s": 150.739,
+          "e": 151.049,
+          "c": 0.993667
+        },
+        {
+          "w": "entitlement.",
+          "s": 151.049,
+          "e": 152.589,
+          "c": 0.991127
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 152.54,
+      "end_s": 160.54,
+      "speaker": "SPEAKER_30",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "These are our freedoms, given to us by God, not man. And this is our champion.",
+      "words": [
+        {
+          "w": "These",
+          "s": 152.544,
+          "e": 153.064,
+          "c": 0.920959
+        },
+        {
+          "w": "are",
+          "s": 153.064,
+          "e": 153.374,
+          "c": 0.996421
+        },
+        {
+          "w": "our",
+          "s": 153.374,
+          "e": 153.674,
+          "c": 0.995666
+        },
+        {
+          "w": "freedoms,",
+          "s": 153.674,
+          "e": 154.724,
+          "c": 0.37544
+        },
+        {
+          "w": "given",
+          "s": 154.724,
+          "e": 155.184,
+          "c": 0.88198
+        },
+        {
+          "w": "to",
+          "s": 155.184,
+          "e": 155.364,
+          "c": 0.992918
+        },
+        {
+          "w": "us",
+          "s": 155.364,
+          "e": 155.544,
+          "c": 0.998344
+        },
+        {
+          "w": "by",
+          "s": 155.544,
+          "e": 155.724,
+          "c": 0.995277
+        },
+        {
+          "w": "God,",
+          "s": 155.724,
+          "e": 156.344,
+          "c": 0.592247
+        },
+        {
+          "w": "not",
+          "s": 156.344,
+          "e": 157.194,
+          "c": 0.802239
+        },
+        {
+          "w": "man.",
+          "s": 157.194,
+          "e": 158.144,
+          "c": 0.801771
+        },
+        {
+          "w": "And",
+          "s": 158.144,
+          "e": 158.454,
+          "c": 0.980284
+        },
+        {
+          "w": "this",
+          "s": 158.454,
+          "e": 158.864,
+          "c": 0.982208
+        },
+        {
+          "w": "is",
+          "s": 158.914,
+          "e": 159.064,
+          "c": 0.982045
+        },
+        {
+          "w": "our",
+          "s": 159.064,
+          "e": 159.374,
+          "c": 0.998034
+        },
+        {
+          "w": "champion.",
+          "s": 159.374,
+          "e": 160.544,
+          "c": 0.916352
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 160.54,
+      "end_s": 160.86,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Rand",
+      "words": [
+        {
+          "w": "Rand",
+          "s": 160.544,
+          "e": 160.864,
+          "c": 0.964155
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 160.86,
+      "end_s": 170.92,
+      "speaker": "SPEAKER_28",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Paul stands strong for the Kentucky we love. And Kentucky stands with Rand Paul because he defends our liberty. Stand for",
+      "words": [
+        {
+          "w": "Paul",
+          "s": 160.864,
+          "e": 161.184,
+          "c": 0.993828
+        },
+        {
+          "w": "stands",
+          "s": 161.184,
+          "e": 161.604,
+          "c": 0.968797
+        },
+        {
+          "w": "strong",
+          "s": 161.654,
+          "e": 162.144,
+          "c": 0.996936
+        },
+        {
+          "w": "for",
+          "s": 162.144,
+          "e": 162.374,
+          "c": 0.977666
+        },
+        {
+          "w": "the",
+          "s": 162.384,
+          "e": 162.624,
+          "c": 0.965276
+        },
+        {
+          "w": "Kentucky",
+          "s": 162.624,
+          "e": 163.274,
+          "c": 0.996288
+        },
+        {
+          "w": "we",
+          "s": 163.274,
+          "e": 163.434,
+          "c": 0.995902
+        },
+        {
+          "w": "love.",
+          "s": 163.434,
+          "e": 164.044,
+          "c": 0.645958
+        },
+        {
+          "w": "And",
+          "s": 164.044,
+          "e": 164.354,
+          "c": 0.95373
+        },
+        {
+          "w": "Kentucky",
+          "s": 164.354,
+          "e": 165.174,
+          "c": 0.996626
+        },
+        {
+          "w": "stands",
+          "s": 165.174,
+          "e": 165.784,
+          "c": 0.98901
+        },
+        {
+          "w": "with",
+          "s": 165.784,
+          "e": 166.204,
+          "c": 0.997896
+        },
+        {
+          "w": "Rand",
+          "s": 166.204,
+          "e": 166.594,
+          "c": 0.999064
+        },
+        {
+          "w": "Paul",
+          "s": 166.614,
+          "e": 167.044,
+          "c": 0.999007
+        },
+        {
+          "w": "because",
+          "s": 167.044,
+          "e": 167.664,
+          "c": 0.543136
+        },
+        {
+          "w": "he",
+          "s": 167.664,
+          "e": 167.844,
+          "c": 0.985985
+        },
+        {
+          "w": "defends",
+          "s": 167.844,
+          "e": 168.594,
+          "c": 0.96963
+        },
+        {
+          "w": "our",
+          "s": 168.604,
+          "e": 168.934,
+          "c": 0.993098
+        },
+        {
+          "w": "liberty.",
+          "s": 168.934,
+          "e": 170.044,
+          "c": 0.930101
+        },
+        {
+          "w": "Stand",
+          "s": 170.044,
+          "e": 170.594,
+          "c": 0.989498
+        },
+        {
+          "w": "for",
+          "s": 170.594,
+          "e": 170.924,
+          "c": 0.996808
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 170.92,
+      "end_s": 178.04,
+      "speaker": "SPEAKER_33",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "freedom. Stand for Kentucky. Stand with Rand. Rand Paul.",
+      "words": [
+        {
+          "w": "freedom.",
+          "s": 170.924,
+          "e": 172.034,
+          "c": 0.880281
+        },
+        {
+          "w": "Stand",
+          "s": 172.044,
+          "e": 172.564,
+          "c": 0.997988
+        },
+        {
+          "w": "for",
+          "s": 172.564,
+          "e": 172.874,
+          "c": 0.999123
+        },
+        {
+          "w": "Kentucky.",
+          "s": 172.874,
+          "e": 174.034,
+          "c": 0.988091
+        },
+        {
+          "w": "Stand",
+          "s": 174.044,
+          "e": 174.784,
+          "c": 0.981437
+        },
+        {
+          "w": "with",
+          "s": 174.804,
+          "e": 175.414,
+          "c": 0.997944
+        },
+        {
+          "w": "Rand.",
+          "s": 175.414,
+          "e": 176.044,
+          "c": 0.936493
+        },
+        {
+          "w": "Rand",
+          "s": 176.044,
+          "e": 177.044,
+          "c": 0.97145
+        },
+        {
+          "w": "Paul.",
+          "s": 177.044,
+          "e": 178.044,
+          "c": 0.531841
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 182.54,
+      "end_s": 184.53,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "You",
+      "words": [
+        {
+          "w": "You",
+          "s": 182.544,
+          "e": 184.534,
+          "c": 0.0488201
+        }
+      ]
+    }
+  ]
+}

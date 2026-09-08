@@ -1,0 +1,2188 @@
+{
+  "schema_version": 2,
+  "canonical_id": "e7161c5c010d9073",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 148.62,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T11:20:48.406Z",
+  "text_sha256": "8c182837c5e97006d903288aa8731208065545fa00c257f42d5e3013e18b0312",
+  "segments_sha256": "4088af0fc35b4a99800d551cc281192bd9c35cde8f14e95b56fab57c6962772d",
+  "words_sha256": "d2212dfd09722fd7de93b19e7328c476370e3a86b625d9ee7dea64d0e251fa7d",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 6,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 20,
+    "clusters": 2,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.89,
+        "confidence": "low",
+        "clean_s": 125
+      },
+      "clean_s": 125,
+      "speaking_s": 125,
+      "first_s": 5.57
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.9
+      },
+      "clean_s": 1.9,
+      "speaking_s": 1.9,
+      "first_s": 80.9
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0,
+      "end_s": 5,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 29.12,
+      "end_s": 29.56,
+      "segment_i": 2,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 55.18,
+      "end_s": 55.6,
+      "segment_i": 4,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 80.18,
+      "end_s": 80.45,
+      "segment_i": 6,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 83.08,
+      "end_s": 83.08,
+      "segment_i": 8,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 83.37,
+      "end_s": 83.37,
+      "segment_i": 9,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 106.75,
+      "end_s": 106.88,
+      "segment_i": 11,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0,
+      "end_s": 5,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Veteran's Day",
+      "words": [
+        {
+          "w": "Veteran's",
+          "s": 0,
+          "e": 3.74,
+          "c": 0.0309991
+        },
+        {
+          "w": "Day",
+          "s": 3.74,
+          "e": 5,
+          "c": 0.980838
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 5.61,
+      "end_s": 29.12,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "is a time for reflection and thanks. A time to express gratitude to the brave men and women who have served and sacrificed for our country. We are the greatest, strongest nation in the history of the world because of men and women who have stepped forward throughout our history,",
+      "words": [
+        {
+          "w": "is",
+          "s": 5.61,
+          "e": 6.99,
+          "c": 0.480906
+        },
+        {
+          "w": "a",
+          "s": 7,
+          "e": 7.2,
+          "c": 0.983957
+        },
+        {
+          "w": "time",
+          "s": 7.2,
+          "e": 8,
+          "c": 0.996137
+        },
+        {
+          "w": "for",
+          "s": 8,
+          "e": 9.02,
+          "c": 0.905045
+        },
+        {
+          "w": "reflection",
+          "s": 9.1,
+          "e": 9.88,
+          "c": 0.960381
+        },
+        {
+          "w": "and",
+          "s": 10.06,
+          "e": 10.23,
+          "c": 0.904207
+        },
+        {
+          "w": "thanks.",
+          "s": 10.25,
+          "e": 11.5,
+          "c": 0.595121
+        },
+        {
+          "w": "A",
+          "s": 11.5,
+          "e": 11.6,
+          "c": 0.994979
+        },
+        {
+          "w": "time",
+          "s": 11.6,
+          "e": 12.03,
+          "c": 0.999249
+        },
+        {
+          "w": "to",
+          "s": 12.03,
+          "e": 12.24,
+          "c": 0.998875
+        },
+        {
+          "w": "express",
+          "s": 12.24,
+          "e": 13,
+          "c": 0.999247
+        },
+        {
+          "w": "gratitude",
+          "s": 13,
+          "e": 14,
+          "c": 0.998471
+        },
+        {
+          "w": "to",
+          "s": 14,
+          "e": 14.8,
+          "c": 0.978047
+        },
+        {
+          "w": "the",
+          "s": 14.8,
+          "e": 15.06,
+          "c": 0.96021
+        },
+        {
+          "w": "brave",
+          "s": 15.06,
+          "e": 15.5,
+          "c": 0.99407
+        },
+        {
+          "w": "men",
+          "s": 15.5,
+          "e": 15.65,
+          "c": 0.986081
+        },
+        {
+          "w": "and",
+          "s": 15.65,
+          "e": 15.8,
+          "c": 0.925591
+        },
+        {
+          "w": "women",
+          "s": 15.8,
+          "e": 16,
+          "c": 0.968773
+        },
+        {
+          "w": "who",
+          "s": 16,
+          "e": 16.5,
+          "c": 0.696368
+        },
+        {
+          "w": "have",
+          "s": 16.85,
+          "e": 17,
+          "c": 0.942369
+        },
+        {
+          "w": "served",
+          "s": 17.12,
+          "e": 17.49,
+          "c": 0.831301
+        },
+        {
+          "w": "and",
+          "s": 17.58,
+          "e": 17.88,
+          "c": 0.878244
+        },
+        {
+          "w": "sacrificed",
+          "s": 17.88,
+          "e": 18.79,
+          "c": 0.926299
+        },
+        {
+          "w": "for",
+          "s": 18.79,
+          "e": 19.04,
+          "c": 0.950769
+        },
+        {
+          "w": "our",
+          "s": 19.07,
+          "e": 19.39,
+          "c": 0.954891
+        },
+        {
+          "w": "country.",
+          "s": 19.39,
+          "e": 20.49,
+          "c": 0.98465
+        },
+        {
+          "w": "We",
+          "s": 20.5,
+          "e": 20.64,
+          "c": 0.998456
+        },
+        {
+          "w": "are",
+          "s": 20.64,
+          "e": 20.85,
+          "c": 0.994685
+        },
+        {
+          "w": "the",
+          "s": 20.85,
+          "e": 21.06,
+          "c": 0.999047
+        },
+        {
+          "w": "greatest,",
+          "s": 21.06,
+          "e": 21.78,
+          "c": 0.867163
+        },
+        {
+          "w": "strongest",
+          "s": 21.78,
+          "e": 22.43,
+          "c": 0.995644
+        },
+        {
+          "w": "nation",
+          "s": 22.43,
+          "e": 22.86,
+          "c": 0.985829
+        },
+        {
+          "w": "in",
+          "s": 22.86,
+          "e": 23,
+          "c": 0.992137
+        },
+        {
+          "w": "the",
+          "s": 23,
+          "e": 23.21,
+          "c": 0.993295
+        },
+        {
+          "w": "history",
+          "s": 23.21,
+          "e": 23.71,
+          "c": 0.998294
+        },
+        {
+          "w": "of",
+          "s": 23.71,
+          "e": 23.85,
+          "c": 0.992795
+        },
+        {
+          "w": "the",
+          "s": 23.85,
+          "e": 24.06,
+          "c": 0.993919
+        },
+        {
+          "w": "world",
+          "s": 24.06,
+          "e": 24.5,
+          "c": 0.997579
+        },
+        {
+          "w": "because",
+          "s": 24.5,
+          "e": 25.02,
+          "c": 0.992097
+        },
+        {
+          "w": "of",
+          "s": 25.02,
+          "e": 25.17,
+          "c": 0.992195
+        },
+        {
+          "w": "men",
+          "s": 25.17,
+          "e": 25.39,
+          "c": 0.995363
+        },
+        {
+          "w": "and",
+          "s": 25.39,
+          "e": 25.61,
+          "c": 0.996943
+        },
+        {
+          "w": "women",
+          "s": 25.61,
+          "e": 25.98,
+          "c": 0.997617
+        },
+        {
+          "w": "who",
+          "s": 25.98,
+          "e": 26.2,
+          "c": 0.991556
+        },
+        {
+          "w": "have",
+          "s": 26.2,
+          "e": 26.5,
+          "c": 0.99386
+        },
+        {
+          "w": "stepped",
+          "s": 26.5,
+          "e": 27.02,
+          "c": 0.990257
+        },
+        {
+          "w": "forward",
+          "s": 27.02,
+          "e": 27.54,
+          "c": 0.996833
+        },
+        {
+          "w": "throughout",
+          "s": 27.54,
+          "e": 28.29,
+          "c": 0.978157
+        },
+        {
+          "w": "our",
+          "s": 28.29,
+          "e": 28.51,
+          "c": 0.996614
+        },
+        {
+          "w": "history,",
+          "s": 28.51,
+          "e": 29.12,
+          "c": 0.58879
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 29.12,
+      "end_s": 29.56,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to",
+      "words": [
+        {
+          "w": "to",
+          "s": 29.12,
+          "e": 29.56,
+          "c": 0.807718
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 29.69,
+      "end_s": 55.24,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "serve and sacrifice. I know because two of my sons have served, and I am proud that so many of my friends have been involved not only in our armed services, but also as veterans in helping other veterans to fulfill their potential.",
+      "words": [
+        {
+          "w": "serve",
+          "s": 29.69,
+          "e": 30.23,
+          "c": 0.993532
+        },
+        {
+          "w": "and",
+          "s": 30.78,
+          "e": 31.32,
+          "c": 0.991726
+        },
+        {
+          "w": "sacrifice.",
+          "s": 31.32,
+          "e": 33.96,
+          "c": 0.980842
+        },
+        {
+          "w": "I",
+          "s": 33.96,
+          "e": 34.06,
+          "c": 0.999468
+        },
+        {
+          "w": "know",
+          "s": 34.06,
+          "e": 34.49,
+          "c": 0.999548
+        },
+        {
+          "w": "because",
+          "s": 34.55,
+          "e": 35.05,
+          "c": 0.932188
+        },
+        {
+          "w": "two",
+          "s": 35.22,
+          "e": 35.57,
+          "c": 0.98574
+        },
+        {
+          "w": "of",
+          "s": 35.57,
+          "e": 35.78,
+          "c": 0.994393
+        },
+        {
+          "w": "my",
+          "s": 35.84,
+          "e": 35.96,
+          "c": 0.999256
+        },
+        {
+          "w": "sons",
+          "s": 36.03,
+          "e": 36.37,
+          "c": 0.996065
+        },
+        {
+          "w": "have",
+          "s": 36.42,
+          "e": 36.85,
+          "c": 0.991282
+        },
+        {
+          "w": "served,",
+          "s": 36.85,
+          "e": 37.7,
+          "c": 0.480361
+        },
+        {
+          "w": "and",
+          "s": 37.72,
+          "e": 38.15,
+          "c": 0.998134
+        },
+        {
+          "w": "I",
+          "s": 38.26,
+          "e": 38.29,
+          "c": 0.998249
+        },
+        {
+          "w": "am",
+          "s": 38.37,
+          "e": 38.58,
+          "c": 0.989791
+        },
+        {
+          "w": "proud",
+          "s": 38.58,
+          "e": 38.83,
+          "c": 0.99988
+        },
+        {
+          "w": "that",
+          "s": 39.38,
+          "e": 39.87,
+          "c": 0.995328
+        },
+        {
+          "w": "so",
+          "s": 39.87,
+          "e": 40.13,
+          "c": 0.996687
+        },
+        {
+          "w": "many",
+          "s": 40.16,
+          "e": 40.73,
+          "c": 0.99943
+        },
+        {
+          "w": "of",
+          "s": 40.73,
+          "e": 40.95,
+          "c": 0.99538
+        },
+        {
+          "w": "my",
+          "s": 41.02,
+          "e": 41.31,
+          "c": 0.999451
+        },
+        {
+          "w": "friends",
+          "s": 41.31,
+          "e": 42.14,
+          "c": 0.999342
+        },
+        {
+          "w": "have",
+          "s": 42.36,
+          "e": 42.75,
+          "c": 0.999569
+        },
+        {
+          "w": "been",
+          "s": 42.95,
+          "e": 43.14,
+          "c": 0.999741
+        },
+        {
+          "w": "involved",
+          "s": 43.14,
+          "e": 43.45,
+          "c": 0.999489
+        },
+        {
+          "w": "not",
+          "s": 43.92,
+          "e": 44.2,
+          "c": 0.68797
+        },
+        {
+          "w": "only",
+          "s": 44.43,
+          "e": 44.6,
+          "c": 0.999743
+        },
+        {
+          "w": "in",
+          "s": 44.6,
+          "e": 44.77,
+          "c": 0.98822
+        },
+        {
+          "w": "our",
+          "s": 44.78,
+          "e": 45.08,
+          "c": 0.990886
+        },
+        {
+          "w": "armed",
+          "s": 45.08,
+          "e": 45.57,
+          "c": 0.936803
+        },
+        {
+          "w": "services,",
+          "s": 45.57,
+          "e": 46.58,
+          "c": 0.701585
+        },
+        {
+          "w": "but",
+          "s": 46.58,
+          "e": 46.96,
+          "c": 0.999794
+        },
+        {
+          "w": "also",
+          "s": 47.18,
+          "e": 47.47,
+          "c": 0.998058
+        },
+        {
+          "w": "as",
+          "s": 47.47,
+          "e": 47.66,
+          "c": 0.966188
+        },
+        {
+          "w": "veterans",
+          "s": 48.24,
+          "e": 48.78,
+          "c": 0.959688
+        },
+        {
+          "w": "in",
+          "s": 48.78,
+          "e": 48.99,
+          "c": 0.489162
+        },
+        {
+          "w": "helping",
+          "s": 49.04,
+          "e": 49.96,
+          "c": 0.999386
+        },
+        {
+          "w": "other",
+          "s": 49.99,
+          "e": 50.49,
+          "c": 0.987926
+        },
+        {
+          "w": "veterans",
+          "s": 50.66,
+          "e": 51.56,
+          "c": 0.993002
+        },
+        {
+          "w": "to",
+          "s": 51.78,
+          "e": 52.08,
+          "c": 0.999716
+        },
+        {
+          "w": "fulfill",
+          "s": 52.35,
+          "e": 52.89,
+          "c": 0.978026
+        },
+        {
+          "w": "their",
+          "s": 53.44,
+          "e": 53.88,
+          "c": 0.999765
+        },
+        {
+          "w": "potential.",
+          "s": 53.88,
+          "e": 55.24,
+          "c": 0.817377
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 55.18,
+      "end_s": 55.6,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And we",
+      "words": [
+        {
+          "w": "And",
+          "s": 55.184,
+          "e": 55.434,
+          "c": 0.613257
+        },
+        {
+          "w": "we",
+          "s": 55.434,
+          "e": 55.604,
+          "c": 0.974284
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 55.75,
+      "end_s": 80.18,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "should always keep in mind the need to keep faith with our veterans, make sure no veteran is left behind, and provide them with the skill training and education and job opportunities, and yes, the health care they need and deserve, particularly mental health care that's needed to overcome the invisible wounds of war, post-traumatic stress, and traumatic brain injury.",
+      "words": [
+        {
+          "w": "should",
+          "s": 55.754,
+          "e": 56.114,
+          "c": 0.998079
+        },
+        {
+          "w": "always",
+          "s": 56.114,
+          "e": 56.624,
+          "c": 0.997162
+        },
+        {
+          "w": "keep",
+          "s": 56.624,
+          "e": 56.964,
+          "c": 0.988101
+        },
+        {
+          "w": "in",
+          "s": 56.964,
+          "e": 57.134,
+          "c": 0.992755
+        },
+        {
+          "w": "mind",
+          "s": 57.134,
+          "e": 57.484,
+          "c": 0.992866
+        },
+        {
+          "w": "the",
+          "s": 57.484,
+          "e": 58.024,
+          "c": 0.68056
+        },
+        {
+          "w": "need",
+          "s": 58.024,
+          "e": 58.314,
+          "c": 0.978049
+        },
+        {
+          "w": "to",
+          "s": 58.314,
+          "e": 58.414,
+          "c": 0.644986
+        },
+        {
+          "w": "keep",
+          "s": 58.484,
+          "e": 58.584,
+          "c": 0.917467
+        },
+        {
+          "w": "faith",
+          "s": 58.584,
+          "e": 58.924,
+          "c": 0.891405
+        },
+        {
+          "w": "with",
+          "s": 59.044,
+          "e": 59.114,
+          "c": 0.603351
+        },
+        {
+          "w": "our",
+          "s": 59.134,
+          "e": 59.264,
+          "c": 0.887119
+        },
+        {
+          "w": "veterans,",
+          "s": 59.304,
+          "e": 59.674,
+          "c": 0.476607
+        },
+        {
+          "w": "make",
+          "s": 59.684,
+          "e": 60.024,
+          "c": 0.986831
+        },
+        {
+          "w": "sure",
+          "s": 60.254,
+          "e": 60.364,
+          "c": 0.999695
+        },
+        {
+          "w": "no",
+          "s": 60.364,
+          "e": 60.524,
+          "c": 0.992483
+        },
+        {
+          "w": "veteran",
+          "s": 60.604,
+          "e": 61.134,
+          "c": 0.983249
+        },
+        {
+          "w": "is",
+          "s": 61.134,
+          "e": 61.244,
+          "c": 0.996729
+        },
+        {
+          "w": "left",
+          "s": 61.404,
+          "e": 61.644,
+          "c": 0.99923
+        },
+        {
+          "w": "behind,",
+          "s": 61.644,
+          "e": 62.184,
+          "c": 0.644708
+        },
+        {
+          "w": "and",
+          "s": 62.184,
+          "e": 62.594,
+          "c": 0.994858
+        },
+        {
+          "w": "provide",
+          "s": 62.754,
+          "e": 63.564,
+          "c": 0.998538
+        },
+        {
+          "w": "them",
+          "s": 63.564,
+          "e": 64.114,
+          "c": 0.999519
+        },
+        {
+          "w": "with",
+          "s": 64.114,
+          "e": 64.674,
+          "c": 0.992805
+        },
+        {
+          "w": "the",
+          "s": 65.004,
+          "e": 65.184,
+          "c": 0.983586
+        },
+        {
+          "w": "skill",
+          "s": 65.184,
+          "e": 65.564,
+          "c": 0.840115
+        },
+        {
+          "w": "training",
+          "s": 65.564,
+          "e": 66.184,
+          "c": 0.961979
+        },
+        {
+          "w": "and",
+          "s": 66.184,
+          "e": 66.404,
+          "c": 0.668766
+        },
+        {
+          "w": "education",
+          "s": 66.474,
+          "e": 67.184,
+          "c": 0.990467
+        },
+        {
+          "w": "and",
+          "s": 67.184,
+          "e": 67.334,
+          "c": 0.630305
+        },
+        {
+          "w": "job",
+          "s": 67.334,
+          "e": 67.484,
+          "c": 0.989058
+        },
+        {
+          "w": "opportunities,",
+          "s": 67.484,
+          "e": 68.184,
+          "c": 0.50808
+        },
+        {
+          "w": "and",
+          "s": 68.184,
+          "e": 68.474,
+          "c": 0.995342
+        },
+        {
+          "w": "yes,",
+          "s": 68.754,
+          "e": 68.954,
+          "c": 0.756243
+        },
+        {
+          "w": "the",
+          "s": 68.954,
+          "e": 69.244,
+          "c": 0.994438
+        },
+        {
+          "w": "health",
+          "s": 69.244,
+          "e": 69.734,
+          "c": 0.671317
+        },
+        {
+          "w": "care",
+          "s": 69.904,
+          "e": 70.204,
+          "c": 0.995518
+        },
+        {
+          "w": "they",
+          "s": 70.214,
+          "e": 70.604,
+          "c": 0.861395
+        },
+        {
+          "w": "need",
+          "s": 70.604,
+          "e": 70.924,
+          "c": 0.991032
+        },
+        {
+          "w": "and",
+          "s": 71.004,
+          "e": 71.284,
+          "c": 0.984718
+        },
+        {
+          "w": "deserve,",
+          "s": 71.284,
+          "e": 72.184,
+          "c": 0.596739
+        },
+        {
+          "w": "particularly",
+          "s": 72.754,
+          "e": 73.034,
+          "c": 0.992197
+        },
+        {
+          "w": "mental",
+          "s": 73.104,
+          "e": 73.454,
+          "c": 0.963429
+        },
+        {
+          "w": "health",
+          "s": 73.454,
+          "e": 73.734,
+          "c": 0.972229
+        },
+        {
+          "w": "care",
+          "s": 73.904,
+          "e": 74.184,
+          "c": 0.999382
+        },
+        {
+          "w": "that's",
+          "s": 74.184,
+          "e": 74.454,
+          "c": 0.916181
+        },
+        {
+          "w": "needed",
+          "s": 74.454,
+          "e": 74.694,
+          "c": 0.993121
+        },
+        {
+          "w": "to",
+          "s": 74.814,
+          "e": 74.814,
+          "c": 0.920175
+        },
+        {
+          "w": "overcome",
+          "s": 75.004,
+          "e": 75.184,
+          "c": 0.985831
+        },
+        {
+          "w": "the",
+          "s": 75.184,
+          "e": 75.424,
+          "c": 0.993273
+        },
+        {
+          "w": "invisible",
+          "s": 75.754,
+          "e": 76.134,
+          "c": 0.998557
+        },
+        {
+          "w": "wounds",
+          "s": 76.134,
+          "e": 76.604,
+          "c": 0.995733
+        },
+        {
+          "w": "of",
+          "s": 76.604,
+          "e": 76.734,
+          "c": 0.969072
+        },
+        {
+          "w": "war,",
+          "s": 76.904,
+          "e": 77.184,
+          "c": 0.79531
+        },
+        {
+          "w": "post-traumatic",
+          "s": 77.184,
+          "e": 77.714,
+          "c": 0.935205
+        },
+        {
+          "w": "stress,",
+          "s": 78.004,
+          "e": 78.314,
+          "c": 0.527413
+        },
+        {
+          "w": "and",
+          "s": 78.314,
+          "e": 78.474,
+          "c": 0.595402
+        },
+        {
+          "w": "traumatic",
+          "s": 78.544,
+          "e": 79.174,
+          "c": 0.993019
+        },
+        {
+          "w": "brain",
+          "s": 79.174,
+          "e": 79.474,
+          "c": 0.999523
+        },
+        {
+          "w": "injury.",
+          "s": 79.544,
+          "e": 80.184,
+          "c": 0.981148
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 80.18,
+      "end_s": 80.45,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "As",
+      "words": [
+        {
+          "w": "As",
+          "s": 80.184,
+          "e": 80.454,
+          "c": 0.990416
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 80.75,
+      "end_s": 83.08,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "President Eisenhower",
+      "words": [
+        {
+          "w": "President",
+          "s": 80.754,
+          "e": 81.694,
+          "c": 0.938156
+        },
+        {
+          "w": "Eisenhower",
+          "s": 81.694,
+          "e": 83.084,
+          "c": 0.99709
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 83.08,
+      "end_s": 83.09,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "said,",
+      "words": [
+        {
+          "w": "said,",
+          "s": 83.084,
+          "e": 83.084,
+          "c": 0.30459
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 83.37,
+      "end_s": 83.38,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "set",
+      "words": [
+        {
+          "w": "set",
+          "s": 83.366,
+          "e": 83.366,
+          "c": 0.47977
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 83.39,
+      "end_s": 106.8,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "about this day in 1954, we should \"solemnly remember the sacrifices of all those who fought so valiantly on the seas, in the air, and on foreign shores to preserve our heritage of freedom and let us re-consecrate ourselves to the task of promoting and enduring peace so that their efforts shall not have been in vain.\"",
+      "words": [
+        {
+          "w": "about",
+          "s": 83.386,
+          "e": 83.856,
+          "c": 0.996808
+        },
+        {
+          "w": "this",
+          "s": 83.966,
+          "e": 84.286,
+          "c": 0.995044
+        },
+        {
+          "w": "day",
+          "s": 84.286,
+          "e": 84.596,
+          "c": 0.999285
+        },
+        {
+          "w": "in",
+          "s": 84.596,
+          "e": 84.746,
+          "c": 0.97918
+        },
+        {
+          "w": "1954,",
+          "s": 84.816,
+          "e": 86.246,
+          "c": 0.580675
+        },
+        {
+          "w": "we",
+          "s": 86.306,
+          "e": 86.446,
+          "c": 0.512404
+        },
+        {
+          "w": "should",
+          "s": 86.446,
+          "e": 86.896,
+          "c": 0.99587
+        },
+        {
+          "w": "\"solemnly",
+          "s": 87.156,
+          "e": 88.056,
+          "c": 0.222362
+        },
+        {
+          "w": "remember",
+          "s": 88.056,
+          "e": 88.436,
+          "c": 0.938033
+        },
+        {
+          "w": "the",
+          "s": 88.436,
+          "e": 88.556,
+          "c": 0.842591
+        },
+        {
+          "w": "sacrifices",
+          "s": 88.556,
+          "e": 89.296,
+          "c": 0.968174
+        },
+        {
+          "w": "of",
+          "s": 89.296,
+          "e": 89.526,
+          "c": 0.871043
+        },
+        {
+          "w": "all",
+          "s": 89.606,
+          "e": 90.086,
+          "c": 0.942201
+        },
+        {
+          "w": "those",
+          "s": 90.186,
+          "e": 90.626,
+          "c": 0.9002
+        },
+        {
+          "w": "who",
+          "s": 90.716,
+          "e": 90.776,
+          "c": 0.819147
+        },
+        {
+          "w": "fought",
+          "s": 90.776,
+          "e": 91.096,
+          "c": 0.938445
+        },
+        {
+          "w": "so",
+          "s": 91.096,
+          "e": 91.296,
+          "c": 0.60836
+        },
+        {
+          "w": "valiantly",
+          "s": 91.296,
+          "e": 91.926,
+          "c": 0.853405
+        },
+        {
+          "w": "on",
+          "s": 91.956,
+          "e": 92.196,
+          "c": 0.65101
+        },
+        {
+          "w": "the",
+          "s": 92.196,
+          "e": 92.226,
+          "c": 0.96149
+        },
+        {
+          "w": "seas,",
+          "s": 92.366,
+          "e": 93.166,
+          "c": 0.605855
+        },
+        {
+          "w": "in",
+          "s": 93.166,
+          "e": 93.296,
+          "c": 0.598031
+        },
+        {
+          "w": "the",
+          "s": 93.296,
+          "e": 93.356,
+          "c": 0.974074
+        },
+        {
+          "w": "air,",
+          "s": 93.356,
+          "e": 94.166,
+          "c": 0.615979
+        },
+        {
+          "w": "and",
+          "s": 94.246,
+          "e": 94.336,
+          "c": 0.711189
+        },
+        {
+          "w": "on",
+          "s": 94.336,
+          "e": 94.456,
+          "c": 0.95493
+        },
+        {
+          "w": "foreign",
+          "s": 94.456,
+          "e": 94.856,
+          "c": 0.887088
+        },
+        {
+          "w": "shores",
+          "s": 94.926,
+          "e": 95.246,
+          "c": 0.892845
+        },
+        {
+          "w": "to",
+          "s": 95.366,
+          "e": 95.436,
+          "c": 0.442258
+        },
+        {
+          "w": "preserve",
+          "s": 95.506,
+          "e": 95.896,
+          "c": 0.929795
+        },
+        {
+          "w": "our",
+          "s": 95.896,
+          "e": 96.056,
+          "c": 0.926016
+        },
+        {
+          "w": "heritage",
+          "s": 96.056,
+          "e": 96.476,
+          "c": 0.864772
+        },
+        {
+          "w": "of",
+          "s": 96.546,
+          "e": 96.756,
+          "c": 0.923735
+        },
+        {
+          "w": "freedom",
+          "s": 96.756,
+          "e": 96.996,
+          "c": 0.950255
+        },
+        {
+          "w": "and",
+          "s": 97.636,
+          "e": 97.676,
+          "c": 0.229253
+        },
+        {
+          "w": "let",
+          "s": 97.676,
+          "e": 97.956,
+          "c": 0.935138
+        },
+        {
+          "w": "us",
+          "s": 97.956,
+          "e": 98.116,
+          "c": 0.965821
+        },
+        {
+          "w": "re-consecrate",
+          "s": 98.316,
+          "e": 99.056,
+          "c": 0.415992
+        },
+        {
+          "w": "ourselves",
+          "s": 99.056,
+          "e": 99.576,
+          "c": 0.898384
+        },
+        {
+          "w": "to",
+          "s": 99.696,
+          "e": 99.796,
+          "c": 0.907532
+        },
+        {
+          "w": "the",
+          "s": 99.796,
+          "e": 99.976,
+          "c": 0.961555
+        },
+        {
+          "w": "task",
+          "s": 100.016,
+          "e": 100.236,
+          "c": 0.987996
+        },
+        {
+          "w": "of",
+          "s": 100.306,
+          "e": 100.386,
+          "c": 0.938084
+        },
+        {
+          "w": "promoting",
+          "s": 100.516,
+          "e": 100.816,
+          "c": 0.955828
+        },
+        {
+          "w": "and",
+          "s": 100.816,
+          "e": 101.056,
+          "c": 0.638403
+        },
+        {
+          "w": "enduring",
+          "s": 101.056,
+          "e": 101.666,
+          "c": 0.982247
+        },
+        {
+          "w": "peace",
+          "s": 101.666,
+          "e": 101.736,
+          "c": 0.983615
+        },
+        {
+          "w": "so",
+          "s": 101.736,
+          "e": 102.276,
+          "c": 0.51146
+        },
+        {
+          "w": "that",
+          "s": 102.706,
+          "e": 102.716,
+          "c": 0.979135
+        },
+        {
+          "w": "their",
+          "s": 102.716,
+          "e": 103.266,
+          "c": 0.987006
+        },
+        {
+          "w": "efforts",
+          "s": 103.266,
+          "e": 103.656,
+          "c": 0.991217
+        },
+        {
+          "w": "shall",
+          "s": 104.306,
+          "e": 104.446,
+          "c": 0.975932
+        },
+        {
+          "w": "not",
+          "s": 104.446,
+          "e": 104.676,
+          "c": 0.990628
+        },
+        {
+          "w": "have",
+          "s": 104.676,
+          "e": 104.956,
+          "c": 0.992074
+        },
+        {
+          "w": "been",
+          "s": 104.986,
+          "e": 105.266,
+          "c": 0.990225
+        },
+        {
+          "w": "in",
+          "s": 105.406,
+          "e": 105.566,
+          "c": 0.967418
+        },
+        {
+          "w": "vain.\"",
+          "s": 105.596,
+          "e": 106.796,
+          "c": 0.893772
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 106.75,
+      "end_s": 106.88,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I",
+      "words": [
+        {
+          "w": "I",
+          "s": 106.752,
+          "e": 106.882,
+          "c": 0.906332
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 107.49,
+      "end_s": 134.65,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "encourage you to reach out to our veterans, friends, loved ones, members of your community, and express your thanks to them and also to their families, because they too have served. In fact, many of them continue to serve in caring for veterans who bear the wounds of war, are disabled, and others,",
+      "words": [
+        {
+          "w": "encourage",
+          "s": 107.492,
+          "e": 108.052,
+          "c": 0.993791
+        },
+        {
+          "w": "you",
+          "s": 108.052,
+          "e": 108.432,
+          "c": 0.998454
+        },
+        {
+          "w": "to",
+          "s": 108.432,
+          "e": 108.702,
+          "c": 0.994448
+        },
+        {
+          "w": "reach",
+          "s": 108.702,
+          "e": 109.232,
+          "c": 0.988767
+        },
+        {
+          "w": "out",
+          "s": 109.342,
+          "e": 109.652,
+          "c": 0.989487
+        },
+        {
+          "w": "to",
+          "s": 109.772,
+          "e": 109.852,
+          "c": 0.966569
+        },
+        {
+          "w": "our",
+          "s": 109.852,
+          "e": 110.052,
+          "c": 0.975578
+        },
+        {
+          "w": "veterans,",
+          "s": 110.052,
+          "e": 110.612,
+          "c": 0.588149
+        },
+        {
+          "w": "friends,",
+          "s": 110.692,
+          "e": 111.212,
+          "c": 0.972904
+        },
+        {
+          "w": "loved",
+          "s": 111.432,
+          "e": 111.512,
+          "c": 0.997843
+        },
+        {
+          "w": "ones,",
+          "s": 111.512,
+          "e": 111.832,
+          "c": 0.990201
+        },
+        {
+          "w": "members",
+          "s": 111.892,
+          "e": 112.432,
+          "c": 0.903217
+        },
+        {
+          "w": "of",
+          "s": 112.432,
+          "e": 112.552,
+          "c": 0.996575
+        },
+        {
+          "w": "your",
+          "s": 112.612,
+          "e": 112.852,
+          "c": 0.977886
+        },
+        {
+          "w": "community,",
+          "s": 112.942,
+          "e": 113.592,
+          "c": 0.68862
+        },
+        {
+          "w": "and",
+          "s": 113.692,
+          "e": 114.032,
+          "c": 0.999325
+        },
+        {
+          "w": "express",
+          "s": 114.432,
+          "e": 114.832,
+          "c": 0.996004
+        },
+        {
+          "w": "your",
+          "s": 114.832,
+          "e": 115.292,
+          "c": 0.99863
+        },
+        {
+          "w": "thanks",
+          "s": 115.292,
+          "e": 115.982,
+          "c": 0.998746
+        },
+        {
+          "w": "to",
+          "s": 115.982,
+          "e": 116.182,
+          "c": 0.998708
+        },
+        {
+          "w": "them",
+          "s": 116.252,
+          "e": 116.592,
+          "c": 0.996476
+        },
+        {
+          "w": "and",
+          "s": 116.772,
+          "e": 117.292,
+          "c": 0.224636
+        },
+        {
+          "w": "also",
+          "s": 117.292,
+          "e": 117.992,
+          "c": 0.973964
+        },
+        {
+          "w": "to",
+          "s": 117.992,
+          "e": 118.192,
+          "c": 0.963852
+        },
+        {
+          "w": "their",
+          "s": 118.192,
+          "e": 118.622,
+          "c": 0.97617
+        },
+        {
+          "w": "families,",
+          "s": 118.622,
+          "e": 119.402,
+          "c": 0.519381
+        },
+        {
+          "w": "because",
+          "s": 120.162,
+          "e": 120.162,
+          "c": 0.999483
+        },
+        {
+          "w": "they",
+          "s": 120.232,
+          "e": 120.542,
+          "c": 0.996191
+        },
+        {
+          "w": "too",
+          "s": 120.542,
+          "e": 120.822,
+          "c": 0.828678
+        },
+        {
+          "w": "have",
+          "s": 120.822,
+          "e": 121.192,
+          "c": 0.988691
+        },
+        {
+          "w": "served.",
+          "s": 121.192,
+          "e": 121.972,
+          "c": 0.24415
+        },
+        {
+          "w": "In",
+          "s": 122.092,
+          "e": 122.252,
+          "c": 0.99786
+        },
+        {
+          "w": "fact,",
+          "s": 122.252,
+          "e": 122.742,
+          "c": 0.971606
+        },
+        {
+          "w": "many",
+          "s": 122.832,
+          "e": 123.072,
+          "c": 0.998361
+        },
+        {
+          "w": "of",
+          "s": 123.072,
+          "e": 123.222,
+          "c": 0.999352
+        },
+        {
+          "w": "them",
+          "s": 123.232,
+          "e": 123.562,
+          "c": 0.998925
+        },
+        {
+          "w": "continue",
+          "s": 123.562,
+          "e": 124.242,
+          "c": 0.980871
+        },
+        {
+          "w": "to",
+          "s": 124.352,
+          "e": 124.582,
+          "c": 0.964818
+        },
+        {
+          "w": "serve",
+          "s": 124.692,
+          "e": 125.512,
+          "c": 0.934389
+        },
+        {
+          "w": "in",
+          "s": 125.512,
+          "e": 125.852,
+          "c": 0.683497
+        },
+        {
+          "w": "caring",
+          "s": 126.192,
+          "e": 126.612,
+          "c": 0.848932
+        },
+        {
+          "w": "for",
+          "s": 126.612,
+          "e": 127.672,
+          "c": 0.747017
+        },
+        {
+          "w": "veterans",
+          "s": 127.672,
+          "e": 128.312,
+          "c": 0.678175
+        },
+        {
+          "w": "who",
+          "s": 128.612,
+          "e": 129.002,
+          "c": 0.999516
+        },
+        {
+          "w": "bear",
+          "s": 129.352,
+          "e": 129.522,
+          "c": 0.876697
+        },
+        {
+          "w": "the",
+          "s": 129.522,
+          "e": 129.912,
+          "c": 0.998437
+        },
+        {
+          "w": "wounds",
+          "s": 129.912,
+          "e": 130.692,
+          "c": 0.998011
+        },
+        {
+          "w": "of",
+          "s": 130.692,
+          "e": 130.942,
+          "c": 0.997263
+        },
+        {
+          "w": "war,",
+          "s": 130.952,
+          "e": 131.512,
+          "c": 0.885529
+        },
+        {
+          "w": "are",
+          "s": 131.692,
+          "e": 131.982,
+          "c": 0.807995
+        },
+        {
+          "w": "disabled,",
+          "s": 131.982,
+          "e": 133.222,
+          "c": 0.559432
+        },
+        {
+          "w": "and",
+          "s": 133.262,
+          "e": 133.562,
+          "c": 0.973907
+        },
+        {
+          "w": "others,",
+          "s": 133.822,
+          "e": 134.652,
+          "c": 0.619026
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 134.88,
+      "end_s": 148.62,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "who's lives are made richer and stronger because of their families, their loved ones, their friends who care for them. Thanks to our veterans, thanks to their families, and thanks to you for honoring this day.",
+      "words": [
+        {
+          "w": "who's",
+          "s": 134.884,
+          "e": 135.054,
+          "c": 0.0682217
+        },
+        {
+          "w": "lives",
+          "s": 135.054,
+          "e": 135.484,
+          "c": 0.995015
+        },
+        {
+          "w": "are",
+          "s": 135.484,
+          "e": 135.744,
+          "c": 0.997139
+        },
+        {
+          "w": "made",
+          "s": 135.744,
+          "e": 136.084,
+          "c": 0.998424
+        },
+        {
+          "w": "richer",
+          "s": 136.084,
+          "e": 136.604,
+          "c": 0.986305
+        },
+        {
+          "w": "and",
+          "s": 136.614,
+          "e": 136.864,
+          "c": 0.979092
+        },
+        {
+          "w": "stronger",
+          "s": 136.864,
+          "e": 137.524,
+          "c": 0.99388
+        },
+        {
+          "w": "because",
+          "s": 137.524,
+          "e": 138.124,
+          "c": 0.74884
+        },
+        {
+          "w": "of",
+          "s": 138.134,
+          "e": 138.224,
+          "c": 0.919481
+        },
+        {
+          "w": "their",
+          "s": 138.224,
+          "e": 138.414,
+          "c": 0.971532
+        },
+        {
+          "w": "families,",
+          "s": 138.534,
+          "e": 139.154,
+          "c": 0.883358
+        },
+        {
+          "w": "their",
+          "s": 139.174,
+          "e": 139.264,
+          "c": 0.690597
+        },
+        {
+          "w": "loved",
+          "s": 139.264,
+          "e": 139.504,
+          "c": 0.964052
+        },
+        {
+          "w": "ones,",
+          "s": 139.604,
+          "e": 139.904,
+          "c": 0.946808
+        },
+        {
+          "w": "their",
+          "s": 139.954,
+          "e": 140.054,
+          "c": 0.748745
+        },
+        {
+          "w": "friends",
+          "s": 140.064,
+          "e": 140.544,
+          "c": 0.729237
+        },
+        {
+          "w": "who",
+          "s": 140.664,
+          "e": 141.624,
+          "c": 0.216683
+        },
+        {
+          "w": "care",
+          "s": 141.634,
+          "e": 141.824,
+          "c": 0.969847
+        },
+        {
+          "w": "for",
+          "s": 141.824,
+          "e": 142.154,
+          "c": 0.970097
+        },
+        {
+          "w": "them.",
+          "s": 142.154,
+          "e": 142.624,
+          "c": 0.81552
+        },
+        {
+          "w": "Thanks",
+          "s": 142.904,
+          "e": 143.184,
+          "c": 0.992524
+        },
+        {
+          "w": "to",
+          "s": 143.194,
+          "e": 143.384,
+          "c": 0.99739
+        },
+        {
+          "w": "our",
+          "s": 143.384,
+          "e": 143.664,
+          "c": 0.993091
+        },
+        {
+          "w": "veterans,",
+          "s": 143.664,
+          "e": 144.604,
+          "c": 0.806217
+        },
+        {
+          "w": "thanks",
+          "s": 144.604,
+          "e": 144.904,
+          "c": 0.979064
+        },
+        {
+          "w": "to",
+          "s": 144.904,
+          "e": 144.994,
+          "c": 0.998872
+        },
+        {
+          "w": "their",
+          "s": 144.994,
+          "e": 145.224,
+          "c": 0.998096
+        },
+        {
+          "w": "families,",
+          "s": 145.224,
+          "e": 145.784,
+          "c": 0.648627
+        },
+        {
+          "w": "and",
+          "s": 145.794,
+          "e": 146.054,
+          "c": 0.955999
+        },
+        {
+          "w": "thanks",
+          "s": 146.054,
+          "e": 146.574,
+          "c": 0.994126
+        },
+        {
+          "w": "to",
+          "s": 146.574,
+          "e": 146.744,
+          "c": 0.998378
+        },
+        {
+          "w": "you",
+          "s": 146.744,
+          "e": 147.004,
+          "c": 0.980974
+        },
+        {
+          "w": "for",
+          "s": 147.004,
+          "e": 147.264,
+          "c": 0.985376
+        },
+        {
+          "w": "honoring",
+          "s": 147.264,
+          "e": 147.954,
+          "c": 0.993089
+        },
+        {
+          "w": "this",
+          "s": 147.954,
+          "e": 148.314,
+          "c": 0.988025
+        },
+        {
+          "w": "day.",
+          "s": 148.314,
+          "e": 148.624,
+          "c": 0.969583
+        }
+      ]
+    }
+  ]
+}

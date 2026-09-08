@@ -1,0 +1,139 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "She’s Real, She’s Honest, She’s Uncancelable"
+    Description: >-
+      A one-minute promotional trailer announcing Candace Owens joining The Daily Wire. It opens on a studio
+      aside ('are we rolling'), an off-camera voice says the media has created a caricature of Candace Owens
+      and asks what will be different about her at The Daily Wire, and Owens answers that the moment is
+      crucial for standing up as an unapologizing conservative, that she is committed to challenging ideas and
+      to debate, and that the show will be 'uplifting, funny, political'. It is an announcement piece: no
+      policy position is argued and no claim of fact is made. The same audio also appears under video_key
+      Z_KLm2LmIA4, which the demand list requested as a separate row; the channel appears to have posted this
+      promo twice.
+    URL: "https://www.youtube.com/watch?v=sVgZrx4VfpI"
+    Video_ID: "sVgZrx4VfpI"
+    Show: "Candace Owens Podcast"
+    Runtime: "00:01:02"
+    Language: "en"
+
+  Media:
+    File: "sVgZrx4VfpI.m4a"
+    SHA256: "8289787052d8b02058edd2b17b343b55650e3cc33796086d22e7b15fdb79f07e"
+    Bytes: 1004993
+    Duration_Seconds: 62
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=sVgZrx4VfpI"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "sVgZrx4VfpI.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/candace_owens_us_pres/sVgZrx4VfpI/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCkY4fdKOFk3Kiq7g5LLKYLw"
+    Uploader_ID: "@CandaceOwensPodcast"
+    View_Count: 41685
+    Like_Count: 968
+    Comment_Count: 1500
+    Availability: "public"
+    Published_At: "2026-01-05T21:00:07+00:00"
+    Captured_At: "2026-09-08T04:14:44-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "1.9%"
+      Turns: 1
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "29.1%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "69.0%"
+      Turns: 2
+
+  Topics:
+    - "Candace Owens joining The Daily Wire"
+    - "Show launch promotion"
+    - "Conservative media commentary"
+
+  Source:
+    Canonical_ID: "8672e7970fbae53e"
+    Transcribed: "2026-09-08T04:17:32.278304-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 126
+    Segments: 9
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T04:14:45.388276-07:00"
+    Transcription_Finished: "2026-09-08T04:17:32.278304-07:00"
+    Recorded: "2026-01-05"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "sVgZrx4VfpI.ctm"
+    Fountain: "sVgZrx4VfpI.fountain"
+    Diarization_RTTM: "sVgZrx4VfpI.rttm"
+    As_Broadcast_Script: "sVgZrx4VfpI.script.txt"
+    Segments_JSON: "sVgZrx4VfpI.segments.json"
+    Segments_JSONL: "sVgZrx4VfpI.segments.jsonl"
+    Subtitles_SRT: "sVgZrx4VfpI.srt"
+    Plain_Text: "sVgZrx4VfpI.transcription"
+    Subtitles_VTT: "sVgZrx4VfpI.vtt"
+    Transcript_SHA256: "d4d58f38c5cc49a0cb8518ef0cc19c6099fd3d44a59adebd5348e5a2cb05d930"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "candace_owens_us_pres"
+    video_uid: "candace_owens_us_pres::sVgZrx4VfpI"
+    video_key: "sVgZrx4VfpI"
+    youtube_id: "sVgZrx4VfpI"
+    priority: 850
+    ceiling: 1000
+    raw_score: 850
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 300
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T10:15:03.132Z"
+    demand_run_id: "job_1788862500006_165"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=sVgZrx4VfpI"
+    source_ref: "sVgZrx4VfpI"
