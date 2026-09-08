@@ -1,0 +1,134 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Social media companies allow explicit material to proliferate their platforms."
+    Description: >-
+      A short clip in which the senator asks whether anyone can ever get
+      into court to hold social media platforms accountable, naming Twitter,
+      Google and what he calls their subsidiaries YouTube and Instagram, or
+      whether those companies will remain entirely immune even when they
+      know that abusive or otherwise harmful material is on their platforms
+      and keep it up to make money. He says these companies ought to be held
+      accountable by victims, that he has introduced legislation to allow
+      victims to get into court, and that he has urged the Supreme Court to
+      stop protecting the companies, arguing that the Supreme Court and
+      other courts have caused much of the problem through their rulings
+      over the years and need to correct it. The bill is not named in the
+      clip. The characterisation of the companies' knowledge and motive is
+      the senator's own and is contested; no company representative appears.
+      Diarization returned a single cluster.
+    URL: "https://www.youtube.com/watch?v=-4hGiG1cRAs"
+    Video_ID: "-4hGiG1cRAs"
+    Show: "Senator Josh Hawley"
+    Runtime: "00:00:56"
+    Language: "en"
+
+  Media:
+    File: "-4hGiG1cRAs.m4a"
+    SHA256: "d20b4fc1aab46d8967f61259bba648a595a39e8f42c1366d048bda5fbfea49dc"
+    Bytes: 915619
+    Duration_Seconds: 56
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-4hGiG1cRAs"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-4hGiG1cRAs.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/josh_hawley_mo_sen/-4hGiG1cRAs/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCMzt8xq6qQ3XQ_DlNfJx0-w"
+    Uploader_ID: "@SenatorJoshHawley"
+    View_Count: 4588
+    Like_Count: 293
+    Comment_Count: 38
+    Availability: "public"
+    Published_At: "2026-03-31T13:01:43+00:00"
+    Captured_At: "2026-09-07T17:51:12-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 1
+
+  Topics:
+    - "Platform liability and immunity from suit"
+    - "Victims' access to the courts"
+    - "Judicial rulings on online platform protections"
+    - "Abusive material on social media"
+
+  Source:
+    Canonical_ID: "0bc2106fbad56614"
+    Transcribed: "2026-09-07T18:59:08.255692-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 193
+    Segments: 2
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T17:51:12.867118-07:00"
+    Transcription_Finished: "2026-09-07T18:59:08.255692-07:00"
+    Recorded: "2026-03-31"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-4hGiG1cRAs.ctm"
+    Fountain: "-4hGiG1cRAs.fountain"
+    Diarization_RTTM: "-4hGiG1cRAs.rttm"
+    As_Broadcast_Script: "-4hGiG1cRAs.script.txt"
+    Segments_JSON: "-4hGiG1cRAs.segments.json"
+    Segments_JSONL: "-4hGiG1cRAs.segments.jsonl"
+    Subtitles_SRT: "-4hGiG1cRAs.srt"
+    Plain_Text: "-4hGiG1cRAs.transcription"
+    Subtitles_VTT: "-4hGiG1cRAs.vtt"
+    Transcript_SHA256: "8b70d1a708fa824bfc56815eb225a9138bf7e9ec99fe880c87b9722c40b1ee03"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "josh_hawley_mo_sen"
+    video_uid: "josh_hawley_mo_sen::-4hGiG1cRAs"
+    video_key: "-4hGiG1cRAs"
+    youtube_id: "-4hGiG1cRAs"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-4hGiG1cRAs"
+    source_ref: "-4hGiG1cRAs"

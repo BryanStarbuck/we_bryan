@@ -1,0 +1,142 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Hawley Reacts to the Attack of Ex-DOGE Staffer | 10.23.25"
+    Description: >-
+      In a committee setting the senator displays a photograph of Edward
+      Coristine, who he says was 19 and a government employee when it was
+      taken in July of that year. He describes Coristine being attacked in
+      Logan Circle in the District of Columbia while out one evening with a
+      female friend, by what he calls a roving band of teenagers, getting
+      his companion into a car and to safety and then turning to confront
+      the group alone, and he points to the injuries visible in the
+      photograph. He then says that when the assailants came before the DC
+      Superior Court, Judge Kendra Briggs gave them no prison time, and
+      quotes her as saying the purpose of sentencing is not punishment but
+      rehabilitation. He notes that Briggs was reported favourably out of
+      his committee over his own no vote, and says she apparently regards
+      letting people who do that to a 19-year-old go without punishment as
+      rehabilitative. The account of the attack, the sentencing and the
+      judge's reasoning is the senator's own as delivered; neither the judge
+      nor the defendants are represented, and the case record is not
+      independently established in the clip.
+    URL: "https://www.youtube.com/watch?v=-_fJswtGFHg"
+    Video_ID: "-_fJswtGFHg"
+    Show: "Senator Josh Hawley"
+    Runtime: "00:01:19"
+    Language: "en"
+
+  Media:
+    File: "-_fJswtGFHg.m4a"
+    SHA256: "7d03b25c9db9a44a831dc14993c91c868fb496cd91fdc5f5257b0678a55aecbe"
+    Bytes: 1286273
+    Duration_Seconds: 79
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-_fJswtGFHg"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-_fJswtGFHg.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/josh_hawley_mo_sen/-_fJswtGFHg/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCMzt8xq6qQ3XQ_DlNfJx0-w"
+    Uploader_ID: "@SenatorJoshHawley"
+    View_Count: 2824
+    Like_Count: 161
+    Comment_Count: 17
+    Availability: "public"
+    Published_At: "2025-12-02T16:29:42+00:00"
+    Captured_At: "2026-09-07T17:51:23-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "62.6%"
+      Turns: 3
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "37.4%"
+      Turns: 2
+
+  Topics:
+    - "Violent crime and juvenile sentencing in Washington DC"
+    - "DC Superior Court judicial nominations"
+    - "Rehabilitation versus punishment in sentencing"
+
+  Source:
+    Canonical_ID: "4f106ed72d5d0068"
+    Transcribed: "2026-09-07T18:59:35.445415-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 214
+    Segments: 8
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T17:51:23.576629-07:00"
+    Transcription_Finished: "2026-09-07T18:59:35.445415-07:00"
+    Recorded: "2025-12-02"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-_fJswtGFHg.ctm"
+    Fountain: "-_fJswtGFHg.fountain"
+    Diarization_RTTM: "-_fJswtGFHg.rttm"
+    As_Broadcast_Script: "-_fJswtGFHg.script.txt"
+    Segments_JSON: "-_fJswtGFHg.segments.json"
+    Segments_JSONL: "-_fJswtGFHg.segments.jsonl"
+    Subtitles_SRT: "-_fJswtGFHg.srt"
+    Plain_Text: "-_fJswtGFHg.transcription"
+    Subtitles_VTT: "-_fJswtGFHg.vtt"
+    Transcript_SHA256: "22eda9177bcacbdc8c92b0e457752839de529575b764e9d26ef368fd7b028ee9"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "josh_hawley_mo_sen"
+    video_uid: "josh_hawley_mo_sen::-_fJswtGFHg"
+    video_key: "-_fJswtGFHg"
+    youtube_id: "-_fJswtGFHg"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-_fJswtGFHg"
+    source_ref: "-_fJswtGFHg"

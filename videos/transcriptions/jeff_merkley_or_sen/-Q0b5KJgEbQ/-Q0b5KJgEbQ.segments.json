@@ -1,0 +1,4733 @@
+{
+  "schema_version": 2,
+  "canonical_id": "cb41c214de2c6fb6",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 261.6,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T02:01:34.130Z",
+  "text_sha256": "0dae95bf8ac21e3c83d9f09d536f60e7d5e82b9f704f1ef1866d556eda89e53f",
+  "segments_sha256": "327df241d3de1c0c961335f6bcee1aa44616eb339d33c0cf4d0bbd4250c27d81",
+  "words_sha256": "fdbdffd9f7e54fb557e96bcb33c81ce35a23d699b0dcf773c3328246bdd0b271",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 10,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 13,
+    "clusters": 4,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.86,
+        "confidence": "low",
+        "clean_s": 205.6
+      },
+      "clean_s": 205.6,
+      "speaking_s": 205.6,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_04",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.4
+      },
+      "clean_s": 4.4,
+      "speaking_s": 4.4,
+      "first_s": 142.96
+    },
+    {
+      "id": "SPEAKER_05",
+      "n": 3,
+      "label": "Speaker 3 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.84,
+        "confidence": "low",
+        "clean_s": 43.8
+      },
+      "clean_s": 43.8,
+      "speaking_s": 43.8,
+      "first_s": 147.37
+    },
+    {
+      "id": "SPEAKER_08",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.9
+      },
+      "clean_s": 0.9,
+      "speaking_s": 0.9,
+      "first_s": 242.27
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 4.22,
+      "end_s": 4.56,
+      "segment_i": 1,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 98.17,
+      "end_s": 98.41,
+      "segment_i": 6,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 98.59,
+      "end_s": 99.18,
+      "segment_i": 7,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 151.6,
+      "end_s": 151.6,
+      "segment_i": 12,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 177.82,
+      "end_s": 177.82,
+      "segment_i": 14,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 177.91,
+      "end_s": 178.15,
+      "segment_i": 15,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 207.82,
+      "end_s": 207.82,
+      "segment_i": 18,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 234.88,
+      "end_s": 234.88,
+      "segment_i": 20,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.2,
+      "end_s": 3.96,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you very much, Mr. Chairman, and Secretary Connor and General Spellman, it's great to see you both.",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 0.2,
+          "e": 0.21,
+          "c": 0.83935
+        },
+        {
+          "w": "you",
+          "s": 0.21,
+          "e": 0.34,
+          "c": 0.997676
+        },
+        {
+          "w": "very",
+          "s": 0.34,
+          "e": 0.51,
+          "c": 0.961785
+        },
+        {
+          "w": "much,",
+          "s": 0.51,
+          "e": 0.73,
+          "c": 0.548278
+        },
+        {
+          "w": "Mr.",
+          "s": 0.8,
+          "e": 0.97,
+          "c": 0.974883
+        },
+        {
+          "w": "Chairman,",
+          "s": 0.97,
+          "e": 1.43,
+          "c": 0.322277
+        },
+        {
+          "w": "and",
+          "s": 1.43,
+          "e": 1.52,
+          "c": 0.827246
+        },
+        {
+          "w": "Secretary",
+          "s": 1.57,
+          "e": 1.96,
+          "c": 0.886486
+        },
+        {
+          "w": "Connor",
+          "s": 2.05,
+          "e": 2.24,
+          "c": 0.534551
+        },
+        {
+          "w": "and",
+          "s": 2.24,
+          "e": 2.35,
+          "c": 0.948923
+        },
+        {
+          "w": "General",
+          "s": 2.36,
+          "e": 2.6,
+          "c": 0.98011
+        },
+        {
+          "w": "Spellman,",
+          "s": 2.74,
+          "e": 3.01,
+          "c": 0.619437
+        },
+        {
+          "w": "it's",
+          "s": 3.01,
+          "e": 3.1,
+          "c": 0.773052
+        },
+        {
+          "w": "great",
+          "s": 3.16,
+          "e": 3.27,
+          "c": 0.963353
+        },
+        {
+          "w": "to",
+          "s": 3.33,
+          "e": 3.4,
+          "c": 0.996136
+        },
+        {
+          "w": "see",
+          "s": 3.4,
+          "e": 3.54,
+          "c": 0.990847
+        },
+        {
+          "w": "you",
+          "s": 3.54,
+          "e": 3.65,
+          "c": 0.915629
+        },
+        {
+          "w": "both.",
+          "s": 3.73,
+          "e": 3.96,
+          "c": 0.893075
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 4.22,
+      "end_s": 4.56,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Before I ask",
+      "words": [
+        {
+          "w": "Before",
+          "s": 4.22,
+          "e": 4.35,
+          "c": 0.9976
+        },
+        {
+          "w": "I",
+          "s": 4.36,
+          "e": 4.4,
+          "c": 0.981205
+        },
+        {
+          "w": "ask",
+          "s": 4.4,
+          "e": 4.56,
+          "c": 0.994911
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 4.56,
+      "end_s": 29.58,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "questions, I want to just commend the work of the Corps in the Portland District Office in advancing the Portland Metro levy system. It's a 27-mile levy system along the Columbia River. General Spellman, you were the commanding general at Northwestern Division when the project got underway, and it would be great to see the project come full circle by getting into the construction phase, and I look forward to working with you to see that happen.",
+      "words": [
+        {
+          "w": "questions,",
+          "s": 4.56,
+          "e": 5.17,
+          "c": 0.99943
+        },
+        {
+          "w": "I",
+          "s": 5.17,
+          "e": 5.22,
+          "c": 0.999969
+        },
+        {
+          "w": "want",
+          "s": 5.22,
+          "e": 5.44,
+          "c": 0.997413
+        },
+        {
+          "w": "to",
+          "s": 5.44,
+          "e": 5.54,
+          "c": 0.999969
+        },
+        {
+          "w": "just",
+          "s": 5.54,
+          "e": 5.76,
+          "c": 0.999197
+        },
+        {
+          "w": "commend",
+          "s": 5.84,
+          "e": 6.16,
+          "c": 0.998321
+        },
+        {
+          "w": "the",
+          "s": 6.16,
+          "e": 6.32,
+          "c": 0.999895
+        },
+        {
+          "w": "work",
+          "s": 6.32,
+          "e": 6.54,
+          "c": 0.999205
+        },
+        {
+          "w": "of",
+          "s": 6.54,
+          "e": 6.64,
+          "c": 0.999937
+        },
+        {
+          "w": "the",
+          "s": 6.76,
+          "e": 6.81,
+          "c": 0.999989
+        },
+        {
+          "w": "Corps",
+          "s": 6.81,
+          "e": 7.04,
+          "c": 0.988259
+        },
+        {
+          "w": "in",
+          "s": 7.1,
+          "e": 7.18,
+          "c": 0.996746
+        },
+        {
+          "w": "the",
+          "s": 7.2,
+          "e": 7.35,
+          "c": 0.999975
+        },
+        {
+          "w": "Portland",
+          "s": 7.4,
+          "e": 7.8,
+          "c": 0.998763
+        },
+        {
+          "w": "District",
+          "s": 7.8,
+          "e": 7.98,
+          "c": 0.936855
+        },
+        {
+          "w": "Office",
+          "s": 8.67,
+          "e": 8.74,
+          "c": 0.912542
+        },
+        {
+          "w": "in",
+          "s": 8.85,
+          "e": 8.85,
+          "c": 0.998618
+        },
+        {
+          "w": "advancing",
+          "s": 8.95,
+          "e": 9.35,
+          "c": 0.999834
+        },
+        {
+          "w": "the",
+          "s": 9.35,
+          "e": 9.46,
+          "c": 0.999996
+        },
+        {
+          "w": "Portland",
+          "s": 9.54,
+          "e": 9.95,
+          "c": 0.999901
+        },
+        {
+          "w": "Metro",
+          "s": 9.95,
+          "e": 10.23,
+          "c": 0.924948
+        },
+        {
+          "w": "levy",
+          "s": 10.23,
+          "e": 10.42,
+          "c": 0.289578
+        },
+        {
+          "w": "system.",
+          "s": 10.46,
+          "e": 10.98,
+          "c": 0.988689
+        },
+        {
+          "w": "It's",
+          "s": 11.13,
+          "e": 11.26,
+          "c": 0.999891
+        },
+        {
+          "w": "a",
+          "s": 11.29,
+          "e": 11.35,
+          "c": 0.999998
+        },
+        {
+          "w": "27-mile",
+          "s": 11.35,
+          "e": 12.18,
+          "c": 0.989697
+        },
+        {
+          "w": "levy",
+          "s": 12.18,
+          "e": 12.48,
+          "c": 0.980823
+        },
+        {
+          "w": "system",
+          "s": 12.48,
+          "e": 12.93,
+          "c": 0.999985
+        },
+        {
+          "w": "along",
+          "s": 13.03,
+          "e": 13.32,
+          "c": 0.999176
+        },
+        {
+          "w": "the",
+          "s": 13.32,
+          "e": 13.55,
+          "c": 0.999996
+        },
+        {
+          "w": "Columbia",
+          "s": 13.55,
+          "e": 14.08,
+          "c": 0.997956
+        },
+        {
+          "w": "River.",
+          "s": 14.16,
+          "e": 14.82,
+          "c": 0.999588
+        },
+        {
+          "w": "General",
+          "s": 15.03,
+          "e": 15.31,
+          "c": 0.999777
+        },
+        {
+          "w": "Spellman,",
+          "s": 15.31,
+          "e": 16.01,
+          "c": 0.999428
+        },
+        {
+          "w": "you",
+          "s": 16.01,
+          "e": 16.22,
+          "c": 0.999615
+        },
+        {
+          "w": "were",
+          "s": 16.22,
+          "e": 16.49,
+          "c": 0.999979
+        },
+        {
+          "w": "the",
+          "s": 16.54,
+          "e": 16.71,
+          "c": 0.999973
+        },
+        {
+          "w": "commanding",
+          "s": 16.71,
+          "e": 17.41,
+          "c": 0.663317
+        },
+        {
+          "w": "general",
+          "s": 17.41,
+          "e": 17.84,
+          "c": 0.998748
+        },
+        {
+          "w": "at",
+          "s": 17.89,
+          "e": 18.04,
+          "c": 0.54766
+        },
+        {
+          "w": "Northwestern",
+          "s": 18.04,
+          "e": 18.78,
+          "c": 0.979047
+        },
+        {
+          "w": "Division",
+          "s": 19.47,
+          "e": 19.52,
+          "c": 0.998571
+        },
+        {
+          "w": "when",
+          "s": 19.52,
+          "e": 19.66,
+          "c": 0.976345
+        },
+        {
+          "w": "the",
+          "s": 19.81,
+          "e": 19.81,
+          "c": 0.999889
+        },
+        {
+          "w": "project",
+          "s": 19.82,
+          "e": 20.11,
+          "c": 0.999357
+        },
+        {
+          "w": "got",
+          "s": 20.11,
+          "e": 20.23,
+          "c": 0.998378
+        },
+        {
+          "w": "underway,",
+          "s": 20.23,
+          "e": 20.68,
+          "c": 0.938874
+        },
+        {
+          "w": "and",
+          "s": 20.88,
+          "e": 20.89,
+          "c": 0.999971
+        },
+        {
+          "w": "it",
+          "s": 20.89,
+          "e": 21.03,
+          "c": 0.999968
+        },
+        {
+          "w": "would",
+          "s": 21.03,
+          "e": 21.37,
+          "c": 0.997147
+        },
+        {
+          "w": "be",
+          "s": 21.37,
+          "e": 21.49,
+          "c": 0.999954
+        },
+        {
+          "w": "great",
+          "s": 21.55,
+          "e": 21.87,
+          "c": 0.999981
+        },
+        {
+          "w": "to",
+          "s": 21.87,
+          "e": 22.01,
+          "c": 1
+        },
+        {
+          "w": "see",
+          "s": 22.01,
+          "e": 22.2,
+          "c": 0.999966
+        },
+        {
+          "w": "the",
+          "s": 22.24,
+          "e": 22.42,
+          "c": 0.999958
+        },
+        {
+          "w": "project",
+          "s": 22.5,
+          "e": 22.93,
+          "c": 0.999651
+        },
+        {
+          "w": "come",
+          "s": 22.93,
+          "e": 23.21,
+          "c": 0.999731
+        },
+        {
+          "w": "full",
+          "s": 23.21,
+          "e": 23.49,
+          "c": 0.999949
+        },
+        {
+          "w": "circle",
+          "s": 23.49,
+          "e": 23.91,
+          "c": 0.995283
+        },
+        {
+          "w": "by",
+          "s": 23.91,
+          "e": 24.05,
+          "c": 0.998881
+        },
+        {
+          "w": "getting",
+          "s": 24.06,
+          "e": 24.55,
+          "c": 0.99988
+        },
+        {
+          "w": "into",
+          "s": 24.55,
+          "e": 24.64,
+          "c": 0.999767
+        },
+        {
+          "w": "the",
+          "s": 24.81,
+          "e": 25.04,
+          "c": 0.999443
+        },
+        {
+          "w": "construction",
+          "s": 25.33,
+          "e": 25.88,
+          "c": 0.999851
+        },
+        {
+          "w": "phase,",
+          "s": 25.9,
+          "e": 26.48,
+          "c": 0.988698
+        },
+        {
+          "w": "and",
+          "s": 26.67,
+          "e": 26.67,
+          "c": 0.976591
+        },
+        {
+          "w": "I",
+          "s": 26.69,
+          "e": 26.73,
+          "c": 0.999969
+        },
+        {
+          "w": "look",
+          "s": 26.73,
+          "e": 26.98,
+          "c": 0.999868
+        },
+        {
+          "w": "forward",
+          "s": 26.98,
+          "e": 27.39,
+          "c": 0.999992
+        },
+        {
+          "w": "to",
+          "s": 27.42,
+          "e": 27.53,
+          "c": 0.999998
+        },
+        {
+          "w": "working",
+          "s": 27.58,
+          "e": 28,
+          "c": 0.999956
+        },
+        {
+          "w": "with",
+          "s": 28,
+          "e": 28.22,
+          "c": 0.999989
+        },
+        {
+          "w": "you",
+          "s": 28.3,
+          "e": 28.43,
+          "c": 0.999996
+        },
+        {
+          "w": "to",
+          "s": 28.53,
+          "e": 28.56,
+          "c": 0.999985
+        },
+        {
+          "w": "see",
+          "s": 28.56,
+          "e": 28.75,
+          "c": 0.999975
+        },
+        {
+          "w": "that",
+          "s": 28.75,
+          "e": 29,
+          "c": 0.999981
+        },
+        {
+          "w": "happen.",
+          "s": 29,
+          "e": 29.58,
+          "c": 0.999706
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 30.24,
+      "end_s": 53.1,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you. The Coal Rivers Hatchery, named for an individual, not for a river, Coal Rivers Hatchery is on the Rogue River and it plays an absolutely critical role. Colonel Michael Helton, now retired, went down with me and when we came to the recognition of how many different native fish populations and different rivers that it provided,",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 30.24,
+          "e": 30.6,
+          "c": 0.638094
+        },
+        {
+          "w": "you.",
+          "s": 30.72,
+          "e": 31.25,
+          "c": 0.916437
+        },
+        {
+          "w": "The",
+          "s": 31.55,
+          "e": 31.6,
+          "c": 0.641648
+        },
+        {
+          "w": "Coal",
+          "s": 31.6,
+          "e": 32,
+          "c": 0.212132
+        },
+        {
+          "w": "Rivers",
+          "s": 32,
+          "e": 32.61,
+          "c": 0.878446
+        },
+        {
+          "w": "Hatchery,",
+          "s": 32.61,
+          "e": 33.53,
+          "c": 0.64973
+        },
+        {
+          "w": "named",
+          "s": 33.53,
+          "e": 33.7,
+          "c": 0.953698
+        },
+        {
+          "w": "for",
+          "s": 33.84,
+          "e": 33.91,
+          "c": 0.993688
+        },
+        {
+          "w": "an",
+          "s": 33.91,
+          "e": 34,
+          "c": 0.979595
+        },
+        {
+          "w": "individual,",
+          "s": 34,
+          "e": 34.54,
+          "c": 0.667501
+        },
+        {
+          "w": "not",
+          "s": 34.54,
+          "e": 34.91,
+          "c": 0.97555
+        },
+        {
+          "w": "for",
+          "s": 34.91,
+          "e": 35.28,
+          "c": 0.991361
+        },
+        {
+          "w": "a",
+          "s": 35.28,
+          "e": 35.4,
+          "c": 0.990427
+        },
+        {
+          "w": "river,",
+          "s": 35.4,
+          "e": 36.08,
+          "c": 0.605019
+        },
+        {
+          "w": "Coal",
+          "s": 36.21,
+          "e": 36.31,
+          "c": 0.211318
+        },
+        {
+          "w": "Rivers",
+          "s": 36.31,
+          "e": 36.59,
+          "c": 0.975487
+        },
+        {
+          "w": "Hatchery",
+          "s": 36.62,
+          "e": 37,
+          "c": 0.961684
+        },
+        {
+          "w": "is",
+          "s": 37,
+          "e": 37.13,
+          "c": 0.883961
+        },
+        {
+          "w": "on",
+          "s": 37.13,
+          "e": 37.25,
+          "c": 0.987767
+        },
+        {
+          "w": "the",
+          "s": 37.26,
+          "e": 37.46,
+          "c": 0.979615
+        },
+        {
+          "w": "Rogue",
+          "s": 37.46,
+          "e": 37.65,
+          "c": 0.903708
+        },
+        {
+          "w": "River",
+          "s": 37.73,
+          "e": 38.15,
+          "c": 0.946397
+        },
+        {
+          "w": "and",
+          "s": 38.26,
+          "e": 38.4,
+          "c": 0.175668
+        },
+        {
+          "w": "it",
+          "s": 38.4,
+          "e": 38.44,
+          "c": 0.925744
+        },
+        {
+          "w": "plays",
+          "s": 38.63,
+          "e": 38.76,
+          "c": 0.985005
+        },
+        {
+          "w": "an",
+          "s": 38.76,
+          "e": 38.93,
+          "c": 0.973043
+        },
+        {
+          "w": "absolutely",
+          "s": 39,
+          "e": 39.6,
+          "c": 0.965257
+        },
+        {
+          "w": "critical",
+          "s": 39.6,
+          "e": 40.53,
+          "c": 0.962466
+        },
+        {
+          "w": "role.",
+          "s": 40.67,
+          "e": 41.62,
+          "c": 0.890574
+        },
+        {
+          "w": "Colonel",
+          "s": 41.86,
+          "e": 42.05,
+          "c": 0.949286
+        },
+        {
+          "w": "Michael",
+          "s": 42.09,
+          "e": 42.56,
+          "c": 0.985993
+        },
+        {
+          "w": "Helton,",
+          "s": 42.56,
+          "e": 43.09,
+          "c": 0.674957
+        },
+        {
+          "w": "now",
+          "s": 43.17,
+          "e": 43.29,
+          "c": 0.887204
+        },
+        {
+          "w": "retired,",
+          "s": 43.35,
+          "e": 43.87,
+          "c": 0.937219
+        },
+        {
+          "w": "went",
+          "s": 43.89,
+          "e": 44.14,
+          "c": 0.989651
+        },
+        {
+          "w": "down",
+          "s": 44.17,
+          "e": 44.35,
+          "c": 0.998601
+        },
+        {
+          "w": "with",
+          "s": 44.41,
+          "e": 44.63,
+          "c": 0.998748
+        },
+        {
+          "w": "me",
+          "s": 44.7,
+          "e": 44.88,
+          "c": 0.999451
+        },
+        {
+          "w": "and",
+          "s": 44.88,
+          "e": 45.21,
+          "c": 0.688416
+        },
+        {
+          "w": "when",
+          "s": 45.21,
+          "e": 45.65,
+          "c": 0.973864
+        },
+        {
+          "w": "we",
+          "s": 45.65,
+          "e": 45.87,
+          "c": 0.994621
+        },
+        {
+          "w": "came",
+          "s": 45.87,
+          "e": 46.31,
+          "c": 0.998485
+        },
+        {
+          "w": "to",
+          "s": 46.31,
+          "e": 46.53,
+          "c": 0.997137
+        },
+        {
+          "w": "the",
+          "s": 46.53,
+          "e": 46.88,
+          "c": 0.989059
+        },
+        {
+          "w": "recognition",
+          "s": 46.88,
+          "e": 47.98,
+          "c": 0.983781
+        },
+        {
+          "w": "of",
+          "s": 47.98,
+          "e": 48.4,
+          "c": 0.94675
+        },
+        {
+          "w": "how",
+          "s": 48.4,
+          "e": 48.6,
+          "c": 0.986239
+        },
+        {
+          "w": "many",
+          "s": 48.6,
+          "e": 48.87,
+          "c": 0.998005
+        },
+        {
+          "w": "different",
+          "s": 48.87,
+          "e": 49.31,
+          "c": 0.934941
+        },
+        {
+          "w": "native",
+          "s": 49.64,
+          "e": 49.65,
+          "c": 0.799602
+        },
+        {
+          "w": "fish",
+          "s": 49.88,
+          "e": 50.06,
+          "c": 0.99289
+        },
+        {
+          "w": "populations",
+          "s": 50.16,
+          "e": 50.88,
+          "c": 0.990435
+        },
+        {
+          "w": "and",
+          "s": 50.88,
+          "e": 51.08,
+          "c": 0.574722
+        },
+        {
+          "w": "different",
+          "s": 51.09,
+          "e": 51.7,
+          "c": 0.98963
+        },
+        {
+          "w": "rivers",
+          "s": 51.7,
+          "e": 52.09,
+          "c": 0.992877
+        },
+        {
+          "w": "that",
+          "s": 52.09,
+          "e": 52.37,
+          "c": 0.900296
+        },
+        {
+          "w": "it",
+          "s": 52.37,
+          "e": 52.5,
+          "c": 0.96602
+        },
+        {
+          "w": "provided,",
+          "s": 52.5,
+          "e": 53.1,
+          "c": 0.458136
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 53.17,
+      "end_s": 79.75,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and also a rainbow trout for various lakes and the the hatcheries in in great trouble because of the clean lack of clean water and disease that could shut down the hatchery and just kind of 30 years of wear and wear and tear so restoring that hatchery to its full functionality is incredibly important and the Army Corps",
+      "words": [
+        {
+          "w": "and",
+          "s": 53.169,
+          "e": 53.399,
+          "c": 0.853917
+        },
+        {
+          "w": "also",
+          "s": 53.399,
+          "e": 53.839,
+          "c": 0.991892
+        },
+        {
+          "w": "a",
+          "s": 53.839,
+          "e": 53.949,
+          "c": 0.24791
+        },
+        {
+          "w": "rainbow",
+          "s": 53.949,
+          "e": 54.709,
+          "c": 0.964733
+        },
+        {
+          "w": "trout",
+          "s": 54.709,
+          "e": 55.209,
+          "c": 0.984259
+        },
+        {
+          "w": "for",
+          "s": 55.369,
+          "e": 55.509,
+          "c": 0.977219
+        },
+        {
+          "w": "various",
+          "s": 55.539,
+          "e": 56.109,
+          "c": 0.991933
+        },
+        {
+          "w": "lakes",
+          "s": 56.149,
+          "e": 56.549,
+          "c": 0.983639
+        },
+        {
+          "w": "and",
+          "s": 56.709,
+          "e": 57.109,
+          "c": 0.258801
+        },
+        {
+          "w": "the",
+          "s": 57.109,
+          "e": 57.629,
+          "c": 0.965723
+        },
+        {
+          "w": "the",
+          "s": 57.629,
+          "e": 57.709,
+          "c": 0.53109
+        },
+        {
+          "w": "hatcheries",
+          "s": 57.709,
+          "e": 58.769,
+          "c": 0.505628
+        },
+        {
+          "w": "in",
+          "s": 58.879,
+          "e": 58.949,
+          "c": 0.964396
+        },
+        {
+          "w": "in",
+          "s": 58.949,
+          "e": 59.069,
+          "c": 0.811612
+        },
+        {
+          "w": "great",
+          "s": 59.069,
+          "e": 59.289,
+          "c": 0.984583
+        },
+        {
+          "w": "trouble",
+          "s": 59.449,
+          "e": 61.009,
+          "c": 0.998824
+        },
+        {
+          "w": "because",
+          "s": 61.009,
+          "e": 61.819,
+          "c": 0.425184
+        },
+        {
+          "w": "of",
+          "s": 61.829,
+          "e": 62.059,
+          "c": 0.993017
+        },
+        {
+          "w": "the",
+          "s": 62.059,
+          "e": 62.389,
+          "c": 0.996673
+        },
+        {
+          "w": "clean",
+          "s": 62.439,
+          "e": 62.549,
+          "c": 0.898964
+        },
+        {
+          "w": "lack",
+          "s": 62.629,
+          "e": 62.849,
+          "c": 0.729814
+        },
+        {
+          "w": "of",
+          "s": 62.849,
+          "e": 62.859,
+          "c": 0.992523
+        },
+        {
+          "w": "clean",
+          "s": 62.989,
+          "e": 63.189,
+          "c": 0.990543
+        },
+        {
+          "w": "water",
+          "s": 63.189,
+          "e": 63.769,
+          "c": 0.910111
+        },
+        {
+          "w": "and",
+          "s": 63.789,
+          "e": 64.309,
+          "c": 0.7448
+        },
+        {
+          "w": "disease",
+          "s": 64.309,
+          "e": 64.829,
+          "c": 0.888022
+        },
+        {
+          "w": "that",
+          "s": 64.829,
+          "e": 64.909,
+          "c": 0.587272
+        },
+        {
+          "w": "could",
+          "s": 64.909,
+          "e": 65.229,
+          "c": 0.934409
+        },
+        {
+          "w": "shut",
+          "s": 65.229,
+          "e": 65.529,
+          "c": 0.938232
+        },
+        {
+          "w": "down",
+          "s": 65.629,
+          "e": 65.879,
+          "c": 0.999474
+        },
+        {
+          "w": "the",
+          "s": 65.879,
+          "e": 66.139,
+          "c": 0.999407
+        },
+        {
+          "w": "hatchery",
+          "s": 66.139,
+          "e": 66.839,
+          "c": 0.968686
+        },
+        {
+          "w": "and",
+          "s": 66.839,
+          "e": 67.099,
+          "c": 0.933966
+        },
+        {
+          "w": "just",
+          "s": 67.099,
+          "e": 67.429,
+          "c": 0.996369
+        },
+        {
+          "w": "kind",
+          "s": 67.449,
+          "e": 67.679,
+          "c": 0.996208
+        },
+        {
+          "w": "of",
+          "s": 67.829,
+          "e": 67.959,
+          "c": 0.99951
+        },
+        {
+          "w": "30",
+          "s": 67.999,
+          "e": 68.499,
+          "c": 0.797225
+        },
+        {
+          "w": "years",
+          "s": 68.499,
+          "e": 68.919,
+          "c": 0.998268
+        },
+        {
+          "w": "of",
+          "s": 68.929,
+          "e": 69.209,
+          "c": 0.995695
+        },
+        {
+          "w": "wear",
+          "s": 69.209,
+          "e": 69.619,
+          "c": 0.713279
+        },
+        {
+          "w": "and",
+          "s": 69.619,
+          "e": 69.929,
+          "c": 0.989444
+        },
+        {
+          "w": "wear",
+          "s": 69.929,
+          "e": 70.339,
+          "c": 0.743613
+        },
+        {
+          "w": "and",
+          "s": 70.339,
+          "e": 70.649,
+          "c": 0.993464
+        },
+        {
+          "w": "tear",
+          "s": 70.649,
+          "e": 71.069,
+          "c": 0.99681
+        },
+        {
+          "w": "so",
+          "s": 71.069,
+          "e": 71.389,
+          "c": 0.560646
+        },
+        {
+          "w": "restoring",
+          "s": 71.489,
+          "e": 72.099,
+          "c": 0.996533
+        },
+        {
+          "w": "that",
+          "s": 72.099,
+          "e": 72.409,
+          "c": 0.999275
+        },
+        {
+          "w": "hatchery",
+          "s": 72.409,
+          "e": 73.029,
+          "c": 0.960412
+        },
+        {
+          "w": "to",
+          "s": 73.029,
+          "e": 73.139,
+          "c": 0.998024
+        },
+        {
+          "w": "its",
+          "s": 73.219,
+          "e": 73.409,
+          "c": 0.993204
+        },
+        {
+          "w": "full",
+          "s": 73.409,
+          "e": 73.719,
+          "c": 0.998951
+        },
+        {
+          "w": "functionality",
+          "s": 73.719,
+          "e": 74.569,
+          "c": 0.993548
+        },
+        {
+          "w": "is",
+          "s": 74.759,
+          "e": 75.089,
+          "c": 0.949791
+        },
+        {
+          "w": "incredibly",
+          "s": 75.089,
+          "e": 76.049,
+          "c": 0.985006
+        },
+        {
+          "w": "important",
+          "s": 76.049,
+          "e": 76.929,
+          "c": 0.951518
+        },
+        {
+          "w": "and",
+          "s": 76.929,
+          "e": 77.249,
+          "c": 0.555855
+        },
+        {
+          "w": "the",
+          "s": 77.349,
+          "e": 77.869,
+          "c": 0.958484
+        },
+        {
+          "w": "Army",
+          "s": 77.869,
+          "e": 78.699,
+          "c": 0.644802
+        },
+        {
+          "w": "Corps",
+          "s": 78.699,
+          "e": 79.749,
+          "c": 0.925988
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 79.97,
+      "end_s": 97.94,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to do so needs to identify significant capability for this project. Do you commit to working with the Portland District and my staff and with me in identifying as much capability as possible for restoring the Cole River Satchery? Yes, sir. General, thank you very",
+      "words": [
+        {
+          "w": "to",
+          "s": 79.972,
+          "e": 80.212,
+          "c": 0.726907
+        },
+        {
+          "w": "do",
+          "s": 80.422,
+          "e": 80.712,
+          "c": 0.998999
+        },
+        {
+          "w": "so",
+          "s": 80.712,
+          "e": 81.002,
+          "c": 0.99882
+        },
+        {
+          "w": "needs",
+          "s": 81.232,
+          "e": 81.562,
+          "c": 0.546353
+        },
+        {
+          "w": "to",
+          "s": 81.712,
+          "e": 81.882,
+          "c": 0.995636
+        },
+        {
+          "w": "identify",
+          "s": 81.882,
+          "e": 82.622,
+          "c": 0.992069
+        },
+        {
+          "w": "significant",
+          "s": 82.652,
+          "e": 83.292,
+          "c": 0.89031
+        },
+        {
+          "w": "capability",
+          "s": 83.482,
+          "e": 84.302,
+          "c": 0.982877
+        },
+        {
+          "w": "for",
+          "s": 84.462,
+          "e": 84.632,
+          "c": 0.63013
+        },
+        {
+          "w": "this",
+          "s": 84.632,
+          "e": 84.962,
+          "c": 0.993568
+        },
+        {
+          "w": "project.",
+          "s": 84.962,
+          "e": 85.612,
+          "c": 0.950274
+        },
+        {
+          "w": "Do",
+          "s": 85.612,
+          "e": 85.742,
+          "c": 0.996588
+        },
+        {
+          "w": "you",
+          "s": 85.872,
+          "e": 85.942,
+          "c": 0.999622
+        },
+        {
+          "w": "commit",
+          "s": 85.942,
+          "e": 86.342,
+          "c": 0.99883
+        },
+        {
+          "w": "to",
+          "s": 86.342,
+          "e": 86.472,
+          "c": 0.998456
+        },
+        {
+          "w": "working",
+          "s": 86.472,
+          "e": 86.882,
+          "c": 0.997969
+        },
+        {
+          "w": "with",
+          "s": 87.132,
+          "e": 87.252,
+          "c": 0.993028
+        },
+        {
+          "w": "the",
+          "s": 87.252,
+          "e": 87.372,
+          "c": 0.983667
+        },
+        {
+          "w": "Portland",
+          "s": 87.612,
+          "e": 87.862,
+          "c": 0.981919
+        },
+        {
+          "w": "District",
+          "s": 87.862,
+          "e": 88.272,
+          "c": 0.494077
+        },
+        {
+          "w": "and",
+          "s": 88.382,
+          "e": 88.492,
+          "c": 0.857623
+        },
+        {
+          "w": "my",
+          "s": 88.492,
+          "e": 88.752,
+          "c": 0.9826
+        },
+        {
+          "w": "staff",
+          "s": 88.752,
+          "e": 89.402,
+          "c": 0.996744
+        },
+        {
+          "w": "and",
+          "s": 89.432,
+          "e": 89.642,
+          "c": 0.40819
+        },
+        {
+          "w": "with",
+          "s": 89.642,
+          "e": 89.952,
+          "c": 0.934158
+        },
+        {
+          "w": "me",
+          "s": 89.952,
+          "e": 90.542,
+          "c": 0.97534
+        },
+        {
+          "w": "in",
+          "s": 90.552,
+          "e": 90.752,
+          "c": 0.463679
+        },
+        {
+          "w": "identifying",
+          "s": 90.762,
+          "e": 91.472,
+          "c": 0.782228
+        },
+        {
+          "w": "as",
+          "s": 91.472,
+          "e": 91.612,
+          "c": 0.69799
+        },
+        {
+          "w": "much",
+          "s": 91.782,
+          "e": 91.992,
+          "c": 0.971213
+        },
+        {
+          "w": "capability",
+          "s": 92.012,
+          "e": 92.642,
+          "c": 0.859892
+        },
+        {
+          "w": "as",
+          "s": 92.752,
+          "e": 92.952,
+          "c": 0.884889
+        },
+        {
+          "w": "possible",
+          "s": 92.952,
+          "e": 93.602,
+          "c": 0.96838
+        },
+        {
+          "w": "for",
+          "s": 93.612,
+          "e": 93.812,
+          "c": 0.6231
+        },
+        {
+          "w": "restoring",
+          "s": 93.812,
+          "e": 94.302,
+          "c": 0.951554
+        },
+        {
+          "w": "the",
+          "s": 94.312,
+          "e": 94.522,
+          "c": 0.987505
+        },
+        {
+          "w": "Cole",
+          "s": 94.522,
+          "e": 94.802,
+          "c": 0.650448
+        },
+        {
+          "w": "River",
+          "s": 94.802,
+          "e": 95.012,
+          "c": 0.606672
+        },
+        {
+          "w": "Satchery?",
+          "s": 95.142,
+          "e": 95.932,
+          "c": 0.182398
+        },
+        {
+          "w": "Yes,",
+          "s": 95.932,
+          "e": 96.252,
+          "c": 0.597962
+        },
+        {
+          "w": "sir.",
+          "s": 96.252,
+          "e": 96.652,
+          "c": 0.913917
+        },
+        {
+          "w": "General,",
+          "s": 96.912,
+          "e": 97.252,
+          "c": 0.814096
+        },
+        {
+          "w": "thank",
+          "s": 97.362,
+          "e": 97.592,
+          "c": 0.992031
+        },
+        {
+          "w": "you",
+          "s": 97.602,
+          "e": 97.802,
+          "c": 0.999218
+        },
+        {
+          "w": "very",
+          "s": 97.802,
+          "e": 97.942,
+          "c": 0.997016
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 98.17,
+      "end_s": 98.41,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "much.",
+      "words": [
+        {
+          "w": "much.",
+          "s": 98.172,
+          "e": 98.412,
+          "c": 0.991783
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 98.59,
+      "end_s": 99.18,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I want to",
+      "words": [
+        {
+          "w": "I",
+          "s": 98.592,
+          "e": 98.672,
+          "c": 0.870842
+        },
+        {
+          "w": "want",
+          "s": 98.672,
+          "e": 99.022,
+          "c": 0.948791
+        },
+        {
+          "w": "to",
+          "s": 99.022,
+          "e": 99.182,
+          "c": 0.998083
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 99.33,
+      "end_s": 121.63,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "turn to tribal housing on the Columbia River. When the dams were built on the Columbia River, the town for Caucasians that was put inundated was rebuilt, but the villages, the native villages, were never rebuilt. And so we've been working intensely to try to create",
+      "words": [
+        {
+          "w": "turn",
+          "s": 99.332,
+          "e": 99.542,
+          "c": 0.996289
+        },
+        {
+          "w": "to",
+          "s": 99.542,
+          "e": 99.712,
+          "c": 0.996153
+        },
+        {
+          "w": "tribal",
+          "s": 99.712,
+          "e": 100.232,
+          "c": 0.766847
+        },
+        {
+          "w": "housing",
+          "s": 100.232,
+          "e": 100.842,
+          "c": 0.998679
+        },
+        {
+          "w": "on",
+          "s": 100.842,
+          "e": 101.012,
+          "c": 0.987458
+        },
+        {
+          "w": "the",
+          "s": 101.012,
+          "e": 101.272,
+          "c": 0.995955
+        },
+        {
+          "w": "Columbia",
+          "s": 101.272,
+          "e": 101.972,
+          "c": 0.921805
+        },
+        {
+          "w": "River.",
+          "s": 101.972,
+          "e": 102.712,
+          "c": 0.915734
+        },
+        {
+          "w": "When",
+          "s": 102.712,
+          "e": 103.002,
+          "c": 0.997582
+        },
+        {
+          "w": "the",
+          "s": 103.002,
+          "e": 103.222,
+          "c": 0.992862
+        },
+        {
+          "w": "dams",
+          "s": 103.442,
+          "e": 103.512,
+          "c": 0.997236
+        },
+        {
+          "w": "were",
+          "s": 103.512,
+          "e": 103.782,
+          "c": 0.983007
+        },
+        {
+          "w": "built",
+          "s": 103.802,
+          "e": 104.152,
+          "c": 0.984444
+        },
+        {
+          "w": "on",
+          "s": 104.232,
+          "e": 104.302,
+          "c": 0.986856
+        },
+        {
+          "w": "the",
+          "s": 104.302,
+          "e": 104.472,
+          "c": 0.997784
+        },
+        {
+          "w": "Columbia",
+          "s": 104.522,
+          "e": 105.112,
+          "c": 0.985411
+        },
+        {
+          "w": "River,",
+          "s": 105.112,
+          "e": 105.672,
+          "c": 0.920678
+        },
+        {
+          "w": "the",
+          "s": 105.672,
+          "e": 106.222,
+          "c": 0.959188
+        },
+        {
+          "w": "town",
+          "s": 106.222,
+          "e": 106.952,
+          "c": 0.967335
+        },
+        {
+          "w": "for",
+          "s": 106.952,
+          "e": 107.512,
+          "c": 0.966864
+        },
+        {
+          "w": "Caucasians",
+          "s": 107.512,
+          "e": 108.352,
+          "c": 0.920643
+        },
+        {
+          "w": "that",
+          "s": 108.352,
+          "e": 108.802,
+          "c": 0.950759
+        },
+        {
+          "w": "was",
+          "s": 108.802,
+          "e": 109.082,
+          "c": 0.986154
+        },
+        {
+          "w": "put",
+          "s": 109.392,
+          "e": 109.532,
+          "c": 0.852528
+        },
+        {
+          "w": "inundated",
+          "s": 109.532,
+          "e": 110.592,
+          "c": 0.836938
+        },
+        {
+          "w": "was",
+          "s": 110.592,
+          "e": 110.882,
+          "c": 0.998397
+        },
+        {
+          "w": "rebuilt,",
+          "s": 111.332,
+          "e": 111.752,
+          "c": 0.708905
+        },
+        {
+          "w": "but",
+          "s": 111.752,
+          "e": 112.032,
+          "c": 0.996987
+        },
+        {
+          "w": "the",
+          "s": 112.052,
+          "e": 112.332,
+          "c": 0.999001
+        },
+        {
+          "w": "villages,",
+          "s": 112.332,
+          "e": 113.302,
+          "c": 0.886747
+        },
+        {
+          "w": "the",
+          "s": 113.302,
+          "e": 113.592,
+          "c": 0.996219
+        },
+        {
+          "w": "native",
+          "s": 113.592,
+          "e": 114.172,
+          "c": 0.957759
+        },
+        {
+          "w": "villages,",
+          "s": 114.172,
+          "e": 115.132,
+          "c": 0.546025
+        },
+        {
+          "w": "were",
+          "s": 115.142,
+          "e": 115.532,
+          "c": 0.99386
+        },
+        {
+          "w": "never",
+          "s": 115.532,
+          "e": 116.002,
+          "c": 0.997198
+        },
+        {
+          "w": "rebuilt.",
+          "s": 116.012,
+          "e": 116.962,
+          "c": 0.825092
+        },
+        {
+          "w": "And",
+          "s": 117.032,
+          "e": 117.352,
+          "c": 0.96959
+        },
+        {
+          "w": "so",
+          "s": 117.352,
+          "e": 117.562,
+          "c": 0.997396
+        },
+        {
+          "w": "we've",
+          "s": 117.772,
+          "e": 118.082,
+          "c": 0.908503
+        },
+        {
+          "w": "been",
+          "s": 118.092,
+          "e": 118.492,
+          "c": 0.999361
+        },
+        {
+          "w": "working",
+          "s": 118.552,
+          "e": 119.252,
+          "c": 0.999529
+        },
+        {
+          "w": "intensely",
+          "s": 119.252,
+          "e": 120.112,
+          "c": 0.996385
+        },
+        {
+          "w": "to",
+          "s": 120.222,
+          "e": 120.422,
+          "c": 0.997794
+        },
+        {
+          "w": "try",
+          "s": 120.422,
+          "e": 120.652,
+          "c": 0.997232
+        },
+        {
+          "w": "to",
+          "s": 120.732,
+          "e": 120.952,
+          "c": 0.987941
+        },
+        {
+          "w": "create",
+          "s": 121.092,
+          "e": 121.632,
+          "c": 0.993892
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 121.84,
+      "end_s": 142.92,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Well, right that wrong from now three quarters of a century ago, and the Army Corps released last month the implementation plan for the village development plans for the tribes. And what timeline do you expect to reach the",
+      "words": [
+        {
+          "w": "Well,",
+          "s": 121.844,
+          "e": 122.324,
+          "c": 0.320758
+        },
+        {
+          "w": "right",
+          "s": 122.334,
+          "e": 122.944,
+          "c": 0.808217
+        },
+        {
+          "w": "that",
+          "s": 122.944,
+          "e": 123.414,
+          "c": 0.973366
+        },
+        {
+          "w": "wrong",
+          "s": 123.454,
+          "e": 123.844,
+          "c": 0.97907
+        },
+        {
+          "w": "from",
+          "s": 124.074,
+          "e": 124.514,
+          "c": 0.899553
+        },
+        {
+          "w": "now",
+          "s": 124.724,
+          "e": 124.934,
+          "c": 0.95115
+        },
+        {
+          "w": "three",
+          "s": 125.124,
+          "e": 125.544,
+          "c": 0.918912
+        },
+        {
+          "w": "quarters",
+          "s": 125.604,
+          "e": 126.584,
+          "c": 0.511569
+        },
+        {
+          "w": "of",
+          "s": 126.584,
+          "e": 126.824,
+          "c": 0.975498
+        },
+        {
+          "w": "a",
+          "s": 126.824,
+          "e": 126.964,
+          "c": 0.997375
+        },
+        {
+          "w": "century",
+          "s": 126.964,
+          "e": 127.804,
+          "c": 0.997639
+        },
+        {
+          "w": "ago,",
+          "s": 127.874,
+          "e": 128.284,
+          "c": 0.144698
+        },
+        {
+          "w": "and",
+          "s": 128.284,
+          "e": 129.624,
+          "c": 0.83935
+        },
+        {
+          "w": "the",
+          "s": 129.624,
+          "e": 130.764,
+          "c": 0.977143
+        },
+        {
+          "w": "Army",
+          "s": 130.764,
+          "e": 131.564,
+          "c": 0.929018
+        },
+        {
+          "w": "Corps",
+          "s": 131.564,
+          "e": 132.564,
+          "c": 0.951247
+        },
+        {
+          "w": "released",
+          "s": 132.564,
+          "e": 134.664,
+          "c": 0.908314
+        },
+        {
+          "w": "last",
+          "s": 134.924,
+          "e": 134.994,
+          "c": 0.999075
+        },
+        {
+          "w": "month",
+          "s": 134.994,
+          "e": 135.414,
+          "c": 0.998906
+        },
+        {
+          "w": "the",
+          "s": 135.414,
+          "e": 135.664,
+          "c": 0.971903
+        },
+        {
+          "w": "implementation",
+          "s": 135.664,
+          "e": 136.834,
+          "c": 0.954401
+        },
+        {
+          "w": "plan",
+          "s": 136.834,
+          "e": 136.964,
+          "c": 0.996902
+        },
+        {
+          "w": "for",
+          "s": 137.164,
+          "e": 137.414,
+          "c": 0.998626
+        },
+        {
+          "w": "the",
+          "s": 137.414,
+          "e": 137.594,
+          "c": 0.998056
+        },
+        {
+          "w": "village",
+          "s": 137.814,
+          "e": 138.254,
+          "c": 0.857037
+        },
+        {
+          "w": "development",
+          "s": 138.254,
+          "e": 139.114,
+          "c": 0.995841
+        },
+        {
+          "w": "plans",
+          "s": 139.414,
+          "e": 139.564,
+          "c": 0.996556
+        },
+        {
+          "w": "for",
+          "s": 139.604,
+          "e": 139.834,
+          "c": 0.994488
+        },
+        {
+          "w": "the",
+          "s": 139.844,
+          "e": 140.094,
+          "c": 0.998873
+        },
+        {
+          "w": "tribes.",
+          "s": 140.094,
+          "e": 140.884,
+          "c": 0.571082
+        },
+        {
+          "w": "And",
+          "s": 140.944,
+          "e": 141.054,
+          "c": 0.996818
+        },
+        {
+          "w": "what",
+          "s": 141.164,
+          "e": 141.294,
+          "c": 0.998513
+        },
+        {
+          "w": "timeline",
+          "s": 141.294,
+          "e": 141.744,
+          "c": 0.98978
+        },
+        {
+          "w": "do",
+          "s": 141.744,
+          "e": 141.854,
+          "c": 0.995459
+        },
+        {
+          "w": "you",
+          "s": 141.854,
+          "e": 142.024,
+          "c": 0.998788
+        },
+        {
+          "w": "expect",
+          "s": 142.024,
+          "e": 142.354,
+          "c": 0.998822
+        },
+        {
+          "w": "to",
+          "s": 142.354,
+          "e": 142.374,
+          "c": 0.998584
+        },
+        {
+          "w": "reach",
+          "s": 142.514,
+          "e": 142.744,
+          "c": 0.998948
+        },
+        {
+          "w": "the",
+          "s": 142.794,
+          "e": 142.924,
+          "c": 0.996845
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 142.92,
+      "end_s": 147.27,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "implementation phase of the plan and begin construction on housing? Yes, sir. I would",
+      "words": [
+        {
+          "w": "implementation",
+          "s": 142.924,
+          "e": 143.714,
+          "c": 0.998988
+        },
+        {
+          "w": "phase",
+          "s": 143.714,
+          "e": 143.834,
+          "c": 0.997097
+        },
+        {
+          "w": "of",
+          "s": 144.024,
+          "e": 144.104,
+          "c": 0.998176
+        },
+        {
+          "w": "the",
+          "s": 144.104,
+          "e": 144.274,
+          "c": 0.999001
+        },
+        {
+          "w": "plan",
+          "s": 144.444,
+          "e": 144.494,
+          "c": 0.995754
+        },
+        {
+          "w": "and",
+          "s": 144.494,
+          "e": 144.664,
+          "c": 0.95076
+        },
+        {
+          "w": "begin",
+          "s": 144.664,
+          "e": 145.004,
+          "c": 0.989072
+        },
+        {
+          "w": "construction",
+          "s": 145.264,
+          "e": 145.484,
+          "c": 0.998612
+        },
+        {
+          "w": "on",
+          "s": 145.494,
+          "e": 145.574,
+          "c": 0.968219
+        },
+        {
+          "w": "housing?",
+          "s": 145.664,
+          "e": 146.004,
+          "c": 0.920819
+        },
+        {
+          "w": "Yes,",
+          "s": 146.264,
+          "e": 146.454,
+          "c": 0.47239
+        },
+        {
+          "w": "sir.",
+          "s": 146.454,
+          "e": 147.004,
+          "c": 0.744338
+        },
+        {
+          "w": "I",
+          "s": 147.004,
+          "e": 147.044,
+          "c": 0.941936
+        },
+        {
+          "w": "would",
+          "s": 147.264,
+          "e": 147.274,
+          "c": 0.951462
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 147.27,
+      "end_s": 151.6,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "just start off my response by saying we are in a much better place than we were five,",
+      "words": [
+        {
+          "w": "just",
+          "s": 147.274,
+          "e": 147.464,
+          "c": 0.994029
+        },
+        {
+          "w": "start",
+          "s": 147.464,
+          "e": 147.694,
+          "c": 0.997605
+        },
+        {
+          "w": "off",
+          "s": 147.694,
+          "e": 147.834,
+          "c": 0.991792
+        },
+        {
+          "w": "my",
+          "s": 147.834,
+          "e": 147.924,
+          "c": 0.996936
+        },
+        {
+          "w": "response",
+          "s": 147.924,
+          "e": 148.304,
+          "c": 0.999552
+        },
+        {
+          "w": "by",
+          "s": 148.304,
+          "e": 148.394,
+          "c": 0.997582
+        },
+        {
+          "w": "saying",
+          "s": 148.394,
+          "e": 148.674,
+          "c": 0.99946
+        },
+        {
+          "w": "we",
+          "s": 148.674,
+          "e": 148.764,
+          "c": 0.919176
+        },
+        {
+          "w": "are",
+          "s": 148.764,
+          "e": 148.894,
+          "c": 0.982759
+        },
+        {
+          "w": "in",
+          "s": 148.904,
+          "e": 148.994,
+          "c": 0.994683
+        },
+        {
+          "w": "a",
+          "s": 148.994,
+          "e": 149.034,
+          "c": 0.998125
+        },
+        {
+          "w": "much",
+          "s": 149.034,
+          "e": 149.214,
+          "c": 0.999037
+        },
+        {
+          "w": "better",
+          "s": 149.214,
+          "e": 149.374,
+          "c": 0.999096
+        },
+        {
+          "w": "place",
+          "s": 149.494,
+          "e": 149.734,
+          "c": 0.998957
+        },
+        {
+          "w": "than",
+          "s": 149.734,
+          "e": 149.934,
+          "c": 0.993557
+        },
+        {
+          "w": "we",
+          "s": 150.144,
+          "e": 150.284,
+          "c": 0.987048
+        },
+        {
+          "w": "were",
+          "s": 150.544,
+          "e": 150.804,
+          "c": 0.993572
+        },
+        {
+          "w": "five,",
+          "s": 151.064,
+          "e": 151.604,
+          "c": 0.512905
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 151.6,
+      "end_s": 151.61,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "six years.",
+      "words": [
+        {
+          "w": "six",
+          "s": 151.604,
+          "e": 151.604,
+          "c": 0.89418
+        },
+        {
+          "w": "years.",
+          "s": 151.604,
+          "e": 151.604,
+          "c": 0.57691
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 151.6,
+      "end_s": 177.82,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "ago and we stepped off on this effort where we were trying to combine the tribes into one consolidated village. The direction we're going now are separate sites for each of the tribes. We are in the process now of identifying the needs and the potential locations, which bank, what site, so that we can get on with the village development plan. So we're about six months into the real estate",
+      "words": [
+        {
+          "w": "ago",
+          "s": 151.584,
+          "e": 151.724,
+          "c": 0.723289
+        },
+        {
+          "w": "and",
+          "s": 151.724,
+          "e": 151.864,
+          "c": 0.623303
+        },
+        {
+          "w": "we",
+          "s": 151.864,
+          "e": 151.944,
+          "c": 0.998369
+        },
+        {
+          "w": "stepped",
+          "s": 151.944,
+          "e": 152.284,
+          "c": 0.998881
+        },
+        {
+          "w": "off",
+          "s": 152.284,
+          "e": 152.374,
+          "c": 0.997976
+        },
+        {
+          "w": "on",
+          "s": 152.454,
+          "e": 152.514,
+          "c": 0.998542
+        },
+        {
+          "w": "this",
+          "s": 152.514,
+          "e": 152.704,
+          "c": 0.998599
+        },
+        {
+          "w": "effort",
+          "s": 152.704,
+          "e": 153.014,
+          "c": 0.998248
+        },
+        {
+          "w": "where",
+          "s": 153.024,
+          "e": 153.284,
+          "c": 0.645432
+        },
+        {
+          "w": "we",
+          "s": 153.284,
+          "e": 153.384,
+          "c": 0.991344
+        },
+        {
+          "w": "were",
+          "s": 153.384,
+          "e": 153.494,
+          "c": 0.99096
+        },
+        {
+          "w": "trying",
+          "s": 153.594,
+          "e": 153.784,
+          "c": 0.991512
+        },
+        {
+          "w": "to",
+          "s": 153.924,
+          "e": 153.994,
+          "c": 0.992349
+        },
+        {
+          "w": "combine",
+          "s": 153.994,
+          "e": 154.384,
+          "c": 0.99337
+        },
+        {
+          "w": "the",
+          "s": 154.384,
+          "e": 154.584,
+          "c": 0.988693
+        },
+        {
+          "w": "tribes",
+          "s": 154.584,
+          "e": 154.914,
+          "c": 0.829843
+        },
+        {
+          "w": "into",
+          "s": 154.974,
+          "e": 155.054,
+          "c": 0.884445
+        },
+        {
+          "w": "one",
+          "s": 155.114,
+          "e": 155.384,
+          "c": 0.919572
+        },
+        {
+          "w": "consolidated",
+          "s": 155.384,
+          "e": 156.074,
+          "c": 0.998719
+        },
+        {
+          "w": "village.",
+          "s": 156.074,
+          "e": 156.644,
+          "c": 0.811909
+        },
+        {
+          "w": "The",
+          "s": 156.734,
+          "e": 156.984,
+          "c": 0.755332
+        },
+        {
+          "w": "direction",
+          "s": 156.984,
+          "e": 157.944,
+          "c": 0.993737
+        },
+        {
+          "w": "we're",
+          "s": 157.944,
+          "e": 158.374,
+          "c": 0.997535
+        },
+        {
+          "w": "going",
+          "s": 158.504,
+          "e": 159.004,
+          "c": 0.999102
+        },
+        {
+          "w": "now",
+          "s": 159.004,
+          "e": 159.324,
+          "c": 0.999096
+        },
+        {
+          "w": "are",
+          "s": 159.324,
+          "e": 159.644,
+          "c": 0.997407
+        },
+        {
+          "w": "separate",
+          "s": 159.644,
+          "e": 160.484,
+          "c": 0.997963
+        },
+        {
+          "w": "sites",
+          "s": 160.574,
+          "e": 160.934,
+          "c": 0.963784
+        },
+        {
+          "w": "for",
+          "s": 161.054,
+          "e": 161.224,
+          "c": 0.997877
+        },
+        {
+          "w": "each",
+          "s": 161.224,
+          "e": 161.574,
+          "c": 0.999821
+        },
+        {
+          "w": "of",
+          "s": 161.574,
+          "e": 161.744,
+          "c": 0.99822
+        },
+        {
+          "w": "the",
+          "s": 161.744,
+          "e": 162.014,
+          "c": 0.990344
+        },
+        {
+          "w": "tribes.",
+          "s": 162.024,
+          "e": 162.784,
+          "c": 0.98924
+        },
+        {
+          "w": "We",
+          "s": 162.784,
+          "e": 162.954,
+          "c": 0.996052
+        },
+        {
+          "w": "are",
+          "s": 162.954,
+          "e": 163.214,
+          "c": 0.988131
+        },
+        {
+          "w": "in",
+          "s": 163.214,
+          "e": 163.384,
+          "c": 0.993904
+        },
+        {
+          "w": "the",
+          "s": 163.384,
+          "e": 163.644,
+          "c": 0.999291
+        },
+        {
+          "w": "process",
+          "s": 163.644,
+          "e": 164.224,
+          "c": 0.999977
+        },
+        {
+          "w": "now",
+          "s": 164.364,
+          "e": 164.494,
+          "c": 0.999794
+        },
+        {
+          "w": "of",
+          "s": 164.504,
+          "e": 164.674,
+          "c": 0.999998
+        },
+        {
+          "w": "identifying",
+          "s": 164.674,
+          "e": 165.624,
+          "c": 0.99992
+        },
+        {
+          "w": "the",
+          "s": 165.624,
+          "e": 165.874,
+          "c": 0.997925
+        },
+        {
+          "w": "needs",
+          "s": 165.914,
+          "e": 166.314,
+          "c": 0.995871
+        },
+        {
+          "w": "and",
+          "s": 166.314,
+          "e": 166.574,
+          "c": 0.994907
+        },
+        {
+          "w": "the",
+          "s": 166.574,
+          "e": 166.834,
+          "c": 0.999657
+        },
+        {
+          "w": "potential",
+          "s": 166.834,
+          "e": 167.134,
+          "c": 0.999947
+        },
+        {
+          "w": "locations,",
+          "s": 167.694,
+          "e": 168.604,
+          "c": 0.954573
+        },
+        {
+          "w": "which",
+          "s": 168.604,
+          "e": 168.774,
+          "c": 0.977991
+        },
+        {
+          "w": "bank,",
+          "s": 168.944,
+          "e": 169.344,
+          "c": 0.995649
+        },
+        {
+          "w": "what",
+          "s": 169.344,
+          "e": 169.614,
+          "c": 0.998072
+        },
+        {
+          "w": "site,",
+          "s": 169.614,
+          "e": 170.004,
+          "c": 0.958192
+        },
+        {
+          "w": "so",
+          "s": 170.014,
+          "e": 170.144,
+          "c": 0.999992
+        },
+        {
+          "w": "that",
+          "s": 170.144,
+          "e": 170.394,
+          "c": 0.999977
+        },
+        {
+          "w": "we",
+          "s": 170.454,
+          "e": 170.544,
+          "c": 0.999996
+        },
+        {
+          "w": "can",
+          "s": 170.544,
+          "e": 170.744,
+          "c": 0.999994
+        },
+        {
+          "w": "get",
+          "s": 170.744,
+          "e": 170.854,
+          "c": 0.999983
+        },
+        {
+          "w": "on",
+          "s": 170.954,
+          "e": 171.074,
+          "c": 0.999985
+        },
+        {
+          "w": "with",
+          "s": 171.074,
+          "e": 171.344,
+          "c": 0.999971
+        },
+        {
+          "w": "the",
+          "s": 171.344,
+          "e": 171.544,
+          "c": 0.999969
+        },
+        {
+          "w": "village",
+          "s": 171.544,
+          "e": 171.934,
+          "c": 0.978019
+        },
+        {
+          "w": "development",
+          "s": 172.064,
+          "e": 172.754,
+          "c": 0.999689
+        },
+        {
+          "w": "plan.",
+          "s": 172.794,
+          "e": 173.254,
+          "c": 0.977817
+        },
+        {
+          "w": "So",
+          "s": 173.264,
+          "e": 173.324,
+          "c": 0.80375
+        },
+        {
+          "w": "we're",
+          "s": 173.324,
+          "e": 173.474,
+          "c": 0.972952
+        },
+        {
+          "w": "about",
+          "s": 173.474,
+          "e": 173.584,
+          "c": 0.999317
+        },
+        {
+          "w": "six",
+          "s": 173.664,
+          "e": 174.074,
+          "c": 0.99144
+        },
+        {
+          "w": "months",
+          "s": 174.144,
+          "e": 175.094,
+          "c": 0.999954
+        },
+        {
+          "w": "into",
+          "s": 175.094,
+          "e": 175.734,
+          "c": 0.999924
+        },
+        {
+          "w": "the",
+          "s": 175.734,
+          "e": 176.214,
+          "c": 0.999979
+        },
+        {
+          "w": "real",
+          "s": 176.214,
+          "e": 176.854,
+          "c": 0.99686
+        },
+        {
+          "w": "estate",
+          "s": 176.854,
+          "e": 177.824,
+          "c": 0.998715
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 177.82,
+      "end_s": 177.83,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "development.",
+      "words": [
+        {
+          "w": "development.",
+          "s": 177.824,
+          "e": 177.824,
+          "c": 0.107147
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 177.91,
+      "end_s": 178.15,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "Going",
+      "words": [
+        {
+          "w": "Going",
+          "s": 177.905,
+          "e": 178.145,
+          "c": 0.0924333
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 178.22,
+      "end_s": 192.16,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "down what the the options are and then we'll be able to get into more meaningful discussions on the specifics of each one of those each one of those villages so we have the resources we need and We are in a much better place with with the impacted tribes than we've ever been in the past Well,",
+      "words": [
+        {
+          "w": "down",
+          "s": 178.225,
+          "e": 178.405,
+          "c": 0.996883
+        },
+        {
+          "w": "what",
+          "s": 178.415,
+          "e": 178.685,
+          "c": 0.918895
+        },
+        {
+          "w": "the",
+          "s": 178.685,
+          "e": 178.885,
+          "c": 0.997712
+        },
+        {
+          "w": "the",
+          "s": 178.885,
+          "e": 178.985,
+          "c": 0.812814
+        },
+        {
+          "w": "options",
+          "s": 179.185,
+          "e": 179.555,
+          "c": 0.995541
+        },
+        {
+          "w": "are",
+          "s": 179.585,
+          "e": 179.805,
+          "c": 0.997678
+        },
+        {
+          "w": "and",
+          "s": 179.805,
+          "e": 179.935,
+          "c": 0.80025
+        },
+        {
+          "w": "then",
+          "s": 179.935,
+          "e": 180.005,
+          "c": 0.993026
+        },
+        {
+          "w": "we'll",
+          "s": 180.115,
+          "e": 180.335,
+          "c": 0.981729
+        },
+        {
+          "w": "be",
+          "s": 180.335,
+          "e": 180.425,
+          "c": 0.998371
+        },
+        {
+          "w": "able",
+          "s": 180.425,
+          "e": 180.565,
+          "c": 0.999348
+        },
+        {
+          "w": "to",
+          "s": 180.625,
+          "e": 180.695,
+          "c": 0.997919
+        },
+        {
+          "w": "get",
+          "s": 180.695,
+          "e": 180.825,
+          "c": 0.998887
+        },
+        {
+          "w": "into",
+          "s": 180.825,
+          "e": 181.005,
+          "c": 0.994846
+        },
+        {
+          "w": "more",
+          "s": 181.005,
+          "e": 181.245,
+          "c": 0.993483
+        },
+        {
+          "w": "meaningful",
+          "s": 181.245,
+          "e": 181.605,
+          "c": 0.98438
+        },
+        {
+          "w": "discussions",
+          "s": 181.605,
+          "e": 182.085,
+          "c": 0.813963
+        },
+        {
+          "w": "on",
+          "s": 182.085,
+          "e": 182.195,
+          "c": 0.977504
+        },
+        {
+          "w": "the",
+          "s": 182.195,
+          "e": 182.355,
+          "c": 0.997765
+        },
+        {
+          "w": "specifics",
+          "s": 182.355,
+          "e": 182.815,
+          "c": 0.984594
+        },
+        {
+          "w": "of",
+          "s": 182.865,
+          "e": 182.945,
+          "c": 0.987287
+        },
+        {
+          "w": "each",
+          "s": 182.945,
+          "e": 183.125,
+          "c": 0.993536
+        },
+        {
+          "w": "one",
+          "s": 183.125,
+          "e": 183.345,
+          "c": 0.968738
+        },
+        {
+          "w": "of",
+          "s": 183.345,
+          "e": 183.505,
+          "c": 0.977597
+        },
+        {
+          "w": "those",
+          "s": 183.515,
+          "e": 183.665,
+          "c": 0.963538
+        },
+        {
+          "w": "each",
+          "s": 183.665,
+          "e": 183.885,
+          "c": 0.617817
+        },
+        {
+          "w": "one",
+          "s": 184.065,
+          "e": 184.065,
+          "c": 0.996538
+        },
+        {
+          "w": "of",
+          "s": 184.085,
+          "e": 184.175,
+          "c": 0.998717
+        },
+        {
+          "w": "those",
+          "s": 184.175,
+          "e": 184.455,
+          "c": 0.999066
+        },
+        {
+          "w": "villages",
+          "s": 184.465,
+          "e": 184.835,
+          "c": 0.989772
+        },
+        {
+          "w": "so",
+          "s": 185.045,
+          "e": 185.065,
+          "c": 0.39997
+        },
+        {
+          "w": "we",
+          "s": 185.065,
+          "e": 185.165,
+          "c": 0.994146
+        },
+        {
+          "w": "have",
+          "s": 185.175,
+          "e": 185.315,
+          "c": 0.999403
+        },
+        {
+          "w": "the",
+          "s": 185.395,
+          "e": 185.535,
+          "c": 0.998771
+        },
+        {
+          "w": "resources",
+          "s": 185.535,
+          "e": 185.865,
+          "c": 0.995243
+        },
+        {
+          "w": "we",
+          "s": 186.085,
+          "e": 186.145,
+          "c": 0.936994
+        },
+        {
+          "w": "need",
+          "s": 186.145,
+          "e": 186.365,
+          "c": 0.998706
+        },
+        {
+          "w": "and",
+          "s": 186.365,
+          "e": 186.605,
+          "c": 0.972945
+        },
+        {
+          "w": "We",
+          "s": 186.605,
+          "e": 186.725,
+          "c": 0.902848
+        },
+        {
+          "w": "are",
+          "s": 186.725,
+          "e": 186.745,
+          "c": 0.965701
+        },
+        {
+          "w": "in",
+          "s": 187.015,
+          "e": 187.035,
+          "c": 0.987634
+        },
+        {
+          "w": "a",
+          "s": 187.055,
+          "e": 187.095,
+          "c": 0.998856
+        },
+        {
+          "w": "much",
+          "s": 187.095,
+          "e": 187.345,
+          "c": 0.999609
+        },
+        {
+          "w": "better",
+          "s": 187.345,
+          "e": 187.725,
+          "c": 0.998951
+        },
+        {
+          "w": "place",
+          "s": 187.725,
+          "e": 188.045,
+          "c": 0.998881
+        },
+        {
+          "w": "with",
+          "s": 188.045,
+          "e": 188.255,
+          "c": 0.997141
+        },
+        {
+          "w": "with",
+          "s": 188.335,
+          "e": 188.545,
+          "c": 0.634166
+        },
+        {
+          "w": "the",
+          "s": 188.545,
+          "e": 188.735,
+          "c": 0.951041
+        },
+        {
+          "w": "impacted",
+          "s": 188.735,
+          "e": 189.245,
+          "c": 0.980028
+        },
+        {
+          "w": "tribes",
+          "s": 189.245,
+          "e": 189.625,
+          "c": 0.99531
+        },
+        {
+          "w": "than",
+          "s": 189.625,
+          "e": 189.855,
+          "c": 0.645613
+        },
+        {
+          "w": "we've",
+          "s": 189.915,
+          "e": 190.185,
+          "c": 0.68779
+        },
+        {
+          "w": "ever",
+          "s": 190.185,
+          "e": 190.435,
+          "c": 0.990667
+        },
+        {
+          "w": "been",
+          "s": 190.435,
+          "e": 190.685,
+          "c": 0.99923
+        },
+        {
+          "w": "in",
+          "s": 190.685,
+          "e": 190.795,
+          "c": 0.99902
+        },
+        {
+          "w": "the",
+          "s": 190.835,
+          "e": 190.995,
+          "c": 0.997318
+        },
+        {
+          "w": "past",
+          "s": 190.995,
+          "e": 191.385,
+          "c": 0.997815
+        },
+        {
+          "w": "Well,",
+          "s": 191.795,
+          "e": 192.155,
+          "c": 0.661845
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 192.16,
+      "end_s": 207.82,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I really appreciate that that observation and all the easy to develop land has been developed Along both sides the north bank and the south bank of the river, which means it will never be easy to find these sites They'll be expensive, they'll be difficult",
+      "words": [
+        {
+          "w": "I",
+          "s": 192.155,
+          "e": 192.285,
+          "c": 0.996396
+        },
+        {
+          "w": "really",
+          "s": 192.395,
+          "e": 193.035,
+          "c": 0.993006
+        },
+        {
+          "w": "appreciate",
+          "s": 193.115,
+          "e": 193.495,
+          "c": 0.891609
+        },
+        {
+          "w": "that",
+          "s": 193.495,
+          "e": 193.585,
+          "c": 0.996354
+        },
+        {
+          "w": "that",
+          "s": 193.805,
+          "e": 194.125,
+          "c": 0.610336
+        },
+        {
+          "w": "observation",
+          "s": 194.125,
+          "e": 194.825,
+          "c": 0.91335
+        },
+        {
+          "w": "and",
+          "s": 194.825,
+          "e": 194.985,
+          "c": 0.810286
+        },
+        {
+          "w": "all",
+          "s": 194.985,
+          "e": 195.185,
+          "c": 0.981828
+        },
+        {
+          "w": "the",
+          "s": 195.185,
+          "e": 195.785,
+          "c": 0.977795
+        },
+        {
+          "w": "easy",
+          "s": 195.785,
+          "e": 196.025,
+          "c": 0.942647
+        },
+        {
+          "w": "to",
+          "s": 196.105,
+          "e": 196.185,
+          "c": 0.834022
+        },
+        {
+          "w": "develop",
+          "s": 196.185,
+          "e": 196.685,
+          "c": 0.993447
+        },
+        {
+          "w": "land",
+          "s": 196.685,
+          "e": 197.095,
+          "c": 0.939419
+        },
+        {
+          "w": "has",
+          "s": 197.165,
+          "e": 197.265,
+          "c": 0.970289
+        },
+        {
+          "w": "been",
+          "s": 197.265,
+          "e": 197.415,
+          "c": 0.993928
+        },
+        {
+          "w": "developed",
+          "s": 197.415,
+          "e": 198.125,
+          "c": 0.932391
+        },
+        {
+          "w": "Along",
+          "s": 198.125,
+          "e": 198.415,
+          "c": 0.896551
+        },
+        {
+          "w": "both",
+          "s": 198.535,
+          "e": 198.665,
+          "c": 0.971649
+        },
+        {
+          "w": "sides",
+          "s": 198.665,
+          "e": 198.965,
+          "c": 0.998736
+        },
+        {
+          "w": "the",
+          "s": 198.965,
+          "e": 199.145,
+          "c": 0.565044
+        },
+        {
+          "w": "north",
+          "s": 199.145,
+          "e": 199.295,
+          "c": 0.564273
+        },
+        {
+          "w": "bank",
+          "s": 199.505,
+          "e": 199.685,
+          "c": 0.986284
+        },
+        {
+          "w": "and",
+          "s": 199.685,
+          "e": 199.865,
+          "c": 0.756422
+        },
+        {
+          "w": "the",
+          "s": 199.865,
+          "e": 200.005,
+          "c": 0.979544
+        },
+        {
+          "w": "south",
+          "s": 200.045,
+          "e": 200.325,
+          "c": 0.957835
+        },
+        {
+          "w": "bank",
+          "s": 200.545,
+          "e": 200.585,
+          "c": 0.983421
+        },
+        {
+          "w": "of",
+          "s": 200.585,
+          "e": 200.705,
+          "c": 0.995866
+        },
+        {
+          "w": "the",
+          "s": 200.705,
+          "e": 200.885,
+          "c": 0.999817
+        },
+        {
+          "w": "river,",
+          "s": 200.885,
+          "e": 201.375,
+          "c": 0.423219
+        },
+        {
+          "w": "which",
+          "s": 201.375,
+          "e": 201.665,
+          "c": 0.999426
+        },
+        {
+          "w": "means",
+          "s": 201.665,
+          "e": 201.955,
+          "c": 0.999018
+        },
+        {
+          "w": "it",
+          "s": 201.955,
+          "e": 202.065,
+          "c": 0.886992
+        },
+        {
+          "w": "will",
+          "s": 202.065,
+          "e": 202.275,
+          "c": 0.998454
+        },
+        {
+          "w": "never",
+          "s": 202.355,
+          "e": 202.585,
+          "c": 0.998902
+        },
+        {
+          "w": "be",
+          "s": 202.585,
+          "e": 202.695,
+          "c": 0.99835
+        },
+        {
+          "w": "easy",
+          "s": 202.695,
+          "e": 202.985,
+          "c": 0.991223
+        },
+        {
+          "w": "to",
+          "s": 202.985,
+          "e": 203.135,
+          "c": 0.866974
+        },
+        {
+          "w": "find",
+          "s": 203.185,
+          "e": 203.555,
+          "c": 0.995313
+        },
+        {
+          "w": "these",
+          "s": 203.555,
+          "e": 204.035,
+          "c": 0.996495
+        },
+        {
+          "w": "sites",
+          "s": 204.035,
+          "e": 204.435,
+          "c": 0.991155
+        },
+        {
+          "w": "They'll",
+          "s": 204.985,
+          "e": 205.485,
+          "c": 0.576797
+        },
+        {
+          "w": "be",
+          "s": 205.485,
+          "e": 205.625,
+          "c": 0.996671
+        },
+        {
+          "w": "expensive,",
+          "s": 205.625,
+          "e": 206.445,
+          "c": 0.550316
+        },
+        {
+          "w": "they'll",
+          "s": 206.445,
+          "e": 206.635,
+          "c": 0.651973
+        },
+        {
+          "w": "be",
+          "s": 206.715,
+          "e": 206.785,
+          "c": 0.959614
+        },
+        {
+          "w": "difficult",
+          "s": 206.785,
+          "e": 207.825,
+          "c": 0.980234
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 207.82,
+      "end_s": 207.83,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to provide",
+      "words": [
+        {
+          "w": "to",
+          "s": 207.825,
+          "e": 207.825,
+          "c": 0.941041
+        },
+        {
+          "w": "provide",
+          "s": 207.825,
+          "e": 207.825,
+          "c": 0.425573
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 207.82,
+      "end_s": 234.84,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "structure, but it's so important that we address this situation that a legacy wrong that we need to right. And by the way, the Confederated Tribes of the Warm Springs Reservation of Oregon and the Confederated Tribes of the Umatilla Indian Reservation have expressed optimism and appreciation for the level of engagement they've had with the Army Corps at this point. So you're all really doing a great job. And",
+      "words": [
+        {
+          "w": "structure,",
+          "s": 207.805,
+          "e": 208.845,
+          "c": 0.0972126
+        },
+        {
+          "w": "but",
+          "s": 208.855,
+          "e": 209.125,
+          "c": 0.986083
+        },
+        {
+          "w": "it's",
+          "s": 209.125,
+          "e": 209.395,
+          "c": 0.959981
+        },
+        {
+          "w": "so",
+          "s": 209.575,
+          "e": 209.695,
+          "c": 0.995993
+        },
+        {
+          "w": "important",
+          "s": 209.695,
+          "e": 209.975,
+          "c": 0.995501
+        },
+        {
+          "w": "that",
+          "s": 210.595,
+          "e": 210.805,
+          "c": 0.901764
+        },
+        {
+          "w": "we",
+          "s": 210.805,
+          "e": 211.045,
+          "c": 0.967106
+        },
+        {
+          "w": "address",
+          "s": 211.045,
+          "e": 212.105,
+          "c": 0.891133
+        },
+        {
+          "w": "this",
+          "s": 212.105,
+          "e": 212.365,
+          "c": 0.851138
+        },
+        {
+          "w": "situation",
+          "s": 212.455,
+          "e": 213.545,
+          "c": 0.472685
+        },
+        {
+          "w": "that",
+          "s": 213.885,
+          "e": 215.345,
+          "c": 0.388549
+        },
+        {
+          "w": "a",
+          "s": 215.345,
+          "e": 215.605,
+          "c": 0.357331
+        },
+        {
+          "w": "legacy",
+          "s": 215.605,
+          "e": 216.235,
+          "c": 0.775036
+        },
+        {
+          "w": "wrong",
+          "s": 216.235,
+          "e": 216.685,
+          "c": 0.83747
+        },
+        {
+          "w": "that",
+          "s": 217.025,
+          "e": 217.085,
+          "c": 0.65395
+        },
+        {
+          "w": "we",
+          "s": 217.085,
+          "e": 217.205,
+          "c": 0.96939
+        },
+        {
+          "w": "need",
+          "s": 217.205,
+          "e": 217.645,
+          "c": 0.999432
+        },
+        {
+          "w": "to",
+          "s": 217.645,
+          "e": 217.865,
+          "c": 0.998422
+        },
+        {
+          "w": "right.",
+          "s": 218.025,
+          "e": 218.765,
+          "c": 0.668631
+        },
+        {
+          "w": "And",
+          "s": 218.765,
+          "e": 218.915,
+          "c": 0.9736
+        },
+        {
+          "w": "by",
+          "s": 218.915,
+          "e": 218.965,
+          "c": 0.992042
+        },
+        {
+          "w": "the",
+          "s": 219.025,
+          "e": 219.165,
+          "c": 0.999155
+        },
+        {
+          "w": "way,",
+          "s": 219.165,
+          "e": 219.415,
+          "c": 0.859837
+        },
+        {
+          "w": "the",
+          "s": 219.415,
+          "e": 219.505,
+          "c": 0.994275
+        },
+        {
+          "w": "Confederated",
+          "s": 219.585,
+          "e": 220.175,
+          "c": 0.723774
+        },
+        {
+          "w": "Tribes",
+          "s": 220.175,
+          "e": 220.425,
+          "c": 0.632337
+        },
+        {
+          "w": "of",
+          "s": 220.535,
+          "e": 220.575,
+          "c": 0.978948
+        },
+        {
+          "w": "the",
+          "s": 220.575,
+          "e": 220.715,
+          "c": 0.983144
+        },
+        {
+          "w": "Warm",
+          "s": 220.725,
+          "e": 220.925,
+          "c": 0.976164
+        },
+        {
+          "w": "Springs",
+          "s": 220.925,
+          "e": 221.255,
+          "c": 0.992774
+        },
+        {
+          "w": "Reservation",
+          "s": 221.255,
+          "e": 221.835,
+          "c": 0.790496
+        },
+        {
+          "w": "of",
+          "s": 221.855,
+          "e": 221.945,
+          "c": 0.966151
+        },
+        {
+          "w": "Oregon",
+          "s": 221.945,
+          "e": 222.245,
+          "c": 0.993532
+        },
+        {
+          "w": "and",
+          "s": 222.245,
+          "e": 222.485,
+          "c": 0.864372
+        },
+        {
+          "w": "the",
+          "s": 222.485,
+          "e": 222.645,
+          "c": 0.98218
+        },
+        {
+          "w": "Confederated",
+          "s": 222.645,
+          "e": 223.225,
+          "c": 0.944467
+        },
+        {
+          "w": "Tribes",
+          "s": 223.295,
+          "e": 223.595,
+          "c": 0.914612
+        },
+        {
+          "w": "of",
+          "s": 223.595,
+          "e": 223.695,
+          "c": 0.825086
+        },
+        {
+          "w": "the",
+          "s": 223.765,
+          "e": 223.855,
+          "c": 0.954472
+        },
+        {
+          "w": "Umatilla",
+          "s": 223.855,
+          "e": 224.265,
+          "c": 0.300868
+        },
+        {
+          "w": "Indian",
+          "s": 224.265,
+          "e": 224.585,
+          "c": 0.891071
+        },
+        {
+          "w": "Reservation",
+          "s": 224.585,
+          "e": 225.155,
+          "c": 0.960724
+        },
+        {
+          "w": "have",
+          "s": 225.275,
+          "e": 225.385,
+          "c": 0.976623
+        },
+        {
+          "w": "expressed",
+          "s": 225.385,
+          "e": 225.825,
+          "c": 0.989666
+        },
+        {
+          "w": "optimism",
+          "s": 225.885,
+          "e": 226.335,
+          "c": 0.992165
+        },
+        {
+          "w": "and",
+          "s": 226.375,
+          "e": 226.565,
+          "c": 0.979428
+        },
+        {
+          "w": "appreciation",
+          "s": 226.565,
+          "e": 227.405,
+          "c": 0.958031
+        },
+        {
+          "w": "for",
+          "s": 227.405,
+          "e": 227.575,
+          "c": 0.997328
+        },
+        {
+          "w": "the",
+          "s": 227.575,
+          "e": 227.715,
+          "c": 0.99818
+        },
+        {
+          "w": "level",
+          "s": 227.745,
+          "e": 228.035,
+          "c": 0.997514
+        },
+        {
+          "w": "of",
+          "s": 228.035,
+          "e": 228.145,
+          "c": 0.997876
+        },
+        {
+          "w": "engagement",
+          "s": 228.225,
+          "e": 228.735,
+          "c": 0.998437
+        },
+        {
+          "w": "they've",
+          "s": 228.735,
+          "e": 228.995,
+          "c": 0.967167
+        },
+        {
+          "w": "had",
+          "s": 229.175,
+          "e": 229.305,
+          "c": 0.998009
+        },
+        {
+          "w": "with",
+          "s": 229.305,
+          "e": 229.525,
+          "c": 0.997891
+        },
+        {
+          "w": "the",
+          "s": 229.525,
+          "e": 229.605,
+          "c": 0.988372
+        },
+        {
+          "w": "Army",
+          "s": 229.675,
+          "e": 229.935,
+          "c": 0.963091
+        },
+        {
+          "w": "Corps",
+          "s": 230.195,
+          "e": 230.225,
+          "c": 0.932922
+        },
+        {
+          "w": "at",
+          "s": 230.225,
+          "e": 230.335,
+          "c": 0.985223
+        },
+        {
+          "w": "this",
+          "s": 230.335,
+          "e": 230.565,
+          "c": 0.998711
+        },
+        {
+          "w": "point.",
+          "s": 230.565,
+          "e": 231.145,
+          "c": 0.851596
+        },
+        {
+          "w": "So",
+          "s": 231.145,
+          "e": 231.305,
+          "c": 0.998039
+        },
+        {
+          "w": "you're",
+          "s": 231.305,
+          "e": 231.775,
+          "c": 0.778247
+        },
+        {
+          "w": "all",
+          "s": 231.775,
+          "e": 232.015,
+          "c": 0.992894
+        },
+        {
+          "w": "really",
+          "s": 232.015,
+          "e": 232.485,
+          "c": 0.991872
+        },
+        {
+          "w": "doing",
+          "s": 232.485,
+          "e": 232.735,
+          "c": 0.998131
+        },
+        {
+          "w": "a",
+          "s": 232.915,
+          "e": 232.955,
+          "c": 0.998508
+        },
+        {
+          "w": "great",
+          "s": 232.955,
+          "e": 233.315,
+          "c": 0.998786
+        },
+        {
+          "w": "job.",
+          "s": 233.335,
+          "e": 233.815,
+          "c": 0.883701
+        },
+        {
+          "w": "And",
+          "s": 233.865,
+          "e": 234.845,
+          "c": 0.957481
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 234.88,
+      "end_s": 234.89,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "I'm...",
+      "words": [
+        {
+          "w": "I'm...",
+          "s": 234.885,
+          "e": 234.885,
+          "c": 0.375261
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 234.91,
+      "end_s": 241.53,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I'm very much impressed by what you've done, and I understand you're planning to continue regular engagement with the tribes? Yes,",
+      "words": [
+        {
+          "w": "I'm",
+          "s": 234.905,
+          "e": 235.035,
+          "c": 0.303491
+        },
+        {
+          "w": "very",
+          "s": 235.035,
+          "e": 235.305,
+          "c": 0.994884
+        },
+        {
+          "w": "much",
+          "s": 235.305,
+          "e": 235.575,
+          "c": 0.977538
+        },
+        {
+          "w": "impressed",
+          "s": 235.575,
+          "e": 236.095,
+          "c": 0.977647
+        },
+        {
+          "w": "by",
+          "s": 236.195,
+          "e": 236.295,
+          "c": 0.986062
+        },
+        {
+          "w": "what",
+          "s": 236.385,
+          "e": 236.585,
+          "c": 0.998439
+        },
+        {
+          "w": "you've",
+          "s": 236.695,
+          "e": 236.985,
+          "c": 0.989734
+        },
+        {
+          "w": "done,",
+          "s": 236.995,
+          "e": 237.465,
+          "c": 0.642439
+        },
+        {
+          "w": "and",
+          "s": 237.465,
+          "e": 237.635,
+          "c": 0.621187
+        },
+        {
+          "w": "I",
+          "s": 237.645,
+          "e": 237.705,
+          "c": 0.981448
+        },
+        {
+          "w": "understand",
+          "s": 237.705,
+          "e": 238.325,
+          "c": 0.994312
+        },
+        {
+          "w": "you're",
+          "s": 238.325,
+          "e": 238.525,
+          "c": 0.958563
+        },
+        {
+          "w": "planning",
+          "s": 238.525,
+          "e": 238.805,
+          "c": 0.991947
+        },
+        {
+          "w": "to",
+          "s": 238.805,
+          "e": 238.915,
+          "c": 0.94772
+        },
+        {
+          "w": "continue",
+          "s": 239.065,
+          "e": 239.385,
+          "c": 0.94506
+        },
+        {
+          "w": "regular",
+          "s": 239.385,
+          "e": 239.765,
+          "c": 0.523712
+        },
+        {
+          "w": "engagement",
+          "s": 239.765,
+          "e": 240.185,
+          "c": 0.927755
+        },
+        {
+          "w": "with",
+          "s": 240.185,
+          "e": 240.325,
+          "c": 0.98653
+        },
+        {
+          "w": "the",
+          "s": 240.325,
+          "e": 240.425,
+          "c": 0.998209
+        },
+        {
+          "w": "tribes?",
+          "s": 240.425,
+          "e": 240.745,
+          "c": 0.692571
+        },
+        {
+          "w": "Yes,",
+          "s": 240.805,
+          "e": 241.525,
+          "c": 0.698827
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 241.59,
+      "end_s": 242.88,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "sir. That's correct.",
+      "words": [
+        {
+          "w": "sir.",
+          "s": 241.585,
+          "e": 242.495,
+          "c": 0.559982
+        },
+        {
+          "w": "That's",
+          "s": 242.595,
+          "e": 242.655,
+          "c": 0.974463
+        },
+        {
+          "w": "correct.",
+          "s": 242.655,
+          "e": 242.885,
+          "c": 0.971425
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 242.88,
+      "end_s": 261.6,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Yes. Thank you. In particular, the tribes have noted the cores further along on the displacement assessments for the Bonneville and Dalles Dam pools. Will you also work to expedite the displacement assessments for the John Day and McNary pools? Yes, sir. Thank you very much. Thank you.",
+      "words": [
+        {
+          "w": "Yes.",
+          "s": 242.885,
+          "e": 243.385,
+          "c": 0.537254
+        },
+        {
+          "w": "Thank",
+          "s": 243.385,
+          "e": 244.015,
+          "c": 0.86222
+        },
+        {
+          "w": "you.",
+          "s": 244.015,
+          "e": 244.405,
+          "c": 0.927886
+        },
+        {
+          "w": "In",
+          "s": 244.465,
+          "e": 244.585,
+          "c": 0.996776
+        },
+        {
+          "w": "particular,",
+          "s": 244.585,
+          "e": 245.655,
+          "c": 0.914224
+        },
+        {
+          "w": "the",
+          "s": 245.745,
+          "e": 245.835,
+          "c": 0.983457
+        },
+        {
+          "w": "tribes",
+          "s": 245.835,
+          "e": 246.145,
+          "c": 0.996322
+        },
+        {
+          "w": "have",
+          "s": 246.145,
+          "e": 246.345,
+          "c": 0.994528
+        },
+        {
+          "w": "noted",
+          "s": 246.345,
+          "e": 246.605,
+          "c": 0.997552
+        },
+        {
+          "w": "the",
+          "s": 246.605,
+          "e": 246.745,
+          "c": 0.959518
+        },
+        {
+          "w": "cores",
+          "s": 246.755,
+          "e": 247.015,
+          "c": 0.345822
+        },
+        {
+          "w": "further",
+          "s": 247.015,
+          "e": 247.375,
+          "c": 0.989679
+        },
+        {
+          "w": "along",
+          "s": 247.375,
+          "e": 247.635,
+          "c": 0.995721
+        },
+        {
+          "w": "on",
+          "s": 247.635,
+          "e": 247.705,
+          "c": 0.994875
+        },
+        {
+          "w": "the",
+          "s": 247.835,
+          "e": 247.885,
+          "c": 0.999245
+        },
+        {
+          "w": "displacement",
+          "s": 247.885,
+          "e": 248.475,
+          "c": 0.984324
+        },
+        {
+          "w": "assessments",
+          "s": 248.625,
+          "e": 249.175,
+          "c": 0.98515
+        },
+        {
+          "w": "for",
+          "s": 249.175,
+          "e": 249.335,
+          "c": 0.989838
+        },
+        {
+          "w": "the",
+          "s": 249.335,
+          "e": 249.485,
+          "c": 0.998291
+        },
+        {
+          "w": "Bonneville",
+          "s": 249.495,
+          "e": 250.015,
+          "c": 0.994425
+        },
+        {
+          "w": "and",
+          "s": 250.055,
+          "e": 250.245,
+          "c": 0.991885
+        },
+        {
+          "w": "Dalles",
+          "s": 250.245,
+          "e": 251.075,
+          "c": 0.701639
+        },
+        {
+          "w": "Dam",
+          "s": 251.075,
+          "e": 251.505,
+          "c": 0.971884
+        },
+        {
+          "w": "pools.",
+          "s": 251.825,
+          "e": 252.465,
+          "c": 0.796584
+        },
+        {
+          "w": "Will",
+          "s": 252.525,
+          "e": 253.635,
+          "c": 0.997056
+        },
+        {
+          "w": "you",
+          "s": 253.815,
+          "e": 254.625,
+          "c": 0.999188
+        },
+        {
+          "w": "also",
+          "s": 254.625,
+          "e": 255.175,
+          "c": 0.966379
+        },
+        {
+          "w": "work",
+          "s": 255.175,
+          "e": 255.725,
+          "c": 0.99725
+        },
+        {
+          "w": "to",
+          "s": 255.725,
+          "e": 256.005,
+          "c": 0.997446
+        },
+        {
+          "w": "expedite",
+          "s": 256.005,
+          "e": 256.415,
+          "c": 0.826836
+        },
+        {
+          "w": "the",
+          "s": 256.415,
+          "e": 256.535,
+          "c": 0.998241
+        },
+        {
+          "w": "displacement",
+          "s": 256.685,
+          "e": 257.185,
+          "c": 0.996529
+        },
+        {
+          "w": "assessments",
+          "s": 257.185,
+          "e": 257.695,
+          "c": 0.987447
+        },
+        {
+          "w": "for",
+          "s": 257.755,
+          "e": 257.905,
+          "c": 0.995226
+        },
+        {
+          "w": "the",
+          "s": 257.905,
+          "e": 258.055,
+          "c": 0.997858
+        },
+        {
+          "w": "John",
+          "s": 258.055,
+          "e": 258.255,
+          "c": 0.996864
+        },
+        {
+          "w": "Day",
+          "s": 258.255,
+          "e": 258.365,
+          "c": 0.925753
+        },
+        {
+          "w": "and",
+          "s": 258.415,
+          "e": 258.505,
+          "c": 0.981654
+        },
+        {
+          "w": "McNary",
+          "s": 258.575,
+          "e": 258.845,
+          "c": 0.857148
+        },
+        {
+          "w": "pools?",
+          "s": 258.855,
+          "e": 259.335,
+          "c": 0.955873
+        },
+        {
+          "w": "Yes,",
+          "s": 259.405,
+          "e": 259.745,
+          "c": 0.996033
+        },
+        {
+          "w": "sir.",
+          "s": 259.745,
+          "e": 260.235,
+          "c": 0.998742
+        },
+        {
+          "w": "Thank",
+          "s": 260.235,
+          "e": 260.485,
+          "c": 0.909009
+        },
+        {
+          "w": "you",
+          "s": 260.485,
+          "e": 260.595,
+          "c": 0.99992
+        },
+        {
+          "w": "very",
+          "s": 260.695,
+          "e": 260.795,
+          "c": 0.997898
+        },
+        {
+          "w": "much.",
+          "s": 260.885,
+          "e": 261.085,
+          "c": 0.991883
+        },
+        {
+          "w": "Thank",
+          "s": 261.195,
+          "e": 261.425,
+          "c": 0.90586
+        },
+        {
+          "w": "you.",
+          "s": 261.425,
+          "e": 261.595,
+          "c": 0.986039
+        }
+      ]
+    }
+  ]
+}

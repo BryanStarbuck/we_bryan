@@ -1,0 +1,895 @@
+{
+  "schema_version": 2,
+  "canonical_id": "b71085fecf53e628",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 51.6,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T01:59:13.911Z",
+  "text_sha256": "e34bf7e8b91db21a902cda492a412ff351c3af89afac2a31f8a7f28d5eeeebc0",
+  "segments_sha256": "dcda2548d708e2cfaa93094e10f3115042aeabcca162dea9379ca5cecff4c9dd",
+  "words_sha256": "cbb3e3b55b5462eade29199f2d8025d3c0cfd88475b9704af8183a1fd2c35272",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 2,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 1,
+    "clusters": 1,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.8,
+        "confidence": "low",
+        "clean_s": 49.8
+      },
+      "clean_s": 49.8,
+      "speaking_s": 49.8,
+      "first_s": 0.03
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.09,
+      "end_s": 0.09,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 50.62,
+      "end_s": 51.6,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.09,
+      "end_s": 0.1,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We",
+      "words": [
+        {
+          "w": "We",
+          "s": 0.09,
+          "e": 0.09,
+          "c": 0.923501
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.17,
+      "end_s": 30.02,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "have reached the point where the Trump administration has spent $25 billion on an illegal war with Iran that would have bought school lunches for 30 million children for a year. It would have housed 3 million Americans under Section 8 vouchers for a year. It would have covered 3 million people on Medicaid for a year. We already know this lesson. We spent $8 trillion on Afghanistan and Iraq wars before.",
+      "words": [
+        {
+          "w": "have",
+          "s": 0.17,
+          "e": 0.28,
+          "c": 0.993839
+        },
+        {
+          "w": "reached",
+          "s": 0.28,
+          "e": 0.54,
+          "c": 0.99862
+        },
+        {
+          "w": "the",
+          "s": 0.65,
+          "e": 0.7,
+          "c": 0.958493
+        },
+        {
+          "w": "point",
+          "s": 0.83,
+          "e": 1,
+          "c": 0.999474
+        },
+        {
+          "w": "where",
+          "s": 1,
+          "e": 1.35,
+          "c": 0.983086
+        },
+        {
+          "w": "the",
+          "s": 1.35,
+          "e": 1.52,
+          "c": 0.561361
+        },
+        {
+          "w": "Trump",
+          "s": 1.71,
+          "e": 1.9,
+          "c": 0.986748
+        },
+        {
+          "w": "administration",
+          "s": 1.92,
+          "e": 2.78,
+          "c": 0.890314
+        },
+        {
+          "w": "has",
+          "s": 3.27,
+          "e": 3.46,
+          "c": 0.863525
+        },
+        {
+          "w": "spent",
+          "s": 3.46,
+          "e": 4.19,
+          "c": 0.990097
+        },
+        {
+          "w": "$25",
+          "s": 4.23,
+          "e": 5.94,
+          "c": 0.723603
+        },
+        {
+          "w": "billion",
+          "s": 6.19,
+          "e": 6.6,
+          "c": 0.941153
+        },
+        {
+          "w": "on",
+          "s": 6.6,
+          "e": 7.06,
+          "c": 0.688092
+        },
+        {
+          "w": "an",
+          "s": 7.42,
+          "e": 7.71,
+          "c": 0.981195
+        },
+        {
+          "w": "illegal",
+          "s": 7.74,
+          "e": 8.08,
+          "c": 0.71877
+        },
+        {
+          "w": "war",
+          "s": 8.08,
+          "e": 8.28,
+          "c": 0.949023
+        },
+        {
+          "w": "with",
+          "s": 8.28,
+          "e": 8.53,
+          "c": 0.993401
+        },
+        {
+          "w": "Iran",
+          "s": 8.53,
+          "e": 8.82,
+          "c": 0.991185
+        },
+        {
+          "w": "that",
+          "s": 8.99,
+          "e": 9.14,
+          "c": 0.986643
+        },
+        {
+          "w": "would",
+          "s": 9.14,
+          "e": 9.51,
+          "c": 0.999962
+        },
+        {
+          "w": "have",
+          "s": 9.65,
+          "e": 9.86,
+          "c": 0.999773
+        },
+        {
+          "w": "bought",
+          "s": 10.06,
+          "e": 10.34,
+          "c": 0.99959
+        },
+        {
+          "w": "school",
+          "s": 10.34,
+          "e": 10.82,
+          "c": 0.999783
+        },
+        {
+          "w": "lunches",
+          "s": 10.82,
+          "e": 11.37,
+          "c": 0.999926
+        },
+        {
+          "w": "for",
+          "s": 11.37,
+          "e": 11.61,
+          "c": 0.999987
+        },
+        {
+          "w": "30",
+          "s": 12.06,
+          "e": 12.1,
+          "c": 0.999735
+        },
+        {
+          "w": "million",
+          "s": 12.1,
+          "e": 12.39,
+          "c": 0.999317
+        },
+        {
+          "w": "children",
+          "s": 12.77,
+          "e": 13.06,
+          "c": 0.999777
+        },
+        {
+          "w": "for",
+          "s": 13.44,
+          "e": 13.54,
+          "c": 0.999255
+        },
+        {
+          "w": "a",
+          "s": 13.54,
+          "e": 13.62,
+          "c": 0.99999
+        },
+        {
+          "w": "year.",
+          "s": 13.62,
+          "e": 14.23,
+          "c": 0.999186
+        },
+        {
+          "w": "It",
+          "s": 14.38,
+          "e": 14.38,
+          "c": 0.999964
+        },
+        {
+          "w": "would",
+          "s": 14.42,
+          "e": 14.74,
+          "c": 0.999994
+        },
+        {
+          "w": "have",
+          "s": 14.74,
+          "e": 14.93,
+          "c": 0.99984
+        },
+        {
+          "w": "housed",
+          "s": 15.07,
+          "e": 15.29,
+          "c": 0.999445
+        },
+        {
+          "w": "3",
+          "s": 15.48,
+          "e": 15.69,
+          "c": 0.979204
+        },
+        {
+          "w": "million",
+          "s": 15.69,
+          "e": 16.2,
+          "c": 0.99975
+        },
+        {
+          "w": "Americans",
+          "s": 16.2,
+          "e": 16.86,
+          "c": 0.999512
+        },
+        {
+          "w": "under",
+          "s": 16.86,
+          "e": 17.09,
+          "c": 0.999929
+        },
+        {
+          "w": "Section",
+          "s": 17.51,
+          "e": 17.73,
+          "c": 0.985565
+        },
+        {
+          "w": "8",
+          "s": 17.73,
+          "e": 17.79,
+          "c": 0.994674
+        },
+        {
+          "w": "vouchers",
+          "s": 18.19,
+          "e": 18.43,
+          "c": 0.999748
+        },
+        {
+          "w": "for",
+          "s": 18.43,
+          "e": 18.65,
+          "c": 0.999987
+        },
+        {
+          "w": "a",
+          "s": 18.77,
+          "e": 18.81,
+          "c": 0.999994
+        },
+        {
+          "w": "year.",
+          "s": 18.87,
+          "e": 19.21,
+          "c": 0.999985
+        },
+        {
+          "w": "It",
+          "s": 19.53,
+          "e": 19.53,
+          "c": 0.999977
+        },
+        {
+          "w": "would",
+          "s": 19.56,
+          "e": 19.9,
+          "c": 0.999992
+        },
+        {
+          "w": "have",
+          "s": 19.9,
+          "e": 20.07,
+          "c": 0.999992
+        },
+        {
+          "w": "covered",
+          "s": 20.21,
+          "e": 20.71,
+          "c": 0.999838
+        },
+        {
+          "w": "3",
+          "s": 20.71,
+          "e": 20.9,
+          "c": 0.999706
+        },
+        {
+          "w": "million",
+          "s": 21.13,
+          "e": 21.45,
+          "c": 0.999912
+        },
+        {
+          "w": "people",
+          "s": 21.45,
+          "e": 21.88,
+          "c": 0.999952
+        },
+        {
+          "w": "on",
+          "s": 21.89,
+          "e": 22.04,
+          "c": 0.999949
+        },
+        {
+          "w": "Medicaid",
+          "s": 22.04,
+          "e": 22.63,
+          "c": 0.999895
+        },
+        {
+          "w": "for",
+          "s": 22.65,
+          "e": 22.85,
+          "c": 0.999996
+        },
+        {
+          "w": "a",
+          "s": 22.85,
+          "e": 22.92,
+          "c": 0.999998
+        },
+        {
+          "w": "year.",
+          "s": 22.92,
+          "e": 23.5,
+          "c": 0.999971
+        },
+        {
+          "w": "We",
+          "s": 23.61,
+          "e": 23.61,
+          "c": 0.963679
+        },
+        {
+          "w": "already",
+          "s": 23.68,
+          "e": 24,
+          "c": 0.999977
+        },
+        {
+          "w": "know",
+          "s": 24,
+          "e": 24.2,
+          "c": 0.999985
+        },
+        {
+          "w": "this",
+          "s": 24.33,
+          "e": 24.44,
+          "c": 0.999992
+        },
+        {
+          "w": "lesson.",
+          "s": 24.44,
+          "e": 24.96,
+          "c": 0.999756
+        },
+        {
+          "w": "We",
+          "s": 25.13,
+          "e": 25.19,
+          "c": 0.993851
+        },
+        {
+          "w": "spent",
+          "s": 25.19,
+          "e": 25.65,
+          "c": 0.940544
+        },
+        {
+          "w": "$8",
+          "s": 25.79,
+          "e": 26.23,
+          "c": 0.890393
+        },
+        {
+          "w": "trillion",
+          "s": 26.23,
+          "e": 27.17,
+          "c": 0.989412
+        },
+        {
+          "w": "on",
+          "s": 27.17,
+          "e": 27.4,
+          "c": 0.908744
+        },
+        {
+          "w": "Afghanistan",
+          "s": 27.4,
+          "e": 28.66,
+          "c": 0.982592
+        },
+        {
+          "w": "and",
+          "s": 28.91,
+          "e": 29.04,
+          "c": 0.992154
+        },
+        {
+          "w": "Iraq",
+          "s": 29.04,
+          "e": 29.15,
+          "c": 0.980684
+        },
+        {
+          "w": "wars",
+          "s": 29.51,
+          "e": 29.93,
+          "c": 0.831011
+        },
+        {
+          "w": "before.",
+          "s": 30,
+          "e": 30.02,
+          "c": 0.23299
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 30,
+      "end_s": 50.62,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "dollars that could have really put us in an extraordinary position with investments in health care, housing, education, and infrastructure. And this war is another mistake. Twenty-five billion dollars spent, has shut down the Straits of Hamas, has not rescued the nuclear materials, and has strengthened the hardline government. That's a lose-lose-lose",
+      "words": [
+        {
+          "w": "dollars",
+          "s": 30,
+          "e": 30.6,
+          "c": 0.369969
+        },
+        {
+          "w": "that",
+          "s": 30.6,
+          "e": 30.94,
+          "c": 0.942944
+        },
+        {
+          "w": "could",
+          "s": 30.94,
+          "e": 31.32,
+          "c": 0.996058
+        },
+        {
+          "w": "have",
+          "s": 31.51,
+          "e": 31.71,
+          "c": 0.994391
+        },
+        {
+          "w": "really",
+          "s": 31.71,
+          "e": 32.04,
+          "c": 0.986256
+        },
+        {
+          "w": "put",
+          "s": 32.48,
+          "e": 32.48,
+          "c": 0.994536
+        },
+        {
+          "w": "us",
+          "s": 32.54,
+          "e": 32.7,
+          "c": 0.993112
+        },
+        {
+          "w": "in",
+          "s": 32.7,
+          "e": 32.81,
+          "c": 0.926892
+        },
+        {
+          "w": "an",
+          "s": 32.82,
+          "e": 32.88,
+          "c": 0.938535
+        },
+        {
+          "w": "extraordinary",
+          "s": 32.88,
+          "e": 33.44,
+          "c": 0.978961
+        },
+        {
+          "w": "position",
+          "s": 33.44,
+          "e": 33.99,
+          "c": 0.981311
+        },
+        {
+          "w": "with",
+          "s": 33.99,
+          "e": 34.11,
+          "c": 0.972329
+        },
+        {
+          "w": "investments",
+          "s": 34.14,
+          "e": 34.75,
+          "c": 0.995695
+        },
+        {
+          "w": "in",
+          "s": 34.75,
+          "e": 34.8,
+          "c": 0.982795
+        },
+        {
+          "w": "health",
+          "s": 34.86,
+          "e": 35.19,
+          "c": 0.622605
+        },
+        {
+          "w": "care,",
+          "s": 35.19,
+          "e": 35.52,
+          "c": 0.828626
+        },
+        {
+          "w": "housing,",
+          "s": 35.65,
+          "e": 36.02,
+          "c": 0.943844
+        },
+        {
+          "w": "education,",
+          "s": 36.02,
+          "e": 36.62,
+          "c": 0.548855
+        },
+        {
+          "w": "and",
+          "s": 36.68,
+          "e": 36.79,
+          "c": 0.987261
+        },
+        {
+          "w": "infrastructure.",
+          "s": 36.79,
+          "e": 37.8,
+          "c": 0.591098
+        },
+        {
+          "w": "And",
+          "s": 37.8,
+          "e": 37.98,
+          "c": 0.818197
+        },
+        {
+          "w": "this",
+          "s": 37.98,
+          "e": 38.22,
+          "c": 0.989632
+        },
+        {
+          "w": "war",
+          "s": 38.22,
+          "e": 38.55,
+          "c": 0.99486
+        },
+        {
+          "w": "is",
+          "s": 38.55,
+          "e": 38.67,
+          "c": 0.99835
+        },
+        {
+          "w": "another",
+          "s": 38.77,
+          "e": 39.51,
+          "c": 0.999661
+        },
+        {
+          "w": "mistake.",
+          "s": 39.73,
+          "e": 40.37,
+          "c": 0.820243
+        },
+        {
+          "w": "Twenty-five",
+          "s": 40.76,
+          "e": 41.16,
+          "c": 0.298145
+        },
+        {
+          "w": "billion",
+          "s": 41.26,
+          "e": 41.48,
+          "c": 0.992797
+        },
+        {
+          "w": "dollars",
+          "s": 41.48,
+          "e": 41.75,
+          "c": 0.984879
+        },
+        {
+          "w": "spent,",
+          "s": 41.82,
+          "e": 42.46,
+          "c": 0.554426
+        },
+        {
+          "w": "has",
+          "s": 42.46,
+          "e": 42.72,
+          "c": 0.87986
+        },
+        {
+          "w": "shut",
+          "s": 42.72,
+          "e": 43.02,
+          "c": 0.9503
+        },
+        {
+          "w": "down",
+          "s": 43.02,
+          "e": 43.2,
+          "c": 0.987423
+        },
+        {
+          "w": "the",
+          "s": 43.2,
+          "e": 43.29,
+          "c": 0.92082
+        },
+        {
+          "w": "Straits",
+          "s": 43.36,
+          "e": 43.75,
+          "c": 0.709398
+        },
+        {
+          "w": "of",
+          "s": 43.75,
+          "e": 43.81,
+          "c": 0.969294
+        },
+        {
+          "w": "Hamas,",
+          "s": 43.91,
+          "e": 44.24,
+          "c": 0.414881
+        },
+        {
+          "w": "has",
+          "s": 44.26,
+          "e": 44.42,
+          "c": 0.996845
+        },
+        {
+          "w": "not",
+          "s": 44.42,
+          "e": 44.45,
+          "c": 0.999447
+        },
+        {
+          "w": "rescued",
+          "s": 44.86,
+          "e": 44.98,
+          "c": 0.993718
+        },
+        {
+          "w": "the",
+          "s": 44.98,
+          "e": 45.15,
+          "c": 0.998062
+        },
+        {
+          "w": "nuclear",
+          "s": 45.15,
+          "e": 45.4,
+          "c": 0.996367
+        },
+        {
+          "w": "materials,",
+          "s": 45.84,
+          "e": 46.2,
+          "c": 0.858804
+        },
+        {
+          "w": "and",
+          "s": 46.2,
+          "e": 46.32,
+          "c": 0.984074
+        },
+        {
+          "w": "has",
+          "s": 46.32,
+          "e": 46.43,
+          "c": 0.989074
+        },
+        {
+          "w": "strengthened",
+          "s": 46.56,
+          "e": 46.92,
+          "c": 0.968556
+        },
+        {
+          "w": "the",
+          "s": 46.96,
+          "e": 47.2,
+          "c": 0.988766
+        },
+        {
+          "w": "hardline",
+          "s": 47.2,
+          "e": 47.86,
+          "c": 0.654332
+        },
+        {
+          "w": "government.",
+          "s": 47.86,
+          "e": 48.92,
+          "c": 0.980952
+        },
+        {
+          "w": "That's",
+          "s": 48.92,
+          "e": 49.41,
+          "c": 0.987721
+        },
+        {
+          "w": "a",
+          "s": 49.49,
+          "e": 49.49,
+          "c": 0.998192
+        },
+        {
+          "w": "lose-lose-lose",
+          "s": 49.5,
+          "e": 50.62,
+          "c": 0.83857
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 50.62,
+      "end_s": 51.6,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "endeavor.",
+      "words": [
+        {
+          "w": "endeavor.",
+          "s": 50.62,
+          "e": 51.6,
+          "c": 0.929529
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2577 @@
+{
+  "schema_version": 2,
+  "canonical_id": "9eefdb70edea88ee",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 119.57,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T02:00:20.436Z",
+  "text_sha256": "4b1fa940afdd2aecf544c69f95291750a88b45db1873ada12b3dcd5de5965d88",
+  "segments_sha256": "2fd32a6f417067f8cf344d90656577d559d04cd4f927a6d76f03bd80f62150f0",
+  "words_sha256": "a905fffc908e7c397f9783ec14bd564452113c04dd0b26bcb028fa702b1c40d9",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 5,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 24,
+    "clusters": 9,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.87,
+        "confidence": "low",
+        "clean_s": 49.6
+      },
+      "clean_s": 49.6,
+      "speaking_s": 51,
+      "first_s": 0.45
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.1
+      },
+      "clean_s": 5.1,
+      "speaking_s": 6,
+      "first_s": 10.53
+    },
+    {
+      "id": "SPEAKER_06",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.6
+      },
+      "clean_s": 0.6,
+      "speaking_s": 0.6,
+      "first_s": 29.58
+    },
+    {
+      "id": "SPEAKER_08",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 3.9
+      },
+      "clean_s": 3.9,
+      "speaking_s": 4.4,
+      "first_s": 40.46
+    },
+    {
+      "id": "SPEAKER_09",
+      "n": 5,
+      "label": "Speaker 5 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.81,
+        "confidence": "low",
+        "clean_s": 26.1
+      },
+      "clean_s": 26.1,
+      "speaking_s": 28.5,
+      "first_s": 46.25
+    },
+    {
+      "id": "SPEAKER_11",
+      "n": 6,
+      "label": "Speaker 6",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 7.5
+      },
+      "clean_s": 7.5,
+      "speaking_s": 7.9,
+      "first_s": 55.11
+    },
+    {
+      "id": "SPEAKER_07",
+      "n": 7,
+      "label": "Speaker 7 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.88,
+        "confidence": "low",
+        "clean_s": 10.1
+      },
+      "clean_s": 10.1,
+      "speaking_s": 10.4,
+      "first_s": 63.03
+    },
+    {
+      "id": "SPEAKER_15",
+      "n": 8,
+      "label": "Speaker 8",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.2
+      },
+      "clean_s": 1.2,
+      "speaking_s": 1.5,
+      "first_s": 84.05
+    },
+    {
+      "id": "SPEAKER_18",
+      "n": 9,
+      "label": "Speaker 9",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.1
+      },
+      "clean_s": 4.1,
+      "speaking_s": 5.5,
+      "first_s": 93.91
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.5,
+      "end_s": 0.52,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 30.31,
+      "end_s": 30.66,
+      "segment_i": 5,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 73.3,
+      "end_s": 74.86,
+      "segment_i": 12,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 80.62,
+      "end_s": 80.62,
+      "segment_i": 14,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 99.48,
+      "end_s": 99.92,
+      "segment_i": 17,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 99.97,
+      "end_s": 100.3,
+      "segment_i": 18,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 115.44,
+      "end_s": 115.47,
+      "segment_i": 22,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 116.72,
+      "end_s": 116.76,
+      "segment_i": 24,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.5,
+      "end_s": 0.52,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Are you",
+      "words": [
+        {
+          "w": "Are",
+          "s": 0.5,
+          "e": 0.5,
+          "c": 0.402032
+        },
+        {
+          "w": "you",
+          "s": 0.52,
+          "e": 0.52,
+          "c": 0.999649
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.55,
+      "end_s": 10.37,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "concerned that Israeli Defense Minister Katz said with respect to Lebanon that they were going to use the, quote, \"Rafa model in Gaza\"? Does that concern you? I have",
+      "words": [
+        {
+          "w": "concerned",
+          "s": 0.55,
+          "e": 1.3,
+          "c": 0.978625
+        },
+        {
+          "w": "that",
+          "s": 1.31,
+          "e": 1.64,
+          "c": 0.994192
+        },
+        {
+          "w": "Israeli",
+          "s": 1.64,
+          "e": 2.25,
+          "c": 0.977335
+        },
+        {
+          "w": "Defense",
+          "s": 2.25,
+          "e": 2.88,
+          "c": 0.835793
+        },
+        {
+          "w": "Minister",
+          "s": 2.88,
+          "e": 3.24,
+          "c": 0.943782
+        },
+        {
+          "w": "Katz",
+          "s": 3.24,
+          "e": 3.92,
+          "c": 0.703632
+        },
+        {
+          "w": "said",
+          "s": 3.97,
+          "e": 4.21,
+          "c": 0.999064
+        },
+        {
+          "w": "with",
+          "s": 4.27,
+          "e": 4.51,
+          "c": 0.880436
+        },
+        {
+          "w": "respect",
+          "s": 4.52,
+          "e": 5.05,
+          "c": 0.999487
+        },
+        {
+          "w": "to",
+          "s": 5.05,
+          "e": 5.2,
+          "c": 0.999739
+        },
+        {
+          "w": "Lebanon",
+          "s": 5.2,
+          "e": 5.73,
+          "c": 0.999226
+        },
+        {
+          "w": "that",
+          "s": 5.73,
+          "e": 5.96,
+          "c": 0.978135
+        },
+        {
+          "w": "they",
+          "s": 6.08,
+          "e": 6.36,
+          "c": 0.99922
+        },
+        {
+          "w": "were",
+          "s": 6.36,
+          "e": 6.44,
+          "c": 0.799183
+        },
+        {
+          "w": "going",
+          "s": 6.44,
+          "e": 6.48,
+          "c": 0.733913
+        },
+        {
+          "w": "to",
+          "s": 6.61,
+          "e": 6.68,
+          "c": 0.999518
+        },
+        {
+          "w": "use",
+          "s": 6.68,
+          "e": 6.85,
+          "c": 0.999361
+        },
+        {
+          "w": "the,",
+          "s": 6.9,
+          "e": 7.15,
+          "c": 0.442545
+        },
+        {
+          "w": "quote,",
+          "s": 7.16,
+          "e": 7.59,
+          "c": 0.990849
+        },
+        {
+          "w": "\"Rafa",
+          "s": 7.59,
+          "e": 7.89,
+          "c": 0.476512
+        },
+        {
+          "w": "model",
+          "s": 7.89,
+          "e": 8.06,
+          "c": 0.761779
+        },
+        {
+          "w": "in",
+          "s": 8.27,
+          "e": 8.32,
+          "c": 0.672199
+        },
+        {
+          "w": "Gaza\"?",
+          "s": 8.32,
+          "e": 8.88,
+          "c": 0.779522
+        },
+        {
+          "w": "Does",
+          "s": 8.93,
+          "e": 9.07,
+          "c": 0.998291
+        },
+        {
+          "w": "that",
+          "s": 9.14,
+          "e": 9.28,
+          "c": 0.999851
+        },
+        {
+          "w": "concern",
+          "s": 9.28,
+          "e": 9.62,
+          "c": 0.999192
+        },
+        {
+          "w": "you?",
+          "s": 9.67,
+          "e": 9.95,
+          "c": 0.999032
+        },
+        {
+          "w": "I",
+          "s": 10.01,
+          "e": 10.04,
+          "c": 0.525859
+        },
+        {
+          "w": "have",
+          "s": 10.04,
+          "e": 10.37,
+          "c": 0.799851
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 10.46,
+      "end_s": 11.9,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "not. I'm not familiar with that",
+      "words": [
+        {
+          "w": "not.",
+          "s": 10.46,
+          "e": 10.88,
+          "c": 0.833572
+        },
+        {
+          "w": "I'm",
+          "s": 10.92,
+          "e": 11.01,
+          "c": 0.999588
+        },
+        {
+          "w": "not",
+          "s": 11.01,
+          "e": 11.15,
+          "c": 0.999767
+        },
+        {
+          "w": "familiar",
+          "s": 11.23,
+          "e": 11.52,
+          "c": 0.860708
+        },
+        {
+          "w": "with",
+          "s": 11.53,
+          "e": 11.71,
+          "c": 0.999674
+        },
+        {
+          "w": "that",
+          "s": 11.71,
+          "e": 11.9,
+          "c": 0.999662
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 11.9,
+      "end_s": 29.1,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "comment. You're responsible for ensuring that US arms transfers are consistent with the Trump administration's conventional arms transfer policy, right? Yes, sir. And that policy requires that you consider the risk that a proposed arms transfer may contribute to violations of international humanitarian law, right?",
+      "words": [
+        {
+          "w": "comment.",
+          "s": 11.9,
+          "e": 12.38,
+          "c": 0.998837
+        },
+        {
+          "w": "You're",
+          "s": 12.45,
+          "e": 12.67,
+          "c": 0.973548
+        },
+        {
+          "w": "responsible",
+          "s": 12.76,
+          "e": 13.32,
+          "c": 0.999849
+        },
+        {
+          "w": "for",
+          "s": 13.32,
+          "e": 13.47,
+          "c": 0.999762
+        },
+        {
+          "w": "ensuring",
+          "s": 13.48,
+          "e": 13.89,
+          "c": 0.989293
+        },
+        {
+          "w": "that",
+          "s": 14.12,
+          "e": 14.27,
+          "c": 0.904954
+        },
+        {
+          "w": "US",
+          "s": 14.27,
+          "e": 14.43,
+          "c": 0.878436
+        },
+        {
+          "w": "arms",
+          "s": 14.44,
+          "e": 14.76,
+          "c": 0.914057
+        },
+        {
+          "w": "transfers",
+          "s": 14.81,
+          "e": 15.17,
+          "c": 0.99922
+        },
+        {
+          "w": "are",
+          "s": 15.26,
+          "e": 15.37,
+          "c": 0.998184
+        },
+        {
+          "w": "consistent",
+          "s": 15.41,
+          "e": 15.88,
+          "c": 0.999701
+        },
+        {
+          "w": "with",
+          "s": 15.88,
+          "e": 16.08,
+          "c": 0.999838
+        },
+        {
+          "w": "the",
+          "s": 16.08,
+          "e": 16.23,
+          "c": 0.99984
+        },
+        {
+          "w": "Trump",
+          "s": 16.23,
+          "e": 16.52,
+          "c": 0.999066
+        },
+        {
+          "w": "administration's",
+          "s": 16.52,
+          "e": 17.32,
+          "c": 0.908755
+        },
+        {
+          "w": "conventional",
+          "s": 17.37,
+          "e": 18.03,
+          "c": 0.993252
+        },
+        {
+          "w": "arms",
+          "s": 18.03,
+          "e": 18.27,
+          "c": 0.996793
+        },
+        {
+          "w": "transfer",
+          "s": 18.27,
+          "e": 18.75,
+          "c": 0.995547
+        },
+        {
+          "w": "policy,",
+          "s": 18.75,
+          "e": 19.22,
+          "c": 0.972118
+        },
+        {
+          "w": "right?",
+          "s": 19.22,
+          "e": 19.72,
+          "c": 0.998908
+        },
+        {
+          "w": "Yes,",
+          "s": 19.77,
+          "e": 20.24,
+          "c": 0.970426
+        },
+        {
+          "w": "sir.",
+          "s": 20.24,
+          "e": 20.88,
+          "c": 0.993597
+        },
+        {
+          "w": "And",
+          "s": 20.93,
+          "e": 21.06,
+          "c": 0.988681
+        },
+        {
+          "w": "that",
+          "s": 21.06,
+          "e": 21.29,
+          "c": 0.999744
+        },
+        {
+          "w": "policy",
+          "s": 21.38,
+          "e": 21.62,
+          "c": 0.999836
+        },
+        {
+          "w": "requires",
+          "s": 21.69,
+          "e": 22.12,
+          "c": 0.999386
+        },
+        {
+          "w": "that",
+          "s": 22.12,
+          "e": 22.35,
+          "c": 0.997305
+        },
+        {
+          "w": "you",
+          "s": 22.35,
+          "e": 22.4,
+          "c": 0.999821
+        },
+        {
+          "w": "consider",
+          "s": 22.59,
+          "e": 22.92,
+          "c": 0.81281
+        },
+        {
+          "w": "the",
+          "s": 23.04,
+          "e": 23.13,
+          "c": 0.81875
+        },
+        {
+          "w": "risk",
+          "s": 23.15,
+          "e": 23.4,
+          "c": 0.990178
+        },
+        {
+          "w": "that",
+          "s": 23.45,
+          "e": 23.59,
+          "c": 0.999851
+        },
+        {
+          "w": "a",
+          "s": 23.66,
+          "e": 23.69,
+          "c": 0.993674
+        },
+        {
+          "w": "proposed",
+          "s": 23.75,
+          "e": 24.25,
+          "c": 0.999491
+        },
+        {
+          "w": "arms",
+          "s": 24.25,
+          "e": 24.51,
+          "c": 0.998675
+        },
+        {
+          "w": "transfer",
+          "s": 24.51,
+          "e": 24.9,
+          "c": 0.999518
+        },
+        {
+          "w": "may",
+          "s": 25.11,
+          "e": 25.28,
+          "c": 0.99858
+        },
+        {
+          "w": "contribute",
+          "s": 25.28,
+          "e": 25.8,
+          "c": 0.902257
+        },
+        {
+          "w": "to",
+          "s": 25.85,
+          "e": 25.9,
+          "c": 0.9996
+        },
+        {
+          "w": "violations",
+          "s": 25.9,
+          "e": 26.44,
+          "c": 0.997857
+        },
+        {
+          "w": "of",
+          "s": 26.45,
+          "e": 26.53,
+          "c": 0.999508
+        },
+        {
+          "w": "international",
+          "s": 26.61,
+          "e": 27.24,
+          "c": 0.990841
+        },
+        {
+          "w": "humanitarian",
+          "s": 27.24,
+          "e": 27.84,
+          "c": 0.996664
+        },
+        {
+          "w": "law,",
+          "s": 27.96,
+          "e": 28.2,
+          "c": 0.978717
+        },
+        {
+          "w": "right?",
+          "s": 28.2,
+          "e": 29.1,
+          "c": 0.966125
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 29.07,
+      "end_s": 30.17,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Yes, sir.",
+      "words": [
+        {
+          "w": "Yes,",
+          "s": 29.072,
+          "e": 29.602,
+          "c": 0.140049
+        },
+        {
+          "w": "sir.",
+          "s": 29.642,
+          "e": 30.172,
+          "c": 0.914622
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 30.31,
+      "end_s": 30.66,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Were",
+      "words": [
+        {
+          "w": "Were",
+          "s": 30.312,
+          "e": 30.662,
+          "c": 0.54499
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 30.88,
+      "end_s": 40.97,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you involved in assessing that risk in connection with the administration's recent decision to invoke emergency powers to bypass congressional review",
+      "words": [
+        {
+          "w": "you",
+          "s": 30.882,
+          "e": 30.942,
+          "c": 0.999056
+        },
+        {
+          "w": "involved",
+          "s": 30.942,
+          "e": 31.412,
+          "c": 0.998889
+        },
+        {
+          "w": "in",
+          "s": 31.412,
+          "e": 31.832,
+          "c": 0.994668
+        },
+        {
+          "w": "assessing",
+          "s": 32.002,
+          "e": 32.592,
+          "c": 0.994896
+        },
+        {
+          "w": "that",
+          "s": 32.682,
+          "e": 32.912,
+          "c": 0.842693
+        },
+        {
+          "w": "risk",
+          "s": 32.912,
+          "e": 33.382,
+          "c": 0.969661
+        },
+        {
+          "w": "in",
+          "s": 33.442,
+          "e": 33.652,
+          "c": 0.625377
+        },
+        {
+          "w": "connection",
+          "s": 33.652,
+          "e": 34.102,
+          "c": 0.982975
+        },
+        {
+          "w": "with",
+          "s": 34.152,
+          "e": 34.362,
+          "c": 0.99947
+        },
+        {
+          "w": "the",
+          "s": 34.362,
+          "e": 34.512,
+          "c": 0.999064
+        },
+        {
+          "w": "administration's",
+          "s": 34.672,
+          "e": 35.312,
+          "c": 0.970349
+        },
+        {
+          "w": "recent",
+          "s": 35.352,
+          "e": 35.672,
+          "c": 0.998685
+        },
+        {
+          "w": "decision",
+          "s": 35.842,
+          "e": 36.152,
+          "c": 0.995308
+        },
+        {
+          "w": "to",
+          "s": 36.152,
+          "e": 36.362,
+          "c": 0.999954
+        },
+        {
+          "w": "invoke",
+          "s": 36.682,
+          "e": 37.012,
+          "c": 0.999493
+        },
+        {
+          "w": "emergency",
+          "s": 37.012,
+          "e": 37.982,
+          "c": 0.999125
+        },
+        {
+          "w": "powers",
+          "s": 37.982,
+          "e": 38.622,
+          "c": 0.998934
+        },
+        {
+          "w": "to",
+          "s": 38.632,
+          "e": 38.842,
+          "c": 0.991162
+        },
+        {
+          "w": "bypass",
+          "s": 38.842,
+          "e": 39.512,
+          "c": 0.971476
+        },
+        {
+          "w": "congressional",
+          "s": 39.512,
+          "e": 40.072,
+          "c": 0.787157
+        },
+        {
+          "w": "review",
+          "s": 40.072,
+          "e": 40.972,
+          "c": 0.967362
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 40.97,
+      "end_s": 44.43,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and transfer over 20,000 bombs to the Netanyahu",
+      "words": [
+        {
+          "w": "and",
+          "s": 40.972,
+          "e": 41.172,
+          "c": 0.999529
+        },
+        {
+          "w": "transfer",
+          "s": 41.542,
+          "e": 41.712,
+          "c": 0.9993
+        },
+        {
+          "w": "over",
+          "s": 41.712,
+          "e": 41.822,
+          "c": 0.998788
+        },
+        {
+          "w": "20,000",
+          "s": 41.972,
+          "e": 43.112,
+          "c": 0.989848
+        },
+        {
+          "w": "bombs",
+          "s": 43.112,
+          "e": 43.432,
+          "c": 0.987304
+        },
+        {
+          "w": "to",
+          "s": 43.442,
+          "e": 43.572,
+          "c": 0.996293
+        },
+        {
+          "w": "the",
+          "s": 43.572,
+          "e": 43.772,
+          "c": 0.999319
+        },
+        {
+          "w": "Netanyahu",
+          "s": 43.772,
+          "e": 44.432,
+          "c": 0.991463
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 44.43,
+      "end_s": 53.45,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "government? In response to the administration's emergency",
+      "words": [
+        {
+          "w": "government?",
+          "s": 44.432,
+          "e": 46.832,
+          "c": 0.947044
+        },
+        {
+          "w": "In",
+          "s": 46.832,
+          "e": 47.162,
+          "c": 0.807249
+        },
+        {
+          "w": "response",
+          "s": 47.352,
+          "e": 47.932,
+          "c": 0.999661
+        },
+        {
+          "w": "to",
+          "s": 48.522,
+          "e": 48.812,
+          "c": 0.999567
+        },
+        {
+          "w": "the",
+          "s": 48.812,
+          "e": 49.292,
+          "c": 0.999773
+        },
+        {
+          "w": "administration's",
+          "s": 49.302,
+          "e": 51.942,
+          "c": 0.994042
+        },
+        {
+          "w": "emergency",
+          "s": 51.942,
+          "e": 53.452,
+          "c": 0.990708
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 53.68,
+      "end_s": 55.01,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "declaration I'm",
+      "words": [
+        {
+          "w": "declaration",
+          "s": 53.684,
+          "e": 54.704,
+          "c": 0.230561
+        },
+        {
+          "w": "I'm",
+          "s": 54.704,
+          "e": 55.014,
+          "c": 0.111537
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 55.11,
+      "end_s": 63,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "not asking you about I understand that but I think the context is important sir I know cuz I submitted a question for the record and you said you would comply with",
+      "words": [
+        {
+          "w": "not",
+          "s": 55.114,
+          "e": 55.394,
+          "c": 0.992265
+        },
+        {
+          "w": "asking",
+          "s": 55.394,
+          "e": 56.094,
+          "c": 0.987574
+        },
+        {
+          "w": "you",
+          "s": 56.094,
+          "e": 56.424,
+          "c": 0.995587
+        },
+        {
+          "w": "about",
+          "s": 56.514,
+          "e": 56.784,
+          "c": 0.914596
+        },
+        {
+          "w": "I",
+          "s": 56.784,
+          "e": 56.804,
+          "c": 0.810111
+        },
+        {
+          "w": "understand",
+          "s": 56.904,
+          "e": 57.304,
+          "c": 0.679879
+        },
+        {
+          "w": "that",
+          "s": 57.304,
+          "e": 57.404,
+          "c": 0.986058
+        },
+        {
+          "w": "but",
+          "s": 57.404,
+          "e": 57.574,
+          "c": 0.966343
+        },
+        {
+          "w": "I",
+          "s": 57.584,
+          "e": 57.594,
+          "c": 0.547568
+        },
+        {
+          "w": "think",
+          "s": 57.634,
+          "e": 57.884,
+          "c": 0.988155
+        },
+        {
+          "w": "the",
+          "s": 57.884,
+          "e": 58.034,
+          "c": 0.983926
+        },
+        {
+          "w": "context",
+          "s": 58.054,
+          "e": 58.664,
+          "c": 0.927908
+        },
+        {
+          "w": "is",
+          "s": 58.664,
+          "e": 58.774,
+          "c": 0.997113
+        },
+        {
+          "w": "important",
+          "s": 58.774,
+          "e": 59.274,
+          "c": 0.983472
+        },
+        {
+          "w": "sir",
+          "s": 59.434,
+          "e": 59.434,
+          "c": 0.818111
+        },
+        {
+          "w": "I",
+          "s": 59.444,
+          "e": 59.484,
+          "c": 0.950316
+        },
+        {
+          "w": "know",
+          "s": 59.484,
+          "e": 59.704,
+          "c": 0.996519
+        },
+        {
+          "w": "cuz",
+          "s": 59.704,
+          "e": 59.864,
+          "c": 0.361155
+        },
+        {
+          "w": "I",
+          "s": 59.864,
+          "e": 59.914,
+          "c": 0.987733
+        },
+        {
+          "w": "submitted",
+          "s": 59.914,
+          "e": 60.414,
+          "c": 0.998435
+        },
+        {
+          "w": "a",
+          "s": 60.414,
+          "e": 60.464,
+          "c": 0.999432
+        },
+        {
+          "w": "question",
+          "s": 60.464,
+          "e": 60.894,
+          "c": 0.997111
+        },
+        {
+          "w": "for",
+          "s": 60.894,
+          "e": 61.064,
+          "c": 0.997073
+        },
+        {
+          "w": "the",
+          "s": 61.064,
+          "e": 61.214,
+          "c": 0.996744
+        },
+        {
+          "w": "record",
+          "s": 61.234,
+          "e": 61.554,
+          "c": 0.997775
+        },
+        {
+          "w": "and",
+          "s": 61.554,
+          "e": 61.804,
+          "c": 0.996012
+        },
+        {
+          "w": "you",
+          "s": 61.804,
+          "e": 61.924,
+          "c": 0.986389
+        },
+        {
+          "w": "said",
+          "s": 61.924,
+          "e": 62.044,
+          "c": 0.997234
+        },
+        {
+          "w": "you",
+          "s": 62.124,
+          "e": 62.224,
+          "c": 0.999582
+        },
+        {
+          "w": "would",
+          "s": 62.334,
+          "e": 62.534,
+          "c": 0.999594
+        },
+        {
+          "w": "comply",
+          "s": 62.534,
+          "e": 62.684,
+          "c": 0.999321
+        },
+        {
+          "w": "with",
+          "s": 62.884,
+          "e": 63.004,
+          "c": 0.999914
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 63.09,
+      "end_s": 73.3,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "cat policy so now I'm asking you whether you were involved in reviewing the transfer of 20,000 bombs to the Netanyahu government with respect to compliance with the",
+      "words": [
+        {
+          "w": "cat",
+          "s": 63.094,
+          "e": 63.224,
+          "c": 0.452355
+        },
+        {
+          "w": "policy",
+          "s": 63.224,
+          "e": 63.544,
+          "c": 0.963321
+        },
+        {
+          "w": "so",
+          "s": 63.544,
+          "e": 63.644,
+          "c": 0.99815
+        },
+        {
+          "w": "now",
+          "s": 63.644,
+          "e": 63.804,
+          "c": 0.999146
+        },
+        {
+          "w": "I'm",
+          "s": 63.804,
+          "e": 63.954,
+          "c": 0.995104
+        },
+        {
+          "w": "asking",
+          "s": 63.954,
+          "e": 64.144,
+          "c": 0.998988
+        },
+        {
+          "w": "you",
+          "s": 64.274,
+          "e": 64.434,
+          "c": 0.999112
+        },
+        {
+          "w": "whether",
+          "s": 64.434,
+          "e": 64.804,
+          "c": 0.998382
+        },
+        {
+          "w": "you",
+          "s": 64.804,
+          "e": 64.964,
+          "c": 0.998854
+        },
+        {
+          "w": "were",
+          "s": 64.964,
+          "e": 65.244,
+          "c": 0.914227
+        },
+        {
+          "w": "involved",
+          "s": 65.244,
+          "e": 65.984,
+          "c": 0.814961
+        },
+        {
+          "w": "in",
+          "s": 65.984,
+          "e": 66.094,
+          "c": 0.999918
+        },
+        {
+          "w": "reviewing",
+          "s": 66.094,
+          "e": 66.614,
+          "c": 0.999081
+        },
+        {
+          "w": "the",
+          "s": 66.764,
+          "e": 66.794,
+          "c": 0.999912
+        },
+        {
+          "w": "transfer",
+          "s": 66.794,
+          "e": 67.264,
+          "c": 0.99955
+        },
+        {
+          "w": "of",
+          "s": 67.264,
+          "e": 67.374,
+          "c": 0.998873
+        },
+        {
+          "w": "20,000",
+          "s": 67.374,
+          "e": 68.364,
+          "c": 0.853408
+        },
+        {
+          "w": "bombs",
+          "s": 68.364,
+          "e": 68.654,
+          "c": 0.992498
+        },
+        {
+          "w": "to",
+          "s": 68.654,
+          "e": 68.764,
+          "c": 0.995118
+        },
+        {
+          "w": "the",
+          "s": 68.764,
+          "e": 68.934,
+          "c": 0.996272
+        },
+        {
+          "w": "Netanyahu",
+          "s": 68.934,
+          "e": 69.364,
+          "c": 0.906527
+        },
+        {
+          "w": "government",
+          "s": 69.464,
+          "e": 70.024,
+          "c": 0.953314
+        },
+        {
+          "w": "with",
+          "s": 70.114,
+          "e": 70.334,
+          "c": 0.994095
+        },
+        {
+          "w": "respect",
+          "s": 70.614,
+          "e": 71.174,
+          "c": 0.999338
+        },
+        {
+          "w": "to",
+          "s": 71.174,
+          "e": 71.394,
+          "c": 0.998681
+        },
+        {
+          "w": "compliance",
+          "s": 71.394,
+          "e": 72.414,
+          "c": 0.993953
+        },
+        {
+          "w": "with",
+          "s": 72.554,
+          "e": 72.974,
+          "c": 0.985844
+        },
+        {
+          "w": "the",
+          "s": 72.974,
+          "e": 73.304,
+          "c": 0.998658
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 73.3,
+      "end_s": 74.86,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "cat policy any",
+      "words": [
+        {
+          "w": "cat",
+          "s": 73.304,
+          "e": 73.634,
+          "c": 0.8894
+        },
+        {
+          "w": "policy",
+          "s": 73.634,
+          "e": 74.344,
+          "c": 0.997272
+        },
+        {
+          "w": "any",
+          "s": 74.344,
+          "e": 74.864,
+          "c": 0.486279
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 74.86,
+      "end_s": 80.62,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "foreign military sale that we do",
+      "words": [
+        {
+          "w": "foreign",
+          "s": 74.864,
+          "e": 76.074,
+          "c": 0.81428
+        },
+        {
+          "w": "military",
+          "s": 76.074,
+          "e": 77.454,
+          "c": 0.997492
+        },
+        {
+          "w": "sale",
+          "s": 77.454,
+          "e": 78.114,
+          "c": 0.923782
+        },
+        {
+          "w": "that",
+          "s": 78.184,
+          "e": 78.824,
+          "c": 0.997048
+        },
+        {
+          "w": "we",
+          "s": 78.834,
+          "e": 79.204,
+          "c": 0.99839
+        },
+        {
+          "w": "do",
+          "s": 79.204,
+          "e": 80.624,
+          "c": 0.869226
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 80.62,
+      "end_s": 80.63,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "is",
+      "words": [
+        {
+          "w": "is",
+          "s": 80.624,
+          "e": 80.624,
+          "c": 0.280569
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 80.84,
+      "end_s": 93.87,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "would fall underneath the conventional arms transfer. Did you personally review-- I review hundreds of arms sales. I signed hundreds of them. The emergency declaration, again, it was consistent with the law.",
+      "words": [
+        {
+          "w": "would",
+          "s": 80.836,
+          "e": 80.916,
+          "c": 0.860505
+        },
+        {
+          "w": "fall",
+          "s": 80.916,
+          "e": 81.186,
+          "c": 0.998452
+        },
+        {
+          "w": "underneath",
+          "s": 81.186,
+          "e": 81.786,
+          "c": 0.99065
+        },
+        {
+          "w": "the",
+          "s": 81.876,
+          "e": 82.016,
+          "c": 0.972628
+        },
+        {
+          "w": "conventional",
+          "s": 82.096,
+          "e": 82.636,
+          "c": 0.89787
+        },
+        {
+          "w": "arms",
+          "s": 82.636,
+          "e": 82.846,
+          "c": 0.978789
+        },
+        {
+          "w": "transfer.",
+          "s": 82.846,
+          "e": 83.756,
+          "c": 0.574824
+        },
+        {
+          "w": "Did",
+          "s": 84.006,
+          "e": 84.006,
+          "c": 0.502157
+        },
+        {
+          "w": "you",
+          "s": 84.016,
+          "e": 84.236,
+          "c": 0.975195
+        },
+        {
+          "w": "personally",
+          "s": 84.256,
+          "e": 84.966,
+          "c": 0.765071
+        },
+        {
+          "w": "review--",
+          "s": 85.236,
+          "e": 85.876,
+          "c": 0.31068
+        },
+        {
+          "w": "I",
+          "s": 85.876,
+          "e": 85.986,
+          "c": 0.971356
+        },
+        {
+          "w": "review",
+          "s": 86.136,
+          "e": 86.676,
+          "c": 0.884502
+        },
+        {
+          "w": "hundreds",
+          "s": 86.676,
+          "e": 87.576,
+          "c": 0.995321
+        },
+        {
+          "w": "of",
+          "s": 87.606,
+          "e": 87.826,
+          "c": 0.997371
+        },
+        {
+          "w": "arms",
+          "s": 87.826,
+          "e": 88.286,
+          "c": 0.912793
+        },
+        {
+          "w": "sales.",
+          "s": 88.286,
+          "e": 89.216,
+          "c": 0.942214
+        },
+        {
+          "w": "I",
+          "s": 89.216,
+          "e": 89.286,
+          "c": 0.997925
+        },
+        {
+          "w": "signed",
+          "s": 89.476,
+          "e": 89.746,
+          "c": 0.909626
+        },
+        {
+          "w": "hundreds",
+          "s": 89.746,
+          "e": 90.366,
+          "c": 0.99775
+        },
+        {
+          "w": "of",
+          "s": 90.366,
+          "e": 90.446,
+          "c": 0.999769
+        },
+        {
+          "w": "them.",
+          "s": 90.516,
+          "e": 91.096,
+          "c": 0.987385
+        },
+        {
+          "w": "The",
+          "s": 91.096,
+          "e": 91.226,
+          "c": 0.998767
+        },
+        {
+          "w": "emergency",
+          "s": 91.356,
+          "e": 91.636,
+          "c": 0.935231
+        },
+        {
+          "w": "declaration,",
+          "s": 91.636,
+          "e": 92.226,
+          "c": 0.854087
+        },
+        {
+          "w": "again,",
+          "s": 92.226,
+          "e": 92.546,
+          "c": 0.97026
+        },
+        {
+          "w": "it",
+          "s": 92.556,
+          "e": 92.646,
+          "c": 0.659826
+        },
+        {
+          "w": "was",
+          "s": 92.786,
+          "e": 92.786,
+          "c": 0.998841
+        },
+        {
+          "w": "consistent",
+          "s": 92.826,
+          "e": 93.256,
+          "c": 0.999428
+        },
+        {
+          "w": "with",
+          "s": 93.256,
+          "e": 93.446,
+          "c": 0.999563
+        },
+        {
+          "w": "the",
+          "s": 93.446,
+          "e": 93.586,
+          "c": 0.998847
+        },
+        {
+          "w": "law.",
+          "s": 93.586,
+          "e": 93.866,
+          "c": 0.91543
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 93.9,
+      "end_s": 99.48,
+      "speaker": "SPEAKER_18",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "My comment-- But I'm not asking you about the-- I know, but I'm trying to address your concern. No, you're actually not. Yes, sir,",
+      "words": [
+        {
+          "w": "My",
+          "s": 93.896,
+          "e": 93.986,
+          "c": 0.622888
+        },
+        {
+          "w": "comment--",
+          "s": 94.156,
+          "e": 94.376,
+          "c": 0.412071
+        },
+        {
+          "w": "But",
+          "s": 94.406,
+          "e": 94.446,
+          "c": 0.658909
+        },
+        {
+          "w": "I'm",
+          "s": 94.616,
+          "e": 94.726,
+          "c": 0.99329
+        },
+        {
+          "w": "not",
+          "s": 94.726,
+          "e": 94.876,
+          "c": 0.998449
+        },
+        {
+          "w": "asking",
+          "s": 94.906,
+          "e": 95.236,
+          "c": 0.996364
+        },
+        {
+          "w": "you",
+          "s": 95.236,
+          "e": 95.436,
+          "c": 0.9854
+        },
+        {
+          "w": "about",
+          "s": 95.436,
+          "e": 95.616,
+          "c": 0.959117
+        },
+        {
+          "w": "the--",
+          "s": 95.696,
+          "e": 95.796,
+          "c": 0.53896
+        },
+        {
+          "w": "I",
+          "s": 95.796,
+          "e": 95.846,
+          "c": 0.967882
+        },
+        {
+          "w": "know,",
+          "s": 96.056,
+          "e": 96.156,
+          "c": 0.83262
+        },
+        {
+          "w": "but",
+          "s": 96.156,
+          "e": 96.316,
+          "c": 0.996641
+        },
+        {
+          "w": "I'm",
+          "s": 96.316,
+          "e": 96.466,
+          "c": 0.870308
+        },
+        {
+          "w": "trying",
+          "s": 96.466,
+          "e": 96.776,
+          "c": 0.983723
+        },
+        {
+          "w": "to",
+          "s": 96.776,
+          "e": 96.876,
+          "c": 0.994706
+        },
+        {
+          "w": "address",
+          "s": 96.876,
+          "e": 97.106,
+          "c": 0.999371
+        },
+        {
+          "w": "your",
+          "s": 97.266,
+          "e": 97.436,
+          "c": 0.991822
+        },
+        {
+          "w": "concern.",
+          "s": 97.486,
+          "e": 98.036,
+          "c": 0.974728
+        },
+        {
+          "w": "No,",
+          "s": 98.036,
+          "e": 98.136,
+          "c": 0.889837
+        },
+        {
+          "w": "you're",
+          "s": 98.216,
+          "e": 98.296,
+          "c": 0.93978
+        },
+        {
+          "w": "actually",
+          "s": 98.296,
+          "e": 98.506,
+          "c": 0.940413
+        },
+        {
+          "w": "not.",
+          "s": 98.506,
+          "e": 98.696,
+          "c": 0.637028
+        },
+        {
+          "w": "Yes,",
+          "s": 98.936,
+          "e": 99.076,
+          "c": 0.868239
+        },
+        {
+          "w": "sir,",
+          "s": 99.146,
+          "e": 99.476,
+          "c": 0.834625
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 99.48,
+      "end_s": 99.92,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I am.",
+      "words": [
+        {
+          "w": "I",
+          "s": 99.476,
+          "e": 99.556,
+          "c": 0.999264
+        },
+        {
+          "w": "am.",
+          "s": 99.556,
+          "e": 99.916,
+          "c": 0.997889
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 99.97,
+      "end_s": 100.3,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "Are",
+      "words": [
+        {
+          "w": "Are",
+          "s": 99.968,
+          "e": 100.298,
+          "c": 0.240193
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 100.45,
+      "end_s": 111.49,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you concerned that Israeli Defense Minister Katz said with respect to Lebanon that they were going to use the, quote, Rafa model in Gaza? Does that concern you? I'm not familiar",
+      "words": [
+        {
+          "w": "you",
+          "s": 100.448,
+          "e": 100.628,
+          "c": 0.999468
+        },
+        {
+          "w": "concerned",
+          "s": 100.628,
+          "e": 101.628,
+          "c": 0.986793
+        },
+        {
+          "w": "that",
+          "s": 101.638,
+          "e": 102.088,
+          "c": 0.991119
+        },
+        {
+          "w": "Israeli",
+          "s": 102.088,
+          "e": 102.848,
+          "c": 0.984493
+        },
+        {
+          "w": "Defense",
+          "s": 102.868,
+          "e": 103.678,
+          "c": 0.813082
+        },
+        {
+          "w": "Minister",
+          "s": 103.728,
+          "e": 104.058,
+          "c": 0.974144
+        },
+        {
+          "w": "Katz",
+          "s": 104.128,
+          "e": 104.608,
+          "c": 0.927864
+        },
+        {
+          "w": "said",
+          "s": 104.758,
+          "e": 105.028,
+          "c": 0.513952
+        },
+        {
+          "w": "with",
+          "s": 105.028,
+          "e": 105.128,
+          "c": 0.62411
+        },
+        {
+          "w": "respect",
+          "s": 105.178,
+          "e": 105.538,
+          "c": 0.970543
+        },
+        {
+          "w": "to",
+          "s": 105.668,
+          "e": 105.938,
+          "c": 0.935465
+        },
+        {
+          "w": "Lebanon",
+          "s": 106.448,
+          "e": 106.748,
+          "c": 0.919072
+        },
+        {
+          "w": "that",
+          "s": 106.748,
+          "e": 107.008,
+          "c": 0.665366
+        },
+        {
+          "w": "they",
+          "s": 107.098,
+          "e": 107.168,
+          "c": 0.981072
+        },
+        {
+          "w": "were",
+          "s": 107.168,
+          "e": 107.258,
+          "c": 0.794042
+        },
+        {
+          "w": "going",
+          "s": 107.268,
+          "e": 107.388,
+          "c": 0.954656
+        },
+        {
+          "w": "to",
+          "s": 107.388,
+          "e": 107.518,
+          "c": 0.988925
+        },
+        {
+          "w": "use",
+          "s": 107.518,
+          "e": 107.728,
+          "c": 0.996502
+        },
+        {
+          "w": "the,",
+          "s": 107.728,
+          "e": 107.868,
+          "c": 0.804079
+        },
+        {
+          "w": "quote,",
+          "s": 107.928,
+          "e": 108.128,
+          "c": 0.993261
+        },
+        {
+          "w": "Rafa",
+          "s": 108.218,
+          "e": 108.438,
+          "c": 0.599868
+        },
+        {
+          "w": "model",
+          "s": 108.438,
+          "e": 108.818,
+          "c": 0.997097
+        },
+        {
+          "w": "in",
+          "s": 108.818,
+          "e": 108.968,
+          "c": 0.999716
+        },
+        {
+          "w": "Gaza?",
+          "s": 108.968,
+          "e": 109.528,
+          "c": 0.995535
+        },
+        {
+          "w": "Does",
+          "s": 109.528,
+          "e": 109.708,
+          "c": 0.999739
+        },
+        {
+          "w": "that",
+          "s": 109.708,
+          "e": 109.888,
+          "c": 0.999996
+        },
+        {
+          "w": "concern",
+          "s": 110.008,
+          "e": 110.208,
+          "c": 0.999933
+        },
+        {
+          "w": "you?",
+          "s": 110.208,
+          "e": 110.508,
+          "c": 0.999989
+        },
+        {
+          "w": "I'm",
+          "s": 110.508,
+          "e": 110.718,
+          "c": 0.505478
+        },
+        {
+          "w": "not",
+          "s": 110.928,
+          "e": 110.928,
+          "c": 0.999983
+        },
+        {
+          "w": "familiar",
+          "s": 110.978,
+          "e": 111.488,
+          "c": 0.952898
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 111.49,
+      "end_s": 113.22,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "with that comment. It's a",
+      "words": [
+        {
+          "w": "with",
+          "s": 111.488,
+          "e": 111.788,
+          "c": 0.999979
+        },
+        {
+          "w": "that",
+          "s": 111.878,
+          "e": 112.088,
+          "c": 0.999992
+        },
+        {
+          "w": "comment.",
+          "s": 112.088,
+          "e": 112.848,
+          "c": 0.999952
+        },
+        {
+          "w": "It's",
+          "s": 112.848,
+          "e": 113.148,
+          "c": 0.997885
+        },
+        {
+          "w": "a",
+          "s": 113.168,
+          "e": 113.218,
+          "c": 0.999977
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 113.33,
+      "end_s": 115.31,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "matter of public record. Could you",
+      "words": [
+        {
+          "w": "matter",
+          "s": 113.328,
+          "e": 113.648,
+          "c": 0.999916
+        },
+        {
+          "w": "of",
+          "s": 113.698,
+          "e": 113.828,
+          "c": 0.99999
+        },
+        {
+          "w": "public",
+          "s": 113.838,
+          "e": 114.308,
+          "c": 0.999947
+        },
+        {
+          "w": "record.",
+          "s": 114.308,
+          "e": 115.048,
+          "c": 0.999428
+        },
+        {
+          "w": "Could",
+          "s": 115.048,
+          "e": 115.208,
+          "c": 0.999542
+        },
+        {
+          "w": "you",
+          "s": 115.208,
+          "e": 115.308,
+          "c": 0.999996
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 115.44,
+      "end_s": 115.47,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "take a",
+      "words": [
+        {
+          "w": "take",
+          "s": 115.438,
+          "e": 115.438,
+          "c": 0.999943
+        },
+        {
+          "w": "a",
+          "s": 115.468,
+          "e": 115.468,
+          "c": 0.999996
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 115.53,
+      "end_s": 116.63,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "look at it and get back to me? I would happily",
+      "words": [
+        {
+          "w": "look",
+          "s": 115.528,
+          "e": 115.598,
+          "c": 0.99999
+        },
+        {
+          "w": "at",
+          "s": 115.598,
+          "e": 115.658,
+          "c": 0.999994
+        },
+        {
+          "w": "it",
+          "s": 115.658,
+          "e": 115.718,
+          "c": 0.999983
+        },
+        {
+          "w": "and",
+          "s": 115.718,
+          "e": 115.818,
+          "c": 0.99987
+        },
+        {
+          "w": "get",
+          "s": 115.818,
+          "e": 115.848,
+          "c": 0.999645
+        },
+        {
+          "w": "back",
+          "s": 115.918,
+          "e": 116.048,
+          "c": 0.999205
+        },
+        {
+          "w": "to",
+          "s": 116.048,
+          "e": 116.108,
+          "c": 0.730859
+        },
+        {
+          "w": "me?",
+          "s": 116.108,
+          "e": 116.328,
+          "c": 0.873506
+        },
+        {
+          "w": "I",
+          "s": 116.328,
+          "e": 116.348,
+          "c": 0.996681
+        },
+        {
+          "w": "would",
+          "s": 116.348,
+          "e": 116.468,
+          "c": 0.995729
+        },
+        {
+          "w": "happily",
+          "s": 116.468,
+          "e": 116.628,
+          "c": 0.992668
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 116.72,
+      "end_s": 116.76,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "look at",
+      "words": [
+        {
+          "w": "look",
+          "s": 116.718,
+          "e": 116.718,
+          "c": 0.995473
+        },
+        {
+          "w": "at",
+          "s": 116.758,
+          "e": 116.758,
+          "c": 0.997925
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 116.8,
+      "end_s": 117.02,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "it. Let",
+      "words": [
+        {
+          "w": "it.",
+          "s": 116.798,
+          "e": 116.908,
+          "c": 0.999357
+        },
+        {
+          "w": "Let",
+          "s": 116.908,
+          "e": 117.018,
+          "c": 0.998167
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 117.02,
+      "end_s": 119.57,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "me know if that concerns you. Yes, sir. I'm happy to look at it. Thank you.",
+      "words": [
+        {
+          "w": "me",
+          "s": 117.018,
+          "e": 117.088,
+          "c": 0.999939
+        },
+        {
+          "w": "know",
+          "s": 117.088,
+          "e": 117.228,
+          "c": 0.999964
+        },
+        {
+          "w": "if",
+          "s": 117.298,
+          "e": 117.298,
+          "c": 0.999996
+        },
+        {
+          "w": "that",
+          "s": 117.378,
+          "e": 117.438,
+          "c": 0.999996
+        },
+        {
+          "w": "concerns",
+          "s": 117.438,
+          "e": 117.698,
+          "c": 0.999929
+        },
+        {
+          "w": "you.",
+          "s": 117.828,
+          "e": 117.968,
+          "c": 0.896343
+        },
+        {
+          "w": "Yes,",
+          "s": 117.988,
+          "e": 118.278,
+          "c": 0.999355
+        },
+        {
+          "w": "sir.",
+          "s": 118.448,
+          "e": 118.648,
+          "c": 0.960398
+        },
+        {
+          "w": "I'm",
+          "s": 118.648,
+          "e": 118.738,
+          "c": 0.553229
+        },
+        {
+          "w": "happy",
+          "s": 118.738,
+          "e": 118.788,
+          "c": 0.99987
+        },
+        {
+          "w": "to",
+          "s": 118.888,
+          "e": 118.948,
+          "c": 0.999994
+        },
+        {
+          "w": "look",
+          "s": 118.948,
+          "e": 119.048,
+          "c": 0.999973
+        },
+        {
+          "w": "at",
+          "s": 119.118,
+          "e": 119.118,
+          "c": 0.999969
+        },
+        {
+          "w": "it.",
+          "s": 119.118,
+          "e": 119.258,
+          "c": 0.999975
+        },
+        {
+          "w": "Thank",
+          "s": 119.288,
+          "e": 119.408,
+          "c": 0.999701
+        },
+        {
+          "w": "you.",
+          "s": 119.408,
+          "e": 119.568,
+          "c": 0.999985
+        }
+      ]
+    }
+  ]
+}

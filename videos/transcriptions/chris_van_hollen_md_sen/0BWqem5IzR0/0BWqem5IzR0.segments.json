@@ -1,0 +1,2150 @@
+{
+  "schema_version": 2,
+  "canonical_id": "5c1d029a8ea8d2df",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 101.46,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T01:59:55.475Z",
+  "text_sha256": "167949b7a8a0a15e61749f2536a86f74371ea2d96d88ec8e6fd45bd3cb7bf154",
+  "segments_sha256": "a52ca81cd5465808539914c78af3c79ac9876970eec529d1cabcc37a2f88c29f",
+  "words_sha256": "89cb9007da7bc8c11198235f1a698141cd34fb8679e1f73c5c4e5e45152e72ae",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 4,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 20,
+    "clusters": 5,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.84,
+        "confidence": "low",
+        "clean_s": 63.5
+      },
+      "clean_s": 63.5,
+      "speaking_s": 66.6,
+      "first_s": 0.71
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 6
+      },
+      "clean_s": 6,
+      "speaking_s": 8.1,
+      "first_s": 16.47
+    },
+    {
+      "id": "SPEAKER_04",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.3
+      },
+      "clean_s": 5.3,
+      "speaking_s": 7,
+      "first_s": 24.13
+    },
+    {
+      "id": "SPEAKER_07",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.5
+      },
+      "clean_s": 4.5,
+      "speaking_s": 4.6,
+      "first_s": 60.97
+    },
+    {
+      "id": "SPEAKER_09",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 9.5
+      },
+      "clean_s": 9.5,
+      "speaking_s": 10.2,
+      "first_s": 65.47
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.64,
+      "end_s": 0.64,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 18.59,
+      "end_s": 18.94,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 23.92,
+      "end_s": 23.94,
+      "segment_i": 5,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 50.8,
+      "end_s": 51.31,
+      "segment_i": 8,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 90.13,
+      "end_s": 90.54,
+      "segment_i": 15,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.64,
+      "end_s": 0.65,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Your",
+      "words": [
+        {
+          "w": "Your",
+          "s": 0.64,
+          "e": 0.64,
+          "c": 0.766594
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.69,
+      "end_s": 16.39,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "boss, your former boss, Secretary Noem, called them domestic terrorists. And yesterday, in front of the House and the day before here in the Senate, she refused to retract her statement, calling them domestic terrorists.",
+      "words": [
+        {
+          "w": "boss,",
+          "s": 0.69,
+          "e": 1.02,
+          "c": 0.866472
+        },
+        {
+          "w": "your",
+          "s": 1.36,
+          "e": 1.43,
+          "c": 0.988727
+        },
+        {
+          "w": "former",
+          "s": 1.43,
+          "e": 2,
+          "c": 0.999281
+        },
+        {
+          "w": "boss,",
+          "s": 2.05,
+          "e": 2.72,
+          "c": 0.921249
+        },
+        {
+          "w": "Secretary",
+          "s": 2.72,
+          "e": 2.92,
+          "c": 0.886418
+        },
+        {
+          "w": "Noem,",
+          "s": 3.41,
+          "e": 3.87,
+          "c": 0.796458
+        },
+        {
+          "w": "called",
+          "s": 3.87,
+          "e": 4.22,
+          "c": 0.916585
+        },
+        {
+          "w": "them",
+          "s": 4.41,
+          "e": 4.62,
+          "c": 0.992199
+        },
+        {
+          "w": "domestic",
+          "s": 4.62,
+          "e": 5.17,
+          "c": 0.943526
+        },
+        {
+          "w": "terrorists.",
+          "s": 5.22,
+          "e": 6.01,
+          "c": 0.806877
+        },
+        {
+          "w": "And",
+          "s": 6.19,
+          "e": 6.37,
+          "c": 0.985312
+        },
+        {
+          "w": "yesterday,",
+          "s": 6.87,
+          "e": 7.23,
+          "c": 0.592626
+        },
+        {
+          "w": "in",
+          "s": 7.23,
+          "e": 7.37,
+          "c": 0.997172
+        },
+        {
+          "w": "front",
+          "s": 7.37,
+          "e": 7.77,
+          "c": 0.997971
+        },
+        {
+          "w": "of",
+          "s": 7.77,
+          "e": 7.92,
+          "c": 0.999205
+        },
+        {
+          "w": "the",
+          "s": 7.92,
+          "e": 8.15,
+          "c": 0.993862
+        },
+        {
+          "w": "House",
+          "s": 8.15,
+          "e": 8.4,
+          "c": 0.935246
+        },
+        {
+          "w": "and",
+          "s": 8.53,
+          "e": 8.57,
+          "c": 0.880201
+        },
+        {
+          "w": "the",
+          "s": 8.91,
+          "e": 9,
+          "c": 0.992771
+        },
+        {
+          "w": "day",
+          "s": 9,
+          "e": 9.23,
+          "c": 0.998633
+        },
+        {
+          "w": "before",
+          "s": 9.23,
+          "e": 9.7,
+          "c": 0.99935
+        },
+        {
+          "w": "here",
+          "s": 9.7,
+          "e": 10.01,
+          "c": 0.752626
+        },
+        {
+          "w": "in",
+          "s": 10.01,
+          "e": 10.15,
+          "c": 0.970639
+        },
+        {
+          "w": "the",
+          "s": 10.15,
+          "e": 10.37,
+          "c": 0.998605
+        },
+        {
+          "w": "Senate,",
+          "s": 10.39,
+          "e": 11.12,
+          "c": 0.978151
+        },
+        {
+          "w": "she",
+          "s": 11.12,
+          "e": 11.3,
+          "c": 0.958236
+        },
+        {
+          "w": "refused",
+          "s": 11.3,
+          "e": 11.5,
+          "c": 0.996321
+        },
+        {
+          "w": "to",
+          "s": 11.79,
+          "e": 11.91,
+          "c": 0.999701
+        },
+        {
+          "w": "retract",
+          "s": 12.43,
+          "e": 12.51,
+          "c": 0.998319
+        },
+        {
+          "w": "her",
+          "s": 12.51,
+          "e": 12.77,
+          "c": 0.998205
+        },
+        {
+          "w": "statement,",
+          "s": 12.77,
+          "e": 13.72,
+          "c": 0.665179
+        },
+        {
+          "w": "calling",
+          "s": 13.72,
+          "e": 14.01,
+          "c": 0.998233
+        },
+        {
+          "w": "them",
+          "s": 14.51,
+          "e": 14.66,
+          "c": 0.999333
+        },
+        {
+          "w": "domestic",
+          "s": 14.69,
+          "e": 15.32,
+          "c": 0.995564
+        },
+        {
+          "w": "terrorists.",
+          "s": 15.35,
+          "e": 16.39,
+          "c": 0.99072
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 16.57,
+      "end_s": 18.59,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "So I have a very simple question for you",
+      "words": [
+        {
+          "w": "So",
+          "s": 16.57,
+          "e": 16.65,
+          "c": 0.992284
+        },
+        {
+          "w": "I",
+          "s": 16.65,
+          "e": 16.71,
+          "c": 0.998451
+        },
+        {
+          "w": "have",
+          "s": 16.71,
+          "e": 16.93,
+          "c": 0.999399
+        },
+        {
+          "w": "a",
+          "s": 16.93,
+          "e": 17.03,
+          "c": 0.999104
+        },
+        {
+          "w": "very",
+          "s": 17.24,
+          "e": 17.29,
+          "c": 0.999134
+        },
+        {
+          "w": "simple",
+          "s": 17.29,
+          "e": 17.68,
+          "c": 0.999005
+        },
+        {
+          "w": "question",
+          "s": 17.68,
+          "e": 18.21,
+          "c": 0.999397
+        },
+        {
+          "w": "for",
+          "s": 18.21,
+          "e": 18.39,
+          "c": 0.998452
+        },
+        {
+          "w": "you",
+          "s": 18.4,
+          "e": 18.59,
+          "c": 0.999457
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 18.59,
+      "end_s": 18.94,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "today.",
+      "words": [
+        {
+          "w": "today.",
+          "s": 18.59,
+          "e": 18.94,
+          "c": 0.800243
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 19.23,
+      "end_s": 23.83,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Would you agree with me that Rene Good and Alex Preddy are not domestic terrorists?",
+      "words": [
+        {
+          "w": "Would",
+          "s": 19.23,
+          "e": 19.51,
+          "c": 0.998083
+        },
+        {
+          "w": "you",
+          "s": 19.51,
+          "e": 19.7,
+          "c": 0.999609
+        },
+        {
+          "w": "agree",
+          "s": 19.91,
+          "e": 20.04,
+          "c": 0.999716
+        },
+        {
+          "w": "with",
+          "s": 20.04,
+          "e": 20.3,
+          "c": 0.997963
+        },
+        {
+          "w": "me",
+          "s": 20.3,
+          "e": 20.41,
+          "c": 0.999281
+        },
+        {
+          "w": "that",
+          "s": 20.41,
+          "e": 20.68,
+          "c": 0.9859
+        },
+        {
+          "w": "Rene",
+          "s": 20.75,
+          "e": 20.95,
+          "c": 0.337311
+        },
+        {
+          "w": "Good",
+          "s": 20.95,
+          "e": 21.21,
+          "c": 0.535095
+        },
+        {
+          "w": "and",
+          "s": 21.21,
+          "e": 21.41,
+          "c": 0.979552
+        },
+        {
+          "w": "Alex",
+          "s": 21.41,
+          "e": 21.48,
+          "c": 0.992889
+        },
+        {
+          "w": "Preddy",
+          "s": 21.93,
+          "e": 22.06,
+          "c": 0.147688
+        },
+        {
+          "w": "are",
+          "s": 22.06,
+          "e": 22.26,
+          "c": 0.996004
+        },
+        {
+          "w": "not",
+          "s": 22.26,
+          "e": 22.46,
+          "c": 0.996276
+        },
+        {
+          "w": "domestic",
+          "s": 22.46,
+          "e": 22.96,
+          "c": 0.996595
+        },
+        {
+          "w": "terrorists?",
+          "s": 23.01,
+          "e": 23.83,
+          "c": 0.948417
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 23.92,
+      "end_s": 23.94,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "And",
+      "words": [
+        {
+          "w": "And",
+          "s": 23.92,
+          "e": 23.94,
+          "c": 0.0321351
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 24.2,
+      "end_s": 30.82,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Senator, this is an issue that doesn't involve me. No, no, it does. Because you're going to be- They were shot after I left.",
+      "words": [
+        {
+          "w": "Senator,",
+          "s": 24.2,
+          "e": 24.76,
+          "c": 0.691237
+        },
+        {
+          "w": "this",
+          "s": 24.76,
+          "e": 25.04,
+          "c": 0.97459
+        },
+        {
+          "w": "is",
+          "s": 25.04,
+          "e": 25.06,
+          "c": 0.998771
+        },
+        {
+          "w": "an",
+          "s": 25.16,
+          "e": 25.29,
+          "c": 0.999245
+        },
+        {
+          "w": "issue",
+          "s": 25.36,
+          "e": 25.67,
+          "c": 0.99971
+        },
+        {
+          "w": "that",
+          "s": 25.67,
+          "e": 25.95,
+          "c": 0.995192
+        },
+        {
+          "w": "doesn't",
+          "s": 25.95,
+          "e": 26.44,
+          "c": 0.990605
+        },
+        {
+          "w": "involve",
+          "s": 26.44,
+          "e": 26.93,
+          "c": 0.994522
+        },
+        {
+          "w": "me.",
+          "s": 26.93,
+          "e": 27.32,
+          "c": 0.900787
+        },
+        {
+          "w": "No,",
+          "s": 27.32,
+          "e": 27.62,
+          "c": 0.69542
+        },
+        {
+          "w": "no,",
+          "s": 27.62,
+          "e": 27.81,
+          "c": 0.722688
+        },
+        {
+          "w": "it",
+          "s": 27.98,
+          "e": 28.07,
+          "c": 0.99946
+        },
+        {
+          "w": "does.",
+          "s": 28.07,
+          "e": 28.62,
+          "c": 0.715118
+        },
+        {
+          "w": "Because",
+          "s": 28.62,
+          "e": 28.98,
+          "c": 0.840029
+        },
+        {
+          "w": "you're",
+          "s": 28.98,
+          "e": 29.23,
+          "c": 0.942139
+        },
+        {
+          "w": "going",
+          "s": 29.29,
+          "e": 29.49,
+          "c": 0.999866
+        },
+        {
+          "w": "to",
+          "s": 29.53,
+          "e": 29.63,
+          "c": 0.999945
+        },
+        {
+          "w": "be-",
+          "s": 29.63,
+          "e": 29.76,
+          "c": 0.359231
+        },
+        {
+          "w": "They",
+          "s": 29.78,
+          "e": 29.84,
+          "c": 0.66881
+        },
+        {
+          "w": "were",
+          "s": 29.99,
+          "e": 30.1,
+          "c": 0.99996
+        },
+        {
+          "w": "shot",
+          "s": 30.1,
+          "e": 30.26,
+          "c": 0.996943
+        },
+        {
+          "w": "after",
+          "s": 30.39,
+          "e": 30.46,
+          "c": 0.999908
+        },
+        {
+          "w": "I",
+          "s": 30.46,
+          "e": 30.5,
+          "c": 0.999905
+        },
+        {
+          "w": "left.",
+          "s": 30.5,
+          "e": 30.82,
+          "c": 0.996922
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 30.82,
+      "end_s": 50.8,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "You're going to be the American ambassador of El Salvador if you're confirmed. So I have an interest in your views of the Constitution and your views about what happened in Minneapolis, which all of America has got to see because it's on video. And people were shocked, including Republicans, some of them were shocked,",
+      "words": [
+        {
+          "w": "You're",
+          "s": 30.82,
+          "e": 31.12,
+          "c": 0.991096
+        },
+        {
+          "w": "going",
+          "s": 31.12,
+          "e": 31.34,
+          "c": 0.99995
+        },
+        {
+          "w": "to",
+          "s": 31.43,
+          "e": 31.43,
+          "c": 0.999985
+        },
+        {
+          "w": "be",
+          "s": 31.48,
+          "e": 31.58,
+          "c": 0.999966
+        },
+        {
+          "w": "the",
+          "s": 31.58,
+          "e": 31.69,
+          "c": 0.995851
+        },
+        {
+          "w": "American",
+          "s": 31.73,
+          "e": 32.15,
+          "c": 0.998839
+        },
+        {
+          "w": "ambassador",
+          "s": 32.15,
+          "e": 32.72,
+          "c": 0.776551
+        },
+        {
+          "w": "of",
+          "s": 32.72,
+          "e": 32.83,
+          "c": 0.471883
+        },
+        {
+          "w": "El",
+          "s": 32.83,
+          "e": 32.94,
+          "c": 0.99115
+        },
+        {
+          "w": "Salvador",
+          "s": 32.94,
+          "e": 33.25,
+          "c": 0.979232
+        },
+        {
+          "w": "if",
+          "s": 33.27,
+          "e": 33.34,
+          "c": 0.474381
+        },
+        {
+          "w": "you're",
+          "s": 33.35,
+          "e": 33.62,
+          "c": 0.996664
+        },
+        {
+          "w": "confirmed.",
+          "s": 33.62,
+          "e": 33.98,
+          "c": 0.985417
+        },
+        {
+          "w": "So",
+          "s": 33.98,
+          "e": 34.2,
+          "c": 0.999784
+        },
+        {
+          "w": "I",
+          "s": 34.2,
+          "e": 34.31,
+          "c": 0.99007
+        },
+        {
+          "w": "have",
+          "s": 34.31,
+          "e": 34.76,
+          "c": 0.999994
+        },
+        {
+          "w": "an",
+          "s": 34.76,
+          "e": 34.98,
+          "c": 1
+        },
+        {
+          "w": "interest",
+          "s": 34.98,
+          "e": 35.87,
+          "c": 0.999973
+        },
+        {
+          "w": "in",
+          "s": 35.87,
+          "e": 36.1,
+          "c": 0.999983
+        },
+        {
+          "w": "your",
+          "s": 36.1,
+          "e": 36.55,
+          "c": 0.999969
+        },
+        {
+          "w": "views",
+          "s": 36.55,
+          "e": 37.1,
+          "c": 0.99992
+        },
+        {
+          "w": "of",
+          "s": 37.1,
+          "e": 37.33,
+          "c": 0.999956
+        },
+        {
+          "w": "the",
+          "s": 37.33,
+          "e": 37.67,
+          "c": 0.999989
+        },
+        {
+          "w": "Constitution",
+          "s": 37.67,
+          "e": 39.1,
+          "c": 0.973771
+        },
+        {
+          "w": "and",
+          "s": 39.1,
+          "e": 39.41,
+          "c": 0.656586
+        },
+        {
+          "w": "your",
+          "s": 39.43,
+          "e": 39.83,
+          "c": 0.999773
+        },
+        {
+          "w": "views",
+          "s": 39.86,
+          "e": 40.39,
+          "c": 0.999826
+        },
+        {
+          "w": "about",
+          "s": 40.39,
+          "e": 40.93,
+          "c": 0.997019
+        },
+        {
+          "w": "what",
+          "s": 40.93,
+          "e": 41.37,
+          "c": 0.997731
+        },
+        {
+          "w": "happened",
+          "s": 41.38,
+          "e": 41.72,
+          "c": 0.985462
+        },
+        {
+          "w": "in",
+          "s": 41.72,
+          "e": 41.87,
+          "c": 0.763828
+        },
+        {
+          "w": "Minneapolis,",
+          "s": 41.88,
+          "e": 42.3,
+          "c": 0.87861
+        },
+        {
+          "w": "which",
+          "s": 42.3,
+          "e": 42.57,
+          "c": 0.99999
+        },
+        {
+          "w": "all",
+          "s": 42.57,
+          "e": 42.73,
+          "c": 0.999975
+        },
+        {
+          "w": "of",
+          "s": 42.73,
+          "e": 42.81,
+          "c": 0.999981
+        },
+        {
+          "w": "America",
+          "s": 42.97,
+          "e": 43.2,
+          "c": 0.998239
+        },
+        {
+          "w": "has",
+          "s": 43.21,
+          "e": 43.37,
+          "c": 0.985669
+        },
+        {
+          "w": "got",
+          "s": 43.37,
+          "e": 43.44,
+          "c": 0.999729
+        },
+        {
+          "w": "to",
+          "s": 43.54,
+          "e": 43.63,
+          "c": 1
+        },
+        {
+          "w": "see",
+          "s": 43.63,
+          "e": 43.79,
+          "c": 0.999981
+        },
+        {
+          "w": "because",
+          "s": 43.79,
+          "e": 44.17,
+          "c": 0.975656
+        },
+        {
+          "w": "it's",
+          "s": 44.17,
+          "e": 44.37,
+          "c": 0.99999
+        },
+        {
+          "w": "on",
+          "s": 44.37,
+          "e": 44.47,
+          "c": 0.999899
+        },
+        {
+          "w": "video.",
+          "s": 44.47,
+          "e": 44.92,
+          "c": 0.987545
+        },
+        {
+          "w": "And",
+          "s": 44.98,
+          "e": 45.23,
+          "c": 0.999905
+        },
+        {
+          "w": "people",
+          "s": 45.26,
+          "e": 45.77,
+          "c": 0.999979
+        },
+        {
+          "w": "were",
+          "s": 45.77,
+          "e": 46.12,
+          "c": 0.999987
+        },
+        {
+          "w": "shocked,",
+          "s": 46.12,
+          "e": 46.9,
+          "c": 0.98278
+        },
+        {
+          "w": "including",
+          "s": 46.91,
+          "e": 47.71,
+          "c": 0.989162
+        },
+        {
+          "w": "Republicans,",
+          "s": 47.71,
+          "e": 48.77,
+          "c": 0.965558
+        },
+        {
+          "w": "some",
+          "s": 48.91,
+          "e": 49.21,
+          "c": 0.999077
+        },
+        {
+          "w": "of",
+          "s": 49.21,
+          "e": 49.38,
+          "c": 0.999996
+        },
+        {
+          "w": "them",
+          "s": 49.38,
+          "e": 49.69,
+          "c": 0.999788
+        },
+        {
+          "w": "were",
+          "s": 49.88,
+          "e": 50.08,
+          "c": 0.674149
+        },
+        {
+          "w": "shocked,",
+          "s": 50.08,
+          "e": 50.8,
+          "c": 0.588775
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 50.8,
+      "end_s": 51.31,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that the",
+      "words": [
+        {
+          "w": "that",
+          "s": 50.8,
+          "e": 51.09,
+          "c": 0.700575
+        },
+        {
+          "w": "the",
+          "s": 51.31,
+          "e": 51.31,
+          "c": 0.994856
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 51.44,
+      "end_s": 60.89,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Secretary of Homeland Security refused to retract a statement calling two American citizens peacefully protesting domestic terrorists. And I'm shocked that you refuse to say today that",
+      "words": [
+        {
+          "w": "Secretary",
+          "s": 51.44,
+          "e": 51.98,
+          "c": 0.861927
+        },
+        {
+          "w": "of",
+          "s": 51.98,
+          "e": 52.12,
+          "c": 0.996765
+        },
+        {
+          "w": "Homeland",
+          "s": 52.12,
+          "e": 52.71,
+          "c": 0.998392
+        },
+        {
+          "w": "Security",
+          "s": 52.71,
+          "e": 53.33,
+          "c": 0.992781
+        },
+        {
+          "w": "refused",
+          "s": 53.4,
+          "e": 53.94,
+          "c": 0.772165
+        },
+        {
+          "w": "to",
+          "s": 54.01,
+          "e": 54.19,
+          "c": 0.818156
+        },
+        {
+          "w": "retract",
+          "s": 54.37,
+          "e": 54.8,
+          "c": 0.969131
+        },
+        {
+          "w": "a",
+          "s": 54.8,
+          "e": 54.84,
+          "c": 0.70501
+        },
+        {
+          "w": "statement",
+          "s": 54.84,
+          "e": 55.2,
+          "c": 0.977914
+        },
+        {
+          "w": "calling",
+          "s": 55.2,
+          "e": 55.52,
+          "c": 0.808477
+        },
+        {
+          "w": "two",
+          "s": 55.52,
+          "e": 55.7,
+          "c": 0.709219
+        },
+        {
+          "w": "American",
+          "s": 55.7,
+          "e": 56.12,
+          "c": 0.943383
+        },
+        {
+          "w": "citizens",
+          "s": 56.12,
+          "e": 56.56,
+          "c": 0.956632
+        },
+        {
+          "w": "peacefully",
+          "s": 56.56,
+          "e": 57,
+          "c": 0.900017
+        },
+        {
+          "w": "protesting",
+          "s": 57,
+          "e": 57.6,
+          "c": 0.975732
+        },
+        {
+          "w": "domestic",
+          "s": 57.6,
+          "e": 58.59,
+          "c": 0.826317
+        },
+        {
+          "w": "terrorists.",
+          "s": 58.65,
+          "e": 58.84,
+          "c": 0.79905
+        },
+        {
+          "w": "And",
+          "s": 58.84,
+          "e": 58.99,
+          "c": 0.916679
+        },
+        {
+          "w": "I'm",
+          "s": 58.99,
+          "e": 59.14,
+          "c": 0.985223
+        },
+        {
+          "w": "shocked",
+          "s": 59.46,
+          "e": 59.5,
+          "c": 0.998993
+        },
+        {
+          "w": "that",
+          "s": 59.51,
+          "e": 59.66,
+          "c": 0.992407
+        },
+        {
+          "w": "you",
+          "s": 59.87,
+          "e": 59.87,
+          "c": 0.999712
+        },
+        {
+          "w": "refuse",
+          "s": 59.94,
+          "e": 60.17,
+          "c": 0.873836
+        },
+        {
+          "w": "to",
+          "s": 60.23,
+          "e": 60.28,
+          "c": 0.998169
+        },
+        {
+          "w": "say",
+          "s": 60.28,
+          "e": 60.43,
+          "c": 0.999127
+        },
+        {
+          "w": "today",
+          "s": 60.43,
+          "e": 60.69,
+          "c": 0.993856
+        },
+        {
+          "w": "that",
+          "s": 60.69,
+          "e": 60.89,
+          "c": 0.991386
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 60.9,
+      "end_s": 65.56,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "they're not domestic terrorists. You're refusing to confirm that they're not domestic terrorists.",
+      "words": [
+        {
+          "w": "they're",
+          "s": 60.9,
+          "e": 61.26,
+          "c": 0.978633
+        },
+        {
+          "w": "not",
+          "s": 61.26,
+          "e": 61.37,
+          "c": 0.999643
+        },
+        {
+          "w": "domestic",
+          "s": 61.44,
+          "e": 61.83,
+          "c": 0.999504
+        },
+        {
+          "w": "terrorists.",
+          "s": 61.83,
+          "e": 62.62,
+          "c": 0.955336
+        },
+        {
+          "w": "You're",
+          "s": 62.62,
+          "e": 62.92,
+          "c": 0.999708
+        },
+        {
+          "w": "refusing",
+          "s": 63.24,
+          "e": 63.32,
+          "c": 0.996396
+        },
+        {
+          "w": "to",
+          "s": 63.32,
+          "e": 63.42,
+          "c": 0.988976
+        },
+        {
+          "w": "confirm",
+          "s": 63.42,
+          "e": 63.77,
+          "c": 0.997942
+        },
+        {
+          "w": "that",
+          "s": 63.77,
+          "e": 63.95,
+          "c": 0.999886
+        },
+        {
+          "w": "they're",
+          "s": 64.01,
+          "e": 64.32,
+          "c": 0.999908
+        },
+        {
+          "w": "not",
+          "s": 64.32,
+          "e": 64.47,
+          "c": 0.999981
+        },
+        {
+          "w": "domestic",
+          "s": 64.47,
+          "e": 64.85,
+          "c": 0.999954
+        },
+        {
+          "w": "terrorists.",
+          "s": 64.87,
+          "e": 65.56,
+          "c": 0.945098
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 65.56,
+      "end_s": 74.32,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Look, anytime somebody is shot and killed by law enforcement, serious issue. There should be a process to evaluate it in an investigation and it not be predetermined.",
+      "words": [
+        {
+          "w": "Look,",
+          "s": 65.56,
+          "e": 65.9,
+          "c": 0.987919
+        },
+        {
+          "w": "anytime",
+          "s": 66.18,
+          "e": 66.3,
+          "c": 0.628499
+        },
+        {
+          "w": "somebody",
+          "s": 66.3,
+          "e": 66.75,
+          "c": 0.99894
+        },
+        {
+          "w": "is",
+          "s": 66.76,
+          "e": 66.87,
+          "c": 0.999899
+        },
+        {
+          "w": "shot",
+          "s": 66.87,
+          "e": 67.08,
+          "c": 0.999922
+        },
+        {
+          "w": "and",
+          "s": 67.1,
+          "e": 67.26,
+          "c": 0.999112
+        },
+        {
+          "w": "killed",
+          "s": 67.27,
+          "e": 67.61,
+          "c": 0.999903
+        },
+        {
+          "w": "by",
+          "s": 67.61,
+          "e": 67.73,
+          "c": 0.999996
+        },
+        {
+          "w": "law",
+          "s": 67.73,
+          "e": 67.9,
+          "c": 0.999941
+        },
+        {
+          "w": "enforcement,",
+          "s": 67.9,
+          "e": 68.64,
+          "c": 0.986735
+        },
+        {
+          "w": "serious",
+          "s": 68.64,
+          "e": 68.95,
+          "c": 0.684441
+        },
+        {
+          "w": "issue.",
+          "s": 69.13,
+          "e": 69.6,
+          "c": 0.911976
+        },
+        {
+          "w": "There",
+          "s": 69.6,
+          "e": 69.91,
+          "c": 0.999912
+        },
+        {
+          "w": "should",
+          "s": 70.22,
+          "e": 70.28,
+          "c": 0.999987
+        },
+        {
+          "w": "be",
+          "s": 70.28,
+          "e": 70.4,
+          "c": 1
+        },
+        {
+          "w": "a",
+          "s": 70.4,
+          "e": 70.42,
+          "c": 1
+        },
+        {
+          "w": "process",
+          "s": 70.7,
+          "e": 70.89,
+          "c": 0.999966
+        },
+        {
+          "w": "to",
+          "s": 70.89,
+          "e": 71.01,
+          "c": 0.999983
+        },
+        {
+          "w": "evaluate",
+          "s": 71.01,
+          "e": 71.5,
+          "c": 0.995756
+        },
+        {
+          "w": "it",
+          "s": 71.5,
+          "e": 71.62,
+          "c": 0.955585
+        },
+        {
+          "w": "in",
+          "s": 71.62,
+          "e": 71.73,
+          "c": 0.721695
+        },
+        {
+          "w": "an",
+          "s": 71.75,
+          "e": 71.86,
+          "c": 0.996786
+        },
+        {
+          "w": "investigation",
+          "s": 71.86,
+          "e": 72.66,
+          "c": 0.999828
+        },
+        {
+          "w": "and",
+          "s": 72.66,
+          "e": 72.83,
+          "c": 0.994535
+        },
+        {
+          "w": "it",
+          "s": 72.83,
+          "e": 72.96,
+          "c": 0.712892
+        },
+        {
+          "w": "not",
+          "s": 72.96,
+          "e": 73,
+          "c": 0.999706
+        },
+        {
+          "w": "be",
+          "s": 73.16,
+          "e": 73.25,
+          "c": 0.99999
+        },
+        {
+          "w": "predetermined.",
+          "s": 73.28,
+          "e": 74.32,
+          "c": 0.966418
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 74.8,
+      "end_s": 75.59,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "So exactly,",
+      "words": [
+        {
+          "w": "So",
+          "s": 74.797,
+          "e": 74.877,
+          "c": 0.116208
+        },
+        {
+          "w": "exactly,",
+          "s": 74.877,
+          "e": 75.587,
+          "c": 0.162973
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 75.66,
+      "end_s": 80.22,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Mr., it should not be predetermined. So that's why I asked you whether you would agree",
+      "words": [
+        {
+          "w": "Mr.",
+          "s": 75.657,
+          "e": 76.057,
+          "c": 0.984457
+        },
+        {
+          "w": ",",
+          "s": 76.057,
+          "e": 76.327,
+          "c": 0.0445883
+        },
+        {
+          "w": "it",
+          "s": 76.357,
+          "e": 76.377,
+          "c": 0.509295
+        },
+        {
+          "w": "should",
+          "s": 76.377,
+          "e": 76.517,
+          "c": 0.981703
+        },
+        {
+          "w": "not",
+          "s": 76.517,
+          "e": 76.617,
+          "c": 0.974938
+        },
+        {
+          "w": "be",
+          "s": 76.687,
+          "e": 76.777,
+          "c": 0.923726
+        },
+        {
+          "w": "predetermined.",
+          "s": 76.777,
+          "e": 77.457,
+          "c": 0.950574
+        },
+        {
+          "w": "So",
+          "s": 77.557,
+          "e": 77.627,
+          "c": 0.999363
+        },
+        {
+          "w": "that's",
+          "s": 77.627,
+          "e": 78.077,
+          "c": 0.995826
+        },
+        {
+          "w": "why",
+          "s": 78.077,
+          "e": 78.307,
+          "c": 0.998483
+        },
+        {
+          "w": "I",
+          "s": 78.307,
+          "e": 78.347,
+          "c": 0.959311
+        },
+        {
+          "w": "asked",
+          "s": 78.417,
+          "e": 78.757,
+          "c": 0.957455
+        },
+        {
+          "w": "you",
+          "s": 78.757,
+          "e": 78.987,
+          "c": 0.992617
+        },
+        {
+          "w": "whether",
+          "s": 78.987,
+          "e": 79.527,
+          "c": 0.991266
+        },
+        {
+          "w": "you",
+          "s": 79.527,
+          "e": 79.797,
+          "c": 0.990732
+        },
+        {
+          "w": "would",
+          "s": 79.797,
+          "e": 79.937,
+          "c": 0.845167
+        },
+        {
+          "w": "agree",
+          "s": 79.937,
+          "e": 80.217,
+          "c": 0.885675
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 80.3,
+      "end_s": 90.13,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that you shouldn't just call them domestic terrorists. Let me move on. I found it astounding, I find it astounding that you can't say here at a public hearing to be ambassador",
+      "words": [
+        {
+          "w": "that",
+          "s": 80.297,
+          "e": 80.387,
+          "c": 0.836558
+        },
+        {
+          "w": "you",
+          "s": 80.387,
+          "e": 80.517,
+          "c": 0.566551
+        },
+        {
+          "w": "shouldn't",
+          "s": 80.517,
+          "e": 80.907,
+          "c": 0.755867
+        },
+        {
+          "w": "just",
+          "s": 80.907,
+          "e": 81.077,
+          "c": 0.960646
+        },
+        {
+          "w": "call",
+          "s": 81.077,
+          "e": 81.247,
+          "c": 0.986289
+        },
+        {
+          "w": "them",
+          "s": 81.247,
+          "e": 81.417,
+          "c": 0.995319
+        },
+        {
+          "w": "domestic",
+          "s": 81.417,
+          "e": 81.767,
+          "c": 0.994617
+        },
+        {
+          "w": "terrorists.",
+          "s": 81.767,
+          "e": 82.417,
+          "c": 0.987508
+        },
+        {
+          "w": "Let",
+          "s": 82.497,
+          "e": 82.797,
+          "c": 0.997082
+        },
+        {
+          "w": "me",
+          "s": 82.847,
+          "e": 83.067,
+          "c": 0.999155
+        },
+        {
+          "w": "move",
+          "s": 83.067,
+          "e": 83.597,
+          "c": 0.993066
+        },
+        {
+          "w": "on.",
+          "s": 83.597,
+          "e": 84.277,
+          "c": 0.990578
+        },
+        {
+          "w": "I",
+          "s": 84.327,
+          "e": 84.327,
+          "c": 0.999781
+        },
+        {
+          "w": "found",
+          "s": 84.357,
+          "e": 84.617,
+          "c": 0.977398
+        },
+        {
+          "w": "it",
+          "s": 84.617,
+          "e": 84.727,
+          "c": 0.992267
+        },
+        {
+          "w": "astounding,",
+          "s": 84.727,
+          "e": 85.417,
+          "c": 0.305759
+        },
+        {
+          "w": "I",
+          "s": 85.417,
+          "e": 85.467,
+          "c": 0.981498
+        },
+        {
+          "w": "find",
+          "s": 85.467,
+          "e": 85.697,
+          "c": 0.9746
+        },
+        {
+          "w": "it",
+          "s": 85.697,
+          "e": 85.877,
+          "c": 0.726825
+        },
+        {
+          "w": "astounding",
+          "s": 85.877,
+          "e": 86.177,
+          "c": 0.98464
+        },
+        {
+          "w": "that",
+          "s": 86.317,
+          "e": 86.537,
+          "c": 0.998944
+        },
+        {
+          "w": "you",
+          "s": 86.537,
+          "e": 86.767,
+          "c": 0.999809
+        },
+        {
+          "w": "can't",
+          "s": 86.767,
+          "e": 87.107,
+          "c": 0.996789
+        },
+        {
+          "w": "say",
+          "s": 87.177,
+          "e": 87.377,
+          "c": 0.991993
+        },
+        {
+          "w": "here",
+          "s": 87.377,
+          "e": 87.677,
+          "c": 0.902856
+        },
+        {
+          "w": "at",
+          "s": 87.677,
+          "e": 87.827,
+          "c": 0.909724
+        },
+        {
+          "w": "a",
+          "s": 87.827,
+          "e": 87.897,
+          "c": 0.999091
+        },
+        {
+          "w": "public",
+          "s": 87.897,
+          "e": 88.297,
+          "c": 0.999563
+        },
+        {
+          "w": "hearing",
+          "s": 88.357,
+          "e": 88.937,
+          "c": 0.994865
+        },
+        {
+          "w": "to",
+          "s": 89.017,
+          "e": 89.107,
+          "c": 0.999397
+        },
+        {
+          "w": "be",
+          "s": 89.107,
+          "e": 89.277,
+          "c": 0.992882
+        },
+        {
+          "w": "ambassador",
+          "s": 89.277,
+          "e": 90.127,
+          "c": 0.889076
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 90.13,
+      "end_s": 90.54,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "of the",
+      "words": [
+        {
+          "w": "of",
+          "s": 90.127,
+          "e": 90.297,
+          "c": 0.998732
+        },
+        {
+          "w": "the",
+          "s": 90.297,
+          "e": 90.537,
+          "c": 0.997775
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 90.55,
+      "end_s": 101.46,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "United States to another country that these two American citizens that have been shot and killed by federal agents, that they weren't domestic terrorists. I find that astounding.",
+      "words": [
+        {
+          "w": "United",
+          "s": 90.547,
+          "e": 90.997,
+          "c": 0.998864
+        },
+        {
+          "w": "States",
+          "s": 91.057,
+          "e": 91.577,
+          "c": 0.99744
+        },
+        {
+          "w": "to",
+          "s": 91.577,
+          "e": 91.807,
+          "c": 0.703768
+        },
+        {
+          "w": "another",
+          "s": 91.807,
+          "e": 92.617,
+          "c": 0.9996
+        },
+        {
+          "w": "country",
+          "s": 92.617,
+          "e": 93.437,
+          "c": 0.99423
+        },
+        {
+          "w": "that",
+          "s": 93.517,
+          "e": 93.807,
+          "c": 0.999832
+        },
+        {
+          "w": "these",
+          "s": 93.867,
+          "e": 94.297,
+          "c": 0.998451
+        },
+        {
+          "w": "two",
+          "s": 94.297,
+          "e": 94.587,
+          "c": 0.998251
+        },
+        {
+          "w": "American",
+          "s": 94.587,
+          "e": 95.347,
+          "c": 0.997876
+        },
+        {
+          "w": "citizens",
+          "s": 95.347,
+          "e": 96.147,
+          "c": 0.998685
+        },
+        {
+          "w": "that",
+          "s": 96.157,
+          "e": 96.277,
+          "c": 0.7366
+        },
+        {
+          "w": "have",
+          "s": 96.357,
+          "e": 96.457,
+          "c": 0.961555
+        },
+        {
+          "w": "been",
+          "s": 96.457,
+          "e": 96.637,
+          "c": 0.999253
+        },
+        {
+          "w": "shot",
+          "s": 96.637,
+          "e": 96.807,
+          "c": 0.999571
+        },
+        {
+          "w": "and",
+          "s": 96.827,
+          "e": 96.947,
+          "c": 0.998917
+        },
+        {
+          "w": "killed",
+          "s": 96.957,
+          "e": 97.217,
+          "c": 0.999401
+        },
+        {
+          "w": "by",
+          "s": 97.237,
+          "e": 97.317,
+          "c": 0.999647
+        },
+        {
+          "w": "federal",
+          "s": 97.317,
+          "e": 97.637,
+          "c": 0.987475
+        },
+        {
+          "w": "agents,",
+          "s": 97.637,
+          "e": 97.957,
+          "c": 0.742647
+        },
+        {
+          "w": "that",
+          "s": 98.037,
+          "e": 98.127,
+          "c": 0.999125
+        },
+        {
+          "w": "they",
+          "s": 98.127,
+          "e": 98.297,
+          "c": 0.999256
+        },
+        {
+          "w": "weren't",
+          "s": 98.297,
+          "e": 98.597,
+          "c": 0.992138
+        },
+        {
+          "w": "domestic",
+          "s": 98.597,
+          "e": 98.937,
+          "c": 0.999617
+        },
+        {
+          "w": "terrorists.",
+          "s": 98.937,
+          "e": 99.557,
+          "c": 0.97048
+        },
+        {
+          "w": "I",
+          "s": 99.637,
+          "e": 99.637,
+          "c": 0.99946
+        },
+        {
+          "w": "find",
+          "s": 99.637,
+          "e": 99.967,
+          "c": 0.712583
+        },
+        {
+          "w": "that",
+          "s": 99.987,
+          "e": 100.317,
+          "c": 0.997775
+        },
+        {
+          "w": "astounding.",
+          "s": 100.317,
+          "e": 101.457,
+          "c": 0.998344
+        }
+      ]
+    }
+  ]
+}

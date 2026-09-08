@@ -1,0 +1,169 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Damien Patton - 2018 Utah Solutions Summit"
+    Description: >-
+      Despite appearing on this senator's roster, the senator is not the
+      speaker here. The remarks are delivered by Damien Patton, founder of
+      the technology company Banjo, at the 2018 Utah Solutions Summit on the
+      opioid epidemic, an event the speaker credits to Senator Mike Lee's
+      initiative along with Utah Attorney General Sean Reyes and the DEA's
+      Brian Besser. Patton opens by describing the sea of school buses from
+      districts across the state and the thousands of high school students
+      filling the arena that morning, and says the energy changed what he
+      intended to say. He explains that a hat bearing the word "instead"
+      from the attorney general's office drew him into the event. He
+      describes his own background — law enforcement and two tours of
+      military duty before Silicon Valley — and says someone close to him
+      had to be resuscitated multiple times from opioids before the crisis
+      was widely recognised. He says he has moved his company's headquarters
+      to Utah, has committed it to a mission of saving human life and
+      reducing suffering, and calls on technology leaders to be more
+      altruistic, citing Pluralsight One's skills work and programmes at
+      Facebook and Microsoft. He closes with an account of meeting a father
+      at a barbecue whose son died of an overdose in his twenties, whose
+      neighbours and colleagues could not reconcile it with the young man
+      they knew, and who asked what someone on opioids is supposed to look
+      like — the point being that there is no stereotype. He urges the
+      business leaders present not to judge, and tells anyone in the
+      audience who needs help that asking for it is the bravest thing they
+      can do.
+    URL: "https://www.youtube.com/watch?v=-AoB_isQGzY"
+    Video_ID: "-AoB_isQGzY"
+    Show: "Senator Mike Lee"
+    Runtime: "00:10:31"
+    Language: "en"
+
+  Media:
+    File: "-AoB_isQGzY.m4a"
+    SHA256: "5d242de8734c8801ceacafc2a5ca4d00d693c919724ddc529931e4d1bc44fd55"
+    Bytes: 10212846
+    Duration_Seconds: 631
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-AoB_isQGzY"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-AoB_isQGzY.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/mike_lee_ut_sen/-AoB_isQGzY/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCplVxs_j_sLAt0fkplXcl4A"
+    Uploader_ID: "@senatormikelee"
+    View_Count: 2239
+    Like_Count: 9
+    Comment_Count: 11
+    Availability: "public"
+    Published_At: "2018-10-25T23:11:16+00:00"
+    Captured_At: "2026-09-07T17:51:25-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "1.5%"
+      Turns: 1
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "85.1%"
+      Turns: 51
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "9.7%"
+      Turns: 9
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "3.6%"
+      Turns: 3
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+
+  Topics:
+    - "The opioid epidemic in Utah"
+    - "Technology industry involvement in public health"
+    - "The 2018 Utah Solutions Summit"
+    - "Stigma and stereotypes around addiction"
+
+  Source:
+    Canonical_ID: "6a33393f6db41929"
+    Transcribed: "2026-09-07T19:04:22.930628-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1784
+    Segments: 127
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T17:51:26.746336-07:00"
+    Transcription_Finished: "2026-09-07T19:04:22.930628-07:00"
+    Recorded: "2018-10-25"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-AoB_isQGzY.ctm"
+    Fountain: "-AoB_isQGzY.fountain"
+    Diarization_RTTM: "-AoB_isQGzY.rttm"
+    As_Broadcast_Script: "-AoB_isQGzY.script.txt"
+    Segments_JSON: "-AoB_isQGzY.segments.json"
+    Segments_JSONL: "-AoB_isQGzY.segments.jsonl"
+    Subtitles_SRT: "-AoB_isQGzY.srt"
+    Plain_Text: "-AoB_isQGzY.transcription"
+    Subtitles_VTT: "-AoB_isQGzY.vtt"
+    Transcript_SHA256: "9f19226e6a16633ff28b0c639c3f6145f9d682ca1663de94258b79f39cc8fc50"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "mike_lee_ut_sen"
+    video_uid: "mike_lee_ut_sen::-AoB_isQGzY"
+    video_key: "-AoB_isQGzY"
+    youtube_id: "-AoB_isQGzY"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-AoB_isQGzY"
+    source_ref: "-AoB_isQGzY"

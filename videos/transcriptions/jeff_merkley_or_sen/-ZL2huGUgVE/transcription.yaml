@@ -1,0 +1,190 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Climate Disruption Quiz Episode 3"
+    Description: >-
+      The third episode of a recurring Senate floor segment the senator
+      calls the Climate Disruption Quiz, delivered as five multiple-choice
+      questions with answers and explanation. After an opening framing
+      climate disruption as the defining challenge of the generation and
+      listing effects on farms, forests, fisheries, glaciers, permafrost and
+      coral, he asks: why American Airlines cancelled 57 flights between 20
+      and 22 June, with the answer given as extreme temperatures, because
+      hotter air is thinner and provides less lift, echoing 18 cancellations
+      in Phoenix in 2013; how long the recent run of record-setting months
+      lasted, given as 16 months from May 2015 through August 2016, with a
+      back-of-envelope probability calculation offered to argue it did not
+      happen by chance; where the world's largest floating solar project is,
+      given as Lulong, China, at 40 megawatts and enough for 15,000 homes,
+      sited on a lake formed by collapsed abandoned coal mines, with smaller
+      projects noted in India, Australia and Brazil; what share of new car
+      sales in Norway were plug-in hybrid or fully electric, given as 37
+      percent against a global average under 1 percent, up from 6 percent
+      three years earlier, which he attributes to fees on petrol and diesel
+      cars plus subsidies; and what killed billions of baby oysters in
+      Oregon in 2007 and 2008, given as rising ocean acidity rather than red
+      tide, a virus or sea lice, with intake water at the Whiskey Creek
+      hatchery now buffered before it reaches the vats. He states that
+      burning fossil fuels has increased ocean acidity by 30 percent over
+      150 years. All figures are as delivered in the speech. He closes by
+      inviting question suggestions by tweet and quoting a line he
+      attributes to Thoreau about the use of a home without a tolerable
+      planet to put it on.
+    URL: "https://www.youtube.com/watch?v=-ZL2huGUgVE"
+    Video_ID: "-ZL2huGUgVE"
+    Show: "Senator Jeff Merkley"
+    Runtime: "00:14:02"
+    Language: "en"
+
+  Media:
+    File: "-ZL2huGUgVE.m4a"
+    SHA256: "79ec3513d3b88607b0d089a07bc875080435819e7081871150171d8fcbaa45a4"
+    Bytes: 13621047
+    Duration_Seconds: 842
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-ZL2huGUgVE"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-ZL2huGUgVE.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/jeff_merkley_or_sen/-ZL2huGUgVE/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCRoXttCJhMnLVCxCaa6VnNQ"
+    Uploader_ID: "@SenatorJeffMerkleyYT"
+    View_Count: 61
+    Like_Count: 6
+    Availability: "public"
+    Published_At: "2017-08-02T12:59:42+00:00"
+    Captured_At: "2026-09-07T17:51:06-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "0.3%"
+      Turns: 2
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "9.3%"
+      Turns: 10
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "41.3%"
+      Turns: 34
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "17.6%"
+      Turns: 18
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "22.3%"
+      Turns: 19
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "2.6%"
+      Turns: 3
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_11"
+      Share_Of_Speech: "1.2%"
+      Turns: 1
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_20"
+      Share_Of_Speech: "5.4%"
+      Turns: 7
+
+  Topics:
+    - "Climate change public communication"
+    - "Extreme heat and aviation operations"
+    - "Record global temperature streaks"
+    - "Floating solar power projects"
+    - "Electric vehicle adoption in Norway"
+    - "Ocean acidification and Oregon oyster hatcheries"
+
+  Source:
+    Canonical_ID: "883b13b721753c3c"
+    Transcribed: "2026-09-07T19:06:50.616757-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1664
+    Segments: 162
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T17:51:08.189259-07:00"
+    Transcription_Finished: "2026-09-07T19:06:50.616757-07:00"
+    Recorded: "2017-08-02"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-ZL2huGUgVE.ctm"
+    Fountain: "-ZL2huGUgVE.fountain"
+    Diarization_RTTM: "-ZL2huGUgVE.rttm"
+    As_Broadcast_Script: "-ZL2huGUgVE.script.txt"
+    Segments_JSON: "-ZL2huGUgVE.segments.json"
+    Segments_JSONL: "-ZL2huGUgVE.segments.jsonl"
+    Subtitles_SRT: "-ZL2huGUgVE.srt"
+    Plain_Text: "-ZL2huGUgVE.transcription"
+    Subtitles_VTT: "-ZL2huGUgVE.vtt"
+    Transcript_SHA256: "6ec3647ec858b0b31f516f8ed99cb2cfbe454169e34d4325f0a65dd1d8038cd3"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "jeff_merkley_or_sen"
+    video_uid: "jeff_merkley_or_sen::-ZL2huGUgVE"
+    video_key: "-ZL2huGUgVE"
+    youtube_id: "-ZL2huGUgVE"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-ZL2huGUgVE"
+    source_ref: "-ZL2huGUgVE"

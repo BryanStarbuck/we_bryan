@@ -1,0 +1,163 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Senator Merkley Presses Army Corps on Key Oregon Water Projects"
+    Description: >-
+      A hearing exchange with Secretary Connor and General Spellman of the
+      Army Corps of Engineers about Oregon projects. The senator opens by
+      commending the Portland District office for advancing the 27-mile
+      Portland Metro levee system along the Columbia River and says he looks
+      forward to seeing it reach construction. He then raises the Cole
+      Rivers Hatchery on the Rogue River, which he says is named for a
+      person rather than a river and supports many native fish populations
+      across several rivers plus rainbow trout for area lakes, and describes
+      it as in serious trouble from a lack of clean water, disease risk and
+      roughly 30 years of wear; he asks for and receives a commitment to
+      work on identifying capability to restore it. Most of the exchange
+      concerns tribal housing on the Columbia, where the senator says the
+      town rebuilt after the dams inundated it was the one for white
+      residents while the native villages were never rebuilt. The Corps
+      witness describes shifting from a single consolidated village to
+      separate sites for each tribe, says they are about six months into
+      real estate development and identifying needs and locations, and says
+      relations with the affected tribes are better than in the past. The
+      senator notes that the Confederated Tribes of the Warm Springs
+      Reservation and of the Umatilla Indian Reservation have expressed
+      appreciation for the level of engagement, observes that the easy land
+      on both banks is long since developed so remaining sites will be
+      expensive and difficult, and secures agreement to expedite
+      displacement assessments for the John Day and McNary pools alongside
+      those already further along for Bonneville and The Dalles.
+    URL: "https://www.youtube.com/watch?v=-Q0b5KJgEbQ"
+    Video_ID: "-Q0b5KJgEbQ"
+    Show: "Senator Jeff Merkley"
+    Runtime: "00:04:21"
+    Language: "en"
+
+  Media:
+    File: "-Q0b5KJgEbQ.m4a"
+    SHA256: "56755fe15e4befc8ecc504b7d1af48dbe741650d23f3383afa175a843ccec3c1"
+    Bytes: 4232284
+    Duration_Seconds: 261
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-Q0b5KJgEbQ"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-Q0b5KJgEbQ.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/jeff_merkley_or_sen/-Q0b5KJgEbQ/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCRoXttCJhMnLVCxCaa6VnNQ"
+    Uploader_ID: "@SenatorJeffMerkleyYT"
+    View_Count: 157
+    Like_Count: 12
+    Comment_Count: 1
+    Availability: "public"
+    Published_At: "2024-03-11T15:18:35+00:00"
+    Captured_At: "2026-09-07T17:51:01-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "80.6%"
+      Turns: 8
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "1.7%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "17.2%"
+      Turns: 3
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+
+  Topics:
+    - "Portland Metro levee system on the Columbia River"
+    - "Cole Rivers Hatchery restoration on the Rogue River"
+    - "Columbia River tribal village reconstruction and displacement assessments"
+    - "Army Corps of Engineers project funding and prioritisation"
+
+  Source:
+    Canonical_ID: "cb41c214de2c6fb6"
+    Transcribed: "2026-09-07T19:01:34.329147-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 705
+    Segments: 24
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T17:51:02.627972-07:00"
+    Transcription_Finished: "2026-09-07T19:01:34.329147-07:00"
+    Recorded: "2024-03-11"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-Q0b5KJgEbQ.ctm"
+    Fountain: "-Q0b5KJgEbQ.fountain"
+    Diarization_RTTM: "-Q0b5KJgEbQ.rttm"
+    As_Broadcast_Script: "-Q0b5KJgEbQ.script.txt"
+    Segments_JSON: "-Q0b5KJgEbQ.segments.json"
+    Segments_JSONL: "-Q0b5KJgEbQ.segments.jsonl"
+    Subtitles_SRT: "-Q0b5KJgEbQ.srt"
+    Plain_Text: "-Q0b5KJgEbQ.transcription"
+    Subtitles_VTT: "-Q0b5KJgEbQ.vtt"
+    Transcript_SHA256: "0dae95bf8ac21e3c83d9f09d536f60e7d5e82b9f704f1ef1866d556eda89e53f"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "jeff_merkley_or_sen"
+    video_uid: "jeff_merkley_or_sen::-Q0b5KJgEbQ"
+    video_key: "-Q0b5KJgEbQ"
+    youtube_id: "-Q0b5KJgEbQ"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-Q0b5KJgEbQ"
+    source_ref: "-Q0b5KJgEbQ"

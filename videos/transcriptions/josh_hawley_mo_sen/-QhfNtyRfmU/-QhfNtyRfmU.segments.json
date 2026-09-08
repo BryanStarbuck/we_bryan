@@ -1,0 +1,9269 @@
+{
+  "schema_version": 2,
+  "canonical_id": "346ccbdf1f34ab24",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 426.81,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-08T02:02:24.045Z",
+  "text_sha256": "c7a0c13516ef5d0b56fa2690cc6526118e9f88ee67cb12e823b280395cafa918",
+  "segments_sha256": "852ced552e8a4537de97c196b82948161bcd947845bdba9ae275532abc2c1cca",
+  "words_sha256": "3dce2838cdcd916cadd77e064e4ab665d4fb313efc5623c90d4ad772c4fe1d48",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 16,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 79,
+    "clusters": 5,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_01",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 2.1
+      },
+      "clean_s": 2.1,
+      "speaking_s": 2.1,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_00",
+      "n": 2,
+      "label": "Speaker 2 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.84,
+        "confidence": "low",
+        "clean_s": 45.7
+      },
+      "clean_s": 45.7,
+      "speaking_s": 47.1,
+      "first_s": 3
+    },
+    {
+      "id": "SPEAKER_02",
+      "n": 3,
+      "label": "Speaker 3 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.8,
+        "confidence": "low",
+        "clean_s": 118.3
+      },
+      "clean_s": 118.3,
+      "speaking_s": 119.7,
+      "first_s": 29.44
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 4,
+      "label": "Speaker 4 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.83,
+        "confidence": "low",
+        "clean_s": 209
+      },
+      "clean_s": 209,
+      "speaking_s": 209.9,
+      "first_s": 65.98
+    },
+    {
+      "id": "SPEAKER_04",
+      "n": 5,
+      "label": "Speaker 5 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.88,
+        "confidence": "low",
+        "clean_s": 12.8
+      },
+      "clean_s": 12.8,
+      "speaking_s": 12.8,
+      "first_s": 154.03
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 58.82,
+      "end_s": 58.91,
+      "segment_i": 7,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 76.86,
+      "end_s": 76.86,
+      "segment_i": 10,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 90.01,
+      "end_s": 90.82,
+      "segment_i": 13,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 104.91,
+      "end_s": 105.06,
+      "segment_i": 15,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 127.97,
+      "end_s": 128.16,
+      "segment_i": 20,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 141.93,
+      "end_s": 142.62,
+      "segment_i": 23,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 157.97,
+      "end_s": 158.23,
+      "segment_i": 26,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 185.98,
+      "end_s": 186.5,
+      "segment_i": 29,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 200,
+      "end_s": 200.72,
+      "segment_i": 34,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 202.88,
+      "end_s": 203.27,
+      "segment_i": 36,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 215.37,
+      "end_s": 215.37,
+      "segment_i": 39,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 228.01,
+      "end_s": 228.43,
+      "segment_i": 42,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 239.7,
+      "end_s": 239.85,
+      "segment_i": 44,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 245.16,
+      "end_s": 245.16,
+      "segment_i": 46,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 279.51,
+      "end_s": 279.98,
+      "segment_i": 52,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 297.74,
+      "end_s": 298.12,
+      "segment_i": 54,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 304.8,
+      "end_s": 305.14,
+      "segment_i": 57,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 306.9,
+      "end_s": 307.2,
+      "segment_i": 59,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 314.62,
+      "end_s": 315.29,
+      "segment_i": 61,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 323.16,
+      "end_s": 323.16,
+      "segment_i": 63,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 343.73,
+      "end_s": 343.73,
+      "segment_i": 65,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 345.32,
+      "end_s": 345.37,
+      "segment_i": 67,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 363.82,
+      "end_s": 363.87,
+      "segment_i": 70,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 372.62,
+      "end_s": 372.89,
+      "segment_i": 72,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 405.82,
+      "end_s": 405.87,
+      "segment_i": 79,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 411.44,
+      "end_s": 412.11,
+      "segment_i": 81,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.05,
+      "end_s": 2.91,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Senator Hawley of Missouri.",
+      "words": [
+        {
+          "w": "Senator",
+          "s": 0.05,
+          "e": 0.79,
+          "c": 0.856733
+        },
+        {
+          "w": "Hawley",
+          "s": 0.8,
+          "e": 1.47,
+          "c": 0.980627
+        },
+        {
+          "w": "of",
+          "s": 1.56,
+          "e": 1.6,
+          "c": 0.837971
+        },
+        {
+          "w": "Missouri.",
+          "s": 1.6,
+          "e": 2.91,
+          "c": 0.917792
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 3.05,
+      "end_s": 25.8,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you very much, Mr. Chairman. Judge, congratulations on your nomination. It's nice to see you again. Congratulations to all of your family. I know that this is a big moment for you and for them, and rightly so. I enjoyed our meeting a couple of weeks ago. You know, as I've said to folks who've asked about it, one of the things I particularly appreciated about our meeting, besides how much time you gave me, was how candid and forthcoming you were, which I really respected. And I look forward to a candid conversation",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 3.05,
+          "e": 3.26,
+          "c": 0.823026
+        },
+        {
+          "w": "you",
+          "s": 3.32,
+          "e": 3.42,
+          "c": 0.998091
+        },
+        {
+          "w": "very",
+          "s": 3.45,
+          "e": 3.65,
+          "c": 0.988976
+        },
+        {
+          "w": "much,",
+          "s": 3.65,
+          "e": 4,
+          "c": 0.643055
+        },
+        {
+          "w": "Mr.",
+          "s": 4,
+          "e": 4.12,
+          "c": 0.958758
+        },
+        {
+          "w": "Chairman.",
+          "s": 4.47,
+          "e": 4.84,
+          "c": 0.941584
+        },
+        {
+          "w": "Judge,",
+          "s": 4.89,
+          "e": 5.08,
+          "c": 0.973435
+        },
+        {
+          "w": "congratulations",
+          "s": 5.17,
+          "e": 5.81,
+          "c": 0.99293
+        },
+        {
+          "w": "on",
+          "s": 5.81,
+          "e": 5.9,
+          "c": 0.99467
+        },
+        {
+          "w": "your",
+          "s": 5.9,
+          "e": 5.94,
+          "c": 0.996466
+        },
+        {
+          "w": "nomination.",
+          "s": 6.31,
+          "e": 6.68,
+          "c": 0.924043
+        },
+        {
+          "w": "It's",
+          "s": 6.73,
+          "e": 6.83,
+          "c": 0.99477
+        },
+        {
+          "w": "nice",
+          "s": 6.83,
+          "e": 6.93,
+          "c": 0.998125
+        },
+        {
+          "w": "to",
+          "s": 7,
+          "e": 7.07,
+          "c": 0.999519
+        },
+        {
+          "w": "see",
+          "s": 7.07,
+          "e": 7.19,
+          "c": 0.999058
+        },
+        {
+          "w": "you",
+          "s": 7.19,
+          "e": 7.31,
+          "c": 0.99895
+        },
+        {
+          "w": "again.",
+          "s": 7.31,
+          "e": 7.64,
+          "c": 0.876329
+        },
+        {
+          "w": "Congratulations",
+          "s": 7.69,
+          "e": 8.46,
+          "c": 0.990706
+        },
+        {
+          "w": "to",
+          "s": 8.46,
+          "e": 8.57,
+          "c": 0.996259
+        },
+        {
+          "w": "all",
+          "s": 8.57,
+          "e": 8.72,
+          "c": 0.998925
+        },
+        {
+          "w": "of",
+          "s": 8.72,
+          "e": 8.74,
+          "c": 0.982896
+        },
+        {
+          "w": "your",
+          "s": 8.84,
+          "e": 9.05,
+          "c": 0.996289
+        },
+        {
+          "w": "family.",
+          "s": 9.2,
+          "e": 9.56,
+          "c": 0.988148
+        },
+        {
+          "w": "I",
+          "s": 9.6,
+          "e": 9.6,
+          "c": 0.998951
+        },
+        {
+          "w": "know",
+          "s": 9.61,
+          "e": 9.77,
+          "c": 0.998715
+        },
+        {
+          "w": "that",
+          "s": 9.77,
+          "e": 9.94,
+          "c": 0.728685
+        },
+        {
+          "w": "this",
+          "s": 9.94,
+          "e": 10.11,
+          "c": 0.998757
+        },
+        {
+          "w": "is",
+          "s": 10.11,
+          "e": 10.19,
+          "c": 0.99254
+        },
+        {
+          "w": "a",
+          "s": 10.19,
+          "e": 10.23,
+          "c": 0.997227
+        },
+        {
+          "w": "big",
+          "s": 10.23,
+          "e": 10.3,
+          "c": 0.999186
+        },
+        {
+          "w": "moment",
+          "s": 10.36,
+          "e": 10.66,
+          "c": 0.999335
+        },
+        {
+          "w": "for",
+          "s": 10.67,
+          "e": 10.7,
+          "c": 0.97465
+        },
+        {
+          "w": "you",
+          "s": 10.86,
+          "e": 11.04,
+          "c": 0.996645
+        },
+        {
+          "w": "and",
+          "s": 11.12,
+          "e": 11.17,
+          "c": 0.555827
+        },
+        {
+          "w": "for",
+          "s": 11.17,
+          "e": 11.3,
+          "c": 0.991002
+        },
+        {
+          "w": "them,",
+          "s": 11.3,
+          "e": 11.5,
+          "c": 0.599832
+        },
+        {
+          "w": "and",
+          "s": 11.55,
+          "e": 11.63,
+          "c": 0.999584
+        },
+        {
+          "w": "rightly",
+          "s": 11.63,
+          "e": 11.92,
+          "c": 0.991338
+        },
+        {
+          "w": "so.",
+          "s": 11.95,
+          "e": 12.18,
+          "c": 0.952227
+        },
+        {
+          "w": "I",
+          "s": 12.23,
+          "e": 12.23,
+          "c": 0.999834
+        },
+        {
+          "w": "enjoyed",
+          "s": 12.23,
+          "e": 12.6,
+          "c": 0.998367
+        },
+        {
+          "w": "our",
+          "s": 12.63,
+          "e": 12.77,
+          "c": 0.999106
+        },
+        {
+          "w": "meeting",
+          "s": 12.77,
+          "e": 13.15,
+          "c": 0.999203
+        },
+        {
+          "w": "a",
+          "s": 13.15,
+          "e": 13.2,
+          "c": 0.997956
+        },
+        {
+          "w": "couple",
+          "s": 13.2,
+          "e": 13.28,
+          "c": 0.999777
+        },
+        {
+          "w": "of",
+          "s": 13.52,
+          "e": 13.64,
+          "c": 0.962827
+        },
+        {
+          "w": "weeks",
+          "s": 13.74,
+          "e": 13.91,
+          "c": 0.999335
+        },
+        {
+          "w": "ago.",
+          "s": 13.91,
+          "e": 14.24,
+          "c": 0.995406
+        },
+        {
+          "w": "You",
+          "s": 14.33,
+          "e": 14.39,
+          "c": 0.835147
+        },
+        {
+          "w": "know,",
+          "s": 14.39,
+          "e": 14.53,
+          "c": 0.974548
+        },
+        {
+          "w": "as",
+          "s": 14.6,
+          "e": 14.67,
+          "c": 0.998767
+        },
+        {
+          "w": "I've",
+          "s": 14.67,
+          "e": 14.81,
+          "c": 0.962709
+        },
+        {
+          "w": "said",
+          "s": 14.81,
+          "e": 14.95,
+          "c": 0.999228
+        },
+        {
+          "w": "to",
+          "s": 14.95,
+          "e": 15.02,
+          "c": 0.986227
+        },
+        {
+          "w": "folks",
+          "s": 15.08,
+          "e": 15.24,
+          "c": 0.990907
+        },
+        {
+          "w": "who've",
+          "s": 15.24,
+          "e": 15.34,
+          "c": 0.882438
+        },
+        {
+          "w": "asked",
+          "s": 15.34,
+          "e": 15.38,
+          "c": 0.943859
+        },
+        {
+          "w": "about",
+          "s": 15.51,
+          "e": 15.67,
+          "c": 0.981476
+        },
+        {
+          "w": "it,",
+          "s": 15.67,
+          "e": 15.8,
+          "c": 0.974544
+        },
+        {
+          "w": "one",
+          "s": 15.85,
+          "e": 15.92,
+          "c": 0.998772
+        },
+        {
+          "w": "of",
+          "s": 15.92,
+          "e": 16,
+          "c": 0.998675
+        },
+        {
+          "w": "the",
+          "s": 16,
+          "e": 16.05,
+          "c": 0.997173
+        },
+        {
+          "w": "things",
+          "s": 16.12,
+          "e": 16.37,
+          "c": 0.998814
+        },
+        {
+          "w": "I",
+          "s": 16.37,
+          "e": 16.41,
+          "c": 0.950876
+        },
+        {
+          "w": "particularly",
+          "s": 16.41,
+          "e": 16.9,
+          "c": 0.987374
+        },
+        {
+          "w": "appreciated",
+          "s": 17.36,
+          "e": 17.48,
+          "c": 0.824673
+        },
+        {
+          "w": "about",
+          "s": 17.53,
+          "e": 17.74,
+          "c": 0.999741
+        },
+        {
+          "w": "our",
+          "s": 17.8,
+          "e": 17.98,
+          "c": 0.999207
+        },
+        {
+          "w": "meeting,",
+          "s": 17.98,
+          "e": 18.56,
+          "c": 0.814539
+        },
+        {
+          "w": "besides",
+          "s": 18.56,
+          "e": 18.6,
+          "c": 0.903818
+        },
+        {
+          "w": "how",
+          "s": 19.04,
+          "e": 19.12,
+          "c": 0.997008
+        },
+        {
+          "w": "much",
+          "s": 19.12,
+          "e": 19.34,
+          "c": 0.999417
+        },
+        {
+          "w": "time",
+          "s": 19.34,
+          "e": 19.54,
+          "c": 0.99303
+        },
+        {
+          "w": "you",
+          "s": 19.57,
+          "e": 19.7,
+          "c": 0.949376
+        },
+        {
+          "w": "gave",
+          "s": 19.85,
+          "e": 20.2,
+          "c": 0.993068
+        },
+        {
+          "w": "me,",
+          "s": 20.28,
+          "e": 20.42,
+          "c": 0.979895
+        },
+        {
+          "w": "was",
+          "s": 20.47,
+          "e": 20.6,
+          "c": 0.999188
+        },
+        {
+          "w": "how",
+          "s": 20.6,
+          "e": 20.78,
+          "c": 0.983023
+        },
+        {
+          "w": "candid",
+          "s": 20.78,
+          "e": 21.14,
+          "c": 0.999096
+        },
+        {
+          "w": "and",
+          "s": 21.22,
+          "e": 21.32,
+          "c": 0.99834
+        },
+        {
+          "w": "forthcoming",
+          "s": 21.32,
+          "e": 21.97,
+          "c": 0.999342
+        },
+        {
+          "w": "you",
+          "s": 21.99,
+          "e": 22.2,
+          "c": 0.995372
+        },
+        {
+          "w": "were,",
+          "s": 22.2,
+          "e": 22.44,
+          "c": 0.975783
+        },
+        {
+          "w": "which",
+          "s": 22.49,
+          "e": 22.7,
+          "c": 0.99983
+        },
+        {
+          "w": "I",
+          "s": 22.76,
+          "e": 22.8,
+          "c": 0.998988
+        },
+        {
+          "w": "really",
+          "s": 22.8,
+          "e": 23.15,
+          "c": 0.999664
+        },
+        {
+          "w": "respected.",
+          "s": 23.15,
+          "e": 23.71,
+          "c": 0.408904
+        },
+        {
+          "w": "And",
+          "s": 23.77,
+          "e": 23.93,
+          "c": 0.994672
+        },
+        {
+          "w": "I",
+          "s": 23.93,
+          "e": 23.97,
+          "c": 0.982559
+        },
+        {
+          "w": "look",
+          "s": 24.04,
+          "e": 24.28,
+          "c": 0.978571
+        },
+        {
+          "w": "forward",
+          "s": 24.28,
+          "e": 24.78,
+          "c": 0.999743
+        },
+        {
+          "w": "to",
+          "s": 24.78,
+          "e": 24.82,
+          "c": 0.999199
+        },
+        {
+          "w": "a",
+          "s": 24.92,
+          "e": 24.98,
+          "c": 0.998797
+        },
+        {
+          "w": "candid",
+          "s": 25.28,
+          "e": 25.41,
+          "c": 0.998451
+        },
+        {
+          "w": "conversation",
+          "s": 25.41,
+          "e": 25.8,
+          "c": 0.999451
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 26.35,
+      "end_s": 30.14,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Again, in the days that come, and by the way, I'm admiring how you're sitting so",
+      "words": [
+        {
+          "w": "Again,",
+          "s": 26.353,
+          "e": 26.603,
+          "c": 0.403314
+        },
+        {
+          "w": "in",
+          "s": 26.603,
+          "e": 26.693,
+          "c": 0.837794
+        },
+        {
+          "w": "the",
+          "s": 26.703,
+          "e": 26.853,
+          "c": 0.998178
+        },
+        {
+          "w": "days",
+          "s": 26.853,
+          "e": 27.053,
+          "c": 0.995839
+        },
+        {
+          "w": "that",
+          "s": 27.053,
+          "e": 27.213,
+          "c": 0.972146
+        },
+        {
+          "w": "come,",
+          "s": 27.273,
+          "e": 27.543,
+          "c": 0.288165
+        },
+        {
+          "w": "and",
+          "s": 27.543,
+          "e": 27.633,
+          "c": 0.755994
+        },
+        {
+          "w": "by",
+          "s": 27.633,
+          "e": 27.703,
+          "c": 0.95212
+        },
+        {
+          "w": "the",
+          "s": 27.703,
+          "e": 27.803,
+          "c": 0.997236
+        },
+        {
+          "w": "way,",
+          "s": 27.803,
+          "e": 27.933,
+          "c": 0.771613
+        },
+        {
+          "w": "I'm",
+          "s": 27.973,
+          "e": 28.053,
+          "c": 0.980318
+        },
+        {
+          "w": "admiring",
+          "s": 28.053,
+          "e": 28.373,
+          "c": 0.956134
+        },
+        {
+          "w": "how",
+          "s": 28.383,
+          "e": 28.483,
+          "c": 0.996404
+        },
+        {
+          "w": "you're",
+          "s": 28.513,
+          "e": 28.743,
+          "c": 0.994021
+        },
+        {
+          "w": "sitting",
+          "s": 28.743,
+          "e": 29.093,
+          "c": 0.994199
+        },
+        {
+          "w": "so",
+          "s": 29.093,
+          "e": 30.143,
+          "c": 0.936184
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 30.18,
+      "end_s": 41.93,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "stoically through all of this, all this Senator talk. But I'm looking forward to visiting with you again. You did me the honor when we sat down of being very candid, and I hope I was candid with you. I've been candid since. I want to be candid with you",
+      "words": [
+        {
+          "w": "stoically",
+          "s": 30.183,
+          "e": 30.833,
+          "c": 0.852607
+        },
+        {
+          "w": "through",
+          "s": 30.933,
+          "e": 31.263,
+          "c": 0.99636
+        },
+        {
+          "w": "all",
+          "s": 31.263,
+          "e": 31.443,
+          "c": 0.99818
+        },
+        {
+          "w": "of",
+          "s": 31.443,
+          "e": 31.563,
+          "c": 0.523422
+        },
+        {
+          "w": "this,",
+          "s": 31.563,
+          "e": 31.923,
+          "c": 0.600955
+        },
+        {
+          "w": "all",
+          "s": 31.923,
+          "e": 32.103,
+          "c": 0.983772
+        },
+        {
+          "w": "this",
+          "s": 32.103,
+          "e": 32.343,
+          "c": 0.561112
+        },
+        {
+          "w": "Senator",
+          "s": 32.343,
+          "e": 32.773,
+          "c": 0.728752
+        },
+        {
+          "w": "talk.",
+          "s": 32.773,
+          "e": 33.053,
+          "c": 0.608415
+        },
+        {
+          "w": "But",
+          "s": 33.153,
+          "e": 33.193,
+          "c": 0.997432
+        },
+        {
+          "w": "I'm",
+          "s": 33.193,
+          "e": 33.333,
+          "c": 0.933245
+        },
+        {
+          "w": "looking",
+          "s": 33.333,
+          "e": 33.673,
+          "c": 0.992644
+        },
+        {
+          "w": "forward",
+          "s": 33.673,
+          "e": 34.003,
+          "c": 0.995949
+        },
+        {
+          "w": "to",
+          "s": 34.013,
+          "e": 34.093,
+          "c": 0.993365
+        },
+        {
+          "w": "visiting",
+          "s": 34.133,
+          "e": 34.493,
+          "c": 0.997973
+        },
+        {
+          "w": "with",
+          "s": 34.493,
+          "e": 34.673,
+          "c": 0.994672
+        },
+        {
+          "w": "you",
+          "s": 34.673,
+          "e": 34.813,
+          "c": 0.99964
+        },
+        {
+          "w": "again.",
+          "s": 34.823,
+          "e": 35.263,
+          "c": 0.983027
+        },
+        {
+          "w": "You",
+          "s": 35.393,
+          "e": 35.503,
+          "c": 0.99903
+        },
+        {
+          "w": "did",
+          "s": 35.503,
+          "e": 35.713,
+          "c": 0.994304
+        },
+        {
+          "w": "me",
+          "s": 35.713,
+          "e": 35.843,
+          "c": 0.995968
+        },
+        {
+          "w": "the",
+          "s": 35.873,
+          "e": 36.063,
+          "c": 0.992398
+        },
+        {
+          "w": "honor",
+          "s": 36.063,
+          "e": 36.453,
+          "c": 0.980544
+        },
+        {
+          "w": "when",
+          "s": 36.453,
+          "e": 36.673,
+          "c": 0.77373
+        },
+        {
+          "w": "we",
+          "s": 36.673,
+          "e": 36.783,
+          "c": 0.997891
+        },
+        {
+          "w": "sat",
+          "s": 36.783,
+          "e": 36.943,
+          "c": 0.988878
+        },
+        {
+          "w": "down",
+          "s": 36.943,
+          "e": 37.193,
+          "c": 0.99347
+        },
+        {
+          "w": "of",
+          "s": 37.283,
+          "e": 37.313,
+          "c": 0.943691
+        },
+        {
+          "w": "being",
+          "s": 37.313,
+          "e": 37.623,
+          "c": 0.999022
+        },
+        {
+          "w": "very",
+          "s": 37.623,
+          "e": 37.863,
+          "c": 0.99926
+        },
+        {
+          "w": "candid,",
+          "s": 37.863,
+          "e": 38.393,
+          "c": 0.591761
+        },
+        {
+          "w": "and",
+          "s": 38.393,
+          "e": 38.603,
+          "c": 0.891725
+        },
+        {
+          "w": "I",
+          "s": 38.603,
+          "e": 38.673,
+          "c": 0.998292
+        },
+        {
+          "w": "hope",
+          "s": 38.673,
+          "e": 38.963,
+          "c": 0.998584
+        },
+        {
+          "w": "I",
+          "s": 38.963,
+          "e": 39.013,
+          "c": 0.982669
+        },
+        {
+          "w": "was",
+          "s": 39.013,
+          "e": 39.153,
+          "c": 0.99938
+        },
+        {
+          "w": "candid",
+          "s": 39.153,
+          "e": 39.403,
+          "c": 0.990212
+        },
+        {
+          "w": "with",
+          "s": 39.443,
+          "e": 39.613,
+          "c": 0.996058
+        },
+        {
+          "w": "you.",
+          "s": 39.613,
+          "e": 39.913,
+          "c": 0.90551
+        },
+        {
+          "w": "I've",
+          "s": 39.953,
+          "e": 40.053,
+          "c": 0.993407
+        },
+        {
+          "w": "been",
+          "s": 40.093,
+          "e": 40.283,
+          "c": 0.998736
+        },
+        {
+          "w": "candid",
+          "s": 40.283,
+          "e": 40.563,
+          "c": 0.992188
+        },
+        {
+          "w": "since.",
+          "s": 40.563,
+          "e": 40.973,
+          "c": 0.639966
+        },
+        {
+          "w": "I",
+          "s": 41.013,
+          "e": 41.013,
+          "c": 0.995065
+        },
+        {
+          "w": "want",
+          "s": 41.073,
+          "e": 41.203,
+          "c": 0.472197
+        },
+        {
+          "w": "to",
+          "s": 41.203,
+          "e": 41.293,
+          "c": 0.997421
+        },
+        {
+          "w": "be",
+          "s": 41.293,
+          "e": 41.373,
+          "c": 0.999426
+        },
+        {
+          "w": "candid",
+          "s": 41.373,
+          "e": 41.663,
+          "c": 0.995446
+        },
+        {
+          "w": "with",
+          "s": 41.663,
+          "e": 41.833,
+          "c": 0.998599
+        },
+        {
+          "w": "you",
+          "s": 41.873,
+          "e": 41.933,
+          "c": 0.999569
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 42.03,
+      "end_s": 48.91,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "today so you know exactly what it is I want to talk about. And so you know exactly where my head is at. So let me say,",
+      "words": [
+        {
+          "w": "today",
+          "s": 42.033,
+          "e": 42.273,
+          "c": 0.998995
+        },
+        {
+          "w": "so",
+          "s": 42.373,
+          "e": 42.403,
+          "c": 0.998942
+        },
+        {
+          "w": "you",
+          "s": 42.403,
+          "e": 42.603,
+          "c": 0.995247
+        },
+        {
+          "w": "know",
+          "s": 42.603,
+          "e": 42.873,
+          "c": 0.99651
+        },
+        {
+          "w": "exactly",
+          "s": 42.873,
+          "e": 43.333,
+          "c": 0.998605
+        },
+        {
+          "w": "what",
+          "s": 43.363,
+          "e": 43.623,
+          "c": 0.997362
+        },
+        {
+          "w": "it",
+          "s": 43.623,
+          "e": 43.753,
+          "c": 0.997801
+        },
+        {
+          "w": "is",
+          "s": 43.753,
+          "e": 43.883,
+          "c": 0.99859
+        },
+        {
+          "w": "I",
+          "s": 43.883,
+          "e": 43.943,
+          "c": 0.982013
+        },
+        {
+          "w": "want",
+          "s": 43.943,
+          "e": 44.213,
+          "c": 0.927683
+        },
+        {
+          "w": "to",
+          "s": 44.213,
+          "e": 44.343,
+          "c": 0.998171
+        },
+        {
+          "w": "talk",
+          "s": 44.343,
+          "e": 44.613,
+          "c": 0.999563
+        },
+        {
+          "w": "about.",
+          "s": 44.613,
+          "e": 45.033,
+          "c": 0.407309
+        },
+        {
+          "w": "And",
+          "s": 45.133,
+          "e": 45.173,
+          "c": 0.99282
+        },
+        {
+          "w": "so",
+          "s": 45.213,
+          "e": 45.333,
+          "c": 0.983808
+        },
+        {
+          "w": "you",
+          "s": 45.333,
+          "e": 45.513,
+          "c": 0.96371
+        },
+        {
+          "w": "know",
+          "s": 45.513,
+          "e": 45.753,
+          "c": 0.998388
+        },
+        {
+          "w": "exactly",
+          "s": 45.753,
+          "e": 46.173,
+          "c": 0.996584
+        },
+        {
+          "w": "where",
+          "s": 46.173,
+          "e": 46.473,
+          "c": 0.99886
+        },
+        {
+          "w": "my",
+          "s": 46.473,
+          "e": 46.593,
+          "c": 0.999573
+        },
+        {
+          "w": "head",
+          "s": 46.593,
+          "e": 46.833,
+          "c": 0.999447
+        },
+        {
+          "w": "is",
+          "s": 46.833,
+          "e": 46.953,
+          "c": 0.999243
+        },
+        {
+          "w": "at.",
+          "s": 46.953,
+          "e": 47.243,
+          "c": 0.97298
+        },
+        {
+          "w": "So",
+          "s": 47.393,
+          "e": 47.613,
+          "c": 0.997529
+        },
+        {
+          "w": "let",
+          "s": 47.613,
+          "e": 48.093,
+          "c": 0.945211
+        },
+        {
+          "w": "me",
+          "s": 48.093,
+          "e": 48.413,
+          "c": 0.998708
+        },
+        {
+          "w": "say,",
+          "s": 48.413,
+          "e": 48.913,
+          "c": 0.558241
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 48.89,
+      "end_s": 53.03,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "a few things that I'm concerned about. Aspects of your record that trouble",
+      "words": [
+        {
+          "w": "a",
+          "s": 48.893,
+          "e": 48.903,
+          "c": 0.60892
+        },
+        {
+          "w": "few",
+          "s": 49.083,
+          "e": 49.173,
+          "c": 0.999601
+        },
+        {
+          "w": "things",
+          "s": 49.173,
+          "e": 49.593,
+          "c": 0.997885
+        },
+        {
+          "w": "that",
+          "s": 49.593,
+          "e": 49.873,
+          "c": 0.979809
+        },
+        {
+          "w": "I'm",
+          "s": 49.873,
+          "e": 50.083,
+          "c": 0.984151
+        },
+        {
+          "w": "concerned",
+          "s": 50.083,
+          "e": 50.723,
+          "c": 0.99859
+        },
+        {
+          "w": "about.",
+          "s": 50.723,
+          "e": 51.153,
+          "c": 0.341674
+        },
+        {
+          "w": "Aspects",
+          "s": 51.273,
+          "e": 51.583,
+          "c": 0.993917
+        },
+        {
+          "w": "of",
+          "s": 51.593,
+          "e": 51.703,
+          "c": 0.997383
+        },
+        {
+          "w": "your",
+          "s": 51.703,
+          "e": 51.943,
+          "c": 0.997543
+        },
+        {
+          "w": "record",
+          "s": 51.953,
+          "e": 52.333,
+          "c": 0.997056
+        },
+        {
+          "w": "that",
+          "s": 52.333,
+          "e": 52.583,
+          "c": 0.977111
+        },
+        {
+          "w": "trouble",
+          "s": 52.583,
+          "e": 53.033,
+          "c": 0.940469
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 53.03,
+      "end_s": 58.73,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "me. This will come as no surprise. I've said it in public already. But I want to be, again, very candid in the interest",
+      "words": [
+        {
+          "w": "me.",
+          "s": 53.033,
+          "e": 53.413,
+          "c": 0.916057
+        },
+        {
+          "w": "This",
+          "s": 53.603,
+          "e": 53.613,
+          "c": 0.997061
+        },
+        {
+          "w": "will",
+          "s": 53.613,
+          "e": 53.733,
+          "c": 0.764143
+        },
+        {
+          "w": "come",
+          "s": 53.853,
+          "e": 53.973,
+          "c": 0.996962
+        },
+        {
+          "w": "as",
+          "s": 54.053,
+          "e": 54.113,
+          "c": 0.983134
+        },
+        {
+          "w": "no",
+          "s": 54.113,
+          "e": 54.203,
+          "c": 0.998656
+        },
+        {
+          "w": "surprise.",
+          "s": 54.213,
+          "e": 54.633,
+          "c": 0.574392
+        },
+        {
+          "w": "I've",
+          "s": 54.633,
+          "e": 54.913,
+          "c": 0.993506
+        },
+        {
+          "w": "said",
+          "s": 54.913,
+          "e": 55.193,
+          "c": 0.974245
+        },
+        {
+          "w": "it",
+          "s": 55.193,
+          "e": 55.333,
+          "c": 0.991049
+        },
+        {
+          "w": "in",
+          "s": 55.333,
+          "e": 55.463,
+          "c": 0.998127
+        },
+        {
+          "w": "public",
+          "s": 55.473,
+          "e": 55.903,
+          "c": 0.998866
+        },
+        {
+          "w": "already.",
+          "s": 55.903,
+          "e": 56.453,
+          "c": 0.558679
+        },
+        {
+          "w": "But",
+          "s": 56.603,
+          "e": 56.603,
+          "c": 0.994268
+        },
+        {
+          "w": "I",
+          "s": 56.643,
+          "e": 56.653,
+          "c": 0.978276
+        },
+        {
+          "w": "want",
+          "s": 56.653,
+          "e": 56.773,
+          "c": 0.654403
+        },
+        {
+          "w": "to",
+          "s": 56.893,
+          "e": 56.953,
+          "c": 0.997004
+        },
+        {
+          "w": "be,",
+          "s": 56.953,
+          "e": 57.153,
+          "c": 0.380293
+        },
+        {
+          "w": "again,",
+          "s": 57.153,
+          "e": 57.523,
+          "c": 0.979621
+        },
+        {
+          "w": "very",
+          "s": 57.613,
+          "e": 57.803,
+          "c": 0.930027
+        },
+        {
+          "w": "candid",
+          "s": 57.803,
+          "e": 58.213,
+          "c": 0.995501
+        },
+        {
+          "w": "in",
+          "s": 58.213,
+          "e": 58.293,
+          "c": 0.473718
+        },
+        {
+          "w": "the",
+          "s": 58.293,
+          "e": 58.393,
+          "c": 0.988998
+        },
+        {
+          "w": "interest",
+          "s": 58.393,
+          "e": 58.733,
+          "c": 0.803881
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 58.82,
+      "end_s": 58.91,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "of an",
+      "words": [
+        {
+          "w": "of",
+          "s": 58.823,
+          "e": 58.823,
+          "c": 0.998607
+        },
+        {
+          "w": "an",
+          "s": 58.913,
+          "e": 58.913,
+          "c": 0.990609
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 58.92,
+      "end_s": 65.89,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "open and honest discussion and specifics. So here are, I hope, in the next couple of days, some of the cases from your time on",
+      "words": [
+        {
+          "w": "open",
+          "s": 58.923,
+          "e": 59.063,
+          "c": 0.997415
+        },
+        {
+          "w": "and",
+          "s": 59.173,
+          "e": 59.243,
+          "c": 0.982797
+        },
+        {
+          "w": "honest",
+          "s": 59.243,
+          "e": 59.523,
+          "c": 0.99954
+        },
+        {
+          "w": "discussion",
+          "s": 59.533,
+          "e": 60.023,
+          "c": 0.998264
+        },
+        {
+          "w": "and",
+          "s": 60.023,
+          "e": 60.163,
+          "c": 0.459511
+        },
+        {
+          "w": "specifics.",
+          "s": 60.163,
+          "e": 60.793,
+          "c": 0.728692
+        },
+        {
+          "w": "So",
+          "s": 60.913,
+          "e": 60.913,
+          "c": 0.991465
+        },
+        {
+          "w": "here",
+          "s": 60.983,
+          "e": 61.123,
+          "c": 0.923333
+        },
+        {
+          "w": "are,",
+          "s": 61.233,
+          "e": 61.353,
+          "c": 0.756051
+        },
+        {
+          "w": "I",
+          "s": 61.433,
+          "e": 61.493,
+          "c": 0.996288
+        },
+        {
+          "w": "hope,",
+          "s": 61.493,
+          "e": 61.833,
+          "c": 0.814778
+        },
+        {
+          "w": "in",
+          "s": 61.833,
+          "e": 61.853,
+          "c": 0.990359
+        },
+        {
+          "w": "the",
+          "s": 61.953,
+          "e": 62.133,
+          "c": 0.999125
+        },
+        {
+          "w": "next",
+          "s": 62.133,
+          "e": 62.363,
+          "c": 0.999264
+        },
+        {
+          "w": "couple",
+          "s": 62.363,
+          "e": 62.713,
+          "c": 0.999411
+        },
+        {
+          "w": "of",
+          "s": 62.713,
+          "e": 62.833,
+          "c": 0.980484
+        },
+        {
+          "w": "days,",
+          "s": 62.833,
+          "e": 63.133,
+          "c": 0.762204
+        },
+        {
+          "w": "some",
+          "s": 63.323,
+          "e": 63.593,
+          "c": 0.999584
+        },
+        {
+          "w": "of",
+          "s": 63.593,
+          "e": 63.823,
+          "c": 0.999102
+        },
+        {
+          "w": "the",
+          "s": 63.823,
+          "e": 64.173,
+          "c": 0.999102
+        },
+        {
+          "w": "cases",
+          "s": 64.173,
+          "e": 64.773,
+          "c": 0.998929
+        },
+        {
+          "w": "from",
+          "s": 64.773,
+          "e": 65.073,
+          "c": 0.889554
+        },
+        {
+          "w": "your",
+          "s": 65.073,
+          "e": 65.373,
+          "c": 0.998803
+        },
+        {
+          "w": "time",
+          "s": 65.373,
+          "e": 65.673,
+          "c": 0.999767
+        },
+        {
+          "w": "on",
+          "s": 65.673,
+          "e": 65.893,
+          "c": 0.870738
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 65.89,
+      "end_s": 76.67,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the court, the district court, the federal district court, that I hope that we can talk about. Let me just run through a few of them so you know exactly which ones I mean. United States versus Hawkins.",
+      "words": [
+        {
+          "w": "the",
+          "s": 65.893,
+          "e": 66.143,
+          "c": 0.993724
+        },
+        {
+          "w": "court,",
+          "s": 66.233,
+          "e": 67.013,
+          "c": 0.76256
+        },
+        {
+          "w": "the",
+          "s": 67.123,
+          "e": 67.123,
+          "c": 0.993686
+        },
+        {
+          "w": "district",
+          "s": 67.203,
+          "e": 67.333,
+          "c": 0.823576
+        },
+        {
+          "w": "court,",
+          "s": 67.453,
+          "e": 67.653,
+          "c": 0.992701
+        },
+        {
+          "w": "the",
+          "s": 67.653,
+          "e": 67.763,
+          "c": 0.992422
+        },
+        {
+          "w": "federal",
+          "s": 67.763,
+          "e": 68.023,
+          "c": 0.825225
+        },
+        {
+          "w": "district",
+          "s": 68.023,
+          "e": 68.313,
+          "c": 0.996462
+        },
+        {
+          "w": "court,",
+          "s": 68.313,
+          "e": 68.533,
+          "c": 0.741004
+        },
+        {
+          "w": "that",
+          "s": 68.723,
+          "e": 68.773,
+          "c": 0.9995
+        },
+        {
+          "w": "I",
+          "s": 68.773,
+          "e": 68.833,
+          "c": 0.99926
+        },
+        {
+          "w": "hope",
+          "s": 68.833,
+          "e": 69.073,
+          "c": 0.994861
+        },
+        {
+          "w": "that",
+          "s": 69.073,
+          "e": 69.313,
+          "c": 0.968409
+        },
+        {
+          "w": "we",
+          "s": 69.313,
+          "e": 69.433,
+          "c": 0.999093
+        },
+        {
+          "w": "can",
+          "s": 69.433,
+          "e": 69.603,
+          "c": 0.998298
+        },
+        {
+          "w": "talk",
+          "s": 69.693,
+          "e": 69.853,
+          "c": 0.999388
+        },
+        {
+          "w": "about.",
+          "s": 69.853,
+          "e": 70.373,
+          "c": 0.997952
+        },
+        {
+          "w": "Let",
+          "s": 70.563,
+          "e": 70.623,
+          "c": 0.99663
+        },
+        {
+          "w": "me",
+          "s": 70.623,
+          "e": 70.693,
+          "c": 0.999317
+        },
+        {
+          "w": "just",
+          "s": 70.813,
+          "e": 71.113,
+          "c": 0.998468
+        },
+        {
+          "w": "run",
+          "s": 71.113,
+          "e": 71.363,
+          "c": 0.980163
+        },
+        {
+          "w": "through",
+          "s": 71.363,
+          "e": 71.943,
+          "c": 0.991147
+        },
+        {
+          "w": "a",
+          "s": 71.943,
+          "e": 72.013,
+          "c": 0.998176
+        },
+        {
+          "w": "few",
+          "s": 72.023,
+          "e": 72.263,
+          "c": 0.999809
+        },
+        {
+          "w": "of",
+          "s": 72.263,
+          "e": 72.433,
+          "c": 0.998569
+        },
+        {
+          "w": "them",
+          "s": 72.433,
+          "e": 72.783,
+          "c": 0.996073
+        },
+        {
+          "w": "so",
+          "s": 72.913,
+          "e": 72.913,
+          "c": 0.9995
+        },
+        {
+          "w": "you",
+          "s": 72.983,
+          "e": 73.093,
+          "c": 0.992935
+        },
+        {
+          "w": "know",
+          "s": 73.093,
+          "e": 73.333,
+          "c": 0.993231
+        },
+        {
+          "w": "exactly",
+          "s": 73.333,
+          "e": 73.723,
+          "c": 0.997316
+        },
+        {
+          "w": "which",
+          "s": 73.763,
+          "e": 74.073,
+          "c": 0.998951
+        },
+        {
+          "w": "ones",
+          "s": 74.073,
+          "e": 74.253,
+          "c": 0.990535
+        },
+        {
+          "w": "I",
+          "s": 74.343,
+          "e": 74.373,
+          "c": 0.998986
+        },
+        {
+          "w": "mean.",
+          "s": 74.373,
+          "e": 74.853,
+          "c": 0.997956
+        },
+        {
+          "w": "United",
+          "s": 75.043,
+          "e": 75.183,
+          "c": 0.992619
+        },
+        {
+          "w": "States",
+          "s": 75.293,
+          "e": 75.633,
+          "c": 0.997565
+        },
+        {
+          "w": "versus",
+          "s": 75.633,
+          "e": 76.023,
+          "c": 0.768183
+        },
+        {
+          "w": "Hawkins.",
+          "s": 76.023,
+          "e": 76.673,
+          "c": 0.922847
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 76.86,
+      "end_s": 76.87,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "This",
+      "words": [
+        {
+          "w": "This",
+          "s": 76.858,
+          "e": 76.858,
+          "c": 0.952852
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 76.88,
+      "end_s": 85.1,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "was a child pornography case where the defendant distributed multiple images of child porn, possessed dozens more, including videos. The federal",
+      "words": [
+        {
+          "w": "was",
+          "s": 76.878,
+          "e": 77.038,
+          "c": 0.988555
+        },
+        {
+          "w": "a",
+          "s": 77.038,
+          "e": 77.088,
+          "c": 0.993534
+        },
+        {
+          "w": "child",
+          "s": 77.088,
+          "e": 77.408,
+          "c": 0.993868
+        },
+        {
+          "w": "pornography",
+          "s": 77.408,
+          "e": 78.008,
+          "c": 0.991913
+        },
+        {
+          "w": "case",
+          "s": 78.108,
+          "e": 78.368,
+          "c": 0.998433
+        },
+        {
+          "w": "where",
+          "s": 78.368,
+          "e": 78.458,
+          "c": 0.556749
+        },
+        {
+          "w": "the",
+          "s": 78.608,
+          "e": 78.748,
+          "c": 0.951522
+        },
+        {
+          "w": "defendant",
+          "s": 78.748,
+          "e": 79.218,
+          "c": 0.968229
+        },
+        {
+          "w": "distributed",
+          "s": 79.538,
+          "e": 79.948,
+          "c": 0.992901
+        },
+        {
+          "w": "multiple",
+          "s": 79.948,
+          "e": 80.448,
+          "c": 0.999319
+        },
+        {
+          "w": "images",
+          "s": 80.448,
+          "e": 80.818,
+          "c": 0.998418
+        },
+        {
+          "w": "of",
+          "s": 80.818,
+          "e": 80.938,
+          "c": 0.99504
+        },
+        {
+          "w": "child",
+          "s": 80.938,
+          "e": 81.118,
+          "c": 0.99716
+        },
+        {
+          "w": "porn,",
+          "s": 81.268,
+          "e": 81.638,
+          "c": 0.743187
+        },
+        {
+          "w": "possessed",
+          "s": 81.918,
+          "e": 82.308,
+          "c": 0.93634
+        },
+        {
+          "w": "dozens",
+          "s": 82.308,
+          "e": 82.748,
+          "c": 0.996345
+        },
+        {
+          "w": "more,",
+          "s": 82.748,
+          "e": 83.178,
+          "c": 0.734674
+        },
+        {
+          "w": "including",
+          "s": 83.178,
+          "e": 83.838,
+          "c": 0.995418
+        },
+        {
+          "w": "videos.",
+          "s": 83.838,
+          "e": 84.528,
+          "c": 0.992356
+        },
+        {
+          "w": "The",
+          "s": 84.698,
+          "e": 84.698,
+          "c": 0.998053
+        },
+        {
+          "w": "federal",
+          "s": 84.798,
+          "e": 85.098,
+          "c": 0.793442
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 85.1,
+      "end_s": 90.01,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "sentencing guidelines recommended a sentence of 97 to 121 months in",
+      "words": [
+        {
+          "w": "sentencing",
+          "s": 85.098,
+          "e": 85.658,
+          "c": 0.97792
+        },
+        {
+          "w": "guidelines",
+          "s": 85.658,
+          "e": 86.248,
+          "c": 0.993775
+        },
+        {
+          "w": "recommended",
+          "s": 86.248,
+          "e": 86.768,
+          "c": 0.801777
+        },
+        {
+          "w": "a",
+          "s": 86.768,
+          "e": 86.858,
+          "c": 0.998369
+        },
+        {
+          "w": "sentence",
+          "s": 87.038,
+          "e": 87.578,
+          "c": 0.997259
+        },
+        {
+          "w": "of",
+          "s": 87.578,
+          "e": 87.758,
+          "c": 0.99935
+        },
+        {
+          "w": "97",
+          "s": 87.758,
+          "e": 88.298,
+          "c": 0.990987
+        },
+        {
+          "w": "to",
+          "s": 88.298,
+          "e": 88.478,
+          "c": 0.974994
+        },
+        {
+          "w": "121",
+          "s": 88.478,
+          "e": 89.288,
+          "c": 0.985695
+        },
+        {
+          "w": "months",
+          "s": 89.288,
+          "e": 89.828,
+          "c": 0.998441
+        },
+        {
+          "w": "in",
+          "s": 89.828,
+          "e": 90.008,
+          "c": 0.998129
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 90.01,
+      "end_s": 90.82,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "prison.",
+      "words": [
+        {
+          "w": "prison.",
+          "s": 90.008,
+          "e": 90.818,
+          "c": 0.884973
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 91.12,
+      "end_s": 104.97,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Prosecutors recommended 24 months in prison. Judge Jackson gave the defendant three months in prison. United States versus Chazin, that case, the defendant possessed 48 files of child pornography,",
+      "words": [
+        {
+          "w": "Prosecutors",
+          "s": 91.118,
+          "e": 91.628,
+          "c": 0.993926
+        },
+        {
+          "w": "recommended",
+          "s": 91.628,
+          "e": 92.428,
+          "c": 0.995966
+        },
+        {
+          "w": "24",
+          "s": 92.428,
+          "e": 92.858,
+          "c": 0.9983
+        },
+        {
+          "w": "months",
+          "s": 92.858,
+          "e": 93.288,
+          "c": 0.99895
+        },
+        {
+          "w": "in",
+          "s": 93.288,
+          "e": 93.428,
+          "c": 0.999266
+        },
+        {
+          "w": "prison.",
+          "s": 93.428,
+          "e": 94.128,
+          "c": 0.982866
+        },
+        {
+          "w": "Judge",
+          "s": 94.398,
+          "e": 94.418,
+          "c": 0.99791
+        },
+        {
+          "w": "Jackson",
+          "s": 94.418,
+          "e": 94.818,
+          "c": 0.996483
+        },
+        {
+          "w": "gave",
+          "s": 94.818,
+          "e": 95.028,
+          "c": 0.997449
+        },
+        {
+          "w": "the",
+          "s": 95.108,
+          "e": 95.218,
+          "c": 0.996833
+        },
+        {
+          "w": "defendant",
+          "s": 95.218,
+          "e": 95.768,
+          "c": 0.991374
+        },
+        {
+          "w": "three",
+          "s": 95.768,
+          "e": 96.268,
+          "c": 0.956256
+        },
+        {
+          "w": "months",
+          "s": 96.268,
+          "e": 96.858,
+          "c": 0.998475
+        },
+        {
+          "w": "in",
+          "s": 96.878,
+          "e": 97.078,
+          "c": 0.991478
+        },
+        {
+          "w": "prison.",
+          "s": 97.078,
+          "e": 98.008,
+          "c": 0.997809
+        },
+        {
+          "w": "United",
+          "s": 98.278,
+          "e": 98.358,
+          "c": 0.962959
+        },
+        {
+          "w": "States",
+          "s": 98.358,
+          "e": 98.698,
+          "c": 0.99728
+        },
+        {
+          "w": "versus",
+          "s": 98.718,
+          "e": 99.058,
+          "c": 0.52821
+        },
+        {
+          "w": "Chazin,",
+          "s": 99.058,
+          "e": 99.548,
+          "c": 0.441507
+        },
+        {
+          "w": "that",
+          "s": 99.548,
+          "e": 100.278,
+          "c": 0.460621
+        },
+        {
+          "w": "case,",
+          "s": 100.378,
+          "e": 101.008,
+          "c": 0.713624
+        },
+        {
+          "w": "the",
+          "s": 101.238,
+          "e": 101.238,
+          "c": 0.998407
+        },
+        {
+          "w": "defendant",
+          "s": 101.278,
+          "e": 101.908,
+          "c": 0.995503
+        },
+        {
+          "w": "possessed",
+          "s": 101.988,
+          "e": 102.658,
+          "c": 0.994247
+        },
+        {
+          "w": "48",
+          "s": 102.658,
+          "e": 103.128,
+          "c": 0.997413
+        },
+        {
+          "w": "files",
+          "s": 103.128,
+          "e": 103.518,
+          "c": 0.998696
+        },
+        {
+          "w": "of",
+          "s": 103.518,
+          "e": 103.618,
+          "c": 0.998734
+        },
+        {
+          "w": "child",
+          "s": 103.688,
+          "e": 104.058,
+          "c": 0.999352
+        },
+        {
+          "w": "pornography,",
+          "s": 104.058,
+          "e": 104.968,
+          "c": 0.50445
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 104.91,
+      "end_s": 105.06,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The",
+      "words": [
+        {
+          "w": "The",
+          "s": 104.912,
+          "e": 105.062,
+          "c": 0.886964
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 105.18,
+      "end_s": 108.07,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "federal guidelines recommended 78 to 97",
+      "words": [
+        {
+          "w": "federal",
+          "s": 105.182,
+          "e": 105.432,
+          "c": 0.810616
+        },
+        {
+          "w": "guidelines",
+          "s": 105.432,
+          "e": 105.952,
+          "c": 0.988259
+        },
+        {
+          "w": "recommended",
+          "s": 105.952,
+          "e": 106.522,
+          "c": 0.968138
+        },
+        {
+          "w": "78",
+          "s": 106.552,
+          "e": 107.162,
+          "c": 0.957276
+        },
+        {
+          "w": "to",
+          "s": 107.292,
+          "e": 107.422,
+          "c": 0.864309
+        },
+        {
+          "w": "97",
+          "s": 107.422,
+          "e": 108.072,
+          "c": 0.992743
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 108.07,
+      "end_s": 115.84,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "months in prison. The prosecutor recommended the same. Judge Jackson sentenced him to 28 months. United",
+      "words": [
+        {
+          "w": "months",
+          "s": 108.072,
+          "e": 108.752,
+          "c": 0.988682
+        },
+        {
+          "w": "in",
+          "s": 108.752,
+          "e": 108.912,
+          "c": 0.985748
+        },
+        {
+          "w": "prison.",
+          "s": 108.912,
+          "e": 109.652,
+          "c": 0.848634
+        },
+        {
+          "w": "The",
+          "s": 109.882,
+          "e": 109.882,
+          "c": 0.997594
+        },
+        {
+          "w": "prosecutor",
+          "s": 109.922,
+          "e": 110.662,
+          "c": 0.982821
+        },
+        {
+          "w": "recommended",
+          "s": 110.662,
+          "e": 111.522,
+          "c": 0.992269
+        },
+        {
+          "w": "the",
+          "s": 111.532,
+          "e": 111.752,
+          "c": 0.996402
+        },
+        {
+          "w": "same.",
+          "s": 111.752,
+          "e": 112.332,
+          "c": 0.858822
+        },
+        {
+          "w": "Judge",
+          "s": 112.602,
+          "e": 112.642,
+          "c": 0.994845
+        },
+        {
+          "w": "Jackson",
+          "s": 112.722,
+          "e": 113.172,
+          "c": 0.993176
+        },
+        {
+          "w": "sentenced",
+          "s": 113.172,
+          "e": 113.802,
+          "c": 0.968468
+        },
+        {
+          "w": "him",
+          "s": 113.802,
+          "e": 114.012,
+          "c": 0.99246
+        },
+        {
+          "w": "to",
+          "s": 114.012,
+          "e": 114.152,
+          "c": 0.995919
+        },
+        {
+          "w": "28",
+          "s": 114.152,
+          "e": 114.572,
+          "c": 0.995644
+        },
+        {
+          "w": "months.",
+          "s": 114.572,
+          "e": 115.212,
+          "c": 0.980127
+        },
+        {
+          "w": "United",
+          "s": 115.482,
+          "e": 115.842,
+          "c": 0.960507
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 115.85,
+      "end_s": 125.01,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "States versus Cooper. There the defendant possessed dozens of images of child pornography and distributed, I should say distributed, dozens of",
+      "words": [
+        {
+          "w": "States",
+          "s": 115.852,
+          "e": 116.442,
+          "c": 0.99429
+        },
+        {
+          "w": "versus",
+          "s": 116.512,
+          "e": 117.132,
+          "c": 0.479273
+        },
+        {
+          "w": "Cooper.",
+          "s": 117.132,
+          "e": 118.092,
+          "c": 0.745341
+        },
+        {
+          "w": "There",
+          "s": 118.362,
+          "e": 118.372,
+          "c": 0.956094
+        },
+        {
+          "w": "the",
+          "s": 118.372,
+          "e": 118.542,
+          "c": 0.665744
+        },
+        {
+          "w": "defendant",
+          "s": 118.542,
+          "e": 119.052,
+          "c": 0.979389
+        },
+        {
+          "w": "possessed",
+          "s": 119.052,
+          "e": 119.592,
+          "c": 0.950833
+        },
+        {
+          "w": "dozens",
+          "s": 119.592,
+          "e": 119.942,
+          "c": 0.95393
+        },
+        {
+          "w": "of",
+          "s": 119.972,
+          "e": 120.072,
+          "c": 0.987622
+        },
+        {
+          "w": "images",
+          "s": 120.072,
+          "e": 120.342,
+          "c": 0.985076
+        },
+        {
+          "w": "of",
+          "s": 120.472,
+          "e": 120.622,
+          "c": 0.898546
+        },
+        {
+          "w": "child",
+          "s": 120.622,
+          "e": 121.112,
+          "c": 0.994427
+        },
+        {
+          "w": "pornography",
+          "s": 121.112,
+          "e": 122.092,
+          "c": 0.98694
+        },
+        {
+          "w": "and",
+          "s": 122.212,
+          "e": 122.552,
+          "c": 0.44509
+        },
+        {
+          "w": "distributed,",
+          "s": 123.122,
+          "e": 123.512,
+          "c": 0.516981
+        },
+        {
+          "w": "I",
+          "s": 123.552,
+          "e": 123.592,
+          "c": 0.991028
+        },
+        {
+          "w": "should",
+          "s": 123.822,
+          "e": 123.862,
+          "c": 0.9967
+        },
+        {
+          "w": "say",
+          "s": 123.942,
+          "e": 124.012,
+          "c": 0.997529
+        },
+        {
+          "w": "distributed,",
+          "s": 124.012,
+          "e": 124.612,
+          "c": 0.575912
+        },
+        {
+          "w": "dozens",
+          "s": 124.682,
+          "e": 124.922,
+          "c": 0.84246
+        },
+        {
+          "w": "of",
+          "s": 124.922,
+          "e": 125.012,
+          "c": 0.998883
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 125.01,
+      "end_s": 128.01,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "images of child pornography, possessed over 600.",
+      "words": [
+        {
+          "w": "images",
+          "s": 125.012,
+          "e": 125.282,
+          "c": 0.928748
+        },
+        {
+          "w": "of",
+          "s": 125.282,
+          "e": 125.372,
+          "c": 0.992451
+        },
+        {
+          "w": "child",
+          "s": 125.372,
+          "e": 125.592,
+          "c": 0.991361
+        },
+        {
+          "w": "pornography,",
+          "s": 125.592,
+          "e": 126.192,
+          "c": 0.582466
+        },
+        {
+          "w": "possessed",
+          "s": 126.192,
+          "e": 126.762,
+          "c": 0.918533
+        },
+        {
+          "w": "over",
+          "s": 127.092,
+          "e": 127.262,
+          "c": 0.996991
+        },
+        {
+          "w": "600.",
+          "s": 127.262,
+          "e": 128.012,
+          "c": 0.931756
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 127.97,
+      "end_s": 128.16,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The",
+      "words": [
+        {
+          "w": "The",
+          "s": 127.968,
+          "e": 128.158,
+          "c": 0.949847
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 128.31,
+      "end_s": 136.92,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "federal guidelines recommended 151 to 188 months in prison. That's a long time. The prosecutor recommended 72 months. Judge Jackson gave",
+      "words": [
+        {
+          "w": "federal",
+          "s": 128.308,
+          "e": 128.608,
+          "c": 0.902837
+        },
+        {
+          "w": "guidelines",
+          "s": 128.608,
+          "e": 129.228,
+          "c": 0.998683
+        },
+        {
+          "w": "recommended",
+          "s": 129.288,
+          "e": 129.958,
+          "c": 0.989479
+        },
+        {
+          "w": "151",
+          "s": 129.958,
+          "e": 130.528,
+          "c": 0.993723
+        },
+        {
+          "w": "to",
+          "s": 130.528,
+          "e": 130.648,
+          "c": 0.966451
+        },
+        {
+          "w": "188",
+          "s": 130.648,
+          "e": 131.218,
+          "c": 0.994881
+        },
+        {
+          "w": "months",
+          "s": 131.218,
+          "e": 131.598,
+          "c": 0.993243
+        },
+        {
+          "w": "in",
+          "s": 131.598,
+          "e": 131.708,
+          "c": 0.992544
+        },
+        {
+          "w": "prison.",
+          "s": 131.768,
+          "e": 132.358,
+          "c": 0.817841
+        },
+        {
+          "w": "That's",
+          "s": 132.368,
+          "e": 132.598,
+          "c": 0.998894
+        },
+        {
+          "w": "a",
+          "s": 132.648,
+          "e": 132.648,
+          "c": 0.999998
+        },
+        {
+          "w": "long",
+          "s": 132.708,
+          "e": 132.728,
+          "c": 0.999941
+        },
+        {
+          "w": "time.",
+          "s": 132.818,
+          "e": 133.108,
+          "c": 0.999966
+        },
+        {
+          "w": "The",
+          "s": 133.108,
+          "e": 133.308,
+          "c": 0.999968
+        },
+        {
+          "w": "prosecutor",
+          "s": 133.448,
+          "e": 133.998,
+          "c": 0.999539
+        },
+        {
+          "w": "recommended",
+          "s": 133.998,
+          "e": 134.718,
+          "c": 0.999714
+        },
+        {
+          "w": "72",
+          "s": 134.748,
+          "e": 135.128,
+          "c": 0.999706
+        },
+        {
+          "w": "months.",
+          "s": 135.268,
+          "e": 135.818,
+          "c": 0.998645
+        },
+        {
+          "w": "Judge",
+          "s": 136.158,
+          "e": 136.168,
+          "c": 0.979798
+        },
+        {
+          "w": "Jackson",
+          "s": 136.168,
+          "e": 136.648,
+          "c": 0.999809
+        },
+        {
+          "w": "gave",
+          "s": 136.648,
+          "e": 136.918,
+          "c": 0.999924
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 136.92,
+      "end_s": 141.59,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the defendant 60 months, which was the lowest sentence permitted by the law.",
+      "words": [
+        {
+          "w": "the",
+          "s": 136.918,
+          "e": 137.088,
+          "c": 0.999701
+        },
+        {
+          "w": "defendant",
+          "s": 137.148,
+          "e": 137.738,
+          "c": 0.999342
+        },
+        {
+          "w": "60",
+          "s": 137.738,
+          "e": 138.048,
+          "c": 0.999823
+        },
+        {
+          "w": "months,",
+          "s": 138.158,
+          "e": 138.728,
+          "c": 0.996852
+        },
+        {
+          "w": "which",
+          "s": 138.728,
+          "e": 139.058,
+          "c": 0.7694
+        },
+        {
+          "w": "was",
+          "s": 139.058,
+          "e": 139.258,
+          "c": 0.999542
+        },
+        {
+          "w": "the",
+          "s": 139.258,
+          "e": 139.458,
+          "c": 0.999933
+        },
+        {
+          "w": "lowest",
+          "s": 139.458,
+          "e": 139.848,
+          "c": 0.999718
+        },
+        {
+          "w": "sentence",
+          "s": 139.848,
+          "e": 140.358,
+          "c": 0.999565
+        },
+        {
+          "w": "permitted",
+          "s": 140.408,
+          "e": 140.988,
+          "c": 0.990252
+        },
+        {
+          "w": "by",
+          "s": 140.988,
+          "e": 141.058,
+          "c": 0.999075
+        },
+        {
+          "w": "the",
+          "s": 141.178,
+          "e": 141.278,
+          "c": 0.896076
+        },
+        {
+          "w": "law.",
+          "s": 141.288,
+          "e": 141.588,
+          "c": 0.99671
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 141.93,
+      "end_s": 142.62,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "United States v.",
+      "words": [
+        {
+          "w": "United",
+          "s": 141.928,
+          "e": 141.948,
+          "c": 0.659372
+        },
+        {
+          "w": "States",
+          "s": 142.038,
+          "e": 142.368,
+          "c": 0.999371
+        },
+        {
+          "w": "v.",
+          "s": 142.368,
+          "e": 142.618,
+          "c": 0.868109
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 142.62,
+      "end_s": 153.98,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Down, that's a case where the defendant distributed 33 graphic images and videos of child sexual assault to an anonymous messaging app, unfortunately a practice that's becoming more common. The",
+      "words": [
+        {
+          "w": "Down,",
+          "s": 142.618,
+          "e": 143.008,
+          "c": 0.857087
+        },
+        {
+          "w": "that's",
+          "s": 143.008,
+          "e": 143.398,
+          "c": 0.998432
+        },
+        {
+          "w": "a",
+          "s": 143.398,
+          "e": 143.458,
+          "c": 0.999954
+        },
+        {
+          "w": "case",
+          "s": 143.458,
+          "e": 143.608,
+          "c": 0.999968
+        },
+        {
+          "w": "where",
+          "s": 143.748,
+          "e": 144.038,
+          "c": 0.99862
+        },
+        {
+          "w": "the",
+          "s": 144.038,
+          "e": 144.228,
+          "c": 0.999981
+        },
+        {
+          "w": "defendant",
+          "s": 144.228,
+          "e": 144.808,
+          "c": 0.999941
+        },
+        {
+          "w": "distributed",
+          "s": 144.808,
+          "e": 145.548,
+          "c": 0.997948
+        },
+        {
+          "w": "33",
+          "s": 145.568,
+          "e": 146.178,
+          "c": 0.98211
+        },
+        {
+          "w": "graphic",
+          "s": 146.178,
+          "e": 146.818,
+          "c": 0.999554
+        },
+        {
+          "w": "images",
+          "s": 146.938,
+          "e": 147.508,
+          "c": 0.99902
+        },
+        {
+          "w": "and",
+          "s": 147.508,
+          "e": 147.688,
+          "c": 0.834369
+        },
+        {
+          "w": "videos",
+          "s": 147.688,
+          "e": 147.988,
+          "c": 0.993456
+        },
+        {
+          "w": "of",
+          "s": 148.198,
+          "e": 148.198,
+          "c": 0.9126
+        },
+        {
+          "w": "child",
+          "s": 148.388,
+          "e": 148.578,
+          "c": 0.999047
+        },
+        {
+          "w": "sexual",
+          "s": 148.578,
+          "e": 149.028,
+          "c": 0.99902
+        },
+        {
+          "w": "assault",
+          "s": 149.028,
+          "e": 149.498,
+          "c": 0.998727
+        },
+        {
+          "w": "to",
+          "s": 149.708,
+          "e": 149.708,
+          "c": 0.889726
+        },
+        {
+          "w": "an",
+          "s": 149.708,
+          "e": 149.848,
+          "c": 0.999962
+        },
+        {
+          "w": "anonymous",
+          "s": 150.228,
+          "e": 150.498,
+          "c": 0.999428
+        },
+        {
+          "w": "messaging",
+          "s": 150.498,
+          "e": 151.038,
+          "c": 0.999083
+        },
+        {
+          "w": "app,",
+          "s": 151.158,
+          "e": 151.548,
+          "c": 0.615427
+        },
+        {
+          "w": "unfortunately",
+          "s": 151.888,
+          "e": 152.138,
+          "c": 0.987313
+        },
+        {
+          "w": "a",
+          "s": 152.138,
+          "e": 152.168,
+          "c": 0.524617
+        },
+        {
+          "w": "practice",
+          "s": 152.178,
+          "e": 152.538,
+          "c": 0.998049
+        },
+        {
+          "w": "that's",
+          "s": 152.538,
+          "e": 152.808,
+          "c": 0.994065
+        },
+        {
+          "w": "becoming",
+          "s": 152.808,
+          "e": 153.158,
+          "c": 0.999243
+        },
+        {
+          "w": "more",
+          "s": 153.168,
+          "e": 153.348,
+          "c": 0.999989
+        },
+        {
+          "w": "common.",
+          "s": 153.348,
+          "e": 153.768,
+          "c": 0.999933
+        },
+        {
+          "w": "The",
+          "s": 153.788,
+          "e": 153.978,
+          "c": 0.51831
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 154.13,
+      "end_s": 157.81,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "federal guidelines recommended 70 to 87 months in prison.",
+      "words": [
+        {
+          "w": "federal",
+          "s": 154.128,
+          "e": 154.428,
+          "c": 0.99996
+        },
+        {
+          "w": "guidelines",
+          "s": 154.428,
+          "e": 155.048,
+          "c": 0.999863
+        },
+        {
+          "w": "recommended",
+          "s": 155.108,
+          "e": 155.778,
+          "c": 0.999636
+        },
+        {
+          "w": "70",
+          "s": 155.778,
+          "e": 156.158,
+          "c": 0.999544
+        },
+        {
+          "w": "to",
+          "s": 156.158,
+          "e": 156.288,
+          "c": 0.999905
+        },
+        {
+          "w": "87",
+          "s": 156.288,
+          "e": 156.658,
+          "c": 0.999409
+        },
+        {
+          "w": "months",
+          "s": 156.658,
+          "e": 157.048,
+          "c": 0.999935
+        },
+        {
+          "w": "in",
+          "s": 157.048,
+          "e": 157.108,
+          "c": 0.999981
+        },
+        {
+          "w": "prison.",
+          "s": 157.178,
+          "e": 157.808,
+          "c": 0.930461
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 157.97,
+      "end_s": 158.23,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The",
+      "words": [
+        {
+          "w": "The",
+          "s": 157.968,
+          "e": 158.228,
+          "c": 0.91254
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 158.71,
+      "end_s": 167.12,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "prosecutor recommended 70 months in prison. Judge Jackson sentenced him to only 60 months. Again, that's the lowest level that was permitted",
+      "words": [
+        {
+          "w": "prosecutor",
+          "s": 158.708,
+          "e": 159.108,
+          "c": 0.968407
+        },
+        {
+          "w": "recommended",
+          "s": 159.108,
+          "e": 159.998,
+          "c": 0.98967
+        },
+        {
+          "w": "70",
+          "s": 160.328,
+          "e": 160.608,
+          "c": 0.939745
+        },
+        {
+          "w": "months",
+          "s": 160.608,
+          "e": 161.098,
+          "c": 0.994879
+        },
+        {
+          "w": "in",
+          "s": 161.128,
+          "e": 161.308,
+          "c": 0.991244
+        },
+        {
+          "w": "prison.",
+          "s": 161.308,
+          "e": 161.938,
+          "c": 0.731861
+        },
+        {
+          "w": "Judge",
+          "s": 162.148,
+          "e": 162.428,
+          "c": 0.976115
+        },
+        {
+          "w": "Jackson",
+          "s": 162.428,
+          "e": 162.808,
+          "c": 0.992706
+        },
+        {
+          "w": "sentenced",
+          "s": 162.928,
+          "e": 163.338,
+          "c": 0.938
+        },
+        {
+          "w": "him",
+          "s": 163.338,
+          "e": 163.508,
+          "c": 0.988325
+        },
+        {
+          "w": "to",
+          "s": 163.508,
+          "e": 163.528,
+          "c": 0.988646
+        },
+        {
+          "w": "only",
+          "s": 163.658,
+          "e": 163.828,
+          "c": 0.98115
+        },
+        {
+          "w": "60",
+          "s": 163.848,
+          "e": 164.178,
+          "c": 0.99357
+        },
+        {
+          "w": "months.",
+          "s": 164.178,
+          "e": 164.728,
+          "c": 0.772681
+        },
+        {
+          "w": "Again,",
+          "s": 164.728,
+          "e": 165.028,
+          "c": 0.854638
+        },
+        {
+          "w": "that's",
+          "s": 165.028,
+          "e": 165.278,
+          "c": 0.982214
+        },
+        {
+          "w": "the",
+          "s": 165.358,
+          "e": 165.388,
+          "c": 0.998251
+        },
+        {
+          "w": "lowest",
+          "s": 165.468,
+          "e": 165.668,
+          "c": 0.999173
+        },
+        {
+          "w": "level",
+          "s": 165.668,
+          "e": 165.928,
+          "c": 0.997139
+        },
+        {
+          "w": "that",
+          "s": 165.928,
+          "e": 166.228,
+          "c": 0.999195
+        },
+        {
+          "w": "was",
+          "s": 166.228,
+          "e": 166.368,
+          "c": 0.998746
+        },
+        {
+          "w": "permitted",
+          "s": 166.668,
+          "e": 167.118,
+          "c": 0.99922
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "start_s": 167.12,
+      "end_s": 186.01,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "by law in that case. United States v. Stewart. The defendant there distributed scores of images of children suffering sexual abuse. The guidelines recommended 97 to 121 months in prison. The prosecutor recommended 97 months in prison. Judge Jackson gave him 57 months.",
+      "words": [
+        {
+          "w": "by",
+          "s": 167.118,
+          "e": 167.268,
+          "c": 0.999037
+        },
+        {
+          "w": "law",
+          "s": 167.268,
+          "e": 167.488,
+          "c": 0.994177
+        },
+        {
+          "w": "in",
+          "s": 167.488,
+          "e": 167.638,
+          "c": 0.925292
+        },
+        {
+          "w": "that",
+          "s": 167.638,
+          "e": 167.938,
+          "c": 0.997472
+        },
+        {
+          "w": "case.",
+          "s": 167.938,
+          "e": 168.488,
+          "c": 0.996614
+        },
+        {
+          "w": "United",
+          "s": 168.488,
+          "e": 168.938,
+          "c": 0.916174
+        },
+        {
+          "w": "States",
+          "s": 169.228,
+          "e": 169.408,
+          "c": 0.997004
+        },
+        {
+          "w": "v.",
+          "s": 169.408,
+          "e": 169.708,
+          "c": 0.653652
+        },
+        {
+          "w": "Stewart.",
+          "s": 169.708,
+          "e": 170.508,
+          "c": 0.498379
+        },
+        {
+          "w": "The",
+          "s": 170.508,
+          "e": 170.648,
+          "c": 0.973898
+        },
+        {
+          "w": "defendant",
+          "s": 170.678,
+          "e": 171.148,
+          "c": 0.996877
+        },
+        {
+          "w": "there",
+          "s": 171.248,
+          "e": 171.418,
+          "c": 0.982058
+        },
+        {
+          "w": "distributed",
+          "s": 171.418,
+          "e": 171.888,
+          "c": 0.916535
+        },
+        {
+          "w": "scores",
+          "s": 172.018,
+          "e": 172.508,
+          "c": 0.988142
+        },
+        {
+          "w": "of",
+          "s": 172.508,
+          "e": 172.588,
+          "c": 0.840518
+        },
+        {
+          "w": "images",
+          "s": 172.868,
+          "e": 173.048,
+          "c": 0.981124
+        },
+        {
+          "w": "of",
+          "s": 173.048,
+          "e": 173.148,
+          "c": 0.999388
+        },
+        {
+          "w": "children",
+          "s": 173.258,
+          "e": 173.688,
+          "c": 0.999443
+        },
+        {
+          "w": "suffering",
+          "s": 173.818,
+          "e": 174.398,
+          "c": 0.995334
+        },
+        {
+          "w": "sexual",
+          "s": 174.398,
+          "e": 174.818,
+          "c": 0.99779
+        },
+        {
+          "w": "abuse.",
+          "s": 174.818,
+          "e": 175.408,
+          "c": 0.988753
+        },
+        {
+          "w": "The",
+          "s": 175.408,
+          "e": 175.508,
+          "c": 0.999706
+        },
+        {
+          "w": "guidelines",
+          "s": 175.548,
+          "e": 175.978,
+          "c": 0.971608
+        },
+        {
+          "w": "recommended",
+          "s": 176.148,
+          "e": 176.588,
+          "c": 0.994053
+        },
+        {
+          "w": "97",
+          "s": 176.588,
+          "e": 177.188,
+          "c": 0.97589
+        },
+        {
+          "w": "to",
+          "s": 177.188,
+          "e": 177.368,
+          "c": 0.96102
+        },
+        {
+          "w": "121",
+          "s": 177.368,
+          "e": 178.188,
+          "c": 0.995782
+        },
+        {
+          "w": "months",
+          "s": 178.188,
+          "e": 178.728,
+          "c": 0.995545
+        },
+        {
+          "w": "in",
+          "s": 178.738,
+          "e": 178.918,
+          "c": 0.993212
+        },
+        {
+          "w": "prison.",
+          "s": 178.918,
+          "e": 179.788,
+          "c": 0.995028
+        },
+        {
+          "w": "The",
+          "s": 179.788,
+          "e": 180.018,
+          "c": 0.999611
+        },
+        {
+          "w": "prosecutor",
+          "s": 180.018,
+          "e": 180.808,
+          "c": 0.996955
+        },
+        {
+          "w": "recommended",
+          "s": 180.808,
+          "e": 181.678,
+          "c": 0.99794
+        },
+        {
+          "w": "97",
+          "s": 181.678,
+          "e": 181.848,
+          "c": 0.998959
+        },
+        {
+          "w": "months",
+          "s": 182.158,
+          "e": 182.618,
+          "c": 0.998936
+        },
+        {
+          "w": "in",
+          "s": 182.618,
+          "e": 182.768,
+          "c": 0.998483
+        },
+        {
+          "w": "prison.",
+          "s": 182.768,
+          "e": 183.368,
+          "c": 0.990127
+        },
+        {
+          "w": "Judge",
+          "s": 183.528,
+          "e": 183.888,
+          "c": 0.991836
+        },
+        {
+          "w": "Jackson",
+          "s": 184.168,
+          "e": 184.398,
+          "c": 0.999117
+        },
+        {
+          "w": "gave",
+          "s": 184.398,
+          "e": 184.688,
+          "c": 0.997278
+        },
+        {
+          "w": "him",
+          "s": 184.688,
+          "e": 184.898,
+          "c": 0.98984
+        },
+        {
+          "w": "57",
+          "s": 184.898,
+          "e": 185.328,
+          "c": 0.998879
+        },
+        {
+          "w": "months.",
+          "s": 185.328,
+          "e": 186.008,
+          "c": 0.986073
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "start_s": 185.98,
+      "end_s": 186.5,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "In the",
+      "words": [
+        {
+          "w": "In",
+          "s": 185.984,
+          "e": 186.194,
+          "c": 0.970375
+        },
+        {
+          "w": "the",
+          "s": 186.504,
+          "e": 186.504,
+          "c": 0.432695
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "start_s": 186.5,
+      "end_s": 190.06,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "United States v. Sears, the defendant distributed over",
+      "words": [
+        {
+          "w": "United",
+          "s": 186.504,
+          "e": 187.134,
+          "c": 0.986929
+        },
+        {
+          "w": "States",
+          "s": 187.134,
+          "e": 187.764,
+          "c": 0.998214
+        },
+        {
+          "w": "v.",
+          "s": 187.764,
+          "e": 188.084,
+          "c": 0.498098
+        },
+        {
+          "w": "Sears,",
+          "s": 188.084,
+          "e": 188.744,
+          "c": 0.913691
+        },
+        {
+          "w": "the",
+          "s": 188.744,
+          "e": 188.884,
+          "c": 0.997598
+        },
+        {
+          "w": "defendant",
+          "s": 189.264,
+          "e": 189.304,
+          "c": 0.992585
+        },
+        {
+          "w": "distributed",
+          "s": 189.304,
+          "e": 189.824,
+          "c": 0.992987
+        },
+        {
+          "w": "over",
+          "s": 189.824,
+          "e": 190.064,
+          "c": 0.979447
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "start_s": 190.08,
+      "end_s": 193,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "100 videos of child pornography.",
+      "words": [
+        {
+          "w": "100",
+          "s": 190.084,
+          "e": 190.424,
+          "c": 0.856739
+        },
+        {
+          "w": "videos",
+          "s": 190.424,
+          "e": 190.984,
+          "c": 0.98516
+        },
+        {
+          "w": "of",
+          "s": 190.984,
+          "e": 191.174,
+          "c": 0.999422
+        },
+        {
+          "w": "child",
+          "s": 191.504,
+          "e": 191.654,
+          "c": 0.99803
+        },
+        {
+          "w": "pornography.",
+          "s": 191.654,
+          "e": 193.004,
+          "c": 0.911949
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "start_s": 193,
+      "end_s": 194.1,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The guidelines recommended",
+      "words": [
+        {
+          "w": "The",
+          "s": 193.004,
+          "e": 193.134,
+          "c": 0.998864
+        },
+        {
+          "w": "guidelines",
+          "s": 193.524,
+          "e": 193.584,
+          "c": 0.970773
+        },
+        {
+          "w": "recommended",
+          "s": 193.584,
+          "e": 194.104,
+          "c": 0.988659
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "start_s": 194.1,
+      "end_s": 199.48,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "97 to 121 months in prison. The prosecutor recommended 97 months",
+      "words": [
+        {
+          "w": "97",
+          "s": 194.104,
+          "e": 194.804,
+          "c": 0.957319
+        },
+        {
+          "w": "to",
+          "s": 194.804,
+          "e": 194.974,
+          "c": 0.951735
+        },
+        {
+          "w": "121",
+          "s": 194.974,
+          "e": 195.644,
+          "c": 0.996687
+        },
+        {
+          "w": "months",
+          "s": 195.834,
+          "e": 196.224,
+          "c": 0.991085
+        },
+        {
+          "w": "in",
+          "s": 196.224,
+          "e": 196.394,
+          "c": 0.992612
+        },
+        {
+          "w": "prison.",
+          "s": 196.394,
+          "e": 197.134,
+          "c": 0.985917
+        },
+        {
+          "w": "The",
+          "s": 197.184,
+          "e": 197.404,
+          "c": 0.999449
+        },
+        {
+          "w": "prosecutor",
+          "s": 197.704,
+          "e": 198.154,
+          "c": 0.994647
+        },
+        {
+          "w": "recommended",
+          "s": 198.154,
+          "e": 198.974,
+          "c": 0.998374
+        },
+        {
+          "w": "97",
+          "s": 198.974,
+          "e": 199.424,
+          "c": 0.998605
+        },
+        {
+          "w": "months",
+          "s": 199.424,
+          "e": 199.484,
+          "c": 0.998951
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "start_s": 200,
+      "end_s": 200.72,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "in prison.",
+      "words": [
+        {
+          "w": "in",
+          "s": 200.004,
+          "e": 200.024,
+          "c": 0.99886
+        },
+        {
+          "w": "prison.",
+          "s": 200.024,
+          "e": 200.724,
+          "c": 0.980346
+        }
+      ]
+    },
+    {
+      "i": 35,
+      "start_s": 200.72,
+      "end_s": 202.82,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Judge Jackson gave him 71 months.",
+      "words": [
+        {
+          "w": "Judge",
+          "s": 200.724,
+          "e": 201.034,
+          "c": 0.99639
+        },
+        {
+          "w": "Jackson",
+          "s": 201.244,
+          "e": 201.474,
+          "c": 0.99512
+        },
+        {
+          "w": "gave",
+          "s": 201.474,
+          "e": 201.674,
+          "c": 0.996961
+        },
+        {
+          "w": "him",
+          "s": 201.714,
+          "e": 201.894,
+          "c": 0.967822
+        },
+        {
+          "w": "71",
+          "s": 201.954,
+          "e": 202.294,
+          "c": 0.998534
+        },
+        {
+          "w": "months.",
+          "s": 202.304,
+          "e": 202.824,
+          "c": 0.998169
+        }
+      ]
+    },
+    {
+      "i": 36,
+      "start_s": 202.88,
+      "end_s": 203.27,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "In the",
+      "words": [
+        {
+          "w": "In",
+          "s": 202.884,
+          "e": 203.054,
+          "c": 0.995027
+        },
+        {
+          "w": "the",
+          "s": 203.074,
+          "e": 203.274,
+          "c": 0.83944
+        }
+      ]
+    },
+    {
+      "i": 37,
+      "start_s": 203.4,
+      "end_s": 205.97,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "United States v. Savage, the defendant was",
+      "words": [
+        {
+          "w": "United",
+          "s": 203.404,
+          "e": 203.834,
+          "c": 0.995353
+        },
+        {
+          "w": "States",
+          "s": 203.834,
+          "e": 204.344,
+          "c": 0.998233
+        },
+        {
+          "w": "v.",
+          "s": 204.344,
+          "e": 204.694,
+          "c": 0.974048
+        },
+        {
+          "w": "Savage,",
+          "s": 204.694,
+          "e": 205.264,
+          "c": 0.974165
+        },
+        {
+          "w": "the",
+          "s": 205.264,
+          "e": 205.404,
+          "c": 0.999131
+        },
+        {
+          "w": "defendant",
+          "s": 205.784,
+          "e": 205.834,
+          "c": 0.997685
+        },
+        {
+          "w": "was",
+          "s": 205.834,
+          "e": 205.974,
+          "c": 0.998673
+        }
+      ]
+    },
+    {
+      "i": 38,
+      "start_s": 205.97,
+      "end_s": 215.15,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "convicted of traveling across state lines to engage in sexual intercourse with a child and also possessed six separate thumb drives of child pornography",
+      "words": [
+        {
+          "w": "convicted",
+          "s": 205.974,
+          "e": 206.424,
+          "c": 0.998534
+        },
+        {
+          "w": "of",
+          "s": 206.424,
+          "e": 206.524,
+          "c": 0.860905
+        },
+        {
+          "w": "traveling",
+          "s": 206.524,
+          "e": 206.984,
+          "c": 0.977605
+        },
+        {
+          "w": "across",
+          "s": 206.984,
+          "e": 207.374,
+          "c": 0.582186
+        },
+        {
+          "w": "state",
+          "s": 207.374,
+          "e": 207.554,
+          "c": 0.911655
+        },
+        {
+          "w": "lines",
+          "s": 208.084,
+          "e": 208.164,
+          "c": 0.989481
+        },
+        {
+          "w": "to",
+          "s": 208.164,
+          "e": 208.304,
+          "c": 0.999874
+        },
+        {
+          "w": "engage",
+          "s": 208.684,
+          "e": 208.734,
+          "c": 0.999628
+        },
+        {
+          "w": "in",
+          "s": 208.734,
+          "e": 208.874,
+          "c": 0.995235
+        },
+        {
+          "w": "sexual",
+          "s": 208.874,
+          "e": 209.284,
+          "c": 0.999216
+        },
+        {
+          "w": "intercourse",
+          "s": 209.304,
+          "e": 210.084,
+          "c": 0.995902
+        },
+        {
+          "w": "with",
+          "s": 210.084,
+          "e": 210.264,
+          "c": 0.995594
+        },
+        {
+          "w": "a",
+          "s": 210.264,
+          "e": 210.434,
+          "c": 0.757061
+        },
+        {
+          "w": "child",
+          "s": 210.434,
+          "e": 210.464,
+          "c": 0.999777
+        },
+        {
+          "w": "and",
+          "s": 210.824,
+          "e": 211.044,
+          "c": 0.999807
+        },
+        {
+          "w": "also",
+          "s": 211.344,
+          "e": 211.344,
+          "c": 0.99835
+        },
+        {
+          "w": "possessed",
+          "s": 211.344,
+          "e": 211.994,
+          "c": 0.809451
+        },
+        {
+          "w": "six",
+          "s": 212.054,
+          "e": 212.204,
+          "c": 0.97781
+        },
+        {
+          "w": "separate",
+          "s": 212.234,
+          "e": 212.864,
+          "c": 0.990159
+        },
+        {
+          "w": "thumb",
+          "s": 212.864,
+          "e": 213.104,
+          "c": 0.950739
+        },
+        {
+          "w": "drives",
+          "s": 213.644,
+          "e": 213.684,
+          "c": 0.982257
+        },
+        {
+          "w": "of",
+          "s": 213.684,
+          "e": 213.844,
+          "c": 0.998731
+        },
+        {
+          "w": "child",
+          "s": 214.204,
+          "e": 214.254,
+          "c": 0.999407
+        },
+        {
+          "w": "pornography",
+          "s": 214.254,
+          "e": 215.154,
+          "c": 0.999376
+        }
+      ]
+    },
+    {
+      "i": 39,
+      "start_s": 215.37,
+      "end_s": 215.38,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The",
+      "words": [
+        {
+          "w": "The",
+          "s": 215.366,
+          "e": 215.366,
+          "c": 0.835791
+        }
+      ]
+    },
+    {
+      "i": 40,
+      "start_s": 215.38,
+      "end_s": 227.01,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "guidelines recommended 46 to 57 months in prison. The prosecutor recommended 49 months in prison. Judge Jackson sentenced him to 37 months in prison. Now those",
+      "words": [
+        {
+          "w": "guidelines",
+          "s": 215.376,
+          "e": 216.126,
+          "c": 0.987767
+        },
+        {
+          "w": "recommended",
+          "s": 216.206,
+          "e": 217.006,
+          "c": 0.986619
+        },
+        {
+          "w": "46",
+          "s": 217.006,
+          "e": 217.476,
+          "c": 0.972334
+        },
+        {
+          "w": "to",
+          "s": 217.476,
+          "e": 217.626,
+          "c": 0.927111
+        },
+        {
+          "w": "57",
+          "s": 217.636,
+          "e": 218.096,
+          "c": 0.996664
+        },
+        {
+          "w": "months",
+          "s": 218.096,
+          "e": 218.536,
+          "c": 0.993822
+        },
+        {
+          "w": "in",
+          "s": 218.536,
+          "e": 218.696,
+          "c": 0.993191
+        },
+        {
+          "w": "prison.",
+          "s": 218.766,
+          "e": 219.186,
+          "c": 0.937185
+        },
+        {
+          "w": "The",
+          "s": 219.666,
+          "e": 219.666,
+          "c": 0.997626
+        },
+        {
+          "w": "prosecutor",
+          "s": 219.696,
+          "e": 220.376,
+          "c": 0.977661
+        },
+        {
+          "w": "recommended",
+          "s": 220.376,
+          "e": 220.916,
+          "c": 0.994734
+        },
+        {
+          "w": "49",
+          "s": 221.206,
+          "e": 221.576,
+          "c": 0.992171
+        },
+        {
+          "w": "months",
+          "s": 221.576,
+          "e": 221.996,
+          "c": 0.997291
+        },
+        {
+          "w": "in",
+          "s": 221.996,
+          "e": 222.126,
+          "c": 0.996071
+        },
+        {
+          "w": "prison.",
+          "s": 222.136,
+          "e": 222.786,
+          "c": 0.963422
+        },
+        {
+          "w": "Judge",
+          "s": 223.056,
+          "e": 223.226,
+          "c": 0.98079
+        },
+        {
+          "w": "Jackson",
+          "s": 223.226,
+          "e": 223.796,
+          "c": 0.994344
+        },
+        {
+          "w": "sentenced",
+          "s": 223.796,
+          "e": 224.276,
+          "c": 0.95086
+        },
+        {
+          "w": "him",
+          "s": 224.566,
+          "e": 224.776,
+          "c": 0.989604
+        },
+        {
+          "w": "to",
+          "s": 224.776,
+          "e": 224.936,
+          "c": 0.989587
+        },
+        {
+          "w": "37",
+          "s": 224.936,
+          "e": 225.426,
+          "c": 0.99606
+        },
+        {
+          "w": "months",
+          "s": 225.496,
+          "e": 225.736,
+          "c": 0.960933
+        },
+        {
+          "w": "in",
+          "s": 225.736,
+          "e": 225.816,
+          "c": 0.992875
+        },
+        {
+          "w": "prison.",
+          "s": 225.826,
+          "e": 226.236,
+          "c": 0.982787
+        },
+        {
+          "w": "Now",
+          "s": 226.496,
+          "e": 226.536,
+          "c": 0.974626
+        },
+        {
+          "w": "those",
+          "s": 226.536,
+          "e": 227.006,
+          "c": 0.659445
+        }
+      ]
+    },
+    {
+      "i": 41,
+      "start_s": 227.01,
+      "end_s": 227.72,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "are seven",
+      "words": [
+        {
+          "w": "are",
+          "s": 227.006,
+          "e": 227.246,
+          "c": 0.997004
+        },
+        {
+          "w": "seven",
+          "s": 227.326,
+          "e": 227.716,
+          "c": 0.948802
+        }
+      ]
+    },
+    {
+      "i": 42,
+      "start_s": 228.01,
+      "end_s": 228.43,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "cases that",
+      "words": [
+        {
+          "w": "cases",
+          "s": 228.006,
+          "e": 228.256,
+          "c": 0.994524
+        },
+        {
+          "w": "that",
+          "s": 228.256,
+          "e": 228.426,
+          "c": 0.752657
+        }
+      ]
+    },
+    {
+      "i": 43,
+      "start_s": 228.5,
+      "end_s": 239.7,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "represent as near as we can tell all of Judge Jackson's cases dealing with child pornography from her time on the district court in which she had some discretion to hand down a sentence. There's some other cases in which",
+      "words": [
+        {
+          "w": "represent",
+          "s": 228.496,
+          "e": 229.056,
+          "c": 0.988408
+        },
+        {
+          "w": "as",
+          "s": 229.056,
+          "e": 229.266,
+          "c": 0.584839
+        },
+        {
+          "w": "near",
+          "s": 229.266,
+          "e": 229.656,
+          "c": 0.986579
+        },
+        {
+          "w": "as",
+          "s": 229.696,
+          "e": 229.816,
+          "c": 0.931047
+        },
+        {
+          "w": "we",
+          "s": 229.946,
+          "e": 229.976,
+          "c": 0.96099
+        },
+        {
+          "w": "can",
+          "s": 229.976,
+          "e": 230.176,
+          "c": 0.969738
+        },
+        {
+          "w": "tell",
+          "s": 230.176,
+          "e": 230.296,
+          "c": 0.931504
+        },
+        {
+          "w": "all",
+          "s": 230.966,
+          "e": 230.966,
+          "c": 0.996576
+        },
+        {
+          "w": "of",
+          "s": 230.976,
+          "e": 231.116,
+          "c": 0.998489
+        },
+        {
+          "w": "Judge",
+          "s": 231.116,
+          "e": 231.496,
+          "c": 0.968243
+        },
+        {
+          "w": "Jackson's",
+          "s": 231.496,
+          "e": 232.176,
+          "c": 0.99459
+        },
+        {
+          "w": "cases",
+          "s": 232.176,
+          "e": 232.576,
+          "c": 0.835987
+        },
+        {
+          "w": "dealing",
+          "s": 232.576,
+          "e": 232.896,
+          "c": 0.93846
+        },
+        {
+          "w": "with",
+          "s": 232.896,
+          "e": 233.106,
+          "c": 0.974256
+        },
+        {
+          "w": "child",
+          "s": 233.106,
+          "e": 233.346,
+          "c": 0.988174
+        },
+        {
+          "w": "pornography",
+          "s": 233.416,
+          "e": 234.066,
+          "c": 0.982772
+        },
+        {
+          "w": "from",
+          "s": 234.296,
+          "e": 234.296,
+          "c": 0.998959
+        },
+        {
+          "w": "her",
+          "s": 234.336,
+          "e": 234.446,
+          "c": 0.999163
+        },
+        {
+          "w": "time",
+          "s": 234.456,
+          "e": 234.646,
+          "c": 0.999361
+        },
+        {
+          "w": "on",
+          "s": 234.646,
+          "e": 234.746,
+          "c": 0.99527
+        },
+        {
+          "w": "the",
+          "s": 234.746,
+          "e": 234.896,
+          "c": 0.996704
+        },
+        {
+          "w": "district",
+          "s": 234.896,
+          "e": 235.306,
+          "c": 0.836579
+        },
+        {
+          "w": "court",
+          "s": 235.306,
+          "e": 235.556,
+          "c": 0.896979
+        },
+        {
+          "w": "in",
+          "s": 235.706,
+          "e": 235.706,
+          "c": 0.343401
+        },
+        {
+          "w": "which",
+          "s": 235.846,
+          "e": 235.936,
+          "c": 0.984977
+        },
+        {
+          "w": "she",
+          "s": 235.936,
+          "e": 236.016,
+          "c": 0.921595
+        },
+        {
+          "w": "had",
+          "s": 236.016,
+          "e": 236.176,
+          "c": 0.974368
+        },
+        {
+          "w": "some",
+          "s": 236.176,
+          "e": 236.276,
+          "c": 0.953572
+        },
+        {
+          "w": "discretion",
+          "s": 236.336,
+          "e": 237.136,
+          "c": 0.95691
+        },
+        {
+          "w": "to",
+          "s": 237.136,
+          "e": 237.216,
+          "c": 0.998489
+        },
+        {
+          "w": "hand",
+          "s": 237.376,
+          "e": 237.386,
+          "c": 0.998531
+        },
+        {
+          "w": "down",
+          "s": 237.386,
+          "e": 237.556,
+          "c": 0.97737
+        },
+        {
+          "w": "a",
+          "s": 237.556,
+          "e": 237.596,
+          "c": 0.994655
+        },
+        {
+          "w": "sentence.",
+          "s": 237.596,
+          "e": 238.096,
+          "c": 0.926261
+        },
+        {
+          "w": "There's",
+          "s": 238.096,
+          "e": 238.326,
+          "c": 0.587862
+        },
+        {
+          "w": "some",
+          "s": 238.326,
+          "e": 238.456,
+          "c": 0.996607
+        },
+        {
+          "w": "other",
+          "s": 238.456,
+          "e": 238.606,
+          "c": 0.999136
+        },
+        {
+          "w": "cases",
+          "s": 238.616,
+          "e": 238.626,
+          "c": 0.995486
+        },
+        {
+          "w": "in",
+          "s": 238.886,
+          "e": 239.066,
+          "c": 0.970897
+        },
+        {
+          "w": "which",
+          "s": 239.066,
+          "e": 239.696,
+          "c": 0.996729
+        }
+      ]
+    },
+    {
+      "i": 44,
+      "start_s": 239.7,
+      "end_s": 239.85,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the law she",
+      "words": [
+        {
+          "w": "the",
+          "s": 239.696,
+          "e": 239.696,
+          "c": 0.897743
+        },
+        {
+          "w": "law",
+          "s": 239.696,
+          "e": 239.696,
+          "c": 0.996071
+        },
+        {
+          "w": "she",
+          "s": 239.846,
+          "e": 239.846,
+          "c": 0.985199
+        }
+      ]
+    },
+    {
+      "i": 45,
+      "start_s": 239.94,
+      "end_s": 245.16,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "didn't have any discretion. The law bound the sentence that she had to had to give,",
+      "words": [
+        {
+          "w": "didn't",
+          "s": 239.936,
+          "e": 240.146,
+          "c": 0.998852
+        },
+        {
+          "w": "have",
+          "s": 240.146,
+          "e": 240.346,
+          "c": 0.998496
+        },
+        {
+          "w": "any",
+          "s": 240.346,
+          "e": 240.496,
+          "c": 0.997381
+        },
+        {
+          "w": "discretion.",
+          "s": 240.496,
+          "e": 241.146,
+          "c": 0.441376
+        },
+        {
+          "w": "The",
+          "s": 241.146,
+          "e": 241.186,
+          "c": 0.987698
+        },
+        {
+          "w": "law",
+          "s": 241.446,
+          "e": 241.456,
+          "c": 0.998363
+        },
+        {
+          "w": "bound",
+          "s": 241.456,
+          "e": 241.776,
+          "c": 0.985612
+        },
+        {
+          "w": "the",
+          "s": 241.776,
+          "e": 241.876,
+          "c": 0.820526
+        },
+        {
+          "w": "sentence",
+          "s": 241.906,
+          "e": 242.256,
+          "c": 0.995418
+        },
+        {
+          "w": "that",
+          "s": 242.256,
+          "e": 242.426,
+          "c": 0.977495
+        },
+        {
+          "w": "she",
+          "s": 242.426,
+          "e": 242.576,
+          "c": 0.99541
+        },
+        {
+          "w": "had",
+          "s": 242.576,
+          "e": 243.236,
+          "c": 0.961527
+        },
+        {
+          "w": "to",
+          "s": 243.376,
+          "e": 243.376,
+          "c": 0.882914
+        },
+        {
+          "w": "had",
+          "s": 243.616,
+          "e": 243.966,
+          "c": 0.73501
+        },
+        {
+          "w": "to",
+          "s": 243.966,
+          "e": 244.356,
+          "c": 0.998887
+        },
+        {
+          "w": "give,",
+          "s": 244.356,
+          "e": 245.156,
+          "c": 0.332509
+        }
+      ]
+    },
+    {
+      "i": 46,
+      "start_s": 245.16,
+      "end_s": 245.17,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and what concerns me",
+      "words": [
+        {
+          "w": "and",
+          "s": 245.156,
+          "e": 245.156,
+          "c": 0.973702
+        },
+        {
+          "w": "what",
+          "s": 245.156,
+          "e": 245.156,
+          "c": 0.99616
+        },
+        {
+          "w": "concerns",
+          "s": 245.156,
+          "e": 245.156,
+          "c": 0.988451
+        },
+        {
+          "w": "me",
+          "s": 245.156,
+          "e": 245.156,
+          "c": 0.661694
+        }
+      ]
+    },
+    {
+      "i": 47,
+      "start_s": 245.16,
+      "end_s": 248.03,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and I've been very candid about this, is that in every",
+      "words": [
+        {
+          "w": "and",
+          "s": 245.136,
+          "e": 245.336,
+          "c": 0.586083
+        },
+        {
+          "w": "I've",
+          "s": 245.336,
+          "e": 245.586,
+          "c": 0.982152
+        },
+        {
+          "w": "been",
+          "s": 245.626,
+          "e": 245.846,
+          "c": 0.998371
+        },
+        {
+          "w": "very",
+          "s": 245.846,
+          "e": 246.006,
+          "c": 0.991679
+        },
+        {
+          "w": "candid",
+          "s": 246.386,
+          "e": 246.496,
+          "c": 0.995308
+        },
+        {
+          "w": "about",
+          "s": 246.496,
+          "e": 246.826,
+          "c": 0.992638
+        },
+        {
+          "w": "this,",
+          "s": 246.826,
+          "e": 247.156,
+          "c": 0.531207
+        },
+        {
+          "w": "is",
+          "s": 247.156,
+          "e": 247.316,
+          "c": 0.991843
+        },
+        {
+          "w": "that",
+          "s": 247.316,
+          "e": 247.606,
+          "c": 0.995376
+        },
+        {
+          "w": "in",
+          "s": 247.636,
+          "e": 247.786,
+          "c": 0.978592
+        },
+        {
+          "w": "every",
+          "s": 247.796,
+          "e": 248.026,
+          "c": 0.997038
+        }
+      ]
+    },
+    {
+      "i": 48,
+      "start_s": 248.41,
+      "end_s": 257.98,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "case, in each of these seven, Judge Jackson handed down a lenient sentence that was below what the federal guidelines recommended and below what prosecutors requested.",
+      "words": [
+        {
+          "w": "case,",
+          "s": 248.406,
+          "e": 248.686,
+          "c": 0.604354
+        },
+        {
+          "w": "in",
+          "s": 248.686,
+          "e": 248.866,
+          "c": 0.91192
+        },
+        {
+          "w": "each",
+          "s": 248.956,
+          "e": 249.246,
+          "c": 0.999266
+        },
+        {
+          "w": "of",
+          "s": 249.246,
+          "e": 249.426,
+          "c": 0.998774
+        },
+        {
+          "w": "these",
+          "s": 249.426,
+          "e": 249.886,
+          "c": 0.990569
+        },
+        {
+          "w": "seven,",
+          "s": 249.886,
+          "e": 250.376,
+          "c": 0.954196
+        },
+        {
+          "w": "Judge",
+          "s": 250.376,
+          "e": 250.676,
+          "c": 0.973548
+        },
+        {
+          "w": "Jackson",
+          "s": 250.676,
+          "e": 251.096,
+          "c": 0.99667
+        },
+        {
+          "w": "handed",
+          "s": 251.096,
+          "e": 251.256,
+          "c": 0.996884
+        },
+        {
+          "w": "down",
+          "s": 251.626,
+          "e": 251.696,
+          "c": 0.998376
+        },
+        {
+          "w": "a",
+          "s": 251.696,
+          "e": 251.756,
+          "c": 0.986399
+        },
+        {
+          "w": "lenient",
+          "s": 251.756,
+          "e": 252.086,
+          "c": 0.988395
+        },
+        {
+          "w": "sentence",
+          "s": 252.176,
+          "e": 252.696,
+          "c": 0.99632
+        },
+        {
+          "w": "that",
+          "s": 252.696,
+          "e": 252.906,
+          "c": 0.999767
+        },
+        {
+          "w": "was",
+          "s": 252.906,
+          "e": 253.066,
+          "c": 0.999033
+        },
+        {
+          "w": "below",
+          "s": 253.066,
+          "e": 253.326,
+          "c": 0.999392
+        },
+        {
+          "w": "what",
+          "s": 253.356,
+          "e": 253.546,
+          "c": 0.980986
+        },
+        {
+          "w": "the",
+          "s": 253.546,
+          "e": 253.576,
+          "c": 0.992797
+        },
+        {
+          "w": "federal",
+          "s": 253.946,
+          "e": 254.086,
+          "c": 0.841944
+        },
+        {
+          "w": "guidelines",
+          "s": 254.086,
+          "e": 254.656,
+          "c": 0.98544
+        },
+        {
+          "w": "recommended",
+          "s": 254.656,
+          "e": 255.426,
+          "c": 0.963319
+        },
+        {
+          "w": "and",
+          "s": 255.736,
+          "e": 255.936,
+          "c": 0.999842
+        },
+        {
+          "w": "below",
+          "s": 255.936,
+          "e": 256.276,
+          "c": 0.999316
+        },
+        {
+          "w": "what",
+          "s": 256.276,
+          "e": 256.546,
+          "c": 0.997139
+        },
+        {
+          "w": "prosecutors",
+          "s": 256.546,
+          "e": 257.296,
+          "c": 0.978414
+        },
+        {
+          "w": "requested.",
+          "s": 257.306,
+          "e": 257.976,
+          "c": 0.6799
+        }
+      ]
+    },
+    {
+      "i": 49,
+      "start_s": 257.98,
+      "end_s": 263.88,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And so I think there's a lot to talk about there and I look forward to talking about it. Now I will note that some",
+      "words": [
+        {
+          "w": "And",
+          "s": 257.976,
+          "e": 258.166,
+          "c": 0.839778
+        },
+        {
+          "w": "so",
+          "s": 258.166,
+          "e": 258.286,
+          "c": 0.990656
+        },
+        {
+          "w": "I",
+          "s": 258.286,
+          "e": 258.346,
+          "c": 0.828626
+        },
+        {
+          "w": "think",
+          "s": 258.346,
+          "e": 258.656,
+          "c": 0.999216
+        },
+        {
+          "w": "there's",
+          "s": 258.656,
+          "e": 258.986,
+          "c": 0.991002
+        },
+        {
+          "w": "a",
+          "s": 259.146,
+          "e": 259.146,
+          "c": 0.997634
+        },
+        {
+          "w": "lot",
+          "s": 259.226,
+          "e": 259.336,
+          "c": 0.999657
+        },
+        {
+          "w": "to",
+          "s": 259.336,
+          "e": 259.456,
+          "c": 0.996067
+        },
+        {
+          "w": "talk",
+          "s": 259.456,
+          "e": 259.686,
+          "c": 0.999367
+        },
+        {
+          "w": "about",
+          "s": 259.776,
+          "e": 260.016,
+          "c": 0.996419
+        },
+        {
+          "w": "there",
+          "s": 260.016,
+          "e": 260.396,
+          "c": 0.991185
+        },
+        {
+          "w": "and",
+          "s": 260.396,
+          "e": 260.506,
+          "c": 0.999723
+        },
+        {
+          "w": "I",
+          "s": 260.506,
+          "e": 260.536,
+          "c": 0.998487
+        },
+        {
+          "w": "look",
+          "s": 260.536,
+          "e": 260.686,
+          "c": 0.996605
+        },
+        {
+          "w": "forward",
+          "s": 260.686,
+          "e": 260.956,
+          "c": 0.998917
+        },
+        {
+          "w": "to",
+          "s": 260.956,
+          "e": 261.026,
+          "c": 0.998635
+        },
+        {
+          "w": "talking",
+          "s": 261.026,
+          "e": 261.266,
+          "c": 0.998544
+        },
+        {
+          "w": "about",
+          "s": 261.486,
+          "e": 261.486,
+          "c": 0.99927
+        },
+        {
+          "w": "it.",
+          "s": 261.556,
+          "e": 261.736,
+          "c": 0.992845
+        },
+        {
+          "w": "Now",
+          "s": 261.736,
+          "e": 262.176,
+          "c": 0.931472
+        },
+        {
+          "w": "I",
+          "s": 262.176,
+          "e": 262.326,
+          "c": 0.749253
+        },
+        {
+          "w": "will",
+          "s": 262.326,
+          "e": 262.606,
+          "c": 0.998546
+        },
+        {
+          "w": "note",
+          "s": 262.986,
+          "e": 263.446,
+          "c": 0.998851
+        },
+        {
+          "w": "that",
+          "s": 263.536,
+          "e": 263.706,
+          "c": 0.849453
+        },
+        {
+          "w": "some",
+          "s": 263.736,
+          "e": 263.876,
+          "c": 0.996067
+        }
+      ]
+    },
+    {
+      "i": 50,
+      "start_s": 263.93,
+      "end_s": 273.83,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "have said that the federal sentencing guidelines are too harsh on child sex crimes, especially child pornography. I've heard that argument a lot in recent days. The chairman quoted",
+      "words": [
+        {
+          "w": "have",
+          "s": 263.926,
+          "e": 264.106,
+          "c": 0.977297
+        },
+        {
+          "w": "said",
+          "s": 264.106,
+          "e": 264.316,
+          "c": 0.9987
+        },
+        {
+          "w": "that",
+          "s": 264.316,
+          "e": 264.476,
+          "c": 0.992244
+        },
+        {
+          "w": "the",
+          "s": 264.476,
+          "e": 264.596,
+          "c": 0.991019
+        },
+        {
+          "w": "federal",
+          "s": 264.596,
+          "e": 264.886,
+          "c": 0.96647
+        },
+        {
+          "w": "sentencing",
+          "s": 264.886,
+          "e": 265.186,
+          "c": 0.984097
+        },
+        {
+          "w": "guidelines",
+          "s": 265.566,
+          "e": 265.756,
+          "c": 0.997896
+        },
+        {
+          "w": "are",
+          "s": 265.756,
+          "e": 265.856,
+          "c": 0.59038
+        },
+        {
+          "w": "too",
+          "s": 265.896,
+          "e": 266.356,
+          "c": 0.965164
+        },
+        {
+          "w": "harsh",
+          "s": 266.356,
+          "e": 267.046,
+          "c": 0.998382
+        },
+        {
+          "w": "on",
+          "s": 267.136,
+          "e": 267.256,
+          "c": 0.99951
+        },
+        {
+          "w": "child",
+          "s": 267.256,
+          "e": 267.566,
+          "c": 0.997887
+        },
+        {
+          "w": "sex",
+          "s": 267.566,
+          "e": 267.746,
+          "c": 0.9931
+        },
+        {
+          "w": "crimes,",
+          "s": 267.746,
+          "e": 268.256,
+          "c": 0.926307
+        },
+        {
+          "w": "especially",
+          "s": 268.386,
+          "e": 268.676,
+          "c": 0.978299
+        },
+        {
+          "w": "child",
+          "s": 268.676,
+          "e": 268.846,
+          "c": 0.997164
+        },
+        {
+          "w": "pornography.",
+          "s": 268.936,
+          "e": 269.496,
+          "c": 0.964227
+        },
+        {
+          "w": "I've",
+          "s": 269.496,
+          "e": 269.856,
+          "c": 0.97171
+        },
+        {
+          "w": "heard",
+          "s": 269.856,
+          "e": 270.316,
+          "c": 0.998195
+        },
+        {
+          "w": "that",
+          "s": 270.316,
+          "e": 270.366,
+          "c": 0.998721
+        },
+        {
+          "w": "argument",
+          "s": 270.746,
+          "e": 271.426,
+          "c": 0.997801
+        },
+        {
+          "w": "a",
+          "s": 271.426,
+          "e": 271.516,
+          "c": 0.997025
+        },
+        {
+          "w": "lot",
+          "s": 271.516,
+          "e": 271.796,
+          "c": 0.999763
+        },
+        {
+          "w": "in",
+          "s": 271.796,
+          "e": 271.976,
+          "c": 0.98469
+        },
+        {
+          "w": "recent",
+          "s": 271.976,
+          "e": 272.236,
+          "c": 0.998144
+        },
+        {
+          "w": "days.",
+          "s": 272.726,
+          "e": 272.956,
+          "c": 0.880646
+        },
+        {
+          "w": "The",
+          "s": 272.956,
+          "e": 273.166,
+          "c": 0.945924
+        },
+        {
+          "w": "chairman",
+          "s": 273.166,
+          "e": 273.746,
+          "c": 0.727802
+        },
+        {
+          "w": "quoted",
+          "s": 273.746,
+          "e": 273.826,
+          "c": 0.995953
+        }
+      ]
+    },
+    {
+      "i": 51,
+      "start_s": 274.4,
+      "end_s": 279.51,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "someone earlier today who takes that point of view. I'll just be honest, I can't say that I agree with that.",
+      "words": [
+        {
+          "w": "someone",
+          "s": 274.4,
+          "e": 274.65,
+          "c": 0.276856
+        },
+        {
+          "w": "earlier",
+          "s": 274.65,
+          "e": 275.13,
+          "c": 0.999453
+        },
+        {
+          "w": "today",
+          "s": 275.14,
+          "e": 275.5,
+          "c": 0.999651
+        },
+        {
+          "w": "who",
+          "s": 275.5,
+          "e": 275.68,
+          "c": 0.955509
+        },
+        {
+          "w": "takes",
+          "s": 275.68,
+          "e": 275.98,
+          "c": 0.994566
+        },
+        {
+          "w": "that",
+          "s": 275.98,
+          "e": 276.22,
+          "c": 0.993316
+        },
+        {
+          "w": "point",
+          "s": 276.22,
+          "e": 276.52,
+          "c": 0.997577
+        },
+        {
+          "w": "of",
+          "s": 276.52,
+          "e": 276.58,
+          "c": 0.9981
+        },
+        {
+          "w": "view.",
+          "s": 276.66,
+          "e": 276.96,
+          "c": 0.455963
+        },
+        {
+          "w": "I'll",
+          "s": 277.1,
+          "e": 277.25,
+          "c": 0.618333
+        },
+        {
+          "w": "just",
+          "s": 277.28,
+          "e": 277.45,
+          "c": 0.999325
+        },
+        {
+          "w": "be",
+          "s": 277.45,
+          "e": 277.55,
+          "c": 0.999146
+        },
+        {
+          "w": "honest,",
+          "s": 277.55,
+          "e": 277.92,
+          "c": 0.585463
+        },
+        {
+          "w": "I",
+          "s": 277.96,
+          "e": 278.09,
+          "c": 0.949041
+        },
+        {
+          "w": "can't",
+          "s": 278.16,
+          "e": 278.31,
+          "c": 0.984429
+        },
+        {
+          "w": "say",
+          "s": 278.31,
+          "e": 278.43,
+          "c": 0.991401
+        },
+        {
+          "w": "that",
+          "s": 278.44,
+          "e": 278.56,
+          "c": 0.979897
+        },
+        {
+          "w": "I",
+          "s": 278.56,
+          "e": 278.66,
+          "c": 0.982889
+        },
+        {
+          "w": "agree",
+          "s": 278.66,
+          "e": 278.86,
+          "c": 0.858957
+        },
+        {
+          "w": "with",
+          "s": 278.86,
+          "e": 278.96,
+          "c": 0.755759
+        },
+        {
+          "w": "that.",
+          "s": 279.26,
+          "e": 279.51,
+          "c": 0.998866
+        }
+      ]
+    },
+    {
+      "i": 52,
+      "start_s": 279.51,
+      "end_s": 279.98,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I mean,",
+      "words": [
+        {
+          "w": "I",
+          "s": 279.51,
+          "e": 279.58,
+          "c": 0.969647
+        },
+        {
+          "w": "mean,",
+          "s": 279.58,
+          "e": 279.98,
+          "c": 0.769378
+        }
+      ]
+    },
+    {
+      "i": 53,
+      "start_s": 279.98,
+      "end_s": 297.52,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the amount of child pornography in circulation has absolutely exploded in recent years. Here's a New York Times report from 2019. I'm quoting now. Last year, tech companies reported over 45 million online photos and videos of children being sexually abused, more than double",
+      "words": [
+        {
+          "w": "the",
+          "s": 279.98,
+          "e": 280.18,
+          "c": 0.999954
+        },
+        {
+          "w": "amount",
+          "s": 280.18,
+          "e": 280.59,
+          "c": 0.99999
+        },
+        {
+          "w": "of",
+          "s": 280.59,
+          "e": 280.7,
+          "c": 1
+        },
+        {
+          "w": "child",
+          "s": 280.8,
+          "e": 281.05,
+          "c": 0.999933
+        },
+        {
+          "w": "pornography",
+          "s": 281.08,
+          "e": 281.82,
+          "c": 0.99995
+        },
+        {
+          "w": "in",
+          "s": 281.82,
+          "e": 281.84,
+          "c": 0.999588
+        },
+        {
+          "w": "circulation",
+          "s": 282.15,
+          "e": 282.71,
+          "c": 0.999741
+        },
+        {
+          "w": "has",
+          "s": 282.71,
+          "e": 282.88,
+          "c": 0.992937
+        },
+        {
+          "w": "absolutely",
+          "s": 282.91,
+          "e": 283.55,
+          "c": 0.999918
+        },
+        {
+          "w": "exploded",
+          "s": 283.6,
+          "e": 284.09,
+          "c": 0.999725
+        },
+        {
+          "w": "in",
+          "s": 284.28,
+          "e": 284.28,
+          "c": 0.999928
+        },
+        {
+          "w": "recent",
+          "s": 284.28,
+          "e": 284.81,
+          "c": 0.99782
+        },
+        {
+          "w": "years.",
+          "s": 285.04,
+          "e": 285.23,
+          "c": 0.999956
+        },
+        {
+          "w": "Here's",
+          "s": 285.23,
+          "e": 285.54,
+          "c": 0.999924
+        },
+        {
+          "w": "a",
+          "s": 285.54,
+          "e": 285.59,
+          "c": 0.991777
+        },
+        {
+          "w": "New",
+          "s": 285.59,
+          "e": 285.74,
+          "c": 0.999506
+        },
+        {
+          "w": "York",
+          "s": 285.74,
+          "e": 285.94,
+          "c": 0.999969
+        },
+        {
+          "w": "Times",
+          "s": 285.95,
+          "e": 286.21,
+          "c": 0.998502
+        },
+        {
+          "w": "report",
+          "s": 286.21,
+          "e": 286.45,
+          "c": 0.99979
+        },
+        {
+          "w": "from",
+          "s": 286.58,
+          "e": 286.73,
+          "c": 0.999994
+        },
+        {
+          "w": "2019.",
+          "s": 286.73,
+          "e": 287.51,
+          "c": 0.672297
+        },
+        {
+          "w": "I'm",
+          "s": 287.51,
+          "e": 287.62,
+          "c": 0.999977
+        },
+        {
+          "w": "quoting",
+          "s": 287.93,
+          "e": 288.03,
+          "c": 0.999939
+        },
+        {
+          "w": "now.",
+          "s": 288.07,
+          "e": 288.42,
+          "c": 0.858418
+        },
+        {
+          "w": "Last",
+          "s": 288.42,
+          "e": 288.88,
+          "c": 0.925865
+        },
+        {
+          "w": "year,",
+          "s": 288.88,
+          "e": 289.58,
+          "c": 0.994674
+        },
+        {
+          "w": "tech",
+          "s": 289.58,
+          "e": 289.8,
+          "c": 0.97707
+        },
+        {
+          "w": "companies",
+          "s": 289.8,
+          "e": 289.91,
+          "c": 0.99991
+        },
+        {
+          "w": "reported",
+          "s": 290.69,
+          "e": 290.72,
+          "c": 0.701382
+        },
+        {
+          "w": "over",
+          "s": 290.95,
+          "e": 291.03,
+          "c": 0.999954
+        },
+        {
+          "w": "45",
+          "s": 291.04,
+          "e": 291.53,
+          "c": 0.999176
+        },
+        {
+          "w": "million",
+          "s": 291.53,
+          "e": 292.1,
+          "c": 0.999941
+        },
+        {
+          "w": "online",
+          "s": 292.1,
+          "e": 292.59,
+          "c": 0.999987
+        },
+        {
+          "w": "photos",
+          "s": 292.59,
+          "e": 293.08,
+          "c": 0.999928
+        },
+        {
+          "w": "and",
+          "s": 293.08,
+          "e": 293.32,
+          "c": 0.999989
+        },
+        {
+          "w": "videos",
+          "s": 293.32,
+          "e": 293.52,
+          "c": 0.999958
+        },
+        {
+          "w": "of",
+          "s": 293.84,
+          "e": 293.92,
+          "c": 0.999979
+        },
+        {
+          "w": "children",
+          "s": 293.97,
+          "e": 294.62,
+          "c": 0.999985
+        },
+        {
+          "w": "being",
+          "s": 294.62,
+          "e": 295.03,
+          "c": 0.999992
+        },
+        {
+          "w": "sexually",
+          "s": 295.03,
+          "e": 295.68,
+          "c": 0.999949
+        },
+        {
+          "w": "abused,",
+          "s": 295.68,
+          "e": 296.33,
+          "c": 0.984419
+        },
+        {
+          "w": "more",
+          "s": 296.59,
+          "e": 296.65,
+          "c": 0.990881
+        },
+        {
+          "w": "than",
+          "s": 296.65,
+          "e": 297.04,
+          "c": 0.999937
+        },
+        {
+          "w": "double",
+          "s": 297.04,
+          "e": 297.52,
+          "c": 0.960309
+        }
+      ]
+    },
+    {
+      "i": 54,
+      "start_s": 297.74,
+      "end_s": 298.12,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "what they",
+      "words": [
+        {
+          "w": "what",
+          "s": 297.74,
+          "e": 297.82,
+          "c": 0.999262
+        },
+        {
+          "w": "they",
+          "s": 297.82,
+          "e": 298.12,
+          "c": 0.999987
+        }
+      ]
+    },
+    {
+      "i": 55,
+      "start_s": 298.12,
+      "end_s": 301.94,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "found the previous year. The report goes on to say this.",
+      "words": [
+        {
+          "w": "found",
+          "s": 298.12,
+          "e": 298.5,
+          "c": 0.999956
+        },
+        {
+          "w": "the",
+          "s": 298.5,
+          "e": 298.72,
+          "c": 0.999966
+        },
+        {
+          "w": "previous",
+          "s": 298.72,
+          "e": 299.14,
+          "c": 0.999989
+        },
+        {
+          "w": "year.",
+          "s": 299.33,
+          "e": 299.84,
+          "c": 0.999969
+        },
+        {
+          "w": "The",
+          "s": 299.84,
+          "e": 300.06,
+          "c": 0.999895
+        },
+        {
+          "w": "report",
+          "s": 300.06,
+          "e": 300.32,
+          "c": 0.999949
+        },
+        {
+          "w": "goes",
+          "s": 300.64,
+          "e": 300.81,
+          "c": 0.999983
+        },
+        {
+          "w": "on",
+          "s": 300.81,
+          "e": 300.95,
+          "c": 0.999998
+        },
+        {
+          "w": "to",
+          "s": 301.06,
+          "e": 301.11,
+          "c": 1
+        },
+        {
+          "w": "say",
+          "s": 301.11,
+          "e": 301.33,
+          "c": 0.999994
+        },
+        {
+          "w": "this.",
+          "s": 301.33,
+          "e": 301.94,
+          "c": 0.541363
+        }
+      ]
+    },
+    {
+      "i": 56,
+      "start_s": 302.18,
+      "end_s": 304.52,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "20 years ago, these online images were a problem.",
+      "words": [
+        {
+          "w": "20",
+          "s": 302.184,
+          "e": 302.304,
+          "c": 0.851284
+        },
+        {
+          "w": "years",
+          "s": 302.304,
+          "e": 302.634,
+          "c": 0.997126
+        },
+        {
+          "w": "ago,",
+          "s": 302.634,
+          "e": 302.984,
+          "c": 0.902622
+        },
+        {
+          "w": "these",
+          "s": 302.984,
+          "e": 303.204,
+          "c": 0.979925
+        },
+        {
+          "w": "online",
+          "s": 303.244,
+          "e": 303.504,
+          "c": 0.997933
+        },
+        {
+          "w": "images",
+          "s": 303.504,
+          "e": 303.764,
+          "c": 0.997664
+        },
+        {
+          "w": "were",
+          "s": 303.774,
+          "e": 303.974,
+          "c": 0.99482
+        },
+        {
+          "w": "a",
+          "s": 303.974,
+          "e": 304.014,
+          "c": 0.997493
+        },
+        {
+          "w": "problem.",
+          "s": 304.014,
+          "e": 304.524,
+          "c": 0.976215
+        }
+      ]
+    },
+    {
+      "i": 57,
+      "start_s": 304.8,
+      "end_s": 305.14,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "10 years",
+      "words": [
+        {
+          "w": "10",
+          "s": 304.804,
+          "e": 304.834,
+          "c": 0.724285
+        },
+        {
+          "w": "years",
+          "s": 304.874,
+          "e": 305.144,
+          "c": 0.99996
+        }
+      ]
+    },
+    {
+      "i": 58,
+      "start_s": 305.14,
+      "end_s": 306.62,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "ago, they were an epidemic.",
+      "words": [
+        {
+          "w": "ago,",
+          "s": 305.144,
+          "e": 305.404,
+          "c": 0.987784
+        },
+        {
+          "w": "they",
+          "s": 305.434,
+          "e": 305.644,
+          "c": 0.999903
+        },
+        {
+          "w": "were",
+          "s": 305.644,
+          "e": 305.824,
+          "c": 0.999979
+        },
+        {
+          "w": "an",
+          "s": 305.864,
+          "e": 305.974,
+          "c": 0.999855
+        },
+        {
+          "w": "epidemic.",
+          "s": 305.974,
+          "e": 306.624,
+          "c": 0.999878
+        }
+      ]
+    },
+    {
+      "i": 59,
+      "start_s": 306.9,
+      "end_s": 307.2,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Now the",
+      "words": [
+        {
+          "w": "Now",
+          "s": 306.904,
+          "e": 306.914,
+          "c": 0.999981
+        },
+        {
+          "w": "the",
+          "s": 306.974,
+          "e": 307.204,
+          "c": 0.945251
+        }
+      ]
+    },
+    {
+      "i": 60,
+      "start_s": 307.2,
+      "end_s": 314.1,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "crisis is at a breaking point. Unfortunately, it's even worse than that. Just last week, the National Center for Missing and Exploited",
+      "words": [
+        {
+          "w": "crisis",
+          "s": 307.204,
+          "e": 307.754,
+          "c": 0.999983
+        },
+        {
+          "w": "is",
+          "s": 307.784,
+          "e": 307.964,
+          "c": 0.999815
+        },
+        {
+          "w": "at",
+          "s": 307.974,
+          "e": 308.164,
+          "c": 0.999989
+        },
+        {
+          "w": "a",
+          "s": 308.164,
+          "e": 308.254,
+          "c": 0.999998
+        },
+        {
+          "w": "breaking",
+          "s": 308.254,
+          "e": 309.034,
+          "c": 0.999693
+        },
+        {
+          "w": "point.",
+          "s": 309.034,
+          "e": 309.864,
+          "c": 0.999977
+        },
+        {
+          "w": "Unfortunately,",
+          "s": 310.144,
+          "e": 310.434,
+          "c": 0.999474
+        },
+        {
+          "w": "it's",
+          "s": 310.434,
+          "e": 310.574,
+          "c": 0.999573
+        },
+        {
+          "w": "even",
+          "s": 310.574,
+          "e": 310.724,
+          "c": 0.99999
+        },
+        {
+          "w": "worse",
+          "s": 310.724,
+          "e": 310.914,
+          "c": 0.999943
+        },
+        {
+          "w": "than",
+          "s": 310.914,
+          "e": 310.994,
+          "c": 0.999987
+        },
+        {
+          "w": "that.",
+          "s": 311.054,
+          "e": 311.384,
+          "c": 0.999977
+        },
+        {
+          "w": "Just",
+          "s": 311.604,
+          "e": 311.604,
+          "c": 0.999968
+        },
+        {
+          "w": "last",
+          "s": 311.734,
+          "e": 311.824,
+          "c": 0.999989
+        },
+        {
+          "w": "week,",
+          "s": 311.824,
+          "e": 312.134,
+          "c": 0.999931
+        },
+        {
+          "w": "the",
+          "s": 312.184,
+          "e": 312.294,
+          "c": 0.81517
+        },
+        {
+          "w": "National",
+          "s": 312.304,
+          "e": 312.684,
+          "c": 0.999584
+        },
+        {
+          "w": "Center",
+          "s": 312.724,
+          "e": 313.004,
+          "c": 0.998513
+        },
+        {
+          "w": "for",
+          "s": 313.004,
+          "e": 313.164,
+          "c": 0.669955
+        },
+        {
+          "w": "Missing",
+          "s": 313.164,
+          "e": 313.544,
+          "c": 0.998171
+        },
+        {
+          "w": "and",
+          "s": 313.674,
+          "e": 313.714,
+          "c": 0.924396
+        },
+        {
+          "w": "Exploited",
+          "s": 313.714,
+          "e": 314.104,
+          "c": 0.991421
+        }
+      ]
+    },
+    {
+      "i": 61,
+      "start_s": 314.62,
+      "end_s": 315.29,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Children reported",
+      "words": [
+        {
+          "w": "Children",
+          "s": 314.624,
+          "e": 314.624,
+          "c": 0.997313
+        },
+        {
+          "w": "reported",
+          "s": 314.974,
+          "e": 315.294,
+          "c": 0.999674
+        }
+      ]
+    },
+    {
+      "i": 62,
+      "start_s": 315.29,
+      "end_s": 322.96,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "finding 85 million files of child pornography in 2021. And of course, this committee has heard testimony",
+      "words": [
+        {
+          "w": "finding",
+          "s": 315.294,
+          "e": 315.884,
+          "c": 0.999725
+        },
+        {
+          "w": "85",
+          "s": 315.884,
+          "e": 316.394,
+          "c": 0.999729
+        },
+        {
+          "w": "million",
+          "s": 316.394,
+          "e": 316.984,
+          "c": 0.9998
+        },
+        {
+          "w": "files",
+          "s": 316.984,
+          "e": 317.334,
+          "c": 0.999596
+        },
+        {
+          "w": "of",
+          "s": 317.574,
+          "e": 317.574,
+          "c": 0.997744
+        },
+        {
+          "w": "child",
+          "s": 317.904,
+          "e": 317.994,
+          "c": 0.999945
+        },
+        {
+          "w": "pornography",
+          "s": 317.994,
+          "e": 318.924,
+          "c": 0.999929
+        },
+        {
+          "w": "in",
+          "s": 318.924,
+          "e": 319.094,
+          "c": 0.998955
+        },
+        {
+          "w": "2021.",
+          "s": 319.094,
+          "e": 320.404,
+          "c": 0.982731
+        },
+        {
+          "w": "And",
+          "s": 320.504,
+          "e": 320.514,
+          "c": 0.670605
+        },
+        {
+          "w": "of",
+          "s": 320.684,
+          "e": 320.684,
+          "c": 0.738171
+        },
+        {
+          "w": "course,",
+          "s": 320.754,
+          "e": 321.144,
+          "c": 0.9976
+        },
+        {
+          "w": "this",
+          "s": 321.144,
+          "e": 321.374,
+          "c": 0.999929
+        },
+        {
+          "w": "committee",
+          "s": 321.374,
+          "e": 321.904,
+          "c": 0.999047
+        },
+        {
+          "w": "has",
+          "s": 321.904,
+          "e": 322.074,
+          "c": 0.999935
+        },
+        {
+          "w": "heard",
+          "s": 322.074,
+          "e": 322.364,
+          "c": 0.996073
+        },
+        {
+          "w": "testimony",
+          "s": 322.364,
+          "e": 322.964,
+          "c": 0.99869
+        }
+      ]
+    },
+    {
+      "i": 63,
+      "start_s": 323.16,
+      "end_s": 323.17,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "from",
+      "words": [
+        {
+          "w": "from",
+          "s": 323.164,
+          "e": 323.164,
+          "c": 0.910417
+        }
+      ]
+    },
+    {
+      "i": 64,
+      "start_s": 323.19,
+      "end_s": 343.3,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "prosecutors and others who are grappling with the problem of how to get at this porn and those who distribute it, how to prosecute them and hold them accountable. Here's my point: I think it's difficult against this backdrop to argue that the sentencing guidelines are too harsh or outmoded or that we should be somehow treating child porn offenders more leniently",
+      "words": [
+        {
+          "w": "prosecutors",
+          "s": 323.194,
+          "e": 323.804,
+          "c": 0.993818
+        },
+        {
+          "w": "and",
+          "s": 323.804,
+          "e": 323.914,
+          "c": 0.989146
+        },
+        {
+          "w": "others",
+          "s": 323.974,
+          "e": 324.284,
+          "c": 0.998359
+        },
+        {
+          "w": "who",
+          "s": 324.324,
+          "e": 324.434,
+          "c": 0.815139
+        },
+        {
+          "w": "are",
+          "s": 324.434,
+          "e": 324.544,
+          "c": 0.964514
+        },
+        {
+          "w": "grappling",
+          "s": 324.544,
+          "e": 325.024,
+          "c": 0.976718
+        },
+        {
+          "w": "with",
+          "s": 325.024,
+          "e": 325.204,
+          "c": 0.812293
+        },
+        {
+          "w": "the",
+          "s": 325.204,
+          "e": 325.224,
+          "c": 0.940941
+        },
+        {
+          "w": "problem",
+          "s": 325.304,
+          "e": 325.744,
+          "c": 0.983683
+        },
+        {
+          "w": "of",
+          "s": 325.744,
+          "e": 326.024,
+          "c": 0.620054
+        },
+        {
+          "w": "how",
+          "s": 326.154,
+          "e": 326.384,
+          "c": 0.703967
+        },
+        {
+          "w": "to",
+          "s": 326.384,
+          "e": 326.544,
+          "c": 0.965967
+        },
+        {
+          "w": "get",
+          "s": 326.544,
+          "e": 326.774,
+          "c": 0.961102
+        },
+        {
+          "w": "at",
+          "s": 326.784,
+          "e": 327.134,
+          "c": 0.918674
+        },
+        {
+          "w": "this",
+          "s": 327.454,
+          "e": 327.564,
+          "c": 0.83107
+        },
+        {
+          "w": "porn",
+          "s": 327.564,
+          "e": 328.144,
+          "c": 0.981887
+        },
+        {
+          "w": "and",
+          "s": 328.144,
+          "e": 328.304,
+          "c": 0.455229
+        },
+        {
+          "w": "those",
+          "s": 328.304,
+          "e": 328.544,
+          "c": 0.905459
+        },
+        {
+          "w": "who",
+          "s": 328.544,
+          "e": 328.784,
+          "c": 0.914775
+        },
+        {
+          "w": "distribute",
+          "s": 328.784,
+          "e": 329.374,
+          "c": 0.971842
+        },
+        {
+          "w": "it,",
+          "s": 329.374,
+          "e": 329.544,
+          "c": 0.663969
+        },
+        {
+          "w": "how",
+          "s": 329.694,
+          "e": 329.694,
+          "c": 0.985851
+        },
+        {
+          "w": "to",
+          "s": 329.764,
+          "e": 329.794,
+          "c": 0.998668
+        },
+        {
+          "w": "prosecute",
+          "s": 329.794,
+          "e": 330.224,
+          "c": 0.999163
+        },
+        {
+          "w": "them",
+          "s": 330.294,
+          "e": 330.444,
+          "c": 0.995989
+        },
+        {
+          "w": "and",
+          "s": 330.444,
+          "e": 330.594,
+          "c": 0.929076
+        },
+        {
+          "w": "hold",
+          "s": 330.594,
+          "e": 330.794,
+          "c": 0.996744
+        },
+        {
+          "w": "them",
+          "s": 330.794,
+          "e": 330.944,
+          "c": 0.999186
+        },
+        {
+          "w": "accountable.",
+          "s": 330.994,
+          "e": 331.704,
+          "c": 0.926583
+        },
+        {
+          "w": "Here's",
+          "s": 331.704,
+          "e": 331.934,
+          "c": 0.5012
+        },
+        {
+          "w": "my",
+          "s": 332.044,
+          "e": 332.064,
+          "c": 0.999634
+        },
+        {
+          "w": "point:",
+          "s": 332.064,
+          "e": 332.344,
+          "c": 0.266033
+        },
+        {
+          "w": "I",
+          "s": 332.344,
+          "e": 332.404,
+          "c": 0.558352
+        },
+        {
+          "w": "think",
+          "s": 332.404,
+          "e": 332.534,
+          "c": 0.992061
+        },
+        {
+          "w": "it's",
+          "s": 332.754,
+          "e": 332.934,
+          "c": 0.98968
+        },
+        {
+          "w": "difficult",
+          "s": 332.944,
+          "e": 333.504,
+          "c": 0.997451
+        },
+        {
+          "w": "against",
+          "s": 333.504,
+          "e": 333.734,
+          "c": 0.928731
+        },
+        {
+          "w": "this",
+          "s": 334.034,
+          "e": 334.034,
+          "c": 0.988084
+        },
+        {
+          "w": "backdrop",
+          "s": 334.064,
+          "e": 334.544,
+          "c": 0.992221
+        },
+        {
+          "w": "to",
+          "s": 334.544,
+          "e": 334.794,
+          "c": 0.950418
+        },
+        {
+          "w": "argue",
+          "s": 334.874,
+          "e": 335.534,
+          "c": 0.992023
+        },
+        {
+          "w": "that",
+          "s": 335.764,
+          "e": 335.794,
+          "c": 0.990807
+        },
+        {
+          "w": "the",
+          "s": 335.794,
+          "e": 335.984,
+          "c": 0.998332
+        },
+        {
+          "w": "sentencing",
+          "s": 335.984,
+          "e": 336.614,
+          "c": 0.985304
+        },
+        {
+          "w": "guidelines",
+          "s": 336.614,
+          "e": 337.144,
+          "c": 0.99744
+        },
+        {
+          "w": "are",
+          "s": 337.264,
+          "e": 337.444,
+          "c": 0.998064
+        },
+        {
+          "w": "too",
+          "s": 337.444,
+          "e": 337.624,
+          "c": 0.993892
+        },
+        {
+          "w": "harsh",
+          "s": 337.624,
+          "e": 337.934,
+          "c": 0.997213
+        },
+        {
+          "w": "or",
+          "s": 338.044,
+          "e": 338.074,
+          "c": 0.947695
+        },
+        {
+          "w": "outmoded",
+          "s": 338.074,
+          "e": 338.624,
+          "c": 0.909105
+        },
+        {
+          "w": "or",
+          "s": 338.754,
+          "e": 338.794,
+          "c": 0.677414
+        },
+        {
+          "w": "that",
+          "s": 338.794,
+          "e": 339.094,
+          "c": 0.995579
+        },
+        {
+          "w": "we",
+          "s": 339.094,
+          "e": 339.174,
+          "c": 0.999359
+        },
+        {
+          "w": "should",
+          "s": 339.274,
+          "e": 339.654,
+          "c": 0.998729
+        },
+        {
+          "w": "be",
+          "s": 339.704,
+          "e": 339.744,
+          "c": 0.994545
+        },
+        {
+          "w": "somehow",
+          "s": 340.064,
+          "e": 340.414,
+          "c": 0.763851
+        },
+        {
+          "w": "treating",
+          "s": 340.434,
+          "e": 341.034,
+          "c": 0.997154
+        },
+        {
+          "w": "child",
+          "s": 341.044,
+          "e": 341.434,
+          "c": 0.996164
+        },
+        {
+          "w": "porn",
+          "s": 341.444,
+          "e": 341.744,
+          "c": 0.986935
+        },
+        {
+          "w": "offenders",
+          "s": 341.744,
+          "e": 342.434,
+          "c": 0.992087
+        },
+        {
+          "w": "more",
+          "s": 342.564,
+          "e": 342.754,
+          "c": 0.998361
+        },
+        {
+          "w": "leniently",
+          "s": 342.754,
+          "e": 343.304,
+          "c": 0.995395
+        }
+      ]
+    },
+    {
+      "i": 65,
+      "start_s": 343.73,
+      "end_s": 343.74,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "than",
+      "words": [
+        {
+          "w": "than",
+          "s": 343.728,
+          "e": 343.728,
+          "c": 0.701774
+        }
+      ]
+    },
+    {
+      "i": 66,
+      "start_s": 343.75,
+      "end_s": 345.13,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the guidelines recommend.",
+      "words": [
+        {
+          "w": "the",
+          "s": 343.748,
+          "e": 343.918,
+          "c": 0.998306
+        },
+        {
+          "w": "guidelines",
+          "s": 343.918,
+          "e": 344.548,
+          "c": 0.981968
+        },
+        {
+          "w": "recommend.",
+          "s": 344.548,
+          "e": 345.128,
+          "c": 0.774561
+        }
+      ]
+    },
+    {
+      "i": 67,
+      "start_s": 345.32,
+      "end_s": 345.37,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "But I",
+      "words": [
+        {
+          "w": "But",
+          "s": 345.318,
+          "e": 345.318,
+          "c": 0.994926
+        },
+        {
+          "w": "I",
+          "s": 345.368,
+          "e": 345.368,
+          "c": 0.971595
+        }
+      ]
+    },
+    {
+      "i": 68,
+      "start_s": 345.39,
+      "end_s": 346.12,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "wanna be clear",
+      "words": [
+        {
+          "w": "wanna",
+          "s": 345.388,
+          "e": 345.688,
+          "c": 0.488596
+        },
+        {
+          "w": "be",
+          "s": 345.688,
+          "e": 345.798,
+          "c": 0.996932
+        },
+        {
+          "w": "clear",
+          "s": 345.808,
+          "e": 346.118,
+          "c": 0.999264
+        }
+      ]
+    },
+    {
+      "i": 69,
+      "start_s": 346.12,
+      "end_s": 363.63,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "about this, but those arguments that I've just been rehearsing, those who say that, that's not what Judge Jackson has said. She hasn't had the chance yet to respond to this and she deserves that chance. So others have made these arguments. I don't agree with them, but I think it's important we hear from Judge Jackson and we'll have the chance to in coming days.",
+      "words": [
+        {
+          "w": "about",
+          "s": 346.118,
+          "e": 346.368,
+          "c": 0.99625
+        },
+        {
+          "w": "this,",
+          "s": 346.438,
+          "e": 346.728,
+          "c": 0.720303
+        },
+        {
+          "w": "but",
+          "s": 346.758,
+          "e": 346.758,
+          "c": 0.5219
+        },
+        {
+          "w": "those",
+          "s": 346.968,
+          "e": 347.128,
+          "c": 0.996723
+        },
+        {
+          "w": "arguments",
+          "s": 347.148,
+          "e": 347.578,
+          "c": 0.993563
+        },
+        {
+          "w": "that",
+          "s": 347.578,
+          "e": 347.778,
+          "c": 0.969483
+        },
+        {
+          "w": "I've",
+          "s": 347.778,
+          "e": 347.968,
+          "c": 0.990316
+        },
+        {
+          "w": "just",
+          "s": 348.038,
+          "e": 348.208,
+          "c": 0.991406
+        },
+        {
+          "w": "been",
+          "s": 348.208,
+          "e": 348.338,
+          "c": 0.96732
+        },
+        {
+          "w": "rehearsing,",
+          "s": 348.398,
+          "e": 348.808,
+          "c": 0.911743
+        },
+        {
+          "w": "those",
+          "s": 349.048,
+          "e": 349.148,
+          "c": 0.99859
+        },
+        {
+          "w": "who",
+          "s": 349.148,
+          "e": 349.348,
+          "c": 0.974119
+        },
+        {
+          "w": "say",
+          "s": 349.348,
+          "e": 349.548,
+          "c": 0.991425
+        },
+        {
+          "w": "that,",
+          "s": 349.548,
+          "e": 349.988,
+          "c": 0.907885
+        },
+        {
+          "w": "that's",
+          "s": 349.988,
+          "e": 350.328,
+          "c": 0.426517
+        },
+        {
+          "w": "not",
+          "s": 350.328,
+          "e": 350.498,
+          "c": 0.990926
+        },
+        {
+          "w": "what",
+          "s": 350.498,
+          "e": 350.728,
+          "c": 0.991792
+        },
+        {
+          "w": "Judge",
+          "s": 350.728,
+          "e": 350.928,
+          "c": 0.962028
+        },
+        {
+          "w": "Jackson",
+          "s": 351.058,
+          "e": 351.458,
+          "c": 0.996474
+        },
+        {
+          "w": "has",
+          "s": 351.458,
+          "e": 351.628,
+          "c": 0.902744
+        },
+        {
+          "w": "said.",
+          "s": 352.078,
+          "e": 352.428,
+          "c": 0.771225
+        },
+        {
+          "w": "She",
+          "s": 352.428,
+          "e": 352.548,
+          "c": 0.998692
+        },
+        {
+          "w": "hasn't",
+          "s": 352.668,
+          "e": 352.828,
+          "c": 0.998357
+        },
+        {
+          "w": "had",
+          "s": 352.838,
+          "e": 352.958,
+          "c": 0.990758
+        },
+        {
+          "w": "the",
+          "s": 352.958,
+          "e": 353.088,
+          "c": 0.991206
+        },
+        {
+          "w": "chance",
+          "s": 353.088,
+          "e": 353.358,
+          "c": 0.999119
+        },
+        {
+          "w": "yet",
+          "s": 353.358,
+          "e": 353.508,
+          "c": 0.987852
+        },
+        {
+          "w": "to",
+          "s": 353.518,
+          "e": 353.648,
+          "c": 0.970641
+        },
+        {
+          "w": "respond",
+          "s": 353.648,
+          "e": 354.038,
+          "c": 0.998734
+        },
+        {
+          "w": "to",
+          "s": 354.098,
+          "e": 354.178,
+          "c": 0.976947
+        },
+        {
+          "w": "this",
+          "s": 354.178,
+          "e": 354.408,
+          "c": 0.999479
+        },
+        {
+          "w": "and",
+          "s": 354.408,
+          "e": 354.528,
+          "c": 0.999186
+        },
+        {
+          "w": "she",
+          "s": 354.648,
+          "e": 354.648,
+          "c": 0.999397
+        },
+        {
+          "w": "deserves",
+          "s": 354.668,
+          "e": 354.978,
+          "c": 0.99724
+        },
+        {
+          "w": "that",
+          "s": 354.978,
+          "e": 355.078,
+          "c": 0.998281
+        },
+        {
+          "w": "chance.",
+          "s": 355.138,
+          "e": 355.508,
+          "c": 0.918019
+        },
+        {
+          "w": "So",
+          "s": 355.548,
+          "e": 355.668,
+          "c": 0.999174
+        },
+        {
+          "w": "others",
+          "s": 355.808,
+          "e": 356.038,
+          "c": 0.631708
+        },
+        {
+          "w": "have",
+          "s": 356.038,
+          "e": 356.218,
+          "c": 0.99556
+        },
+        {
+          "w": "made",
+          "s": 356.278,
+          "e": 356.518,
+          "c": 0.999588
+        },
+        {
+          "w": "these",
+          "s": 356.518,
+          "e": 356.788,
+          "c": 0.998026
+        },
+        {
+          "w": "arguments.",
+          "s": 356.858,
+          "e": 357.568,
+          "c": 0.5863
+        },
+        {
+          "w": "I",
+          "s": 357.588,
+          "e": 357.658,
+          "c": 0.999952
+        },
+        {
+          "w": "don't",
+          "s": 357.828,
+          "e": 358.038,
+          "c": 0.999769
+        },
+        {
+          "w": "agree",
+          "s": 358.038,
+          "e": 358.418,
+          "c": 0.999201
+        },
+        {
+          "w": "with",
+          "s": 358.418,
+          "e": 358.668,
+          "c": 0.999674
+        },
+        {
+          "w": "them,",
+          "s": 358.728,
+          "e": 359.048,
+          "c": 0.695208
+        },
+        {
+          "w": "but",
+          "s": 359.048,
+          "e": 359.168,
+          "c": 0.998831
+        },
+        {
+          "w": "I",
+          "s": 359.218,
+          "e": 359.218,
+          "c": 0.998129
+        },
+        {
+          "w": "think",
+          "s": 359.288,
+          "e": 359.448,
+          "c": 0.999262
+        },
+        {
+          "w": "it's",
+          "s": 359.448,
+          "e": 359.628,
+          "c": 0.997217
+        },
+        {
+          "w": "important",
+          "s": 359.628,
+          "e": 360.038,
+          "c": 0.999458
+        },
+        {
+          "w": "we",
+          "s": 360.038,
+          "e": 360.128,
+          "c": 0.956636
+        },
+        {
+          "w": "hear",
+          "s": 360.128,
+          "e": 360.288,
+          "c": 0.99631
+        },
+        {
+          "w": "from",
+          "s": 360.358,
+          "e": 360.488,
+          "c": 0.98923
+        },
+        {
+          "w": "Judge",
+          "s": 360.488,
+          "e": 360.648,
+          "c": 0.990303
+        },
+        {
+          "w": "Jackson",
+          "s": 360.718,
+          "e": 361.078,
+          "c": 0.999498
+        },
+        {
+          "w": "and",
+          "s": 361.298,
+          "e": 361.298,
+          "c": 0.999836
+        },
+        {
+          "w": "we'll",
+          "s": 361.328,
+          "e": 361.648,
+          "c": 0.954156
+        },
+        {
+          "w": "have",
+          "s": 361.648,
+          "e": 361.938,
+          "c": 0.999483
+        },
+        {
+          "w": "the",
+          "s": 361.938,
+          "e": 362.148,
+          "c": 0.990123
+        },
+        {
+          "w": "chance",
+          "s": 362.148,
+          "e": 362.578,
+          "c": 0.99951
+        },
+        {
+          "w": "to",
+          "s": 362.578,
+          "e": 362.698,
+          "c": 0.995864
+        },
+        {
+          "w": "in",
+          "s": 362.758,
+          "e": 362.858,
+          "c": 0.949075
+        },
+        {
+          "w": "coming",
+          "s": 362.858,
+          "e": 363.208,
+          "c": 0.984382
+        },
+        {
+          "w": "days.",
+          "s": 363.338,
+          "e": 363.628,
+          "c": 0.964981
+        }
+      ]
+    },
+    {
+      "i": 70,
+      "start_s": 363.82,
+      "end_s": 363.87,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And I",
+      "words": [
+        {
+          "w": "And",
+          "s": 363.818,
+          "e": 363.818,
+          "c": 0.994723
+        },
+        {
+          "w": "I",
+          "s": 363.868,
+          "e": 363.868,
+          "c": 0.995503
+        }
+      ]
+    },
+    {
+      "i": 71,
+      "start_s": 363.89,
+      "end_s": 372.61,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "think again, the candor that Judge Jackson has shown previously, I look forward to, and she deserves the ability to speak for herself on this issue.",
+      "words": [
+        {
+          "w": "think",
+          "s": 363.888,
+          "e": 364.198,
+          "c": 0.998085
+        },
+        {
+          "w": "again,",
+          "s": 364.198,
+          "e": 364.668,
+          "c": 0.671227
+        },
+        {
+          "w": "the",
+          "s": 364.668,
+          "e": 364.868,
+          "c": 0.835707
+        },
+        {
+          "w": "candor",
+          "s": 364.938,
+          "e": 365.488,
+          "c": 0.716804
+        },
+        {
+          "w": "that",
+          "s": 365.488,
+          "e": 365.608,
+          "c": 0.687128
+        },
+        {
+          "w": "Judge",
+          "s": 365.608,
+          "e": 365.748,
+          "c": 0.974503
+        },
+        {
+          "w": "Jackson",
+          "s": 365.878,
+          "e": 366.138,
+          "c": 0.997297
+        },
+        {
+          "w": "has",
+          "s": 366.218,
+          "e": 366.218,
+          "c": 0.99736
+        },
+        {
+          "w": "shown",
+          "s": 366.428,
+          "e": 366.588,
+          "c": 0.998325
+        },
+        {
+          "w": "previously,",
+          "s": 366.608,
+          "e": 367.208,
+          "c": 0.63985
+        },
+        {
+          "w": "I",
+          "s": 367.208,
+          "e": 367.258,
+          "c": 0.978135
+        },
+        {
+          "w": "look",
+          "s": 367.258,
+          "e": 367.428,
+          "c": 0.955749
+        },
+        {
+          "w": "forward",
+          "s": 367.498,
+          "e": 367.888,
+          "c": 0.999668
+        },
+        {
+          "w": "to,",
+          "s": 367.888,
+          "e": 368.028,
+          "c": 0.453063
+        },
+        {
+          "w": "and",
+          "s": 368.228,
+          "e": 368.228,
+          "c": 0.99956
+        },
+        {
+          "w": "she",
+          "s": 368.268,
+          "e": 368.428,
+          "c": 0.999594
+        },
+        {
+          "w": "deserves",
+          "s": 368.448,
+          "e": 368.978,
+          "c": 0.997965
+        },
+        {
+          "w": "the",
+          "s": 368.978,
+          "e": 369.168,
+          "c": 0.998247
+        },
+        {
+          "w": "ability",
+          "s": 369.178,
+          "e": 369.638,
+          "c": 0.998942
+        },
+        {
+          "w": "to",
+          "s": 369.698,
+          "e": 369.908,
+          "c": 0.919404
+        },
+        {
+          "w": "speak",
+          "s": 369.908,
+          "e": 370.478,
+          "c": 0.998034
+        },
+        {
+          "w": "for",
+          "s": 370.728,
+          "e": 370.758,
+          "c": 0.999866
+        },
+        {
+          "w": "herself",
+          "s": 370.758,
+          "e": 371.388,
+          "c": 0.998496
+        },
+        {
+          "w": "on",
+          "s": 371.388,
+          "e": 371.568,
+          "c": 0.99658
+        },
+        {
+          "w": "this",
+          "s": 371.568,
+          "e": 371.928,
+          "c": 0.999577
+        },
+        {
+          "w": "issue.",
+          "s": 371.928,
+          "e": 372.608,
+          "c": 0.970232
+        }
+      ]
+    },
+    {
+      "i": 72,
+      "start_s": 372.62,
+      "end_s": 372.89,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "So, I",
+      "words": [
+        {
+          "w": "So,",
+          "s": 372.624,
+          "e": 372.844,
+          "c": 0.356465
+        },
+        {
+          "w": "I",
+          "s": 372.894,
+          "e": 372.894,
+          "c": 0.995634
+        }
+      ]
+    },
+    {
+      "i": 73,
+      "start_s": 372.97,
+      "end_s": 375.98,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "will just say, in closing, Mr. Chairman, some have asked",
+      "words": [
+        {
+          "w": "will",
+          "s": 372.974,
+          "e": 373.114,
+          "c": 0.833116
+        },
+        {
+          "w": "just",
+          "s": 373.114,
+          "e": 373.254,
+          "c": 0.937737
+        },
+        {
+          "w": "say,",
+          "s": 373.504,
+          "e": 373.614,
+          "c": 0.371491
+        },
+        {
+          "w": "in",
+          "s": 373.614,
+          "e": 373.724,
+          "c": 0.984923
+        },
+        {
+          "w": "closing,",
+          "s": 373.724,
+          "e": 374.224,
+          "c": 0.747096
+        },
+        {
+          "w": "Mr.",
+          "s": 374.224,
+          "e": 374.504,
+          "c": 0.976988
+        },
+        {
+          "w": "Chairman,",
+          "s": 374.504,
+          "e": 375.114,
+          "c": 0.964236
+        },
+        {
+          "w": "some",
+          "s": 375.134,
+          "e": 375.404,
+          "c": 0.717657
+        },
+        {
+          "w": "have",
+          "s": 375.504,
+          "e": 375.724,
+          "c": 0.990344
+        },
+        {
+          "w": "asked",
+          "s": 375.724,
+          "e": 375.984,
+          "c": 0.988426
+        }
+      ]
+    },
+    {
+      "i": 74,
+      "start_s": 376.19,
+      "end_s": 384.93,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "why did I raise these questions ahead of the hearing? Why not wait until the hearing and spring them on Judge Jackson as it were? And my answer",
+      "words": [
+        {
+          "w": "why",
+          "s": 376.194,
+          "e": 376.304,
+          "c": 0.565057
+        },
+        {
+          "w": "did",
+          "s": 376.304,
+          "e": 376.464,
+          "c": 0.972218
+        },
+        {
+          "w": "I",
+          "s": 376.464,
+          "e": 376.564,
+          "c": 0.97421
+        },
+        {
+          "w": "raise",
+          "s": 376.564,
+          "e": 376.854,
+          "c": 0.938866
+        },
+        {
+          "w": "these",
+          "s": 376.864,
+          "e": 377.004,
+          "c": 0.855759
+        },
+        {
+          "w": "questions",
+          "s": 377.004,
+          "e": 377.654,
+          "c": 0.946806
+        },
+        {
+          "w": "ahead",
+          "s": 378.064,
+          "e": 378.094,
+          "c": 0.998068
+        },
+        {
+          "w": "of",
+          "s": 378.114,
+          "e": 378.244,
+          "c": 0.998706
+        },
+        {
+          "w": "the",
+          "s": 378.244,
+          "e": 378.354,
+          "c": 0.997959
+        },
+        {
+          "w": "hearing?",
+          "s": 378.614,
+          "e": 379.164,
+          "c": 0.47742
+        },
+        {
+          "w": "Why",
+          "s": 379.474,
+          "e": 379.474,
+          "c": 0.996924
+        },
+        {
+          "w": "not",
+          "s": 379.574,
+          "e": 379.724,
+          "c": 0.999163
+        },
+        {
+          "w": "wait",
+          "s": 379.724,
+          "e": 379.854,
+          "c": 0.998761
+        },
+        {
+          "w": "until",
+          "s": 380.114,
+          "e": 380.454,
+          "c": 0.987792
+        },
+        {
+          "w": "the",
+          "s": 380.464,
+          "e": 380.664,
+          "c": 0.998443
+        },
+        {
+          "w": "hearing",
+          "s": 380.734,
+          "e": 381.284,
+          "c": 0.998809
+        },
+        {
+          "w": "and",
+          "s": 381.364,
+          "e": 381.544,
+          "c": 0.777941
+        },
+        {
+          "w": "spring",
+          "s": 381.544,
+          "e": 381.994,
+          "c": 0.973853
+        },
+        {
+          "w": "them",
+          "s": 382.104,
+          "e": 382.374,
+          "c": 0.996808
+        },
+        {
+          "w": "on",
+          "s": 382.374,
+          "e": 382.514,
+          "c": 0.998074
+        },
+        {
+          "w": "Judge",
+          "s": 382.564,
+          "e": 382.944,
+          "c": 0.987862
+        },
+        {
+          "w": "Jackson",
+          "s": 382.944,
+          "e": 383.504,
+          "c": 0.99253
+        },
+        {
+          "w": "as",
+          "s": 383.504,
+          "e": 383.684,
+          "c": 0.474161
+        },
+        {
+          "w": "it",
+          "s": 383.784,
+          "e": 383.844,
+          "c": 0.997151
+        },
+        {
+          "w": "were?",
+          "s": 383.844,
+          "e": 384.484,
+          "c": 0.582087
+        },
+        {
+          "w": "And",
+          "s": 384.484,
+          "e": 384.604,
+          "c": 0.858603
+        },
+        {
+          "w": "my",
+          "s": 384.604,
+          "e": 384.684,
+          "c": 0.967488
+        },
+        {
+          "w": "answer",
+          "s": 384.834,
+          "e": 384.934,
+          "c": 0.999222
+        }
+      ]
+    },
+    {
+      "i": 75,
+      "start_s": 384.93,
+      "end_s": 393.03,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to that is very simple. I'm not interested in trapping Judge Jackson. I'm not interested in trying to play gotcha. I'm interested in her answers. Because",
+      "words": [
+        {
+          "w": "to",
+          "s": 384.934,
+          "e": 385.014,
+          "c": 0.961469
+        },
+        {
+          "w": "that",
+          "s": 385.014,
+          "e": 385.114,
+          "c": 0.999285
+        },
+        {
+          "w": "is",
+          "s": 385.264,
+          "e": 385.264,
+          "c": 0.99358
+        },
+        {
+          "w": "very",
+          "s": 385.374,
+          "e": 385.434,
+          "c": 0.994146
+        },
+        {
+          "w": "simple.",
+          "s": 385.434,
+          "e": 385.864,
+          "c": 0.801762
+        },
+        {
+          "w": "I'm",
+          "s": 385.864,
+          "e": 385.994,
+          "c": 0.939616
+        },
+        {
+          "w": "not",
+          "s": 386.134,
+          "e": 386.134,
+          "c": 0.99943
+        },
+        {
+          "w": "interested",
+          "s": 386.214,
+          "e": 386.494,
+          "c": 0.994951
+        },
+        {
+          "w": "in",
+          "s": 386.704,
+          "e": 386.704,
+          "c": 0.994209
+        },
+        {
+          "w": "trapping",
+          "s": 386.754,
+          "e": 387.064,
+          "c": 0.993475
+        },
+        {
+          "w": "Judge",
+          "s": 387.074,
+          "e": 387.304,
+          "c": 0.990418
+        },
+        {
+          "w": "Jackson.",
+          "s": 387.384,
+          "e": 387.864,
+          "c": 0.800511
+        },
+        {
+          "w": "I'm",
+          "s": 387.864,
+          "e": 388.054,
+          "c": 0.998254
+        },
+        {
+          "w": "not",
+          "s": 388.204,
+          "e": 388.254,
+          "c": 0.998751
+        },
+        {
+          "w": "interested",
+          "s": 388.254,
+          "e": 388.934,
+          "c": 0.998237
+        },
+        {
+          "w": "in",
+          "s": 388.934,
+          "e": 388.994,
+          "c": 0.998551
+        },
+        {
+          "w": "trying",
+          "s": 389.064,
+          "e": 389.464,
+          "c": 0.99437
+        },
+        {
+          "w": "to",
+          "s": 389.464,
+          "e": 389.514,
+          "c": 0.999434
+        },
+        {
+          "w": "play",
+          "s": 389.614,
+          "e": 389.864,
+          "c": 0.986024
+        },
+        {
+          "w": "gotcha.",
+          "s": 389.864,
+          "e": 390.524,
+          "c": 0.781418
+        },
+        {
+          "w": "I'm",
+          "s": 390.524,
+          "e": 390.734,
+          "c": 0.997092
+        },
+        {
+          "w": "interested",
+          "s": 390.894,
+          "e": 391.474,
+          "c": 0.998117
+        },
+        {
+          "w": "in",
+          "s": 391.474,
+          "e": 391.614,
+          "c": 0.996409
+        },
+        {
+          "w": "her",
+          "s": 391.614,
+          "e": 391.834,
+          "c": 0.965134
+        },
+        {
+          "w": "answers.",
+          "s": 391.834,
+          "e": 392.584,
+          "c": 0.477215
+        },
+        {
+          "w": "Because",
+          "s": 392.944,
+          "e": 393.034,
+          "c": 0.980237
+        }
+      ]
+    },
+    {
+      "i": 76,
+      "start_s": 393.04,
+      "end_s": 397.84,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I found in our time together that she was enormously thoughtful, enormously accomplished.",
+      "words": [
+        {
+          "w": "I",
+          "s": 393.044,
+          "e": 393.094,
+          "c": 0.99827
+        },
+        {
+          "w": "found",
+          "s": 393.094,
+          "e": 393.234,
+          "c": 0.983415
+        },
+        {
+          "w": "in",
+          "s": 393.494,
+          "e": 393.524,
+          "c": 0.957481
+        },
+        {
+          "w": "our",
+          "s": 393.524,
+          "e": 393.704,
+          "c": 0.977226
+        },
+        {
+          "w": "time",
+          "s": 393.704,
+          "e": 393.944,
+          "c": 0.999138
+        },
+        {
+          "w": "together",
+          "s": 393.944,
+          "e": 394.434,
+          "c": 0.998192
+        },
+        {
+          "w": "that",
+          "s": 394.434,
+          "e": 394.664,
+          "c": 0.943299
+        },
+        {
+          "w": "she",
+          "s": 394.744,
+          "e": 394.844,
+          "c": 0.998426
+        },
+        {
+          "w": "was",
+          "s": 394.864,
+          "e": 395.034,
+          "c": 0.998927
+        },
+        {
+          "w": "enormously",
+          "s": 395.034,
+          "e": 395.654,
+          "c": 0.982238
+        },
+        {
+          "w": "thoughtful,",
+          "s": 395.654,
+          "e": 396.394,
+          "c": 0.943304
+        },
+        {
+          "w": "enormously",
+          "s": 396.394,
+          "e": 397.004,
+          "c": 0.996346
+        },
+        {
+          "w": "accomplished.",
+          "s": 397.004,
+          "e": 397.844,
+          "c": 0.395209
+        }
+      ]
+    },
+    {
+      "i": 77,
+      "start_s": 398.04,
+      "end_s": 402.97,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And I suspect has a coherent view, an explanation, and a set of",
+      "words": [
+        {
+          "w": "And",
+          "s": 398.038,
+          "e": 398.138,
+          "c": 0.479511
+        },
+        {
+          "w": "I",
+          "s": 398.138,
+          "e": 398.248,
+          "c": 0.924096
+        },
+        {
+          "w": "suspect",
+          "s": 398.248,
+          "e": 398.988,
+          "c": 0.999369
+        },
+        {
+          "w": "has",
+          "s": 399.068,
+          "e": 399.188,
+          "c": 0.929533
+        },
+        {
+          "w": "a",
+          "s": 399.368,
+          "e": 399.468,
+          "c": 0.99736
+        },
+        {
+          "w": "coherent",
+          "s": 399.468,
+          "e": 400.298,
+          "c": 0.997687
+        },
+        {
+          "w": "view,",
+          "s": 400.368,
+          "e": 401.018,
+          "c": 0.443985
+        },
+        {
+          "w": "an",
+          "s": 401.088,
+          "e": 401.188,
+          "c": 0.859815
+        },
+        {
+          "w": "explanation,",
+          "s": 401.188,
+          "e": 402.298,
+          "c": 0.779541
+        },
+        {
+          "w": "and",
+          "s": 402.388,
+          "e": 402.528,
+          "c": 0.535931
+        },
+        {
+          "w": "a",
+          "s": 402.528,
+          "e": 402.578,
+          "c": 0.719982
+        },
+        {
+          "w": "set",
+          "s": 402.658,
+          "e": 402.888,
+          "c": 0.895077
+        },
+        {
+          "w": "of",
+          "s": 402.888,
+          "e": 402.968,
+          "c": 0.973394
+        }
+      ]
+    },
+    {
+      "i": 78,
+      "start_s": 402.97,
+      "end_s": 405.66,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "thinking, way of thinking about this that I look forward to hearing.",
+      "words": [
+        {
+          "w": "thinking,",
+          "s": 402.968,
+          "e": 403.368,
+          "c": 0.909792
+        },
+        {
+          "w": "way",
+          "s": 403.368,
+          "e": 403.568,
+          "c": 0.670166
+        },
+        {
+          "w": "of",
+          "s": 403.568,
+          "e": 403.638,
+          "c": 0.954935
+        },
+        {
+          "w": "thinking",
+          "s": 403.758,
+          "e": 403.948,
+          "c": 0.967372
+        },
+        {
+          "w": "about",
+          "s": 403.948,
+          "e": 404.198,
+          "c": 0.963898
+        },
+        {
+          "w": "this",
+          "s": 404.198,
+          "e": 404.588,
+          "c": 0.704016
+        },
+        {
+          "w": "that",
+          "s": 404.588,
+          "e": 404.638,
+          "c": 0.531805
+        },
+        {
+          "w": "I",
+          "s": 404.748,
+          "e": 404.768,
+          "c": 0.993902
+        },
+        {
+          "w": "look",
+          "s": 404.768,
+          "e": 404.908,
+          "c": 0.997044
+        },
+        {
+          "w": "forward",
+          "s": 404.978,
+          "e": 405.178,
+          "c": 0.997845
+        },
+        {
+          "w": "to",
+          "s": 405.178,
+          "e": 405.178,
+          "c": 0.996637
+        },
+        {
+          "w": "hearing.",
+          "s": 405.298,
+          "e": 405.658,
+          "c": 0.971591
+        }
+      ]
+    },
+    {
+      "i": 79,
+      "start_s": 405.82,
+      "end_s": 405.87,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And I",
+      "words": [
+        {
+          "w": "And",
+          "s": 405.818,
+          "e": 405.818,
+          "c": 0.999846
+        },
+        {
+          "w": "I",
+          "s": 405.868,
+          "e": 405.868,
+          "c": 0.999985
+        }
+      ]
+    },
+    {
+      "i": 80,
+      "start_s": 405.9,
+      "end_s": 411.29,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "think she deserves the chance to talk about it. I think the American people deserve the chance to hear her answers.",
+      "words": [
+        {
+          "w": "think",
+          "s": 405.898,
+          "e": 406.118,
+          "c": 0.999992
+        },
+        {
+          "w": "she",
+          "s": 406.118,
+          "e": 406.188,
+          "c": 0.999966
+        },
+        {
+          "w": "deserves",
+          "s": 406.518,
+          "e": 406.668,
+          "c": 0.999939
+        },
+        {
+          "w": "the",
+          "s": 406.668,
+          "e": 406.818,
+          "c": 0.999573
+        },
+        {
+          "w": "chance",
+          "s": 406.818,
+          "e": 407.058,
+          "c": 0.999964
+        },
+        {
+          "w": "to",
+          "s": 407.218,
+          "e": 407.218,
+          "c": 0.999996
+        },
+        {
+          "w": "talk",
+          "s": 407.228,
+          "e": 407.418,
+          "c": 0.999979
+        },
+        {
+          "w": "about",
+          "s": 407.418,
+          "e": 407.668,
+          "c": 0.999996
+        },
+        {
+          "w": "it.",
+          "s": 407.668,
+          "e": 407.968,
+          "c": 0.935131
+        },
+        {
+          "w": "I",
+          "s": 407.968,
+          "e": 408.018,
+          "c": 0.775793
+        },
+        {
+          "w": "think",
+          "s": 408.198,
+          "e": 408.298,
+          "c": 0.999989
+        },
+        {
+          "w": "the",
+          "s": 408.298,
+          "e": 408.468,
+          "c": 0.999966
+        },
+        {
+          "w": "American",
+          "s": 408.468,
+          "e": 408.918,
+          "c": 0.999884
+        },
+        {
+          "w": "people",
+          "s": 408.918,
+          "e": 409.258,
+          "c": 0.999893
+        },
+        {
+          "w": "deserve",
+          "s": 409.258,
+          "e": 409.658,
+          "c": 0.999977
+        },
+        {
+          "w": "the",
+          "s": 409.658,
+          "e": 409.808,
+          "c": 0.999939
+        },
+        {
+          "w": "chance",
+          "s": 409.898,
+          "e": 410.158,
+          "c": 0.999987
+        },
+        {
+          "w": "to",
+          "s": 410.198,
+          "e": 410.278,
+          "c": 1
+        },
+        {
+          "w": "hear",
+          "s": 410.278,
+          "e": 410.378,
+          "c": 0.999977
+        },
+        {
+          "w": "her",
+          "s": 410.548,
+          "e": 410.668,
+          "c": 0.999989
+        },
+        {
+          "w": "answers.",
+          "s": 410.668,
+          "e": 411.288,
+          "c": 0.999889
+        }
+      ]
+    },
+    {
+      "i": 81,
+      "start_s": 411.44,
+      "end_s": 412.11,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "So they're my",
+      "words": [
+        {
+          "w": "So",
+          "s": 411.438,
+          "e": 411.438,
+          "c": 0.99996
+        },
+        {
+          "w": "they're",
+          "s": 411.518,
+          "e": 411.808,
+          "c": 0.903423
+        },
+        {
+          "w": "my",
+          "s": 412.108,
+          "e": 412.108,
+          "c": 0.999863
+        }
+      ]
+    },
+    {
+      "i": 82,
+      "start_s": 412.14,
+      "end_s": 426.81,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "concerns, Judge. They're the cases I imagine there'll be others that we can talk about on other subjects, but I'd like to talk about those so you know exactly where I'm coming from. Thanks again for giving me the time a few weeks ago. Congratulations again. I look forward to finally hearing from you tomorrow. Thank you, Mr. Chairman.",
+      "words": [
+        {
+          "w": "concerns,",
+          "s": 412.138,
+          "e": 412.858,
+          "c": 0.996597
+        },
+        {
+          "w": "Judge.",
+          "s": 412.858,
+          "e": 413.468,
+          "c": 0.923943
+        },
+        {
+          "w": "They're",
+          "s": 413.658,
+          "e": 413.798,
+          "c": 0.997276
+        },
+        {
+          "w": "the",
+          "s": 413.798,
+          "e": 413.938,
+          "c": 0.999981
+        },
+        {
+          "w": "cases",
+          "s": 413.938,
+          "e": 413.988,
+          "c": 0.99911
+        },
+        {
+          "w": "I",
+          "s": 414.218,
+          "e": 414.218,
+          "c": 0.584721
+        },
+        {
+          "w": "imagine",
+          "s": 414.318,
+          "e": 414.548,
+          "c": 0.920075
+        },
+        {
+          "w": "there'll",
+          "s": 414.548,
+          "e": 414.858,
+          "c": 0.682114
+        },
+        {
+          "w": "be",
+          "s": 415.018,
+          "e": 415.018,
+          "c": 0.999994
+        },
+        {
+          "w": "others",
+          "s": 415.028,
+          "e": 415.298,
+          "c": 0.999842
+        },
+        {
+          "w": "that",
+          "s": 415.298,
+          "e": 415.478,
+          "c": 0.99968
+        },
+        {
+          "w": "we",
+          "s": 415.558,
+          "e": 415.578,
+          "c": 0.999996
+        },
+        {
+          "w": "can",
+          "s": 415.578,
+          "e": 415.718,
+          "c": 0.999539
+        },
+        {
+          "w": "talk",
+          "s": 415.718,
+          "e": 415.888,
+          "c": 0.999966
+        },
+        {
+          "w": "about",
+          "s": 416.048,
+          "e": 416.148,
+          "c": 0.999998
+        },
+        {
+          "w": "on",
+          "s": 416.148,
+          "e": 416.238,
+          "c": 0.999529
+        },
+        {
+          "w": "other",
+          "s": 416.238,
+          "e": 416.328,
+          "c": 0.999798
+        },
+        {
+          "w": "subjects,",
+          "s": 416.748,
+          "e": 416.998,
+          "c": 0.665726
+        },
+        {
+          "w": "but",
+          "s": 417.088,
+          "e": 417.168,
+          "c": 0.773203
+        },
+        {
+          "w": "I'd",
+          "s": 417.168,
+          "e": 417.298,
+          "c": 0.999908
+        },
+        {
+          "w": "like",
+          "s": 417.298,
+          "e": 417.488,
+          "c": 0.99984
+        },
+        {
+          "w": "to",
+          "s": 417.488,
+          "e": 417.578,
+          "c": 0.999994
+        },
+        {
+          "w": "talk",
+          "s": 417.578,
+          "e": 417.638,
+          "c": 0.999937
+        },
+        {
+          "w": "about",
+          "s": 418.008,
+          "e": 418.008,
+          "c": 0.99996
+        },
+        {
+          "w": "those",
+          "s": 418.048,
+          "e": 418.238,
+          "c": 0.999851
+        },
+        {
+          "w": "so",
+          "s": 418.308,
+          "e": 418.338,
+          "c": 0.740577
+        },
+        {
+          "w": "you",
+          "s": 418.338,
+          "e": 418.478,
+          "c": 0.998559
+        },
+        {
+          "w": "know",
+          "s": 418.478,
+          "e": 418.638,
+          "c": 0.997963
+        },
+        {
+          "w": "exactly",
+          "s": 418.778,
+          "e": 419.008,
+          "c": 0.99931
+        },
+        {
+          "w": "where",
+          "s": 419.008,
+          "e": 419.248,
+          "c": 0.999886
+        },
+        {
+          "w": "I'm",
+          "s": 419.248,
+          "e": 419.298,
+          "c": 0.999981
+        },
+        {
+          "w": "coming",
+          "s": 419.418,
+          "e": 419.668,
+          "c": 0.999958
+        },
+        {
+          "w": "from.",
+          "s": 419.668,
+          "e": 420.118,
+          "c": 0.999979
+        },
+        {
+          "w": "Thanks",
+          "s": 420.358,
+          "e": 420.458,
+          "c": 0.999241
+        },
+        {
+          "w": "again",
+          "s": 420.458,
+          "e": 420.638,
+          "c": 0.999392
+        },
+        {
+          "w": "for",
+          "s": 420.898,
+          "e": 420.898,
+          "c": 0.999994
+        },
+        {
+          "w": "giving",
+          "s": 420.978,
+          "e": 421.228,
+          "c": 0.999851
+        },
+        {
+          "w": "me",
+          "s": 421.228,
+          "e": 421.308,
+          "c": 1
+        },
+        {
+          "w": "the",
+          "s": 421.388,
+          "e": 421.498,
+          "c": 0.999977
+        },
+        {
+          "w": "time",
+          "s": 421.498,
+          "e": 421.708,
+          "c": 0.999996
+        },
+        {
+          "w": "a",
+          "s": 421.708,
+          "e": 421.768,
+          "c": 0.998997
+        },
+        {
+          "w": "few",
+          "s": 421.768,
+          "e": 421.928,
+          "c": 0.999983
+        },
+        {
+          "w": "weeks",
+          "s": 421.928,
+          "e": 422.138,
+          "c": 0.999975
+        },
+        {
+          "w": "ago.",
+          "s": 422.228,
+          "e": 422.548,
+          "c": 0.99999
+        },
+        {
+          "w": "Congratulations",
+          "s": 422.838,
+          "e": 423.488,
+          "c": 0.9993
+        },
+        {
+          "w": "again.",
+          "s": 423.488,
+          "e": 423.968,
+          "c": 0.944404
+        },
+        {
+          "w": "I",
+          "s": 423.968,
+          "e": 424.008,
+          "c": 0.995885
+        },
+        {
+          "w": "look",
+          "s": 424.168,
+          "e": 424.168,
+          "c": 0.999969
+        },
+        {
+          "w": "forward",
+          "s": 424.198,
+          "e": 424.448,
+          "c": 0.99999
+        },
+        {
+          "w": "to",
+          "s": 424.448,
+          "e": 424.488,
+          "c": 1
+        },
+        {
+          "w": "finally",
+          "s": 424.808,
+          "e": 424.808,
+          "c": 0.999914
+        },
+        {
+          "w": "hearing",
+          "s": 424.818,
+          "e": 425.088,
+          "c": 0.999969
+        },
+        {
+          "w": "from",
+          "s": 425.088,
+          "e": 425.248,
+          "c": 0.999996
+        },
+        {
+          "w": "you",
+          "s": 425.248,
+          "e": 425.348,
+          "c": 0.999746
+        },
+        {
+          "w": "tomorrow.",
+          "s": 425.548,
+          "e": 425.808,
+          "c": 0.999981
+        },
+        {
+          "w": "Thank",
+          "s": 426.008,
+          "e": 426.008,
+          "c": 0.999434
+        },
+        {
+          "w": "you,",
+          "s": 426.058,
+          "e": 426.188,
+          "c": 0.999931
+        },
+        {
+          "w": "Mr.",
+          "s": 426.188,
+          "e": 426.338,
+          "c": 0.998685
+        },
+        {
+          "w": "Chairman.",
+          "s": 426.668,
+          "e": 426.808,
+          "c": 0.998487
+        }
+      ]
+    }
+  ]
+}

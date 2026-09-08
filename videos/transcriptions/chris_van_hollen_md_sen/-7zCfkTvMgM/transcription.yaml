@@ -1,0 +1,133 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Trump's DHS Culture is ROTTEN"
+    Description: >-
+      A short clip in which the speaker argues that the Trump administration
+      has effectively told personnel at ICE that "anything goes" and that
+      they will not be seriously or independently investigated. He
+      characterises this as amounting to a license to kill, and argues that
+      when officials call Americans "domestic terrorists" the message to
+      others inside ICE is that the agency will back them even in what he
+      describes as unjustified killings. He calls it a dangerous moment for
+      the country and says accountability must eventually catch up with
+      everyone. The characterisation of administration intent is the
+      speaker's own and is contested; no administration official or ICE
+      representative appears in the clip to answer it, and the specific
+      killings referred to are not identified in the audio. Diarization
+      returned a single cluster and the transcript does not name the
+      speaker.
+    URL: "https://www.youtube.com/watch?v=-7zCfkTvMgM"
+    Video_ID: "-7zCfkTvMgM"
+    Show: "Senator Chris Van Hollen"
+    Runtime: "00:00:40"
+    Language: "en"
+
+  Media:
+    File: "-7zCfkTvMgM.m4a"
+    SHA256: "97cb21be26891091e09c4ef03643d98010b3d9352d2867a82aebe0bee9061307"
+    Bytes: 658180
+    Duration_Seconds: 40
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-7zCfkTvMgM"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-7zCfkTvMgM.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/chris_van_hollen_md_sen/-7zCfkTvMgM/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCkpfJWu1N9Okd6PE_NidtBQ"
+    Uploader_ID: "@senatorvanhollen"
+    View_Count: 10835
+    Like_Count: 260
+    Comment_Count: 45
+    Availability: "public"
+    Published_At: "2026-01-25T02:16:38+00:00"
+    Captured_At: "2026-09-07T17:50:40-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 1
+
+  Topics:
+    - "ICE conduct and accountability"
+    - "Alleged absence of independent investigation into killings by federal agents"
+    - "The domestic-terrorist characterisation of Americans"
+
+  Source:
+    Canonical_ID: "42c3c261a56077df"
+    Transcribed: "2026-09-07T18:59:18.784560-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 107
+    Segments: 1
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T17:50:40.648700-07:00"
+    Transcription_Finished: "2026-09-07T18:59:18.784560-07:00"
+    Recorded: "2026-01-25"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-7zCfkTvMgM.ctm"
+    Fountain: "-7zCfkTvMgM.fountain"
+    Diarization_RTTM: "-7zCfkTvMgM.rttm"
+    As_Broadcast_Script: "-7zCfkTvMgM.script.txt"
+    Segments_JSON: "-7zCfkTvMgM.segments.json"
+    Segments_JSONL: "-7zCfkTvMgM.segments.jsonl"
+    Subtitles_SRT: "-7zCfkTvMgM.srt"
+    Plain_Text: "-7zCfkTvMgM.transcription"
+    Subtitles_VTT: "-7zCfkTvMgM.vtt"
+    Transcript_SHA256: "5a1780e47c05a604d449dfa3f423f33fa8b5a92d7f97b8789246a5a536df64ac"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "chris_van_hollen_md_sen"
+    video_uid: "chris_van_hollen_md_sen::-7zCfkTvMgM"
+    video_key: "-7zCfkTvMgM"
+    youtube_id: "-7zCfkTvMgM"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-7zCfkTvMgM"
+    source_ref: "-7zCfkTvMgM"

@@ -1,0 +1,204 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Why federalism is key to restoring civic connectedness and faith in the American government"
+    Description: >-
+      An address at the American Enterprise Institute arguing that
+      federalism and localism are the route back to civic connectedness. The
+      senator opens with a CNBC report paraphrasing Mark Zuckerberg to the
+      effect that Facebook can fill a role churches and Little League once
+      did, and with Zuckerberg describing two billion monthly users as a
+      community. He argues that two billion people cannot be a community in
+      any meaningful sense — it was the world's entire population in 1930 —
+      because community consists of interpersonal relationships and there is
+      a limit to how many of those a person can have. He then presents
+      findings from the Joint Economic Committee's Social Capital Project
+      and its report "What We Do Together: The State of Associational Life
+      in America": births to single mothers rising from 11 percent of all
+      births in 1970 to 40 percent in 2015, a majority of American children
+      now expected to live with one parent at some point, sharply declining
+      religious attendance and trust since the 1970s, falling participation
+      in secular associations such as the Boy Scouts and Rotary, and
+      increasing segregation by class, citing Charles Murray on affluent
+      neighbourhoods and noting the largest cluster of them around
+      Washington DC. He argues much of the blame lies with a federal
+      government that has intruded on ground once held by civil society,
+      citing Bradford Wilcox that almost a third of Americans know someone
+      who did not marry for fear of losing a means-tested benefit, and the
+      mid-century decline of fraternal societies that had provided
+      insurance, health care and companionship. Drawing on Robert Nisbet, he
+      argues people who cannot find community close to home seek it in
+      political parties and mass movements, which supply belonging cheaply —
+      and he applies that to both Make America Great Again hats and pink
+      knit hats. He then makes three arguments for localism: that it lowers
+      the stakes of political conflict, citing Tocqueville on proximity;
+      that it allows states to function as genuine laboratories rather than
+      lab rats; and that it restores dignity and self-government. As his
+      policy illustration he offers Utah, which he says spends little per
+      capita on public welfare yet whose largest population centre has the
+      country's highest economic mobility, with 10.8 percent of Salt Lake
+      City children born in the bottom quintile reaching the top, a rate he
+      compares to Denmark; he attributes this partly to low fiscal capacity
+      from federal land policy and partly to tight-knit communities often
+      oriented around the Church of Jesus Christ of Latter-day Saints, while
+      allowing it may not be easily replicable elsewhere. The statistics,
+      attributions and causal claims are his own as delivered.
+    URL: "https://www.youtube.com/watch?v=-ZwxgSIJl4M"
+    Video_ID: "-ZwxgSIJl4M"
+    Show: "Senator Mike Lee"
+    Runtime: "00:22:03"
+    Language: "en"
+
+  Media:
+    File: "-ZwxgSIJl4M.m4a"
+    SHA256: "7ed65c4af36d077863fd17a70b46fe7b887b640256d57b7a75a5875e5a688cac"
+    Bytes: 21408210
+    Duration_Seconds: 1323
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-ZwxgSIJl4M"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-ZwxgSIJl4M.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/mike_lee_ut_sen/-ZwxgSIJl4M/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCplVxs_j_sLAt0fkplXcl4A"
+    Uploader_ID: "@senatormikelee"
+    View_Count: 969
+    Like_Count: 40
+    Comment_Count: 4
+    Availability: "public"
+    Published_At: "2017-07-12T16:15:29+00:00"
+    Captured_At: "2026-09-07T17:51:31-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "9.6%"
+      Turns: 10
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "12.0%"
+      Turns: 17
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "16.2%"
+      Turns: 22
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "2.8%"
+      Turns: 8
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "12.5%"
+      Turns: 21
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "42.9%"
+      Turns: 53
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_10"
+      Share_Of_Speech: "3.9%"
+      Turns: 8
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_14"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+
+  Topics:
+    - "Federalism and localism"
+    - "Social capital and the decline of associational life"
+    - "Family structure and religious participation"
+    - "Welfare policy and the crowding out of civil society"
+    - "Economic mobility in Utah"
+    - "Political polarisation and national mass movements"
+
+  Source:
+    Canonical_ID: "cbbb960306d0bc30"
+    Transcribed: "2026-09-07T19:09:09.133673-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 2977
+    Segments: 222
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T17:51:34.623170-07:00"
+    Transcription_Finished: "2026-09-07T19:09:09.133673-07:00"
+    Recorded: "2017-07-12"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-ZwxgSIJl4M.ctm"
+    Fountain: "-ZwxgSIJl4M.fountain"
+    Diarization_RTTM: "-ZwxgSIJl4M.rttm"
+    As_Broadcast_Script: "-ZwxgSIJl4M.script.txt"
+    Segments_JSON: "-ZwxgSIJl4M.segments.json"
+    Segments_JSONL: "-ZwxgSIJl4M.segments.jsonl"
+    Subtitles_SRT: "-ZwxgSIJl4M.srt"
+    Plain_Text: "-ZwxgSIJl4M.transcription"
+    Subtitles_VTT: "-ZwxgSIJl4M.vtt"
+    Transcript_SHA256: "0b6a8dcc6b6b6922e0c9a27a8354c4918bd8e8f22994950bc11797a9c44fa84e"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "mike_lee_ut_sen"
+    video_uid: "mike_lee_ut_sen::-ZwxgSIJl4M"
+    video_key: "-ZwxgSIJl4M"
+    youtube_id: "-ZwxgSIJl4M"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-ZwxgSIJl4M"
+    source_ref: "-ZwxgSIJl4M"

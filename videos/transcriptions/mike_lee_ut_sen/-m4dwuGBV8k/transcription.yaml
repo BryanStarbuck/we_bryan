@@ -1,0 +1,281 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Sen. Mike Lee Debates the FORMULA Act."
+    Description: >-
+      An extended Senate floor exchange in which the senator seeks unanimous
+      consent to pass his FORMULA Act, S. 4261, during the 2022 infant
+      formula shortage, and Senator Casey of Pennsylvania objects four
+      times. The senator describes parents scouring shops and online sellers
+      and some infants being hospitalised for want of formula, and says the
+      national out-of-stock rate rose from 43 percent to 73 percent in May
+      alone and reached 88.9 percent in Utah, the state with the highest
+      birth rate. His bill has three parts: suspending for six months the
+      tariff on imported formula, which he puts at at least 17.5 percent and
+      up to roughly 35 percent; temporarily allowing imports from countries
+      whose regulators are comparable to the FDA and from which the US
+      already imports pharmaceuticals; and allowing WIC recipients to buy
+      whatever brand is in stock rather than only the brand named on the
+      voucher. He argues the personal importation of formula is already
+      lawful, so the bill makes it affordable rather than legal, and notes
+      his bill retains the FDA's recall authority. Senator Casey objects,
+      saying the shortage began with a recall that followed as many as nine
+      infant deaths from contaminated formula, citing FDA adverse-event
+      records from 2016, 2017 and 2019 involving foreign formula and the
+      American Academy of Pediatrics' longstanding warnings against imported
+      European formula, and pointing to Operation Fly Formula's 32 flights
+      and 19 million eight-ounce bottle equivalents plus about 220 million
+      more admitted through enforcement discretion, as well as use of the
+      Defense Production Act. He argues bipartisan committee work is the
+      better route and that safety standards cannot be compromised. The
+      senator from Utah replies that about 13 million bottles is a day and a
+      half against a nine-million-bottle daily average, that the adverse
+      events cited reflect symptoms common when infants switch formula
+      rather than defects in the product, and that an FDA investigation
+      traced the contamination to bottled water the parents mixed with the
+      formula rather than to the formula itself. He then modifies his
+      request three times — dropping the FDA regulatory waiver, then
+      dropping the WIC provision, then shortening the tariff suspension from
+      180 days to 90, matching the administration's proposed gas tax holiday
+      — and Casey objects each time, the last two on the narrower ground
+      that the Democratic side has not yet reviewed the amendments. The two
+      men directly contradict each other on what caused the contamination
+      and on what the adverse-event reports show; both accounts are as
+      delivered on the floor and neither is resolved in the exchange.
+    URL: "https://www.youtube.com/watch?v=-m4dwuGBV8k"
+    Video_ID: "-m4dwuGBV8k"
+    Show: "Senator Mike Lee"
+    Runtime: "00:31:40"
+    Language: "en"
+
+  Media:
+    File: "-m4dwuGBV8k.m4a"
+    SHA256: "e129672cd2b35398b9e2630c8a10a74933f26b20def695e88e4918e3b1e8d57b"
+    Bytes: 30744490
+    Duration_Seconds: 1900
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-m4dwuGBV8k"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-m4dwuGBV8k.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/mike_lee_ut_sen/-m4dwuGBV8k/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCplVxs_j_sLAt0fkplXcl4A"
+    Uploader_ID: "@senatormikelee"
+    View_Count: 3249
+    Like_Count: 108
+    Comment_Count: 41
+    Availability: "public"
+    Published_At: "2022-06-23T00:24:43+00:00"
+    Captured_At: "2026-09-07T17:51:38-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "7.8%"
+      Turns: 16
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "14.5%"
+      Turns: 24
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "14.6%"
+      Turns: 30
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "12.7%"
+      Turns: 27
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "1.5%"
+      Turns: 4
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "0.6%"
+      Turns: 1
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "6.3%"
+      Turns: 15
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_09"
+      Share_Of_Speech: "2.9%"
+      Turns: 9
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_16"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_20"
+      Share_Of_Speech: "2.1%"
+      Turns: 6
+    Person_12:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_21"
+      Share_Of_Speech: "3.5%"
+      Turns: 8
+    Person_13:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_23"
+      Share_Of_Speech: "0.2%"
+      Turns: 2
+    Person_14:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_24"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_15:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_25"
+      Share_Of_Speech: "13.2%"
+      Turns: 26
+    Person_16:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_27"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_17:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_29"
+      Share_Of_Speech: "18.0%"
+      Turns: 14
+    Person_18:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_31"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_19:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_33"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_20:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_36"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_21:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_47"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+
+  Topics:
+    - "The 2022 infant formula shortage"
+    - "The FORMULA Act, S. 4261"
+    - "Tariffs on imported infant formula"
+    - "FDA import rules and safety standards"
+    - "WIC programme voucher flexibility"
+    - "Senate unanimous consent procedure and objections"
+
+  Source:
+    Canonical_ID: "0556d6c10986bc9f"
+    Transcribed: "2026-09-07T19:12:26.009889-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 4749
+    Segments: 306
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T17:51:43.099761-07:00"
+    Transcription_Finished: "2026-09-07T19:12:26.009889-07:00"
+    Recorded: "2022-06-23"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-m4dwuGBV8k.ctm"
+    Fountain: "-m4dwuGBV8k.fountain"
+    Diarization_RTTM: "-m4dwuGBV8k.rttm"
+    As_Broadcast_Script: "-m4dwuGBV8k.script.txt"
+    Segments_JSON: "-m4dwuGBV8k.segments.json"
+    Segments_JSONL: "-m4dwuGBV8k.segments.jsonl"
+    Subtitles_SRT: "-m4dwuGBV8k.srt"
+    Plain_Text: "-m4dwuGBV8k.transcription"
+    Subtitles_VTT: "-m4dwuGBV8k.vtt"
+    Transcript_SHA256: "38f2c82bd3a52cef0b1b14b06b8147a09a3eb8312a8a768fe36e989501e52470"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "mike_lee_ut_sen"
+    video_uid: "mike_lee_ut_sen::-m4dwuGBV8k"
+    video_key: "-m4dwuGBV8k"
+    youtube_id: "-m4dwuGBV8k"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-07T22:31:03.315Z"
+    demand_run_id: "job_1788820260578_8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-m4dwuGBV8k"
+    source_ref: "-m4dwuGBV8k"
