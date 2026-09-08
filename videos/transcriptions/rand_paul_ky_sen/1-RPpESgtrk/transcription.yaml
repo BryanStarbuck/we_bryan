@@ -1,0 +1,112 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Rand Paul for President Supporter Car in Iowa"
+    Description: >-
+      A 17-second clip from Rand Paul's 2016 presidential campaign showing a supporter's decorated car in
+      Iowa. The audio is a music bed only: the transcriber returned a single token, *Music*, and that is an
+      honest record of the clip rather than a failed decode. Nothing is said, so the clip carries no policy or
+      argument of any kind; it is campaign b-roll. Diarization produced no speaker clusters, which is
+      consistent with there being no speech.
+    URL: "https://www.youtube.com/watch?v=1-RPpESgtrk"
+    Video_ID: "1-RPpESgtrk"
+    Show: "Rand Paul"
+    Runtime: "00:00:17"
+    Language: "en"
+
+  Media:
+    File: "1-RPpESgtrk.m4a"
+    SHA256: "2c671d5720190d06cb409519cd770d22feff5b6aad06d66422ef6edf53aefdf9"
+    Bytes: 286861
+    Duration_Seconds: 17
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=1-RPpESgtrk"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "1-RPpESgtrk.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/rand_paul_ky_sen/1-RPpESgtrk/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC_8WUrPbi8clO6sWt_FDvuA"
+    Uploader_ID: "@randpaul"
+    View_Count: 876
+    Like_Count: 105
+    Comment_Count: 16
+    Availability: "public"
+    Published_At: "2016-01-29T17:41:05+00:00"
+    Captured_At: "2026-09-08T04:15:13-07:00"
+
+  Topics:
+    - "2016 Rand Paul presidential campaign"
+    - "Iowa campaign b-roll"
+    - "No spoken content - music bed only"
+
+  Source:
+    Canonical_ID: "702aa2a946f500ab"
+    Transcribed: "2026-09-08T04:17:00.666270-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1
+    Segments: 1
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T04:15:13.642921-07:00"
+    Transcription_Finished: "2026-09-08T04:17:00.666270-07:00"
+    Recorded: "2016-01-29"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "1-RPpESgtrk.ctm"
+    Fountain: "1-RPpESgtrk.fountain"
+    Diarization_RTTM: "1-RPpESgtrk.rttm"
+    As_Broadcast_Script: "1-RPpESgtrk.script.txt"
+    Segments_JSON: "1-RPpESgtrk.segments.json"
+    Segments_JSONL: "1-RPpESgtrk.segments.jsonl"
+    Subtitles_SRT: "1-RPpESgtrk.srt"
+    Plain_Text: "1-RPpESgtrk.transcription"
+    Subtitles_VTT: "1-RPpESgtrk.vtt"
+    Transcript_SHA256: "5d38f21e0035926bad777289326ff02a248df63f5ebcda09e0974b3675045e06"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "rand_paul_ky_sen"
+    video_uid: "rand_paul_ky_sen::1-RPpESgtrk"
+    video_key: "1-RPpESgtrk"
+    youtube_id: "1-RPpESgtrk"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T10:15:03.132Z"
+    demand_run_id: "job_1788862500006_165"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=1-RPpESgtrk"
+    source_ref: "1-RPpESgtrk"
