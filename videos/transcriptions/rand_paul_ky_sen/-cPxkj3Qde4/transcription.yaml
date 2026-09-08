@@ -1,0 +1,132 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Hillary Clinton Should Not Be Above the Law"
+    Description: >-
+      A single-speaker address arguing that the FBI's decision not to prosecute Hillary Clinton over her
+      handling of classified information as Secretary of State means the country now has two sets of laws. The
+      speaker says FBI Director James Comey's July 2016 press conference laid out a scathing rundown of
+      wrongdoing and then announced no charges, argues that any career civil servant or military officer would
+      have lost a security clearance and faced possible firing or criminal charges for the same conduct, and
+      cites the ouster of an ambassador for using a private email server, the prosecution of NSA whistleblower
+      Thomas Drake, and General David Petraeus's guilty plea as comparisons. He argues Comey changed the
+      meaning of the statute by requiring intent to harm when the standard is gross negligence, notes that
+      Bill Clinton met Attorney General Loretta Lynch privately three days before the announcement and says
+      the appearance is terrible, and concludes that this should preclude Clinton from ever holding high
+      office again. Every characterisation here is the speaker's own, made in 2016 while Clinton was a
+      candidate, and is contested; Clinton, Comey and Lynch are not present and do not answer it, and no
+      charges were ever brought.
+    URL: "https://www.youtube.com/watch?v=-cPxkj3Qde4"
+    Video_ID: "-cPxkj3Qde4"
+    Show: "Rand Paul"
+    Runtime: "00:03:38"
+    Language: "en"
+
+  Media:
+    File: "-cPxkj3Qde4.m4a"
+    SHA256: "2706018a075b87b631ef6a44d3cddb6e756a3cda2576e227cfe02c81943c3828"
+    Bytes: 3539799
+    Duration_Seconds: 218
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-cPxkj3Qde4"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-cPxkj3Qde4.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/rand_paul_ky_sen/-cPxkj3Qde4/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC_8WUrPbi8clO6sWt_FDvuA"
+    Uploader_ID: "@randpaul"
+    View_Count: 8477
+    Availability: "public"
+    Published_At: "2016-07-07T02:15:15+00:00"
+    Captured_At: "2026-09-08T04:15:04-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 2
+
+  Topics:
+    - "FBI decision not to charge Hillary Clinton"
+    - "Handling of classified information at the State Department"
+    - "Equal application of the law and prosecutorial discretion"
+    - "Comey July 2016 press conference"
+    - "Clinton-Lynch tarmac meeting"
+
+  Source:
+    Canonical_ID: "bef0a387b4d35a35"
+    Transcribed: "2026-09-08T10:07:36.098947-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 566
+    Segments: 11
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T04:15:05.780593-07:00"
+    Transcription_Finished: "2026-09-08T10:07:36.098947-07:00"
+    Recorded: "2016-07-07"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-cPxkj3Qde4.ctm"
+    Fountain: "-cPxkj3Qde4.fountain"
+    Diarization_RTTM: "-cPxkj3Qde4.rttm"
+    As_Broadcast_Script: "-cPxkj3Qde4.script.txt"
+    Segments_JSON: "-cPxkj3Qde4.segments.json"
+    Segments_JSONL: "-cPxkj3Qde4.segments.jsonl"
+    Subtitles_SRT: "-cPxkj3Qde4.srt"
+    Plain_Text: "-cPxkj3Qde4.transcription"
+    Subtitles_VTT: "-cPxkj3Qde4.vtt"
+    Transcript_SHA256: "7b3ab001209b049e7b7390df9c3dd01e28de4bc321775f8f10b1b1f5594850fb"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "rand_paul_ky_sen"
+    video_uid: "rand_paul_ky_sen::-cPxkj3Qde4"
+    video_key: "-cPxkj3Qde4"
+    youtube_id: "-cPxkj3Qde4"
+    priority: 525
+    ceiling: 1000
+    raw_score: 525
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 2
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T15:51:59.922Z"
+    demand_run_id: "job_1788882717231_3"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-cPxkj3Qde4"
+    source_ref: "-cPxkj3Qde4"

@@ -1,0 +1,146 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Senator  Blumenthal Stands Up for Workers' Rights"
+    Description: >-
+      A Senate floor speech in support of an amendment, numbered 4255 by the speaker, defending the Fair Pay
+      and Safe Workplaces executive order against a provision in the National Defense Authorization Act then
+      on the floor. He explains that the executive order requires companies doing business with the federal
+      government to disclose determinations by a court or administrative body that they violated any of
+      fourteen longstanding labor laws - not mere allegations - and names the Americans with Disabilities Act,
+      the Family and Medical Leave Act and the Civil Rights Act among them. He argues most contractors comply
+      and would only need to check a box, that a small subset with violations would have that taken into
+      account during procurement without being barred, and that this is about following the law rather than
+      blacklisting. He says contractors who cut corners create an unlevel playing field, submit low- ball
+      offers and waste federal funds, and cites Department of Labor figures that one in five Americans work
+      for companies doing business with the government. He notes his amendment will not be made pending, names
+      Senator Patty Murray and a list of co-sponsoring senators, and says groups including Easter Seals and
+      Paralyzed Veterans of America worry the NDAA language would harm veterans and constituents with
+      disabilities. The characterisation of the NDAA provision as 'gutting' the order is his own and is
+      contested; the opposing case is not heard here.
+    URL: "https://www.youtube.com/watch?v=0aYjTNca1KU"
+    Video_ID: "0aYjTNca1KU"
+    Show: "SenatorBlumenthal"
+    Runtime: "00:08:20"
+    Language: "en"
+
+  Media:
+    File: "0aYjTNca1KU.m4a"
+    SHA256: "0b2dc94299ebabdfe73b15756933c95f67c3ccdecf690e91db3f3d3f4358be7a"
+    Bytes: 8091845
+    Duration_Seconds: 500
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=0aYjTNca1KU"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "0aYjTNca1KU.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/richard_blumenthal_ct_sen/0aYjTNca1KU/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCHH-fn3_LVt0Q4od56rOi5g"
+    Uploader_ID: "@SenatorBlumenthal"
+    View_Count: 69
+    Availability: "public"
+    Published_At: "2016-06-10T21:03:34+00:00"
+    Captured_At: "2026-09-08T04:15:26-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "43.1%"
+      Turns: 20
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "56.7%"
+      Turns: 26
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+
+  Topics:
+    - "Fair Pay and Safe Workplaces executive order"
+    - "Federal contractor labor law compliance"
+    - "National Defense Authorization Act amendment"
+    - "Workplace safety and wage enforcement"
+    - "Procurement policy and taxpayer dollars"
+
+  Source:
+    Canonical_ID: "0b287c27f22167bc"
+    Transcribed: "2026-09-08T10:09:56.563955-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 933
+    Segments: 81
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T04:15:27.920457-07:00"
+    Transcription_Finished: "2026-09-08T10:09:56.563955-07:00"
+    Recorded: "2016-06-10"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "0aYjTNca1KU.ctm"
+    Fountain: "0aYjTNca1KU.fountain"
+    Diarization_RTTM: "0aYjTNca1KU.rttm"
+    As_Broadcast_Script: "0aYjTNca1KU.script.txt"
+    Segments_JSON: "0aYjTNca1KU.segments.json"
+    Segments_JSONL: "0aYjTNca1KU.segments.jsonl"
+    Subtitles_SRT: "0aYjTNca1KU.srt"
+    Plain_Text: "0aYjTNca1KU.transcription"
+    Subtitles_VTT: "0aYjTNca1KU.vtt"
+    Transcript_SHA256: "f513f8933ba3cc9a9c036b12f3914d0737296737a34b58784135445d54d4d97d"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "richard_blumenthal_ct_sen"
+    video_uid: "richard_blumenthal_ct_sen::0aYjTNca1KU"
+    video_key: "0aYjTNca1KU"
+    youtube_id: "0aYjTNca1KU"
+    priority: 525
+    ceiling: 1000
+    raw_score: 525
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 2
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T15:51:59.922Z"
+    demand_run_id: "job_1788882717231_3"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=0aYjTNca1KU"
+    source_ref: "0aYjTNca1KU"

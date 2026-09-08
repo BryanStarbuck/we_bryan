@@ -1,0 +1,138 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Rand Paul: Audit The Fed"
+    Description: >-
+      A Senate floor speech advocating the Federal Reserve Transparency Act, the 'Audit the Fed' bill. The
+      speaker argues the Fed operates with unchecked power to create money and choose which banks receive it,
+      that creating money is a price control on interest rates, and that artificially low rates inflated the
+      housing bubble that preceded the 2008 recession. He states the Fed's balance sheet grew from under $1
+      trillion to $4.4 trillion, that from 2009 to 2012 the incomes of the top 1 percent rose 31 percent
+      against 0.4 percent for everyone else, that white bread rose over 50 percent and eggs more than doubled
+      over fifteen years, that San Francisco housing rose 58 percent in 25 years inflation- adjusted while
+      real household income fell 10 percent, and that the Fed pays commercial banks some $12 billion in
+      interest - figures he asserts and does not source in the speech. He quotes former Fed Governor Kevin
+      Warsh calling easy money a 'reverse Robin Hood effect'. He argues the current GAO audit is futile
+      because monetary policy deliberations, open market transactions and foreign central bank agreements are
+      excluded, citing Chairman Bernanke declining to tell Representative Alan Grayson which countries
+      received $500 billion and declining to answer Senator Bernie Sanders on $2.2 trillion, and the Dodd-
+      Frank one-time audit that found $16 trillion lent to domestic and foreign banks. He rejects the claim
+      that an audit politicizes the Fed, arguing the GAO is nonpartisan and that Chair Janet Yellen had
+      already politicized it with a 2014 speech he says was riddled with Democratic talking points. The
+      economic causation, the characterisations of Fed motives and the reading of Yellen's speech are the
+      speaker's own and are contested.
+    URL: "https://www.youtube.com/watch?v=0iEgvIobQRc"
+    Video_ID: "0iEgvIobQRc"
+    Show: "Rand Paul"
+    Runtime: "00:09:35"
+    Language: "en"
+
+  Media:
+    File: "0iEgvIobQRc.m4a"
+    SHA256: "230e0ca3da857f1bb72fa8d266531ba23fda4cec569614292a03f0e1cd12e36d"
+    Bytes: 9305539
+    Duration_Seconds: 575
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=0iEgvIobQRc"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "0iEgvIobQRc.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/rand_paul_ky_sen/0iEgvIobQRc/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC_8WUrPbi8clO6sWt_FDvuA"
+    Uploader_ID: "@randpaul"
+    View_Count: 5324
+    Availability: "public"
+    Published_At: "2016-01-18T01:35:12+00:00"
+    Captured_At: "2026-09-08T04:15:10-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 24
+
+  Topics:
+    - "Federal Reserve Transparency Act (Audit the Fed)"
+    - "Federal Reserve accountability and GAO audit scope"
+    - "Monetary policy and interest rate controls"
+    - "Fed balance sheet expansion after 2008"
+    - "Income inequality and asset price inflation"
+    - "Emergency lending to domestic and foreign banks"
+
+  Source:
+    Canonical_ID: "a2f87968c8edfec9"
+    Transcribed: "2026-09-08T10:10:29.653627-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1494
+    Segments: 54
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T04:15:11.565006-07:00"
+    Transcription_Finished: "2026-09-08T10:10:29.653627-07:00"
+    Recorded: "2016-01-18"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "0iEgvIobQRc.ctm"
+    Fountain: "0iEgvIobQRc.fountain"
+    Diarization_RTTM: "0iEgvIobQRc.rttm"
+    As_Broadcast_Script: "0iEgvIobQRc.script.txt"
+    Segments_JSON: "0iEgvIobQRc.segments.json"
+    Segments_JSONL: "0iEgvIobQRc.segments.jsonl"
+    Subtitles_SRT: "0iEgvIobQRc.srt"
+    Plain_Text: "0iEgvIobQRc.transcription"
+    Subtitles_VTT: "0iEgvIobQRc.vtt"
+    Transcript_SHA256: "1f476e586cbee371291325a9179e8117fa74a2f00713b36b582d1bcc7419ebe2"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "rand_paul_ky_sen"
+    video_uid: "rand_paul_ky_sen::0iEgvIobQRc"
+    video_key: "0iEgvIobQRc"
+    youtube_id: "0iEgvIobQRc"
+    priority: 525
+    ceiling: 1000
+    raw_score: 525
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 2
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T15:51:59.922Z"
+    demand_run_id: "job_1788882717231_3"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=0iEgvIobQRc"
+    source_ref: "0iEgvIobQRc"

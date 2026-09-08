@@ -1,0 +1,150 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Senator Murray Demands Racial and Economic Equity and Fair Compensation for College Athletes"
+    Description: >-
+      Opening remarks at a Senate committee hearing on compensating college athletes, delivered by the
+      committee's ranking member. She begins with two asides: thanks to first responders fighting wildfires in
+      Washington State and on the West Coast, and an extended tribute to the retiring chairman, naming
+      bipartisan bills they passed together including the 21st Century Cures Act, ESSA, Perkins CTE and opioid
+      legislation. Turning to the hearing, she argues that the roughly $15 billion college sports industry is
+      a case of economic and racial inequity, saying the majority of athletes in Division I revenue-generating
+      sports are black while mostly white coaches and NCAA officials earn millions, and that athletes are
+      barred from any compensation. She relays an account from a former all-star black athlete in Washington
+      who she says had to steal food because he was not allowed to work, and describes athletes losing
+      scholarships and health coverage after injury. Her proposals are allowing athletes to profit from name,
+      image and likeness, ensuring men and women share revenue fairly, enforceable health and safety
+      standards, guaranteed affordable health care and coverage for lifelong injury- related conditions, and
+      academic support - citing a graduation rate of 55 percent for black male athletes in the Power 5
+      conferences against 70 percent for all college athletes. She calls the status quo immoral and says the
+      NCAA failed to act. The figures and the characterisation of the system as exploitation are hers, are
+      contested, and the NCAA is not heard in this clip. She closes by urging a further COVID relief package.
+    URL: "https://www.youtube.com/watch?v=-INyHjSHFCA"
+    Video_ID: "-INyHjSHFCA"
+    Show: "Senator Patty Murray"
+    Runtime: "00:09:55"
+    Language: "en"
+
+  Media:
+    File: "-INyHjSHFCA.m4a"
+    SHA256: "1dc811d2fbd8ca9ec5db1bac0767f1afe1f69cc0aefb918644a741075a4b441a"
+    Bytes: 9633008
+    Duration_Seconds: 595
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-INyHjSHFCA"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-INyHjSHFCA.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/patty_murray_wa_sen/-INyHjSHFCA/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCb8jq3TvQ3AzKsexhWfFLoA"
+    Uploader_ID: "@pattymurray"
+    View_Count: 69
+    Like_Count: 5
+    Comment_Count: 1
+    Availability: "public"
+    Published_At: "2020-09-15T17:36:01+00:00"
+    Captured_At: "2026-09-08T04:14:52-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "97.7%"
+      Turns: 13
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "2.0%"
+      Turns: 2
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+
+  Topics:
+    - "Compensation of college athletes"
+    - "Name, image and likeness (NIL) rights"
+    - "Racial and economic equity in college sports"
+    - "NCAA governance and reform"
+    - "Athlete health care and injury protections"
+    - "Graduation rates for college athletes"
+
+  Source:
+    Canonical_ID: "7384f8ce84d37aab"
+    Transcribed: "2026-09-08T10:10:58.406080-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1585
+    Segments: 45
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T04:14:54.791205-07:00"
+    Transcription_Finished: "2026-09-08T10:10:58.406080-07:00"
+    Recorded: "2020-09-15"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-INyHjSHFCA.ctm"
+    Fountain: "-INyHjSHFCA.fountain"
+    Diarization_RTTM: "-INyHjSHFCA.rttm"
+    As_Broadcast_Script: "-INyHjSHFCA.script.txt"
+    Segments_JSON: "-INyHjSHFCA.segments.json"
+    Segments_JSONL: "-INyHjSHFCA.segments.jsonl"
+    Subtitles_SRT: "-INyHjSHFCA.srt"
+    Plain_Text: "-INyHjSHFCA.transcription"
+    Subtitles_VTT: "-INyHjSHFCA.vtt"
+    Transcript_SHA256: "7708c0a118d12303ec6d3d91177ba9e317d159e4a5343b54a50c11f6104378c4"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "patty_murray_wa_sen"
+    video_uid: "patty_murray_wa_sen::-INyHjSHFCA"
+    video_key: "-INyHjSHFCA"
+    youtube_id: "-INyHjSHFCA"
+    priority: 515
+    ceiling: 1000
+    raw_score: 515
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 3
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T15:51:59.922Z"
+    demand_run_id: "job_1788882717231_3"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-INyHjSHFCA"
+    source_ref: "-INyHjSHFCA"

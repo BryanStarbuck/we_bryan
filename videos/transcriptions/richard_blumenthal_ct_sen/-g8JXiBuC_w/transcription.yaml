@@ -1,0 +1,132 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Senator Blumenthal Shares Shutdown Stories"
+    Description: >-
+      Floor remarks relaying the stories of Connecticut veterans affected by the October 2013 government
+      shutdown. The senator names veterans of Afghanistan and of earlier wars who met with him, and recounts
+      specific cases: a Purple Heart recipient recently back from Walter Reed after further surgery to an arm
+      wounded in combat, who came with his wife and three children fearing he will be denied the disability
+      compensation he is due; another Purple Heart recipient who waited two years for approval of a disability
+      claim and learned on October 1 that he will likely wait longer because the VA has furloughed staff; a
+      veteran who credits the GI Bill with reconnecting him to civil society and has applied for a higher
+      disability rating for post-traumatic stress; and a veteran whose vocational-rehabilitation pay and
+      disability payments are due to run out at the end of October. He attributes the shutdown to 'a small
+      fringe of extremist ideologues' in one house of Congress - a characterisation that is his own and is
+      contested, and the other side is not heard here. The first 28 seconds of audio could not be transcribed:
+      that chunk was rejected as a decode failure and the gap is marked in the transcript rather than papered
+      over.
+    URL: "https://www.youtube.com/watch?v=-g8JXiBuC_w"
+    Video_ID: "-g8JXiBuC_w"
+    Show: "SenatorBlumenthal"
+    Runtime: "00:04:10"
+    Language: "en"
+
+  Media:
+    File: "-g8JXiBuC_w.m4a"
+    SHA256: "b4390d7cfb6c0b1d120d04ea0ca3cb002866e7567087627a990f3abadb37846e"
+    Bytes: 4045621
+    Duration_Seconds: 250
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-g8JXiBuC_w"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-g8JXiBuC_w.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/richard_blumenthal_ct_sen/-g8JXiBuC_w/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCHH-fn3_LVt0Q4od56rOi5g"
+    Uploader_ID: "@SenatorBlumenthal"
+    View_Count: 162
+    Availability: "public"
+    Published_At: "2013-10-15T16:15:16+00:00"
+    Captured_At: "2026-09-08T04:15:19-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 11
+
+  Topics:
+    - "October 2013 government shutdown"
+    - "VA disability claims backlog and furloughs"
+    - "Veterans benefits and compensation"
+    - "GI Bill and vocational rehabilitation"
+    - "Post-traumatic stress claims"
+
+  Source:
+    Canonical_ID: "648fa6f2eebe9f8d"
+    Transcribed: "2026-09-08T10:07:25.546979-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 394
+    Segments: 28
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T04:15:20.747987-07:00"
+    Transcription_Finished: "2026-09-08T10:07:25.546979-07:00"
+    Recorded: "2013-10-15"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-g8JXiBuC_w.ctm"
+    Fountain: "-g8JXiBuC_w.fountain"
+    Diarization_RTTM: "-g8JXiBuC_w.rttm"
+    As_Broadcast_Script: "-g8JXiBuC_w.script.txt"
+    Segments_JSON: "-g8JXiBuC_w.segments.json"
+    Segments_JSONL: "-g8JXiBuC_w.segments.jsonl"
+    Subtitles_SRT: "-g8JXiBuC_w.srt"
+    Plain_Text: "-g8JXiBuC_w.transcription"
+    Subtitles_VTT: "-g8JXiBuC_w.vtt"
+    Transcript_SHA256: "4af51029c9178b34e464a48cd6f6c763d666a226954f2c3ab28f8a80e050a4f6"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "richard_blumenthal_ct_sen"
+    video_uid: "richard_blumenthal_ct_sen::-g8JXiBuC_w"
+    video_key: "-g8JXiBuC_w"
+    youtube_id: "-g8JXiBuC_w"
+    priority: 525
+    ceiling: 1000
+    raw_score: 525
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 2
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T15:51:59.922Z"
+    demand_run_id: "job_1788882717231_3"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-g8JXiBuC_w"
+    source_ref: "-g8JXiBuC_w"
