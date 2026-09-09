@@ -1,0 +1,153 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Wyden Chairs Energy Subcommittee with BLM Director Part 1"
+    Description: >-
+      An opening statement by the chair of the Senate Subcommittee on Public
+      Lands and Forests, taking testimony on five bills under Bureau of Land
+      Management and Forest Service jurisdiction: S.1024 designating
+      wilderness in New Mexico, S.1090 designating lands in the Cherokee
+      National Forest in Tennessee as wilderness, S.1144 extending the
+      reduced royalty rate for soda ash, S.1149 expanding geothermal
+      production, and S.1344 directing wildfire recovery in Arizona. He
+      notes the Senate has adjourned so the hearing will be abbreviated and
+      written statements will be included in the record, and introduces BLM
+      Director Bob Abbey and Forest Service Chief Tom Tidwell along with
+      industry witnesses Edward T. Flynn of FMC Wyoming Corporation and
+      Scott Nichols of U.S. Geothermal. He discusses the geothermal bill,
+      which would let the Interior Secretary issue non-competitive leases so
+      an existing project can expand its boundaries while ensuring fair
+      market value and rental payments, and the soda ash bill, arguing that
+      international competitors are gaming the market and describing Chinese
+      value-added-tax rebates to exporters of a synthetic substitute,
+      resumed in 2009 after being abandoned in 2007. He closes by raising
+      what he calls extremely serious errors by the BLM in estimating 2011 O
+      and C county payments, which he says will leave counties in his state
+      about 11.6 million dollars short, and says the agency recognised the
+      error in March but failed to notify the congressional delegation or
+      the counties. The trade characterisation and the account of the BLM
+      error are his own statements to the hearing.
+    URL: "https://www.youtube.com/watch?v=--YMCe45Rjc"
+    Video_ID: "--YMCe45Rjc"
+    Show: "Ron Wyden"
+    Runtime: "00:07:33"
+    Language: "en"
+
+  Media:
+    File: "--YMCe45Rjc.m4a"
+    SHA256: "6d9de7c8427f7e9ef6b041e3aea75c284257a49e3fcf1ad4abccb8faea9b5cca"
+    Bytes: 7338174
+    Duration_Seconds: 453
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=--YMCe45Rjc"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "--YMCe45Rjc.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/ron_wyden_or_sen/--YMCe45Rjc/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCsd3UEaoLoqX60P88BdpGGw"
+    Uploader_ID: "@SenRonWydenOre"
+    View_Count: 1947
+    Like_Count: 2
+    Availability: "public"
+    Published_At: "2011-08-03T22:27:13+00:00"
+    Captured_At: "2026-09-08T17:48:00-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "37.6%"
+      Turns: 3
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "62.4%"
+      Turns: 6
+
+  # Topics — what the video is ACTUALLY about, read from the transcript,
+  # not from what this person is on the roster for.
+  Topics:
+    - Public lands and forests legislation
+    - Wilderness designation bills
+    - Geothermal leasing expansion
+    - Soda ash royalties and international trade
+    - O and C county payments
+    - Bureau of Land Management oversight
+
+  Source:
+    Canonical_ID: "f471c5a3b9e9e685"
+    Transcribed: "2026-09-08T17:56:37.057467-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1201
+    Segments: 29
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T17:48:01.604675-07:00"
+    Transcription_Finished: "2026-09-08T17:56:37.057467-07:00"
+    Recorded: "2011-08-03"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "--YMCe45Rjc.ctm"
+    Fountain: "--YMCe45Rjc.fountain"
+    Diarization_RTTM: "--YMCe45Rjc.rttm"
+    As_Broadcast_Script: "--YMCe45Rjc.script.txt"
+    Segments_JSON: "--YMCe45Rjc.segments.json"
+    Segments_JSONL: "--YMCe45Rjc.segments.jsonl"
+    Subtitles_SRT: "--YMCe45Rjc.srt"
+    Plain_Text: "--YMCe45Rjc.transcription"
+    Subtitles_VTT: "--YMCe45Rjc.vtt"
+    Transcript_SHA256: "38cd076508e563b19d3f2703d1ff011ca66862f5fed167134ee54d05f9a3afff"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "ron_wyden_or_sen"
+    video_uid: "ron_wyden_or_sen::--YMCe45Rjc"
+    video_key: "--YMCe45Rjc"
+    youtube_id: "--YMCe45Rjc"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T23:07:36.397Z"
+    demand_run_id: "job_1788908850135_13"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=--YMCe45Rjc"
+    source_ref: "--YMCe45Rjc"

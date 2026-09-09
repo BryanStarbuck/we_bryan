@@ -1,0 +1,151 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Davidson Speaks Out Against Unconstitutional Background Check Bills"
+    Description: >-
+      A two-minute House floor speech opposing H.R. 8, a background check
+      bill. The member opens on House process, thanking the body for
+      preserving the chance to be heard from the minority, saying the
+      minority cannot put bills on the agenda or often even get an amendment
+      considered, and that the Rules Committee strips anything that would
+      materially change a bill, a practice he calls bipartisan and not the
+      mark of a functioning legislature. Turning to the bill, he argues
+      every commercial firearm transaction already requires a background
+      check, whether at a gun store, a gun show or anywhere else, because it
+      goes through a federal firearm licence holder. He characterises the
+      bill as reaching private transfers, saying that loaning a gun to a
+      family member for a hunting trip would require a check and could
+      criminalise the lender, and that in effect the government says a
+      citizen cannot be trusted to sell a firearm without going through a
+      licensed agent. He argues enforcement would require a registry and
+      that a registry is the path toward seizure, while acknowledging it
+      does not guarantee the government will do so, and draws an analogy to
+      the Fourth Amendment, citing court-interpreted warrantless seizures
+      for community caretaking and civil asset forfeiture as showing how a
+      guarantee can be eroded. He urges opposition to H.R. 8. The account of
+      what the bill would do is his own characterisation.
+    URL: "https://www.youtube.com/watch?v=-9NeZP2HuvE"
+    Video_ID: "-9NeZP2HuvE"
+    Show: "Congressman Warren Davidson"
+    Runtime: "00:03:00"
+    Language: "en"
+
+  Media:
+    File: "-9NeZP2HuvE.m4a"
+    SHA256: "081ae8e5ba565fa792c2befd62b628ce89794f27d0093ab0e75ff0363f24fd63"
+    Bytes: 2915292
+    Duration_Seconds: 180
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-9NeZP2HuvE"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-9NeZP2HuvE.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/warren_davidson_oh_08/-9NeZP2HuvE/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCMzuyZWzk44YRNesFzPTeUw"
+    Uploader_ID: "@congressmanwarrendavidson2640"
+    View_Count: 1103
+    Like_Count: 10
+    Comment_Count: 4
+    Availability: "public"
+    Published_At: "2021-03-10T23:10:51+00:00"
+    Captured_At: "2026-09-08T17:48:28-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Member yielding two minutes to 'my friend from Ohio, Mr. Davidson'"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "3.3%"
+      Turns: 1
+    Person_2:
+      Name: "Warren Davidson"
+      Role: "Member of Congress delivering the floor speech; identified by the yielding member"
+      Subject: true
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "96.7%"
+      Turns: 6
+
+  # Topics — what the video is ACTUALLY about, read from the transcript,
+  # not from what this person is on the roster for.
+  Topics:
+    - H.R. 8 background check legislation
+    - Second Amendment
+    - Firearm registry concerns
+    - Private firearm transfers
+    - House floor and Rules Committee process
+
+  Source:
+    Canonical_ID: "e96b11a76beb707c"
+    Transcribed: "2026-09-08T17:52:31.686824-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 496
+    Segments: 15
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T17:48:28.855661-07:00"
+    Transcription_Finished: "2026-09-08T17:52:31.686824-07:00"
+    Recorded: "2021-03-10"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-9NeZP2HuvE.ctm"
+    Fountain: "-9NeZP2HuvE.fountain"
+    Diarization_RTTM: "-9NeZP2HuvE.rttm"
+    As_Broadcast_Script: "-9NeZP2HuvE.script.txt"
+    Segments_JSON: "-9NeZP2HuvE.segments.json"
+    Segments_JSONL: "-9NeZP2HuvE.segments.jsonl"
+    Subtitles_SRT: "-9NeZP2HuvE.srt"
+    Plain_Text: "-9NeZP2HuvE.transcription"
+    Subtitles_VTT: "-9NeZP2HuvE.vtt"
+    Transcript_SHA256: "a9a07a294b2185db3eaa6f69c12f319986f3a0c768490b2ac73e77e0a891c0e7"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "warren_davidson_oh_08"
+    video_uid: "warren_davidson_oh_08::-9NeZP2HuvE"
+    video_key: "-9NeZP2HuvE"
+    youtube_id: "-9NeZP2HuvE"
+    priority: 700
+    ceiling: 1000
+    raw_score: 700
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 150
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T23:07:36.397Z"
+    demand_run_id: "job_1788908850135_13"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-9NeZP2HuvE"
+    source_ref: "-9NeZP2HuvE"

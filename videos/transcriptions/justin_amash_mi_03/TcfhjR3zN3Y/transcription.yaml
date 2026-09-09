@@ -1,0 +1,152 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Rep. Justin Amash - Floor speech on Ron Paul's Audit the Fed (H.R. 459) (July 24, 2012)"
+    Description: >-
+      A one-minute House floor speech supporting Ron Paul's Federal Reserve
+      audit bill, H.R. 459. The member thanks Chairman Issa and
+      congratulates Ron Paul for decades of work on the issue, then asks
+      what the Federal Reserve is, suggesting many members of the body could
+      not answer, and argues Congress has delegated its constitutional
+      authority to 'this committee of bankers and presidential appointees'.
+      He says no institution in the country's history has been given so much
+      power while Congress knew so little about it, notes that as the
+      central bank it manages inflation and can therefore change the value
+      of Americans' life savings, retirement accounts and mortgages, and
+      points to its role as lender of last resort and its unprecedented
+      market interventions, buying mortgages when investors would not and
+      stepping in when creditors became wary of congressional spending. He
+      notes the existing audit statute prevents an audit of monetary policy,
+      and quotes government accountants as saying they could not
+      satisfactorily audit the system without authority to examine the Fed's
+      largest assets. He urges vigilance against unaccountable groups and
+      asks the body to pass the bill. The constitutional argument is his
+      own.
+    URL: "https://www.youtube.com/watch?v=TcfhjR3zN3Y"
+    Video_ID: "TcfhjR3zN3Y"
+    Show: "RepJustinAmash"
+    Runtime: "00:01:36"
+    Language: "en"
+
+  Media:
+    File: "TcfhjR3zN3Y.m4a"
+    SHA256: "3584633fc02e76fde3035690ff4aab0c6802ff9cfb9cb0403109c557eae91d58"
+    Bytes: 1567161
+    Duration_Seconds: 96
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=TcfhjR3zN3Y"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "TcfhjR3zN3Y.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/justin_amash_mi_03/TcfhjR3zN3Y/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCeg6HhoCXrS8xpON9dxtZgA"
+    Uploader_ID: "@RepJustinAmash"
+    View_Count: 7888
+    Availability: "public"
+    Published_At: "2012-07-25T00:53:28+00:00"
+    Captured_At: "2026-09-08T17:48:23-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Presiding officer recognizing the gentleman from Michigan, Mr. Amash"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "7.4%"
+      Turns: 1
+    Person_2:
+      Name: "Justin Amash"
+      Role: "Member of Congress delivering the floor speech; identified by the presiding officer's recognition"
+      Subject: true
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "91.8%"
+      Turns: 5
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "0.7%"
+      Turns: 1
+
+  # Topics — what the video is ACTUALLY about, read from the transcript,
+  # not from what this person is on the roster for.
+  Topics:
+    - Federal Reserve audit
+    - H.R. 459 Audit the Fed
+    - Monetary policy oversight
+    - Congressional delegation of authority
+
+  Source:
+    Canonical_ID: "7a5169beec6e499d"
+    Transcribed: "2026-09-08T17:52:12.053597-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 258
+    Segments: 15
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T17:48:23.581249-07:00"
+    Transcription_Finished: "2026-09-08T17:52:12.053597-07:00"
+    Recorded: "2012-07-25"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "TcfhjR3zN3Y.ctm"
+    Fountain: "TcfhjR3zN3Y.fountain"
+    Diarization_RTTM: "TcfhjR3zN3Y.rttm"
+    As_Broadcast_Script: "TcfhjR3zN3Y.script.txt"
+    Segments_JSON: "TcfhjR3zN3Y.segments.json"
+    Segments_JSONL: "TcfhjR3zN3Y.segments.jsonl"
+    Subtitles_SRT: "TcfhjR3zN3Y.srt"
+    Plain_Text: "TcfhjR3zN3Y.transcription"
+    Subtitles_VTT: "TcfhjR3zN3Y.vtt"
+    Transcript_SHA256: "0b3416c152f01938fc4af6d589ab0101424accdc13acea0ec5dd45dfa04019f5"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "justin_amash_mi_03"
+    video_uid: "justin_amash_mi_03::TcfhjR3zN3Y"
+    video_key: "TcfhjR3zN3Y"
+    youtube_id: "TcfhjR3zN3Y"
+    priority: 700
+    ceiling: 1000
+    raw_score: 700
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 150
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T23:07:36.397Z"
+    demand_run_id: "job_1788908850135_13"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=TcfhjR3zN3Y"
+    source_ref: "TcfhjR3zN3Y"

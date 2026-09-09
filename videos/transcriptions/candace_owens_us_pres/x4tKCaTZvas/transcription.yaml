@@ -1,0 +1,166 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Crazy Ex: Volume 1"
+    Description: >-
+      A rapid comedic supercut assembled around the phrase 'The Daily Wire',
+      repeated dozens of times across clipped fragments of audio. It is
+      framed by the speaker's own opening line that being fired from The
+      Daily Wire felt like breaking up with someone and having a crazy ex.
+      The montage intersperses names associated with the outlet, including
+      Andrew Klavan, who is called 'my crazy ex-boyfriend' and later 'my
+      psycho ex-boyfriend', along with Ben Shapiro, Dave Smith, Brett Cooper
+      and Jeremy Boring, and fragments such as 'I got fired from the daily
+      wire', 'we're like she's done, she's toast', and a profane line
+      addressed to Shapiro. The closing fragment asks 'why are you so
+      obsessed with me'. The framing of the former employer as a fixated ex
+      is the speaker's own characterisation of a dispute she is party to; it
+      is contested, and the people named appear only as clipped audio and do
+      not answer it here.
+    URL: "https://www.youtube.com/watch?v=x4tKCaTZvas"
+    Video_ID: "x4tKCaTZvas"
+    Show: "Candace Owens Podcast"
+    Runtime: "00:01:08"
+    Language: "en"
+
+  Media:
+    File: "x4tKCaTZvas.m4a"
+    SHA256: "ce69cdf5f0eae228519d8d1a496f50fc418cc41a44bf9055ae3a7281f09cd4dd"
+    Bytes: 1106377
+    Duration_Seconds: 68
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=x4tKCaTZvas"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "x4tKCaTZvas.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/candace_owens_us_pres/x4tKCaTZvas/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCkY4fdKOFk3Kiq7g5LLKYLw"
+    Uploader_ID: "@CandaceOwensPodcast"
+    View_Count: 28680
+    Like_Count: 939
+    Comment_Count: 1600
+    Availability: "public"
+    Published_At: "2026-01-07T23:10:10+00:00"
+    Captured_At: "2026-09-08T17:48:57-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "58.8%"
+      Turns: 3
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "5.7%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "9.4%"
+      Turns: 1
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "14.2%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "6.6%"
+      Turns: 1
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "5.3%"
+      Turns: 1
+
+  # Topics — what the video is ACTUALLY about, read from the transcript,
+  # not from what this person is on the roster for.
+  Topics:
+    - The Daily Wire
+    - Departure from The Daily Wire
+    - Media industry dispute
+    - Satire and montage
+
+  Source:
+    Canonical_ID: "c825a463aefb9a19"
+    Transcribed: "2026-09-08T17:51:23.822399-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 256
+    Segments: 11
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T17:48:58.137996-07:00"
+    Transcription_Finished: "2026-09-08T17:51:23.822399-07:00"
+    Recorded: "2026-01-07"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "x4tKCaTZvas.ctm"
+    Fountain: "x4tKCaTZvas.fountain"
+    Diarization_RTTM: "x4tKCaTZvas.rttm"
+    As_Broadcast_Script: "x4tKCaTZvas.script.txt"
+    Segments_JSON: "x4tKCaTZvas.segments.json"
+    Segments_JSONL: "x4tKCaTZvas.segments.jsonl"
+    Subtitles_SRT: "x4tKCaTZvas.srt"
+    Plain_Text: "x4tKCaTZvas.transcription"
+    Subtitles_VTT: "x4tKCaTZvas.vtt"
+    Transcript_SHA256: "84c2c62331f5f25de328934563ae21ba38c5ce4cd36dfd89e546fec426988d3e"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "candace_owens_us_pres"
+    video_uid: "candace_owens_us_pres::x4tKCaTZvas"
+    video_key: "x4tKCaTZvas"
+    youtube_id: "x4tKCaTZvas"
+    priority: 600
+    ceiling: 1000
+    raw_score: 600
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 5
+    seat_rank: 300
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T23:07:36.397Z"
+    demand_run_id: "job_1788908850135_13"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=x4tKCaTZvas"
+    source_ref: "x4tKCaTZvas"

@@ -1,0 +1,190 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Davidson talks Inflation, Crypto Taxes & Build Back Better"
+    Description: >-
+      A television interview covering cryptocurrency tax reporting,
+      inflation and the Build Back Better bill. The member explains his bill
+      to change the infrastructure law's definition of 'broker' for
+      cryptocurrency, saying the IRS code uses the term differently than
+      most people would, that the provision was inserted not to regulate the
+      industry but as a way to raise taxes without passing a tax hike, and
+      that it is not technically feasible to comply with the language. He
+      describes a bill he has had since 2018, referred to as the token
+      taxonomy bill, creating a bright-line test for whether something is a
+      security, and criticises the approach under SEC Chairmen Clayton and
+      Gensler of telling firms to come in and negotiate their own deal,
+      which he says has taken years and provided little clarity. Asked
+      whether he owns cryptocurrency, he says he does not currently. He
+      calls a provision known as 6050I unconstitutional, explaining that the
+      cash-transaction reporting rule, where failing to collect and report
+      information on a sale such as a 25,000 dollar used car is technically
+      a felony, is being applied to virtual transactions. On inflation he
+      argues it results from policy choices rather than spreading like a
+      virus or an earthquake, likens Federal Reserve tapering to applying
+      brakes on ice, and says that roughly 6 trillion dollars put into the
+      economy did not raise GDP by the same amount, so the remainder went
+      into asset price inflation, growing the wealth gap. He says Chairman
+      Powell was the best option Biden was considering and that he was
+      disappointed by calls for more fiscal stimulus during 2020. He opposes
+      Build Back Better, citing a Congressional Budget Office figure of 400
+      billion dollars added to the debt plus 400 billion from the
+      infrastructure bill, criticising ten-year scoring windows and
+      straight-line modelling, and arguing the childcare provisions
+      undermine the dignity of work because recipients need not work, study
+      or volunteer. The economic claims and the readings of CBO scoring are
+      his own.
+    URL: "https://www.youtube.com/watch?v=08AIko7wWFg"
+    Video_ID: "08AIko7wWFg"
+    Show: "Congressman Warren Davidson"
+    Runtime: "00:07:58"
+    Language: "en"
+
+  Media:
+    File: "08AIko7wWFg.m4a"
+    SHA256: "0a0fcba744c7e5232581e635b498aeb0575743af1e26817ac4c2829c86a54024"
+    Bytes: 7733599
+    Duration_Seconds: 478
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=08AIko7wWFg"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "08AIko7wWFg.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/warren_davidson_oh_08/08AIko7wWFg/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCMzuyZWzk44YRNesFzPTeUw"
+    Uploader_ID: "@congressmanwarrendavidson2640"
+    View_Count: 121
+    Like_Count: 5
+    Availability: "public"
+    Published_At: "2021-11-29T14:54:00+00:00"
+    Captured_At: "2026-09-08T17:48:33-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Programme host introducing the guest and asking the questions"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "16.8%"
+      Turns: 10
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "0.9%"
+      Turns: 1
+    Person_3:
+      Name: "Warren Davidson"
+      Role: "Member of Congress interviewed; identified by the host's introduction"
+      Subject: true
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "78.4%"
+      Turns: 14
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "1.2%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "0.8%"
+      Turns: 1
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "0.8%"
+      Turns: 2
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_19"
+      Share_Of_Speech: "1.2%"
+      Turns: 1
+
+  # Topics — what the video is ACTUALLY about, read from the transcript,
+  # not from what this person is on the roster for.
+  Topics:
+    - Cryptocurrency broker definition and tax reporting
+    - Token taxonomy and securities classification
+    - Section 6050I reporting requirement
+    - Inflation and Federal Reserve policy
+    - Build Back Better and CBO scoring
+
+  Source:
+    Canonical_ID: "638dbf4206454972"
+    Transcribed: "2026-09-08T17:57:34.355683-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1539
+    Segments: 54
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T17:48:35.620661-07:00"
+    Transcription_Finished: "2026-09-08T17:57:34.355683-07:00"
+    Recorded: "2021-11-29"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "08AIko7wWFg.ctm"
+    Fountain: "08AIko7wWFg.fountain"
+    Diarization_RTTM: "08AIko7wWFg.rttm"
+    As_Broadcast_Script: "08AIko7wWFg.script.txt"
+    Segments_JSON: "08AIko7wWFg.segments.json"
+    Segments_JSONL: "08AIko7wWFg.segments.jsonl"
+    Subtitles_SRT: "08AIko7wWFg.srt"
+    Plain_Text: "08AIko7wWFg.transcription"
+    Subtitles_VTT: "08AIko7wWFg.vtt"
+    Transcript_SHA256: "413aa89543d925d6039ed1ae428582cc9edf014942f52b1b8a37188e9aaf9914"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "warren_davidson_oh_08"
+    video_uid: "warren_davidson_oh_08::08AIko7wWFg"
+    video_key: "08AIko7wWFg"
+    youtube_id: "08AIko7wWFg"
+    priority: 700
+    ceiling: 1000
+    raw_score: 700
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 150
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T23:07:36.397Z"
+    demand_run_id: "job_1788908850135_13"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=08AIko7wWFg"
+    source_ref: "08AIko7wWFg"

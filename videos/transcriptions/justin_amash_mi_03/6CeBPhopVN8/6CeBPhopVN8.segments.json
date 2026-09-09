@@ -1,0 +1,1799 @@
+{
+  "schema_version": 2,
+  "canonical_id": "3793efc55cf2e813",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 80.25,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-09T00:51:50.615Z",
+  "text_sha256": "175ae13c1412ffca137ce5200f38f4e89b258a3495ccbd51f5139988f91768ce",
+  "segments_sha256": "48cc2fb04ac515656f39e36eea8c3e875f67541bca20ea1683137e1d4c14a00d",
+  "words_sha256": "5b1b1e3b08517748cba1011dd2fa0b6c9def50f6cc1ac66572f75b7f3cd25501",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 3,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 12,
+    "clusters": 2,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_02",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.4
+      },
+      "clean_s": 1.4,
+      "speaking_s": 1.4,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 71.1
+      },
+      "clean_s": 71.1,
+      "speaking_s": 71.1,
+      "first_s": 1.03
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 4.33,
+      "end_s": 5.24,
+      "segment_i": 2,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 28.41,
+      "end_s": 28.47,
+      "segment_i": 4,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 39.94,
+      "end_s": 40.21,
+      "segment_i": 6,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 47.11,
+      "end_s": 47.82,
+      "segment_i": 8,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 59.58,
+      "end_s": 60.05,
+      "segment_i": 11,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 77.75,
+      "end_s": 78.82,
+      "segment_i": 13,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.18,
+      "end_s": 1,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "Gentlemen,",
+      "words": [
+        {
+          "w": "Gentlemen,",
+          "s": 0.18,
+          "e": 1,
+          "c": 0.278199
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 1,
+      "end_s": 4.33,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "recognize for one minute. Thank you, Madam",
+      "words": [
+        {
+          "w": "recognize",
+          "s": 1,
+          "e": 1.42,
+          "c": 0.312437
+        },
+        {
+          "w": "for",
+          "s": 1.42,
+          "e": 1.56,
+          "c": 0.891357
+        },
+        {
+          "w": "one",
+          "s": 1.56,
+          "e": 1.7,
+          "c": 0.956031
+        },
+        {
+          "w": "minute.",
+          "s": 1.7,
+          "e": 3.13,
+          "c": 0.957161
+        },
+        {
+          "w": "Thank",
+          "s": 3.32,
+          "e": 3.54,
+          "c": 0.752624
+        },
+        {
+          "w": "you,",
+          "s": 3.54,
+          "e": 3.93,
+          "c": 0.782611
+        },
+        {
+          "w": "Madam",
+          "s": 3.93,
+          "e": 4.33,
+          "c": 0.887575
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 4.33,
+      "end_s": 5.24,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Speaker. It",
+      "words": [
+        {
+          "w": "Speaker.",
+          "s": 4.33,
+          "e": 5.1,
+          "c": 0.979386
+        },
+        {
+          "w": "It",
+          "s": 5.24,
+          "e": 5.24,
+          "c": 0.995467
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 5.32,
+      "end_s": 28.26,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "was with great sadness that West Michigan learned on Friday of the passing of our first lady, Betty Ford. The first lady spent most of her life in Grand Rapids. A graduate of Central High School, she worked in a department store downtown and was a dance instructor. Early on, Mrs. Ford showed her heart for the disadvantage in our community, teaching dance to children who are physically disabled, deaf, and blind.",
+      "words": [
+        {
+          "w": "was",
+          "s": 5.32,
+          "e": 5.4,
+          "c": 0.988491
+        },
+        {
+          "w": "with",
+          "s": 5.4,
+          "e": 5.61,
+          "c": 0.99208
+        },
+        {
+          "w": "great",
+          "s": 5.61,
+          "e": 5.81,
+          "c": 0.98568
+        },
+        {
+          "w": "sadness",
+          "s": 5.9,
+          "e": 6.28,
+          "c": 0.998849
+        },
+        {
+          "w": "that",
+          "s": 6.28,
+          "e": 6.33,
+          "c": 0.959377
+        },
+        {
+          "w": "West",
+          "s": 6.41,
+          "e": 6.68,
+          "c": 0.949346
+        },
+        {
+          "w": "Michigan",
+          "s": 6.68,
+          "e": 6.94,
+          "c": 0.979829
+        },
+        {
+          "w": "learned",
+          "s": 7.03,
+          "e": 7.34,
+          "c": 0.743355
+        },
+        {
+          "w": "on",
+          "s": 7.34,
+          "e": 7.44,
+          "c": 0.649383
+        },
+        {
+          "w": "Friday",
+          "s": 7.44,
+          "e": 7.84,
+          "c": 0.909589
+        },
+        {
+          "w": "of",
+          "s": 8.02,
+          "e": 8.03,
+          "c": 0.987334
+        },
+        {
+          "w": "the",
+          "s": 8.03,
+          "e": 8.32,
+          "c": 0.996976
+        },
+        {
+          "w": "passing",
+          "s": 8.32,
+          "e": 9,
+          "c": 0.997982
+        },
+        {
+          "w": "of",
+          "s": 9,
+          "e": 9.19,
+          "c": 0.996867
+        },
+        {
+          "w": "our",
+          "s": 9.19,
+          "e": 9.48,
+          "c": 0.94962
+        },
+        {
+          "w": "first",
+          "s": 9.48,
+          "e": 9.8,
+          "c": 0.244532
+        },
+        {
+          "w": "lady,",
+          "s": 9.95,
+          "e": 10.54,
+          "c": 0.867184
+        },
+        {
+          "w": "Betty",
+          "s": 10.56,
+          "e": 11.01,
+          "c": 0.958359
+        },
+        {
+          "w": "Ford.",
+          "s": 11.04,
+          "e": 11.74,
+          "c": 0.994905
+        },
+        {
+          "w": "The",
+          "s": 11.89,
+          "e": 11.89,
+          "c": 0.998165
+        },
+        {
+          "w": "first",
+          "s": 11.92,
+          "e": 12.1,
+          "c": 0.771254
+        },
+        {
+          "w": "lady",
+          "s": 12.13,
+          "e": 12.32,
+          "c": 0.999201
+        },
+        {
+          "w": "spent",
+          "s": 12.32,
+          "e": 12.56,
+          "c": 0.997653
+        },
+        {
+          "w": "most",
+          "s": 12.56,
+          "e": 12.75,
+          "c": 0.99818
+        },
+        {
+          "w": "of",
+          "s": 12.75,
+          "e": 12.85,
+          "c": 0.994947
+        },
+        {
+          "w": "her",
+          "s": 12.85,
+          "e": 12.93,
+          "c": 0.997723
+        },
+        {
+          "w": "life",
+          "s": 13.01,
+          "e": 13.24,
+          "c": 0.997446
+        },
+        {
+          "w": "in",
+          "s": 13.24,
+          "e": 13.39,
+          "c": 0.9775
+        },
+        {
+          "w": "Grand",
+          "s": 13.39,
+          "e": 13.58,
+          "c": 0.981802
+        },
+        {
+          "w": "Rapids.",
+          "s": 13.75,
+          "e": 14.44,
+          "c": 0.883966
+        },
+        {
+          "w": "A",
+          "s": 14.49,
+          "e": 14.49,
+          "c": 0.983924
+        },
+        {
+          "w": "graduate",
+          "s": 14.62,
+          "e": 14.93,
+          "c": 0.996896
+        },
+        {
+          "w": "of",
+          "s": 14.95,
+          "e": 15.06,
+          "c": 0.998662
+        },
+        {
+          "w": "Central",
+          "s": 15.06,
+          "e": 15.46,
+          "c": 0.962125
+        },
+        {
+          "w": "High",
+          "s": 15.46,
+          "e": 15.63,
+          "c": 0.984012
+        },
+        {
+          "w": "School,",
+          "s": 15.71,
+          "e": 16.18,
+          "c": 0.940641
+        },
+        {
+          "w": "she",
+          "s": 16.18,
+          "e": 16.28,
+          "c": 0.518896
+        },
+        {
+          "w": "worked",
+          "s": 16.37,
+          "e": 16.62,
+          "c": 0.970331
+        },
+        {
+          "w": "in",
+          "s": 16.62,
+          "e": 16.68,
+          "c": 0.711761
+        },
+        {
+          "w": "a",
+          "s": 16.68,
+          "e": 16.76,
+          "c": 0.962825
+        },
+        {
+          "w": "department",
+          "s": 16.76,
+          "e": 17.18,
+          "c": 0.94376
+        },
+        {
+          "w": "store",
+          "s": 17.18,
+          "e": 17.38,
+          "c": 0.802176
+        },
+        {
+          "w": "downtown",
+          "s": 17.64,
+          "e": 17.96,
+          "c": 0.668371
+        },
+        {
+          "w": "and",
+          "s": 18.14,
+          "e": 18.23,
+          "c": 0.999024
+        },
+        {
+          "w": "was",
+          "s": 18.23,
+          "e": 18.49,
+          "c": 0.999344
+        },
+        {
+          "w": "a",
+          "s": 18.49,
+          "e": 18.59,
+          "c": 0.995674
+        },
+        {
+          "w": "dance",
+          "s": 18.59,
+          "e": 19.05,
+          "c": 0.998761
+        },
+        {
+          "w": "instructor.",
+          "s": 19.05,
+          "e": 20.26,
+          "c": 0.998266
+        },
+        {
+          "w": "Early",
+          "s": 20.44,
+          "e": 20.5,
+          "c": 0.997409
+        },
+        {
+          "w": "on,",
+          "s": 20.5,
+          "e": 20.68,
+          "c": 0.826018
+        },
+        {
+          "w": "Mrs.",
+          "s": 20.68,
+          "e": 20.93,
+          "c": 0.978129
+        },
+        {
+          "w": "Ford",
+          "s": 21.02,
+          "e": 21.15,
+          "c": 0.995347
+        },
+        {
+          "w": "showed",
+          "s": 21.15,
+          "e": 21.44,
+          "c": 0.994687
+        },
+        {
+          "w": "her",
+          "s": 21.44,
+          "e": 21.55,
+          "c": 0.997358
+        },
+        {
+          "w": "heart",
+          "s": 21.58,
+          "e": 21.86,
+          "c": 0.996968
+        },
+        {
+          "w": "for",
+          "s": 21.86,
+          "e": 22.06,
+          "c": 0.920548
+        },
+        {
+          "w": "the",
+          "s": 22.06,
+          "e": 22.22,
+          "c": 0.979654
+        },
+        {
+          "w": "disadvantage",
+          "s": 22.22,
+          "e": 23.06,
+          "c": 0.911371
+        },
+        {
+          "w": "in",
+          "s": 23.06,
+          "e": 23.23,
+          "c": 0.805679
+        },
+        {
+          "w": "our",
+          "s": 23.45,
+          "e": 23.48,
+          "c": 0.995104
+        },
+        {
+          "w": "community,",
+          "s": 23.48,
+          "e": 24.26,
+          "c": 0.843932
+        },
+        {
+          "w": "teaching",
+          "s": 24.44,
+          "e": 24.68,
+          "c": 0.999205
+        },
+        {
+          "w": "dance",
+          "s": 24.68,
+          "e": 24.93,
+          "c": 0.993047
+        },
+        {
+          "w": "to",
+          "s": 25.02,
+          "e": 25.04,
+          "c": 0.986022
+        },
+        {
+          "w": "children",
+          "s": 25.04,
+          "e": 25.45,
+          "c": 0.996626
+        },
+        {
+          "w": "who",
+          "s": 25.53,
+          "e": 25.61,
+          "c": 0.983363
+        },
+        {
+          "w": "are",
+          "s": 25.61,
+          "e": 25.76,
+          "c": 0.708284
+        },
+        {
+          "w": "physically",
+          "s": 25.76,
+          "e": 26.06,
+          "c": 0.995078
+        },
+        {
+          "w": "disabled,",
+          "s": 26.28,
+          "e": 26.86,
+          "c": 0.991508
+        },
+        {
+          "w": "deaf,",
+          "s": 26.86,
+          "e": 27.35,
+          "c": 0.537087
+        },
+        {
+          "w": "and",
+          "s": 27.46,
+          "e": 27.67,
+          "c": 0.993739
+        },
+        {
+          "w": "blind.",
+          "s": 27.67,
+          "e": 28.26,
+          "c": 0.984878
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 28.41,
+      "end_s": 28.47,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "A",
+      "words": [
+        {
+          "w": "A",
+          "s": 28.41,
+          "e": 28.47,
+          "c": 0.978546
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 28.9,
+      "end_s": 39.9,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "mutual friend introduced Mrs. Ford to Jerry in 1947. A successful lawyer and former star of the University of Michigan's football team, the future president was not quite in public life when they met.",
+      "words": [
+        {
+          "w": "mutual",
+          "s": 28.9,
+          "e": 28.91,
+          "c": 0.997027
+        },
+        {
+          "w": "friend",
+          "s": 28.91,
+          "e": 29.28,
+          "c": 0.997841
+        },
+        {
+          "w": "introduced",
+          "s": 29.41,
+          "e": 30.09,
+          "c": 0.973771
+        },
+        {
+          "w": "Mrs.",
+          "s": 30.09,
+          "e": 30.53,
+          "c": 0.980898
+        },
+        {
+          "w": "Ford",
+          "s": 30.53,
+          "e": 30.82,
+          "c": 0.987725
+        },
+        {
+          "w": "to",
+          "s": 30.82,
+          "e": 30.96,
+          "c": 0.984296
+        },
+        {
+          "w": "Jerry",
+          "s": 30.96,
+          "e": 31.32,
+          "c": 0.841531
+        },
+        {
+          "w": "in",
+          "s": 31.37,
+          "e": 31.47,
+          "c": 0.990936
+        },
+        {
+          "w": "1947.",
+          "s": 31.47,
+          "e": 32.66,
+          "c": 0.942908
+        },
+        {
+          "w": "A",
+          "s": 32.67,
+          "e": 32.72,
+          "c": 0.991588
+        },
+        {
+          "w": "successful",
+          "s": 33.16,
+          "e": 33.34,
+          "c": 0.998551
+        },
+        {
+          "w": "lawyer",
+          "s": 33.34,
+          "e": 33.71,
+          "c": 0.997301
+        },
+        {
+          "w": "and",
+          "s": 33.71,
+          "e": 33.89,
+          "c": 0.988257
+        },
+        {
+          "w": "former",
+          "s": 33.89,
+          "e": 34.26,
+          "c": 0.97933
+        },
+        {
+          "w": "star",
+          "s": 34.26,
+          "e": 34.54,
+          "c": 0.986912
+        },
+        {
+          "w": "of",
+          "s": 34.54,
+          "e": 34.7,
+          "c": 0.867479
+        },
+        {
+          "w": "the",
+          "s": 34.7,
+          "e": 34.76,
+          "c": 0.944316
+        },
+        {
+          "w": "University",
+          "s": 34.76,
+          "e": 35.16,
+          "c": 0.949119
+        },
+        {
+          "w": "of",
+          "s": 35.16,
+          "e": 35.3,
+          "c": 0.924203
+        },
+        {
+          "w": "Michigan's",
+          "s": 35.3,
+          "e": 35.78,
+          "c": 0.955826
+        },
+        {
+          "w": "football",
+          "s": 35.88,
+          "e": 36.26,
+          "c": 0.988459
+        },
+        {
+          "w": "team,",
+          "s": 36.26,
+          "e": 36.49,
+          "c": 0.961531
+        },
+        {
+          "w": "the",
+          "s": 36.64,
+          "e": 36.78,
+          "c": 0.995475
+        },
+        {
+          "w": "future",
+          "s": 37.1,
+          "e": 37.13,
+          "c": 0.997685
+        },
+        {
+          "w": "president",
+          "s": 37.13,
+          "e": 37.66,
+          "c": 0.855446
+        },
+        {
+          "w": "was",
+          "s": 37.66,
+          "e": 37.84,
+          "c": 0.993784
+        },
+        {
+          "w": "not",
+          "s": 37.84,
+          "e": 38.02,
+          "c": 0.998852
+        },
+        {
+          "w": "quite",
+          "s": 38.02,
+          "e": 38.31,
+          "c": 0.993178
+        },
+        {
+          "w": "in",
+          "s": 38.31,
+          "e": 38.43,
+          "c": 0.997617
+        },
+        {
+          "w": "public",
+          "s": 38.43,
+          "e": 38.74,
+          "c": 0.998233
+        },
+        {
+          "w": "life",
+          "s": 38.82,
+          "e": 39.02,
+          "c": 0.996955
+        },
+        {
+          "w": "when",
+          "s": 39.02,
+          "e": 39.26,
+          "c": 0.996892
+        },
+        {
+          "w": "they",
+          "s": 39.26,
+          "e": 39.5,
+          "c": 0.99855
+        },
+        {
+          "w": "met.",
+          "s": 39.5,
+          "e": 39.9,
+          "c": 0.995644
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 39.94,
+      "end_s": 40.21,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "No one",
+      "words": [
+        {
+          "w": "No",
+          "s": 39.94,
+          "e": 40.02,
+          "c": 0.997611
+        },
+        {
+          "w": "one",
+          "s": 40.02,
+          "e": 40.21,
+          "c": 0.993854
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 40.4,
+      "end_s": 47.11,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "could have foreseen the set of circumstances that thrust the Fords into the White House. But Mrs. Ford took the challenge with",
+      "words": [
+        {
+          "w": "could",
+          "s": 40.4,
+          "e": 40.52,
+          "c": 0.997891
+        },
+        {
+          "w": "have",
+          "s": 40.52,
+          "e": 40.77,
+          "c": 0.973084
+        },
+        {
+          "w": "foreseen",
+          "s": 40.77,
+          "e": 41.22,
+          "c": 0.980857
+        },
+        {
+          "w": "the",
+          "s": 41.26,
+          "e": 41.46,
+          "c": 0.992407
+        },
+        {
+          "w": "set",
+          "s": 41.46,
+          "e": 41.65,
+          "c": 0.998262
+        },
+        {
+          "w": "of",
+          "s": 41.65,
+          "e": 41.8,
+          "c": 0.997516
+        },
+        {
+          "w": "circumstances",
+          "s": 41.8,
+          "e": 42.4,
+          "c": 0.982251
+        },
+        {
+          "w": "that",
+          "s": 42.4,
+          "e": 42.61,
+          "c": 0.898143
+        },
+        {
+          "w": "thrust",
+          "s": 42.61,
+          "e": 42.94,
+          "c": 0.992329
+        },
+        {
+          "w": "the",
+          "s": 42.94,
+          "e": 43.02,
+          "c": 0.943932
+        },
+        {
+          "w": "Fords",
+          "s": 43.12,
+          "e": 43.4,
+          "c": 0.949627
+        },
+        {
+          "w": "into",
+          "s": 43.4,
+          "e": 43.67,
+          "c": 0.970249
+        },
+        {
+          "w": "the",
+          "s": 43.67,
+          "e": 43.73,
+          "c": 0.990195
+        },
+        {
+          "w": "White",
+          "s": 43.92,
+          "e": 44.3,
+          "c": 0.982501
+        },
+        {
+          "w": "House.",
+          "s": 44.5,
+          "e": 44.7,
+          "c": 0.639556
+        },
+        {
+          "w": "But",
+          "s": 44.74,
+          "e": 44.92,
+          "c": 0.992882
+        },
+        {
+          "w": "Mrs.",
+          "s": 45.14,
+          "e": 45.36,
+          "c": 0.984082
+        },
+        {
+          "w": "Ford",
+          "s": 45.36,
+          "e": 45.58,
+          "c": 0.997927
+        },
+        {
+          "w": "took",
+          "s": 45.71,
+          "e": 45.94,
+          "c": 0.99735
+        },
+        {
+          "w": "the",
+          "s": 45.94,
+          "e": 46.16,
+          "c": 0.992598
+        },
+        {
+          "w": "challenge",
+          "s": 46.16,
+          "e": 46.82,
+          "c": 0.996322
+        },
+        {
+          "w": "with",
+          "s": 46.82,
+          "e": 47.11,
+          "c": 0.989802
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 47.11,
+      "end_s": 47.82,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "gusto. And as",
+      "words": [
+        {
+          "w": "gusto.",
+          "s": 47.11,
+          "e": 47.5,
+          "c": 0.735216
+        },
+        {
+          "w": "And",
+          "s": 47.54,
+          "e": 47.69,
+          "c": 0.955219
+        },
+        {
+          "w": "as",
+          "s": 47.69,
+          "e": 47.82,
+          "c": 0.954067
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 48,
+      "end_s": 53.94,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "First Lady, she revealed many of her struggles to the public so that she could help others with similar difficulties.",
+      "words": [
+        {
+          "w": "First",
+          "s": 48,
+          "e": 48.15,
+          "c": 0.750053
+        },
+        {
+          "w": "Lady,",
+          "s": 48.15,
+          "e": 48.54,
+          "c": 0.846479
+        },
+        {
+          "w": "she",
+          "s": 48.54,
+          "e": 48.73,
+          "c": 0.993839
+        },
+        {
+          "w": "revealed",
+          "s": 48.73,
+          "e": 49.25,
+          "c": 0.997596
+        },
+        {
+          "w": "many",
+          "s": 49.25,
+          "e": 49.4,
+          "c": 0.997744
+        },
+        {
+          "w": "of",
+          "s": 49.51,
+          "e": 49.64,
+          "c": 0.998051
+        },
+        {
+          "w": "her",
+          "s": 49.72,
+          "e": 49.73,
+          "c": 0.992693
+        },
+        {
+          "w": "struggles",
+          "s": 49.84,
+          "e": 50.42,
+          "c": 0.99748
+        },
+        {
+          "w": "to",
+          "s": 50.42,
+          "e": 50.55,
+          "c": 0.997706
+        },
+        {
+          "w": "the",
+          "s": 50.55,
+          "e": 50.74,
+          "c": 0.998418
+        },
+        {
+          "w": "public",
+          "s": 50.74,
+          "e": 51.2,
+          "c": 0.998477
+        },
+        {
+          "w": "so",
+          "s": 51.2,
+          "e": 51.32,
+          "c": 0.158814
+        },
+        {
+          "w": "that",
+          "s": 51.32,
+          "e": 51.7,
+          "c": 0.963968
+        },
+        {
+          "w": "she",
+          "s": 51.71,
+          "e": 51.87,
+          "c": 0.98907
+        },
+        {
+          "w": "could",
+          "s": 52.1,
+          "e": 52.14,
+          "c": 0.977571
+        },
+        {
+          "w": "help",
+          "s": 52.14,
+          "e": 52.35,
+          "c": 0.989213
+        },
+        {
+          "w": "others",
+          "s": 52.35,
+          "e": 52.67,
+          "c": 0.992896
+        },
+        {
+          "w": "with",
+          "s": 52.67,
+          "e": 52.88,
+          "c": 0.993945
+        },
+        {
+          "w": "similar",
+          "s": 52.88,
+          "e": 53.25,
+          "c": 0.997078
+        },
+        {
+          "w": "difficulties.",
+          "s": 53.25,
+          "e": 53.94,
+          "c": 0.754684
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 53.92,
+      "end_s": 59.3,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "In the 1970s, she publicly spoke about her battle with breast cancer, which was not often discussed during that time.",
+      "words": [
+        {
+          "w": "In",
+          "s": 53.92,
+          "e": 54.05,
+          "c": 0.958501
+        },
+        {
+          "w": "the",
+          "s": 54.21,
+          "e": 54.24,
+          "c": 0.997419
+        },
+        {
+          "w": "1970s,",
+          "s": 54.24,
+          "e": 55.22,
+          "c": 0.818407
+        },
+        {
+          "w": "she",
+          "s": 55.22,
+          "e": 55.32,
+          "c": 0.977898
+        },
+        {
+          "w": "publicly",
+          "s": 55.39,
+          "e": 55.77,
+          "c": 0.991573
+        },
+        {
+          "w": "spoke",
+          "s": 55.78,
+          "e": 56.01,
+          "c": 0.997231
+        },
+        {
+          "w": "about",
+          "s": 56.09,
+          "e": 56.25,
+          "c": 0.956295
+        },
+        {
+          "w": "her",
+          "s": 56.27,
+          "e": 56.34,
+          "c": 0.976774
+        },
+        {
+          "w": "battle",
+          "s": 56.41,
+          "e": 56.62,
+          "c": 0.992681
+        },
+        {
+          "w": "with",
+          "s": 56.62,
+          "e": 56.71,
+          "c": 0.925445
+        },
+        {
+          "w": "breast",
+          "s": 56.82,
+          "e": 56.97,
+          "c": 0.987198
+        },
+        {
+          "w": "cancer,",
+          "s": 56.99,
+          "e": 57.38,
+          "c": 0.961256
+        },
+        {
+          "w": "which",
+          "s": 57.6,
+          "e": 57.6,
+          "c": 0.999977
+        },
+        {
+          "w": "was",
+          "s": 57.67,
+          "e": 57.73,
+          "c": 0.997874
+        },
+        {
+          "w": "not",
+          "s": 57.73,
+          "e": 57.86,
+          "c": 0.999973
+        },
+        {
+          "w": "often",
+          "s": 57.86,
+          "e": 57.99,
+          "c": 0.99992
+        },
+        {
+          "w": "discussed",
+          "s": 58.08,
+          "e": 58.49,
+          "c": 0.999947
+        },
+        {
+          "w": "during",
+          "s": 58.49,
+          "e": 58.76,
+          "c": 0.999357
+        },
+        {
+          "w": "that",
+          "s": 58.76,
+          "e": 58.94,
+          "c": 0.999941
+        },
+        {
+          "w": "time.",
+          "s": 58.94,
+          "e": 59.3,
+          "c": 0.998397
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 59.58,
+      "end_s": 60.05,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And in the",
+      "words": [
+        {
+          "w": "And",
+          "s": 59.58,
+          "e": 59.58,
+          "c": 0.968276
+        },
+        {
+          "w": "in",
+          "s": 59.6,
+          "e": 59.77,
+          "c": 0.999826
+        },
+        {
+          "w": "the",
+          "s": 59.77,
+          "e": 60.05,
+          "c": 0.999994
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 60.05,
+      "end_s": 77.4,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "1980s, she took the lessons she learned battling alcoholism to found a number of foundations and institutes dedicated to helping others with the condition. Betty Ford honored West Michigan with her public service, humor, and grace. We are proud to have called such a fine citizen one of our own. I yield back.",
+      "words": [
+        {
+          "w": "1980s,",
+          "s": 60.05,
+          "e": 61.5,
+          "c": 0.999458
+        },
+        {
+          "w": "she",
+          "s": 61.5,
+          "e": 61.66,
+          "c": 0.978148
+        },
+        {
+          "w": "took",
+          "s": 61.66,
+          "e": 61.88,
+          "c": 0.999907
+        },
+        {
+          "w": "the",
+          "s": 61.88,
+          "e": 62.04,
+          "c": 0.999823
+        },
+        {
+          "w": "lessons",
+          "s": 62.04,
+          "e": 62.34,
+          "c": 0.89155
+        },
+        {
+          "w": "she",
+          "s": 62.42,
+          "e": 62.58,
+          "c": 0.976118
+        },
+        {
+          "w": "learned",
+          "s": 62.58,
+          "e": 62.83,
+          "c": 0.999703
+        },
+        {
+          "w": "battling",
+          "s": 62.98,
+          "e": 63.4,
+          "c": 0.995589
+        },
+        {
+          "w": "alcoholism",
+          "s": 63.4,
+          "e": 63.99,
+          "c": 0.997518
+        },
+        {
+          "w": "to",
+          "s": 64,
+          "e": 64.1,
+          "c": 0.998548
+        },
+        {
+          "w": "found",
+          "s": 64.29,
+          "e": 64.37,
+          "c": 0.980133
+        },
+        {
+          "w": "a",
+          "s": 64.37,
+          "e": 64.42,
+          "c": 0.994651
+        },
+        {
+          "w": "number",
+          "s": 64.42,
+          "e": 64.74,
+          "c": 0.99996
+        },
+        {
+          "w": "of",
+          "s": 64.74,
+          "e": 64.82,
+          "c": 0.999994
+        },
+        {
+          "w": "foundations",
+          "s": 64.91,
+          "e": 65.4,
+          "c": 0.999813
+        },
+        {
+          "w": "and",
+          "s": 65.47,
+          "e": 65.58,
+          "c": 0.999804
+        },
+        {
+          "w": "institutes",
+          "s": 65.61,
+          "e": 66.09,
+          "c": 0.995044
+        },
+        {
+          "w": "dedicated",
+          "s": 66.45,
+          "e": 66.62,
+          "c": 0.999817
+        },
+        {
+          "w": "to",
+          "s": 66.62,
+          "e": 66.72,
+          "c": 0.999996
+        },
+        {
+          "w": "helping",
+          "s": 66.72,
+          "e": 67.08,
+          "c": 0.999935
+        },
+        {
+          "w": "others",
+          "s": 67.08,
+          "e": 67.38,
+          "c": 0.999937
+        },
+        {
+          "w": "with",
+          "s": 67.38,
+          "e": 67.56,
+          "c": 0.999983
+        },
+        {
+          "w": "the",
+          "s": 67.63,
+          "e": 67.73,
+          "c": 0.999546
+        },
+        {
+          "w": "condition.",
+          "s": 67.73,
+          "e": 68.36,
+          "c": 0.999863
+        },
+        {
+          "w": "Betty",
+          "s": 68.67,
+          "e": 68.78,
+          "c": 0.9972
+        },
+        {
+          "w": "Ford",
+          "s": 68.78,
+          "e": 69.1,
+          "c": 0.999354
+        },
+        {
+          "w": "honored",
+          "s": 69.1,
+          "e": 69.66,
+          "c": 0.997712
+        },
+        {
+          "w": "West",
+          "s": 69.66,
+          "e": 69.97,
+          "c": 0.994052
+        },
+        {
+          "w": "Michigan",
+          "s": 69.99,
+          "e": 70.66,
+          "c": 0.999582
+        },
+        {
+          "w": "with",
+          "s": 70.66,
+          "e": 70.8,
+          "c": 0.94067
+        },
+        {
+          "w": "her",
+          "s": 70.87,
+          "e": 70.99,
+          "c": 0.999565
+        },
+        {
+          "w": "public",
+          "s": 71.01,
+          "e": 71.31,
+          "c": 0.999552
+        },
+        {
+          "w": "service,",
+          "s": 71.31,
+          "e": 71.78,
+          "c": 0.999058
+        },
+        {
+          "w": "humor,",
+          "s": 71.78,
+          "e": 72.22,
+          "c": 0.939806
+        },
+        {
+          "w": "and",
+          "s": 72.22,
+          "e": 72.41,
+          "c": 0.99847
+        },
+        {
+          "w": "grace.",
+          "s": 72.41,
+          "e": 72.93,
+          "c": 0.999886
+        },
+        {
+          "w": "We",
+          "s": 72.94,
+          "e": 73.08,
+          "c": 0.999935
+        },
+        {
+          "w": "are",
+          "s": 73.23,
+          "e": 73.29,
+          "c": 0.999104
+        },
+        {
+          "w": "proud",
+          "s": 73.29,
+          "e": 73.61,
+          "c": 0.999899
+        },
+        {
+          "w": "to",
+          "s": 73.64,
+          "e": 73.76,
+          "c": 0.999981
+        },
+        {
+          "w": "have",
+          "s": 73.85,
+          "e": 74.04,
+          "c": 0.999792
+        },
+        {
+          "w": "called",
+          "s": 74.04,
+          "e": 74.45,
+          "c": 0.999886
+        },
+        {
+          "w": "such",
+          "s": 74.45,
+          "e": 74.72,
+          "c": 0.99971
+        },
+        {
+          "w": "a",
+          "s": 74.72,
+          "e": 74.79,
+          "c": 0.999975
+        },
+        {
+          "w": "fine",
+          "s": 74.79,
+          "e": 75.03,
+          "c": 0.999792
+        },
+        {
+          "w": "citizen",
+          "s": 75.11,
+          "e": 75.54,
+          "c": 0.999966
+        },
+        {
+          "w": "one",
+          "s": 75.54,
+          "e": 75.73,
+          "c": 0.970515
+        },
+        {
+          "w": "of",
+          "s": 75.84,
+          "e": 75.89,
+          "c": 0.999971
+        },
+        {
+          "w": "our",
+          "s": 75.89,
+          "e": 76.06,
+          "c": 0.999897
+        },
+        {
+          "w": "own.",
+          "s": 76.1,
+          "e": 76.47,
+          "c": 0.999962
+        },
+        {
+          "w": "I",
+          "s": 76.58,
+          "e": 76.64,
+          "c": 0.989336
+        },
+        {
+          "w": "yield",
+          "s": 76.87,
+          "e": 76.97,
+          "c": 0.999411
+        },
+        {
+          "w": "back.",
+          "s": 76.97,
+          "e": 77.4,
+          "c": 0.999897
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 77.75,
+      "end_s": 78.82,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The gentleman",
+      "words": [
+        {
+          "w": "The",
+          "s": 77.75,
+          "e": 77.8,
+          "c": 0.989134
+        },
+        {
+          "w": "gentleman",
+          "s": 77.8,
+          "e": 78.82,
+          "c": 0.993818
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 78.82,
+      "end_s": 80.25,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "yields back.",
+      "words": [
+        {
+          "w": "yields",
+          "s": 78.82,
+          "e": 79.5,
+          "c": 0.999609
+        },
+        {
+          "w": "back.",
+          "s": 79.5,
+          "e": 80.25,
+          "c": 0.920735
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Does Anyone Remember the Old ”Read for All” Tapes?"
+    Description: >-
+      A satirical audio piece styled as cassette 4 of an adult reading
+      curriculum, working through the alphabet with mock phonics examples.
+      The entries are loaded with allusions to conspiracy-theory method and
+      to themes from the speaker's own public disputes: 'C is for cease and
+      desist', 'D is for delegitimatize', 'F is for French - the French
+      woman is a female', 'Q is for questions - just asking questions is a
+      clever way to make implications', 'R is for red yarn', 'T is for thumb
+      - the thumbtacks hold the red yarn in place', 'S is for sleep pictures
+      - while you sleep, mind movies give you secrets', 'U is for
+      unsubstantiated - an unsubstantiated claim can be solved by a hunch,
+      vibe, or instinct', and 'V is for victim - it is never too late to
+      play the victim'. One entry, 'J is for juicy', puns on a stereotype
+      about Jewish people, and another refers to Ye having apologised. The
+      piece is comedic in form and makes no assertion in a straightforward
+      voice; the audio itself does not settle whether it is self-parody or
+      mockery of the speaker's critics.
+    URL: "https://www.youtube.com/watch?v=GJNLADqu2fw"
+    Video_ID: "GJNLADqu2fw"
+    Show: "Candace Owens Podcast"
+    Runtime: "00:04:03"
+    Language: "en"
+
+  Media:
+    File: "GJNLADqu2fw.m4a"
+    SHA256: "cdd887361d9f3c794bc0ce9a5fe726a1945c0fd9d29b8b5d732c5941f374d526"
+    Bytes: 3938210
+    Duration_Seconds: 243
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=GJNLADqu2fw"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "GJNLADqu2fw.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/candace_owens_us_pres/GJNLADqu2fw/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCkY4fdKOFk3Kiq7g5LLKYLw"
+    Uploader_ID: "@CandaceOwensPodcast"
+    View_Count: 21851
+    Like_Count: 718
+    Comment_Count: 859
+    Availability: "public"
+    Published_At: "2026-02-04T14:00:23+00:00"
+    Captured_At: "2026-09-08T17:48:51-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "8.3%"
+      Turns: 1
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "45.6%"
+      Turns: 11
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "43.9%"
+      Turns: 12
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "2.3%"
+      Turns: 1
+
+  # Topics — what the video is ACTUALLY about, read from the transcript,
+  # not from what this person is on the roster for.
+  Topics:
+    - Satire and comedy sketch
+    - Mock phonics and reading tape
+    - Conspiracy theory tropes
+    - Allusions to an ongoing public dispute
+
+  Source:
+    Canonical_ID: "b1deffaa9153d467"
+    Transcribed: "2026-09-08T17:53:21.509547-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 388
+    Segments: 45
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T17:48:52.277173-07:00"
+    Transcription_Finished: "2026-09-08T17:53:21.509547-07:00"
+    Recorded: "2026-02-04"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "GJNLADqu2fw.ctm"
+    Fountain: "GJNLADqu2fw.fountain"
+    Diarization_RTTM: "GJNLADqu2fw.rttm"
+    As_Broadcast_Script: "GJNLADqu2fw.script.txt"
+    Segments_JSON: "GJNLADqu2fw.segments.json"
+    Segments_JSONL: "GJNLADqu2fw.segments.jsonl"
+    Subtitles_SRT: "GJNLADqu2fw.srt"
+    Plain_Text: "GJNLADqu2fw.transcription"
+    Subtitles_VTT: "GJNLADqu2fw.vtt"
+    Transcript_SHA256: "c07c8b026519b3ac73760eb04a637b1086d33e5ed3cf292f3c4e297a2506b089"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "candace_owens_us_pres"
+    video_uid: "candace_owens_us_pres::GJNLADqu2fw"
+    video_key: "GJNLADqu2fw"
+    youtube_id: "GJNLADqu2fw"
+    priority: 500
+    ceiling: 1000
+    raw_score: 500
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 171
+    seat_rank: 300
+    challenger: true
+    round: 6
+    status: "open"
+    demand_generated_at: "2026-09-09T00:57:14.561Z"
+    demand_run_id: "job_1788915433773_25"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=GJNLADqu2fw"
+    source_ref: "GJNLADqu2fw"

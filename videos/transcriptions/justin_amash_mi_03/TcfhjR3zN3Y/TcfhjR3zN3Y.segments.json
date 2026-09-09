@@ -1,0 +1,1904 @@
+{
+  "schema_version": 2,
+  "canonical_id": "7a5169beec6e499d",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 96.71,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-09T00:52:11.227Z",
+  "text_sha256": "0b3416c152f01938fc4af6d589ab0101424accdc13acea0ec5dd45dfa04019f5",
+  "segments_sha256": "0fd1138f449658376513abdfd11920901612d9e28ded4099b6264fdf39facbdf",
+  "words_sha256": "e1cced2dc0f35e636d555e8dbf31e0ac6428f32b9d88f817cf1b41887e70b785",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 3,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 8,
+    "clusters": 3,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 7.1
+      },
+      "clean_s": 7.1,
+      "speaking_s": 7.1,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 84.6
+      },
+      "clean_s": 84.6,
+      "speaking_s": 84.6,
+      "first_s": 8.03
+    },
+    {
+      "id": "SPEAKER_02",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.8
+      },
+      "clean_s": 0.8,
+      "speaking_s": 0.8,
+      "first_s": 96.03
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.11,
+      "end_s": 0.11,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 7.44,
+      "end_s": 7.8,
+      "segment_i": 2,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 29.95,
+      "end_s": 30.21,
+      "segment_i": 4,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 36.05,
+      "end_s": 36.46,
+      "segment_i": 6,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 66.24,
+      "end_s": 66.64,
+      "segment_i": 9,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 82.26,
+      "end_s": 82.88,
+      "segment_i": 11,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 95.97,
+      "end_s": 96.02,
+      "segment_i": 13,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.11,
+      "end_s": 0.12,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I",
+      "words": [
+        {
+          "w": "I",
+          "s": 0.11,
+          "e": 0.11,
+          "c": 0.500255
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.44,
+      "end_s": 7.33,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "now my honor to recognize for one minute the gentleman from Michigan, Mr. Amash. The gentleman from Michigan is recognized for one minute. I'd",
+      "words": [
+        {
+          "w": "now",
+          "s": 0.44,
+          "e": 0.45,
+          "c": 0.528261
+        },
+        {
+          "w": "my",
+          "s": 0.45,
+          "e": 0.68,
+          "c": 0.600351
+        },
+        {
+          "w": "honor",
+          "s": 0.68,
+          "e": 1.25,
+          "c": 0.957739
+        },
+        {
+          "w": "to",
+          "s": 1.25,
+          "e": 1.5,
+          "c": 0.962554
+        },
+        {
+          "w": "recognize",
+          "s": 1.5,
+          "e": 2.13,
+          "c": 0.960554
+        },
+        {
+          "w": "for",
+          "s": 2.26,
+          "e": 2.3,
+          "c": 0.926971
+        },
+        {
+          "w": "one",
+          "s": 2.3,
+          "e": 2.5,
+          "c": 0.946041
+        },
+        {
+          "w": "minute",
+          "s": 2.5,
+          "e": 2.78,
+          "c": 0.966641
+        },
+        {
+          "w": "the",
+          "s": 2.9,
+          "e": 2.94,
+          "c": 0.701553
+        },
+        {
+          "w": "gentleman",
+          "s": 2.94,
+          "e": 3.34,
+          "c": 0.84402
+        },
+        {
+          "w": "from",
+          "s": 3.34,
+          "e": 3.54,
+          "c": 0.893664
+        },
+        {
+          "w": "Michigan,",
+          "s": 3.54,
+          "e": 4.4,
+          "c": 0.664072
+        },
+        {
+          "w": "Mr.",
+          "s": 4.4,
+          "e": 4.68,
+          "c": 0.909123
+        },
+        {
+          "w": "Amash.",
+          "s": 4.68,
+          "e": 5,
+          "c": 0.746463
+        },
+        {
+          "w": "The",
+          "s": 5.11,
+          "e": 5.11,
+          "c": 0.689388
+        },
+        {
+          "w": "gentleman",
+          "s": 5.44,
+          "e": 5.46,
+          "c": 0.993082
+        },
+        {
+          "w": "from",
+          "s": 5.46,
+          "e": 5.6,
+          "c": 0.979539
+        },
+        {
+          "w": "Michigan",
+          "s": 5.62,
+          "e": 5.92,
+          "c": 0.998279
+        },
+        {
+          "w": "is",
+          "s": 5.92,
+          "e": 5.99,
+          "c": 0.96739
+        },
+        {
+          "w": "recognized",
+          "s": 5.99,
+          "e": 6.35,
+          "c": 0.985851
+        },
+        {
+          "w": "for",
+          "s": 6.37,
+          "e": 6.49,
+          "c": 0.98647
+        },
+        {
+          "w": "one",
+          "s": 6.49,
+          "e": 6.6,
+          "c": 0.987338
+        },
+        {
+          "w": "minute.",
+          "s": 6.6,
+          "e": 7,
+          "c": 0.988122
+        },
+        {
+          "w": "I'd",
+          "s": 7.11,
+          "e": 7.33,
+          "c": 0.80467
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 7.44,
+      "end_s": 7.8,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "like",
+      "words": [
+        {
+          "w": "like",
+          "s": 7.44,
+          "e": 7.8,
+          "c": 0.99763
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 7.8,
+      "end_s": 29.96,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to thank Chairman Issa and thank and congratulate Dr. Ron Paul for his tireless work on this issue for many decades. Mr. Speaker, what is the Federal Reserve? I think even many members of this body couldn't answer that question. Yet Congress has delegated its constitutional authority to this committee of bankers and presidential appointees.",
+      "words": [
+        {
+          "w": "to",
+          "s": 7.8,
+          "e": 8.03,
+          "c": 0.997965
+        },
+        {
+          "w": "thank",
+          "s": 8.03,
+          "e": 8.59,
+          "c": 0.996533
+        },
+        {
+          "w": "Chairman",
+          "s": 8.59,
+          "e": 9.52,
+          "c": 0.899946
+        },
+        {
+          "w": "Issa",
+          "s": 9.52,
+          "e": 9.99,
+          "c": 0.7303
+        },
+        {
+          "w": "and",
+          "s": 10.04,
+          "e": 10.13,
+          "c": 0.817554
+        },
+        {
+          "w": "thank",
+          "s": 10.13,
+          "e": 10.34,
+          "c": 0.876519
+        },
+        {
+          "w": "and",
+          "s": 10.34,
+          "e": 10.41,
+          "c": 0.95977
+        },
+        {
+          "w": "congratulate",
+          "s": 10.5,
+          "e": 11,
+          "c": 0.982302
+        },
+        {
+          "w": "Dr.",
+          "s": 11,
+          "e": 11.4,
+          "c": 0.952524
+        },
+        {
+          "w": "Ron",
+          "s": 11.4,
+          "e": 11.65,
+          "c": 0.98395
+        },
+        {
+          "w": "Paul",
+          "s": 11.65,
+          "e": 11.98,
+          "c": 0.981138
+        },
+        {
+          "w": "for",
+          "s": 12.22,
+          "e": 13,
+          "c": 0.645538
+        },
+        {
+          "w": "his",
+          "s": 13,
+          "e": 13.23,
+          "c": 0.951439
+        },
+        {
+          "w": "tireless",
+          "s": 13.27,
+          "e": 14,
+          "c": 0.928744
+        },
+        {
+          "w": "work",
+          "s": 14,
+          "e": 14.1,
+          "c": 0.906108
+        },
+        {
+          "w": "on",
+          "s": 14.24,
+          "e": 14.39,
+          "c": 0.955423
+        },
+        {
+          "w": "this",
+          "s": 14.39,
+          "e": 14.65,
+          "c": 0.985879
+        },
+        {
+          "w": "issue",
+          "s": 15,
+          "e": 15,
+          "c": 0.994033
+        },
+        {
+          "w": "for",
+          "s": 15.07,
+          "e": 15.17,
+          "c": 0.970486
+        },
+        {
+          "w": "many",
+          "s": 15.17,
+          "e": 15.36,
+          "c": 0.996907
+        },
+        {
+          "w": "decades.",
+          "s": 15.46,
+          "e": 15.89,
+          "c": 0.993583
+        },
+        {
+          "w": "Mr.",
+          "s": 16.12,
+          "e": 16.15,
+          "c": 0.967368
+        },
+        {
+          "w": "Speaker,",
+          "s": 16.44,
+          "e": 17.03,
+          "c": 0.924858
+        },
+        {
+          "w": "what",
+          "s": 17.03,
+          "e": 17.33,
+          "c": 0.990331
+        },
+        {
+          "w": "is",
+          "s": 17.33,
+          "e": 17.48,
+          "c": 0.996073
+        },
+        {
+          "w": "the",
+          "s": 17.48,
+          "e": 17.69,
+          "c": 0.991081
+        },
+        {
+          "w": "Federal",
+          "s": 17.7,
+          "e": 18.13,
+          "c": 0.974291
+        },
+        {
+          "w": "Reserve?",
+          "s": 18.26,
+          "e": 18.99,
+          "c": 0.989321
+        },
+        {
+          "w": "I",
+          "s": 19.04,
+          "e": 19.06,
+          "c": 0.65547
+        },
+        {
+          "w": "think",
+          "s": 19.06,
+          "e": 19.38,
+          "c": 0.998281
+        },
+        {
+          "w": "even",
+          "s": 19.38,
+          "e": 19.63,
+          "c": 0.961742
+        },
+        {
+          "w": "many",
+          "s": 19.63,
+          "e": 19.71,
+          "c": 0.975828
+        },
+        {
+          "w": "members",
+          "s": 19.9,
+          "e": 20.33,
+          "c": 0.987754
+        },
+        {
+          "w": "of",
+          "s": 20.33,
+          "e": 20.45,
+          "c": 0.992305
+        },
+        {
+          "w": "this",
+          "s": 20.45,
+          "e": 20.7,
+          "c": 0.979753
+        },
+        {
+          "w": "body",
+          "s": 20.7,
+          "e": 20.98,
+          "c": 0.989481
+        },
+        {
+          "w": "couldn't",
+          "s": 21.1,
+          "e": 21.61,
+          "c": 0.954748
+        },
+        {
+          "w": "answer",
+          "s": 21.61,
+          "e": 22.06,
+          "c": 0.998083
+        },
+        {
+          "w": "that",
+          "s": 22.12,
+          "e": 22.37,
+          "c": 0.981332
+        },
+        {
+          "w": "question.",
+          "s": 22.37,
+          "e": 23,
+          "c": 0.792176
+        },
+        {
+          "w": "Yet",
+          "s": 23.12,
+          "e": 23.2,
+          "c": 0.926505
+        },
+        {
+          "w": "Congress",
+          "s": 23.44,
+          "e": 23.75,
+          "c": 0.586612
+        },
+        {
+          "w": "has",
+          "s": 23.75,
+          "e": 23.95,
+          "c": 0.985731
+        },
+        {
+          "w": "delegated",
+          "s": 23.95,
+          "e": 24.56,
+          "c": 0.997267
+        },
+        {
+          "w": "its",
+          "s": 24.56,
+          "e": 24.76,
+          "c": 0.976908
+        },
+        {
+          "w": "constitutional",
+          "s": 24.76,
+          "e": 25.72,
+          "c": 0.86058
+        },
+        {
+          "w": "authority",
+          "s": 25.72,
+          "e": 26.33,
+          "c": 0.998599
+        },
+        {
+          "w": "to",
+          "s": 26.33,
+          "e": 26.41,
+          "c": 0.984709
+        },
+        {
+          "w": "this",
+          "s": 26.5,
+          "e": 26.71,
+          "c": 0.991198
+        },
+        {
+          "w": "committee",
+          "s": 26.84,
+          "e": 27.34,
+          "c": 0.719151
+        },
+        {
+          "w": "of",
+          "s": 27.34,
+          "e": 27.47,
+          "c": 0.996065
+        },
+        {
+          "w": "bankers",
+          "s": 27.47,
+          "e": 27.94,
+          "c": 0.965695
+        },
+        {
+          "w": "and",
+          "s": 27.94,
+          "e": 28.11,
+          "c": 0.995228
+        },
+        {
+          "w": "presidential",
+          "s": 28.23,
+          "e": 28.96,
+          "c": 0.936919
+        },
+        {
+          "w": "appointees.",
+          "s": 28.96,
+          "e": 29.96,
+          "c": 0.985498
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 29.95,
+      "end_s": 30.21,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "To no",
+      "words": [
+        {
+          "w": "To",
+          "s": 29.952,
+          "e": 30.082,
+          "c": 0.85538
+        },
+        {
+          "w": "no",
+          "s": 30.082,
+          "e": 30.212,
+          "c": 0.96234
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 30.44,
+      "end_s": 36.05,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "institution in our country's history has Congress given so much power while knowing so little.",
+      "words": [
+        {
+          "w": "institution",
+          "s": 30.442,
+          "e": 30.932,
+          "c": 0.996951
+        },
+        {
+          "w": "in",
+          "s": 31.012,
+          "e": 31.072,
+          "c": 0.977657
+        },
+        {
+          "w": "our",
+          "s": 31.072,
+          "e": 31.272,
+          "c": 0.985671
+        },
+        {
+          "w": "country's",
+          "s": 31.272,
+          "e": 31.792,
+          "c": 0.981913
+        },
+        {
+          "w": "history",
+          "s": 31.922,
+          "e": 32.352,
+          "c": 0.992224
+        },
+        {
+          "w": "has",
+          "s": 32.352,
+          "e": 32.452,
+          "c": 0.744598
+        },
+        {
+          "w": "Congress",
+          "s": 32.452,
+          "e": 32.812,
+          "c": 0.878148
+        },
+        {
+          "w": "given",
+          "s": 32.942,
+          "e": 33.142,
+          "c": 0.921868
+        },
+        {
+          "w": "so",
+          "s": 33.272,
+          "e": 33.412,
+          "c": 0.921482
+        },
+        {
+          "w": "much",
+          "s": 33.412,
+          "e": 33.802,
+          "c": 0.974912
+        },
+        {
+          "w": "power",
+          "s": 33.802,
+          "e": 34.092,
+          "c": 0.990333
+        },
+        {
+          "w": "while",
+          "s": 34.512,
+          "e": 34.612,
+          "c": 0.58209
+        },
+        {
+          "w": "knowing",
+          "s": 34.612,
+          "e": 34.912,
+          "c": 0.967224
+        },
+        {
+          "w": "so",
+          "s": 34.912,
+          "e": 35.152,
+          "c": 0.976723
+        },
+        {
+          "w": "little.",
+          "s": 35.152,
+          "e": 36.052,
+          "c": 0.975388
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 36.05,
+      "end_s": 36.46,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "As our",
+      "words": [
+        {
+          "w": "As",
+          "s": 36.052,
+          "e": 36.212,
+          "c": 0.995585
+        },
+        {
+          "w": "our",
+          "s": 36.462,
+          "e": 36.462,
+          "c": 0.965604
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 36.54,
+      "end_s": 58.29,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "central bank, we've entrusted the Federal Reserve with managing inflation. That means the Fed can change the value of Americans' life savings, their retirement accounts, and their mortgages. Lately, the Fed has taken on the role of \"lender of last resort.\" It has made unprecedented market interventions, promising billions of dollars to the country's largest financial institutions.",
+      "words": [
+        {
+          "w": "central",
+          "s": 36.542,
+          "e": 37.032,
+          "c": 0.938978
+        },
+        {
+          "w": "bank,",
+          "s": 37.112,
+          "e": 37.522,
+          "c": 0.822319
+        },
+        {
+          "w": "we've",
+          "s": 37.602,
+          "e": 37.802,
+          "c": 0.77449
+        },
+        {
+          "w": "entrusted",
+          "s": 37.802,
+          "e": 38.122,
+          "c": 0.990858
+        },
+        {
+          "w": "the",
+          "s": 38.282,
+          "e": 38.402,
+          "c": 0.988553
+        },
+        {
+          "w": "Federal",
+          "s": 38.402,
+          "e": 38.762,
+          "c": 0.946729
+        },
+        {
+          "w": "Reserve",
+          "s": 38.762,
+          "e": 39.122,
+          "c": 0.98893
+        },
+        {
+          "w": "with",
+          "s": 39.122,
+          "e": 39.242,
+          "c": 0.97173
+        },
+        {
+          "w": "managing",
+          "s": 39.372,
+          "e": 39.652,
+          "c": 0.994843
+        },
+        {
+          "w": "inflation.",
+          "s": 39.822,
+          "e": 40.222,
+          "c": 0.971502
+        },
+        {
+          "w": "That",
+          "s": 40.392,
+          "e": 40.642,
+          "c": 0.998039
+        },
+        {
+          "w": "means",
+          "s": 40.882,
+          "e": 40.952,
+          "c": 0.999131
+        },
+        {
+          "w": "the",
+          "s": 40.952,
+          "e": 41.142,
+          "c": 0.979083
+        },
+        {
+          "w": "Fed",
+          "s": 41.142,
+          "e": 41.332,
+          "c": 0.955317
+        },
+        {
+          "w": "can",
+          "s": 41.332,
+          "e": 41.522,
+          "c": 0.998561
+        },
+        {
+          "w": "change",
+          "s": 41.522,
+          "e": 41.862,
+          "c": 0.999094
+        },
+        {
+          "w": "the",
+          "s": 41.942,
+          "e": 42.042,
+          "c": 0.999022
+        },
+        {
+          "w": "value",
+          "s": 42.112,
+          "e": 42.402,
+          "c": 0.992841
+        },
+        {
+          "w": "of",
+          "s": 42.402,
+          "e": 42.462,
+          "c": 0.997366
+        },
+        {
+          "w": "Americans'",
+          "s": 42.622,
+          "e": 43.152,
+          "c": 0.55989
+        },
+        {
+          "w": "life",
+          "s": 43.152,
+          "e": 43.402,
+          "c": 0.949303
+        },
+        {
+          "w": "savings,",
+          "s": 43.402,
+          "e": 43.992,
+          "c": 0.963563
+        },
+        {
+          "w": "their",
+          "s": 44.162,
+          "e": 44.262,
+          "c": 0.673151
+        },
+        {
+          "w": "retirement",
+          "s": 44.262,
+          "e": 44.532,
+          "c": 0.996432
+        },
+        {
+          "w": "accounts,",
+          "s": 44.952,
+          "e": 45.292,
+          "c": 0.759268
+        },
+        {
+          "w": "and",
+          "s": 45.292,
+          "e": 45.382,
+          "c": 0.961228
+        },
+        {
+          "w": "their",
+          "s": 45.522,
+          "e": 45.812,
+          "c": 0.971002
+        },
+        {
+          "w": "mortgages.",
+          "s": 45.812,
+          "e": 46.612,
+          "c": 0.997387
+        },
+        {
+          "w": "Lately,",
+          "s": 46.612,
+          "e": 47.252,
+          "c": 0.7209
+        },
+        {
+          "w": "the",
+          "s": 47.252,
+          "e": 47.462,
+          "c": 0.997744
+        },
+        {
+          "w": "Fed",
+          "s": 47.542,
+          "e": 47.732,
+          "c": 0.990495
+        },
+        {
+          "w": "has",
+          "s": 47.732,
+          "e": 47.972,
+          "c": 0.995739
+        },
+        {
+          "w": "taken",
+          "s": 47.972,
+          "e": 48.382,
+          "c": 0.996782
+        },
+        {
+          "w": "on",
+          "s": 48.382,
+          "e": 48.452,
+          "c": 0.99163
+        },
+        {
+          "w": "the",
+          "s": 48.582,
+          "e": 48.682,
+          "c": 0.99477
+        },
+        {
+          "w": "role",
+          "s": 48.842,
+          "e": 49.102,
+          "c": 0.996736
+        },
+        {
+          "w": "of",
+          "s": 49.102,
+          "e": 49.262,
+          "c": 0.993555
+        },
+        {
+          "w": "\"lender",
+          "s": 49.262,
+          "e": 49.802,
+          "c": 0.624171
+        },
+        {
+          "w": "of",
+          "s": 49.932,
+          "e": 49.982,
+          "c": 0.986741
+        },
+        {
+          "w": "last",
+          "s": 49.982,
+          "e": 50.212,
+          "c": 0.996012
+        },
+        {
+          "w": "resort.\"",
+          "s": 50.382,
+          "e": 51.212,
+          "c": 0.798994
+        },
+        {
+          "w": "It",
+          "s": 51.212,
+          "e": 51.342,
+          "c": 0.995537
+        },
+        {
+          "w": "has",
+          "s": 51.342,
+          "e": 51.542,
+          "c": 0.991301
+        },
+        {
+          "w": "made",
+          "s": 51.702,
+          "e": 51.812,
+          "c": 0.998908
+        },
+        {
+          "w": "unprecedented",
+          "s": 51.812,
+          "e": 52.682,
+          "c": 0.99559
+        },
+        {
+          "w": "market",
+          "s": 52.762,
+          "e": 53.052,
+          "c": 0.995323
+        },
+        {
+          "w": "interventions,",
+          "s": 53.182,
+          "e": 54.072,
+          "c": 0.794272
+        },
+        {
+          "w": "promising",
+          "s": 54.202,
+          "e": 54.692,
+          "c": 0.841316
+        },
+        {
+          "w": "billions",
+          "s": 54.692,
+          "e": 55.162,
+          "c": 0.990593
+        },
+        {
+          "w": "of",
+          "s": 55.162,
+          "e": 55.262,
+          "c": 0.992759
+        },
+        {
+          "w": "dollars",
+          "s": 55.262,
+          "e": 55.362,
+          "c": 0.996115
+        },
+        {
+          "w": "to",
+          "s": 55.772,
+          "e": 55.822,
+          "c": 0.809209
+        },
+        {
+          "w": "the",
+          "s": 55.822,
+          "e": 55.992,
+          "c": 0.987566
+        },
+        {
+          "w": "country's",
+          "s": 55.992,
+          "e": 56.502,
+          "c": 0.97819
+        },
+        {
+          "w": "largest",
+          "s": 56.502,
+          "e": 56.802,
+          "c": 0.991879
+        },
+        {
+          "w": "financial",
+          "s": 56.872,
+          "e": 57.402,
+          "c": 0.98769
+        },
+        {
+          "w": "institutions.",
+          "s": 57.712,
+          "e": 58.292,
+          "c": 0.969598
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 58.27,
+      "end_s": 65.91,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "When investors wouldn't buy mortgages, the Fed did. When creditors became wary of Congress' spending binge, the Fed stepped in.",
+      "words": [
+        {
+          "w": "When",
+          "s": 58.272,
+          "e": 58.492,
+          "c": 0.927594
+        },
+        {
+          "w": "investors",
+          "s": 58.602,
+          "e": 58.982,
+          "c": 0.996616
+        },
+        {
+          "w": "wouldn't",
+          "s": 58.982,
+          "e": 59.422,
+          "c": 0.990161
+        },
+        {
+          "w": "buy",
+          "s": 59.422,
+          "e": 59.582,
+          "c": 0.998241
+        },
+        {
+          "w": "mortgages,",
+          "s": 59.582,
+          "e": 60.202,
+          "c": 0.9545
+        },
+        {
+          "w": "the",
+          "s": 60.202,
+          "e": 60.262,
+          "c": 0.966446
+        },
+        {
+          "w": "Fed",
+          "s": 60.542,
+          "e": 60.582,
+          "c": 0.965442
+        },
+        {
+          "w": "did.",
+          "s": 60.682,
+          "e": 61.092,
+          "c": 0.986147
+        },
+        {
+          "w": "When",
+          "s": 61.392,
+          "e": 61.392,
+          "c": 0.999912
+        },
+        {
+          "w": "creditors",
+          "s": 61.462,
+          "e": 61.862,
+          "c": 0.99894
+        },
+        {
+          "w": "became",
+          "s": 61.982,
+          "e": 62.352,
+          "c": 0.997651
+        },
+        {
+          "w": "wary",
+          "s": 62.412,
+          "e": 62.622,
+          "c": 0.999355
+        },
+        {
+          "w": "of",
+          "s": 62.622,
+          "e": 62.752,
+          "c": 0.996905
+        },
+        {
+          "w": "Congress'",
+          "s": 62.752,
+          "e": 63.342,
+          "c": 0.457067
+        },
+        {
+          "w": "spending",
+          "s": 63.402,
+          "e": 63.872,
+          "c": 0.998106
+        },
+        {
+          "w": "binge,",
+          "s": 63.872,
+          "e": 64.392,
+          "c": 0.92608
+        },
+        {
+          "w": "the",
+          "s": 64.642,
+          "e": 64.642,
+          "c": 0.900708
+        },
+        {
+          "w": "Fed",
+          "s": 64.712,
+          "e": 64.862,
+          "c": 0.993919
+        },
+        {
+          "w": "stepped",
+          "s": 64.942,
+          "e": 65.422,
+          "c": 0.9672
+        },
+        {
+          "w": "in.",
+          "s": 65.502,
+          "e": 65.912,
+          "c": 0.99968
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 66.24,
+      "end_s": 66.64,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Years ago,",
+      "words": [
+        {
+          "w": "Years",
+          "s": 66.242,
+          "e": 66.302,
+          "c": 0.999178
+        },
+        {
+          "w": "ago,",
+          "s": 66.302,
+          "e": 66.642,
+          "c": 0.997385
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 66.76,
+      "end_s": 81.89,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Congress enacted an audit statute, but it prevents an audit of monetary policy. The government's accountants understandably were outraged, saying they couldn't, quote, satisfactorily audit the Federal Reserve System without authority to examine the Fed's largest assets.",
+      "words": [
+        {
+          "w": "Congress",
+          "s": 66.762,
+          "e": 67.312,
+          "c": 0.999947
+        },
+        {
+          "w": "enacted",
+          "s": 67.312,
+          "e": 67.822,
+          "c": 0.999928
+        },
+        {
+          "w": "an",
+          "s": 67.852,
+          "e": 67.902,
+          "c": 0.999941
+        },
+        {
+          "w": "audit",
+          "s": 68.182,
+          "e": 68.402,
+          "c": 0.998731
+        },
+        {
+          "w": "statute,",
+          "s": 68.402,
+          "e": 69.142,
+          "c": 0.99625
+        },
+        {
+          "w": "but",
+          "s": 69.142,
+          "e": 69.332,
+          "c": 0.807125
+        },
+        {
+          "w": "it",
+          "s": 69.452,
+          "e": 69.452,
+          "c": 0.999314
+        },
+        {
+          "w": "prevents",
+          "s": 69.492,
+          "e": 69.952,
+          "c": 0.994277
+        },
+        {
+          "w": "an",
+          "s": 69.952,
+          "e": 70.062,
+          "c": 0.999281
+        },
+        {
+          "w": "audit",
+          "s": 70.072,
+          "e": 70.382,
+          "c": 0.996118
+        },
+        {
+          "w": "of",
+          "s": 70.382,
+          "e": 70.502,
+          "c": 0.999708
+        },
+        {
+          "w": "monetary",
+          "s": 70.502,
+          "e": 71.002,
+          "c": 0.999615
+        },
+        {
+          "w": "policy.",
+          "s": 71.002,
+          "e": 71.592,
+          "c": 0.999962
+        },
+        {
+          "w": "The",
+          "s": 71.592,
+          "e": 71.762,
+          "c": 0.99979
+        },
+        {
+          "w": "government's",
+          "s": 71.922,
+          "e": 72.442,
+          "c": 0.998753
+        },
+        {
+          "w": "accountants",
+          "s": 72.442,
+          "e": 73.062,
+          "c": 0.996261
+        },
+        {
+          "w": "understandably",
+          "s": 73.062,
+          "e": 73.852,
+          "c": 0.87667
+        },
+        {
+          "w": "were",
+          "s": 73.862,
+          "e": 74.072,
+          "c": 0.999929
+        },
+        {
+          "w": "outraged,",
+          "s": 74.072,
+          "e": 74.602,
+          "c": 0.997316
+        },
+        {
+          "w": "saying",
+          "s": 74.962,
+          "e": 74.962,
+          "c": 0.994209
+        },
+        {
+          "w": "they",
+          "s": 75.022,
+          "e": 75.142,
+          "c": 0.9974
+        },
+        {
+          "w": "couldn't,",
+          "s": 75.142,
+          "e": 75.592,
+          "c": 0.909224
+        },
+        {
+          "w": "quote,",
+          "s": 75.592,
+          "e": 75.902,
+          "c": 0.999689
+        },
+        {
+          "w": "satisfactorily",
+          "s": 75.902,
+          "e": 76.932,
+          "c": 0.613132
+        },
+        {
+          "w": "audit",
+          "s": 76.962,
+          "e": 77.282,
+          "c": 0.999554
+        },
+        {
+          "w": "the",
+          "s": 77.342,
+          "e": 77.512,
+          "c": 0.99964
+        },
+        {
+          "w": "Federal",
+          "s": 77.512,
+          "e": 77.602,
+          "c": 0.989636
+        },
+        {
+          "w": "Reserve",
+          "s": 78.272,
+          "e": 78.532,
+          "c": 0.998898
+        },
+        {
+          "w": "System",
+          "s": 78.532,
+          "e": 78.982,
+          "c": 0.848579
+        },
+        {
+          "w": "without",
+          "s": 79.342,
+          "e": 79.422,
+          "c": 0.999952
+        },
+        {
+          "w": "authority",
+          "s": 79.422,
+          "e": 79.952,
+          "c": 0.999668
+        },
+        {
+          "w": "to",
+          "s": 79.952,
+          "e": 80.062,
+          "c": 0.999767
+        },
+        {
+          "w": "examine",
+          "s": 80.062,
+          "e": 80.472,
+          "c": 0.999836
+        },
+        {
+          "w": "the",
+          "s": 80.472,
+          "e": 80.632,
+          "c": 0.999996
+        },
+        {
+          "w": "Fed's",
+          "s": 80.662,
+          "e": 80.922,
+          "c": 0.997971
+        },
+        {
+          "w": "largest",
+          "s": 80.922,
+          "e": 81.322,
+          "c": 0.999889
+        },
+        {
+          "w": "assets.",
+          "s": 81.412,
+          "e": 81.892,
+          "c": 0.999912
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 82.26,
+      "end_s": 82.88,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Congress should",
+      "words": [
+        {
+          "w": "Congress",
+          "s": 82.262,
+          "e": 82.472,
+          "c": 0.999903
+        },
+        {
+          "w": "should",
+          "s": 82.472,
+          "e": 82.882,
+          "c": 0.999966
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 82.88,
+      "end_s": 95.97,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "be wary of all types of central planning. We should be especially vigilant against unaccountable groups that profoundly affect Americans' lives and liberty. Pass this bill, and let's audit the Fed. I yield back. Gentleman from Maryland. Yielded",
+      "words": [
+        {
+          "w": "be",
+          "s": 82.882,
+          "e": 83.012,
+          "c": 0.999966
+        },
+        {
+          "w": "wary",
+          "s": 83.012,
+          "e": 83.282,
+          "c": 0.999983
+        },
+        {
+          "w": "of",
+          "s": 83.282,
+          "e": 83.412,
+          "c": 1
+        },
+        {
+          "w": "all",
+          "s": 83.412,
+          "e": 83.612,
+          "c": 0.999992
+        },
+        {
+          "w": "types",
+          "s": 83.612,
+          "e": 83.862,
+          "c": 0.99983
+        },
+        {
+          "w": "of",
+          "s": 83.862,
+          "e": 83.972,
+          "c": 0.999996
+        },
+        {
+          "w": "central",
+          "s": 84.202,
+          "e": 84.522,
+          "c": 0.997982
+        },
+        {
+          "w": "planning.",
+          "s": 84.562,
+          "e": 85.372,
+          "c": 0.999901
+        },
+        {
+          "w": "We",
+          "s": 86.072,
+          "e": 86.172,
+          "c": 0.999134
+        },
+        {
+          "w": "should",
+          "s": 86.402,
+          "e": 86.472,
+          "c": 0.999956
+        },
+        {
+          "w": "be",
+          "s": 86.472,
+          "e": 86.572,
+          "c": 0.99975
+        },
+        {
+          "w": "especially",
+          "s": 86.572,
+          "e": 87.052,
+          "c": 0.999613
+        },
+        {
+          "w": "vigilant",
+          "s": 87.102,
+          "e": 87.472,
+          "c": 0.999866
+        },
+        {
+          "w": "against",
+          "s": 87.472,
+          "e": 87.762,
+          "c": 0.999912
+        },
+        {
+          "w": "unaccountable",
+          "s": 87.832,
+          "e": 88.382,
+          "c": 0.997826
+        },
+        {
+          "w": "groups",
+          "s": 88.472,
+          "e": 88.812,
+          "c": 0.999876
+        },
+        {
+          "w": "that",
+          "s": 89.052,
+          "e": 89.052,
+          "c": 0.999985
+        },
+        {
+          "w": "profoundly",
+          "s": 89.142,
+          "e": 89.542,
+          "c": 0.999905
+        },
+        {
+          "w": "affect",
+          "s": 89.662,
+          "e": 90.032,
+          "c": 0.993593
+        },
+        {
+          "w": "Americans'",
+          "s": 90.092,
+          "e": 90.642,
+          "c": 0.959794
+        },
+        {
+          "w": "lives",
+          "s": 90.642,
+          "e": 90.802,
+          "c": 0.999847
+        },
+        {
+          "w": "and",
+          "s": 91.062,
+          "e": 91.122,
+          "c": 0.999725
+        },
+        {
+          "w": "liberty.",
+          "s": 91.122,
+          "e": 91.692,
+          "c": 0.999434
+        },
+        {
+          "w": "Pass",
+          "s": 92.032,
+          "e": 92.032,
+          "c": 0.999117
+        },
+        {
+          "w": "this",
+          "s": 92.102,
+          "e": 92.292,
+          "c": 0.993919
+        },
+        {
+          "w": "bill,",
+          "s": 92.292,
+          "e": 92.682,
+          "c": 0.462113
+        },
+        {
+          "w": "and",
+          "s": 92.682,
+          "e": 92.872,
+          "c": 0.999975
+        },
+        {
+          "w": "let's",
+          "s": 92.872,
+          "e": 93.192,
+          "c": 0.999752
+        },
+        {
+          "w": "audit",
+          "s": 93.192,
+          "e": 93.462,
+          "c": 0.999352
+        },
+        {
+          "w": "the",
+          "s": 93.532,
+          "e": 93.692,
+          "c": 0.999929
+        },
+        {
+          "w": "Fed.",
+          "s": 93.692,
+          "e": 94.092,
+          "c": 0.99987
+        },
+        {
+          "w": "I",
+          "s": 94.172,
+          "e": 94.182,
+          "c": 0.502999
+        },
+        {
+          "w": "yield",
+          "s": 94.182,
+          "e": 94.452,
+          "c": 0.999825
+        },
+        {
+          "w": "back.",
+          "s": 94.452,
+          "e": 94.702,
+          "c": 0.999504
+        },
+        {
+          "w": "Gentleman",
+          "s": 94.852,
+          "e": 95.162,
+          "c": 0.465186
+        },
+        {
+          "w": "from",
+          "s": 95.182,
+          "e": 95.302,
+          "c": 0.983249
+        },
+        {
+          "w": "Maryland.",
+          "s": 95.302,
+          "e": 95.592,
+          "c": 0.972465
+        },
+        {
+          "w": "Yielded",
+          "s": 95.592,
+          "e": 95.972,
+          "c": 0.347638
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 95.97,
+      "end_s": 96.02,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "a",
+      "words": [
+        {
+          "w": "a",
+          "s": 95.972,
+          "e": 96.022,
+          "c": 0.526506
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 96.02,
+      "end_s": 96.71,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "gentleman.",
+      "words": [
+        {
+          "w": "gentleman.",
+          "s": 96.022,
+          "e": 96.712,
+          "c": 0.959299
+        }
+      ]
+    }
+  ]
+}

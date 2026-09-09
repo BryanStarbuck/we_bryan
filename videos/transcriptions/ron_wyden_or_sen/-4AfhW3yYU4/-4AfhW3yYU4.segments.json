@@ -1,0 +1,1282 @@
+{
+  "schema_version": 2,
+  "canonical_id": "35654725d1091235",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 54.22,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-09T00:51:29.415Z",
+  "text_sha256": "90fb488d7d8e8ab52669414488857b3301befe6ef3649af1562a792700782cce",
+  "segments_sha256": "eaf8b5ec1765a215088147c5335e3870379a6826235b899a09ddf266d45dbe88",
+  "words_sha256": "b554ee5492c4cdd2eaec40a8eefe21b5b5cf39ccd6a5f9edd72f35ac77c507ab",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 2,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 9,
+    "clusters": 7,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 20.4
+      },
+      "clean_s": 20.4,
+      "speaking_s": 20.4,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.4
+      },
+      "clean_s": 5.4,
+      "speaking_s": 5.4,
+      "first_s": 20.97
+    },
+    {
+      "id": "SPEAKER_02",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.4
+      },
+      "clean_s": 0.4,
+      "speaking_s": 0.4,
+      "first_s": 26.58
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 7
+      },
+      "clean_s": 7,
+      "speaking_s": 7,
+      "first_s": 31.05
+    },
+    {
+      "id": "SPEAKER_05",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.8
+      },
+      "clean_s": 0.8,
+      "speaking_s": 0.8,
+      "first_s": 39.15
+    },
+    {
+      "id": "SPEAKER_06",
+      "n": 6,
+      "label": "Speaker 6 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.86,
+        "confidence": "low",
+        "clean_s": 12.9
+      },
+      "clean_s": 12.9,
+      "speaking_s": 12.9,
+      "first_s": 40.06
+    },
+    {
+      "id": "SPEAKER_11",
+      "n": 7,
+      "label": "Speaker 7",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1
+      },
+      "clean_s": 1,
+      "speaking_s": 1,
+      "first_s": 53.12
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 28.6,
+      "end_s": 29.85,
+      "segment_i": 4,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 29.94,
+      "end_s": 31.01,
+      "segment_i": 5,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 38.12,
+      "end_s": 38.47,
+      "segment_i": 7,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.07,
+      "end_s": 21.12,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you, Madam Chair, and I'll submit other questions for the record, but I need to ask your agencies a question for the record relevant to a matter that has taken a lot of our time. For each of you, just go right down the row. Do you believe that it would be appropriate for your agency to secretly search Senate files without seeking",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 0.07,
+          "e": 0.25,
+          "c": 0.591922
+        },
+        {
+          "w": "you,",
+          "s": 0.25,
+          "e": 0.49,
+          "c": 0.693202
+        },
+        {
+          "w": "Madam",
+          "s": 0.49,
+          "e": 0.74,
+          "c": 0.85414
+        },
+        {
+          "w": "Chair,",
+          "s": 0.77,
+          "e": 1.15,
+          "c": 0.391858
+        },
+        {
+          "w": "and",
+          "s": 1.36,
+          "e": 1.46,
+          "c": 0.895655
+        },
+        {
+          "w": "I'll",
+          "s": 1.46,
+          "e": 1.84,
+          "c": 0.943631
+        },
+        {
+          "w": "submit",
+          "s": 1.84,
+          "e": 2.1,
+          "c": 0.785639
+        },
+        {
+          "w": "other",
+          "s": 2.1,
+          "e": 2.26,
+          "c": 0.905658
+        },
+        {
+          "w": "questions",
+          "s": 2.26,
+          "e": 2.7,
+          "c": 0.92571
+        },
+        {
+          "w": "for",
+          "s": 2.7,
+          "e": 2.84,
+          "c": 0.895693
+        },
+        {
+          "w": "the",
+          "s": 2.84,
+          "e": 2.94,
+          "c": 0.939963
+        },
+        {
+          "w": "record,",
+          "s": 2.94,
+          "e": 3.3,
+          "c": 0.483655
+        },
+        {
+          "w": "but",
+          "s": 3.4,
+          "e": 3.49,
+          "c": 0.736194
+        },
+        {
+          "w": "I",
+          "s": 3.49,
+          "e": 3.52,
+          "c": 0.895603
+        },
+        {
+          "w": "need",
+          "s": 3.86,
+          "e": 4.06,
+          "c": 0.784692
+        },
+        {
+          "w": "to",
+          "s": 4.06,
+          "e": 4.2,
+          "c": 0.825008
+        },
+        {
+          "w": "ask",
+          "s": 4.2,
+          "e": 4.46,
+          "c": 0.961352
+        },
+        {
+          "w": "your",
+          "s": 4.64,
+          "e": 4.76,
+          "c": 0.923808
+        },
+        {
+          "w": "agencies",
+          "s": 4.76,
+          "e": 5.44,
+          "c": 0.856806
+        },
+        {
+          "w": "a",
+          "s": 5.44,
+          "e": 5.46,
+          "c": 0.866279
+        },
+        {
+          "w": "question",
+          "s": 5.56,
+          "e": 6,
+          "c": 0.942585
+        },
+        {
+          "w": "for",
+          "s": 6,
+          "e": 6.2,
+          "c": 0.918745
+        },
+        {
+          "w": "the",
+          "s": 6.2,
+          "e": 6.26,
+          "c": 0.981912
+        },
+        {
+          "w": "record",
+          "s": 6.26,
+          "e": 6.6,
+          "c": 0.984782
+        },
+        {
+          "w": "relevant",
+          "s": 6.6,
+          "e": 6.99,
+          "c": 0.69763
+        },
+        {
+          "w": "to",
+          "s": 6.99,
+          "e": 7.74,
+          "c": 0.901029
+        },
+        {
+          "w": "a",
+          "s": 7.74,
+          "e": 7.8,
+          "c": 0.98522
+        },
+        {
+          "w": "matter",
+          "s": 7.8,
+          "e": 8.16,
+          "c": 0.971133
+        },
+        {
+          "w": "that",
+          "s": 8.16,
+          "e": 8.62,
+          "c": 0.963802
+        },
+        {
+          "w": "has",
+          "s": 8.82,
+          "e": 9,
+          "c": 0.976928
+        },
+        {
+          "w": "taken",
+          "s": 9,
+          "e": 9.47,
+          "c": 0.982844
+        },
+        {
+          "w": "a",
+          "s": 9.47,
+          "e": 9.56,
+          "c": 0.996411
+        },
+        {
+          "w": "lot",
+          "s": 9.56,
+          "e": 9.75,
+          "c": 0.994038
+        },
+        {
+          "w": "of",
+          "s": 9.87,
+          "e": 10.03,
+          "c": 0.993002
+        },
+        {
+          "w": "our",
+          "s": 10.03,
+          "e": 10.31,
+          "c": 0.996658
+        },
+        {
+          "w": "time.",
+          "s": 10.31,
+          "e": 11,
+          "c": 0.964141
+        },
+        {
+          "w": "For",
+          "s": 11.07,
+          "e": 11.1,
+          "c": 0.985453
+        },
+        {
+          "w": "each",
+          "s": 11.17,
+          "e": 11.33,
+          "c": 0.999068
+        },
+        {
+          "w": "of",
+          "s": 11.36,
+          "e": 11.46,
+          "c": 0.99875
+        },
+        {
+          "w": "you,",
+          "s": 11.46,
+          "e": 11.63,
+          "c": 0.849912
+        },
+        {
+          "w": "just",
+          "s": 11.73,
+          "e": 11.92,
+          "c": 0.970439
+        },
+        {
+          "w": "go",
+          "s": 11.92,
+          "e": 12.02,
+          "c": 0.988233
+        },
+        {
+          "w": "right",
+          "s": 12.02,
+          "e": 12.15,
+          "c": 0.992987
+        },
+        {
+          "w": "down",
+          "s": 12.34,
+          "e": 12.49,
+          "c": 0.999325
+        },
+        {
+          "w": "the",
+          "s": 12.49,
+          "e": 12.64,
+          "c": 0.99846
+        },
+        {
+          "w": "row.",
+          "s": 12.64,
+          "e": 13,
+          "c": 0.691435
+        },
+        {
+          "w": "Do",
+          "s": 13.07,
+          "e": 13.15,
+          "c": 0.989372
+        },
+        {
+          "w": "you",
+          "s": 13.17,
+          "e": 13.4,
+          "c": 0.999335
+        },
+        {
+          "w": "believe",
+          "s": 13.4,
+          "e": 13.97,
+          "c": 0.998885
+        },
+        {
+          "w": "that",
+          "s": 13.97,
+          "e": 14.15,
+          "c": 0.96518
+        },
+        {
+          "w": "it",
+          "s": 14.34,
+          "e": 14.45,
+          "c": 0.995687
+        },
+        {
+          "w": "would",
+          "s": 14.45,
+          "e": 14.85,
+          "c": 0.998534
+        },
+        {
+          "w": "be",
+          "s": 14.85,
+          "e": 15.01,
+          "c": 0.999262
+        },
+        {
+          "w": "appropriate",
+          "s": 15.01,
+          "e": 15.9,
+          "c": 0.99311
+        },
+        {
+          "w": "for",
+          "s": 15.9,
+          "e": 16.07,
+          "c": 0.99627
+        },
+        {
+          "w": "your",
+          "s": 16.14,
+          "e": 16.46,
+          "c": 0.997702
+        },
+        {
+          "w": "agency",
+          "s": 16.46,
+          "e": 17,
+          "c": 0.996862
+        },
+        {
+          "w": "to",
+          "s": 17,
+          "e": 17.22,
+          "c": 0.932289
+        },
+        {
+          "w": "secretly",
+          "s": 17.22,
+          "e": 18.1,
+          "c": 0.997737
+        },
+        {
+          "w": "search",
+          "s": 18.1,
+          "e": 18.76,
+          "c": 0.997193
+        },
+        {
+          "w": "Senate",
+          "s": 18.76,
+          "e": 19.42,
+          "c": 0.872606
+        },
+        {
+          "w": "files",
+          "s": 19.42,
+          "e": 19.99,
+          "c": 0.958429
+        },
+        {
+          "w": "without",
+          "s": 19.99,
+          "e": 20.18,
+          "c": 0.960437
+        },
+        {
+          "w": "seeking",
+          "s": 20.67,
+          "e": 21.12,
+          "c": 0.996966
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 21.12,
+      "end_s": 26,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "an external authorization or approval? Just go down the row. Mr. Legend?",
+      "words": [
+        {
+          "w": "an",
+          "s": 21.12,
+          "e": 21.28,
+          "c": 0.980449
+        },
+        {
+          "w": "external",
+          "s": 21.28,
+          "e": 21.9,
+          "c": 0.994455
+        },
+        {
+          "w": "authorization",
+          "s": 21.9,
+          "e": 22.94,
+          "c": 0.994127
+        },
+        {
+          "w": "or",
+          "s": 22.94,
+          "e": 23.1,
+          "c": 0.997588
+        },
+        {
+          "w": "approval?",
+          "s": 23.1,
+          "e": 24,
+          "c": 0.954944
+        },
+        {
+          "w": "Just",
+          "s": 24.07,
+          "e": 24.21,
+          "c": 0.801218
+        },
+        {
+          "w": "go",
+          "s": 24.21,
+          "e": 24.3,
+          "c": 0.998273
+        },
+        {
+          "w": "down",
+          "s": 24.36,
+          "e": 24.52,
+          "c": 0.999415
+        },
+        {
+          "w": "the",
+          "s": 24.52,
+          "e": 24.63,
+          "c": 0.997813
+        },
+        {
+          "w": "row.",
+          "s": 24.73,
+          "e": 25,
+          "c": 0.914302
+        },
+        {
+          "w": "Mr.",
+          "s": 25,
+          "e": 25.15,
+          "c": 0.887308
+        },
+        {
+          "w": "Legend?",
+          "s": 25.36,
+          "e": 26,
+          "c": 0.691841
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 26.09,
+      "end_s": 28,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "No, sir.",
+      "words": [
+        {
+          "w": "No,",
+          "s": 26.09,
+          "e": 26.79,
+          "c": 0.749094
+        },
+        {
+          "w": "sir.",
+          "s": 26.79,
+          "e": 28,
+          "c": 0.958726
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 28.07,
+      "end_s": 28.6,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Ms.",
+      "words": [
+        {
+          "w": "Ms.",
+          "s": 28.07,
+          "e": 28.6,
+          "c": 0.866017
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 28.6,
+      "end_s": 29.85,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Sullivan?",
+      "words": [
+        {
+          "w": "Sullivan?",
+          "s": 28.6,
+          "e": 29.85,
+          "c": 0.859258
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 29.94,
+      "end_s": 31.01,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "No, sir, if I",
+      "words": [
+        {
+          "w": "No,",
+          "s": 29.936,
+          "e": 30.296,
+          "c": 0.524411
+        },
+        {
+          "w": "sir,",
+          "s": 30.296,
+          "e": 30.746,
+          "c": 0.625385
+        },
+        {
+          "w": "if",
+          "s": 30.746,
+          "e": 30.926,
+          "c": 0.977866
+        },
+        {
+          "w": "I",
+          "s": 30.946,
+          "e": 31.006,
+          "c": 0.996476
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 31.1,
+      "end_s": 38.12,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "understand your question, by definition, we are not permitted to conduct a search that is not properly authorized in",
+      "words": [
+        {
+          "w": "understand",
+          "s": 31.096,
+          "e": 31.836,
+          "c": 0.995548
+        },
+        {
+          "w": "your",
+          "s": 31.936,
+          "e": 32.286,
+          "c": 0.992027
+        },
+        {
+          "w": "question,",
+          "s": 32.286,
+          "e": 33.276,
+          "c": 0.704754
+        },
+        {
+          "w": "by",
+          "s": 33.276,
+          "e": 33.376,
+          "c": 0.904693
+        },
+        {
+          "w": "definition,",
+          "s": 33.386,
+          "e": 33.906,
+          "c": 0.307265
+        },
+        {
+          "w": "we",
+          "s": 33.906,
+          "e": 33.956,
+          "c": 0.94844
+        },
+        {
+          "w": "are",
+          "s": 33.956,
+          "e": 34.106,
+          "c": 0.944319
+        },
+        {
+          "w": "not",
+          "s": 34.106,
+          "e": 34.256,
+          "c": 0.98913
+        },
+        {
+          "w": "permitted",
+          "s": 34.256,
+          "e": 34.576,
+          "c": 0.965932
+        },
+        {
+          "w": "to",
+          "s": 34.576,
+          "e": 34.656,
+          "c": 0.945152
+        },
+        {
+          "w": "conduct",
+          "s": 34.656,
+          "e": 34.966,
+          "c": 0.913693
+        },
+        {
+          "w": "a",
+          "s": 34.976,
+          "e": 35.056,
+          "c": 0.999449
+        },
+        {
+          "w": "search",
+          "s": 35.056,
+          "e": 35.586,
+          "c": 0.998725
+        },
+        {
+          "w": "that",
+          "s": 35.586,
+          "e": 35.936,
+          "c": 0.997451
+        },
+        {
+          "w": "is",
+          "s": 36.046,
+          "e": 36.046,
+          "c": 0.976358
+        },
+        {
+          "w": "not",
+          "s": 36.136,
+          "e": 36.326,
+          "c": 0.998292
+        },
+        {
+          "w": "properly",
+          "s": 36.376,
+          "e": 37.066,
+          "c": 0.996508
+        },
+        {
+          "w": "authorized",
+          "s": 37.066,
+          "e": 37.876,
+          "c": 0.991147
+        },
+        {
+          "w": "in",
+          "s": 37.996,
+          "e": 38.116,
+          "c": 0.965683
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 38.12,
+      "end_s": 38.47,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "some",
+      "words": [
+        {
+          "w": "some",
+          "s": 38.116,
+          "e": 38.466,
+          "c": 0.998043
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 38.47,
+      "end_s": 39.77,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "fashion. Right",
+      "words": [
+        {
+          "w": "fashion.",
+          "s": 38.466,
+          "e": 39.316,
+          "c": 0.977982
+        },
+        {
+          "w": "Right",
+          "s": 39.416,
+          "e": 39.766,
+          "c": 0.935336
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 39.77,
+      "end_s": 52.98,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "answer. The only thing I would limit it is that because my agency involves the attorney general, not every approval would have to be external, but you would have to have the appropriate legal approvals in every instance. Correct. So we'd have to have the appropriate legal.",
+      "words": [
+        {
+          "w": "answer.",
+          "s": 39.766,
+          "e": 40.416,
+          "c": 0.973043
+        },
+        {
+          "w": "The",
+          "s": 40.416,
+          "e": 40.596,
+          "c": 0.977834
+        },
+        {
+          "w": "only",
+          "s": 40.596,
+          "e": 40.836,
+          "c": 0.996191
+        },
+        {
+          "w": "thing",
+          "s": 40.836,
+          "e": 41.146,
+          "c": 0.998451
+        },
+        {
+          "w": "I",
+          "s": 41.146,
+          "e": 41.206,
+          "c": 0.984076
+        },
+        {
+          "w": "would",
+          "s": 41.226,
+          "e": 41.486,
+          "c": 0.997166
+        },
+        {
+          "w": "limit",
+          "s": 41.576,
+          "e": 41.826,
+          "c": 0.997097
+        },
+        {
+          "w": "it",
+          "s": 41.826,
+          "e": 41.946,
+          "c": 0.9435
+        },
+        {
+          "w": "is",
+          "s": 41.946,
+          "e": 42.066,
+          "c": 0.939899
+        },
+        {
+          "w": "that",
+          "s": 42.066,
+          "e": 42.306,
+          "c": 0.910606
+        },
+        {
+          "w": "because",
+          "s": 42.306,
+          "e": 42.706,
+          "c": 0.737758
+        },
+        {
+          "w": "my",
+          "s": 42.736,
+          "e": 42.856,
+          "c": 0.98233
+        },
+        {
+          "w": "agency",
+          "s": 42.856,
+          "e": 43.226,
+          "c": 0.997826
+        },
+        {
+          "w": "involves",
+          "s": 43.226,
+          "e": 43.776,
+          "c": 0.975504
+        },
+        {
+          "w": "the",
+          "s": 43.776,
+          "e": 43.866,
+          "c": 0.987234
+        },
+        {
+          "w": "attorney",
+          "s": 43.876,
+          "e": 44.236,
+          "c": 0.554852
+        },
+        {
+          "w": "general,",
+          "s": 44.236,
+          "e": 44.776,
+          "c": 0.939005
+        },
+        {
+          "w": "not",
+          "s": 44.856,
+          "e": 45.076,
+          "c": 0.935371
+        },
+        {
+          "w": "every",
+          "s": 45.096,
+          "e": 45.366,
+          "c": 0.998755
+        },
+        {
+          "w": "approval",
+          "s": 45.376,
+          "e": 45.826,
+          "c": 0.998517
+        },
+        {
+          "w": "would",
+          "s": 45.826,
+          "e": 46.106,
+          "c": 0.997375
+        },
+        {
+          "w": "have",
+          "s": 46.166,
+          "e": 46.326,
+          "c": 0.997744
+        },
+        {
+          "w": "to",
+          "s": 46.326,
+          "e": 46.426,
+          "c": 0.999316
+        },
+        {
+          "w": "be",
+          "s": 46.436,
+          "e": 46.546,
+          "c": 0.999136
+        },
+        {
+          "w": "external,",
+          "s": 46.546,
+          "e": 47.106,
+          "c": 0.765193
+        },
+        {
+          "w": "but",
+          "s": 47.106,
+          "e": 47.276,
+          "c": 0.997586
+        },
+        {
+          "w": "you",
+          "s": 47.276,
+          "e": 47.446,
+          "c": 0.99735
+        },
+        {
+          "w": "would",
+          "s": 47.446,
+          "e": 47.726,
+          "c": 0.992125
+        },
+        {
+          "w": "have",
+          "s": 47.726,
+          "e": 47.946,
+          "c": 0.998738
+        },
+        {
+          "w": "to",
+          "s": 47.946,
+          "e": 48.036,
+          "c": 0.997425
+        },
+        {
+          "w": "have",
+          "s": 48.126,
+          "e": 48.276,
+          "c": 0.998148
+        },
+        {
+          "w": "the",
+          "s": 48.276,
+          "e": 48.446,
+          "c": 0.9972
+        },
+        {
+          "w": "appropriate",
+          "s": 48.446,
+          "e": 49.116,
+          "c": 0.996795
+        },
+        {
+          "w": "legal",
+          "s": 49.116,
+          "e": 49.406,
+          "c": 0.99946
+        },
+        {
+          "w": "approvals",
+          "s": 49.406,
+          "e": 49.926,
+          "c": 0.989129
+        },
+        {
+          "w": "in",
+          "s": 49.926,
+          "e": 50.036,
+          "c": 0.985144
+        },
+        {
+          "w": "every",
+          "s": 50.186,
+          "e": 50.326,
+          "c": 0.99886
+        },
+        {
+          "w": "instance.",
+          "s": 50.326,
+          "e": 50.976,
+          "c": 0.919768
+        },
+        {
+          "w": "Correct.",
+          "s": 50.976,
+          "e": 51.976,
+          "c": 0.912739
+        },
+        {
+          "w": "So",
+          "s": 51.976,
+          "e": 52.026,
+          "c": 0.887278
+        },
+        {
+          "w": "we'd",
+          "s": 52.026,
+          "e": 52.126,
+          "c": 0.73508
+        },
+        {
+          "w": "have",
+          "s": 52.126,
+          "e": 52.226,
+          "c": 0.996212
+        },
+        {
+          "w": "to",
+          "s": 52.226,
+          "e": 52.266,
+          "c": 0.98098
+        },
+        {
+          "w": "have",
+          "s": 52.266,
+          "e": 52.376,
+          "c": 0.984572
+        },
+        {
+          "w": "the",
+          "s": 52.376,
+          "e": 52.446,
+          "c": 0.972142
+        },
+        {
+          "w": "appropriate",
+          "s": 52.446,
+          "e": 52.726,
+          "c": 0.956692
+        },
+        {
+          "w": "legal.",
+          "s": 52.726,
+          "e": 52.976,
+          "c": 0.595437
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 52.98,
+      "end_s": 54.22,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you very much, Madam Chair.",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 52.976,
+          "e": 53.176,
+          "c": 0.98557
+        },
+        {
+          "w": "you",
+          "s": 53.176,
+          "e": 53.296,
+          "c": 0.998759
+        },
+        {
+          "w": "very",
+          "s": 53.296,
+          "e": 53.456,
+          "c": 0.986986
+        },
+        {
+          "w": "much,",
+          "s": 53.456,
+          "e": 53.686,
+          "c": 0.935724
+        },
+        {
+          "w": "Madam",
+          "s": 53.686,
+          "e": 53.886,
+          "c": 0.751571
+        },
+        {
+          "w": "Chair.",
+          "s": 53.996,
+          "e": 54.216,
+          "c": 0.954129
+        }
+      ]
+    }
+  ]
+}

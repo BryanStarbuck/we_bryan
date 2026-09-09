@@ -1,0 +1,152 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Ahead of Final Floor Vote, Wyden Opposes the Nomination of RFK Jr. to be HHS Secretary"
+    Description: >-
+      A Senate floor speech opposing the confirmation of Robert F. Kennedy
+      Jr. as Secretary of Health and Human Services, delivered ahead of the
+      final vote. The speaker calls him the least qualified nominee ever
+      tapped as America's chief health officer and says he has shown a
+      profound lack of knowledge at best and deeply dangerous views at worst
+      on vaccine safety, women's reproductive health, drug pricing and
+      affordable health care. He recounts two Oregon medical students
+      telling him their greater worry is long-term damage to science rather
+      than the immediate term. He says that at the Finance Committee hearing
+      the nominee cited his own children's vaccinations as proof he is not
+      anti-vaccine, and contrasts this with an earlier statement that he
+      would 'do anything and pay anything to go back in time' to prevent
+      those vaccinations, and with a podcast remark about 18 months earlier
+      that 'no vaccine is safe and effective'. He accuses the nominee of the
+      tactics of a conspiracy theorist and says Republican colleagues have
+      bowed to pressure from Donald Trump. The speech then turns at length
+      to Medicaid, citing 81 million people covered by Medicaid and CHIP and
+      two of three nursing home residents covered by Medicaid, and walks
+      through an extended hypothetical of a mother in a nursing home losing
+      staff attention and then coverage after federal cuts, leaving the
+      family to pay out of pocket or take her home. He urges a no vote. All
+      characterisations of the nominee and of Republican motives are the
+      speaker's own advocacy; the nominee is not present to answer them.
+    URL: "https://www.youtube.com/watch?v=-VKjNOH1Gtk"
+    Video_ID: "-VKjNOH1Gtk"
+    Show: "Ron Wyden"
+    Runtime: "00:10:27"
+    Language: "en"
+
+  Media:
+    File: "-VKjNOH1Gtk.m4a"
+    SHA256: "199de1d871f684fd6681c5198c9d99448eb8a0728de3eb1247c4b16cd42f1ed4"
+    Bytes: 10144877
+    Duration_Seconds: 627
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-VKjNOH1Gtk"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-VKjNOH1Gtk.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/ron_wyden_or_sen/-VKjNOH1Gtk/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCsd3UEaoLoqX60P88BdpGGw"
+    Uploader_ID: "@SenRonWydenOre"
+    View_Count: 200
+    Like_Count: 11
+    Comment_Count: 9
+    Availability: "public"
+    Published_At: "2025-02-13T15:33:55+00:00"
+    Captured_At: "2026-09-08T17:48:11-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "99.7%"
+      Turns: 22
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+
+  # Topics — what the video is ACTUALLY about, read from the transcript,
+  # not from what this person is on the roster for.
+  Topics:
+    - Robert F. Kennedy Jr. HHS nomination
+    - Vaccine policy and public statements
+    - Medicaid cuts
+    - Nursing home and long-term care
+    - Budget resolution and reconciliation
+
+  Source:
+    Canonical_ID: "85f4284adadce0af"
+    Transcribed: "2026-09-08T17:59:13.521083-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1516
+    Segments: 57
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T17:48:13.734422-07:00"
+    Transcription_Finished: "2026-09-08T17:59:13.521083-07:00"
+    Recorded: "2025-02-13"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-VKjNOH1Gtk.ctm"
+    Fountain: "-VKjNOH1Gtk.fountain"
+    Diarization_RTTM: "-VKjNOH1Gtk.rttm"
+    As_Broadcast_Script: "-VKjNOH1Gtk.script.txt"
+    Segments_JSON: "-VKjNOH1Gtk.segments.json"
+    Segments_JSONL: "-VKjNOH1Gtk.segments.jsonl"
+    Subtitles_SRT: "-VKjNOH1Gtk.srt"
+    Plain_Text: "-VKjNOH1Gtk.transcription"
+    Subtitles_VTT: "-VKjNOH1Gtk.vtt"
+    Transcript_SHA256: "9bfcef8b77922733aeef369974a085c90c94bbf417e8e91b9ec40784a73dade4"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "ron_wyden_or_sen"
+    video_uid: "ron_wyden_or_sen::-VKjNOH1Gtk"
+    video_key: "-VKjNOH1Gtk"
+    youtube_id: "-VKjNOH1Gtk"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T23:07:36.397Z"
+    demand_run_id: "job_1788908850135_13"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-VKjNOH1Gtk"
+    source_ref: "-VKjNOH1Gtk"

@@ -1,0 +1,831 @@
+{
+  "schema_version": 2,
+  "canonical_id": "f31d29c0f6eee333",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 45.52,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-09T00:51:34.312Z",
+  "text_sha256": "7ebafad6b7accc33cb9173ecde63dcf1d5587edca57de438a35dc0a937849bf3",
+  "segments_sha256": "87778c36d81ec4c4c40e7ac23606537afa64817c9ede31d4cf88347add8596eb",
+  "words_sha256": "8072f2dee0fcdb5aac7ed81880160b015b46e9f0d853e10d9d37b859b9fd9207",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 2,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 4,
+    "clusters": 3,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_01",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.6
+      },
+      "clean_s": 1.6,
+      "speaking_s": 1.9,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_00",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 41
+      },
+      "clean_s": 41,
+      "speaking_s": 41.4,
+      "first_s": 1.03
+    },
+    {
+      "id": "SPEAKER_07",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.6
+      },
+      "clean_s": 0.6,
+      "speaking_s": 0.6,
+      "first_s": 44.97
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 2.13,
+      "end_s": 2.6,
+      "segment_i": 1,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 44.38,
+      "end_s": 44.72,
+      "segment_i": 4,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.05,
+      "end_s": 2.13,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "You should",
+      "words": [
+        {
+          "w": "You",
+          "s": 0.05,
+          "e": 0.71,
+          "c": 0.0898052
+        },
+        {
+          "w": "should",
+          "s": 0.71,
+          "e": 2.13,
+          "c": 0.960834
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 2.13,
+      "end_s": 2.6,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "be",
+      "words": [
+        {
+          "w": "be",
+          "s": 2.13,
+          "e": 2.6,
+          "c": 0.994636
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 2.6,
+      "end_s": 27.4,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "obsessed with travelling. Not just the destination, but the experience of getting there. When you travel with us, you'll feel warm, you'll feel welcomed, and you'll feel watched. Because every seed comes with the peace of mind of knowing someone is following you. Following you with two planes. This is what you can expect when you fly with… …",
+      "words": [
+        {
+          "w": "obsessed",
+          "s": 2.6,
+          "e": 4.5,
+          "c": 0.982407
+        },
+        {
+          "w": "with",
+          "s": 4.5,
+          "e": 4.68,
+          "c": 0.976458
+        },
+        {
+          "w": "travelling.",
+          "s": 4.68,
+          "e": 5,
+          "c": 0.273174
+        },
+        {
+          "w": "Not",
+          "s": 5.05,
+          "e": 5.28,
+          "c": 0.97742
+        },
+        {
+          "w": "just",
+          "s": 5.28,
+          "e": 5.66,
+          "c": 0.996797
+        },
+        {
+          "w": "the",
+          "s": 5.66,
+          "e": 5.94,
+          "c": 0.984784
+        },
+        {
+          "w": "destination,",
+          "s": 5.94,
+          "e": 7.11,
+          "c": 0.601916
+        },
+        {
+          "w": "but",
+          "s": 7.11,
+          "e": 7.27,
+          "c": 0.781762
+        },
+        {
+          "w": "the",
+          "s": 7.27,
+          "e": 7.43,
+          "c": 0.986521
+        },
+        {
+          "w": "experience",
+          "s": 7.43,
+          "e": 8,
+          "c": 0.976083
+        },
+        {
+          "w": "of",
+          "s": 8,
+          "e": 8.14,
+          "c": 0.978024
+        },
+        {
+          "w": "getting",
+          "s": 8.14,
+          "e": 8.63,
+          "c": 0.994306
+        },
+        {
+          "w": "there.",
+          "s": 8.63,
+          "e": 9,
+          "c": 0.931637
+        },
+        {
+          "w": "When",
+          "s": 9.05,
+          "e": 9.19,
+          "c": 0.992381
+        },
+        {
+          "w": "you",
+          "s": 9.19,
+          "e": 9.33,
+          "c": 0.997368
+        },
+        {
+          "w": "travel",
+          "s": 9.33,
+          "e": 9.61,
+          "c": 0.995321
+        },
+        {
+          "w": "with",
+          "s": 9.61,
+          "e": 9.8,
+          "c": 0.997805
+        },
+        {
+          "w": "us,",
+          "s": 9.8,
+          "e": 10,
+          "c": 0.687911
+        },
+        {
+          "w": "you'll",
+          "s": 10,
+          "e": 10.42,
+          "c": 0.90532
+        },
+        {
+          "w": "feel",
+          "s": 10.42,
+          "e": 10.7,
+          "c": 0.993606
+        },
+        {
+          "w": "warm,",
+          "s": 10.7,
+          "e": 12,
+          "c": 0.764618
+        },
+        {
+          "w": "you'll",
+          "s": 12,
+          "e": 12.3,
+          "c": 0.666911
+        },
+        {
+          "w": "feel",
+          "s": 12.33,
+          "e": 12.54,
+          "c": 0.989967
+        },
+        {
+          "w": "welcomed,",
+          "s": 12.54,
+          "e": 13.08,
+          "c": 0.631338
+        },
+        {
+          "w": "and",
+          "s": 13.09,
+          "e": 13.21,
+          "c": 0.765576
+        },
+        {
+          "w": "you'll",
+          "s": 13.22,
+          "e": 13.48,
+          "c": 0.984622
+        },
+        {
+          "w": "feel",
+          "s": 13.48,
+          "e": 13.66,
+          "c": 0.990382
+        },
+        {
+          "w": "watched.",
+          "s": 13.66,
+          "e": 14,
+          "c": 0.664988
+        },
+        {
+          "w": "Because",
+          "s": 14.05,
+          "e": 14.53,
+          "c": 0.961794
+        },
+        {
+          "w": "every",
+          "s": 14.53,
+          "e": 14.91,
+          "c": 0.97748
+        },
+        {
+          "w": "seed",
+          "s": 14.91,
+          "e": 15.21,
+          "c": 0.428574
+        },
+        {
+          "w": "comes",
+          "s": 15.21,
+          "e": 15.59,
+          "c": 0.991834
+        },
+        {
+          "w": "with",
+          "s": 15.59,
+          "e": 15.89,
+          "c": 0.997204
+        },
+        {
+          "w": "the",
+          "s": 15.89,
+          "e": 16.12,
+          "c": 0.974552
+        },
+        {
+          "w": "peace",
+          "s": 16.12,
+          "e": 16.5,
+          "c": 0.985054
+        },
+        {
+          "w": "of",
+          "s": 16.5,
+          "e": 16.65,
+          "c": 0.996514
+        },
+        {
+          "w": "mind",
+          "s": 16.65,
+          "e": 17,
+          "c": 0.993392
+        },
+        {
+          "w": "of",
+          "s": 17,
+          "e": 17.22,
+          "c": 0.94321
+        },
+        {
+          "w": "knowing",
+          "s": 17.22,
+          "e": 18,
+          "c": 0.989287
+        },
+        {
+          "w": "someone",
+          "s": 18,
+          "e": 18.66,
+          "c": 0.687089
+        },
+        {
+          "w": "is",
+          "s": 18.66,
+          "e": 18.85,
+          "c": 0.98109
+        },
+        {
+          "w": "following",
+          "s": 18.85,
+          "e": 19.7,
+          "c": 0.992818
+        },
+        {
+          "w": "you.",
+          "s": 19.7,
+          "e": 20,
+          "c": 0.881937
+        },
+        {
+          "w": "Following",
+          "s": 20.05,
+          "e": 20.64,
+          "c": 0.983429
+        },
+        {
+          "w": "you",
+          "s": 20.64,
+          "e": 20.85,
+          "c": 0.995118
+        },
+        {
+          "w": "with",
+          "s": 20.85,
+          "e": 21.13,
+          "c": 0.971195
+        },
+        {
+          "w": "two",
+          "s": 21.13,
+          "e": 21.34,
+          "c": 0.850554
+        },
+        {
+          "w": "planes.",
+          "s": 21.34,
+          "e": 22,
+          "c": 0.929565
+        },
+        {
+          "w": "This",
+          "s": 22.05,
+          "e": 22.33,
+          "c": 0.995237
+        },
+        {
+          "w": "is",
+          "s": 22.33,
+          "e": 22.49,
+          "c": 0.997799
+        },
+        {
+          "w": "what",
+          "s": 22.49,
+          "e": 22.82,
+          "c": 0.998713
+        },
+        {
+          "w": "you",
+          "s": 22.82,
+          "e": 23.07,
+          "c": 0.994822
+        },
+        {
+          "w": "can",
+          "s": 23.07,
+          "e": 23.32,
+          "c": 0.997902
+        },
+        {
+          "w": "expect",
+          "s": 23.32,
+          "e": 23.8,
+          "c": 0.997175
+        },
+        {
+          "w": "when",
+          "s": 23.81,
+          "e": 24.14,
+          "c": 0.986425
+        },
+        {
+          "w": "you",
+          "s": 24.14,
+          "e": 24.39,
+          "c": 0.996322
+        },
+        {
+          "w": "fly",
+          "s": 24.39,
+          "e": 24.64,
+          "c": 0.993465
+        },
+        {
+          "w": "with…",
+          "s": 24.64,
+          "e": 25,
+          "c": 0.115459
+        },
+        {
+          "w": "…",
+          "s": 25.05,
+          "e": 27.4,
+          "c": 0.0327688
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 27.36,
+      "end_s": 44.38,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "At Egyptian Air, we definitely never mix up our time zones, flight numbers, or flight times. We don't know every journey is your personal business. After all, your personal business is our business, is our motto. Egyptian Air, wherever you travel, we",
+      "words": [
+        {
+          "w": "At",
+          "s": 27.36,
+          "e": 27.45,
+          "c": 0.877495
+        },
+        {
+          "w": "Egyptian",
+          "s": 27.51,
+          "e": 28.09,
+          "c": 0.972689
+        },
+        {
+          "w": "Air,",
+          "s": 28.11,
+          "e": 28.51,
+          "c": 0.905189
+        },
+        {
+          "w": "we",
+          "s": 28.53,
+          "e": 28.66,
+          "c": 0.966148
+        },
+        {
+          "w": "definitely",
+          "s": 28.69,
+          "e": 29.43,
+          "c": 0.993832
+        },
+        {
+          "w": "never",
+          "s": 29.43,
+          "e": 29.81,
+          "c": 0.990104
+        },
+        {
+          "w": "mix",
+          "s": 29.81,
+          "e": 30.04,
+          "c": 0.991927
+        },
+        {
+          "w": "up",
+          "s": 30.04,
+          "e": 30.22,
+          "c": 0.996632
+        },
+        {
+          "w": "our",
+          "s": 30.22,
+          "e": 30.4,
+          "c": 0.984776
+        },
+        {
+          "w": "time",
+          "s": 30.4,
+          "e": 30.65,
+          "c": 0.996223
+        },
+        {
+          "w": "zones,",
+          "s": 30.65,
+          "e": 31.09,
+          "c": 0.991446
+        },
+        {
+          "w": "flight",
+          "s": 31.1,
+          "e": 31.55,
+          "c": 0.713484
+        },
+        {
+          "w": "numbers,",
+          "s": 31.55,
+          "e": 32.22,
+          "c": 0.666797
+        },
+        {
+          "w": "or",
+          "s": 32.32,
+          "e": 32.38,
+          "c": 0.993216
+        },
+        {
+          "w": "flight",
+          "s": 32.38,
+          "e": 32.8,
+          "c": 0.997752
+        },
+        {
+          "w": "times.",
+          "s": 32.84,
+          "e": 33.22,
+          "c": 0.518246
+        },
+        {
+          "w": "We",
+          "s": 33.22,
+          "e": 33.31,
+          "c": 0.999956
+        },
+        {
+          "w": "don't",
+          "s": 33.39,
+          "e": 33.7,
+          "c": 0.190204
+        },
+        {
+          "w": "know",
+          "s": 33.73,
+          "e": 33.95,
+          "c": 0.999487
+        },
+        {
+          "w": "every",
+          "s": 34,
+          "e": 34.34,
+          "c": 0.959481
+        },
+        {
+          "w": "journey",
+          "s": 34.51,
+          "e": 34.83,
+          "c": 0.999832
+        },
+        {
+          "w": "is",
+          "s": 34.88,
+          "e": 34.97,
+          "c": 0.999846
+        },
+        {
+          "w": "your",
+          "s": 34.97,
+          "e": 35.25,
+          "c": 0.999447
+        },
+        {
+          "w": "personal",
+          "s": 35.25,
+          "e": 35.8,
+          "c": 0.999693
+        },
+        {
+          "w": "business.",
+          "s": 35.81,
+          "e": 36.63,
+          "c": 0.999634
+        },
+        {
+          "w": "After",
+          "s": 36.64,
+          "e": 36.99,
+          "c": 0.99995
+        },
+        {
+          "w": "all,",
+          "s": 37.06,
+          "e": 37.47,
+          "c": 0.999781
+        },
+        {
+          "w": "your",
+          "s": 37.47,
+          "e": 37.78,
+          "c": 0.999931
+        },
+        {
+          "w": "personal",
+          "s": 37.95,
+          "e": 38.47,
+          "c": 0.999956
+        },
+        {
+          "w": "business",
+          "s": 38.5,
+          "e": 39.14,
+          "c": 0.999983
+        },
+        {
+          "w": "is",
+          "s": 39.14,
+          "e": 39.29,
+          "c": 0.999989
+        },
+        {
+          "w": "our",
+          "s": 39.3,
+          "e": 39.55,
+          "c": 0.999325
+        },
+        {
+          "w": "business,",
+          "s": 39.55,
+          "e": 40.37,
+          "c": 0.45312
+        },
+        {
+          "w": "is",
+          "s": 40.37,
+          "e": 40.53,
+          "c": 0.989568
+        },
+        {
+          "w": "our",
+          "s": 40.56,
+          "e": 40.79,
+          "c": 0.999914
+        },
+        {
+          "w": "motto.",
+          "s": 40.79,
+          "e": 41.5,
+          "c": 0.977674
+        },
+        {
+          "w": "Egyptian",
+          "s": 41.52,
+          "e": 42.2,
+          "c": 0.998388
+        },
+        {
+          "w": "Air,",
+          "s": 42.2,
+          "e": 42.61,
+          "c": 0.437915
+        },
+        {
+          "w": "wherever",
+          "s": 42.81,
+          "e": 43.29,
+          "c": 0.999033
+        },
+        {
+          "w": "you",
+          "s": 43.39,
+          "e": 43.52,
+          "c": 0.99996
+        },
+        {
+          "w": "travel,",
+          "s": 43.54,
+          "e": 44.21,
+          "c": 0.994127
+        },
+        {
+          "w": "we",
+          "s": 44.21,
+          "e": 44.38,
+          "c": 0.96188
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 44.38,
+      "end_s": 44.72,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "will",
+      "words": [
+        {
+          "w": "will",
+          "s": 44.38,
+          "e": 44.72,
+          "c": 0.992027
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 44.72,
+      "end_s": 45.52,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "follow.",
+      "words": [
+        {
+          "w": "follow.",
+          "s": 44.72,
+          "e": 45.52,
+          "c": 0.941502
+        }
+      ]
+    }
+  ]
+}

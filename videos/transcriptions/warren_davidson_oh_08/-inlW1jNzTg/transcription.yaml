@@ -1,0 +1,191 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Davidson Breaks Down Landmark Crypto Hearing with Charles Payne"
+    Description: >-
+      A television interview following a House Financial Services Committee
+      hearing on cryptocurrency. The host opens by noting Bitcoin and other
+      cryptocurrencies continue to fall, from 68,000 dollars on November 10,
+      with no relief from the hearing, and quotes Rep. Roger Williams of
+      Texas on the risk of 'curveballs from Washington' undoing industry
+      progress. The member calls the hearing historic with a top-tier panel,
+      and contrasts it with the hostility and ill-informed questions he says
+      met Facebook's Libra pitch two years earlier, saying the knowledge gap
+      his colleagues have closed is impressive. Asked about proposals to
+      regulate by restricting access to the wealthiest or by routing through
+      products like mutual funds, he says the thing most in jeopardy is
+      self-custody, the ability to own your own assets: the code is open
+      source, anyone with an internet connection can run their own node,
+      though a counterparty is still needed, and many use account-based
+      systems such as Coinbase or FTX. He criticises a panel focus on what
+      he calls surveillance capitalism, saying firms offering to spy on
+      customers and report to the government soothed his colleagues'
+      consciences, but that a business should not have to be a good spy to
+      operate in America. Asked about the House voting 428 to 1 to ban
+      imports from Xinjiang unless shown not to be made with forced labour,
+      and about opposition from large American companies, he says it is the
+      right thing to do, that the United States government rather than the
+      SEC and publicly traded companies is the right place to apply the
+      leverage, and that China is dehumanising and exploiting the people
+      concerned. The characterisations of the panel, of colleagues and of
+      China are his own.
+    URL: "https://www.youtube.com/watch?v=-inlW1jNzTg"
+    Video_ID: "-inlW1jNzTg"
+    Show: "Congressman Warren Davidson"
+    Runtime: "00:04:05"
+    Language: "en"
+
+  Media:
+    File: "-inlW1jNzTg.m4a"
+    SHA256: "8a67cbb920900c7fbe78cc6be6eff41ef8b6ac94281ed0df3506b166e4abc0c4"
+    Bytes: 3967125
+    Duration_Seconds: 245
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-inlW1jNzTg"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-inlW1jNzTg.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/warren_davidson_oh_08/-inlW1jNzTg/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCMzuyZWzk44YRNesFzPTeUw"
+    Uploader_ID: "@congressmanwarrendavidson2640"
+    View_Count: 240
+    Like_Count: 4
+    Availability: "public"
+    Published_At: "2021-12-09T20:10:18+00:00"
+    Captured_At: "2026-09-08T17:48:30-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Programme host opening on the cryptocurrency selloff"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "17.4%"
+      Turns: 2
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "3.5%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "3.1%"
+      Turns: 1
+    Person_4:
+      Name: "Warren Davidson"
+      Role: "Member of Congress interviewed; identified by the host's introduction"
+      Subject: true
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "56.8%"
+      Turns: 4
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "9.3%"
+      Turns: 1
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_12"
+      Share_Of_Speech: "0.6%"
+      Turns: 1
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_14"
+      Share_Of_Speech: "7.0%"
+      Turns: 1
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_15"
+      Share_Of_Speech: "2.3%"
+      Turns: 1
+
+  # Topics — what the video is ACTUALLY about, read from the transcript,
+  # not from what this person is on the roster for.
+  Topics:
+    - Cryptocurrency regulation
+    - Self-custody and digital property rights
+    - House Financial Services hearing
+    - Xinjiang forced labour import ban
+    - China policy
+
+  Source:
+    Canonical_ID: "303752291b87880e"
+    Transcribed: "2026-09-08T17:53:51.572875-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 829
+    Segments: 23
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T17:48:31.400633-07:00"
+    Transcription_Finished: "2026-09-08T17:53:51.572875-07:00"
+    Recorded: "2021-12-09"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-inlW1jNzTg.ctm"
+    Fountain: "-inlW1jNzTg.fountain"
+    Diarization_RTTM: "-inlW1jNzTg.rttm"
+    As_Broadcast_Script: "-inlW1jNzTg.script.txt"
+    Segments_JSON: "-inlW1jNzTg.segments.json"
+    Segments_JSONL: "-inlW1jNzTg.segments.jsonl"
+    Subtitles_SRT: "-inlW1jNzTg.srt"
+    Plain_Text: "-inlW1jNzTg.transcription"
+    Subtitles_VTT: "-inlW1jNzTg.vtt"
+    Transcript_SHA256: "de0b1f1a2d2fddc4fc2c4ab36a8ac4b486ddf86bdf7967a61002104dd71b03de"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "warren_davidson_oh_08"
+    video_uid: "warren_davidson_oh_08::-inlW1jNzTg"
+    video_key: "-inlW1jNzTg"
+    youtube_id: "-inlW1jNzTg"
+    priority: 700
+    ceiling: 1000
+    raw_score: 700
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 150
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T23:07:36.397Z"
+    demand_run_id: "job_1788908850135_13"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-inlW1jNzTg"
+    source_ref: "-inlW1jNzTg"

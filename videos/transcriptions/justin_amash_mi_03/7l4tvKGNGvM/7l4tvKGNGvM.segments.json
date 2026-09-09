@@ -1,0 +1,6434 @@
+{
+  "schema_version": 2,
+  "canonical_id": "3f3e7f164344b8bb",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 308.22,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-09T00:55:27.484Z",
+  "text_sha256": "62dc7ed3d69429426be90980a1b32818c8c8667200774065c0a91567a6a80560",
+  "segments_sha256": "3fcbe1ad75d9df74f0c49f2ed33fb435d742a836388942dea507f503261d7c1f",
+  "words_sha256": "f947179d6bce8c55fe757a3ce88341b1c3060b5c8a7048903aba654a29f9e99f",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 13,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 45,
+    "clusters": 18,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_01",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.9
+      },
+      "clean_s": 4.9,
+      "speaking_s": 5.5,
+      "first_s": 10.12
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 2,
+      "label": "Speaker 2 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.79,
+        "confidence": "low",
+        "clean_s": 53.7
+      },
+      "clean_s": 53.7,
+      "speaking_s": 54.8,
+      "first_s": 15.03
+    },
+    {
+      "id": "SPEAKER_05",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 6.6
+      },
+      "clean_s": 6.6,
+      "speaking_s": 6.6,
+      "first_s": 23.84
+    },
+    {
+      "id": "SPEAKER_08",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.5
+      },
+      "clean_s": 1.5,
+      "speaking_s": 1.5,
+      "first_s": 31.45
+    },
+    {
+      "id": "SPEAKER_11",
+      "n": 5,
+      "label": "Speaker 5 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.87,
+        "confidence": "low",
+        "clean_s": 12.2
+      },
+      "clean_s": 12.2,
+      "speaking_s": 12.2,
+      "first_s": 32.97
+    },
+    {
+      "id": "SPEAKER_10",
+      "n": 6,
+      "label": "Speaker 6",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.2
+      },
+      "clean_s": 4.2,
+      "speaking_s": 4.2,
+      "first_s": 42.86
+    },
+    {
+      "id": "SPEAKER_09",
+      "n": 7,
+      "label": "Speaker 7 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.88,
+        "confidence": "low",
+        "clean_s": 129.9
+      },
+      "clean_s": 129.9,
+      "speaking_s": 129.9,
+      "first_s": 47.03
+    },
+    {
+      "id": "SPEAKER_16",
+      "n": 8,
+      "label": "Speaker 8",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.5
+      },
+      "clean_s": 0.5,
+      "speaking_s": 0.5,
+      "first_s": 64.58
+    },
+    {
+      "id": "SPEAKER_21",
+      "n": 9,
+      "label": "Speaker 9",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 7.7
+      },
+      "clean_s": 7.7,
+      "speaking_s": 7.7,
+      "first_s": 94.97
+    },
+    {
+      "id": "SPEAKER_12",
+      "n": 10,
+      "label": "Speaker 10 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.89,
+        "confidence": "low",
+        "clean_s": 10.3
+      },
+      "clean_s": 10.3,
+      "speaking_s": 10.3,
+      "first_s": 100.03
+    },
+    {
+      "id": "SPEAKER_14",
+      "n": 11,
+      "label": "Speaker 11 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.82,
+        "confidence": "low",
+        "clean_s": 30.4
+      },
+      "clean_s": 30.4,
+      "speaking_s": 30.9,
+      "first_s": 111.05
+    },
+    {
+      "id": "SPEAKER_27",
+      "n": 12,
+      "label": "Speaker 12",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 2.7
+      },
+      "clean_s": 2.7,
+      "speaking_s": 2.7,
+      "first_s": 186.69
+    },
+    {
+      "id": "SPEAKER_28",
+      "n": 13,
+      "label": "Speaker 13",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.4
+      },
+      "clean_s": 4.4,
+      "speaking_s": 4.4,
+      "first_s": 190.97
+    },
+    {
+      "id": "SPEAKER_29",
+      "n": 14,
+      "label": "Speaker 14",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.8
+      },
+      "clean_s": 1.8,
+      "speaking_s": 1.8,
+      "first_s": 212.22
+    },
+    {
+      "id": "SPEAKER_32",
+      "n": 15,
+      "label": "Speaker 15",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.6
+      },
+      "clean_s": 0.6,
+      "speaking_s": 0.6,
+      "first_s": 226.97
+    },
+    {
+      "id": "SPEAKER_34",
+      "n": 16,
+      "label": "Speaker 16",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.5
+      },
+      "clean_s": 4.5,
+      "speaking_s": 4.5,
+      "first_s": 247.52
+    },
+    {
+      "id": "SPEAKER_37",
+      "n": 17,
+      "label": "Speaker 17",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 2.9
+      },
+      "clean_s": 2.9,
+      "speaking_s": 2.9,
+      "first_s": 283.8
+    },
+    {
+      "id": "SPEAKER_39",
+      "n": 18,
+      "label": "Speaker 18",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1
+      },
+      "clean_s": 1,
+      "speaking_s": 1,
+      "first_s": 307.22
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0,
+      "end_s": 9.95,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 23.44,
+      "end_s": 23.52,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 30.44,
+      "end_s": 31.44,
+      "segment_i": 5,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 71.81,
+      "end_s": 72.02,
+      "segment_i": 13,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 80.19,
+      "end_s": 80.34,
+      "segment_i": 15,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 93.95,
+      "end_s": 93.95,
+      "segment_i": 17,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 127.65,
+      "end_s": 127.92,
+      "segment_i": 24,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 147.15,
+      "end_s": 147.27,
+      "segment_i": 27,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 186.58,
+      "end_s": 186.59,
+      "segment_i": 31,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 191.38,
+      "end_s": 191.38,
+      "segment_i": 34,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 197.87,
+      "end_s": 197.87,
+      "segment_i": 37,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 211.6,
+      "end_s": 211.61,
+      "segment_i": 40,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 223.22,
+      "end_s": 224,
+      "segment_i": 43,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 223.98,
+      "end_s": 224.76,
+      "segment_i": 44,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 243.07,
+      "end_s": 243.3,
+      "segment_i": 50,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 247.47,
+      "end_s": 247.47,
+      "segment_i": 52,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 286.96,
+      "end_s": 286.96,
+      "segment_i": 57,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0,
+      "end_s": 9.95,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you, Mr. Chairman, and thank you,",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 0,
+          "e": 1.31,
+          "c": 0.270629
+        },
+        {
+          "w": "you,",
+          "s": 1.31,
+          "e": 2.62,
+          "c": 0.792343
+        },
+        {
+          "w": "Mr.",
+          "s": 2.62,
+          "e": 3.92,
+          "c": 0.98632
+        },
+        {
+          "w": "Chairman,",
+          "s": 3.92,
+          "e": 6.54,
+          "c": 0.392498
+        },
+        {
+          "w": "and",
+          "s": 6.54,
+          "e": 7.33,
+          "c": 0.976447
+        },
+        {
+          "w": "thank",
+          "s": 7.33,
+          "e": 8.64,
+          "c": 0.932389
+        },
+        {
+          "w": "you,",
+          "s": 8.64,
+          "e": 9.95,
+          "c": 0.959395
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 10.15,
+      "end_s": 15.57,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Mr. Donahoe. It is good to see you again. Good to see",
+      "words": [
+        {
+          "w": "Mr.",
+          "s": 10.15,
+          "e": 11.13,
+          "c": 0.987514
+        },
+        {
+          "w": "Donahoe.",
+          "s": 11.83,
+          "e": 13.98,
+          "c": 0.808574
+        },
+        {
+          "w": "It",
+          "s": 13.98,
+          "e": 14.06,
+          "c": 0.939497
+        },
+        {
+          "w": "is",
+          "s": 14.06,
+          "e": 14.14,
+          "c": 0.969623
+        },
+        {
+          "w": "good",
+          "s": 14.14,
+          "e": 14.3,
+          "c": 0.993242
+        },
+        {
+          "w": "to",
+          "s": 14.3,
+          "e": 14.38,
+          "c": 0.99879
+        },
+        {
+          "w": "see",
+          "s": 14.38,
+          "e": 14.5,
+          "c": 0.998908
+        },
+        {
+          "w": "you",
+          "s": 14.5,
+          "e": 14.62,
+          "c": 0.991817
+        },
+        {
+          "w": "again.",
+          "s": 14.62,
+          "e": 14.98,
+          "c": 0.906151
+        },
+        {
+          "w": "Good",
+          "s": 14.98,
+          "e": 15.24,
+          "c": 0.965612
+        },
+        {
+          "w": "to",
+          "s": 15.24,
+          "e": 15.37,
+          "c": 0.998515
+        },
+        {
+          "w": "see",
+          "s": 15.37,
+          "e": 15.57,
+          "c": 0.99926
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 15.57,
+      "end_s": 23.48,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you. I have a few questions. When was the last year the Postal Service had a profit?",
+      "words": [
+        {
+          "w": "you.",
+          "s": 15.57,
+          "e": 15.98,
+          "c": 0.996594
+        },
+        {
+          "w": "I",
+          "s": 15.98,
+          "e": 16.11,
+          "c": 0.95344
+        },
+        {
+          "w": "have",
+          "s": 16.11,
+          "e": 16.63,
+          "c": 0.994059
+        },
+        {
+          "w": "a",
+          "s": 16.63,
+          "e": 16.76,
+          "c": 0.988052
+        },
+        {
+          "w": "few",
+          "s": 16.76,
+          "e": 17.15,
+          "c": 0.999209
+        },
+        {
+          "w": "questions.",
+          "s": 17.15,
+          "e": 18.76,
+          "c": 0.906072
+        },
+        {
+          "w": "When",
+          "s": 18.76,
+          "e": 19.16,
+          "c": 0.9987
+        },
+        {
+          "w": "was",
+          "s": 19.16,
+          "e": 19.46,
+          "c": 0.940247
+        },
+        {
+          "w": "the",
+          "s": 19.46,
+          "e": 19.76,
+          "c": 0.866497
+        },
+        {
+          "w": "last",
+          "s": 19.76,
+          "e": 20.16,
+          "c": 0.8977
+        },
+        {
+          "w": "year",
+          "s": 20.16,
+          "e": 20.56,
+          "c": 0.995579
+        },
+        {
+          "w": "the",
+          "s": 20.56,
+          "e": 20.86,
+          "c": 0.707518
+        },
+        {
+          "w": "Postal",
+          "s": 20.86,
+          "e": 21.46,
+          "c": 0.960658
+        },
+        {
+          "w": "Service",
+          "s": 21.46,
+          "e": 22.16,
+          "c": 0.99791
+        },
+        {
+          "w": "had",
+          "s": 22.16,
+          "e": 22.46,
+          "c": 0.862001
+        },
+        {
+          "w": "a",
+          "s": 22.46,
+          "e": 22.56,
+          "c": 0.985135
+        },
+        {
+          "w": "profit?",
+          "s": 22.56,
+          "e": 23.48,
+          "c": 0.986645
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 23.44,
+      "end_s": 23.52,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I",
+      "words": [
+        {
+          "w": "I",
+          "s": 23.44,
+          "e": 23.52,
+          "c": 0.991522
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 23.64,
+      "end_s": 30.44,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "think we had a profit in 2006, maybe 2007. I can't be 100 percent sure of one of those two years.",
+      "words": [
+        {
+          "w": "think",
+          "s": 23.64,
+          "e": 23.94,
+          "c": 0.999098
+        },
+        {
+          "w": "we",
+          "s": 23.94,
+          "e": 24.1,
+          "c": 0.997619
+        },
+        {
+          "w": "had",
+          "s": 24.1,
+          "e": 24.35,
+          "c": 0.997754
+        },
+        {
+          "w": "a",
+          "s": 24.35,
+          "e": 24.43,
+          "c": 0.996105
+        },
+        {
+          "w": "profit",
+          "s": 24.43,
+          "e": 24.9,
+          "c": 0.993763
+        },
+        {
+          "w": "in",
+          "s": 24.98,
+          "e": 25.09,
+          "c": 0.997366
+        },
+        {
+          "w": "2006,",
+          "s": 25.09,
+          "e": 26.26,
+          "c": 0.931646
+        },
+        {
+          "w": "maybe",
+          "s": 26.26,
+          "e": 26.68,
+          "c": 0.987106
+        },
+        {
+          "w": "2007.",
+          "s": 26.68,
+          "e": 28,
+          "c": 0.845984
+        },
+        {
+          "w": "I",
+          "s": 28,
+          "e": 28.04,
+          "c": 0.999514
+        },
+        {
+          "w": "can't",
+          "s": 28.04,
+          "e": 28.25,
+          "c": 0.896119
+        },
+        {
+          "w": "be",
+          "s": 28.36,
+          "e": 28.36,
+          "c": 0.99514
+        },
+        {
+          "w": "100",
+          "s": 28.44,
+          "e": 28.76,
+          "c": 0.940148
+        },
+        {
+          "w": "percent",
+          "s": 28.8,
+          "e": 29.12,
+          "c": 0.887392
+        },
+        {
+          "w": "sure",
+          "s": 29.12,
+          "e": 29.31,
+          "c": 0.995763
+        },
+        {
+          "w": "of",
+          "s": 29.31,
+          "e": 29.4,
+          "c": 0.665716
+        },
+        {
+          "w": "one",
+          "s": 29.4,
+          "e": 29.46,
+          "c": 0.987421
+        },
+        {
+          "w": "of",
+          "s": 29.54,
+          "e": 29.63,
+          "c": 0.997113
+        },
+        {
+          "w": "those",
+          "s": 29.63,
+          "e": 29.86,
+          "c": 0.993112
+        },
+        {
+          "w": "two",
+          "s": 29.86,
+          "e": 30,
+          "c": 0.989572
+        },
+        {
+          "w": "years.",
+          "s": 30,
+          "e": 30.44,
+          "c": 0.997562
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 30.44,
+      "end_s": 31.44,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Okay, thanks.",
+      "words": [
+        {
+          "w": "Okay,",
+          "s": 30.44,
+          "e": 30.83,
+          "c": 0.357613
+        },
+        {
+          "w": "thanks.",
+          "s": 30.88,
+          "e": 31.44,
+          "c": 0.982482
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 31.44,
+      "end_s": 32.9,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "How much money did the Postal",
+      "words": [
+        {
+          "w": "How",
+          "s": 31.44,
+          "e": 31.63,
+          "c": 0.996772
+        },
+        {
+          "w": "much",
+          "s": 31.63,
+          "e": 31.89,
+          "c": 0.999672
+        },
+        {
+          "w": "money",
+          "s": 31.89,
+          "e": 32.14,
+          "c": 0.892384
+        },
+        {
+          "w": "did",
+          "s": 32.24,
+          "e": 32.4,
+          "c": 0.999283
+        },
+        {
+          "w": "the",
+          "s": 32.4,
+          "e": 32.56,
+          "c": 0.99527
+        },
+        {
+          "w": "Postal",
+          "s": 32.64,
+          "e": 32.9,
+          "c": 0.912909
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 32.98,
+      "end_s": 42.87,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Service lose in the first quarter of 2012? With our requirement to pre-fund about $3 billion and $300 million. And",
+      "words": [
+        {
+          "w": "Service",
+          "s": 32.98,
+          "e": 33.3,
+          "c": 0.999317
+        },
+        {
+          "w": "lose",
+          "s": 33.43,
+          "e": 33.59,
+          "c": 0.996497
+        },
+        {
+          "w": "in",
+          "s": 33.7,
+          "e": 33.82,
+          "c": 0.997326
+        },
+        {
+          "w": "the",
+          "s": 33.82,
+          "e": 33.99,
+          "c": 0.998643
+        },
+        {
+          "w": "first",
+          "s": 34.07,
+          "e": 34.33,
+          "c": 0.995756
+        },
+        {
+          "w": "quarter",
+          "s": 34.33,
+          "e": 34.75,
+          "c": 0.998944
+        },
+        {
+          "w": "of",
+          "s": 34.91,
+          "e": 34.91,
+          "c": 0.996651
+        },
+        {
+          "w": "2012?",
+          "s": 34.91,
+          "e": 35.96,
+          "c": 0.994425
+        },
+        {
+          "w": "With",
+          "s": 35.96,
+          "e": 36.17,
+          "c": 0.993083
+        },
+        {
+          "w": "our",
+          "s": 36.4,
+          "e": 36.66,
+          "c": 0.998483
+        },
+        {
+          "w": "requirement",
+          "s": 36.66,
+          "e": 37.76,
+          "c": 0.993822
+        },
+        {
+          "w": "to",
+          "s": 37.76,
+          "e": 37.96,
+          "c": 0.974747
+        },
+        {
+          "w": "pre-fund",
+          "s": 37.96,
+          "e": 38.76,
+          "c": 0.792418
+        },
+        {
+          "w": "about",
+          "s": 38.76,
+          "e": 39.25,
+          "c": 0.826869
+        },
+        {
+          "w": "$3",
+          "s": 39.26,
+          "e": 39.64,
+          "c": 0.947643
+        },
+        {
+          "w": "billion",
+          "s": 39.75,
+          "e": 40.36,
+          "c": 0.825607
+        },
+        {
+          "w": "and",
+          "s": 40.36,
+          "e": 40.62,
+          "c": 0.941607
+        },
+        {
+          "w": "$300",
+          "s": 40.69,
+          "e": 41.66,
+          "c": 0.989658
+        },
+        {
+          "w": "million.",
+          "s": 41.66,
+          "e": 42.68,
+          "c": 0.984859
+        },
+        {
+          "w": "And",
+          "s": 42.68,
+          "e": 42.87,
+          "c": 0.94892
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 42.87,
+      "end_s": 46.92,
+      "speaker": "SPEAKER_10",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "how much do you expect to lose for the entire fiscal year? Depending on",
+      "words": [
+        {
+          "w": "how",
+          "s": 42.87,
+          "e": 42.89,
+          "c": 0.997676
+        },
+        {
+          "w": "much",
+          "s": 43.12,
+          "e": 43.32,
+          "c": 0.999441
+        },
+        {
+          "w": "do",
+          "s": 43.32,
+          "e": 43.37,
+          "c": 0.831983
+        },
+        {
+          "w": "you",
+          "s": 43.48,
+          "e": 43.64,
+          "c": 0.998009
+        },
+        {
+          "w": "expect",
+          "s": 43.64,
+          "e": 44.03,
+          "c": 0.997598
+        },
+        {
+          "w": "to",
+          "s": 44.03,
+          "e": 44.14,
+          "c": 0.995708
+        },
+        {
+          "w": "lose",
+          "s": 44.22,
+          "e": 44.42,
+          "c": 0.998433
+        },
+        {
+          "w": "for",
+          "s": 44.42,
+          "e": 44.54,
+          "c": 0.991198
+        },
+        {
+          "w": "the",
+          "s": 44.61,
+          "e": 44.8,
+          "c": 0.986115
+        },
+        {
+          "w": "entire",
+          "s": 44.8,
+          "e": 45.19,
+          "c": 0.997811
+        },
+        {
+          "w": "fiscal",
+          "s": 45.19,
+          "e": 45.58,
+          "c": 0.991947
+        },
+        {
+          "w": "year?",
+          "s": 45.58,
+          "e": 45.99,
+          "c": 0.997092
+        },
+        {
+          "w": "Depending",
+          "s": 46.52,
+          "e": 46.77,
+          "c": 0.975847
+        },
+        {
+          "w": "on",
+          "s": 46.77,
+          "e": 46.92,
+          "c": 0.991331
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 46.92,
+      "end_s": 53.46,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "how we finish the year, probably in the vicinity of about $14 billion. We are a little ahead of our revenue.",
+      "words": [
+        {
+          "w": "how",
+          "s": 46.92,
+          "e": 47.15,
+          "c": 0.998816
+        },
+        {
+          "w": "we",
+          "s": 47.15,
+          "e": 47.28,
+          "c": 0.998936
+        },
+        {
+          "w": "finish",
+          "s": 47.31,
+          "e": 47.76,
+          "c": 0.840347
+        },
+        {
+          "w": "the",
+          "s": 47.76,
+          "e": 47.96,
+          "c": 0.997137
+        },
+        {
+          "w": "year,",
+          "s": 48.07,
+          "e": 48.44,
+          "c": 0.960118
+        },
+        {
+          "w": "probably",
+          "s": 48.44,
+          "e": 49.05,
+          "c": 0.982255
+        },
+        {
+          "w": "in",
+          "s": 49.05,
+          "e": 49.2,
+          "c": 0.996381
+        },
+        {
+          "w": "the",
+          "s": 49.2,
+          "e": 49.39,
+          "c": 0.873866
+        },
+        {
+          "w": "vicinity",
+          "s": 49.55,
+          "e": 50.04,
+          "c": 0.998477
+        },
+        {
+          "w": "of",
+          "s": 50.04,
+          "e": 50.18,
+          "c": 0.99514
+        },
+        {
+          "w": "about",
+          "s": 50.24,
+          "e": 50.57,
+          "c": 0.989899
+        },
+        {
+          "w": "$14",
+          "s": 50.57,
+          "e": 51.16,
+          "c": 0.985343
+        },
+        {
+          "w": "billion.",
+          "s": 51.16,
+          "e": 51.44,
+          "c": 0.947893
+        },
+        {
+          "w": "We",
+          "s": 51.44,
+          "e": 51.57,
+          "c": 0.864928
+        },
+        {
+          "w": "are",
+          "s": 51.57,
+          "e": 51.68,
+          "c": 0.672101
+        },
+        {
+          "w": "a",
+          "s": 51.84,
+          "e": 51.84,
+          "c": 0.98239
+        },
+        {
+          "w": "little",
+          "s": 51.88,
+          "e": 52.25,
+          "c": 0.999214
+        },
+        {
+          "w": "ahead",
+          "s": 52.25,
+          "e": 52.56,
+          "c": 0.997839
+        },
+        {
+          "w": "of",
+          "s": 52.66,
+          "e": 52.67,
+          "c": 0.996612
+        },
+        {
+          "w": "our",
+          "s": 52.72,
+          "e": 52.9,
+          "c": 0.973765
+        },
+        {
+          "w": "revenue.",
+          "s": 52.98,
+          "e": 53.46,
+          "c": 0.72999
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 53.44,
+      "end_s": 64.24,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "revenues right now and people have done a great job holding costs. The pre-funding for this year counts for both this year and last, so that is $11 billion of those. Last",
+      "words": [
+        {
+          "w": "revenues",
+          "s": 53.44,
+          "e": 53.86,
+          "c": 0.592202
+        },
+        {
+          "w": "right",
+          "s": 53.9,
+          "e": 54.19,
+          "c": 0.944789
+        },
+        {
+          "w": "now",
+          "s": 54.19,
+          "e": 54.36,
+          "c": 0.999258
+        },
+        {
+          "w": "and",
+          "s": 54.36,
+          "e": 54.53,
+          "c": 0.737818
+        },
+        {
+          "w": "people",
+          "s": 54.53,
+          "e": 54.88,
+          "c": 0.890889
+        },
+        {
+          "w": "have",
+          "s": 54.88,
+          "e": 55.1,
+          "c": 0.966134
+        },
+        {
+          "w": "done",
+          "s": 55.24,
+          "e": 55.25,
+          "c": 0.997626
+        },
+        {
+          "w": "a",
+          "s": 55.36,
+          "e": 55.39,
+          "c": 0.992564
+        },
+        {
+          "w": "great",
+          "s": 55.39,
+          "e": 55.68,
+          "c": 0.993693
+        },
+        {
+          "w": "job",
+          "s": 55.68,
+          "e": 55.85,
+          "c": 0.998969
+        },
+        {
+          "w": "holding",
+          "s": 55.85,
+          "e": 56.22,
+          "c": 0.917869
+        },
+        {
+          "w": "costs.",
+          "s": 56.22,
+          "e": 56.78,
+          "c": 0.964899
+        },
+        {
+          "w": "The",
+          "s": 56.78,
+          "e": 56.99,
+          "c": 0.998708
+        },
+        {
+          "w": "pre-funding",
+          "s": 57.05,
+          "e": 57.85,
+          "c": 0.553227
+        },
+        {
+          "w": "for",
+          "s": 57.85,
+          "e": 58.09,
+          "c": 0.759261
+        },
+        {
+          "w": "this",
+          "s": 58.09,
+          "e": 58.4,
+          "c": 0.991847
+        },
+        {
+          "w": "year",
+          "s": 58.4,
+          "e": 58.71,
+          "c": 0.999396
+        },
+        {
+          "w": "counts",
+          "s": 58.71,
+          "e": 59.18,
+          "c": 0.683062
+        },
+        {
+          "w": "for",
+          "s": 59.18,
+          "e": 59.41,
+          "c": 0.949689
+        },
+        {
+          "w": "both",
+          "s": 59.41,
+          "e": 59.67,
+          "c": 0.982609
+        },
+        {
+          "w": "this",
+          "s": 59.76,
+          "e": 59.94,
+          "c": 0.996947
+        },
+        {
+          "w": "year",
+          "s": 60.12,
+          "e": 60.34,
+          "c": 0.993722
+        },
+        {
+          "w": "and",
+          "s": 60.34,
+          "e": 60.57,
+          "c": 0.997407
+        },
+        {
+          "w": "last,",
+          "s": 60.57,
+          "e": 61.03,
+          "c": 0.678431
+        },
+        {
+          "w": "so",
+          "s": 61.18,
+          "e": 61.18,
+          "c": 0.985182
+        },
+        {
+          "w": "that",
+          "s": 61.21,
+          "e": 61.44,
+          "c": 0.991993
+        },
+        {
+          "w": "is",
+          "s": 61.5,
+          "e": 61.51,
+          "c": 0.922267
+        },
+        {
+          "w": "$11",
+          "s": 61.66,
+          "e": 62.18,
+          "c": 0.632923
+        },
+        {
+          "w": "billion",
+          "s": 62.18,
+          "e": 62.64,
+          "c": 0.963114
+        },
+        {
+          "w": "of",
+          "s": 62.88,
+          "e": 63.06,
+          "c": 0.99408
+        },
+        {
+          "w": "those.",
+          "s": 63.08,
+          "e": 63.88,
+          "c": 0.523433
+        },
+        {
+          "w": "Last",
+          "s": 63.88,
+          "e": 64.24,
+          "c": 0.510606
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 64.24,
+      "end_s": 64.68,
+      "speaker": "SPEAKER_16",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "year,",
+      "words": [
+        {
+          "w": "year,",
+          "s": 64.24,
+          "e": 64.68,
+          "c": 0.614286
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 64.78,
+      "end_s": 71.8,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Congress acted at the last second to give you some temporary relief from the pre-funding.",
+      "words": [
+        {
+          "w": "Congress",
+          "s": 64.78,
+          "e": 65.51,
+          "c": 0.969873
+        },
+        {
+          "w": "acted",
+          "s": 65.51,
+          "e": 65.96,
+          "c": 0.994065
+        },
+        {
+          "w": "at",
+          "s": 65.96,
+          "e": 66.14,
+          "c": 0.982847
+        },
+        {
+          "w": "the",
+          "s": 66.14,
+          "e": 66.39,
+          "c": 0.991894
+        },
+        {
+          "w": "last",
+          "s": 66.41,
+          "e": 66.76,
+          "c": 0.998182
+        },
+        {
+          "w": "second",
+          "s": 67.22,
+          "e": 67.26,
+          "c": 0.988923
+        },
+        {
+          "w": "to",
+          "s": 67.33,
+          "e": 67.46,
+          "c": 0.990705
+        },
+        {
+          "w": "give",
+          "s": 67.55,
+          "e": 67.85,
+          "c": 0.996225
+        },
+        {
+          "w": "you",
+          "s": 67.85,
+          "e": 67.93,
+          "c": 0.994581
+        },
+        {
+          "w": "some",
+          "s": 68.31,
+          "e": 68.48,
+          "c": 0.982799
+        },
+        {
+          "w": "temporary",
+          "s": 68.48,
+          "e": 69.38,
+          "c": 0.98715
+        },
+        {
+          "w": "relief",
+          "s": 69.38,
+          "e": 70.14,
+          "c": 0.976574
+        },
+        {
+          "w": "from",
+          "s": 70.14,
+          "e": 70.6,
+          "c": 0.5539
+        },
+        {
+          "w": "the",
+          "s": 70.6,
+          "e": 70.8,
+          "c": 0.998186
+        },
+        {
+          "w": "pre-funding.",
+          "s": 70.81,
+          "e": 71.8,
+          "c": 0.961571
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 71.81,
+      "end_s": 72.02,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "What",
+      "words": [
+        {
+          "w": "What",
+          "s": 71.808,
+          "e": 72.018,
+          "c": 0.852621
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 72.19,
+      "end_s": 80.19,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "does the lack of certainty of whether or not you will have to make your payment each year do for your plan for profitability and your overall business model?",
+      "words": [
+        {
+          "w": "does",
+          "s": 72.188,
+          "e": 72.228,
+          "c": 0.857099
+        },
+        {
+          "w": "the",
+          "s": 72.228,
+          "e": 72.388,
+          "c": 0.95724
+        },
+        {
+          "w": "lack",
+          "s": 72.388,
+          "e": 72.598,
+          "c": 0.99807
+        },
+        {
+          "w": "of",
+          "s": 72.598,
+          "e": 72.698,
+          "c": 0.994418
+        },
+        {
+          "w": "certainty",
+          "s": 72.698,
+          "e": 73.058,
+          "c": 0.997997
+        },
+        {
+          "w": "of",
+          "s": 73.188,
+          "e": 73.278,
+          "c": 0.957085
+        },
+        {
+          "w": "whether",
+          "s": 73.278,
+          "e": 73.578,
+          "c": 0.996172
+        },
+        {
+          "w": "or",
+          "s": 73.698,
+          "e": 73.758,
+          "c": 0.987151
+        },
+        {
+          "w": "not",
+          "s": 73.758,
+          "e": 73.918,
+          "c": 0.998462
+        },
+        {
+          "w": "you",
+          "s": 73.918,
+          "e": 74.078,
+          "c": 0.997617
+        },
+        {
+          "w": "will",
+          "s": 74.078,
+          "e": 74.288,
+          "c": 0.906758
+        },
+        {
+          "w": "have",
+          "s": 74.288,
+          "e": 74.498,
+          "c": 0.986118
+        },
+        {
+          "w": "to",
+          "s": 74.498,
+          "e": 74.598,
+          "c": 0.994173
+        },
+        {
+          "w": "make",
+          "s": 74.598,
+          "e": 74.808,
+          "c": 0.99639
+        },
+        {
+          "w": "your",
+          "s": 74.808,
+          "e": 75.108,
+          "c": 0.979679
+        },
+        {
+          "w": "payment",
+          "s": 75.218,
+          "e": 75.488,
+          "c": 0.944019
+        },
+        {
+          "w": "each",
+          "s": 75.488,
+          "e": 75.738,
+          "c": 0.998761
+        },
+        {
+          "w": "year",
+          "s": 75.878,
+          "e": 76.048,
+          "c": 0.999146
+        },
+        {
+          "w": "do",
+          "s": 76.048,
+          "e": 76.188,
+          "c": 0.9774
+        },
+        {
+          "w": "for",
+          "s": 76.188,
+          "e": 76.398,
+          "c": 0.992612
+        },
+        {
+          "w": "your",
+          "s": 76.398,
+          "e": 76.588,
+          "c": 0.991891
+        },
+        {
+          "w": "plan",
+          "s": 76.678,
+          "e": 76.958,
+          "c": 0.881185
+        },
+        {
+          "w": "for",
+          "s": 76.958,
+          "e": 77.168,
+          "c": 0.987392
+        },
+        {
+          "w": "profitability",
+          "s": 77.168,
+          "e": 78.058,
+          "c": 0.996487
+        },
+        {
+          "w": "and",
+          "s": 78.068,
+          "e": 78.288,
+          "c": 0.829603
+        },
+        {
+          "w": "your",
+          "s": 78.288,
+          "e": 78.568,
+          "c": 0.992057
+        },
+        {
+          "w": "overall",
+          "s": 78.568,
+          "e": 79.058,
+          "c": 0.99667
+        },
+        {
+          "w": "business",
+          "s": 79.058,
+          "e": 79.618,
+          "c": 0.998224
+        },
+        {
+          "w": "model?",
+          "s": 79.618,
+          "e": 80.188,
+          "c": 0.996537
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 80.19,
+      "end_s": 80.34,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We",
+      "words": [
+        {
+          "w": "We",
+          "s": 80.188,
+          "e": 80.338,
+          "c": 0.990501
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 80.57,
+      "end_s": 93.95,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "have to get that resolved. That is what we are proposing right now in terms of the health care proposals and the overall plan. But I will tell you, it is much larger than us. This is an industry issue.",
+      "words": [
+        {
+          "w": "have",
+          "s": 80.568,
+          "e": 80.648,
+          "c": 0.997077
+        },
+        {
+          "w": "to",
+          "s": 80.648,
+          "e": 80.798,
+          "c": 0.998995
+        },
+        {
+          "w": "get",
+          "s": 80.798,
+          "e": 81.028,
+          "c": 0.998778
+        },
+        {
+          "w": "that",
+          "s": 81.028,
+          "e": 81.288,
+          "c": 0.997339
+        },
+        {
+          "w": "resolved.",
+          "s": 81.378,
+          "e": 82.238,
+          "c": 0.91405
+        },
+        {
+          "w": "That",
+          "s": 82.288,
+          "e": 82.468,
+          "c": 0.551483
+        },
+        {
+          "w": "is",
+          "s": 82.468,
+          "e": 82.578,
+          "c": 0.957755
+        },
+        {
+          "w": "what",
+          "s": 82.578,
+          "e": 82.798,
+          "c": 0.996137
+        },
+        {
+          "w": "we",
+          "s": 82.798,
+          "e": 82.888,
+          "c": 0.993087
+        },
+        {
+          "w": "are",
+          "s": 82.918,
+          "e": 83.028,
+          "c": 0.989255
+        },
+        {
+          "w": "proposing",
+          "s": 83.138,
+          "e": 83.488,
+          "c": 0.995589
+        },
+        {
+          "w": "right",
+          "s": 83.598,
+          "e": 83.808,
+          "c": 0.977223
+        },
+        {
+          "w": "now",
+          "s": 83.808,
+          "e": 83.958,
+          "c": 0.976828
+        },
+        {
+          "w": "in",
+          "s": 84.108,
+          "e": 84.168,
+          "c": 0.875668
+        },
+        {
+          "w": "terms",
+          "s": 84.168,
+          "e": 84.428,
+          "c": 0.894846
+        },
+        {
+          "w": "of",
+          "s": 84.508,
+          "e": 84.608,
+          "c": 0.999676
+        },
+        {
+          "w": "the",
+          "s": 84.608,
+          "e": 84.768,
+          "c": 0.982997
+        },
+        {
+          "w": "health",
+          "s": 84.898,
+          "e": 85.088,
+          "c": 0.694144
+        },
+        {
+          "w": "care",
+          "s": 85.088,
+          "e": 85.298,
+          "c": 0.980254
+        },
+        {
+          "w": "proposals",
+          "s": 85.298,
+          "e": 85.758,
+          "c": 0.9887
+        },
+        {
+          "w": "and",
+          "s": 85.888,
+          "e": 85.938,
+          "c": 0.986021
+        },
+        {
+          "w": "the",
+          "s": 85.938,
+          "e": 86.028,
+          "c": 0.991355
+        },
+        {
+          "w": "overall",
+          "s": 86.098,
+          "e": 86.468,
+          "c": 0.997735
+        },
+        {
+          "w": "plan.",
+          "s": 86.468,
+          "e": 86.888,
+          "c": 0.848814
+        },
+        {
+          "w": "But",
+          "s": 86.888,
+          "e": 87.118,
+          "c": 0.772344
+        },
+        {
+          "w": "I",
+          "s": 87.118,
+          "e": 87.188,
+          "c": 0.946364
+        },
+        {
+          "w": "will",
+          "s": 87.188,
+          "e": 87.478,
+          "c": 0.9742
+        },
+        {
+          "w": "tell",
+          "s": 87.478,
+          "e": 87.788,
+          "c": 0.998788
+        },
+        {
+          "w": "you,",
+          "s": 87.788,
+          "e": 88.168,
+          "c": 0.753347
+        },
+        {
+          "w": "it",
+          "s": 88.168,
+          "e": 88.278,
+          "c": 0.994309
+        },
+        {
+          "w": "is",
+          "s": 88.428,
+          "e": 88.468,
+          "c": 0.997027
+        },
+        {
+          "w": "much",
+          "s": 88.468,
+          "e": 88.748,
+          "c": 0.995632
+        },
+        {
+          "w": "larger",
+          "s": 89.118,
+          "e": 89.258,
+          "c": 0.997567
+        },
+        {
+          "w": "than",
+          "s": 89.668,
+          "e": 89.848,
+          "c": 0.996525
+        },
+        {
+          "w": "us.",
+          "s": 89.848,
+          "e": 90.538,
+          "c": 0.89789
+        },
+        {
+          "w": "This",
+          "s": 90.668,
+          "e": 91.068,
+          "c": 0.987524
+        },
+        {
+          "w": "is",
+          "s": 91.188,
+          "e": 91.358,
+          "c": 0.998053
+        },
+        {
+          "w": "an",
+          "s": 91.388,
+          "e": 91.668,
+          "c": 0.99527
+        },
+        {
+          "w": "industry",
+          "s": 91.668,
+          "e": 92.788,
+          "c": 0.99919
+        },
+        {
+          "w": "issue.",
+          "s": 92.788,
+          "e": 93.948,
+          "c": 0.944784
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 93.95,
+      "end_s": 93.96,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "People, to give you an example, in terms of the health",
+      "words": [
+        {
+          "w": "People,",
+          "s": 93.948,
+          "e": 93.948,
+          "c": 0.409173
+        },
+        {
+          "w": "to",
+          "s": 93.948,
+          "e": 93.948,
+          "c": 0.447188
+        },
+        {
+          "w": "give",
+          "s": 93.948,
+          "e": 93.948,
+          "c": 0.994603
+        },
+        {
+          "w": "you",
+          "s": 93.948,
+          "e": 93.948,
+          "c": 0.987586
+        },
+        {
+          "w": "an",
+          "s": 93.948,
+          "e": 93.948,
+          "c": 0.995393
+        },
+        {
+          "w": "example,",
+          "s": 93.948,
+          "e": 93.948,
+          "c": 0.742525
+        },
+        {
+          "w": "in",
+          "s": 93.948,
+          "e": 93.948,
+          "c": 0.221729
+        },
+        {
+          "w": "terms",
+          "s": 93.948,
+          "e": 93.948,
+          "c": 0.156306
+        },
+        {
+          "w": "of",
+          "s": 93.948,
+          "e": 93.948,
+          "c": 0.97574
+        },
+        {
+          "w": "the",
+          "s": 93.948,
+          "e": 93.948,
+          "c": 0.216595
+        },
+        {
+          "w": "health",
+          "s": 93.948,
+          "e": 93.948,
+          "c": 0.366876
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 94.02,
+      "end_s": 94.99,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "If you are worried",
+      "words": [
+        {
+          "w": "If",
+          "s": 94.019,
+          "e": 94.089,
+          "c": 0.873826
+        },
+        {
+          "w": "you",
+          "s": 94.149,
+          "e": 94.299,
+          "c": 0.998637
+        },
+        {
+          "w": "are",
+          "s": 94.299,
+          "e": 94.509,
+          "c": 0.935051
+        },
+        {
+          "w": "worried",
+          "s": 94.509,
+          "e": 94.989,
+          "c": 0.998675
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 94.99,
+      "end_s": 99.93,
+      "speaker": "SPEAKER_21",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "about the Postal Service being able to deliver your bills and statements and you are worried",
+      "words": [
+        {
+          "w": "about",
+          "s": 94.989,
+          "e": 95.329,
+          "c": 0.997965
+        },
+        {
+          "w": "the",
+          "s": 95.329,
+          "e": 95.519,
+          "c": 0.998315
+        },
+        {
+          "w": "Postal",
+          "s": 95.599,
+          "e": 95.859,
+          "c": 0.967028
+        },
+        {
+          "w": "Service",
+          "s": 95.979,
+          "e": 96.399,
+          "c": 0.99867
+        },
+        {
+          "w": "being",
+          "s": 96.559,
+          "e": 96.769,
+          "c": 0.997417
+        },
+        {
+          "w": "able",
+          "s": 96.769,
+          "e": 96.979,
+          "c": 0.999502
+        },
+        {
+          "w": "to",
+          "s": 97.109,
+          "e": 97.189,
+          "c": 0.998504
+        },
+        {
+          "w": "deliver",
+          "s": 97.189,
+          "e": 97.669,
+          "c": 0.99772
+        },
+        {
+          "w": "your",
+          "s": 97.669,
+          "e": 97.949,
+          "c": 0.997474
+        },
+        {
+          "w": "bills",
+          "s": 97.949,
+          "e": 98.289,
+          "c": 0.994992
+        },
+        {
+          "w": "and",
+          "s": 98.289,
+          "e": 98.499,
+          "c": 0.992059
+        },
+        {
+          "w": "statements",
+          "s": 98.499,
+          "e": 99.239,
+          "c": 0.994402
+        },
+        {
+          "w": "and",
+          "s": 99.339,
+          "e": 99.409,
+          "c": 0.998782
+        },
+        {
+          "w": "you",
+          "s": 99.469,
+          "e": 99.569,
+          "c": 0.975128
+        },
+        {
+          "w": "are",
+          "s": 99.569,
+          "e": 99.719,
+          "c": 0.990441
+        },
+        {
+          "w": "worried",
+          "s": 99.719,
+          "e": 99.929,
+          "c": 0.998024
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 100.2,
+      "end_s": 110.81,
+      "speaker": "SPEAKER_12",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "about your cash flow as a large company, you are going to start thinking about alternatives. The faster we get this resolved, the faster people don't have to worry about alternatives to the mail.",
+      "words": [
+        {
+          "w": "about",
+          "s": 100.199,
+          "e": 100.319,
+          "c": 0.998245
+        },
+        {
+          "w": "your",
+          "s": 100.319,
+          "e": 100.519,
+          "c": 0.994905
+        },
+        {
+          "w": "cash",
+          "s": 100.519,
+          "e": 100.689,
+          "c": 0.999401
+        },
+        {
+          "w": "flow",
+          "s": 100.709,
+          "e": 100.839,
+          "c": 0.880191
+        },
+        {
+          "w": "as",
+          "s": 100.919,
+          "e": 100.939,
+          "c": 0.954329
+        },
+        {
+          "w": "a",
+          "s": 101.049,
+          "e": 101.069,
+          "c": 0.997923
+        },
+        {
+          "w": "large",
+          "s": 101.069,
+          "e": 101.319,
+          "c": 0.999108
+        },
+        {
+          "w": "company,",
+          "s": 101.319,
+          "e": 101.719,
+          "c": 0.946366
+        },
+        {
+          "w": "you",
+          "s": 101.879,
+          "e": 101.919,
+          "c": 0.996884
+        },
+        {
+          "w": "are",
+          "s": 101.919,
+          "e": 102.069,
+          "c": 0.977344
+        },
+        {
+          "w": "going",
+          "s": 102.069,
+          "e": 102.299,
+          "c": 0.999018
+        },
+        {
+          "w": "to",
+          "s": 102.419,
+          "e": 102.419,
+          "c": 0.996113
+        },
+        {
+          "w": "start",
+          "s": 102.439,
+          "e": 102.689,
+          "c": 0.99751
+        },
+        {
+          "w": "thinking",
+          "s": 102.689,
+          "e": 102.989,
+          "c": 0.727262
+        },
+        {
+          "w": "about",
+          "s": 103.059,
+          "e": 103.309,
+          "c": 0.999422
+        },
+        {
+          "w": "alternatives.",
+          "s": 103.309,
+          "e": 104.279,
+          "c": 0.953657
+        },
+        {
+          "w": "The",
+          "s": 104.359,
+          "e": 104.499,
+          "c": 0.999802
+        },
+        {
+          "w": "faster",
+          "s": 104.499,
+          "e": 104.919,
+          "c": 0.999445
+        },
+        {
+          "w": "we",
+          "s": 104.919,
+          "e": 104.959,
+          "c": 0.993034
+        },
+        {
+          "w": "get",
+          "s": 105.219,
+          "e": 105.279,
+          "c": 0.997777
+        },
+        {
+          "w": "this",
+          "s": 105.279,
+          "e": 105.569,
+          "c": 0.990359
+        },
+        {
+          "w": "resolved,",
+          "s": 105.569,
+          "e": 106.199,
+          "c": 0.940943
+        },
+        {
+          "w": "the",
+          "s": 106.319,
+          "e": 106.379,
+          "c": 0.99923
+        },
+        {
+          "w": "faster",
+          "s": 106.509,
+          "e": 106.929,
+          "c": 0.999308
+        },
+        {
+          "w": "people",
+          "s": 106.929,
+          "e": 107.329,
+          "c": 0.995363
+        },
+        {
+          "w": "don't",
+          "s": 107.449,
+          "e": 107.709,
+          "c": 0.952114
+        },
+        {
+          "w": "have",
+          "s": 107.709,
+          "e": 107.989,
+          "c": 0.999502
+        },
+        {
+          "w": "to",
+          "s": 107.999,
+          "e": 108.139,
+          "c": 0.999487
+        },
+        {
+          "w": "worry",
+          "s": 108.139,
+          "e": 108.489,
+          "c": 0.999218
+        },
+        {
+          "w": "about",
+          "s": 108.489,
+          "e": 108.859,
+          "c": 0.998209
+        },
+        {
+          "w": "alternatives",
+          "s": 108.859,
+          "e": 109.809,
+          "c": 0.978568
+        },
+        {
+          "w": "to",
+          "s": 109.879,
+          "e": 109.969,
+          "c": 0.897525
+        },
+        {
+          "w": "the",
+          "s": 110.009,
+          "e": 110.219,
+          "c": 0.997347
+        },
+        {
+          "w": "mail.",
+          "s": 110.219,
+          "e": 110.809,
+          "c": 0.9893
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 110.88,
+      "end_s": 117.9,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "That echoes nicely with my next question. In November 2011, you addressed the National Press",
+      "words": [
+        {
+          "w": "That",
+          "s": 110.879,
+          "e": 111.239,
+          "c": 0.551372
+        },
+        {
+          "w": "echoes",
+          "s": 111.239,
+          "e": 111.889,
+          "c": 0.945574
+        },
+        {
+          "w": "nicely",
+          "s": 111.889,
+          "e": 112.479,
+          "c": 0.986054
+        },
+        {
+          "w": "with",
+          "s": 112.589,
+          "e": 112.899,
+          "c": 0.957037
+        },
+        {
+          "w": "my",
+          "s": 113.029,
+          "e": 113.189,
+          "c": 0.996459
+        },
+        {
+          "w": "next",
+          "s": 113.189,
+          "e": 113.619,
+          "c": 0.996565
+        },
+        {
+          "w": "question.",
+          "s": 113.619,
+          "e": 114.869,
+          "c": 0.993341
+        },
+        {
+          "w": "In",
+          "s": 114.939,
+          "e": 114.989,
+          "c": 0.999068
+        },
+        {
+          "w": "November",
+          "s": 114.989,
+          "e": 115.469,
+          "c": 0.998075
+        },
+        {
+          "w": "2011,",
+          "s": 115.469,
+          "e": 116.289,
+          "c": 0.774594
+        },
+        {
+          "w": "you",
+          "s": 116.309,
+          "e": 116.439,
+          "c": 0.99783
+        },
+        {
+          "w": "addressed",
+          "s": 116.519,
+          "e": 116.959,
+          "c": 0.947968
+        },
+        {
+          "w": "the",
+          "s": 117.089,
+          "e": 117.209,
+          "c": 0.965147
+        },
+        {
+          "w": "National",
+          "s": 117.209,
+          "e": 117.689,
+          "c": 0.955702
+        },
+        {
+          "w": "Press",
+          "s": 117.689,
+          "e": 117.899,
+          "c": 0.997653
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 118.04,
+      "end_s": 120.95,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Club, and according to the transcript,",
+      "words": [
+        {
+          "w": "Club,",
+          "s": 118.039,
+          "e": 118.349,
+          "c": 0.402027
+        },
+        {
+          "w": "and",
+          "s": 118.349,
+          "e": 118.529,
+          "c": 0.995594
+        },
+        {
+          "w": "according",
+          "s": 118.529,
+          "e": 119.019,
+          "c": 0.9419
+        },
+        {
+          "w": "to",
+          "s": 119.069,
+          "e": 119.189,
+          "c": 0.998207
+        },
+        {
+          "w": "the",
+          "s": 119.189,
+          "e": 119.309,
+          "c": 0.995285
+        },
+        {
+          "w": "transcript,",
+          "s": 119.369,
+          "e": 120.949,
+          "c": 0.541145
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 120.93,
+      "end_s": 127.65,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "\"You know that phrase speed kills. Well, the lack of speed will kill the Postal Service. There is a stark choice,",
+      "words": [
+        {
+          "w": "\"You",
+          "s": 120.928,
+          "e": 121.268,
+          "c": 0.618316
+        },
+        {
+          "w": "know",
+          "s": 121.268,
+          "e": 121.458,
+          "c": 0.99842
+        },
+        {
+          "w": "that",
+          "s": 121.908,
+          "e": 121.968,
+          "c": 0.964773
+        },
+        {
+          "w": "phrase",
+          "s": 121.968,
+          "e": 122.418,
+          "c": 0.991412
+        },
+        {
+          "w": "speed",
+          "s": 122.578,
+          "e": 122.788,
+          "c": 0.254179
+        },
+        {
+          "w": "kills.",
+          "s": 122.978,
+          "e": 123.568,
+          "c": 0.580541
+        },
+        {
+          "w": "Well,",
+          "s": 123.678,
+          "e": 123.988,
+          "c": 0.520416
+        },
+        {
+          "w": "the",
+          "s": 123.988,
+          "e": 124.138,
+          "c": 0.966722
+        },
+        {
+          "w": "lack",
+          "s": 124.138,
+          "e": 124.338,
+          "c": 0.99926
+        },
+        {
+          "w": "of",
+          "s": 124.338,
+          "e": 124.438,
+          "c": 0.997792
+        },
+        {
+          "w": "speed",
+          "s": 124.438,
+          "e": 124.688,
+          "c": 0.997933
+        },
+        {
+          "w": "will",
+          "s": 124.688,
+          "e": 124.888,
+          "c": 0.997657
+        },
+        {
+          "w": "kill",
+          "s": 124.888,
+          "e": 124.988,
+          "c": 0.99779
+        },
+        {
+          "w": "the",
+          "s": 125.088,
+          "e": 125.238,
+          "c": 0.996379
+        },
+        {
+          "w": "Postal",
+          "s": 125.238,
+          "e": 125.598,
+          "c": 0.941643
+        },
+        {
+          "w": "Service.",
+          "s": 125.668,
+          "e": 126.428,
+          "c": 0.931456
+        },
+        {
+          "w": "There",
+          "s": 126.638,
+          "e": 126.718,
+          "c": 0.997124
+        },
+        {
+          "w": "is",
+          "s": 126.718,
+          "e": 126.838,
+          "c": 0.986169
+        },
+        {
+          "w": "a",
+          "s": 126.838,
+          "e": 126.898,
+          "c": 0.998694
+        },
+        {
+          "w": "stark",
+          "s": 126.898,
+          "e": 126.958,
+          "c": 0.969975
+        },
+        {
+          "w": "choice,",
+          "s": 127.408,
+          "e": 127.648,
+          "c": 0.550798
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 127.65,
+      "end_s": 127.92,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "a more",
+      "words": [
+        {
+          "w": "a",
+          "s": 127.648,
+          "e": 127.708,
+          "c": 0.993606
+        },
+        {
+          "w": "more",
+          "s": 127.708,
+          "e": 127.918,
+          "c": 0.999611
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 128.08,
+      "end_s": 140.91,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "flexible business model that allows us to control costs quickly or very large losses that will ultimately burden the taxpayer.\" If immediate action is needed to return the Postal Service to solvency, why did",
+      "words": [
+        {
+          "w": "flexible",
+          "s": 128.078,
+          "e": 128.288,
+          "c": 0.999216
+        },
+        {
+          "w": "business",
+          "s": 128.478,
+          "e": 128.888,
+          "c": 0.997446
+        },
+        {
+          "w": "model",
+          "s": 128.888,
+          "e": 129.068,
+          "c": 0.997126
+        },
+        {
+          "w": "that",
+          "s": 129.388,
+          "e": 129.408,
+          "c": 0.995034
+        },
+        {
+          "w": "allows",
+          "s": 129.428,
+          "e": 129.768,
+          "c": 0.995116
+        },
+        {
+          "w": "us",
+          "s": 129.768,
+          "e": 129.848,
+          "c": 0.994806
+        },
+        {
+          "w": "to",
+          "s": 129.908,
+          "e": 129.998,
+          "c": 0.99654
+        },
+        {
+          "w": "control",
+          "s": 130.088,
+          "e": 130.418,
+          "c": 0.998245
+        },
+        {
+          "w": "costs",
+          "s": 130.418,
+          "e": 130.768,
+          "c": 0.961131
+        },
+        {
+          "w": "quickly",
+          "s": 130.868,
+          "e": 131.568,
+          "c": 0.727712
+        },
+        {
+          "w": "or",
+          "s": 131.858,
+          "e": 131.858,
+          "c": 0.995192
+        },
+        {
+          "w": "very",
+          "s": 131.878,
+          "e": 132.198,
+          "c": 0.992347
+        },
+        {
+          "w": "large",
+          "s": 132.648,
+          "e": 132.708,
+          "c": 0.996134
+        },
+        {
+          "w": "losses",
+          "s": 132.708,
+          "e": 133.158,
+          "c": 0.992714
+        },
+        {
+          "w": "that",
+          "s": 133.318,
+          "e": 133.528,
+          "c": 0.997459
+        },
+        {
+          "w": "will",
+          "s": 133.718,
+          "e": 134.028,
+          "c": 0.994184
+        },
+        {
+          "w": "ultimately",
+          "s": 134.028,
+          "e": 134.968,
+          "c": 0.997676
+        },
+        {
+          "w": "burden",
+          "s": 134.968,
+          "e": 135.528,
+          "c": 0.995746
+        },
+        {
+          "w": "the",
+          "s": 135.528,
+          "e": 135.728,
+          "c": 0.98185
+        },
+        {
+          "w": "taxpayer.\"",
+          "s": 135.828,
+          "e": 136.808,
+          "c": 0.921355
+        },
+        {
+          "w": "If",
+          "s": 137.008,
+          "e": 137.008,
+          "c": 0.999342
+        },
+        {
+          "w": "immediate",
+          "s": 137.198,
+          "e": 137.518,
+          "c": 0.996987
+        },
+        {
+          "w": "action",
+          "s": 137.958,
+          "e": 137.988,
+          "c": 0.998449
+        },
+        {
+          "w": "is",
+          "s": 137.988,
+          "e": 138.108,
+          "c": 0.998744
+        },
+        {
+          "w": "needed",
+          "s": 138.108,
+          "e": 138.458,
+          "c": 0.998828
+        },
+        {
+          "w": "to",
+          "s": 138.458,
+          "e": 138.478,
+          "c": 0.987225
+        },
+        {
+          "w": "return",
+          "s": 138.638,
+          "e": 138.848,
+          "c": 0.995216
+        },
+        {
+          "w": "the",
+          "s": 139.038,
+          "e": 139.108,
+          "c": 0.984767
+        },
+        {
+          "w": "Postal",
+          "s": 139.108,
+          "e": 139.458,
+          "c": 0.977883
+        },
+        {
+          "w": "Service",
+          "s": 139.458,
+          "e": 139.628,
+          "c": 0.998574
+        },
+        {
+          "w": "to",
+          "s": 139.968,
+          "e": 139.988,
+          "c": 0.996077
+        },
+        {
+          "w": "solvency,",
+          "s": 139.988,
+          "e": 140.548,
+          "c": 0.945581
+        },
+        {
+          "w": "why",
+          "s": 140.648,
+          "e": 140.648,
+          "c": 0.998753
+        },
+        {
+          "w": "did",
+          "s": 140.748,
+          "e": 140.908,
+          "c": 0.991516
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 140.93,
+      "end_s": 147.14,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "it decide to self-impose a five-month moratorium on closures and consolidations of its facilities?",
+      "words": [
+        {
+          "w": "it",
+          "s": 140.928,
+          "e": 141.038,
+          "c": 0.997352
+        },
+        {
+          "w": "decide",
+          "s": 141.038,
+          "e": 141.488,
+          "c": 0.989878
+        },
+        {
+          "w": "to",
+          "s": 141.508,
+          "e": 141.508,
+          "c": 0.999388
+        },
+        {
+          "w": "self-impose",
+          "s": 141.698,
+          "e": 142.268,
+          "c": 0.729046
+        },
+        {
+          "w": "a",
+          "s": 142.458,
+          "e": 142.468,
+          "c": 0.998736
+        },
+        {
+          "w": "five-month",
+          "s": 142.498,
+          "e": 143.168,
+          "c": 0.731321
+        },
+        {
+          "w": "moratorium",
+          "s": 143.168,
+          "e": 143.878,
+          "c": 0.998628
+        },
+        {
+          "w": "on",
+          "s": 143.878,
+          "e": 144.018,
+          "c": 0.996481
+        },
+        {
+          "w": "closures",
+          "s": 144.018,
+          "e": 144.578,
+          "c": 0.995604
+        },
+        {
+          "w": "and",
+          "s": 144.578,
+          "e": 144.788,
+          "c": 0.997839
+        },
+        {
+          "w": "consolidations",
+          "s": 144.788,
+          "e": 145.748,
+          "c": 0.98799
+        },
+        {
+          "w": "of",
+          "s": 145.798,
+          "e": 145.828,
+          "c": 0.992651
+        },
+        {
+          "w": "its",
+          "s": 145.928,
+          "e": 146.138,
+          "c": 0.991709
+        },
+        {
+          "w": "facilities?",
+          "s": 146.138,
+          "e": 147.138,
+          "c": 0.933474
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 147.15,
+      "end_s": 147.27,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We",
+      "words": [
+        {
+          "w": "We",
+          "s": 147.152,
+          "e": 147.272,
+          "c": 0.984521
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "start_s": 147.46,
+      "end_s": 150.15,
+      "speaker": "SPEAKER_21",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "were approached by members of the Senate and they asked",
+      "words": [
+        {
+          "w": "were",
+          "s": 147.462,
+          "e": 147.522,
+          "c": 0.995241
+        },
+        {
+          "w": "approached",
+          "s": 147.522,
+          "e": 148.022,
+          "c": 0.999163
+        },
+        {
+          "w": "by",
+          "s": 148.232,
+          "e": 148.272,
+          "c": 0.998603
+        },
+        {
+          "w": "members",
+          "s": 148.272,
+          "e": 148.712,
+          "c": 0.815986
+        },
+        {
+          "w": "of",
+          "s": 148.712,
+          "e": 148.832,
+          "c": 0.997624
+        },
+        {
+          "w": "the",
+          "s": 148.832,
+          "e": 149.022,
+          "c": 0.998432
+        },
+        {
+          "w": "Senate",
+          "s": 149.022,
+          "e": 149.392,
+          "c": 0.984213
+        },
+        {
+          "w": "and",
+          "s": 149.492,
+          "e": 149.592,
+          "c": 0.669292
+        },
+        {
+          "w": "they",
+          "s": 149.592,
+          "e": 149.842,
+          "c": 0.972888
+        },
+        {
+          "w": "asked",
+          "s": 149.842,
+          "e": 150.152,
+          "c": 0.996174
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "start_s": 150.15,
+      "end_s": 169.75,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "us, in order to keep some stability with the employees and the customers, if we would agree to wait to give them an opportunity to get legislation out and over to the House and get the legislation through the House and up to the President for signature. I didn't think that was an unreasonable ask. As we worked through these processes to consolidate facilities.",
+      "words": [
+        {
+          "w": "us,",
+          "s": 150.152,
+          "e": 150.452,
+          "c": 0.340774
+        },
+        {
+          "w": "in",
+          "s": 150.452,
+          "e": 150.532,
+          "c": 0.975015
+        },
+        {
+          "w": "order",
+          "s": 150.532,
+          "e": 150.752,
+          "c": 0.99846
+        },
+        {
+          "w": "to",
+          "s": 150.752,
+          "e": 150.912,
+          "c": 0.954117
+        },
+        {
+          "w": "keep",
+          "s": 150.912,
+          "e": 151.162,
+          "c": 0.959962
+        },
+        {
+          "w": "some",
+          "s": 151.262,
+          "e": 151.412,
+          "c": 0.744074
+        },
+        {
+          "w": "stability",
+          "s": 151.722,
+          "e": 152.032,
+          "c": 0.998761
+        },
+        {
+          "w": "with",
+          "s": 152.032,
+          "e": 152.282,
+          "c": 0.99018
+        },
+        {
+          "w": "the",
+          "s": 152.492,
+          "e": 152.502,
+          "c": 0.985673
+        },
+        {
+          "w": "employees",
+          "s": 152.502,
+          "e": 153.122,
+          "c": 0.996656
+        },
+        {
+          "w": "and",
+          "s": 153.122,
+          "e": 153.292,
+          "c": 0.996109
+        },
+        {
+          "w": "the",
+          "s": 153.432,
+          "e": 153.522,
+          "c": 0.905417
+        },
+        {
+          "w": "customers,",
+          "s": 153.522,
+          "e": 154.242,
+          "c": 0.952861
+        },
+        {
+          "w": "if",
+          "s": 154.402,
+          "e": 154.402,
+          "c": 0.99636
+        },
+        {
+          "w": "we",
+          "s": 154.402,
+          "e": 154.532,
+          "c": 0.996588
+        },
+        {
+          "w": "would",
+          "s": 154.532,
+          "e": 154.872,
+          "c": 0.995186
+        },
+        {
+          "w": "agree",
+          "s": 154.872,
+          "e": 155.172,
+          "c": 0.990112
+        },
+        {
+          "w": "to",
+          "s": 155.232,
+          "e": 155.342,
+          "c": 0.99601
+        },
+        {
+          "w": "wait",
+          "s": 155.342,
+          "e": 155.612,
+          "c": 0.991641
+        },
+        {
+          "w": "to",
+          "s": 155.612,
+          "e": 155.742,
+          "c": 0.815358
+        },
+        {
+          "w": "give",
+          "s": 155.862,
+          "e": 156.012,
+          "c": 0.991083
+        },
+        {
+          "w": "them",
+          "s": 156.012,
+          "e": 156.282,
+          "c": 0.997499
+        },
+        {
+          "w": "an",
+          "s": 156.282,
+          "e": 156.532,
+          "c": 0.963556
+        },
+        {
+          "w": "opportunity",
+          "s": 156.842,
+          "e": 157.272,
+          "c": 0.999516
+        },
+        {
+          "w": "to",
+          "s": 157.272,
+          "e": 157.402,
+          "c": 0.997206
+        },
+        {
+          "w": "get",
+          "s": 157.402,
+          "e": 157.402,
+          "c": 0.996109
+        },
+        {
+          "w": "legislation",
+          "s": 157.612,
+          "e": 158.332,
+          "c": 0.981691
+        },
+        {
+          "w": "out",
+          "s": 158.332,
+          "e": 158.412,
+          "c": 0.988391
+        },
+        {
+          "w": "and",
+          "s": 158.552,
+          "e": 158.742,
+          "c": 0.972509
+        },
+        {
+          "w": "over",
+          "s": 158.742,
+          "e": 159.012,
+          "c": 0.996751
+        },
+        {
+          "w": "to",
+          "s": 159.012,
+          "e": 159.142,
+          "c": 0.965136
+        },
+        {
+          "w": "the",
+          "s": 159.142,
+          "e": 159.342,
+          "c": 0.997942
+        },
+        {
+          "w": "House",
+          "s": 159.342,
+          "e": 159.662,
+          "c": 0.954301
+        },
+        {
+          "w": "and",
+          "s": 159.792,
+          "e": 159.872,
+          "c": 0.839274
+        },
+        {
+          "w": "get",
+          "s": 159.872,
+          "e": 160.072,
+          "c": 0.974141
+        },
+        {
+          "w": "the",
+          "s": 160.072,
+          "e": 160.272,
+          "c": 0.954764
+        },
+        {
+          "w": "legislation",
+          "s": 160.272,
+          "e": 161.012,
+          "c": 0.996464
+        },
+        {
+          "w": "through",
+          "s": 161.012,
+          "e": 161.512,
+          "c": 0.992998
+        },
+        {
+          "w": "the",
+          "s": 161.552,
+          "e": 161.702,
+          "c": 0.999056
+        },
+        {
+          "w": "House",
+          "s": 161.862,
+          "e": 161.992,
+          "c": 0.993758
+        },
+        {
+          "w": "and",
+          "s": 161.992,
+          "e": 162.152,
+          "c": 0.99144
+        },
+        {
+          "w": "up",
+          "s": 162.152,
+          "e": 162.162,
+          "c": 0.993674
+        },
+        {
+          "w": "to",
+          "s": 162.272,
+          "e": 162.372,
+          "c": 0.985832
+        },
+        {
+          "w": "the",
+          "s": 162.372,
+          "e": 162.432,
+          "c": 0.999045
+        },
+        {
+          "w": "President",
+          "s": 162.632,
+          "e": 163.032,
+          "c": 0.906705
+        },
+        {
+          "w": "for",
+          "s": 163.032,
+          "e": 163.162,
+          "c": 0.989613
+        },
+        {
+          "w": "signature.",
+          "s": 163.222,
+          "e": 163.902,
+          "c": 0.955454
+        },
+        {
+          "w": "I",
+          "s": 163.912,
+          "e": 163.972,
+          "c": 0.999277
+        },
+        {
+          "w": "didn't",
+          "s": 164.222,
+          "e": 164.342,
+          "c": 0.641675
+        },
+        {
+          "w": "think",
+          "s": 164.342,
+          "e": 164.652,
+          "c": 0.997997
+        },
+        {
+          "w": "that",
+          "s": 164.652,
+          "e": 164.792,
+          "c": 0.996417
+        },
+        {
+          "w": "was",
+          "s": 164.992,
+          "e": 165.092,
+          "c": 0.994503
+        },
+        {
+          "w": "an",
+          "s": 165.092,
+          "e": 165.202,
+          "c": 0.984718
+        },
+        {
+          "w": "unreasonable",
+          "s": 165.202,
+          "e": 165.972,
+          "c": 0.997662
+        },
+        {
+          "w": "ask.",
+          "s": 165.972,
+          "e": 166.392,
+          "c": 0.882138
+        },
+        {
+          "w": "As",
+          "s": 166.392,
+          "e": 166.502,
+          "c": 0.998883
+        },
+        {
+          "w": "we",
+          "s": 166.612,
+          "e": 166.612,
+          "c": 0.99956
+        },
+        {
+          "w": "worked",
+          "s": 166.702,
+          "e": 166.962,
+          "c": 0.601384
+        },
+        {
+          "w": "through",
+          "s": 166.962,
+          "e": 167.262,
+          "c": 0.997082
+        },
+        {
+          "w": "these",
+          "s": 167.472,
+          "e": 167.662,
+          "c": 0.989247
+        },
+        {
+          "w": "processes",
+          "s": 167.662,
+          "e": 168.182,
+          "c": 0.995573
+        },
+        {
+          "w": "to",
+          "s": 168.182,
+          "e": 168.272,
+          "c": 0.992492
+        },
+        {
+          "w": "consolidate",
+          "s": 168.412,
+          "e": 168.942,
+          "c": 0.997109
+        },
+        {
+          "w": "facilities.",
+          "s": 168.942,
+          "e": 169.752,
+          "c": 0.141558
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "start_s": 169.82,
+      "end_s": 186.47,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "It is not going to happen all at once. The way we consolidate will be done in a very thoughtful and careful method so we don't disrupt service. We are looking for the bottom line cost reductions, and we will get those, but these consolidations will happen over the course of the next year.",
+      "words": [
+        {
+          "w": "It",
+          "s": 169.819,
+          "e": 169.859,
+          "c": 0.830186
+        },
+        {
+          "w": "is",
+          "s": 169.859,
+          "e": 170.009,
+          "c": 0.953043
+        },
+        {
+          "w": "not",
+          "s": 170.009,
+          "e": 170.149,
+          "c": 0.999237
+        },
+        {
+          "w": "going",
+          "s": 170.239,
+          "e": 170.469,
+          "c": 0.998372
+        },
+        {
+          "w": "to",
+          "s": 170.759,
+          "e": 170.759,
+          "c": 0.999032
+        },
+        {
+          "w": "happen",
+          "s": 170.779,
+          "e": 171.209,
+          "c": 0.999024
+        },
+        {
+          "w": "all",
+          "s": 171.209,
+          "e": 171.429,
+          "c": 0.994175
+        },
+        {
+          "w": "at",
+          "s": 171.429,
+          "e": 171.569,
+          "c": 0.99303
+        },
+        {
+          "w": "once.",
+          "s": 171.579,
+          "e": 172.149,
+          "c": 0.993839
+        },
+        {
+          "w": "The",
+          "s": 172.259,
+          "e": 172.369,
+          "c": 0.999466
+        },
+        {
+          "w": "way",
+          "s": 172.429,
+          "e": 172.589,
+          "c": 0.999743
+        },
+        {
+          "w": "we",
+          "s": 172.679,
+          "e": 172.789,
+          "c": 0.993441
+        },
+        {
+          "w": "consolidate",
+          "s": 172.789,
+          "e": 173.689,
+          "c": 0.995482
+        },
+        {
+          "w": "will",
+          "s": 173.689,
+          "e": 173.999,
+          "c": 0.991775
+        },
+        {
+          "w": "be",
+          "s": 174.019,
+          "e": 174.149,
+          "c": 0.998917
+        },
+        {
+          "w": "done",
+          "s": 174.149,
+          "e": 174.449,
+          "c": 0.996873
+        },
+        {
+          "w": "in",
+          "s": 174.599,
+          "e": 174.669,
+          "c": 0.973719
+        },
+        {
+          "w": "a",
+          "s": 174.669,
+          "e": 174.749,
+          "c": 0.980626
+        },
+        {
+          "w": "very",
+          "s": 174.749,
+          "e": 174.979,
+          "c": 0.997109
+        },
+        {
+          "w": "thoughtful",
+          "s": 175.089,
+          "e": 175.889,
+          "c": 0.997815
+        },
+        {
+          "w": "and",
+          "s": 175.889,
+          "e": 176.139,
+          "c": 0.997563
+        },
+        {
+          "w": "careful",
+          "s": 176.139,
+          "e": 176.709,
+          "c": 0.996048
+        },
+        {
+          "w": "method",
+          "s": 176.709,
+          "e": 177.199,
+          "c": 0.994325
+        },
+        {
+          "w": "so",
+          "s": 177.199,
+          "e": 177.299,
+          "c": 0.726943
+        },
+        {
+          "w": "we",
+          "s": 177.459,
+          "e": 177.519,
+          "c": 0.988665
+        },
+        {
+          "w": "don't",
+          "s": 177.519,
+          "e": 177.949,
+          "c": 0.956107
+        },
+        {
+          "w": "disrupt",
+          "s": 178.119,
+          "e": 178.609,
+          "c": 0.995311
+        },
+        {
+          "w": "service.",
+          "s": 178.609,
+          "e": 179.469,
+          "c": 0.95919
+        },
+        {
+          "w": "We",
+          "s": 179.579,
+          "e": 179.579,
+          "c": 0.999613
+        },
+        {
+          "w": "are",
+          "s": 179.579,
+          "e": 179.629,
+          "c": 0.999355
+        },
+        {
+          "w": "looking",
+          "s": 179.749,
+          "e": 180.129,
+          "c": 0.999348
+        },
+        {
+          "w": "for",
+          "s": 180.129,
+          "e": 180.229,
+          "c": 0.99838
+        },
+        {
+          "w": "the",
+          "s": 180.279,
+          "e": 180.299,
+          "c": 0.986141
+        },
+        {
+          "w": "bottom",
+          "s": 180.539,
+          "e": 180.779,
+          "c": 0.993358
+        },
+        {
+          "w": "line",
+          "s": 180.779,
+          "e": 180.999,
+          "c": 0.791266
+        },
+        {
+          "w": "cost",
+          "s": 180.999,
+          "e": 181.219,
+          "c": 0.953994
+        },
+        {
+          "w": "reductions,",
+          "s": 181.219,
+          "e": 181.889,
+          "c": 0.249857
+        },
+        {
+          "w": "and",
+          "s": 181.919,
+          "e": 182.049,
+          "c": 0.957675
+        },
+        {
+          "w": "we",
+          "s": 182.049,
+          "e": 182.159,
+          "c": 0.992318
+        },
+        {
+          "w": "will",
+          "s": 182.159,
+          "e": 182.299,
+          "c": 0.978698
+        },
+        {
+          "w": "get",
+          "s": 182.409,
+          "e": 182.499,
+          "c": 0.998218
+        },
+        {
+          "w": "those,",
+          "s": 182.609,
+          "e": 182.929,
+          "c": 0.39506
+        },
+        {
+          "w": "but",
+          "s": 182.929,
+          "e": 183.079,
+          "c": 0.995486
+        },
+        {
+          "w": "these",
+          "s": 183.149,
+          "e": 183.369,
+          "c": 0.963541
+        },
+        {
+          "w": "consolidations",
+          "s": 183.369,
+          "e": 184.249,
+          "c": 0.987704
+        },
+        {
+          "w": "will",
+          "s": 184.359,
+          "e": 184.469,
+          "c": 0.999287
+        },
+        {
+          "w": "happen",
+          "s": 184.529,
+          "e": 184.809,
+          "c": 0.996417
+        },
+        {
+          "w": "over",
+          "s": 184.809,
+          "e": 185.009,
+          "c": 0.998313
+        },
+        {
+          "w": "the",
+          "s": 185.029,
+          "e": 185.059,
+          "c": 0.99903
+        },
+        {
+          "w": "course",
+          "s": 185.319,
+          "e": 185.459,
+          "c": 0.999068
+        },
+        {
+          "w": "of",
+          "s": 185.539,
+          "e": 185.649,
+          "c": 0.998148
+        },
+        {
+          "w": "the",
+          "s": 185.649,
+          "e": 185.819,
+          "c": 0.984797
+        },
+        {
+          "w": "next",
+          "s": 185.819,
+          "e": 186.039,
+          "c": 0.998607
+        },
+        {
+          "w": "year.",
+          "s": 186.039,
+          "e": 186.469,
+          "c": 0.998536
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "start_s": 186.58,
+      "end_s": 186.59,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "So",
+      "words": [
+        {
+          "w": "So",
+          "s": 186.579,
+          "e": 186.589,
+          "c": 0.937834
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "start_s": 186.59,
+      "end_s": 189.41,
+      "speaker": "SPEAKER_27",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you were supportive of the Senate's request? They",
+      "words": [
+        {
+          "w": "you",
+          "s": 186.589,
+          "e": 186.779,
+          "c": 0.988012
+        },
+        {
+          "w": "were",
+          "s": 186.779,
+          "e": 187.029,
+          "c": 0.912602
+        },
+        {
+          "w": "supportive",
+          "s": 187.029,
+          "e": 187.669,
+          "c": 0.997672
+        },
+        {
+          "w": "of",
+          "s": 187.669,
+          "e": 187.789,
+          "c": 0.998649
+        },
+        {
+          "w": "the",
+          "s": 187.789,
+          "e": 187.979,
+          "c": 0.997678
+        },
+        {
+          "w": "Senate's",
+          "s": 187.979,
+          "e": 188.479,
+          "c": 0.977519
+        },
+        {
+          "w": "request?",
+          "s": 188.479,
+          "e": 189.179,
+          "c": 0.685168
+        },
+        {
+          "w": "They",
+          "s": 189.299,
+          "e": 189.409,
+          "c": 0.95801
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "start_s": 189.47,
+      "end_s": 191.2,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "asked me for that consideration.",
+      "words": [
+        {
+          "w": "asked",
+          "s": 189.469,
+          "e": 189.729,
+          "c": 0.991769
+        },
+        {
+          "w": "me",
+          "s": 189.729,
+          "e": 189.849,
+          "c": 0.987048
+        },
+        {
+          "w": "for",
+          "s": 189.849,
+          "e": 189.949,
+          "c": 0.998561
+        },
+        {
+          "w": "that",
+          "s": 190.259,
+          "e": 190.269,
+          "c": 0.993352
+        },
+        {
+          "w": "consideration.",
+          "s": 190.269,
+          "e": 191.199,
+          "c": 0.786283
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "start_s": 191.38,
+      "end_s": 191.39,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I",
+      "words": [
+        {
+          "w": "I",
+          "s": 191.379,
+          "e": 191.379,
+          "c": 0.999451
+        }
+      ]
+    },
+    {
+      "i": 35,
+      "start_s": 191.4,
+      "end_s": 196.32,
+      "speaker": "SPEAKER_28",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "had no issue with that. Chairman Ross and Chairman Iser wrote a comprehensive",
+      "words": [
+        {
+          "w": "had",
+          "s": 191.399,
+          "e": 191.649,
+          "c": 0.98924
+        },
+        {
+          "w": "no",
+          "s": 191.649,
+          "e": 191.829,
+          "c": 0.998969
+        },
+        {
+          "w": "issue",
+          "s": 191.829,
+          "e": 192.049,
+          "c": 0.994979
+        },
+        {
+          "w": "with",
+          "s": 192.359,
+          "e": 192.639,
+          "c": 0.998336
+        },
+        {
+          "w": "that.",
+          "s": 192.639,
+          "e": 193.189,
+          "c": 0.98682
+        },
+        {
+          "w": "Chairman",
+          "s": 193.399,
+          "e": 193.839,
+          "c": 0.989991
+        },
+        {
+          "w": "Ross",
+          "s": 193.839,
+          "e": 194.049,
+          "c": 0.935238
+        },
+        {
+          "w": "and",
+          "s": 194.309,
+          "e": 194.309,
+          "c": 0.995304
+        },
+        {
+          "w": "Chairman",
+          "s": 194.359,
+          "e": 194.859,
+          "c": 0.972082
+        },
+        {
+          "w": "Iser",
+          "s": 194.859,
+          "e": 195.119,
+          "c": 0.587175
+        },
+        {
+          "w": "wrote",
+          "s": 195.119,
+          "e": 195.289,
+          "c": 0.979264
+        },
+        {
+          "w": "a",
+          "s": 195.409,
+          "e": 195.519,
+          "c": 0.997154
+        },
+        {
+          "w": "comprehensive",
+          "s": 195.739,
+          "e": 196.319,
+          "c": 0.991541
+        }
+      ]
+    },
+    {
+      "i": 36,
+      "start_s": 196.43,
+      "end_s": 197.87,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "postal reform bill last",
+      "words": [
+        {
+          "w": "postal",
+          "s": 196.429,
+          "e": 196.829,
+          "c": 0.715183
+        },
+        {
+          "w": "reform",
+          "s": 196.829,
+          "e": 197.239,
+          "c": 0.977023
+        },
+        {
+          "w": "bill",
+          "s": 197.239,
+          "e": 197.509,
+          "c": 0.987118
+        },
+        {
+          "w": "last",
+          "s": 197.509,
+          "e": 197.869,
+          "c": 0.985753
+        }
+      ]
+    },
+    {
+      "i": 37,
+      "start_s": 197.87,
+      "end_s": 197.88,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "year",
+      "words": [
+        {
+          "w": "year",
+          "s": 197.869,
+          "e": 197.869,
+          "c": 0.986624
+        }
+      ]
+    },
+    {
+      "i": 38,
+      "start_s": 198.04,
+      "end_s": 203.72,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that was passed by the subcommittee and the full oversight committee.",
+      "words": [
+        {
+          "w": "that",
+          "s": 198.044,
+          "e": 198.204,
+          "c": 0.375368
+        },
+        {
+          "w": "was",
+          "s": 198.204,
+          "e": 198.494,
+          "c": 0.990023
+        },
+        {
+          "w": "passed",
+          "s": 198.494,
+          "e": 199.074,
+          "c": 0.99814
+        },
+        {
+          "w": "by",
+          "s": 199.074,
+          "e": 199.244,
+          "c": 0.997914
+        },
+        {
+          "w": "the",
+          "s": 199.264,
+          "e": 199.554,
+          "c": 0.965123
+        },
+        {
+          "w": "subcommittee",
+          "s": 199.554,
+          "e": 200.704,
+          "c": 0.553368
+        },
+        {
+          "w": "and",
+          "s": 200.704,
+          "e": 200.994,
+          "c": 0.98116
+        },
+        {
+          "w": "the",
+          "s": 200.994,
+          "e": 201.284,
+          "c": 0.977074
+        },
+        {
+          "w": "full",
+          "s": 201.284,
+          "e": 201.484,
+          "c": 0.988493
+        },
+        {
+          "w": "oversight",
+          "s": 201.654,
+          "e": 202.524,
+          "c": 0.941898
+        },
+        {
+          "w": "committee.",
+          "s": 202.524,
+          "e": 203.724,
+          "c": 0.732607
+        }
+      ]
+    },
+    {
+      "i": 39,
+      "start_s": 203.72,
+      "end_s": 211.38,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "It is full of cost saving measures that will revitalize the Postal Service. What parts of H.R. 2309 does the Postal Service support?",
+      "words": [
+        {
+          "w": "It",
+          "s": 203.724,
+          "e": 203.824,
+          "c": 0.998689
+        },
+        {
+          "w": "is",
+          "s": 203.944,
+          "e": 203.944,
+          "c": 0.997788
+        },
+        {
+          "w": "full",
+          "s": 203.944,
+          "e": 204.154,
+          "c": 0.998799
+        },
+        {
+          "w": "of",
+          "s": 204.264,
+          "e": 204.274,
+          "c": 0.997544
+        },
+        {
+          "w": "cost",
+          "s": 204.274,
+          "e": 204.424,
+          "c": 0.97773
+        },
+        {
+          "w": "saving",
+          "s": 204.574,
+          "e": 204.814,
+          "c": 0.784421
+        },
+        {
+          "w": "measures",
+          "s": 204.844,
+          "e": 205.274,
+          "c": 0.991134
+        },
+        {
+          "w": "that",
+          "s": 205.274,
+          "e": 205.494,
+          "c": 0.995625
+        },
+        {
+          "w": "will",
+          "s": 205.494,
+          "e": 205.714,
+          "c": 0.982962
+        },
+        {
+          "w": "revitalize",
+          "s": 205.714,
+          "e": 206.264,
+          "c": 0.993413
+        },
+        {
+          "w": "the",
+          "s": 206.264,
+          "e": 206.314,
+          "c": 0.998089
+        },
+        {
+          "w": "Postal",
+          "s": 206.434,
+          "e": 206.764,
+          "c": 0.874137
+        },
+        {
+          "w": "Service.",
+          "s": 206.764,
+          "e": 207.384,
+          "c": 0.974336
+        },
+        {
+          "w": "What",
+          "s": 207.624,
+          "e": 207.804,
+          "c": 0.999586
+        },
+        {
+          "w": "parts",
+          "s": 207.944,
+          "e": 208.314,
+          "c": 0.985069
+        },
+        {
+          "w": "of",
+          "s": 208.314,
+          "e": 208.494,
+          "c": 0.997664
+        },
+        {
+          "w": "H.R.",
+          "s": 208.574,
+          "e": 209.344,
+          "c": 0.661706
+        },
+        {
+          "w": "2309",
+          "s": 209.344,
+          "e": 209.914,
+          "c": 0.694876
+        },
+        {
+          "w": "does",
+          "s": 209.914,
+          "e": 209.994,
+          "c": 0.974163
+        },
+        {
+          "w": "the",
+          "s": 210.114,
+          "e": 210.244,
+          "c": 0.996649
+        },
+        {
+          "w": "Postal",
+          "s": 210.244,
+          "e": 210.464,
+          "c": 0.990671
+        },
+        {
+          "w": "Service",
+          "s": 210.554,
+          "e": 210.864,
+          "c": 0.996565
+        },
+        {
+          "w": "support?",
+          "s": 210.864,
+          "e": 211.384,
+          "c": 0.994562
+        }
+      ]
+    },
+    {
+      "i": 40,
+      "start_s": 211.6,
+      "end_s": 211.61,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We",
+      "words": [
+        {
+          "w": "We",
+          "s": 211.604,
+          "e": 211.614,
+          "c": 0.98792
+        }
+      ]
+    },
+    {
+      "i": 41,
+      "start_s": 211.61,
+      "end_s": 214.26,
+      "speaker": "SPEAKER_29",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "support the FERS refund.",
+      "words": [
+        {
+          "w": "support",
+          "s": 211.614,
+          "e": 212.414,
+          "c": 0.998466
+        },
+        {
+          "w": "the",
+          "s": 212.414,
+          "e": 212.694,
+          "c": 0.996776
+        },
+        {
+          "w": "FERS",
+          "s": 212.804,
+          "e": 213.204,
+          "c": 0.837681
+        },
+        {
+          "w": "refund.",
+          "s": 213.204,
+          "e": 214.264,
+          "c": 0.716066
+        }
+      ]
+    },
+    {
+      "i": 42,
+      "start_s": 214.29,
+      "end_s": 222.87,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We support the ability to move and consolidate the network. We support the ability to move to consolidate from six day to five day",
+      "words": [
+        {
+          "w": "We",
+          "s": 214.294,
+          "e": 214.334,
+          "c": 0.999718
+        },
+        {
+          "w": "support",
+          "s": 214.484,
+          "e": 214.664,
+          "c": 0.998942
+        },
+        {
+          "w": "the",
+          "s": 214.804,
+          "e": 214.964,
+          "c": 0.999256
+        },
+        {
+          "w": "ability",
+          "s": 215.114,
+          "e": 215.354,
+          "c": 0.997447
+        },
+        {
+          "w": "to",
+          "s": 215.434,
+          "e": 215.524,
+          "c": 0.999365
+        },
+        {
+          "w": "move",
+          "s": 215.524,
+          "e": 215.764,
+          "c": 0.995171
+        },
+        {
+          "w": "and",
+          "s": 215.764,
+          "e": 215.844,
+          "c": 0.980804
+        },
+        {
+          "w": "consolidate",
+          "s": 215.974,
+          "e": 216.464,
+          "c": 0.994469
+        },
+        {
+          "w": "the",
+          "s": 216.604,
+          "e": 216.784,
+          "c": 0.995139
+        },
+        {
+          "w": "network.",
+          "s": 216.784,
+          "e": 217.424,
+          "c": 0.977463
+        },
+        {
+          "w": "We",
+          "s": 217.614,
+          "e": 217.614,
+          "c": 0.999735
+        },
+        {
+          "w": "support",
+          "s": 217.644,
+          "e": 218.284,
+          "c": 0.999159
+        },
+        {
+          "w": "the",
+          "s": 218.284,
+          "e": 218.514,
+          "c": 0.99878
+        },
+        {
+          "w": "ability",
+          "s": 218.594,
+          "e": 219.244,
+          "c": 0.998456
+        },
+        {
+          "w": "to",
+          "s": 219.244,
+          "e": 219.434,
+          "c": 0.999072
+        },
+        {
+          "w": "move",
+          "s": 219.434,
+          "e": 219.624,
+          "c": 0.961454
+        },
+        {
+          "w": "to",
+          "s": 219.834,
+          "e": 220.004,
+          "c": 0.768012
+        },
+        {
+          "w": "consolidate",
+          "s": 220.004,
+          "e": 221.054,
+          "c": 0.991007
+        },
+        {
+          "w": "from",
+          "s": 221.054,
+          "e": 221.174,
+          "c": 0.982339
+        },
+        {
+          "w": "six",
+          "s": 221.364,
+          "e": 221.734,
+          "c": 0.641782
+        },
+        {
+          "w": "day",
+          "s": 221.734,
+          "e": 222.004,
+          "c": 0.540979
+        },
+        {
+          "w": "to",
+          "s": 222.104,
+          "e": 222.214,
+          "c": 0.983487
+        },
+        {
+          "w": "five",
+          "s": 222.214,
+          "e": 222.464,
+          "c": 0.991684
+        },
+        {
+          "w": "day",
+          "s": 222.464,
+          "e": 222.874,
+          "c": 0.995135
+        }
+      ]
+    },
+    {
+      "i": 43,
+      "start_s": 223.22,
+      "end_s": 224,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "delivery.",
+      "words": [
+        {
+          "w": "delivery.",
+          "s": 223.224,
+          "e": 224.004,
+          "c": 0.990796
+        }
+      ]
+    },
+    {
+      "i": 44,
+      "start_s": 223.98,
+      "end_s": 224.76,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "In your",
+      "words": [
+        {
+          "w": "In",
+          "s": 223.984,
+          "e": 224.244,
+          "c": 0.165081
+        },
+        {
+          "w": "your",
+          "s": 224.244,
+          "e": 224.764,
+          "c": 0.777949
+        }
+      ]
+    },
+    {
+      "i": 45,
+      "start_s": 224.92,
+      "end_s": 227.01,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "written testimony,",
+      "words": [
+        {
+          "w": "written",
+          "s": 224.924,
+          "e": 225.684,
+          "c": 0.997883
+        },
+        {
+          "w": "testimony,",
+          "s": 225.684,
+          "e": 227.014,
+          "c": 0.622427
+        }
+      ]
+    },
+    {
+      "i": 46,
+      "start_s": 227.05,
+      "end_s": 228.69,
+      "speaker": "SPEAKER_32",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you mentioned",
+      "words": [
+        {
+          "w": "you",
+          "s": 227.054,
+          "e": 227.444,
+          "c": 0.97293
+        },
+        {
+          "w": "mentioned",
+          "s": 227.444,
+          "e": 228.694,
+          "c": 0.994078
+        }
+      ]
+    },
+    {
+      "i": 47,
+      "start_s": 229.04,
+      "end_s": 234.48,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "establishing a Postal Service-sponsored health care program",
+      "words": [
+        {
+          "w": "establishing",
+          "s": 229.044,
+          "e": 230.184,
+          "c": 0.958071
+        },
+        {
+          "w": "a",
+          "s": 230.344,
+          "e": 230.404,
+          "c": 0.992564
+        },
+        {
+          "w": "Postal",
+          "s": 230.404,
+          "e": 231.184,
+          "c": 0.838222
+        },
+        {
+          "w": "Service-sponsored",
+          "s": 231.184,
+          "e": 233.464,
+          "c": 0.298671
+        },
+        {
+          "w": "health",
+          "s": 233.544,
+          "e": 233.694,
+          "c": 0.574748
+        },
+        {
+          "w": "care",
+          "s": 233.844,
+          "e": 233.924,
+          "c": 0.858928
+        },
+        {
+          "w": "program",
+          "s": 233.924,
+          "e": 234.484,
+          "c": 0.981207
+        }
+      ]
+    },
+    {
+      "i": 48,
+      "start_s": 234.94,
+      "end_s": 242.14,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "represents the largest part of the Plan for Profitability Savings, accounting for over $7 billion of annual",
+      "words": [
+        {
+          "w": "represents",
+          "s": 234.944,
+          "e": 235.664,
+          "c": 0.994583
+        },
+        {
+          "w": "the",
+          "s": 235.834,
+          "e": 235.834,
+          "c": 0.998921
+        },
+        {
+          "w": "largest",
+          "s": 235.884,
+          "e": 236.374,
+          "c": 0.997208
+        },
+        {
+          "w": "part",
+          "s": 236.374,
+          "e": 236.664,
+          "c": 0.998412
+        },
+        {
+          "w": "of",
+          "s": 236.664,
+          "e": 236.804,
+          "c": 0.998022
+        },
+        {
+          "w": "the",
+          "s": 236.804,
+          "e": 237.014,
+          "c": 0.977545
+        },
+        {
+          "w": "Plan",
+          "s": 237.014,
+          "e": 237.304,
+          "c": 0.583915
+        },
+        {
+          "w": "for",
+          "s": 237.304,
+          "e": 237.444,
+          "c": 0.885789
+        },
+        {
+          "w": "Profitability",
+          "s": 237.644,
+          "e": 238.404,
+          "c": 0.866749
+        },
+        {
+          "w": "Savings,",
+          "s": 238.434,
+          "e": 239.074,
+          "c": 0.435698
+        },
+        {
+          "w": "accounting",
+          "s": 239.074,
+          "e": 239.794,
+          "c": 0.991501
+        },
+        {
+          "w": "for",
+          "s": 239.994,
+          "e": 240.004,
+          "c": 0.997318
+        },
+        {
+          "w": "over",
+          "s": 240.004,
+          "e": 240.384,
+          "c": 0.97912
+        },
+        {
+          "w": "$7",
+          "s": 240.384,
+          "e": 240.754,
+          "c": 0.947737
+        },
+        {
+          "w": "billion",
+          "s": 241.274,
+          "e": 241.414,
+          "c": 0.990837
+        },
+        {
+          "w": "of",
+          "s": 241.414,
+          "e": 241.594,
+          "c": 0.955875
+        },
+        {
+          "w": "annual",
+          "s": 241.594,
+          "e": 242.144,
+          "c": 0.997008
+        }
+      ]
+    },
+    {
+      "i": 49,
+      "start_s": 242.22,
+      "end_s": 243.12,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "savings.",
+      "words": [
+        {
+          "w": "savings.",
+          "s": 242.224,
+          "e": 243.124,
+          "c": 0.995813
+        }
+      ]
+    },
+    {
+      "i": 50,
+      "start_s": 243.07,
+      "end_s": 243.3,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Does",
+      "words": [
+        {
+          "w": "Does",
+          "s": 243.072,
+          "e": 243.302,
+          "c": 0.808615
+        }
+      ]
+    },
+    {
+      "i": 51,
+      "start_s": 243.42,
+      "end_s": 247.36,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the Postal Service have the resources to maintain its own health care plan? What",
+      "words": [
+        {
+          "w": "the",
+          "s": 243.422,
+          "e": 243.472,
+          "c": 0.985926
+        },
+        {
+          "w": "Postal",
+          "s": 243.472,
+          "e": 243.812,
+          "c": 0.957027
+        },
+        {
+          "w": "Service",
+          "s": 243.952,
+          "e": 244.222,
+          "c": 0.996312
+        },
+        {
+          "w": "have",
+          "s": 244.222,
+          "e": 244.382,
+          "c": 0.996168
+        },
+        {
+          "w": "the",
+          "s": 244.452,
+          "e": 244.612,
+          "c": 0.987323
+        },
+        {
+          "w": "resources",
+          "s": 244.712,
+          "e": 245.142,
+          "c": 0.999058
+        },
+        {
+          "w": "to",
+          "s": 245.142,
+          "e": 245.192,
+          "c": 0.992784
+        },
+        {
+          "w": "maintain",
+          "s": 245.252,
+          "e": 245.722,
+          "c": 0.997016
+        },
+        {
+          "w": "its",
+          "s": 245.722,
+          "e": 245.852,
+          "c": 0.99198
+        },
+        {
+          "w": "own",
+          "s": 245.942,
+          "e": 246.062,
+          "c": 0.996193
+        },
+        {
+          "w": "health",
+          "s": 246.062,
+          "e": 246.412,
+          "c": 0.73136
+        },
+        {
+          "w": "care",
+          "s": 246.412,
+          "e": 246.612,
+          "c": 0.971651
+        },
+        {
+          "w": "plan?",
+          "s": 246.762,
+          "e": 247.132,
+          "c": 0.988152
+        },
+        {
+          "w": "What",
+          "s": 247.132,
+          "e": 247.362,
+          "c": 0.981575
+        }
+      ]
+    },
+    {
+      "i": 52,
+      "start_s": 247.47,
+      "end_s": 247.48,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "we",
+      "words": [
+        {
+          "w": "we",
+          "s": 247.472,
+          "e": 247.472,
+          "c": 0.998091
+        }
+      ]
+    },
+    {
+      "i": 53,
+      "start_s": 247.48,
+      "end_s": 251.82,
+      "speaker": "SPEAKER_34",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "would do for a health care plan is what any other company does. You go out into the free",
+      "words": [
+        {
+          "w": "would",
+          "s": 247.482,
+          "e": 247.742,
+          "c": 0.987683
+        },
+        {
+          "w": "do",
+          "s": 247.742,
+          "e": 247.872,
+          "c": 0.995539
+        },
+        {
+          "w": "for",
+          "s": 247.972,
+          "e": 248.042,
+          "c": 0.990609
+        },
+        {
+          "w": "a",
+          "s": 248.042,
+          "e": 248.092,
+          "c": 0.939246
+        },
+        {
+          "w": "health",
+          "s": 248.092,
+          "e": 248.442,
+          "c": 0.996759
+        },
+        {
+          "w": "care",
+          "s": 248.442,
+          "e": 248.672,
+          "c": 0.997284
+        },
+        {
+          "w": "plan",
+          "s": 248.672,
+          "e": 248.902,
+          "c": 0.997514
+        },
+        {
+          "w": "is",
+          "s": 248.902,
+          "e": 249.012,
+          "c": 0.98953
+        },
+        {
+          "w": "what",
+          "s": 249.012,
+          "e": 249.242,
+          "c": 0.995203
+        },
+        {
+          "w": "any",
+          "s": 249.242,
+          "e": 249.412,
+          "c": 0.996147
+        },
+        {
+          "w": "other",
+          "s": 249.412,
+          "e": 249.632,
+          "c": 0.99052
+        },
+        {
+          "w": "company",
+          "s": 249.742,
+          "e": 250.112,
+          "c": 0.996573
+        },
+        {
+          "w": "does.",
+          "s": 250.112,
+          "e": 250.632,
+          "c": 0.881377
+        },
+        {
+          "w": "You",
+          "s": 250.632,
+          "e": 250.832,
+          "c": 0.985652
+        },
+        {
+          "w": "go",
+          "s": 250.962,
+          "e": 250.962,
+          "c": 0.989334
+        },
+        {
+          "w": "out",
+          "s": 250.982,
+          "e": 251.152,
+          "c": 0.996845
+        },
+        {
+          "w": "into",
+          "s": 251.152,
+          "e": 251.252,
+          "c": 0.955625
+        },
+        {
+          "w": "the",
+          "s": 251.472,
+          "e": 251.612,
+          "c": 0.99835
+        },
+        {
+          "w": "free",
+          "s": 251.712,
+          "e": 251.822,
+          "c": 0.998197
+        }
+      ]
+    },
+    {
+      "i": 54,
+      "start_s": 251.91,
+      "end_s": 264.77,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "market, you bid that, you find the best health care provider to act as pretty much an overall health administration firm, say a Blue Cross or a UnitedHealthcare. We would also expect to use it.",
+      "words": [
+        {
+          "w": "market,",
+          "s": 251.912,
+          "e": 252.412,
+          "c": 0.8177
+        },
+        {
+          "w": "you",
+          "s": 252.412,
+          "e": 252.602,
+          "c": 0.979053
+        },
+        {
+          "w": "bid",
+          "s": 252.612,
+          "e": 252.752,
+          "c": 0.986416
+        },
+        {
+          "w": "that,",
+          "s": 252.812,
+          "e": 253.142,
+          "c": 0.839908
+        },
+        {
+          "w": "you",
+          "s": 253.242,
+          "e": 253.402,
+          "c": 0.925911
+        },
+        {
+          "w": "find",
+          "s": 253.402,
+          "e": 253.662,
+          "c": 0.989953
+        },
+        {
+          "w": "the",
+          "s": 253.662,
+          "e": 253.862,
+          "c": 0.991369
+        },
+        {
+          "w": "best",
+          "s": 253.862,
+          "e": 254.122,
+          "c": 0.999186
+        },
+        {
+          "w": "health",
+          "s": 254.122,
+          "e": 254.402,
+          "c": 0.925212
+        },
+        {
+          "w": "care",
+          "s": 254.522,
+          "e": 254.752,
+          "c": 0.9894
+        },
+        {
+          "w": "provider",
+          "s": 255.122,
+          "e": 255.392,
+          "c": 0.997242
+        },
+        {
+          "w": "to",
+          "s": 255.392,
+          "e": 255.472,
+          "c": 0.879199
+        },
+        {
+          "w": "act",
+          "s": 255.472,
+          "e": 255.702,
+          "c": 0.630289
+        },
+        {
+          "w": "as",
+          "s": 255.732,
+          "e": 255.892,
+          "c": 0.960186
+        },
+        {
+          "w": "pretty",
+          "s": 256.082,
+          "e": 256.352,
+          "c": 0.892079
+        },
+        {
+          "w": "much",
+          "s": 256.562,
+          "e": 256.682,
+          "c": 0.996288
+        },
+        {
+          "w": "an",
+          "s": 256.682,
+          "e": 256.842,
+          "c": 0.910186
+        },
+        {
+          "w": "overall",
+          "s": 256.842,
+          "e": 257.392,
+          "c": 0.946889
+        },
+        {
+          "w": "health",
+          "s": 257.392,
+          "e": 257.852,
+          "c": 0.893479
+        },
+        {
+          "w": "administration",
+          "s": 257.862,
+          "e": 258.962,
+          "c": 0.940542
+        },
+        {
+          "w": "firm,",
+          "s": 258.962,
+          "e": 259.442,
+          "c": 0.946322
+        },
+        {
+          "w": "say",
+          "s": 259.442,
+          "e": 259.682,
+          "c": 0.985152
+        },
+        {
+          "w": "a",
+          "s": 259.682,
+          "e": 259.762,
+          "c": 0.542904
+        },
+        {
+          "w": "Blue",
+          "s": 259.762,
+          "e": 260.072,
+          "c": 0.990931
+        },
+        {
+          "w": "Cross",
+          "s": 260.222,
+          "e": 260.482,
+          "c": 0.980558
+        },
+        {
+          "w": "or",
+          "s": 260.482,
+          "e": 260.592,
+          "c": 0.981323
+        },
+        {
+          "w": "a",
+          "s": 260.642,
+          "e": 260.722,
+          "c": 0.529987
+        },
+        {
+          "w": "UnitedHealthcare.",
+          "s": 260.722,
+          "e": 262.312,
+          "c": 0.361005
+        },
+        {
+          "w": "We",
+          "s": 262.312,
+          "e": 262.492,
+          "c": 0.993093
+        },
+        {
+          "w": "would",
+          "s": 262.662,
+          "e": 262.932,
+          "c": 0.98841
+        },
+        {
+          "w": "also",
+          "s": 263.152,
+          "e": 263.302,
+          "c": 0.997293
+        },
+        {
+          "w": "expect",
+          "s": 263.392,
+          "e": 263.842,
+          "c": 0.99635
+        },
+        {
+          "w": "to",
+          "s": 263.842,
+          "e": 264.022,
+          "c": 0.990229
+        },
+        {
+          "w": "use",
+          "s": 264.022,
+          "e": 264.292,
+          "c": 0.983346
+        },
+        {
+          "w": "it.",
+          "s": 264.292,
+          "e": 264.772,
+          "c": 0.0167672
+        }
+      ]
+    },
+    {
+      "i": 55,
+      "start_s": 264.76,
+      "end_s": 283.76,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "HMOs or other health care to fill the gaps because there are gaps out there and that is the way that we would manage it. We would go out through a regular competitive request for proposal and once we were able to secure the health care, the provider would manage a plan for us.",
+      "words": [
+        {
+          "w": "HMOs",
+          "s": 264.765,
+          "e": 265.135,
+          "c": 0.288437
+        },
+        {
+          "w": "or",
+          "s": 265.135,
+          "e": 265.325,
+          "c": 0.942308
+        },
+        {
+          "w": "other",
+          "s": 265.325,
+          "e": 265.805,
+          "c": 0.986698
+        },
+        {
+          "w": "health",
+          "s": 265.805,
+          "e": 266.375,
+          "c": 0.459819
+        },
+        {
+          "w": "care",
+          "s": 266.375,
+          "e": 266.755,
+          "c": 0.995097
+        },
+        {
+          "w": "to",
+          "s": 266.755,
+          "e": 266.915,
+          "c": 0.94528
+        },
+        {
+          "w": "fill",
+          "s": 267.025,
+          "e": 267.065,
+          "c": 0.996934
+        },
+        {
+          "w": "the",
+          "s": 267.385,
+          "e": 267.515,
+          "c": 0.997729
+        },
+        {
+          "w": "gaps",
+          "s": 267.675,
+          "e": 267.985,
+          "c": 0.998953
+        },
+        {
+          "w": "because",
+          "s": 267.985,
+          "e": 268.655,
+          "c": 0.593017
+        },
+        {
+          "w": "there",
+          "s": 268.655,
+          "e": 269.115,
+          "c": 0.995492
+        },
+        {
+          "w": "are",
+          "s": 269.315,
+          "e": 269.365,
+          "c": 0.998439
+        },
+        {
+          "w": "gaps",
+          "s": 269.445,
+          "e": 269.795,
+          "c": 0.998024
+        },
+        {
+          "w": "out",
+          "s": 269.795,
+          "e": 270.065,
+          "c": 0.996377
+        },
+        {
+          "w": "there",
+          "s": 270.065,
+          "e": 270.515,
+          "c": 0.99743
+        },
+        {
+          "w": "and",
+          "s": 270.635,
+          "e": 270.835,
+          "c": 0.575148
+        },
+        {
+          "w": "that",
+          "s": 270.835,
+          "e": 271.225,
+          "c": 0.985936
+        },
+        {
+          "w": "is",
+          "s": 271.335,
+          "e": 271.345,
+          "c": 0.895063
+        },
+        {
+          "w": "the",
+          "s": 271.465,
+          "e": 271.465,
+          "c": 0.97384
+        },
+        {
+          "w": "way",
+          "s": 271.485,
+          "e": 271.585,
+          "c": 0.997632
+        },
+        {
+          "w": "that",
+          "s": 271.585,
+          "e": 271.755,
+          "c": 0.635904
+        },
+        {
+          "w": "we",
+          "s": 271.755,
+          "e": 271.785,
+          "c": 0.999207
+        },
+        {
+          "w": "would",
+          "s": 271.895,
+          "e": 272.025,
+          "c": 0.98525
+        },
+        {
+          "w": "manage",
+          "s": 272.125,
+          "e": 272.295,
+          "c": 0.99782
+        },
+        {
+          "w": "it.",
+          "s": 272.295,
+          "e": 272.545,
+          "c": 0.926106
+        },
+        {
+          "w": "We",
+          "s": 272.545,
+          "e": 272.685,
+          "c": 0.546507
+        },
+        {
+          "w": "would",
+          "s": 272.695,
+          "e": 273.085,
+          "c": 0.897465
+        },
+        {
+          "w": "go",
+          "s": 273.085,
+          "e": 273.105,
+          "c": 0.994645
+        },
+        {
+          "w": "out",
+          "s": 273.235,
+          "e": 273.465,
+          "c": 0.990781
+        },
+        {
+          "w": "through",
+          "s": 273.465,
+          "e": 274.015,
+          "c": 0.899566
+        },
+        {
+          "w": "a",
+          "s": 274.015,
+          "e": 274.085,
+          "c": 0.974455
+        },
+        {
+          "w": "regular",
+          "s": 274.085,
+          "e": 274.585,
+          "c": 0.99534
+        },
+        {
+          "w": "competitive",
+          "s": 274.785,
+          "e": 275.485,
+          "c": 0.762251
+        },
+        {
+          "w": "request",
+          "s": 275.505,
+          "e": 276.085,
+          "c": 0.984202
+        },
+        {
+          "w": "for",
+          "s": 276.225,
+          "e": 276.355,
+          "c": 0.994196
+        },
+        {
+          "w": "proposal",
+          "s": 276.355,
+          "e": 277.085,
+          "c": 0.895132
+        },
+        {
+          "w": "and",
+          "s": 277.085,
+          "e": 277.295,
+          "c": 0.636779
+        },
+        {
+          "w": "once",
+          "s": 277.375,
+          "e": 277.715,
+          "c": 0.954908
+        },
+        {
+          "w": "we",
+          "s": 277.715,
+          "e": 277.835,
+          "c": 0.996721
+        },
+        {
+          "w": "were",
+          "s": 277.955,
+          "e": 278.225,
+          "c": 0.887404
+        },
+        {
+          "w": "able",
+          "s": 278.345,
+          "e": 278.545,
+          "c": 0.998525
+        },
+        {
+          "w": "to",
+          "s": 278.705,
+          "e": 278.795,
+          "c": 0.998599
+        },
+        {
+          "w": "secure",
+          "s": 278.795,
+          "e": 279.325,
+          "c": 0.996318
+        },
+        {
+          "w": "the",
+          "s": 279.335,
+          "e": 279.605,
+          "c": 0.99128
+        },
+        {
+          "w": "health",
+          "s": 279.605,
+          "e": 280.145,
+          "c": 0.971968
+        },
+        {
+          "w": "care,",
+          "s": 280.145,
+          "e": 280.685,
+          "c": 0.72843
+        },
+        {
+          "w": "the",
+          "s": 280.685,
+          "e": 280.945,
+          "c": 0.952864
+        },
+        {
+          "w": "provider",
+          "s": 281.005,
+          "e": 281.535,
+          "c": 0.995021
+        },
+        {
+          "w": "would",
+          "s": 281.675,
+          "e": 282.125,
+          "c": 0.997191
+        },
+        {
+          "w": "manage",
+          "s": 282.135,
+          "e": 282.765,
+          "c": 0.996569
+        },
+        {
+          "w": "a",
+          "s": 282.765,
+          "e": 282.765,
+          "c": 0.813221
+        },
+        {
+          "w": "plan",
+          "s": 282.905,
+          "e": 283.135,
+          "c": 0.996297
+        },
+        {
+          "w": "for",
+          "s": 283.135,
+          "e": 283.365,
+          "c": 0.997499
+        },
+        {
+          "w": "us.",
+          "s": 283.365,
+          "e": 283.765,
+          "c": 0.998072
+        }
+      ]
+    },
+    {
+      "i": 56,
+      "start_s": 283.9,
+      "end_s": 286.96,
+      "speaker": "SPEAKER_37",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And how long do you think it would take to implement such",
+      "words": [
+        {
+          "w": "And",
+          "s": 283.905,
+          "e": 283.965,
+          "c": 0.555361
+        },
+        {
+          "w": "how",
+          "s": 283.965,
+          "e": 284.165,
+          "c": 0.997562
+        },
+        {
+          "w": "long",
+          "s": 284.165,
+          "e": 284.435,
+          "c": 0.997992
+        },
+        {
+          "w": "do",
+          "s": 284.435,
+          "e": 284.565,
+          "c": 0.98799
+        },
+        {
+          "w": "you",
+          "s": 284.565,
+          "e": 284.765,
+          "c": 0.999159
+        },
+        {
+          "w": "think",
+          "s": 284.765,
+          "e": 285.105,
+          "c": 0.998717
+        },
+        {
+          "w": "it",
+          "s": 285.105,
+          "e": 285.235,
+          "c": 0.990641
+        },
+        {
+          "w": "would",
+          "s": 285.235,
+          "e": 285.515,
+          "c": 0.983657
+        },
+        {
+          "w": "take",
+          "s": 285.665,
+          "e": 285.845,
+          "c": 0.998713
+        },
+        {
+          "w": "to",
+          "s": 285.845,
+          "e": 285.915,
+          "c": 0.994757
+        },
+        {
+          "w": "implement",
+          "s": 286.025,
+          "e": 286.535,
+          "c": 0.997057
+        },
+        {
+          "w": "such",
+          "s": 286.675,
+          "e": 286.965,
+          "c": 0.994273
+        }
+      ]
+    },
+    {
+      "i": 57,
+      "start_s": 286.96,
+      "end_s": 286.97,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "a plan?",
+      "words": [
+        {
+          "w": "a",
+          "s": 286.965,
+          "e": 286.965,
+          "c": 0.982369
+        },
+        {
+          "w": "plan?",
+          "s": 286.965,
+          "e": 286.965,
+          "c": 0.990274
+        }
+      ]
+    },
+    {
+      "i": 58,
+      "start_s": 287.09,
+      "end_s": 304.86,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We have had some discussions with health care companies to understand that, to actually test out our ideas and see if they are sound. We would have to go through a request for information on RFI to get more and then go out with an actual bid. We think that we would be able to have a health care plan",
+      "words": [
+        {
+          "w": "We",
+          "s": 287.091,
+          "e": 287.111,
+          "c": 0.990684
+        },
+        {
+          "w": "have",
+          "s": 287.111,
+          "e": 287.461,
+          "c": 0.989893
+        },
+        {
+          "w": "had",
+          "s": 287.461,
+          "e": 287.631,
+          "c": 0.994209
+        },
+        {
+          "w": "some",
+          "s": 287.761,
+          "e": 288.051,
+          "c": 0.983288
+        },
+        {
+          "w": "discussions",
+          "s": 288.111,
+          "e": 289.031,
+          "c": 0.992095
+        },
+        {
+          "w": "with",
+          "s": 289.201,
+          "e": 289.391,
+          "c": 0.99815
+        },
+        {
+          "w": "health",
+          "s": 289.391,
+          "e": 289.871,
+          "c": 0.560093
+        },
+        {
+          "w": "care",
+          "s": 289.931,
+          "e": 290.271,
+          "c": 0.974206
+        },
+        {
+          "w": "companies",
+          "s": 290.271,
+          "e": 291.021,
+          "c": 0.994541
+        },
+        {
+          "w": "to",
+          "s": 291.061,
+          "e": 291.181,
+          "c": 0.989757
+        },
+        {
+          "w": "understand",
+          "s": 291.351,
+          "e": 292.181,
+          "c": 0.976085
+        },
+        {
+          "w": "that,",
+          "s": 292.181,
+          "e": 292.681,
+          "c": 0.883288
+        },
+        {
+          "w": "to",
+          "s": 292.771,
+          "e": 292.941,
+          "c": 0.808977
+        },
+        {
+          "w": "actually",
+          "s": 293.011,
+          "e": 293.401,
+          "c": 0.844335
+        },
+        {
+          "w": "test",
+          "s": 293.551,
+          "e": 293.741,
+          "c": 0.999396
+        },
+        {
+          "w": "out",
+          "s": 293.741,
+          "e": 293.991,
+          "c": 0.967981
+        },
+        {
+          "w": "our",
+          "s": 293.991,
+          "e": 294.241,
+          "c": 0.967127
+        },
+        {
+          "w": "ideas",
+          "s": 294.241,
+          "e": 294.661,
+          "c": 0.698543
+        },
+        {
+          "w": "and",
+          "s": 294.661,
+          "e": 294.911,
+          "c": 0.955591
+        },
+        {
+          "w": "see",
+          "s": 294.911,
+          "e": 295.161,
+          "c": 0.981128
+        },
+        {
+          "w": "if",
+          "s": 295.161,
+          "e": 295.221,
+          "c": 0.997019
+        },
+        {
+          "w": "they",
+          "s": 295.321,
+          "e": 295.671,
+          "c": 0.998201
+        },
+        {
+          "w": "are",
+          "s": 295.671,
+          "e": 295.901,
+          "c": 0.996721
+        },
+        {
+          "w": "sound.",
+          "s": 296.071,
+          "e": 296.581,
+          "c": 0.973877
+        },
+        {
+          "w": "We",
+          "s": 296.641,
+          "e": 296.731,
+          "c": 0.63621
+        },
+        {
+          "w": "would",
+          "s": 296.731,
+          "e": 296.891,
+          "c": 0.98698
+        },
+        {
+          "w": "have",
+          "s": 297.051,
+          "e": 297.141,
+          "c": 0.997931
+        },
+        {
+          "w": "to",
+          "s": 297.141,
+          "e": 297.231,
+          "c": 0.996288
+        },
+        {
+          "w": "go",
+          "s": 297.231,
+          "e": 297.301,
+          "c": 0.994357
+        },
+        {
+          "w": "through",
+          "s": 297.311,
+          "e": 297.631,
+          "c": 0.996449
+        },
+        {
+          "w": "a",
+          "s": 297.631,
+          "e": 297.651,
+          "c": 0.979124
+        },
+        {
+          "w": "request",
+          "s": 297.811,
+          "e": 298.001,
+          "c": 0.975396
+        },
+        {
+          "w": "for",
+          "s": 298.001,
+          "e": 298.161,
+          "c": 0.991223
+        },
+        {
+          "w": "information",
+          "s": 298.311,
+          "e": 299.051,
+          "c": 0.996713
+        },
+        {
+          "w": "on",
+          "s": 299.051,
+          "e": 299.211,
+          "c": 0.96576
+        },
+        {
+          "w": "RFI",
+          "s": 299.331,
+          "e": 299.451,
+          "c": 0.960994
+        },
+        {
+          "w": "to",
+          "s": 299.451,
+          "e": 299.601,
+          "c": 0.995008
+        },
+        {
+          "w": "get",
+          "s": 299.611,
+          "e": 299.851,
+          "c": 0.998622
+        },
+        {
+          "w": "more",
+          "s": 299.851,
+          "e": 300.171,
+          "c": 0.997227
+        },
+        {
+          "w": "and",
+          "s": 300.171,
+          "e": 300.251,
+          "c": 0.877142
+        },
+        {
+          "w": "then",
+          "s": 300.411,
+          "e": 300.661,
+          "c": 0.949439
+        },
+        {
+          "w": "go",
+          "s": 300.831,
+          "e": 300.861,
+          "c": 0.996111
+        },
+        {
+          "w": "out",
+          "s": 300.911,
+          "e": 301.101,
+          "c": 0.996561
+        },
+        {
+          "w": "with",
+          "s": 301.151,
+          "e": 301.451,
+          "c": 0.993261
+        },
+        {
+          "w": "an",
+          "s": 301.451,
+          "e": 301.611,
+          "c": 0.981905
+        },
+        {
+          "w": "actual",
+          "s": 301.611,
+          "e": 302.061,
+          "c": 0.987794
+        },
+        {
+          "w": "bid.",
+          "s": 302.081,
+          "e": 302.621,
+          "c": 0.995908
+        },
+        {
+          "w": "We",
+          "s": 302.621,
+          "e": 302.711,
+          "c": 0.819661
+        },
+        {
+          "w": "think",
+          "s": 302.711,
+          "e": 302.951,
+          "c": 0.993534
+        },
+        {
+          "w": "that",
+          "s": 302.951,
+          "e": 303.141,
+          "c": 0.815812
+        },
+        {
+          "w": "we",
+          "s": 303.141,
+          "e": 303.261,
+          "c": 0.996614
+        },
+        {
+          "w": "would",
+          "s": 303.261,
+          "e": 303.371,
+          "c": 0.95997
+        },
+        {
+          "w": "be",
+          "s": 303.491,
+          "e": 303.491,
+          "c": 0.996903
+        },
+        {
+          "w": "able",
+          "s": 303.531,
+          "e": 303.711,
+          "c": 0.999115
+        },
+        {
+          "w": "to",
+          "s": 303.711,
+          "e": 303.811,
+          "c": 0.999573
+        },
+        {
+          "w": "have",
+          "s": 303.821,
+          "e": 304.041,
+          "c": 0.99842
+        },
+        {
+          "w": "a",
+          "s": 304.041,
+          "e": 304.071,
+          "c": 0.972641
+        },
+        {
+          "w": "health",
+          "s": 304.201,
+          "e": 304.411,
+          "c": 0.964558
+        },
+        {
+          "w": "care",
+          "s": 304.551,
+          "e": 304.641,
+          "c": 0.990121
+        },
+        {
+          "w": "plan",
+          "s": 304.641,
+          "e": 304.861,
+          "c": 0.998582
+        }
+      ]
+    },
+    {
+      "i": 59,
+      "start_s": 304.86,
+      "end_s": 307.06,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "ready by 2014. Thank you,",
+      "words": [
+        {
+          "w": "ready",
+          "s": 304.861,
+          "e": 305.131,
+          "c": 0.997369
+        },
+        {
+          "w": "by",
+          "s": 305.131,
+          "e": 305.201,
+          "c": 0.998159
+        },
+        {
+          "w": "2014.",
+          "s": 305.291,
+          "e": 306.081,
+          "c": 0.993244
+        },
+        {
+          "w": "Thank",
+          "s": 306.271,
+          "e": 306.571,
+          "c": 0.520364
+        },
+        {
+          "w": "you,",
+          "s": 306.611,
+          "e": 307.061,
+          "c": 0.959455
+        }
+      ]
+    },
+    {
+      "i": 60,
+      "start_s": 307.06,
+      "end_s": 308.22,
+      "speaker": "SPEAKER_39",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Mr. Donahoe.",
+      "words": [
+        {
+          "w": "Mr.",
+          "s": 307.061,
+          "e": 307.521,
+          "c": 0.971066
+        },
+        {
+          "w": "Donahoe.",
+          "s": 307.561,
+          "e": 308.221,
+          "c": 0.840424
+        }
+      ]
+    }
+  ]
+}

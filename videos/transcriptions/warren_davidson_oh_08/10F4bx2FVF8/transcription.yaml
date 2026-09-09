@@ -1,0 +1,224 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Davidson on Washington Journal 7.22 Talks Politicized Military and Foreign Influence (Part 2)"
+    Description: >-
+      A call-in television programme appearance. The host introduces the
+      member as an army veteran who served with the Old Guard, and raises a
+      Washington Post report that Pentagon officials had defended the
+      military's tradition of staying out of elections after a book reported
+      that General Mark Milley, chair of the Joint Chiefs of Staff, feared
+      President Trump would attempt a coup. The member says he has been
+      concerned about Milley, asserts the chairman has politicised the
+      military from the beginning, and says the West Point board of visitors
+      on which he sits has not met since Joe Biden became president, which
+      he characterises as the administration politicising the military while
+      preventing members of Congress from observing. He objects to Milley
+      reportedly being embarrassed by Trump's language about controlling a
+      street, noting the protests concerned followed George Floyd's death
+      rather than January 6, and recalls his own father being deployed from
+      Fort Bragg to Andrews Air Force Base in the 1960s; he says using the
+      military to secure the Capitol was not controversial on Inauguration
+      Day. A caller from Georgia on the Democrats' line says foreign
+      ownership of US farmland has gone from 15 million to 30 million acres
+      in twenty years, that Ohio and Texas have no restrictions while no
+      foreigners own land in Iowa, and asks why he worries about illegal
+      immigration but not foreign investors buying prime agricultural land.
+      He disputes her premise that he is unconcerned, points to the Foreign
+      Investment Risk Review Modernization Act strengthening the committee
+      on foreign investment's review of real estate purchases, says China in
+      particular buys real estate and will sometimes buy a whole office
+      building to use its infrastructure to steal data it cannot otherwise
+      acquire, agrees a more holistic federal and state review is warranted,
+      and says the response to China has been slow. He credits Donald
+      Trump's emphasis on trade, says China's practices were crushing
+      manufacturing, and accuses it of stealing intellectual property and
+      shaping market access contrary to its World Trade Organization
+      commitments. The coup report, the caller's acreage figures and the
+      member's characterisations are each the claims of their own sources
+      and are contested.
+    URL: "https://www.youtube.com/watch?v=10F4bx2FVF8"
+    Video_ID: "10F4bx2FVF8"
+    Show: "Congressman Warren Davidson"
+    Runtime: "00:06:04"
+    Language: "en"
+
+  Media:
+    File: "10F4bx2FVF8.m4a"
+    SHA256: "b1f00f6984217106c0c6354fe0d61f9bb62d33b6e43c8b4b1da00e98f94b9b33"
+    Bytes: 5899192
+    Duration_Seconds: 364
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=10F4bx2FVF8"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "10F4bx2FVF8.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/warren_davidson_oh_08/10F4bx2FVF8/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCMzuyZWzk44YRNesFzPTeUw"
+    Uploader_ID: "@congressmanwarrendavidson2640"
+    View_Count: 32
+    Like_Count: 1
+    Comment_Count: 1
+    Availability: "public"
+    Published_At: "2021-07-22T14:20:24+00:00"
+    Captured_At: "2026-09-08T17:48:37-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Programme host introducing the guest and raising the Milley report"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "5.4%"
+      Turns: 1
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "1.5%"
+      Turns: 1
+    Person_4:
+      Name: "Warren Davidson"
+      Role: "Member of Congress interviewed; identified by the host's introduction"
+      Subject: true
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "69.0%"
+      Turns: 4
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "1.3%"
+      Turns: 1
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_11"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "1.9%"
+      Turns: 1
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_17"
+      Share_Of_Speech: "2.3%"
+      Turns: 2
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_18"
+      Share_Of_Speech: "1.0%"
+      Turns: 1
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_19"
+      Share_Of_Speech: "3.1%"
+      Turns: 2
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_21"
+      Share_Of_Speech: "10.2%"
+      Turns: 2
+    Person_12:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_23"
+      Share_Of_Speech: "3.6%"
+      Turns: 1
+
+  # Topics — what the video is ACTUALLY about, read from the transcript,
+  # not from what this person is on the roster for.
+  Topics:
+    - Politicization of the military
+    - General Mark Milley and the Joint Chiefs
+    - Foreign ownership of US farmland
+    - CFIUS and real estate review
+    - China trade practices and intellectual property
+
+  Source:
+    Canonical_ID: "f13dabd3e5320b49"
+    Transcribed: "2026-09-08T17:56:10.059757-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1041
+    Segments: 36
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T17:48:41.499612-07:00"
+    Transcription_Finished: "2026-09-08T17:56:10.059757-07:00"
+    Recorded: "2021-07-22"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "10F4bx2FVF8.ctm"
+    Fountain: "10F4bx2FVF8.fountain"
+    Diarization_RTTM: "10F4bx2FVF8.rttm"
+    As_Broadcast_Script: "10F4bx2FVF8.script.txt"
+    Segments_JSON: "10F4bx2FVF8.segments.json"
+    Segments_JSONL: "10F4bx2FVF8.segments.jsonl"
+    Subtitles_SRT: "10F4bx2FVF8.srt"
+    Plain_Text: "10F4bx2FVF8.transcription"
+    Subtitles_VTT: "10F4bx2FVF8.vtt"
+    Transcript_SHA256: "9b6022e4e1f37d56d69f5dbc08d9cae550b1158b43026a1675bf1d3729d24d43"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "warren_davidson_oh_08"
+    video_uid: "warren_davidson_oh_08::10F4bx2FVF8"
+    video_key: "10F4bx2FVF8"
+    youtube_id: "10F4bx2FVF8"
+    priority: 700
+    ceiling: 1000
+    raw_score: 700
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 150
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T23:07:36.397Z"
+    demand_run_id: "job_1788908850135_13"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=10F4bx2FVF8"
+    source_ref: "10F4bx2FVF8"

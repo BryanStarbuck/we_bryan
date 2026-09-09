@@ -1,0 +1,225 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Rep. Justin Amash - Oversight hearing on postal service (March 2, 2011)"
+    Description: >-
+      A five-minute round of questioning at a House oversight hearing on
+      Postal Service finances, with Postmaster General Donahoe and other
+      witnesses on the panel. The member asks whether the Postal Service
+      would break even without the retiree health pre-funding requirement;
+      Donahoe says the plan shows an operating income loss of about 900
+      million dollars but that with administrative cost reductions of 750
+      million and other changes the goal would be to make 100 million this
+      year if forgiven the prepayment. The member then introduces a
+      September 2004 letter from the Office of Personnel Management to
+      former Postmaster General John Potter rejecting the claim that the
+      Postal Service overpaid into the Civil Service Retirement System,
+      including a statement from the CSRS Board of Actuaries that OPM had
+      appropriately and accurately determined the obligations, and asks
+      Donahoe to respond. Donahoe says he disagrees with the letter, citing
+      the Inspector General and external actuaries estimating a 75 billion
+      dollar overpayment, while a Postal Regulatory Commission witness says
+      its own outside actuaries estimated 50 to 55 billion and describes its
+      analysis as objective and free of preconceptions. The member then asks
+      a GAO witness whether the Postal Service should be able to renegotiate
+      collective bargaining agreements; the witness suggests Congress
+      reconsider whether binding arbitration should take the Service's
+      ability to pay into account, and says liabilities and obligations now
+      exceed 100 billion dollars, making this the time for hard decisions
+      about the organization's future footprint. The competing overpayment
+      figures are the witnesses' own and are in open disagreement with one
+      another.
+    URL: "https://www.youtube.com/watch?v=-qYj4AKgxQs"
+    Video_ID: "-qYj4AKgxQs"
+    Show: "RepJustinAmash"
+    Runtime: "00:04:49"
+    Language: "en"
+
+  Media:
+    File: "-qYj4AKgxQs.m4a"
+    SHA256: "2ba805620440a5b1eb2bccfb865986609d1c76f08443006e7017abbcdc729de7"
+    Bytes: 4678363
+    Duration_Seconds: 289
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-qYj4AKgxQs"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-qYj4AKgxQs.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/justin_amash_mi_03/-qYj4AKgxQs/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCeg6HhoCXrS8xpON9dxtZgA"
+    Uploader_ID: "@RepJustinAmash"
+    View_Count: 117
+    Availability: "public"
+    Published_At: "2012-05-07T14:41:05+00:00"
+    Captured_At: "2026-09-08T17:48:15-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "2.0%"
+      Turns: 1
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "1.4%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "32.5%"
+      Turns: 6
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "17.1%"
+      Turns: 3
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_10"
+      Share_Of_Speech: "1.3%"
+      Turns: 1
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_12"
+      Share_Of_Speech: "0.6%"
+      Turns: 1
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_14"
+      Share_Of_Speech: "18.8%"
+      Turns: 3
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_19"
+      Share_Of_Speech: "1.6%"
+      Turns: 1
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_21"
+      Share_Of_Speech: "0.8%"
+      Turns: 1
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_23"
+      Share_Of_Speech: "0.9%"
+      Turns: 1
+    Person_12:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_24"
+      Share_Of_Speech: "19.3%"
+      Turns: 3
+    Person_13:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_25"
+      Share_Of_Speech: "2.6%"
+      Turns: 1
+    Person_14:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_28"
+      Share_Of_Speech: "0.7%"
+      Turns: 1
+
+  # Topics — what the video is ACTUALLY about, read from the transcript,
+  # not from what this person is on the roster for.
+  Topics:
+    - Postal Service finances
+    - Retiree health benefit pre-funding
+    - CSRS overpayment dispute
+    - Collective bargaining and binding arbitration
+    - Congressional oversight of USPS
+
+  Source:
+    Canonical_ID: "90aa88ddc6ce1242"
+    Transcribed: "2026-09-08T17:54:21.645401-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 769
+    Segments: 45
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T17:48:15.866521-07:00"
+    Transcription_Finished: "2026-09-08T17:54:21.645401-07:00"
+    Recorded: "2012-05-07"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-qYj4AKgxQs.ctm"
+    Fountain: "-qYj4AKgxQs.fountain"
+    Diarization_RTTM: "-qYj4AKgxQs.rttm"
+    As_Broadcast_Script: "-qYj4AKgxQs.script.txt"
+    Segments_JSON: "-qYj4AKgxQs.segments.json"
+    Segments_JSONL: "-qYj4AKgxQs.segments.jsonl"
+    Subtitles_SRT: "-qYj4AKgxQs.srt"
+    Plain_Text: "-qYj4AKgxQs.transcription"
+    Subtitles_VTT: "-qYj4AKgxQs.vtt"
+    Transcript_SHA256: "6e846a9da629c728ea7dfcf06de495d2f983325ebd23bd00311ac64285dccdd3"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "justin_amash_mi_03"
+    video_uid: "justin_amash_mi_03::-qYj4AKgxQs"
+    video_key: "-qYj4AKgxQs"
+    youtube_id: "-qYj4AKgxQs"
+    priority: 700
+    ceiling: 1000
+    raw_score: 700
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 150
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T23:07:36.397Z"
+    demand_run_id: "job_1788908850135_13"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-qYj4AKgxQs"
+    source_ref: "-qYj4AKgxQs"

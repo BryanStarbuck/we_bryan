@@ -1,0 +1,6162 @@
+{
+  "schema_version": 2,
+  "canonical_id": "9d5b0d0480d6d14f",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 306.87,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-09T00:54:51.066Z",
+  "text_sha256": "04281697bd3cfd0e0d60b7699baf1f5a61fa3a50c8a44d6bca0163728a87f837",
+  "segments_sha256": "9cadf0f9d4c1c813c9125b212285287ac4fb9806cfe8086669c30bc36f4982b8",
+  "words_sha256": "b91e6668273be78ba13835eae5a833174b63357b8a966e3953d5fb4a5f774f2a",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 11,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 20,
+    "clusters": 7,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.78,
+        "confidence": "low",
+        "clean_s": 213.5
+      },
+      "clean_s": 213.5,
+      "speaking_s": 213.5,
+      "first_s": 0.99
+    },
+    {
+      "id": "SPEAKER_02",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.1
+      },
+      "clean_s": 5.1,
+      "speaking_s": 5.1,
+      "first_s": 146.98
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5
+      },
+      "clean_s": 5,
+      "speaking_s": 5,
+      "first_s": 152.97
+    },
+    {
+      "id": "SPEAKER_04",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 63.9
+      },
+      "clean_s": 63.9,
+      "speaking_s": 63.9,
+      "first_s": 157.96
+    },
+    {
+      "id": "SPEAKER_08",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1
+      },
+      "clean_s": 1,
+      "speaking_s": 1,
+      "first_s": 240.04
+    },
+    {
+      "id": "SPEAKER_06",
+      "n": 6,
+      "label": "Speaker 6",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 6.1
+      },
+      "clean_s": 6.1,
+      "speaking_s": 6.1,
+      "first_s": 267.89
+    },
+    {
+      "id": "SPEAKER_15",
+      "n": 7,
+      "label": "Speaker 7",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.5
+      },
+      "clean_s": 0.5,
+      "speaking_s": 0.5,
+      "first_s": 306.48
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.96,
+      "end_s": 0.96,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 84.65,
+      "end_s": 84.65,
+      "segment_i": 4,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 84.61,
+      "end_s": 84.77,
+      "segment_i": 5,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 114.19,
+      "end_s": 114.57,
+      "segment_i": 7,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 152.19,
+      "end_s": 152.59,
+      "segment_i": 11,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 152.58,
+      "end_s": 152.87,
+      "segment_i": 12,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 177.44,
+      "end_s": 177.68,
+      "segment_i": 15,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 204.7,
+      "end_s": 204.77,
+      "segment_i": 18,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 228.63,
+      "end_s": 230.43,
+      "segment_i": 20,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 233.41,
+      "end_s": 233.65,
+      "segment_i": 22,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 239.11,
+      "end_s": 239.71,
+      "segment_i": 24,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 263.43,
+      "end_s": 263.43,
+      "segment_i": 27,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 294.51,
+      "end_s": 294.91,
+      "segment_i": 31,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.96,
+      "end_s": 0.97,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you,",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 0.96,
+          "e": 0.96,
+          "c": 0.854026
+        },
+        {
+          "w": "you,",
+          "s": 0.96,
+          "e": 0.96,
+          "c": 0.55112
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 1.06,
+      "end_s": 29.88,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Director. Great to see you here on the Hill again. Appreciate the work you and your team do to protect America's consumers and, frankly, to clarify the law as it exists. Frankly, one of the concerns that we've had in the structure that's been shared across the aisles is everything depends on who the director is. And we really do need to change that structure, as has been highlighted by a number of members. But frankly, the concern I had is the previous director.",
+      "words": [
+        {
+          "w": "Director.",
+          "s": 1.06,
+          "e": 1.87,
+          "c": 0.67122
+        },
+        {
+          "w": "Great",
+          "s": 2.06,
+          "e": 2.24,
+          "c": 0.989268
+        },
+        {
+          "w": "to",
+          "s": 2.24,
+          "e": 2.35,
+          "c": 0.998561
+        },
+        {
+          "w": "see",
+          "s": 2.35,
+          "e": 2.51,
+          "c": 0.998807
+        },
+        {
+          "w": "you",
+          "s": 2.51,
+          "e": 2.67,
+          "c": 0.990577
+        },
+        {
+          "w": "here",
+          "s": 2.67,
+          "e": 2.88,
+          "c": 0.982709
+        },
+        {
+          "w": "on",
+          "s": 2.98,
+          "e": 3,
+          "c": 0.988157
+        },
+        {
+          "w": "the",
+          "s": 3,
+          "e": 3.16,
+          "c": 0.886761
+        },
+        {
+          "w": "Hill",
+          "s": 3.16,
+          "e": 3.38,
+          "c": 0.911465
+        },
+        {
+          "w": "again.",
+          "s": 3.38,
+          "e": 3.87,
+          "c": 0.918317
+        },
+        {
+          "w": "Appreciate",
+          "s": 3.98,
+          "e": 4.3,
+          "c": 0.963892
+        },
+        {
+          "w": "the",
+          "s": 4.3,
+          "e": 4.42,
+          "c": 0.995256
+        },
+        {
+          "w": "work",
+          "s": 4.42,
+          "e": 4.59,
+          "c": 0.999104
+        },
+        {
+          "w": "you",
+          "s": 4.59,
+          "e": 4.71,
+          "c": 0.991
+        },
+        {
+          "w": "and",
+          "s": 4.71,
+          "e": 4.82,
+          "c": 0.994311
+        },
+        {
+          "w": "your",
+          "s": 4.9,
+          "e": 5,
+          "c": 0.99205
+        },
+        {
+          "w": "team",
+          "s": 5,
+          "e": 5.2,
+          "c": 0.995927
+        },
+        {
+          "w": "do",
+          "s": 5.2,
+          "e": 5.4,
+          "c": 0.946848
+        },
+        {
+          "w": "to",
+          "s": 5.4,
+          "e": 5.88,
+          "c": 0.923678
+        },
+        {
+          "w": "protect",
+          "s": 5.88,
+          "e": 6.2,
+          "c": 0.942407
+        },
+        {
+          "w": "America's",
+          "s": 6.2,
+          "e": 7.76,
+          "c": 0.974887
+        },
+        {
+          "w": "consumers",
+          "s": 7.76,
+          "e": 8.56,
+          "c": 0.587617
+        },
+        {
+          "w": "and,",
+          "s": 8.56,
+          "e": 9.58,
+          "c": 0.429696
+        },
+        {
+          "w": "frankly,",
+          "s": 9.58,
+          "e": 9.88,
+          "c": 0.916308
+        },
+        {
+          "w": "to",
+          "s": 9.98,
+          "e": 10.09,
+          "c": 0.993635
+        },
+        {
+          "w": "clarify",
+          "s": 10.09,
+          "e": 10.82,
+          "c": 0.998885
+        },
+        {
+          "w": "the",
+          "s": 10.91,
+          "e": 11.13,
+          "c": 0.998767
+        },
+        {
+          "w": "law",
+          "s": 11.13,
+          "e": 11.42,
+          "c": 0.97399
+        },
+        {
+          "w": "as",
+          "s": 11.47,
+          "e": 11.64,
+          "c": 0.994632
+        },
+        {
+          "w": "it",
+          "s": 11.65,
+          "e": 11.85,
+          "c": 0.996402
+        },
+        {
+          "w": "exists.",
+          "s": 11.86,
+          "e": 12.82,
+          "c": 0.958013
+        },
+        {
+          "w": "Frankly,",
+          "s": 12.92,
+          "e": 13.34,
+          "c": 0.964556
+        },
+        {
+          "w": "one",
+          "s": 13.34,
+          "e": 13.51,
+          "c": 0.998561
+        },
+        {
+          "w": "of",
+          "s": 13.51,
+          "e": 13.62,
+          "c": 0.999539
+        },
+        {
+          "w": "the",
+          "s": 13.62,
+          "e": 13.76,
+          "c": 0.998814
+        },
+        {
+          "w": "concerns",
+          "s": 13.85,
+          "e": 14.26,
+          "c": 0.999264
+        },
+        {
+          "w": "that",
+          "s": 14.26,
+          "e": 14.49,
+          "c": 0.989066
+        },
+        {
+          "w": "we've",
+          "s": 14.49,
+          "e": 14.77,
+          "c": 0.984495
+        },
+        {
+          "w": "had",
+          "s": 14.79,
+          "e": 14.93,
+          "c": 0.998102
+        },
+        {
+          "w": "in",
+          "s": 14.95,
+          "e": 15.05,
+          "c": 0.92319
+        },
+        {
+          "w": "the",
+          "s": 15.05,
+          "e": 15.22,
+          "c": 0.983528
+        },
+        {
+          "w": "structure",
+          "s": 15.22,
+          "e": 15.75,
+          "c": 0.997683
+        },
+        {
+          "w": "that's",
+          "s": 15.75,
+          "e": 16.09,
+          "c": 0.975699
+        },
+        {
+          "w": "been",
+          "s": 16.09,
+          "e": 16.44,
+          "c": 0.988976
+        },
+        {
+          "w": "shared",
+          "s": 16.44,
+          "e": 16.84,
+          "c": 0.98854
+        },
+        {
+          "w": "across",
+          "s": 16.84,
+          "e": 17.12,
+          "c": 0.924226
+        },
+        {
+          "w": "the",
+          "s": 17.22,
+          "e": 17.42,
+          "c": 0.999682
+        },
+        {
+          "w": "aisles",
+          "s": 17.42,
+          "e": 18.02,
+          "c": 0.738436
+        },
+        {
+          "w": "is",
+          "s": 18.14,
+          "e": 18.22,
+          "c": 0.971412
+        },
+        {
+          "w": "everything",
+          "s": 18.22,
+          "e": 19.23,
+          "c": 0.875915
+        },
+        {
+          "w": "depends",
+          "s": 19.25,
+          "e": 19.95,
+          "c": 0.998066
+        },
+        {
+          "w": "on",
+          "s": 19.95,
+          "e": 20.15,
+          "c": 0.994896
+        },
+        {
+          "w": "who",
+          "s": 20.15,
+          "e": 20.45,
+          "c": 0.999422
+        },
+        {
+          "w": "the",
+          "s": 20.45,
+          "e": 20.75,
+          "c": 0.998911
+        },
+        {
+          "w": "director",
+          "s": 20.75,
+          "e": 21.57,
+          "c": 0.788561
+        },
+        {
+          "w": "is.",
+          "s": 21.57,
+          "e": 22.16,
+          "c": 0.707866
+        },
+        {
+          "w": "And",
+          "s": 22.25,
+          "e": 22.31,
+          "c": 0.990987
+        },
+        {
+          "w": "we",
+          "s": 22.31,
+          "e": 22.4,
+          "c": 0.996976
+        },
+        {
+          "w": "really",
+          "s": 22.42,
+          "e": 22.71,
+          "c": 0.998906
+        },
+        {
+          "w": "do",
+          "s": 22.71,
+          "e": 22.8,
+          "c": 0.997984
+        },
+        {
+          "w": "need",
+          "s": 22.81,
+          "e": 23.01,
+          "c": 0.998934
+        },
+        {
+          "w": "to",
+          "s": 23.01,
+          "e": 23.1,
+          "c": 0.999357
+        },
+        {
+          "w": "change",
+          "s": 23.19,
+          "e": 23.41,
+          "c": 0.999718
+        },
+        {
+          "w": "that",
+          "s": 23.41,
+          "e": 23.61,
+          "c": 0.99548
+        },
+        {
+          "w": "structure,",
+          "s": 23.61,
+          "e": 24.17,
+          "c": 0.487359
+        },
+        {
+          "w": "as",
+          "s": 24.17,
+          "e": 24.27,
+          "c": 0.994932
+        },
+        {
+          "w": "has",
+          "s": 24.29,
+          "e": 24.42,
+          "c": 0.712096
+        },
+        {
+          "w": "been",
+          "s": 24.42,
+          "e": 24.62,
+          "c": 0.99782
+        },
+        {
+          "w": "highlighted",
+          "s": 24.62,
+          "e": 25.18,
+          "c": 0.998353
+        },
+        {
+          "w": "by",
+          "s": 25.18,
+          "e": 25.28,
+          "c": 0.99449
+        },
+        {
+          "w": "a",
+          "s": 25.28,
+          "e": 25.33,
+          "c": 0.994903
+        },
+        {
+          "w": "number",
+          "s": 25.33,
+          "e": 25.62,
+          "c": 0.996658
+        },
+        {
+          "w": "of",
+          "s": 25.62,
+          "e": 25.72,
+          "c": 0.989821
+        },
+        {
+          "w": "members.",
+          "s": 25.72,
+          "e": 26.32,
+          "c": 0.837705
+        },
+        {
+          "w": "But",
+          "s": 26.42,
+          "e": 26.54,
+          "c": 0.997636
+        },
+        {
+          "w": "frankly,",
+          "s": 26.54,
+          "e": 27.21,
+          "c": 0.964755
+        },
+        {
+          "w": "the",
+          "s": 27.34,
+          "e": 27.43,
+          "c": 0.999279
+        },
+        {
+          "w": "concern",
+          "s": 27.43,
+          "e": 27.95,
+          "c": 0.999075
+        },
+        {
+          "w": "I",
+          "s": 27.95,
+          "e": 28.02,
+          "c": 0.988815
+        },
+        {
+          "w": "had",
+          "s": 28.02,
+          "e": 28.23,
+          "c": 0.986961
+        },
+        {
+          "w": "is",
+          "s": 28.24,
+          "e": 28.39,
+          "c": 0.744787
+        },
+        {
+          "w": "the",
+          "s": 28.39,
+          "e": 28.61,
+          "c": 0.843263
+        },
+        {
+          "w": "previous",
+          "s": 28.61,
+          "e": 29.21,
+          "c": 0.999329
+        },
+        {
+          "w": "director.",
+          "s": 29.21,
+          "e": 29.88,
+          "c": 0.431467
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 29.89,
+      "end_s": 59.91,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "uh reflected poorly on our state of ohio by uh his practices whether it was hiring practices or sue and settle schemes or frankly ways to make companies settle even in spite of the law so providing clarity not just for the consumers but for the businesses that are trying in uh in their best efforts to serve consumers so thank you for that i truly believe um that that a lot of it does go back to consumer education in terms of financial education and you can really",
+      "words": [
+        {
+          "w": "uh",
+          "s": 29.888,
+          "e": 29.988,
+          "c": 0.0559981
+        },
+        {
+          "w": "reflected",
+          "s": 30.098,
+          "e": 30.728,
+          "c": 0.771005
+        },
+        {
+          "w": "poorly",
+          "s": 30.828,
+          "e": 31.298,
+          "c": 0.998649
+        },
+        {
+          "w": "on",
+          "s": 31.298,
+          "e": 31.458,
+          "c": 0.997716
+        },
+        {
+          "w": "our",
+          "s": 31.458,
+          "e": 31.708,
+          "c": 0.999428
+        },
+        {
+          "w": "state",
+          "s": 31.708,
+          "e": 32.118,
+          "c": 0.993155
+        },
+        {
+          "w": "of",
+          "s": 32.118,
+          "e": 32.278,
+          "c": 0.999148
+        },
+        {
+          "w": "ohio",
+          "s": 32.278,
+          "e": 32.648,
+          "c": 0.552464
+        },
+        {
+          "w": "by",
+          "s": 32.648,
+          "e": 32.848,
+          "c": 0.979426
+        },
+        {
+          "w": "uh",
+          "s": 32.848,
+          "e": 33.038,
+          "c": 0.671884
+        },
+        {
+          "w": "his",
+          "s": 33.048,
+          "e": 33.248,
+          "c": 0.988546
+        },
+        {
+          "w": "practices",
+          "s": 33.398,
+          "e": 34.238,
+          "c": 0.995997
+        },
+        {
+          "w": "whether",
+          "s": 34.268,
+          "e": 35.008,
+          "c": 0.988793
+        },
+        {
+          "w": "it",
+          "s": 35.008,
+          "e": 35.208,
+          "c": 0.999723
+        },
+        {
+          "w": "was",
+          "s": 35.208,
+          "e": 35.538,
+          "c": 0.998603
+        },
+        {
+          "w": "hiring",
+          "s": 35.598,
+          "e": 35.828,
+          "c": 0.985267
+        },
+        {
+          "w": "practices",
+          "s": 35.828,
+          "e": 36.368,
+          "c": 0.98544
+        },
+        {
+          "w": "or",
+          "s": 36.368,
+          "e": 36.768,
+          "c": 0.759784
+        },
+        {
+          "w": "sue",
+          "s": 36.768,
+          "e": 37.008,
+          "c": 0.982508
+        },
+        {
+          "w": "and",
+          "s": 37.008,
+          "e": 37.248,
+          "c": 0.930793
+        },
+        {
+          "w": "settle",
+          "s": 37.248,
+          "e": 37.728,
+          "c": 0.997314
+        },
+        {
+          "w": "schemes",
+          "s": 37.728,
+          "e": 38.288,
+          "c": 0.999973
+        },
+        {
+          "w": "or",
+          "s": 38.288,
+          "e": 38.448,
+          "c": 0.999992
+        },
+        {
+          "w": "frankly",
+          "s": 38.448,
+          "e": 39.008,
+          "c": 0.99995
+        },
+        {
+          "w": "ways",
+          "s": 39.008,
+          "e": 39.328,
+          "c": 0.999929
+        },
+        {
+          "w": "to",
+          "s": 39.328,
+          "e": 39.488,
+          "c": 1
+        },
+        {
+          "w": "make",
+          "s": 39.488,
+          "e": 39.808,
+          "c": 0.99999
+        },
+        {
+          "w": "companies",
+          "s": 39.808,
+          "e": 40.538,
+          "c": 0.999947
+        },
+        {
+          "w": "settle",
+          "s": 40.538,
+          "e": 41.018,
+          "c": 0.999051
+        },
+        {
+          "w": "even",
+          "s": 41.018,
+          "e": 41.338,
+          "c": 0.99999
+        },
+        {
+          "w": "in",
+          "s": 41.338,
+          "e": 41.498,
+          "c": 0.999992
+        },
+        {
+          "w": "spite",
+          "s": 41.498,
+          "e": 41.898,
+          "c": 0.999966
+        },
+        {
+          "w": "of",
+          "s": 41.898,
+          "e": 42.058,
+          "c": 0.999994
+        },
+        {
+          "w": "the",
+          "s": 42.058,
+          "e": 42.288,
+          "c": 0.999983
+        },
+        {
+          "w": "law",
+          "s": 42.298,
+          "e": 42.628,
+          "c": 0.99964
+        },
+        {
+          "w": "so",
+          "s": 42.628,
+          "e": 43.088,
+          "c": 0.94647
+        },
+        {
+          "w": "providing",
+          "s": 43.298,
+          "e": 43.658,
+          "c": 0.999775
+        },
+        {
+          "w": "clarity",
+          "s": 43.658,
+          "e": 44.098,
+          "c": 0.999964
+        },
+        {
+          "w": "not",
+          "s": 44.098,
+          "e": 44.288,
+          "c": 0.999989
+        },
+        {
+          "w": "just",
+          "s": 44.288,
+          "e": 44.498,
+          "c": 0.999996
+        },
+        {
+          "w": "for",
+          "s": 44.578,
+          "e": 44.728,
+          "c": 1
+        },
+        {
+          "w": "the",
+          "s": 44.728,
+          "e": 44.918,
+          "c": 1
+        },
+        {
+          "w": "consumers",
+          "s": 44.918,
+          "e": 45.488,
+          "c": 0.999966
+        },
+        {
+          "w": "but",
+          "s": 45.488,
+          "e": 45.678,
+          "c": 0.999985
+        },
+        {
+          "w": "for",
+          "s": 45.678,
+          "e": 45.868,
+          "c": 0.999996
+        },
+        {
+          "w": "the",
+          "s": 45.868,
+          "e": 46.058,
+          "c": 1
+        },
+        {
+          "w": "businesses",
+          "s": 46.058,
+          "e": 46.698,
+          "c": 0.999987
+        },
+        {
+          "w": "that",
+          "s": 46.698,
+          "e": 46.948,
+          "c": 1
+        },
+        {
+          "w": "are",
+          "s": 46.948,
+          "e": 47.138,
+          "c": 0.999998
+        },
+        {
+          "w": "trying",
+          "s": 47.138,
+          "e": 47.588,
+          "c": 0.999989
+        },
+        {
+          "w": "in",
+          "s": 47.588,
+          "e": 48.068,
+          "c": 0.975076
+        },
+        {
+          "w": "uh",
+          "s": 48.188,
+          "e": 48.668,
+          "c": 0.981935
+        },
+        {
+          "w": "in",
+          "s": 48.668,
+          "e": 48.748,
+          "c": 0.972871
+        },
+        {
+          "w": "their",
+          "s": 48.798,
+          "e": 49.008,
+          "c": 0.992515
+        },
+        {
+          "w": "best",
+          "s": 49.218,
+          "e": 49.338,
+          "c": 0.966626
+        },
+        {
+          "w": "efforts",
+          "s": 49.338,
+          "e": 49.848,
+          "c": 0.999971
+        },
+        {
+          "w": "to",
+          "s": 49.948,
+          "e": 50.078,
+          "c": 1
+        },
+        {
+          "w": "serve",
+          "s": 50.078,
+          "e": 50.418,
+          "c": 0.99996
+        },
+        {
+          "w": "consumers",
+          "s": 50.498,
+          "e": 51.228,
+          "c": 0.999884
+        },
+        {
+          "w": "so",
+          "s": 51.228,
+          "e": 51.388,
+          "c": 0.999882
+        },
+        {
+          "w": "thank",
+          "s": 51.388,
+          "e": 51.798,
+          "c": 0.999981
+        },
+        {
+          "w": "you",
+          "s": 51.798,
+          "e": 52.038,
+          "c": 0.999998
+        },
+        {
+          "w": "for",
+          "s": 52.038,
+          "e": 52.258,
+          "c": 0.999996
+        },
+        {
+          "w": "that",
+          "s": 52.508,
+          "e": 52.608,
+          "c": 0.999996
+        },
+        {
+          "w": "i",
+          "s": 52.608,
+          "e": 52.688,
+          "c": 0.971384
+        },
+        {
+          "w": "truly",
+          "s": 52.688,
+          "e": 53.098,
+          "c": 0.999964
+        },
+        {
+          "w": "believe",
+          "s": 53.098,
+          "e": 53.678,
+          "c": 0.999994
+        },
+        {
+          "w": "um",
+          "s": 53.678,
+          "e": 53.838,
+          "c": 0.975321
+        },
+        {
+          "w": "that",
+          "s": 53.838,
+          "e": 54.168,
+          "c": 0.99996
+        },
+        {
+          "w": "that",
+          "s": 54.168,
+          "e": 54.498,
+          "c": 0.95261
+        },
+        {
+          "w": "a",
+          "s": 54.498,
+          "e": 54.578,
+          "c": 0.999994
+        },
+        {
+          "w": "lot",
+          "s": 54.578,
+          "e": 54.818,
+          "c": 0.999971
+        },
+        {
+          "w": "of",
+          "s": 54.818,
+          "e": 55.038,
+          "c": 0.999739
+        },
+        {
+          "w": "it",
+          "s": 55.078,
+          "e": 55.168,
+          "c": 0.973521
+        },
+        {
+          "w": "does",
+          "s": 55.168,
+          "e": 55.348,
+          "c": 0.976075
+        },
+        {
+          "w": "go",
+          "s": 55.348,
+          "e": 55.468,
+          "c": 0.770674
+        },
+        {
+          "w": "back",
+          "s": 55.558,
+          "e": 55.718,
+          "c": 0.999285
+        },
+        {
+          "w": "to",
+          "s": 55.718,
+          "e": 55.838,
+          "c": 0.999167
+        },
+        {
+          "w": "consumer",
+          "s": 55.838,
+          "e": 56.348,
+          "c": 0.987599
+        },
+        {
+          "w": "education",
+          "s": 56.348,
+          "e": 56.948,
+          "c": 0.983429
+        },
+        {
+          "w": "in",
+          "s": 56.948,
+          "e": 57.028,
+          "c": 0.62032
+        },
+        {
+          "w": "terms",
+          "s": 57.028,
+          "e": 57.268,
+          "c": 0.735373
+        },
+        {
+          "w": "of",
+          "s": 57.268,
+          "e": 57.348,
+          "c": 0.892659
+        },
+        {
+          "w": "financial",
+          "s": 57.348,
+          "e": 57.808,
+          "c": 0.834796
+        },
+        {
+          "w": "education",
+          "s": 57.808,
+          "e": 58.248,
+          "c": 0.879458
+        },
+        {
+          "w": "and",
+          "s": 58.358,
+          "e": 58.678,
+          "c": 0.299244
+        },
+        {
+          "w": "you",
+          "s": 58.848,
+          "e": 58.988,
+          "c": 0.986382
+        },
+        {
+          "w": "can",
+          "s": 58.988,
+          "e": 59.288,
+          "c": 0.999302
+        },
+        {
+          "w": "really",
+          "s": 59.288,
+          "e": 59.908,
+          "c": 0.994598
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 59.89,
+      "end_s": 84.65,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "see the difference that it makes certainly compounding interest has changed the world and changes the world for all sorts of people whether that's working for good to accumulate wealth over time or working for bad to see people get on the wrong side of that debt so appreciate your efforts there I want to highlight a couple things as you sit in a role that was created in a way to kind of sit over top",
+      "words": [
+        {
+          "w": "see",
+          "s": 59.888,
+          "e": 60.048,
+          "c": 0.593275
+        },
+        {
+          "w": "the",
+          "s": 60.048,
+          "e": 60.208,
+          "c": 0.998999
+        },
+        {
+          "w": "difference",
+          "s": 60.208,
+          "e": 60.748,
+          "c": 0.999018
+        },
+        {
+          "w": "that",
+          "s": 60.748,
+          "e": 60.978,
+          "c": 0.994657
+        },
+        {
+          "w": "it",
+          "s": 60.978,
+          "e": 61.078,
+          "c": 0.996662
+        },
+        {
+          "w": "makes",
+          "s": 61.098,
+          "e": 61.358,
+          "c": 0.998369
+        },
+        {
+          "w": "certainly",
+          "s": 61.358,
+          "e": 61.878,
+          "c": 0.244636
+        },
+        {
+          "w": "compounding",
+          "s": 62.028,
+          "e": 62.498,
+          "c": 0.883871
+        },
+        {
+          "w": "interest",
+          "s": 62.498,
+          "e": 62.948,
+          "c": 0.976525
+        },
+        {
+          "w": "has",
+          "s": 62.948,
+          "e": 63.128,
+          "c": 0.988822
+        },
+        {
+          "w": "changed",
+          "s": 63.128,
+          "e": 63.518,
+          "c": 0.617462
+        },
+        {
+          "w": "the",
+          "s": 63.528,
+          "e": 63.688,
+          "c": 0.999418
+        },
+        {
+          "w": "world",
+          "s": 63.688,
+          "e": 63.948,
+          "c": 0.999504
+        },
+        {
+          "w": "and",
+          "s": 63.948,
+          "e": 64.108,
+          "c": 0.62401
+        },
+        {
+          "w": "changes",
+          "s": 64.138,
+          "e": 64.498,
+          "c": 0.9435
+        },
+        {
+          "w": "the",
+          "s": 64.498,
+          "e": 64.658,
+          "c": 0.999472
+        },
+        {
+          "w": "world",
+          "s": 64.658,
+          "e": 64.928,
+          "c": 0.999569
+        },
+        {
+          "w": "for",
+          "s": 64.928,
+          "e": 65.058,
+          "c": 0.999072
+        },
+        {
+          "w": "all",
+          "s": 65.098,
+          "e": 65.248,
+          "c": 0.999826
+        },
+        {
+          "w": "sorts",
+          "s": 65.248,
+          "e": 65.458,
+          "c": 0.99823
+        },
+        {
+          "w": "of",
+          "s": 65.508,
+          "e": 65.618,
+          "c": 0.99572
+        },
+        {
+          "w": "people",
+          "s": 65.658,
+          "e": 65.958,
+          "c": 0.993509
+        },
+        {
+          "w": "whether",
+          "s": 65.958,
+          "e": 66.338,
+          "c": 0.870339
+        },
+        {
+          "w": "that's",
+          "s": 66.338,
+          "e": 66.618,
+          "c": 0.998201
+        },
+        {
+          "w": "working",
+          "s": 66.688,
+          "e": 67.138,
+          "c": 0.995194
+        },
+        {
+          "w": "for",
+          "s": 67.148,
+          "e": 67.458,
+          "c": 0.999548
+        },
+        {
+          "w": "good",
+          "s": 67.458,
+          "e": 67.868,
+          "c": 0.998881
+        },
+        {
+          "w": "to",
+          "s": 67.868,
+          "e": 68.068,
+          "c": 0.992447
+        },
+        {
+          "w": "accumulate",
+          "s": 68.068,
+          "e": 69.078,
+          "c": 0.999033
+        },
+        {
+          "w": "wealth",
+          "s": 69.458,
+          "e": 69.718,
+          "c": 0.99802
+        },
+        {
+          "w": "over",
+          "s": 69.718,
+          "e": 70.128,
+          "c": 0.995653
+        },
+        {
+          "w": "time",
+          "s": 70.128,
+          "e": 70.518,
+          "c": 0.999441
+        },
+        {
+          "w": "or",
+          "s": 70.548,
+          "e": 70.758,
+          "c": 0.833748
+        },
+        {
+          "w": "working",
+          "s": 70.768,
+          "e": 71.378,
+          "c": 0.974823
+        },
+        {
+          "w": "for",
+          "s": 71.488,
+          "e": 71.808,
+          "c": 0.992587
+        },
+        {
+          "w": "bad",
+          "s": 71.808,
+          "e": 72.118,
+          "c": 0.992392
+        },
+        {
+          "w": "to",
+          "s": 72.118,
+          "e": 72.328,
+          "c": 0.990323
+        },
+        {
+          "w": "see",
+          "s": 72.328,
+          "e": 72.638,
+          "c": 0.996687
+        },
+        {
+          "w": "people",
+          "s": 72.638,
+          "e": 73.228,
+          "c": 0.996924
+        },
+        {
+          "w": "get",
+          "s": 73.268,
+          "e": 73.528,
+          "c": 0.993426
+        },
+        {
+          "w": "on",
+          "s": 73.608,
+          "e": 73.708,
+          "c": 0.978304
+        },
+        {
+          "w": "the",
+          "s": 73.708,
+          "e": 73.918,
+          "c": 0.999756
+        },
+        {
+          "w": "wrong",
+          "s": 73.918,
+          "e": 74.258,
+          "c": 0.999907
+        },
+        {
+          "w": "side",
+          "s": 74.288,
+          "e": 74.558,
+          "c": 0.999649
+        },
+        {
+          "w": "of",
+          "s": 74.568,
+          "e": 74.708,
+          "c": 0.999617
+        },
+        {
+          "w": "that",
+          "s": 74.708,
+          "e": 74.998,
+          "c": 0.999213
+        },
+        {
+          "w": "debt",
+          "s": 74.998,
+          "e": 75.288,
+          "c": 0.993771
+        },
+        {
+          "w": "so",
+          "s": 75.288,
+          "e": 75.428,
+          "c": 0.769704
+        },
+        {
+          "w": "appreciate",
+          "s": 75.428,
+          "e": 76.148,
+          "c": 0.993923
+        },
+        {
+          "w": "your",
+          "s": 76.148,
+          "e": 76.438,
+          "c": 0.999386
+        },
+        {
+          "w": "efforts",
+          "s": 76.438,
+          "e": 76.938,
+          "c": 0.999544
+        },
+        {
+          "w": "there",
+          "s": 76.938,
+          "e": 77.338,
+          "c": 0.996805
+        },
+        {
+          "w": "I",
+          "s": 77.358,
+          "e": 77.408,
+          "c": 0.920003
+        },
+        {
+          "w": "want",
+          "s": 77.408,
+          "e": 77.678,
+          "c": 0.993813
+        },
+        {
+          "w": "to",
+          "s": 77.678,
+          "e": 77.818,
+          "c": 0.991805
+        },
+        {
+          "w": "highlight",
+          "s": 77.828,
+          "e": 78.288,
+          "c": 0.999028
+        },
+        {
+          "w": "a",
+          "s": 78.288,
+          "e": 78.338,
+          "c": 0.999893
+        },
+        {
+          "w": "couple",
+          "s": 78.338,
+          "e": 78.638,
+          "c": 0.999592
+        },
+        {
+          "w": "things",
+          "s": 78.638,
+          "e": 78.928,
+          "c": 0.961903
+        },
+        {
+          "w": "as",
+          "s": 78.928,
+          "e": 79.018,
+          "c": 0.988319
+        },
+        {
+          "w": "you",
+          "s": 79.038,
+          "e": 79.188,
+          "c": 0.999603
+        },
+        {
+          "w": "sit",
+          "s": 79.188,
+          "e": 79.328,
+          "c": 0.996679
+        },
+        {
+          "w": "in",
+          "s": 79.348,
+          "e": 79.438,
+          "c": 0.999413
+        },
+        {
+          "w": "a",
+          "s": 79.438,
+          "e": 79.528,
+          "c": 0.997948
+        },
+        {
+          "w": "role",
+          "s": 79.528,
+          "e": 79.758,
+          "c": 0.969246
+        },
+        {
+          "w": "that",
+          "s": 79.808,
+          "e": 80.058,
+          "c": 0.992593
+        },
+        {
+          "w": "was",
+          "s": 80.138,
+          "e": 80.298,
+          "c": 0.997982
+        },
+        {
+          "w": "created",
+          "s": 80.298,
+          "e": 80.828,
+          "c": 0.990083
+        },
+        {
+          "w": "in",
+          "s": 80.828,
+          "e": 81.098,
+          "c": 0.986511
+        },
+        {
+          "w": "a",
+          "s": 81.098,
+          "e": 81.198,
+          "c": 0.999026
+        },
+        {
+          "w": "way",
+          "s": 81.228,
+          "e": 81.628,
+          "c": 0.999066
+        },
+        {
+          "w": "to",
+          "s": 81.628,
+          "e": 81.908,
+          "c": 0.995801
+        },
+        {
+          "w": "kind",
+          "s": 81.908,
+          "e": 82.068,
+          "c": 0.947914
+        },
+        {
+          "w": "of",
+          "s": 82.088,
+          "e": 82.468,
+          "c": 0.999552
+        },
+        {
+          "w": "sit",
+          "s": 82.508,
+          "e": 83.138,
+          "c": 0.986545
+        },
+        {
+          "w": "over",
+          "s": 83.138,
+          "e": 83.988,
+          "c": 0.990573
+        },
+        {
+          "w": "top",
+          "s": 83.988,
+          "e": 84.648,
+          "c": 0.988845
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 84.65,
+      "end_s": 84.66,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "of",
+      "words": [
+        {
+          "w": "of",
+          "s": 84.648,
+          "e": 84.648,
+          "c": 0.98029
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 84.65,
+      "end_s": 84.77,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "you",
+      "words": [
+        {
+          "w": "you",
+          "s": 84.608,
+          "e": 84.768,
+          "c": 0.258024
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 84.91,
+      "end_s": 113.98,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "know, broadly things that are already bad practices in every single state. So it's not like most of the things that I'm hearing people criticize you for here today aren't against the law in every state in the United States of America. And attorneys generals are prosecuting people for the criminal activity there. And so systemically, as you look across the entire financial sector of the United States from the federal level, I'm just curious, what position are you",
+      "words": [
+        {
+          "w": "know,",
+          "s": 84.908,
+          "e": 85.108,
+          "c": 0.62904
+        },
+        {
+          "w": "broadly",
+          "s": 85.138,
+          "e": 85.528,
+          "c": 0.983236
+        },
+        {
+          "w": "things",
+          "s": 85.528,
+          "e": 85.908,
+          "c": 0.695128
+        },
+        {
+          "w": "that",
+          "s": 85.908,
+          "e": 86.228,
+          "c": 0.974264
+        },
+        {
+          "w": "are",
+          "s": 86.228,
+          "e": 86.468,
+          "c": 0.985106
+        },
+        {
+          "w": "already",
+          "s": 86.468,
+          "e": 86.698,
+          "c": 0.987269
+        },
+        {
+          "w": "bad",
+          "s": 87.068,
+          "e": 87.488,
+          "c": 0.752159
+        },
+        {
+          "w": "practices",
+          "s": 87.488,
+          "e": 88.128,
+          "c": 0.911669
+        },
+        {
+          "w": "in",
+          "s": 88.128,
+          "e": 88.208,
+          "c": 0.836083
+        },
+        {
+          "w": "every",
+          "s": 88.208,
+          "e": 88.448,
+          "c": 0.952933
+        },
+        {
+          "w": "single",
+          "s": 88.448,
+          "e": 88.808,
+          "c": 0.974622
+        },
+        {
+          "w": "state.",
+          "s": 88.808,
+          "e": 89.288,
+          "c": 0.894836
+        },
+        {
+          "w": "So",
+          "s": 89.288,
+          "e": 89.438,
+          "c": 0.996286
+        },
+        {
+          "w": "it's",
+          "s": 89.578,
+          "e": 89.738,
+          "c": 0.747128
+        },
+        {
+          "w": "not",
+          "s": 89.738,
+          "e": 89.958,
+          "c": 0.998824
+        },
+        {
+          "w": "like",
+          "s": 89.958,
+          "e": 90.258,
+          "c": 0.995949
+        },
+        {
+          "w": "most",
+          "s": 90.258,
+          "e": 90.558,
+          "c": 0.984136
+        },
+        {
+          "w": "of",
+          "s": 90.558,
+          "e": 90.708,
+          "c": 0.994636
+        },
+        {
+          "w": "the",
+          "s": 90.708,
+          "e": 90.928,
+          "c": 0.994736
+        },
+        {
+          "w": "things",
+          "s": 90.928,
+          "e": 91.288,
+          "c": 0.996892
+        },
+        {
+          "w": "that",
+          "s": 91.428,
+          "e": 91.548,
+          "c": 0.953417
+        },
+        {
+          "w": "I'm",
+          "s": 91.548,
+          "e": 91.648,
+          "c": 0.981319
+        },
+        {
+          "w": "hearing",
+          "s": 91.738,
+          "e": 91.948,
+          "c": 0.98779
+        },
+        {
+          "w": "people",
+          "s": 91.948,
+          "e": 92.248,
+          "c": 0.883101
+        },
+        {
+          "w": "criticize",
+          "s": 92.248,
+          "e": 92.828,
+          "c": 0.779307
+        },
+        {
+          "w": "you",
+          "s": 92.828,
+          "e": 92.928,
+          "c": 0.897969
+        },
+        {
+          "w": "for",
+          "s": 92.928,
+          "e": 93.188,
+          "c": 0.876328
+        },
+        {
+          "w": "here",
+          "s": 93.488,
+          "e": 93.518,
+          "c": 0.997737
+        },
+        {
+          "w": "today",
+          "s": 93.518,
+          "e": 93.928,
+          "c": 0.995279
+        },
+        {
+          "w": "aren't",
+          "s": 93.928,
+          "e": 94.418,
+          "c": 0.853457
+        },
+        {
+          "w": "against",
+          "s": 94.418,
+          "e": 94.988,
+          "c": 0.998929
+        },
+        {
+          "w": "the",
+          "s": 94.988,
+          "e": 95.188,
+          "c": 0.999327
+        },
+        {
+          "w": "law",
+          "s": 95.218,
+          "e": 95.448,
+          "c": 0.99926
+        },
+        {
+          "w": "in",
+          "s": 95.468,
+          "e": 95.628,
+          "c": 0.634032
+        },
+        {
+          "w": "every",
+          "s": 95.648,
+          "e": 96.038,
+          "c": 0.996168
+        },
+        {
+          "w": "state",
+          "s": 96.038,
+          "e": 96.448,
+          "c": 0.994759
+        },
+        {
+          "w": "in",
+          "s": 96.498,
+          "e": 96.558,
+          "c": 0.906359
+        },
+        {
+          "w": "the",
+          "s": 96.558,
+          "e": 96.658,
+          "c": 0.992767
+        },
+        {
+          "w": "United",
+          "s": 96.658,
+          "e": 96.868,
+          "c": 0.991033
+        },
+        {
+          "w": "States",
+          "s": 96.868,
+          "e": 97.108,
+          "c": 0.985875
+        },
+        {
+          "w": "of",
+          "s": 97.108,
+          "e": 97.208,
+          "c": 0.983892
+        },
+        {
+          "w": "America.",
+          "s": 97.208,
+          "e": 98.008,
+          "c": 0.505475
+        },
+        {
+          "w": "And",
+          "s": 98.008,
+          "e": 98.178,
+          "c": 0.958955
+        },
+        {
+          "w": "attorneys",
+          "s": 98.308,
+          "e": 98.748,
+          "c": 0.869904
+        },
+        {
+          "w": "generals",
+          "s": 98.748,
+          "e": 99.248,
+          "c": 0.866489
+        },
+        {
+          "w": "are",
+          "s": 99.248,
+          "e": 99.428,
+          "c": 0.992941
+        },
+        {
+          "w": "prosecuting",
+          "s": 99.428,
+          "e": 100.098,
+          "c": 0.998418
+        },
+        {
+          "w": "people",
+          "s": 100.098,
+          "e": 100.478,
+          "c": 0.997324
+        },
+        {
+          "w": "for",
+          "s": 100.478,
+          "e": 100.708,
+          "c": 0.997685
+        },
+        {
+          "w": "the",
+          "s": 100.708,
+          "e": 100.968,
+          "c": 0.809116
+        },
+        {
+          "w": "criminal",
+          "s": 100.968,
+          "e": 101.658,
+          "c": 0.999138
+        },
+        {
+          "w": "activity",
+          "s": 101.658,
+          "e": 102.348,
+          "c": 0.987249
+        },
+        {
+          "w": "there.",
+          "s": 102.348,
+          "e": 103.048,
+          "c": 0.978661
+        },
+        {
+          "w": "And",
+          "s": 103.068,
+          "e": 103.228,
+          "c": 0.998572
+        },
+        {
+          "w": "so",
+          "s": 103.368,
+          "e": 103.418,
+          "c": 0.9991
+        },
+        {
+          "w": "systemically,",
+          "s": 103.418,
+          "e": 104.428,
+          "c": 0.752616
+        },
+        {
+          "w": "as",
+          "s": 104.428,
+          "e": 104.588,
+          "c": 0.680494
+        },
+        {
+          "w": "you",
+          "s": 104.588,
+          "e": 104.828,
+          "c": 0.999746
+        },
+        {
+          "w": "look",
+          "s": 104.828,
+          "e": 105.068,
+          "c": 0.994277
+        },
+        {
+          "w": "across",
+          "s": 105.128,
+          "e": 105.628,
+          "c": 0.997457
+        },
+        {
+          "w": "the",
+          "s": 105.628,
+          "e": 105.968,
+          "c": 0.966134
+        },
+        {
+          "w": "entire",
+          "s": 106.008,
+          "e": 106.788,
+          "c": 0.99297
+        },
+        {
+          "w": "financial",
+          "s": 106.788,
+          "e": 107.268,
+          "c": 0.965454
+        },
+        {
+          "w": "sector",
+          "s": 107.268,
+          "e": 107.628,
+          "c": 0.822832
+        },
+        {
+          "w": "of",
+          "s": 107.628,
+          "e": 107.708,
+          "c": 0.771376
+        },
+        {
+          "w": "the",
+          "s": 107.708,
+          "e": 107.708,
+          "c": 0.693099
+        },
+        {
+          "w": "United",
+          "s": 107.828,
+          "e": 108.088,
+          "c": 0.900641
+        },
+        {
+          "w": "States",
+          "s": 108.088,
+          "e": 108.878,
+          "c": 0.6464
+        },
+        {
+          "w": "from",
+          "s": 109.168,
+          "e": 109.168,
+          "c": 0.975744
+        },
+        {
+          "w": "the",
+          "s": 109.188,
+          "e": 109.378,
+          "c": 0.99911
+        },
+        {
+          "w": "federal",
+          "s": 109.378,
+          "e": 109.868,
+          "c": 0.978218
+        },
+        {
+          "w": "level,",
+          "s": 109.868,
+          "e": 110.368,
+          "c": 0.94044
+        },
+        {
+          "w": "I'm",
+          "s": 110.368,
+          "e": 110.468,
+          "c": 0.952147
+        },
+        {
+          "w": "just",
+          "s": 110.468,
+          "e": 110.618,
+          "c": 0.999192
+        },
+        {
+          "w": "curious,",
+          "s": 110.618,
+          "e": 110.988,
+          "c": 0.603708
+        },
+        {
+          "w": "what",
+          "s": 111.048,
+          "e": 111.698,
+          "c": 0.860891
+        },
+        {
+          "w": "position",
+          "s": 111.698,
+          "e": 113.108,
+          "c": 0.993118
+        },
+        {
+          "w": "are",
+          "s": 113.128,
+          "e": 113.658,
+          "c": 0.992031
+        },
+        {
+          "w": "you",
+          "s": 113.658,
+          "e": 113.978,
+          "c": 0.998877
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 114.19,
+      "end_s": 114.57,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "in to assess",
+      "words": [
+        {
+          "w": "in",
+          "s": 114.188,
+          "e": 114.568,
+          "c": 0.973823
+        },
+        {
+          "w": "to",
+          "s": 114.568,
+          "e": 114.568,
+          "c": 0.984592
+        },
+        {
+          "w": "assess",
+          "s": 114.568,
+          "e": 114.568,
+          "c": 0.985274
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 114.98,
+      "end_s": 136.94,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "couple things. So when you look at things that can pass as a member of the minority, maybe we can study something, something that's bipartisan. So when you look at faster payments and you look at FinTech and all the innovation that's out there and now the Fed's newfound interest in the Fed itself taking a role in faster payments, do you have a way to assess",
+      "words": [
+        {
+          "w": "couple",
+          "s": 114.984,
+          "e": 115.044,
+          "c": 0.145593
+        },
+        {
+          "w": "things.",
+          "s": 115.044,
+          "e": 115.714,
+          "c": 0.633714
+        },
+        {
+          "w": "So",
+          "s": 115.804,
+          "e": 115.894,
+          "c": 0.938798
+        },
+        {
+          "w": "when",
+          "s": 115.944,
+          "e": 116.114,
+          "c": 0.854452
+        },
+        {
+          "w": "you",
+          "s": 116.114,
+          "e": 116.274,
+          "c": 0.99887
+        },
+        {
+          "w": "look",
+          "s": 116.274,
+          "e": 116.464,
+          "c": 0.997259
+        },
+        {
+          "w": "at",
+          "s": 116.514,
+          "e": 116.624,
+          "c": 0.996282
+        },
+        {
+          "w": "things",
+          "s": 116.624,
+          "e": 117.124,
+          "c": 0.98337
+        },
+        {
+          "w": "that",
+          "s": 117.124,
+          "e": 117.394,
+          "c": 0.975413
+        },
+        {
+          "w": "can",
+          "s": 117.394,
+          "e": 117.594,
+          "c": 0.993043
+        },
+        {
+          "w": "pass",
+          "s": 117.594,
+          "e": 117.864,
+          "c": 0.99099
+        },
+        {
+          "w": "as",
+          "s": 117.864,
+          "e": 117.994,
+          "c": 0.972641
+        },
+        {
+          "w": "a",
+          "s": 117.994,
+          "e": 118.084,
+          "c": 0.996592
+        },
+        {
+          "w": "member",
+          "s": 118.084,
+          "e": 118.344,
+          "c": 0.980074
+        },
+        {
+          "w": "of",
+          "s": 118.344,
+          "e": 118.424,
+          "c": 0.993741
+        },
+        {
+          "w": "the",
+          "s": 118.424,
+          "e": 118.564,
+          "c": 0.991779
+        },
+        {
+          "w": "minority,",
+          "s": 119.004,
+          "e": 119.394,
+          "c": 0.727063
+        },
+        {
+          "w": "maybe",
+          "s": 119.424,
+          "e": 119.734,
+          "c": 0.993337
+        },
+        {
+          "w": "we",
+          "s": 119.874,
+          "e": 120.024,
+          "c": 0.997902
+        },
+        {
+          "w": "can",
+          "s": 120.024,
+          "e": 120.284,
+          "c": 0.628226
+        },
+        {
+          "w": "study",
+          "s": 120.284,
+          "e": 120.694,
+          "c": 0.999672
+        },
+        {
+          "w": "something,",
+          "s": 120.984,
+          "e": 121.684,
+          "c": 0.361436
+        },
+        {
+          "w": "something",
+          "s": 121.684,
+          "e": 122.424,
+          "c": 0.966564
+        },
+        {
+          "w": "that's",
+          "s": 122.424,
+          "e": 122.584,
+          "c": 0.981399
+        },
+        {
+          "w": "bipartisan.",
+          "s": 122.584,
+          "e": 123.284,
+          "c": 0.920621
+        },
+        {
+          "w": "So",
+          "s": 123.284,
+          "e": 123.384,
+          "c": 0.952608
+        },
+        {
+          "w": "when",
+          "s": 123.384,
+          "e": 123.534,
+          "c": 0.91789
+        },
+        {
+          "w": "you",
+          "s": 123.604,
+          "e": 123.604,
+          "c": 0.984185
+        },
+        {
+          "w": "look",
+          "s": 123.604,
+          "e": 123.894,
+          "c": 0.998997
+        },
+        {
+          "w": "at",
+          "s": 124.034,
+          "e": 124.034,
+          "c": 0.998717
+        },
+        {
+          "w": "faster",
+          "s": 124.054,
+          "e": 124.454,
+          "c": 0.983177
+        },
+        {
+          "w": "payments",
+          "s": 124.484,
+          "e": 125.054,
+          "c": 0.998715
+        },
+        {
+          "w": "and",
+          "s": 125.054,
+          "e": 125.274,
+          "c": 0.669083
+        },
+        {
+          "w": "you",
+          "s": 125.274,
+          "e": 125.494,
+          "c": 0.999184
+        },
+        {
+          "w": "look",
+          "s": 125.494,
+          "e": 125.744,
+          "c": 0.99863
+        },
+        {
+          "w": "at",
+          "s": 125.784,
+          "e": 125.914,
+          "c": 0.998075
+        },
+        {
+          "w": "FinTech",
+          "s": 126.024,
+          "e": 126.374,
+          "c": 0.531285
+        },
+        {
+          "w": "and",
+          "s": 126.444,
+          "e": 126.654,
+          "c": 0.920548
+        },
+        {
+          "w": "all",
+          "s": 126.654,
+          "e": 126.874,
+          "c": 0.993513
+        },
+        {
+          "w": "the",
+          "s": 126.874,
+          "e": 127.144,
+          "c": 0.995418
+        },
+        {
+          "w": "innovation",
+          "s": 127.144,
+          "e": 127.924,
+          "c": 0.919038
+        },
+        {
+          "w": "that's",
+          "s": 127.924,
+          "e": 128.404,
+          "c": 0.930665
+        },
+        {
+          "w": "out",
+          "s": 128.404,
+          "e": 128.644,
+          "c": 0.999319
+        },
+        {
+          "w": "there",
+          "s": 128.854,
+          "e": 129.054,
+          "c": 0.99947
+        },
+        {
+          "w": "and",
+          "s": 129.054,
+          "e": 129.244,
+          "c": 0.742683
+        },
+        {
+          "w": "now",
+          "s": 129.284,
+          "e": 129.534,
+          "c": 0.996993
+        },
+        {
+          "w": "the",
+          "s": 129.534,
+          "e": 129.744,
+          "c": 0.992659
+        },
+        {
+          "w": "Fed's",
+          "s": 129.804,
+          "e": 130.174,
+          "c": 0.703597
+        },
+        {
+          "w": "newfound",
+          "s": 130.174,
+          "e": 130.564,
+          "c": 0.745027
+        },
+        {
+          "w": "interest",
+          "s": 130.834,
+          "e": 131.544,
+          "c": 0.995414
+        },
+        {
+          "w": "in",
+          "s": 131.544,
+          "e": 132.304,
+          "c": 0.772887
+        },
+        {
+          "w": "the",
+          "s": 132.304,
+          "e": 132.604,
+          "c": 0.774125
+        },
+        {
+          "w": "Fed",
+          "s": 132.604,
+          "e": 132.784,
+          "c": 0.909316
+        },
+        {
+          "w": "itself",
+          "s": 132.984,
+          "e": 132.984,
+          "c": 0.997077
+        },
+        {
+          "w": "taking",
+          "s": 133.234,
+          "e": 133.634,
+          "c": 0.947027
+        },
+        {
+          "w": "a",
+          "s": 133.664,
+          "e": 133.734,
+          "c": 0.996107
+        },
+        {
+          "w": "role",
+          "s": 133.734,
+          "e": 133.954,
+          "c": 0.997368
+        },
+        {
+          "w": "in",
+          "s": 134.044,
+          "e": 134.164,
+          "c": 0.968943
+        },
+        {
+          "w": "faster",
+          "s": 134.184,
+          "e": 134.604,
+          "c": 0.99353
+        },
+        {
+          "w": "payments,",
+          "s": 134.604,
+          "e": 135.334,
+          "c": 0.527476
+        },
+        {
+          "w": "do",
+          "s": 135.334,
+          "e": 135.474,
+          "c": 0.963994
+        },
+        {
+          "w": "you",
+          "s": 135.474,
+          "e": 135.694,
+          "c": 0.999216
+        },
+        {
+          "w": "have",
+          "s": 135.694,
+          "e": 135.984,
+          "c": 0.99964
+        },
+        {
+          "w": "a",
+          "s": 135.984,
+          "e": 136.054,
+          "c": 0.999712
+        },
+        {
+          "w": "way",
+          "s": 136.054,
+          "e": 136.274,
+          "c": 0.999798
+        },
+        {
+          "w": "to",
+          "s": 136.274,
+          "e": 136.414,
+          "c": 0.99967
+        },
+        {
+          "w": "assess",
+          "s": 136.414,
+          "e": 136.944,
+          "c": 0.996447
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 137.14,
+      "end_s": 147.07,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the transaction costs that consumers are paying just as a means of payment, whether that's credit card fees or processing fees, money transmittal fees,",
+      "words": [
+        {
+          "w": "the",
+          "s": 137.142,
+          "e": 137.292,
+          "c": 0.584614
+        },
+        {
+          "w": "transaction",
+          "s": 137.292,
+          "e": 138.712,
+          "c": 0.992738
+        },
+        {
+          "w": "costs",
+          "s": 138.732,
+          "e": 139.272,
+          "c": 0.720733
+        },
+        {
+          "w": "that",
+          "s": 139.372,
+          "e": 139.472,
+          "c": 0.86963
+        },
+        {
+          "w": "consumers",
+          "s": 139.542,
+          "e": 140.052,
+          "c": 0.985525
+        },
+        {
+          "w": "are",
+          "s": 140.052,
+          "e": 140.152,
+          "c": 0.968956
+        },
+        {
+          "w": "paying",
+          "s": 140.152,
+          "e": 140.652,
+          "c": 0.956693
+        },
+        {
+          "w": "just",
+          "s": 140.862,
+          "e": 140.922,
+          "c": 0.999207
+        },
+        {
+          "w": "as",
+          "s": 140.922,
+          "e": 141.052,
+          "c": 0.998967
+        },
+        {
+          "w": "a",
+          "s": 141.052,
+          "e": 141.122,
+          "c": 0.990497
+        },
+        {
+          "w": "means",
+          "s": 141.122,
+          "e": 141.442,
+          "c": 0.999226
+        },
+        {
+          "w": "of",
+          "s": 141.442,
+          "e": 141.592,
+          "c": 0.99655
+        },
+        {
+          "w": "payment,",
+          "s": 141.772,
+          "e": 142.112,
+          "c": 0.753174
+        },
+        {
+          "w": "whether",
+          "s": 142.342,
+          "e": 142.652,
+          "c": 0.994516
+        },
+        {
+          "w": "that's",
+          "s": 142.652,
+          "e": 143.112,
+          "c": 0.997936
+        },
+        {
+          "w": "credit",
+          "s": 143.232,
+          "e": 143.572,
+          "c": 0.800028
+        },
+        {
+          "w": "card",
+          "s": 143.572,
+          "e": 143.872,
+          "c": 0.993449
+        },
+        {
+          "w": "fees",
+          "s": 143.882,
+          "e": 144.212,
+          "c": 0.998561
+        },
+        {
+          "w": "or",
+          "s": 144.212,
+          "e": 145.032,
+          "c": 0.586025
+        },
+        {
+          "w": "processing",
+          "s": 145.032,
+          "e": 145.722,
+          "c": 0.946474
+        },
+        {
+          "w": "fees,",
+          "s": 145.722,
+          "e": 146.012,
+          "c": 0.969607
+        },
+        {
+          "w": "money",
+          "s": 146.222,
+          "e": 146.272,
+          "c": 0.998174
+        },
+        {
+          "w": "transmittal",
+          "s": 146.272,
+          "e": 146.822,
+          "c": 0.614852
+        },
+        {
+          "w": "fees,",
+          "s": 146.822,
+          "e": 147.072,
+          "c": 0.854664
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 147.09,
+      "end_s": 152.08,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "but all the ways that people would move money between one another, how many fees are they",
+      "words": [
+        {
+          "w": "but",
+          "s": 147.092,
+          "e": 147.102,
+          "c": 0.999409
+        },
+        {
+          "w": "all",
+          "s": 147.302,
+          "e": 147.492,
+          "c": 0.994437
+        },
+        {
+          "w": "the",
+          "s": 147.492,
+          "e": 147.702,
+          "c": 0.993906
+        },
+        {
+          "w": "ways",
+          "s": 147.702,
+          "e": 147.972,
+          "c": 0.998034
+        },
+        {
+          "w": "that",
+          "s": 148.212,
+          "e": 148.712,
+          "c": 0.978409
+        },
+        {
+          "w": "people",
+          "s": 148.712,
+          "e": 149.072,
+          "c": 0.962683
+        },
+        {
+          "w": "would",
+          "s": 149.072,
+          "e": 149.252,
+          "c": 0.90245
+        },
+        {
+          "w": "move",
+          "s": 149.252,
+          "e": 149.422,
+          "c": 0.967835
+        },
+        {
+          "w": "money",
+          "s": 149.532,
+          "e": 149.732,
+          "c": 0.978663
+        },
+        {
+          "w": "between",
+          "s": 149.962,
+          "e": 150.172,
+          "c": 0.999525
+        },
+        {
+          "w": "one",
+          "s": 150.172,
+          "e": 150.352,
+          "c": 0.999224
+        },
+        {
+          "w": "another,",
+          "s": 150.352,
+          "e": 150.932,
+          "c": 0.749943
+        },
+        {
+          "w": "how",
+          "s": 150.932,
+          "e": 151.132,
+          "c": 0.709355
+        },
+        {
+          "w": "many",
+          "s": 151.132,
+          "e": 151.402,
+          "c": 0.998826
+        },
+        {
+          "w": "fees",
+          "s": 151.402,
+          "e": 151.672,
+          "c": 0.999373
+        },
+        {
+          "w": "are",
+          "s": 151.672,
+          "e": 151.872,
+          "c": 0.998205
+        },
+        {
+          "w": "they",
+          "s": 151.872,
+          "e": 152.082,
+          "c": 0.999401
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 152.19,
+      "end_s": 152.59,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "paying?",
+      "words": [
+        {
+          "w": "paying?",
+          "s": 152.192,
+          "e": 152.592,
+          "c": 0.953575
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 152.58,
+      "end_s": 152.87,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I can",
+      "words": [
+        {
+          "w": "I",
+          "s": 152.576,
+          "e": 152.646,
+          "c": 0.641952
+        },
+        {
+          "w": "can",
+          "s": 152.646,
+          "e": 152.866,
+          "c": 0.905562
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 153.03,
+      "end_s": 158.15,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "tell you, Congressman, that I can't, of course, answer that quite direct question at this particular",
+      "words": [
+        {
+          "w": "tell",
+          "s": 153.026,
+          "e": 153.186,
+          "c": 0.993254
+        },
+        {
+          "w": "you,",
+          "s": 153.186,
+          "e": 153.566,
+          "c": 0.610966
+        },
+        {
+          "w": "Congressman,",
+          "s": 153.656,
+          "e": 154.616,
+          "c": 0.945434
+        },
+        {
+          "w": "that",
+          "s": 154.616,
+          "e": 154.796,
+          "c": 0.510784
+        },
+        {
+          "w": "I",
+          "s": 154.796,
+          "e": 154.826,
+          "c": 0.986894
+        },
+        {
+          "w": "can't,",
+          "s": 154.856,
+          "e": 155.146,
+          "c": 0.783738
+        },
+        {
+          "w": "of",
+          "s": 155.146,
+          "e": 155.226,
+          "c": 0.996502
+        },
+        {
+          "w": "course,",
+          "s": 155.236,
+          "e": 155.616,
+          "c": 0.994135
+        },
+        {
+          "w": "answer",
+          "s": 155.616,
+          "e": 155.846,
+          "c": 0.955211
+        },
+        {
+          "w": "that",
+          "s": 155.846,
+          "e": 156.016,
+          "c": 0.985377
+        },
+        {
+          "w": "quite",
+          "s": 156.016,
+          "e": 156.196,
+          "c": 0.956977
+        },
+        {
+          "w": "direct",
+          "s": 156.196,
+          "e": 156.506,
+          "c": 0.97509
+        },
+        {
+          "w": "question",
+          "s": 156.556,
+          "e": 156.916,
+          "c": 0.947216
+        },
+        {
+          "w": "at",
+          "s": 156.916,
+          "e": 157.066,
+          "c": 0.997541
+        },
+        {
+          "w": "this",
+          "s": 157.066,
+          "e": 157.376,
+          "c": 0.999632
+        },
+        {
+          "w": "particular",
+          "s": 157.376,
+          "e": 158.146,
+          "c": 0.999255
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 158.17,
+      "end_s": 177.48,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "moment, but the Atlantic Fed does do extensive research and surveys on payments, and they kind of have the center of gravity on some of this research, so we have been working with them on making sure that we're looking at what's happening in this marketplace and understanding, again, the dynamics. I...",
+      "words": [
+        {
+          "w": "moment,",
+          "s": 158.166,
+          "e": 158.756,
+          "c": 0.495214
+        },
+        {
+          "w": "but",
+          "s": 158.756,
+          "e": 158.986,
+          "c": 0.990186
+        },
+        {
+          "w": "the",
+          "s": 158.986,
+          "e": 159.216,
+          "c": 0.998515
+        },
+        {
+          "w": "Atlantic",
+          "s": 159.216,
+          "e": 159.836,
+          "c": 0.993487
+        },
+        {
+          "w": "Fed",
+          "s": 159.836,
+          "e": 160.066,
+          "c": 0.996582
+        },
+        {
+          "w": "does",
+          "s": 160.066,
+          "e": 160.366,
+          "c": 0.999079
+        },
+        {
+          "w": "do",
+          "s": 160.376,
+          "e": 160.526,
+          "c": 0.999001
+        },
+        {
+          "w": "extensive",
+          "s": 160.526,
+          "e": 161.216,
+          "c": 0.998275
+        },
+        {
+          "w": "research",
+          "s": 161.216,
+          "e": 161.896,
+          "c": 0.998422
+        },
+        {
+          "w": "and",
+          "s": 161.896,
+          "e": 162.206,
+          "c": 0.9834
+        },
+        {
+          "w": "surveys",
+          "s": 162.206,
+          "e": 162.956,
+          "c": 0.987085
+        },
+        {
+          "w": "on",
+          "s": 162.956,
+          "e": 163.096,
+          "c": 0.999874
+        },
+        {
+          "w": "payments,",
+          "s": 163.106,
+          "e": 163.786,
+          "c": 0.918105
+        },
+        {
+          "w": "and",
+          "s": 163.786,
+          "e": 163.996,
+          "c": 0.99995
+        },
+        {
+          "w": "they",
+          "s": 164.026,
+          "e": 164.276,
+          "c": 0.999966
+        },
+        {
+          "w": "kind",
+          "s": 164.276,
+          "e": 164.556,
+          "c": 0.979012
+        },
+        {
+          "w": "of",
+          "s": 164.556,
+          "e": 164.696,
+          "c": 0.999838
+        },
+        {
+          "w": "have",
+          "s": 164.696,
+          "e": 164.976,
+          "c": 0.997052
+        },
+        {
+          "w": "the",
+          "s": 164.976,
+          "e": 165.186,
+          "c": 0.999112
+        },
+        {
+          "w": "center",
+          "s": 165.186,
+          "e": 165.596,
+          "c": 0.999117
+        },
+        {
+          "w": "of",
+          "s": 165.596,
+          "e": 165.746,
+          "c": 0.99992
+        },
+        {
+          "w": "gravity",
+          "s": 165.746,
+          "e": 166.236,
+          "c": 0.999979
+        },
+        {
+          "w": "on",
+          "s": 166.236,
+          "e": 166.376,
+          "c": 0.999438
+        },
+        {
+          "w": "some",
+          "s": 166.376,
+          "e": 166.636,
+          "c": 0.99911
+        },
+        {
+          "w": "of",
+          "s": 166.656,
+          "e": 166.796,
+          "c": 0.999903
+        },
+        {
+          "w": "this",
+          "s": 166.796,
+          "e": 167.076,
+          "c": 0.999884
+        },
+        {
+          "w": "research,",
+          "s": 167.076,
+          "e": 167.796,
+          "c": 0.199302
+        },
+        {
+          "w": "so",
+          "s": 167.796,
+          "e": 168.146,
+          "c": 0.955635
+        },
+        {
+          "w": "we",
+          "s": 168.146,
+          "e": 168.496,
+          "c": 0.998508
+        },
+        {
+          "w": "have",
+          "s": 168.496,
+          "e": 168.716,
+          "c": 0.999918
+        },
+        {
+          "w": "been",
+          "s": 168.716,
+          "e": 168.936,
+          "c": 0.999987
+        },
+        {
+          "w": "working",
+          "s": 168.946,
+          "e": 169.326,
+          "c": 0.999987
+        },
+        {
+          "w": "with",
+          "s": 169.326,
+          "e": 169.536,
+          "c": 0.999969
+        },
+        {
+          "w": "them",
+          "s": 169.566,
+          "e": 169.766,
+          "c": 0.99999
+        },
+        {
+          "w": "on",
+          "s": 169.766,
+          "e": 169.876,
+          "c": 0.999992
+        },
+        {
+          "w": "making",
+          "s": 169.876,
+          "e": 170.176,
+          "c": 0.999952
+        },
+        {
+          "w": "sure",
+          "s": 170.216,
+          "e": 170.436,
+          "c": 0.999983
+        },
+        {
+          "w": "that",
+          "s": 170.436,
+          "e": 170.656,
+          "c": 0.99975
+        },
+        {
+          "w": "we're",
+          "s": 170.656,
+          "e": 170.936,
+          "c": 0.999868
+        },
+        {
+          "w": "looking",
+          "s": 170.936,
+          "e": 171.316,
+          "c": 0.999954
+        },
+        {
+          "w": "at",
+          "s": 171.326,
+          "e": 171.436,
+          "c": 0.999918
+        },
+        {
+          "w": "what's",
+          "s": 171.436,
+          "e": 171.766,
+          "c": 0.99999
+        },
+        {
+          "w": "happening",
+          "s": 171.766,
+          "e": 172.276,
+          "c": 0.998603
+        },
+        {
+          "w": "in",
+          "s": 172.276,
+          "e": 172.476,
+          "c": 0.996512
+        },
+        {
+          "w": "this",
+          "s": 172.496,
+          "e": 172.746,
+          "c": 0.999687
+        },
+        {
+          "w": "marketplace",
+          "s": 172.746,
+          "e": 173.436,
+          "c": 0.998734
+        },
+        {
+          "w": "and",
+          "s": 173.436,
+          "e": 173.616,
+          "c": 0.965418
+        },
+        {
+          "w": "understanding,",
+          "s": 173.616,
+          "e": 174.546,
+          "c": 0.997105
+        },
+        {
+          "w": "again,",
+          "s": 174.546,
+          "e": 174.956,
+          "c": 0.999977
+        },
+        {
+          "w": "the",
+          "s": 175.006,
+          "e": 175.146,
+          "c": 0.999971
+        },
+        {
+          "w": "dynamics.",
+          "s": 175.156,
+          "e": 175.896,
+          "c": 0.998753
+        },
+        {
+          "w": "I...",
+          "s": 175.896,
+          "e": 177.476,
+          "c": 0.213322
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 177.44,
+      "end_s": 177.68,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "If I",
+      "words": [
+        {
+          "w": "If",
+          "s": 177.44,
+          "e": 177.6,
+          "c": 0.679226
+        },
+        {
+          "w": "I",
+          "s": 177.6,
+          "e": 177.68,
+          "c": 0.995539
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 177.68,
+      "end_s": 184.9,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "go too much further, I may misspeak, but we can get back to you with some of the summaries of the research and what we've seen. Perfect.",
+      "words": [
+        {
+          "w": "go",
+          "s": 177.68,
+          "e": 177.84,
+          "c": 0.996316
+        },
+        {
+          "w": "too",
+          "s": 177.84,
+          "e": 178.09,
+          "c": 0.980419
+        },
+        {
+          "w": "much",
+          "s": 178.09,
+          "e": 178.4,
+          "c": 0.997444
+        },
+        {
+          "w": "further,",
+          "s": 178.42,
+          "e": 179.14,
+          "c": 0.733299
+        },
+        {
+          "w": "I",
+          "s": 179.21,
+          "e": 179.51,
+          "c": 0.869576
+        },
+        {
+          "w": "may",
+          "s": 179.51,
+          "e": 180.44,
+          "c": 0.295124
+        },
+        {
+          "w": "misspeak,",
+          "s": 180.44,
+          "e": 181.21,
+          "c": 0.545359
+        },
+        {
+          "w": "but",
+          "s": 181.21,
+          "e": 181.28,
+          "c": 0.663278
+        },
+        {
+          "w": "we",
+          "s": 181.28,
+          "e": 181.34,
+          "c": 0.943394
+        },
+        {
+          "w": "can",
+          "s": 181.34,
+          "e": 181.44,
+          "c": 0.981783
+        },
+        {
+          "w": "get",
+          "s": 181.44,
+          "e": 181.58,
+          "c": 0.956723
+        },
+        {
+          "w": "back",
+          "s": 181.58,
+          "e": 181.79,
+          "c": 0.969096
+        },
+        {
+          "w": "to",
+          "s": 181.84,
+          "e": 181.94,
+          "c": 0.935388
+        },
+        {
+          "w": "you",
+          "s": 181.94,
+          "e": 182.03,
+          "c": 0.975193
+        },
+        {
+          "w": "with",
+          "s": 182.04,
+          "e": 182.18,
+          "c": 0.794756
+        },
+        {
+          "w": "some",
+          "s": 182.18,
+          "e": 182.32,
+          "c": 0.884553
+        },
+        {
+          "w": "of",
+          "s": 182.32,
+          "e": 182.4,
+          "c": 0.837835
+        },
+        {
+          "w": "the",
+          "s": 182.4,
+          "e": 182.44,
+          "c": 0.863706
+        },
+        {
+          "w": "summaries",
+          "s": 182.44,
+          "e": 182.88,
+          "c": 0.879104
+        },
+        {
+          "w": "of",
+          "s": 182.88,
+          "e": 183.19,
+          "c": 0.840744
+        },
+        {
+          "w": "the",
+          "s": 183.2,
+          "e": 183.48,
+          "c": 0.85778
+        },
+        {
+          "w": "research",
+          "s": 183.48,
+          "e": 183.84,
+          "c": 0.975682
+        },
+        {
+          "w": "and",
+          "s": 183.84,
+          "e": 183.98,
+          "c": 0.904941
+        },
+        {
+          "w": "what",
+          "s": 183.98,
+          "e": 184.12,
+          "c": 0.979473
+        },
+        {
+          "w": "we've",
+          "s": 184.12,
+          "e": 184.29,
+          "c": 0.984838
+        },
+        {
+          "w": "seen.",
+          "s": 184.29,
+          "e": 184.5,
+          "c": 0.97943
+        },
+        {
+          "w": "Perfect.",
+          "s": 184.5,
+          "e": 184.9,
+          "c": 0.892263
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 184.9,
+      "end_s": 204.67,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And one of the other areas that I think is a shared sense of concern in Congress and across the United States is consumers' data. So we've really failed in Congress, in my opinion, to do our duty and provide a data privacy regulation, a standard that's really foundational, really, to our consumers.",
+      "words": [
+        {
+          "w": "And",
+          "s": 184.9,
+          "e": 185.06,
+          "c": 0.498082
+        },
+        {
+          "w": "one",
+          "s": 185.06,
+          "e": 185.22,
+          "c": 0.999176
+        },
+        {
+          "w": "of",
+          "s": 185.22,
+          "e": 185.33,
+          "c": 0.999994
+        },
+        {
+          "w": "the",
+          "s": 185.33,
+          "e": 185.49,
+          "c": 0.999998
+        },
+        {
+          "w": "other",
+          "s": 185.49,
+          "e": 185.75,
+          "c": 0.999897
+        },
+        {
+          "w": "areas",
+          "s": 185.8,
+          "e": 186.03,
+          "c": 0.999874
+        },
+        {
+          "w": "that",
+          "s": 186.03,
+          "e": 186.2,
+          "c": 0.999678
+        },
+        {
+          "w": "I",
+          "s": 186.27,
+          "e": 186.3,
+          "c": 0.999844
+        },
+        {
+          "w": "think",
+          "s": 186.3,
+          "e": 186.57,
+          "c": 0.999977
+        },
+        {
+          "w": "is",
+          "s": 186.57,
+          "e": 186.68,
+          "c": 0.997651
+        },
+        {
+          "w": "a",
+          "s": 186.68,
+          "e": 186.72,
+          "c": 0.999903
+        },
+        {
+          "w": "shared",
+          "s": 186.77,
+          "e": 187.14,
+          "c": 0.999737
+        },
+        {
+          "w": "sense",
+          "s": 187.14,
+          "e": 187.62,
+          "c": 0.987302
+        },
+        {
+          "w": "of",
+          "s": 187.62,
+          "e": 187.81,
+          "c": 0.999834
+        },
+        {
+          "w": "concern",
+          "s": 187.81,
+          "e": 188.48,
+          "c": 0.999708
+        },
+        {
+          "w": "in",
+          "s": 188.48,
+          "e": 188.66,
+          "c": 0.998304
+        },
+        {
+          "w": "Congress",
+          "s": 188.67,
+          "e": 189.45,
+          "c": 0.998662
+        },
+        {
+          "w": "and",
+          "s": 189.45,
+          "e": 189.6,
+          "c": 0.980997
+        },
+        {
+          "w": "across",
+          "s": 189.6,
+          "e": 189.89,
+          "c": 0.999329
+        },
+        {
+          "w": "the",
+          "s": 189.89,
+          "e": 190.03,
+          "c": 0.999323
+        },
+        {
+          "w": "United",
+          "s": 190.03,
+          "e": 190.32,
+          "c": 0.999355
+        },
+        {
+          "w": "States",
+          "s": 190.32,
+          "e": 190.64,
+          "c": 0.999884
+        },
+        {
+          "w": "is",
+          "s": 190.64,
+          "e": 190.9,
+          "c": 0.988267
+        },
+        {
+          "w": "consumers'",
+          "s": 190.9,
+          "e": 191.6,
+          "c": 0.869012
+        },
+        {
+          "w": "data.",
+          "s": 191.6,
+          "e": 192.06,
+          "c": 0.999832
+        },
+        {
+          "w": "So",
+          "s": 192.1,
+          "e": 192.27,
+          "c": 0.994685
+        },
+        {
+          "w": "we've",
+          "s": 192.29,
+          "e": 192.73,
+          "c": 0.944062
+        },
+        {
+          "w": "really",
+          "s": 192.74,
+          "e": 193.27,
+          "c": 0.999786
+        },
+        {
+          "w": "failed",
+          "s": 193.27,
+          "e": 193.8,
+          "c": 0.998254
+        },
+        {
+          "w": "in",
+          "s": 193.87,
+          "e": 193.99,
+          "c": 0.999253
+        },
+        {
+          "w": "Congress,",
+          "s": 193.99,
+          "e": 194.89,
+          "c": 0.997221
+        },
+        {
+          "w": "in",
+          "s": 194.89,
+          "e": 195.07,
+          "c": 0.999729
+        },
+        {
+          "w": "my",
+          "s": 195.07,
+          "e": 195.25,
+          "c": 0.999994
+        },
+        {
+          "w": "opinion,",
+          "s": 195.25,
+          "e": 196.06,
+          "c": 0.999943
+        },
+        {
+          "w": "to",
+          "s": 196.06,
+          "e": 196.24,
+          "c": 0.994095
+        },
+        {
+          "w": "do",
+          "s": 196.24,
+          "e": 196.42,
+          "c": 0.999987
+        },
+        {
+          "w": "our",
+          "s": 196.42,
+          "e": 196.69,
+          "c": 0.999994
+        },
+        {
+          "w": "duty",
+          "s": 196.69,
+          "e": 197.05,
+          "c": 0.999983
+        },
+        {
+          "w": "and",
+          "s": 197.05,
+          "e": 197.32,
+          "c": 0.997923
+        },
+        {
+          "w": "provide",
+          "s": 197.32,
+          "e": 197.92,
+          "c": 0.999924
+        },
+        {
+          "w": "a",
+          "s": 197.92,
+          "e": 198.04,
+          "c": 0.996177
+        },
+        {
+          "w": "data",
+          "s": 198.13,
+          "e": 198.4,
+          "c": 0.999357
+        },
+        {
+          "w": "privacy",
+          "s": 198.4,
+          "e": 199.03,
+          "c": 0.99931
+        },
+        {
+          "w": "regulation,",
+          "s": 199.03,
+          "e": 200.18,
+          "c": 0.958963
+        },
+        {
+          "w": "a",
+          "s": 200.18,
+          "e": 200.26,
+          "c": 0.556564
+        },
+        {
+          "w": "standard",
+          "s": 200.26,
+          "e": 200.91,
+          "c": 0.999714
+        },
+        {
+          "w": "that's",
+          "s": 200.91,
+          "e": 201.39,
+          "c": 0.99862
+        },
+        {
+          "w": "really",
+          "s": 201.41,
+          "e": 201.84,
+          "c": 0.999781
+        },
+        {
+          "w": "foundational,",
+          "s": 201.9,
+          "e": 203.03,
+          "c": 0.526784
+        },
+        {
+          "w": "really,",
+          "s": 203.03,
+          "e": 203.68,
+          "c": 0.994419
+        },
+        {
+          "w": "to",
+          "s": 203.68,
+          "e": 203.84,
+          "c": 0.992714
+        },
+        {
+          "w": "our",
+          "s": 203.84,
+          "e": 204.14,
+          "c": 0.998355
+        },
+        {
+          "w": "consumers.",
+          "s": 204.14,
+          "e": 204.67,
+          "c": 0.0359056
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 204.7,
+      "end_s": 204.77,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I",
+      "words": [
+        {
+          "w": "I",
+          "s": 204.704,
+          "e": 204.774,
+          "c": 0.845038
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 204.77,
+      "end_s": 228.6,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "mean, it's supposed to be there in a sense, the right to privacy in the Fourth Amendment. But as times have changed, we haven't really updated it for the electronic era, for sure. And we've seen companies that have collected and monetized lots of personally identifiable information. And unfortunately, sometimes compromised that data. So as you look at how we",
+      "words": [
+        {
+          "w": "mean,",
+          "s": 204.774,
+          "e": 205.204,
+          "c": 0.791891
+        },
+        {
+          "w": "it's",
+          "s": 205.204,
+          "e": 205.474,
+          "c": 0.987147
+        },
+        {
+          "w": "supposed",
+          "s": 205.594,
+          "e": 206.084,
+          "c": 0.995275
+        },
+        {
+          "w": "to",
+          "s": 206.084,
+          "e": 206.234,
+          "c": 0.999346
+        },
+        {
+          "w": "be",
+          "s": 206.234,
+          "e": 206.384,
+          "c": 0.999209
+        },
+        {
+          "w": "there",
+          "s": 206.384,
+          "e": 206.754,
+          "c": 0.995429
+        },
+        {
+          "w": "in",
+          "s": 206.754,
+          "e": 206.904,
+          "c": 0.823878
+        },
+        {
+          "w": "a",
+          "s": 206.904,
+          "e": 206.974,
+          "c": 0.988123
+        },
+        {
+          "w": "sense,",
+          "s": 206.974,
+          "e": 207.474,
+          "c": 0.632081
+        },
+        {
+          "w": "the",
+          "s": 207.474,
+          "e": 207.584,
+          "c": 0.543205
+        },
+        {
+          "w": "right",
+          "s": 207.584,
+          "e": 207.764,
+          "c": 0.989207
+        },
+        {
+          "w": "to",
+          "s": 207.794,
+          "e": 207.844,
+          "c": 0.971859
+        },
+        {
+          "w": "privacy",
+          "s": 207.844,
+          "e": 208.484,
+          "c": 0.939499
+        },
+        {
+          "w": "in",
+          "s": 208.484,
+          "e": 208.544,
+          "c": 0.272138
+        },
+        {
+          "w": "the",
+          "s": 208.544,
+          "e": 208.624,
+          "c": 0.929201
+        },
+        {
+          "w": "Fourth",
+          "s": 208.624,
+          "e": 208.944,
+          "c": 0.502226
+        },
+        {
+          "w": "Amendment.",
+          "s": 208.944,
+          "e": 209.844,
+          "c": 0.765324
+        },
+        {
+          "w": "But",
+          "s": 209.844,
+          "e": 210.034,
+          "c": 0.994046
+        },
+        {
+          "w": "as",
+          "s": 210.034,
+          "e": 210.164,
+          "c": 0.961634
+        },
+        {
+          "w": "times",
+          "s": 210.314,
+          "e": 210.494,
+          "c": 0.994562
+        },
+        {
+          "w": "have",
+          "s": 210.494,
+          "e": 210.754,
+          "c": 0.997664
+        },
+        {
+          "w": "changed,",
+          "s": 210.754,
+          "e": 211.364,
+          "c": 0.879533
+        },
+        {
+          "w": "we",
+          "s": 211.364,
+          "e": 211.444,
+          "c": 0.672644
+        },
+        {
+          "w": "haven't",
+          "s": 211.444,
+          "e": 211.714,
+          "c": 0.980002
+        },
+        {
+          "w": "really",
+          "s": 211.744,
+          "e": 211.984,
+          "c": 0.992871
+        },
+        {
+          "w": "updated",
+          "s": 211.984,
+          "e": 212.214,
+          "c": 0.988833
+        },
+        {
+          "w": "it",
+          "s": 212.264,
+          "e": 212.364,
+          "c": 0.971048
+        },
+        {
+          "w": "for",
+          "s": 212.364,
+          "e": 212.394,
+          "c": 0.983226
+        },
+        {
+          "w": "the",
+          "s": 212.554,
+          "e": 212.704,
+          "c": 0.740025
+        },
+        {
+          "w": "electronic",
+          "s": 212.704,
+          "e": 213.314,
+          "c": 0.889391
+        },
+        {
+          "w": "era,",
+          "s": 213.314,
+          "e": 213.624,
+          "c": 0.5183
+        },
+        {
+          "w": "for",
+          "s": 213.624,
+          "e": 213.774,
+          "c": 0.925283
+        },
+        {
+          "w": "sure.",
+          "s": 213.864,
+          "e": 214.584,
+          "c": 0.981235
+        },
+        {
+          "w": "And",
+          "s": 214.724,
+          "e": 215.024,
+          "c": 0.990745
+        },
+        {
+          "w": "we've",
+          "s": 215.154,
+          "e": 215.554,
+          "c": 0.987701
+        },
+        {
+          "w": "seen",
+          "s": 215.614,
+          "e": 215.964,
+          "c": 0.999176
+        },
+        {
+          "w": "companies",
+          "s": 215.964,
+          "e": 216.904,
+          "c": 0.998757
+        },
+        {
+          "w": "that",
+          "s": 216.904,
+          "e": 217.184,
+          "c": 0.997575
+        },
+        {
+          "w": "have",
+          "s": 217.434,
+          "e": 217.764,
+          "c": 0.999011
+        },
+        {
+          "w": "collected",
+          "s": 217.764,
+          "e": 218.424,
+          "c": 0.976259
+        },
+        {
+          "w": "and",
+          "s": 218.424,
+          "e": 218.524,
+          "c": 0.955208
+        },
+        {
+          "w": "monetized",
+          "s": 218.524,
+          "e": 219.114,
+          "c": 0.978036
+        },
+        {
+          "w": "lots",
+          "s": 219.114,
+          "e": 219.374,
+          "c": 0.990246
+        },
+        {
+          "w": "of",
+          "s": 219.414,
+          "e": 219.514,
+          "c": 0.999405
+        },
+        {
+          "w": "personally",
+          "s": 219.514,
+          "e": 220.184,
+          "c": 0.647868
+        },
+        {
+          "w": "identifiable",
+          "s": 220.184,
+          "e": 220.834,
+          "c": 0.973898
+        },
+        {
+          "w": "information.",
+          "s": 221.234,
+          "e": 221.964,
+          "c": 0.464163
+        },
+        {
+          "w": "And",
+          "s": 221.964,
+          "e": 222.174,
+          "c": 0.994253
+        },
+        {
+          "w": "unfortunately,",
+          "s": 222.434,
+          "e": 223.254,
+          "c": 0.810486
+        },
+        {
+          "w": "sometimes",
+          "s": 223.254,
+          "e": 223.904,
+          "c": 0.995139
+        },
+        {
+          "w": "compromised",
+          "s": 223.904,
+          "e": 224.704,
+          "c": 0.615779
+        },
+        {
+          "w": "that",
+          "s": 224.704,
+          "e": 224.994,
+          "c": 0.988203
+        },
+        {
+          "w": "data.",
+          "s": 224.994,
+          "e": 225.534,
+          "c": 0.988374
+        },
+        {
+          "w": "So",
+          "s": 225.544,
+          "e": 225.884,
+          "c": 0.998548
+        },
+        {
+          "w": "as",
+          "s": 226.014,
+          "e": 226.244,
+          "c": 0.811947
+        },
+        {
+          "w": "you",
+          "s": 226.244,
+          "e": 226.764,
+          "c": 0.999331
+        },
+        {
+          "w": "look",
+          "s": 226.764,
+          "e": 227.454,
+          "c": 0.998919
+        },
+        {
+          "w": "at",
+          "s": 227.454,
+          "e": 227.784,
+          "c": 0.997347
+        },
+        {
+          "w": "how",
+          "s": 227.784,
+          "e": 228.344,
+          "c": 0.924106
+        },
+        {
+          "w": "we",
+          "s": 228.344,
+          "e": 228.604,
+          "c": 0.490856
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 228.63,
+      "end_s": 230.43,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "know companies",
+      "words": [
+        {
+          "w": "know",
+          "s": 228.634,
+          "e": 229.214,
+          "c": 0.989774
+        },
+        {
+          "w": "companies",
+          "s": 229.214,
+          "e": 230.434,
+          "c": 0.963413
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 230.73,
+      "end_s": 233.44,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "have monetized the data.",
+      "words": [
+        {
+          "w": "have",
+          "s": 230.734,
+          "e": 231.104,
+          "c": 0.995655
+        },
+        {
+          "w": "monetized",
+          "s": 231.104,
+          "e": 232.404,
+          "c": 0.986096
+        },
+        {
+          "w": "the",
+          "s": 232.404,
+          "e": 232.834,
+          "c": 0.99497
+        },
+        {
+          "w": "data.",
+          "s": 232.834,
+          "e": 233.444,
+          "c": 0.549077
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 233.41,
+      "end_s": 233.65,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "When",
+      "words": [
+        {
+          "w": "When",
+          "s": 233.408,
+          "e": 233.648,
+          "c": 0.975725
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 233.76,
+      "end_s": 238.96,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that data is compromised, what are the impacts on consumers? Would you be in a position to assess that? So",
+      "words": [
+        {
+          "w": "that",
+          "s": 233.758,
+          "e": 233.888,
+          "c": 0.999968
+        },
+        {
+          "w": "data",
+          "s": 233.888,
+          "e": 234.108,
+          "c": 0.991282
+        },
+        {
+          "w": "is",
+          "s": 234.128,
+          "e": 234.248,
+          "c": 0.993312
+        },
+        {
+          "w": "compromised,",
+          "s": 234.248,
+          "e": 235.038,
+          "c": 0.996852
+        },
+        {
+          "w": "what",
+          "s": 235.038,
+          "e": 235.268,
+          "c": 0.993178
+        },
+        {
+          "w": "are",
+          "s": 235.338,
+          "e": 235.458,
+          "c": 0.999872
+        },
+        {
+          "w": "the",
+          "s": 235.458,
+          "e": 235.638,
+          "c": 0.999855
+        },
+        {
+          "w": "impacts",
+          "s": 235.638,
+          "e": 236.068,
+          "c": 0.999159
+        },
+        {
+          "w": "on",
+          "s": 236.068,
+          "e": 236.188,
+          "c": 0.999556
+        },
+        {
+          "w": "consumers?",
+          "s": 236.188,
+          "e": 236.988,
+          "c": 0.99923
+        },
+        {
+          "w": "Would",
+          "s": 236.988,
+          "e": 237.238,
+          "c": 0.999863
+        },
+        {
+          "w": "you",
+          "s": 237.338,
+          "e": 237.388,
+          "c": 0.999996
+        },
+        {
+          "w": "be",
+          "s": 237.388,
+          "e": 237.488,
+          "c": 0.999994
+        },
+        {
+          "w": "in",
+          "s": 237.488,
+          "e": 237.588,
+          "c": 0.999996
+        },
+        {
+          "w": "a",
+          "s": 237.588,
+          "e": 237.638,
+          "c": 0.999981
+        },
+        {
+          "w": "position",
+          "s": 237.638,
+          "e": 238.008,
+          "c": 0.999922
+        },
+        {
+          "w": "to",
+          "s": 238.078,
+          "e": 238.138,
+          "c": 1
+        },
+        {
+          "w": "assess",
+          "s": 238.138,
+          "e": 238.438,
+          "c": 0.999859
+        },
+        {
+          "w": "that?",
+          "s": 238.438,
+          "e": 238.808,
+          "c": 0.999975
+        },
+        {
+          "w": "So",
+          "s": 238.808,
+          "e": 238.958,
+          "c": 0.975234
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 239.11,
+      "end_s": 239.71,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "we have with",
+      "words": [
+        {
+          "w": "we",
+          "s": 239.108,
+          "e": 239.108,
+          "c": 0.942194
+        },
+        {
+          "w": "have",
+          "s": 239.168,
+          "e": 239.408,
+          "c": 0.998692
+        },
+        {
+          "w": "with",
+          "s": 239.408,
+          "e": 239.708,
+          "c": 0.766996
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 239.71,
+      "end_s": 241.06,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "respect to a couple of",
+      "words": [
+        {
+          "w": "respect",
+          "s": 239.708,
+          "e": 240.238,
+          "c": 0.999983
+        },
+        {
+          "w": "to",
+          "s": 240.238,
+          "e": 240.388,
+          "c": 0.999846
+        },
+        {
+          "w": "a",
+          "s": 240.388,
+          "e": 240.458,
+          "c": 0.999998
+        },
+        {
+          "w": "couple",
+          "s": 240.458,
+          "e": 240.908,
+          "c": 0.999973
+        },
+        {
+          "w": "of",
+          "s": 240.908,
+          "e": 241.058,
+          "c": 0.999794
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 241.06,
+      "end_s": 263.4,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "different enforcement actions, but I can say there are some lines amongst the federal agencies over authorities in this space. For example, Congress explicitly took the GLBA safeguards out of the Bureau's purview. The Federal Trade Commission has that responsibility in addition with the prudential regulators. But I will say holistically,",
+      "words": [
+        {
+          "w": "different",
+          "s": 241.058,
+          "e": 241.738,
+          "c": 0.99995
+        },
+        {
+          "w": "enforcement",
+          "s": 241.738,
+          "e": 242.568,
+          "c": 0.998986
+        },
+        {
+          "w": "actions,",
+          "s": 242.598,
+          "e": 243.328,
+          "c": 0.932003
+        },
+        {
+          "w": "but",
+          "s": 243.348,
+          "e": 243.568,
+          "c": 0.998192
+        },
+        {
+          "w": "I",
+          "s": 243.678,
+          "e": 243.698,
+          "c": 0.999981
+        },
+        {
+          "w": "can",
+          "s": 243.698,
+          "e": 243.978,
+          "c": 0.999977
+        },
+        {
+          "w": "say",
+          "s": 243.978,
+          "e": 244.258,
+          "c": 0.912785
+        },
+        {
+          "w": "there",
+          "s": 244.258,
+          "e": 244.738,
+          "c": 0.99999
+        },
+        {
+          "w": "are",
+          "s": 244.738,
+          "e": 245.018,
+          "c": 0.999998
+        },
+        {
+          "w": "some",
+          "s": 245.018,
+          "e": 245.398,
+          "c": 0.999983
+        },
+        {
+          "w": "lines",
+          "s": 245.398,
+          "e": 245.828,
+          "c": 0.999438
+        },
+        {
+          "w": "amongst",
+          "s": 245.918,
+          "e": 246.548,
+          "c": 0.996945
+        },
+        {
+          "w": "the",
+          "s": 246.548,
+          "e": 246.828,
+          "c": 0.999763
+        },
+        {
+          "w": "federal",
+          "s": 246.828,
+          "e": 247.498,
+          "c": 0.997778
+        },
+        {
+          "w": "agencies",
+          "s": 247.498,
+          "e": 248.328,
+          "c": 0.999821
+        },
+        {
+          "w": "over",
+          "s": 248.328,
+          "e": 248.708,
+          "c": 0.855486
+        },
+        {
+          "w": "authorities",
+          "s": 248.708,
+          "e": 249.128,
+          "c": 0.980611
+        },
+        {
+          "w": "in",
+          "s": 249.278,
+          "e": 249.388,
+          "c": 0.992135
+        },
+        {
+          "w": "this",
+          "s": 249.388,
+          "e": 249.598,
+          "c": 0.999275
+        },
+        {
+          "w": "space.",
+          "s": 249.598,
+          "e": 250.048,
+          "c": 0.998433
+        },
+        {
+          "w": "For",
+          "s": 250.048,
+          "e": 250.268,
+          "c": 0.999836
+        },
+        {
+          "w": "example,",
+          "s": 250.408,
+          "e": 250.918,
+          "c": 0.999975
+        },
+        {
+          "w": "Congress",
+          "s": 250.918,
+          "e": 251.498,
+          "c": 0.999613
+        },
+        {
+          "w": "explicitly",
+          "s": 251.498,
+          "e": 252.228,
+          "c": 0.999983
+        },
+        {
+          "w": "took",
+          "s": 252.228,
+          "e": 252.518,
+          "c": 0.999979
+        },
+        {
+          "w": "the",
+          "s": 252.518,
+          "e": 252.738,
+          "c": 0.999996
+        },
+        {
+          "w": "GLBA",
+          "s": 252.738,
+          "e": 253.008,
+          "c": 0.993329
+        },
+        {
+          "w": "safeguards",
+          "s": 253.018,
+          "e": 253.738,
+          "c": 0.999289
+        },
+        {
+          "w": "out",
+          "s": 253.738,
+          "e": 253.958,
+          "c": 0.869123
+        },
+        {
+          "w": "of",
+          "s": 253.958,
+          "e": 254.098,
+          "c": 0.999987
+        },
+        {
+          "w": "the",
+          "s": 254.098,
+          "e": 254.308,
+          "c": 0.999977
+        },
+        {
+          "w": "Bureau's",
+          "s": 254.308,
+          "e": 254.888,
+          "c": 0.946378
+        },
+        {
+          "w": "purview.",
+          "s": 254.888,
+          "e": 255.578,
+          "c": 0.99899
+        },
+        {
+          "w": "The",
+          "s": 255.688,
+          "e": 255.838,
+          "c": 0.99954
+        },
+        {
+          "w": "Federal",
+          "s": 256.038,
+          "e": 256.198,
+          "c": 0.998913
+        },
+        {
+          "w": "Trade",
+          "s": 256.198,
+          "e": 256.458,
+          "c": 0.999603
+        },
+        {
+          "w": "Commission",
+          "s": 256.458,
+          "e": 256.978,
+          "c": 0.999472
+        },
+        {
+          "w": "has",
+          "s": 256.978,
+          "e": 257.128,
+          "c": 0.999979
+        },
+        {
+          "w": "that",
+          "s": 257.128,
+          "e": 257.338,
+          "c": 0.999996
+        },
+        {
+          "w": "responsibility",
+          "s": 257.338,
+          "e": 258.068,
+          "c": 0.999949
+        },
+        {
+          "w": "in",
+          "s": 258.068,
+          "e": 258.158,
+          "c": 0.953184
+        },
+        {
+          "w": "addition",
+          "s": 258.188,
+          "e": 258.588,
+          "c": 0.999937
+        },
+        {
+          "w": "with",
+          "s": 258.588,
+          "e": 258.798,
+          "c": 0.983781
+        },
+        {
+          "w": "the",
+          "s": 258.798,
+          "e": 258.948,
+          "c": 0.999796
+        },
+        {
+          "w": "prudential",
+          "s": 258.948,
+          "e": 259.448,
+          "c": 0.851098
+        },
+        {
+          "w": "regulators.",
+          "s": 259.478,
+          "e": 260.218,
+          "c": 0.925871
+        },
+        {
+          "w": "But",
+          "s": 260.958,
+          "e": 260.968,
+          "c": 0.62136
+        },
+        {
+          "w": "I",
+          "s": 261.278,
+          "e": 261.328,
+          "c": 0.989198
+        },
+        {
+          "w": "will",
+          "s": 261.328,
+          "e": 261.728,
+          "c": 0.995896
+        },
+        {
+          "w": "say",
+          "s": 261.728,
+          "e": 261.948,
+          "c": 0.994438
+        },
+        {
+          "w": "holistically,",
+          "s": 262.018,
+          "e": 263.398,
+          "c": 0.622647
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 263.43,
+      "end_s": 263.44,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "certainly,",
+      "words": [
+        {
+          "w": "certainly,",
+          "s": 263.428,
+          "e": 263.428,
+          "c": 0.589916
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "start_s": 263.43,
+      "end_s": 267.86,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We are looking at what's happening in this space, and we are certainly doing our part. Perhaps",
+      "words": [
+        {
+          "w": "We",
+          "s": 263.408,
+          "e": 263.508,
+          "c": 0.72961
+        },
+        {
+          "w": "are",
+          "s": 263.508,
+          "e": 263.658,
+          "c": 0.99992
+        },
+        {
+          "w": "looking",
+          "s": 263.658,
+          "e": 263.998,
+          "c": 0.999918
+        },
+        {
+          "w": "at",
+          "s": 263.998,
+          "e": 264.098,
+          "c": 0.999926
+        },
+        {
+          "w": "what's",
+          "s": 264.098,
+          "e": 264.388,
+          "c": 0.999039
+        },
+        {
+          "w": "happening",
+          "s": 264.388,
+          "e": 264.828,
+          "c": 0.999756
+        },
+        {
+          "w": "in",
+          "s": 264.828,
+          "e": 264.928,
+          "c": 0.998114
+        },
+        {
+          "w": "this",
+          "s": 264.928,
+          "e": 265.108,
+          "c": 0.999954
+        },
+        {
+          "w": "space,",
+          "s": 265.128,
+          "e": 265.528,
+          "c": 0.512201
+        },
+        {
+          "w": "and",
+          "s": 265.528,
+          "e": 265.708,
+          "c": 0.909231
+        },
+        {
+          "w": "we",
+          "s": 265.708,
+          "e": 265.828,
+          "c": 0.997942
+        },
+        {
+          "w": "are",
+          "s": 265.828,
+          "e": 265.998,
+          "c": 0.999842
+        },
+        {
+          "w": "certainly",
+          "s": 265.998,
+          "e": 266.558,
+          "c": 0.999028
+        },
+        {
+          "w": "doing",
+          "s": 266.558,
+          "e": 266.858,
+          "c": 0.99768
+        },
+        {
+          "w": "our",
+          "s": 266.858,
+          "e": 267.038,
+          "c": 0.998671
+        },
+        {
+          "w": "part.",
+          "s": 267.038,
+          "e": 267.508,
+          "c": 0.981703
+        },
+        {
+          "w": "Perhaps",
+          "s": 267.508,
+          "e": 267.858,
+          "c": 0.998927
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "start_s": 267.86,
+      "end_s": 274.05,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "from the consumer's perspective. Yeah. So thank you for that. And then I think the last thing is just in the interest of the QM rule",
+      "words": [
+        {
+          "w": "from",
+          "s": 267.858,
+          "e": 268.058,
+          "c": 0.999497
+        },
+        {
+          "w": "the",
+          "s": 268.058,
+          "e": 268.198,
+          "c": 0.989493
+        },
+        {
+          "w": "consumer's",
+          "s": 268.218,
+          "e": 268.708,
+          "c": 0.997407
+        },
+        {
+          "w": "perspective.",
+          "s": 268.708,
+          "e": 269.428,
+          "c": 0.998464
+        },
+        {
+          "w": "Yeah.",
+          "s": 269.438,
+          "e": 269.858,
+          "c": 0.987967
+        },
+        {
+          "w": "So",
+          "s": 269.868,
+          "e": 269.978,
+          "c": 0.997858
+        },
+        {
+          "w": "thank",
+          "s": 269.978,
+          "e": 270.258,
+          "c": 0.927106
+        },
+        {
+          "w": "you",
+          "s": 270.258,
+          "e": 270.428,
+          "c": 0.999998
+        },
+        {
+          "w": "for",
+          "s": 270.428,
+          "e": 270.598,
+          "c": 0.999996
+        },
+        {
+          "w": "that.",
+          "s": 270.598,
+          "e": 271.028,
+          "c": 0.981877
+        },
+        {
+          "w": "And",
+          "s": 271.028,
+          "e": 271.188,
+          "c": 0.999096
+        },
+        {
+          "w": "then",
+          "s": 271.188,
+          "e": 271.398,
+          "c": 0.98775
+        },
+        {
+          "w": "I",
+          "s": 271.398,
+          "e": 271.448,
+          "c": 0.999489
+        },
+        {
+          "w": "think",
+          "s": 271.448,
+          "e": 271.718,
+          "c": 0.999992
+        },
+        {
+          "w": "the",
+          "s": 271.718,
+          "e": 271.878,
+          "c": 0.999996
+        },
+        {
+          "w": "last",
+          "s": 271.878,
+          "e": 272.088,
+          "c": 0.999987
+        },
+        {
+          "w": "thing",
+          "s": 272.088,
+          "e": 272.358,
+          "c": 0.99999
+        },
+        {
+          "w": "is",
+          "s": 272.358,
+          "e": 272.468,
+          "c": 0.999933
+        },
+        {
+          "w": "just",
+          "s": 272.468,
+          "e": 272.648,
+          "c": 0.990478
+        },
+        {
+          "w": "in",
+          "s": 272.698,
+          "e": 272.788,
+          "c": 0.837559
+        },
+        {
+          "w": "the",
+          "s": 272.788,
+          "e": 272.948,
+          "c": 0.999811
+        },
+        {
+          "w": "interest",
+          "s": 272.948,
+          "e": 273.378,
+          "c": 0.999695
+        },
+        {
+          "w": "of",
+          "s": 273.378,
+          "e": 273.488,
+          "c": 0.999956
+        },
+        {
+          "w": "the",
+          "s": 273.488,
+          "e": 273.648,
+          "c": 0.999992
+        },
+        {
+          "w": "QM",
+          "s": 273.648,
+          "e": 273.748,
+          "c": 0.985612
+        },
+        {
+          "w": "rule",
+          "s": 273.748,
+          "e": 274.048,
+          "c": 0.99635
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "start_s": 274.05,
+      "end_s": 294.51,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and the upcoming piece, you know, you're not yet into the rulemaking, but you're talking about going towards it. Certainly that says there are things that you have concerns about the rule as it exists today. And, you know, I guess what kinds of things are you and the staff there trying to balance as you look at a review of this, the interest, things that are broken and things that you want to safeguard? And clarify. Well,",
+      "words": [
+        {
+          "w": "and",
+          "s": 274.048,
+          "e": 274.178,
+          "c": 0.971412
+        },
+        {
+          "w": "the",
+          "s": 274.178,
+          "e": 274.308,
+          "c": 0.999514
+        },
+        {
+          "w": "upcoming",
+          "s": 274.308,
+          "e": 274.688,
+          "c": 0.994861
+        },
+        {
+          "w": "piece,",
+          "s": 274.688,
+          "e": 275.428,
+          "c": 0.675704
+        },
+        {
+          "w": "you",
+          "s": 275.568,
+          "e": 275.598,
+          "c": 0.631621
+        },
+        {
+          "w": "know,",
+          "s": 275.598,
+          "e": 275.948,
+          "c": 0.606358
+        },
+        {
+          "w": "you're",
+          "s": 275.948,
+          "e": 276.208,
+          "c": 0.750143
+        },
+        {
+          "w": "not",
+          "s": 276.208,
+          "e": 276.338,
+          "c": 0.999905
+        },
+        {
+          "w": "yet",
+          "s": 276.338,
+          "e": 276.468,
+          "c": 0.999922
+        },
+        {
+          "w": "into",
+          "s": 276.468,
+          "e": 276.648,
+          "c": 0.999542
+        },
+        {
+          "w": "the",
+          "s": 276.648,
+          "e": 276.768,
+          "c": 0.999933
+        },
+        {
+          "w": "rulemaking,",
+          "s": 276.778,
+          "e": 277.348,
+          "c": 0.9855
+        },
+        {
+          "w": "but",
+          "s": 277.348,
+          "e": 277.478,
+          "c": 0.901179
+        },
+        {
+          "w": "you're",
+          "s": 277.478,
+          "e": 277.648,
+          "c": 0.999901
+        },
+        {
+          "w": "talking",
+          "s": 277.798,
+          "e": 278.028,
+          "c": 0.999502
+        },
+        {
+          "w": "about",
+          "s": 278.078,
+          "e": 278.278,
+          "c": 0.999924
+        },
+        {
+          "w": "going",
+          "s": 278.278,
+          "e": 278.498,
+          "c": 0.999825
+        },
+        {
+          "w": "towards",
+          "s": 278.498,
+          "e": 278.818,
+          "c": 0.999914
+        },
+        {
+          "w": "it.",
+          "s": 278.818,
+          "e": 279.038,
+          "c": 0.99911
+        },
+        {
+          "w": "Certainly",
+          "s": 279.088,
+          "e": 279.618,
+          "c": 0.980221
+        },
+        {
+          "w": "that",
+          "s": 279.618,
+          "e": 279.848,
+          "c": 0.689695
+        },
+        {
+          "w": "says",
+          "s": 279.848,
+          "e": 280.078,
+          "c": 0.99992
+        },
+        {
+          "w": "there",
+          "s": 280.078,
+          "e": 280.368,
+          "c": 0.998681
+        },
+        {
+          "w": "are",
+          "s": 280.368,
+          "e": 280.538,
+          "c": 0.999998
+        },
+        {
+          "w": "things",
+          "s": 280.538,
+          "e": 280.888,
+          "c": 0.999983
+        },
+        {
+          "w": "that",
+          "s": 280.888,
+          "e": 281.118,
+          "c": 0.999992
+        },
+        {
+          "w": "you",
+          "s": 281.118,
+          "e": 281.288,
+          "c": 0.999973
+        },
+        {
+          "w": "have",
+          "s": 281.288,
+          "e": 281.518,
+          "c": 0.999996
+        },
+        {
+          "w": "concerns",
+          "s": 281.518,
+          "e": 281.988,
+          "c": 0.999954
+        },
+        {
+          "w": "about",
+          "s": 281.988,
+          "e": 282.268,
+          "c": 0.999973
+        },
+        {
+          "w": "the",
+          "s": 282.288,
+          "e": 282.448,
+          "c": 0.662529
+        },
+        {
+          "w": "rule",
+          "s": 282.448,
+          "e": 282.678,
+          "c": 0.957865
+        },
+        {
+          "w": "as",
+          "s": 282.678,
+          "e": 282.788,
+          "c": 0.995408
+        },
+        {
+          "w": "it",
+          "s": 282.788,
+          "e": 282.878,
+          "c": 0.99956
+        },
+        {
+          "w": "exists",
+          "s": 282.888,
+          "e": 283.208,
+          "c": 0.761287
+        },
+        {
+          "w": "today.",
+          "s": 283.268,
+          "e": 283.828,
+          "c": 0.956676
+        },
+        {
+          "w": "And,",
+          "s": 283.828,
+          "e": 284.138,
+          "c": 0.730561
+        },
+        {
+          "w": "you",
+          "s": 284.138,
+          "e": 284.328,
+          "c": 0.99999
+        },
+        {
+          "w": "know,",
+          "s": 284.328,
+          "e": 284.698,
+          "c": 1
+        },
+        {
+          "w": "I",
+          "s": 284.698,
+          "e": 284.748,
+          "c": 0.999691
+        },
+        {
+          "w": "guess",
+          "s": 284.768,
+          "e": 285.078,
+          "c": 0.99999
+        },
+        {
+          "w": "what",
+          "s": 285.078,
+          "e": 285.328,
+          "c": 0.967862
+        },
+        {
+          "w": "kinds",
+          "s": 285.328,
+          "e": 285.648,
+          "c": 0.999937
+        },
+        {
+          "w": "of",
+          "s": 285.648,
+          "e": 285.768,
+          "c": 1
+        },
+        {
+          "w": "things",
+          "s": 285.768,
+          "e": 286.148,
+          "c": 0.999996
+        },
+        {
+          "w": "are",
+          "s": 286.148,
+          "e": 286.338,
+          "c": 0.999996
+        },
+        {
+          "w": "you",
+          "s": 286.338,
+          "e": 286.528,
+          "c": 1
+        },
+        {
+          "w": "and",
+          "s": 286.528,
+          "e": 286.718,
+          "c": 0.999051
+        },
+        {
+          "w": "the",
+          "s": 286.718,
+          "e": 286.908,
+          "c": 0.999979
+        },
+        {
+          "w": "staff",
+          "s": 286.908,
+          "e": 287.228,
+          "c": 0.999979
+        },
+        {
+          "w": "there",
+          "s": 287.228,
+          "e": 287.548,
+          "c": 0.986092
+        },
+        {
+          "w": "trying",
+          "s": 287.548,
+          "e": 287.928,
+          "c": 0.999838
+        },
+        {
+          "w": "to",
+          "s": 287.928,
+          "e": 288.038,
+          "c": 1
+        },
+        {
+          "w": "balance",
+          "s": 288.068,
+          "e": 288.498,
+          "c": 0.99995
+        },
+        {
+          "w": "as",
+          "s": 288.498,
+          "e": 288.578,
+          "c": 0.999804
+        },
+        {
+          "w": "you",
+          "s": 288.638,
+          "e": 288.808,
+          "c": 0.999996
+        },
+        {
+          "w": "look",
+          "s": 288.808,
+          "e": 289.018,
+          "c": 0.999992
+        },
+        {
+          "w": "at",
+          "s": 289.068,
+          "e": 289.178,
+          "c": 0.999992
+        },
+        {
+          "w": "a",
+          "s": 289.178,
+          "e": 289.238,
+          "c": 0.999992
+        },
+        {
+          "w": "review",
+          "s": 289.238,
+          "e": 289.518,
+          "c": 0.999945
+        },
+        {
+          "w": "of",
+          "s": 289.618,
+          "e": 289.738,
+          "c": 0.999985
+        },
+        {
+          "w": "this,",
+          "s": 289.738,
+          "e": 290.298,
+          "c": 0.557017
+        },
+        {
+          "w": "the",
+          "s": 290.298,
+          "e": 290.418,
+          "c": 0.926399
+        },
+        {
+          "w": "interest,",
+          "s": 290.588,
+          "e": 290.808,
+          "c": 0.882492
+        },
+        {
+          "w": "things",
+          "s": 290.808,
+          "e": 291.108,
+          "c": 0.939033
+        },
+        {
+          "w": "that",
+          "s": 291.108,
+          "e": 291.308,
+          "c": 0.999979
+        },
+        {
+          "w": "are",
+          "s": 291.308,
+          "e": 291.458,
+          "c": 0.999996
+        },
+        {
+          "w": "broken",
+          "s": 291.458,
+          "e": 291.768,
+          "c": 0.999868
+        },
+        {
+          "w": "and",
+          "s": 291.768,
+          "e": 291.908,
+          "c": 0.59072
+        },
+        {
+          "w": "things",
+          "s": 291.918,
+          "e": 292.218,
+          "c": 0.999903
+        },
+        {
+          "w": "that",
+          "s": 292.218,
+          "e": 292.418,
+          "c": 0.999666
+        },
+        {
+          "w": "you",
+          "s": 292.418,
+          "e": 292.568,
+          "c": 0.999966
+        },
+        {
+          "w": "want",
+          "s": 292.568,
+          "e": 292.758,
+          "c": 0.999655
+        },
+        {
+          "w": "to",
+          "s": 292.768,
+          "e": 292.868,
+          "c": 0.999592
+        },
+        {
+          "w": "safeguard?",
+          "s": 292.868,
+          "e": 293.348,
+          "c": 0.625499
+        },
+        {
+          "w": "And",
+          "s": 293.408,
+          "e": 293.568,
+          "c": 0.743516
+        },
+        {
+          "w": "clarify.",
+          "s": 293.568,
+          "e": 294.098,
+          "c": 0.652638
+        },
+        {
+          "w": "Well,",
+          "s": 294.118,
+          "e": 294.508,
+          "c": 0.999931
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "start_s": 294.51,
+      "end_s": 294.91,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that's",
+      "words": [
+        {
+          "w": "that's",
+          "s": 294.508,
+          "e": 294.908,
+          "c": 0.998879
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "start_s": 294.91,
+      "end_s": 306.43,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "definitely a longer question probably that I can answer in a shorter period of time. I would say very clearly carrying out the law, there is a requirement to have an ability to repay and how that's determined. Thank",
+      "words": [
+        {
+          "w": "definitely",
+          "s": 294.908,
+          "e": 295.598,
+          "c": 0.980378
+        },
+        {
+          "w": "a",
+          "s": 295.598,
+          "e": 295.668,
+          "c": 0.999964
+        },
+        {
+          "w": "longer",
+          "s": 295.668,
+          "e": 296.068,
+          "c": 0.999891
+        },
+        {
+          "w": "question",
+          "s": 296.078,
+          "e": 296.618,
+          "c": 0.99995
+        },
+        {
+          "w": "probably",
+          "s": 296.638,
+          "e": 297.168,
+          "c": 0.90685
+        },
+        {
+          "w": "that",
+          "s": 297.178,
+          "e": 297.448,
+          "c": 0.989878
+        },
+        {
+          "w": "I",
+          "s": 297.448,
+          "e": 297.518,
+          "c": 0.999981
+        },
+        {
+          "w": "can",
+          "s": 297.518,
+          "e": 297.718,
+          "c": 0.996949
+        },
+        {
+          "w": "answer",
+          "s": 297.718,
+          "e": 298.128,
+          "c": 0.999926
+        },
+        {
+          "w": "in",
+          "s": 298.128,
+          "e": 298.228,
+          "c": 0.970599
+        },
+        {
+          "w": "a",
+          "s": 298.258,
+          "e": 298.318,
+          "c": 0.996692
+        },
+        {
+          "w": "shorter",
+          "s": 298.348,
+          "e": 298.808,
+          "c": 0.997485
+        },
+        {
+          "w": "period",
+          "s": 298.808,
+          "e": 299.218,
+          "c": 0.999952
+        },
+        {
+          "w": "of",
+          "s": 299.218,
+          "e": 299.308,
+          "c": 0.99964
+        },
+        {
+          "w": "time.",
+          "s": 299.348,
+          "e": 299.968,
+          "c": 0.999758
+        },
+        {
+          "w": "I",
+          "s": 299.968,
+          "e": 300.018,
+          "c": 0.999857
+        },
+        {
+          "w": "would",
+          "s": 300.018,
+          "e": 300.308,
+          "c": 0.999983
+        },
+        {
+          "w": "say",
+          "s": 300.308,
+          "e": 300.478,
+          "c": 0.999956
+        },
+        {
+          "w": "very",
+          "s": 300.478,
+          "e": 300.698,
+          "c": 0.998965
+        },
+        {
+          "w": "clearly",
+          "s": 300.708,
+          "e": 301.108,
+          "c": 0.999962
+        },
+        {
+          "w": "carrying",
+          "s": 301.108,
+          "e": 301.568,
+          "c": 0.981001
+        },
+        {
+          "w": "out",
+          "s": 301.568,
+          "e": 301.738,
+          "c": 0.999994
+        },
+        {
+          "w": "the",
+          "s": 301.738,
+          "e": 301.908,
+          "c": 0.999977
+        },
+        {
+          "w": "law,",
+          "s": 301.908,
+          "e": 302.188,
+          "c": 0.789076
+        },
+        {
+          "w": "there",
+          "s": 302.188,
+          "e": 302.478,
+          "c": 0.999977
+        },
+        {
+          "w": "is",
+          "s": 302.478,
+          "e": 302.588,
+          "c": 0.999996
+        },
+        {
+          "w": "a",
+          "s": 302.588,
+          "e": 302.638,
+          "c": 1
+        },
+        {
+          "w": "requirement",
+          "s": 302.638,
+          "e": 303.268,
+          "c": 0.99996
+        },
+        {
+          "w": "to",
+          "s": 303.268,
+          "e": 303.378,
+          "c": 0.999998
+        },
+        {
+          "w": "have",
+          "s": 303.378,
+          "e": 303.608,
+          "c": 0.999611
+        },
+        {
+          "w": "an",
+          "s": 303.608,
+          "e": 303.708,
+          "c": 0.999933
+        },
+        {
+          "w": "ability",
+          "s": 303.708,
+          "e": 304.088,
+          "c": 0.999926
+        },
+        {
+          "w": "to",
+          "s": 304.118,
+          "e": 304.228,
+          "c": 0.999996
+        },
+        {
+          "w": "repay",
+          "s": 304.228,
+          "e": 304.518,
+          "c": 0.999922
+        },
+        {
+          "w": "and",
+          "s": 304.518,
+          "e": 304.688,
+          "c": 0.971932
+        },
+        {
+          "w": "how",
+          "s": 304.688,
+          "e": 304.858,
+          "c": 0.999983
+        },
+        {
+          "w": "that's",
+          "s": 304.858,
+          "e": 305.168,
+          "c": 0.999205
+        },
+        {
+          "w": "determined.",
+          "s": 305.198,
+          "e": 306.068,
+          "c": 0.99984
+        },
+        {
+          "w": "Thank",
+          "s": 306.068,
+          "e": 306.428,
+          "c": 0.999977
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "start_s": 306.43,
+      "end_s": 306.87,
+      "speaker": "SPEAKER_15",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you.",
+      "words": [
+        {
+          "w": "you.",
+          "s": 306.428,
+          "e": 306.868,
+          "c": 0.999941
+        }
+      ]
+    }
+  ]
+}

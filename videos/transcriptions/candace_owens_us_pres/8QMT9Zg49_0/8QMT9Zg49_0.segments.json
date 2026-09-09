@@ -1,0 +1,845 @@
+{
+  "schema_version": 2,
+  "canonical_id": "b32e3a18a06c18a0",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 58.82,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-09T00:51:21.443Z",
+  "text_sha256": "9f0fbeb6c87b170487582ecc2995618693266775d8d82a63a287ccf34037e037",
+  "segments_sha256": "4afbf33f49e948c4798e3a9070275a980bc556fd722b485f913e90972a19645c",
+  "words_sha256": "258be003ed26dbda5806b8cf89456d51ebf7a8dc6772d9c9e37c7c0c8bda89a0",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 2,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 15,
+    "clusters": 1,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.89,
+        "confidence": "low",
+        "clean_s": 41.8
+      },
+      "clean_s": 41.8,
+      "speaking_s": 41.8,
+      "first_s": 0.22
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 3.59,
+      "end_s": 3.88,
+      "segment_i": 1,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 28.66,
+      "end_s": 29.97,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 46.07,
+      "end_s": 46.69,
+      "segment_i": 5,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 55.84,
+      "end_s": 58.82,
+      "segment_i": 7,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.18,
+      "end_s": 3.42,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Where everything ends, he begins.",
+      "words": [
+        {
+          "w": "Where",
+          "s": 0.18,
+          "e": 0.52,
+          "c": 0.844179
+        },
+        {
+          "w": "everything",
+          "s": 0.52,
+          "e": 1.51,
+          "c": 0.990911
+        },
+        {
+          "w": "ends,",
+          "s": 1.56,
+          "e": 2.25,
+          "c": 0.598136
+        },
+        {
+          "w": "he",
+          "s": 2.25,
+          "e": 2.51,
+          "c": 0.76247
+        },
+        {
+          "w": "begins.",
+          "s": 2.51,
+          "e": 3.42,
+          "c": 0.828865
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 3.59,
+      "end_s": 3.88,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "At the",
+      "words": [
+        {
+          "w": "At",
+          "s": 3.59,
+          "e": 3.6,
+          "c": 0.983277
+        },
+        {
+          "w": "the",
+          "s": 3.6,
+          "e": 3.88,
+          "c": 0.999102
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 3.88,
+      "end_s": 28.68,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "edge of all that has been charted, he continues, unbothered by scale. His map, the stars, his compass, his heart. The world is vast and indifferent, offering no assurances, no safe harbor, no promise of sanctuary. Still he walks, clip, clop, clip.",
+      "words": [
+        {
+          "w": "edge",
+          "s": 3.88,
+          "e": 4.18,
+          "c": 0.998216
+        },
+        {
+          "w": "of",
+          "s": 4.29,
+          "e": 4.43,
+          "c": 0.997807
+        },
+        {
+          "w": "all",
+          "s": 4.43,
+          "e": 4.7,
+          "c": 0.994765
+        },
+        {
+          "w": "that",
+          "s": 4.7,
+          "e": 5.04,
+          "c": 0.986542
+        },
+        {
+          "w": "has",
+          "s": 5.04,
+          "e": 5.36,
+          "c": 0.981658
+        },
+        {
+          "w": "been",
+          "s": 5.51,
+          "e": 5.7,
+          "c": 0.997096
+        },
+        {
+          "w": "charted,",
+          "s": 5.75,
+          "e": 6.49,
+          "c": 0.716222
+        },
+        {
+          "w": "he",
+          "s": 6.5,
+          "e": 6.72,
+          "c": 0.689802
+        },
+        {
+          "w": "continues,",
+          "s": 6.72,
+          "e": 7.84,
+          "c": 0.534008
+        },
+        {
+          "w": "unbothered",
+          "s": 7.84,
+          "e": 8.7,
+          "c": 0.692105
+        },
+        {
+          "w": "by",
+          "s": 8.7,
+          "e": 8.87,
+          "c": 0.997832
+        },
+        {
+          "w": "scale.",
+          "s": 8.87,
+          "e": 9.62,
+          "c": 0.847401
+        },
+        {
+          "w": "His",
+          "s": 9.8,
+          "e": 10.05,
+          "c": 0.99336
+        },
+        {
+          "w": "map,",
+          "s": 10.05,
+          "e": 10.76,
+          "c": 0.570906
+        },
+        {
+          "w": "the",
+          "s": 10.76,
+          "e": 11.13,
+          "c": 0.989146
+        },
+        {
+          "w": "stars,",
+          "s": 11.68,
+          "e": 12.2,
+          "c": 0.494283
+        },
+        {
+          "w": "his",
+          "s": 12.2,
+          "e": 12.55,
+          "c": 0.915358
+        },
+        {
+          "w": "compass,",
+          "s": 12.55,
+          "e": 13.62,
+          "c": 0.976174
+        },
+        {
+          "w": "his",
+          "s": 13.62,
+          "e": 14.01,
+          "c": 0.983686
+        },
+        {
+          "w": "heart.",
+          "s": 14.01,
+          "e": 15.08,
+          "c": 0.91536
+        },
+        {
+          "w": "The",
+          "s": 15.25,
+          "e": 15.37,
+          "c": 0.993921
+        },
+        {
+          "w": "world",
+          "s": 15.37,
+          "e": 15.84,
+          "c": 0.933428
+        },
+        {
+          "w": "is",
+          "s": 15.95,
+          "e": 16.04,
+          "c": 0.99838
+        },
+        {
+          "w": "vast",
+          "s": 16.04,
+          "e": 16.42,
+          "c": 0.996044
+        },
+        {
+          "w": "and",
+          "s": 16.42,
+          "e": 16.7,
+          "c": 0.99663
+        },
+        {
+          "w": "indifferent,",
+          "s": 17.16,
+          "e": 18,
+          "c": 0.932031
+        },
+        {
+          "w": "offering",
+          "s": 18,
+          "e": 18.57,
+          "c": 0.901413
+        },
+        {
+          "w": "no",
+          "s": 18.57,
+          "e": 18.71,
+          "c": 0.995925
+        },
+        {
+          "w": "assurances,",
+          "s": 18.71,
+          "e": 19.58,
+          "c": 0.954675
+        },
+        {
+          "w": "no",
+          "s": 19.58,
+          "e": 19.74,
+          "c": 0.750111
+        },
+        {
+          "w": "safe",
+          "s": 19.74,
+          "e": 20.07,
+          "c": 0.995976
+        },
+        {
+          "w": "harbor,",
+          "s": 20.07,
+          "e": 20.75,
+          "c": 0.787619
+        },
+        {
+          "w": "no",
+          "s": 20.76,
+          "e": 20.96,
+          "c": 0.870404
+        },
+        {
+          "w": "promise",
+          "s": 20.96,
+          "e": 21.68,
+          "c": 0.991331
+        },
+        {
+          "w": "of",
+          "s": 21.68,
+          "e": 21.88,
+          "c": 0.980258
+        },
+        {
+          "w": "sanctuary.",
+          "s": 21.88,
+          "e": 22.96,
+          "c": 0.952084
+        },
+        {
+          "w": "Still",
+          "s": 23.14,
+          "e": 23.9,
+          "c": 0.993021
+        },
+        {
+          "w": "he",
+          "s": 23.9,
+          "e": 24.28,
+          "c": 0.702913
+        },
+        {
+          "w": "walks,",
+          "s": 24.28,
+          "e": 25.62,
+          "c": 0.420364
+        },
+        {
+          "w": "clip,",
+          "s": 25.62,
+          "e": 26.76,
+          "c": 0.448338
+        },
+        {
+          "w": "clop,",
+          "s": 26.76,
+          "e": 27.9,
+          "c": 0.769606
+        },
+        {
+          "w": "clip.",
+          "s": 27.9,
+          "e": 28.68,
+          "c": 0.874074
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 28.66,
+      "end_s": 29.97,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "clop. While",
+      "words": [
+        {
+          "w": "clop.",
+          "s": 28.656,
+          "e": 29.646,
+          "c": 0.137132
+        },
+        {
+          "w": "While",
+          "s": 29.656,
+          "e": 29.966,
+          "c": 0.914541
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 29.97,
+      "end_s": 46.07,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "others measure their quality in size, he measures it in resolve. And though his legs are small, his heart is unimaginably big. Only now do we see him clearly, the tiny horse. And",
+      "words": [
+        {
+          "w": "others",
+          "s": 29.966,
+          "e": 30.346,
+          "c": 0.989015
+        },
+        {
+          "w": "measure",
+          "s": 30.346,
+          "e": 30.786,
+          "c": 0.979478
+        },
+        {
+          "w": "their",
+          "s": 30.786,
+          "e": 31.086,
+          "c": 0.968916
+        },
+        {
+          "w": "quality",
+          "s": 31.096,
+          "e": 31.536,
+          "c": 0.99416
+        },
+        {
+          "w": "in",
+          "s": 31.536,
+          "e": 31.696,
+          "c": 0.773194
+        },
+        {
+          "w": "size,",
+          "s": 31.696,
+          "e": 32.786,
+          "c": 0.87598
+        },
+        {
+          "w": "he",
+          "s": 32.786,
+          "e": 32.916,
+          "c": 0.944537
+        },
+        {
+          "w": "measures",
+          "s": 32.916,
+          "e": 33.456,
+          "c": 0.988563
+        },
+        {
+          "w": "it",
+          "s": 33.456,
+          "e": 33.586,
+          "c": 0.991285
+        },
+        {
+          "w": "in",
+          "s": 33.586,
+          "e": 33.716,
+          "c": 0.992526
+        },
+        {
+          "w": "resolve.",
+          "s": 33.716,
+          "e": 34.416,
+          "c": 0.946797
+        },
+        {
+          "w": "And",
+          "s": 34.416,
+          "e": 35.936,
+          "c": 0.660183
+        },
+        {
+          "w": "though",
+          "s": 35.986,
+          "e": 36.096,
+          "c": 0.826456
+        },
+        {
+          "w": "his",
+          "s": 36.096,
+          "e": 36.346,
+          "c": 0.9981
+        },
+        {
+          "w": "legs",
+          "s": 36.346,
+          "e": 36.676,
+          "c": 0.998624
+        },
+        {
+          "w": "are",
+          "s": 36.676,
+          "e": 36.926,
+          "c": 0.998942
+        },
+        {
+          "w": "small,",
+          "s": 36.926,
+          "e": 37.496,
+          "c": 0.944939
+        },
+        {
+          "w": "his",
+          "s": 37.496,
+          "e": 37.746,
+          "c": 0.997299
+        },
+        {
+          "w": "heart",
+          "s": 37.746,
+          "e": 38.156,
+          "c": 0.998531
+        },
+        {
+          "w": "is",
+          "s": 38.156,
+          "e": 38.316,
+          "c": 0.998551
+        },
+        {
+          "w": "unimaginably",
+          "s": 38.316,
+          "e": 39.306,
+          "c": 0.993519
+        },
+        {
+          "w": "big.",
+          "s": 39.306,
+          "e": 39.856,
+          "c": 0.951998
+        },
+        {
+          "w": "Only",
+          "s": 39.856,
+          "e": 40.536,
+          "c": 0.951666
+        },
+        {
+          "w": "now",
+          "s": 40.536,
+          "e": 41.046,
+          "c": 0.998447
+        },
+        {
+          "w": "do",
+          "s": 41.046,
+          "e": 41.386,
+          "c": 0.987006
+        },
+        {
+          "w": "we",
+          "s": 41.386,
+          "e": 41.716,
+          "c": 0.997324
+        },
+        {
+          "w": "see",
+          "s": 41.716,
+          "e": 42.226,
+          "c": 0.996134
+        },
+        {
+          "w": "him",
+          "s": 42.226,
+          "e": 42.756,
+          "c": 0.990327
+        },
+        {
+          "w": "clearly,",
+          "s": 42.756,
+          "e": 43.296,
+          "c": 0.32887
+        },
+        {
+          "w": "the",
+          "s": 43.296,
+          "e": 44.486,
+          "c": 0.825201
+        },
+        {
+          "w": "tiny",
+          "s": 44.486,
+          "e": 45.216,
+          "c": 0.926424
+        },
+        {
+          "w": "horse.",
+          "s": 45.216,
+          "e": 45.696,
+          "c": 0.663295
+        },
+        {
+          "w": "And",
+          "s": 45.696,
+          "e": 46.066,
+          "c": 0.994803
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 46.07,
+      "end_s": 46.69,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "in the",
+      "words": [
+        {
+          "w": "in",
+          "s": 46.066,
+          "e": 46.316,
+          "c": 0.988391
+        },
+        {
+          "w": "the",
+          "s": 46.316,
+          "e": 46.686,
+          "c": 0.997377
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 46.69,
+      "end_s": 55.84,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "silence of endless horizons, nothing could be louder than the stiets' proclamation of his insatiable",
+      "words": [
+        {
+          "w": "silence",
+          "s": 46.686,
+          "e": 47.556,
+          "c": 0.987805
+        },
+        {
+          "w": "of",
+          "s": 47.556,
+          "e": 47.796,
+          "c": 0.999525
+        },
+        {
+          "w": "endless",
+          "s": 47.796,
+          "e": 48.676,
+          "c": 0.988832
+        },
+        {
+          "w": "horizons,",
+          "s": 48.676,
+          "e": 49.936,
+          "c": 0.634966
+        },
+        {
+          "w": "nothing",
+          "s": 49.936,
+          "e": 50.376,
+          "c": 0.959763
+        },
+        {
+          "w": "could",
+          "s": 50.376,
+          "e": 50.696,
+          "c": 0.993203
+        },
+        {
+          "w": "be",
+          "s": 50.696,
+          "e": 50.816,
+          "c": 0.997276
+        },
+        {
+          "w": "louder",
+          "s": 50.816,
+          "e": 51.216,
+          "c": 0.997512
+        },
+        {
+          "w": "than",
+          "s": 51.216,
+          "e": 51.456,
+          "c": 0.915229
+        },
+        {
+          "w": "the",
+          "s": 51.456,
+          "e": 51.616,
+          "c": 0.951862
+        },
+        {
+          "w": "stiets'",
+          "s": 51.616,
+          "e": 52.476,
+          "c": 0.0873821
+        },
+        {
+          "w": "proclamation",
+          "s": 52.476,
+          "e": 53.976,
+          "c": 0.984972
+        },
+        {
+          "w": "of",
+          "s": 53.976,
+          "e": 54.226,
+          "c": 0.998386
+        },
+        {
+          "w": "his",
+          "s": 54.226,
+          "e": 54.596,
+          "c": 0.997187
+        },
+        {
+          "w": "insatiable",
+          "s": 54.596,
+          "e": 55.836,
+          "c": 0.998289
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 55.84,
+      "end_s": 58.82,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "desire for being, to be.",
+      "words": [
+        {
+          "w": "desire",
+          "s": 55.836,
+          "e": 56.586,
+          "c": 0.995732
+        },
+        {
+          "w": "for",
+          "s": 56.586,
+          "e": 56.956,
+          "c": 0.993288
+        },
+        {
+          "w": "being,",
+          "s": 56.956,
+          "e": 57.836,
+          "c": 0.244102
+        },
+        {
+          "w": "to",
+          "s": 57.836,
+          "e": 58.086,
+          "c": 0.935462
+        },
+        {
+          "w": "be.",
+          "s": 58.086,
+          "e": 58.816,
+          "c": 0.936022
+        }
+      ]
+    }
+  ]
+}

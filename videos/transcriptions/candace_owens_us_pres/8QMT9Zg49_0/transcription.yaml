@@ -1,0 +1,128 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "The Loneliest Horse on Earth (Documentary)"
+    Description: >-
+      A mock nature-documentary narration about a very small horse,
+      delivered in a grandiose voice-over register. The narrator describes
+      the animal continuing 'at the edge of all that has been charted', with
+      'his map, the stars, his compass, his heart', walking on 'clip, clop'
+      through a world that is 'vast and indifferent', measuring his quality
+      in resolve rather than size. It is a comedy piece throughout: no
+      political content, no named individuals and no factual claims.
+    URL: "https://www.youtube.com/watch?v=8QMT9Zg49_0"
+    Video_ID: "8QMT9Zg49_0"
+    Show: "Candace Owens Podcast"
+    Runtime: "00:01:05"
+    Language: "en"
+
+  Media:
+    File: "8QMT9Zg49_0.m4a"
+    SHA256: "16ef357d5ad1a126a2e43409399822a8b347bc62e0b873de378288e8b944269d"
+    Bytes: 1067375
+    Duration_Seconds: 65
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=8QMT9Zg49_0"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "8QMT9Zg49_0.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/candace_owens_us_pres/8QMT9Zg49_0/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCkY4fdKOFk3Kiq7g5LLKYLw"
+    Uploader_ID: "@CandaceOwensPodcast"
+    View_Count: 15426
+    Like_Count: 758
+    Comment_Count: 372
+    Availability: "public"
+    Published_At: "2026-01-28T20:21:27+00:00"
+    Captured_At: "2026-09-08T17:48:48-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 4
+
+  # Topics — what the video is ACTUALLY about, read from the transcript,
+  # not from what this person is on the roster for.
+  Topics:
+    - Satire and comedy sketch
+    - Mock documentary narration
+    - Animal subject
+
+  Source:
+    Canonical_ID: "b32e3a18a06c18a0"
+    Transcribed: "2026-09-08T17:51:22.298502-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 106
+    Segments: 8
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T17:48:49.488403-07:00"
+    Transcription_Finished: "2026-09-08T17:51:22.298502-07:00"
+    Recorded: "2026-01-28"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "8QMT9Zg49_0.ctm"
+    Fountain: "8QMT9Zg49_0.fountain"
+    Diarization_RTTM: "8QMT9Zg49_0.rttm"
+    As_Broadcast_Script: "8QMT9Zg49_0.script.txt"
+    Segments_JSON: "8QMT9Zg49_0.segments.json"
+    Segments_JSONL: "8QMT9Zg49_0.segments.jsonl"
+    Subtitles_SRT: "8QMT9Zg49_0.srt"
+    Plain_Text: "8QMT9Zg49_0.transcription"
+    Subtitles_VTT: "8QMT9Zg49_0.vtt"
+    Transcript_SHA256: "9f0fbeb6c87b170487582ecc2995618693266775d8d82a63a287ccf34037e037"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "candace_owens_us_pres"
+    video_uid: "candace_owens_us_pres::8QMT9Zg49_0"
+    video_key: "8QMT9Zg49_0"
+    youtube_id: "8QMT9Zg49_0"
+    priority: 500
+    ceiling: 1000
+    raw_score: 500
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 171
+    seat_rank: 300
+    challenger: true
+    round: 4
+    status: "open"
+    demand_generated_at: "2026-09-09T00:57:14.561Z"
+    demand_run_id: "job_1788915433773_25"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=8QMT9Zg49_0"
+    source_ref: "8QMT9Zg49_0"

@@ -1,0 +1,141 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Rep. Justin Amash - Floor speech honoring former First Lady Betty Ford"
+    Description: >-
+      A one-minute House floor tribute to former First Lady Betty Ford
+      following her death, delivered on behalf of West Michigan. The speaker
+      recounts that she spent most of her life in Grand Rapids, graduated
+      from Central High School, worked in a downtown department store and
+      was a dance instructor, and that she taught dance to children who were
+      physically disabled, deaf and blind. He notes a mutual friend
+      introduced her to Gerald Ford in 1947, when the future president, a
+      successful lawyer and former University of Michigan football star, was
+      not yet in public life, and that no one could have foreseen the
+      circumstances that brought the Fords to the White House. He describes
+      her speaking publicly about her breast cancer in the 1970s at a time
+      when it was not often discussed, and applying the lessons of her
+      battle with alcoholism in the 1980s to found institutions helping
+      others with the condition, closing that she honoured West Michigan
+      with her public service, humour and grace.
+    URL: "https://www.youtube.com/watch?v=6CeBPhopVN8"
+    Video_ID: "6CeBPhopVN8"
+    Show: "RepJustinAmash"
+    Runtime: "00:01:21"
+    Language: "en"
+
+  Media:
+    File: "6CeBPhopVN8.m4a"
+    SHA256: "e837c9aedcf8f7c6fe911d7ee89b942a7acc08c98523683637e23e8ea9e3b1d5"
+    Bytes: 1315188
+    Duration_Seconds: 81
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=6CeBPhopVN8"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "6CeBPhopVN8.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/justin_amash_mi_03/6CeBPhopVN8/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCeg6HhoCXrS8xpON9dxtZgA"
+    Uploader_ID: "@RepJustinAmash"
+    View_Count: 215
+    Availability: "public"
+    Published_At: "2012-05-07T15:10:53+00:00"
+    Captured_At: "2026-09-08T17:48:18-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "98.9%"
+      Turns: 7
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "1.1%"
+      Turns: 1
+
+  # Topics — what the video is ACTUALLY about, read from the transcript,
+  # not from what this person is on the roster for.
+  Topics:
+    - Tribute to Betty Ford
+    - Grand Rapids and West Michigan
+    - Breast cancer awareness
+    - Addiction recovery advocacy
+
+  Source:
+    Canonical_ID: "3793efc55cf2e813"
+    Transcribed: "2026-09-08T17:51:50.991868-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 244
+    Segments: 15
+
+  Timestamps:
+    Downloaded_At: "2026-09-08T17:48:18.372751-07:00"
+    Transcription_Finished: "2026-09-08T17:51:50.991868-07:00"
+    Recorded: "2012-05-07"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "6CeBPhopVN8.ctm"
+    Fountain: "6CeBPhopVN8.fountain"
+    Diarization_RTTM: "6CeBPhopVN8.rttm"
+    As_Broadcast_Script: "6CeBPhopVN8.script.txt"
+    Segments_JSON: "6CeBPhopVN8.segments.json"
+    Segments_JSONL: "6CeBPhopVN8.segments.jsonl"
+    Subtitles_SRT: "6CeBPhopVN8.srt"
+    Plain_Text: "6CeBPhopVN8.transcription"
+    Subtitles_VTT: "6CeBPhopVN8.vtt"
+    Transcript_SHA256: "175ae13c1412ffca137ce5200f38f4e89b258a3495ccbd51f5139988f91768ce"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "justin_amash_mi_03"
+    video_uid: "justin_amash_mi_03::6CeBPhopVN8"
+    video_key: "6CeBPhopVN8"
+    youtube_id: "6CeBPhopVN8"
+    priority: 700
+    ceiling: 1000
+    raw_score: 700
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 150
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-08T23:07:36.397Z"
+    demand_run_id: "job_1788908850135_13"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=6CeBPhopVN8"
+    source_ref: "6CeBPhopVN8"
