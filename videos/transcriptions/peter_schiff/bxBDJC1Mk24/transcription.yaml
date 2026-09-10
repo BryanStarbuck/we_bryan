@@ -1,0 +1,176 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "The Treasury Just Admitted It... The Bond Market Is Broken"
+    Description: >-
+      A forty-eight-minute solo episode of Peter Schiff's podcast, recorded while he was travelling at sea
+      before returning to his Puerto Rico studio, reacting to a same-day Treasury announcement that the
+      government will buy long-dated Treasury bonds in order to hold down long-term yields. Schiff
+      characterises the move as a panic measure and a hail mary rather than a considered policy, argues it
+      amounts to using taxpayer money to buy what the market is selling, and says its cost is a shortening of
+      the average maturity of the national debt from just under six years. He reports the thirty-year yield
+      reaching about 5.32 percent, a nineteen-year high, the ten-year around 4.7, the national debt passing
+      forty trillion dollars, and gold rallying roughly 185 dollars to close above 4,500 after a sharp fall
+      the previous session, which he reads as the market confirming his interpretation. He also covers FOMC
+      minutes he describes as more hawkish than expected, and argues the Fed and the deficits are the cause of
+      inflation rather than AI, the stock market or the war, since the war was financed by borrowing rather
+      than by taxes or spending cuts. He states that about thirty percent of the national debt was added
+      during Trump's presidency and that Trump has now presided over the largest increase of any president,
+      previously Obama. All of the above are Schiff's own figures and interpretations, offered by a long-
+      standing critic of the Federal Reserve who sells precious metals; the causal claims in particular are
+      contested by mainstream economists. The episode contains a lengthy advertisement read for Noom's GLP-1
+      weight-loss programme and a promotion for Schiff's own Schiff Sovereign Plan B conference in Panama
+      City. Several passages are garbled by the transcriber, including 'debt' rendered as 'dead'.
+    URL: "https://www.youtube.com/watch?v=bxBDJC1Mk24"
+    Video_ID: "bxBDJC1Mk24"
+    Show: "Peter Schiff"
+    Runtime: "00:48:36"
+    Language: "en"
+
+  Media:
+    File: "bxBDJC1Mk24.m4a"
+    SHA256: "6417f8c832b1a602a65f98ffb3836ebda700b1dcce42b524325cfdc7e478fcbd"
+    Bytes: 47167146
+    Duration_Seconds: 2916
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=bxBDJC1Mk24"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "bxBDJC1Mk24.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/peter_schiff/bxBDJC1Mk24/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCIjuLiLHdFxYtFmWlbTGQRQ"
+    Uploader_ID: "@peterschiff"
+    View_Count: 201800
+    Like_Count: 6629
+    Comment_Count: 1100
+    Availability: "public"
+    Published_At: "2026-08-20T13:45:06+00:00"
+    Captured_At: "2026-09-09T20:07:22-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "38.7%"
+      Turns: 43
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "17.3%"
+      Turns: 28
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "36.7%"
+      Turns: 26
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_09"
+      Share_Of_Speech: "6.4%"
+      Turns: 2
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+
+  Topics:
+    - "Treasury intervention to suppress long-term bond yields"
+    - "US national debt passing forty trillion dollars"
+    - "Federal Reserve policy and FOMC minutes"
+    - "Inflation attributed to deficits and money printing"
+    - "Gold and silver price moves"
+    - "Noom advertisement and Schiff Sovereign conference promotion"
+
+  Source:
+    Canonical_ID: "b110caa7adc9a439"
+    Transcribed: "2026-09-09T20:26:19.683436-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 8412
+    Segments: 212
+
+  Timestamps:
+    Downloaded_At: "2026-09-09T20:07:24.074829-07:00"
+    Transcription_Finished: "2026-09-09T20:26:19.683436-07:00"
+    Recorded: "2026-08-20"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "bxBDJC1Mk24.ctm"
+    Fountain: "bxBDJC1Mk24.fountain"
+    Diarization_RTTM: "bxBDJC1Mk24.rttm"
+    As_Broadcast_Script: "bxBDJC1Mk24.script.txt"
+    Segments_JSON: "bxBDJC1Mk24.segments.json"
+    Segments_JSONL: "bxBDJC1Mk24.segments.jsonl"
+    Subtitles_SRT: "bxBDJC1Mk24.srt"
+    Plain_Text: "bxBDJC1Mk24.transcription"
+    Subtitles_VTT: "bxBDJC1Mk24.vtt"
+    Transcript_SHA256: "377c010eecf16220250c6192d5eaa99ac69666dde37a94061a5e0a054ee636c4"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "peter_schiff"
+    video_uid: "peter_schiff::bxBDJC1Mk24"
+    video_key: "bxBDJC1Mk24"
+    youtube_id: "bxBDJC1Mk24"
+    priority: 100
+    ceiling: 1000
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T00:37:35.586Z"
+    demand_run_id: "job_1789000565795_24"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=bxBDJC1Mk24"
+    source_ref: "bxBDJC1Mk24"
+    subject_kind: "people_only"
