@@ -23,13 +23,14 @@ the copyable lines — and say in the run report that a new message was needed.
 OUTPUT DISCIPLINE — WHAT REACHES THE CITIZEN
 ====================================================================
 
-The citizen sees FIVE things and nothing else:
+The citizen sees SIX things and nothing else:
 
   1. The Stage 1 repo table (Z1).
-  2. The Stage 2 selection table.
-  3. The Stage 6 "this will take N" warning (Z20).
-  4. Any Z-coded problem, at the moment it happens.
-  5. The Stage 10 final report.
+  2. The Stage 1B top-up table (Z40) — and ONLY when it actually added rows.
+  3. The Stage 2 selection table.
+  4. The Stage 6 "this will take N" warning (Z20).
+  5. Any Z-coded problem, at the moment it happens.
+  6. The Stage 10 final report.
 
 Everything else — per-file progress, ffmpeg output, yt-dlp chatter, every skip and
 its reason, every path resolved — goes to {RUN_LOG} and NOT to the screen. A run
@@ -76,6 +77,57 @@ WTC_REPO dir is DISCOVERED IN STAGE 1
 
 VIDEO_DEMAND_CSV is file {DATA_REPO}/video_demand.csv
 VIDEO_DEMAND_YAML is file {DATA_REPO}/video_demand.yaml
+  * THE MOVEMENT'S QUEUE, and it is a SNAPSHOT rather than a live list. It is the
+    output of the video-demand calc engine, which runs on an install that can see
+    the private video library, and it is correct only as of its own generated_at.
+    Read-only here, like everything else in {DATA_REPO}. STAGE 1B is what covers
+    the window between its generated_at and now.
+
+PEOPLE_DIR dir is {DATA_REPO}/people
+  * One committed YAML seed per public figure the movement has decided to listen to.
+    An admin adds files here continuously; the demand engine only learns about them
+    when it next runs, and can only price them when it holds a video for them.
+    This is STAGE 1B's input. Read-only.
+
+ROSTER_DIR dir is {DATA_REPO}/politicians/new
+  * The roster records a seed's links[] point at. Holds the office, the jurisdiction
+    and youtube_channel. Read-only.
+
+YOUTUBE_QUEUE_CSV is file {DATA_REPO}/youtube.csv
+  * The movement's channel-fetch queue. STAGE 1B reads it as a third source for a
+    person's channel URL. Read-only, and never written by this prompt.
+
+CONTENDERS_SLATE is file {DATA_REPO}/contenders/slate.yaml
+  * The sealed contenders edition. Supplies the live-challenger term and, for anyone
+    on it, a seat_kind in the vocabulary the rank map understands. ABSENT means the
+    challenger column is BLANK, never false.
+
+OFFICE_RANK_FILE is the NEWEST file matching
+{DATA_REPO}/scores/new_politician_qualified/npq_*.yaml
+  * Carries office_importance_rank, the movement's admin-repriceable seat ladder.
+    Read at run time rather than copied into this prompt, so an admin who reprices
+    the ladder reprices STAGE 1B in the same edit. See APPENDIX F.
+
+QUEUE_ROOT dir is {VIDEO_DOWNLOAD_ROOT}/_queue
+  * OUTSIDE every repo, beside the media roots and the run logs. `mkdir -p` it in
+    STAGE 1B before anything writes into it.
+
+QUEUE_SUPPLEMENT_CSV is file {QUEUE_ROOT}/video_demand_supplement.csv
+QUEUE_SUPPLEMENT_YAML is file {QUEUE_ROOT}/video_demand_supplement.yaml
+  * STAGE 1B's output: rows for people the engine has not priced, in the SAME
+    COLUMNS as {VIDEO_DEMAND_CSV}. Stage 2 reads the two files as one list.
+  * PROVISIONAL and it says so on every row — notes names this prompt and run_id is
+    "{THE_DATE_TIME_STRING}local_supplement". It is a statement about who the
+    movement's queue is not asking about, never a claim to have run the engine.
+  * IT IS NEVER APPENDED TO {VIDEO_DEMAND_CSV}. See STAGE 1B's opening for the three
+    separate reasons, any one of which is enough.
+  * It PERSISTS between runs and accumulates. It is never truncated and rows are
+    never deleted from it by this prompt.
+
+NEW_PEOPLE_MAX_VIDEOS is the value 10
+  * The per-person cap in STAGE 1B, and it is VIDEO_DEMAND_ROUND_SIZE — round 1 is
+    the top 10 videos per person. A supplement that dealt 200 rows for one newly
+    added human would bury the movement's whole round-1 ladder under one person.
 
 VIDEO_DOWNLOAD_ROOT dir is ~/T/_we_citizens/download/videos
   * Where media THIS PROMPT downloads lands. OUTSIDE every git repo, on purpose:
@@ -188,8 +240,8 @@ This product names the same human two ways and the difference decides where file
 
   person_key   The frozen PERSON key, office-free: tucker_carlson, casey_putsch.
                It exists only when {DATA_REPO}/people/{person_key}.yaml exists, and
-               for most roster entries IT DOES NOT EXIST — there are ~30 person
-               records against thousands of roster entries.
+               for most roster entries IT DOES NOT EXIST — there are ~100 person
+               seeds against thousands of roster entries.
                It is what {MANIFEST_FILE}'s speaker map is keyed by.
 
 Rules:
@@ -203,6 +255,13 @@ Rules:
   * If no person_key resolves, OMIT it. Absent is absent. A person_key invented by
     chopping "_us_pres" off a roster key is a fabricated identity claim, and the
     scanner treats manifest person keys as claims it will surface to an admin.
+  * THE ONE CASE WHERE THE TWO ARE THE SAME STRING, and it is not a collapse of the
+    namespaces: a row whose subject_kind is `people_only` is published under the
+    PERSON key, because there is no roster record to scope it to an office. Column 1
+    carries that person key, it is the directory segment like any other column-1
+    value, AND {DATA_REPO}/people/{that key}.yaml exists by definition — so Stage 8
+    can state a person_key for it without looking anything up. Verify the file
+    exists rather than assuming the equality; that check is one `test -f`.
   * Report in Stage 10 how many entries could not resolve a person_key.
 
 
@@ -217,7 +276,10 @@ HARD RULES — VIOLATING ANY OF THESE FAILS THE RUN
   https://app.WeTheCitizens.io from this prompt.
 
 * NEVER write to {DATA_REPO}. It is read-only reference here. Do not commit in it,
-  do not `git add` in it, do not repair it.
+  do not `git add` in it, do not repair it, do not pull it, and do not append a row
+  to {VIDEO_DEMAND_CSV}. STAGE 1B adds rows for people the engine has not seen — it
+  writes them to {QUEUE_SUPPLEMENT_CSV}, outside every repo, for the three reasons
+  that stage states.
 
 * NEVER write application code into {WTC_REPO}. `just build` and `just run` are the
   only things this prompt does there.
@@ -366,13 +428,443 @@ Say in Stage 10 whether this was added. Never REMOVE a rule already in the file.
 
 
 ====================================================================
+STAGE 1B — TOP UP THE QUEUE WITH PEOPLE THE ENGINE HAS NOT PRICED
+====================================================================
+
+THE WINDOW THIS STAGE CLOSES.
+
+{VIDEO_DEMAND_CSV} is not a live queue. It is the OUTPUT of the video-demand calc
+engine, which runs on an install that can see the private video library, and it is
+correct only as of its own generated_at. Meanwhile an admin commits a new person
+seed into {PEOPLE_DIR} whenever the movement decides to start listening to somebody
+new. Between those two facts is a window — sometimes days long — in which a human is
+on the movement's books and on nobody's work queue, and a citizen running this
+prompt walks straight past them because the CSV has no row to walk.
+
+It is not a hypothetical and it is not small. {VIDEO_DEMAND_YAML}'s own gap
+sentences say it out loud, in the engine's voice: people entered the eligible
+universe from data_we_citizens/people/, fewer of them were priced, and for the
+remainder "we hold no video and no channel record for them, so there is nothing on
+the ladder to ask a miner for. This is a SOURCING gap, not a calc gap — re-running
+this engine cannot move it." A citizen's own machine, with yt-dlp on it, can close
+exactly that sourcing gap for exactly those people.
+
+WHAT THIS STAGE PRODUCES: {QUEUE_SUPPLEMENT_CSV}, a file with the SAME COLUMNS as
+{VIDEO_DEMAND_CSV} holding only rows the engine has not published, plus
+{QUEUE_SUPPLEMENT_YAML} beside it saying how it was built and what it could not
+establish. Stage 2 reads the two files as one list.
+
+WHERE IT DOES NOT GO, AND WHY THE HARD RULE IS NOT BENT HERE. The supplement is
+written under {QUEUE_ROOT}, outside every repo. It is NOT appended to
+{VIDEO_DEMAND_CSV}. Three reasons, and any one of them is enough:
+
+  * {DATA_REPO} is read-only from this prompt. That rule exists so a citizen's run
+    can never corrupt the movement's shared record, and a stage that needed an
+    exception to it would be the wrong stage.
+  * The next engine run OVERWRITES that file wholesale. An appended row survives
+    until the next sweep and then vanishes, which is worse than never adding it:
+    the citizen would have no way to tell a row that was priced from a row that was
+    guessed and then deleted.
+  * {VIDEO_DEMAND_YAML} publishes csv_sha256 over the CSV. Appending a row breaks
+    that hash, and every reader that verifies it — including Stage 2.1 of this very
+    prompt — starts reporting the movement's own file as tampered with.
+
+The supplement is PROVISIONAL, and every consumer is told so: its rows carry
+run_id "{THE_DATE_TIME_STRING}local_supplement" and a notes cell naming this prompt.
+A row here is this machine's best answer to "who is the movement not asking about",
+never a claim to have run the engine.
+
+If nothing needs topping up, this stage writes nothing, prints nothing, and logs one
+line. Silence here is the normal case on a machine whose data repo was pulled today.
+
+
+1B.0 PRECONDITION
+
+Stage 1 has confirmed {DATA_REPO} and {RUN_LOG} is open. If {PEOPLE_DIR} does not
+exist, log it and skip this whole stage — an older data repo has no seed directory
+and that is not an error.
+
+Do a read-only freshness check on the data repo before trusting its age:
+
+        git -C {DATA_REPO} fetch --dry-run 2>&1 | head -5
+
+If it reports the remote is ahead, print Z42 and CARRY ON. A citizen whose data repo
+is a week behind will be shown people as "new" who were priced days ago, and the fix
+is one pull they can run themselves. Do not pull {DATA_REPO} yourself — this prompt
+does not write to it and a merge is a write.
+
+
+1B.1 THE QUEUE'S OWN AS-OF DATE
+
+* Read generated_at and run_id from {VIDEO_DEMAND_YAML}. That timestamp is
+  QUEUE_ASOF and everything in this stage is measured against it.
+* If the yaml is missing or has no generated_at, fall back to the newest
+  computed_at in {VIDEO_DEMAND_CSV}, and say in the log that the fallback was used.
+* Log QUEUE_ASOF and the run_id. The Stage 10 report names them.
+
+
+1B.2 THE TIMESTAMP IS THE HINT. ABSENCE FROM THE LADDER IS THE TEST.
+
+The obvious implementation — "list {PEOPLE_DIR} for files newer than the CSV" —
+gets this wrong in both directions, and both failures are silent:
+
+  * FILESYSTEM MTIME IS NOT A COMMIT DATE. `git clone` and `git checkout` stamp
+    every file with the moment of the checkout, so on a fresh clone mtime says all
+    of them are new, and on a long-lived clone it says none of them are. Never let
+    mtime NARROW the candidate set. It may only widen it.
+  * A SEED CAN BE OLD AND STILL UNPRICED. The 33 people the engine's own gap
+    sentence names were committed long before the last run and have no row on the
+    ladder anyway, because the engine holds no video for them. A pure timestamp
+    test walks past every one of them — the exact people this stage exists for.
+
+So build the candidate set as the UNION of these three, and log which test caught
+each candidate:
+
+  (a) SEED NEWER THAN THE QUEUE. For each {PEOPLE_DIR}/*.yaml take the LATEST of:
+        - the file's own updated_at (and created_at, if updated_at is absent)
+        - git -C {DATA_REPO} log -1 --format=%cI -- people/<file>
+        - the filesystem mtime
+      If that is after QUEUE_ASOF, it is a candidate.
+
+  (b) ZERO ROWS ON THE LADDER. Read the seed's person_key and EVERY links[].key it
+      names. Ask whether ANY of those keys appears in column 1 of
+      {VIDEO_DEMAND_CSV}. If none does, it is a candidate, whatever its date.
+
+      DO NOT test the person key alone. A roster-linked human's rows are published
+      under the ROSTER key, and a person-key-only test reports every roster-linked
+      seed as new and then mints a second, duplicate ladder for them under a key
+      nothing else in the product uses.
+
+      AND THIS TEST IS STILL NOT SUFFICIENT, WHICH IS WHY 1B.5 DE-DUPLICATES AGAIN.
+      A seed's links[] can be INCOMPLETE, so "none of the seed's keys has rows" is
+      not the same fact as "the movement has no rows for this human". MEASURED,
+      2026-09-10: marjorie_taylor_greene's seed links marjorie_taylor_greene_us_pres
+      and her rows are on the ladder under marjorie_taylor_greene_ga_14;
+      matt_gaetz's seed links matt_gaetz_us and his rows are under matt_gaetz_fl_01.
+      Both looked new here and neither was. Nothing in the seed can catch that — the
+      only thing that can is comparing the actual video ids, which 1B.5 does.
+
+  (c) NAMED BY THE CITIZEN. If the run text names a person ("do the new people",
+      "add jack_farley"), take them as a candidate even when (a) and (b) would both
+      have passed over them.
+
+Read column 1 of the CSV ONCE into a set. It is ~150k rows and a per-person grep
+over it re-reads 35MB a hundred times.
+
+        cut -d, -f1 {VIDEO_DEMAND_CSV} | tail -n +2 | sort -u
+
+Then SUBTRACT, and log each subtraction with its reason:
+
+  * a candidate that already has rows under any of its keys — not new, drop it
+  * a candidate already present in {QUEUE_SUPPLEMENT_CSV} from an earlier run whose
+    rows are still unworked — already topped up, drop it and do not re-list the
+    channel
+  * bryan_starbuck, or any seed whose person_key matches the citizen running this.
+    THE CITIZEN IS NOT A WORK ITEM. Log it and move on.
+
+
+1B.3 WHICH STORE IS THIS HUMAN KNOWN FROM — subject_kind, IN THE SPEC'S OWN ORDER
+
+This decides the arithmetic, so resolve it by the ORDERED list and not by "is there
+a seed?", which answers the question backwards for every roster-linked human.
+Take the FIRST that matches (calc_engine_video_demand.mdx §12.2):
+
+  1. a links[] entry of kind new_politician       -> new_politician
+  2. a links[] entry of kind worrisome_challenger -> worrisome_challenger
+  3. a links[] entry of kind legacy_politician    -> legacy_politician
+  4. a links[] entry of kind fix_bill_author      -> fix_bill_author
+  5. none of the four, and the seed exists        -> people_only
+  6. none of the above                            -> BLANK, never people_only
+
+`people_only` means A SEED WITH NO ROSTER LINK AT ALL. It is the absence of a roster
+record, not the presence of a seed. A human on politicians/new/ is a new_politician
+even when a seed also exists.
+
+THE KEY THIS ROW IS PUBLISHED UNDER follows from the same answer, and it is the
+directory segment every later stage uses:
+
+  * subject_kind people_only          -> column 1 is the PERSON key
+  * any roster kind                   -> column 1 is that link's ROSTER key
+
+Both are read verbatim from the seed. Neither is derived by adding or removing an
+office suffix. See TWO KEY NAMESPACES: a key built by chopping "_us_pres" off
+another key is a fabricated identity claim.
+
+
+1B.4 FIND THE CHANNEL — ATTRIBUTED, OR NOT AT ALL
+
+A video attributed to the wrong human publishes one person's recorded words under
+another's name. That is the single worst thing this prompt can do, so the channel
+must come from a record the movement already committed. Look in this order and take
+the first hit:
+
+  1. the seed's own source_urls[] — any youtube.com entry
+  2. {ROSTER_DIR}/{roster_key}/{roster_key}.yaml -> youtube_channel
+  3. {YOUTUBE_QUEUE_CSV} — the row whose person_key (col 18) or politician_key
+     (col 3) is one of this human's keys, and its target (col 4)
+
+NEVER search YouTube for the person's name and take the first channel back. Never
+accept a channel because the handle resembles the name. If none of the three hits,
+the candidate is UNSOURCED: it gets no rows, it is counted, and it is named in Z40
+with the one thing a human can do about it — add a youtube.com URL to the seed's
+source_urls, or file a youtube.csv row. That is a stated gap with a remedy, which is
+worth more than a guessed channel that renders perfectly.
+
+Log, per candidate, WHICH of the three sources supplied the channel. When two of
+them disagree, take the seed's and log both — the seed is the record an admin
+committed about the human; youtube.csv is a work queue.
+
+
+1B.5 LIST THE UPLOADS — REAL PLATFORM IDS, NEVER MINTED KEYS
+
+        yt-dlp --flat-playlist --playlist-end {NEW_PEOPLE_MAX_VIDEOS} \
+               --print "%(id)s\t%(duration)s\t%(title)s" \
+               "{channel_url}/videos"
+
+  * This is a metadata listing of a public channel page. It downloads no media. It
+    is the same tool Stage 4 already uses and the same Terms of Service rule
+    applies: if a channel cannot be listed lawfully, skip it and log the reason.
+  * THE `/videos` SUFFIX IS A GUESS ABOUT A URL SHAPE AND IT FAILS OFTEN. MEASURED,
+    2026-09-10: seven of twelve channels answered "This channel does not have a
+    videos tab" or "Unable to download API page", including handle URLs that open
+    perfectly in a browser. On failure, retry ONCE against the BARE channel URL with
+    no suffix, and once against `{channel_url}/streams` if the person is known for
+    live shows. Those are three cheap attempts at the same public page, not three
+    attempts to get around a refusal — a 403, a login wall, an age gate or a
+    members-only listing is a NO and is not retried at all.
+  * THE video_key IS THE 11-CHARACTER YOUTUBE ID, byte for byte as yt-dlp printed
+    it. That is what the engine publishes on every YouTube row today — video_key,
+    youtube_id and source_ref are the same string — so this stage is READING a
+    frozen platform key, not inventing one. Nothing here derives a key from a title,
+    a slug, a date or a counter. If yt-dlp returns something that is not
+    [A-Za-z0-9_-]{11}, drop that entry and log it.
+  * {NEW_PEOPLE_MAX_VIDEOS} is 10 because that is VIDEO_DEMAND_ROUND_SIZE — round 1
+    is the top 10 videos per person, and a supplement that dealt 200 rows for one
+    newly-added human would bury the movement's whole round-1 ladder under one
+    person. Every supplement row is round 1 and there is no round 2 here.
+  * `--playlist-end` yields the channel's MOST RECENT uploads, which is a different
+    selection from the engine's "highest priority within this person". With no
+    duration and no transcript counts, every one of this person's rows prices
+    identically anyway (§3.2 gives one raw score per person when nothing is held),
+    so recency is the only ordering available. Say that in {QUEUE_SUPPLEMENT_YAML};
+    do not present it as the engine's ordering.
+  * If yt-dlp lists ZERO videos — channel deleted, renamed, or nothing public — the
+    candidate is counted as listed-empty. No rows, no error, one log line.
+  * A candidate whose listing fails twice is dropped for this run. Do not retry a
+    third time and do not try a different channel.
+
+DE-DUPLICATE BEFORE PRICING. Drop any id that already appears anywhere in column 3
+of {VIDEO_DEMAND_CSV}, or that this repo already holds words for:
+
+        find {TRANSCRIPTIONS_ROOT} -name "{video_key}.transcription"
+
+A channel re-listed on a later run must produce no duplicate row.
+
+THE BARE-KEY TEST IS THE RIGHT ONE HERE, AND ONLY HERE. Everywhere else in this
+prompt a bare video_key comparison is a bug, because a video_key is unique within
+one person only. On a YouTube row it is also the YouTube id, and a YouTube id names
+ONE video on the whole platform — so an id already in column 3 is the same video,
+whoever the ladder filed it under. That is exactly the case worth catching.
+
+AND WHEN IT CATCHES EVERY ID FOR A CANDIDATE, THAT CANDIDATE WAS NEVER NEW. It means
+the movement already has this human's videos on the ladder under a roster key the
+seed's links[] does not name — 1B.2's test (b) asked whether any of the seed's OWN
+keys had rows, and the answer was no for a key nobody publishes under. MEASURED on
+2026-09-10: matt_gaetz's seed links matt_gaetz_us, and all ten of his recent uploads
+were already on the ladder under matt_gaetz_fl_01. Record that candidate as
+`already_on_ladder_under=<the key that holds them>`, add no rows, and name it in the
+patch CSV of 1B.8 — the remedy is a links[] entry on the seed, which is an admin's
+one-line edit, and it is a more valuable thing to report than a row.
+
+
+1B.6 PRICE EACH ROW — APPENDIX F, NOT A NUMBER INVENTED HERE
+
+The arithmetic is normative and it is written out in APPENDIX F. Run it; do not
+approximate it, and do not copy a neighbouring row's priority because the person
+"seems similar". Two inputs need sourcing before the sum:
+
+  * office_importance_rank — read from the NEWEST
+    {DATA_REPO}/scores/new_politician_qualified/npq_*.yaml. It is the movement's
+    admin-repriceable policy and this run reads it rather than carrying a copy, so a
+    reprice reaches this stage the same day it reaches the engine. If it cannot be
+    read, the seat term is a stated cause and NOT a zero — see APPENDIX F.
+  * the sealed contenders slate — {DATA_REPO}/contenders/slate.yaml. A key present
+    in assignments[] is challenger true; a key absent from a slate THAT EXISTS is
+    false; NO slate on disk means the column is BLANK. Blank is not false.
+
+THE TWO TRANSCRIPT COUNTS ARE LOCAL AND SAY SO. This machine cannot see the
+movement's corpus, so transcripts_held and person_transcripts_held are counted over
+{TRANSCRIPTIONS_ROOT} on THIS computer only. For a genuinely new person both are 0
+and the answer is the same one the engine would give. Where they are not, the
+supplement's priority is HIGHER than the movement's would be, and
+{QUEUE_SUPPLEMENT_YAML} states that as a gap in exactly those words. Do not fold in
+a guess about what other citizens hold.
+
+The expected shape of the answer, so an implausible number is caught rather than
+published:
+
+  * a never-heard people_only human       ->  priority 100
+  * a never-heard state assembly seat     ->  priority 490
+  * a never-heard senator                 ->  priority 595
+  * a never-heard president               ->  priority 700
+  * any of the above, +150, when the key is on the sealed slate
+  * any of the above, +100, when yt-dlp printed a duration over 2400 seconds
+
+THAT LAST ONE IS THE LONG-FORM TERM WAKING UP, AND IT IS NOT A DEVIATION. Every row
+the engine publishes today has a blank duration, so on the engine's ladder the term
+is structurally dead. A channel listing gives this stage a real duration for free,
+so a supplement row for a 45-minute video legitimately prices 100 points above the
+band — a people_only human at 200 rather than 100. Say so in
+{QUEUE_SUPPLEMENT_YAML}: it is the one place a supplement row is knowingly priced
+higher than the engine would price the same video today, and a reader comparing the
+two files deserves the reason rather than a discrepancy.
+
+A supplement row above 950, or below 0, is a bug in the sum. Log it, drop the row,
+and say so in Stage 10 rather than publishing a number nobody can reproduce.
+
+
+1B.7 WRITE {QUEUE_SUPPLEMENT_CSV}
+
+* The header is the header of {VIDEO_DEMAND_CSV}, READ FROM THAT FILE at run time
+  and copied byte for byte. Never a header typed out here: the columns are
+  append-only and a newer engine may have added a 26th, which this stage must carry
+  as an empty cell rather than refuse.
+* Every cell is filled by column NAME, never by position.
+* Fixed values on every supplement row:
+      round                     1
+      status                    open
+      closed_reason             (empty)
+      notes                     added by p_download_videos STAGE 1B — not engine-priced
+      computed_at               this run's ISO 8601 timestamp
+      run_id                    {THE_DATE_TIME_STRING}local_supplement
+      trusted_transcripts_held  0
+      source_type               youtube
+      source_url                https://www.youtube.com/watch?v={video_key}
+      ipfs_cid                  (empty)
+      source_ref                {video_key}
+      video_uid                 {column-1 key}::{video_key}
+      youtube_id                {video_key}
+* BLANK IS AN ABSENCE AND NEVER A ZERO. seat_rank is blank whenever the seat term
+  carried a cause — including for every people_only row, whose cause is "no
+  candidacy on file — known from people/ only". A seat_rank of 0 published against a
+  named living person reads as "the least important office there is", which is a
+  measurement this run never made. duration_seconds is blank unless yt-dlp printed a
+  real number.
+* Rows are written in the same published order the engine uses: round ascending,
+  then priority descending, then column-1 key ascending, then video_uid ascending.
+* If the file already exists, MERGE by video_uid: rows already there are kept as
+  they are, new ones are added, and nothing is rewritten. This stage never deletes a
+  supplement row — Stage 2 skips what has been transcribed, and a row that has been
+  worked costs one skip, while a row deleted in error costs a video nobody fetches.
+
+Write {QUEUE_SUPPLEMENT_YAML} beside it, in the shape of {VIDEO_DEMAND_YAML} so the
+same readers work:
+
+    video_demand_supplement:
+      schema_version: 1
+      run_id: "{THE_DATE_TIME_STRING}local_supplement"
+      generated_at: <ISO 8601>
+      generated_by: "p_download_videos STAGE 1B"
+      queue_asof: <QUEUE_ASOF>
+      queue_run_id: "<the engine run_id this supplements>"
+      people_examined: <n>
+      people_added: <n>
+      people_unsourced: <n>
+      people_listed_empty: <n>
+      rows_added: <n>
+      csv_sha256: <sha256 of the supplement csv>
+      gaps:
+        - "PROVISIONAL, NOT ENGINE-PRICED. These rows were priced on one citizen's
+          machine by a prompt, against calc_engine_video_demand.mdx §3. They are a
+          statement about who the movement's queue is not asking about, never a
+          claim to have run the engine, and the next engine sweep supersedes them."
+        - "transcripts_held and person_transcripts_held are LOCAL counts over this
+          citizen's own repo. This machine cannot see the movement's corpus, so a
+          priority here is an UPPER bound on the movement's."
+        - "<one sentence per unsourced person: no committed YouTube channel, remedy
+          is a source_urls entry on the seed or a youtube.csv row>"
+        - "<the recency note from 1B.5>"
+
+Then verify what was written before anything trusts it: re-read the supplement,
+confirm every row parses under the real header, that no video_uid is duplicated
+within it or shared with {VIDEO_DEMAND_CSV}, and that every priority is an integer
+in [0, 1000]. A row that fails is dropped and named in the log.
+
+
+1B.8 THE PATCH THE ENGINE'S OWNER CAN ACTUALLY USE
+
+This stage answers one run on one machine. The durable fix is the movement's engine
+learning these people exist. So also write, to
+{QUEUE_ROOT}/{THE_DATE_TIME_STRING}new_people_patch.csv, one row per PERSON — not
+per video — with these columns:
+
+    person_key,column_1_key,subject_kind,channel_url,channel_source,videos_listed,rows_added,status
+
+`status` is one of added, unsourced, listed_empty, dropped, and carries the reason.
+Name the file in Stage 10. It is the artifact a citizen can send to whoever runs the
+demand engine, and it is the thing that makes this stage stop being necessary.
+
+
+1B.9 SAY WHAT ADDING THEM DOES AND DOES NOT DO
+
+A supplement row is on the queue. It is not near the top of it, and a citizen who
+watches this stage add thirty rows and then watches Stage 2 select none of them is
+owed the reason BEFORE the selection table, not after.
+
+The bands are the reason and they are the ratified design, not a defect: a
+never-heard senator prices 595 and a never-heard people_only human prices 100. With
+150,000 priced rows on the ladder, everything STAGE 1B adds sorts below all of them
+and a default depth-first run of 20 never reaches it. The owner ratified exactly
+this — "a human with no candidacy on file waits behind one who has" — and the
+mechanism that keeps a low row reachable at all is the ROUND, which this stage
+cannot raise anybody in.
+
+MEASURED, 2026-09-10: 30 supplement rows were added at 400 / 200 / 100 and the run's
+20 slots all went to senators at 595.
+
+So STAGE 1B's output is a STANDING addition to the queue rather than this run's
+work, and two things make it reachable now rather than eventually:
+
+  * THE CITIZEN NAMES THEM. If the run text names a person or says "do the new
+    people", Stage 2.3 restricts the traversal to those keys and the bands stop
+    mattering. That is the intended way to work a newly-added human, and Z40 says
+    so in its last line.
+  * THE ENGINE PRICES THEM PROPERLY. The patch CSV of 1B.8 is what makes that
+    happen, and it is the durable fix.
+
+Say this in Stage 10 whenever rows were added and none were selected. A citizen who
+concludes the stage did nothing will turn it off.
+
+1B.10 REPORT
+
+* Rows added: print Z40, once, before Stage 2's selection table.
+* Nothing added: print nothing at all. One line to {RUN_LOG}.
+* Never print a per-candidate line to the terminal. The table is the output; the
+  reasoning goes to {RUN_LOG}.
+
+
+====================================================================
 STAGE 2 — CHOOSE WHICH VIDEOS TO DOWNLOAD
 ====================================================================
 
-2.1 READ THE DEMAND LIST
+2.1 READ THE DEMAND LIST — BOTH HALVES OF IT
 
 * Read {VIDEO_DEMAND_CSV}. Columns are in APPENDIX B. It is generated by the
   video-demand calc engine and is ALREADY SORTED by priority, highest first.
+* Read {QUEUE_SUPPLEMENT_CSV} if STAGE 1B wrote or found one, and treat its rows as
+  part of the same list. It has the same columns and it is read the same way, by
+  column NAME. There is no separate traversal for it and no separate quota.
+  * A supplement row is MARKED, everywhere the citizen can see it: in the Stage 2.4
+    table (Z41), and in the Stage 10 report. A citizen must be able to tell which
+    videos the movement asked for and which this machine added on its own.
+  * If a video_uid appears in BOTH files, THE ENGINE'S ROW WINS and the supplement
+    row is dropped for this run. The engine can see the movement's corpus and this
+    prompt cannot, so its priority, its transcript counts and its status are the
+    better answer wherever both exist.
+  * Everything downstream is unchanged. Stage 3.2 and Stage 7.1 read a supplement
+    row's demand facts by passing --demand-csv {QUEUE_SUPPLEMENT_CSV} to
+    {SIDECAR_TOOL}; the sidecar records the row it actually used, so a later reader
+    can tell a provisional row from a priced one.
 * Read {VIDEO_DEMAND_YAML} for the run record that produced it — run_id,
   generated_at, rows_open, and its stated gaps. Log the run_id in {RUN_LOG} so a
   later reader can tell which demand snapshot this run worked from.
@@ -384,7 +876,7 @@ STAGE 2 — CHOOSE WHICH VIDEOS TO DOWNLOAD
 
 2.2 PICK THE TRAVERSAL — ODD/EVEN STRIDE ON LONG LISTS
 
-* Count the eligible rows.
+* Count the eligible rows across BOTH files together.
 * If the count is 1000 OR FEWER: walk the list straight down from the top, in order.
 * If the count is MORE THAN 1000: read the CURRENT WALL-CLOCK MINUTE on this machine.
   * Minute is ODD  -> take rows at odd positions  (1st, 3rd, 5th, ...)
@@ -457,6 +949,12 @@ other way — `--breadth 2`, "breadth-first, so every person gets words early" �
 the view that one video each for twenty people is worth more than five each for
 four. Both are defensible and this prompt does not get to decide it silently.
 
+  * THE CITIZEN NAMED PEOPLE. If the run text names one or more people — a
+    person_key, a roster key, or "the new people" / "the ones Stage 1B added" —
+    restrict the traversal to rows whose column-1 key matches, in priority order
+    within that restriction, and ignore the stride. This overrides both defaults
+    below and it is the only way a low-priced row gets worked on purpose. Say in
+    the selection table that the traversal was restricted, and to what.
   * DEFAULT: depth. Walk the traversal as ordered.
   * If the citizen says "spread it out", "breadth", "one each", or names a number of
     people, cap the selection at N rows per roster_key and move on to the next
@@ -522,6 +1020,13 @@ transcript and deleting a tracked file. Do not recreate that choice.
 3.2 SNAPSHOT THE DEMAND ROW BESIDE THE MEDIA
 
         python3 {SIDECAR_TOOL} seed {roster_key}/{video_key}
+
+For a row that came from {QUEUE_SUPPLEMENT_CSV}, point the tool at the file the row
+is actually in — otherwise it reports "no row" for a video this run legitimately
+selected:
+
+        python3 {SIDECAR_TOOL} seed {roster_key}/{video_key} \
+                --demand-csv {QUEUE_SUPPLEMENT_CSV}
 
 That writes {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/{video_key}.demand.yaml
 — outside every repo, beside the media it belongs to.
@@ -957,6 +1462,12 @@ The tool creates the directory itself, reads the demand row by video_uid, falls
 back to Stage 3.2's seed when the CSV has moved on, and carries forward every
 hand-written field already in the file.
 
+A row selected from {QUEUE_SUPPLEMENT_CSV} needs --demand-csv {QUEUE_SUPPLEMENT_CSV}
+here too, for the same reason as Stage 3.2. The sidecar's Demand block then carries
+run_id "{THE_DATE_TIME_STRING}local_supplement" and the notes cell naming this
+prompt, which is how a later reader tells a provisional row from an engine-priced
+one without having to reconstruct anything.
+
 It gathers every mechanical field itself — SHA-256, bytes, duration, codecs,
 word count, speaker shares from the .rttm, the Capture block, the demand row —
 and it MERGES: any Description, Topics or named speaker already in the file is
@@ -1366,6 +1877,15 @@ Then Z31, unless the citizen asked for a push and it succeeded.
 Then say, in plain sentences and only where there is something to say:
 
   * whether {CONFIG_FILE} was changed, and whether .gitignore was created
+  * WHAT STAGE 1B ADDED, and what it could not: how many people it examined, how
+    many it added rows for, how many had no channel on record and therefore got no
+    rows, how many listed empty, and the path to the patch CSV a human can hand to
+    whoever runs the demand engine. Say the queue's as-of date and run_id beside it,
+    so a reader knows how stale the movement's list was on this machine.
+  * how many of this run's transcripts came from SUPPLEMENT rows rather than from
+    the engine's ladder, by roster_key/video_key. These are the ones nobody asked
+    for yet, and a reader of the repo deserves to know which they are.
+  * Z42 if the data repo was behind, since that changes what "new person" meant
   * whether {WTC_REPO} is behind and needs a pull
   * ANY DELETION THIS RUN REFUSED (Z22), by path and reason. Never leave this
     silent: a refusal means something under {ROOT_DIR} is in a state this prompt
@@ -1440,37 +1960,85 @@ APPENDIX B — {VIDEO_DEMAND_CSV} COLUMNS
 Generated by the video-demand calc engine. Do not hand-edit — the next run
 overwrites it. Already sorted, highest priority first.
 
-    person_key                MISLABELLED. It is the ROSTER key — office-scoped,
-                              e.g. kari_lake_us_pres. Read it as roster_key. It is
-                              the directory segment under {TRANSCRIPTIONS_ROOT} and
-                              every media root. See TWO KEY NAMESPACES.
-    video_uid                 "{roster_key}::{video_key}" — unique across the corpus
+THE COLUMNS ARE APPEND-ONLY AND ARE LOOKED UP BY HEADER NAME, NEVER BY POSITION.
+That rule is what makes appending safe, and it binds this prompt in both directions:
+a newer engine may have added a 26th column that this appendix does not list, and a
+reader that indexes by position reads it as the wrong field. STAGE 1B copies the
+header out of the live file for exactly this reason.
+
+    person_key                MISLABELLED. For a roster human it is the ROSTER key —
+                              office-scoped, e.g. kari_lake_us_pres. For a
+                              people_only human it is the PERSON key. Either way it
+                              is the directory segment under {TRANSCRIPTIONS_ROOT}
+                              and every media root. See TWO KEY NAMESPACES.
+    video_uid                 "{column-1 key}::{video_key}" — THE KEY. Unique across
+                              the corpus, and the only thing anything joins on.
+                              NEVER join on the bare video_key: it is unique within
+                              ONE PERSON ONLY, two different videos are both named
+                              v0001 on disk today, and a video_key join matches
+                              silently across two people and publishes one person's
+                              recorded words under another's name.
     video_key                 THE FROZEN PRIMARY KEY of this video for this person.
                               Directory name. [A-Za-z0-9_-], 1..64. Never invented.
+                              On a YouTube row it IS the 11-char YouTube id.
     youtube_id                the 11-char YouTube id. URL is
                               https://www.youtube.com/watch?v={youtube_id}
-    duration_seconds          may be blank
-    priority                  the computed demand score. Higher is wanted more.
+    duration_seconds          BLANK MEANS UNKNOWN, never 0
+    priority                  the computed demand score, integer 0..1000. Higher is
+                              wanted more. APPENDIX F is the arithmetic.
     ceiling                   the maximum this row's priority could reach
-    raw                       the pre-clamp score
-    bound_by                  which term bound the score
-    transcripts_held          how many copies of this transcript the movement holds
-    trusted_transcripts_held  copies from a trusted supplier
-    person_transcripts_held   copies for this person, all videos
-    seat_rank                 office importance. BLANK IS AN ABSENCE, NOT A ZERO.
-    challenger                true/false
-    round                     which demand round issued this row
-    status                    open | partial | satisfied — only open/partial are worked
+    raw                       the pre-clamp score. MAY BE NEGATIVE.
+    bound_by                  ceiling | raw — which of the two produced priority
+    transcripts_held          copies of THIS VIDEO's transcript the movement holds
+    trusted_transcripts_held  of those, how many came from a trusted supplier
+    person_transcripts_held   transcripts for THIS PERSON across every video — the
+                              damper's input, and a different fact from the above
+    seat_rank                 office_importance_rank for the seat this person holds
+                              or seeks. BLANK IS AN ABSENCE, NOT A ZERO.
+    challenger                true | false | blank. BLANK means there was no sealed
+                              contenders edition to ask. Blank is not false.
+    round                     which breadth-first round admitted this row. Round 1
+                              for everybody comes before round 2 for anybody.
+    status                    open | partial | satisfied | unobtainable | withdrawn
+                              — only open/partial are worked
     closed_reason             why it is closed, when it is
-    notes
+    notes                     free text, human
     computed_at               ISO 8601
     run_id                    the demand engine run that produced this row. CARRY IT
                               INTO transcription.yaml — it is the join back.
+    source_type               where this video lives — youtube, rumble, ipfs, x,
+                              bluesky, nostr, mastodon, peertube, web and others.
+                              BLANK means the record carries no address at all;
+                              `web` means an address we can read and cannot place.
+    source_url                an address a reader can open. NEVER an IPFS gateway —
+                              ipfs://<cid> is the address and a gateway is one
+                              mirror's opinion of where to find it.
+    ipfs_cid                  the canonical CID, and only for an IPFS address. Blank
+                              on almost every row, by design.
+    source_ref                the platform-native unique id, normalized. On YouTube
+                              it is the same string as video_key.
+    subject_kind              WHICH STORE THIS HUMAN IS KNOWN FROM — new_politician |
+                              legacy_politician | worrisome_challenger |
+                              fix_bill_author | people_only. A fact about the
+                              movement's FILING, never a judgement of the person and
+                              never an input to any award. Blank on a row written
+                              before 2026-09-09, and blank is what an unrecognised
+                              value reads back as. BLANK IS NEVER people_only —
+                              they are opposite facts.
 
 {VIDEO_DEMAND_YAML} is the run record for the same generation: schema_version,
 run_id, generated_at, engine_version, universe counts, rows_open / rows_partial /
 rows_satisfied, a `gaps:` list stating what the engine could NOT determine, and
 csv_sha256 for verifying the CSV.
+
+READ THE GAPS LIST. It is not decoration — it is the engine saying, in its own
+voice, which people it could not price and why. The sentence that begins "N
+person(s) entered the eligible universe from data_we_citizens/people/" is the exact
+population STAGE 1B exists to serve, and its remedy is stated there as a SOURCING
+gap that re-running the engine cannot move.
+
+{QUEUE_SUPPLEMENT_CSV} carries THE SAME COLUMNS, written by STAGE 1B, for people the
+engine has not priced. Its rows are provisional and every one of them says so.
 
 
 ====================================================================
@@ -1719,6 +2287,123 @@ Not used here, and why:
 
 
 ====================================================================
+APPENDIX F — THE DEMAND ARITHMETIC, FOR STAGE 1B ONLY
+====================================================================
+
+NORMATIVE SOURCE, and this appendix is a transcription of it rather than a second
+opinion: we_the_citizens/pm/calc_engine_video_demand.mdx §3, implemented in
+code/packages/shared/src/video_demand.ts as videoDemandTerms() /
+computeVideoDemand(). If the two ever disagree, THE SPEC WINS and this appendix is
+wrong. Re-read it before trusting these numbers on a machine that has {WTC_REPO}.
+
+Every term is an INTEGER. There is no floating-point arithmetic anywhere in this
+engine and therefore nothing to round.
+
+THE CEILING — per VIDEO
+
+    steps   = transcripts_held + trusted_transcripts_held
+    ceiling = max(0, 1000 - 200 * steps)
+
+For a video nobody holds words for, steps is 0 and the ceiling is 1000. It exists to
+pull a video DOWN once we have heard it, so on a new person's rows it is inert.
+
+THE RAW SUM — before the ceiling
+
+    base                                          +200   every eligible video
+    seat rank        office_importance_rank * 3          president +300 ... state assembly +90
+    live challenger                               +150   from the sealed slate only
+    no transcripts for this PERSON at all         +200   the breadth-first push
+    long-form (duration_seconds > 2400)           +100   STRUCTURALLY DEAD — see below
+    person corpus damper   -min(150, 10 * person_transcripts_held)
+    no candidacy on file                          -300   subject_kind == people_only, and nothing else
+
+THE PUBLISHED NUMBER
+
+    priority = max(0, min(ceiling, raw))
+    bound_by = priority == ceiling && ceiling < raw ? "ceiling" : "raw"
+
+The floor is not a third binder. bound_by has two values and raw prints the true sum
+even when it is negative — that is how the floor stays legible to a reader adding
+the terms up by hand.
+
+FOUR RULES THAT ARE EASIER TO GET WRONG THAN THE SUM ITSELF
+
+  * THE -300 KEYS ON subject_kind, NEVER ON AN UNRESOLVED SEAT. A roster human whose
+    office this run could not price gets the term "seat rank / points 0 / cause seat
+    unknown" and NO PENALTY. Nine thousand rows on the live ladder carry a blank
+    seat_rank because the movement failed to resolve THEIR OFFICE; that is a gap in
+    our records, and pricing our own sourcing failure as their unimportance would
+    demote thousands of named living people, silently, and every row would render
+    perfectly.
+
+  * BLANK IS AN ABSENCE IN BOTH DIRECTIONS. seat_rank is written blank whenever the
+    seat term carried a cause, and never as 0. challenger is blank when no sealed
+    slate exists to ask — blank is not false. duration_seconds is blank when unknown
+    — blank is not 0.
+
+  * THE TWO TRANSCRIPT COUNTS ARE TWO DIFFERENT FACTS. transcripts_held is per
+    VIDEO and feeds the ceiling; person_transcripts_held is per PERSON and feeds the
+    damper. Collapsing them gives everybody with a large corpus a ceiling of 0 and
+    buries every one of their videos at priority 0 — which renders perfectly,
+    because 0 is a legal priority.
+
+  * THE LONG-FORM TERM IS DEAD AND SAYS SO. duration_seconds is blank on essentially
+    every row because the videos.list queue kind is declared and not implemented, so
+    the >2400 test can never be true. The term is emitted with points 0 and the
+    cause "duration unknown — videos.list not implemented" rather than omitted: a
+    sum that adds up perfectly while quietly asserting "we considered length and it
+    did not matter" is a small lie a reader cannot catch. If yt-dlp DID print a real
+    duration in 1B.5, the term fires normally — that is the term waking up, not a
+    deviation.
+
+THE OFFICE LADDER — office_importance_rank, read at run time from the newest
+{DATA_REPO}/scores/new_politician_qualified/npq_*.yaml. Today it reads:
+
+    president 100, governor 80, speaker_house 74, speaker_senate 72,
+    senator 65, us_house 50, mayor 40, state_assembly 30
+
+RESOLVING A SEAT IS TOTAL AND HAS NO ?? 0 FALLBACK. Two spellings are accepted
+because they name the same office: the seat-kind vocabulary (president, governor,
+us_senate, us_house, state_assembly) translated through
+
+    us_senate -> senator
+
+and then the rank map's own vocabulary (senator, mayor, speaker_house,
+speaker_senate). Anything else produces a NAMED term — points 0, cause
+"unknown office <x> — not in office_importance_rank" — and a BLANK seat_rank.
+us_senate and senator being two spellings of one office is the trap: a ?? 0 fallback
+there publishes "a United States Senate seat does not matter", silently, and nothing
+fails.
+
+For a Stage 1B candidate the office comes from, in order:
+  1. {DATA_REPO}/contenders/slate.yaml — the assignment's seat_kind, if the key is
+     on the sealed slate. This is the most reliable, because it is already in the
+     seat-kind vocabulary.
+  2. {ROSTER_DIR}/{roster_key}/{roster_key}.yaml — its office and level fields.
+     These are FREE TEXT written for humans ("Candidate for Governor", level:
+     state). Map them only where the reading is unambiguous; where it is not, do not
+     guess — an unresolved seat costs no penalty (rule 1 above), while a wrong one
+     reprices a human against the whole ladder.
+  3. Nothing else. A people_only candidate has no seat by definition and takes the
+     -300 term with the cause "no candidacy on file — known from people/ only".
+
+THE FOUR BANDS, TO THE DIGIT — never-heard rows, ceiling inert:
+
+    president        200 + 300 + 200  =  700
+    governor         200 + 240 + 200  =  640
+    senator          200 + 195 + 200  =  595
+    US House         200 + 150 + 200  =  550
+    state assembly   200 +  90 + 200  =  490
+    people_only      200 + 200 - 300  =  100
+
+Add +150 to any of them for a live challenger on the sealed slate. A people_only
+human this repo already holds words for prices below zero and publishes 0 — which is
+LOW, not excluded: round 1 for everybody comes before round 2 for anybody, so their
+first videos still sort above every round-2 row on the ladder including the
+president's. A supplement row must never be dropped for having priority 0.
+
+
+====================================================================
 APPENDIX Z — EVERY MESSAGE THIS PROMPT PRINTS
 ====================================================================
 
@@ -1847,6 +2532,7 @@ Z11 — the selection table. Always printed.
       ------------------------------------------------------------
       [     ] kari_lake_us_pres      -6tC15BHdh4   pri 850   to download
       [ DL  ] darryl_cooper_us       3EG0ZJh6lWs   pri 810   already on disk (legacy root)
+      [     ] jack_farley            dQw4w9WgXcQ   pri 100 (supplement)   to download
       ------------------------------------------------------------
       Skipped {k} rows already held. {j} to download, {m} already on disk.
       ============================================================
@@ -1993,7 +2679,8 @@ Z30 — the final report. Always printed.
       ============================================================
       Run complete — {THE_DATE_TIME_STRING}
       ------------------------------------------------------------
-      Selected     20
+      Queue        +30 rows for 3 new people (Stage 1B)
+      Selected     20      (4 from the supplement)
       Downloaded   18      (2 already on disk)
       Transcribed  17
       Failed        3      artefacts under {VIDEO_DOWNLOAD_ROOT}
@@ -2002,6 +2689,60 @@ Z30 — the final report. Always printed.
       Failures:
         kari_lake_us_pres / -EZZ6G-xuyk   yt-dlp: video unavailable
       ============================================================
+
+
+Z40 — the Stage 1B top-up table. Printed only when rows were added.
+
+      ============================================================
+      Queue topped up — {r} rows for {n} people the engine has
+      not priced yet   (queue as of {QUEUE_ASOF}, run {run_id})
+      ------------------------------------------------------------
+      jack_farley           people_only    10 videos   pri 100
+      mike_maloney          people_only    10 videos   pri 100
+      matt_gaetz_us         new_politician 10 videos   pri 550
+      ------------------------------------------------------------
+      No channel on record, so no rows: alex_krainer, art_berman
+        -> add a youtube.com URL to that seed's source_urls, or
+           file a youtube.csv row for them.
+      Written OUTSIDE the data repo, provisional, superseded by the
+      next engine run:
+      ------------------------------------------------------------
+      {QUEUE_SUPPLEMENT_CSV}
+      {QUEUE_ROOT}/{THE_DATE_TIME_STRING}new_people_patch.csv
+      ------------------------------------------------------------
+      These price below every senator on the ladder, so a default
+      run will not reach them. To work them now, name them:
+      ============================================================
+      ... p_download_videos.md   do the new people
+
+  The unsourced block is omitted when there are none. Never print a line per
+  candidate examined — those go to {RUN_LOG}.
+
+
+Z41 — a supplement row was selected, so Stage 2's table has to say so.
+
+      Printed as part of Z11 rather than on its own: a selected supplement row
+      carries the marker (supplement) after its priority, e.g.
+
+      [     ] jack_farley           dQw4w9WgXcQ   pri 100 (supplement)   to download
+
+  A citizen must be able to see, before the download starts, which of these videos
+  the movement asked for and which this machine added on its own.
+
+
+Z42 — the data repo is behind, so "new" may mean "already priced elsewhere".
+
+      ============================================================
+      Your copy of the shared data repo is behind its remote, so
+      video_demand.csv may be older than the movement's. People
+      this run treats as new may already be on the current queue.
+      Pull it and re-run to be sure — this prompt does not write
+      to that repo, so it will not pull it for you:
+      ============================================================
+      git -C {DATA_REPO} pull
+
+  WARNING ONLY. The run continues: a duplicate supplement row costs one skip, and
+  Stage 1B.5 de-duplicates against the CSV it does have.
 
 
 OTHER SITUATIONS, AND WHAT TO DO — no banner, just log it and carry on
