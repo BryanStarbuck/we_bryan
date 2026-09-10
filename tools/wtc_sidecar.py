@@ -534,6 +534,18 @@ def _norm_col(col: str) -> str:
     return re.sub(r"[^A-Za-z0-9_]+", "_", col.strip()).strip("_") or "unnamed_column"
 
 
+def fold_description(text) -> list:
+    """Wrap a hand-written Description into lines for a ">-" folded scalar.
+
+    Never break at a hyphen: a folded scalar re-joins lines with a SPACE, so a
+    break after "pre-" reads back as "pre- existing", and merge_preserving then
+    carries the damage forward on every later write.
+    """
+    body = " ".join(str(text).split())
+    return textwrap.wrap(body, width=104, break_on_hyphens=False,
+                         break_long_words=False) or [""]
+
+
 # ---------------------------------------------------------------------------
 # Rendering
 # ---------------------------------------------------------------------------
@@ -603,8 +615,7 @@ def render(facts, kept) -> str:
         # run until the description is a single 900-character line. Re-wrap it.
         # This is the one block a human is actually meant to read.
         A("    Description: >-")
-        body = " ".join(str(kept["Description"]).split())
-        for line in textwrap.wrap(body, width=104) or [""]:
+        for line in fold_description(kept["Description"]):
             A("      " + line)
     A(f"    URL: {yq(url)}")
     A(f"    Video_ID: {yq(vk)}")

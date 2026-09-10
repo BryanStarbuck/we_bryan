@@ -1847,8 +1847,11 @@ run's reconciliation rather than in this run's good intentions.
 
 IF THE ROW REACHED {MAX_TRANSCRIBE_TRIES} ON THIS FAILURE, say so in the note
 (`reached the try cap`) and name it in Stage 10 with Z51. It will not be attempted
-again until a human either fixes the cause or lifts the cap, and a video quietly
-falling out of the queue is exactly what this ledger exists to prevent.
+again until the cause is fixed or the cap is lifted — and a later RUN may do either
+one on its own, without waiting for a person, as soon as it can name the cause in
+the note. The cap exists to stop a runaway retry loop, not to park work in front of
+a human. A video quietly falling out of the queue is exactly what this ledger
+exists to prevent.
 
 
 ====================================================================

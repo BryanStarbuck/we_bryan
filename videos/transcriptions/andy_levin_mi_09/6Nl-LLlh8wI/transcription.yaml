@@ -1,0 +1,146 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Visit with patient advocate Peter Morley"
+    Description: >-
+      A short office video, posted May 2019, in which Rep. Andy Levin (self-identified) sits with patient
+      advocate Peter Morley, whom he introduces by name. The guest says he lives with more than ten
+      pre-existing conditions, including lupus, is a two-time cancer survivor, and puts the number of
+      Americans with pre-existing conditions at 130 million; that figure is his. Levin urges viewers to tell
+      their members of Congress to oppose the lawsuit he says would completely overturn the Affordable Care
+      Act and to support House bills protecting people with pre-existing conditions, mentioning his own two
+      older children. The guest's cluster (SPEAKER_02) does not state its own name, so it is left
+      unidentified.
+    URL: "https://www.youtube.com/watch?v=6Nl-LLlh8wI"
+    Video_ID: "6Nl-LLlh8wI"
+    Show: "Andy Levin"
+    Runtime: "00:01:47"
+    Language: "en"
+
+  Media:
+    File: "6Nl-LLlh8wI.mp4"
+    SHA256: "61bd498f52db7bc924551c9cf4c25fdb67f860d9bb1c003eedefd9a508ae6e62"
+    Bytes: 22581625
+    Duration_Seconds: 107
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=6Nl-LLlh8wI"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "6Nl-LLlh8wI.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/andy_levin_mi_09/6Nl-LLlh8wI/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCzDkxWJqwF6S4HYEMve9tZQ"
+    Uploader_ID: "@RepAndyLevin"
+    View_Count: 48
+    Like_Count: 2
+    Availability: "public"
+    Published_At: "2019-05-16T19:39:07+00:00"
+    Captured_At: "2026-08-14T04:59:26-07:00"
+
+  People_in_Video:
+    Person_1:
+      Name: "Andy Levin"
+      Role: "Host; self-identifies in his opening line ('it's Congressman Andy Levin sitting in my office')"
+      Subject: true
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "72.1%"
+      Turns: 3
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "4.7%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "23.3%"
+      Turns: 1
+
+  Topics:
+    - "Protections for people with pre-existing conditions"
+    - "Litigation over the Affordable Care Act"
+    - "Patient advocacy"
+    - "Constituent meeting"
+
+  Source:
+    Canonical_ID: "220462f2446802bb"
+    Transcribed: "2026-09-10T06:53:22.343886-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 297
+    Segments: 11
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T04:59:28.679454-07:00"
+    Transcription_Finished: "2026-09-10T06:53:22.343886-07:00"
+    Recorded: "2019-05-16"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "6Nl-LLlh8wI.ctm"
+    Fountain: "6Nl-LLlh8wI.fountain"
+    Diarization_RTTM: "6Nl-LLlh8wI.rttm"
+    As_Broadcast_Script: "6Nl-LLlh8wI.script.txt"
+    Segments_JSON: "6Nl-LLlh8wI.segments.json"
+    Segments_JSONL: "6Nl-LLlh8wI.segments.jsonl"
+    Subtitles_SRT: "6Nl-LLlh8wI.srt"
+    Plain_Text: "6Nl-LLlh8wI.transcription"
+    Subtitles_VTT: "6Nl-LLlh8wI.vtt"
+    Transcript_SHA256: "6c78228f0541c17b65acf9c7b109dd17afd209508d398737d4a30faf2c44414e"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "andy_levin_mi_09"
+    video_uid: "andy_levin_mi_09::6Nl-LLlh8wI"
+    video_key: "6Nl-LLlh8wI"
+    youtube_id: "6Nl-LLlh8wI"
+    priority: 100
+    ceiling: 800
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    challenger: false
+    round: 1
+    status: "partial"
+    demand_generated_at: "2026-09-10T13:08:13.461Z"
+    demand_run_id: "job_1789045680050_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=6Nl-LLlh8wI"
+    source_ref: "6Nl-LLlh8wI"
+    subject_kind: "new_politician"
+
+  # Blocks this version of the tool does not know about, carried forward
+  # verbatim rather than dropped.
+  Media_Provenance:
+    Real_Path: /Users/bryan/T/_we_citizens/videos/andy_levin_mi/6Nl-LLlh8wI/6Nl-LLlh8wI.mp4
+    Real_Directory: /Users/bryan/T/_we_citizens/videos/andy_levin_mi/6Nl-LLlh8wI/
+    Note: Stored_At names a symlink directory under the download root. The bytes were downloaded by the
+      legacy downloader under roster key andy_levin_mi and are transcribed in place from the directory above;
+      the live demand row files this video under andy_levin_mi_09, which is the key used here.

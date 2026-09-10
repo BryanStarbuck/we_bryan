@@ -1,0 +1,174 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Rep. Andy Levin Speaks on House Floor about his PFAS Action Act Amendment"
+    Description: >-
+      House floor debate from January 2020 on the speaker's amendment to H.R. 535, the PFAS Action Act (per
+      the title and transcript). The amendment would require the EPA to report to Congress within five years
+      on PFAS cleanup: sites to be remediated, chemicals present, and differences between federal and
+      non-federal sites. He also highlights his PFAS Safe Disposal Act, co-sponsored with Rep. Khanna, which
+      prohibits unsafe incineration of PFAS. He asserts that industry studies showed adverse health effects as
+      early as 1950, that the EPA has recognized the risks since at least 1995 yet still allows new PFAS
+      chemicals onto the market, and he calls this decades of EPA failure; those characterizations are his. A
+      member from Illinois claims time in opposition and reserves without arguing, and Speaker Nancy Pelosi is
+      yielded one minute and briefly praises the amendment. Diarization splits the exchange into seven
+      clusters, and the chair's and the members' lines are mixed across them.
+    URL: "https://www.youtube.com/watch?v=4xzU8mkBlg4"
+    Video_ID: "4xzU8mkBlg4"
+    Show: "Andy Levin"
+    Runtime: "00:03:52"
+    Language: "en"
+
+  Media:
+    File: "4xzU8mkBlg4.mp4"
+    SHA256: "bf4b057a73af5ad6f2c267edd75be81df0bbc9be24dd38753a91c01530470214"
+    Bytes: 51741284
+    Duration_Seconds: 232
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=4xzU8mkBlg4"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "4xzU8mkBlg4.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/andy_levin_mi_09/4xzU8mkBlg4/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCzDkxWJqwF6S4HYEMve9tZQ"
+    Uploader_ID: "@RepAndyLevin"
+    View_Count: 61
+    Availability: "public"
+    Published_At: "2020-01-10T15:28:16+00:00"
+    Captured_At: "2026-08-14T04:59:08-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "83.3%"
+      Turns: 4
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "0.8%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "2.2%"
+      Turns: 1
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "3.9%"
+      Turns: 2
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "1.3%"
+      Turns: 1
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_11"
+      Share_Of_Speech: "4.3%"
+      Turns: 2
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "4.3%"
+      Turns: 1
+
+  Topics:
+    - "PFAS contamination and cleanup"
+    - "PFAS Action Act (H.R. 535)"
+    - "EPA oversight and reporting requirements"
+    - "PFAS incineration"
+
+  Source:
+    Canonical_ID: "73c0283ab9af8938"
+    Transcribed: "2026-09-10T06:54:27.607229-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 557
+    Segments: 24
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:16:03.304839-07:00"
+    Transcription_Finished: "2026-09-10T06:54:27.607229-07:00"
+    Recorded: "2020-01-10"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "4xzU8mkBlg4.ctm"
+    Fountain: "4xzU8mkBlg4.fountain"
+    Diarization_RTTM: "4xzU8mkBlg4.rttm"
+    As_Broadcast_Script: "4xzU8mkBlg4.script.txt"
+    Segments_JSON: "4xzU8mkBlg4.segments.json"
+    Segments_JSONL: "4xzU8mkBlg4.segments.jsonl"
+    Subtitles_SRT: "4xzU8mkBlg4.srt"
+    Plain_Text: "4xzU8mkBlg4.transcription"
+    Subtitles_VTT: "4xzU8mkBlg4.vtt"
+    Transcript_SHA256: "19a850035f4790a0470f119152e67ce35d8be9e2ce50dc1eb7ee0a62992f3c66"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "andy_levin_mi_09"
+    video_uid: "andy_levin_mi_09::4xzU8mkBlg4"
+    video_key: "4xzU8mkBlg4"
+    youtube_id: "4xzU8mkBlg4"
+    priority: 100
+    ceiling: 800
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    challenger: false
+    round: 1
+    status: "partial"
+    demand_generated_at: "2026-09-10T13:08:13.461Z"
+    demand_run_id: "job_1789045680050_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=4xzU8mkBlg4"
+    source_ref: "4xzU8mkBlg4"
+    subject_kind: "new_politician"
+
+  # Blocks this version of the tool does not know about, carried forward
+  # verbatim rather than dropped.
+  Media_Provenance:
+    Real_Path: /Users/bryan/T/_we_citizens/videos/andy_levin_mi/4xzU8mkBlg4/4xzU8mkBlg4.mp4
+    Real_Directory: /Users/bryan/T/_we_citizens/videos/andy_levin_mi/4xzU8mkBlg4/
+    Note: Stored_At names a symlink directory under the download root. The bytes were downloaded by the
+      legacy downloader under roster key andy_levin_mi and are transcribed in place from the directory above;
+      the live demand row files this video under andy_levin_mi_09, which is the key used here.

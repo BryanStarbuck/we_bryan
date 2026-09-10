@@ -1,0 +1,1379 @@
+{
+  "schema_version": 2,
+  "canonical_id": "2cc60229a8e6afee",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 90.15,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T13:52:49.581Z",
+  "text_sha256": "d7ccb23108cc719e193b6dc5916f04d56583fea624382f60ffa335436ece2fb2",
+  "segments_sha256": "84f641e273b7b561996f06db873c5b4e7be0c8ba6ada4ea757fd76a48c04eb58",
+  "words_sha256": "45821dbbb3023fc00c5534be1344c42487b37af9cc53b87828fe5a073a22dc63",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 3,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 10,
+    "clusters": 1,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.8,
+        "confidence": "low",
+        "clean_s": 82
+      },
+      "clean_s": 82,
+      "speaking_s": 82,
+      "first_s": 0.57
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.1,
+      "end_s": 0.43,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 28.82,
+      "end_s": 29.03,
+      "segment_i": 2,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 46.7,
+      "end_s": 47.21,
+      "segment_i": 4,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 58.18,
+      "end_s": 58.31,
+      "segment_i": 6,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.1,
+      "end_s": 0.43,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 0.1,
+          "e": 0.43,
+          "c": 0.890146
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.65,
+      "end_s": 28.86,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you, Chairman Engel. I rise in strong support of this resolution, sponsored by my good friend from Michigan, Congresswoman Slotkin. The Trump administration's foreign policy failures have brought us to the brink of war. The administration has provided no evidence to demonstrate what imminent threat made Qasem Soleimani's assassination and the perilous, predictable fallout necessary.",
+      "words": [
+        {
+          "w": "you,",
+          "s": 0.65,
+          "e": 0.85,
+          "c": 0.634925
+        },
+        {
+          "w": "Chairman",
+          "s": 0.85,
+          "e": 1.55,
+          "c": 0.960803
+        },
+        {
+          "w": "Engel.",
+          "s": 1.55,
+          "e": 2.04,
+          "c": 0.852474
+        },
+        {
+          "w": "I",
+          "s": 2.12,
+          "e": 2.12,
+          "c": 0.998929
+        },
+        {
+          "w": "rise",
+          "s": 2.14,
+          "e": 2.46,
+          "c": 0.997866
+        },
+        {
+          "w": "in",
+          "s": 2.63,
+          "e": 2.63,
+          "c": 0.997676
+        },
+        {
+          "w": "strong",
+          "s": 2.69,
+          "e": 3.14,
+          "c": 0.994476
+        },
+        {
+          "w": "support",
+          "s": 3.14,
+          "e": 3.76,
+          "c": 0.988125
+        },
+        {
+          "w": "of",
+          "s": 3.76,
+          "e": 3.84,
+          "c": 0.947466
+        },
+        {
+          "w": "this",
+          "s": 3.84,
+          "e": 4.04,
+          "c": 0.913117
+        },
+        {
+          "w": "resolution,",
+          "s": 4.04,
+          "e": 4.84,
+          "c": 0.527837
+        },
+        {
+          "w": "sponsored",
+          "s": 5.04,
+          "e": 5.43,
+          "c": 0.997444
+        },
+        {
+          "w": "by",
+          "s": 5.49,
+          "e": 5.57,
+          "c": 0.997057
+        },
+        {
+          "w": "my",
+          "s": 5.57,
+          "e": 5.68,
+          "c": 0.996643
+        },
+        {
+          "w": "good",
+          "s": 5.76,
+          "e": 5.96,
+          "c": 0.996472
+        },
+        {
+          "w": "friend",
+          "s": 5.96,
+          "e": 6.38,
+          "c": 0.99708
+        },
+        {
+          "w": "from",
+          "s": 6.38,
+          "e": 6.56,
+          "c": 0.928672
+        },
+        {
+          "w": "Michigan,",
+          "s": 6.56,
+          "e": 7.4,
+          "c": 0.918502
+        },
+        {
+          "w": "Congresswoman",
+          "s": 7.41,
+          "e": 8.12,
+          "c": 0.592481
+        },
+        {
+          "w": "Slotkin.",
+          "s": 8.12,
+          "e": 9.28,
+          "c": 0.590715
+        },
+        {
+          "w": "The",
+          "s": 9.38,
+          "e": 9.49,
+          "c": 0.995773
+        },
+        {
+          "w": "Trump",
+          "s": 9.49,
+          "e": 9.85,
+          "c": 0.996143
+        },
+        {
+          "w": "administration's",
+          "s": 9.93,
+          "e": 11,
+          "c": 0.828703
+        },
+        {
+          "w": "foreign",
+          "s": 11,
+          "e": 11.52,
+          "c": 0.987234
+        },
+        {
+          "w": "policy",
+          "s": 11.52,
+          "e": 11.98,
+          "c": 0.977333
+        },
+        {
+          "w": "failures",
+          "s": 12.03,
+          "e": 12.56,
+          "c": 0.949876
+        },
+        {
+          "w": "have",
+          "s": 12.56,
+          "e": 12.78,
+          "c": 0.686575
+        },
+        {
+          "w": "brought",
+          "s": 12.86,
+          "e": 13.18,
+          "c": 0.889598
+        },
+        {
+          "w": "us",
+          "s": 13.18,
+          "e": 13.52,
+          "c": 0.97615
+        },
+        {
+          "w": "to",
+          "s": 13.52,
+          "e": 13.68,
+          "c": 0.969893
+        },
+        {
+          "w": "the",
+          "s": 13.68,
+          "e": 14.03,
+          "c": 0.977659
+        },
+        {
+          "w": "brink",
+          "s": 14.03,
+          "e": 14.6,
+          "c": 0.996018
+        },
+        {
+          "w": "of",
+          "s": 14.62,
+          "e": 14.84,
+          "c": 0.998593
+        },
+        {
+          "w": "war.",
+          "s": 14.84,
+          "e": 15.58,
+          "c": 0.995264
+        },
+        {
+          "w": "The",
+          "s": 15.68,
+          "e": 15.83,
+          "c": 0.99923
+        },
+        {
+          "w": "administration",
+          "s": 16.23,
+          "e": 16.99,
+          "c": 0.977801
+        },
+        {
+          "w": "has",
+          "s": 16.99,
+          "e": 17.24,
+          "c": 0.997411
+        },
+        {
+          "w": "provided",
+          "s": 17.24,
+          "e": 17.92,
+          "c": 0.999064
+        },
+        {
+          "w": "no",
+          "s": 17.92,
+          "e": 18.14,
+          "c": 0.975059
+        },
+        {
+          "w": "evidence",
+          "s": 18.14,
+          "e": 19.04,
+          "c": 0.994949
+        },
+        {
+          "w": "to",
+          "s": 19.06,
+          "e": 19.24,
+          "c": 0.809896
+        },
+        {
+          "w": "demonstrate",
+          "s": 19.24,
+          "e": 20.06,
+          "c": 0.823214
+        },
+        {
+          "w": "what",
+          "s": 20.06,
+          "e": 20.42,
+          "c": 0.676482
+        },
+        {
+          "w": "imminent",
+          "s": 20.42,
+          "e": 20.87,
+          "c": 0.928648
+        },
+        {
+          "w": "threat",
+          "s": 20.93,
+          "e": 21.45,
+          "c": 0.848011
+        },
+        {
+          "w": "made",
+          "s": 21.46,
+          "e": 21.82,
+          "c": 0.583229
+        },
+        {
+          "w": "Qasem",
+          "s": 21.82,
+          "e": 22.24,
+          "c": 0.793549
+        },
+        {
+          "w": "Soleimani's",
+          "s": 22.24,
+          "e": 22.84,
+          "c": 0.886254
+        },
+        {
+          "w": "assassination",
+          "s": 23.02,
+          "e": 24.19,
+          "c": 0.853831
+        },
+        {
+          "w": "and",
+          "s": 24.19,
+          "e": 24.66,
+          "c": 0.383096
+        },
+        {
+          "w": "the",
+          "s": 24.66,
+          "e": 24.72,
+          "c": 0.872626
+        },
+        {
+          "w": "perilous,",
+          "s": 24.72,
+          "e": 25.76,
+          "c": 0.595355
+        },
+        {
+          "w": "predictable",
+          "s": 25.76,
+          "e": 26.89,
+          "c": 0.938849
+        },
+        {
+          "w": "fallout",
+          "s": 26.89,
+          "e": 27.6,
+          "c": 0.976956
+        },
+        {
+          "w": "necessary.",
+          "s": 27.6,
+          "e": 28.86,
+          "c": 0.980516
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 28.82,
+      "end_s": 29.03,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "but",
+      "words": [
+        {
+          "w": "but",
+          "s": 28.816,
+          "e": 29.026,
+          "c": 0.567865
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 29.2,
+      "end_s": 46.7,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "they have demonstrated a shocking dismissiveness as to what's at stake. On the threat of retaliation from Iran, Secretary Pompeo said, \"It may be that there's a little noise here in the interim.\" President Trump said, \"If it happens, it happens.\"",
+      "words": [
+        {
+          "w": "they",
+          "s": 29.196,
+          "e": 29.326,
+          "c": 0.998355
+        },
+        {
+          "w": "have",
+          "s": 29.356,
+          "e": 29.646,
+          "c": 0.997746
+        },
+        {
+          "w": "demonstrated",
+          "s": 29.646,
+          "e": 30.596,
+          "c": 0.996914
+        },
+        {
+          "w": "a",
+          "s": 30.596,
+          "e": 30.696,
+          "c": 0.923797
+        },
+        {
+          "w": "shocking",
+          "s": 30.696,
+          "e": 31.326,
+          "c": 0.983568
+        },
+        {
+          "w": "dismissiveness",
+          "s": 31.376,
+          "e": 32.136,
+          "c": 0.954756
+        },
+        {
+          "w": "as",
+          "s": 32.196,
+          "e": 32.406,
+          "c": 0.999346
+        },
+        {
+          "w": "to",
+          "s": 32.576,
+          "e": 32.656,
+          "c": 0.998717
+        },
+        {
+          "w": "what's",
+          "s": 32.656,
+          "e": 33.356,
+          "c": 0.987513
+        },
+        {
+          "w": "at",
+          "s": 33.356,
+          "e": 33.586,
+          "c": 0.997874
+        },
+        {
+          "w": "stake.",
+          "s": 33.586,
+          "e": 34.216,
+          "c": 0.938981
+        },
+        {
+          "w": "On",
+          "s": 34.216,
+          "e": 34.326,
+          "c": 0.996041
+        },
+        {
+          "w": "the",
+          "s": 34.326,
+          "e": 34.476,
+          "c": 0.997858
+        },
+        {
+          "w": "threat",
+          "s": 34.596,
+          "e": 34.836,
+          "c": 0.956561
+        },
+        {
+          "w": "of",
+          "s": 34.836,
+          "e": 34.916,
+          "c": 0.998953
+        },
+        {
+          "w": "retaliation",
+          "s": 34.976,
+          "e": 35.606,
+          "c": 0.999314
+        },
+        {
+          "w": "from",
+          "s": 35.606,
+          "e": 35.916,
+          "c": 0.983913
+        },
+        {
+          "w": "Iran,",
+          "s": 35.916,
+          "e": 36.216,
+          "c": 0.884969
+        },
+        {
+          "w": "Secretary",
+          "s": 36.596,
+          "e": 37.096,
+          "c": 0.959915
+        },
+        {
+          "w": "Pompeo",
+          "s": 37.096,
+          "e": 37.626,
+          "c": 0.997828
+        },
+        {
+          "w": "said,",
+          "s": 37.686,
+          "e": 38.276,
+          "c": 0.900236
+        },
+        {
+          "w": "\"It",
+          "s": 38.276,
+          "e": 38.436,
+          "c": 0.941706
+        },
+        {
+          "w": "may",
+          "s": 38.606,
+          "e": 38.606,
+          "c": 0.983239
+        },
+        {
+          "w": "be",
+          "s": 38.656,
+          "e": 38.716,
+          "c": 0.995372
+        },
+        {
+          "w": "that",
+          "s": 38.716,
+          "e": 38.946,
+          "c": 0.995383
+        },
+        {
+          "w": "there's",
+          "s": 38.946,
+          "e": 39.316,
+          "c": 0.990648
+        },
+        {
+          "w": "a",
+          "s": 39.356,
+          "e": 39.396,
+          "c": 0.992286
+        },
+        {
+          "w": "little",
+          "s": 39.396,
+          "e": 39.666,
+          "c": 0.999039
+        },
+        {
+          "w": "noise",
+          "s": 39.746,
+          "e": 40.096,
+          "c": 0.992241
+        },
+        {
+          "w": "here",
+          "s": 40.096,
+          "e": 40.926,
+          "c": 0.944645
+        },
+        {
+          "w": "in",
+          "s": 40.936,
+          "e": 41.156,
+          "c": 0.590895
+        },
+        {
+          "w": "the",
+          "s": 41.156,
+          "e": 41.486,
+          "c": 0.998988
+        },
+        {
+          "w": "interim.\"",
+          "s": 41.486,
+          "e": 42.696,
+          "c": 0.938739
+        },
+        {
+          "w": "President",
+          "s": 43.076,
+          "e": 43.406,
+          "c": 0.997027
+        },
+        {
+          "w": "Trump",
+          "s": 43.456,
+          "e": 43.796,
+          "c": 0.999077
+        },
+        {
+          "w": "said,",
+          "s": 43.796,
+          "e": 44.276,
+          "c": 0.976923
+        },
+        {
+          "w": "\"If",
+          "s": 44.276,
+          "e": 44.536,
+          "c": 0.644578
+        },
+        {
+          "w": "it",
+          "s": 44.546,
+          "e": 44.706,
+          "c": 0.998148
+        },
+        {
+          "w": "happens,",
+          "s": 44.706,
+          "e": 45.496,
+          "c": 0.984382
+        },
+        {
+          "w": "it",
+          "s": 45.496,
+          "e": 45.636,
+          "c": 0.992873
+        },
+        {
+          "w": "happens.\"",
+          "s": 45.656,
+          "e": 46.696,
+          "c": 0.974665
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 46.7,
+      "end_s": 47.21,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "To the",
+      "words": [
+        {
+          "w": "To",
+          "s": 46.696,
+          "e": 46.906,
+          "c": 0.991906
+        },
+        {
+          "w": "the",
+          "s": 47.076,
+          "e": 47.206,
+          "c": 0.998801
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 47.24,
+      "end_s": 58.06,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "parents who are worried sick about their kids serving in the Middle East, it isn't a little noise. Their children's lives are at stake.",
+      "words": [
+        {
+          "w": "parents",
+          "s": 47.236,
+          "e": 47.976,
+          "c": 0.99942
+        },
+        {
+          "w": "who",
+          "s": 47.976,
+          "e": 48.296,
+          "c": 0.995017
+        },
+        {
+          "w": "are",
+          "s": 48.296,
+          "e": 48.616,
+          "c": 0.998205
+        },
+        {
+          "w": "worried",
+          "s": 48.616,
+          "e": 49.346,
+          "c": 0.999133
+        },
+        {
+          "w": "sick",
+          "s": 49.416,
+          "e": 49.876,
+          "c": 0.876109
+        },
+        {
+          "w": "about",
+          "s": 49.976,
+          "e": 50.266,
+          "c": 0.999771
+        },
+        {
+          "w": "their",
+          "s": 50.266,
+          "e": 50.656,
+          "c": 0.999258
+        },
+        {
+          "w": "kids",
+          "s": 50.656,
+          "e": 50.966,
+          "c": 0.994719
+        },
+        {
+          "w": "serving",
+          "s": 50.966,
+          "e": 51.516,
+          "c": 0.995359
+        },
+        {
+          "w": "in",
+          "s": 51.516,
+          "e": 51.666,
+          "c": 0.998232
+        },
+        {
+          "w": "the",
+          "s": 51.666,
+          "e": 51.896,
+          "c": 0.999525
+        },
+        {
+          "w": "Middle",
+          "s": 51.896,
+          "e": 52.366,
+          "c": 0.900495
+        },
+        {
+          "w": "East,",
+          "s": 52.366,
+          "e": 52.736,
+          "c": 0.950452
+        },
+        {
+          "w": "it",
+          "s": 52.736,
+          "e": 52.946,
+          "c": 0.977502
+        },
+        {
+          "w": "isn't",
+          "s": 53.116,
+          "e": 53.496,
+          "c": 0.997883
+        },
+        {
+          "w": "a",
+          "s": 53.496,
+          "e": 53.606,
+          "c": 0.996291
+        },
+        {
+          "w": "little",
+          "s": 53.606,
+          "e": 54.256,
+          "c": 0.996675
+        },
+        {
+          "w": "noise.",
+          "s": 54.256,
+          "e": 55.156,
+          "c": 0.746248
+        },
+        {
+          "w": "Their",
+          "s": 55.536,
+          "e": 55.636,
+          "c": 0.995731
+        },
+        {
+          "w": "children's",
+          "s": 55.636,
+          "e": 56.556,
+          "c": 0.996421
+        },
+        {
+          "w": "lives",
+          "s": 56.626,
+          "e": 57.076,
+          "c": 0.998591
+        },
+        {
+          "w": "are",
+          "s": 57.076,
+          "e": 57.316,
+          "c": 0.998704
+        },
+        {
+          "w": "at",
+          "s": 57.416,
+          "e": 57.556,
+          "c": 0.999691
+        },
+        {
+          "w": "stake.",
+          "s": 57.556,
+          "e": 58.056,
+          "c": 0.932654
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 58.18,
+      "end_s": 58.31,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Those",
+      "words": [
+        {
+          "w": "Those",
+          "s": 58.184,
+          "e": 58.314,
+          "c": 0.913896
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 58.6,
+      "end_s": 90.15,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "stakes make today's vote necessary. The question before us is simple. Can we let this president drag us into another war that will cost billions of taxpayer dollars and, most importantly, American lives? Will we at long last stand up and fulfill our constitutional duty to make decisions on war and peace? I urge my colleagues to vote for this resolution and I yield back the balance of my time.",
+      "words": [
+        {
+          "w": "stakes",
+          "s": 58.604,
+          "e": 59.184,
+          "c": 0.998738
+        },
+        {
+          "w": "make",
+          "s": 59.184,
+          "e": 59.464,
+          "c": 0.997643
+        },
+        {
+          "w": "today's",
+          "s": 59.694,
+          "e": 60.294,
+          "c": 0.997539
+        },
+        {
+          "w": "vote",
+          "s": 60.294,
+          "e": 60.664,
+          "c": 0.998388
+        },
+        {
+          "w": "necessary.",
+          "s": 60.714,
+          "e": 61.944,
+          "c": 0.998043
+        },
+        {
+          "w": "The",
+          "s": 61.944,
+          "e": 62.194,
+          "c": 0.999981
+        },
+        {
+          "w": "question",
+          "s": 62.484,
+          "e": 62.784,
+          "c": 0.999981
+        },
+        {
+          "w": "before",
+          "s": 62.884,
+          "e": 63.324,
+          "c": 0.999952
+        },
+        {
+          "w": "us",
+          "s": 63.324,
+          "e": 63.524,
+          "c": 0.996892
+        },
+        {
+          "w": "is",
+          "s": 63.574,
+          "e": 63.684,
+          "c": 0.999895
+        },
+        {
+          "w": "simple.",
+          "s": 63.684,
+          "e": 64.484,
+          "c": 0.99496
+        },
+        {
+          "w": "Can",
+          "s": 64.484,
+          "e": 64.784,
+          "c": 0.999958
+        },
+        {
+          "w": "we",
+          "s": 64.984,
+          "e": 64.984,
+          "c": 0.999996
+        },
+        {
+          "w": "let",
+          "s": 65.024,
+          "e": 65.284,
+          "c": 0.999996
+        },
+        {
+          "w": "this",
+          "s": 65.284,
+          "e": 65.684,
+          "c": 0.999994
+        },
+        {
+          "w": "president",
+          "s": 65.684,
+          "e": 66.444,
+          "c": 0.848809
+        },
+        {
+          "w": "drag",
+          "s": 66.674,
+          "e": 67.084,
+          "c": 0.975606
+        },
+        {
+          "w": "us",
+          "s": 67.144,
+          "e": 67.384,
+          "c": 0.999916
+        },
+        {
+          "w": "into",
+          "s": 67.384,
+          "e": 67.724,
+          "c": 0.981074
+        },
+        {
+          "w": "another",
+          "s": 67.724,
+          "e": 68.324,
+          "c": 0.999601
+        },
+        {
+          "w": "war",
+          "s": 68.324,
+          "e": 68.564,
+          "c": 0.9995
+        },
+        {
+          "w": "that",
+          "s": 68.594,
+          "e": 68.854,
+          "c": 0.782938
+        },
+        {
+          "w": "will",
+          "s": 68.854,
+          "e": 69.104,
+          "c": 0.999693
+        },
+        {
+          "w": "cost",
+          "s": 69.134,
+          "e": 69.364,
+          "c": 0.999491
+        },
+        {
+          "w": "billions",
+          "s": 69.364,
+          "e": 69.884,
+          "c": 0.9873
+        },
+        {
+          "w": "of",
+          "s": 69.884,
+          "e": 69.954,
+          "c": 0.992061
+        },
+        {
+          "w": "taxpayer",
+          "s": 70.044,
+          "e": 70.484,
+          "c": 0.954176
+        },
+        {
+          "w": "dollars",
+          "s": 70.514,
+          "e": 70.964,
+          "c": 0.996814
+        },
+        {
+          "w": "and,",
+          "s": 70.964,
+          "e": 71.764,
+          "c": 0.419156
+        },
+        {
+          "w": "most",
+          "s": 71.764,
+          "e": 72.084,
+          "c": 0.951337
+        },
+        {
+          "w": "importantly,",
+          "s": 72.084,
+          "e": 73.124,
+          "c": 0.999796
+        },
+        {
+          "w": "American",
+          "s": 73.204,
+          "e": 73.724,
+          "c": 0.998578
+        },
+        {
+          "w": "lives?",
+          "s": 73.774,
+          "e": 74.444,
+          "c": 0.99983
+        },
+        {
+          "w": "Will",
+          "s": 74.454,
+          "e": 74.884,
+          "c": 0.998875
+        },
+        {
+          "w": "we",
+          "s": 74.984,
+          "e": 75.114,
+          "c": 0.999987
+        },
+        {
+          "w": "at",
+          "s": 75.114,
+          "e": 75.274,
+          "c": 0.798105
+        },
+        {
+          "w": "long",
+          "s": 75.384,
+          "e": 75.784,
+          "c": 0.999815
+        },
+        {
+          "w": "last",
+          "s": 75.794,
+          "e": 76.234,
+          "c": 0.99962
+        },
+        {
+          "w": "stand",
+          "s": 76.234,
+          "e": 76.804,
+          "c": 0.999973
+        },
+        {
+          "w": "up",
+          "s": 76.804,
+          "e": 77.024,
+          "c": 0.999983
+        },
+        {
+          "w": "and",
+          "s": 77.024,
+          "e": 77.364,
+          "c": 0.999996
+        },
+        {
+          "w": "fulfill",
+          "s": 77.364,
+          "e": 78.154,
+          "c": 0.999563
+        },
+        {
+          "w": "our",
+          "s": 78.154,
+          "e": 78.484,
+          "c": 0.999994
+        },
+        {
+          "w": "constitutional",
+          "s": 79.254,
+          "e": 80.084,
+          "c": 0.998422
+        },
+        {
+          "w": "duty",
+          "s": 80.084,
+          "e": 80.434,
+          "c": 0.99999
+        },
+        {
+          "w": "to",
+          "s": 80.564,
+          "e": 80.724,
+          "c": 0.999977
+        },
+        {
+          "w": "make",
+          "s": 80.774,
+          "e": 81.174,
+          "c": 0.999983
+        },
+        {
+          "w": "decisions",
+          "s": 81.624,
+          "e": 82.114,
+          "c": 0.999969
+        },
+        {
+          "w": "on",
+          "s": 82.254,
+          "e": 82.444,
+          "c": 0.999989
+        },
+        {
+          "w": "war",
+          "s": 82.444,
+          "e": 82.784,
+          "c": 0.999451
+        },
+        {
+          "w": "and",
+          "s": 82.784,
+          "e": 83.074,
+          "c": 0.999969
+        },
+        {
+          "w": "peace?",
+          "s": 83.164,
+          "e": 84.164,
+          "c": 0.999882
+        },
+        {
+          "w": "I",
+          "s": 84.944,
+          "e": 85.004,
+          "c": 0.999211
+        },
+        {
+          "w": "urge",
+          "s": 85.014,
+          "e": 85.284,
+          "c": 0.999108
+        },
+        {
+          "w": "my",
+          "s": 85.434,
+          "e": 85.434,
+          "c": 0.999901
+        },
+        {
+          "w": "colleagues",
+          "s": 85.484,
+          "e": 86.124,
+          "c": 0.999928
+        },
+        {
+          "w": "to",
+          "s": 86.124,
+          "e": 86.274,
+          "c": 0.99996
+        },
+        {
+          "w": "vote",
+          "s": 86.274,
+          "e": 86.554,
+          "c": 0.999979
+        },
+        {
+          "w": "for",
+          "s": 86.574,
+          "e": 86.764,
+          "c": 0.999987
+        },
+        {
+          "w": "this",
+          "s": 86.764,
+          "e": 86.894,
+          "c": 0.999935
+        },
+        {
+          "w": "resolution",
+          "s": 87.134,
+          "e": 87.744,
+          "c": 0.99971
+        },
+        {
+          "w": "and",
+          "s": 87.744,
+          "e": 87.894,
+          "c": 0.596788
+        },
+        {
+          "w": "I",
+          "s": 87.984,
+          "e": 88.004,
+          "c": 0.999188
+        },
+        {
+          "w": "yield",
+          "s": 88.124,
+          "e": 88.374,
+          "c": 0.999802
+        },
+        {
+          "w": "back",
+          "s": 88.374,
+          "e": 88.654,
+          "c": 0.999975
+        },
+        {
+          "w": "the",
+          "s": 88.654,
+          "e": 88.864,
+          "c": 0.999666
+        },
+        {
+          "w": "balance",
+          "s": 88.864,
+          "e": 89.344,
+          "c": 0.999964
+        },
+        {
+          "w": "of",
+          "s": 89.344,
+          "e": 89.494,
+          "c": 0.999064
+        },
+        {
+          "w": "my",
+          "s": 89.494,
+          "e": 89.634,
+          "c": 0.999989
+        },
+        {
+          "w": "time.",
+          "s": 89.754,
+          "e": 90.154,
+          "c": 0.997524
+        }
+      ]
+    }
+  ]
+}

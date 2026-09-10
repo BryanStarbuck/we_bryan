@@ -1,0 +1,3887 @@
+{
+  "schema_version": 2,
+  "canonical_id": "73c0283ab9af8938",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 232.66,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T13:54:27.088Z",
+  "text_sha256": "19a850035f4790a0470f119152e67ce35d8be9e2ce50dc1eb7ee0a62992f3c66",
+  "segments_sha256": "c9d3852a981c272189568a5de5fb46bafa0d2a76b819e1cf986fb84c61364543",
+  "words_sha256": "b69d661e52945b272257aed999b2d04fa2d16f3a65412c99e46b2cf9f2ece470",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 8,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 23,
+    "clusters": 7,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_01",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.4
+      },
+      "clean_s": 1.4,
+      "speaking_s": 1.4,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_00",
+      "n": 2,
+      "label": "Speaker 2 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.8,
+        "confidence": "low",
+        "clean_s": 180.3
+      },
+      "clean_s": 180.3,
+      "speaking_s": 180.3,
+      "first_s": 1.92
+    },
+    {
+      "id": "SPEAKER_04",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.9
+      },
+      "clean_s": 4.9,
+      "speaking_s": 4.9,
+      "first_s": 133.97
+    },
+    {
+      "id": "SPEAKER_07",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 8.2
+      },
+      "clean_s": 8.2,
+      "speaking_s": 8.3,
+      "first_s": 199.53
+    },
+    {
+      "id": "SPEAKER_08",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 3
+      },
+      "clean_s": 3,
+      "speaking_s": 3.1,
+      "first_s": 204.98
+    },
+    {
+      "id": "SPEAKER_11",
+      "n": 6,
+      "label": "Speaker 6",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 9.6
+      },
+      "clean_s": 9.6,
+      "speaking_s": 9.6,
+      "first_s": 211.96
+    },
+    {
+      "id": "SPEAKER_13",
+      "n": 7,
+      "label": "Speaker 7",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 9.8
+      },
+      "clean_s": 9.8,
+      "speaking_s": 9.8,
+      "first_s": 223.07
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 1.95,
+      "end_s": 1.95,
+      "segment_i": 1,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 83.67,
+      "end_s": 83.67,
+      "segment_i": 5,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 110.13,
+      "end_s": 110.37,
+      "segment_i": 7,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 139.49,
+      "end_s": 139.81,
+      "segment_i": 10,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 197.79,
+      "end_s": 199.36,
+      "segment_i": 14,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 208.29,
+      "end_s": 208.86,
+      "segment_i": 17,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 219.79,
+      "end_s": 220.46,
+      "segment_i": 20,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 222.59,
+      "end_s": 222.9,
+      "segment_i": 22,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.12,
+      "end_s": 1.84,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you Mr. Chairman.",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 0.12,
+          "e": 0.29,
+          "c": 0.804296
+        },
+        {
+          "w": "you",
+          "s": 0.29,
+          "e": 0.46,
+          "c": 0.937723
+        },
+        {
+          "w": "Mr.",
+          "s": 0.46,
+          "e": 0.76,
+          "c": 0.333236
+        },
+        {
+          "w": "Chairman.",
+          "s": 0.76,
+          "e": 1.84,
+          "c": 0.760437
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 1.95,
+      "end_s": 1.96,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "My",
+      "words": [
+        {
+          "w": "My",
+          "s": 1.95,
+          "e": 1.95,
+          "c": 0.505052
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 1.97,
+      "end_s": 26.36,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "amendment requires within five years a comprehensive report to Congress by the Environmental Protection Agency or the EPA regarding the actions the agency will take to clean up and remediate PFAS contamination sites once we pass the important bill before us into law. I'd like to begin by thanking my friend Chairman Pallone and his staff for working with me on this.",
+      "words": [
+        {
+          "w": "amendment",
+          "s": 1.97,
+          "e": 2.46,
+          "c": 0.945814
+        },
+        {
+          "w": "requires",
+          "s": 2.46,
+          "e": 3.19,
+          "c": 0.981484
+        },
+        {
+          "w": "within",
+          "s": 3.23,
+          "e": 3.68,
+          "c": 0.818009
+        },
+        {
+          "w": "five",
+          "s": 3.68,
+          "e": 4.16,
+          "c": 0.866134
+        },
+        {
+          "w": "years",
+          "s": 4.16,
+          "e": 4.64,
+          "c": 0.958488
+        },
+        {
+          "w": "a",
+          "s": 4.64,
+          "e": 4.76,
+          "c": 0.810486
+        },
+        {
+          "w": "comprehensive",
+          "s": 4.76,
+          "e": 5.52,
+          "c": 0.56285
+        },
+        {
+          "w": "report",
+          "s": 5.52,
+          "e": 5.88,
+          "c": 0.511625
+        },
+        {
+          "w": "to",
+          "s": 5.88,
+          "e": 6,
+          "c": 0.88952
+        },
+        {
+          "w": "Congress",
+          "s": 6.12,
+          "e": 6.63,
+          "c": 0.84386
+        },
+        {
+          "w": "by",
+          "s": 6.63,
+          "e": 6.79,
+          "c": 0.990758
+        },
+        {
+          "w": "the",
+          "s": 6.79,
+          "e": 7.03,
+          "c": 0.995104
+        },
+        {
+          "w": "Environmental",
+          "s": 7.03,
+          "e": 8.06,
+          "c": 0.931464
+        },
+        {
+          "w": "Protection",
+          "s": 8.06,
+          "e": 8.85,
+          "c": 0.99865
+        },
+        {
+          "w": "Agency",
+          "s": 8.85,
+          "e": 9.18,
+          "c": 0.996274
+        },
+        {
+          "w": "or",
+          "s": 9.31,
+          "e": 9.47,
+          "c": 0.769653
+        },
+        {
+          "w": "the",
+          "s": 9.54,
+          "e": 9.72,
+          "c": 0.986653
+        },
+        {
+          "w": "EPA",
+          "s": 9.72,
+          "e": 10,
+          "c": 0.995533
+        },
+        {
+          "w": "regarding",
+          "s": 10,
+          "e": 10.56,
+          "c": 0.805004
+        },
+        {
+          "w": "the",
+          "s": 10.56,
+          "e": 10.68,
+          "c": 0.986113
+        },
+        {
+          "w": "actions",
+          "s": 10.68,
+          "e": 11.28,
+          "c": 0.972611
+        },
+        {
+          "w": "the",
+          "s": 11.28,
+          "e": 11.52,
+          "c": 0.597438
+        },
+        {
+          "w": "agency",
+          "s": 11.52,
+          "e": 12,
+          "c": 0.820167
+        },
+        {
+          "w": "will",
+          "s": 12.12,
+          "e": 12.31,
+          "c": 0.999264
+        },
+        {
+          "w": "take",
+          "s": 12.38,
+          "e": 12.68,
+          "c": 0.999643
+        },
+        {
+          "w": "to",
+          "s": 12.68,
+          "e": 12.85,
+          "c": 0.998456
+        },
+        {
+          "w": "clean",
+          "s": 12.85,
+          "e": 13.27,
+          "c": 0.956731
+        },
+        {
+          "w": "up",
+          "s": 13.27,
+          "e": 13.44,
+          "c": 0.993517
+        },
+        {
+          "w": "and",
+          "s": 13.44,
+          "e": 13.7,
+          "c": 0.99794
+        },
+        {
+          "w": "remediate",
+          "s": 13.95,
+          "e": 14.45,
+          "c": 0.994194
+        },
+        {
+          "w": "PFAS",
+          "s": 14.45,
+          "e": 14.79,
+          "c": 0.919598
+        },
+        {
+          "w": "contamination",
+          "s": 14.79,
+          "e": 15.91,
+          "c": 0.991072
+        },
+        {
+          "w": "sites",
+          "s": 15.91,
+          "e": 16.34,
+          "c": 0.991885
+        },
+        {
+          "w": "once",
+          "s": 16.34,
+          "e": 16.68,
+          "c": 0.888821
+        },
+        {
+          "w": "we",
+          "s": 16.68,
+          "e": 16.83,
+          "c": 0.9953
+        },
+        {
+          "w": "pass",
+          "s": 16.91,
+          "e": 17.28,
+          "c": 0.917922
+        },
+        {
+          "w": "the",
+          "s": 17.28,
+          "e": 17.47,
+          "c": 0.980316
+        },
+        {
+          "w": "important",
+          "s": 17.47,
+          "e": 18,
+          "c": 0.884346
+        },
+        {
+          "w": "bill",
+          "s": 18.12,
+          "e": 18.54,
+          "c": 0.938897
+        },
+        {
+          "w": "before",
+          "s": 18.54,
+          "e": 19.35,
+          "c": 0.99372
+        },
+        {
+          "w": "us",
+          "s": 19.35,
+          "e": 19.62,
+          "c": 0.998614
+        },
+        {
+          "w": "into",
+          "s": 19.97,
+          "e": 20.16,
+          "c": 0.946851
+        },
+        {
+          "w": "law.",
+          "s": 20.16,
+          "e": 21,
+          "c": 0.990322
+        },
+        {
+          "w": "I'd",
+          "s": 21.05,
+          "e": 21.16,
+          "c": 0.941038
+        },
+        {
+          "w": "like",
+          "s": 21.16,
+          "e": 21.39,
+          "c": 0.999329
+        },
+        {
+          "w": "to",
+          "s": 21.39,
+          "e": 21.5,
+          "c": 0.999256
+        },
+        {
+          "w": "begin",
+          "s": 21.5,
+          "e": 21.79,
+          "c": 0.997269
+        },
+        {
+          "w": "by",
+          "s": 21.79,
+          "e": 21.89,
+          "c": 0.994418
+        },
+        {
+          "w": "thanking",
+          "s": 21.9,
+          "e": 22.36,
+          "c": 0.99778
+        },
+        {
+          "w": "my",
+          "s": 22.36,
+          "e": 22.45,
+          "c": 0.990269
+        },
+        {
+          "w": "friend",
+          "s": 22.47,
+          "e": 22.88,
+          "c": 0.99368
+        },
+        {
+          "w": "Chairman",
+          "s": 22.97,
+          "e": 23.47,
+          "c": 0.772529
+        },
+        {
+          "w": "Pallone",
+          "s": 23.47,
+          "e": 24,
+          "c": 0.856018
+        },
+        {
+          "w": "and",
+          "s": 24,
+          "e": 24.16,
+          "c": 0.948003
+        },
+        {
+          "w": "his",
+          "s": 24.16,
+          "e": 24.34,
+          "c": 0.989882
+        },
+        {
+          "w": "staff",
+          "s": 24.34,
+          "e": 24.62,
+          "c": 0.996225
+        },
+        {
+          "w": "for",
+          "s": 24.62,
+          "e": 24.76,
+          "c": 0.97851
+        },
+        {
+          "w": "working",
+          "s": 24.87,
+          "e": 25.12,
+          "c": 0.985834
+        },
+        {
+          "w": "with",
+          "s": 25.12,
+          "e": 25.3,
+          "c": 0.92109
+        },
+        {
+          "w": "me",
+          "s": 25.3,
+          "e": 25.4,
+          "c": 0.997303
+        },
+        {
+          "w": "on",
+          "s": 25.4,
+          "e": 25.6,
+          "c": 0.97532
+        },
+        {
+          "w": "this.",
+          "s": 25.6,
+          "e": 26.36,
+          "c": 0.39279
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 26.32,
+      "end_s": 55.76,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "as well as my fellow Michiganders, Congresswoman Dingell, Congressman Upton, and Congressman Kildee for their bipartisan leadership on this bill. I'm proud that this bill includes my bill co-sponsored with Representative Khanna, the PFAS Safe Disposal Act, which prohibits unsafe incineration of PFAS. We need to ensure that when PFAS chemicals are destroyed by incineration, PFAS particles are not emitted into the air.",
+      "words": [
+        {
+          "w": "as",
+          "s": 26.32,
+          "e": 26.45,
+          "c": 0.919251
+        },
+        {
+          "w": "well",
+          "s": 26.54,
+          "e": 26.74,
+          "c": 0.997544
+        },
+        {
+          "w": "as",
+          "s": 26.74,
+          "e": 26.88,
+          "c": 0.997531
+        },
+        {
+          "w": "my",
+          "s": 26.88,
+          "e": 26.97,
+          "c": 0.991282
+        },
+        {
+          "w": "fellow",
+          "s": 27.03,
+          "e": 27.44,
+          "c": 0.998527
+        },
+        {
+          "w": "Michiganders,",
+          "s": 27.44,
+          "e": 28.36,
+          "c": 0.552678
+        },
+        {
+          "w": "Congresswoman",
+          "s": 28.53,
+          "e": 29.12,
+          "c": 0.477555
+        },
+        {
+          "w": "Dingell,",
+          "s": 29.12,
+          "e": 29.52,
+          "c": 0.571329
+        },
+        {
+          "w": "Congressman",
+          "s": 29.74,
+          "e": 30.28,
+          "c": 0.97419
+        },
+        {
+          "w": "Upton,",
+          "s": 30.28,
+          "e": 30.74,
+          "c": 0.51901
+        },
+        {
+          "w": "and",
+          "s": 30.74,
+          "e": 30.89,
+          "c": 0.940453
+        },
+        {
+          "w": "Congressman",
+          "s": 30.89,
+          "e": 31.44,
+          "c": 0.974111
+        },
+        {
+          "w": "Kildee",
+          "s": 31.44,
+          "e": 31.76,
+          "c": 0.861281
+        },
+        {
+          "w": "for",
+          "s": 31.76,
+          "e": 31.92,
+          "c": 0.439268
+        },
+        {
+          "w": "their",
+          "s": 31.92,
+          "e": 32.16,
+          "c": 0.960027
+        },
+        {
+          "w": "bipartisan",
+          "s": 32.16,
+          "e": 32.78,
+          "c": 0.871014
+        },
+        {
+          "w": "leadership",
+          "s": 32.88,
+          "e": 33.78,
+          "c": 0.892398
+        },
+        {
+          "w": "on",
+          "s": 33.83,
+          "e": 33.99,
+          "c": 0.648221
+        },
+        {
+          "w": "this",
+          "s": 34.07,
+          "e": 34.32,
+          "c": 0.967785
+        },
+        {
+          "w": "bill.",
+          "s": 34.32,
+          "e": 34.5,
+          "c": 0.935137
+        },
+        {
+          "w": "I'm",
+          "s": 34.56,
+          "e": 34.85,
+          "c": 0.937428
+        },
+        {
+          "w": "proud",
+          "s": 34.85,
+          "e": 35.34,
+          "c": 0.999247
+        },
+        {
+          "w": "that",
+          "s": 35.34,
+          "e": 35.74,
+          "c": 0.996827
+        },
+        {
+          "w": "this",
+          "s": 35.74,
+          "e": 36.13,
+          "c": 0.997337
+        },
+        {
+          "w": "bill",
+          "s": 36.14,
+          "e": 36.54,
+          "c": 0.996812
+        },
+        {
+          "w": "includes",
+          "s": 36.54,
+          "e": 37.36,
+          "c": 0.993043
+        },
+        {
+          "w": "my",
+          "s": 37.36,
+          "e": 37.52,
+          "c": 0.941059
+        },
+        {
+          "w": "bill",
+          "s": 37.52,
+          "e": 37.81,
+          "c": 0.989515
+        },
+        {
+          "w": "co-sponsored",
+          "s": 37.93,
+          "e": 38.72,
+          "c": 0.845837
+        },
+        {
+          "w": "with",
+          "s": 38.72,
+          "e": 38.89,
+          "c": 0.929348
+        },
+        {
+          "w": "Representative",
+          "s": 39.11,
+          "e": 39.75,
+          "c": 0.577013
+        },
+        {
+          "w": "Khanna,",
+          "s": 39.76,
+          "e": 40.16,
+          "c": 0.142344
+        },
+        {
+          "w": "the",
+          "s": 40.37,
+          "e": 40.5,
+          "c": 0.988702
+        },
+        {
+          "w": "PFAS",
+          "s": 40.54,
+          "e": 40.97,
+          "c": 0.975039
+        },
+        {
+          "w": "Safe",
+          "s": 40.97,
+          "e": 41.43,
+          "c": 0.955197
+        },
+        {
+          "w": "Disposal",
+          "s": 41.43,
+          "e": 42.2,
+          "c": 0.993705
+        },
+        {
+          "w": "Act,",
+          "s": 42.37,
+          "e": 42.96,
+          "c": 0.816606
+        },
+        {
+          "w": "which",
+          "s": 42.96,
+          "e": 43.31,
+          "c": 0.947063
+        },
+        {
+          "w": "prohibits",
+          "s": 43.31,
+          "e": 43.94,
+          "c": 0.996333
+        },
+        {
+          "w": "unsafe",
+          "s": 43.94,
+          "e": 44.36,
+          "c": 0.984063
+        },
+        {
+          "w": "incineration",
+          "s": 44.36,
+          "e": 45.13,
+          "c": 0.994873
+        },
+        {
+          "w": "of",
+          "s": 45.21,
+          "e": 45.34,
+          "c": 0.998174
+        },
+        {
+          "w": "PFAS.",
+          "s": 45.34,
+          "e": 45.84,
+          "c": 0.976954
+        },
+        {
+          "w": "We",
+          "s": 45.88,
+          "e": 45.89,
+          "c": 0.990662
+        },
+        {
+          "w": "need",
+          "s": 46.07,
+          "e": 46.39,
+          "c": 0.999489
+        },
+        {
+          "w": "to",
+          "s": 46.39,
+          "e": 46.49,
+          "c": 0.999535
+        },
+        {
+          "w": "ensure",
+          "s": 46.56,
+          "e": 47.13,
+          "c": 0.996902
+        },
+        {
+          "w": "that",
+          "s": 47.13,
+          "e": 47.5,
+          "c": 0.996637
+        },
+        {
+          "w": "when",
+          "s": 47.5,
+          "e": 47.86,
+          "c": 0.976166
+        },
+        {
+          "w": "PFAS",
+          "s": 47.87,
+          "e": 48.23,
+          "c": 0.992254
+        },
+        {
+          "w": "chemicals",
+          "s": 48.23,
+          "e": 49.08,
+          "c": 0.994805
+        },
+        {
+          "w": "are",
+          "s": 49.08,
+          "e": 49.44,
+          "c": 0.994457
+        },
+        {
+          "w": "destroyed",
+          "s": 49.44,
+          "e": 50.06,
+          "c": 0.987937
+        },
+        {
+          "w": "by",
+          "s": 50.06,
+          "e": 50.17,
+          "c": 0.989721
+        },
+        {
+          "w": "incineration,",
+          "s": 50.19,
+          "e": 51.04,
+          "c": 0.924115
+        },
+        {
+          "w": "PFAS",
+          "s": 51.08,
+          "e": 51.56,
+          "c": 0.992104
+        },
+        {
+          "w": "particles",
+          "s": 51.56,
+          "e": 52.73,
+          "c": 0.993282
+        },
+        {
+          "w": "are",
+          "s": 52.73,
+          "e": 53.07,
+          "c": 0.998668
+        },
+        {
+          "w": "not",
+          "s": 53.25,
+          "e": 53.51,
+          "c": 0.999691
+        },
+        {
+          "w": "emitted",
+          "s": 53.51,
+          "e": 54.42,
+          "c": 0.989963
+        },
+        {
+          "w": "into",
+          "s": 54.42,
+          "e": 54.94,
+          "c": 0.997666
+        },
+        {
+          "w": "the",
+          "s": 54.94,
+          "e": 55.3,
+          "c": 0.999426
+        },
+        {
+          "w": "air.",
+          "s": 55.36,
+          "e": 55.76,
+          "c": 0.732533
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 55.71,
+      "end_s": 83.43,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The monumental effort of PFAS cleanup will be for naught if PFAS is simply transmitted from water and soil into the air we breathe. We in Michigan know all too well of the growing threat that PFAS chemicals pose to our communities and our water resources. They've been linked to cancer, damage to both reproductive and immune systems, developmental issues,",
+      "words": [
+        {
+          "w": "The",
+          "s": 55.712,
+          "e": 56.022,
+          "c": 0.88737
+        },
+        {
+          "w": "monumental",
+          "s": 56.032,
+          "e": 57.072,
+          "c": 0.996048
+        },
+        {
+          "w": "effort",
+          "s": 57.072,
+          "e": 57.612,
+          "c": 0.988176
+        },
+        {
+          "w": "of",
+          "s": 57.742,
+          "e": 57.942,
+          "c": 0.973255
+        },
+        {
+          "w": "PFAS",
+          "s": 57.972,
+          "e": 58.432,
+          "c": 0.959311
+        },
+        {
+          "w": "cleanup",
+          "s": 58.492,
+          "e": 59.202,
+          "c": 0.958743
+        },
+        {
+          "w": "will",
+          "s": 59.312,
+          "e": 59.562,
+          "c": 0.750432
+        },
+        {
+          "w": "be",
+          "s": 59.562,
+          "e": 59.712,
+          "c": 0.993951
+        },
+        {
+          "w": "for",
+          "s": 59.712,
+          "e": 59.912,
+          "c": 0.966529
+        },
+        {
+          "w": "naught",
+          "s": 59.912,
+          "e": 60.392,
+          "c": 0.766911
+        },
+        {
+          "w": "if",
+          "s": 60.392,
+          "e": 60.592,
+          "c": 0.996175
+        },
+        {
+          "w": "PFAS",
+          "s": 60.712,
+          "e": 60.992,
+          "c": 0.995268
+        },
+        {
+          "w": "is",
+          "s": 60.992,
+          "e": 61.192,
+          "c": 0.981225
+        },
+        {
+          "w": "simply",
+          "s": 61.192,
+          "e": 61.802,
+          "c": 0.997259
+        },
+        {
+          "w": "transmitted",
+          "s": 61.802,
+          "e": 62.952,
+          "c": 0.997425
+        },
+        {
+          "w": "from",
+          "s": 62.952,
+          "e": 63.272,
+          "c": 0.742444
+        },
+        {
+          "w": "water",
+          "s": 63.272,
+          "e": 63.692,
+          "c": 0.996181
+        },
+        {
+          "w": "and",
+          "s": 63.692,
+          "e": 64.112,
+          "c": 0.88078
+        },
+        {
+          "w": "soil",
+          "s": 64.112,
+          "e": 64.692,
+          "c": 0.992316
+        },
+        {
+          "w": "into",
+          "s": 64.912,
+          "e": 65.082,
+          "c": 0.998485
+        },
+        {
+          "w": "the",
+          "s": 65.082,
+          "e": 65.372,
+          "c": 0.99962
+        },
+        {
+          "w": "air",
+          "s": 65.372,
+          "e": 65.662,
+          "c": 0.99898
+        },
+        {
+          "w": "we",
+          "s": 65.662,
+          "e": 65.852,
+          "c": 0.998034
+        },
+        {
+          "w": "breathe.",
+          "s": 65.852,
+          "e": 66.852,
+          "c": 0.983076
+        },
+        {
+          "w": "We",
+          "s": 66.852,
+          "e": 67.032,
+          "c": 0.999415
+        },
+        {
+          "w": "in",
+          "s": 67.072,
+          "e": 67.212,
+          "c": 0.945888
+        },
+        {
+          "w": "Michigan",
+          "s": 67.212,
+          "e": 67.922,
+          "c": 0.999281
+        },
+        {
+          "w": "know",
+          "s": 67.982,
+          "e": 68.302,
+          "c": 0.993043
+        },
+        {
+          "w": "all",
+          "s": 68.302,
+          "e": 68.562,
+          "c": 0.996512
+        },
+        {
+          "w": "too",
+          "s": 68.562,
+          "e": 68.832,
+          "c": 0.987818
+        },
+        {
+          "w": "well",
+          "s": 68.882,
+          "e": 69.252,
+          "c": 0.999253
+        },
+        {
+          "w": "of",
+          "s": 69.252,
+          "e": 69.272,
+          "c": 0.49964
+        },
+        {
+          "w": "the",
+          "s": 69.372,
+          "e": 69.532,
+          "c": 0.97489
+        },
+        {
+          "w": "growing",
+          "s": 69.532,
+          "e": 69.862,
+          "c": 0.998959
+        },
+        {
+          "w": "threat",
+          "s": 70.042,
+          "e": 70.292,
+          "c": 0.991573
+        },
+        {
+          "w": "that",
+          "s": 70.512,
+          "e": 70.682,
+          "c": 0.970923
+        },
+        {
+          "w": "PFAS",
+          "s": 70.682,
+          "e": 71.062,
+          "c": 0.998296
+        },
+        {
+          "w": "chemicals",
+          "s": 71.062,
+          "e": 71.942,
+          "c": 0.997417
+        },
+        {
+          "w": "pose",
+          "s": 71.942,
+          "e": 72.342,
+          "c": 0.993925
+        },
+        {
+          "w": "to",
+          "s": 72.352,
+          "e": 72.512,
+          "c": 0.863696
+        },
+        {
+          "w": "our",
+          "s": 72.552,
+          "e": 72.712,
+          "c": 0.999115
+        },
+        {
+          "w": "communities",
+          "s": 72.812,
+          "e": 73.732,
+          "c": 0.997942
+        },
+        {
+          "w": "and",
+          "s": 73.732,
+          "e": 73.972,
+          "c": 0.998066
+        },
+        {
+          "w": "our",
+          "s": 74.052,
+          "e": 74.232,
+          "c": 0.998475
+        },
+        {
+          "w": "water",
+          "s": 74.232,
+          "e": 74.652,
+          "c": 0.999495
+        },
+        {
+          "w": "resources.",
+          "s": 74.652,
+          "e": 75.692,
+          "c": 0.988534
+        },
+        {
+          "w": "They've",
+          "s": 75.702,
+          "e": 76.302,
+          "c": 0.984369
+        },
+        {
+          "w": "been",
+          "s": 76.302,
+          "e": 76.652,
+          "c": 0.999708
+        },
+        {
+          "w": "linked",
+          "s": 76.652,
+          "e": 77.182,
+          "c": 0.998342
+        },
+        {
+          "w": "to",
+          "s": 77.182,
+          "e": 77.352,
+          "c": 0.997533
+        },
+        {
+          "w": "cancer,",
+          "s": 77.352,
+          "e": 78.092,
+          "c": 0.974057
+        },
+        {
+          "w": "damage",
+          "s": 78.412,
+          "e": 78.572,
+          "c": 0.923844
+        },
+        {
+          "w": "to",
+          "s": 78.572,
+          "e": 78.732,
+          "c": 0.998184
+        },
+        {
+          "w": "both",
+          "s": 78.732,
+          "e": 79.052,
+          "c": 0.999428
+        },
+        {
+          "w": "reproductive",
+          "s": 79.052,
+          "e": 79.812,
+          "c": 0.996778
+        },
+        {
+          "w": "and",
+          "s": 80.022,
+          "e": 80.252,
+          "c": 0.995993
+        },
+        {
+          "w": "immune",
+          "s": 80.272,
+          "e": 80.732,
+          "c": 0.999411
+        },
+        {
+          "w": "systems,",
+          "s": 80.732,
+          "e": 81.472,
+          "c": 0.989778
+        },
+        {
+          "w": "developmental",
+          "s": 81.792,
+          "e": 82.742,
+          "c": 0.979126
+        },
+        {
+          "w": "issues,",
+          "s": 82.802,
+          "e": 83.432,
+          "c": 0.837436
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 83.67,
+      "end_s": 83.68,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and",
+      "words": [
+        {
+          "w": "and",
+          "s": 83.666,
+          "e": 83.666,
+          "c": 0.79974
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 83.68,
+      "end_s": 110.09,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "changes in liver, immune, and thyroid function. The troubling reality is that both industry and the EPA itself have known about the risks from PFAS chemical for decades, decades. We know, for example, that industry studies have demonstrated the adverse health effects of these chemicals since as early as 1950. That's 70 years ago.",
+      "words": [
+        {
+          "w": "changes",
+          "s": 83.676,
+          "e": 84.336,
+          "c": 0.995311
+        },
+        {
+          "w": "in",
+          "s": 84.336,
+          "e": 84.526,
+          "c": 0.998967
+        },
+        {
+          "w": "liver,",
+          "s": 84.526,
+          "e": 85.086,
+          "c": 0.916364
+        },
+        {
+          "w": "immune,",
+          "s": 85.256,
+          "e": 85.756,
+          "c": 0.733042
+        },
+        {
+          "w": "and",
+          "s": 85.756,
+          "e": 86.066,
+          "c": 0.984053
+        },
+        {
+          "w": "thyroid",
+          "s": 86.066,
+          "e": 86.806,
+          "c": 0.998599
+        },
+        {
+          "w": "function.",
+          "s": 86.806,
+          "e": 87.966,
+          "c": 0.978427
+        },
+        {
+          "w": "The",
+          "s": 87.976,
+          "e": 88.156,
+          "c": 0.99743
+        },
+        {
+          "w": "troubling",
+          "s": 88.276,
+          "e": 88.716,
+          "c": 0.994848
+        },
+        {
+          "w": "reality",
+          "s": 88.716,
+          "e": 89.176,
+          "c": 0.999205
+        },
+        {
+          "w": "is",
+          "s": 89.176,
+          "e": 89.316,
+          "c": 0.962728
+        },
+        {
+          "w": "that",
+          "s": 89.316,
+          "e": 89.666,
+          "c": 0.986244
+        },
+        {
+          "w": "both",
+          "s": 89.666,
+          "e": 90.016,
+          "c": 0.821635
+        },
+        {
+          "w": "industry",
+          "s": 90.016,
+          "e": 90.716,
+          "c": 0.983186
+        },
+        {
+          "w": "and",
+          "s": 90.716,
+          "e": 90.916,
+          "c": 0.527398
+        },
+        {
+          "w": "the",
+          "s": 90.916,
+          "e": 91.256,
+          "c": 0.907106
+        },
+        {
+          "w": "EPA",
+          "s": 91.256,
+          "e": 91.566,
+          "c": 0.988724
+        },
+        {
+          "w": "itself",
+          "s": 91.566,
+          "e": 92.276,
+          "c": 0.609874
+        },
+        {
+          "w": "have",
+          "s": 92.576,
+          "e": 92.596,
+          "c": 0.999199
+        },
+        {
+          "w": "known",
+          "s": 92.596,
+          "e": 92.996,
+          "c": 0.994528
+        },
+        {
+          "w": "about",
+          "s": 92.996,
+          "e": 93.396,
+          "c": 0.99772
+        },
+        {
+          "w": "the",
+          "s": 93.396,
+          "e": 93.636,
+          "c": 0.99775
+        },
+        {
+          "w": "risks",
+          "s": 93.636,
+          "e": 93.986,
+          "c": 0.99663
+        },
+        {
+          "w": "from",
+          "s": 94.156,
+          "e": 94.486,
+          "c": 0.959615
+        },
+        {
+          "w": "PFAS",
+          "s": 94.486,
+          "e": 94.876,
+          "c": 0.865029
+        },
+        {
+          "w": "chemical",
+          "s": 94.886,
+          "e": 95.716,
+          "c": 0.835593
+        },
+        {
+          "w": "for",
+          "s": 95.716,
+          "e": 96.156,
+          "c": 0.764145
+        },
+        {
+          "w": "decades,",
+          "s": 96.176,
+          "e": 97.496,
+          "c": 0.314107
+        },
+        {
+          "w": "decades.",
+          "s": 97.496,
+          "e": 98.926,
+          "c": 0.815793
+        },
+        {
+          "w": "We",
+          "s": 98.936,
+          "e": 99.066,
+          "c": 0.999384
+        },
+        {
+          "w": "know,",
+          "s": 99.236,
+          "e": 99.436,
+          "c": 0.591146
+        },
+        {
+          "w": "for",
+          "s": 99.446,
+          "e": 99.636,
+          "c": 0.999516
+        },
+        {
+          "w": "example,",
+          "s": 99.636,
+          "e": 100.236,
+          "c": 0.988817
+        },
+        {
+          "w": "that",
+          "s": 100.236,
+          "e": 100.476,
+          "c": 0.914372
+        },
+        {
+          "w": "industry",
+          "s": 100.476,
+          "e": 100.946,
+          "c": 0.995459
+        },
+        {
+          "w": "studies",
+          "s": 100.946,
+          "e": 101.376,
+          "c": 0.99031
+        },
+        {
+          "w": "have",
+          "s": 101.376,
+          "e": 101.426,
+          "c": 0.816813
+        },
+        {
+          "w": "demonstrated",
+          "s": 101.526,
+          "e": 102.176,
+          "c": 0.974931
+        },
+        {
+          "w": "the",
+          "s": 102.206,
+          "e": 102.316,
+          "c": 0.998142
+        },
+        {
+          "w": "adverse",
+          "s": 102.476,
+          "e": 103.056,
+          "c": 0.99725
+        },
+        {
+          "w": "health",
+          "s": 103.056,
+          "e": 103.586,
+          "c": 0.994702
+        },
+        {
+          "w": "effects",
+          "s": 103.586,
+          "e": 104.216,
+          "c": 0.995351
+        },
+        {
+          "w": "of",
+          "s": 104.216,
+          "e": 104.386,
+          "c": 0.98307
+        },
+        {
+          "w": "these",
+          "s": 104.386,
+          "e": 104.796,
+          "c": 0.998367
+        },
+        {
+          "w": "chemicals",
+          "s": 104.796,
+          "e": 105.576,
+          "c": 0.998064
+        },
+        {
+          "w": "since",
+          "s": 105.576,
+          "e": 105.936,
+          "c": 0.658912
+        },
+        {
+          "w": "as",
+          "s": 105.936,
+          "e": 106.106,
+          "c": 0.951775
+        },
+        {
+          "w": "early",
+          "s": 106.106,
+          "e": 106.576,
+          "c": 0.994839
+        },
+        {
+          "w": "as",
+          "s": 106.576,
+          "e": 106.826,
+          "c": 0.940537
+        },
+        {
+          "w": "1950.",
+          "s": 106.916,
+          "e": 108.376,
+          "c": 0.36576
+        },
+        {
+          "w": "That's",
+          "s": 108.676,
+          "e": 108.826,
+          "c": 0.988753
+        },
+        {
+          "w": "70",
+          "s": 108.826,
+          "e": 109.276,
+          "c": 0.988027
+        },
+        {
+          "w": "years",
+          "s": 109.276,
+          "e": 109.656,
+          "c": 0.997453
+        },
+        {
+          "w": "ago.",
+          "s": 109.656,
+          "e": 110.086,
+          "c": 0.976684
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 110.13,
+      "end_s": 110.37,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We",
+      "words": [
+        {
+          "w": "We",
+          "s": 110.128,
+          "e": 110.368,
+          "c": 0.96656
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 110.54,
+      "end_s": 133.77,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "also know that even though the EPA has recognized the risks of PFAS since at least 1995, the agency is continuing to allow new PFAS chemicals onto the market to this day. By passing H.R. 535 into law, we can finally begin to reverse decades of the EPA's failure and finally deliver the",
+      "words": [
+        {
+          "w": "also",
+          "s": 110.538,
+          "e": 110.848,
+          "c": 0.998094
+        },
+        {
+          "w": "know",
+          "s": 110.858,
+          "e": 111.368,
+          "c": 0.998548
+        },
+        {
+          "w": "that",
+          "s": 111.368,
+          "e": 111.928,
+          "c": 0.978321
+        },
+        {
+          "w": "even",
+          "s": 111.998,
+          "e": 112.178,
+          "c": 0.954232
+        },
+        {
+          "w": "though",
+          "s": 112.178,
+          "e": 112.528,
+          "c": 0.992246
+        },
+        {
+          "w": "the",
+          "s": 112.528,
+          "e": 112.848,
+          "c": 0.967465
+        },
+        {
+          "w": "EPA",
+          "s": 112.848,
+          "e": 113.168,
+          "c": 0.995973
+        },
+        {
+          "w": "has",
+          "s": 113.168,
+          "e": 113.458,
+          "c": 0.889547
+        },
+        {
+          "w": "recognized",
+          "s": 113.508,
+          "e": 114.068,
+          "c": 0.951334
+        },
+        {
+          "w": "the",
+          "s": 114.068,
+          "e": 114.378,
+          "c": 0.741636
+        },
+        {
+          "w": "risks",
+          "s": 114.468,
+          "e": 114.958,
+          "c": 0.981319
+        },
+        {
+          "w": "of",
+          "s": 114.958,
+          "e": 115.188,
+          "c": 0.829469
+        },
+        {
+          "w": "PFAS",
+          "s": 115.188,
+          "e": 115.628,
+          "c": 0.984928
+        },
+        {
+          "w": "since",
+          "s": 115.628,
+          "e": 115.888,
+          "c": 0.908044
+        },
+        {
+          "w": "at",
+          "s": 115.888,
+          "e": 116.038,
+          "c": 0.983489
+        },
+        {
+          "w": "least",
+          "s": 116.058,
+          "e": 116.278,
+          "c": 0.982825
+        },
+        {
+          "w": "1995,",
+          "s": 116.288,
+          "e": 117.008,
+          "c": 0.879923
+        },
+        {
+          "w": "the",
+          "s": 117.068,
+          "e": 117.378,
+          "c": 0.999317
+        },
+        {
+          "w": "agency",
+          "s": 117.488,
+          "e": 118.008,
+          "c": 0.958537
+        },
+        {
+          "w": "is",
+          "s": 118.008,
+          "e": 118.218,
+          "c": 0.999912
+        },
+        {
+          "w": "continuing",
+          "s": 118.218,
+          "e": 119.268,
+          "c": 0.999939
+        },
+        {
+          "w": "to",
+          "s": 119.268,
+          "e": 119.478,
+          "c": 0.999971
+        },
+        {
+          "w": "allow",
+          "s": 119.478,
+          "e": 119.998,
+          "c": 0.999832
+        },
+        {
+          "w": "new",
+          "s": 119.998,
+          "e": 120.308,
+          "c": 0.995262
+        },
+        {
+          "w": "PFAS",
+          "s": 120.308,
+          "e": 120.718,
+          "c": 0.999449
+        },
+        {
+          "w": "chemicals",
+          "s": 120.718,
+          "e": 121.658,
+          "c": 0.999887
+        },
+        {
+          "w": "onto",
+          "s": 121.658,
+          "e": 122.078,
+          "c": 0.997406
+        },
+        {
+          "w": "the",
+          "s": 122.078,
+          "e": 122.368,
+          "c": 0.999975
+        },
+        {
+          "w": "market",
+          "s": 122.408,
+          "e": 123.018,
+          "c": 0.999928
+        },
+        {
+          "w": "to",
+          "s": 123.018,
+          "e": 123.218,
+          "c": 0.998125
+        },
+        {
+          "w": "this",
+          "s": 123.228,
+          "e": 123.648,
+          "c": 0.999918
+        },
+        {
+          "w": "day.",
+          "s": 123.648,
+          "e": 124.328,
+          "c": 0.999438
+        },
+        {
+          "w": "By",
+          "s": 124.328,
+          "e": 124.528,
+          "c": 0.999929
+        },
+        {
+          "w": "passing",
+          "s": 124.738,
+          "e": 125.248,
+          "c": 0.999832
+        },
+        {
+          "w": "H.R.",
+          "s": 125.248,
+          "e": 126.068,
+          "c": 0.957477
+        },
+        {
+          "w": "535",
+          "s": 126.068,
+          "e": 126.998,
+          "c": 0.986514
+        },
+        {
+          "w": "into",
+          "s": 126.998,
+          "e": 127.408,
+          "c": 0.999823
+        },
+        {
+          "w": "law,",
+          "s": 127.408,
+          "e": 127.968,
+          "c": 0.99886
+        },
+        {
+          "w": "we",
+          "s": 127.968,
+          "e": 128.128,
+          "c": 0.91485
+        },
+        {
+          "w": "can",
+          "s": 128.128,
+          "e": 128.368,
+          "c": 0.999998
+        },
+        {
+          "w": "finally",
+          "s": 128.368,
+          "e": 128.938,
+          "c": 0.999979
+        },
+        {
+          "w": "begin",
+          "s": 128.938,
+          "e": 129.338,
+          "c": 0.999897
+        },
+        {
+          "w": "to",
+          "s": 129.338,
+          "e": 129.498,
+          "c": 0.999975
+        },
+        {
+          "w": "reverse",
+          "s": 129.498,
+          "e": 130.068,
+          "c": 0.99958
+        },
+        {
+          "w": "decades",
+          "s": 130.068,
+          "e": 130.638,
+          "c": 0.999222
+        },
+        {
+          "w": "of",
+          "s": 130.638,
+          "e": 130.768,
+          "c": 0.999922
+        },
+        {
+          "w": "the",
+          "s": 130.808,
+          "e": 131.038,
+          "c": 0.999828
+        },
+        {
+          "w": "EPA's",
+          "s": 131.038,
+          "e": 131.438,
+          "c": 0.999173
+        },
+        {
+          "w": "failure",
+          "s": 131.438,
+          "e": 131.698,
+          "c": 0.999163
+        },
+        {
+          "w": "and",
+          "s": 132.068,
+          "e": 132.318,
+          "c": 0.999969
+        },
+        {
+          "w": "finally",
+          "s": 132.478,
+          "e": 132.918,
+          "c": 0.99999
+        },
+        {
+          "w": "deliver",
+          "s": 132.918,
+          "e": 133.398,
+          "c": 0.999931
+        },
+        {
+          "w": "the",
+          "s": 133.748,
+          "e": 133.768,
+          "c": 0.999992
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 133.77,
+      "end_s": 138.81,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "protections impacted communities need in both the short and long term.",
+      "words": [
+        {
+          "w": "protections",
+          "s": 133.768,
+          "e": 134.708,
+          "c": 0.999807
+        },
+        {
+          "w": "impacted",
+          "s": 134.708,
+          "e": 135.388,
+          "c": 0.999089
+        },
+        {
+          "w": "communities",
+          "s": 135.388,
+          "e": 136.318,
+          "c": 0.998675
+        },
+        {
+          "w": "need",
+          "s": 136.408,
+          "e": 136.668,
+          "c": 0.700039
+        },
+        {
+          "w": "in",
+          "s": 136.668,
+          "e": 136.788,
+          "c": 0.996489
+        },
+        {
+          "w": "both",
+          "s": 136.868,
+          "e": 137.168,
+          "c": 0.99995
+        },
+        {
+          "w": "the",
+          "s": 137.218,
+          "e": 137.428,
+          "c": 0.965926
+        },
+        {
+          "w": "short",
+          "s": 137.428,
+          "e": 137.828,
+          "c": 0.999933
+        },
+        {
+          "w": "and",
+          "s": 137.848,
+          "e": 138.098,
+          "c": 0.990932
+        },
+        {
+          "w": "long",
+          "s": 138.098,
+          "e": 138.508,
+          "c": 0.999504
+        },
+        {
+          "w": "term.",
+          "s": 138.508,
+          "e": 138.808,
+          "c": 0.946434
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 139.49,
+      "end_s": 139.81,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "But",
+      "words": [
+        {
+          "w": "But",
+          "s": 139.488,
+          "e": 139.808,
+          "c": 0.740995
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 140.1,
+      "end_s": 167.65,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "after decades of the EPA failing to treat this matter with urgency, we need to make sure that the cleanup process that will be set in place once we finally designate PFOA and PFAS as hazarded substances is both timely and effective. My amendment is a common sense transparency and accountability measure that requires the EPA to submit a comprehensive review to Congress after five years of cleanup efforts.",
+      "words": [
+        {
+          "w": "after",
+          "s": 140.098,
+          "e": 140.338,
+          "c": 0.762089
+        },
+        {
+          "w": "decades",
+          "s": 140.348,
+          "e": 141.098,
+          "c": 0.995402
+        },
+        {
+          "w": "of",
+          "s": 141.098,
+          "e": 141.308,
+          "c": 0.988114
+        },
+        {
+          "w": "the",
+          "s": 141.308,
+          "e": 141.628,
+          "c": 0.993221
+        },
+        {
+          "w": "EPA",
+          "s": 141.628,
+          "e": 141.958,
+          "c": 0.993651
+        },
+        {
+          "w": "failing",
+          "s": 142.058,
+          "e": 142.428,
+          "c": 0.905544
+        },
+        {
+          "w": "to",
+          "s": 142.428,
+          "e": 142.548,
+          "c": 0.99972
+        },
+        {
+          "w": "treat",
+          "s": 142.548,
+          "e": 142.858,
+          "c": 0.999262
+        },
+        {
+          "w": "this",
+          "s": 143.038,
+          "e": 143.118,
+          "c": 0.998929
+        },
+        {
+          "w": "matter",
+          "s": 143.118,
+          "e": 143.448,
+          "c": 0.997954
+        },
+        {
+          "w": "with",
+          "s": 143.538,
+          "e": 143.748,
+          "c": 0.997868
+        },
+        {
+          "w": "urgency,",
+          "s": 143.748,
+          "e": 144.228,
+          "c": 0.930369
+        },
+        {
+          "w": "we",
+          "s": 144.228,
+          "e": 144.468,
+          "c": 0.998481
+        },
+        {
+          "w": "need",
+          "s": 144.638,
+          "e": 144.978,
+          "c": 0.999655
+        },
+        {
+          "w": "to",
+          "s": 144.978,
+          "e": 145.228,
+          "c": 0.999449
+        },
+        {
+          "w": "make",
+          "s": 145.228,
+          "e": 145.728,
+          "c": 0.993316
+        },
+        {
+          "w": "sure",
+          "s": 145.728,
+          "e": 146.238,
+          "c": 0.99959
+        },
+        {
+          "w": "that",
+          "s": 146.258,
+          "e": 146.508,
+          "c": 0.939162
+        },
+        {
+          "w": "the",
+          "s": 146.508,
+          "e": 146.698,
+          "c": 0.988821
+        },
+        {
+          "w": "cleanup",
+          "s": 146.698,
+          "e": 147.138,
+          "c": 0.93148
+        },
+        {
+          "w": "process",
+          "s": 147.138,
+          "e": 147.608,
+          "c": 0.997314
+        },
+        {
+          "w": "that",
+          "s": 147.628,
+          "e": 147.958,
+          "c": 0.999495
+        },
+        {
+          "w": "will",
+          "s": 148.228,
+          "e": 148.288,
+          "c": 0.994507
+        },
+        {
+          "w": "be",
+          "s": 148.288,
+          "e": 148.398,
+          "c": 0.998569
+        },
+        {
+          "w": "set",
+          "s": 148.478,
+          "e": 148.648,
+          "c": 0.995006
+        },
+        {
+          "w": "in",
+          "s": 148.738,
+          "e": 148.858,
+          "c": 0.999199
+        },
+        {
+          "w": "place",
+          "s": 148.858,
+          "e": 149.278,
+          "c": 0.999628
+        },
+        {
+          "w": "once",
+          "s": 149.378,
+          "e": 149.618,
+          "c": 0.607159
+        },
+        {
+          "w": "we",
+          "s": 149.628,
+          "e": 149.748,
+          "c": 0.979834
+        },
+        {
+          "w": "finally",
+          "s": 149.748,
+          "e": 150.098,
+          "c": 0.99328
+        },
+        {
+          "w": "designate",
+          "s": 150.198,
+          "e": 150.868,
+          "c": 0.926655
+        },
+        {
+          "w": "PFOA",
+          "s": 150.868,
+          "e": 151.298,
+          "c": 0.966675
+        },
+        {
+          "w": "and",
+          "s": 151.478,
+          "e": 151.638,
+          "c": 0.992534
+        },
+        {
+          "w": "PFAS",
+          "s": 151.638,
+          "e": 152.078,
+          "c": 0.950626
+        },
+        {
+          "w": "as",
+          "s": 152.078,
+          "e": 152.258,
+          "c": 0.989085
+        },
+        {
+          "w": "hazarded",
+          "s": 152.338,
+          "e": 153.188,
+          "c": 0.501933
+        },
+        {
+          "w": "substances",
+          "s": 153.188,
+          "e": 154.368,
+          "c": 0.995718
+        },
+        {
+          "w": "is",
+          "s": 154.368,
+          "e": 154.568,
+          "c": 0.998923
+        },
+        {
+          "w": "both",
+          "s": 154.778,
+          "e": 154.928,
+          "c": 0.999232
+        },
+        {
+          "w": "timely",
+          "s": 154.978,
+          "e": 155.568,
+          "c": 0.999504
+        },
+        {
+          "w": "and",
+          "s": 155.568,
+          "e": 155.868,
+          "c": 0.999133
+        },
+        {
+          "w": "effective.",
+          "s": 155.868,
+          "e": 157.108,
+          "c": 0.997025
+        },
+        {
+          "w": "My",
+          "s": 157.108,
+          "e": 157.238,
+          "c": 0.998173
+        },
+        {
+          "w": "amendment",
+          "s": 157.238,
+          "e": 157.858,
+          "c": 0.985109
+        },
+        {
+          "w": "is",
+          "s": 157.858,
+          "e": 157.978,
+          "c": 0.998237
+        },
+        {
+          "w": "a",
+          "s": 157.978,
+          "e": 158.058,
+          "c": 0.994681
+        },
+        {
+          "w": "common",
+          "s": 158.058,
+          "e": 158.468,
+          "c": 0.907054
+        },
+        {
+          "w": "sense",
+          "s": 158.468,
+          "e": 158.758,
+          "c": 0.915283
+        },
+        {
+          "w": "transparency",
+          "s": 158.878,
+          "e": 159.708,
+          "c": 0.753044
+        },
+        {
+          "w": "and",
+          "s": 159.708,
+          "e": 159.898,
+          "c": 0.999712
+        },
+        {
+          "w": "accountability",
+          "s": 160.308,
+          "e": 160.738,
+          "c": 0.999483
+        },
+        {
+          "w": "measure",
+          "s": 160.818,
+          "e": 161.248,
+          "c": 0.998557
+        },
+        {
+          "w": "that",
+          "s": 161.248,
+          "e": 161.508,
+          "c": 0.841755
+        },
+        {
+          "w": "requires",
+          "s": 161.508,
+          "e": 162.048,
+          "c": 0.999127
+        },
+        {
+          "w": "the",
+          "s": 162.048,
+          "e": 162.328,
+          "c": 0.965467
+        },
+        {
+          "w": "EPA",
+          "s": 162.328,
+          "e": 162.598,
+          "c": 0.998498
+        },
+        {
+          "w": "to",
+          "s": 162.608,
+          "e": 162.728,
+          "c": 0.999945
+        },
+        {
+          "w": "submit",
+          "s": 162.728,
+          "e": 163.088,
+          "c": 0.999741
+        },
+        {
+          "w": "a",
+          "s": 163.148,
+          "e": 163.148,
+          "c": 0.999407
+        },
+        {
+          "w": "comprehensive",
+          "s": 163.218,
+          "e": 163.928,
+          "c": 0.996683
+        },
+        {
+          "w": "review",
+          "s": 163.928,
+          "e": 164.258,
+          "c": 0.99869
+        },
+        {
+          "w": "to",
+          "s": 164.348,
+          "e": 164.518,
+          "c": 0.949141
+        },
+        {
+          "w": "Congress",
+          "s": 164.518,
+          "e": 165.388,
+          "c": 0.977131
+        },
+        {
+          "w": "after",
+          "s": 165.388,
+          "e": 165.758,
+          "c": 0.999523
+        },
+        {
+          "w": "five",
+          "s": 165.998,
+          "e": 166.058,
+          "c": 0.993693
+        },
+        {
+          "w": "years",
+          "s": 166.058,
+          "e": 166.408,
+          "c": 0.998622
+        },
+        {
+          "w": "of",
+          "s": 166.498,
+          "e": 166.578,
+          "c": 0.999569
+        },
+        {
+          "w": "cleanup",
+          "s": 166.578,
+          "e": 167.038,
+          "c": 0.974754
+        },
+        {
+          "w": "efforts.",
+          "s": 167.158,
+          "e": 167.648,
+          "c": 0.845872
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 167.64,
+      "end_s": 194.45,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The report required by my amendment will include the number of sites that have to be remediated, the types of PFAS chemicals present at each site, an analysis of discrepancies in cleanup between federal and non-federal contamination sites, and more. For the sake of our constituents and after so many years of inexcusable threats to their health, Congress must ensure that EPA's PFAS cleanup efforts are effective.",
+      "words": [
+        {
+          "w": "The",
+          "s": 167.642,
+          "e": 167.832,
+          "c": 0.949606
+        },
+        {
+          "w": "report",
+          "s": 167.902,
+          "e": 168.222,
+          "c": 0.983074
+        },
+        {
+          "w": "required",
+          "s": 168.222,
+          "e": 168.752,
+          "c": 0.965123
+        },
+        {
+          "w": "by",
+          "s": 168.752,
+          "e": 168.882,
+          "c": 0.996231
+        },
+        {
+          "w": "my",
+          "s": 168.882,
+          "e": 169.002,
+          "c": 0.990579
+        },
+        {
+          "w": "amendment",
+          "s": 169.002,
+          "e": 169.632,
+          "c": 0.967761
+        },
+        {
+          "w": "will",
+          "s": 169.632,
+          "e": 169.692,
+          "c": 0.919221
+        },
+        {
+          "w": "include",
+          "s": 169.692,
+          "e": 170.012,
+          "c": 0.97896
+        },
+        {
+          "w": "the",
+          "s": 170.012,
+          "e": 170.192,
+          "c": 0.793707
+        },
+        {
+          "w": "number",
+          "s": 170.192,
+          "e": 170.432,
+          "c": 0.965317
+        },
+        {
+          "w": "of",
+          "s": 170.432,
+          "e": 170.632,
+          "c": 0.970302
+        },
+        {
+          "w": "sites",
+          "s": 170.632,
+          "e": 171.122,
+          "c": 0.976415
+        },
+        {
+          "w": "that",
+          "s": 171.182,
+          "e": 171.312,
+          "c": 0.838697
+        },
+        {
+          "w": "have",
+          "s": 171.312,
+          "e": 171.552,
+          "c": 0.970469
+        },
+        {
+          "w": "to",
+          "s": 171.622,
+          "e": 171.672,
+          "c": 0.966409
+        },
+        {
+          "w": "be",
+          "s": 171.672,
+          "e": 171.772,
+          "c": 0.989963
+        },
+        {
+          "w": "remediated,",
+          "s": 171.772,
+          "e": 172.832,
+          "c": 0.858885
+        },
+        {
+          "w": "the",
+          "s": 173.082,
+          "e": 173.082,
+          "c": 0.994342
+        },
+        {
+          "w": "types",
+          "s": 173.102,
+          "e": 173.492,
+          "c": 0.994979
+        },
+        {
+          "w": "of",
+          "s": 173.492,
+          "e": 173.602,
+          "c": 0.999114
+        },
+        {
+          "w": "PFAS",
+          "s": 173.672,
+          "e": 173.972,
+          "c": 0.960058
+        },
+        {
+          "w": "chemicals",
+          "s": 173.972,
+          "e": 174.712,
+          "c": 0.996919
+        },
+        {
+          "w": "present",
+          "s": 174.712,
+          "e": 175.292,
+          "c": 0.997094
+        },
+        {
+          "w": "at",
+          "s": 175.292,
+          "e": 175.452,
+          "c": 0.996077
+        },
+        {
+          "w": "each",
+          "s": 175.452,
+          "e": 175.782,
+          "c": 0.99739
+        },
+        {
+          "w": "site,",
+          "s": 175.782,
+          "e": 176.322,
+          "c": 0.964442
+        },
+        {
+          "w": "an",
+          "s": 176.332,
+          "e": 176.472,
+          "c": 0.948829
+        },
+        {
+          "w": "analysis",
+          "s": 176.602,
+          "e": 177.102,
+          "c": 0.997636
+        },
+        {
+          "w": "of",
+          "s": 177.102,
+          "e": 177.242,
+          "c": 0.99939
+        },
+        {
+          "w": "discrepancies",
+          "s": 177.332,
+          "e": 178.242,
+          "c": 0.99211
+        },
+        {
+          "w": "in",
+          "s": 178.242,
+          "e": 178.402,
+          "c": 0.943966
+        },
+        {
+          "w": "cleanup",
+          "s": 178.402,
+          "e": 178.972,
+          "c": 0.746991
+        },
+        {
+          "w": "between",
+          "s": 178.972,
+          "e": 179.312,
+          "c": 0.952407
+        },
+        {
+          "w": "federal",
+          "s": 179.312,
+          "e": 179.782,
+          "c": 0.804984
+        },
+        {
+          "w": "and",
+          "s": 179.782,
+          "e": 179.942,
+          "c": 0.983798
+        },
+        {
+          "w": "non-federal",
+          "s": 179.982,
+          "e": 180.592,
+          "c": 0.958548
+        },
+        {
+          "w": "contamination",
+          "s": 180.592,
+          "e": 181.802,
+          "c": 0.976669
+        },
+        {
+          "w": "sites,",
+          "s": 181.802,
+          "e": 182.482,
+          "c": 0.809945
+        },
+        {
+          "w": "and",
+          "s": 182.482,
+          "e": 182.802,
+          "c": 0.841905
+        },
+        {
+          "w": "more.",
+          "s": 182.922,
+          "e": 183.552,
+          "c": 0.983864
+        },
+        {
+          "w": "For",
+          "s": 183.562,
+          "e": 183.752,
+          "c": 0.997607
+        },
+        {
+          "w": "the",
+          "s": 183.822,
+          "e": 183.952,
+          "c": 0.999369
+        },
+        {
+          "w": "sake",
+          "s": 183.952,
+          "e": 184.222,
+          "c": 0.998247
+        },
+        {
+          "w": "of",
+          "s": 184.222,
+          "e": 184.322,
+          "c": 0.999342
+        },
+        {
+          "w": "our",
+          "s": 184.392,
+          "e": 184.462,
+          "c": 0.998384
+        },
+        {
+          "w": "constituents",
+          "s": 184.552,
+          "e": 185.392,
+          "c": 0.990917
+        },
+        {
+          "w": "and",
+          "s": 185.392,
+          "e": 185.592,
+          "c": 0.615414
+        },
+        {
+          "w": "after",
+          "s": 185.592,
+          "e": 185.932,
+          "c": 0.992341
+        },
+        {
+          "w": "so",
+          "s": 185.932,
+          "e": 186.062,
+          "c": 0.996542
+        },
+        {
+          "w": "many",
+          "s": 186.062,
+          "e": 186.332,
+          "c": 0.997368
+        },
+        {
+          "w": "years",
+          "s": 186.332,
+          "e": 186.642,
+          "c": 0.998058
+        },
+        {
+          "w": "of",
+          "s": 186.672,
+          "e": 186.802,
+          "c": 0.991966
+        },
+        {
+          "w": "inexcusable",
+          "s": 186.802,
+          "e": 187.472,
+          "c": 0.998353
+        },
+        {
+          "w": "threats",
+          "s": 187.552,
+          "e": 188.112,
+          "c": 0.994581
+        },
+        {
+          "w": "to",
+          "s": 188.112,
+          "e": 188.272,
+          "c": 0.976557
+        },
+        {
+          "w": "their",
+          "s": 188.272,
+          "e": 188.442,
+          "c": 0.995788
+        },
+        {
+          "w": "health,",
+          "s": 188.742,
+          "e": 189.152,
+          "c": 0.928647
+        },
+        {
+          "w": "Congress",
+          "s": 189.422,
+          "e": 189.892,
+          "c": 0.953377
+        },
+        {
+          "w": "must",
+          "s": 189.892,
+          "e": 190.262,
+          "c": 0.997876
+        },
+        {
+          "w": "ensure",
+          "s": 190.262,
+          "e": 190.812,
+          "c": 0.986831
+        },
+        {
+          "w": "that",
+          "s": 190.812,
+          "e": 191.182,
+          "c": 0.993517
+        },
+        {
+          "w": "EPA's",
+          "s": 191.182,
+          "e": 191.632,
+          "c": 0.990849
+        },
+        {
+          "w": "PFAS",
+          "s": 191.632,
+          "e": 191.992,
+          "c": 0.996006
+        },
+        {
+          "w": "cleanup",
+          "s": 191.992,
+          "e": 192.632,
+          "c": 0.936304
+        },
+        {
+          "w": "efforts",
+          "s": 192.632,
+          "e": 193.292,
+          "c": 0.996845
+        },
+        {
+          "w": "are",
+          "s": 193.292,
+          "e": 193.562,
+          "c": 0.998569
+        },
+        {
+          "w": "effective.",
+          "s": 193.562,
+          "e": 194.452,
+          "c": 0.907573
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 194.4,
+      "end_s": 197.55,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I urge my colleagues to support this amendment, and I reserve.",
+      "words": [
+        {
+          "w": "I",
+          "s": 194.4,
+          "e": 194.47,
+          "c": 0.994031
+        },
+        {
+          "w": "urge",
+          "s": 194.62,
+          "e": 194.77,
+          "c": 0.9995
+        },
+        {
+          "w": "my",
+          "s": 194.77,
+          "e": 194.92,
+          "c": 0.999661
+        },
+        {
+          "w": "colleagues",
+          "s": 194.92,
+          "e": 195.68,
+          "c": 0.998664
+        },
+        {
+          "w": "to",
+          "s": 195.68,
+          "e": 195.71,
+          "c": 0.984491
+        },
+        {
+          "w": "support",
+          "s": 195.79,
+          "e": 196.18,
+          "c": 0.999142
+        },
+        {
+          "w": "this",
+          "s": 196.18,
+          "e": 196.34,
+          "c": 0.989347
+        },
+        {
+          "w": "amendment,",
+          "s": 196.34,
+          "e": 196.72,
+          "c": 0.486772
+        },
+        {
+          "w": "and",
+          "s": 196.72,
+          "e": 196.83,
+          "c": 0.951711
+        },
+        {
+          "w": "I",
+          "s": 196.95,
+          "e": 196.95,
+          "c": 0.999365
+        },
+        {
+          "w": "reserve.",
+          "s": 196.96,
+          "e": 197.55,
+          "c": 0.991541
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 197.79,
+      "end_s": 199.36,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Gentleman reserves the",
+      "words": [
+        {
+          "w": "Gentleman",
+          "s": 197.79,
+          "e": 198.38,
+          "c": 0.727518
+        },
+        {
+          "w": "reserves",
+          "s": 198.38,
+          "e": 199.04,
+          "c": 0.355761
+        },
+        {
+          "w": "the",
+          "s": 199.14,
+          "e": 199.36,
+          "c": 0.956776
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 199.42,
+      "end_s": 205.09,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "balance of his time. For what purpose does the gentleman from Illinois seek recognition? Thank you, Mr. Chairman.",
+      "words": [
+        {
+          "w": "balance",
+          "s": 199.42,
+          "e": 199.99,
+          "c": 0.997021
+        },
+        {
+          "w": "of",
+          "s": 200.11,
+          "e": 200.21,
+          "c": 0.974905
+        },
+        {
+          "w": "his",
+          "s": 200.21,
+          "e": 200.48,
+          "c": 0.381881
+        },
+        {
+          "w": "time.",
+          "s": 200.48,
+          "e": 201.17,
+          "c": 0.991149
+        },
+        {
+          "w": "For",
+          "s": 201.19,
+          "e": 201.31,
+          "c": 0.999857
+        },
+        {
+          "w": "what",
+          "s": 201.4,
+          "e": 201.48,
+          "c": 0.999985
+        },
+        {
+          "w": "purpose",
+          "s": 201.48,
+          "e": 201.78,
+          "c": 0.990998
+        },
+        {
+          "w": "does",
+          "s": 201.78,
+          "e": 201.95,
+          "c": 0.99717
+        },
+        {
+          "w": "the",
+          "s": 201.95,
+          "e": 202.08,
+          "c": 0.976273
+        },
+        {
+          "w": "gentleman",
+          "s": 202.08,
+          "e": 202.46,
+          "c": 0.967148
+        },
+        {
+          "w": "from",
+          "s": 202.46,
+          "e": 202.64,
+          "c": 0.999539
+        },
+        {
+          "w": "Illinois",
+          "s": 202.64,
+          "e": 202.98,
+          "c": 0.999897
+        },
+        {
+          "w": "seek",
+          "s": 203.04,
+          "e": 203.15,
+          "c": 0.994769
+        },
+        {
+          "w": "recognition?",
+          "s": 203.22,
+          "e": 203.82,
+          "c": 0.99979
+        },
+        {
+          "w": "Thank",
+          "s": 204.04,
+          "e": 204.07,
+          "c": 0.99991
+        },
+        {
+          "w": "you,",
+          "s": 204.07,
+          "e": 204.32,
+          "c": 0.999495
+        },
+        {
+          "w": "Mr.",
+          "s": 204.32,
+          "e": 204.57,
+          "c": 0.998679
+        },
+        {
+          "w": "Chairman.",
+          "s": 204.57,
+          "e": 205.09,
+          "c": 0.990325
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 205.14,
+      "end_s": 208.06,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I seek time in opposition and would like to reserve my time.",
+      "words": [
+        {
+          "w": "I",
+          "s": 205.14,
+          "e": 205.19,
+          "c": 0.999912
+        },
+        {
+          "w": "seek",
+          "s": 205.36,
+          "e": 205.41,
+          "c": 0.999563
+        },
+        {
+          "w": "time",
+          "s": 205.41,
+          "e": 205.63,
+          "c": 0.999918
+        },
+        {
+          "w": "in",
+          "s": 205.63,
+          "e": 205.74,
+          "c": 0.98133
+        },
+        {
+          "w": "opposition",
+          "s": 205.74,
+          "e": 206.31,
+          "c": 0.999394
+        },
+        {
+          "w": "and",
+          "s": 206.31,
+          "e": 206.41,
+          "c": 0.943829
+        },
+        {
+          "w": "would",
+          "s": 206.49,
+          "e": 206.74,
+          "c": 0.999922
+        },
+        {
+          "w": "like",
+          "s": 206.79,
+          "e": 206.94,
+          "c": 0.999969
+        },
+        {
+          "w": "to",
+          "s": 206.99,
+          "e": 207.09,
+          "c": 0.999998
+        },
+        {
+          "w": "reserve",
+          "s": 207.09,
+          "e": 207.49,
+          "c": 0.999485
+        },
+        {
+          "w": "my",
+          "s": 207.49,
+          "e": 207.57,
+          "c": 0.999964
+        },
+        {
+          "w": "time.",
+          "s": 207.69,
+          "e": 208.06,
+          "c": 0.999969
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 208.29,
+      "end_s": 208.86,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Gentleman is",
+      "words": [
+        {
+          "w": "Gentleman",
+          "s": 208.29,
+          "e": 208.72,
+          "c": 0.993838
+        },
+        {
+          "w": "is",
+          "s": 208.72,
+          "e": 208.86,
+          "c": 0.51797
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 208.86,
+      "end_s": 211.93,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "recognized, and gentleman reserves. Gentleman",
+      "words": [
+        {
+          "w": "recognized,",
+          "s": 208.86,
+          "e": 209.73,
+          "c": 0.651079
+        },
+        {
+          "w": "and",
+          "s": 209.73,
+          "e": 209.95,
+          "c": 0.985537
+        },
+        {
+          "w": "gentleman",
+          "s": 209.95,
+          "e": 210.49,
+          "c": 0.842441
+        },
+        {
+          "w": "reserves.",
+          "s": 210.61,
+          "e": 211.44,
+          "c": 0.809227
+        },
+        {
+          "w": "Gentleman",
+          "s": 211.66,
+          "e": 211.93,
+          "c": 0.963371
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 211.93,
+      "end_s": 219.56,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "from Michigan is recognized. Thank you, Mr. Chairman. At this time, I'd like to yield one minute to the Speaker of the House, Nancy Pelosi.",
+      "words": [
+        {
+          "w": "from",
+          "s": 211.93,
+          "e": 212.13,
+          "c": 0.999752
+        },
+        {
+          "w": "Michigan",
+          "s": 212.17,
+          "e": 212.58,
+          "c": 0.999903
+        },
+        {
+          "w": "is",
+          "s": 212.58,
+          "e": 212.69,
+          "c": 0.999941
+        },
+        {
+          "w": "recognized.",
+          "s": 212.69,
+          "e": 213.4,
+          "c": 0.99984
+        },
+        {
+          "w": "Thank",
+          "s": 213.64,
+          "e": 213.67,
+          "c": 0.999956
+        },
+        {
+          "w": "you,",
+          "s": 213.67,
+          "e": 213.92,
+          "c": 0.999989
+        },
+        {
+          "w": "Mr.",
+          "s": 213.92,
+          "e": 214.17,
+          "c": 0.999884
+        },
+        {
+          "w": "Chairman.",
+          "s": 214.17,
+          "e": 214.69,
+          "c": 0.999617
+        },
+        {
+          "w": "At",
+          "s": 214.76,
+          "e": 214.86,
+          "c": 0.914925
+        },
+        {
+          "w": "this",
+          "s": 214.98,
+          "e": 215.09,
+          "c": 0.999794
+        },
+        {
+          "w": "time,",
+          "s": 215.09,
+          "e": 215.42,
+          "c": 0.996546
+        },
+        {
+          "w": "I'd",
+          "s": 215.42,
+          "e": 215.58,
+          "c": 0.995877
+        },
+        {
+          "w": "like",
+          "s": 215.58,
+          "e": 215.8,
+          "c": 0.999969
+        },
+        {
+          "w": "to",
+          "s": 215.8,
+          "e": 215.91,
+          "c": 0.999989
+        },
+        {
+          "w": "yield",
+          "s": 215.91,
+          "e": 216.19,
+          "c": 0.999903
+        },
+        {
+          "w": "one",
+          "s": 216.19,
+          "e": 216.36,
+          "c": 0.999622
+        },
+        {
+          "w": "minute",
+          "s": 216.36,
+          "e": 216.73,
+          "c": 0.999846
+        },
+        {
+          "w": "to",
+          "s": 216.8,
+          "e": 216.9,
+          "c": 0.979638
+        },
+        {
+          "w": "the",
+          "s": 216.9,
+          "e": 217.12,
+          "c": 0.999933
+        },
+        {
+          "w": "Speaker",
+          "s": 217.12,
+          "e": 217.63,
+          "c": 0.988555
+        },
+        {
+          "w": "of",
+          "s": 217.63,
+          "e": 217.77,
+          "c": 0.999994
+        },
+        {
+          "w": "the",
+          "s": 217.77,
+          "e": 217.98,
+          "c": 0.999992
+        },
+        {
+          "w": "House,",
+          "s": 217.99,
+          "e": 218.49,
+          "c": 0.999563
+        },
+        {
+          "w": "Nancy",
+          "s": 218.49,
+          "e": 218.85,
+          "c": 0.997457
+        },
+        {
+          "w": "Pelosi.",
+          "s": 218.85,
+          "e": 219.56,
+          "c": 0.999886
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 219.79,
+      "end_s": 220.46,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Gentleman from",
+      "words": [
+        {
+          "w": "Gentleman",
+          "s": 219.79,
+          "e": 220.18,
+          "c": 0.943651
+        },
+        {
+          "w": "from",
+          "s": 220.18,
+          "e": 220.46,
+          "c": 0.999784
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 220.46,
+      "end_s": 222.59,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "California is recognized. Thank",
+      "words": [
+        {
+          "w": "California",
+          "s": 220.46,
+          "e": 221.04,
+          "c": 0.999962
+        },
+        {
+          "w": "is",
+          "s": 221.14,
+          "e": 221.29,
+          "c": 0.998534
+        },
+        {
+          "w": "recognized.",
+          "s": 221.29,
+          "e": 222.22,
+          "c": 0.999866
+        },
+        {
+          "w": "Thank",
+          "s": 222.44,
+          "e": 222.59,
+          "c": 0.863973
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 222.59,
+      "end_s": 222.9,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you,",
+      "words": [
+        {
+          "w": "you,",
+          "s": 222.59,
+          "e": 222.9,
+          "c": 0.999989
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 222.94,
+      "end_s": 232.66,
+      "speaker": "SPEAKER_13",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Mr. Speaker. I thank the gentleman for yielding and congratulate him on his important amendment, which I hope will be part of this legislation, an important study.",
+      "words": [
+        {
+          "w": "Mr.",
+          "s": 222.94,
+          "e": 223.31,
+          "c": 0.999933
+        },
+        {
+          "w": "Speaker.",
+          "s": 223.31,
+          "e": 224.08,
+          "c": 0.998885
+        },
+        {
+          "w": "I",
+          "s": 224.24,
+          "e": 224.3,
+          "c": 0.985101
+        },
+        {
+          "w": "thank",
+          "s": 224.46,
+          "e": 224.62,
+          "c": 0.99883
+        },
+        {
+          "w": "the",
+          "s": 224.62,
+          "e": 224.81,
+          "c": 0.999794
+        },
+        {
+          "w": "gentleman",
+          "s": 224.81,
+          "e": 225.39,
+          "c": 0.984112
+        },
+        {
+          "w": "for",
+          "s": 225.39,
+          "e": 225.51,
+          "c": 0.999886
+        },
+        {
+          "w": "yielding",
+          "s": 225.59,
+          "e": 226.12,
+          "c": 0.999691
+        },
+        {
+          "w": "and",
+          "s": 226.12,
+          "e": 226.35,
+          "c": 0.79552
+        },
+        {
+          "w": "congratulate",
+          "s": 226.35,
+          "e": 227.26,
+          "c": 0.993419
+        },
+        {
+          "w": "him",
+          "s": 227.26,
+          "e": 227.49,
+          "c": 0.999956
+        },
+        {
+          "w": "on",
+          "s": 227.49,
+          "e": 227.6,
+          "c": 0.986098
+        },
+        {
+          "w": "his",
+          "s": 227.6,
+          "e": 227.75,
+          "c": 0.9995
+        },
+        {
+          "w": "important",
+          "s": 227.75,
+          "e": 228.21,
+          "c": 0.998376
+        },
+        {
+          "w": "amendment,",
+          "s": 228.21,
+          "e": 228.78,
+          "c": 0.991566
+        },
+        {
+          "w": "which",
+          "s": 228.78,
+          "e": 229.09,
+          "c": 0.545475
+        },
+        {
+          "w": "I",
+          "s": 229.09,
+          "e": 229.15,
+          "c": 0.998405
+        },
+        {
+          "w": "hope",
+          "s": 229.15,
+          "e": 229.4,
+          "c": 0.999249
+        },
+        {
+          "w": "will",
+          "s": 229.64,
+          "e": 229.69,
+          "c": 0.999905
+        },
+        {
+          "w": "be",
+          "s": 229.69,
+          "e": 229.81,
+          "c": 0.999743
+        },
+        {
+          "w": "part",
+          "s": 229.88,
+          "e": 230.09,
+          "c": 0.830922
+        },
+        {
+          "w": "of",
+          "s": 230.09,
+          "e": 230.22,
+          "c": 0.999996
+        },
+        {
+          "w": "this",
+          "s": 230.22,
+          "e": 230.49,
+          "c": 0.999989
+        },
+        {
+          "w": "legislation,",
+          "s": 230.49,
+          "e": 231.36,
+          "c": 0.943988
+        },
+        {
+          "w": "an",
+          "s": 231.36,
+          "e": 231.49,
+          "c": 0.964893
+        },
+        {
+          "w": "important",
+          "s": 231.49,
+          "e": 232.09,
+          "c": 0.999968
+        },
+        {
+          "w": "study.",
+          "s": 232.09,
+          "e": 232.66,
+          "c": 0.999939
+        }
+      ]
+    }
+  ]
+}

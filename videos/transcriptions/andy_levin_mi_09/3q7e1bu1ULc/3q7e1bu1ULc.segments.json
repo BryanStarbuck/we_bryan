@@ -1,0 +1,7063 @@
+{
+  "schema_version": 2,
+  "canonical_id": "0243ceced3c62ed4",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 423.14,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T13:58:02.955Z",
+  "text_sha256": "18e0aa99604baef8a36b8f53f1997e786b84055cac17c8d877ec698b944485eb",
+  "segments_sha256": "17fbd60dae37ea962a32f08c31f97fb9ac6ed262590ade37713d7de6da5f0434",
+  "words_sha256": "34198909b869e9f9d155b67c470f9a0bf0fd9721819ecdf57d6c80932aa44e7f",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 17,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 46,
+    "clusters": 13,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.83,
+        "confidence": "low",
+        "clean_s": 89.2
+      },
+      "clean_s": 89.2,
+      "speaking_s": 90.2,
+      "first_s": 0.69
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.87,
+        "confidence": "low",
+        "clean_s": 16.3
+      },
+      "clean_s": 16.3,
+      "speaking_s": 16.3,
+      "first_s": 27.98
+    },
+    {
+      "id": "SPEAKER_02",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.1
+      },
+      "clean_s": 5.1,
+      "speaking_s": 5.1,
+      "first_s": 34.95
+    },
+    {
+      "id": "SPEAKER_05",
+      "n": 4,
+      "label": "Speaker 4 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.85,
+        "confidence": "low",
+        "clean_s": 14.6
+      },
+      "clean_s": 14.6,
+      "speaking_s": 14.6,
+      "first_s": 46.98
+    },
+    {
+      "id": "SPEAKER_07",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 114.6
+      },
+      "clean_s": 114.6,
+      "speaking_s": 114.8,
+      "first_s": 50.71
+    },
+    {
+      "id": "SPEAKER_10",
+      "n": 6,
+      "label": "Speaker 6",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.4
+      },
+      "clean_s": 0.4,
+      "speaking_s": 0.4,
+      "first_s": 134.59
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 7,
+      "label": "Speaker 7",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 6.1
+      },
+      "clean_s": 6.1,
+      "speaking_s": 6.3,
+      "first_s": 143.03
+    },
+    {
+      "id": "SPEAKER_16",
+      "n": 8,
+      "label": "Speaker 8",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 3.6
+      },
+      "clean_s": 3.6,
+      "speaking_s": 3.6,
+      "first_s": 183.75
+    },
+    {
+      "id": "SPEAKER_18",
+      "n": 9,
+      "label": "Speaker 9 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.86,
+        "confidence": "low",
+        "clean_s": 70.7
+      },
+      "clean_s": 70.7,
+      "speaking_s": 71.8,
+      "first_s": 186.67
+    },
+    {
+      "id": "SPEAKER_23",
+      "n": 10,
+      "label": "Speaker 10",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 2.6
+      },
+      "clean_s": 2.6,
+      "speaking_s": 2.7,
+      "first_s": 322.39
+    },
+    {
+      "id": "SPEAKER_24",
+      "n": 11,
+      "label": "Speaker 11",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 64.4
+      },
+      "clean_s": 64.4,
+      "speaking_s": 65,
+      "first_s": 325.03
+    },
+    {
+      "id": "SPEAKER_25",
+      "n": 12,
+      "label": "Speaker 12",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0
+      },
+      "clean_s": 0,
+      "speaking_s": 0.6,
+      "first_s": 392.31
+    },
+    {
+      "id": "SPEAKER_27",
+      "n": 13,
+      "label": "Speaker 13",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 3.8
+      },
+      "clean_s": 3.8,
+      "speaking_s": 3.8,
+      "first_s": 400.96
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.04,
+      "end_s": 0.47,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 34.49,
+      "end_s": 34.63,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 49.87,
+      "end_s": 50.12,
+      "segment_i": 7,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 112.08,
+      "end_s": 112.57,
+      "segment_i": 11,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 150.49,
+      "end_s": 150.49,
+      "segment_i": 16,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 183.18,
+      "end_s": 183.72,
+      "segment_i": 19,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 321.34,
+      "end_s": 322,
+      "segment_i": 30,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 326.38,
+      "end_s": 327.2,
+      "segment_i": 33,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 333.82,
+      "end_s": 334.14,
+      "segment_i": 35,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 360.34,
+      "end_s": 361.38,
+      "segment_i": 37,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 405.03,
+      "end_s": 405.03,
+      "segment_i": 42,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 413.97,
+      "end_s": 414.03,
+      "segment_i": 45,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.04,
+      "end_s": 0.47,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 0.04,
+          "e": 0.43,
+          "c": 0.753868
+        },
+        {
+          "w": "you",
+          "s": 0.44,
+          "e": 0.47,
+          "c": 0.965992
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.75,
+      "end_s": 27.51,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Madam Chairwoman. Thank you all for coming in today. I know there's been some focus on Russia's activities in Ukraine, and I want to go back there a little bit and explore in more detail. Brookings fellow Alina Polyakova wrote that while Russian interference in Western elections came as a surprise to many, Russia has a long track record of intervening in Ukraine's elections since 2004.",
+      "words": [
+        {
+          "w": "Madam",
+          "s": 0.75,
+          "e": 1.12,
+          "c": 0.215026
+        },
+        {
+          "w": "Chairwoman.",
+          "s": 1.12,
+          "e": 2.15,
+          "c": 0.55672
+        },
+        {
+          "w": "Thank",
+          "s": 2.15,
+          "e": 2.34,
+          "c": 0.529775
+        },
+        {
+          "w": "you",
+          "s": 2.4,
+          "e": 2.55,
+          "c": 0.992607
+        },
+        {
+          "w": "all",
+          "s": 2.55,
+          "e": 2.72,
+          "c": 0.970422
+        },
+        {
+          "w": "for",
+          "s": 2.72,
+          "e": 2.84,
+          "c": 0.986792
+        },
+        {
+          "w": "coming",
+          "s": 2.84,
+          "e": 3.12,
+          "c": 0.976753
+        },
+        {
+          "w": "in",
+          "s": 3.12,
+          "e": 3.23,
+          "c": 0.977396
+        },
+        {
+          "w": "today.",
+          "s": 3.23,
+          "e": 3.65,
+          "c": 0.929906
+        },
+        {
+          "w": "I",
+          "s": 3.71,
+          "e": 3.77,
+          "c": 0.999418
+        },
+        {
+          "w": "know",
+          "s": 3.77,
+          "e": 4.15,
+          "c": 0.99935
+        },
+        {
+          "w": "there's",
+          "s": 4.42,
+          "e": 4.81,
+          "c": 0.953183
+        },
+        {
+          "w": "been",
+          "s": 4.81,
+          "e": 5.19,
+          "c": 0.998112
+        },
+        {
+          "w": "some",
+          "s": 5.19,
+          "e": 5.57,
+          "c": 0.993847
+        },
+        {
+          "w": "focus",
+          "s": 5.57,
+          "e": 6.02,
+          "c": 0.995103
+        },
+        {
+          "w": "on",
+          "s": 6.08,
+          "e": 6.88,
+          "c": 0.943299
+        },
+        {
+          "w": "Russia's",
+          "s": 6.88,
+          "e": 7.6,
+          "c": 0.889531
+        },
+        {
+          "w": "activities",
+          "s": 7.6,
+          "e": 8.08,
+          "c": 0.95179
+        },
+        {
+          "w": "in",
+          "s": 8.08,
+          "e": 8.2,
+          "c": 0.968278
+        },
+        {
+          "w": "Ukraine,",
+          "s": 8.2,
+          "e": 8.7,
+          "c": 0.253046
+        },
+        {
+          "w": "and",
+          "s": 8.73,
+          "e": 8.95,
+          "c": 0.960365
+        },
+        {
+          "w": "I",
+          "s": 8.95,
+          "e": 9.02,
+          "c": 0.998811
+        },
+        {
+          "w": "want",
+          "s": 9.14,
+          "e": 9.18,
+          "c": 0.938029
+        },
+        {
+          "w": "to",
+          "s": 9.45,
+          "e": 9.54,
+          "c": 0.992839
+        },
+        {
+          "w": "go",
+          "s": 9.54,
+          "e": 9.62,
+          "c": 0.999243
+        },
+        {
+          "w": "back",
+          "s": 9.71,
+          "e": 10.05,
+          "c": 0.999146
+        },
+        {
+          "w": "there",
+          "s": 10.05,
+          "e": 10.5,
+          "c": 0.99075
+        },
+        {
+          "w": "a",
+          "s": 10.5,
+          "e": 10.56,
+          "c": 0.974989
+        },
+        {
+          "w": "little",
+          "s": 10.56,
+          "e": 10.93,
+          "c": 0.996873
+        },
+        {
+          "w": "bit",
+          "s": 10.93,
+          "e": 11.12,
+          "c": 0.994712
+        },
+        {
+          "w": "and",
+          "s": 11.12,
+          "e": 11.25,
+          "c": 0.90779
+        },
+        {
+          "w": "explore",
+          "s": 11.3,
+          "e": 11.78,
+          "c": 0.960778
+        },
+        {
+          "w": "in",
+          "s": 11.78,
+          "e": 11.86,
+          "c": 0.913694
+        },
+        {
+          "w": "more",
+          "s": 11.86,
+          "e": 12.26,
+          "c": 0.986989
+        },
+        {
+          "w": "detail.",
+          "s": 12.26,
+          "e": 13.16,
+          "c": 0.981751
+        },
+        {
+          "w": "Brookings",
+          "s": 13.2,
+          "e": 14.31,
+          "c": 0.919392
+        },
+        {
+          "w": "fellow",
+          "s": 14.31,
+          "e": 15.07,
+          "c": 0.546613
+        },
+        {
+          "w": "Alina",
+          "s": 15.07,
+          "e": 15.7,
+          "c": 0.816958
+        },
+        {
+          "w": "Polyakova",
+          "s": 15.7,
+          "e": 16.88,
+          "c": 0.492658
+        },
+        {
+          "w": "wrote",
+          "s": 16.88,
+          "e": 17.38,
+          "c": 0.881244
+        },
+        {
+          "w": "that",
+          "s": 17.38,
+          "e": 17.92,
+          "c": 0.783808
+        },
+        {
+          "w": "while",
+          "s": 17.92,
+          "e": 18.22,
+          "c": 0.444559
+        },
+        {
+          "w": "Russian",
+          "s": 18.22,
+          "e": 18.6,
+          "c": 0.653157
+        },
+        {
+          "w": "interference",
+          "s": 18.68,
+          "e": 19.12,
+          "c": 0.937774
+        },
+        {
+          "w": "in",
+          "s": 19.12,
+          "e": 19.18,
+          "c": 0.59539
+        },
+        {
+          "w": "Western",
+          "s": 19.28,
+          "e": 19.72,
+          "c": 0.453786
+        },
+        {
+          "w": "elections",
+          "s": 19.72,
+          "e": 20.31,
+          "c": 0.637845
+        },
+        {
+          "w": "came",
+          "s": 20.32,
+          "e": 20.58,
+          "c": 0.710112
+        },
+        {
+          "w": "as",
+          "s": 20.58,
+          "e": 20.68,
+          "c": 0.953526
+        },
+        {
+          "w": "a",
+          "s": 20.68,
+          "e": 20.76,
+          "c": 0.973664
+        },
+        {
+          "w": "surprise",
+          "s": 20.76,
+          "e": 21.42,
+          "c": 0.994552
+        },
+        {
+          "w": "to",
+          "s": 21.42,
+          "e": 21.55,
+          "c": 0.968306
+        },
+        {
+          "w": "many,",
+          "s": 21.57,
+          "e": 21.84,
+          "c": 0.92589
+        },
+        {
+          "w": "Russia",
+          "s": 21.88,
+          "e": 22.24,
+          "c": 0.994577
+        },
+        {
+          "w": "has",
+          "s": 22.24,
+          "e": 22.37,
+          "c": 0.999064
+        },
+        {
+          "w": "a",
+          "s": 22.5,
+          "e": 22.5,
+          "c": 0.997697
+        },
+        {
+          "w": "long",
+          "s": 22.59,
+          "e": 22.77,
+          "c": 0.999439
+        },
+        {
+          "w": "track",
+          "s": 22.77,
+          "e": 23.11,
+          "c": 0.997645
+        },
+        {
+          "w": "record",
+          "s": 23.11,
+          "e": 23.51,
+          "c": 0.998641
+        },
+        {
+          "w": "of",
+          "s": 23.51,
+          "e": 23.68,
+          "c": 0.995177
+        },
+        {
+          "w": "intervening",
+          "s": 23.68,
+          "e": 24.5,
+          "c": 0.984279
+        },
+        {
+          "w": "in",
+          "s": 24.5,
+          "e": 24.62,
+          "c": 0.994554
+        },
+        {
+          "w": "Ukraine's",
+          "s": 24.65,
+          "e": 25.32,
+          "c": 0.982913
+        },
+        {
+          "w": "elections",
+          "s": 25.32,
+          "e": 25.99,
+          "c": 0.519957
+        },
+        {
+          "w": "since",
+          "s": 25.99,
+          "e": 26.36,
+          "c": 0.994217
+        },
+        {
+          "w": "2004.",
+          "s": 26.36,
+          "e": 27.51,
+          "c": 0.93795
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 27.86,
+      "end_s": 34.47,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Ukraine's experience is thus a bellwether for assessing the Russian tactics that may be deployed against the West.",
+      "words": [
+        {
+          "w": "Ukraine's",
+          "s": 27.858,
+          "e": 28.078,
+          "c": 0.917663
+        },
+        {
+          "w": "experience",
+          "s": 28.078,
+          "e": 28.738,
+          "c": 0.859011
+        },
+        {
+          "w": "is",
+          "s": 28.738,
+          "e": 28.868,
+          "c": 0.92657
+        },
+        {
+          "w": "thus",
+          "s": 28.868,
+          "e": 29.118,
+          "c": 0.858524
+        },
+        {
+          "w": "a",
+          "s": 29.138,
+          "e": 29.218,
+          "c": 0.979169
+        },
+        {
+          "w": "bellwether",
+          "s": 29.298,
+          "e": 29.788,
+          "c": 0.947679
+        },
+        {
+          "w": "for",
+          "s": 29.788,
+          "e": 30.088,
+          "c": 0.969317
+        },
+        {
+          "w": "assessing",
+          "s": 30.088,
+          "e": 30.818,
+          "c": 0.978521
+        },
+        {
+          "w": "the",
+          "s": 30.948,
+          "e": 31.248,
+          "c": 0.947081
+        },
+        {
+          "w": "Russian",
+          "s": 31.248,
+          "e": 31.568,
+          "c": 0.976248
+        },
+        {
+          "w": "tactics",
+          "s": 31.568,
+          "e": 32.168,
+          "c": 0.86817
+        },
+        {
+          "w": "that",
+          "s": 32.188,
+          "e": 32.368,
+          "c": 0.889118
+        },
+        {
+          "w": "may",
+          "s": 32.368,
+          "e": 32.488,
+          "c": 0.908027
+        },
+        {
+          "w": "be",
+          "s": 32.488,
+          "e": 32.628,
+          "c": 0.763219
+        },
+        {
+          "w": "deployed",
+          "s": 32.628,
+          "e": 33.088,
+          "c": 0.691246
+        },
+        {
+          "w": "against",
+          "s": 33.088,
+          "e": 33.398,
+          "c": 0.769943
+        },
+        {
+          "w": "the",
+          "s": 33.398,
+          "e": 33.658,
+          "c": 0.986543
+        },
+        {
+          "w": "West.",
+          "s": 33.658,
+          "e": 34.468,
+          "c": 0.874202
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 34.49,
+      "end_s": 34.63,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Ms.",
+      "words": [
+        {
+          "w": "Ms.",
+          "s": 34.488,
+          "e": 34.628,
+          "c": 0.863079
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 34.86,
+      "end_s": 39.83,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Newland, can you share a bit more about the kinds of tactics that we've seen from Russia",
+      "words": [
+        {
+          "w": "Newland,",
+          "s": 34.858,
+          "e": 35.388,
+          "c": 0.615848
+        },
+        {
+          "w": "can",
+          "s": 35.478,
+          "e": 35.688,
+          "c": 0.988551
+        },
+        {
+          "w": "you",
+          "s": 35.688,
+          "e": 35.888,
+          "c": 0.999258
+        },
+        {
+          "w": "share",
+          "s": 35.888,
+          "e": 36.228,
+          "c": 0.996441
+        },
+        {
+          "w": "a",
+          "s": 36.298,
+          "e": 36.328,
+          "c": 0.988186
+        },
+        {
+          "w": "bit",
+          "s": 36.328,
+          "e": 36.538,
+          "c": 0.997166
+        },
+        {
+          "w": "more",
+          "s": 36.538,
+          "e": 36.828,
+          "c": 0.998136
+        },
+        {
+          "w": "about",
+          "s": 36.828,
+          "e": 37.188,
+          "c": 0.994376
+        },
+        {
+          "w": "the",
+          "s": 37.188,
+          "e": 37.398,
+          "c": 0.992343
+        },
+        {
+          "w": "kinds",
+          "s": 37.398,
+          "e": 37.758,
+          "c": 0.984234
+        },
+        {
+          "w": "of",
+          "s": 37.758,
+          "e": 37.858,
+          "c": 0.997759
+        },
+        {
+          "w": "tactics",
+          "s": 37.948,
+          "e": 38.488,
+          "c": 0.996814
+        },
+        {
+          "w": "that",
+          "s": 38.488,
+          "e": 38.748,
+          "c": 0.935642
+        },
+        {
+          "w": "we've",
+          "s": 38.748,
+          "e": 39.088,
+          "c": 0.94473
+        },
+        {
+          "w": "seen",
+          "s": 39.088,
+          "e": 39.488,
+          "c": 0.981392
+        },
+        {
+          "w": "from",
+          "s": 39.488,
+          "e": 39.628,
+          "c": 0.956202
+        },
+        {
+          "w": "Russia",
+          "s": 39.628,
+          "e": 39.828,
+          "c": 0.985392
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 39.93,
+      "end_s": 46.98,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "with respect to Ukrainian elections and what, if any, Russian interference do we see during or in the",
+      "words": [
+        {
+          "w": "with",
+          "s": 39.928,
+          "e": 40.158,
+          "c": 0.830522
+        },
+        {
+          "w": "respect",
+          "s": 40.168,
+          "e": 40.588,
+          "c": 0.990082
+        },
+        {
+          "w": "to",
+          "s": 40.588,
+          "e": 40.688,
+          "c": 0.972845
+        },
+        {
+          "w": "Ukrainian",
+          "s": 40.688,
+          "e": 41.048,
+          "c": 0.966626
+        },
+        {
+          "w": "elections",
+          "s": 41.268,
+          "e": 41.488,
+          "c": 0.978483
+        },
+        {
+          "w": "and",
+          "s": 41.978,
+          "e": 42.288,
+          "c": 0.296993
+        },
+        {
+          "w": "what,",
+          "s": 42.288,
+          "e": 42.528,
+          "c": 0.472953
+        },
+        {
+          "w": "if",
+          "s": 42.528,
+          "e": 42.588,
+          "c": 0.932666
+        },
+        {
+          "w": "any,",
+          "s": 42.748,
+          "e": 43.488,
+          "c": 0.978594
+        },
+        {
+          "w": "Russian",
+          "s": 43.488,
+          "e": 44.048,
+          "c": 0.865759
+        },
+        {
+          "w": "interference",
+          "s": 44.048,
+          "e": 44.478,
+          "c": 0.971487
+        },
+        {
+          "w": "do",
+          "s": 44.478,
+          "e": 44.768,
+          "c": 0.438679
+        },
+        {
+          "w": "we",
+          "s": 44.768,
+          "e": 45.048,
+          "c": 0.990427
+        },
+        {
+          "w": "see",
+          "s": 45.048,
+          "e": 45.418,
+          "c": 0.997963
+        },
+        {
+          "w": "during",
+          "s": 45.528,
+          "e": 46.488,
+          "c": 0.957336
+        },
+        {
+          "w": "or",
+          "s": 46.488,
+          "e": 46.628,
+          "c": 0.762849
+        },
+        {
+          "w": "in",
+          "s": 46.628,
+          "e": 46.768,
+          "c": 0.965178
+        },
+        {
+          "w": "the",
+          "s": 46.768,
+          "e": 46.978,
+          "c": 0.890011
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 46.98,
+      "end_s": 49.89,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "lead up to the recent presidential elections?",
+      "words": [
+        {
+          "w": "lead",
+          "s": 46.978,
+          "e": 47.258,
+          "c": 0.995493
+        },
+        {
+          "w": "up",
+          "s": 47.258,
+          "e": 47.358,
+          "c": 0.676546
+        },
+        {
+          "w": "to",
+          "s": 47.428,
+          "e": 47.538,
+          "c": 0.995224
+        },
+        {
+          "w": "the",
+          "s": 47.538,
+          "e": 47.748,
+          "c": 0.990543
+        },
+        {
+          "w": "recent",
+          "s": 47.748,
+          "e": 48.168,
+          "c": 0.997446
+        },
+        {
+          "w": "presidential",
+          "s": 48.168,
+          "e": 49.008,
+          "c": 0.969365
+        },
+        {
+          "w": "elections?",
+          "s": 49.008,
+          "e": 49.888,
+          "c": 0.962858
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 49.87,
+      "end_s": 50.12,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The",
+      "words": [
+        {
+          "w": "The",
+          "s": 49.872,
+          "e": 50.122,
+          "c": 0.622057
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 50.52,
+      "end_s": 74.33,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "traditional Russian playbook in Ukraine had been less about influence campaigns on Ukrainian voters and more about support along with the oligarchs who are in their orbit of individual candidates who they thought would be more favorable to Russia's interests, its economic interests and its military interests.",
+      "words": [
+        {
+          "w": "traditional",
+          "s": 50.522,
+          "e": 51.102,
+          "c": 0.991674
+        },
+        {
+          "w": "Russian",
+          "s": 51.102,
+          "e": 51.712,
+          "c": 0.978419
+        },
+        {
+          "w": "playbook",
+          "s": 51.712,
+          "e": 52.382,
+          "c": 0.977211
+        },
+        {
+          "w": "in",
+          "s": 52.492,
+          "e": 52.612,
+          "c": 0.962028
+        },
+        {
+          "w": "Ukraine",
+          "s": 52.612,
+          "e": 53.272,
+          "c": 0.981998
+        },
+        {
+          "w": "had",
+          "s": 53.272,
+          "e": 53.562,
+          "c": 0.873912
+        },
+        {
+          "w": "been",
+          "s": 53.582,
+          "e": 53.872,
+          "c": 0.970026
+        },
+        {
+          "w": "less",
+          "s": 53.872,
+          "e": 54.442,
+          "c": 0.961492
+        },
+        {
+          "w": "about",
+          "s": 54.452,
+          "e": 55.242,
+          "c": 0.842166
+        },
+        {
+          "w": "influence",
+          "s": 55.252,
+          "e": 56.872,
+          "c": 0.549283
+        },
+        {
+          "w": "campaigns",
+          "s": 56.872,
+          "e": 57.452,
+          "c": 0.762785
+        },
+        {
+          "w": "on",
+          "s": 57.452,
+          "e": 57.592,
+          "c": 0.815474
+        },
+        {
+          "w": "Ukrainian",
+          "s": 57.592,
+          "e": 58.152,
+          "c": 0.731554
+        },
+        {
+          "w": "voters",
+          "s": 58.152,
+          "e": 58.632,
+          "c": 0.907722
+        },
+        {
+          "w": "and",
+          "s": 58.632,
+          "e": 59.032,
+          "c": 0.51794
+        },
+        {
+          "w": "more",
+          "s": 59.032,
+          "e": 59.512,
+          "c": 0.967634
+        },
+        {
+          "w": "about",
+          "s": 59.512,
+          "e": 60.112,
+          "c": 0.969218
+        },
+        {
+          "w": "support",
+          "s": 60.162,
+          "e": 61.872,
+          "c": 0.86743
+        },
+        {
+          "w": "along",
+          "s": 61.872,
+          "e": 62.912,
+          "c": 0.484304
+        },
+        {
+          "w": "with",
+          "s": 62.912,
+          "e": 63.222,
+          "c": 0.98304
+        },
+        {
+          "w": "the",
+          "s": 63.222,
+          "e": 63.432,
+          "c": 0.988783
+        },
+        {
+          "w": "oligarchs",
+          "s": 63.482,
+          "e": 64.312,
+          "c": 0.980244
+        },
+        {
+          "w": "who",
+          "s": 64.382,
+          "e": 64.502,
+          "c": 0.923649
+        },
+        {
+          "w": "are",
+          "s": 64.502,
+          "e": 64.692,
+          "c": 0.990118
+        },
+        {
+          "w": "in",
+          "s": 64.692,
+          "e": 64.822,
+          "c": 0.992375
+        },
+        {
+          "w": "their",
+          "s": 64.822,
+          "e": 65.142,
+          "c": 0.99065
+        },
+        {
+          "w": "orbit",
+          "s": 65.232,
+          "e": 65.512,
+          "c": 0.986268
+        },
+        {
+          "w": "of",
+          "s": 65.512,
+          "e": 65.642,
+          "c": 0.973138
+        },
+        {
+          "w": "individual",
+          "s": 66.192,
+          "e": 66.792,
+          "c": 0.995557
+        },
+        {
+          "w": "candidates",
+          "s": 66.792,
+          "e": 67.872,
+          "c": 0.99608
+        },
+        {
+          "w": "who",
+          "s": 67.872,
+          "e": 68.132,
+          "c": 0.978758
+        },
+        {
+          "w": "they",
+          "s": 68.132,
+          "e": 68.482,
+          "c": 0.99898
+        },
+        {
+          "w": "thought",
+          "s": 68.482,
+          "e": 69.102,
+          "c": 0.997318
+        },
+        {
+          "w": "would",
+          "s": 69.102,
+          "e": 69.542,
+          "c": 0.9987
+        },
+        {
+          "w": "be",
+          "s": 69.542,
+          "e": 69.712,
+          "c": 0.999472
+        },
+        {
+          "w": "more",
+          "s": 69.712,
+          "e": 70.102,
+          "c": 0.998332
+        },
+        {
+          "w": "favorable",
+          "s": 70.102,
+          "e": 70.602,
+          "c": 0.980094
+        },
+        {
+          "w": "to",
+          "s": 70.602,
+          "e": 70.672,
+          "c": 0.998133
+        },
+        {
+          "w": "Russia's",
+          "s": 70.752,
+          "e": 71.152,
+          "c": 0.997187
+        },
+        {
+          "w": "interests,",
+          "s": 71.152,
+          "e": 71.752,
+          "c": 0.83024
+        },
+        {
+          "w": "its",
+          "s": 71.752,
+          "e": 71.912,
+          "c": 0.986733
+        },
+        {
+          "w": "economic",
+          "s": 71.912,
+          "e": 72.352,
+          "c": 0.998256
+        },
+        {
+          "w": "interests",
+          "s": 72.352,
+          "e": 72.842,
+          "c": 0.94002
+        },
+        {
+          "w": "and",
+          "s": 72.842,
+          "e": 72.982,
+          "c": 0.637437
+        },
+        {
+          "w": "its",
+          "s": 73.052,
+          "e": 73.162,
+          "c": 0.997799
+        },
+        {
+          "w": "military",
+          "s": 73.162,
+          "e": 73.602,
+          "c": 0.99963
+        },
+        {
+          "w": "interests.",
+          "s": 73.602,
+          "e": 74.332,
+          "c": 0.805008
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 75.42,
+      "end_s": 95.62,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "squeeze out Democrats or and when when they come into office to to damage them to hurt them with the electorate and in the case of Yushinka actually throw throw acid on his face and all you know there were some vicious things that went on the interesting thing about these elections is that",
+      "words": [
+        {
+          "w": "squeeze",
+          "s": 75.421,
+          "e": 76.291,
+          "c": 0.884841
+        },
+        {
+          "w": "out",
+          "s": 76.381,
+          "e": 76.841,
+          "c": 0.994294
+        },
+        {
+          "w": "Democrats",
+          "s": 76.841,
+          "e": 77.461,
+          "c": 0.591045
+        },
+        {
+          "w": "or",
+          "s": 77.501,
+          "e": 78.251,
+          "c": 0.553446
+        },
+        {
+          "w": "and",
+          "s": 78.561,
+          "e": 78.691,
+          "c": 0.649492
+        },
+        {
+          "w": "when",
+          "s": 78.711,
+          "e": 79.001,
+          "c": 0.728121
+        },
+        {
+          "w": "when",
+          "s": 79.081,
+          "e": 79.261,
+          "c": 0.476329
+        },
+        {
+          "w": "they",
+          "s": 79.261,
+          "e": 79.511,
+          "c": 0.981575
+        },
+        {
+          "w": "come",
+          "s": 79.511,
+          "e": 79.761,
+          "c": 0.995268
+        },
+        {
+          "w": "into",
+          "s": 79.761,
+          "e": 80.011,
+          "c": 0.988176
+        },
+        {
+          "w": "office",
+          "s": 80.021,
+          "e": 80.481,
+          "c": 0.980578
+        },
+        {
+          "w": "to",
+          "s": 80.481,
+          "e": 80.751,
+          "c": 0.861555
+        },
+        {
+          "w": "to",
+          "s": 80.861,
+          "e": 80.941,
+          "c": 0.801291
+        },
+        {
+          "w": "damage",
+          "s": 80.941,
+          "e": 81.431,
+          "c": 0.998026
+        },
+        {
+          "w": "them",
+          "s": 81.431,
+          "e": 81.731,
+          "c": 0.995702
+        },
+        {
+          "w": "to",
+          "s": 81.751,
+          "e": 81.831,
+          "c": 0.9112
+        },
+        {
+          "w": "hurt",
+          "s": 82.001,
+          "e": 82.251,
+          "c": 0.998062
+        },
+        {
+          "w": "them",
+          "s": 82.251,
+          "e": 82.571,
+          "c": 0.99894
+        },
+        {
+          "w": "with",
+          "s": 82.671,
+          "e": 82.901,
+          "c": 0.997956
+        },
+        {
+          "w": "the",
+          "s": 82.941,
+          "e": 83.161,
+          "c": 0.99811
+        },
+        {
+          "w": "electorate",
+          "s": 83.161,
+          "e": 83.891,
+          "c": 0.992331
+        },
+        {
+          "w": "and",
+          "s": 84.001,
+          "e": 84.231,
+          "c": 0.959834
+        },
+        {
+          "w": "in",
+          "s": 84.231,
+          "e": 84.391,
+          "c": 0.998464
+        },
+        {
+          "w": "the",
+          "s": 84.391,
+          "e": 84.641,
+          "c": 0.999188
+        },
+        {
+          "w": "case",
+          "s": 84.641,
+          "e": 84.971,
+          "c": 0.999331
+        },
+        {
+          "w": "of",
+          "s": 84.971,
+          "e": 85.201,
+          "c": 0.99257
+        },
+        {
+          "w": "Yushinka",
+          "s": 85.281,
+          "e": 87.101,
+          "c": 0.596046
+        },
+        {
+          "w": "actually",
+          "s": 87.101,
+          "e": 88.111,
+          "c": 0.753064
+        },
+        {
+          "w": "throw",
+          "s": 88.311,
+          "e": 88.311,
+          "c": 0.895749
+        },
+        {
+          "w": "throw",
+          "s": 88.431,
+          "e": 88.711,
+          "c": 0.769334
+        },
+        {
+          "w": "acid",
+          "s": 88.711,
+          "e": 88.851,
+          "c": 0.97818
+        },
+        {
+          "w": "on",
+          "s": 88.941,
+          "e": 89.051,
+          "c": 0.999216
+        },
+        {
+          "w": "his",
+          "s": 89.051,
+          "e": 89.221,
+          "c": 0.994448
+        },
+        {
+          "w": "face",
+          "s": 89.221,
+          "e": 89.421,
+          "c": 0.999413
+        },
+        {
+          "w": "and",
+          "s": 89.561,
+          "e": 89.741,
+          "c": 0.823818
+        },
+        {
+          "w": "all",
+          "s": 89.741,
+          "e": 89.971,
+          "c": 0.481703
+        },
+        {
+          "w": "you",
+          "s": 89.991,
+          "e": 90.171,
+          "c": 0.895625
+        },
+        {
+          "w": "know",
+          "s": 90.171,
+          "e": 90.401,
+          "c": 0.999037
+        },
+        {
+          "w": "there",
+          "s": 90.401,
+          "e": 90.691,
+          "c": 0.499554
+        },
+        {
+          "w": "were",
+          "s": 90.691,
+          "e": 90.931,
+          "c": 0.994719
+        },
+        {
+          "w": "some",
+          "s": 90.931,
+          "e": 91.181,
+          "c": 0.998805
+        },
+        {
+          "w": "vicious",
+          "s": 91.281,
+          "e": 91.521,
+          "c": 0.975138
+        },
+        {
+          "w": "things",
+          "s": 91.531,
+          "e": 91.811,
+          "c": 0.995002
+        },
+        {
+          "w": "that",
+          "s": 91.811,
+          "e": 92.001,
+          "c": 0.9977
+        },
+        {
+          "w": "went",
+          "s": 92.001,
+          "e": 92.111,
+          "c": 0.9976
+        },
+        {
+          "w": "on",
+          "s": 92.191,
+          "e": 92.301,
+          "c": 0.998258
+        },
+        {
+          "w": "the",
+          "s": 92.381,
+          "e": 92.521,
+          "c": 0.794146
+        },
+        {
+          "w": "interesting",
+          "s": 92.521,
+          "e": 93.251,
+          "c": 0.994884
+        },
+        {
+          "w": "thing",
+          "s": 93.341,
+          "e": 93.711,
+          "c": 0.995023
+        },
+        {
+          "w": "about",
+          "s": 93.711,
+          "e": 94.081,
+          "c": 0.999129
+        },
+        {
+          "w": "these",
+          "s": 94.081,
+          "e": 94.421,
+          "c": 0.999094
+        },
+        {
+          "w": "elections",
+          "s": 94.471,
+          "e": 95.121,
+          "c": 0.983982
+        },
+        {
+          "w": "is",
+          "s": 95.121,
+          "e": 95.211,
+          "c": 0.998441
+        },
+        {
+          "w": "that",
+          "s": 95.411,
+          "e": 95.621,
+          "c": 0.809835
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 95.67,
+      "end_s": 112.08,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that the mandate, the margin by which President-elect Zelensky won was so massive that any manipulation that may or may not have been by anybody got swamped by the people's will. I think the question",
+      "words": [
+        {
+          "w": "that",
+          "s": 95.673,
+          "e": 96.123,
+          "c": 0.75778
+        },
+        {
+          "w": "the",
+          "s": 96.123,
+          "e": 96.323,
+          "c": 0.616864
+        },
+        {
+          "w": "mandate,",
+          "s": 96.593,
+          "e": 97.403,
+          "c": 0.60774
+        },
+        {
+          "w": "the",
+          "s": 97.403,
+          "e": 97.593,
+          "c": 0.94723
+        },
+        {
+          "w": "margin",
+          "s": 97.593,
+          "e": 97.993,
+          "c": 0.993024
+        },
+        {
+          "w": "by",
+          "s": 97.993,
+          "e": 98.213,
+          "c": 0.927039
+        },
+        {
+          "w": "which",
+          "s": 98.213,
+          "e": 98.713,
+          "c": 0.991626
+        },
+        {
+          "w": "President-elect",
+          "s": 98.913,
+          "e": 99.523,
+          "c": 0.359711
+        },
+        {
+          "w": "Zelensky",
+          "s": 99.643,
+          "e": 100.193,
+          "c": 0.837168
+        },
+        {
+          "w": "won",
+          "s": 100.193,
+          "e": 100.633,
+          "c": 0.831334
+        },
+        {
+          "w": "was",
+          "s": 100.633,
+          "e": 101.143,
+          "c": 0.791438
+        },
+        {
+          "w": "so",
+          "s": 101.223,
+          "e": 101.393,
+          "c": 0.963324
+        },
+        {
+          "w": "massive",
+          "s": 101.393,
+          "e": 102.603,
+          "c": 0.868181
+        },
+        {
+          "w": "that",
+          "s": 102.643,
+          "e": 102.963,
+          "c": 0.655591
+        },
+        {
+          "w": "any",
+          "s": 103.013,
+          "e": 103.353,
+          "c": 0.968605
+        },
+        {
+          "w": "manipulation",
+          "s": 103.473,
+          "e": 104.273,
+          "c": 0.963985
+        },
+        {
+          "w": "that",
+          "s": 104.333,
+          "e": 104.513,
+          "c": 0.995811
+        },
+        {
+          "w": "may",
+          "s": 104.623,
+          "e": 104.743,
+          "c": 0.994831
+        },
+        {
+          "w": "or",
+          "s": 104.743,
+          "e": 104.843,
+          "c": 0.992907
+        },
+        {
+          "w": "may",
+          "s": 104.873,
+          "e": 104.983,
+          "c": 0.991299
+        },
+        {
+          "w": "not",
+          "s": 105.233,
+          "e": 105.273,
+          "c": 0.996244
+        },
+        {
+          "w": "have",
+          "s": 105.273,
+          "e": 105.543,
+          "c": 0.989395
+        },
+        {
+          "w": "been",
+          "s": 105.543,
+          "e": 105.813,
+          "c": 0.997603
+        },
+        {
+          "w": "by",
+          "s": 105.813,
+          "e": 105.933,
+          "c": 0.994404
+        },
+        {
+          "w": "anybody",
+          "s": 106.023,
+          "e": 106.493,
+          "c": 0.997489
+        },
+        {
+          "w": "got",
+          "s": 106.493,
+          "e": 106.783,
+          "c": 0.841218
+        },
+        {
+          "w": "swamped",
+          "s": 106.783,
+          "e": 107.393,
+          "c": 0.989613
+        },
+        {
+          "w": "by",
+          "s": 107.553,
+          "e": 107.653,
+          "c": 0.992496
+        },
+        {
+          "w": "the",
+          "s": 107.653,
+          "e": 107.943,
+          "c": 0.990739
+        },
+        {
+          "w": "people's",
+          "s": 107.943,
+          "e": 108.673,
+          "c": 0.922033
+        },
+        {
+          "w": "will.",
+          "s": 108.793,
+          "e": 109.463,
+          "c": 0.823046
+        },
+        {
+          "w": "I",
+          "s": 109.533,
+          "e": 109.623,
+          "c": 0.992528
+        },
+        {
+          "w": "think",
+          "s": 109.623,
+          "e": 110.153,
+          "c": 0.998393
+        },
+        {
+          "w": "the",
+          "s": 110.453,
+          "e": 110.853,
+          "c": 0.98762
+        },
+        {
+          "w": "question",
+          "s": 110.853,
+          "e": 112.083,
+          "c": 0.997721
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 112.08,
+      "end_s": 112.57,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "now...",
+      "words": [
+        {
+          "w": "now...",
+          "s": 112.083,
+          "e": 112.573,
+          "c": 0.162111
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 112.56,
+      "end_s": 134.12,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Zelensky said a lot of the right things about anti-corruption and about breaking the oligarchic system in Ukraine, but he himself has been in business with senior oligarchic figures. So he's got to now prove it, and we should support him if he does, but we should tie our assistance to a cleaner, more democratic, more economically open Ukraine.",
+      "words": [
+        {
+          "w": "Zelensky",
+          "s": 112.56,
+          "e": 113.18,
+          "c": 0.913579
+        },
+        {
+          "w": "said",
+          "s": 113.18,
+          "e": 113.5,
+          "c": 0.985214
+        },
+        {
+          "w": "a",
+          "s": 113.5,
+          "e": 113.58,
+          "c": 0.991925
+        },
+        {
+          "w": "lot",
+          "s": 113.58,
+          "e": 113.82,
+          "c": 0.999479
+        },
+        {
+          "w": "of",
+          "s": 113.82,
+          "e": 113.98,
+          "c": 0.992131
+        },
+        {
+          "w": "the",
+          "s": 113.98,
+          "e": 114.22,
+          "c": 0.994896
+        },
+        {
+          "w": "right",
+          "s": 114.22,
+          "e": 114.61,
+          "c": 0.992171
+        },
+        {
+          "w": "things",
+          "s": 114.61,
+          "e": 115.12,
+          "c": 0.990565
+        },
+        {
+          "w": "about",
+          "s": 115.12,
+          "e": 115.37,
+          "c": 0.92773
+        },
+        {
+          "w": "anti-corruption",
+          "s": 115.37,
+          "e": 116.1,
+          "c": 0.942369
+        },
+        {
+          "w": "and",
+          "s": 116.12,
+          "e": 116.4,
+          "c": 0.70492
+        },
+        {
+          "w": "about",
+          "s": 116.4,
+          "e": 116.7,
+          "c": 0.977529
+        },
+        {
+          "w": "breaking",
+          "s": 117.2,
+          "e": 117.68,
+          "c": 0.942794
+        },
+        {
+          "w": "the",
+          "s": 117.68,
+          "e": 118.64,
+          "c": 0.915225
+        },
+        {
+          "w": "oligarchic",
+          "s": 118.64,
+          "e": 119.38,
+          "c": 0.978535
+        },
+        {
+          "w": "system",
+          "s": 119.38,
+          "e": 119.63,
+          "c": 0.813064
+        },
+        {
+          "w": "in",
+          "s": 119.65,
+          "e": 119.74,
+          "c": 0.991747
+        },
+        {
+          "w": "Ukraine,",
+          "s": 119.74,
+          "e": 120.16,
+          "c": 0.537938
+        },
+        {
+          "w": "but",
+          "s": 120.16,
+          "e": 120.33,
+          "c": 0.99995
+        },
+        {
+          "w": "he",
+          "s": 120.4,
+          "e": 120.46,
+          "c": 0.999981
+        },
+        {
+          "w": "himself",
+          "s": 120.5,
+          "e": 120.91,
+          "c": 0.999769
+        },
+        {
+          "w": "has",
+          "s": 120.91,
+          "e": 121.1,
+          "c": 0.999994
+        },
+        {
+          "w": "been",
+          "s": 121.1,
+          "e": 121.35,
+          "c": 0.999996
+        },
+        {
+          "w": "in",
+          "s": 121.35,
+          "e": 121.47,
+          "c": 1
+        },
+        {
+          "w": "business",
+          "s": 121.47,
+          "e": 121.96,
+          "c": 0.999983
+        },
+        {
+          "w": "with",
+          "s": 121.96,
+          "e": 122.22,
+          "c": 0.999994
+        },
+        {
+          "w": "senior",
+          "s": 122.22,
+          "e": 122.6,
+          "c": 0.957759
+        },
+        {
+          "w": "oligarchic",
+          "s": 122.6,
+          "e": 123.19,
+          "c": 0.997368
+        },
+        {
+          "w": "figures.",
+          "s": 123.22,
+          "e": 123.9,
+          "c": 0.896526
+        },
+        {
+          "w": "So",
+          "s": 123.9,
+          "e": 124.07,
+          "c": 0.992212
+        },
+        {
+          "w": "he's",
+          "s": 124.21,
+          "e": 124.44,
+          "c": 0.98762
+        },
+        {
+          "w": "got",
+          "s": 124.44,
+          "e": 124.68,
+          "c": 0.999969
+        },
+        {
+          "w": "to",
+          "s": 124.72,
+          "e": 124.89,
+          "c": 0.999989
+        },
+        {
+          "w": "now",
+          "s": 124.89,
+          "e": 125.16,
+          "c": 0.999977
+        },
+        {
+          "w": "prove",
+          "s": 125.16,
+          "e": 125.61,
+          "c": 0.999897
+        },
+        {
+          "w": "it,",
+          "s": 125.61,
+          "e": 125.97,
+          "c": 0.675732
+        },
+        {
+          "w": "and",
+          "s": 125.97,
+          "e": 126.24,
+          "c": 0.998889
+        },
+        {
+          "w": "we",
+          "s": 126.24,
+          "e": 126.42,
+          "c": 0.999996
+        },
+        {
+          "w": "should",
+          "s": 126.42,
+          "e": 126.93,
+          "c": 0.999994
+        },
+        {
+          "w": "support",
+          "s": 126.96,
+          "e": 127.59,
+          "c": 0.999973
+        },
+        {
+          "w": "him",
+          "s": 127.59,
+          "e": 127.86,
+          "c": 0.999996
+        },
+        {
+          "w": "if",
+          "s": 127.86,
+          "e": 128.04,
+          "c": 0.999859
+        },
+        {
+          "w": "he",
+          "s": 128.04,
+          "e": 128.21,
+          "c": 0.999996
+        },
+        {
+          "w": "does,",
+          "s": 128.23,
+          "e": 128.78,
+          "c": 0.997603
+        },
+        {
+          "w": "but",
+          "s": 128.78,
+          "e": 128.95,
+          "c": 0.999989
+        },
+        {
+          "w": "we",
+          "s": 129.02,
+          "e": 129.08,
+          "c": 1
+        },
+        {
+          "w": "should",
+          "s": 129.12,
+          "e": 129.46,
+          "c": 0.999994
+        },
+        {
+          "w": "tie",
+          "s": 129.46,
+          "e": 129.65,
+          "c": 0.999866
+        },
+        {
+          "w": "our",
+          "s": 129.65,
+          "e": 129.84,
+          "c": 0.999973
+        },
+        {
+          "w": "assistance",
+          "s": 129.84,
+          "e": 130.47,
+          "c": 0.990186
+        },
+        {
+          "w": "to",
+          "s": 130.47,
+          "e": 130.58,
+          "c": 1
+        },
+        {
+          "w": "a",
+          "s": 130.58,
+          "e": 130.65,
+          "c": 1
+        },
+        {
+          "w": "cleaner,",
+          "s": 130.65,
+          "e": 131.21,
+          "c": 0.999922
+        },
+        {
+          "w": "more",
+          "s": 131.21,
+          "e": 131.45,
+          "c": 0.999958
+        },
+        {
+          "w": "democratic,",
+          "s": 131.46,
+          "e": 132.2,
+          "c": 0.999321
+        },
+        {
+          "w": "more",
+          "s": 132.22,
+          "e": 132.46,
+          "c": 0.999462
+        },
+        {
+          "w": "economically",
+          "s": 132.46,
+          "e": 132.92,
+          "c": 0.999945
+        },
+        {
+          "w": "open",
+          "s": 133.42,
+          "e": 133.46,
+          "c": 0.999762
+        },
+        {
+          "w": "Ukraine.",
+          "s": 133.46,
+          "e": 134.12,
+          "c": 0.999691
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 134.63,
+      "end_s": 134.99,
+      "speaker": "SPEAKER_10",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "What do",
+      "words": [
+        {
+          "w": "What",
+          "s": 134.629,
+          "e": 134.829,
+          "c": 0.963547
+        },
+        {
+          "w": "do",
+          "s": 134.859,
+          "e": 134.989,
+          "c": 0.980135
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 134.99,
+      "end_s": 142.83,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you and others think about the role of independent media in Ukraine and whether the U.S. could play a helpful role",
+      "words": [
+        {
+          "w": "you",
+          "s": 134.989,
+          "e": 135.229,
+          "c": 0.999985
+        },
+        {
+          "w": "and",
+          "s": 135.229,
+          "e": 135.469,
+          "c": 0.999691
+        },
+        {
+          "w": "others",
+          "s": 135.469,
+          "e": 135.949,
+          "c": 0.999863
+        },
+        {
+          "w": "think",
+          "s": 135.949,
+          "e": 136.349,
+          "c": 0.998146
+        },
+        {
+          "w": "about",
+          "s": 136.349,
+          "e": 136.569,
+          "c": 0.996289
+        },
+        {
+          "w": "the",
+          "s": 136.829,
+          "e": 136.989,
+          "c": 0.989081
+        },
+        {
+          "w": "role",
+          "s": 136.989,
+          "e": 137.309,
+          "c": 0.999884
+        },
+        {
+          "w": "of",
+          "s": 137.309,
+          "e": 137.469,
+          "c": 0.996048
+        },
+        {
+          "w": "independent",
+          "s": 137.469,
+          "e": 138.359,
+          "c": 0.99959
+        },
+        {
+          "w": "media",
+          "s": 138.359,
+          "e": 138.759,
+          "c": 0.999262
+        },
+        {
+          "w": "in",
+          "s": 138.759,
+          "e": 138.919,
+          "c": 0.996926
+        },
+        {
+          "w": "Ukraine",
+          "s": 138.919,
+          "e": 139.569,
+          "c": 0.999106
+        },
+        {
+          "w": "and",
+          "s": 139.569,
+          "e": 139.789,
+          "c": 0.572942
+        },
+        {
+          "w": "whether",
+          "s": 139.789,
+          "e": 140.329,
+          "c": 0.998203
+        },
+        {
+          "w": "the",
+          "s": 140.329,
+          "e": 140.549,
+          "c": 0.886654
+        },
+        {
+          "w": "U.S.",
+          "s": 140.549,
+          "e": 141.169,
+          "c": 0.846126
+        },
+        {
+          "w": "could",
+          "s": 141.169,
+          "e": 141.589,
+          "c": 0.98534
+        },
+        {
+          "w": "play",
+          "s": 141.589,
+          "e": 141.929,
+          "c": 0.999804
+        },
+        {
+          "w": "a",
+          "s": 141.929,
+          "e": 141.979,
+          "c": 0.999989
+        },
+        {
+          "w": "helpful",
+          "s": 142.019,
+          "e": 142.599,
+          "c": 0.999188
+        },
+        {
+          "w": "role",
+          "s": 142.599,
+          "e": 142.829,
+          "c": 0.999907
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 142.94,
+      "end_s": 150.37,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "there in supporting the growth of independent media as part of that broadening you're talking about?",
+      "words": [
+        {
+          "w": "there",
+          "s": 142.939,
+          "e": 143.309,
+          "c": 0.999828
+        },
+        {
+          "w": "in",
+          "s": 143.399,
+          "e": 143.529,
+          "c": 0.990272
+        },
+        {
+          "w": "supporting",
+          "s": 143.529,
+          "e": 144.379,
+          "c": 0.99991
+        },
+        {
+          "w": "the",
+          "s": 144.379,
+          "e": 144.619,
+          "c": 0.998666
+        },
+        {
+          "w": "growth",
+          "s": 144.629,
+          "e": 145.139,
+          "c": 0.948513
+        },
+        {
+          "w": "of",
+          "s": 145.139,
+          "e": 145.309,
+          "c": 0.999994
+        },
+        {
+          "w": "independent",
+          "s": 145.309,
+          "e": 146.239,
+          "c": 0.999876
+        },
+        {
+          "w": "media",
+          "s": 146.239,
+          "e": 146.659,
+          "c": 0.999987
+        },
+        {
+          "w": "as",
+          "s": 146.659,
+          "e": 146.829,
+          "c": 0.84615
+        },
+        {
+          "w": "part",
+          "s": 146.829,
+          "e": 147.129,
+          "c": 0.999985
+        },
+        {
+          "w": "of",
+          "s": 147.159,
+          "e": 147.309,
+          "c": 1
+        },
+        {
+          "w": "that",
+          "s": 147.319,
+          "e": 147.679,
+          "c": 0.999979
+        },
+        {
+          "w": "broadening",
+          "s": 147.679,
+          "e": 148.519,
+          "c": 0.924919
+        },
+        {
+          "w": "you're",
+          "s": 148.519,
+          "e": 149.019,
+          "c": 0.997407
+        },
+        {
+          "w": "talking",
+          "s": 149.019,
+          "e": 149.609,
+          "c": 0.999926
+        },
+        {
+          "w": "about?",
+          "s": 149.609,
+          "e": 150.369,
+          "c": 0.998988
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 150.49,
+      "end_s": 150.5,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We",
+      "words": [
+        {
+          "w": "We",
+          "s": 150.489,
+          "e": 150.489,
+          "c": 0.851022
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 150.49,
+      "end_s": 164.53,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "have done a considerable amount to offer training. I think it's very important that foreign media not be controlled by us but be indigenous. The problem has been that there's so much oligarchic money, not just in Ukraine,",
+      "words": [
+        {
+          "w": "have",
+          "s": 150.489,
+          "e": 150.729,
+          "c": 0.999718
+        },
+        {
+          "w": "done",
+          "s": 150.729,
+          "e": 150.969,
+          "c": 0.998927
+        },
+        {
+          "w": "a",
+          "s": 150.969,
+          "e": 151.029,
+          "c": 1
+        },
+        {
+          "w": "considerable",
+          "s": 151.029,
+          "e": 151.759,
+          "c": 0.999981
+        },
+        {
+          "w": "amount",
+          "s": 151.759,
+          "e": 152.129,
+          "c": 0.999992
+        },
+        {
+          "w": "to",
+          "s": 152.129,
+          "e": 152.249,
+          "c": 0.999201
+        },
+        {
+          "w": "offer",
+          "s": 152.249,
+          "e": 152.429,
+          "c": 0.999346
+        },
+        {
+          "w": "training.",
+          "s": 152.689,
+          "e": 153.269,
+          "c": 0.992332
+        },
+        {
+          "w": "I",
+          "s": 153.339,
+          "e": 153.339,
+          "c": 0.990316
+        },
+        {
+          "w": "think",
+          "s": 153.389,
+          "e": 153.709,
+          "c": 0.999996
+        },
+        {
+          "w": "it's",
+          "s": 153.709,
+          "e": 154.009,
+          "c": 0.999718
+        },
+        {
+          "w": "very",
+          "s": 154.009,
+          "e": 154.309,
+          "c": 0.999996
+        },
+        {
+          "w": "important",
+          "s": 154.309,
+          "e": 154.979,
+          "c": 0.999996
+        },
+        {
+          "w": "that",
+          "s": 154.979,
+          "e": 155.279,
+          "c": 0.999996
+        },
+        {
+          "w": "foreign",
+          "s": 155.279,
+          "e": 155.799,
+          "c": 0.999966
+        },
+        {
+          "w": "media",
+          "s": 155.799,
+          "e": 156.169,
+          "c": 0.99999
+        },
+        {
+          "w": "not",
+          "s": 156.169,
+          "e": 156.389,
+          "c": 0.999897
+        },
+        {
+          "w": "be",
+          "s": 156.389,
+          "e": 156.489,
+          "c": 0.999998
+        },
+        {
+          "w": "controlled",
+          "s": 156.559,
+          "e": 157.289,
+          "c": 0.999943
+        },
+        {
+          "w": "by",
+          "s": 157.289,
+          "e": 157.439,
+          "c": 0.999996
+        },
+        {
+          "w": "us",
+          "s": 157.439,
+          "e": 157.589,
+          "c": 0.999899
+        },
+        {
+          "w": "but",
+          "s": 157.589,
+          "e": 157.799,
+          "c": 0.967918
+        },
+        {
+          "w": "be",
+          "s": 157.799,
+          "e": 157.959,
+          "c": 0.999996
+        },
+        {
+          "w": "indigenous.",
+          "s": 157.959,
+          "e": 159.009,
+          "c": 0.996546
+        },
+        {
+          "w": "The",
+          "s": 160.069,
+          "e": 160.179,
+          "c": 0.748573
+        },
+        {
+          "w": "problem",
+          "s": 160.179,
+          "e": 160.729,
+          "c": 0.939687
+        },
+        {
+          "w": "has",
+          "s": 160.729,
+          "e": 160.959,
+          "c": 0.980378
+        },
+        {
+          "w": "been",
+          "s": 160.959,
+          "e": 161.119,
+          "c": 0.998157
+        },
+        {
+          "w": "that",
+          "s": 161.299,
+          "e": 161.489,
+          "c": 0.952786
+        },
+        {
+          "w": "there's",
+          "s": 161.489,
+          "e": 161.709,
+          "c": 0.761887
+        },
+        {
+          "w": "so",
+          "s": 161.709,
+          "e": 161.889,
+          "c": 0.957543
+        },
+        {
+          "w": "much",
+          "s": 161.889,
+          "e": 162.009,
+          "c": 0.981727
+        },
+        {
+          "w": "oligarchic",
+          "s": 162.089,
+          "e": 163.079,
+          "c": 0.926725
+        },
+        {
+          "w": "money,",
+          "s": 163.079,
+          "e": 163.459,
+          "c": 0.446483
+        },
+        {
+          "w": "not",
+          "s": 163.549,
+          "e": 163.669,
+          "c": 0.655217
+        },
+        {
+          "w": "just",
+          "s": 163.669,
+          "e": 163.929,
+          "c": 0.987391
+        },
+        {
+          "w": "in",
+          "s": 163.929,
+          "e": 164.059,
+          "c": 0.995256
+        },
+        {
+          "w": "Ukraine,",
+          "s": 164.059,
+          "e": 164.529,
+          "c": 0.688814
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 164.51,
+      "end_s": 183,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "but throughout Central Europe as well in the media space, you know, the owning of television stations, etc., that it's very hard for independent journalists to survive and thrive. So support for independent journalism, training, solidarity with them, protection of them is very important. You",
+      "words": [
+        {
+          "w": "but",
+          "s": 164.509,
+          "e": 164.689,
+          "c": 0.94985
+        },
+        {
+          "w": "throughout",
+          "s": 164.689,
+          "e": 165.289,
+          "c": 0.999521
+        },
+        {
+          "w": "Central",
+          "s": 165.459,
+          "e": 165.699,
+          "c": 0.855322
+        },
+        {
+          "w": "Europe",
+          "s": 165.739,
+          "e": 166.129,
+          "c": 0.997965
+        },
+        {
+          "w": "as",
+          "s": 166.129,
+          "e": 166.419,
+          "c": 0.963525
+        },
+        {
+          "w": "well",
+          "s": 166.499,
+          "e": 166.809,
+          "c": 0.988483
+        },
+        {
+          "w": "in",
+          "s": 166.809,
+          "e": 167.029,
+          "c": 0.808309
+        },
+        {
+          "w": "the",
+          "s": 167.029,
+          "e": 167.349,
+          "c": 0.998026
+        },
+        {
+          "w": "media",
+          "s": 167.779,
+          "e": 167.929,
+          "c": 0.99958
+        },
+        {
+          "w": "space,",
+          "s": 167.929,
+          "e": 168.509,
+          "c": 0.941938
+        },
+        {
+          "w": "you",
+          "s": 168.509,
+          "e": 168.649,
+          "c": 0.43421
+        },
+        {
+          "w": "know,",
+          "s": 168.649,
+          "e": 168.929,
+          "c": 0.97219
+        },
+        {
+          "w": "the",
+          "s": 168.929,
+          "e": 169.069,
+          "c": 0.993841
+        },
+        {
+          "w": "owning",
+          "s": 169.069,
+          "e": 169.279,
+          "c": 0.999054
+        },
+        {
+          "w": "of",
+          "s": 169.379,
+          "e": 169.449,
+          "c": 0.999996
+        },
+        {
+          "w": "television",
+          "s": 169.459,
+          "e": 169.939,
+          "c": 0.999901
+        },
+        {
+          "w": "stations,",
+          "s": 169.939,
+          "e": 170.419,
+          "c": 0.998706
+        },
+        {
+          "w": "etc.,",
+          "s": 170.419,
+          "e": 170.879,
+          "c": 0.455201
+        },
+        {
+          "w": "that",
+          "s": 170.889,
+          "e": 171.109,
+          "c": 0.999928
+        },
+        {
+          "w": "it's",
+          "s": 171.109,
+          "e": 171.329,
+          "c": 0.997364
+        },
+        {
+          "w": "very",
+          "s": 171.329,
+          "e": 171.549,
+          "c": 0.999992
+        },
+        {
+          "w": "hard",
+          "s": 171.549,
+          "e": 171.669,
+          "c": 0.999994
+        },
+        {
+          "w": "for",
+          "s": 171.809,
+          "e": 171.929,
+          "c": 0.999912
+        },
+        {
+          "w": "independent",
+          "s": 171.929,
+          "e": 172.539,
+          "c": 0.999907
+        },
+        {
+          "w": "journalists",
+          "s": 172.539,
+          "e": 173.169,
+          "c": 0.999401
+        },
+        {
+          "w": "to",
+          "s": 173.169,
+          "e": 173.249,
+          "c": 0.866553
+        },
+        {
+          "w": "survive",
+          "s": 173.379,
+          "e": 173.789,
+          "c": 0.999693
+        },
+        {
+          "w": "and",
+          "s": 173.789,
+          "e": 173.999,
+          "c": 0.999018
+        },
+        {
+          "w": "thrive.",
+          "s": 174.159,
+          "e": 174.619,
+          "c": 0.995815
+        },
+        {
+          "w": "So",
+          "s": 174.649,
+          "e": 174.859,
+          "c": 0.999983
+        },
+        {
+          "w": "support",
+          "s": 174.859,
+          "e": 175.429,
+          "c": 0.979912
+        },
+        {
+          "w": "for",
+          "s": 175.589,
+          "e": 175.899,
+          "c": 0.999979
+        },
+        {
+          "w": "independent",
+          "s": 175.899,
+          "e": 177.009,
+          "c": 0.918315
+        },
+        {
+          "w": "journalism,",
+          "s": 177.139,
+          "e": 178.329,
+          "c": 0.967224
+        },
+        {
+          "w": "training,",
+          "s": 178.329,
+          "e": 179.029,
+          "c": 0.682498
+        },
+        {
+          "w": "solidarity",
+          "s": 179.029,
+          "e": 179.909,
+          "c": 0.869239
+        },
+        {
+          "w": "with",
+          "s": 179.909,
+          "e": 180.279,
+          "c": 0.998711
+        },
+        {
+          "w": "them,",
+          "s": 180.279,
+          "e": 180.829,
+          "c": 0.999687
+        },
+        {
+          "w": "protection",
+          "s": 180.829,
+          "e": 181.399,
+          "c": 0.999741
+        },
+        {
+          "w": "of",
+          "s": 181.399,
+          "e": 181.509,
+          "c": 0.999996
+        },
+        {
+          "w": "them",
+          "s": 181.509,
+          "e": 181.609,
+          "c": 0.999994
+        },
+        {
+          "w": "is",
+          "s": 181.749,
+          "e": 181.839,
+          "c": 0.991728
+        },
+        {
+          "w": "very",
+          "s": 181.839,
+          "e": 182.019,
+          "c": 0.999996
+        },
+        {
+          "w": "important.",
+          "s": 182.059,
+          "e": 182.759,
+          "c": 0.999983
+        },
+        {
+          "w": "You",
+          "s": 182.769,
+          "e": 182.999,
+          "c": 0.997891
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 183.18,
+      "end_s": 183.72,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "know, my",
+      "words": [
+        {
+          "w": "know,",
+          "s": 183.179,
+          "e": 183.539,
+          "c": 0.999157
+        },
+        {
+          "w": "my",
+          "s": 183.549,
+          "e": 183.719,
+          "c": 0.999985
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 183.74,
+      "end_s": 186.5,
+      "speaker": "SPEAKER_16",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "reaction in Washington and Russia,",
+      "words": [
+        {
+          "w": "reaction",
+          "s": 183.739,
+          "e": 184.429,
+          "c": 0.998296
+        },
+        {
+          "w": "in",
+          "s": 184.429,
+          "e": 184.599,
+          "c": 0.902861
+        },
+        {
+          "w": "Washington",
+          "s": 184.599,
+          "e": 185.479,
+          "c": 0.233376
+        },
+        {
+          "w": "and",
+          "s": 185.479,
+          "e": 185.669,
+          "c": 0.980662
+        },
+        {
+          "w": "Russia,",
+          "s": 186.039,
+          "e": 186.499,
+          "c": 0.984297
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 186.51,
+      "end_s": 191.97,
+      "speaker": "SPEAKER_18",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "certainly meddling in elections is...",
+      "words": [
+        {
+          "w": "certainly",
+          "s": 186.509,
+          "e": 187.759,
+          "c": 0.999918
+        },
+        {
+          "w": "meddling",
+          "s": 187.759,
+          "e": 188.869,
+          "c": 0.871358
+        },
+        {
+          "w": "in",
+          "s": 188.869,
+          "e": 189.149,
+          "c": 0.983549
+        },
+        {
+          "w": "elections",
+          "s": 189.149,
+          "e": 190.399,
+          "c": 0.994063
+        },
+        {
+          "w": "is...",
+          "s": 190.399,
+          "e": 191.969,
+          "c": 0.179093
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 192.17,
+      "end_s": 220.62,
+      "speaker": "SPEAKER_18",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "clearly as part of their foreplay, so to speak. But when it comes to Ukraine, it wasn't too long ago when their stooge was running the country. And the reason why he's no longer running the country, obviously, is the impasse of Ukraine looking for the West, looking for economic ties with Europe in particular, and eventually in a political military alliance with NATO.",
+      "words": [
+        {
+          "w": "clearly",
+          "s": 192.166,
+          "e": 192.416,
+          "c": 0.387357
+        },
+        {
+          "w": "as",
+          "s": 192.566,
+          "e": 192.566,
+          "c": 0.489812
+        },
+        {
+          "w": "part",
+          "s": 192.566,
+          "e": 192.846,
+          "c": 0.961069
+        },
+        {
+          "w": "of",
+          "s": 192.846,
+          "e": 192.986,
+          "c": 0.993197
+        },
+        {
+          "w": "their",
+          "s": 192.986,
+          "e": 193.336,
+          "c": 0.973661
+        },
+        {
+          "w": "foreplay,",
+          "s": 193.336,
+          "e": 194.076,
+          "c": 0.591741
+        },
+        {
+          "w": "so",
+          "s": 194.076,
+          "e": 194.296,
+          "c": 0.93231
+        },
+        {
+          "w": "to",
+          "s": 194.296,
+          "e": 194.516,
+          "c": 0.987447
+        },
+        {
+          "w": "speak.",
+          "s": 194.516,
+          "e": 195.196,
+          "c": 0.846385
+        },
+        {
+          "w": "But",
+          "s": 195.436,
+          "e": 195.566,
+          "c": 0.980765
+        },
+        {
+          "w": "when",
+          "s": 195.566,
+          "e": 196.056,
+          "c": 0.903738
+        },
+        {
+          "w": "it",
+          "s": 196.056,
+          "e": 196.266,
+          "c": 0.998616
+        },
+        {
+          "w": "comes",
+          "s": 196.376,
+          "e": 196.926,
+          "c": 0.998934
+        },
+        {
+          "w": "to",
+          "s": 196.926,
+          "e": 197.176,
+          "c": 0.998938
+        },
+        {
+          "w": "Ukraine,",
+          "s": 197.176,
+          "e": 198.316,
+          "c": 0.885848
+        },
+        {
+          "w": "it",
+          "s": 198.556,
+          "e": 198.576,
+          "c": 0.973441
+        },
+        {
+          "w": "wasn't",
+          "s": 198.576,
+          "e": 199.356,
+          "c": 0.992159
+        },
+        {
+          "w": "too",
+          "s": 199.356,
+          "e": 199.746,
+          "c": 0.995395
+        },
+        {
+          "w": "long",
+          "s": 199.746,
+          "e": 200.266,
+          "c": 0.999485
+        },
+        {
+          "w": "ago",
+          "s": 200.266,
+          "e": 200.696,
+          "c": 0.997438
+        },
+        {
+          "w": "when",
+          "s": 200.696,
+          "e": 200.936,
+          "c": 0.781163
+        },
+        {
+          "w": "their",
+          "s": 200.936,
+          "e": 201.176,
+          "c": 0.526335
+        },
+        {
+          "w": "stooge",
+          "s": 201.176,
+          "e": 201.496,
+          "c": 0.951742
+        },
+        {
+          "w": "was",
+          "s": 201.496,
+          "e": 201.596,
+          "c": 0.877904
+        },
+        {
+          "w": "running",
+          "s": 201.766,
+          "e": 201.926,
+          "c": 0.915334
+        },
+        {
+          "w": "the",
+          "s": 201.936,
+          "e": 202.156,
+          "c": 0.936008
+        },
+        {
+          "w": "country.",
+          "s": 202.196,
+          "e": 203.066,
+          "c": 0.884597
+        },
+        {
+          "w": "And",
+          "s": 203.306,
+          "e": 203.616,
+          "c": 0.896187
+        },
+        {
+          "w": "the",
+          "s": 203.706,
+          "e": 204.146,
+          "c": 0.617391
+        },
+        {
+          "w": "reason",
+          "s": 204.256,
+          "e": 205.406,
+          "c": 0.999304
+        },
+        {
+          "w": "why",
+          "s": 205.406,
+          "e": 205.816,
+          "c": 0.980041
+        },
+        {
+          "w": "he's",
+          "s": 206.006,
+          "e": 206.156,
+          "c": 0.899189
+        },
+        {
+          "w": "no",
+          "s": 206.156,
+          "e": 206.236,
+          "c": 0.967768
+        },
+        {
+          "w": "longer",
+          "s": 206.476,
+          "e": 206.476,
+          "c": 0.994383
+        },
+        {
+          "w": "running",
+          "s": 206.526,
+          "e": 206.716,
+          "c": 0.943676
+        },
+        {
+          "w": "the",
+          "s": 206.736,
+          "e": 206.846,
+          "c": 0.961714
+        },
+        {
+          "w": "country,",
+          "s": 206.856,
+          "e": 207.406,
+          "c": 0.722246
+        },
+        {
+          "w": "obviously,",
+          "s": 207.616,
+          "e": 208.336,
+          "c": 0.664079
+        },
+        {
+          "w": "is",
+          "s": 208.576,
+          "e": 208.656,
+          "c": 0.995524
+        },
+        {
+          "w": "the",
+          "s": 208.656,
+          "e": 209.136,
+          "c": 0.995076
+        },
+        {
+          "w": "impasse",
+          "s": 209.136,
+          "e": 210.216,
+          "c": 0.985722
+        },
+        {
+          "w": "of",
+          "s": 210.276,
+          "e": 210.616,
+          "c": 0.99795
+        },
+        {
+          "w": "Ukraine",
+          "s": 210.616,
+          "e": 211.076,
+          "c": 0.972702
+        },
+        {
+          "w": "looking",
+          "s": 211.786,
+          "e": 211.946,
+          "c": 0.98174
+        },
+        {
+          "w": "for",
+          "s": 211.956,
+          "e": 212.176,
+          "c": 0.982517
+        },
+        {
+          "w": "the",
+          "s": 212.176,
+          "e": 212.596,
+          "c": 0.976995
+        },
+        {
+          "w": "West,",
+          "s": 212.866,
+          "e": 213.296,
+          "c": 0.818059
+        },
+        {
+          "w": "looking",
+          "s": 213.526,
+          "e": 213.836,
+          "c": 0.997518
+        },
+        {
+          "w": "for",
+          "s": 213.926,
+          "e": 214.126,
+          "c": 0.997697
+        },
+        {
+          "w": "economic",
+          "s": 214.126,
+          "e": 214.796,
+          "c": 0.999218
+        },
+        {
+          "w": "ties",
+          "s": 214.796,
+          "e": 215.126,
+          "c": 0.998818
+        },
+        {
+          "w": "with",
+          "s": 215.126,
+          "e": 215.456,
+          "c": 0.986869
+        },
+        {
+          "w": "Europe",
+          "s": 215.456,
+          "e": 215.956,
+          "c": 0.972897
+        },
+        {
+          "w": "in",
+          "s": 215.956,
+          "e": 216.096,
+          "c": 0.880212
+        },
+        {
+          "w": "particular,",
+          "s": 216.126,
+          "e": 216.996,
+          "c": 0.904716
+        },
+        {
+          "w": "and",
+          "s": 217.216,
+          "e": 217.216,
+          "c": 0.997141
+        },
+        {
+          "w": "eventually",
+          "s": 217.236,
+          "e": 217.946,
+          "c": 0.991456
+        },
+        {
+          "w": "in",
+          "s": 217.946,
+          "e": 218.066,
+          "c": 0.922375
+        },
+        {
+          "w": "a",
+          "s": 218.156,
+          "e": 218.156,
+          "c": 0.997451
+        },
+        {
+          "w": "political",
+          "s": 218.176,
+          "e": 218.816,
+          "c": 0.99358
+        },
+        {
+          "w": "military",
+          "s": 218.816,
+          "e": 219.396,
+          "c": 0.597254
+        },
+        {
+          "w": "alliance",
+          "s": 219.396,
+          "e": 219.856,
+          "c": 0.99658
+        },
+        {
+          "w": "with",
+          "s": 219.976,
+          "e": 220.286,
+          "c": 0.998717
+        },
+        {
+          "w": "NATO.",
+          "s": 220.446,
+          "e": 220.616,
+          "c": 0.53076
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 220.58,
+      "end_s": 249.7,
+      "speaker": "SPEAKER_18",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "So what I see Putin influencing more in the country is pushing back on the domestic reforms that are necessary to gain economic viability and political stability as a result of that, because that's clearly not in his interest. So oligarchs are a part of that, flushing money in there is a part of all of that, and the obvious corruption, even the Kurt Strait issue.",
+      "words": [
+        {
+          "w": "So",
+          "s": 220.576,
+          "e": 220.836,
+          "c": 0.911915
+        },
+        {
+          "w": "what",
+          "s": 220.986,
+          "e": 221.466,
+          "c": 0.857482
+        },
+        {
+          "w": "I",
+          "s": 221.466,
+          "e": 221.616,
+          "c": 0.998799
+        },
+        {
+          "w": "see",
+          "s": 221.616,
+          "e": 222.066,
+          "c": 0.996947
+        },
+        {
+          "w": "Putin",
+          "s": 222.066,
+          "e": 223.056,
+          "c": 0.922696
+        },
+        {
+          "w": "influencing",
+          "s": 223.056,
+          "e": 224.376,
+          "c": 0.929112
+        },
+        {
+          "w": "more",
+          "s": 224.376,
+          "e": 224.896,
+          "c": 0.976924
+        },
+        {
+          "w": "in",
+          "s": 224.896,
+          "e": 225.006,
+          "c": 0.949137
+        },
+        {
+          "w": "the",
+          "s": 225.006,
+          "e": 225.176,
+          "c": 0.944359
+        },
+        {
+          "w": "country",
+          "s": 225.176,
+          "e": 225.596,
+          "c": 0.996774
+        },
+        {
+          "w": "is",
+          "s": 225.596,
+          "e": 226.656,
+          "c": 0.584335
+        },
+        {
+          "w": "pushing",
+          "s": 226.656,
+          "e": 228.126,
+          "c": 0.633607
+        },
+        {
+          "w": "back",
+          "s": 228.726,
+          "e": 229.296,
+          "c": 0.991647
+        },
+        {
+          "w": "on",
+          "s": 229.346,
+          "e": 229.496,
+          "c": 0.962768
+        },
+        {
+          "w": "the",
+          "s": 229.496,
+          "e": 229.606,
+          "c": 0.966984
+        },
+        {
+          "w": "domestic",
+          "s": 229.646,
+          "e": 230.016,
+          "c": 0.989883
+        },
+        {
+          "w": "reforms",
+          "s": 230.016,
+          "e": 230.606,
+          "c": 0.95542
+        },
+        {
+          "w": "that",
+          "s": 230.616,
+          "e": 230.806,
+          "c": 0.658198
+        },
+        {
+          "w": "are",
+          "s": 230.816,
+          "e": 230.966,
+          "c": 0.990767
+        },
+        {
+          "w": "necessary",
+          "s": 230.966,
+          "e": 231.416,
+          "c": 0.997343
+        },
+        {
+          "w": "to",
+          "s": 231.416,
+          "e": 231.566,
+          "c": 0.918156
+        },
+        {
+          "w": "gain",
+          "s": 231.636,
+          "e": 231.906,
+          "c": 0.99931
+        },
+        {
+          "w": "economic",
+          "s": 231.906,
+          "e": 232.566,
+          "c": 0.997695
+        },
+        {
+          "w": "viability",
+          "s": 232.566,
+          "e": 233.316,
+          "c": 0.998984
+        },
+        {
+          "w": "and",
+          "s": 233.316,
+          "e": 233.506,
+          "c": 0.920037
+        },
+        {
+          "w": "political",
+          "s": 233.566,
+          "e": 234.366,
+          "c": 0.999552
+        },
+        {
+          "w": "stability",
+          "s": 234.366,
+          "e": 235.156,
+          "c": 0.999825
+        },
+        {
+          "w": "as",
+          "s": 235.156,
+          "e": 235.316,
+          "c": 0.999173
+        },
+        {
+          "w": "a",
+          "s": 235.336,
+          "e": 235.406,
+          "c": 0.999989
+        },
+        {
+          "w": "result",
+          "s": 235.406,
+          "e": 235.926,
+          "c": 0.999979
+        },
+        {
+          "w": "of",
+          "s": 235.926,
+          "e": 236.096,
+          "c": 0.999969
+        },
+        {
+          "w": "that,",
+          "s": 236.096,
+          "e": 236.636,
+          "c": 0.207354
+        },
+        {
+          "w": "because",
+          "s": 236.686,
+          "e": 237.076,
+          "c": 0.853997
+        },
+        {
+          "w": "that's",
+          "s": 237.076,
+          "e": 237.426,
+          "c": 0.994503
+        },
+        {
+          "w": "clearly",
+          "s": 237.436,
+          "e": 237.856,
+          "c": 0.999916
+        },
+        {
+          "w": "not",
+          "s": 237.856,
+          "e": 238.026,
+          "c": 0.999969
+        },
+        {
+          "w": "in",
+          "s": 238.036,
+          "e": 238.156,
+          "c": 0.999966
+        },
+        {
+          "w": "his",
+          "s": 238.156,
+          "e": 238.336,
+          "c": 0.999918
+        },
+        {
+          "w": "interest.",
+          "s": 238.336,
+          "e": 239.016,
+          "c": 0.999636
+        },
+        {
+          "w": "So",
+          "s": 239.016,
+          "e": 239.196,
+          "c": 0.995594
+        },
+        {
+          "w": "oligarchs",
+          "s": 239.366,
+          "e": 240.006,
+          "c": 0.993684
+        },
+        {
+          "w": "are",
+          "s": 240.006,
+          "e": 240.276,
+          "c": 0.999983
+        },
+        {
+          "w": "a",
+          "s": 240.276,
+          "e": 240.366,
+          "c": 0.992761
+        },
+        {
+          "w": "part",
+          "s": 240.366,
+          "e": 240.546,
+          "c": 0.998376
+        },
+        {
+          "w": "of",
+          "s": 240.726,
+          "e": 240.906,
+          "c": 0.999962
+        },
+        {
+          "w": "that,",
+          "s": 240.906,
+          "e": 241.446,
+          "c": 0.391191
+        },
+        {
+          "w": "flushing",
+          "s": 241.446,
+          "e": 242.066,
+          "c": 0.997421
+        },
+        {
+          "w": "money",
+          "s": 242.316,
+          "e": 242.616,
+          "c": 0.999985
+        },
+        {
+          "w": "in",
+          "s": 242.616,
+          "e": 242.796,
+          "c": 0.999865
+        },
+        {
+          "w": "there",
+          "s": 242.796,
+          "e": 243.246,
+          "c": 0.999865
+        },
+        {
+          "w": "is",
+          "s": 243.246,
+          "e": 243.416,
+          "c": 0.996729
+        },
+        {
+          "w": "a",
+          "s": 243.426,
+          "e": 243.516,
+          "c": 0.999973
+        },
+        {
+          "w": "part",
+          "s": 243.516,
+          "e": 243.876,
+          "c": 0.999992
+        },
+        {
+          "w": "of",
+          "s": 243.876,
+          "e": 244.056,
+          "c": 0.998525
+        },
+        {
+          "w": "all",
+          "s": 244.056,
+          "e": 244.296,
+          "c": 0.99964
+        },
+        {
+          "w": "of",
+          "s": 244.296,
+          "e": 244.496,
+          "c": 0.998995
+        },
+        {
+          "w": "that,",
+          "s": 244.756,
+          "e": 245.046,
+          "c": 0.8634
+        },
+        {
+          "w": "and",
+          "s": 245.046,
+          "e": 245.306,
+          "c": 0.999609
+        },
+        {
+          "w": "the",
+          "s": 245.386,
+          "e": 245.576,
+          "c": 0.999956
+        },
+        {
+          "w": "obvious",
+          "s": 245.576,
+          "e": 246.216,
+          "c": 0.999901
+        },
+        {
+          "w": "corruption,",
+          "s": 246.216,
+          "e": 247.306,
+          "c": 0.317633
+        },
+        {
+          "w": "even",
+          "s": 247.306,
+          "e": 247.666,
+          "c": 0.999922
+        },
+        {
+          "w": "the",
+          "s": 247.666,
+          "e": 247.936,
+          "c": 0.998795
+        },
+        {
+          "w": "Kurt",
+          "s": 247.936,
+          "e": 248.296,
+          "c": 0.593163
+        },
+        {
+          "w": "Strait",
+          "s": 248.296,
+          "e": 248.836,
+          "c": 0.668572
+        },
+        {
+          "w": "issue.",
+          "s": 248.836,
+          "e": 249.696,
+          "c": 0.914321
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 249.99,
+      "end_s": 264.74,
+      "speaker": "SPEAKER_18",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "While the focus was certainly on naval-to-naval issue, what he was really interfering with is economically the ports that are to the north of the Kerr Straits and the transit of...",
+      "words": [
+        {
+          "w": "While",
+          "s": 249.986,
+          "e": 250.246,
+          "c": 0.566575
+        },
+        {
+          "w": "the",
+          "s": 250.246,
+          "e": 250.476,
+          "c": 0.983102
+        },
+        {
+          "w": "focus",
+          "s": 250.586,
+          "e": 251.136,
+          "c": 0.993294
+        },
+        {
+          "w": "was",
+          "s": 251.136,
+          "e": 251.376,
+          "c": 0.973627
+        },
+        {
+          "w": "certainly",
+          "s": 251.376,
+          "e": 251.656,
+          "c": 0.979298
+        },
+        {
+          "w": "on",
+          "s": 251.656,
+          "e": 252.076,
+          "c": 0.908534
+        },
+        {
+          "w": "naval-to-naval",
+          "s": 252.366,
+          "e": 253.536,
+          "c": 0.533714
+        },
+        {
+          "w": "issue,",
+          "s": 253.536,
+          "e": 253.876,
+          "c": 0.888227
+        },
+        {
+          "w": "what",
+          "s": 254.156,
+          "e": 254.176,
+          "c": 0.999886
+        },
+        {
+          "w": "he",
+          "s": 254.176,
+          "e": 254.326,
+          "c": 0.998666
+        },
+        {
+          "w": "was",
+          "s": 254.326,
+          "e": 254.556,
+          "c": 0.999912
+        },
+        {
+          "w": "really",
+          "s": 254.556,
+          "e": 255.006,
+          "c": 0.999828
+        },
+        {
+          "w": "interfering",
+          "s": 255.076,
+          "e": 255.976,
+          "c": 0.820584
+        },
+        {
+          "w": "with",
+          "s": 255.976,
+          "e": 256.306,
+          "c": 0.873431
+        },
+        {
+          "w": "is",
+          "s": 256.476,
+          "e": 256.646,
+          "c": 0.999662
+        },
+        {
+          "w": "economically",
+          "s": 256.766,
+          "e": 257.956,
+          "c": 0.971048
+        },
+        {
+          "w": "the",
+          "s": 257.956,
+          "e": 258.526,
+          "c": 0.525707
+        },
+        {
+          "w": "ports",
+          "s": 258.526,
+          "e": 258.976,
+          "c": 0.998279
+        },
+        {
+          "w": "that",
+          "s": 259.766,
+          "e": 259.816,
+          "c": 0.980623
+        },
+        {
+          "w": "are",
+          "s": 259.816,
+          "e": 260.066,
+          "c": 0.712543
+        },
+        {
+          "w": "to",
+          "s": 260.066,
+          "e": 260.236,
+          "c": 0.689147
+        },
+        {
+          "w": "the",
+          "s": 260.236,
+          "e": 260.486,
+          "c": 0.999258
+        },
+        {
+          "w": "north",
+          "s": 260.486,
+          "e": 260.936,
+          "c": 0.998811
+        },
+        {
+          "w": "of",
+          "s": 260.936,
+          "e": 261.056,
+          "c": 0.849795
+        },
+        {
+          "w": "the",
+          "s": 261.056,
+          "e": 261.236,
+          "c": 0.999506
+        },
+        {
+          "w": "Kerr",
+          "s": 261.236,
+          "e": 261.476,
+          "c": 0.328813
+        },
+        {
+          "w": "Straits",
+          "s": 261.476,
+          "e": 261.906,
+          "c": 0.950127
+        },
+        {
+          "w": "and",
+          "s": 262.226,
+          "e": 262.496,
+          "c": 0.999964
+        },
+        {
+          "w": "the",
+          "s": 262.496,
+          "e": 263.056,
+          "c": 0.999989
+        },
+        {
+          "w": "transit",
+          "s": 263.056,
+          "e": 264.346,
+          "c": 0.995761
+        },
+        {
+          "w": "of...",
+          "s": 264.346,
+          "e": 264.736,
+          "c": 0.148594
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 264.97,
+      "end_s": 267.8,
+      "speaker": "SPEAKER_18",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "commodities out of those ports is what. All right, let me",
+      "words": [
+        {
+          "w": "commodities",
+          "s": 264.966,
+          "e": 265.476,
+          "c": 0.51431
+        },
+        {
+          "w": "out",
+          "s": 265.476,
+          "e": 265.676,
+          "c": 0.943549
+        },
+        {
+          "w": "of",
+          "s": 265.676,
+          "e": 265.806,
+          "c": 0.990823
+        },
+        {
+          "w": "those",
+          "s": 265.806,
+          "e": 266.086,
+          "c": 0.992043
+        },
+        {
+          "w": "ports",
+          "s": 266.196,
+          "e": 266.496,
+          "c": 0.925551
+        },
+        {
+          "w": "is",
+          "s": 266.496,
+          "e": 266.696,
+          "c": 0.43931
+        },
+        {
+          "w": "what.",
+          "s": 266.696,
+          "e": 266.876,
+          "c": 0.172441
+        },
+        {
+          "w": "All",
+          "s": 267.066,
+          "e": 267.086,
+          "c": 0.316419
+        },
+        {
+          "w": "right,",
+          "s": 267.116,
+          "e": 267.596,
+          "c": 0.466376
+        },
+        {
+          "w": "let",
+          "s": 267.596,
+          "e": 267.666,
+          "c": 0.912534
+        },
+        {
+          "w": "me",
+          "s": 267.736,
+          "e": 267.796,
+          "c": 0.971026
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 267.8,
+      "end_s": 286.24,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "try to shoehorn one more question in really about the application of the tactics of the U.S. Last week, The New York Times reported that the White House chief of staff, Mick Mulvaney, instructed former Homeland Security Secretary Kristi Nielsen not to talk about Russian election interference.",
+      "words": [
+        {
+          "w": "try",
+          "s": 267.796,
+          "e": 268.036,
+          "c": 0.965295
+        },
+        {
+          "w": "to",
+          "s": 268.036,
+          "e": 268.226,
+          "c": 0.947641
+        },
+        {
+          "w": "shoehorn",
+          "s": 268.236,
+          "e": 268.876,
+          "c": 0.918731
+        },
+        {
+          "w": "one",
+          "s": 268.886,
+          "e": 268.996,
+          "c": 0.768802
+        },
+        {
+          "w": "more",
+          "s": 268.996,
+          "e": 269.336,
+          "c": 0.842075
+        },
+        {
+          "w": "question",
+          "s": 269.336,
+          "e": 269.816,
+          "c": 0.935484
+        },
+        {
+          "w": "in",
+          "s": 269.816,
+          "e": 270.136,
+          "c": 0.704652
+        },
+        {
+          "w": "really",
+          "s": 270.136,
+          "e": 271.276,
+          "c": 0.164301
+        },
+        {
+          "w": "about",
+          "s": 271.276,
+          "e": 271.766,
+          "c": 0.726846
+        },
+        {
+          "w": "the",
+          "s": 271.766,
+          "e": 272.436,
+          "c": 0.69696
+        },
+        {
+          "w": "application",
+          "s": 272.436,
+          "e": 273.236,
+          "c": 0.754743
+        },
+        {
+          "w": "of",
+          "s": 273.236,
+          "e": 273.476,
+          "c": 0.786252
+        },
+        {
+          "w": "the",
+          "s": 273.476,
+          "e": 273.716,
+          "c": 0.754994
+        },
+        {
+          "w": "tactics",
+          "s": 273.716,
+          "e": 274.156,
+          "c": 0.932533
+        },
+        {
+          "w": "of",
+          "s": 274.156,
+          "e": 274.276,
+          "c": 0.409556
+        },
+        {
+          "w": "the",
+          "s": 274.276,
+          "e": 274.356,
+          "c": 0.981366
+        },
+        {
+          "w": "U.S.",
+          "s": 274.356,
+          "e": 274.636,
+          "c": 0.411599
+        },
+        {
+          "w": "Last",
+          "s": 274.826,
+          "e": 274.826,
+          "c": 0.898549
+        },
+        {
+          "w": "week,",
+          "s": 274.876,
+          "e": 275.106,
+          "c": 0.778229
+        },
+        {
+          "w": "The",
+          "s": 275.106,
+          "e": 275.236,
+          "c": 0.595422
+        },
+        {
+          "w": "New",
+          "s": 275.236,
+          "e": 275.386,
+          "c": 0.998324
+        },
+        {
+          "w": "York",
+          "s": 275.386,
+          "e": 275.576,
+          "c": 0.999796
+        },
+        {
+          "w": "Times",
+          "s": 275.576,
+          "e": 275.816,
+          "c": 0.998786
+        },
+        {
+          "w": "reported",
+          "s": 275.816,
+          "e": 276.256,
+          "c": 0.994497
+        },
+        {
+          "w": "that",
+          "s": 276.256,
+          "e": 276.436,
+          "c": 0.888935
+        },
+        {
+          "w": "the",
+          "s": 276.446,
+          "e": 276.586,
+          "c": 0.983308
+        },
+        {
+          "w": "White",
+          "s": 276.586,
+          "e": 276.826,
+          "c": 0.980833
+        },
+        {
+          "w": "House",
+          "s": 276.826,
+          "e": 277.066,
+          "c": 0.634721
+        },
+        {
+          "w": "chief",
+          "s": 277.066,
+          "e": 277.296,
+          "c": 0.347375
+        },
+        {
+          "w": "of",
+          "s": 277.296,
+          "e": 277.396,
+          "c": 0.997103
+        },
+        {
+          "w": "staff,",
+          "s": 277.396,
+          "e": 277.726,
+          "c": 0.728731
+        },
+        {
+          "w": "Mick",
+          "s": 277.816,
+          "e": 277.986,
+          "c": 0.9293
+        },
+        {
+          "w": "Mulvaney,",
+          "s": 277.986,
+          "e": 278.476,
+          "c": 0.875489
+        },
+        {
+          "w": "instructed",
+          "s": 278.706,
+          "e": 279.406,
+          "c": 0.996865
+        },
+        {
+          "w": "former",
+          "s": 279.406,
+          "e": 279.966,
+          "c": 0.997318
+        },
+        {
+          "w": "Homeland",
+          "s": 279.966,
+          "e": 280.706,
+          "c": 0.99032
+        },
+        {
+          "w": "Security",
+          "s": 280.706,
+          "e": 281.446,
+          "c": 0.994243
+        },
+        {
+          "w": "Secretary",
+          "s": 281.446,
+          "e": 282.266,
+          "c": 0.873542
+        },
+        {
+          "w": "Kristi",
+          "s": 282.286,
+          "e": 282.836,
+          "c": 0.636287
+        },
+        {
+          "w": "Nielsen",
+          "s": 282.836,
+          "e": 283.536,
+          "c": 0.970804
+        },
+        {
+          "w": "not",
+          "s": 283.536,
+          "e": 283.726,
+          "c": 0.922052
+        },
+        {
+          "w": "to",
+          "s": 283.726,
+          "e": 283.856,
+          "c": 0.997961
+        },
+        {
+          "w": "talk",
+          "s": 283.856,
+          "e": 284.106,
+          "c": 0.997459
+        },
+        {
+          "w": "about",
+          "s": 284.106,
+          "e": 284.316,
+          "c": 0.994951
+        },
+        {
+          "w": "Russian",
+          "s": 284.526,
+          "e": 284.896,
+          "c": 0.989408
+        },
+        {
+          "w": "election",
+          "s": 284.896,
+          "e": 285.416,
+          "c": 0.993463
+        },
+        {
+          "w": "interference.",
+          "s": 285.416,
+          "e": 286.236,
+          "c": 0.425826
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 286.33,
+      "end_s": 307.44,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "around the president because, quote, Mr. Trump still equated any public discussion of malign Russian election activity with questions about the legitimacy of his victory. Consequently, according to the Times, the issue did not gain the urgency or widespread attention that a president can command, and it meant that many Americans remain unaware of the latest Russian versions of interference.",
+      "words": [
+        {
+          "w": "around",
+          "s": 286.335,
+          "e": 286.515,
+          "c": 0.704725
+        },
+        {
+          "w": "the",
+          "s": 286.515,
+          "e": 286.665,
+          "c": 0.974653
+        },
+        {
+          "w": "president",
+          "s": 286.665,
+          "e": 287.125,
+          "c": 0.673235
+        },
+        {
+          "w": "because,",
+          "s": 287.125,
+          "e": 287.545,
+          "c": 0.350752
+        },
+        {
+          "w": "quote,",
+          "s": 287.645,
+          "e": 287.815,
+          "c": 0.81453
+        },
+        {
+          "w": "Mr.",
+          "s": 287.835,
+          "e": 287.985,
+          "c": 0.504822
+        },
+        {
+          "w": "Trump",
+          "s": 288.045,
+          "e": 288.385,
+          "c": 0.743935
+        },
+        {
+          "w": "still",
+          "s": 288.385,
+          "e": 288.665,
+          "c": 0.898346
+        },
+        {
+          "w": "equated",
+          "s": 288.665,
+          "e": 289.085,
+          "c": 0.941005
+        },
+        {
+          "w": "any",
+          "s": 289.085,
+          "e": 289.325,
+          "c": 0.962085
+        },
+        {
+          "w": "public",
+          "s": 289.325,
+          "e": 289.705,
+          "c": 0.983717
+        },
+        {
+          "w": "discussion",
+          "s": 289.705,
+          "e": 290.215,
+          "c": 0.970744
+        },
+        {
+          "w": "of",
+          "s": 290.255,
+          "e": 290.345,
+          "c": 0.734167
+        },
+        {
+          "w": "malign",
+          "s": 290.345,
+          "e": 290.705,
+          "c": 0.920757
+        },
+        {
+          "w": "Russian",
+          "s": 290.835,
+          "e": 291.205,
+          "c": 0.987532
+        },
+        {
+          "w": "election",
+          "s": 291.205,
+          "e": 291.775,
+          "c": 0.982826
+        },
+        {
+          "w": "activity",
+          "s": 291.775,
+          "e": 292.345,
+          "c": 0.991851
+        },
+        {
+          "w": "with",
+          "s": 292.345,
+          "e": 292.635,
+          "c": 0.991212
+        },
+        {
+          "w": "questions",
+          "s": 292.635,
+          "e": 293.285,
+          "c": 0.996782
+        },
+        {
+          "w": "about",
+          "s": 293.285,
+          "e": 293.645,
+          "c": 0.997761
+        },
+        {
+          "w": "the",
+          "s": 293.645,
+          "e": 293.855,
+          "c": 0.997392
+        },
+        {
+          "w": "legitimacy",
+          "s": 293.855,
+          "e": 294.575,
+          "c": 0.998711
+        },
+        {
+          "w": "of",
+          "s": 294.575,
+          "e": 294.705,
+          "c": 0.998548
+        },
+        {
+          "w": "his",
+          "s": 294.715,
+          "e": 294.925,
+          "c": 0.995235
+        },
+        {
+          "w": "victory.",
+          "s": 294.925,
+          "e": 295.705,
+          "c": 0.986914
+        },
+        {
+          "w": "Consequently,",
+          "s": 295.835,
+          "e": 296.495,
+          "c": 0.958387
+        },
+        {
+          "w": "according",
+          "s": 296.495,
+          "e": 297.005,
+          "c": 0.990641
+        },
+        {
+          "w": "to",
+          "s": 297.005,
+          "e": 297.045,
+          "c": 0.986303
+        },
+        {
+          "w": "the",
+          "s": 297.145,
+          "e": 297.285,
+          "c": 0.732604
+        },
+        {
+          "w": "Times,",
+          "s": 297.285,
+          "e": 297.695,
+          "c": 0.853649
+        },
+        {
+          "w": "the",
+          "s": 297.735,
+          "e": 297.875,
+          "c": 0.979662
+        },
+        {
+          "w": "issue",
+          "s": 297.875,
+          "e": 298.155,
+          "c": 0.996831
+        },
+        {
+          "w": "did",
+          "s": 298.155,
+          "e": 298.285,
+          "c": 0.991414
+        },
+        {
+          "w": "not",
+          "s": 298.385,
+          "e": 298.495,
+          "c": 0.999058
+        },
+        {
+          "w": "gain",
+          "s": 298.495,
+          "e": 298.645,
+          "c": 0.995027
+        },
+        {
+          "w": "the",
+          "s": 298.725,
+          "e": 298.895,
+          "c": 0.994605
+        },
+        {
+          "w": "urgency",
+          "s": 298.895,
+          "e": 299.285,
+          "c": 0.996757
+        },
+        {
+          "w": "or",
+          "s": 299.285,
+          "e": 299.405,
+          "c": 0.959662
+        },
+        {
+          "w": "widespread",
+          "s": 299.405,
+          "e": 300.005,
+          "c": 0.986064
+        },
+        {
+          "w": "attention",
+          "s": 300.135,
+          "e": 300.555,
+          "c": 0.999291
+        },
+        {
+          "w": "that",
+          "s": 300.675,
+          "e": 300.805,
+          "c": 0.997248
+        },
+        {
+          "w": "a",
+          "s": 300.805,
+          "e": 300.865,
+          "c": 0.997016
+        },
+        {
+          "w": "president",
+          "s": 300.865,
+          "e": 301.345,
+          "c": 0.958696
+        },
+        {
+          "w": "can",
+          "s": 301.445,
+          "e": 301.595,
+          "c": 0.997078
+        },
+        {
+          "w": "command,",
+          "s": 301.605,
+          "e": 302.155,
+          "c": 0.331598
+        },
+        {
+          "w": "and",
+          "s": 302.155,
+          "e": 302.265,
+          "c": 0.991995
+        },
+        {
+          "w": "it",
+          "s": 302.375,
+          "e": 302.455,
+          "c": 0.994325
+        },
+        {
+          "w": "meant",
+          "s": 302.455,
+          "e": 302.765,
+          "c": 0.996126
+        },
+        {
+          "w": "that",
+          "s": 302.765,
+          "e": 302.955,
+          "c": 0.987681
+        },
+        {
+          "w": "many",
+          "s": 303.025,
+          "e": 303.245,
+          "c": 0.996033
+        },
+        {
+          "w": "Americans",
+          "s": 303.245,
+          "e": 303.755,
+          "c": 0.993028
+        },
+        {
+          "w": "remain",
+          "s": 303.825,
+          "e": 304.175,
+          "c": 0.724643
+        },
+        {
+          "w": "unaware",
+          "s": 304.175,
+          "e": 304.685,
+          "c": 0.989638
+        },
+        {
+          "w": "of",
+          "s": 304.795,
+          "e": 304.805,
+          "c": 0.997563
+        },
+        {
+          "w": "the",
+          "s": 304.815,
+          "e": 304.995,
+          "c": 0.998197
+        },
+        {
+          "w": "latest",
+          "s": 304.995,
+          "e": 305.375,
+          "c": 0.999115
+        },
+        {
+          "w": "Russian",
+          "s": 305.375,
+          "e": 305.815,
+          "c": 0.995621
+        },
+        {
+          "w": "versions",
+          "s": 305.815,
+          "e": 306.325,
+          "c": 0.976742
+        },
+        {
+          "w": "of",
+          "s": 306.325,
+          "e": 306.445,
+          "c": 0.998405
+        },
+        {
+          "w": "interference.",
+          "s": 306.445,
+          "e": 307.445,
+          "c": 0.992703
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "start_s": 307.44,
+      "end_s": 316.99,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Do any of you want to comment about whether it's fair to say that until the president acknowledges the facts about Russia's interference in our elections and mobilizes, the defenses",
+      "words": [
+        {
+          "w": "Do",
+          "s": 307.44,
+          "e": 307.54,
+          "c": 0.757865
+        },
+        {
+          "w": "any",
+          "s": 307.68,
+          "e": 307.74,
+          "c": 0.943799
+        },
+        {
+          "w": "of",
+          "s": 307.74,
+          "e": 307.86,
+          "c": 0.994761
+        },
+        {
+          "w": "you",
+          "s": 307.86,
+          "e": 308.04,
+          "c": 0.998397
+        },
+        {
+          "w": "want",
+          "s": 308.04,
+          "e": 308.28,
+          "c": 0.92033
+        },
+        {
+          "w": "to",
+          "s": 308.28,
+          "e": 308.44,
+          "c": 0.988116
+        },
+        {
+          "w": "comment",
+          "s": 308.44,
+          "e": 308.94,
+          "c": 0.936727
+        },
+        {
+          "w": "about",
+          "s": 308.94,
+          "e": 309.1,
+          "c": 0.899521
+        },
+        {
+          "w": "whether",
+          "s": 309.1,
+          "e": 309.34,
+          "c": 0.947149
+        },
+        {
+          "w": "it's",
+          "s": 309.34,
+          "e": 309.53,
+          "c": 0.962033
+        },
+        {
+          "w": "fair",
+          "s": 309.65,
+          "e": 309.78,
+          "c": 0.969849
+        },
+        {
+          "w": "to",
+          "s": 309.78,
+          "e": 309.94,
+          "c": 0.949728
+        },
+        {
+          "w": "say",
+          "s": 309.94,
+          "e": 310.06,
+          "c": 0.978163
+        },
+        {
+          "w": "that",
+          "s": 310.06,
+          "e": 310.28,
+          "c": 0.817694
+        },
+        {
+          "w": "until",
+          "s": 310.28,
+          "e": 310.6,
+          "c": 0.810787
+        },
+        {
+          "w": "the",
+          "s": 310.6,
+          "e": 310.74,
+          "c": 0.918885
+        },
+        {
+          "w": "president",
+          "s": 310.74,
+          "e": 311.33,
+          "c": 0.665062
+        },
+        {
+          "w": "acknowledges",
+          "s": 311.34,
+          "e": 312.08,
+          "c": 0.824419
+        },
+        {
+          "w": "the",
+          "s": 312.08,
+          "e": 312.32,
+          "c": 0.920565
+        },
+        {
+          "w": "facts",
+          "s": 312.32,
+          "e": 312.79,
+          "c": 0.976393
+        },
+        {
+          "w": "about",
+          "s": 312.79,
+          "e": 313.14,
+          "c": 0.841218
+        },
+        {
+          "w": "Russia's",
+          "s": 313.14,
+          "e": 313.73,
+          "c": 0.919621
+        },
+        {
+          "w": "interference",
+          "s": 313.83,
+          "e": 314.32,
+          "c": 0.931142
+        },
+        {
+          "w": "in",
+          "s": 314.32,
+          "e": 314.44,
+          "c": 0.949735
+        },
+        {
+          "w": "our",
+          "s": 314.44,
+          "e": 314.64,
+          "c": 0.990152
+        },
+        {
+          "w": "elections",
+          "s": 314.64,
+          "e": 315.2,
+          "c": 0.982492
+        },
+        {
+          "w": "and",
+          "s": 315.2,
+          "e": 315.4,
+          "c": 0.800788
+        },
+        {
+          "w": "mobilizes,",
+          "s": 315.4,
+          "e": 316.39,
+          "c": 0.337873
+        },
+        {
+          "w": "the",
+          "s": 316.5,
+          "e": 316.55,
+          "c": 0.499209
+        },
+        {
+          "w": "defenses",
+          "s": 316.55,
+          "e": 316.99,
+          "c": 0.932552
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "start_s": 316.99,
+      "end_s": 321.13,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "will need to counter that interference, we'll remain vulnerable to those attacks? I",
+      "words": [
+        {
+          "w": "will",
+          "s": 316.99,
+          "e": 317.21,
+          "c": 0.946662
+        },
+        {
+          "w": "need",
+          "s": 317.21,
+          "e": 317.43,
+          "c": 0.995647
+        },
+        {
+          "w": "to",
+          "s": 317.43,
+          "e": 317.53,
+          "c": 0.998854
+        },
+        {
+          "w": "counter",
+          "s": 317.63,
+          "e": 317.93,
+          "c": 0.998556
+        },
+        {
+          "w": "that",
+          "s": 317.93,
+          "e": 318.15,
+          "c": 0.992767
+        },
+        {
+          "w": "interference,",
+          "s": 318.15,
+          "e": 318.92,
+          "c": 0.275261
+        },
+        {
+          "w": "we'll",
+          "s": 318.93,
+          "e": 319.2,
+          "c": 0.729094
+        },
+        {
+          "w": "remain",
+          "s": 319.2,
+          "e": 319.53,
+          "c": 0.999462
+        },
+        {
+          "w": "vulnerable",
+          "s": 319.53,
+          "e": 320.08,
+          "c": 0.99802
+        },
+        {
+          "w": "to",
+          "s": 320.09,
+          "e": 320.2,
+          "c": 0.999314
+        },
+        {
+          "w": "those",
+          "s": 320.2,
+          "e": 320.48,
+          "c": 0.999296
+        },
+        {
+          "w": "attacks?",
+          "s": 320.48,
+          "e": 321.08,
+          "c": 0.438675
+        },
+        {
+          "w": "I",
+          "s": 321.11,
+          "e": 321.13,
+          "c": 0.991043
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "start_s": 321.34,
+      "end_s": 322,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "think",
+      "words": [
+        {
+          "w": "think",
+          "s": 321.34,
+          "e": 322,
+          "c": 0.999889
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "start_s": 322,
+      "end_s": 325.3,
+      "speaker": "SPEAKER_23",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "one of the themes from this",
+      "words": [
+        {
+          "w": "one",
+          "s": 322,
+          "e": 322.45,
+          "c": 0.999838
+        },
+        {
+          "w": "of",
+          "s": 322.45,
+          "e": 322.75,
+          "c": 0.999998
+        },
+        {
+          "w": "the",
+          "s": 322.75,
+          "e": 323.14,
+          "c": 0.99999
+        },
+        {
+          "w": "themes",
+          "s": 323.31,
+          "e": 324.07,
+          "c": 0.999958
+        },
+        {
+          "w": "from",
+          "s": 324.18,
+          "e": 324.7,
+          "c": 0.998839
+        },
+        {
+          "w": "this",
+          "s": 324.7,
+          "e": 325.3,
+          "c": 0.999935
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "start_s": 325.3,
+      "end_s": 326.38,
+      "speaker": "SPEAKER_24",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "panel has",
+      "words": [
+        {
+          "w": "panel",
+          "s": 325.3,
+          "e": 325.98,
+          "c": 0.999954
+        },
+        {
+          "w": "has",
+          "s": 326.1,
+          "e": 326.38,
+          "c": 0.927322
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "start_s": 326.38,
+      "end_s": 327.2,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "been that",
+      "words": [
+        {
+          "w": "been",
+          "s": 326.38,
+          "e": 326.79,
+          "c": 0.999722
+        },
+        {
+          "w": "that",
+          "s": 326.79,
+          "e": 327.2,
+          "c": 0.721783
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "start_s": 327.2,
+      "end_s": 330.8,
+      "speaker": "SPEAKER_24",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "presidential leadership is critical.",
+      "words": [
+        {
+          "w": "presidential",
+          "s": 327.2,
+          "e": 328.43,
+          "c": 0.98457
+        },
+        {
+          "w": "leadership",
+          "s": 328.43,
+          "e": 329.45,
+          "c": 0.99988
+        },
+        {
+          "w": "is",
+          "s": 329.45,
+          "e": 329.65,
+          "c": 0.999912
+        },
+        {
+          "w": "critical.",
+          "s": 329.65,
+          "e": 330.8,
+          "c": 0.968601
+        }
+      ]
+    },
+    {
+      "i": 35,
+      "start_s": 333.82,
+      "end_s": 334.14,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "As",
+      "words": [
+        {
+          "w": "As",
+          "s": 333.824,
+          "e": 334.144,
+          "c": 0.524777
+        }
+      ]
+    },
+    {
+      "i": 36,
+      "start_s": 334.61,
+      "end_s": 360.34,
+      "speaker": "SPEAKER_24",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "someone who like Ambassador Nuland did a lot of crafting talking points for secretaries and even presidents, vice presidents, it shouldn't be that hard to speak about the policy challenge of Russian election interference and disinformation without getting into the more difficult and partisan issues of the Mueller report. It's not that hard or",
+      "words": [
+        {
+          "w": "someone",
+          "s": 334.614,
+          "e": 335.364,
+          "c": 0.770325
+        },
+        {
+          "w": "who",
+          "s": 335.364,
+          "e": 335.874,
+          "c": 0.735458
+        },
+        {
+          "w": "like",
+          "s": 335.874,
+          "e": 336.464,
+          "c": 0.595043
+        },
+        {
+          "w": "Ambassador",
+          "s": 336.924,
+          "e": 337.474,
+          "c": 0.882162
+        },
+        {
+          "w": "Nuland",
+          "s": 337.474,
+          "e": 338.024,
+          "c": 0.537426
+        },
+        {
+          "w": "did",
+          "s": 338.024,
+          "e": 338.164,
+          "c": 0.806758
+        },
+        {
+          "w": "a",
+          "s": 338.164,
+          "e": 338.254,
+          "c": 0.981268
+        },
+        {
+          "w": "lot",
+          "s": 338.254,
+          "e": 338.524,
+          "c": 0.995702
+        },
+        {
+          "w": "of",
+          "s": 338.524,
+          "e": 338.694,
+          "c": 0.959972
+        },
+        {
+          "w": "crafting",
+          "s": 338.824,
+          "e": 340.144,
+          "c": 0.938993
+        },
+        {
+          "w": "talking",
+          "s": 340.144,
+          "e": 340.624,
+          "c": 0.859353
+        },
+        {
+          "w": "points",
+          "s": 340.624,
+          "e": 341.064,
+          "c": 0.969788
+        },
+        {
+          "w": "for",
+          "s": 341.064,
+          "e": 341.264,
+          "c": 0.850231
+        },
+        {
+          "w": "secretaries",
+          "s": 341.264,
+          "e": 341.964,
+          "c": 0.810982
+        },
+        {
+          "w": "and",
+          "s": 341.964,
+          "e": 342.144,
+          "c": 0.687569
+        },
+        {
+          "w": "even",
+          "s": 342.144,
+          "e": 342.384,
+          "c": 0.989915
+        },
+        {
+          "w": "presidents,",
+          "s": 342.384,
+          "e": 343.114,
+          "c": 0.963009
+        },
+        {
+          "w": "vice",
+          "s": 343.204,
+          "e": 343.354,
+          "c": 0.952719
+        },
+        {
+          "w": "presidents,",
+          "s": 343.354,
+          "e": 344.014,
+          "c": 0.693918
+        },
+        {
+          "w": "it",
+          "s": 344.014,
+          "e": 344.274,
+          "c": 0.562489
+        },
+        {
+          "w": "shouldn't",
+          "s": 344.284,
+          "e": 345.074,
+          "c": 0.997771
+        },
+        {
+          "w": "be",
+          "s": 345.074,
+          "e": 345.244,
+          "c": 0.998887
+        },
+        {
+          "w": "that",
+          "s": 345.244,
+          "e": 345.594,
+          "c": 0.999327
+        },
+        {
+          "w": "hard",
+          "s": 345.594,
+          "e": 345.944,
+          "c": 0.999516
+        },
+        {
+          "w": "to",
+          "s": 345.944,
+          "e": 346.114,
+          "c": 0.980808
+        },
+        {
+          "w": "speak",
+          "s": 346.114,
+          "e": 346.554,
+          "c": 0.99926
+        },
+        {
+          "w": "about",
+          "s": 346.554,
+          "e": 346.864,
+          "c": 0.995961
+        },
+        {
+          "w": "the",
+          "s": 346.974,
+          "e": 347.254,
+          "c": 0.999125
+        },
+        {
+          "w": "policy",
+          "s": 347.474,
+          "e": 347.784,
+          "c": 0.99898
+        },
+        {
+          "w": "challenge",
+          "s": 347.784,
+          "e": 348.354,
+          "c": 0.995927
+        },
+        {
+          "w": "of",
+          "s": 348.644,
+          "e": 348.744,
+          "c": 0.996917
+        },
+        {
+          "w": "Russian",
+          "s": 348.794,
+          "e": 349.374,
+          "c": 0.996816
+        },
+        {
+          "w": "election",
+          "s": 349.374,
+          "e": 350.084,
+          "c": 0.998213
+        },
+        {
+          "w": "interference",
+          "s": 350.084,
+          "e": 351.144,
+          "c": 0.994268
+        },
+        {
+          "w": "and",
+          "s": 351.234,
+          "e": 351.414,
+          "c": 0.991794
+        },
+        {
+          "w": "disinformation",
+          "s": 351.414,
+          "e": 352.814,
+          "c": 0.996699
+        },
+        {
+          "w": "without",
+          "s": 352.814,
+          "e": 353.144,
+          "c": 0.965273
+        },
+        {
+          "w": "getting",
+          "s": 353.714,
+          "e": 353.944,
+          "c": 0.999521
+        },
+        {
+          "w": "into",
+          "s": 353.944,
+          "e": 354.264,
+          "c": 0.999397
+        },
+        {
+          "w": "the",
+          "s": 354.264,
+          "e": 354.474,
+          "c": 0.999926
+        },
+        {
+          "w": "more",
+          "s": 354.514,
+          "e": 354.824,
+          "c": 0.999865
+        },
+        {
+          "w": "difficult",
+          "s": 354.824,
+          "e": 355.474,
+          "c": 0.996869
+        },
+        {
+          "w": "and",
+          "s": 355.594,
+          "e": 355.724,
+          "c": 0.998302
+        },
+        {
+          "w": "partisan",
+          "s": 355.864,
+          "e": 356.424,
+          "c": 0.997238
+        },
+        {
+          "w": "issues",
+          "s": 356.424,
+          "e": 356.894,
+          "c": 0.999659
+        },
+        {
+          "w": "of",
+          "s": 357.044,
+          "e": 357.064,
+          "c": 0.999224
+        },
+        {
+          "w": "the",
+          "s": 357.064,
+          "e": 357.304,
+          "c": 0.998915
+        },
+        {
+          "w": "Mueller",
+          "s": 357.304,
+          "e": 357.864,
+          "c": 0.996962
+        },
+        {
+          "w": "report.",
+          "s": 357.864,
+          "e": 358.644,
+          "c": 0.957336
+        },
+        {
+          "w": "It's",
+          "s": 358.644,
+          "e": 359.044,
+          "c": 0.923557
+        },
+        {
+          "w": "not",
+          "s": 359.044,
+          "e": 359.324,
+          "c": 0.970798
+        },
+        {
+          "w": "that",
+          "s": 359.434,
+          "e": 359.744,
+          "c": 0.999994
+        },
+        {
+          "w": "hard",
+          "s": 359.744,
+          "e": 360.144,
+          "c": 0.999987
+        },
+        {
+          "w": "or",
+          "s": 360.144,
+          "e": 360.344,
+          "c": 0.567608
+        }
+      ]
+    },
+    {
+      "i": 37,
+      "start_s": 360.34,
+      "end_s": 361.38,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "it shouldn't",
+      "words": [
+        {
+          "w": "it",
+          "s": 360.344,
+          "e": 360.544,
+          "c": 0.999939
+        },
+        {
+          "w": "shouldn't",
+          "s": 360.544,
+          "e": 361.384,
+          "c": 0.999945
+        }
+      ]
+    },
+    {
+      "i": 38,
+      "start_s": 361.44,
+      "end_s": 362.78,
+      "speaker": "SPEAKER_24",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "be that hard.",
+      "words": [
+        {
+          "w": "be",
+          "s": 361.444,
+          "e": 361.644,
+          "c": 0.999996
+        },
+        {
+          "w": "that",
+          "s": 361.754,
+          "e": 362.044,
+          "c": 0.999992
+        },
+        {
+          "w": "hard.",
+          "s": 362.044,
+          "e": 362.784,
+          "c": 0.996343
+        }
+      ]
+    },
+    {
+      "i": 39,
+      "start_s": 363.35,
+      "end_s": 386.58,
+      "speaker": "SPEAKER_24",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Presidential leadership is crucial, acknowledging the facts of Russian attempted election interference can be separated from the partisan question and even the political question of the actual 2016 campaign. You could put it aside, draw a thick line and say, okay, this is what we have to do to prevent it and there is a viable set of toolkits.",
+      "words": [
+        {
+          "w": "Presidential",
+          "s": 363.354,
+          "e": 363.874,
+          "c": 0.822981
+        },
+        {
+          "w": "leadership",
+          "s": 363.874,
+          "e": 364.514,
+          "c": 0.995984
+        },
+        {
+          "w": "is",
+          "s": 364.514,
+          "e": 364.614,
+          "c": 0.998652
+        },
+        {
+          "w": "crucial,",
+          "s": 364.724,
+          "e": 365.394,
+          "c": 0.253176
+        },
+        {
+          "w": "acknowledging",
+          "s": 366.314,
+          "e": 367.254,
+          "c": 0.910411
+        },
+        {
+          "w": "the",
+          "s": 367.284,
+          "e": 367.674,
+          "c": 0.981264
+        },
+        {
+          "w": "facts",
+          "s": 367.674,
+          "e": 368.294,
+          "c": 0.915475
+        },
+        {
+          "w": "of",
+          "s": 368.354,
+          "e": 368.464,
+          "c": 0.973196
+        },
+        {
+          "w": "Russian",
+          "s": 368.464,
+          "e": 368.824,
+          "c": 0.889684
+        },
+        {
+          "w": "attempted",
+          "s": 368.824,
+          "e": 369.264,
+          "c": 0.752843
+        },
+        {
+          "w": "election",
+          "s": 369.264,
+          "e": 369.704,
+          "c": 0.930768
+        },
+        {
+          "w": "interference",
+          "s": 369.704,
+          "e": 370.444,
+          "c": 0.955678
+        },
+        {
+          "w": "can",
+          "s": 370.804,
+          "e": 370.804,
+          "c": 0.558729
+        },
+        {
+          "w": "be",
+          "s": 370.814,
+          "e": 370.944,
+          "c": 0.990803
+        },
+        {
+          "w": "separated",
+          "s": 370.944,
+          "e": 371.804,
+          "c": 0.961811
+        },
+        {
+          "w": "from",
+          "s": 371.804,
+          "e": 372.124,
+          "c": 0.955828
+        },
+        {
+          "w": "the",
+          "s": 372.124,
+          "e": 372.324,
+          "c": 0.987662
+        },
+        {
+          "w": "partisan",
+          "s": 372.354,
+          "e": 372.984,
+          "c": 0.980361
+        },
+        {
+          "w": "question",
+          "s": 373.074,
+          "e": 373.744,
+          "c": 0.942739
+        },
+        {
+          "w": "and",
+          "s": 373.894,
+          "e": 374.304,
+          "c": 0.663127
+        },
+        {
+          "w": "even",
+          "s": 374.304,
+          "e": 374.574,
+          "c": 0.975189
+        },
+        {
+          "w": "the",
+          "s": 374.574,
+          "e": 374.774,
+          "c": 0.98043
+        },
+        {
+          "w": "political",
+          "s": 374.774,
+          "e": 375.374,
+          "c": 0.995123
+        },
+        {
+          "w": "question",
+          "s": 375.374,
+          "e": 375.914,
+          "c": 0.989025
+        },
+        {
+          "w": "of",
+          "s": 375.914,
+          "e": 376.044,
+          "c": 0.987707
+        },
+        {
+          "w": "the",
+          "s": 376.044,
+          "e": 376.244,
+          "c": 0.998011
+        },
+        {
+          "w": "actual",
+          "s": 376.244,
+          "e": 376.644,
+          "c": 0.985481
+        },
+        {
+          "w": "2016",
+          "s": 376.644,
+          "e": 377.454,
+          "c": 0.988515
+        },
+        {
+          "w": "campaign.",
+          "s": 377.454,
+          "e": 378.174,
+          "c": 0.975041
+        },
+        {
+          "w": "You",
+          "s": 378.454,
+          "e": 378.454,
+          "c": 0.987745
+        },
+        {
+          "w": "could",
+          "s": 378.474,
+          "e": 378.834,
+          "c": 0.803066
+        },
+        {
+          "w": "put",
+          "s": 378.834,
+          "e": 379.064,
+          "c": 0.996694
+        },
+        {
+          "w": "it",
+          "s": 379.064,
+          "e": 379.214,
+          "c": 0.974104
+        },
+        {
+          "w": "aside,",
+          "s": 379.214,
+          "e": 379.734,
+          "c": 0.945334
+        },
+        {
+          "w": "draw",
+          "s": 379.854,
+          "e": 380.044,
+          "c": 0.993271
+        },
+        {
+          "w": "a",
+          "s": 380.074,
+          "e": 380.114,
+          "c": 0.950059
+        },
+        {
+          "w": "thick",
+          "s": 380.114,
+          "e": 380.474,
+          "c": 0.993131
+        },
+        {
+          "w": "line",
+          "s": 380.474,
+          "e": 380.784,
+          "c": 0.991974
+        },
+        {
+          "w": "and",
+          "s": 380.794,
+          "e": 381.024,
+          "c": 0.776684
+        },
+        {
+          "w": "say,",
+          "s": 381.024,
+          "e": 381.404,
+          "c": 0.443825
+        },
+        {
+          "w": "okay,",
+          "s": 381.434,
+          "e": 381.854,
+          "c": 0.438447
+        },
+        {
+          "w": "this",
+          "s": 381.854,
+          "e": 382.154,
+          "c": 0.993269
+        },
+        {
+          "w": "is",
+          "s": 382.154,
+          "e": 382.304,
+          "c": 0.998289
+        },
+        {
+          "w": "what",
+          "s": 382.304,
+          "e": 382.604,
+          "c": 0.999363
+        },
+        {
+          "w": "we",
+          "s": 382.604,
+          "e": 382.754,
+          "c": 0.998892
+        },
+        {
+          "w": "have",
+          "s": 382.754,
+          "e": 383.054,
+          "c": 0.997925
+        },
+        {
+          "w": "to",
+          "s": 383.054,
+          "e": 383.144,
+          "c": 0.999392
+        },
+        {
+          "w": "do",
+          "s": 383.214,
+          "e": 383.354,
+          "c": 0.998803
+        },
+        {
+          "w": "to",
+          "s": 383.354,
+          "e": 383.474,
+          "c": 0.997206
+        },
+        {
+          "w": "prevent",
+          "s": 383.534,
+          "e": 384.034,
+          "c": 0.998995
+        },
+        {
+          "w": "it",
+          "s": 384.034,
+          "e": 384.184,
+          "c": 0.997799
+        },
+        {
+          "w": "and",
+          "s": 384.184,
+          "e": 384.414,
+          "c": 0.195656
+        },
+        {
+          "w": "there",
+          "s": 384.414,
+          "e": 384.704,
+          "c": 0.996841
+        },
+        {
+          "w": "is",
+          "s": 384.784,
+          "e": 384.944,
+          "c": 0.992968
+        },
+        {
+          "w": "a",
+          "s": 384.944,
+          "e": 385.014,
+          "c": 0.998458
+        },
+        {
+          "w": "viable",
+          "s": 385.014,
+          "e": 385.454,
+          "c": 0.998877
+        },
+        {
+          "w": "set",
+          "s": 385.454,
+          "e": 385.644,
+          "c": 0.998816
+        },
+        {
+          "w": "of",
+          "s": 385.664,
+          "e": 385.804,
+          "c": 0.999085
+        },
+        {
+          "w": "toolkits.",
+          "s": 385.934,
+          "e": 386.584,
+          "c": 0.783552
+        }
+      ]
+    },
+    {
+      "i": 40,
+      "start_s": 386.58,
+      "end_s": 400.99,
+      "speaker": "SPEAKER_24",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I mean, there's a consensus emerging among policy experts about how to deal with disinformation. Cyber experts know what they're doing. The level of knowledge is well ahead of the political ability to sustain",
+      "words": [
+        {
+          "w": "I",
+          "s": 386.576,
+          "e": 386.646,
+          "c": 0.303296
+        },
+        {
+          "w": "mean,",
+          "s": 386.836,
+          "e": 387.076,
+          "c": 0.639157
+        },
+        {
+          "w": "there's",
+          "s": 387.076,
+          "e": 387.526,
+          "c": 0.996067
+        },
+        {
+          "w": "a",
+          "s": 387.586,
+          "e": 387.646,
+          "c": 0.996561
+        },
+        {
+          "w": "consensus",
+          "s": 387.646,
+          "e": 388.296,
+          "c": 0.999546
+        },
+        {
+          "w": "emerging",
+          "s": 388.296,
+          "e": 388.866,
+          "c": 0.995149
+        },
+        {
+          "w": "among",
+          "s": 388.906,
+          "e": 389.236,
+          "c": 0.993117
+        },
+        {
+          "w": "policy",
+          "s": 389.236,
+          "e": 389.666,
+          "c": 0.997482
+        },
+        {
+          "w": "experts",
+          "s": 389.666,
+          "e": 390.216,
+          "c": 0.998953
+        },
+        {
+          "w": "about",
+          "s": 390.216,
+          "e": 390.476,
+          "c": 0.947771
+        },
+        {
+          "w": "how",
+          "s": 390.476,
+          "e": 390.616,
+          "c": 0.999192
+        },
+        {
+          "w": "to",
+          "s": 390.616,
+          "e": 390.726,
+          "c": 0.999386
+        },
+        {
+          "w": "deal",
+          "s": 390.726,
+          "e": 390.936,
+          "c": 0.998843
+        },
+        {
+          "w": "with",
+          "s": 390.936,
+          "e": 391.146,
+          "c": 0.99533
+        },
+        {
+          "w": "disinformation.",
+          "s": 391.146,
+          "e": 392.016,
+          "c": 0.511036
+        },
+        {
+          "w": "Cyber",
+          "s": 392.316,
+          "e": 392.406,
+          "c": 0.996014
+        },
+        {
+          "w": "experts",
+          "s": 392.406,
+          "e": 392.896,
+          "c": 0.999001
+        },
+        {
+          "w": "know",
+          "s": 392.896,
+          "e": 393.176,
+          "c": 0.99987
+        },
+        {
+          "w": "what",
+          "s": 393.176,
+          "e": 393.456,
+          "c": 0.999985
+        },
+        {
+          "w": "they're",
+          "s": 393.456,
+          "e": 393.896,
+          "c": 0.999325
+        },
+        {
+          "w": "doing.",
+          "s": 393.986,
+          "e": 394.516,
+          "c": 0.998367
+        },
+        {
+          "w": "The",
+          "s": 394.776,
+          "e": 394.836,
+          "c": 0.96064
+        },
+        {
+          "w": "level",
+          "s": 394.836,
+          "e": 395.376,
+          "c": 0.999924
+        },
+        {
+          "w": "of",
+          "s": 395.376,
+          "e": 395.586,
+          "c": 1
+        },
+        {
+          "w": "knowledge",
+          "s": 395.586,
+          "e": 396.566,
+          "c": 0.999987
+        },
+        {
+          "w": "is",
+          "s": 396.566,
+          "e": 396.776,
+          "c": 0.999996
+        },
+        {
+          "w": "well",
+          "s": 396.776,
+          "e": 397.206,
+          "c": 0.999992
+        },
+        {
+          "w": "ahead",
+          "s": 397.206,
+          "e": 397.746,
+          "c": 0.999918
+        },
+        {
+          "w": "of",
+          "s": 397.746,
+          "e": 397.906,
+          "c": 0.999933
+        },
+        {
+          "w": "the",
+          "s": 398.066,
+          "e": 398.276,
+          "c": 0.998443
+        },
+        {
+          "w": "political",
+          "s": 398.276,
+          "e": 399.216,
+          "c": 0.999987
+        },
+        {
+          "w": "ability",
+          "s": 399.276,
+          "e": 400.016,
+          "c": 0.999962
+        },
+        {
+          "w": "to",
+          "s": 400.016,
+          "e": 400.226,
+          "c": 0.999033
+        },
+        {
+          "w": "sustain",
+          "s": 400.236,
+          "e": 400.986,
+          "c": 0.999748
+        }
+      ]
+    },
+    {
+      "i": 41,
+      "start_s": 400.99,
+      "end_s": 404.82,
+      "speaker": "SPEAKER_27",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "it into presidential level policy, I think.",
+      "words": [
+        {
+          "w": "it",
+          "s": 400.986,
+          "e": 401.256,
+          "c": 0.999552
+        },
+        {
+          "w": "into",
+          "s": 401.306,
+          "e": 401.726,
+          "c": 0.84805
+        },
+        {
+          "w": "presidential",
+          "s": 401.726,
+          "e": 403.056,
+          "c": 0.980477
+        },
+        {
+          "w": "level",
+          "s": 403.116,
+          "e": 403.486,
+          "c": 0.592423
+        },
+        {
+          "w": "policy,",
+          "s": 403.486,
+          "e": 404.096,
+          "c": 0.96019
+        },
+        {
+          "w": "I",
+          "s": 404.096,
+          "e": 404.166,
+          "c": 0.999355
+        },
+        {
+          "w": "think.",
+          "s": 404.166,
+          "e": 404.816,
+          "c": 0.999981
+        }
+      ]
+    },
+    {
+      "i": 42,
+      "start_s": 405.03,
+      "end_s": 405.04,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "All",
+      "words": [
+        {
+          "w": "All",
+          "s": 405.026,
+          "e": 405.026,
+          "c": 0.983447
+        }
+      ]
+    },
+    {
+      "i": 43,
+      "start_s": 405.08,
+      "end_s": 412.84,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "right. Well, I really appreciate the chairwoman and now the chairman's tolerance because I've gone over my time. But I really appreciate your",
+      "words": [
+        {
+          "w": "right.",
+          "s": 405.076,
+          "e": 405.616,
+          "c": 0.939234
+        },
+        {
+          "w": "Well,",
+          "s": 405.876,
+          "e": 406.006,
+          "c": 0.995663
+        },
+        {
+          "w": "I",
+          "s": 406.006,
+          "e": 406.066,
+          "c": 0.999998
+        },
+        {
+          "w": "really",
+          "s": 406.066,
+          "e": 406.456,
+          "c": 0.999996
+        },
+        {
+          "w": "appreciate",
+          "s": 406.456,
+          "e": 407.106,
+          "c": 0.99999
+        },
+        {
+          "w": "the",
+          "s": 407.106,
+          "e": 407.296,
+          "c": 0.999701
+        },
+        {
+          "w": "chairwoman",
+          "s": 407.296,
+          "e": 407.906,
+          "c": 0.911645
+        },
+        {
+          "w": "and",
+          "s": 407.946,
+          "e": 408.126,
+          "c": 0.999239
+        },
+        {
+          "w": "now",
+          "s": 408.126,
+          "e": 408.316,
+          "c": 0.996639
+        },
+        {
+          "w": "the",
+          "s": 408.316,
+          "e": 408.506,
+          "c": 0.999979
+        },
+        {
+          "w": "chairman's",
+          "s": 408.506,
+          "e": 409.056,
+          "c": 0.995323
+        },
+        {
+          "w": "tolerance",
+          "s": 409.166,
+          "e": 409.746,
+          "c": 0.999672
+        },
+        {
+          "w": "because",
+          "s": 409.746,
+          "e": 410.206,
+          "c": 0.970611
+        },
+        {
+          "w": "I've",
+          "s": 410.206,
+          "e": 410.456,
+          "c": 0.99991
+        },
+        {
+          "w": "gone",
+          "s": 410.456,
+          "e": 410.716,
+          "c": 0.99991
+        },
+        {
+          "w": "over",
+          "s": 410.716,
+          "e": 410.976,
+          "c": 0.999899
+        },
+        {
+          "w": "my",
+          "s": 410.976,
+          "e": 411.106,
+          "c": 0.999987
+        },
+        {
+          "w": "time.",
+          "s": 411.106,
+          "e": 411.626,
+          "c": 0.815737
+        },
+        {
+          "w": "But",
+          "s": 411.676,
+          "e": 411.816,
+          "c": 0.963646
+        },
+        {
+          "w": "I",
+          "s": 411.866,
+          "e": 411.866,
+          "c": 0.999874
+        },
+        {
+          "w": "really",
+          "s": 411.936,
+          "e": 412.156,
+          "c": 0.999992
+        },
+        {
+          "w": "appreciate",
+          "s": 412.156,
+          "e": 412.616,
+          "c": 0.999994
+        },
+        {
+          "w": "your",
+          "s": 412.686,
+          "e": 412.836,
+          "c": 0.999992
+        }
+      ]
+    },
+    {
+      "i": 44,
+      "start_s": 412.84,
+      "end_s": 413.32,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "answer.",
+      "words": [
+        {
+          "w": "answer.",
+          "s": 412.836,
+          "e": 413.316,
+          "c": 0.998515
+        }
+      ]
+    },
+    {
+      "i": 45,
+      "start_s": 413.97,
+      "end_s": 414.03,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And I",
+      "words": [
+        {
+          "w": "And",
+          "s": 413.966,
+          "e": 413.966,
+          "c": 0.980993
+        },
+        {
+          "w": "I",
+          "s": 414.026,
+          "e": 414.026,
+          "c": 0.841864
+        }
+      ]
+    },
+    {
+      "i": 46,
+      "start_s": 414.06,
+      "end_s": 423.14,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "mean, it really is a question of the integrity of our democracy. So I agree it goes above all politics and above all partisanship. Thanks and I yield back.",
+      "words": [
+        {
+          "w": "mean,",
+          "s": 414.056,
+          "e": 414.356,
+          "c": 0.987767
+        },
+        {
+          "w": "it",
+          "s": 414.356,
+          "e": 414.476,
+          "c": 0.99995
+        },
+        {
+          "w": "really",
+          "s": 414.476,
+          "e": 414.826,
+          "c": 0.995296
+        },
+        {
+          "w": "is",
+          "s": 414.826,
+          "e": 414.936,
+          "c": 0.999996
+        },
+        {
+          "w": "a",
+          "s": 414.936,
+          "e": 414.996,
+          "c": 0.999998
+        },
+        {
+          "w": "question",
+          "s": 414.996,
+          "e": 415.466,
+          "c": 0.999981
+        },
+        {
+          "w": "of",
+          "s": 415.466,
+          "e": 415.576,
+          "c": 0.995378
+        },
+        {
+          "w": "the",
+          "s": 415.576,
+          "e": 415.746,
+          "c": 0.999901
+        },
+        {
+          "w": "integrity",
+          "s": 415.746,
+          "e": 416.276,
+          "c": 0.999987
+        },
+        {
+          "w": "of",
+          "s": 416.276,
+          "e": 416.386,
+          "c": 1
+        },
+        {
+          "w": "our",
+          "s": 416.386,
+          "e": 416.556,
+          "c": 0.999996
+        },
+        {
+          "w": "democracy.",
+          "s": 416.556,
+          "e": 417.376,
+          "c": 0.998904
+        },
+        {
+          "w": "So",
+          "s": 417.376,
+          "e": 417.496,
+          "c": 0.999912
+        },
+        {
+          "w": "I",
+          "s": 417.556,
+          "e": 417.556,
+          "c": 0.984262
+        },
+        {
+          "w": "agree",
+          "s": 417.636,
+          "e": 417.866,
+          "c": 0.999937
+        },
+        {
+          "w": "it",
+          "s": 417.866,
+          "e": 417.976,
+          "c": 0.762942
+        },
+        {
+          "w": "goes",
+          "s": 417.986,
+          "e": 418.236,
+          "c": 0.999941
+        },
+        {
+          "w": "above",
+          "s": 418.236,
+          "e": 418.546,
+          "c": 0.999037
+        },
+        {
+          "w": "all",
+          "s": 418.546,
+          "e": 418.736,
+          "c": 0.999989
+        },
+        {
+          "w": "politics",
+          "s": 418.736,
+          "e": 419.216,
+          "c": 0.999668
+        },
+        {
+          "w": "and",
+          "s": 419.306,
+          "e": 419.426,
+          "c": 0.999786
+        },
+        {
+          "w": "above",
+          "s": 419.426,
+          "e": 419.736,
+          "c": 0.999893
+        },
+        {
+          "w": "all",
+          "s": 419.736,
+          "e": 419.926,
+          "c": 0.999975
+        },
+        {
+          "w": "partisanship.",
+          "s": 419.926,
+          "e": 420.936,
+          "c": 0.916628
+        },
+        {
+          "w": "Thanks",
+          "s": 421.196,
+          "e": 421.526,
+          "c": 0.977648
+        },
+        {
+          "w": "and",
+          "s": 421.526,
+          "e": 421.826,
+          "c": 0.330126
+        },
+        {
+          "w": "I",
+          "s": 421.826,
+          "e": 421.886,
+          "c": 0.927752
+        },
+        {
+          "w": "yield",
+          "s": 421.946,
+          "e": 422.416,
+          "c": 0.874609
+        },
+        {
+          "w": "back.",
+          "s": 422.416,
+          "e": 423.136,
+          "c": 0.996683
+        }
+      ]
+    }
+  ]
+}

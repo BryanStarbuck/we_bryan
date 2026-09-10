@@ -1,0 +1,718 @@
+{
+  "schema_version": 2,
+  "canonical_id": "ad85cf4eed826df6",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 35.57,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T13:51:17.545Z",
+  "text_sha256": "aa05a33417989345f827d1eab8b8eef16a0bdb1a9bb26a42e8242d7d1215e243",
+  "segments_sha256": "401390f68d693d3caa9fdd2d141352fc45a23dc43070f830b462f56588939108",
+  "words_sha256": "afcd419c5c419ed2155cf222be8f7d84f77dd7131199d4cac7bda1f5b8ff1adc",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 1,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 3,
+    "clusters": 2,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (higher-pitched voice)",
+      "voice": {
+        "descriptor": "woman",
+        "p": 0.8,
+        "confidence": "low",
+        "clean_s": 30.9
+      },
+      "clean_s": 30.9,
+      "speaking_s": 30.9,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.7
+      },
+      "clean_s": 4.7,
+      "speaking_s": 4.7,
+      "first_s": 12.67
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.48,
+      "end_s": 12.68,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Payless paydays are wearing on the morale of the workers simply because they have to pay their bills now. They don't have the option to seek temporary work elsewhere because they have to report here by law.",
+      "words": [
+        {
+          "w": "Payless",
+          "s": 0.48,
+          "e": 0.51,
+          "c": 0.703699
+        },
+        {
+          "w": "paydays",
+          "s": 0.51,
+          "e": 1.02,
+          "c": 0.860978
+        },
+        {
+          "w": "are",
+          "s": 1.02,
+          "e": 1.24,
+          "c": 0.990883
+        },
+        {
+          "w": "wearing",
+          "s": 1.24,
+          "e": 1.76,
+          "c": 0.990169
+        },
+        {
+          "w": "on",
+          "s": 1.76,
+          "e": 1.91,
+          "c": 0.959069
+        },
+        {
+          "w": "the",
+          "s": 1.91,
+          "e": 2.13,
+          "c": 0.99271
+        },
+        {
+          "w": "morale",
+          "s": 2.13,
+          "e": 2.53,
+          "c": 0.942793
+        },
+        {
+          "w": "of",
+          "s": 2.58,
+          "e": 2.72,
+          "c": 0.989674
+        },
+        {
+          "w": "the",
+          "s": 2.72,
+          "e": 2.94,
+          "c": 0.984271
+        },
+        {
+          "w": "workers",
+          "s": 2.94,
+          "e": 3.52,
+          "c": 0.99412
+        },
+        {
+          "w": "simply",
+          "s": 3.52,
+          "e": 3.8,
+          "c": 0.436776
+        },
+        {
+          "w": "because",
+          "s": 3.8,
+          "e": 4.32,
+          "c": 0.978506
+        },
+        {
+          "w": "they",
+          "s": 4.32,
+          "e": 4.44,
+          "c": 0.950691
+        },
+        {
+          "w": "have",
+          "s": 4.44,
+          "e": 4.61,
+          "c": 0.981772
+        },
+        {
+          "w": "to",
+          "s": 4.68,
+          "e": 4.76,
+          "c": 0.980666
+        },
+        {
+          "w": "pay",
+          "s": 4.79,
+          "e": 5.07,
+          "c": 0.999068
+        },
+        {
+          "w": "their",
+          "s": 5.07,
+          "e": 5.59,
+          "c": 0.995294
+        },
+        {
+          "w": "bills",
+          "s": 5.59,
+          "e": 6.11,
+          "c": 0.99666
+        },
+        {
+          "w": "now.",
+          "s": 6.11,
+          "e": 6.76,
+          "c": 0.664265
+        },
+        {
+          "w": "They",
+          "s": 6.79,
+          "e": 7,
+          "c": 0.995655
+        },
+        {
+          "w": "don't",
+          "s": 7,
+          "e": 7.3,
+          "c": 0.993508
+        },
+        {
+          "w": "have",
+          "s": 7.3,
+          "e": 7.54,
+          "c": 0.99794
+        },
+        {
+          "w": "the",
+          "s": 7.54,
+          "e": 7.65,
+          "c": 0.996031
+        },
+        {
+          "w": "option",
+          "s": 7.72,
+          "e": 8.08,
+          "c": 0.994653
+        },
+        {
+          "w": "to",
+          "s": 8.08,
+          "e": 8.2,
+          "c": 0.994526
+        },
+        {
+          "w": "seek",
+          "s": 8.2,
+          "e": 8.44,
+          "c": 0.970195
+        },
+        {
+          "w": "temporary",
+          "s": 8.44,
+          "e": 8.98,
+          "c": 0.990018
+        },
+        {
+          "w": "work",
+          "s": 8.98,
+          "e": 9.22,
+          "c": 0.994611
+        },
+        {
+          "w": "elsewhere",
+          "s": 9.22,
+          "e": 9.76,
+          "c": 0.995317
+        },
+        {
+          "w": "because",
+          "s": 9.76,
+          "e": 10.17,
+          "c": 0.910392
+        },
+        {
+          "w": "they",
+          "s": 10.18,
+          "e": 10.42,
+          "c": 0.992697
+        },
+        {
+          "w": "have",
+          "s": 10.42,
+          "e": 10.63,
+          "c": 0.992867
+        },
+        {
+          "w": "to",
+          "s": 10.69,
+          "e": 10.78,
+          "c": 0.994399
+        },
+        {
+          "w": "report",
+          "s": 10.78,
+          "e": 11.22,
+          "c": 0.987696
+        },
+        {
+          "w": "here",
+          "s": 11.25,
+          "e": 11.69,
+          "c": 0.974615
+        },
+        {
+          "w": "by",
+          "s": 11.72,
+          "e": 11.94,
+          "c": 0.751037
+        },
+        {
+          "w": "law.",
+          "s": 11.94,
+          "e": 12.68,
+          "c": 0.975916
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 12.71,
+      "end_s": 17.68,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Personally, I've reached out to my mortgage company to look for relief and begun that process.",
+      "words": [
+        {
+          "w": "Personally,",
+          "s": 12.71,
+          "e": 13.31,
+          "c": 0.697788
+        },
+        {
+          "w": "I've",
+          "s": 13.31,
+          "e": 13.5,
+          "c": 0.927385
+        },
+        {
+          "w": "reached",
+          "s": 13.51,
+          "e": 13.88,
+          "c": 0.99568
+        },
+        {
+          "w": "out",
+          "s": 13.88,
+          "e": 14.04,
+          "c": 0.99379
+        },
+        {
+          "w": "to",
+          "s": 14.04,
+          "e": 14.14,
+          "c": 0.991951
+        },
+        {
+          "w": "my",
+          "s": 14.14,
+          "e": 14.17,
+          "c": 0.998237
+        },
+        {
+          "w": "mortgage",
+          "s": 14.25,
+          "e": 14.66,
+          "c": 0.995756
+        },
+        {
+          "w": "company",
+          "s": 14.66,
+          "e": 15.03,
+          "c": 0.990469
+        },
+        {
+          "w": "to",
+          "s": 15.03,
+          "e": 15.13,
+          "c": 0.990805
+        },
+        {
+          "w": "look",
+          "s": 15.13,
+          "e": 15.34,
+          "c": 0.994822
+        },
+        {
+          "w": "for",
+          "s": 15.34,
+          "e": 15.5,
+          "c": 0.997134
+        },
+        {
+          "w": "relief",
+          "s": 15.5,
+          "e": 15.78,
+          "c": 0.995167
+        },
+        {
+          "w": "and",
+          "s": 15.86,
+          "e": 16.02,
+          "c": 0.90473
+        },
+        {
+          "w": "begun",
+          "s": 16.04,
+          "e": 16.28,
+          "c": 0.899552
+        },
+        {
+          "w": "that",
+          "s": 16.28,
+          "e": 16.68,
+          "c": 0.972031
+        },
+        {
+          "w": "process.",
+          "s": 16.81,
+          "e": 17.68,
+          "c": 0.989647
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 17.71,
+      "end_s": 35.57,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Today, a listening conference with the mostly Democratic Michigan delegation, fresh from voting for retroactive pay once the government reopens. Organized by Congressperson Andy Levin, only one Republican, Fred Upton, who voted with Democrats to reopen the government, was invited to attend, but missed his plane.",
+      "words": [
+        {
+          "w": "Today,",
+          "s": 17.71,
+          "e": 18.07,
+          "c": 0.667927
+        },
+        {
+          "w": "a",
+          "s": 18.09,
+          "e": 18.11,
+          "c": 0.99616
+        },
+        {
+          "w": "listening",
+          "s": 18.18,
+          "e": 18.65,
+          "c": 0.987605
+        },
+        {
+          "w": "conference",
+          "s": 18.66,
+          "e": 19.17,
+          "c": 0.997946
+        },
+        {
+          "w": "with",
+          "s": 19.25,
+          "e": 19.48,
+          "c": 0.987366
+        },
+        {
+          "w": "the",
+          "s": 19.48,
+          "e": 19.65,
+          "c": 0.986799
+        },
+        {
+          "w": "mostly",
+          "s": 19.65,
+          "e": 20,
+          "c": 0.919411
+        },
+        {
+          "w": "Democratic",
+          "s": 20,
+          "e": 20.59,
+          "c": 0.795457
+        },
+        {
+          "w": "Michigan",
+          "s": 20.59,
+          "e": 21.04,
+          "c": 0.892332
+        },
+        {
+          "w": "delegation,",
+          "s": 21.06,
+          "e": 21.81,
+          "c": 0.478061
+        },
+        {
+          "w": "fresh",
+          "s": 21.95,
+          "e": 21.95,
+          "c": 0.97234
+        },
+        {
+          "w": "from",
+          "s": 22,
+          "e": 22.24,
+          "c": 0.644598
+        },
+        {
+          "w": "voting",
+          "s": 22.27,
+          "e": 22.71,
+          "c": 0.993494
+        },
+        {
+          "w": "for",
+          "s": 22.74,
+          "e": 22.96,
+          "c": 0.993894
+        },
+        {
+          "w": "retroactive",
+          "s": 22.96,
+          "e": 23.84,
+          "c": 0.973743
+        },
+        {
+          "w": "pay",
+          "s": 23.84,
+          "e": 24.08,
+          "c": 0.996215
+        },
+        {
+          "w": "once",
+          "s": 24.08,
+          "e": 24.4,
+          "c": 0.843237
+        },
+        {
+          "w": "the",
+          "s": 24.4,
+          "e": 24.64,
+          "c": 0.997935
+        },
+        {
+          "w": "government",
+          "s": 24.64,
+          "e": 25.44,
+          "c": 0.99514
+        },
+        {
+          "w": "reopens.",
+          "s": 25.44,
+          "e": 26.28,
+          "c": 0.784204
+        },
+        {
+          "w": "Organized",
+          "s": 26.31,
+          "e": 26.87,
+          "c": 0.927619
+        },
+        {
+          "w": "by",
+          "s": 26.87,
+          "e": 27,
+          "c": 0.997413
+        },
+        {
+          "w": "Congressperson",
+          "s": 27,
+          "e": 27.93,
+          "c": 0.517552
+        },
+        {
+          "w": "Andy",
+          "s": 27.93,
+          "e": 28.19,
+          "c": 0.946852
+        },
+        {
+          "w": "Levin,",
+          "s": 28.19,
+          "e": 28.65,
+          "c": 0.929215
+        },
+        {
+          "w": "only",
+          "s": 28.65,
+          "e": 28.91,
+          "c": 0.988182
+        },
+        {
+          "w": "one",
+          "s": 28.91,
+          "e": 29.11,
+          "c": 0.98522
+        },
+        {
+          "w": "Republican,",
+          "s": 29.11,
+          "e": 29.91,
+          "c": 0.924568
+        },
+        {
+          "w": "Fred",
+          "s": 29.91,
+          "e": 30.15,
+          "c": 0.985452
+        },
+        {
+          "w": "Upton,",
+          "s": 30.21,
+          "e": 30.72,
+          "c": 0.923884
+        },
+        {
+          "w": "who",
+          "s": 30.72,
+          "e": 30.84,
+          "c": 0.980052
+        },
+        {
+          "w": "voted",
+          "s": 30.84,
+          "e": 31.06,
+          "c": 0.973275
+        },
+        {
+          "w": "with",
+          "s": 31.1,
+          "e": 31.32,
+          "c": 0.697329
+        },
+        {
+          "w": "Democrats",
+          "s": 31.45,
+          "e": 31.87,
+          "c": 0.924577
+        },
+        {
+          "w": "to",
+          "s": 31.87,
+          "e": 31.99,
+          "c": 0.998327
+        },
+        {
+          "w": "reopen",
+          "s": 31.99,
+          "e": 32.35,
+          "c": 0.940094
+        },
+        {
+          "w": "the",
+          "s": 32.35,
+          "e": 32.53,
+          "c": 0.995938
+        },
+        {
+          "w": "government,",
+          "s": 32.53,
+          "e": 33.26,
+          "c": 0.705066
+        },
+        {
+          "w": "was",
+          "s": 33.26,
+          "e": 33.44,
+          "c": 0.996569
+        },
+        {
+          "w": "invited",
+          "s": 33.44,
+          "e": 33.86,
+          "c": 0.998826
+        },
+        {
+          "w": "to",
+          "s": 33.86,
+          "e": 33.98,
+          "c": 0.999087
+        },
+        {
+          "w": "attend,",
+          "s": 33.98,
+          "e": 34.42,
+          "c": 0.452713
+        },
+        {
+          "w": "but",
+          "s": 34.5,
+          "e": 34.64,
+          "c": 0.99404
+        },
+        {
+          "w": "missed",
+          "s": 34.64,
+          "e": 35,
+          "c": 0.996126
+        },
+        {
+          "w": "his",
+          "s": 35,
+          "e": 35.18,
+          "c": 0.994917
+        },
+        {
+          "w": "plane.",
+          "s": 35.18,
+          "e": 35.57,
+          "c": 0.981678
+        }
+      ]
+    }
+  ]
+}

@@ -278,6 +278,23 @@ class DemandBlockCarriesTheWholeRow(unittest.TestCase):
         self.assertNotIn("new engine column", S.DEMAND_KNOWN)
 
 
+class DescriptionWrapNeverBreaksAtAHyphen(unittest.TestCase):
+    """A ">-" folded scalar re-joins wrapped lines with a SPACE. Breaking after
+    "pre-" therefore reads back as "pre- existing", and merge_preserving then
+    carries the damage forward on every later write. 27 sidecars carried it
+    before this was fixed on 2026-09-10."""
+
+    def test_hyphenated_words_survive_a_round_trip(self):
+        desc = " ".join(["pre-existing anti-money-laundering non-federal long-standing"] * 12)
+        text = ("Video:\n  Description: >-\n"
+                + "\n".join("    " + line for line in S.fold_description(desc)) + "\n")
+        self.assertEqual(yaml.safe_load(text)["Video"]["Description"], desc)
+
+    def test_lines_fit_the_width(self):
+        for line in S.fold_description("word " * 100):
+            self.assertLessEqual(len(line), 104)
+
+
 class NothingPartialEntersTheRepo(unittest.TestCase):
     """The seed goes BESIDE THE MEDIA, outside every repo.
 

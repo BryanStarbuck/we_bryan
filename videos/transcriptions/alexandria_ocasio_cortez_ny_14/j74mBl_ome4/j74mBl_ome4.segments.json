@@ -1,0 +1,398 @@
+{
+  "schema_version": 2,
+  "canonical_id": "4209b9b78b025541",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 28,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T13:51:35.352Z",
+  "text_sha256": "9180af0cf362b0b1886f098b311d642f953638e544454797f5c2ed03c30f75da",
+  "segments_sha256": "a941ce96c1111b60c6df371936abbf89f92df990d1b33e84981bc478336175ef",
+  "words_sha256": "27a126ed595b55b3bf1e19ca6f70be47f716eaffe2d3360ad3c493f31d46dd8b",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 1,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 3,
+    "clusters": 1,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Woman 1",
+      "voice": {
+        "descriptor": "woman",
+        "p": 0.96,
+        "confidence": "high",
+        "clean_s": 26
+      },
+      "clean_s": 26,
+      "speaking_s": 26,
+      "first_s": 1.03
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.03,
+      "end_s": 0.9,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.03,
+      "end_s": 0.9,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Look at these",
+      "words": [
+        {
+          "w": "Look",
+          "s": 0.03,
+          "e": 0.33,
+          "c": 0.881782
+        },
+        {
+          "w": "at",
+          "s": 0.33,
+          "e": 0.48,
+          "c": 0.996533
+        },
+        {
+          "w": "these",
+          "s": 0.49,
+          "e": 0.9,
+          "c": 0.98911
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 1.08,
+      "end_s": 28,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "books that have already been banned due to Republican measures. The Life of Rosa Parks. This apparently is too woke by the Republican Party. Song of Solomon is unacceptable to Republican politics. 40% of banned books have reported are significantly addressing and specifically addressing LGBT issues.",
+      "words": [
+        {
+          "w": "books",
+          "s": 1.08,
+          "e": 1.32,
+          "c": 0.998159
+        },
+        {
+          "w": "that",
+          "s": 1.46,
+          "e": 1.54,
+          "c": 0.97615
+        },
+        {
+          "w": "have",
+          "s": 1.54,
+          "e": 1.72,
+          "c": 0.992971
+        },
+        {
+          "w": "already",
+          "s": 1.86,
+          "e": 2.28,
+          "c": 0.973833
+        },
+        {
+          "w": "been",
+          "s": 2.28,
+          "e": 2.56,
+          "c": 0.976456
+        },
+        {
+          "w": "banned",
+          "s": 2.56,
+          "e": 2.99,
+          "c": 0.986794
+        },
+        {
+          "w": "due",
+          "s": 2.99,
+          "e": 3.21,
+          "c": 0.906393
+        },
+        {
+          "w": "to",
+          "s": 3.21,
+          "e": 3.34,
+          "c": 0.996369
+        },
+        {
+          "w": "Republican",
+          "s": 3.37,
+          "e": 3.83,
+          "c": 0.932072
+        },
+        {
+          "w": "measures.",
+          "s": 3.84,
+          "e": 4.38,
+          "c": 0.927497
+        },
+        {
+          "w": "The",
+          "s": 4.41,
+          "e": 4.8,
+          "c": 0.999468
+        },
+        {
+          "w": "Life",
+          "s": 5,
+          "e": 5.35,
+          "c": 0.943351
+        },
+        {
+          "w": "of",
+          "s": 5.46,
+          "e": 5.61,
+          "c": 0.999823
+        },
+        {
+          "w": "Rosa",
+          "s": 5.84,
+          "e": 6.1,
+          "c": 0.999731
+        },
+        {
+          "w": "Parks.",
+          "s": 6.24,
+          "e": 7.34,
+          "c": 0.956442
+        },
+        {
+          "w": "This",
+          "s": 7.37,
+          "e": 7.71,
+          "c": 0.999969
+        },
+        {
+          "w": "apparently",
+          "s": 7.71,
+          "e": 8.65,
+          "c": 0.999123
+        },
+        {
+          "w": "is",
+          "s": 8.8,
+          "e": 8.83,
+          "c": 0.999996
+        },
+        {
+          "w": "too",
+          "s": 8.83,
+          "e": 9.06,
+          "c": 0.99968
+        },
+        {
+          "w": "woke",
+          "s": 9.2,
+          "e": 9.48,
+          "c": 0.99983
+        },
+        {
+          "w": "by",
+          "s": 9.48,
+          "e": 9.66,
+          "c": 0.999291
+        },
+        {
+          "w": "the",
+          "s": 9.66,
+          "e": 9.94,
+          "c": 0.999975
+        },
+        {
+          "w": "Republican",
+          "s": 9.94,
+          "e": 10.86,
+          "c": 0.999886
+        },
+        {
+          "w": "Party.",
+          "s": 10.88,
+          "e": 11.66,
+          "c": 0.967307
+        },
+        {
+          "w": "Song",
+          "s": 11.71,
+          "e": 12.13,
+          "c": 0.996373
+        },
+        {
+          "w": "of",
+          "s": 12.13,
+          "e": 12.35,
+          "c": 0.999954
+        },
+        {
+          "w": "Solomon",
+          "s": 12.35,
+          "e": 13.04,
+          "c": 0.997904
+        },
+        {
+          "w": "is",
+          "s": 13.14,
+          "e": 13.35,
+          "c": 0.999296
+        },
+        {
+          "w": "unacceptable",
+          "s": 13.54,
+          "e": 14.67,
+          "c": 0.993216
+        },
+        {
+          "w": "to",
+          "s": 14.67,
+          "e": 14.91,
+          "c": 0.99959
+        },
+        {
+          "w": "Republican",
+          "s": 14.96,
+          "e": 16,
+          "c": 0.999409
+        },
+        {
+          "w": "politics.",
+          "s": 16.05,
+          "e": 17.34,
+          "c": 0.999479
+        },
+        {
+          "w": "40%",
+          "s": 17.44,
+          "e": 18.23,
+          "c": 0.899823
+        },
+        {
+          "w": "of",
+          "s": 18.42,
+          "e": 18.48,
+          "c": 0.999899
+        },
+        {
+          "w": "banned",
+          "s": 18.48,
+          "e": 19.25,
+          "c": 0.999384
+        },
+        {
+          "w": "books",
+          "s": 19.25,
+          "e": 19.89,
+          "c": 0.999968
+        },
+        {
+          "w": "have",
+          "s": 19.89,
+          "e": 20.33,
+          "c": 0.908219
+        },
+        {
+          "w": "reported",
+          "s": 20.39,
+          "e": 21.43,
+          "c": 0.984183
+        },
+        {
+          "w": "are",
+          "s": 21.43,
+          "e": 21.81,
+          "c": 0.969474
+        },
+        {
+          "w": "significantly",
+          "s": 21.81,
+          "e": 23.47,
+          "c": 0.998085
+        },
+        {
+          "w": "addressing",
+          "s": 23.48,
+          "e": 24.49,
+          "c": 0.99796
+        },
+        {
+          "w": "and",
+          "s": 24.49,
+          "e": 25.08,
+          "c": 0.811277
+        },
+        {
+          "w": "specifically",
+          "s": 25.33,
+          "e": 26.08,
+          "c": 0.934926
+        },
+        {
+          "w": "addressing",
+          "s": 26.08,
+          "e": 26.91,
+          "c": 0.997135
+        },
+        {
+          "w": "LGBT",
+          "s": 26.91,
+          "e": 27.18,
+          "c": 0.997728
+        },
+        {
+          "w": "issues.",
+          "s": 27.6,
+          "e": 28,
+          "c": 0.989776
+        }
+      ]
+    }
+  ]
+}

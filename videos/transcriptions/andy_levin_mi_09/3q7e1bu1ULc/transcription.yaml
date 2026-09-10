@@ -1,0 +1,207 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Rep. Andy Levin on Countering a Resurgent Russia"
+    Description: >-
+      Rep. Andy Levin's questioning at a House Foreign Affairs hearing on countering Russia, posted May 2019.
+      Citing Brookings fellow Alina Polyakova, he asks the panel about Russian interference in Ukraine's
+      elections. A witness he addresses as Ms. Nuland (rendered 'Newland' by the ASR) says Russia's playbook
+      in Ukraine was backing favored candidates and oligarchs rather than voter influence campaigns, and that
+      Zelensky's large margin swamped any manipulation. A witness also says Zelensky must prove his
+      anti-corruption promises because he has done business with oligarchic figures, and that U.S. aid should
+      be tied to reform; that is the witness's characterization. Witnesses discuss oligarchic ownership of
+      media, support for independent journalism, and Russian pressure around the Kerch Strait (mangled by the
+      ASR). Levin then quotes a New York Times report that Mick Mulvaney told Kirstjen Nielsen not to raise
+      Russian election interference with President Trump, and asks whether the U.S. stays vulnerable until the
+      president acknowledges it. Witnesses answer that presidential leadership is critical and can be
+      separated from the partisan dispute over the Mueller report. The claims about the White House are the
+      Times's, as he quotes them. Diarization returned 12 clusters and none self-identifies.
+    URL: "https://www.youtube.com/watch?v=3q7e1bu1ULc"
+    Video_ID: "3q7e1bu1ULc"
+    Show: "Andy Levin"
+    Runtime: "00:07:03"
+    Language: "en"
+
+  Media:
+    File: "3q7e1bu1ULc.mp4"
+    SHA256: "bed918982000816ef9be79124c12af1b53a0a77c76281430058f4f28804041df"
+    Bytes: 29448795
+    Duration_Seconds: 423
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=3q7e1bu1ULc"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "3q7e1bu1ULc.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/andy_levin_mi_09/3q7e1bu1ULc/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCzDkxWJqwF6S4HYEMve9tZQ"
+    Uploader_ID: "@RepAndyLevin"
+    View_Count: 41
+    Availability: "public"
+    Published_At: "2019-05-01T20:26:02+00:00"
+    Captured_At: "2026-08-14T04:58:53-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "22.2%"
+      Turns: 4
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "3.9%"
+      Turns: 3
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "1.2%"
+      Turns: 1
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "1.8%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "3.6%"
+      Turns: 3
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "28.0%"
+      Turns: 4
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_10"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_16"
+      Share_Of_Speech: "0.7%"
+      Turns: 1
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_18"
+      Share_Of_Speech: "19.8%"
+      Turns: 1
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_23"
+      Share_Of_Speech: "0.8%"
+      Turns: 1
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_24"
+      Share_Of_Speech: "16.9%"
+      Turns: 5
+    Person_12:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_27"
+      Share_Of_Speech: "0.9%"
+      Turns: 1
+
+  Topics:
+    - "Russian interference in Ukrainian elections"
+    - "Zelensky, oligarchs and anti-corruption conditions on aid"
+    - "Independent media in Ukraine"
+    - "Russian election interference and presidential leadership"
+
+  Source:
+    Canonical_ID: "0243ceced3c62ed4"
+    Transcribed: "2026-09-10T06:58:03.033793-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1014
+    Segments: 47
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T04:58:58.038424-07:00"
+    Transcription_Finished: "2026-09-10T06:58:03.033793-07:00"
+    Recorded: "2019-05-01"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "3q7e1bu1ULc.ctm"
+    Fountain: "3q7e1bu1ULc.fountain"
+    Diarization_RTTM: "3q7e1bu1ULc.rttm"
+    As_Broadcast_Script: "3q7e1bu1ULc.script.txt"
+    Segments_JSON: "3q7e1bu1ULc.segments.json"
+    Segments_JSONL: "3q7e1bu1ULc.segments.jsonl"
+    Subtitles_SRT: "3q7e1bu1ULc.srt"
+    Plain_Text: "3q7e1bu1ULc.transcription"
+    Subtitles_VTT: "3q7e1bu1ULc.vtt"
+    Transcript_SHA256: "18e0aa99604baef8a36b8f53f1997e786b84055cac17c8d877ec698b944485eb"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "andy_levin_mi_09"
+    video_uid: "andy_levin_mi_09::3q7e1bu1ULc"
+    video_key: "3q7e1bu1ULc"
+    youtube_id: "3q7e1bu1ULc"
+    priority: 100
+    ceiling: 800
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    challenger: false
+    round: 1
+    status: "partial"
+    demand_generated_at: "2026-09-10T13:08:13.461Z"
+    demand_run_id: "job_1789045680050_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=3q7e1bu1ULc"
+    source_ref: "3q7e1bu1ULc"
+    subject_kind: "new_politician"
+
+  # Blocks this version of the tool does not know about, carried forward
+  # verbatim rather than dropped.
+  Media_Provenance:
+    Real_Path: /Users/bryan/T/_we_citizens/videos/andy_levin_mi/3q7e1bu1ULc/3q7e1bu1ULc.mp4
+    Real_Directory: /Users/bryan/T/_we_citizens/videos/andy_levin_mi/3q7e1bu1ULc/
+    Note: Stored_At names a symlink directory under the download root. The bytes were downloaded by the
+      legacy downloader under roster key andy_levin_mi and are transcribed in place from the directory above;
+      the live demand row files this video under andy_levin_mi_09, which is the key used here.

@@ -1,0 +1,134 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Levin Tribute to Taylor DeRosa"
+    Description: >-
+      An 82-second House floor tribute honoring Taylor DeRosa, a young constituent and student activist from
+      Royal Oak High School who had just begun at Grand Valley State University when, the speaker says, her
+      life was taken days earlier. He recalls meeting her in 2018 as she launched a Students Demand Action
+      chapter, praises her activism for gun reform, for Black lives and for empowering women and girls, and
+      offers condolences to her mother, Kara. The clip does not say how she died.
+    URL: "https://www.youtube.com/watch?v=8SDQhWvVB_4"
+    Video_ID: "8SDQhWvVB_4"
+    Show: "Andy Levin"
+    Runtime: "00:01:22"
+    Language: "en"
+
+  Media:
+    File: "8SDQhWvVB_4.mp4"
+    SHA256: "44ee49ae7773410d303e84f3816b7a05a95084d184185c377e4ff4bc4b71e179"
+    Bytes: 8055185
+    Duration_Seconds: 82
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=8SDQhWvVB_4"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "8SDQhWvVB_4.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/andy_levin_mi_09/8SDQhWvVB_4/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCzDkxWJqwF6S4HYEMve9tZQ"
+    Uploader_ID: "@RepAndyLevin"
+    View_Count: 190
+    Like_Count: 8
+    Availability: "public"
+    Published_At: "2020-12-18T19:49:07+00:00"
+    Captured_At: "2026-08-14T04:59:45-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 3
+
+  Topics:
+    - "Floor tribute to a constituent"
+    - "Student activism"
+    - "Gun reform advocacy"
+    - "Students Demand Action"
+
+  Source:
+    Canonical_ID: "ddd56fafc66f158c"
+    Transcribed: "2026-09-10T06:52:26.431789-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 199
+    Segments: 6
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T04:59:47.032529-07:00"
+    Transcription_Finished: "2026-09-10T06:52:26.431789-07:00"
+    Recorded: "2020-12-18"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "8SDQhWvVB_4.ctm"
+    Fountain: "8SDQhWvVB_4.fountain"
+    Diarization_RTTM: "8SDQhWvVB_4.rttm"
+    As_Broadcast_Script: "8SDQhWvVB_4.script.txt"
+    Segments_JSON: "8SDQhWvVB_4.segments.json"
+    Segments_JSONL: "8SDQhWvVB_4.segments.jsonl"
+    Subtitles_SRT: "8SDQhWvVB_4.srt"
+    Plain_Text: "8SDQhWvVB_4.transcription"
+    Subtitles_VTT: "8SDQhWvVB_4.vtt"
+    Transcript_SHA256: "dadce14d214b75d3be6745c6aa13fd03f12cddc0c072a6ddc66a385c96d7b076"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "andy_levin_mi_09"
+    video_uid: "andy_levin_mi_09::8SDQhWvVB_4"
+    video_key: "8SDQhWvVB_4"
+    youtube_id: "8SDQhWvVB_4"
+    priority: 100
+    ceiling: 800
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    challenger: false
+    round: 1
+    status: "partial"
+    demand_generated_at: "2026-09-10T13:08:13.461Z"
+    demand_run_id: "job_1789045680050_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=8SDQhWvVB_4"
+    source_ref: "8SDQhWvVB_4"
+    subject_kind: "new_politician"
+
+  # Blocks this version of the tool does not know about, carried forward
+  # verbatim rather than dropped.
+  Media_Provenance:
+    Real_Path: /Users/bryan/T/_we_citizens/videos/andy_levin_mi/8SDQhWvVB_4/8SDQhWvVB_4.mp4
+    Real_Directory: /Users/bryan/T/_we_citizens/videos/andy_levin_mi/8SDQhWvVB_4/
+    Note: Stored_At names a symlink directory under the download root. The bytes were downloaded by the
+      legacy downloader under roster key andy_levin_mi and are transcribed in place from the directory above;
+      the live demand row files this video under andy_levin_mi_09, which is the key used here.

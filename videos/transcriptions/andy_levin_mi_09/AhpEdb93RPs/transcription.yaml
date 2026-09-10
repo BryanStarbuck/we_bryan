@@ -1,0 +1,135 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Congressman Levin Speaks on House Floor about the Chapaton Retention Basin"
+    Description: >-
+      A House floor speech (titled as Rep. Andy Levin's) supporting an appropriations proposal brought forward
+      by Chairwoman McCollum, which the speaker says protects public lands, clean air and drinking water and
+      combats climate change. He highlights what he calls a first-ever $90 million investment in sewer
+      overflow control grants and describes his amendment prioritizing grant funding for Macomb County's
+      Chapaton Retention Basin and similar systems, saying it will improve water quality in Lake St. Clair and
+      the Great Lakes. He thanks former member and Macomb County Public Works Commissioner Candice Miller. The
+      ASR spells the basin 'Chapiton' and garbles the closing 'yield back the balance of my time'.
+    URL: "https://www.youtube.com/watch?v=AhpEdb93RPs"
+    Video_ID: "AhpEdb93RPs"
+    Show: "Andy Levin"
+    Runtime: "00:01:10"
+    Language: "en"
+
+  Media:
+    File: "AhpEdb93RPs.mp4"
+    SHA256: "f1d154342d31540eae5c7cebd8611333f8f25dd782f253aed8f2468f49f3e4d0"
+    Bytes: 3788787
+    Duration_Seconds: 70
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=AhpEdb93RPs"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "AhpEdb93RPs.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/andy_levin_mi_09/AhpEdb93RPs/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCzDkxWJqwF6S4HYEMve9tZQ"
+    Uploader_ID: "@RepAndyLevin"
+    View_Count: 56
+    Availability: "public"
+    Published_At: "2019-06-25T16:57:27+00:00"
+    Captured_At: "2026-08-14T06:16:22-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 1
+
+  Topics:
+    - "Sewer overflow control grants"
+    - "Chapaton Retention Basin, Macomb County"
+    - "Lake St. Clair and Great Lakes water quality"
+    - "House appropriations amendment"
+
+  Source:
+    Canonical_ID: "3ff5c372f250123f"
+    Transcribed: "2026-09-10T06:52:03.847239-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 174
+    Segments: 4
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:16:29.858028-07:00"
+    Transcription_Finished: "2026-09-10T06:52:03.847239-07:00"
+    Recorded: "2019-06-25"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "AhpEdb93RPs.ctm"
+    Fountain: "AhpEdb93RPs.fountain"
+    Diarization_RTTM: "AhpEdb93RPs.rttm"
+    As_Broadcast_Script: "AhpEdb93RPs.script.txt"
+    Segments_JSON: "AhpEdb93RPs.segments.json"
+    Segments_JSONL: "AhpEdb93RPs.segments.jsonl"
+    Subtitles_SRT: "AhpEdb93RPs.srt"
+    Plain_Text: "AhpEdb93RPs.transcription"
+    Subtitles_VTT: "AhpEdb93RPs.vtt"
+    Transcript_SHA256: "47440ea91922bec0bcec842d30efd197f65e447f975d4ddb3a6ed0a6a0887a40"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "andy_levin_mi_09"
+    video_uid: "andy_levin_mi_09::AhpEdb93RPs"
+    video_key: "AhpEdb93RPs"
+    youtube_id: "AhpEdb93RPs"
+    priority: 100
+    ceiling: 800
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    challenger: false
+    round: 2
+    status: "partial"
+    demand_generated_at: "2026-09-10T13:08:13.461Z"
+    demand_run_id: "job_1789045680050_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=AhpEdb93RPs"
+    source_ref: "AhpEdb93RPs"
+    subject_kind: "new_politician"
+
+  # Blocks this version of the tool does not know about, carried forward
+  # verbatim rather than dropped.
+  Media_Provenance:
+    Real_Path: /Users/bryan/T/_we_citizens/videos/andy_levin_mi/AhpEdb93RPs/AhpEdb93RPs.mp4
+    Real_Directory: /Users/bryan/T/_we_citizens/videos/andy_levin_mi/AhpEdb93RPs/
+    Note: Stored_At names a symlink directory under the download root. The bytes were downloaded by the
+      legacy downloader under roster key andy_levin_mi and are transcribed in place from the directory above;
+      the live demand row files this video under andy_levin_mi_09, which is the key used here.
