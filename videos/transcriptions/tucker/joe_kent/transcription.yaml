@@ -73,24 +73,59 @@ Transcription:
   # role: interviewer | interviewee | guest | host | co_host | moderator | panelist |
   #       narrator | reporter | announcer | caller | audience_member | clip_speaker | unknown
   speaker_map:
-    - speaker_number: 1
-      person_key: "tucker_carlson"
+    - speaker_label: "SPEAKER_00"
+      speaker_number: 1
+      person_key: "tucker_carlson_us_pres"
       person_name: "Tucker Carlson"
       role: "interviewer"
       gender: "male"
-      description: "Host and interviewer; runs the questions, reads back from Kent's resignation letter, and frames each segment."
       age_range: "50-59"
-    - speaker_number: 2
-      person_key: "joe_kent"
+      description: >-
+        Host and interviewer. Opens the programme by introducing an archive clip -
+        "we want to start tonight with a clip from January of 2024, this is from
+        this show" - then works through the guest's resignation letter question by
+        question and frames each segment. The People_in_Video block records 291
+        turns and 42.8% of the speech; the .rttm carries 293 turn rows for this
+        label. Both host and interviewer, and the recording shows far more of the
+        interviewing, so the role is recorded as interviewer. Identified from the
+        video Title and the Show field, from the closing sign-off for "the
+        Wednesday edition of the show" streaming "on tuckercarlson.com" at
+        02:05:18, and from the direct address "Thank you, Tucker" in the closing
+        minute. The roster was checked on disk and tucker_carlson_us_pres is the
+        only matching record.
+    - speaker_label: "SPEAKER_01"
+      speaker_number: 2
+      person_key: ""
       person_name: "Joe Kent"
       role: "interviewee"
       gender: "male"
-      description: "Guest; former Director of the National Counterterrorism Center and former Green Beret, speaking one day after his resignation."
       age_range: "40-49"
-    - speaker_number: 3
+      description: >-
+        The guest, answering throughout. The People_in_Video block records 185
+        turns and 54.8% of the speech; the .rttm carries 194 turn rows for this
+        label - fewer turns and more speech than the interviewer, which agrees
+        with the title. Named by the host in the first ten seconds - "this is Joe
+        Kent, who later went on to become, until yesterday, the Director of the
+        National Counterterrorism Center" - and named in the video Title. States
+        on air that he resigned the day before and reads back from his own
+        resignation letter. person_key is left empty deliberately: this human
+        matches two roster records on disk, joe_kent_wa_03 and joe_kent_wa_sen,
+        and this run may not choose between them or mint a third; the person spine
+        record for him carries no roster link either.
+    - speaker_label: "SPEAKER_02"
+      speaker_number: 3
       person_key: ""
-      person_name: ""
+      person_name: "unknown"
       role: "unknown"
       gender: ""
-      description: "Two brief turns only; diarization isolated a third cluster but no identity could be established from context."
       age_range: ""
+      description: >-
+        Two turns totalling 0.75 seconds - "have a lot" at 01:28:46 and "yeah so"
+        at 01:47:18 - each one a fragment lying inside a continuous sentence
+        belonging to another cluster. The segment header records 0.6 seconds of
+        clean speech, 0.0% of the recording. Searched the opening and closing
+        minutes, both turns in context, the Title, Description, Show and Topics,
+        the People_in_Video block and the speaker_map.yaml filed for this video:
+        nothing names a third voice, nobody addresses one, and no identity could
+        be established. The shape is a diarization artefact rather than a separate
+        person, so no name is attributed.
