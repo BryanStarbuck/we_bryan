@@ -1,0 +1,1614 @@
+{
+  "schema_version": 2,
+  "canonical_id": "856b66c3335a5478",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 81.33,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T14:41:50.549Z",
+  "text_sha256": "10959e67df076dcc709fcea9f59e770ef6cf1749d312ed366fb0b9af9d333019",
+  "segments_sha256": "56ae18c4a63672990f48e395b94f691aface6868c1e4295488ac5a9a8539c06c",
+  "words_sha256": "ab1ebc17b9cc6100e5b2a6b389f55b973668a51302921fc409a2ac77a44a0141",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 3,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 11,
+    "clusters": 7,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.88,
+        "confidence": "low",
+        "clean_s": 25.7
+      },
+      "clean_s": 25.7,
+      "speaking_s": 25.7,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 3.1
+      },
+      "clean_s": 3.1,
+      "speaking_s": 3.1,
+      "first_s": 28.89
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 3,
+      "label": "Speaker 3 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.92,
+        "confidence": "low",
+        "clean_s": 11.5
+      },
+      "clean_s": 11.5,
+      "speaking_s": 11.5,
+      "first_s": 31.98
+    },
+    {
+      "id": "SPEAKER_04",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.4
+      },
+      "clean_s": 0.4,
+      "speaking_s": 0.4,
+      "first_s": 39.67
+    },
+    {
+      "id": "SPEAKER_05",
+      "n": 5,
+      "label": "Man 5",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.94,
+        "confidence": "high",
+        "clean_s": 26.9
+      },
+      "clean_s": 26.9,
+      "speaking_s": 27.2,
+      "first_s": 45.66
+    },
+    {
+      "id": "SPEAKER_06",
+      "n": 6,
+      "label": "Speaker 6",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 3.7
+      },
+      "clean_s": 3.7,
+      "speaking_s": 3.7,
+      "first_s": 51.26
+    },
+    {
+      "id": "SPEAKER_07",
+      "n": 7,
+      "label": "Speaker 7",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0
+      },
+      "clean_s": 0,
+      "speaking_s": 0.4,
+      "first_s": 57.68
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.05,
+      "end_s": 0.05,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 25.76,
+      "end_s": 27.64,
+      "segment_i": 2,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 27.6,
+      "end_s": 28.87,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 40.68,
+      "end_s": 40.81,
+      "segment_i": 7,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 49.78,
+      "end_s": 50.64,
+      "segment_i": 10,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 54.64,
+      "end_s": 55.77,
+      "segment_i": 12,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 57.49,
+      "end_s": 57.58,
+      "segment_i": 14,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.05,
+      "end_s": 0.06,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I",
+      "words": [
+        {
+          "w": "I",
+          "s": 0.05,
+          "e": 0.05,
+          "c": 0.88407
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.05,
+      "end_s": 25.76,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "was a Fleet Marine Force Corpsman so I was embedded with United States Marines for all four years and then when I got out I had the Montgomery GI Bill and I began college and now I'm looking at July 1st having to pay $1,300 a month in student loans and I'm at $96,000 in debt even with using the GI Bill and paying into it myself while I was",
+      "words": [
+        {
+          "w": "was",
+          "s": 0.05,
+          "e": 0.21,
+          "c": 0.997116
+        },
+        {
+          "w": "a",
+          "s": 0.21,
+          "e": 0.26,
+          "c": 0.978796
+        },
+        {
+          "w": "Fleet",
+          "s": 0.26,
+          "e": 0.54,
+          "c": 0.721663
+        },
+        {
+          "w": "Marine",
+          "s": 0.54,
+          "e": 0.87,
+          "c": 0.994799
+        },
+        {
+          "w": "Force",
+          "s": 0.87,
+          "e": 1.15,
+          "c": 0.941967
+        },
+        {
+          "w": "Corpsman",
+          "s": 1.15,
+          "e": 1.64,
+          "c": 0.581975
+        },
+        {
+          "w": "so",
+          "s": 1.64,
+          "e": 1.88,
+          "c": 0.551075
+        },
+        {
+          "w": "I",
+          "s": 1.88,
+          "e": 1.92,
+          "c": 0.957191
+        },
+        {
+          "w": "was",
+          "s": 1.92,
+          "e": 2.17,
+          "c": 0.97998
+        },
+        {
+          "w": "embedded",
+          "s": 2.17,
+          "e": 2.85,
+          "c": 0.94106
+        },
+        {
+          "w": "with",
+          "s": 2.85,
+          "e": 3.2,
+          "c": 0.989453
+        },
+        {
+          "w": "United",
+          "s": 3.2,
+          "e": 3.6,
+          "c": 0.676401
+        },
+        {
+          "w": "States",
+          "s": 3.6,
+          "e": 3.77,
+          "c": 0.980907
+        },
+        {
+          "w": "Marines",
+          "s": 3.78,
+          "e": 4.2,
+          "c": 0.935831
+        },
+        {
+          "w": "for",
+          "s": 4.25,
+          "e": 4.42,
+          "c": 0.998812
+        },
+        {
+          "w": "all",
+          "s": 4.42,
+          "e": 4.64,
+          "c": 0.997769
+        },
+        {
+          "w": "four",
+          "s": 4.64,
+          "e": 4.93,
+          "c": 0.986461
+        },
+        {
+          "w": "years",
+          "s": 4.93,
+          "e": 5.3,
+          "c": 0.999176
+        },
+        {
+          "w": "and",
+          "s": 5.3,
+          "e": 5.52,
+          "c": 0.586251
+        },
+        {
+          "w": "then",
+          "s": 5.52,
+          "e": 5.81,
+          "c": 0.993792
+        },
+        {
+          "w": "when",
+          "s": 5.81,
+          "e": 6.1,
+          "c": 0.996567
+        },
+        {
+          "w": "I",
+          "s": 6.1,
+          "e": 6.17,
+          "c": 0.996833
+        },
+        {
+          "w": "got",
+          "s": 6.17,
+          "e": 6.39,
+          "c": 0.999533
+        },
+        {
+          "w": "out",
+          "s": 6.39,
+          "e": 6.66,
+          "c": 0.998422
+        },
+        {
+          "w": "I",
+          "s": 6.66,
+          "e": 6.73,
+          "c": 0.910898
+        },
+        {
+          "w": "had",
+          "s": 6.73,
+          "e": 6.96,
+          "c": 0.996582
+        },
+        {
+          "w": "the",
+          "s": 6.96,
+          "e": 7.2,
+          "c": 0.99822
+        },
+        {
+          "w": "Montgomery",
+          "s": 7.2,
+          "e": 7.79,
+          "c": 0.928467
+        },
+        {
+          "w": "GI",
+          "s": 7.79,
+          "e": 7.91,
+          "c": 0.965409
+        },
+        {
+          "w": "Bill",
+          "s": 7.91,
+          "e": 8.16,
+          "c": 0.700335
+        },
+        {
+          "w": "and",
+          "s": 8.16,
+          "e": 8.52,
+          "c": 0.706044
+        },
+        {
+          "w": "I",
+          "s": 8.52,
+          "e": 8.56,
+          "c": 0.940191
+        },
+        {
+          "w": "began",
+          "s": 8.61,
+          "e": 8.94,
+          "c": 0.997459
+        },
+        {
+          "w": "college",
+          "s": 8.94,
+          "e": 9.48,
+          "c": 0.975794
+        },
+        {
+          "w": "and",
+          "s": 9.48,
+          "e": 9.71,
+          "c": 0.940003
+        },
+        {
+          "w": "now",
+          "s": 9.71,
+          "e": 9.94,
+          "c": 0.999012
+        },
+        {
+          "w": "I'm",
+          "s": 9.94,
+          "e": 10.15,
+          "c": 0.989566
+        },
+        {
+          "w": "looking",
+          "s": 10.16,
+          "e": 10.7,
+          "c": 0.999373
+        },
+        {
+          "w": "at",
+          "s": 10.7,
+          "e": 10.85,
+          "c": 0.998811
+        },
+        {
+          "w": "July",
+          "s": 10.85,
+          "e": 11.16,
+          "c": 0.98786
+        },
+        {
+          "w": "1st",
+          "s": 11.16,
+          "e": 11.54,
+          "c": 0.908314
+        },
+        {
+          "w": "having",
+          "s": 11.54,
+          "e": 12,
+          "c": 0.941483
+        },
+        {
+          "w": "to",
+          "s": 12,
+          "e": 12.15,
+          "c": 0.978704
+        },
+        {
+          "w": "pay",
+          "s": 12.15,
+          "e": 12.44,
+          "c": 0.997337
+        },
+        {
+          "w": "$1,300",
+          "s": 12.44,
+          "e": 13.56,
+          "c": 0.701511
+        },
+        {
+          "w": "a",
+          "s": 13.56,
+          "e": 13.67,
+          "c": 0.926971
+        },
+        {
+          "w": "month",
+          "s": 13.68,
+          "e": 13.92,
+          "c": 0.9306
+        },
+        {
+          "w": "in",
+          "s": 13.92,
+          "e": 14.16,
+          "c": 0.662912
+        },
+        {
+          "w": "student",
+          "s": 14.21,
+          "e": 15.06,
+          "c": 0.993204
+        },
+        {
+          "w": "loans",
+          "s": 15.06,
+          "e": 15.7,
+          "c": 0.99914
+        },
+        {
+          "w": "and",
+          "s": 15.7,
+          "e": 16.08,
+          "c": 0.90517
+        },
+        {
+          "w": "I'm",
+          "s": 16.08,
+          "e": 16.46,
+          "c": 0.97106
+        },
+        {
+          "w": "at",
+          "s": 16.46,
+          "e": 16.7,
+          "c": 0.988693
+        },
+        {
+          "w": "$96,000",
+          "s": 16.71,
+          "e": 19.07,
+          "c": 0.820811
+        },
+        {
+          "w": "in",
+          "s": 19.08,
+          "e": 19.21,
+          "c": 0.954927
+        },
+        {
+          "w": "debt",
+          "s": 19.21,
+          "e": 19.48,
+          "c": 0.994979
+        },
+        {
+          "w": "even",
+          "s": 19.48,
+          "e": 19.96,
+          "c": 0.965699
+        },
+        {
+          "w": "with",
+          "s": 19.96,
+          "e": 20.24,
+          "c": 0.976071
+        },
+        {
+          "w": "using",
+          "s": 20.24,
+          "e": 21.16,
+          "c": 0.959314
+        },
+        {
+          "w": "the",
+          "s": 21.16,
+          "e": 21.35,
+          "c": 0.978956
+        },
+        {
+          "w": "GI",
+          "s": 21.35,
+          "e": 21.48,
+          "c": 0.978756
+        },
+        {
+          "w": "Bill",
+          "s": 21.48,
+          "e": 21.8,
+          "c": 0.758175
+        },
+        {
+          "w": "and",
+          "s": 21.8,
+          "e": 21.96,
+          "c": 0.865381
+        },
+        {
+          "w": "paying",
+          "s": 22.01,
+          "e": 22.81,
+          "c": 0.967574
+        },
+        {
+          "w": "into",
+          "s": 22.81,
+          "e": 23.37,
+          "c": 0.98769
+        },
+        {
+          "w": "it",
+          "s": 23.37,
+          "e": 23.65,
+          "c": 0.991017
+        },
+        {
+          "w": "myself",
+          "s": 23.65,
+          "e": 24.5,
+          "c": 0.999018
+        },
+        {
+          "w": "while",
+          "s": 24.5,
+          "e": 25.2,
+          "c": 0.749407
+        },
+        {
+          "w": "I",
+          "s": 25.2,
+          "e": 25.34,
+          "c": 0.981278
+        },
+        {
+          "w": "was",
+          "s": 25.34,
+          "e": 25.76,
+          "c": 0.997963
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 25.76,
+      "end_s": 27.64,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "in the military.",
+      "words": [
+        {
+          "w": "in",
+          "s": 25.76,
+          "e": 26.04,
+          "c": 0.999695
+        },
+        {
+          "w": "the",
+          "s": 26.04,
+          "e": 26.46,
+          "c": 0.99964
+        },
+        {
+          "w": "military.",
+          "s": 26.46,
+          "e": 27.64,
+          "c": 0.804215
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 27.6,
+      "end_s": 28.87,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "You served in",
+      "words": [
+        {
+          "w": "You",
+          "s": 27.6,
+          "e": 27.95,
+          "c": 0.261828
+        },
+        {
+          "w": "served",
+          "s": 27.95,
+          "e": 28.65,
+          "c": 0.638754
+        },
+        {
+          "w": "in",
+          "s": 28.65,
+          "e": 28.87,
+          "c": 0.99387
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 28.88,
+      "end_s": 31.69,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the military, you put your life on the line for the",
+      "words": [
+        {
+          "w": "the",
+          "s": 28.88,
+          "e": 29.23,
+          "c": 0.995628
+        },
+        {
+          "w": "military,",
+          "s": 29.23,
+          "e": 30.23,
+          "c": 0.626086
+        },
+        {
+          "w": "you",
+          "s": 30.23,
+          "e": 30.27,
+          "c": 0.428282
+        },
+        {
+          "w": "put",
+          "s": 30.28,
+          "e": 30.33,
+          "c": 0.979286
+        },
+        {
+          "w": "your",
+          "s": 30.33,
+          "e": 30.4,
+          "c": 0.983849
+        },
+        {
+          "w": "life",
+          "s": 30.4,
+          "e": 30.64,
+          "c": 0.984959
+        },
+        {
+          "w": "on",
+          "s": 30.64,
+          "e": 30.76,
+          "c": 0.954341
+        },
+        {
+          "w": "the",
+          "s": 30.76,
+          "e": 30.93,
+          "c": 0.969973
+        },
+        {
+          "w": "line",
+          "s": 30.93,
+          "e": 31.18,
+          "c": 0.987263
+        },
+        {
+          "w": "for",
+          "s": 31.18,
+          "e": 31.3,
+          "c": 0.800956
+        },
+        {
+          "w": "the",
+          "s": 31.3,
+          "e": 31.69,
+          "c": 0.968042
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 31.69,
+      "end_s": 39.68,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "country, and you're now struggling with $96,000, our name is the student debt.",
+      "words": [
+        {
+          "w": "country,",
+          "s": 31.69,
+          "e": 32.65,
+          "c": 0.358279
+        },
+        {
+          "w": "and",
+          "s": 32.65,
+          "e": 32.74,
+          "c": 0.694678
+        },
+        {
+          "w": "you're",
+          "s": 32.74,
+          "e": 32.88,
+          "c": 0.884867
+        },
+        {
+          "w": "now",
+          "s": 32.88,
+          "e": 33.02,
+          "c": 0.661457
+        },
+        {
+          "w": "struggling",
+          "s": 33.02,
+          "e": 34.51,
+          "c": 0.998673
+        },
+        {
+          "w": "with",
+          "s": 34.51,
+          "e": 35.1,
+          "c": 0.99802
+        },
+        {
+          "w": "$96,000,",
+          "s": 35.1,
+          "e": 37.93,
+          "c": 0.15743
+        },
+        {
+          "w": "our",
+          "s": 37.93,
+          "e": 38.13,
+          "c": 0.531831
+        },
+        {
+          "w": "name",
+          "s": 38.13,
+          "e": 38.39,
+          "c": 0.630137
+        },
+        {
+          "w": "is",
+          "s": 38.39,
+          "e": 38.52,
+          "c": 0.627058
+        },
+        {
+          "w": "the",
+          "s": 38.52,
+          "e": 38.72,
+          "c": 0.767761
+        },
+        {
+          "w": "student",
+          "s": 38.72,
+          "e": 39.18,
+          "c": 0.977041
+        },
+        {
+          "w": "debt.",
+          "s": 39.18,
+          "e": 39.68,
+          "c": 0.722193
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 39.68,
+      "end_s": 40.68,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Yes.",
+      "words": [
+        {
+          "w": "Yes.",
+          "s": 39.68,
+          "e": 40.68,
+          "c": 0.863318
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 40.68,
+      "end_s": 40.81,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "So",
+      "words": [
+        {
+          "w": "So",
+          "s": 40.68,
+          "e": 40.81,
+          "c": 0.788094
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 40.82,
+      "end_s": 45.76,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "what's that going to mean to your family and your way of life?",
+      "words": [
+        {
+          "w": "what's",
+          "s": 40.82,
+          "e": 41.24,
+          "c": 0.419705
+        },
+        {
+          "w": "that",
+          "s": 41.24,
+          "e": 41.52,
+          "c": 0.995414
+        },
+        {
+          "w": "going",
+          "s": 41.52,
+          "e": 41.87,
+          "c": 0.623577
+        },
+        {
+          "w": "to",
+          "s": 41.87,
+          "e": 42.01,
+          "c": 0.991274
+        },
+        {
+          "w": "mean",
+          "s": 42.01,
+          "e": 42.29,
+          "c": 0.996942
+        },
+        {
+          "w": "to",
+          "s": 42.29,
+          "e": 42.43,
+          "c": 0.978108
+        },
+        {
+          "w": "your",
+          "s": 42.43,
+          "e": 42.71,
+          "c": 0.96725
+        },
+        {
+          "w": "family",
+          "s": 42.71,
+          "e": 43.13,
+          "c": 0.998275
+        },
+        {
+          "w": "and",
+          "s": 43.13,
+          "e": 43.35,
+          "c": 0.888257
+        },
+        {
+          "w": "your",
+          "s": 43.36,
+          "e": 43.96,
+          "c": 0.954437
+        },
+        {
+          "w": "way",
+          "s": 43.96,
+          "e": 44.41,
+          "c": 0.979027
+        },
+        {
+          "w": "of",
+          "s": 44.41,
+          "e": 44.71,
+          "c": 0.983753
+        },
+        {
+          "w": "life?",
+          "s": 44.71,
+          "e": 45.76,
+          "c": 0.962885
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 45.76,
+      "end_s": 49.78,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We won't be able to afford where we live, worry about putting food on",
+      "words": [
+        {
+          "w": "We",
+          "s": 45.76,
+          "e": 45.89,
+          "c": 0.996974
+        },
+        {
+          "w": "won't",
+          "s": 45.89,
+          "e": 46.22,
+          "c": 0.996829
+        },
+        {
+          "w": "be",
+          "s": 46.22,
+          "e": 46.34,
+          "c": 0.996272
+        },
+        {
+          "w": "able",
+          "s": 46.35,
+          "e": 46.62,
+          "c": 0.999153
+        },
+        {
+          "w": "to",
+          "s": 46.62,
+          "e": 46.75,
+          "c": 0.989121
+        },
+        {
+          "w": "afford",
+          "s": 46.75,
+          "e": 47.14,
+          "c": 0.999573
+        },
+        {
+          "w": "where",
+          "s": 47.15,
+          "e": 47.47,
+          "c": 0.988016
+        },
+        {
+          "w": "we",
+          "s": 47.48,
+          "e": 47.61,
+          "c": 0.998494
+        },
+        {
+          "w": "live,",
+          "s": 47.61,
+          "e": 48.06,
+          "c": 0.889379
+        },
+        {
+          "w": "worry",
+          "s": 48.06,
+          "e": 48.43,
+          "c": 0.851811
+        },
+        {
+          "w": "about",
+          "s": 48.43,
+          "e": 48.8,
+          "c": 0.997727
+        },
+        {
+          "w": "putting",
+          "s": 48.8,
+          "e": 49.33,
+          "c": 0.99503
+        },
+        {
+          "w": "food",
+          "s": 49.33,
+          "e": 49.63,
+          "c": 0.985609
+        },
+        {
+          "w": "on",
+          "s": 49.63,
+          "e": 49.78,
+          "c": 0.997253
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 49.78,
+      "end_s": 50.64,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the table.",
+      "words": [
+        {
+          "w": "the",
+          "s": 49.78,
+          "e": 50,
+          "c": 0.997444
+        },
+        {
+          "w": "table.",
+          "s": 50,
+          "e": 50.64,
+          "c": 0.986675
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 50.64,
+      "end_s": 54.64,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "$1,300 a month, is that the fear?",
+      "words": [
+        {
+          "w": "$1,300",
+          "s": 50.64,
+          "e": 52.16,
+          "c": 0.838801
+        },
+        {
+          "w": "a",
+          "s": 52.16,
+          "e": 52.26,
+          "c": 0.937122
+        },
+        {
+          "w": "month,",
+          "s": 52.26,
+          "e": 52.97,
+          "c": 0.351868
+        },
+        {
+          "w": "is",
+          "s": 52.97,
+          "e": 53.17,
+          "c": 0.992875
+        },
+        {
+          "w": "that",
+          "s": 53.17,
+          "e": 53.58,
+          "c": 0.999289
+        },
+        {
+          "w": "the",
+          "s": 53.58,
+          "e": 53.88,
+          "c": 0.98676
+        },
+        {
+          "w": "fear?",
+          "s": 53.88,
+          "e": 54.64,
+          "c": 0.973324
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 54.64,
+      "end_s": 55.77,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "That's a hell",
+      "words": [
+        {
+          "w": "That's",
+          "s": 54.64,
+          "e": 55.26,
+          "c": 0.761054
+        },
+        {
+          "w": "a",
+          "s": 55.26,
+          "e": 55.36,
+          "c": 0.994421
+        },
+        {
+          "w": "hell",
+          "s": 55.36,
+          "e": 55.77,
+          "c": 0.988318
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 55.78,
+      "end_s": 57.48,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "of a lot of money.",
+      "words": [
+        {
+          "w": "of",
+          "s": 55.78,
+          "e": 55.99,
+          "c": 0.962467
+        },
+        {
+          "w": "a",
+          "s": 55.99,
+          "e": 56.09,
+          "c": 0.99591
+        },
+        {
+          "w": "lot",
+          "s": 56.09,
+          "e": 56.4,
+          "c": 0.989495
+        },
+        {
+          "w": "of",
+          "s": 56.4,
+          "e": 56.6,
+          "c": 0.995837
+        },
+        {
+          "w": "money.",
+          "s": 56.61,
+          "e": 57.48,
+          "c": 0.782495
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 57.49,
+      "end_s": 57.58,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "a",
+      "words": [
+        {
+          "w": "a",
+          "s": 57.488,
+          "e": 57.578,
+          "c": 0.0415366
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 57.58,
+      "end_s": 81.33,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "lot of money. Debt is scary. It comes with some shame. I feel like I wish I didn't have that debt. I'm worried about the impact it's going to have on my family. And it's the rate of $1,300 a month starting July 1st is going to crush us financially.",
+      "words": [
+        {
+          "w": "lot",
+          "s": 57.578,
+          "e": 57.848,
+          "c": 0.991802
+        },
+        {
+          "w": "of",
+          "s": 57.848,
+          "e": 58.028,
+          "c": 0.997571
+        },
+        {
+          "w": "money.",
+          "s": 58.028,
+          "e": 59.488,
+          "c": 0.792268
+        },
+        {
+          "w": "Debt",
+          "s": 59.488,
+          "e": 59.888,
+          "c": 0.591225
+        },
+        {
+          "w": "is",
+          "s": 59.888,
+          "e": 60.088,
+          "c": 0.995702
+        },
+        {
+          "w": "scary.",
+          "s": 60.088,
+          "e": 60.768,
+          "c": 0.559471
+        },
+        {
+          "w": "It",
+          "s": 60.768,
+          "e": 60.888,
+          "c": 0.865256
+        },
+        {
+          "w": "comes",
+          "s": 60.888,
+          "e": 62.868,
+          "c": 0.627769
+        },
+        {
+          "w": "with",
+          "s": 62.868,
+          "e": 63.028,
+          "c": 0.971741
+        },
+        {
+          "w": "some",
+          "s": 63.028,
+          "e": 63.188,
+          "c": 0.983083
+        },
+        {
+          "w": "shame.",
+          "s": 63.188,
+          "e": 63.808,
+          "c": 0.94926
+        },
+        {
+          "w": "I",
+          "s": 63.808,
+          "e": 63.998,
+          "c": 0.876674
+        },
+        {
+          "w": "feel",
+          "s": 63.998,
+          "e": 64.768,
+          "c": 0.941938
+        },
+        {
+          "w": "like",
+          "s": 64.768,
+          "e": 64.988,
+          "c": 0.966547
+        },
+        {
+          "w": "I",
+          "s": 64.988,
+          "e": 65.488,
+          "c": 0.935858
+        },
+        {
+          "w": "wish",
+          "s": 65.488,
+          "e": 65.848,
+          "c": 0.856108
+        },
+        {
+          "w": "I",
+          "s": 65.848,
+          "e": 65.988,
+          "c": 0.91054
+        },
+        {
+          "w": "didn't",
+          "s": 65.988,
+          "e": 66.288,
+          "c": 0.760651
+        },
+        {
+          "w": "have",
+          "s": 66.288,
+          "e": 66.478,
+          "c": 0.901177
+        },
+        {
+          "w": "that",
+          "s": 66.488,
+          "e": 66.928,
+          "c": 0.994816
+        },
+        {
+          "w": "debt.",
+          "s": 66.928,
+          "e": 67.688,
+          "c": 0.965838
+        },
+        {
+          "w": "I'm",
+          "s": 67.698,
+          "e": 68.028,
+          "c": 0.987261
+        },
+        {
+          "w": "worried",
+          "s": 68.028,
+          "e": 68.798,
+          "c": 0.998978
+        },
+        {
+          "w": "about",
+          "s": 68.798,
+          "e": 69.348,
+          "c": 0.998074
+        },
+        {
+          "w": "the",
+          "s": 69.348,
+          "e": 69.668,
+          "c": 0.994761
+        },
+        {
+          "w": "impact",
+          "s": 69.678,
+          "e": 70.338,
+          "c": 0.997973
+        },
+        {
+          "w": "it's",
+          "s": 70.338,
+          "e": 70.768,
+          "c": 0.942212
+        },
+        {
+          "w": "going",
+          "s": 70.778,
+          "e": 71.328,
+          "c": 0.830203
+        },
+        {
+          "w": "to",
+          "s": 71.328,
+          "e": 71.548,
+          "c": 0.994789
+        },
+        {
+          "w": "have",
+          "s": 71.548,
+          "e": 71.988,
+          "c": 0.998003
+        },
+        {
+          "w": "on",
+          "s": 71.988,
+          "e": 72.208,
+          "c": 0.997805
+        },
+        {
+          "w": "my",
+          "s": 72.208,
+          "e": 72.428,
+          "c": 0.999396
+        },
+        {
+          "w": "family.",
+          "s": 72.428,
+          "e": 73.488,
+          "c": 0.559078
+        },
+        {
+          "w": "And",
+          "s": 73.488,
+          "e": 73.908,
+          "c": 0.740031
+        },
+        {
+          "w": "it's",
+          "s": 73.908,
+          "e": 74.488,
+          "c": 0.74919
+        },
+        {
+          "w": "the",
+          "s": 74.488,
+          "e": 75.288,
+          "c": 0.936247
+        },
+        {
+          "w": "rate",
+          "s": 75.288,
+          "e": 75.568,
+          "c": 0.969932
+        },
+        {
+          "w": "of",
+          "s": 75.568,
+          "e": 75.728,
+          "c": 0.949508
+        },
+        {
+          "w": "$1,300",
+          "s": 75.728,
+          "e": 76.938,
+          "c": 0.777048
+        },
+        {
+          "w": "a",
+          "s": 76.938,
+          "e": 77.018,
+          "c": 0.95176
+        },
+        {
+          "w": "month",
+          "s": 77.018,
+          "e": 77.428,
+          "c": 0.999542
+        },
+        {
+          "w": "starting",
+          "s": 77.428,
+          "e": 78.068,
+          "c": 0.899688
+        },
+        {
+          "w": "July",
+          "s": 78.078,
+          "e": 78.398,
+          "c": 0.995074
+        },
+        {
+          "w": "1st",
+          "s": 78.398,
+          "e": 78.798,
+          "c": 0.754753
+        },
+        {
+          "w": "is",
+          "s": 78.798,
+          "e": 78.958,
+          "c": 0.939264
+        },
+        {
+          "w": "going",
+          "s": 78.958,
+          "e": 79.368,
+          "c": 0.999028
+        },
+        {
+          "w": "to",
+          "s": 79.368,
+          "e": 79.528,
+          "c": 0.999295
+        },
+        {
+          "w": "crush",
+          "s": 79.528,
+          "e": 79.938,
+          "c": 0.998365
+        },
+        {
+          "w": "us",
+          "s": 79.938,
+          "e": 80.098,
+          "c": 0.998664
+        },
+        {
+          "w": "financially.",
+          "s": 80.098,
+          "e": 81.328,
+          "c": 0.992875
+        }
+      ]
+    }
+  ]
+}

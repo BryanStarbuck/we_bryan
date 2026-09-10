@@ -1,0 +1,113 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Rep. Barbara Lee Speaks on House Floor Marking 10 Years Since the Beginning of Genocide in Darfur"
+    URL: "https://www.youtube.com/watch?v=Dk90fQZwDNA"
+    Video_ID: "Dk90fQZwDNA"
+    Show: "Rep. Barbara Lee"
+    Runtime: "00:01:30"
+    Language: "en"
+
+  Media:
+    File: "Dk90fQZwDNA.mp4"
+    SHA256: "5c58d376a3d8fda354d04be581d51884b513f3b3545bdc1fe6ca4a259609e2a1"
+    Bytes: 3040289
+    Duration_Seconds: 90
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=Dk90fQZwDNA"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "Dk90fQZwDNA.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/barbara_lee_ca_12/Dk90fQZwDNA/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCnRgK2MXAQOUau0JXqseeNA"
+    Uploader_ID: "@RepLee"
+    View_Count: 975
+    Like_Count: 4
+    Availability: "public"
+    Published_At: "2013-04-16T19:47:10+00:00"
+    Captured_At: "2026-08-14T06:16:56-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 1
+
+  Source:
+    Canonical_ID: "002c89c3ef530798"
+    Transcribed: "2026-09-10T07:42:04.428148-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 240
+    Segments: 4
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:16:57.340606-07:00"
+    Transcription_Finished: "2026-09-10T07:42:04.428148-07:00"
+    Recorded: "2013-04-16"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "Dk90fQZwDNA.ctm"
+    Fountain: "Dk90fQZwDNA.fountain"
+    Diarization_RTTM: "Dk90fQZwDNA.rttm"
+    As_Broadcast_Script: "Dk90fQZwDNA.script.txt"
+    Segments_JSON: "Dk90fQZwDNA.segments.json"
+    Segments_JSONL: "Dk90fQZwDNA.segments.jsonl"
+    Subtitles_SRT: "Dk90fQZwDNA.srt"
+    Plain_Text: "Dk90fQZwDNA.transcription"
+    Subtitles_VTT: "Dk90fQZwDNA.vtt"
+    Transcript_SHA256: "caf4bb248bbf6640a8ae816293303c71fbd9bc81145aff0236924056445c5715"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "barbara_lee_ca_12"
+    video_uid: "barbara_lee_ca_12::Dk90fQZwDNA"
+    video_key: "Dk90fQZwDNA"
+    youtube_id: "Dk90fQZwDNA"
+    priority: 100
+    ceiling: 800
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    challenger: false
+    round: 18
+    status: "partial"
+    demand_generated_at: "2026-09-10T14:39:56.937Z"
+    demand_run_id: "job_1789051036673_22"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=Dk90fQZwDNA"
+    source_ref: "Dk90fQZwDNA"
+    subject_kind: "new_politician"

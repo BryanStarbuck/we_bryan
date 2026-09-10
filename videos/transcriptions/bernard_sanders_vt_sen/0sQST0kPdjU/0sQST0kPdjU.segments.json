@@ -1,0 +1,1314 @@
+{
+  "schema_version": 2,
+  "canonical_id": "3bbe400e246f2c49",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 79.8,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T14:41:36.660Z",
+  "text_sha256": "72ac96d6e0a00ccd98e128b3ebc118753e57968e28721502eb8f7cb5713a01ca",
+  "segments_sha256": "73cb273e02f97b36ecd4affc8e489b8248584e6ad3fcf238ce74e8952423f3af",
+  "words_sha256": "6db8fbc91d7cb9974b91ed9ff852d3ea9fe5a64c80c8442b1516ba414e82488d",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 3,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 5,
+    "clusters": 3,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 6.1
+      },
+      "clean_s": 6.1,
+      "speaking_s": 6.1,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 63
+      },
+      "clean_s": 63,
+      "speaking_s": 63,
+      "first_s": 7.22
+    },
+    {
+      "id": "SPEAKER_05",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 9.1
+      },
+      "clean_s": 9.1,
+      "speaking_s": 9.1,
+      "first_s": 25.97
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 7.97,
+      "end_s": 8.59,
+      "segment_i": 2,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.05,
+      "end_s": 6.69,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "You highlighted a colleague of yours from Alabama calling Social Security a scam. Look,",
+      "words": [
+        {
+          "w": "You",
+          "s": 0.05,
+          "e": 0.24,
+          "c": 0.937765
+        },
+        {
+          "w": "highlighted",
+          "s": 0.24,
+          "e": 1.14,
+          "c": 0.998074
+        },
+        {
+          "w": "a",
+          "s": 1.14,
+          "e": 1.2,
+          "c": 0.625065
+        },
+        {
+          "w": "colleague",
+          "s": 1.33,
+          "e": 1.96,
+          "c": 0.994074
+        },
+        {
+          "w": "of",
+          "s": 1.96,
+          "e": 2.04,
+          "c": 0.998591
+        },
+        {
+          "w": "yours",
+          "s": 2.13,
+          "e": 2.53,
+          "c": 0.997598
+        },
+        {
+          "w": "from",
+          "s": 2.53,
+          "e": 2.83,
+          "c": 0.995023
+        },
+        {
+          "w": "Alabama",
+          "s": 2.85,
+          "e": 3.46,
+          "c": 0.999188
+        },
+        {
+          "w": "calling",
+          "s": 3.46,
+          "e": 4.05,
+          "c": 0.917498
+        },
+        {
+          "w": "Social",
+          "s": 4.05,
+          "e": 4.56,
+          "c": 0.85461
+        },
+        {
+          "w": "Security",
+          "s": 4.56,
+          "e": 5.24,
+          "c": 0.997708
+        },
+        {
+          "w": "a",
+          "s": 5.24,
+          "e": 5.32,
+          "c": 0.998631
+        },
+        {
+          "w": "scam.",
+          "s": 5.32,
+          "e": 5.94,
+          "c": 0.994115
+        },
+        {
+          "w": "Look,",
+          "s": 5.99,
+          "e": 6.69,
+          "c": 0.999091
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 6.7,
+      "end_s": 7.97,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "bottom line",
+      "words": [
+        {
+          "w": "bottom",
+          "s": 6.7,
+          "e": 7.44,
+          "c": 0.998131
+        },
+        {
+          "w": "line",
+          "s": 7.74,
+          "e": 7.97,
+          "c": 0.999958
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 7.97,
+      "end_s": 8.59,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "is, I",
+      "words": [
+        {
+          "w": "is,",
+          "s": 7.97,
+          "e": 8.47,
+          "c": 0.669597
+        },
+        {
+          "w": "I",
+          "s": 8.47,
+          "e": 8.59,
+          "c": 0.998207
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 8.59,
+      "end_s": 26.1,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "think the American people are catching on big time that Donald Trump is not only an oligarch concerned about his own family's wealth and the wealth of his fellow oligarchs, he's really at war against the working class of this country. the idea",
+      "words": [
+        {
+          "w": "think",
+          "s": 8.59,
+          "e": 9.23,
+          "c": 0.999994
+        },
+        {
+          "w": "the",
+          "s": 9.23,
+          "e": 9.54,
+          "c": 0.999935
+        },
+        {
+          "w": "American",
+          "s": 9.94,
+          "e": 10.63,
+          "c": 0.999884
+        },
+        {
+          "w": "people",
+          "s": 10.63,
+          "e": 11.39,
+          "c": 0.999979
+        },
+        {
+          "w": "are",
+          "s": 11.39,
+          "e": 11.77,
+          "c": 0.999939
+        },
+        {
+          "w": "catching",
+          "s": 11.77,
+          "e": 12.26,
+          "c": 0.999868
+        },
+        {
+          "w": "on",
+          "s": 12.85,
+          "e": 13.09,
+          "c": 0.999952
+        },
+        {
+          "w": "big",
+          "s": 13.2,
+          "e": 13.59,
+          "c": 0.966122
+        },
+        {
+          "w": "time",
+          "s": 13.59,
+          "e": 14.52,
+          "c": 0.998334
+        },
+        {
+          "w": "that",
+          "s": 14.71,
+          "e": 14.8,
+          "c": 0.75865
+        },
+        {
+          "w": "Donald",
+          "s": 14.8,
+          "e": 15.16,
+          "c": 0.998451
+        },
+        {
+          "w": "Trump",
+          "s": 15.22,
+          "e": 15.46,
+          "c": 0.619245
+        },
+        {
+          "w": "is",
+          "s": 15.55,
+          "e": 15.76,
+          "c": 0.958819
+        },
+        {
+          "w": "not",
+          "s": 15.76,
+          "e": 15.94,
+          "c": 0.979966
+        },
+        {
+          "w": "only",
+          "s": 15.94,
+          "e": 16.18,
+          "c": 0.950904
+        },
+        {
+          "w": "an",
+          "s": 16.18,
+          "e": 16.34,
+          "c": 0.987374
+        },
+        {
+          "w": "oligarch",
+          "s": 16.34,
+          "e": 16.9,
+          "c": 0.954993
+        },
+        {
+          "w": "concerned",
+          "s": 17.04,
+          "e": 17.49,
+          "c": 0.931529
+        },
+        {
+          "w": "about",
+          "s": 17.55,
+          "e": 17.88,
+          "c": 0.988983
+        },
+        {
+          "w": "his",
+          "s": 17.97,
+          "e": 18.2,
+          "c": 0.999422
+        },
+        {
+          "w": "own",
+          "s": 18.2,
+          "e": 18.46,
+          "c": 0.993341
+        },
+        {
+          "w": "family's",
+          "s": 18.46,
+          "e": 19.06,
+          "c": 0.995087
+        },
+        {
+          "w": "wealth",
+          "s": 19.14,
+          "e": 19.34,
+          "c": 0.99934
+        },
+        {
+          "w": "and",
+          "s": 19.72,
+          "e": 19.83,
+          "c": 0.988649
+        },
+        {
+          "w": "the",
+          "s": 19.94,
+          "e": 20.04,
+          "c": 0.995604
+        },
+        {
+          "w": "wealth",
+          "s": 20.13,
+          "e": 20.55,
+          "c": 0.999828
+        },
+        {
+          "w": "of",
+          "s": 20.55,
+          "e": 20.56,
+          "c": 0.999943
+        },
+        {
+          "w": "his",
+          "s": 20.71,
+          "e": 20.87,
+          "c": 0.99979
+        },
+        {
+          "w": "fellow",
+          "s": 20.92,
+          "e": 21.33,
+          "c": 0.999842
+        },
+        {
+          "w": "oligarchs,",
+          "s": 21.33,
+          "e": 22.14,
+          "c": 0.406814
+        },
+        {
+          "w": "he's",
+          "s": 22.14,
+          "e": 22.36,
+          "c": 0.568418
+        },
+        {
+          "w": "really",
+          "s": 22.36,
+          "e": 22.7,
+          "c": 0.999945
+        },
+        {
+          "w": "at",
+          "s": 22.7,
+          "e": 22.81,
+          "c": 0.999884
+        },
+        {
+          "w": "war",
+          "s": 22.81,
+          "e": 22.93,
+          "c": 0.999969
+        },
+        {
+          "w": "against",
+          "s": 23.04,
+          "e": 23.38,
+          "c": 0.999891
+        },
+        {
+          "w": "the",
+          "s": 23.38,
+          "e": 23.54,
+          "c": 0.999977
+        },
+        {
+          "w": "working",
+          "s": 23.55,
+          "e": 23.93,
+          "c": 0.999693
+        },
+        {
+          "w": "class",
+          "s": 23.94,
+          "e": 24.05,
+          "c": 0.999624
+        },
+        {
+          "w": "of",
+          "s": 24.24,
+          "e": 24.35,
+          "c": 0.993193
+        },
+        {
+          "w": "this",
+          "s": 24.46,
+          "e": 24.58,
+          "c": 0.999973
+        },
+        {
+          "w": "country.",
+          "s": 24.58,
+          "e": 25.22,
+          "c": 0.998793
+        },
+        {
+          "w": "the",
+          "s": 25.45,
+          "e": 25.7,
+          "c": 0.426962
+        },
+        {
+          "w": "idea",
+          "s": 25.7,
+          "e": 26.1,
+          "c": 0.99756
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 26.11,
+      "end_s": 30.02,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that at a time when prescription drug prices are so high",
+      "words": [
+        {
+          "w": "that",
+          "s": 26.11,
+          "e": 26.52,
+          "c": 0.987129
+        },
+        {
+          "w": "at",
+          "s": 26.52,
+          "e": 26.59,
+          "c": 0.933975
+        },
+        {
+          "w": "a",
+          "s": 26.73,
+          "e": 26.82,
+          "c": 0.982947
+        },
+        {
+          "w": "time",
+          "s": 26.82,
+          "e": 27.26,
+          "c": 0.99907
+        },
+        {
+          "w": "when",
+          "s": 27.26,
+          "e": 27.44,
+          "c": 0.923929
+        },
+        {
+          "w": "prescription",
+          "s": 27.54,
+          "e": 28.26,
+          "c": 0.970182
+        },
+        {
+          "w": "drug",
+          "s": 28.32,
+          "e": 28.51,
+          "c": 0.953094
+        },
+        {
+          "w": "prices",
+          "s": 28.51,
+          "e": 28.9,
+          "c": 0.99507
+        },
+        {
+          "w": "are",
+          "s": 28.9,
+          "e": 29.01,
+          "c": 0.925393
+        },
+        {
+          "w": "so",
+          "s": 29.4,
+          "e": 29.51,
+          "c": 0.996959
+        },
+        {
+          "w": "high",
+          "s": 29.51,
+          "e": 30.02,
+          "c": 0.996594
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 30,
+      "end_s": 35.08,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "You would cut Medicare Part D subsidies and raise",
+      "words": [
+        {
+          "w": "You",
+          "s": 30,
+          "e": 30.38,
+          "c": 0.757683
+        },
+        {
+          "w": "would",
+          "s": 30.56,
+          "e": 31.01,
+          "c": 0.999943
+        },
+        {
+          "w": "cut",
+          "s": 31.01,
+          "e": 31.35,
+          "c": 0.999683
+        },
+        {
+          "w": "Medicare",
+          "s": 31.47,
+          "e": 32.37,
+          "c": 0.996564
+        },
+        {
+          "w": "Part",
+          "s": 32.44,
+          "e": 32.92,
+          "c": 0.746789
+        },
+        {
+          "w": "D",
+          "s": 32.92,
+          "e": 33.04,
+          "c": 0.993511
+        },
+        {
+          "w": "subsidies",
+          "s": 33.04,
+          "e": 34.22,
+          "c": 0.993724
+        },
+        {
+          "w": "and",
+          "s": 34.22,
+          "e": 34.36,
+          "c": 0.984038
+        },
+        {
+          "w": "raise",
+          "s": 34.79,
+          "e": 35.08,
+          "c": 0.99967
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 35.08,
+      "end_s": 59.67,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "prescription rates by up to 50 percent is really quite cruel and unbelievable from a political sense. In terms of Social Security, again, it is no great secret. Republicans have never liked Social Security. What they essentially want to do is make massive cuts, raising the retirement age, cutting back on colas.",
+      "words": [
+        {
+          "w": "prescription",
+          "s": 35.08,
+          "e": 36.38,
+          "c": 0.871103
+        },
+        {
+          "w": "rates",
+          "s": 36.38,
+          "e": 36.92,
+          "c": 0.338901
+        },
+        {
+          "w": "by",
+          "s": 36.92,
+          "e": 37.13,
+          "c": 0.995344
+        },
+        {
+          "w": "up",
+          "s": 37.13,
+          "e": 37.34,
+          "c": 0.999554
+        },
+        {
+          "w": "to",
+          "s": 37.34,
+          "e": 37.45,
+          "c": 0.999243
+        },
+        {
+          "w": "50",
+          "s": 37.83,
+          "e": 38.2,
+          "c": 0.995521
+        },
+        {
+          "w": "percent",
+          "s": 38.2,
+          "e": 39.01,
+          "c": 0.807759
+        },
+        {
+          "w": "is",
+          "s": 39.01,
+          "e": 39.17,
+          "c": 0.844731
+        },
+        {
+          "w": "really",
+          "s": 39.57,
+          "e": 39.74,
+          "c": 0.99411
+        },
+        {
+          "w": "quite",
+          "s": 39.77,
+          "e": 40.2,
+          "c": 0.992354
+        },
+        {
+          "w": "cruel",
+          "s": 40.2,
+          "e": 40.64,
+          "c": 0.999491
+        },
+        {
+          "w": "and",
+          "s": 40.75,
+          "e": 40.94,
+          "c": 0.98827
+        },
+        {
+          "w": "unbelievable",
+          "s": 40.94,
+          "e": 42.01,
+          "c": 0.999725
+        },
+        {
+          "w": "from",
+          "s": 42.06,
+          "e": 42.42,
+          "c": 0.998243
+        },
+        {
+          "w": "a",
+          "s": 42.42,
+          "e": 42.5,
+          "c": 0.999998
+        },
+        {
+          "w": "political",
+          "s": 42.5,
+          "e": 43.3,
+          "c": 0.999851
+        },
+        {
+          "w": "sense.",
+          "s": 43.37,
+          "e": 44.14,
+          "c": 0.899407
+        },
+        {
+          "w": "In",
+          "s": 44.14,
+          "e": 44.31,
+          "c": 0.839325
+        },
+        {
+          "w": "terms",
+          "s": 44.7,
+          "e": 44.75,
+          "c": 0.999971
+        },
+        {
+          "w": "of",
+          "s": 44.75,
+          "e": 44.92,
+          "c": 1
+        },
+        {
+          "w": "Social",
+          "s": 44.92,
+          "e": 45.23,
+          "c": 0.933278
+        },
+        {
+          "w": "Security,",
+          "s": 45.45,
+          "e": 46.33,
+          "c": 0.978713
+        },
+        {
+          "w": "again,",
+          "s": 46.33,
+          "e": 46.85,
+          "c": 0.999897
+        },
+        {
+          "w": "it",
+          "s": 46.98,
+          "e": 47.11,
+          "c": 0.999994
+        },
+        {
+          "w": "is",
+          "s": 47.11,
+          "e": 47.18,
+          "c": 0.999992
+        },
+        {
+          "w": "no",
+          "s": 47.34,
+          "e": 47.35,
+          "c": 0.999115
+        },
+        {
+          "w": "great",
+          "s": 47.49,
+          "e": 47.89,
+          "c": 0.999887
+        },
+        {
+          "w": "secret.",
+          "s": 47.89,
+          "e": 48.54,
+          "c": 0.904689
+        },
+        {
+          "w": "Republicans",
+          "s": 49.32,
+          "e": 49.5,
+          "c": 0.675332
+        },
+        {
+          "w": "have",
+          "s": 49.5,
+          "e": 49.77,
+          "c": 0.999903
+        },
+        {
+          "w": "never",
+          "s": 49.77,
+          "e": 50.05,
+          "c": 0.999992
+        },
+        {
+          "w": "liked",
+          "s": 50.11,
+          "e": 50.43,
+          "c": 0.999939
+        },
+        {
+          "w": "Social",
+          "s": 50.43,
+          "e": 50.7,
+          "c": 0.999127
+        },
+        {
+          "w": "Security.",
+          "s": 50.88,
+          "e": 51.47,
+          "c": 0.999213
+        },
+        {
+          "w": "What",
+          "s": 52.22,
+          "e": 52.54,
+          "c": 0.965783
+        },
+        {
+          "w": "they",
+          "s": 52.78,
+          "e": 52.86,
+          "c": 0.999594
+        },
+        {
+          "w": "essentially",
+          "s": 52.86,
+          "e": 53.32,
+          "c": 0.995078
+        },
+        {
+          "w": "want",
+          "s": 53.81,
+          "e": 54.03,
+          "c": 0.996502
+        },
+        {
+          "w": "to",
+          "s": 54.12,
+          "e": 54.19,
+          "c": 0.999981
+        },
+        {
+          "w": "do",
+          "s": 54.33,
+          "e": 54.4,
+          "c": 0.999947
+        },
+        {
+          "w": "is",
+          "s": 54.4,
+          "e": 54.56,
+          "c": 0.999908
+        },
+        {
+          "w": "make",
+          "s": 54.56,
+          "e": 54.88,
+          "c": 0.999603
+        },
+        {
+          "w": "massive",
+          "s": 54.88,
+          "e": 55.26,
+          "c": 0.999722
+        },
+        {
+          "w": "cuts,",
+          "s": 55.57,
+          "e": 55.89,
+          "c": 0.96227
+        },
+        {
+          "w": "raising",
+          "s": 55.92,
+          "e": 56.5,
+          "c": 0.999622
+        },
+        {
+          "w": "the",
+          "s": 56.5,
+          "e": 56.59,
+          "c": 0.997889
+        },
+        {
+          "w": "retirement",
+          "s": 57.01,
+          "e": 57.55,
+          "c": 0.999626
+        },
+        {
+          "w": "age,",
+          "s": 57.55,
+          "e": 57.89,
+          "c": 0.627225
+        },
+        {
+          "w": "cutting",
+          "s": 57.97,
+          "e": 58.52,
+          "c": 0.913401
+        },
+        {
+          "w": "back",
+          "s": 58.52,
+          "e": 58.84,
+          "c": 0.999969
+        },
+        {
+          "w": "on",
+          "s": 58.84,
+          "e": 59,
+          "c": 0.99963
+        },
+        {
+          "w": "colas.",
+          "s": 59,
+          "e": 59.67,
+          "c": 0.501844
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 60.08,
+      "end_s": 79.8,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "uh and a variety of other approaches but the bottom line is that we have got to save social security we've got to expand social security benefits and we can do that chris by simply lifting the cap on taxable income so that the very wealthiest people stop paying their",
+      "words": [
+        {
+          "w": "uh",
+          "s": 60.08,
+          "e": 60.16,
+          "c": 0.0763912
+        },
+        {
+          "w": "and",
+          "s": 60.33,
+          "e": 60.63,
+          "c": 0.504868
+        },
+        {
+          "w": "a",
+          "s": 60.63,
+          "e": 60.75,
+          "c": 0.99172
+        },
+        {
+          "w": "variety",
+          "s": 60.75,
+          "e": 61.56,
+          "c": 0.995815
+        },
+        {
+          "w": "of",
+          "s": 61.66,
+          "e": 61.89,
+          "c": 0.997501
+        },
+        {
+          "w": "other",
+          "s": 61.89,
+          "e": 62.53,
+          "c": 0.999357
+        },
+        {
+          "w": "approaches",
+          "s": 62.53,
+          "e": 63.73,
+          "c": 0.932508
+        },
+        {
+          "w": "but",
+          "s": 63.78,
+          "e": 64.14,
+          "c": 0.630364
+        },
+        {
+          "w": "the",
+          "s": 64.33,
+          "e": 64.42,
+          "c": 0.99372
+        },
+        {
+          "w": "bottom",
+          "s": 64.42,
+          "e": 64.98,
+          "c": 0.994337
+        },
+        {
+          "w": "line",
+          "s": 64.98,
+          "e": 65.35,
+          "c": 0.998731
+        },
+        {
+          "w": "is",
+          "s": 65.35,
+          "e": 65.53,
+          "c": 0.996352
+        },
+        {
+          "w": "that",
+          "s": 65.53,
+          "e": 65.9,
+          "c": 0.996786
+        },
+        {
+          "w": "we",
+          "s": 65.94,
+          "e": 66.03,
+          "c": 0.982973
+        },
+        {
+          "w": "have",
+          "s": 66.42,
+          "e": 66.57,
+          "c": 0.998035
+        },
+        {
+          "w": "got",
+          "s": 66.57,
+          "e": 66.88,
+          "c": 0.992411
+        },
+        {
+          "w": "to",
+          "s": 66.99,
+          "e": 67.11,
+          "c": 0.976595
+        },
+        {
+          "w": "save",
+          "s": 67.17,
+          "e": 67.49,
+          "c": 0.9532
+        },
+        {
+          "w": "social",
+          "s": 67.86,
+          "e": 67.97,
+          "c": 0.973144
+        },
+        {
+          "w": "security",
+          "s": 67.97,
+          "e": 68.38,
+          "c": 0.999947
+        },
+        {
+          "w": "we've",
+          "s": 68.55,
+          "e": 68.89,
+          "c": 0.995668
+        },
+        {
+          "w": "got",
+          "s": 68.89,
+          "e": 69.1,
+          "c": 0.999996
+        },
+        {
+          "w": "to",
+          "s": 69.1,
+          "e": 69.24,
+          "c": 1
+        },
+        {
+          "w": "expand",
+          "s": 69.24,
+          "e": 69.67,
+          "c": 0.999968
+        },
+        {
+          "w": "social",
+          "s": 69.67,
+          "e": 70.1,
+          "c": 0.999949
+        },
+        {
+          "w": "security",
+          "s": 70.1,
+          "e": 70.66,
+          "c": 0.999933
+        },
+        {
+          "w": "benefits",
+          "s": 70.66,
+          "e": 71.27,
+          "c": 0.99967
+        },
+        {
+          "w": "and",
+          "s": 71.27,
+          "e": 71.55,
+          "c": 0.981644
+        },
+        {
+          "w": "we",
+          "s": 71.83,
+          "e": 71.83,
+          "c": 0.999994
+        },
+        {
+          "w": "can",
+          "s": 71.87,
+          "e": 72.13,
+          "c": 0.999949
+        },
+        {
+          "w": "do",
+          "s": 72.21,
+          "e": 72.36,
+          "c": 0.999796
+        },
+        {
+          "w": "that",
+          "s": 72.36,
+          "e": 72.79,
+          "c": 0.99938
+        },
+        {
+          "w": "chris",
+          "s": 72.79,
+          "e": 73.36,
+          "c": 0.892422
+        },
+        {
+          "w": "by",
+          "s": 73.36,
+          "e": 73.53,
+          "c": 0.9995
+        },
+        {
+          "w": "simply",
+          "s": 73.69,
+          "e": 74.05,
+          "c": 0.99999
+        },
+        {
+          "w": "lifting",
+          "s": 74.05,
+          "e": 74.66,
+          "c": 0.999903
+        },
+        {
+          "w": "the",
+          "s": 74.66,
+          "e": 74.92,
+          "c": 1
+        },
+        {
+          "w": "cap",
+          "s": 74.92,
+          "e": 75.16,
+          "c": 0.999811
+        },
+        {
+          "w": "on",
+          "s": 75.18,
+          "e": 75.35,
+          "c": 0.999996
+        },
+        {
+          "w": "taxable",
+          "s": 75.35,
+          "e": 75.96,
+          "c": 0.999914
+        },
+        {
+          "w": "income",
+          "s": 75.96,
+          "e": 76.48,
+          "c": 0.999607
+        },
+        {
+          "w": "so",
+          "s": 76.48,
+          "e": 76.63,
+          "c": 0.999977
+        },
+        {
+          "w": "that",
+          "s": 76.7,
+          "e": 77,
+          "c": 0.999207
+        },
+        {
+          "w": "the",
+          "s": 77,
+          "e": 77.17,
+          "c": 0.999966
+        },
+        {
+          "w": "very",
+          "s": 77.25,
+          "e": 77.52,
+          "c": 0.999979
+        },
+        {
+          "w": "wealthiest",
+          "s": 77.69,
+          "e": 78.48,
+          "c": 0.996286
+        },
+        {
+          "w": "people",
+          "s": 78.48,
+          "e": 78.99,
+          "c": 0.998304
+        },
+        {
+          "w": "stop",
+          "s": 79.08,
+          "e": 79.26,
+          "c": 0.421774
+        },
+        {
+          "w": "paying",
+          "s": 79.26,
+          "e": 79.39,
+          "c": 0.999054
+        },
+        {
+          "w": "their",
+          "s": 79.78,
+          "e": 79.8,
+          "c": 0.781624
+        }
+      ]
+    }
+  ]
+}
