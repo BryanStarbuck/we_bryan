@@ -1,0 +1,92 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "I’ve Been Attacked For Saying This…"
+    URL: "https://www.youtube.com/watch?v=Rggp5FSbi9Y"
+    Video_ID: "Rggp5FSbi9Y"
+    Show: "Tucker Carlson"
+    Runtime: "00:00:20"
+    Language: "en"
+
+  Media:
+    File: "Rggp5FSbi9Y.mp4"
+    SHA256: "628d34e3452df3a7b5fbcfeaa41d29c8e8de6b4df4f35e554f4ead1bb4a57e99"
+    Bytes: 1031896
+    Duration_Seconds: 20
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=Rggp5FSbi9Y"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "Rggp5FSbi9Y.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/tucker_carlson_us_pres/Rggp5FSbi9Y/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCGttrUON87gWfU6dMWm1fcA"
+    Uploader_ID: "@TuckerCarlson"
+    View_Count: 143553
+    Like_Count: 5068
+    Comment_Count: 410
+    Availability: "public"
+    Published_At: "2026-08-11T00:30:29+00:00"
+    Captured_At: "2026-08-14T06:48:23-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:45.036477-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 75
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:48:23.343122-07:00"
+    Transcription_Finished: "2026-09-10T11:59:45.036477-07:00"
+    Recorded: "2026-08-11"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "Rggp5FSbi9Y.transcription"
+    Transcript_SHA256: "d0ade17650315cb3edff67c8fb72e9a9b6db2426903b911fdabd350aadab63a1"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "tucker_carlson_us_pres"
+    video_uid: "tucker_carlson_us_pres::Rggp5FSbi9Y"
+    video_key: "Rggp5FSbi9Y"
+    youtube_id: "Rggp5FSbi9Y"
+    priority: 530
+    ceiling: 800
+    raw_score: 530
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 12
+    seat_rank: 300
+    challenger: true
+    round: 48
+    status: "partial"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=Rggp5FSbi9Y"
+    source_ref: "Rggp5FSbi9Y"
+    subject_kind: "new_politician"

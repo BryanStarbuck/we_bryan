@@ -1,0 +1,91 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Why are you always lying, Donald?"
+    URL: "https://www.youtube.com/watch?v=9REUYgjzOYI"
+    Video_ID: "9REUYgjzOYI"
+    Show: "Rep. Ilhan Omar"
+    Runtime: "00:00:20"
+    Language: "en"
+
+  Media:
+    File: "9REUYgjzOYI.mp4"
+    SHA256: "956736bcbc71431a3b63735338c700828d8411071eebaa5e03712ba3f58148ee"
+    Bytes: 721260
+    Duration_Seconds: 20
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=9REUYgjzOYI"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "9REUYgjzOYI.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/ilhan_omar_mn_05/9REUYgjzOYI/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC4meVUkgJUxyHE5CifWAumQ"
+    Uploader_ID: "@rep.ilhanomar2703"
+    View_Count: 4904
+    Like_Count: 68
+    Availability: "public"
+    Published_At: "2025-10-10T20:46:02+00:00"
+    Captured_At: "2026-08-14T06:30:21-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:02.235008-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 45
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:30:22.855379-07:00"
+    Transcription_Finished: "2026-09-10T11:59:02.235008-07:00"
+    Recorded: "2025-10-10"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "9REUYgjzOYI.transcription"
+    Transcript_SHA256: "bbf106dbc662f6cf39f5fd54c78b814817268524a47f75310b763d514e5ec03f"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "ilhan_omar_mn_05"
+    video_uid: "ilhan_omar_mn_05::9REUYgjzOYI"
+    video_key: "9REUYgjzOYI"
+    youtube_id: "9REUYgjzOYI"
+    priority: 450
+    ceiling: 800
+    raw_score: 450
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 5
+    seat_rank: 150
+    challenger: true
+    round: 2
+    status: "partial"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=9REUYgjzOYI"
+    source_ref: "9REUYgjzOYI"
+    subject_kind: "new_politician"

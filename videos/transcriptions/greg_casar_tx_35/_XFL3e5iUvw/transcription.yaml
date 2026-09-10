@@ -1,0 +1,92 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Why I’m Taxing AI Corporations to Save Your Job"
+    URL: "https://www.youtube.com/watch?v=_XFL3e5iUvw"
+    Video_ID: "_XFL3e5iUvw"
+    Show: "Congressman Greg Casar"
+    Runtime: "00:01:00"
+    Language: "en"
+
+  Media:
+    File: "_XFL3e5iUvw.mp4"
+    SHA256: "160162b097f6db277d30b6089d42acbae6e86e833f668a70c1bdbf6fca426e5a"
+    Bytes: 3146191
+    Duration_Seconds: 60
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=_XFL3e5iUvw"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "_XFL3e5iUvw.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/greg_casar_tx_35/_XFL3e5iUvw/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCyct8J6LAICeOl0vZyhXD8A"
+    Uploader_ID: "@repcasar"
+    View_Count: 1276
+    Like_Count: 72
+    Comment_Count: 8
+    Availability: "public"
+    Published_At: "2026-08-06T20:54:12+00:00"
+    Captured_At: "2026-08-14T06:29:53-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:01.812826-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 174
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:29:54.182654-07:00"
+    Transcription_Finished: "2026-09-10T11:59:01.812826-07:00"
+    Recorded: "2026-08-06"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "_XFL3e5iUvw.transcription"
+    Transcript_SHA256: "a2a18679a4d8c661c8da037866a400a348f3b9095596b85751a583986a292e73"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "greg_casar_tx_35"
+    video_uid: "greg_casar_tx_35::_XFL3e5iUvw"
+    video_key: "_XFL3e5iUvw"
+    youtube_id: "_XFL3e5iUvw"
+    priority: 450
+    ceiling: 800
+    raw_score: 450
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 5
+    seat_rank: 150
+    challenger: true
+    round: 16
+    status: "partial"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=_XFL3e5iUvw"
+    source_ref: "_XFL3e5iUvw"
+    subject_kind: "new_politician"

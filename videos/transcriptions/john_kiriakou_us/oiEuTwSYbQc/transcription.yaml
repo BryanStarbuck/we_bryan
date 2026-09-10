@@ -1,0 +1,91 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Can NYC Mayor Mamdani ACTUALLY arrest Netanyahu? #johnkiriakou #cia #mamdani #netanyahu"
+    URL: "https://www.youtube.com/watch?v=oiEuTwSYbQc"
+    Video_ID: "oiEuTwSYbQc"
+    Show: "John Kiriakou"
+    Runtime: "00:01:19"
+    Language: "en"
+
+  Media:
+    File: "oiEuTwSYbQc.mp4"
+    SHA256: "6df4de0f8fe6a1686acbc17ab87c2c81934e37f7d51e20f5e2b1b169814ddba3"
+    Bytes: 2610233
+    Duration_Seconds: 79
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=oiEuTwSYbQc"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "oiEuTwSYbQc.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/john_kiriakou_us/oiEuTwSYbQc/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCyFoulEppT3kYN_cSt11M8Q"
+    Uploader_ID: "@realjohnkiriakou"
+    View_Count: 38086
+    Like_Count: 1612
+    Comment_Count: 136
+    Availability: "public"
+    Published_At: "2026-07-22T14:54:47+00:00"
+    Captured_At: "2026-08-14T06:32:05-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:07.229142-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 201
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:32:05.934824-07:00"
+    Transcription_Finished: "2026-09-10T11:59:07.229142-07:00"
+    Recorded: "2026-07-22"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "oiEuTwSYbQc.transcription"
+    Transcript_SHA256: "95f2b96f2a1b7a0dc4dcdf54e560ffdbe56e50f0608d0d6b2f4dbeb5eafface7"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "john_kiriakou_us"
+    video_uid: "john_kiriakou_us::oiEuTwSYbQc"
+    video_key: "oiEuTwSYbQc"
+    youtube_id: "oiEuTwSYbQc"
+    priority: 50
+    ceiling: 800
+    raw_score: 50
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 26
+    challenger: false
+    round: 4
+    status: "partial"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=oiEuTwSYbQc"
+    source_ref: "oiEuTwSYbQc"
+    subject_kind: "new_politician"

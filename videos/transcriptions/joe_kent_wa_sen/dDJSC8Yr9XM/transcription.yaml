@@ -1,0 +1,92 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Jason Rantz  Show: Vaccine Mandates Are A Tool For Control"
+    URL: "https://www.youtube.com/watch?v=dDJSC8Yr9XM"
+    Video_ID: "dDJSC8Yr9XM"
+    Show: "Joe Kent"
+    Runtime: "00:00:59"
+    Language: "en"
+
+  Media:
+    File: "dDJSC8Yr9XM.mp4"
+    SHA256: "53f39e2717c8d79b7cc863ca32dbbfb45d7f886377abda6f2249d321bfb9681a"
+    Bytes: 1891759
+    Duration_Seconds: 59
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=dDJSC8Yr9XM"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "dDJSC8Yr9XM.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/joe_kent_wa_sen/dDJSC8Yr9XM/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCKbuJaeG0pW27AMO1MwMfJg"
+    Uploader_ID: "@JoeKentforCongress"
+    View_Count: 1074
+    Like_Count: 50
+    Comment_Count: 16
+    Availability: "public"
+    Published_At: "2021-08-17T21:11:31+00:00"
+    Captured_At: "2026-08-14T06:31:36-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:06.325952-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 205
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:31:36.946972-07:00"
+    Transcription_Finished: "2026-09-10T11:59:06.325952-07:00"
+    Recorded: "2021-08-17"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "dDJSC8Yr9XM.transcription"
+    Transcript_SHA256: "4d31b12f1263ac628a6c36e9fce23a33e2d870f33ec9c5f3ca669e54b1a06df3"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "joe_kent_wa_sen"
+    video_uid: "joe_kent_wa_sen::dDJSC8Yr9XM"
+    video_key: "dDJSC8Yr9XM"
+    youtube_id: "dDJSC8Yr9XM"
+    priority: 245
+    ceiling: 800
+    raw_score: 245
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 185
+    seat_rank: 195
+    challenger: false
+    round: 13
+    status: "partial"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=dDJSC8Yr9XM"
+    source_ref: "dDJSC8Yr9XM"
+    subject_kind: "new_politician"

@@ -1,0 +1,81 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Public Education Summit"
+    URL: "https://www.youtube.com/watch?v=4_ESccjEVDo"
+    Video_ID: "4_ESccjEVDo"
+    Show: "Congressman Jamaal Bowman"
+    Runtime: "00:00:45"
+    Language: "en"
+
+  Media:
+    File: "4_ESccjEVDo.mp4"
+    SHA256: "37d8ad96f1728738589e951b25f974102306087a5cc5370d059498e709428a16"
+    Bytes: 3037095
+    Duration_Seconds: 45
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=4_ESccjEVDo"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "4_ESccjEVDo.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/jamaal_bowman_ny_16/4_ESccjEVDo/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCkvPTT-ZWkzm8j95kIwz0ag"
+    Uploader_ID: "@repbowman"
+    View_Count: 869
+    Like_Count: 21
+    Comment_Count: 8
+    Availability: "public"
+    Published_At: "2023-12-18T16:32:47+00:00"
+    Captured_At: "2026-08-14T06:30:58-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:03.655834-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 96
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:30:59.134937-07:00"
+    Transcription_Finished: "2026-09-10T11:59:03.655834-07:00"
+    Recorded: "2023-12-18"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "4_ESccjEVDo.transcription"
+    Transcript_SHA256: "20a99cdb110317c1e85ae2a70a8310216878d6711b661a635cbd36075a6edec2"
+
+  Demand:   # NO LIVE ROW — this video was adopted from the backlog
+    # video_demand.csv carried no row for this video_uid when the words
+    # were made, and no .demand.yaml seed was written at download time.
+    # What is stated below is what the paths on disk prove; everything
+    # the engine would have priced is absent because nothing measured it.
+    roster_key: "jamaal_bowman_ny_16"
+    video_uid: "jamaal_bowman_ny_16::4_ESccjEVDo"
+    video_key: "4_ESccjEVDo"
+    youtube_id: "4_ESccjEVDo"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=4_ESccjEVDo"
+    demand_row_present: false
+    adopted_from: "in_progress.csv — p_download_videos STAGE 1D backlog"

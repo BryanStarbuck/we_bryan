@@ -1,0 +1,92 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "I’m introducing the first-ever Data Center ￼Bill of Rights"
+    URL: "https://www.youtube.com/watch?v=2AY95j8FXYA"
+    Video_ID: "2AY95j8FXYA"
+    Show: "Rep. Ro Khanna"
+    Runtime: "00:00:48"
+    Language: "en"
+
+  Media:
+    File: "2AY95j8FXYA.mp4"
+    SHA256: "f0731a425e79eb8a04e0d9cd5d9d4d96ebd2b7071defdf4affde527bdf459d51"
+    Bytes: 2569252
+    Duration_Seconds: 48
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=2AY95j8FXYA"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "2AY95j8FXYA.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/ro_khanna_ca_17/2AY95j8FXYA/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCr4KOYv1o1oEQhy1jhhm3pQ"
+    Uploader_ID: "@RepRoKhanna"
+    View_Count: 4855
+    Like_Count: 731
+    Comment_Count: 73
+    Availability: "public"
+    Published_At: "2026-08-06T14:52:02+00:00"
+    Captured_At: "2026-08-14T06:46:55-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:37.360591-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 127
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:46:56.211381-07:00"
+    Transcription_Finished: "2026-09-10T11:59:37.360591-07:00"
+    Recorded: "2026-08-06"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "2AY95j8FXYA.transcription"
+    Transcript_SHA256: "66fe6359a85a75ff8024cde7d6ecd01f436259cdeca197c549325cd8fc6c32f6"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "ro_khanna_ca_17"
+    video_uid: "ro_khanna_ca_17::2AY95j8FXYA"
+    video_key: "2AY95j8FXYA"
+    youtube_id: "2AY95j8FXYA"
+    priority: 400
+    ceiling: 800
+    raw_score: 400
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    seat_rank: 150
+    challenger: true
+    round: 6
+    status: "partial"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=2AY95j8FXYA"
+    source_ref: "2AY95j8FXYA"
+    subject_kind: "new_politician"

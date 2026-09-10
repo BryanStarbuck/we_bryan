@@ -1,0 +1,92 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Power"
+    URL: "https://www.youtube.com/watch?v=4YwdN5KB66s"
+    Video_ID: "4YwdN5KB66s"
+    Show: "ninaturnerohio"
+    Runtime: "00:00:30"
+    Language: "en"
+
+  Media:
+    File: "4YwdN5KB66s.mp4"
+    SHA256: "dd55cb52aef12fe11725459907cb330e0e0b0da88fab4efb0a39e49d7e874615"
+    Bytes: 7966252
+    Duration_Seconds: 30
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=4YwdN5KB66s"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "4YwdN5KB66s.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/nina_turner_oh_11/4YwdN5KB66s/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCIihYjXhJMQakQIJ0qPbfMA"
+    Uploader_ID: "@ninaturnerohio"
+    View_Count: 2547
+    Like_Count: 24
+    Comment_Count: 1
+    Availability: "public"
+    Published_At: "2014-10-15T15:01:04+00:00"
+    Captured_At: "2026-08-14T06:45:37-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:34.592499-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 77
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:45:38.662462-07:00"
+    Transcription_Finished: "2026-09-10T11:59:34.592499-07:00"
+    Recorded: "2014-10-15"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "4YwdN5KB66s.transcription"
+    Transcript_SHA256: "15bb2577550b6798c4bfdb247077a9738f480e59c9e53170d2522c1647d0afab"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "nina_turner_oh_11"
+    video_uid: "nina_turner_oh_11::4YwdN5KB66s"
+    video_key: "4YwdN5KB66s"
+    youtube_id: "4YwdN5KB66s"
+    priority: 400
+    ceiling: 800
+    raw_score: 400
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    seat_rank: 150
+    challenger: true
+    round: 1
+    status: "partial"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=4YwdN5KB66s"
+    source_ref: "4YwdN5KB66s"
+    subject_kind: "new_politician"

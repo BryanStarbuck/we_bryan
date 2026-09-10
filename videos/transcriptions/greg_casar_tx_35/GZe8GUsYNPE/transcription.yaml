@@ -1,0 +1,92 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Five things that are ACTUALLY WORTH the money"
+    URL: "https://www.youtube.com/watch?v=GZe8GUsYNPE"
+    Video_ID: "GZe8GUsYNPE"
+    Show: "Congressman Greg Casar"
+    Runtime: "00:00:21"
+    Language: "en"
+
+  Media:
+    File: "GZe8GUsYNPE.mp4"
+    SHA256: "ddfad465bae7520026e1adfc23a202c57782320c84382876849ef6f8e4865209"
+    Bytes: 709728
+    Duration_Seconds: 21
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=GZe8GUsYNPE"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "GZe8GUsYNPE.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/greg_casar_tx_35/GZe8GUsYNPE/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCyct8J6LAICeOl0vZyhXD8A"
+    Uploader_ID: "@repcasar"
+    View_Count: 1580
+    Like_Count: 12
+    Comment_Count: 4
+    Availability: "public"
+    Published_At: "2026-08-09T17:33:19+00:00"
+    Captured_At: "2026-08-14T06:29:51-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:01.382785-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 44
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:29:52.309049-07:00"
+    Transcription_Finished: "2026-09-10T11:59:01.382785-07:00"
+    Recorded: "2026-08-09"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "GZe8GUsYNPE.transcription"
+    Transcript_SHA256: "28e88ebaa81203321c2ea73559e58df40fa685863e159e34cbe8fa9c4c37d3fd"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "greg_casar_tx_35"
+    video_uid: "greg_casar_tx_35::GZe8GUsYNPE"
+    video_key: "GZe8GUsYNPE"
+    youtube_id: "GZe8GUsYNPE"
+    priority: 450
+    ceiling: 800
+    raw_score: 450
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 5
+    seat_rank: 150
+    challenger: true
+    round: 7
+    status: "partial"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=GZe8GUsYNPE"
+    source_ref: "GZe8GUsYNPE"
+    subject_kind: "new_politician"

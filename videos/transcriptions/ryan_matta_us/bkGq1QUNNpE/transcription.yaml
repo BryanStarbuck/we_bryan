@@ -1,0 +1,91 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Best AI software to translate video into English with words not transcribed"
+    URL: "https://www.youtube.com/watch?v=bkGq1QUNNpE"
+    Video_ID: "bkGq1QUNNpE"
+    Show: "Ryan Matta"
+    Runtime: "00:03:00"
+    Language: "en"
+
+  Media:
+    File: "bkGq1QUNNpE.mp4"
+    SHA256: "c084c9ead476aeb5797fde8a7a8dafde2c76d16a753fe0184f0841358f467c97"
+    Bytes: 5359374
+    Duration_Seconds: 180
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=bkGq1QUNNpE"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "bkGq1QUNNpE.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/ryan_matta_us/bkGq1QUNNpE/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCUBwBSeW51ZflGMPE-2kjwA"
+    Uploader_ID: "@RyanMatta"
+    View_Count: 1301
+    Like_Count: 33
+    Comment_Count: 1
+    Availability: "public"
+    Published_At: "2026-03-23T00:01:49+00:00"
+    Captured_At: "2026-08-14T06:47:18-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:38.200992-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 699
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:47:19.315775-07:00"
+    Transcription_Finished: "2026-09-10T11:59:38.200992-07:00"
+    Recorded: "2026-03-23"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "bkGq1QUNNpE.transcription"
+    Transcript_SHA256: "5fe88a44feb5dc829aac8642f30105e9ad6e9147e70af5ebfb667dec605484c4"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "ryan_matta_us"
+    video_uid: "ryan_matta_us::bkGq1QUNNpE"
+    video_key: "bkGq1QUNNpE"
+    youtube_id: "bkGq1QUNNpE"
+    priority: 150
+    ceiling: 800
+    raw_score: 150
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 5
+    challenger: false
+    round: 58
+    status: "partial"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=bkGq1QUNNpE"
+    source_ref: "bkGq1QUNNpE"
+    subject_kind: "new_politician"

@@ -1,0 +1,81 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "The Anchormen Show EP 147 -  The American Dream"
+    URL: "https://www.youtube.com/watch?v=E7m-n5ue9EI"
+    Video_ID: "E7m-n5ue9EI"
+    Show: "Former Congressman Matt Gaetz"
+    Runtime: "00:51:53"
+    Language: "en"
+
+  Media:
+    File: "E7m-n5ue9EI.mp4"
+    SHA256: "536f81267da5ede7a8e776d177cfad4ab86b43c6a45930bf7e21a5d20a1f241f"
+    Bytes: 189937361
+    Duration_Seconds: 3113
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=E7m-n5ue9EI"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "E7m-n5ue9EI.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/matt_gaetz_us/E7m-n5ue9EI/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UClqXcJew_A3s8qiX-T4a9CA"
+    Uploader_ID: "@RepMattGaetz"
+    View_Count: 409
+    Like_Count: 40
+    Comment_Count: 3
+    Availability: "public"
+    Published_At: "2026-07-24T11:57:00+00:00"
+    Captured_At: "2026-08-14T06:43:39-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:29.591218-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 8864
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:43:57.139898-07:00"
+    Transcription_Finished: "2026-09-10T11:59:29.591218-07:00"
+    Recorded: "2026-07-24"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "E7m-n5ue9EI.transcription"
+    Transcript_SHA256: "d242da76764b205e1b81b8680629fd095af008cb50d08a68770740e6d7aff778"
+
+  Demand:   # NO LIVE ROW — this video was adopted from the backlog
+    # video_demand.csv carried no row for this video_uid when the words
+    # were made, and no .demand.yaml seed was written at download time.
+    # What is stated below is what the paths on disk prove; everything
+    # the engine would have priced is absent because nothing measured it.
+    roster_key: "matt_gaetz_us"
+    video_uid: "matt_gaetz_us::E7m-n5ue9EI"
+    video_key: "E7m-n5ue9EI"
+    youtube_id: "E7m-n5ue9EI"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=E7m-n5ue9EI"
+    demand_row_present: false
+    adopted_from: "in_progress.csv — p_download_videos STAGE 1D backlog"

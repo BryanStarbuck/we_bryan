@@ -1,0 +1,91 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Easter Mesage 2 - Confrontation: The Book of Job"
+    URL: "https://www.youtube.com/watch?v=9UDqPTizqOk"
+    Video_ID: "9UDqPTizqOk"
+    Show: "Martyr Made"
+    Runtime: "02:38:27"
+    Language: "en"
+
+  Media:
+    File: "9UDqPTizqOk.mp4"
+    SHA256: "09c0c5320822a5bc19c9aef0bd0a9e1022d62b9a58c475cc195c5759cbb540a0"
+    Bytes: 209984988
+    Duration_Seconds: 9507
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=9UDqPTizqOk"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "9UDqPTizqOk.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/darryl_cooper_us/9UDqPTizqOk/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCeDF9E2rwf_iQhcVGoFiqKQ"
+    Uploader_ID: "@Martyrmade"
+    View_Count: 3208
+    Like_Count: 102
+    Comment_Count: 29
+    Availability: "public"
+    Published_At: "2025-04-21T01:13:14+00:00"
+    Captured_At: "2026-08-14T06:24:57-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:58:53.240207-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 21762
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:25:37.113542-07:00"
+    Transcription_Finished: "2026-09-10T11:58:53.240207-07:00"
+    Recorded: "2025-04-21"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "9UDqPTizqOk.transcription"
+    Transcript_SHA256: "53955bdebefd43c0f7ee1f9b06278e0195137ce4d41765c7688058b2dd7c2f26"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "darryl_cooper_us"
+    video_uid: "darryl_cooper_us::9UDqPTizqOk"
+    video_key: "9UDqPTizqOk"
+    youtube_id: "9UDqPTizqOk"
+    priority: 110
+    ceiling: 800
+    raw_score: 110
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 9
+    challenger: false
+    round: 1
+    status: "partial"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=9UDqPTizqOk"
+    source_ref: "9UDqPTizqOk"
+    subject_kind: "new_politician"

@@ -1,0 +1,80 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Rep. Bush Highlights “Myth of Impartiality” of Supreme Court at Oversight Committee Roundtable"
+    URL: "https://www.youtube.com/watch?v=_KWOWK-Zp9w"
+    Video_ID: "_KWOWK-Zp9w"
+    Show: "Congresswoman Cori Bush"
+    Runtime: "00:05:45"
+    Language: "en"
+
+  Media:
+    File: "_KWOWK-Zp9w.mp4"
+    SHA256: "ec982accda647964d69c1590a67329f4d606a988cfe5d48418f2588fab948739"
+    Bytes: 39996667
+    Duration_Seconds: 345
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=_KWOWK-Zp9w"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "_KWOWK-Zp9w.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/cori_bush_mo_01/_KWOWK-Zp9w/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCBUz9CarEV1QwQtWO6V0gwg"
+    Uploader_ID: "@RepCori"
+    View_Count: 467
+    Like_Count: 13
+    Availability: "public"
+    Published_At: "2024-06-12T18:15:12+00:00"
+    Captured_At: "2026-08-14T05:11:49-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:58:32.965307-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 964
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:20:09.843801-07:00"
+    Transcription_Finished: "2026-09-10T11:58:32.965307-07:00"
+    Recorded: "2024-06-12"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "_KWOWK-Zp9w.transcription"
+    Transcript_SHA256: "bae6f964b4408f13ff5fcfb744b5f0e61cbe926dc1247dca0644afd299dfd0c8"
+
+  Demand:   # NO LIVE ROW — this video was adopted from the backlog
+    # video_demand.csv carried no row for this video_uid when the words
+    # were made, and no .demand.yaml seed was written at download time.
+    # What is stated below is what the paths on disk prove; everything
+    # the engine would have priced is absent because nothing measured it.
+    roster_key: "cori_bush_mo_01"
+    video_uid: "cori_bush_mo_01::_KWOWK-Zp9w"
+    video_key: "_KWOWK-Zp9w"
+    youtube_id: "_KWOWK-Zp9w"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=_KWOWK-Zp9w"
+    demand_row_present: false
+    adopted_from: "in_progress.csv — p_download_videos STAGE 1D backlog"

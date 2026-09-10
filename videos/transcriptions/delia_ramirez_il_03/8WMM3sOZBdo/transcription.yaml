@@ -1,0 +1,80 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Homeland Security Full Committee Hearing February 28, 2023"
+    URL: "https://www.youtube.com/watch?v=8WMM3sOZBdo"
+    Video_ID: "8WMM3sOZBdo"
+    Show: "Congresswoman Delia Ramirez"
+    Runtime: "00:05:12"
+    Language: "en"
+
+  Media:
+    File: "8WMM3sOZBdo.mp4"
+    SHA256: "4ff6cf0ed688a5d3a1c86437caf4d17cc5a89b9d47cfc477ae8c79f6459c8d4f"
+    Bytes: 25414765
+    Duration_Seconds: 312
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=8WMM3sOZBdo"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "8WMM3sOZBdo.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/delia_ramirez_il_03/8WMM3sOZBdo/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCjqzVgDgRrZdoYOnngB28CA"
+    Uploader_ID: "@congresswomandeliaramirez"
+    View_Count: 42
+    Like_Count: 2
+    Availability: "public"
+    Published_At: "2023-03-06T14:50:46+00:00"
+    Captured_At: "2026-08-14T06:28:31-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:58:57.976614-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 783
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:28:34.324640-07:00"
+    Transcription_Finished: "2026-09-10T11:58:57.976614-07:00"
+    Recorded: "2023-03-06"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "8WMM3sOZBdo.transcription"
+    Transcript_SHA256: "24753dcfb0a6de4d240cecbf64f803ee05b27f56e075adb4fa7870ee7684ad9f"
+
+  Demand:   # NO LIVE ROW — this video was adopted from the backlog
+    # video_demand.csv carried no row for this video_uid when the words
+    # were made, and no .demand.yaml seed was written at download time.
+    # What is stated below is what the paths on disk prove; everything
+    # the engine would have priced is absent because nothing measured it.
+    roster_key: "delia_ramirez_il_03"
+    video_uid: "delia_ramirez_il_03::8WMM3sOZBdo"
+    video_key: "8WMM3sOZBdo"
+    youtube_id: "8WMM3sOZBdo"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=8WMM3sOZBdo"
+    demand_row_present: false
+    adopted_from: "in_progress.csv — p_download_videos STAGE 1D backlog"

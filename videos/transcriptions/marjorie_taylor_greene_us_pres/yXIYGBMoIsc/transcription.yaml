@@ -1,0 +1,81 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Rep. Marjorie Taylor Greene Leads Hearing on Investigating the Black Market of Baby Organ Harvesting"
+    URL: "https://www.youtube.com/watch?v=yXIYGBMoIsc"
+    Video_ID: "yXIYGBMoIsc"
+    Show: "Congresswoman Marjorie Taylor Greene"
+    Runtime: "02:02:15"
+    Language: "en"
+
+  Media:
+    File: "yXIYGBMoIsc.mp4"
+    SHA256: "00c96b13c28e241a64b6c162af828f84c2ba7dc8a54f5c9720f6e15af641e3b5"
+    Bytes: 743013642
+    Duration_Seconds: 7335
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=yXIYGBMoIsc"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "yXIYGBMoIsc.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/marjorie_taylor_greene_us_pres/yXIYGBMoIsc/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UClaOI39MWFPLWHsjHy8kXGg"
+    Uploader_ID: "@RepMTG"
+    View_Count: 13661
+    Like_Count: 768
+    Comment_Count: 183
+    Availability: "public"
+    Published_At: "2024-03-19T22:16:02+00:00"
+    Captured_At: "2026-08-14T06:39:12-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:25.813801-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 17550
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:40:58.667831-07:00"
+    Transcription_Finished: "2026-09-10T11:59:25.813801-07:00"
+    Recorded: "2024-03-19"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "yXIYGBMoIsc.transcription"
+    Transcript_SHA256: "7ff17eef63d7b7d4e2dfa41e3d92a2d32f140da35cd795367f51945de1301f36"
+
+  Demand:   # NO LIVE ROW — this video was adopted from the backlog
+    # video_demand.csv carried no row for this video_uid when the words
+    # were made, and no .demand.yaml seed was written at download time.
+    # What is stated below is what the paths on disk prove; everything
+    # the engine would have priced is absent because nothing measured it.
+    roster_key: "marjorie_taylor_greene_us_pres"
+    video_uid: "marjorie_taylor_greene_us_pres::yXIYGBMoIsc"
+    video_key: "yXIYGBMoIsc"
+    youtube_id: "yXIYGBMoIsc"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=yXIYGBMoIsc"
+    demand_row_present: false
+    adopted_from: "in_progress.csv — p_download_videos STAGE 1D backlog"

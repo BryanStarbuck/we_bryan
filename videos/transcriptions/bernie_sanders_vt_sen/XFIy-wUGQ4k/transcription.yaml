@@ -1,0 +1,81 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "AI must benefit humanity, not hurt us."
+    URL: "https://www.youtube.com/watch?v=XFIy-wUGQ4k"
+    Video_ID: "XFIy-wUGQ4k"
+    Show: "Senator Bernie Sanders"
+    Runtime: "00:18:55"
+    Language: "en"
+
+  Media:
+    File: "XFIy-wUGQ4k.mp4"
+    SHA256: "0e707d337f389ed78893bfeb516e6e6bc419cede28555d5491a5c4752c476b0a"
+    Bytes: 84930343
+    Duration_Seconds: 1135
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=XFIy-wUGQ4k"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "XFIy-wUGQ4k.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/bernie_sanders_vt_sen/XFIy-wUGQ4k/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCD_DaKNac0Ta-2PeHuoQ1uA"
+    Uploader_ID: "@SenatorSanders"
+    View_Count: 9236
+    Like_Count: 1179
+    Comment_Count: 209
+    Availability: "public"
+    Published_At: "2026-07-23T17:51:50+00:00"
+    Captured_At: "2026-08-14T05:04:09-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:58:13.402425-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 2478
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:17:15.441490-07:00"
+    Transcription_Finished: "2026-09-10T11:58:13.402425-07:00"
+    Recorded: "2026-07-23"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "XFIy-wUGQ4k.transcription"
+    Transcript_SHA256: "63fb37e8cb2edc4b3a62bb771c118cdd40dd7b07d6b991f56391edb18f5b8ffd"
+
+  Demand:   # NO LIVE ROW — this video was adopted from the backlog
+    # video_demand.csv carried no row for this video_uid when the words
+    # were made, and no .demand.yaml seed was written at download time.
+    # What is stated below is what the paths on disk prove; everything
+    # the engine would have priced is absent because nothing measured it.
+    roster_key: "bernie_sanders_vt_sen"
+    video_uid: "bernie_sanders_vt_sen::XFIy-wUGQ4k"
+    video_key: "XFIy-wUGQ4k"
+    youtube_id: "XFIy-wUGQ4k"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=XFIy-wUGQ4k"
+    demand_row_present: false
+    adopted_from: "in_progress.csv — p_download_videos STAGE 1D backlog"

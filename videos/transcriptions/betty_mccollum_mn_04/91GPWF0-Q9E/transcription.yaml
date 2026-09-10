@@ -1,0 +1,92 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "My Message to Speaker Johnson"
+    URL: "https://www.youtube.com/watch?v=91GPWF0-Q9E"
+    Video_ID: "91GPWF0-Q9E"
+    Show: "Betty McCollum"
+    Runtime: "00:01:22"
+    Language: "en"
+
+  Media:
+    File: "91GPWF0-Q9E.mp4"
+    SHA256: "271e9a0b5dc43d3f6102beddadd94b6a236ec87aa20c5775f57cfe289d53e01f"
+    Bytes: 4697227
+    Duration_Seconds: 82
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=91GPWF0-Q9E"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "91GPWF0-Q9E.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/betty_mccollum_mn_04/91GPWF0-Q9E/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC3sZJSdiZo2EBHbsOlsnI7A"
+    Uploader_ID: "@BMcCollum04"
+    View_Count: 2080
+    Like_Count: 96
+    Comment_Count: 5
+    Availability: "public"
+    Published_At: "2026-03-27T19:34:15+00:00"
+    Captured_At: "2026-08-14T05:04:50-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:58:14.199622-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 213
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T05:04:52.290663-07:00"
+    Transcription_Finished: "2026-09-10T11:58:14.199622-07:00"
+    Recorded: "2026-03-27"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "91GPWF0-Q9E.transcription"
+    Transcript_SHA256: "fc77f8325354889e240af6b737c57b8f0352cc5270d298ff05565625ab6a917a"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "betty_mccollum_mn_04"
+    video_uid: "betty_mccollum_mn_04::91GPWF0-Q9E"
+    video_key: "91GPWF0-Q9E"
+    youtube_id: "91GPWF0-Q9E"
+    priority: 400
+    ceiling: 800
+    raw_score: 400
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    seat_rank: 150
+    challenger: true
+    round: 4
+    status: "partial"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=91GPWF0-Q9E"
+    source_ref: "91GPWF0-Q9E"
+    subject_kind: "new_politician"

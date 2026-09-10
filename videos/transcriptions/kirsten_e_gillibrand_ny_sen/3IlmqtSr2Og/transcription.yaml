@@ -1,0 +1,91 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Off the Sidelines in 2020"
+    URL: "https://www.youtube.com/watch?v=3IlmqtSr2Og"
+    Video_ID: "3IlmqtSr2Og"
+    Show: "Kirsten Gillibrand"
+    Runtime: "00:02:33"
+    Language: "en"
+
+  Media:
+    File: "3IlmqtSr2Og.m4a"
+    SHA256: "84314e3302ea1204b974eaf9988d736eb4dd3901ff1c2d95bc220ea7cf7ce0a6"
+    Bytes: 2487575
+    Duration_Seconds: 153
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=3IlmqtSr2Og"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "3IlmqtSr2Og.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/kirsten_e_gillibrand_ny_sen/3IlmqtSr2Og/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCrb97Wllb6zA2tLx_gKfO9Q"
+    Uploader_ID: "@KirstenGillibrand"
+    View_Count: 1085
+    Like_Count: 14
+    Comment_Count: 5
+    Availability: "public"
+    Published_At: "2020-10-01T13:24:05+00:00"
+    Captured_At: "2026-09-07T14:36:45-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:11.629911-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 383
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T14:36:46.152147-07:00"
+    Transcription_Finished: "2026-09-10T11:59:11.629911-07:00"
+    Recorded: "2020-10-01"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "3IlmqtSr2Og.transcription"
+    Transcript_SHA256: "6aa3853f63ec707e0e44fd4a9161b6c8e8f4c90beabcbb1a2421eb11f3e90eb1"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "kirsten_e_gillibrand_ny_sen"
+    video_uid: "kirsten_e_gillibrand_ny_sen::3IlmqtSr2Og"
+    video_key: "3IlmqtSr2Og"
+    youtube_id: "3IlmqtSr2Og"
+    priority: 385
+    ceiling: 1000
+    raw_score: 385
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 1
+    seat_rank: 195
+    challenger: false
+    round: 2
+    status: "open"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=3IlmqtSr2Og"
+    source_ref: "3IlmqtSr2Og"
+    subject_kind: "new_politician"

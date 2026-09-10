@@ -1,0 +1,81 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Today marks 14 years of DACA, yet no permanent solution."
+    URL: "https://www.youtube.com/watch?v=XJaEg3AyMDw"
+    Video_ID: "XJaEg3AyMDw"
+    Show: "Congressman Jesús Chuy García"
+    Runtime: "00:02:26"
+    Language: "en"
+
+  Media:
+    File: "XJaEg3AyMDw.mp4"
+    SHA256: "4e893b9c5d30eb82696b488713c3ec212ca33bf9956aa47534c241afcbbb058a"
+    Bytes: 3980349
+    Duration_Seconds: 146
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=XJaEg3AyMDw"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "XJaEg3AyMDw.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/chuy_garcia_il_04/XJaEg3AyMDw/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCxDrXyaeLALpMAEg3eh20aA"
+    Uploader_ID: "@RepChuyGarcia"
+    View_Count: 1079
+    Like_Count: 28
+    Comment_Count: 11
+    Availability: "public"
+    Published_At: "2026-06-15T15:52:24+00:00"
+    Captured_At: "2026-08-14T06:19:41-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:58:24.668180-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 310
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:19:42.101711-07:00"
+    Transcription_Finished: "2026-09-10T11:58:24.668180-07:00"
+    Recorded: "2026-06-15"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "XJaEg3AyMDw.transcription"
+    Transcript_SHA256: "83a0b27a370f453f3dbd4e9fdeb848bd0fb091c850dc2da5ee922389c9b90e32"
+
+  Demand:   # NO LIVE ROW — this video was adopted from the backlog
+    # video_demand.csv carried no row for this video_uid when the words
+    # were made, and no .demand.yaml seed was written at download time.
+    # What is stated below is what the paths on disk prove; everything
+    # the engine would have priced is absent because nothing measured it.
+    roster_key: "chuy_garcia_il_04"
+    video_uid: "chuy_garcia_il_04::XJaEg3AyMDw"
+    video_key: "XJaEg3AyMDw"
+    youtube_id: "XJaEg3AyMDw"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=XJaEg3AyMDw"
+    demand_row_present: false
+    adopted_from: "in_progress.csv — p_download_videos STAGE 1D backlog"

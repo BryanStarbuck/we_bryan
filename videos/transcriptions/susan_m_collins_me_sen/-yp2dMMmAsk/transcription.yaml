@@ -1,0 +1,91 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "U.S. Senate Hearing to Examine Impact of Type 1 Diabetes"
+    URL: "https://www.youtube.com/watch?v=-yp2dMMmAsk"
+    Video_ID: "-yp2dMMmAsk"
+    Show: "SenatorSusanCollins"
+    Runtime: "00:06:30"
+    Language: "en"
+
+  Media:
+    File: "-yp2dMMmAsk.m4a"
+    SHA256: "ac118d140976c8ed954a91fe769392f1287ba579ae8b051785f915069871507b"
+    Bytes: 6318635
+    Duration_Seconds: 390
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-yp2dMMmAsk"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-yp2dMMmAsk.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/susan_m_collins_me_sen/-yp2dMMmAsk/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC6GYaBx5kT2r4PN8KENxC-w"
+    Uploader_ID: "@SenatorSusanCollins"
+    View_Count: 353
+    Like_Count: 1
+    Comment_Count: 4
+    Availability: "public"
+    Published_At: "2013-07-10T21:44:24+00:00"
+    Captured_At: "2026-09-07T14:37:30-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:42.686990-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 718
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T14:37:31.859303-07:00"
+    Transcription_Finished: "2026-09-10T11:59:42.686990-07:00"
+    Recorded: "2013-07-10"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "-yp2dMMmAsk.transcription"
+    Transcript_SHA256: "2aa4ecdcc536e66a897cd5c1181ffaea6c1d9db2d72c0de75bc4a55f1ac46b8e"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "susan_m_collins_me_sen"
+    video_uid: "susan_m_collins_me_sen::-yp2dMMmAsk"
+    video_key: "-yp2dMMmAsk"
+    youtube_id: "-yp2dMMmAsk"
+    priority: 595
+    ceiling: 1000
+    raw_score: 595
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-yp2dMMmAsk"
+    source_ref: "-yp2dMMmAsk"
+    subject_kind: "new_politician"

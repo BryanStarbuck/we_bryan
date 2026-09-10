@@ -1,0 +1,91 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Rep. Tlaib Joins Joe Madison to Talk COVID-19, Reimagining Public Safety, Reparations & More"
+    URL: "https://www.youtube.com/watch?v=2NTB4mr8cLE"
+    Video_ID: "2NTB4mr8cLE"
+    Show: "Rashida Tlaib"
+    Runtime: "00:22:22"
+    Language: "en"
+
+  Media:
+    File: "2NTB4mr8cLE.mp4"
+    SHA256: "5eba497dd9e0da79367fd3c2109ab996cf4d01a4bb45ca8c87dd95ebf63cc98d"
+    Bytes: 29180984
+    Duration_Seconds: 1342
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=2NTB4mr8cLE"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "2NTB4mr8cLE.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/rashida_tlaib_mi_12/2NTB4mr8cLE/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCl5GK07sD5TZIhKcsDNSExA"
+    Uploader_ID: "@RepRashida"
+    View_Count: 289
+    Like_Count: 9
+    Availability: "public"
+    Published_At: "2021-04-19T14:10:39+00:00"
+    Captured_At: "2026-08-14T06:46:43-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:37.161218-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 3716
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:46:50.403439-07:00"
+    Transcription_Finished: "2026-09-10T11:59:37.161218-07:00"
+    Recorded: "2021-04-19"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "2NTB4mr8cLE.transcription"
+    Transcript_SHA256: "10da32d9d577b33a7e851d7b5bb6c7d4c9f58a46ce0365a3411a81d482f9efd4"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "rashida_tlaib_mi_12"
+    video_uid: "rashida_tlaib_mi_12::2NTB4mr8cLE"
+    video_key: "2NTB4mr8cLE"
+    youtube_id: "2NTB4mr8cLE"
+    priority: 450
+    ceiling: 800
+    raw_score: 450
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 5
+    seat_rank: 150
+    challenger: true
+    round: 1
+    status: "partial"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=2NTB4mr8cLE"
+    source_ref: "2NTB4mr8cLE"
+    subject_kind: "new_politician"

@@ -621,6 +621,31 @@ def render_demand(row) -> list:
     return L
 
 
+def render_demand_absent(facts) -> list:
+    """The Demand block for a video the demand engine never priced."""
+    rk, vk = facts["roster_key"], facts["video_key"]
+    return [
+        "  Demand:   # NO LIVE ROW — this video was adopted from the backlog",
+        "    # video_demand.csv carried no row for this video_uid when the words",
+        "    # were made, and no .demand.yaml seed was written at download time.",
+        "    # What is stated below is what the paths on disk prove; everything",
+        "    # the engine would have priced is absent because nothing measured it.",
+        f"    roster_key: {yq(rk)}",
+        f"    video_uid: {yq(rk + '::' + vk)}",
+        f"    video_key: {yq(vk)}",
+    ] + ([
+        # transcription.mdx §13.8: the VIDEO_KEY ladder issues a YouTube id, then
+        # an ipfs_ CID prefix, then a minted vNNNN. Only the first is a YouTube
+        # address, so a watch?v= URL is built only when the key IS one.
+        f"    youtube_id: {yq(vk)}",
+        '    source_type: "youtube"',
+        f"    source_url: {yq('https://www.youtube.com/watch?v=' + vk)}",
+    ] if re.fullmatch(r"[A-Za-z0-9_-]{11}", vk) else []) + [
+        "    demand_row_present: false",
+        '    adopted_from: "in_progress.csv — p_download_videos STAGE 1D backlog"',
+    ]
+
+
 def render(facts, kept) -> str:
     vk = facts["video_key"]
     yid = (facts["demand"] or {}).get("youtube_id") or vk
@@ -769,6 +794,21 @@ def render(facts, kept) -> str:
 
     if facts["demand"]:
         for line in render_demand(facts["demand"]):
+            A(line)
+        A("")
+    else:
+        # NO ROW IS ITSELF A FACT, AND IT IS RECORDED RATHER THAN LEFT BLANK.
+        # A backlog video (p_download_videos STAGE 1D) was adopted because its
+        # media was already on disk with no words beside it, not because the
+        # engine asked for it — and video_demand.csv is regenerated every run,
+        # so rows leave it. Omitting the block entirely makes "the engine never
+        # asked for this" indistinguishable from "the tool forgot to look",
+        # which is the reading `verify`'s NO_DEMAND was added to prevent.
+        # Only what is VERIFIED is stated: priority, ceiling, seat_rank, round
+        # and the transcript counts are absent because nothing measured them,
+        # and a fabricated priority is indistinguishable from an engine-priced
+        # one once it is in the file.
+        for line in render_demand_absent(facts):
             A(line)
         A("")
 

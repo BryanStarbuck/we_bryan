@@ -1,0 +1,81 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Rep. Barbara Lee Joins All In With Chris Hayes to Discuss the Bush Legacy"
+    URL: "https://www.youtube.com/watch?v=LNmamZKuMy8"
+    Video_ID: "LNmamZKuMy8"
+    Show: "Rep. Barbara Lee"
+    Runtime: "00:09:24"
+    Language: "en"
+
+  Media:
+    File: "LNmamZKuMy8.mp4"
+    SHA256: "6e8e20e4c6981712795b42f88081ddd8106d672ea654598e07ce4ceef0a7e4d9"
+    Bytes: 19708865
+    Duration_Seconds: 564
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=LNmamZKuMy8"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "LNmamZKuMy8.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/barbara_lee_ca/LNmamZKuMy8/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCnRgK2MXAQOUau0JXqseeNA"
+    Uploader_ID: "@RepLee"
+    View_Count: 1061
+    Like_Count: 4
+    Comment_Count: 1
+    Availability: "public"
+    Published_At: "2013-04-26T14:00:19+00:00"
+    Captured_At: "2026-08-14T05:03:47-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:58:08.475426-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 1904
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:16:45.992681-07:00"
+    Transcription_Finished: "2026-09-10T11:58:08.475426-07:00"
+    Recorded: "2013-04-26"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "LNmamZKuMy8.transcription"
+    Transcript_SHA256: "85b29dad9fb8341b731a5111d041ad5c0767ccfb4d40d4735171c43baddad9d0"
+
+  Demand:   # NO LIVE ROW — this video was adopted from the backlog
+    # video_demand.csv carried no row for this video_uid when the words
+    # were made, and no .demand.yaml seed was written at download time.
+    # What is stated below is what the paths on disk prove; everything
+    # the engine would have priced is absent because nothing measured it.
+    roster_key: "barbara_lee_ca"
+    video_uid: "barbara_lee_ca::LNmamZKuMy8"
+    video_key: "LNmamZKuMy8"
+    youtube_id: "LNmamZKuMy8"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=LNmamZKuMy8"
+    demand_row_present: false
+    adopted_from: "in_progress.csv — p_download_videos STAGE 1D backlog"

@@ -1,0 +1,91 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Collins, Shaheen Call for Immediate Action on Sequester"
+    URL: "https://www.youtube.com/watch?v=-NwQjA1Tdvg"
+    Video_ID: "-NwQjA1Tdvg"
+    Show: "SenatorSusanCollins"
+    Runtime: "00:25:20"
+    Language: "en"
+
+  Media:
+    File: "-NwQjA1Tdvg.m4a"
+    SHA256: "b4066bfd6794c682b6d007f49ec2a062069de3fef9ac280a4668f52d6cb6dedd"
+    Bytes: 24588567
+    Duration_Seconds: 1520
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-NwQjA1Tdvg"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-NwQjA1Tdvg.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/susan_m_collins_me_sen/-NwQjA1Tdvg/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC6GYaBx5kT2r4PN8KENxC-w"
+    Uploader_ID: "@SenatorSusanCollins"
+    View_Count: 604
+    Like_Count: 1
+    Comment_Count: 3
+    Availability: "public"
+    Published_At: "2013-02-14T21:51:12+00:00"
+    Captured_At: "2026-09-07T14:37:19-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:41.884414-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 3192
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T14:37:24.924482-07:00"
+    Transcription_Finished: "2026-09-10T11:59:41.884414-07:00"
+    Recorded: "2013-02-14"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "-NwQjA1Tdvg.transcription"
+    Transcript_SHA256: "f21e9d80147019837e779544051e7fb7aab432f884270a809b5a3f82c2fb3b46"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "susan_m_collins_me_sen"
+    video_uid: "susan_m_collins_me_sen::-NwQjA1Tdvg"
+    video_key: "-NwQjA1Tdvg"
+    youtube_id: "-NwQjA1Tdvg"
+    priority: 595
+    ceiling: 1000
+    raw_score: 595
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-NwQjA1Tdvg"
+    source_ref: "-NwQjA1Tdvg"
+    subject_kind: "new_politician"

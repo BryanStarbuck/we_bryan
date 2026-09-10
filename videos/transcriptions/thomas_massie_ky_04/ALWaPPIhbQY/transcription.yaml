@@ -1,0 +1,92 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: 'Rep. Thomas Massie - "We Need to End All of the Mandates" - 1/9/2023'
+    URL: "https://www.youtube.com/watch?v=ALWaPPIhbQY"
+    Video_ID: "ALWaPPIhbQY"
+    Show: "RepThomasMassie"
+    Runtime: "00:00:59"
+    Language: "en"
+
+  Media:
+    File: "ALWaPPIhbQY.mp4"
+    SHA256: "954e24bc1f32a78c4254257fc12281f18a163f30ee8dc225b077cf94f3a10771"
+    Bytes: 3050099
+    Duration_Seconds: 59
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=ALWaPPIhbQY"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "ALWaPPIhbQY.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/thomas_massie_ky_04/ALWaPPIhbQY/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCpmXOtvvXC3GE8o9VxYNK7g"
+    Uploader_ID: "@RepThomasMassie"
+    View_Count: 11643
+    Like_Count: 873
+    Comment_Count: 65
+    Availability: "public"
+    Published_At: "2023-01-11T16:09:03+00:00"
+    Captured_At: "2026-08-14T06:48:17-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:43.790091-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 146
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:48:18.017763-07:00"
+    Transcription_Finished: "2026-09-10T11:59:43.790091-07:00"
+    Recorded: "2023-01-11"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "ALWaPPIhbQY.transcription"
+    Transcript_SHA256: "fecaa8780d3126b16c2be6c112b7e65eb7f97944926db0c935037b36ced8d2e3"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "thomas_massie_ky_04"
+    video_uid: "thomas_massie_ky_04::ALWaPPIhbQY"
+    video_key: "ALWaPPIhbQY"
+    youtube_id: "ALWaPPIhbQY"
+    priority: 400
+    ceiling: 800
+    raw_score: 400
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    seat_rank: 150
+    challenger: true
+    round: 11
+    status: "partial"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=ALWaPPIhbQY"
+    source_ref: "ALWaPPIhbQY"
+    subject_kind: "new_politician"

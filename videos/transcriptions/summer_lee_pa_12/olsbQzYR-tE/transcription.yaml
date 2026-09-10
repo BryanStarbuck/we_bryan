@@ -1,0 +1,81 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Throwback to our hearing with the Dept. of Defense's head of contracting in 2023."
+    URL: "https://www.youtube.com/watch?v=olsbQzYR-tE"
+    Video_ID: "olsbQzYR-tE"
+    Show: "Rep. Summer Lee"
+    Runtime: "00:00:47"
+    Language: "en"
+
+  Media:
+    File: "olsbQzYR-tE.mp4"
+    SHA256: "770af084d81e757c7b3dcecfc010ba6f835df282b0d13c16d2f5ab618195946f"
+    Bytes: 2049743
+    Duration_Seconds: 47
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=olsbQzYR-tE"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "olsbQzYR-tE.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/summer_lee_pa_12/olsbQzYR-tE/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCqQJ44qlkVxWV5N12YeacyA"
+    Uploader_ID: "@repsummerlee"
+    View_Count: 1602
+    Like_Count: 88
+    Comment_Count: 15
+    Availability: "public"
+    Published_At: "2026-03-25T17:00:05+00:00"
+    Captured_At: "2026-08-14T06:47:53-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:39.610006-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 128
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:47:54.174390-07:00"
+    Transcription_Finished: "2026-09-10T11:59:39.610006-07:00"
+    Recorded: "2026-03-25"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "olsbQzYR-tE.transcription"
+    Transcript_SHA256: "335427b80a4adc09fc303e63c2f6bd42590b06665b3142ea6d3bf30fee5c1660"
+
+  Demand:   # NO LIVE ROW — this video was adopted from the backlog
+    # video_demand.csv carried no row for this video_uid when the words
+    # were made, and no .demand.yaml seed was written at download time.
+    # What is stated below is what the paths on disk prove; everything
+    # the engine would have priced is absent because nothing measured it.
+    roster_key: "summer_lee_pa_12"
+    video_uid: "summer_lee_pa_12::olsbQzYR-tE"
+    video_key: "olsbQzYR-tE"
+    youtube_id: "olsbQzYR-tE"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=olsbQzYR-tE"
+    demand_row_present: false
+    adopted_from: "in_progress.csv — p_download_videos STAGE 1D backlog"

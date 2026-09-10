@@ -1,0 +1,92 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "July Town Hall"
+    URL: "https://www.youtube.com/watch?v=DYfKOqPo5mI"
+    Video_ID: "DYfKOqPo5mI"
+    Show: "RepAOC"
+    Runtime: "01:12:23"
+    Language: "en"
+
+  Media:
+    File: "DYfKOqPo5mI.mp4"
+    SHA256: "d6758d7609244f4eb50ab9514c1ceb7a069cc7bb4891dc0c6a2c9e3fe6a16c1c"
+    Bytes: 558797214
+    Duration_Seconds: 4343
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=DYfKOqPo5mI"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "DYfKOqPo5mI.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/alexandria_ocasio_cortez_ny_14/DYfKOqPo5mI/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC6XBnYptBnproA__ydn-b0A"
+    Uploader_ID: "@repaoc"
+    View_Count: 2024
+    Like_Count: 164
+    Comment_Count: 21
+    Availability: "public"
+    Published_At: "2023-07-07T11:16:49+00:00"
+    Captured_At: "2026-08-14T04:56:04-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:57:58.205674-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 9535
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T04:57:18.788186-07:00"
+    Transcription_Finished: "2026-09-10T11:57:58.205674-07:00"
+    Recorded: "2023-07-07"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "DYfKOqPo5mI.transcription"
+    Transcript_SHA256: "8ff2826c29f4f8ee1664374680d454cea027d8bdc927a0e81c6c9708e94d483f"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "alexandria_ocasio_cortez_ny_14"
+    video_uid: "alexandria_ocasio_cortez_ny_14::DYfKOqPo5mI"
+    video_key: "DYfKOqPo5mI"
+    youtube_id: "DYfKOqPo5mI"
+    priority: 350
+    ceiling: 800
+    raw_score: 350
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 19
+    seat_rank: 150
+    challenger: true
+    round: 3
+    status: "partial"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=DYfKOqPo5mI"
+    source_ref: "DYfKOqPo5mI"
+    subject_kind: "new_politician"

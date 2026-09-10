@@ -1,0 +1,90 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Senator Hassan on USMCA at Senate Finance Committee Hearing"
+    URL: "https://www.youtube.com/watch?v=-7aCe4n0ZYE"
+    Video_ID: "-7aCe4n0ZYE"
+    Show: "Senator Maggie Hassan"
+    Runtime: "00:02:53"
+    Language: "en"
+
+  Media:
+    File: "-7aCe4n0ZYE.m4a"
+    SHA256: "569639d4d3e075f0bde947e99755479b69c31527cb52b19ce0c5ca2421d136b4"
+    Bytes: 2805252
+    Duration_Seconds: 173
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-7aCe4n0ZYE"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-7aCe4n0ZYE.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/margaret_wood_hassan_nh_sen/-7aCe4n0ZYE/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC4dD6MKchWaCEbfHo-VbQhA"
+    Uploader_ID: "@SenatorHassan"
+    View_Count: 149
+    Like_Count: 3
+    Availability: "public"
+    Published_At: "2020-01-07T15:39:44+00:00"
+    Captured_At: "2026-09-07T14:37:05-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:13.811226-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 404
+
+  Timestamps:
+    Downloaded_At: "2026-09-07T14:37:05.969583-07:00"
+    Transcription_Finished: "2026-09-10T11:59:13.811226-07:00"
+    Recorded: "2020-01-07"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "-7aCe4n0ZYE.transcription"
+    Transcript_SHA256: "639286d81168d51e838d5e7a9fcba6f205d4c87a041e835c9100e2757e376a16"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "margaret_wood_hassan_nh_sen"
+    video_uid: "margaret_wood_hassan_nh_sen::-7aCe4n0ZYE"
+    video_key: "-7aCe4n0ZYE"
+    youtube_id: "-7aCe4n0ZYE"
+    priority: 595
+    ceiling: 1000
+    raw_score: 595
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-7aCe4n0ZYE"
+    source_ref: "-7aCe4n0ZYE"
+    subject_kind: "new_politician"

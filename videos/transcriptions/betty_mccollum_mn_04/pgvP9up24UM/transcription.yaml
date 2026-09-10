@@ -1,0 +1,92 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "We are watching the two-state solution evaporate in front of our eyes"
+    URL: "https://www.youtube.com/watch?v=pgvP9up24UM"
+    Video_ID: "pgvP9up24UM"
+    Show: "Betty McCollum"
+    Runtime: "00:02:08"
+    Language: "en"
+
+  Media:
+    File: "pgvP9up24UM.mp4"
+    SHA256: "225e1675402d56e55649d7b7ffb45503545e984db43ba1932ec37f2f49af7f32"
+    Bytes: 5008212
+    Duration_Seconds: 128
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=pgvP9up24UM"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "pgvP9up24UM.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/betty_mccollum_mn_04/pgvP9up24UM/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC3sZJSdiZo2EBHbsOlsnI7A"
+    Uploader_ID: "@BMcCollum04"
+    View_Count: 1094
+    Like_Count: 48
+    Comment_Count: 3
+    Availability: "public"
+    Published_At: "2026-04-28T21:28:02+00:00"
+    Captured_At: "2026-08-14T05:04:30-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:58:14.485417-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 322
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:17:47.371107-07:00"
+    Transcription_Finished: "2026-09-10T11:58:14.485417-07:00"
+    Recorded: "2026-04-28"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "pgvP9up24UM.transcription"
+    Transcript_SHA256: "8424f0659b7ca51fb5855e5d49797c6b1d9e606b075047cddfe5887f234b8eeb"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "betty_mccollum_mn_04"
+    video_uid: "betty_mccollum_mn_04::pgvP9up24UM"
+    video_key: "pgvP9up24UM"
+    youtube_id: "pgvP9up24UM"
+    priority: 400
+    ceiling: 800
+    raw_score: 400
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    seat_rank: 150
+    challenger: true
+    round: 21
+    status: "partial"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=pgvP9up24UM"
+    source_ref: "pgvP9up24UM"
+    subject_kind: "new_politician"

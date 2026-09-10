@@ -1,0 +1,91 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "NICK FUENTES SATANIC ACTS"
+    URL: "https://www.youtube.com/watch?v=34BHj4z7LiU"
+    Video_ID: "34BHj4z7LiU"
+    Show: "Jake Shields' Fight Back Podcast"
+    Runtime: "00:00:57"
+    Language: "en"
+
+  Media:
+    File: "34BHj4z7LiU.mp4"
+    SHA256: "e0b1062b3e57f7ecd3bffb479599a3a8f2c1a44aff68c99494ccdd99517c3a93"
+    Bytes: 2543299
+    Duration_Seconds: 57
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=34BHj4z7LiU"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "34BHj4z7LiU.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/jake_shields_us/34BHj4z7LiU/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCsIKjlSV98RWt5IfK5VVJZA"
+    Uploader_ID: "@fightbackpodcast"
+    View_Count: 16107
+    Like_Count: 954
+    Comment_Count: 177
+    Availability: "public"
+    Published_At: "2026-08-10T01:00:37+00:00"
+    Captured_At: "2026-08-14T06:30:27-07:00"
+
+  Source:
+    Transcribed: "2026-09-10T11:59:02.349063-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 147
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:30:28.150589-07:00"
+    Transcription_Finished: "2026-09-10T11:59:02.349063-07:00"
+    Recorded: "2026-08-10"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "34BHj4z7LiU.transcription"
+    Transcript_SHA256: "4c3bcd237b9895baf69dfb4f64634979d36b28face70ead1b25028fbaf034e1c"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "jake_shields_us"
+    video_uid: "jake_shields_us::34BHj4z7LiU"
+    video_key: "34BHj4z7LiU"
+    youtube_id: "34BHj4z7LiU"
+    priority: 300
+    ceiling: 800
+    raw_score: 300
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 5
+    challenger: true
+    round: 9
+    status: "partial"
+    demand_generated_at: "2026-09-10T17:51:21.694Z"
+    demand_run_id: "job_1789062669839_1"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=34BHj4z7LiU"
+    source_ref: "34BHj4z7LiU"
+    subject_kind: "new_politician"
