@@ -1,0 +1,330 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "NPR on Oakland"
+    Description: >-
+      An April 2013 NPR 'Code Switch' radio report, reposted on Rep. Barbara Lee's channel. Barbara Lee does
+      not speak in it. Reporter Shereen Marisol Meraji examines demographic change in Oakland, California,
+      once a center of West Coast Black culture. She reports a drop of nearly 25 percent in Oakland's Black
+      population over two decades, attributed in the piece to rising rents and violent crime. The report talks
+      with comedian Chris Riggins about 'New Oakland' versus 'Old Oakland', and with Dave Ward about his
+      father 'Sweet Jimmy' Ward's nightclub, whose investors included Huey Newton. It also hears from New
+      Parish club owner Michael O'Connor and from a high-school student who listens to music by Pacific
+      Islander artists from Oakland. The automatic transcript contains a long run of repeated 'Oak-' syllables
+      where the audio is a chant or music bed.
+    URL: "https://www.youtube.com/watch?v=nYGsR2H7vPs"
+    Video_ID: "nYGsR2H7vPs"
+    Show: "Rep. Barbara Lee"
+    Runtime: "00:07:55"
+    Language: "en"
+
+  Media:
+    File: "nYGsR2H7vPs.mp4"
+    SHA256: "ec68fc01b861299da56aa1795a6b7d9b5f6cfaa3a055d234de67b914739cdf1a"
+    Bytes: 12470457
+    Duration_Seconds: 475
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=nYGsR2H7vPs"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "nYGsR2H7vPs.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/barbara_lee_ca_12/nYGsR2H7vPs/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCnRgK2MXAQOUau0JXqseeNA"
+    Uploader_ID: "@RepLee"
+    View_Count: 53
+    Like_Count: 1
+    Availability: "public"
+    Published_At: "2013-04-17T21:41:46+00:00"
+    Captured_At: "2026-08-14T06:16:52-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "7.4%"
+      Turns: 3
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "0.8%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "3.1%"
+      Turns: 2
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "35.1%"
+      Turns: 16
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_12"
+      Share_Of_Speech: "1.5%"
+      Turns: 1
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "3.8%"
+      Turns: 3
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_14"
+      Share_Of_Speech: "3.8%"
+      Turns: 3
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_15"
+      Share_Of_Speech: "1.5%"
+      Turns: 1
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_17"
+      Share_Of_Speech: "2.5%"
+      Turns: 1
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_22"
+      Share_Of_Speech: "0.9%"
+      Turns: 2
+    Person_12:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_24"
+      Share_Of_Speech: "0.8%"
+      Turns: 1
+    Person_13:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_26"
+      Share_Of_Speech: "1.6%"
+      Turns: 1
+    Person_14:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_29"
+      Share_Of_Speech: "0.9%"
+      Turns: 1
+    Person_15:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_31"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+    Person_16:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_33"
+      Share_Of_Speech: "11.8%"
+      Turns: 7
+    Person_17:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_35"
+      Share_Of_Speech: "2.0%"
+      Turns: 1
+    Person_18:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_40"
+      Share_Of_Speech: "1.6%"
+      Turns: 1
+    Person_19:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_42"
+      Share_Of_Speech: "1.3%"
+      Turns: 1
+    Person_20:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_44"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_21:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_45"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+    Person_22:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_53"
+      Share_Of_Speech: "1.2%"
+      Turns: 1
+    Person_23:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_57"
+      Share_Of_Speech: "1.4%"
+      Turns: 1
+    Person_24:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_58"
+      Share_Of_Speech: "2.5%"
+      Turns: 2
+    Person_25:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_59"
+      Share_Of_Speech: "1.2%"
+      Turns: 1
+    Person_26:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_60"
+      Share_Of_Speech: "3.6%"
+      Turns: 2
+    Person_27:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_68"
+      Share_Of_Speech: "1.0%"
+      Turns: 1
+    Person_28:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_71"
+      Share_Of_Speech: "1.1%"
+      Turns: 1
+    Person_29:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_75"
+      Share_Of_Speech: "1.6%"
+      Turns: 1
+    Person_30:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_77"
+      Share_Of_Speech: "1.3%"
+      Turns: 1
+    Person_31:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_79"
+      Share_Of_Speech: "0.9%"
+      Turns: 1
+    Person_32:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_83"
+      Share_Of_Speech: "0.9%"
+      Turns: 1
+    Person_33:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_85"
+      Share_Of_Speech: "1.4%"
+      Turns: 1
+
+  Topics:
+    - "Gentrification in Oakland"
+    - "Decline of Oakland's Black population"
+    - "Black cultural history in Oakland"
+    - "NPR Code Switch report"
+
+  Source:
+    Canonical_ID: "451b027f9d3df780"
+    Transcribed: "2026-09-10T07:46:41.199129-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1188
+    Segments: 93
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:16:53.989999-07:00"
+    Transcription_Finished: "2026-09-10T07:46:41.199129-07:00"
+    Recorded: "2013-04-17"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "nYGsR2H7vPs.ctm"
+    Fountain: "nYGsR2H7vPs.fountain"
+    Diarization_RTTM: "nYGsR2H7vPs.rttm"
+    As_Broadcast_Script: "nYGsR2H7vPs.script.txt"
+    Segments_JSON: "nYGsR2H7vPs.segments.json"
+    Segments_JSONL: "nYGsR2H7vPs.segments.jsonl"
+    Subtitles_SRT: "nYGsR2H7vPs.srt"
+    Plain_Text: "nYGsR2H7vPs.transcription"
+    Subtitles_VTT: "nYGsR2H7vPs.vtt"
+    Transcript_SHA256: "9f54f5fcaeaf853343d933a55e05b0e5c305d4947c2e4470d793de0248928723"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "barbara_lee_ca_12"
+    video_uid: "barbara_lee_ca_12::nYGsR2H7vPs"
+    video_key: "nYGsR2H7vPs"
+    youtube_id: "nYGsR2H7vPs"
+    priority: 100
+    ceiling: 800
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    challenger: false
+    round: 57
+    status: "partial"
+    demand_generated_at: "2026-09-10T14:39:56.937Z"
+    demand_run_id: "job_1789051036673_22"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=nYGsR2H7vPs"
+    source_ref: "nYGsR2H7vPs"
+    subject_kind: "new_politician"
+
+  # Blocks this version of the tool does not know about, carried forward
+  # verbatim rather than dropped.
+  Media_Provenance:
+    Real_Path: /Users/bryan/T/_we_citizens/videos/barbara_lee_ca/nYGsR2H7vPs/nYGsR2H7vPs.mp4
+    Real_Directory: /Users/bryan/T/_we_citizens/videos/barbara_lee_ca/nYGsR2H7vPs/
+    Note: Stored_At names a symlink directory under the download root. The bytes were downloaded by the
+      legacy downloader under roster key barbara_lee_ca and are transcribed in place from the directory
+      above; the live demand row files this video under barbara_lee_ca_12, which is the key used here.
