@@ -10,6 +10,14 @@ to learn which videos the movement still needs, downloads the ones this citizen 
 not already hold, transcribes them against a localhost install, writes a
 transcription.yaml sidecar beside every result, and pushes.
 
+IT FINISHES WHAT EARLIER RUNS STARTED BEFORE IT STARTS ANYTHING NEW. A download
+whose transcription died is the most valuable work on the machine — the bytes are
+already here and the movement is already waiting — so STAGE 1C reconciles a
+cross-run ledger ({IN_PROGRESS_CSV}) against what is actually on disk, and STAGE 1D
+adopts that backlog ahead of the demand ladder. The ledger is also how two runs in
+two windows stay out of each other's way: a claim is written BEFORE the work, not
+after, and is believed for {STALE_CLAIM_HOURS}.
+
 Read every stage before starting. Stages run in order. A stage that cannot complete
 STOPS the run and reports; it never guesses past a missing input.
 
@@ -23,14 +31,18 @@ the copyable lines — and say in the run report that a new message was needed.
 OUTPUT DISCIPLINE — WHAT REACHES THE CITIZEN
 ====================================================================
 
-The citizen sees SIX things and nothing else:
+The citizen sees SEVEN things and nothing else:
 
   1. The Stage 1 repo table (Z1).
   2. The Stage 1B top-up table (Z40) — and ONLY when it actually added rows.
-  3. The Stage 2 selection table.
-  4. The Stage 6 "this will take N" warning (Z20).
-  5. Any Z-coded problem, at the moment it happens.
-  6. The Stage 10 final report.
+  3. The Stage 1C backlog table (Z50) — and ONLY when a backlog exists. It earns
+     its place because it changes what the run is about to spend an hour on: a
+     citizen who typed "download 20" and is about to get a catch-up run instead
+     needs to know BEFORE it happens, not from the final report.
+  4. The Stage 2 selection table.
+  5. The Stage 6 "this will take N" warning (Z20).
+  6. Any Z-coded problem, at the moment it happens.
+  7. The Stage 10 final report.
 
 Everything else — per-file progress, ffmpeg output, yt-dlp chatter, every skip and
 its reason, every path resolved — goes to {RUN_LOG} and NOT to the screen. A run
@@ -213,6 +225,12 @@ LOCALHOST_WEB is the string "http://localhost:4444"
 VIDEO_COUNT is the number of videos to process this run
   * DEFAULT = 20. The person running this prompt may name a different number in the
     text they typed with the command ("download 5", "do 50", "just 1").
+  * IT IS A BUDGET FOR VIDEOS PROCESSED, NOT FOR VIDEOS DOWNLOADED. STAGE 1D spends
+    it on the backlog first, so a run with 20 un-transcribed downloads already on
+    disk downloads NOTHING and still does 20 videos' worth of work. A citizen who
+    typed "download 20" is told that before it happens (Z50), because the word
+    "download" in what they typed is about the size of the run, not a demand that
+    bytes be fetched.
 
 MAX_PARALLEL_TRANSCRIBE is the value 12
 DEFAULT_PARALLEL_TRANSCRIBE is the value 4
@@ -224,6 +242,61 @@ underscores, e.g. 2026_Sep_05_08_14_31_
 RUN_LOG is file {VIDEO_DOWNLOAD_ROOT}/_runs/{THE_DATE_TIME_STRING}download_videos.log
   * Outside the repo. Every stage appends what it did, what it skipped and why.
   * `mkdir -p` its directory in Stage 1 before any stage tries to append to it.
+
+IN_PROGRESS_CSV is file ~/T/_we_citizens/videos/download/in_progress.csv
+  * THE CROSS-RUN TRANSCRIPTION LEDGER, and the answer to the failure this prompt
+    kept having: a video gets downloaded, the transcription dies, and the next run
+    walks straight past it because Stage 2.3 only skips on "the words exist" and
+    only selects from the demand ladder — so the media sits on disk forever and
+    nobody ever finishes it. MEASURED 2026-09-10: 20 videos downloaded, 0
+    transcribed, and nothing in the pipeline would have picked them up again.
+  * It is a LEDGER, not a queue: one row per {video_uid}, carrying who is working
+    it, since when, how many times it has been tried, and how it ended. STAGE 1C
+    reconciles it against the disk; STAGE 1D works the backlog it exposes.
+  * OUTSIDE EVERY REPO and never committed. It is machine-local operational state
+    about attempts, not a record of the corpus — the corpus is the repo.
+  * SEVERAL RUNS SHARE IT. The citizen may have this prompt open in two windows,
+    and a run may have been killed, cancelled or crashed at any point. Every rule
+    in APPENDIX G exists because the writer cannot assume it is alone.
+  * `mkdir -p` its directory in Stage 1. If the file does not exist, STAGE 1C
+    creates it with the header from APPENDIX G and no rows. An absent ledger is a
+    first run, never an error.
+  * NOTE ON THE PATH: this is `videos/download`, which is the reverse of
+    {VIDEO_DOWNLOAD_ROOT}'s `download/videos`, and it is deliberate — the owner
+    named this location. It therefore lands beside
+    {VIDEO_DOWNLOAD_ROOT_LEGACY}. Both are outside every repo, so nothing is at
+    risk either way; if it should move under {QUEUE_ROOT} instead, this is the one
+    line to change.
+
+IN_PROGRESS_LOCK is file {IN_PROGRESS_CSV}.lock
+  * A directory created with `mkdir` — atomic on every filesystem this runs on, and
+    the reason a lock is a directory here rather than a file with a flag in it.
+  * Held ONLY around a read-modify-write of {IN_PROGRESS_CSV}, which is
+    milliseconds. It is NEVER held across a download or a transcription: a lock
+    held for the hour a transcription takes would block every other run on the
+    machine, which is the opposite of what the ledger is for. The CLAIM in the
+    ledger is what marks long work in flight; the lock only protects the file.
+  * STALE LOCK: if the directory exists and its mtime is older than 60 seconds, the
+    run that held it is gone. Remove it, log that it was broken, and proceed.
+
+STALE_CLAIM_HOURS is the value 8
+  * How long a `started` row is believed. Inside this window the row is ANOTHER
+    RUN'S WORK and is left alone — a transcription legitimately runs for hours, and
+    stealing one wastes an hour of CPU on both machines and can have two processes
+    writing the same STAGE_DIR. Outside it, the claim is dead and this run may take
+    it over. 8 hours is longer than any single transcription measured on this
+    hardware and short enough that an overnight crash is recovered the next morning.
+
+MAX_TRANSCRIBE_TRIES is the value 3
+  * After three genuine attempts a video is SKIPPED rather than tried a fourth time.
+    A video that fails three times is not failing on luck: it is a truncated file, a
+    codec the transcriber refuses, or a bug in the pipeline, and the fourth attempt
+    burns the same CPU to reach the same place. The row stays in the ledger with its
+    reasons so a human can see what it hit.
+  * THE CITIZEN CAN OVERRIDE IT. If the run text says "retry the failures", "retry
+    exhausted", "try the max-tries ones" or names such a video, the cap is lifted
+    for that run and the ledger says the attempt was a forced retry. That is the
+    intended way to work a video after fixing the bug that blocked it.
 
 
 ====================================================================
@@ -311,6 +384,19 @@ HARD RULES — VIOLATING ANY OF THESE FAILS THE RUN
 * NEVER modify a transcript directory this run did not create. Legacy directories
   under {TRANSCRIPTIONS_ROOT} are read to answer "do we already have this?" and are
   otherwise untouched.
+
+* NEVER START A TRANSCRIPTION WITHOUT FIRST WRITING THE CLAIM TO
+  {IN_PROGRESS_CSV}, and never delete or truncate that file. Stage 6.1b is the
+  claim and it happens BEFORE the transcriber is called, because a hung or killed
+  attempt runs no code afterwards — so a ledger written after the work records only
+  the successes and loses exactly the failures the next run has to find. This is
+  how 20 downloaded videos came to be transcribed zero times with nothing in the
+  pipeline that would ever pick them up again.
+
+* NEVER STEAL A LIVE CLAIM. A ledger row marked `started` within
+  {STALE_CLAIM_HOURS} belongs to another run — possibly another window the citizen
+  has open right now. Leave it, count it, report it. Two runs transcribing one
+  video waste an hour of CPU each and race on the same STAGE_DIR.
 
 
 ====================================================================
@@ -844,6 +930,211 @@ concludes the stage did nothing will turn it off.
 
 
 ====================================================================
+STAGE 1C — RECONCILE THE LEDGER WITH WHAT IS ACTUALLY ON DISK
+====================================================================
+
+THE HOLE THIS STAGE CLOSES, AND IT IS NOT HYPOTHETICAL.
+
+A video gets downloaded and the transcription then dies — the app falls over, the
+run is cancelled, the machine sleeps, a watcher restarts the server mid-job. The
+media is on disk and the words do not exist. Nothing in this prompt used to pick
+that up again: Stage 2 selects from the demand ladder, and Stage 2.3 skips a row
+only when the WORDS exist, so an un-transcribed download is neither skipped nor
+selected — it is simply never looked at again. MEASURED 2026-09-10: a run
+downloaded 20 videos, transcribed 0, and every one of those 20 would have sat
+under the media root untouched by every future run.
+
+So this stage asks the question no earlier stage asked: WHAT HAS THIS MACHINE
+ALREADY PAID TO DOWNLOAD AND NOT YET TURNED INTO WORDS?
+
+THE DISK IS THE TRUTH AND THE LEDGER IS THE CLAIM. Everything below reconciles in
+that direction. A ledger row saying `finished` for a video with no transcript is
+wrong and gets corrected; a transcript with no ledger row is a completed video from
+before the ledger existed and gets a row stating so. Never the other way round: a
+ledger that overrides the disk would let one bad row hide a real backlog forever.
+
+1C.0 PRECONDITION
+
+Stage 1 has confirmed {ROOT_DIR} and the media roots, and {RUN_LOG} is open.
+`mkdir -p` the directory holding {IN_PROGRESS_CSV}.
+
+If {IN_PROGRESS_CSV} does not exist, create it with the APPENDIX G header and no
+rows, log "ledger created — first run on this machine", and carry on into 1C.2.
+There is no backlog to find in an absent ledger, but 1C.2 still scans the disk,
+and on a machine with existing downloads that first scan is exactly what populates
+it.
+
+1C.1 READ THE LEDGER UNDER THE LOCK
+
+Take {IN_PROGRESS_LOCK} (breaking it if stale, per its variable note), read the
+whole file, release the lock. Parse by COLUMN NAME, never by position — APPENDIX G
+is append-only and a newer version of this prompt may have added a column.
+
+A row that does not parse is LEFT EXACTLY AS IT IS and reported. Do not drop it and
+do not repair it: it is another run's writing, and a row this run cannot read is
+not a row this run may delete.
+
+1C.2 WALK BOTH MEDIA ROOTS AND CLASSIFY EVERY VIDEO
+
+For every {roster_key}/{video_key}/ directory under {MEDIA_ROOTS}, establish two
+facts and nothing else:
+
+  HAS_MEDIA   a file on the transcriber's allowlist (Stage 4.4) exists in it,
+              preferring audio over video exactly as Stage 2.3 does. A directory
+              holding only a .info.json is NOT media. A .fNNN pre-merge part is
+              never media.
+  HAS_WORDS   `find {TRANSCRIPTIONS_ROOT} -name "{video_key}.transcription"`
+              returns a hit. BY VIDEO KEY, NOT BY PATH — legacy transcript
+              directories use hand-made names and a path-shaped test walks past
+              them and re-transcribes an hour of audio this citizen already has.
+
+That gives four classes, and each has exactly one correct ledger state:
+
+  media + words        -> `finished`. If the ledger says anything else, CORRECT it
+                          and log the correction. This is the common case on a
+                          machine that has been working for a while, and it is how
+                          a `started` row left behind by a run that actually
+                          succeeded before dying gets closed.
+  media, NO words      -> THE BACKLOG. This is what the stage exists to find.
+                          1C.3 decides what state it should carry.
+  NO media, words      -> `finished`, media cleared. Normal and safe: the media is
+                          disposable once the words and the Capture block exist.
+                          Never re-download it.
+  NO media, no words   -> not a row at all. There is nothing here. If the ledger
+                          has a row for it, mark it `media_gone` and say so — the
+                          download either never completed or the file was removed,
+                          and Stage 2 may legitimately select it again.
+
+Log the four counts. Print nothing yet.
+
+1C.3 WHAT STATE A BACKLOG ROW SHOULD CARRY — THE ONE PLACE JUDGEMENT IS NEEDED
+
+For a video with media and no words:
+
+  * NO LEDGER ROW -> add one, `status: pending`, `tries: 0`, every timestamp empty.
+    It has never been attempted as far as this machine can prove. Do NOT invent a
+    `tries` count from the presence of a STAGE_DIR or a .FAILED.txt — those are
+    evidence that something happened, not a count of how many times.
+    DO read a {video_key}.FAILED.txt if one is there and carry its reason into
+    `note`, because that is the most useful thing a human will read.
+  * `status: started` AND `started_at` IS WITHIN {STALE_CLAIM_HOURS}
+    -> LEAVE IT COMPLETELY ALONE. Another run is working it right now. It is not
+    this run's backlog, it is not this run's row to touch, and its media is not
+    this run's to re-download. Count it and move on.
+  * `status: started` AND `started_at` IS OLDER THAN {STALE_CLAIM_HOURS}
+    -> the claim is DEAD. Whoever held it is gone. Set `status: failed`, put the
+    reason `claim expired after {STALE_CLAIM_HOURS}h — the run that held it did not
+    finish`, and leave `tries` where it is: the attempt genuinely happened and
+    already counted. It is now adoptable by 1D.
+  * `status: failed` -> adoptable, subject to the tries cap.
+  * `status: finished` but no words -> the ledger is wrong (see 1C.2). Set
+    `status: failed`, reason `ledger said finished but no transcript exists`, and
+    log the correction loudly: it means some earlier run reported success it did
+    not achieve, which is worth a human knowing.
+  * `status: pending` -> adoptable.
+
+A ROW THIS RUN DID NOT CLAIM IS NEVER GIVEN A NEW `started_at`. The timestamps
+belong to the attempt that made them; rewriting one destroys the only evidence of
+how long something has been stuck.
+
+1C.4 WRITE THE RECONCILED LEDGER BACK, ONCE, UNDER THE LOCK
+
+Take the lock. RE-READ the file — another run may have written between 1C.1 and
+now, and the copy in memory is already stale. Merge by {video_uid}:
+
+  * a row THIS STAGE corrected -> write the correction, unless the re-read shows
+    the row now `started` inside {STALE_CLAIM_HOURS}, in which case ANOTHER RUN
+    JUST CLAIMED IT and its claim wins. Drop the correction and log it.
+  * a row this stage did not touch -> keep the re-read version byte for byte.
+  * a row this stage is adding -> add it.
+
+Write atomically (temp file plus rename, both on the same filesystem, so no reader
+ever sees a half-written ledger), release the lock.
+
+NEVER TRUNCATE THE LEDGER AND NEVER DELETE A ROW. A `finished` row costs one line
+and is the record that the work was done; a deleted row costs a re-download and a
+re-transcription of something this machine already has. If the file ever needs
+pruning that is a human's decision, not a run's.
+
+1C.5 REPORT
+
+* A backlog exists: print Z50 — the table of what is adoptable, what is claimed by
+  another run, and what is capped out. This is one of the few things the citizen
+  sees, because it changes what the run is about to spend an hour doing.
+* No backlog and no corrections: print nothing. One line to {RUN_LOG}.
+* Corrections made but no backlog: print nothing to the terminal, but NAME every
+  correction in the Stage 10 report. A ledger that said `finished` for a video with
+  no words is a fact about an earlier run that somebody should see.
+
+
+====================================================================
+STAGE 1D — WORK THE BACKLOG BEFORE DOWNLOADING ANYTHING NEW
+====================================================================
+
+THE PRIORITY RULE, AND THE REASON FOR IT:
+
+        AN ALREADY-DOWNLOADED VIDEO OUTRANKS EVERY ROW ON THE DEMAND LADDER.
+
+The bytes are already on this disk. Somebody's bandwidth and somebody's disk have
+already been spent, the movement is already waiting for those words, and no new
+download can be worth more than finishing work that is one stage from done.
+Downloading twenty more videos while twenty un-transcribed ones sit on the same
+disk is how a machine accumulates a permanent backlog it never works off.
+
+1D.1 BUILD THE ADOPTION LIST
+
+From 1C's reconciled ledger, take every row where ALL of these hold:
+
+  * HAS_MEDIA is true and HAS_WORDS is false
+  * status is `pending` or `failed`
+  * NOT (`started` within {STALE_CLAIM_HOURS}) — 1C already excluded these
+  * `tries` < {MAX_TRANSCRIBE_TRIES}, UNLESS the citizen lifted the cap
+
+Order it: fewest `tries` first, then oldest `earliest_attempt_at` first, then
+{video_uid}. Fewest tries first because a never-attempted video is more likely to
+succeed than one that has already failed twice, and a run that dies partway
+through should have spent its time on the likely wins. Oldest-first inside that,
+because a video that has been stuck for three weeks has been keeping the movement
+waiting for three weeks.
+
+RESTRICTIONS THE CITIZEN NAMED STILL APPLY. If the run text named people (Stage
+2.3b), the adoption list is filtered to those keys too — a citizen who asked for
+"peter" did not ask for somebody else's backlog. Say so in the table.
+
+1D.2 THE CAP, AND WHAT IT DOES TO {VIDEO_COUNT}
+
+Adopted videos CONSUME {VIDEO_COUNT} SLOTS, and they consume them FIRST.
+
+  * Backlog ≥ {VIDEO_COUNT}: this run is entirely a catch-up run. Take the first
+    {VIDEO_COUNT}, download NOTHING, and say so plainly — a citizen who typed
+    "download 20" and sees no downloads is owed the reason before it happens, not
+    in the final report.
+  * Backlog < {VIDEO_COUNT}: adopt all of it, and let Stage 2 fill the remaining
+    slots with new rows from the ladder.
+  * Backlog empty: Stage 2 behaves exactly as it always has.
+
+THE CITIZEN CAN CHANGE THIS. "just the backlog" / "catch up" -> adopt only, never
+download. "skip the backlog" / "only new" -> log the backlog size, adopt nothing,
+and STILL report it in Stage 10 so it is not silently abandoned.
+
+1D.3 CARRY THEM FORWARD
+
+An adopted row arrives at Stage 4 with its MEDIA_FILE already resolved (1C.2 found
+it) and marked "already on disk", so it SKIPS 4.2–4.4 and runs 4.5 and 4.6 like
+any other carried-in video. It still needs its Stage 3.2 demand seed if one is
+missing, and Stage 6 claims it in the ledger exactly like a fresh download. From
+Stage 4 onward an adopted video and a newly downloaded one are indistinguishable,
+which is the point: there is one transcription path, not two.
+
+ONE THING TO CHECK BEFORE TRUSTING OLD MEDIA. Run the ffprobe of 4.5 and believe
+it: a file left by an interrupted download is frequently TRUNCATED, and a truncated
+file is why some of these failed the first time. If ffprobe cannot open it, mark
+the row `failed` with reason `media will not open in ffprobe — probably a truncated
+download`, do NOT delete the file (it is the citizen's, and outside every repo),
+and let Stage 2 decide whether to re-download it. Say it in Stage 10.
+
+
+====================================================================
 STAGE 2 — CHOOSE WHICH VIDEOS TO DOWNLOAD
 ====================================================================
 
@@ -936,6 +1227,18 @@ still to do. Instead, resolve it now and carry it forward:
 
 Keep going down the traversal until VIDEO_COUNT videos have been selected, or the
 list runs out. A skip does not consume a slot.
+
+STAGE 1D HAS ALREADY TAKEN SOME OF THOSE SLOTS. The number this stage may select is
+{VIDEO_COUNT} MINUS the count adopted from the backlog, and it may be zero — on a
+machine with a real backlog a run legitimately downloads nothing at all. Do not
+treat a remaining count of zero as an error or as a reason to raise
+{VIDEO_COUNT}: the run is full, of work that was already paid for.
+
+ALSO SKIP A ROW THE LEDGER SAYS IS IN FLIGHT. A row whose {video_uid} is `started`
+in {IN_PROGRESS_CSV} within {STALE_CLAIM_HOURS} is another run's work even if its
+words do not exist yet, and selecting it would have two runs download the same
+video and race on the same STAGE_DIR. Skip it, count it, and log it — this is the
+one skip reason that is about coordination rather than about the corpus.
 
 2.3b DEPTH OR BREADTH — SAY WHICH, BECAUSE THE DEFAULT IS DEPTH
 
@@ -1041,9 +1344,20 @@ CSV no longer has the row.
   * If the seed cannot be written, LOG IT AND CARRY ON. It is a debugging aid and a
     fallback, not a gate. A run must never fail because a scratch directory was
     not writable.
-  * If {SIDECAR_TOOL} reports no row for {roster_key}::{video_key}, that is a
-    SELECTION bug, not a seed bug — Stage 2 chose a row that is not in the CSV.
-    Drop the video, log it, and say so in Stage 10.
+  * If {SIDECAR_TOOL} reports no row for {roster_key}::{video_key} AND the video
+    came from STAGE 2's ladder traversal, that is a SELECTION bug, not a seed bug —
+    Stage 2 chose a row that is not in the CSV. Drop the video, log it, and say so
+    in Stage 10.
+  * BUT IF THE VIDEO WAS ADOPTED BY STAGE 1D, "no row" IS EXPECTED AND IS NOT A
+    REASON TO DROP IT. {VIDEO_DEMAND_CSV} is regenerated on every engine run and
+    rows leave it — a video downloaded three weeks ago may have no row today. The
+    media is on this disk and the movement has no words for it; that is the whole
+    case for transcribing it, and it does not depend on a row still existing.
+    Carry on with whatever seed is already beside the media from the original
+    download, note "no live demand row — adopted from the ledger" on the row, and
+    let Stage 7.1 fall back to the old seed exactly as it was designed to. Dropping
+    these would make STAGE 1D silently useless on precisely the oldest and most
+    neglected part of the backlog.
 
 
 ====================================================================
@@ -1341,6 +1655,54 @@ answer for twenty long-form interviews — say hours when it is hours.
 If the estimate exceeds 3 hours, print Z21 and ask whether to continue, reduce
 VIDEO_COUNT, or stop. Do not start a multi-hour run nobody agreed to.
 
+6.1b CLAIM THE VIDEO IN THE LEDGER — BEFORE THE WORK, NOT AFTER
+
+        THE LEDGER IS WRITTEN AND FLUSHED TO DISK BEFORE THE TRANSCRIBER IS
+        CALLED. NOT AFTER, NOT ALONGSIDE, NOT AT THE END OF THE BATCH.
+
+This ordering is the entire mechanism, and getting it backwards makes the ledger
+worse than useless. A transcription can hang forever, be cancelled by the citizen,
+or die with the machine, and in every one of those cases NOTHING RUNS AFTER IT.
+A ledger updated after the work therefore records only the successes, which is
+precisely the population that needs no record — the failures, the ones the next run
+must find, leave no trace at all. Write first and a crash leaves a `started` row
+with a timestamp, which is exactly the evidence 1C.3 turns back into work.
+
+For each video, immediately before its transcriber call:
+
+  * Take {IN_PROGRESS_LOCK}. Re-read the ledger — between selection and now,
+    another run may have claimed this video, and the answer decides whether this
+    run may touch it at all.
+  * IF the row is now `started` within {STALE_CLAIM_HOURS} and it is not this
+    run's own claim: ANOTHER RUN GOT THERE FIRST. Release the lock, print nothing,
+    log it, drop the video from this run's batch, and move to the next. Do not
+    transcribe it. This is the race the lock cannot prevent and the re-read can.
+  * OTHERWISE claim it, in one write:
+        status                    started
+        tries                     tries + 1
+        earliest_attempt_at       UNCHANGED if already set, else now
+        last_tried_at             the PREVIOUS value of started_at (may be empty)
+        started_at                now
+        finished_at               emptied — this attempt has not finished
+        host                      {hostname}:{pid}
+        run_id                    {THE_DATE_TIME_STRING}
+        media_file                the resolved absolute MEDIA_FILE
+        note                      emptied, or the previous failure kept as history
+  * Write atomically, release the lock, and only then call the transcriber.
+
+`tries` IS INCREMENTED HERE AND NOT ON FAILURE. A video that hangs forever never
+reaches a failure handler, so a counter that increments on failure never counts the
+worst case and the video is retried indefinitely. Counting attempts STARTED is the
+only count that cannot be lost. It does mean a run killed between the claim and the
+first decode burns a try — that is the correct trade, and it is why the cap is 3
+rather than 1.
+
+`last_tried_at` CARRIES THE PREVIOUS ATTEMPT so a human reading the ledger can see
+how old the trouble is: `started_at` is always this attempt, `last_tried_at` is the
+one before it, and `earliest_attempt_at` never moves once set. Three columns because
+they answer three different questions, and collapsing any two of them loses the
+ability to tell "tried once, long ago" from "tried three times, just now".
+
 6.2 THE COMMAND — --out IS A STAGING DIRECTORY, NOT THE REPO
 
 For each video, one call. Every path is ABSOLUTE — `just citizens` changes directory
@@ -1460,6 +1822,33 @@ Anything else is a FAILURE. In particular, the CLI writes the words and NAMES th
 absent derivations when the sidecar is missing — a directory with a .transcription
 and nothing else is a real, reported state, and it is a FAILURE for this prompt's
 purposes because a transcript with no timings cannot be cited.
+
+6.5 RELEASE THE CLAIM — EVERY PATH OUT OF 6.4 WRITES THE LEDGER
+
+A claim taken in 6.1b is released here, and BOTH verdicts write. Under
+{IN_PROGRESS_LOCK}, re-read, update this row only, write atomically, release:
+
+  PASSED   status `finished`, `finished_at` now, `words` the word count, `note`
+           emptied. Write this AFTER Stage 7.1 has moved the files into the repo,
+           not before — `finished` in this ledger means "the words are in the
+           repo", and a row that claims it before the move is a lie for however
+           long the move takes.
+  FAILED   status `failed`, `finished_at` now (the attempt ended, even badly),
+           `note` the reason from 6.4 — which check failed, the CLI's exit code,
+           the head of its stderr. `tries` is NOT touched; 6.1b already counted it.
+
+WHAT A CANCELLED RUN LOOKS LIKE, AND WHY THAT IS FINE: neither branch runs, so the
+row stays `started` with this run's `started_at`. For {STALE_CLAIM_HOURS} every
+other run treats it as live work and leaves it alone; after that 1C.3 converts it
+to `failed` with `claim expired` and it becomes adoptable. That is the design
+working, not a leak — and it is why no cleanup handler is specified here. A prompt
+cannot rely on running code after being killed, so the recovery lives in the NEXT
+run's reconciliation rather than in this run's good intentions.
+
+IF THE ROW REACHED {MAX_TRANSCRIBE_TRIES} ON THIS FAILURE, say so in the note
+(`reached the try cap`) and name it in Stage 10 with Z51. It will not be attempted
+again until a human either fixes the cause or lifts the cap, and a video quietly
+falling out of the queue is exactly what this ledger exists to prevent.
 
 
 ====================================================================
@@ -1903,6 +2292,19 @@ Then Z31, unless the citizen asked for a push and it succeeded.
 Then say, in plain sentences and only where there is something to say:
 
   * whether {CONFIG_FILE} was changed, and whether .gitignore was created
+  * THE BACKLOG, ALWAYS, even when it was empty and even when nothing was adopted:
+    how many downloaded-but-untranscribed videos this machine holds, how many this
+    run adopted and finished, how many were left because another run has them
+    claimed, how many are capped out at {MAX_TRANSCRIBE_TRIES} (Z51), and how many
+    are new backlog created by THIS run's own failures. A citizen who is told
+    "20 transcribed" while 40 un-transcribed downloads sit on the disk has been
+    told the least useful true thing available.
+  * EVERY LEDGER CORRECTION Stage 1C made, by video_uid and reason. A row that said
+    `finished` with no transcript behind it means an earlier run reported success it
+    did not achieve, and that is worth a human's attention.
+  * any row whose media would not open in ffprobe (Stage 1D.3), by path — those are
+    probably truncated downloads and only the citizen should decide to delete them
+  * any ledger row this run could not parse and therefore left alone
   * WHAT STAGE 1B ADDED, and what it could not: how many people it examined, how
     many it added rows for, how many had no channel on record and therefore got no
     rows, how many listed empty, and the path to the patch CSV a human can hand to
@@ -2430,6 +2832,96 @@ president's. A supplement row must never be dropped for having priority 0.
 
 
 ====================================================================
+APPENDIX G — {IN_PROGRESS_CSV} SCHEMA
+====================================================================
+
+One row per {video_uid}. Machine-local, outside every repo, never committed. Read
+and written by STAGE 1C, 1D, 6.1b and 6.5, and shared by every run on this machine.
+
+COLUMNS ARE APPEND-ONLY AND ARE LOOKED UP BY HEADER NAME, NEVER BY POSITION. A
+newer version of this prompt may add a column, and a reader that indexes by
+position reads it as the wrong field. A writer that meets a column it does not know
+CARRIES IT THROUGH UNCHANGED rather than dropping it.
+
+    video_uid                 "{roster_key}::{video_key}" — THE KEY, and the only
+                              thing anything joins on. NEVER the bare video_key:
+                              the demand engine issues placeholder keys like v0001
+                              once per person, so a bare key matches across two
+                              people and would let one person's failure claim
+                              another person's video.
+    roster_key                the demand CSV's first column, verbatim
+    video_key                 the frozen per-person key, verbatim
+    media_file                ABSOLUTE path to the file that will be handed to the
+                              transcriber. May be under either media root. Empty
+                              when the media is gone.
+    status                    pending | started | finished | failed | media_gone
+                              * pending     media on disk, never attempted
+                              * started     an attempt is IN FLIGHT. Believed for
+                                            {STALE_CLAIM_HOURS} from started_at,
+                                            then treated as dead by 1C.3.
+                              * finished    THE WORDS ARE IN THE REPO. Not "the
+                                            transcriber exited 0" — Stage 6.5
+                                            writes this only after Stage 7.1 moved
+                                            the files in.
+                              * failed      an attempt ended without words
+                              * media_gone  the row's media is no longer on disk
+                                            and there are no words either
+    tries                     integer, incremented in 6.1b BEFORE the transcriber
+                              is called. It counts attempts STARTED, not attempts
+                              that reached a verdict — a hung or killed attempt
+                              never reaches one, and a counter that misses those is
+                              a counter that lets a bad video be retried forever.
+    earliest_attempt_at       ISO 8601. The FIRST time this video was ever
+                              attempted on this machine. WRITE ONCE AND NEVER
+                              AGAIN. It is how a reader sees that something has
+                              been stuck for three weeks rather than three minutes.
+    started_at                ISO 8601. THIS attempt's start, stamped in 6.1b.
+                              Overwritten on every attempt. The
+                              {STALE_CLAIM_HOURS} test reads this and nothing else.
+    last_tried_at             ISO 8601. The value started_at held BEFORE this
+                              attempt — the previous try, kept so the age of the
+                              trouble is visible without a history table. Empty on
+                              a first attempt.
+    finished_at              ISO 8601. When the attempt ENDED, on success or
+                              failure. Emptied by 6.1b when a new attempt starts,
+                              so a `started` row never carries a stale end time.
+    words                     word count on success. Empty otherwise. Never 0 as a
+                              placeholder — 0 is a measurement.
+    host                      "{hostname}:{pid}" of the run holding or last holding
+                              the row. It is what tells a citizen with two windows
+                              open WHICH window is working a video.
+    run_id                    {THE_DATE_TIME_STRING} of the run that last wrote
+                              this row, so a row can be traced to a {RUN_LOG}.
+    note                      free text, human. The last failure's reason, the
+                              ledger correction that was applied, "reached the try
+                              cap", the contents of a {video_key}.FAILED.txt. This
+                              is the column a human actually reads.
+
+WRITING RULES, AND EVERY ONE OF THEM EXISTS BECAUSE SEVERAL RUNS SHARE THE FILE:
+
+  * Every write is TAKE LOCK -> RE-READ -> MERGE BY video_uid -> ATOMIC WRITE ->
+    RELEASE. The re-read is not optional: the copy in memory is stale the moment
+    the lock is released, and merging a stale copy silently reverts another run's
+    claim.
+  * The lock is held for the read-modify-write ONLY — milliseconds. NEVER across a
+    download or a transcription.
+  * A row this run does not own is written back BYTE FOR BYTE. Not reformatted, not
+    re-quoted, not re-timestamped.
+  * NEVER TRUNCATE THE FILE. NEVER DELETE A ROW. A `finished` row costs one line
+    and records that the work was done; a deleted row costs a re-download and a
+    re-transcription of something this machine already holds. Pruning is a human's
+    decision.
+  * ABSENT IS ABSENT: an unknown timestamp is an EMPTY CELL, never a zero and never
+    today's date. A zero-epoch `started_at` reads as a claim from 1970 and makes
+    every stale-claim test true.
+
+WHAT THIS FILE IS NOT. It is not evidence, it is not part of the corpus, and
+nothing in the product reads it. It is one machine's operational memory of which
+attempts happened, and its only job is to make sure a downloaded video is never
+forgotten.
+
+
+====================================================================
 APPENDIX Z — EVERY MESSAGE THIS PROMPT PRINTS
 ====================================================================
 
@@ -2771,7 +3263,75 @@ Z42 — the data repo is behind, so "new" may mean "already priced elsewhere".
   Stage 1B.5 de-duplicates against the CSV it does have.
 
 
+Z50 — the backlog table. Printed whenever a backlog exists, BEFORE Stage 2's
+      selection table, because it changes what the run is about to do.
+
+      ============================================================
+      {n} videos on this machine are downloaded but NOT transcribed
+      — work already paid for that no earlier run picked up.
+      ------------------------------------------------------------
+      adoptable now      {a}   ({s} never tried, {f} failed before)
+      claimed by another run {c}   started under {STALE_CLAIM_HOURS}h ago
+      at the try cap     {x}   {MAX_TRANSCRIBE_TRIES} attempts, skipped
+      media gone         {g}   nothing on disk to transcribe
+      ------------------------------------------------------------
+      This run adopts {k} of them FIRST, so it will download {d}
+      new videos instead of {VIDEO_COUNT}. Already-downloaded work
+      outranks every row on the demand ladder.
+      ============================================================
+      {IN_PROGRESS_CSV}
+
+  The "claimed by another run" line is omitted when there are none, and likewise
+  the cap and media-gone lines. When {k} equals {VIDEO_COUNT} the last sentence
+  reads "so it will download nothing new this run" — say it plainly rather than
+  letting a citizen who typed "download 20" wonder why nothing downloaded.
+
+
+Z51 — a video has exhausted {MAX_TRANSCRIBE_TRIES}. Stage 10 tail only.
+
+      ============================================================
+      {n} video(s) have now failed {MAX_TRANSCRIBE_TRIES} times and
+      will NOT be attempted again. Three failures is not bad luck —
+      it is usually a truncated download, a container the
+      transcriber refuses, or a bug in the pipeline. The reasons are
+      in the ledger's note column:
+      ------------------------------------------------------------
+      {roster_key}/{video_key}   {note}
+      ------------------------------------------------------------
+      When the cause is fixed, run this prompt again and say so:
+      ============================================================
+      ... p_download_videos.md   retry the failures
+
+
+Z52 — the ledger disagreed with the disk. Stage 10 tail only, and never silent.
+
+      ============================================================
+      {n} ledger row(s) were corrected against what is actually on
+      disk. A row saying `finished` with no transcript behind it
+      means an earlier run reported success it did not achieve,
+      which is worth knowing about:
+      ------------------------------------------------------------
+      {video_uid}   was {old_status} -> now {new_status}   {reason}
+      ============================================================
+
+
 OTHER SITUATIONS, AND WHAT TO DO — no banner, just log it and carry on
+
+  a ledger row is `started` by THIS host and pid, from an earlier run
+    * The previous run with this pid is gone (pids are reused, but not by a live
+      run of this prompt). Treat it exactly like any other claim: believed for
+      {STALE_CLAIM_HOURS}, then adoptable. Do not special-case "it looks like me".
+
+  {IN_PROGRESS_LOCK} exists and is younger than 60 seconds
+    * Another run is mid-write. Wait briefly and retry — a few hundred milliseconds
+      is enough, because the lock is only ever held around one file write. If it is
+      still there after ~10 seconds, treat it as stale, break it, and log that.
+
+  the ledger has a row whose roster_key/video_key is not in {VIDEO_DEMAND_CSV}
+    * Normal, not an error: the engine regenerates that file and rows leave it. The
+      media and the words are what matter. Work it if it has media and no words,
+      and do not attempt to re-derive a demand row that no longer exists — Stage
+      3.2's seed beside the media is the fallback and it says what the row said.
 
   yt-dlp says "video unavailable", is geo-blocked, or is members-only
     * Skip it. Log it. It is a fact about the video, not a fault in the run. Do not
