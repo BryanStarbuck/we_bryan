@@ -1,0 +1,131 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "United States corporation #usnews #unitedstates"
+    Description: >-
+      A one-minute-forty-eight-second clip in which an unnamed speaker, whom the transcript never identifies,
+      sets out the claim that banks incorporated the United States in 1871, that the District of Columbia
+      houses that corporation, and that members of Congress and the president are therefore merely its
+      managers rather than officers of the country people believe they live in. The speaker goes on to say the
+      nation is under what he calls state capture and an interregnum, meaning in his account that there is no
+      legitimate government, and that Article Five obliged Congress to convene a convention once two-thirds of
+      state legislatures requested amendments, something he says was due in 1929 and has been withheld ever
+      since. These are the speaker's assertions and they are a well-known set of claims associated with
+      sovereign-citizen and constitutional-redemption arguments; they are disputed by mainstream
+      constitutional scholarship and are recorded here as what was said, not as an account of the legal
+      history.
+    URL: "https://www.youtube.com/watch?v=7Hio6731fyk"
+    Video_ID: "7Hio6731fyk"
+    Show: "Stew Peters Network"
+    Runtime: "00:01:48"
+    Language: "en"
+
+  Media:
+    File: "7Hio6731fyk.m4a"
+    SHA256: "0de2eaadccb3fb346f5209c3bb125d5465e6d0a1aa069beea3a5e7e4495ca365"
+    Bytes: 1762056
+    Duration_Seconds: 108
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=7Hio6731fyk"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "7Hio6731fyk.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/stew_peters_us/7Hio6731fyk/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCxj_9jcNqVF28VTAsTXZWyg"
+    Uploader_ID: "@StewPetersNetwork-l8h"
+    View_Count: 325
+    Like_Count: 19
+    Comment_Count: 1
+    Availability: "public"
+    Published_At: "2026-07-28T19:00:17+00:00"
+    Captured_At: "2026-09-09T20:05:52-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 1
+
+  Topics:
+    - "Claim that the United States is a corporation created in 1871"
+    - "Article Five convention of states"
+    - "Sovereign-citizen constitutional theory"
+    - "Assertions of illegitimate federal government"
+
+  Source:
+    Canonical_ID: "3dff934b73045120"
+    Transcribed: "2026-09-09T20:12:06.089429-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 240
+    Segments: 4
+
+  Timestamps:
+    Downloaded_At: "2026-09-09T20:05:52.498805-07:00"
+    Transcription_Finished: "2026-09-09T20:12:06.089429-07:00"
+    Recorded: "2026-07-28"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "7Hio6731fyk.ctm"
+    Fountain: "7Hio6731fyk.fountain"
+    Diarization_RTTM: "7Hio6731fyk.rttm"
+    As_Broadcast_Script: "7Hio6731fyk.script.txt"
+    Segments_JSON: "7Hio6731fyk.segments.json"
+    Segments_JSONL: "7Hio6731fyk.segments.jsonl"
+    Subtitles_SRT: "7Hio6731fyk.srt"
+    Plain_Text: "7Hio6731fyk.transcription"
+    Subtitles_VTT: "7Hio6731fyk.vtt"
+    Transcript_SHA256: "7ce98edb4647a9502efa6594a521806d2e1f9b071f861e198fdfe724b4ba22bd"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "stew_peters_us"
+    video_uid: "stew_peters_us::7Hio6731fyk"
+    video_key: "7Hio6731fyk"
+    youtube_id: "7Hio6731fyk"
+    priority: 400
+    ceiling: 1000
+    raw_score: 400
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-09T23:06:34.925Z"
+    demand_run_id: "job_1788995190120_11"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=7Hio6731fyk"
+    source_ref: "7Hio6731fyk"
+    subject_kind: "new_politician"

@@ -1,0 +1,129 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "This is how you can recover your crypto losses"
+    Description: >-
+      A forty-second clip in which Peter Schiff urges holders of Bitcoin to sell it and move the proceeds into
+      gold and silver. He argues that Bitcoin will not recover to a new high and that silver, also depressed,
+      can double and continue further, so a buyer who paid a high price for Bitcoin could break even and then
+      profit by switching metals. The specific price figures as spoken are internally inconsistent — the
+      transcript has silver going from sixty to one hundred twenty while also citing one-hundred-twenty-
+      thousand and two-hundred-thousand levels that belong to his Bitcoin argument — so the numbers should be
+      read as approximate rather than quoted precisely. Every forecast here is Schiff's own opinion, offered
+      by a long-standing and public critic of cryptocurrency who sells precious metals, and it is contested;
+      nothing in the clip is a statement of fact about future prices.
+    URL: "https://www.youtube.com/watch?v=_CV-7BUpC50"
+    Video_ID: "_CV-7BUpC50"
+    Show: "Peter Schiff"
+    Runtime: "00:00:40"
+    Language: "en"
+
+  Media:
+    File: "_CV-7BUpC50.m4a"
+    SHA256: "7c5fd594ae9cc21340cd7e7352728662a6430f87a9c18ebb08764fb3fb3c00ca"
+    Bytes: 656511
+    Duration_Seconds: 40
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=_CV-7BUpC50"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "_CV-7BUpC50.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/peter_schiff/_CV-7BUpC50/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCIjuLiLHdFxYtFmWlbTGQRQ"
+    Uploader_ID: "@peterschiff"
+    View_Count: 13074
+    Like_Count: 358
+    Comment_Count: 75
+    Availability: "public"
+    Published_At: "2026-07-06T18:01:35+00:00"
+    Captured_At: "2026-09-09T20:07:20-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 2
+
+  Topics:
+    - "Bitcoin price forecast"
+    - "Gold and silver as alternative investments"
+    - "Cryptocurrency criticism"
+    - "Precious metals advocacy"
+
+  Source:
+    Canonical_ID: "ff15c63d022060cb"
+    Transcribed: "2026-09-09T20:12:00.100102-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 127
+    Segments: 4
+
+  Timestamps:
+    Downloaded_At: "2026-09-09T20:07:20.694376-07:00"
+    Transcription_Finished: "2026-09-09T20:12:00.100102-07:00"
+    Recorded: "2026-07-06"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "_CV-7BUpC50.ctm"
+    Fountain: "_CV-7BUpC50.fountain"
+    Diarization_RTTM: "_CV-7BUpC50.rttm"
+    As_Broadcast_Script: "_CV-7BUpC50.script.txt"
+    Segments_JSON: "_CV-7BUpC50.segments.json"
+    Segments_JSONL: "_CV-7BUpC50.segments.jsonl"
+    Subtitles_SRT: "_CV-7BUpC50.srt"
+    Plain_Text: "_CV-7BUpC50.transcription"
+    Subtitles_VTT: "_CV-7BUpC50.vtt"
+    Transcript_SHA256: "b971fbcd892c5d8afa7221d6194f24da3c6cd3be9bd0eafa46c0b8fe4c47b22f"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "peter_schiff"
+    video_uid: "peter_schiff::_CV-7BUpC50"
+    video_key: "_CV-7BUpC50"
+    youtube_id: "_CV-7BUpC50"
+    priority: 100
+    ceiling: 1000
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T00:37:35.586Z"
+    demand_run_id: "job_1789000565795_24"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=_CV-7BUpC50"
+    source_ref: "_CV-7BUpC50"
+    subject_kind: "people_only"

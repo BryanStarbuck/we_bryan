@@ -1,0 +1,131 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "10 Million View #fail #scooter #moto #crash #viral"
+    Description: >-
+      A fifteen-second vertical clip posted to the Stew Peters Network channel with no political content
+      whatsoever. A rider filming from behind a motorcycle at a green light narrates, in slang, watching the
+      bike in front of him collide with something off-camera and the rider walk away unhurt. The audio is
+      thirty words of exclamation over traffic noise. It is a viral-engagement post of the kind that fills a
+      political channel's short-form feed between its actual programming, and it is catalogued here as what it
+      is rather than stretched toward the channel's usual subject matter.
+    URL: "https://www.youtube.com/watch?v=2yWQDzfR4w8"
+    Video_ID: "2yWQDzfR4w8"
+    Show: "Stew Peters Network"
+    Runtime: "00:00:15"
+    Language: "en"
+
+  Media:
+    File: "2yWQDzfR4w8.m4a"
+    SHA256: "43abbeaab87dbae498b3bdaa58b1f72f487cfac29d4f7e3eef8987dc355fe8f3"
+    Bytes: 246820
+    Duration_Seconds: 15
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=2yWQDzfR4w8"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "2yWQDzfR4w8.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/stew_peters_us/2yWQDzfR4w8/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCxj_9jcNqVF28VTAsTXZWyg"
+    Uploader_ID: "@StewPetersNetwork-l8h"
+    View_Count: 1058
+    Like_Count: 11
+    Comment_Count: 2
+    Availability: "public"
+    Published_At: "2026-05-21T19:11:01+00:00"
+    Captured_At: "2026-09-09T20:05:40-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "31.5%"
+      Turns: 2
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "68.5%"
+      Turns: 1
+
+  Topics:
+    - "Viral short-form video"
+    - "Motorcycle crash footage"
+    - "Non-political channel filler content"
+
+  Source:
+    Canonical_ID: "bb179db33b8bfadf"
+    Transcribed: "2026-09-09T20:11:57.070017-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 30
+    Segments: 6
+
+  Timestamps:
+    Downloaded_At: "2026-09-09T20:05:40.890582-07:00"
+    Transcription_Finished: "2026-09-09T20:11:57.070017-07:00"
+    Recorded: "2026-05-21"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "2yWQDzfR4w8.ctm"
+    Fountain: "2yWQDzfR4w8.fountain"
+    Diarization_RTTM: "2yWQDzfR4w8.rttm"
+    As_Broadcast_Script: "2yWQDzfR4w8.script.txt"
+    Segments_JSON: "2yWQDzfR4w8.segments.json"
+    Segments_JSONL: "2yWQDzfR4w8.segments.jsonl"
+    Subtitles_SRT: "2yWQDzfR4w8.srt"
+    Plain_Text: "2yWQDzfR4w8.transcription"
+    Subtitles_VTT: "2yWQDzfR4w8.vtt"
+    Transcript_SHA256: "6c599603bef03c241765a6121afe12a5cc95cec2ff5b44068e0852b386bff237"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "stew_peters_us"
+    video_uid: "stew_peters_us::2yWQDzfR4w8"
+    video_key: "2yWQDzfR4w8"
+    youtube_id: "2yWQDzfR4w8"
+    priority: 400
+    ceiling: 1000
+    raw_score: 400
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-09T23:06:34.925Z"
+    demand_run_id: "job_1788995190120_11"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=2yWQDzfR4w8"
+    source_ref: "2yWQDzfR4w8"
+    subject_kind: "new_politician"

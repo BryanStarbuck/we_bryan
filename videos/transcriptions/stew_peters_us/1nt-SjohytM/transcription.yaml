@@ -1,0 +1,137 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Who Could Have Possibly Built This in 1779? Stew Peters"
+    Description: >-
+      An seventeen-minute narrated essay arguing that the individual craftsmen who executed the ornamental
+      stonework and plasterwork on grand nineteenth-century buildings were systematically left out of the
+      historical record, and that this gap is suspicious rather than mundane. The narrator opens at the
+      Kunsthistorisches Museum in Vienna, completed in 1891, where an information board credited only
+      'craftsmen from across Europe', and builds his case through Philadelphia City Hall, begun 1871 and
+      completed 1901 with more than 250 exterior sculptural figures credited to architect John McArthur Jr and
+      sculptor Alexander Milne Calder while the masonry workforce is recorded only in aggregate, and the 1893
+      World's Columbian Exposition in Chicago. He contrasts this with the survival of Roman legion payrolls,
+      medieval English tax records, and named masons and glaziers at Chartres, arguing the documentary gap
+      widens precisely as record-keeping generally improves. He quotes an unnamed academic labour historian
+      giving the conventional explanation, that workers simply were not named in records because of class,
+      credits it as partially true, and then sets it aside as insufficient. The video stops short of stating
+      an alternative explanation in the portion transcribed, but the title's framing and the argument's shape
+      place it in the Tartaria and alternative-architectural-history genre. The premise is the narrator's own
+      and is contested: the class-based explanation he quotes and rejects is the mainstream historical
+      account, and differential documentation of named commissioners versus anonymous wage labour is well
+      attested without requiring a suppressed history.
+    URL: "https://www.youtube.com/watch?v=1nt-SjohytM"
+    Video_ID: "1nt-SjohytM"
+    Show: "Stew Peters Network"
+    Runtime: "00:17:40"
+    Language: "en"
+
+  Media:
+    File: "1nt-SjohytM.m4a"
+    SHA256: "f5970de79e27e769af2c9b5368d3102788e03fb29e0d9eb4a913eca197191e24"
+    Bytes: 17143833
+    Duration_Seconds: 1060
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=1nt-SjohytM"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "1nt-SjohytM.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/stew_peters_us/1nt-SjohytM/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCxj_9jcNqVF28VTAsTXZWyg"
+    Uploader_ID: "@StewPetersNetwork-l8h"
+    View_Count: 501
+    Like_Count: 24
+    Comment_Count: 5
+    Availability: "public"
+    Published_At: "2026-09-05T23:15:14+00:00"
+    Captured_At: "2026-09-09T20:05:35-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 30
+
+  Topics:
+    - "Anonymity of nineteenth-century craftsmen in the historical record"
+    - "Kunsthistorisches Museum, Philadelphia City Hall and the 1893 Columbian Exposition"
+    - "Tartaria and alternative architectural history"
+    - "Disputed claims of suppressed construction history"
+
+  Source:
+    Canonical_ID: "7d5b6dbbfd222255"
+    Transcribed: "2026-09-09T20:16:56.755352-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 3067
+    Segments: 79
+
+  Timestamps:
+    Downloaded_At: "2026-09-09T20:05:38.614926-07:00"
+    Transcription_Finished: "2026-09-09T20:16:56.755352-07:00"
+    Recorded: "2026-09-05"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "1nt-SjohytM.ctm"
+    Fountain: "1nt-SjohytM.fountain"
+    Diarization_RTTM: "1nt-SjohytM.rttm"
+    As_Broadcast_Script: "1nt-SjohytM.script.txt"
+    Segments_JSON: "1nt-SjohytM.segments.json"
+    Segments_JSONL: "1nt-SjohytM.segments.jsonl"
+    Subtitles_SRT: "1nt-SjohytM.srt"
+    Plain_Text: "1nt-SjohytM.transcription"
+    Subtitles_VTT: "1nt-SjohytM.vtt"
+    Transcript_SHA256: "8c54315f9ddf93d554a3416cc6c4541fe837ef869f8b2531368f9b76ce459215"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "stew_peters_us"
+    video_uid: "stew_peters_us::1nt-SjohytM"
+    video_key: "1nt-SjohytM"
+    youtube_id: "1nt-SjohytM"
+    priority: 400
+    ceiling: 1000
+    raw_score: 400
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-09T23:06:34.925Z"
+    demand_run_id: "job_1788995190120_11"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=1nt-SjohytM"
+    source_ref: "1nt-SjohytM"
+    subject_kind: "new_politician"
