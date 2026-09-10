@@ -1,0 +1,134 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Your story matters, your voice matters, this fight matters."
+    Description: >-
+      Senator Cory Booker reads aloud from constituent letters opposing cuts to
+      Medicaid, each from a family that says it depends on the program: a Board of
+      Education employee whose daughter's disabled son is covered, a woman who relies on
+      Medicaid for frequent hospitalisations, another for wheelchair transportation, a
+      98-year-old in full-time rehabilitation care, a parent of a 41-year-old autistic
+      son. He names each writer and closes with "I hear you." The hardship described is
+      as the letter writers report it; the clip makes no claim about what any specific
+      budget proposal would do, and no cut is quantified in it.
+    URL: "https://www.youtube.com/watch?v=-WwNNnoJKI4"
+    Video_ID: "-WwNNnoJKI4"
+    Show: "Senator Cory Booker"
+    Runtime: "00:00:59"
+    Language: "en"
+
+  Media:
+    File: "-WwNNnoJKI4.m4a"
+    SHA256: "d5c7383f5766150fc289d7fec4b3097142f82e718c0e4b49f69b0be6210c56ef"
+    Bytes: 960682
+    Duration_Seconds: 59
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-WwNNnoJKI4"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-WwNNnoJKI4.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/cory_a_booker_nj_sen/-WwNNnoJKI4/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC6FlymqNS1VettnVZa7goPA"
+    Uploader_ID: "@senbooker"
+    View_Count: 9128
+    Comment_Count: 77
+    Availability: "public"
+    Published_At: "2025-04-01T22:26:22+00:00"
+    Captured_At: "2026-09-10T04:32:48-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "94.6%"
+      Turns: 2
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "5.4%"
+      Turns: 2
+
+  Topics:
+    - "Medicaid funding and proposed cuts"
+    - "Disability care and long-term services"
+    - "Constituent letters read into the record"
+    - "Senior and caregiver coverage"
+
+  Source:
+    Canonical_ID: "cf62286470df5d7b"
+    Transcribed: "2026-09-10T04:35:23.254786-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 141
+    Segments: 8
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T04:32:51.720357-07:00"
+    Transcription_Finished: "2026-09-10T04:35:23.254786-07:00"
+    Recorded: "2025-04-01"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-WwNNnoJKI4.ctm"
+    Fountain: "-WwNNnoJKI4.fountain"
+    Diarization_RTTM: "-WwNNnoJKI4.rttm"
+    As_Broadcast_Script: "-WwNNnoJKI4.script.txt"
+    Segments_JSON: "-WwNNnoJKI4.segments.json"
+    Segments_JSONL: "-WwNNnoJKI4.segments.jsonl"
+    Subtitles_SRT: "-WwNNnoJKI4.srt"
+    Plain_Text: "-WwNNnoJKI4.transcription"
+    Subtitles_VTT: "-WwNNnoJKI4.vtt"
+    Transcript_SHA256: "e4e63fb954c3d80d988da466662ffb1c3e19cab1d043bd8f7208799c565b0bb2"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "cory_a_booker_nj_sen"
+    video_uid: "cory_a_booker_nj_sen::-WwNNnoJKI4"
+    video_key: "-WwNNnoJKI4"
+    youtube_id: "-WwNNnoJKI4"
+    priority: 595
+    ceiling: 1000
+    raw_score: 595
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T10:15:12.024Z"
+    demand_run_id: "job_1789035300004_69"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-WwNNnoJKI4"
+    source_ref: "-WwNNnoJKI4"
+    subject_kind: "new_politician"

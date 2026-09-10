@@ -1,0 +1,5617 @@
+{
+  "schema_version": 2,
+  "canonical_id": "394c8497b0bcd98a",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 316.52,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T11:39:27.412Z",
+  "text_sha256": "172300213b1827f7a417b33f6715ed2b62a0fc2327766d463155381d3cebe4b3",
+  "segments_sha256": "4c7b2f081b9793708ff1f94b7ade02167f5b60ac9e4c7f34d97533c306aec5b5",
+  "words_sha256": "04f59d8d77bc1d84290e988d8a515da5378b372b44825e9f08287cb88e6b2306",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 13,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 31,
+    "clusters": 10,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 66.5
+      },
+      "clean_s": 66.5,
+      "speaking_s": 66.5,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 57.6
+      },
+      "clean_s": 57.6,
+      "speaking_s": 57.6,
+      "first_s": 30.96
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 85.4
+      },
+      "clean_s": 85.4,
+      "speaking_s": 85.4,
+      "first_s": 37.04
+    },
+    {
+      "id": "SPEAKER_09",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 7.8
+      },
+      "clean_s": 7.8,
+      "speaking_s": 7.8,
+      "first_s": 168.16
+    },
+    {
+      "id": "SPEAKER_11",
+      "n": 5,
+      "label": "Speaker 5 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.85,
+        "confidence": "low",
+        "clean_s": 61.1
+      },
+      "clean_s": 61.1,
+      "speaking_s": 61.1,
+      "first_s": 175.97
+    },
+    {
+      "id": "SPEAKER_13",
+      "n": 6,
+      "label": "Speaker 6",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 6.1
+      },
+      "clean_s": 6.1,
+      "speaking_s": 6.1,
+      "first_s": 249.04
+    },
+    {
+      "id": "SPEAKER_15",
+      "n": 7,
+      "label": "Speaker 7",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.4
+      },
+      "clean_s": 1.4,
+      "speaking_s": 1.4,
+      "first_s": 256.67
+    },
+    {
+      "id": "SPEAKER_21",
+      "n": 8,
+      "label": "Speaker 8",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.2
+      },
+      "clean_s": 5.2,
+      "speaking_s": 5.2,
+      "first_s": 286.8
+    },
+    {
+      "id": "SPEAKER_23",
+      "n": 9,
+      "label": "Speaker 9",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.4
+      },
+      "clean_s": 5.4,
+      "speaking_s": 5.4,
+      "first_s": 295.02
+    },
+    {
+      "id": "SPEAKER_28",
+      "n": 10,
+      "label": "Speaker 10",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.4
+      },
+      "clean_s": 0.4,
+      "speaking_s": 0.4,
+      "first_s": 316.22
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 20.05,
+      "end_s": 20.27,
+      "segment_i": 1,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 36.64,
+      "end_s": 36.72,
+      "segment_i": 4,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 78.64,
+      "end_s": 78.94,
+      "segment_i": 7,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 79.21,
+      "end_s": 79.21,
+      "segment_i": 8,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 124.87,
+      "end_s": 124.87,
+      "segment_i": 11,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 139.53,
+      "end_s": 139.74,
+      "segment_i": 14,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 147.34,
+      "end_s": 147.34,
+      "segment_i": 16,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 166.11,
+      "end_s": 166.79,
+      "segment_i": 18,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 167.02,
+      "end_s": 168.02,
+      "segment_i": 19,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 197.04,
+      "end_s": 197.04,
+      "segment_i": 22,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 256.02,
+      "end_s": 256.5,
+      "segment_i": 27,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 266.74,
+      "end_s": 266.86,
+      "segment_i": 30,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 278.21,
+      "end_s": 278.21,
+      "segment_i": 32,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 285.53,
+      "end_s": 286.41,
+      "segment_i": 34,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 300.63,
+      "end_s": 301.15,
+      "segment_i": 38,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 316.01,
+      "end_s": 316.09,
+      "segment_i": 40,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.08,
+      "end_s": 20.03,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you, Mr. Chair and Ranking Member Crapo for holding this hearing, and thank you to our witnesses for testifying today. I wanted to start with a question to you, Ms. Pope. The year-end relief package contained my bipartisan bill to increase access to capital for residential and commercial energy storage projects.",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 0.08,
+          "e": 0.33,
+          "c": 0.118103
+        },
+        {
+          "w": "you,",
+          "s": 0.33,
+          "e": 0.62,
+          "c": 0.618091
+        },
+        {
+          "w": "Mr.",
+          "s": 0.69,
+          "e": 0.99,
+          "c": 0.894923
+        },
+        {
+          "w": "Chair",
+          "s": 0.99,
+          "e": 1.33,
+          "c": 0.959454
+        },
+        {
+          "w": "and",
+          "s": 1.33,
+          "e": 1.97,
+          "c": 0.809101
+        },
+        {
+          "w": "Ranking",
+          "s": 2.03,
+          "e": 2.21,
+          "c": 0.913545
+        },
+        {
+          "w": "Member",
+          "s": 2.21,
+          "e": 2.39,
+          "c": 0.942502
+        },
+        {
+          "w": "Crapo",
+          "s": 2.39,
+          "e": 2.56,
+          "c": 0.31269
+        },
+        {
+          "w": "for",
+          "s": 2.6,
+          "e": 2.76,
+          "c": 0.524405
+        },
+        {
+          "w": "holding",
+          "s": 2.78,
+          "e": 3.14,
+          "c": 0.976996
+        },
+        {
+          "w": "this",
+          "s": 3.14,
+          "e": 3.4,
+          "c": 0.951972
+        },
+        {
+          "w": "hearing,",
+          "s": 3.4,
+          "e": 4.22,
+          "c": 0.388702
+        },
+        {
+          "w": "and",
+          "s": 4.22,
+          "e": 4.31,
+          "c": 0.655946
+        },
+        {
+          "w": "thank",
+          "s": 4.37,
+          "e": 4.5,
+          "c": 0.973537
+        },
+        {
+          "w": "you",
+          "s": 4.5,
+          "e": 4.6,
+          "c": 0.958129
+        },
+        {
+          "w": "to",
+          "s": 4.6,
+          "e": 4.64,
+          "c": 0.797295
+        },
+        {
+          "w": "our",
+          "s": 4.64,
+          "e": 4.87,
+          "c": 0.734076
+        },
+        {
+          "w": "witnesses",
+          "s": 4.93,
+          "e": 5.36,
+          "c": 0.923569
+        },
+        {
+          "w": "for",
+          "s": 5.38,
+          "e": 5.64,
+          "c": 0.927931
+        },
+        {
+          "w": "testifying",
+          "s": 5.64,
+          "e": 6.55,
+          "c": 0.984206
+        },
+        {
+          "w": "today.",
+          "s": 6.55,
+          "e": 7.3,
+          "c": 0.988333
+        },
+        {
+          "w": "I",
+          "s": 7.35,
+          "e": 7.39,
+          "c": 0.986481
+        },
+        {
+          "w": "wanted",
+          "s": 7.39,
+          "e": 7.92,
+          "c": 0.987973
+        },
+        {
+          "w": "to",
+          "s": 7.99,
+          "e": 8.15,
+          "c": 0.999226
+        },
+        {
+          "w": "start",
+          "s": 8.15,
+          "e": 8.56,
+          "c": 0.998133
+        },
+        {
+          "w": "with",
+          "s": 8.6,
+          "e": 9.01,
+          "c": 0.997617
+        },
+        {
+          "w": "a",
+          "s": 9.01,
+          "e": 9.1,
+          "c": 0.99062
+        },
+        {
+          "w": "question",
+          "s": 9.1,
+          "e": 9.79,
+          "c": 0.999205
+        },
+        {
+          "w": "to",
+          "s": 9.9,
+          "e": 10.06,
+          "c": 0.991857
+        },
+        {
+          "w": "you,",
+          "s": 10.12,
+          "e": 10.53,
+          "c": 0.906886
+        },
+        {
+          "w": "Ms.",
+          "s": 10.53,
+          "e": 11,
+          "c": 0.94954
+        },
+        {
+          "w": "Pope.",
+          "s": 11,
+          "e": 11.74,
+          "c": 0.924387
+        },
+        {
+          "w": "The",
+          "s": 11.8,
+          "e": 11.92,
+          "c": 0.99343
+        },
+        {
+          "w": "year-end",
+          "s": 11.92,
+          "e": 12.35,
+          "c": 0.775452
+        },
+        {
+          "w": "relief",
+          "s": 12.43,
+          "e": 12.76,
+          "c": 0.997023
+        },
+        {
+          "w": "package",
+          "s": 12.76,
+          "e": 13.18,
+          "c": 0.998851
+        },
+        {
+          "w": "contained",
+          "s": 13.18,
+          "e": 13.71,
+          "c": 0.809553
+        },
+        {
+          "w": "my",
+          "s": 13.84,
+          "e": 13.84,
+          "c": 0.987824
+        },
+        {
+          "w": "bipartisan",
+          "s": 13.86,
+          "e": 14.43,
+          "c": 0.96261
+        },
+        {
+          "w": "bill",
+          "s": 14.49,
+          "e": 14.7,
+          "c": 0.996289
+        },
+        {
+          "w": "to",
+          "s": 14.7,
+          "e": 14.82,
+          "c": 0.981263
+        },
+        {
+          "w": "increase",
+          "s": 14.82,
+          "e": 15.3,
+          "c": 0.988418
+        },
+        {
+          "w": "access",
+          "s": 15.3,
+          "e": 15.5,
+          "c": 0.981611
+        },
+        {
+          "w": "to",
+          "s": 15.93,
+          "e": 16,
+          "c": 0.979968
+        },
+        {
+          "w": "capital",
+          "s": 16,
+          "e": 16.84,
+          "c": 0.983134
+        },
+        {
+          "w": "for",
+          "s": 16.84,
+          "e": 16.89,
+          "c": 0.807399
+        },
+        {
+          "w": "residential",
+          "s": 17.03,
+          "e": 17.54,
+          "c": 0.991338
+        },
+        {
+          "w": "and",
+          "s": 17.54,
+          "e": 17.72,
+          "c": 0.959625
+        },
+        {
+          "w": "commercial",
+          "s": 17.75,
+          "e": 18.43,
+          "c": 0.992375
+        },
+        {
+          "w": "energy",
+          "s": 18.43,
+          "e": 18.51,
+          "c": 0.980229
+        },
+        {
+          "w": "storage",
+          "s": 19.06,
+          "e": 19.31,
+          "c": 0.996417
+        },
+        {
+          "w": "projects.",
+          "s": 19.48,
+          "e": 20.03,
+          "c": 0.949571
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 20.05,
+      "end_s": 20.27,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I'm",
+      "words": [
+        {
+          "w": "I'm",
+          "s": 20.048,
+          "e": 20.268,
+          "c": 0.829145
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 20.4,
+      "end_s": 31.04,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "also a supporter of bipartisan efforts led by Senator Heinrich and others to strengthen tax incentives for energy storage. Ms. Pope, how do battery storage incentives",
+      "words": [
+        {
+          "w": "also",
+          "s": 20.398,
+          "e": 20.568,
+          "c": 0.992362
+        },
+        {
+          "w": "a",
+          "s": 20.568,
+          "e": 20.638,
+          "c": 0.997328
+        },
+        {
+          "w": "supporter",
+          "s": 20.638,
+          "e": 21.218,
+          "c": 0.995277
+        },
+        {
+          "w": "of",
+          "s": 21.348,
+          "e": 21.458,
+          "c": 0.950719
+        },
+        {
+          "w": "bipartisan",
+          "s": 21.488,
+          "e": 22.218,
+          "c": 0.982107
+        },
+        {
+          "w": "efforts",
+          "s": 22.218,
+          "e": 22.718,
+          "c": 0.993583
+        },
+        {
+          "w": "led",
+          "s": 22.848,
+          "e": 22.998,
+          "c": 0.736385
+        },
+        {
+          "w": "by",
+          "s": 23.058,
+          "e": 23.198,
+          "c": 0.990133
+        },
+        {
+          "w": "Senator",
+          "s": 23.318,
+          "e": 23.598,
+          "c": 0.89063
+        },
+        {
+          "w": "Heinrich",
+          "s": 23.598,
+          "e": 24.008,
+          "c": 0.983443
+        },
+        {
+          "w": "and",
+          "s": 24.088,
+          "e": 24.308,
+          "c": 0.93513
+        },
+        {
+          "w": "others",
+          "s": 24.308,
+          "e": 24.738,
+          "c": 0.973497
+        },
+        {
+          "w": "to",
+          "s": 25.098,
+          "e": 25.168,
+          "c": 0.657434
+        },
+        {
+          "w": "strengthen",
+          "s": 25.168,
+          "e": 25.648,
+          "c": 0.941698
+        },
+        {
+          "w": "tax",
+          "s": 25.648,
+          "e": 26.038,
+          "c": 0.516073
+        },
+        {
+          "w": "incentives",
+          "s": 26.038,
+          "e": 26.608,
+          "c": 0.977663
+        },
+        {
+          "w": "for",
+          "s": 26.608,
+          "e": 26.828,
+          "c": 0.965374
+        },
+        {
+          "w": "energy",
+          "s": 26.828,
+          "e": 27.288,
+          "c": 0.989442
+        },
+        {
+          "w": "storage.",
+          "s": 27.288,
+          "e": 28.078,
+          "c": 0.984654
+        },
+        {
+          "w": "Ms.",
+          "s": 28.088,
+          "e": 28.458,
+          "c": 0.922881
+        },
+        {
+          "w": "Pope,",
+          "s": 28.458,
+          "e": 28.898,
+          "c": 0.94408
+        },
+        {
+          "w": "how",
+          "s": 28.898,
+          "e": 29.118,
+          "c": 0.994789
+        },
+        {
+          "w": "do",
+          "s": 29.118,
+          "e": 29.268,
+          "c": 0.991951
+        },
+        {
+          "w": "battery",
+          "s": 29.268,
+          "e": 29.788,
+          "c": 0.985248
+        },
+        {
+          "w": "storage",
+          "s": 29.788,
+          "e": 30.308,
+          "c": 0.988323
+        },
+        {
+          "w": "incentives",
+          "s": 30.308,
+          "e": 31.038,
+          "c": 0.998102
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 31.1,
+      "end_s": 36.57,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "help improve the reliability of the electrical grid and cut costs for consumers?",
+      "words": [
+        {
+          "w": "help",
+          "s": 31.098,
+          "e": 31.368,
+          "c": 0.946055
+        },
+        {
+          "w": "improve",
+          "s": 31.368,
+          "e": 31.868,
+          "c": 0.983774
+        },
+        {
+          "w": "the",
+          "s": 31.868,
+          "e": 32.048,
+          "c": 0.988238
+        },
+        {
+          "w": "reliability",
+          "s": 32.108,
+          "e": 32.778,
+          "c": 0.996997
+        },
+        {
+          "w": "of",
+          "s": 32.828,
+          "e": 32.988,
+          "c": 0.983113
+        },
+        {
+          "w": "the",
+          "s": 33.138,
+          "e": 33.218,
+          "c": 0.991304
+        },
+        {
+          "w": "electrical",
+          "s": 33.218,
+          "e": 33.908,
+          "c": 0.991627
+        },
+        {
+          "w": "grid",
+          "s": 33.908,
+          "e": 34.208,
+          "c": 0.997198
+        },
+        {
+          "w": "and",
+          "s": 34.208,
+          "e": 34.478,
+          "c": 0.881003
+        },
+        {
+          "w": "cut",
+          "s": 34.488,
+          "e": 34.668,
+          "c": 0.997143
+        },
+        {
+          "w": "costs",
+          "s": 34.768,
+          "e": 35.238,
+          "c": 0.980701
+        },
+        {
+          "w": "for",
+          "s": 35.238,
+          "e": 35.518,
+          "c": 0.996305
+        },
+        {
+          "w": "consumers?",
+          "s": 35.518,
+          "e": 36.568,
+          "c": 0.973417
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 36.64,
+      "end_s": 36.72,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "-",
+      "words": [
+        {
+          "w": "-",
+          "s": 36.64,
+          "e": 36.72,
+          "c": 0.411429
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 37.08,
+      "end_s": 58.22,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you, Senator Hanson. Battery storage is an absolute critical component to the future of the reliability of our systems, both connected with the generation by renewables, as well as for reliability of the distribution system, let's say connected with substations,",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 37.08,
+          "e": 37.14,
+          "c": 0.990589
+        },
+        {
+          "w": "you,",
+          "s": 37.14,
+          "e": 37.56,
+          "c": 0.656698
+        },
+        {
+          "w": "Senator",
+          "s": 37.56,
+          "e": 38.15,
+          "c": 0.975068
+        },
+        {
+          "w": "Hanson.",
+          "s": 38.15,
+          "e": 38.79,
+          "c": 0.569302
+        },
+        {
+          "w": "Battery",
+          "s": 39.38,
+          "e": 39.48,
+          "c": 0.974827
+        },
+        {
+          "w": "storage",
+          "s": 39.48,
+          "e": 40.02,
+          "c": 0.998677
+        },
+        {
+          "w": "is",
+          "s": 40.02,
+          "e": 40.17,
+          "c": 0.990887
+        },
+        {
+          "w": "an",
+          "s": 40.17,
+          "e": 40.23,
+          "c": 0.995978
+        },
+        {
+          "w": "absolute",
+          "s": 40.33,
+          "e": 40.93,
+          "c": 0.955359
+        },
+        {
+          "w": "critical",
+          "s": 40.93,
+          "e": 41.54,
+          "c": 0.985394
+        },
+        {
+          "w": "component",
+          "s": 41.54,
+          "e": 42.21,
+          "c": 0.990541
+        },
+        {
+          "w": "to",
+          "s": 42.26,
+          "e": 42.47,
+          "c": 0.99984
+        },
+        {
+          "w": "the",
+          "s": 42.71,
+          "e": 42.78,
+          "c": 0.999876
+        },
+        {
+          "w": "future",
+          "s": 42.78,
+          "e": 43.41,
+          "c": 0.999544
+        },
+        {
+          "w": "of",
+          "s": 43.41,
+          "e": 43.55,
+          "c": 0.989398
+        },
+        {
+          "w": "the",
+          "s": 43.56,
+          "e": 43.86,
+          "c": 0.999329
+        },
+        {
+          "w": "reliability",
+          "s": 44.16,
+          "e": 45.09,
+          "c": 0.999607
+        },
+        {
+          "w": "of",
+          "s": 45.09,
+          "e": 45.3,
+          "c": 0.992765
+        },
+        {
+          "w": "our",
+          "s": 45.3,
+          "e": 45.56,
+          "c": 0.999682
+        },
+        {
+          "w": "systems,",
+          "s": 45.61,
+          "e": 46.38,
+          "c": 0.486626
+        },
+        {
+          "w": "both",
+          "s": 46.77,
+          "e": 46.77,
+          "c": 0.999418
+        },
+        {
+          "w": "connected",
+          "s": 46.83,
+          "e": 47.64,
+          "c": 0.999335
+        },
+        {
+          "w": "with",
+          "s": 47.65,
+          "e": 47.94,
+          "c": 0.994704
+        },
+        {
+          "w": "the",
+          "s": 48.27,
+          "e": 48.34,
+          "c": 0.975788
+        },
+        {
+          "w": "generation",
+          "s": 48.34,
+          "e": 49.36,
+          "c": 0.999262
+        },
+        {
+          "w": "by",
+          "s": 49.36,
+          "e": 49.68,
+          "c": 0.833155
+        },
+        {
+          "w": "renewables,",
+          "s": 49.69,
+          "e": 51.38,
+          "c": 0.675349
+        },
+        {
+          "w": "as",
+          "s": 51.38,
+          "e": 51.65,
+          "c": 0.99967
+        },
+        {
+          "w": "well",
+          "s": 51.83,
+          "e": 52.1,
+          "c": 0.999868
+        },
+        {
+          "w": "as",
+          "s": 52.2,
+          "e": 52.47,
+          "c": 0.997387
+        },
+        {
+          "w": "for",
+          "s": 52.47,
+          "e": 52.88,
+          "c": 0.962078
+        },
+        {
+          "w": "reliability",
+          "s": 52.88,
+          "e": 54.42,
+          "c": 0.847241
+        },
+        {
+          "w": "of",
+          "s": 54.42,
+          "e": 54.53,
+          "c": 0.964435
+        },
+        {
+          "w": "the",
+          "s": 54.53,
+          "e": 54.65,
+          "c": 0.999142
+        },
+        {
+          "w": "distribution",
+          "s": 54.72,
+          "e": 55.35,
+          "c": 0.998755
+        },
+        {
+          "w": "system,",
+          "s": 55.35,
+          "e": 55.7,
+          "c": 0.658884
+        },
+        {
+          "w": "let's",
+          "s": 55.7,
+          "e": 56.08,
+          "c": 0.943412
+        },
+        {
+          "w": "say",
+          "s": 56.15,
+          "e": 56.31,
+          "c": 0.996227
+        },
+        {
+          "w": "connected",
+          "s": 56.36,
+          "e": 56.96,
+          "c": 0.913602
+        },
+        {
+          "w": "with",
+          "s": 57.01,
+          "e": 57.27,
+          "c": 0.999296
+        },
+        {
+          "w": "substations,",
+          "s": 57.59,
+          "e": 58.22,
+          "c": 0.407589
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 58.3,
+      "end_s": 78.31,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "as well as also an individual homes for reliability and resiliency. And as we look at the grid of the future, we will be able to store solar and wind energy for use during times when the wind is not blowing and the sun is not shining, and be able to have truly a bi-directional integrated, much more reliable",
+      "words": [
+        {
+          "w": "as",
+          "s": 58.305,
+          "e": 58.405,
+          "c": 0.888676
+        },
+        {
+          "w": "well",
+          "s": 58.435,
+          "e": 58.805,
+          "c": 0.999371
+        },
+        {
+          "w": "as",
+          "s": 58.805,
+          "e": 59.005,
+          "c": 0.99556
+        },
+        {
+          "w": "also",
+          "s": 59.005,
+          "e": 59.295,
+          "c": 0.959342
+        },
+        {
+          "w": "an",
+          "s": 59.415,
+          "e": 59.605,
+          "c": 0.671621
+        },
+        {
+          "w": "individual",
+          "s": 59.605,
+          "e": 60.605,
+          "c": 0.997279
+        },
+        {
+          "w": "homes",
+          "s": 60.605,
+          "e": 61.015,
+          "c": 0.679508
+        },
+        {
+          "w": "for",
+          "s": 61.165,
+          "e": 61.225,
+          "c": 0.98968
+        },
+        {
+          "w": "reliability",
+          "s": 61.225,
+          "e": 61.835,
+          "c": 0.994078
+        },
+        {
+          "w": "and",
+          "s": 61.835,
+          "e": 61.995,
+          "c": 0.997697
+        },
+        {
+          "w": "resiliency.",
+          "s": 61.995,
+          "e": 62.585,
+          "c": 0.917821
+        },
+        {
+          "w": "And",
+          "s": 62.695,
+          "e": 62.745,
+          "c": 0.971143
+        },
+        {
+          "w": "as",
+          "s": 62.745,
+          "e": 62.845,
+          "c": 0.978566
+        },
+        {
+          "w": "we",
+          "s": 62.845,
+          "e": 62.935,
+          "c": 0.998729
+        },
+        {
+          "w": "look",
+          "s": 62.945,
+          "e": 63.135,
+          "c": 0.999115
+        },
+        {
+          "w": "at",
+          "s": 63.135,
+          "e": 63.235,
+          "c": 0.996846
+        },
+        {
+          "w": "the",
+          "s": 63.235,
+          "e": 63.375,
+          "c": 0.998289
+        },
+        {
+          "w": "grid",
+          "s": 63.375,
+          "e": 63.605,
+          "c": 0.975556
+        },
+        {
+          "w": "of",
+          "s": 63.605,
+          "e": 63.695,
+          "c": 0.986466
+        },
+        {
+          "w": "the",
+          "s": 63.815,
+          "e": 64.055,
+          "c": 0.999224
+        },
+        {
+          "w": "future,",
+          "s": 64.375,
+          "e": 64.645,
+          "c": 0.963347
+        },
+        {
+          "w": "we",
+          "s": 64.745,
+          "e": 64.855,
+          "c": 0.99946
+        },
+        {
+          "w": "will",
+          "s": 64.875,
+          "e": 65.275,
+          "c": 0.998635
+        },
+        {
+          "w": "be",
+          "s": 65.275,
+          "e": 65.445,
+          "c": 0.999436
+        },
+        {
+          "w": "able",
+          "s": 65.505,
+          "e": 65.905,
+          "c": 0.999889
+        },
+        {
+          "w": "to",
+          "s": 65.905,
+          "e": 66.095,
+          "c": 0.998203
+        },
+        {
+          "w": "store",
+          "s": 66.415,
+          "e": 66.645,
+          "c": 0.999041
+        },
+        {
+          "w": "solar",
+          "s": 66.645,
+          "e": 67.305,
+          "c": 0.963978
+        },
+        {
+          "w": "and",
+          "s": 67.305,
+          "e": 67.665,
+          "c": 0.942087
+        },
+        {
+          "w": "wind",
+          "s": 67.665,
+          "e": 68.145,
+          "c": 0.998475
+        },
+        {
+          "w": "energy",
+          "s": 68.145,
+          "e": 68.865,
+          "c": 0.989323
+        },
+        {
+          "w": "for",
+          "s": 68.865,
+          "e": 69.265,
+          "c": 0.557797
+        },
+        {
+          "w": "use",
+          "s": 69.315,
+          "e": 69.695,
+          "c": 0.994877
+        },
+        {
+          "w": "during",
+          "s": 69.805,
+          "e": 70.135,
+          "c": 0.999765
+        },
+        {
+          "w": "times",
+          "s": 70.135,
+          "e": 70.485,
+          "c": 0.99874
+        },
+        {
+          "w": "when",
+          "s": 70.485,
+          "e": 70.765,
+          "c": 0.995006
+        },
+        {
+          "w": "the",
+          "s": 70.765,
+          "e": 70.975,
+          "c": 0.998772
+        },
+        {
+          "w": "wind",
+          "s": 70.975,
+          "e": 71.155,
+          "c": 0.999781
+        },
+        {
+          "w": "is",
+          "s": 71.395,
+          "e": 71.395,
+          "c": 0.995919
+        },
+        {
+          "w": "not",
+          "s": 71.475,
+          "e": 71.595,
+          "c": 0.998112
+        },
+        {
+          "w": "blowing",
+          "s": 71.625,
+          "e": 72.145,
+          "c": 0.994283
+        },
+        {
+          "w": "and",
+          "s": 72.245,
+          "e": 72.345,
+          "c": 0.762429
+        },
+        {
+          "w": "the",
+          "s": 72.375,
+          "e": 72.545,
+          "c": 0.996263
+        },
+        {
+          "w": "sun",
+          "s": 72.545,
+          "e": 72.745,
+          "c": 0.988127
+        },
+        {
+          "w": "is",
+          "s": 72.745,
+          "e": 72.875,
+          "c": 0.998955
+        },
+        {
+          "w": "not",
+          "s": 72.875,
+          "e": 73.075,
+          "c": 0.999653
+        },
+        {
+          "w": "shining,",
+          "s": 73.075,
+          "e": 73.605,
+          "c": 0.462892
+        },
+        {
+          "w": "and",
+          "s": 73.705,
+          "e": 73.775,
+          "c": 0.884426
+        },
+        {
+          "w": "be",
+          "s": 73.775,
+          "e": 73.885,
+          "c": 0.976742
+        },
+        {
+          "w": "able",
+          "s": 73.885,
+          "e": 74.115,
+          "c": 0.999693
+        },
+        {
+          "w": "to",
+          "s": 74.115,
+          "e": 74.225,
+          "c": 0.99855
+        },
+        {
+          "w": "have",
+          "s": 74.225,
+          "e": 74.405,
+          "c": 0.992021
+        },
+        {
+          "w": "truly",
+          "s": 74.465,
+          "e": 74.695,
+          "c": 0.943351
+        },
+        {
+          "w": "a",
+          "s": 74.815,
+          "e": 74.835,
+          "c": 0.94833
+        },
+        {
+          "w": "bi-directional",
+          "s": 74.835,
+          "e": 75.865,
+          "c": 0.671825
+        },
+        {
+          "w": "integrated,",
+          "s": 75.865,
+          "e": 76.865,
+          "c": 0.577394
+        },
+        {
+          "w": "much",
+          "s": 76.965,
+          "e": 77.275,
+          "c": 0.999184
+        },
+        {
+          "w": "more",
+          "s": 77.275,
+          "e": 77.665,
+          "c": 0.999512
+        },
+        {
+          "w": "reliable",
+          "s": 77.675,
+          "e": 78.315,
+          "c": 0.999497
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 78.64,
+      "end_s": 78.94,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "grid.",
+      "words": [
+        {
+          "w": "grid.",
+          "s": 78.635,
+          "e": 78.945,
+          "c": 0.6976
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 79.21,
+      "end_s": 79.22,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "For",
+      "words": [
+        {
+          "w": "For",
+          "s": 79.211,
+          "e": 79.211,
+          "c": 0.907653
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 79.23,
+      "end_s": 102.82,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "example, Portland General, together with NextEra Energy Resources, just brought online the wind portion of the largest scale solar, wind, and battery storage facility in Eastern Oregon. And what that does to the prior discussion on transmission, it allows us to utilize better the transmission that goes across the state.",
+      "words": [
+        {
+          "w": "example,",
+          "s": 79.231,
+          "e": 80.011,
+          "c": 0.963804
+        },
+        {
+          "w": "Portland",
+          "s": 80.131,
+          "e": 80.771,
+          "c": 0.985704
+        },
+        {
+          "w": "General,",
+          "s": 80.771,
+          "e": 81.441,
+          "c": 0.627292
+        },
+        {
+          "w": "together",
+          "s": 81.681,
+          "e": 82.191,
+          "c": 0.858988
+        },
+        {
+          "w": "with",
+          "s": 82.211,
+          "e": 82.541,
+          "c": 0.99007
+        },
+        {
+          "w": "NextEra",
+          "s": 82.541,
+          "e": 83.021,
+          "c": 0.733896
+        },
+        {
+          "w": "Energy",
+          "s": 83.021,
+          "e": 83.381,
+          "c": 0.920535
+        },
+        {
+          "w": "Resources,",
+          "s": 83.381,
+          "e": 84.381,
+          "c": 0.691211
+        },
+        {
+          "w": "just",
+          "s": 84.561,
+          "e": 84.701,
+          "c": 0.574674
+        },
+        {
+          "w": "brought",
+          "s": 84.701,
+          "e": 84.941,
+          "c": 0.960985
+        },
+        {
+          "w": "online",
+          "s": 84.941,
+          "e": 85.541,
+          "c": 0.942078
+        },
+        {
+          "w": "the",
+          "s": 85.541,
+          "e": 85.701,
+          "c": 0.611747
+        },
+        {
+          "w": "wind",
+          "s": 85.701,
+          "e": 86.151,
+          "c": 0.900911
+        },
+        {
+          "w": "portion",
+          "s": 86.171,
+          "e": 86.831,
+          "c": 0.844096
+        },
+        {
+          "w": "of",
+          "s": 87.241,
+          "e": 87.401,
+          "c": 0.767678
+        },
+        {
+          "w": "the",
+          "s": 87.401,
+          "e": 87.481,
+          "c": 0.974661
+        },
+        {
+          "w": "largest",
+          "s": 87.481,
+          "e": 88.151,
+          "c": 0.947986
+        },
+        {
+          "w": "scale",
+          "s": 88.501,
+          "e": 89.371,
+          "c": 0.55951
+        },
+        {
+          "w": "solar,",
+          "s": 89.921,
+          "e": 90.481,
+          "c": 0.63437
+        },
+        {
+          "w": "wind,",
+          "s": 90.481,
+          "e": 90.951,
+          "c": 0.563115
+        },
+        {
+          "w": "and",
+          "s": 91.001,
+          "e": 91.141,
+          "c": 0.813911
+        },
+        {
+          "w": "battery",
+          "s": 91.241,
+          "e": 91.601,
+          "c": 0.964774
+        },
+        {
+          "w": "storage",
+          "s": 91.601,
+          "e": 92.131,
+          "c": 0.951122
+        },
+        {
+          "w": "facility",
+          "s": 92.131,
+          "e": 92.841,
+          "c": 0.980398
+        },
+        {
+          "w": "in",
+          "s": 93.141,
+          "e": 93.141,
+          "c": 0.890935
+        },
+        {
+          "w": "Eastern",
+          "s": 93.151,
+          "e": 93.741,
+          "c": 0.539216
+        },
+        {
+          "w": "Oregon.",
+          "s": 93.741,
+          "e": 94.141,
+          "c": 0.901177
+        },
+        {
+          "w": "And",
+          "s": 94.351,
+          "e": 94.351,
+          "c": 0.962952
+        },
+        {
+          "w": "what",
+          "s": 94.421,
+          "e": 94.631,
+          "c": 0.993303
+        },
+        {
+          "w": "that",
+          "s": 94.631,
+          "e": 94.911,
+          "c": 0.998698
+        },
+        {
+          "w": "does",
+          "s": 94.911,
+          "e": 95.191,
+          "c": 0.999443
+        },
+        {
+          "w": "to",
+          "s": 95.191,
+          "e": 95.211,
+          "c": 0.9085
+        },
+        {
+          "w": "the",
+          "s": 95.331,
+          "e": 95.541,
+          "c": 0.996837
+        },
+        {
+          "w": "prior",
+          "s": 95.541,
+          "e": 95.891,
+          "c": 0.985426
+        },
+        {
+          "w": "discussion",
+          "s": 95.891,
+          "e": 96.511,
+          "c": 0.997518
+        },
+        {
+          "w": "on",
+          "s": 96.521,
+          "e": 96.641,
+          "c": 0.984938
+        },
+        {
+          "w": "transmission,",
+          "s": 96.881,
+          "e": 97.781,
+          "c": 0.849774
+        },
+        {
+          "w": "it",
+          "s": 97.781,
+          "e": 97.931,
+          "c": 0.983839
+        },
+        {
+          "w": "allows",
+          "s": 98.001,
+          "e": 98.421,
+          "c": 0.999134
+        },
+        {
+          "w": "us",
+          "s": 98.421,
+          "e": 98.581,
+          "c": 0.999053
+        },
+        {
+          "w": "to",
+          "s": 98.581,
+          "e": 98.741,
+          "c": 0.99918
+        },
+        {
+          "w": "utilize",
+          "s": 98.741,
+          "e": 99.301,
+          "c": 0.994615
+        },
+        {
+          "w": "better",
+          "s": 99.301,
+          "e": 99.771,
+          "c": 0.988844
+        },
+        {
+          "w": "the",
+          "s": 99.781,
+          "e": 100.021,
+          "c": 0.991769
+        },
+        {
+          "w": "transmission",
+          "s": 100.021,
+          "e": 100.991,
+          "c": 0.999462
+        },
+        {
+          "w": "that",
+          "s": 100.991,
+          "e": 101.311,
+          "c": 0.999131
+        },
+        {
+          "w": "goes",
+          "s": 101.311,
+          "e": 101.631,
+          "c": 0.999624
+        },
+        {
+          "w": "across",
+          "s": 101.631,
+          "e": 102.031,
+          "c": 0.999102
+        },
+        {
+          "w": "the",
+          "s": 102.101,
+          "e": 102.121,
+          "c": 0.99942
+        },
+        {
+          "w": "state.",
+          "s": 102.441,
+          "e": 102.821,
+          "c": 0.409053
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 103,
+      "end_s": 124.53,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "on more of a 24/7 basis when you otherwise would not be generating because that storage has been able to store the solar. And in the future with Senator Wyden's bill would also be able to store the wind. So that's very, very important component as we move forward and technology is moving very quickly.",
+      "words": [
+        {
+          "w": "on",
+          "s": 102.995,
+          "e": 103.055,
+          "c": 0.883371
+        },
+        {
+          "w": "more",
+          "s": 103.055,
+          "e": 103.565,
+          "c": 0.992517
+        },
+        {
+          "w": "of",
+          "s": 103.765,
+          "e": 103.925,
+          "c": 0.997385
+        },
+        {
+          "w": "a",
+          "s": 103.925,
+          "e": 104.065,
+          "c": 0.997286
+        },
+        {
+          "w": "24/7",
+          "s": 104.065,
+          "e": 105.505,
+          "c": 0.785382
+        },
+        {
+          "w": "basis",
+          "s": 105.505,
+          "e": 105.885,
+          "c": 0.992956
+        },
+        {
+          "w": "when",
+          "s": 106.315,
+          "e": 106.485,
+          "c": 0.548956
+        },
+        {
+          "w": "you",
+          "s": 106.485,
+          "e": 106.665,
+          "c": 0.994503
+        },
+        {
+          "w": "otherwise",
+          "s": 106.665,
+          "e": 107.125,
+          "c": 0.978995
+        },
+        {
+          "w": "would",
+          "s": 107.165,
+          "e": 107.305,
+          "c": 0.781944
+        },
+        {
+          "w": "not",
+          "s": 107.305,
+          "e": 107.455,
+          "c": 0.979815
+        },
+        {
+          "w": "be",
+          "s": 107.525,
+          "e": 107.625,
+          "c": 0.91225
+        },
+        {
+          "w": "generating",
+          "s": 107.655,
+          "e": 108.125,
+          "c": 0.954339
+        },
+        {
+          "w": "because",
+          "s": 108.125,
+          "e": 108.645,
+          "c": 0.700766
+        },
+        {
+          "w": "that",
+          "s": 108.645,
+          "e": 108.965,
+          "c": 0.968742
+        },
+        {
+          "w": "storage",
+          "s": 109.015,
+          "e": 110.085,
+          "c": 0.783609
+        },
+        {
+          "w": "has",
+          "s": 110.695,
+          "e": 110.815,
+          "c": 0.999695
+        },
+        {
+          "w": "been",
+          "s": 110.815,
+          "e": 111.265,
+          "c": 0.999752
+        },
+        {
+          "w": "able",
+          "s": 111.465,
+          "e": 111.755,
+          "c": 0.999384
+        },
+        {
+          "w": "to",
+          "s": 111.755,
+          "e": 111.985,
+          "c": 0.99902
+        },
+        {
+          "w": "store",
+          "s": 111.985,
+          "e": 112.575,
+          "c": 0.995188
+        },
+        {
+          "w": "the",
+          "s": 112.575,
+          "e": 112.925,
+          "c": 0.987424
+        },
+        {
+          "w": "solar.",
+          "s": 112.925,
+          "e": 113.595,
+          "c": 0.468199
+        },
+        {
+          "w": "And",
+          "s": 114.015,
+          "e": 114.075,
+          "c": 0.816632
+        },
+        {
+          "w": "in",
+          "s": 114.075,
+          "e": 114.175,
+          "c": 0.979124
+        },
+        {
+          "w": "the",
+          "s": 114.175,
+          "e": 114.325,
+          "c": 0.995554
+        },
+        {
+          "w": "future",
+          "s": 114.325,
+          "e": 114.615,
+          "c": 0.999327
+        },
+        {
+          "w": "with",
+          "s": 114.615,
+          "e": 114.815,
+          "c": 0.720239
+        },
+        {
+          "w": "Senator",
+          "s": 114.815,
+          "e": 115.145,
+          "c": 0.958431
+        },
+        {
+          "w": "Wyden's",
+          "s": 115.145,
+          "e": 115.525,
+          "c": 0.936638
+        },
+        {
+          "w": "bill",
+          "s": 115.525,
+          "e": 115.645,
+          "c": 0.932701
+        },
+        {
+          "w": "would",
+          "s": 115.645,
+          "e": 115.755,
+          "c": 0.519679
+        },
+        {
+          "w": "also",
+          "s": 115.755,
+          "e": 116.015,
+          "c": 0.367068
+        },
+        {
+          "w": "be",
+          "s": 116.295,
+          "e": 116.295,
+          "c": 0.99863
+        },
+        {
+          "w": "able",
+          "s": 116.355,
+          "e": 116.635,
+          "c": 0.999302
+        },
+        {
+          "w": "to",
+          "s": 116.635,
+          "e": 116.655,
+          "c": 0.998972
+        },
+        {
+          "w": "store",
+          "s": 116.875,
+          "e": 117.195,
+          "c": 0.997611
+        },
+        {
+          "w": "the",
+          "s": 117.285,
+          "e": 117.505,
+          "c": 0.999012
+        },
+        {
+          "w": "wind.",
+          "s": 117.505,
+          "e": 118.085,
+          "c": 0.961386
+        },
+        {
+          "w": "So",
+          "s": 118.205,
+          "e": 118.295,
+          "c": 0.97171
+        },
+        {
+          "w": "that's",
+          "s": 118.295,
+          "e": 118.725,
+          "c": 0.703157
+        },
+        {
+          "w": "very,",
+          "s": 118.755,
+          "e": 119.215,
+          "c": 0.693863
+        },
+        {
+          "w": "very",
+          "s": 119.215,
+          "e": 119.265,
+          "c": 0.996478
+        },
+        {
+          "w": "important",
+          "s": 119.675,
+          "e": 120.235,
+          "c": 0.993439
+        },
+        {
+          "w": "component",
+          "s": 120.235,
+          "e": 120.985,
+          "c": 0.989538
+        },
+        {
+          "w": "as",
+          "s": 121.015,
+          "e": 121.145,
+          "c": 0.901944
+        },
+        {
+          "w": "we",
+          "s": 121.145,
+          "e": 121.265,
+          "c": 0.972737
+        },
+        {
+          "w": "move",
+          "s": 121.265,
+          "e": 121.505,
+          "c": 0.985327
+        },
+        {
+          "w": "forward",
+          "s": 121.505,
+          "e": 121.925,
+          "c": 0.990903
+        },
+        {
+          "w": "and",
+          "s": 122.145,
+          "e": 122.145,
+          "c": 0.996369
+        },
+        {
+          "w": "technology",
+          "s": 122.155,
+          "e": 122.735,
+          "c": 0.998039
+        },
+        {
+          "w": "is",
+          "s": 122.925,
+          "e": 122.995,
+          "c": 0.995672
+        },
+        {
+          "w": "moving",
+          "s": 123.085,
+          "e": 123.465,
+          "c": 0.999438
+        },
+        {
+          "w": "very",
+          "s": 123.465,
+          "e": 123.755,
+          "c": 0.998527
+        },
+        {
+          "w": "quickly.",
+          "s": 123.755,
+          "e": 124.525,
+          "c": 0.997354
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 124.87,
+      "end_s": 124.88,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "Thank",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 124.873,
+          "e": 124.873,
+          "c": 0.398037
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 124.94,
+      "end_s": 135.05,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you for that answer. I want to move now to Jason Walsh. Mr. Walsh, I've introduced bipartisan, bicameral legislation along with Senator",
+      "words": [
+        {
+          "w": "you",
+          "s": 124.943,
+          "e": 125.103,
+          "c": 0.99861
+        },
+        {
+          "w": "for",
+          "s": 125.103,
+          "e": 125.333,
+          "c": 0.985829
+        },
+        {
+          "w": "that",
+          "s": 125.333,
+          "e": 125.643,
+          "c": 0.993485
+        },
+        {
+          "w": "answer.",
+          "s": 125.643,
+          "e": 126.353,
+          "c": 0.96371
+        },
+        {
+          "w": "I",
+          "s": 126.413,
+          "e": 126.443,
+          "c": 0.598485
+        },
+        {
+          "w": "want",
+          "s": 126.443,
+          "e": 126.763,
+          "c": 0.974819
+        },
+        {
+          "w": "to",
+          "s": 126.843,
+          "e": 126.983,
+          "c": 0.997387
+        },
+        {
+          "w": "move",
+          "s": 127.003,
+          "e": 127.313,
+          "c": 0.994514
+        },
+        {
+          "w": "now",
+          "s": 127.373,
+          "e": 127.643,
+          "c": 0.943693
+        },
+        {
+          "w": "to",
+          "s": 127.643,
+          "e": 127.763,
+          "c": 0.995125
+        },
+        {
+          "w": "Jason",
+          "s": 127.913,
+          "e": 128.243,
+          "c": 0.960082
+        },
+        {
+          "w": "Walsh.",
+          "s": 128.363,
+          "e": 128.883,
+          "c": 0.97509
+        },
+        {
+          "w": "Mr.",
+          "s": 129.133,
+          "e": 129.543,
+          "c": 0.936145
+        },
+        {
+          "w": "Walsh,",
+          "s": 129.583,
+          "e": 130.113,
+          "c": 0.928044
+        },
+        {
+          "w": "I've",
+          "s": 130.113,
+          "e": 130.443,
+          "c": 0.922034
+        },
+        {
+          "w": "introduced",
+          "s": 130.443,
+          "e": 131.283,
+          "c": 0.994793
+        },
+        {
+          "w": "bipartisan,",
+          "s": 131.283,
+          "e": 132.333,
+          "c": 0.47422
+        },
+        {
+          "w": "bicameral",
+          "s": 132.333,
+          "e": 133.033,
+          "c": 0.929793
+        },
+        {
+          "w": "legislation",
+          "s": 133.033,
+          "e": 134.033,
+          "c": 0.938956
+        },
+        {
+          "w": "along",
+          "s": 134.033,
+          "e": 134.413,
+          "c": 0.394431
+        },
+        {
+          "w": "with",
+          "s": 134.413,
+          "e": 134.553,
+          "c": 0.985631
+        },
+        {
+          "w": "Senator",
+          "s": 134.573,
+          "e": 135.053,
+          "c": 0.933918
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 135.05,
+      "end_s": 139.48,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Collins to modernize and expand energy efficiency tax incentives.",
+      "words": [
+        {
+          "w": "Collins",
+          "s": 135.053,
+          "e": 135.533,
+          "c": 0.975414
+        },
+        {
+          "w": "to",
+          "s": 135.533,
+          "e": 135.563,
+          "c": 0.634801
+        },
+        {
+          "w": "modernize",
+          "s": 135.713,
+          "e": 136.303,
+          "c": 0.80117
+        },
+        {
+          "w": "and",
+          "s": 136.353,
+          "e": 136.573,
+          "c": 0.944925
+        },
+        {
+          "w": "expand",
+          "s": 136.573,
+          "e": 137.193,
+          "c": 0.977965
+        },
+        {
+          "w": "energy",
+          "s": 137.193,
+          "e": 137.623,
+          "c": 0.952147
+        },
+        {
+          "w": "efficiency",
+          "s": 137.623,
+          "e": 138.353,
+          "c": 0.948388
+        },
+        {
+          "w": "tax",
+          "s": 138.353,
+          "e": 138.483,
+          "c": 0.987796
+        },
+        {
+          "w": "incentives.",
+          "s": 138.783,
+          "e": 139.483,
+          "c": 0.993328
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 139.53,
+      "end_s": 139.74,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The",
+      "words": [
+        {
+          "w": "The",
+          "s": 139.533,
+          "e": 139.743,
+          "c": 0.995866
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 139.98,
+      "end_s": 147.15,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "energy efficiency sector is one of the largest clean energy employers with millions of workers spread out across every state.",
+      "words": [
+        {
+          "w": "energy",
+          "s": 139.983,
+          "e": 140.163,
+          "c": 0.98634
+        },
+        {
+          "w": "efficiency",
+          "s": 140.163,
+          "e": 140.853,
+          "c": 0.986871
+        },
+        {
+          "w": "sector",
+          "s": 140.853,
+          "e": 141.013,
+          "c": 0.997931
+        },
+        {
+          "w": "is",
+          "s": 141.423,
+          "e": 141.423,
+          "c": 0.998618
+        },
+        {
+          "w": "one",
+          "s": 141.463,
+          "e": 141.633,
+          "c": 0.998329
+        },
+        {
+          "w": "of",
+          "s": 141.633,
+          "e": 141.763,
+          "c": 0.998795
+        },
+        {
+          "w": "the",
+          "s": 141.763,
+          "e": 141.983,
+          "c": 0.998883
+        },
+        {
+          "w": "largest",
+          "s": 141.983,
+          "e": 142.463,
+          "c": 0.998285
+        },
+        {
+          "w": "clean",
+          "s": 142.473,
+          "e": 142.813,
+          "c": 0.989476
+        },
+        {
+          "w": "energy",
+          "s": 142.953,
+          "e": 143.243,
+          "c": 0.97366
+        },
+        {
+          "w": "employers",
+          "s": 143.243,
+          "e": 143.823,
+          "c": 0.993081
+        },
+        {
+          "w": "with",
+          "s": 143.823,
+          "e": 143.983,
+          "c": 0.549701
+        },
+        {
+          "w": "millions",
+          "s": 144.333,
+          "e": 144.763,
+          "c": 0.99616
+        },
+        {
+          "w": "of",
+          "s": 144.763,
+          "e": 144.883,
+          "c": 0.998652
+        },
+        {
+          "w": "workers",
+          "s": 144.903,
+          "e": 145.343,
+          "c": 0.997841
+        },
+        {
+          "w": "spread",
+          "s": 145.403,
+          "e": 145.703,
+          "c": 0.995296
+        },
+        {
+          "w": "out",
+          "s": 145.833,
+          "e": 145.973,
+          "c": 0.996881
+        },
+        {
+          "w": "across",
+          "s": 146.113,
+          "e": 146.303,
+          "c": 0.992559
+        },
+        {
+          "w": "every",
+          "s": 146.413,
+          "e": 146.763,
+          "c": 0.999032
+        },
+        {
+          "w": "state.",
+          "s": 146.763,
+          "e": 147.153,
+          "c": 0.891892
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 147.34,
+      "end_s": 147.35,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "our",
+      "words": [
+        {
+          "w": "our",
+          "s": 147.336,
+          "e": 147.336,
+          "c": 0.144983
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 147.38,
+      "end_s": 166.11,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "bills would expand tax credits for homeowners who upgrade appliances and improve incentives for building new energy efficient homes can you comment on how promoting energy efficiency can simultaneously create high quality jobs reduce homeowners energy bills and help fight climate",
+      "words": [
+        {
+          "w": "bills",
+          "s": 147.376,
+          "e": 147.676,
+          "c": 0.992994
+        },
+        {
+          "w": "would",
+          "s": 147.676,
+          "e": 148.016,
+          "c": 0.98914
+        },
+        {
+          "w": "expand",
+          "s": 148.016,
+          "e": 148.426,
+          "c": 0.996926
+        },
+        {
+          "w": "tax",
+          "s": 148.426,
+          "e": 148.626,
+          "c": 0.99215
+        },
+        {
+          "w": "credits",
+          "s": 148.626,
+          "e": 149.086,
+          "c": 0.994016
+        },
+        {
+          "w": "for",
+          "s": 149.276,
+          "e": 149.296,
+          "c": 0.963273
+        },
+        {
+          "w": "homeowners",
+          "s": 149.296,
+          "e": 149.836,
+          "c": 0.965823
+        },
+        {
+          "w": "who",
+          "s": 149.836,
+          "e": 150.106,
+          "c": 0.904678
+        },
+        {
+          "w": "upgrade",
+          "s": 150.166,
+          "e": 150.496,
+          "c": 0.949392
+        },
+        {
+          "w": "appliances",
+          "s": 150.496,
+          "e": 151.246,
+          "c": 0.986726
+        },
+        {
+          "w": "and",
+          "s": 151.636,
+          "e": 151.636,
+          "c": 0.999649
+        },
+        {
+          "w": "improve",
+          "s": 151.696,
+          "e": 152.056,
+          "c": 0.984327
+        },
+        {
+          "w": "incentives",
+          "s": 152.056,
+          "e": 152.656,
+          "c": 0.998698
+        },
+        {
+          "w": "for",
+          "s": 152.656,
+          "e": 152.836,
+          "c": 0.997805
+        },
+        {
+          "w": "building",
+          "s": 152.836,
+          "e": 153.316,
+          "c": 0.999338
+        },
+        {
+          "w": "new",
+          "s": 153.316,
+          "e": 153.486,
+          "c": 0.998087
+        },
+        {
+          "w": "energy",
+          "s": 153.596,
+          "e": 153.856,
+          "c": 0.99648
+        },
+        {
+          "w": "efficient",
+          "s": 153.856,
+          "e": 154.406,
+          "c": 0.848147
+        },
+        {
+          "w": "homes",
+          "s": 154.486,
+          "e": 154.736,
+          "c": 0.678829
+        },
+        {
+          "w": "can",
+          "s": 154.736,
+          "e": 155.416,
+          "c": 0.422865
+        },
+        {
+          "w": "you",
+          "s": 155.416,
+          "e": 156.096,
+          "c": 0.998614
+        },
+        {
+          "w": "comment",
+          "s": 156.096,
+          "e": 156.566,
+          "c": 0.93555
+        },
+        {
+          "w": "on",
+          "s": 156.576,
+          "e": 156.716,
+          "c": 0.795453
+        },
+        {
+          "w": "how",
+          "s": 156.756,
+          "e": 156.976,
+          "c": 0.655465
+        },
+        {
+          "w": "promoting",
+          "s": 156.976,
+          "e": 157.616,
+          "c": 0.883471
+        },
+        {
+          "w": "energy",
+          "s": 157.846,
+          "e": 158.096,
+          "c": 0.999756
+        },
+        {
+          "w": "efficiency",
+          "s": 158.096,
+          "e": 158.886,
+          "c": 0.999838
+        },
+        {
+          "w": "can",
+          "s": 158.896,
+          "e": 159.146,
+          "c": 0.999893
+        },
+        {
+          "w": "simultaneously",
+          "s": 159.146,
+          "e": 160.276,
+          "c": 0.999775
+        },
+        {
+          "w": "create",
+          "s": 160.276,
+          "e": 160.746,
+          "c": 0.994416
+        },
+        {
+          "w": "high",
+          "s": 160.856,
+          "e": 161.066,
+          "c": 0.999397
+        },
+        {
+          "w": "quality",
+          "s": 161.216,
+          "e": 161.646,
+          "c": 0.883095
+        },
+        {
+          "w": "jobs",
+          "s": 161.646,
+          "e": 161.746,
+          "c": 0.997721
+        },
+        {
+          "w": "reduce",
+          "s": 162.106,
+          "e": 162.366,
+          "c": 0.942664
+        },
+        {
+          "w": "homeowners",
+          "s": 162.486,
+          "e": 163.056,
+          "c": 0.70595
+        },
+        {
+          "w": "energy",
+          "s": 163.056,
+          "e": 163.376,
+          "c": 0.9213
+        },
+        {
+          "w": "bills",
+          "s": 163.376,
+          "e": 163.936,
+          "c": 0.835819
+        },
+        {
+          "w": "and",
+          "s": 164.166,
+          "e": 164.276,
+          "c": 0.996198
+        },
+        {
+          "w": "help",
+          "s": 164.276,
+          "e": 164.666,
+          "c": 0.99922
+        },
+        {
+          "w": "fight",
+          "s": 164.726,
+          "e": 165.306,
+          "c": 0.998574
+        },
+        {
+          "w": "climate",
+          "s": 165.306,
+          "e": 166.106,
+          "c": 0.999668
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 166.11,
+      "end_s": 166.79,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "change",
+      "words": [
+        {
+          "w": "change",
+          "s": 166.106,
+          "e": 166.786,
+          "c": 0.999758
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 167.02,
+      "end_s": 168.02,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "MR.",
+      "words": [
+        {
+          "w": "MR.",
+          "s": 167.024,
+          "e": 168.024,
+          "c": 0.21856
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 168.02,
+      "end_s": 175.69,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you for the question, Senator. Well, you're right. It does all of those things. It is a triple win. The only thing I",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 168.024,
+          "e": 168.164,
+          "c": 0.872865
+        },
+        {
+          "w": "you",
+          "s": 168.164,
+          "e": 168.244,
+          "c": 0.999567
+        },
+        {
+          "w": "for",
+          "s": 168.244,
+          "e": 168.324,
+          "c": 0.997986
+        },
+        {
+          "w": "the",
+          "s": 168.324,
+          "e": 168.404,
+          "c": 0.997143
+        },
+        {
+          "w": "question,",
+          "s": 168.404,
+          "e": 168.684,
+          "c": 0.982128
+        },
+        {
+          "w": "Senator.",
+          "s": 168.684,
+          "e": 169.024,
+          "c": 0.960822
+        },
+        {
+          "w": "Well,",
+          "s": 169.024,
+          "e": 169.314,
+          "c": 0.984564
+        },
+        {
+          "w": "you're",
+          "s": 169.314,
+          "e": 169.604,
+          "c": 0.967122
+        },
+        {
+          "w": "right.",
+          "s": 169.604,
+          "e": 170.024,
+          "c": 0.662689
+        },
+        {
+          "w": "It",
+          "s": 170.024,
+          "e": 170.224,
+          "c": 0.998765
+        },
+        {
+          "w": "does",
+          "s": 170.224,
+          "e": 170.634,
+          "c": 0.989027
+        },
+        {
+          "w": "all",
+          "s": 170.634,
+          "e": 170.934,
+          "c": 0.998414
+        },
+        {
+          "w": "of",
+          "s": 171.134,
+          "e": 171.134,
+          "c": 0.994076
+        },
+        {
+          "w": "those",
+          "s": 171.214,
+          "e": 171.644,
+          "c": 0.99854
+        },
+        {
+          "w": "things.",
+          "s": 171.644,
+          "e": 172.604,
+          "c": 0.932078
+        },
+        {
+          "w": "It",
+          "s": 172.604,
+          "e": 172.864,
+          "c": 0.999228
+        },
+        {
+          "w": "is",
+          "s": 172.864,
+          "e": 173.124,
+          "c": 0.999072
+        },
+        {
+          "w": "a",
+          "s": 173.124,
+          "e": 173.254,
+          "c": 0.996903
+        },
+        {
+          "w": "triple",
+          "s": 173.794,
+          "e": 174.034,
+          "c": 0.992947
+        },
+        {
+          "w": "win.",
+          "s": 174.034,
+          "e": 174.824,
+          "c": 0.980726
+        },
+        {
+          "w": "The",
+          "s": 174.824,
+          "e": 175.024,
+          "c": 0.999683
+        },
+        {
+          "w": "only",
+          "s": 175.024,
+          "e": 175.294,
+          "c": 0.999361
+        },
+        {
+          "w": "thing",
+          "s": 175.294,
+          "e": 175.624,
+          "c": 0.998452
+        },
+        {
+          "w": "I",
+          "s": 175.634,
+          "e": 175.694,
+          "c": 0.997891
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 176.01,
+      "end_s": 197.03,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "would add to the very useful way you framed the question, which I completely agree with, is that it is actually the – if you look at the U.S. Energy Employment Report, it's the – energy efficiency jobs are the biggest source of clean energy economy jobs in our entire economy. there",
+      "words": [
+        {
+          "w": "would",
+          "s": 176.014,
+          "e": 176.034,
+          "c": 0.99975
+        },
+        {
+          "w": "add",
+          "s": 176.034,
+          "e": 176.224,
+          "c": 0.999323
+        },
+        {
+          "w": "to",
+          "s": 176.234,
+          "e": 176.354,
+          "c": 0.994484
+        },
+        {
+          "w": "the",
+          "s": 176.384,
+          "e": 176.554,
+          "c": 0.991433
+        },
+        {
+          "w": "very",
+          "s": 176.574,
+          "e": 176.834,
+          "c": 0.999418
+        },
+        {
+          "w": "useful",
+          "s": 176.834,
+          "e": 177.184,
+          "c": 0.998035
+        },
+        {
+          "w": "way",
+          "s": 177.284,
+          "e": 177.444,
+          "c": 0.996715
+        },
+        {
+          "w": "you",
+          "s": 177.514,
+          "e": 177.644,
+          "c": 0.993828
+        },
+        {
+          "w": "framed",
+          "s": 177.644,
+          "e": 177.944,
+          "c": 0.745831
+        },
+        {
+          "w": "the",
+          "s": 178.084,
+          "e": 178.254,
+          "c": 0.994715
+        },
+        {
+          "w": "question,",
+          "s": 178.254,
+          "e": 178.924,
+          "c": 0.94871
+        },
+        {
+          "w": "which",
+          "s": 178.924,
+          "e": 179.194,
+          "c": 0.994438
+        },
+        {
+          "w": "I",
+          "s": 179.324,
+          "e": 179.334,
+          "c": 0.993966
+        },
+        {
+          "w": "completely",
+          "s": 179.414,
+          "e": 180.144,
+          "c": 0.995746
+        },
+        {
+          "w": "agree",
+          "s": 180.144,
+          "e": 180.634,
+          "c": 0.997752
+        },
+        {
+          "w": "with,",
+          "s": 180.634,
+          "e": 181.214,
+          "c": 0.958427
+        },
+        {
+          "w": "is",
+          "s": 181.334,
+          "e": 181.404,
+          "c": 0.995125
+        },
+        {
+          "w": "that",
+          "s": 181.404,
+          "e": 181.794,
+          "c": 0.968838
+        },
+        {
+          "w": "it",
+          "s": 181.794,
+          "e": 181.964,
+          "c": 0.768173
+        },
+        {
+          "w": "is",
+          "s": 181.994,
+          "e": 182.174,
+          "c": 0.953359
+        },
+        {
+          "w": "actually",
+          "s": 182.174,
+          "e": 182.964,
+          "c": 0.982298
+        },
+        {
+          "w": "the",
+          "s": 182.964,
+          "e": 183.254,
+          "c": 0.542396
+        },
+        {
+          "w": "–",
+          "s": 183.254,
+          "e": 183.544,
+          "c": 0.267134
+        },
+        {
+          "w": "if",
+          "s": 183.544,
+          "e": 183.734,
+          "c": 0.977763
+        },
+        {
+          "w": "you",
+          "s": 183.734,
+          "e": 184.004,
+          "c": 0.998963
+        },
+        {
+          "w": "look",
+          "s": 184.014,
+          "e": 184.414,
+          "c": 0.99874
+        },
+        {
+          "w": "at",
+          "s": 184.414,
+          "e": 184.534,
+          "c": 0.9991
+        },
+        {
+          "w": "the",
+          "s": 184.644,
+          "e": 184.894,
+          "c": 0.998015
+        },
+        {
+          "w": "U.S.",
+          "s": 184.894,
+          "e": 185.824,
+          "c": 0.931125
+        },
+        {
+          "w": "Energy",
+          "s": 185.824,
+          "e": 186.044,
+          "c": 0.809258
+        },
+        {
+          "w": "Employment",
+          "s": 186.064,
+          "e": 186.454,
+          "c": 0.95461
+        },
+        {
+          "w": "Report,",
+          "s": 186.454,
+          "e": 187.124,
+          "c": 0.689648
+        },
+        {
+          "w": "it's",
+          "s": 187.124,
+          "e": 187.404,
+          "c": 0.976675
+        },
+        {
+          "w": "the",
+          "s": 187.404,
+          "e": 187.614,
+          "c": 0.903342
+        },
+        {
+          "w": "–",
+          "s": 187.614,
+          "e": 187.824,
+          "c": 0.651513
+        },
+        {
+          "w": "energy",
+          "s": 188.244,
+          "e": 188.244,
+          "c": 0.94307
+        },
+        {
+          "w": "efficiency",
+          "s": 188.314,
+          "e": 188.944,
+          "c": 0.988257
+        },
+        {
+          "w": "jobs",
+          "s": 188.944,
+          "e": 189.224,
+          "c": 0.991779
+        },
+        {
+          "w": "are",
+          "s": 189.224,
+          "e": 189.434,
+          "c": 0.99922
+        },
+        {
+          "w": "the",
+          "s": 189.434,
+          "e": 189.644,
+          "c": 0.999146
+        },
+        {
+          "w": "biggest",
+          "s": 189.644,
+          "e": 190.134,
+          "c": 0.999455
+        },
+        {
+          "w": "source",
+          "s": 190.134,
+          "e": 190.554,
+          "c": 0.994782
+        },
+        {
+          "w": "of",
+          "s": 190.554,
+          "e": 190.694,
+          "c": 0.997263
+        },
+        {
+          "w": "clean",
+          "s": 190.694,
+          "e": 190.984,
+          "c": 0.999376
+        },
+        {
+          "w": "energy",
+          "s": 191.074,
+          "e": 191.464,
+          "c": 0.994822
+        },
+        {
+          "w": "economy",
+          "s": 191.464,
+          "e": 192.004,
+          "c": 0.986566
+        },
+        {
+          "w": "jobs",
+          "s": 192.004,
+          "e": 192.644,
+          "c": 0.81935
+        },
+        {
+          "w": "in",
+          "s": 192.644,
+          "e": 192.964,
+          "c": 0.99951
+        },
+        {
+          "w": "our",
+          "s": 193.194,
+          "e": 193.444,
+          "c": 0.999786
+        },
+        {
+          "w": "entire",
+          "s": 193.444,
+          "e": 194.364,
+          "c": 0.999382
+        },
+        {
+          "w": "economy.",
+          "s": 194.464,
+          "e": 196.054,
+          "c": 0.999392
+        },
+        {
+          "w": "there",
+          "s": 196.064,
+          "e": 197.034,
+          "c": 0.0332423
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 197.04,
+      "end_s": 197.05,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "is",
+      "words": [
+        {
+          "w": "is",
+          "s": 197.044,
+          "e": 197.044,
+          "c": 0.93913
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 197.04,
+      "end_s": 226.46,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "a ton of good building trades work in particular that is done on energy efficiency as we move to more fully deploy energy efficiency resources across the country and across the economy in multiple sectors that the job growth potential is really significant we obviously care a lot about the quality of those jobs and access to those jobs but energy efficiency is enormously important and i'm really glad you asked the question and are such a champion on energy efficiency issues",
+      "words": [
+        {
+          "w": "a",
+          "s": 197.024,
+          "e": 197.084,
+          "c": 0.829516
+        },
+        {
+          "w": "ton",
+          "s": 197.144,
+          "e": 197.374,
+          "c": 0.993278
+        },
+        {
+          "w": "of",
+          "s": 197.534,
+          "e": 197.564,
+          "c": 0.993744
+        },
+        {
+          "w": "good",
+          "s": 197.564,
+          "e": 197.924,
+          "c": 0.994302
+        },
+        {
+          "w": "building",
+          "s": 197.924,
+          "e": 198.634,
+          "c": 0.976967
+        },
+        {
+          "w": "trades",
+          "s": 198.634,
+          "e": 199.174,
+          "c": 0.984386
+        },
+        {
+          "w": "work",
+          "s": 199.204,
+          "e": 199.384,
+          "c": 0.917354
+        },
+        {
+          "w": "in",
+          "s": 199.424,
+          "e": 199.504,
+          "c": 0.85545
+        },
+        {
+          "w": "particular",
+          "s": 199.504,
+          "e": 200.214,
+          "c": 0.933968
+        },
+        {
+          "w": "that",
+          "s": 200.584,
+          "e": 200.644,
+          "c": 0.766428
+        },
+        {
+          "w": "is",
+          "s": 200.644,
+          "e": 200.784,
+          "c": 0.98822
+        },
+        {
+          "w": "done",
+          "s": 200.784,
+          "e": 201.024,
+          "c": 0.987948
+        },
+        {
+          "w": "on",
+          "s": 201.024,
+          "e": 201.184,
+          "c": 0.989495
+        },
+        {
+          "w": "energy",
+          "s": 201.184,
+          "e": 201.584,
+          "c": 0.982261
+        },
+        {
+          "w": "efficiency",
+          "s": 201.584,
+          "e": 202.284,
+          "c": 0.963933
+        },
+        {
+          "w": "as",
+          "s": 202.684,
+          "e": 202.744,
+          "c": 0.429064
+        },
+        {
+          "w": "we",
+          "s": 202.744,
+          "e": 202.944,
+          "c": 0.997512
+        },
+        {
+          "w": "move",
+          "s": 202.944,
+          "e": 203.344,
+          "c": 0.973094
+        },
+        {
+          "w": "to",
+          "s": 203.344,
+          "e": 203.744,
+          "c": 0.902615
+        },
+        {
+          "w": "more",
+          "s": 203.744,
+          "e": 203.984,
+          "c": 0.999676
+        },
+        {
+          "w": "fully",
+          "s": 204.254,
+          "e": 204.374,
+          "c": 0.999434
+        },
+        {
+          "w": "deploy",
+          "s": 204.374,
+          "e": 204.714,
+          "c": 0.964139
+        },
+        {
+          "w": "energy",
+          "s": 204.904,
+          "e": 205.214,
+          "c": 0.998146
+        },
+        {
+          "w": "efficiency",
+          "s": 205.214,
+          "e": 205.884,
+          "c": 0.991805
+        },
+        {
+          "w": "resources",
+          "s": 205.924,
+          "e": 206.524,
+          "c": 0.996763
+        },
+        {
+          "w": "across",
+          "s": 206.554,
+          "e": 206.924,
+          "c": 0.997137
+        },
+        {
+          "w": "the",
+          "s": 206.924,
+          "e": 207.104,
+          "c": 0.9983
+        },
+        {
+          "w": "country",
+          "s": 207.314,
+          "e": 207.664,
+          "c": 0.999417
+        },
+        {
+          "w": "and",
+          "s": 207.664,
+          "e": 207.874,
+          "c": 0.987728
+        },
+        {
+          "w": "across",
+          "s": 207.874,
+          "e": 208.294,
+          "c": 0.995465
+        },
+        {
+          "w": "the",
+          "s": 208.294,
+          "e": 208.504,
+          "c": 0.992089
+        },
+        {
+          "w": "economy",
+          "s": 208.504,
+          "e": 209.004,
+          "c": 0.997653
+        },
+        {
+          "w": "in",
+          "s": 209.024,
+          "e": 209.094,
+          "c": 0.609652
+        },
+        {
+          "w": "multiple",
+          "s": 209.104,
+          "e": 209.734,
+          "c": 0.999903
+        },
+        {
+          "w": "sectors",
+          "s": 209.734,
+          "e": 210.274,
+          "c": 0.999375
+        },
+        {
+          "w": "that",
+          "s": 210.284,
+          "e": 210.604,
+          "c": 0.36662
+        },
+        {
+          "w": "the",
+          "s": 210.604,
+          "e": 210.844,
+          "c": 0.996926
+        },
+        {
+          "w": "job",
+          "s": 210.844,
+          "e": 211.014,
+          "c": 0.998694
+        },
+        {
+          "w": "growth",
+          "s": 211.094,
+          "e": 211.554,
+          "c": 0.999285
+        },
+        {
+          "w": "potential",
+          "s": 211.554,
+          "e": 212.214,
+          "c": 0.999836
+        },
+        {
+          "w": "is",
+          "s": 212.274,
+          "e": 212.304,
+          "c": 0.634156
+        },
+        {
+          "w": "really",
+          "s": 212.664,
+          "e": 212.894,
+          "c": 0.99931
+        },
+        {
+          "w": "significant",
+          "s": 212.894,
+          "e": 213.754,
+          "c": 0.999842
+        },
+        {
+          "w": "we",
+          "s": 213.764,
+          "e": 213.924,
+          "c": 0.701003
+        },
+        {
+          "w": "obviously",
+          "s": 213.924,
+          "e": 214.364,
+          "c": 0.999335
+        },
+        {
+          "w": "care",
+          "s": 214.764,
+          "e": 214.944,
+          "c": 0.999434
+        },
+        {
+          "w": "a",
+          "s": 214.974,
+          "e": 215.104,
+          "c": 0.994414
+        },
+        {
+          "w": "lot",
+          "s": 215.104,
+          "e": 215.264,
+          "c": 0.982182
+        },
+        {
+          "w": "about",
+          "s": 215.264,
+          "e": 215.574,
+          "c": 0.999716
+        },
+        {
+          "w": "the",
+          "s": 215.774,
+          "e": 215.774,
+          "c": 0.999987
+        },
+        {
+          "w": "quality",
+          "s": 215.774,
+          "e": 216.224,
+          "c": 0.999872
+        },
+        {
+          "w": "of",
+          "s": 216.224,
+          "e": 216.254,
+          "c": 0.999992
+        },
+        {
+          "w": "those",
+          "s": 216.424,
+          "e": 216.674,
+          "c": 0.999947
+        },
+        {
+          "w": "jobs",
+          "s": 216.674,
+          "e": 216.934,
+          "c": 0.999956
+        },
+        {
+          "w": "and",
+          "s": 216.934,
+          "e": 217.124,
+          "c": 0.999767
+        },
+        {
+          "w": "access",
+          "s": 217.124,
+          "e": 217.514,
+          "c": 0.99991
+        },
+        {
+          "w": "to",
+          "s": 217.514,
+          "e": 217.624,
+          "c": 0.999872
+        },
+        {
+          "w": "those",
+          "s": 217.664,
+          "e": 217.954,
+          "c": 0.999952
+        },
+        {
+          "w": "jobs",
+          "s": 217.974,
+          "e": 218.224,
+          "c": 0.999918
+        },
+        {
+          "w": "but",
+          "s": 218.224,
+          "e": 218.354,
+          "c": 0.993151
+        },
+        {
+          "w": "energy",
+          "s": 218.434,
+          "e": 218.454,
+          "c": 0.999832
+        },
+        {
+          "w": "efficiency",
+          "s": 218.834,
+          "e": 219.454,
+          "c": 0.999769
+        },
+        {
+          "w": "is",
+          "s": 219.454,
+          "e": 219.584,
+          "c": 0.99955
+        },
+        {
+          "w": "enormously",
+          "s": 219.584,
+          "e": 220.264,
+          "c": 0.985966
+        },
+        {
+          "w": "important",
+          "s": 220.304,
+          "e": 220.934,
+          "c": 0.999228
+        },
+        {
+          "w": "and",
+          "s": 220.934,
+          "e": 221.084,
+          "c": 0.996506
+        },
+        {
+          "w": "i'm",
+          "s": 221.144,
+          "e": 221.294,
+          "c": 0.84065
+        },
+        {
+          "w": "really",
+          "s": 221.464,
+          "e": 221.764,
+          "c": 0.999729
+        },
+        {
+          "w": "glad",
+          "s": 221.764,
+          "e": 222.034,
+          "c": 0.999943
+        },
+        {
+          "w": "you",
+          "s": 222.034,
+          "e": 222.214,
+          "c": 0.999756
+        },
+        {
+          "w": "asked",
+          "s": 222.244,
+          "e": 222.604,
+          "c": 0.927899
+        },
+        {
+          "w": "the",
+          "s": 222.604,
+          "e": 222.804,
+          "c": 0.999317
+        },
+        {
+          "w": "question",
+          "s": 222.854,
+          "e": 223.374,
+          "c": 0.999895
+        },
+        {
+          "w": "and",
+          "s": 223.374,
+          "e": 223.494,
+          "c": 0.999809
+        },
+        {
+          "w": "are",
+          "s": 223.794,
+          "e": 223.794,
+          "c": 0.999224
+        },
+        {
+          "w": "such",
+          "s": 223.874,
+          "e": 224.074,
+          "c": 0.999645
+        },
+        {
+          "w": "a",
+          "s": 224.074,
+          "e": 224.134,
+          "c": 0.999969
+        },
+        {
+          "w": "champion",
+          "s": 224.204,
+          "e": 224.704,
+          "c": 0.999851
+        },
+        {
+          "w": "on",
+          "s": 224.704,
+          "e": 224.864,
+          "c": 0.999357
+        },
+        {
+          "w": "energy",
+          "s": 224.864,
+          "e": 225.104,
+          "c": 0.987008
+        },
+        {
+          "w": "efficiency",
+          "s": 225.104,
+          "e": 225.934,
+          "c": 0.695811
+        },
+        {
+          "w": "issues",
+          "s": 225.944,
+          "e": 226.464,
+          "c": 0.999779
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 226.78,
+      "end_s": 245.94,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you very much. I have another question. I have additional legislation, the Net Meter Act, that would support the renewable energy market by helping states expand net metering programs. Net metering allows consumers and businesses to reduce their electric bills by compensating them for renewable energy that",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 226.779,
+          "e": 227.029,
+          "c": 0.46729
+        },
+        {
+          "w": "you",
+          "s": 227.029,
+          "e": 227.389,
+          "c": 0.998997
+        },
+        {
+          "w": "very",
+          "s": 227.389,
+          "e": 227.689,
+          "c": 0.975601
+        },
+        {
+          "w": "much.",
+          "s": 228.109,
+          "e": 228.419,
+          "c": 0.969679
+        },
+        {
+          "w": "I",
+          "s": 228.729,
+          "e": 228.799,
+          "c": 0.998713
+        },
+        {
+          "w": "have",
+          "s": 229.069,
+          "e": 229.079,
+          "c": 0.999232
+        },
+        {
+          "w": "another",
+          "s": 229.089,
+          "e": 229.579,
+          "c": 0.99497
+        },
+        {
+          "w": "question.",
+          "s": 229.579,
+          "e": 230.259,
+          "c": 0.764574
+        },
+        {
+          "w": "I",
+          "s": 230.389,
+          "e": 230.459,
+          "c": 0.99572
+        },
+        {
+          "w": "have",
+          "s": 230.729,
+          "e": 230.759,
+          "c": 0.998837
+        },
+        {
+          "w": "additional",
+          "s": 230.759,
+          "e": 231.459,
+          "c": 0.984649
+        },
+        {
+          "w": "legislation,",
+          "s": 231.549,
+          "e": 232.389,
+          "c": 0.607212
+        },
+        {
+          "w": "the",
+          "s": 232.709,
+          "e": 232.709,
+          "c": 0.951808
+        },
+        {
+          "w": "Net",
+          "s": 232.729,
+          "e": 232.949,
+          "c": 0.870266
+        },
+        {
+          "w": "Meter",
+          "s": 232.949,
+          "e": 233.279,
+          "c": 0.889355
+        },
+        {
+          "w": "Act,",
+          "s": 233.339,
+          "e": 233.659,
+          "c": 0.829502
+        },
+        {
+          "w": "that",
+          "s": 233.659,
+          "e": 233.809,
+          "c": 0.809351
+        },
+        {
+          "w": "would",
+          "s": 233.809,
+          "e": 233.899,
+          "c": 0.971221
+        },
+        {
+          "w": "support",
+          "s": 233.999,
+          "e": 234.529,
+          "c": 0.986229
+        },
+        {
+          "w": "the",
+          "s": 234.529,
+          "e": 234.679,
+          "c": 0.980842
+        },
+        {
+          "w": "renewable",
+          "s": 234.679,
+          "e": 234.709,
+          "c": 0.974204
+        },
+        {
+          "w": "energy",
+          "s": 235.339,
+          "e": 235.529,
+          "c": 0.989268
+        },
+        {
+          "w": "market",
+          "s": 235.869,
+          "e": 235.989,
+          "c": 0.998929
+        },
+        {
+          "w": "by",
+          "s": 235.989,
+          "e": 236.139,
+          "c": 0.996217
+        },
+        {
+          "w": "helping",
+          "s": 236.139,
+          "e": 236.599,
+          "c": 0.997666
+        },
+        {
+          "w": "states",
+          "s": 236.679,
+          "e": 237.059,
+          "c": 0.822803
+        },
+        {
+          "w": "expand",
+          "s": 237.209,
+          "e": 237.519,
+          "c": 0.988401
+        },
+        {
+          "w": "net",
+          "s": 237.819,
+          "e": 237.819,
+          "c": 0.845454
+        },
+        {
+          "w": "metering",
+          "s": 237.869,
+          "e": 238.419,
+          "c": 0.968767
+        },
+        {
+          "w": "programs.",
+          "s": 238.419,
+          "e": 239.309,
+          "c": 0.982613
+        },
+        {
+          "w": "Net",
+          "s": 239.309,
+          "e": 239.409,
+          "c": 0.997189
+        },
+        {
+          "w": "metering",
+          "s": 239.649,
+          "e": 239.929,
+          "c": 0.98274
+        },
+        {
+          "w": "allows",
+          "s": 239.969,
+          "e": 240.289,
+          "c": 0.991633
+        },
+        {
+          "w": "consumers",
+          "s": 240.289,
+          "e": 240.799,
+          "c": 0.99739
+        },
+        {
+          "w": "and",
+          "s": 240.809,
+          "e": 240.839,
+          "c": 0.985285
+        },
+        {
+          "w": "businesses",
+          "s": 240.989,
+          "e": 241.299,
+          "c": 0.993131
+        },
+        {
+          "w": "to",
+          "s": 241.639,
+          "e": 241.669,
+          "c": 0.998066
+        },
+        {
+          "w": "reduce",
+          "s": 241.669,
+          "e": 242.019,
+          "c": 0.99482
+        },
+        {
+          "w": "their",
+          "s": 242.019,
+          "e": 242.199,
+          "c": 0.994086
+        },
+        {
+          "w": "electric",
+          "s": 242.329,
+          "e": 242.759,
+          "c": 0.993068
+        },
+        {
+          "w": "bills",
+          "s": 242.769,
+          "e": 243.059,
+          "c": 0.995716
+        },
+        {
+          "w": "by",
+          "s": 243.059,
+          "e": 243.159,
+          "c": 0.991991
+        },
+        {
+          "w": "compensating",
+          "s": 243.289,
+          "e": 243.629,
+          "c": 0.994909
+        },
+        {
+          "w": "them",
+          "s": 244.269,
+          "e": 244.269,
+          "c": 0.997225
+        },
+        {
+          "w": "for",
+          "s": 244.309,
+          "e": 244.479,
+          "c": 0.976638
+        },
+        {
+          "w": "renewable",
+          "s": 244.509,
+          "e": 245.209,
+          "c": 0.978228
+        },
+        {
+          "w": "energy",
+          "s": 245.629,
+          "e": 245.729,
+          "c": 0.998727
+        },
+        {
+          "w": "that",
+          "s": 245.729,
+          "e": 245.939,
+          "c": 0.990939
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 246.28,
+      "end_s": 249.09,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "they produce and return to the grid. So Mr.",
+      "words": [
+        {
+          "w": "they",
+          "s": 246.279,
+          "e": 246.369,
+          "c": 0.999529
+        },
+        {
+          "w": "produce",
+          "s": 246.369,
+          "e": 246.839,
+          "c": 0.996122
+        },
+        {
+          "w": "and",
+          "s": 246.969,
+          "e": 247.099,
+          "c": 0.908141
+        },
+        {
+          "w": "return",
+          "s": 247.189,
+          "e": 247.669,
+          "c": 0.945929
+        },
+        {
+          "w": "to",
+          "s": 247.669,
+          "e": 247.829,
+          "c": 0.989712
+        },
+        {
+          "w": "the",
+          "s": 247.929,
+          "e": 248.069,
+          "c": 0.999146
+        },
+        {
+          "w": "grid.",
+          "s": 248.069,
+          "e": 248.669,
+          "c": 0.995889
+        },
+        {
+          "w": "So",
+          "s": 248.709,
+          "e": 248.809,
+          "c": 0.998546
+        },
+        {
+          "w": "Mr.",
+          "s": 248.879,
+          "e": 249.089,
+          "c": 0.946732
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 249.09,
+      "end_s": 255.99,
+      "speaker": "SPEAKER_13",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Walsh, can net metering complement our efforts to fight climate change by strengthening solar and wind tax incentives?",
+      "words": [
+        {
+          "w": "Walsh,",
+          "s": 249.089,
+          "e": 249.459,
+          "c": 0.905433
+        },
+        {
+          "w": "can",
+          "s": 249.459,
+          "e": 249.609,
+          "c": 0.994936
+        },
+        {
+          "w": "net",
+          "s": 249.609,
+          "e": 249.779,
+          "c": 0.950483
+        },
+        {
+          "w": "metering",
+          "s": 249.779,
+          "e": 250.219,
+          "c": 0.995887
+        },
+        {
+          "w": "complement",
+          "s": 250.389,
+          "e": 250.709,
+          "c": 0.631241
+        },
+        {
+          "w": "our",
+          "s": 250.769,
+          "e": 250.779,
+          "c": 0.994391
+        },
+        {
+          "w": "efforts",
+          "s": 251.049,
+          "e": 251.329,
+          "c": 0.997225
+        },
+        {
+          "w": "to",
+          "s": 251.329,
+          "e": 251.439,
+          "c": 0.995959
+        },
+        {
+          "w": "fight",
+          "s": 251.439,
+          "e": 251.599,
+          "c": 0.997381
+        },
+        {
+          "w": "climate",
+          "s": 251.729,
+          "e": 252.109,
+          "c": 0.998506
+        },
+        {
+          "w": "change",
+          "s": 252.109,
+          "e": 252.439,
+          "c": 0.99593
+        },
+        {
+          "w": "by",
+          "s": 252.439,
+          "e": 252.609,
+          "c": 0.987281
+        },
+        {
+          "w": "strengthening",
+          "s": 252.689,
+          "e": 253.029,
+          "c": 0.955276
+        },
+        {
+          "w": "solar",
+          "s": 253.569,
+          "e": 253.719,
+          "c": 0.989763
+        },
+        {
+          "w": "and",
+          "s": 253.719,
+          "e": 254.009,
+          "c": 0.997613
+        },
+        {
+          "w": "wind",
+          "s": 254.009,
+          "e": 254.399,
+          "c": 0.998681
+        },
+        {
+          "w": "tax",
+          "s": 254.399,
+          "e": 254.499,
+          "c": 0.99285
+        },
+        {
+          "w": "incentives?",
+          "s": 254.909,
+          "e": 255.989,
+          "c": 0.944705
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 256.02,
+      "end_s": 256.5,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I think",
+      "words": [
+        {
+          "w": "I",
+          "s": 256.016,
+          "e": 256.026,
+          "c": 0.410573
+        },
+        {
+          "w": "think",
+          "s": 256.036,
+          "e": 256.496,
+          "c": 0.955978
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "start_s": 256.71,
+      "end_s": 258.49,
+      "speaker": "SPEAKER_15",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you can, Senator.",
+      "words": [
+        {
+          "w": "you",
+          "s": 256.706,
+          "e": 256.886,
+          "c": 0.612698
+        },
+        {
+          "w": "can,",
+          "s": 256.886,
+          "e": 257.416,
+          "c": 0.761841
+        },
+        {
+          "w": "Senator.",
+          "s": 257.416,
+          "e": 258.486,
+          "c": 0.894926
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "start_s": 258.58,
+      "end_s": 266.74,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We've done comparatively little work on net metering, but on the legislation you mentioned, we'd be happy to talk with you further and work with you further",
+      "words": [
+        {
+          "w": "We've",
+          "s": 258.576,
+          "e": 258.746,
+          "c": 0.954864
+        },
+        {
+          "w": "done",
+          "s": 258.786,
+          "e": 259.026,
+          "c": 0.983408
+        },
+        {
+          "w": "comparatively",
+          "s": 259.266,
+          "e": 259.746,
+          "c": 0.993832
+        },
+        {
+          "w": "little",
+          "s": 259.776,
+          "e": 260.106,
+          "c": 0.982373
+        },
+        {
+          "w": "work",
+          "s": 260.126,
+          "e": 260.376,
+          "c": 0.989967
+        },
+        {
+          "w": "on",
+          "s": 260.376,
+          "e": 260.436,
+          "c": 0.990813
+        },
+        {
+          "w": "net",
+          "s": 260.526,
+          "e": 260.676,
+          "c": 0.96878
+        },
+        {
+          "w": "metering,",
+          "s": 260.676,
+          "e": 261.316,
+          "c": 0.683612
+        },
+        {
+          "w": "but",
+          "s": 261.316,
+          "e": 261.556,
+          "c": 0.976854
+        },
+        {
+          "w": "on",
+          "s": 261.556,
+          "e": 261.716,
+          "c": 0.907504
+        },
+        {
+          "w": "the",
+          "s": 261.716,
+          "e": 261.946,
+          "c": 0.99193
+        },
+        {
+          "w": "legislation",
+          "s": 261.956,
+          "e": 262.786,
+          "c": 0.994757
+        },
+        {
+          "w": "you",
+          "s": 262.846,
+          "e": 263.076,
+          "c": 0.972331
+        },
+        {
+          "w": "mentioned,",
+          "s": 263.076,
+          "e": 263.466,
+          "c": 0.813165
+        },
+        {
+          "w": "we'd",
+          "s": 263.576,
+          "e": 263.736,
+          "c": 0.961716
+        },
+        {
+          "w": "be",
+          "s": 263.786,
+          "e": 263.856,
+          "c": 0.998498
+        },
+        {
+          "w": "happy",
+          "s": 263.856,
+          "e": 264.016,
+          "c": 0.998557
+        },
+        {
+          "w": "to",
+          "s": 264.266,
+          "e": 264.286,
+          "c": 0.997584
+        },
+        {
+          "w": "talk",
+          "s": 264.286,
+          "e": 264.536,
+          "c": 0.996508
+        },
+        {
+          "w": "with",
+          "s": 264.536,
+          "e": 264.746,
+          "c": 0.986049
+        },
+        {
+          "w": "you",
+          "s": 264.786,
+          "e": 264.976,
+          "c": 0.99907
+        },
+        {
+          "w": "further",
+          "s": 264.976,
+          "e": 265.416,
+          "c": 0.996826
+        },
+        {
+          "w": "and",
+          "s": 265.416,
+          "e": 265.606,
+          "c": 0.964108
+        },
+        {
+          "w": "work",
+          "s": 265.606,
+          "e": 265.856,
+          "c": 0.991471
+        },
+        {
+          "w": "with",
+          "s": 265.856,
+          "e": 266.046,
+          "c": 0.99281
+        },
+        {
+          "w": "you",
+          "s": 266.106,
+          "e": 266.296,
+          "c": 0.997923
+        },
+        {
+          "w": "further",
+          "s": 266.296,
+          "e": 266.736,
+          "c": 0.995002
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "start_s": 266.74,
+      "end_s": 266.86,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "on",
+      "words": [
+        {
+          "w": "on",
+          "s": 266.736,
+          "e": 266.856,
+          "c": 0.992583
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "start_s": 266.86,
+      "end_s": 278.02,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that. Thank you very much. Last question to you, Mr. Walsh. The tax code currently hands numerous special tax giveaways to big oil, including special deductions for oil drilling.",
+      "words": [
+        {
+          "w": "that.",
+          "s": 266.856,
+          "e": 267.396,
+          "c": 0.973511
+        },
+        {
+          "w": "Thank",
+          "s": 267.496,
+          "e": 267.846,
+          "c": 0.963897
+        },
+        {
+          "w": "you",
+          "s": 268.116,
+          "e": 268.116,
+          "c": 0.999529
+        },
+        {
+          "w": "very",
+          "s": 268.166,
+          "e": 268.456,
+          "c": 0.99533
+        },
+        {
+          "w": "much.",
+          "s": 268.476,
+          "e": 269.136,
+          "c": 0.995552
+        },
+        {
+          "w": "Last",
+          "s": 269.216,
+          "e": 269.316,
+          "c": 0.998157
+        },
+        {
+          "w": "question",
+          "s": 269.316,
+          "e": 269.666,
+          "c": 0.99895
+        },
+        {
+          "w": "to",
+          "s": 269.666,
+          "e": 269.696,
+          "c": 0.991552
+        },
+        {
+          "w": "you,",
+          "s": 269.886,
+          "e": 269.966,
+          "c": 0.955813
+        },
+        {
+          "w": "Mr.",
+          "s": 269.966,
+          "e": 270.176,
+          "c": 0.992614
+        },
+        {
+          "w": "Walsh.",
+          "s": 270.186,
+          "e": 270.546,
+          "c": 0.807696
+        },
+        {
+          "w": "The",
+          "s": 270.656,
+          "e": 270.786,
+          "c": 0.99871
+        },
+        {
+          "w": "tax",
+          "s": 270.796,
+          "e": 270.996,
+          "c": 0.854778
+        },
+        {
+          "w": "code",
+          "s": 271.026,
+          "e": 271.036,
+          "c": 0.995476
+        },
+        {
+          "w": "currently",
+          "s": 271.346,
+          "e": 271.836,
+          "c": 0.997242
+        },
+        {
+          "w": "hands",
+          "s": 271.916,
+          "e": 272.276,
+          "c": 0.99011
+        },
+        {
+          "w": "numerous",
+          "s": 272.276,
+          "e": 272.846,
+          "c": 0.993034
+        },
+        {
+          "w": "special",
+          "s": 272.846,
+          "e": 273.336,
+          "c": 0.988795
+        },
+        {
+          "w": "tax",
+          "s": 273.346,
+          "e": 273.446,
+          "c": 0.997973
+        },
+        {
+          "w": "giveaways",
+          "s": 273.616,
+          "e": 274.196,
+          "c": 0.989198
+        },
+        {
+          "w": "to",
+          "s": 274.196,
+          "e": 274.336,
+          "c": 0.996966
+        },
+        {
+          "w": "big",
+          "s": 274.336,
+          "e": 274.486,
+          "c": 0.535645
+        },
+        {
+          "w": "oil,",
+          "s": 274.566,
+          "e": 274.856,
+          "c": 0.94926
+        },
+        {
+          "w": "including",
+          "s": 274.926,
+          "e": 275.536,
+          "c": 0.997407
+        },
+        {
+          "w": "special",
+          "s": 275.536,
+          "e": 276.136,
+          "c": 0.814972
+        },
+        {
+          "w": "deductions",
+          "s": 276.216,
+          "e": 276.666,
+          "c": 0.975602
+        },
+        {
+          "w": "for",
+          "s": 276.906,
+          "e": 277.006,
+          "c": 0.997113
+        },
+        {
+          "w": "oil",
+          "s": 277.056,
+          "e": 277.196,
+          "c": 0.999691
+        },
+        {
+          "w": "drilling.",
+          "s": 277.196,
+          "e": 278.016,
+          "c": 0.986961
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "start_s": 278.21,
+      "end_s": 278.22,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "How",
+      "words": [
+        {
+          "w": "How",
+          "s": 278.21,
+          "e": 278.21,
+          "c": 0.682737
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "start_s": 278.27,
+      "end_s": 285.25,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "do these special tax giveaways for Big Oil hurt our efforts to combat climate change and create good-paying, clean energy jobs?",
+      "words": [
+        {
+          "w": "do",
+          "s": 278.27,
+          "e": 278.35,
+          "c": 0.949361
+        },
+        {
+          "w": "these",
+          "s": 278.35,
+          "e": 278.7,
+          "c": 0.966593
+        },
+        {
+          "w": "special",
+          "s": 278.7,
+          "e": 279.19,
+          "c": 0.989251
+        },
+        {
+          "w": "tax",
+          "s": 279.19,
+          "e": 279.4,
+          "c": 0.996643
+        },
+        {
+          "w": "giveaways",
+          "s": 279.4,
+          "e": 280.06,
+          "c": 0.993354
+        },
+        {
+          "w": "for",
+          "s": 280.06,
+          "e": 280.29,
+          "c": 0.954716
+        },
+        {
+          "w": "Big",
+          "s": 280.35,
+          "e": 280.51,
+          "c": 0.321053
+        },
+        {
+          "w": "Oil",
+          "s": 280.51,
+          "e": 280.72,
+          "c": 0.98323
+        },
+        {
+          "w": "hurt",
+          "s": 280.72,
+          "e": 281.1,
+          "c": 0.792812
+        },
+        {
+          "w": "our",
+          "s": 281.19,
+          "e": 281.36,
+          "c": 0.972635
+        },
+        {
+          "w": "efforts",
+          "s": 281.36,
+          "e": 281.65,
+          "c": 0.984011
+        },
+        {
+          "w": "to",
+          "s": 281.79,
+          "e": 281.84,
+          "c": 0.906307
+        },
+        {
+          "w": "combat",
+          "s": 281.84,
+          "e": 282.23,
+          "c": 0.960584
+        },
+        {
+          "w": "climate",
+          "s": 282.24,
+          "e": 282.58,
+          "c": 0.940922
+        },
+        {
+          "w": "change",
+          "s": 282.73,
+          "e": 282.94,
+          "c": 0.982885
+        },
+        {
+          "w": "and",
+          "s": 283.11,
+          "e": 283.11,
+          "c": 0.999556
+        },
+        {
+          "w": "create",
+          "s": 283.21,
+          "e": 283.45,
+          "c": 0.999138
+        },
+        {
+          "w": "good-paying,",
+          "s": 283.45,
+          "e": 284.15,
+          "c": 0.315033
+        },
+        {
+          "w": "clean",
+          "s": 284.2,
+          "e": 284.47,
+          "c": 0.999601
+        },
+        {
+          "w": "energy",
+          "s": 284.47,
+          "e": 284.81,
+          "c": 0.860167
+        },
+        {
+          "w": "jobs?",
+          "s": 284.81,
+          "e": 285.25,
+          "c": 0.992411
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "start_s": 285.53,
+      "end_s": 286.41,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Senator, we",
+      "words": [
+        {
+          "w": "Senator,",
+          "s": 285.53,
+          "e": 286.05,
+          "c": 0.997585
+        },
+        {
+          "w": "we",
+          "s": 286.2,
+          "e": 286.41,
+          "c": 0.999788
+        }
+      ]
+    },
+    {
+      "i": 35,
+      "start_s": 286.41,
+      "end_s": 292.02,
+      "speaker": "SPEAKER_21",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "don't take a position on those tax credits. We are much more focused on the",
+      "words": [
+        {
+          "w": "don't",
+          "s": 286.41,
+          "e": 286.93,
+          "c": 0.99979
+        },
+        {
+          "w": "take",
+          "s": 286.93,
+          "e": 287.35,
+          "c": 0.999882
+        },
+        {
+          "w": "a",
+          "s": 287.35,
+          "e": 287.4,
+          "c": 0.999977
+        },
+        {
+          "w": "position",
+          "s": 287.47,
+          "e": 288.29,
+          "c": 0.999889
+        },
+        {
+          "w": "on",
+          "s": 288.29,
+          "e": 288.5,
+          "c": 0.999798
+        },
+        {
+          "w": "those",
+          "s": 288.5,
+          "e": 288.91,
+          "c": 0.999956
+        },
+        {
+          "w": "tax",
+          "s": 289.06,
+          "e": 289.32,
+          "c": 0.999899
+        },
+        {
+          "w": "credits.",
+          "s": 289.33,
+          "e": 290.44,
+          "c": 0.999068
+        },
+        {
+          "w": "We",
+          "s": 290.44,
+          "e": 290.57,
+          "c": 0.999962
+        },
+        {
+          "w": "are",
+          "s": 290.71,
+          "e": 290.76,
+          "c": 0.999977
+        },
+        {
+          "w": "much",
+          "s": 290.76,
+          "e": 291,
+          "c": 0.999952
+        },
+        {
+          "w": "more",
+          "s": 291.01,
+          "e": 291.23,
+          "c": 0.999983
+        },
+        {
+          "w": "focused",
+          "s": 291.38,
+          "e": 291.64,
+          "c": 0.999985
+        },
+        {
+          "w": "on",
+          "s": 291.76,
+          "e": 291.86,
+          "c": 0.999994
+        },
+        {
+          "w": "the",
+          "s": 291.86,
+          "e": 292.02,
+          "c": 0.999996
+        }
+      ]
+    },
+    {
+      "i": 36,
+      "start_s": 292.09,
+      "end_s": 294.73,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "affirmative tax credits that can be made that",
+      "words": [
+        {
+          "w": "affirmative",
+          "s": 292.09,
+          "e": 292.75,
+          "c": 0.999945
+        },
+        {
+          "w": "tax",
+          "s": 292.79,
+          "e": 292.96,
+          "c": 0.999865
+        },
+        {
+          "w": "credits",
+          "s": 292.96,
+          "e": 293.46,
+          "c": 0.999926
+        },
+        {
+          "w": "that",
+          "s": 293.46,
+          "e": 293.74,
+          "c": 0.986071
+        },
+        {
+          "w": "can",
+          "s": 293.74,
+          "e": 293.93,
+          "c": 0.999973
+        },
+        {
+          "w": "be",
+          "s": 293.94,
+          "e": 294.09,
+          "c": 0.999983
+        },
+        {
+          "w": "made",
+          "s": 294.09,
+          "e": 294.38,
+          "c": 0.999971
+        },
+        {
+          "w": "that",
+          "s": 294.42,
+          "e": 294.73,
+          "c": 0.608997
+        }
+      ]
+    },
+    {
+      "i": 37,
+      "start_s": 294.78,
+      "end_s": 300.36,
+      "speaker": "SPEAKER_23",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "invest in energy efficiency and new renewable energy generation and doing so in an equitable way.",
+      "words": [
+        {
+          "w": "invest",
+          "s": 294.78,
+          "e": 295.37,
+          "c": 0.999779
+        },
+        {
+          "w": "in",
+          "s": 295.37,
+          "e": 295.5,
+          "c": 0.981203
+        },
+        {
+          "w": "energy",
+          "s": 295.85,
+          "e": 295.95,
+          "c": 0.998875
+        },
+        {
+          "w": "efficiency",
+          "s": 295.95,
+          "e": 296.57,
+          "c": 0.99992
+        },
+        {
+          "w": "and",
+          "s": 296.57,
+          "e": 296.75,
+          "c": 0.996915
+        },
+        {
+          "w": "new",
+          "s": 296.75,
+          "e": 296.93,
+          "c": 0.993178
+        },
+        {
+          "w": "renewable",
+          "s": 296.93,
+          "e": 297.49,
+          "c": 0.996248
+        },
+        {
+          "w": "energy",
+          "s": 297.49,
+          "e": 297.86,
+          "c": 0.999914
+        },
+        {
+          "w": "generation",
+          "s": 297.87,
+          "e": 298.38,
+          "c": 0.999575
+        },
+        {
+          "w": "and",
+          "s": 298.54,
+          "e": 298.66,
+          "c": 0.799479
+        },
+        {
+          "w": "doing",
+          "s": 298.66,
+          "e": 298.94,
+          "c": 0.99976
+        },
+        {
+          "w": "so",
+          "s": 299,
+          "e": 299.07,
+          "c": 0.999981
+        },
+        {
+          "w": "in",
+          "s": 299.08,
+          "e": 299.21,
+          "c": 0.999912
+        },
+        {
+          "w": "an",
+          "s": 299.21,
+          "e": 299.23,
+          "c": 0.999908
+        },
+        {
+          "w": "equitable",
+          "s": 299.38,
+          "e": 299.87,
+          "c": 0.99686
+        },
+        {
+          "w": "way.",
+          "s": 299.9,
+          "e": 300.36,
+          "c": 0.999872
+        }
+      ]
+    },
+    {
+      "i": 38,
+      "start_s": 300.63,
+      "end_s": 301.15,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Well, I thank",
+      "words": [
+        {
+          "w": "Well,",
+          "s": 300.63,
+          "e": 300.81,
+          "c": 0.960699
+        },
+        {
+          "w": "I",
+          "s": 300.82,
+          "e": 300.88,
+          "c": 0.998363
+        },
+        {
+          "w": "thank",
+          "s": 300.89,
+          "e": 301.15,
+          "c": 0.999519
+        }
+      ]
+    },
+    {
+      "i": 39,
+      "start_s": 301.3,
+      "end_s": 315.73,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you for your care with that answer. I'd suggest that those tax credits should be eliminated as we transfer to clean energy tax incentives. Thank you.",
+      "words": [
+        {
+          "w": "you",
+          "s": 301.3,
+          "e": 301.51,
+          "c": 0.99999
+        },
+        {
+          "w": "for",
+          "s": 301.51,
+          "e": 301.74,
+          "c": 0.999987
+        },
+        {
+          "w": "your",
+          "s": 301.74,
+          "e": 302.05,
+          "c": 0.999952
+        },
+        {
+          "w": "care",
+          "s": 302.05,
+          "e": 302.36,
+          "c": 0.998593
+        },
+        {
+          "w": "with",
+          "s": 302.36,
+          "e": 302.66,
+          "c": 0.998449
+        },
+        {
+          "w": "that",
+          "s": 302.71,
+          "e": 302.98,
+          "c": 0.999985
+        },
+        {
+          "w": "answer.",
+          "s": 302.98,
+          "e": 303.72,
+          "c": 0.999952
+        },
+        {
+          "w": "I'd",
+          "s": 303.74,
+          "e": 304.16,
+          "c": 0.815095
+        },
+        {
+          "w": "suggest",
+          "s": 304.16,
+          "e": 305.15,
+          "c": 0.999916
+        },
+        {
+          "w": "that",
+          "s": 305.15,
+          "e": 305.71,
+          "c": 0.998809
+        },
+        {
+          "w": "those",
+          "s": 305.71,
+          "e": 306.41,
+          "c": 0.999851
+        },
+        {
+          "w": "tax",
+          "s": 306.41,
+          "e": 306.83,
+          "c": 0.999844
+        },
+        {
+          "w": "credits",
+          "s": 306.83,
+          "e": 307.81,
+          "c": 0.999901
+        },
+        {
+          "w": "should",
+          "s": 307.82,
+          "e": 308.7,
+          "c": 0.9952
+        },
+        {
+          "w": "be",
+          "s": 308.7,
+          "e": 309.11,
+          "c": 0.954707
+        },
+        {
+          "w": "eliminated",
+          "s": 309.19,
+          "e": 311.08,
+          "c": 0.995357
+        },
+        {
+          "w": "as",
+          "s": 311.08,
+          "e": 311.65,
+          "c": 0.995076
+        },
+        {
+          "w": "we",
+          "s": 311.65,
+          "e": 312.05,
+          "c": 0.999514
+        },
+        {
+          "w": "transfer",
+          "s": 312.59,
+          "e": 313.78,
+          "c": 0.976556
+        },
+        {
+          "w": "to",
+          "s": 313.78,
+          "e": 313.95,
+          "c": 0.837184
+        },
+        {
+          "w": "clean",
+          "s": 313.96,
+          "e": 314.21,
+          "c": 0.972763
+        },
+        {
+          "w": "energy",
+          "s": 314.21,
+          "e": 314.52,
+          "c": 0.991212
+        },
+        {
+          "w": "tax",
+          "s": 314.52,
+          "e": 314.65,
+          "c": 0.999788
+        },
+        {
+          "w": "incentives.",
+          "s": 314.79,
+          "e": 315.26,
+          "c": 0.999817
+        },
+        {
+          "w": "Thank",
+          "s": 315.47,
+          "e": 315.47,
+          "c": 0.999874
+        },
+        {
+          "w": "you.",
+          "s": 315.53,
+          "e": 315.73,
+          "c": 0.999947
+        }
+      ]
+    },
+    {
+      "i": 40,
+      "start_s": 316.01,
+      "end_s": 316.09,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 316.01,
+          "e": 316.09,
+          "c": 0.995873
+        }
+      ]
+    },
+    {
+      "i": 41,
+      "start_s": 316.09,
+      "end_s": 316.52,
+      "speaker": "SPEAKER_28",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you.",
+      "words": [
+        {
+          "w": "you.",
+          "s": 316.09,
+          "e": 316.52,
+          "c": 0.999897
+        }
+      ]
+    }
+  ]
+}

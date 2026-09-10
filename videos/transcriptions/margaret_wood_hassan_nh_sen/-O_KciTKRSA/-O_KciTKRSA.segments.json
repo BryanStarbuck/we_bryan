@@ -1,0 +1,6219 @@
+{
+  "schema_version": 2,
+  "canonical_id": "36aaa519430afad3",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 354.68,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T11:40:39.921Z",
+  "text_sha256": "8611c7551f479539526123f64dcf2766c97ca6f70cd7fd566e41bfa92dd66862",
+  "segments_sha256": "228e33af85255b7a65da295b3664c68139e627582670f4a38e40c930969600ff",
+  "words_sha256": "379029c7e476192abae8e06828db13d27599a79666e15b6678204dc0dfaab6d8",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 13,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 24,
+    "clusters": 10,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_01",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1
+      },
+      "clean_s": 1,
+      "speaking_s": 1,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_00",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 108.2
+      },
+      "clean_s": 108.2,
+      "speaking_s": 110,
+      "first_s": 2.12
+    },
+    {
+      "id": "SPEAKER_02",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 39.7
+      },
+      "clean_s": 39.7,
+      "speaking_s": 39.7,
+      "first_s": 72.96
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.8
+      },
+      "clean_s": 1.8,
+      "speaking_s": 1.8,
+      "first_s": 93.18
+    },
+    {
+      "id": "SPEAKER_05",
+      "n": 5,
+      "label": "Speaker 5 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.85,
+        "confidence": "low",
+        "clean_s": 77.1
+      },
+      "clean_s": 77.1,
+      "speaking_s": 77.1,
+      "first_s": 94.97
+    },
+    {
+      "id": "SPEAKER_09",
+      "n": 6,
+      "label": "Speaker 6",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 29.9
+      },
+      "clean_s": 29.9,
+      "speaking_s": 29.9,
+      "first_s": 235.98
+    },
+    {
+      "id": "SPEAKER_11",
+      "n": 7,
+      "label": "Speaker 7",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 41.4
+      },
+      "clean_s": 41.4,
+      "speaking_s": 43.2,
+      "first_s": 243.06
+    },
+    {
+      "id": "SPEAKER_13",
+      "n": 8,
+      "label": "Speaker 8",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 37
+      },
+      "clean_s": 37,
+      "speaking_s": 38,
+      "first_s": 285.98
+    },
+    {
+      "id": "SPEAKER_15",
+      "n": 9,
+      "label": "Speaker 9",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 6
+      },
+      "clean_s": 6,
+      "speaking_s": 6.5,
+      "first_s": 323.54
+    },
+    {
+      "id": "SPEAKER_18",
+      "n": 10,
+      "label": "Speaker 10",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.3
+      },
+      "clean_s": 0.3,
+      "speaking_s": 0.3,
+      "first_s": 353.97
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 1.06,
+      "end_s": 2.08,
+      "segment_i": 1,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 30.12,
+      "end_s": 30.12,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 60.02,
+      "end_s": 60.02,
+      "segment_i": 5,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 83.98,
+      "end_s": 84.04,
+      "segment_i": 8,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 118.06,
+      "end_s": 118.39,
+      "segment_i": 13,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 174.13,
+      "end_s": 174.13,
+      "segment_i": 16,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 242.6,
+      "end_s": 242.69,
+      "segment_i": 24,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 354.44,
+      "end_s": 354.68,
+      "segment_i": 34,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.17,
+      "end_s": 0.89,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Senator",
+      "words": [
+        {
+          "w": "Senator",
+          "s": 0.17,
+          "e": 0.89,
+          "c": 0.951641
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 1.06,
+      "end_s": 2.08,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Hassan.",
+      "words": [
+        {
+          "w": "Hassan.",
+          "s": 1.06,
+          "e": 2.08,
+          "c": 0.667655
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 2.17,
+      "end_s": 30.02,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Well, I want to thank the chair and ranking member for holding this hearing and to all of the panelists. Thank you for being here. Thank you for your work. I want to start with a question to Dr. McDougall. I've heard heartbreaking firsthand accounts from K-12 students in New Hampshire about their own struggles with mental health during the pandemic or their worries about their friends. Maybe the silver lining here",
+      "words": [
+        {
+          "w": "Well,",
+          "s": 2.17,
+          "e": 2.4,
+          "c": 0.259681
+        },
+        {
+          "w": "I",
+          "s": 2.4,
+          "e": 2.44,
+          "c": 0.998119
+        },
+        {
+          "w": "want",
+          "s": 2.44,
+          "e": 2.55,
+          "c": 0.995251
+        },
+        {
+          "w": "to",
+          "s": 2.68,
+          "e": 2.71,
+          "c": 0.999495
+        },
+        {
+          "w": "thank",
+          "s": 2.71,
+          "e": 2.96,
+          "c": 0.997173
+        },
+        {
+          "w": "the",
+          "s": 2.96,
+          "e": 3.4,
+          "c": 0.980441
+        },
+        {
+          "w": "chair",
+          "s": 3.4,
+          "e": 3.84,
+          "c": 0.788704
+        },
+        {
+          "w": "and",
+          "s": 3.84,
+          "e": 4.2,
+          "c": 0.98182
+        },
+        {
+          "w": "ranking",
+          "s": 4.2,
+          "e": 4.56,
+          "c": 0.917524
+        },
+        {
+          "w": "member",
+          "s": 4.56,
+          "e": 5,
+          "c": 0.941771
+        },
+        {
+          "w": "for",
+          "s": 5,
+          "e": 5.36,
+          "c": 0.983528
+        },
+        {
+          "w": "holding",
+          "s": 5.36,
+          "e": 5.72,
+          "c": 0.987167
+        },
+        {
+          "w": "this",
+          "s": 5.72,
+          "e": 5.89,
+          "c": 0.799706
+        },
+        {
+          "w": "hearing",
+          "s": 5.92,
+          "e": 6.16,
+          "c": 0.889594
+        },
+        {
+          "w": "and",
+          "s": 6.16,
+          "e": 6.33,
+          "c": 0.733117
+        },
+        {
+          "w": "to",
+          "s": 6.36,
+          "e": 6.45,
+          "c": 0.739829
+        },
+        {
+          "w": "all",
+          "s": 6.62,
+          "e": 6.63,
+          "c": 0.999941
+        },
+        {
+          "w": "of",
+          "s": 6.63,
+          "e": 6.74,
+          "c": 0.999426
+        },
+        {
+          "w": "the",
+          "s": 6.74,
+          "e": 6.91,
+          "c": 0.999964
+        },
+        {
+          "w": "panelists.",
+          "s": 6.91,
+          "e": 7.44,
+          "c": 0.821137
+        },
+        {
+          "w": "Thank",
+          "s": 7.59,
+          "e": 7.9,
+          "c": 0.999653
+        },
+        {
+          "w": "you",
+          "s": 7.9,
+          "e": 8.07,
+          "c": 0.999983
+        },
+        {
+          "w": "for",
+          "s": 8.1,
+          "e": 8.24,
+          "c": 0.99988
+        },
+        {
+          "w": "being",
+          "s": 8.24,
+          "e": 8.52,
+          "c": 0.999956
+        },
+        {
+          "w": "here.",
+          "s": 8.63,
+          "e": 8.93,
+          "c": 0.977372
+        },
+        {
+          "w": "Thank",
+          "s": 8.93,
+          "e": 9.22,
+          "c": 0.999054
+        },
+        {
+          "w": "you",
+          "s": 9.22,
+          "e": 9.35,
+          "c": 0.999975
+        },
+        {
+          "w": "for",
+          "s": 9.41,
+          "e": 9.55,
+          "c": 0.999706
+        },
+        {
+          "w": "your",
+          "s": 9.56,
+          "e": 9.79,
+          "c": 0.9998
+        },
+        {
+          "w": "work.",
+          "s": 9.79,
+          "e": 10.19,
+          "c": 0.998294
+        },
+        {
+          "w": "I",
+          "s": 10.19,
+          "e": 10.25,
+          "c": 0.99658
+        },
+        {
+          "w": "want",
+          "s": 10.25,
+          "e": 10.4,
+          "c": 0.99959
+        },
+        {
+          "w": "to",
+          "s": 10.52,
+          "e": 10.59,
+          "c": 0.999969
+        },
+        {
+          "w": "start",
+          "s": 10.59,
+          "e": 10.88,
+          "c": 0.997381
+        },
+        {
+          "w": "with",
+          "s": 10.88,
+          "e": 11.3,
+          "c": 0.999817
+        },
+        {
+          "w": "a",
+          "s": 11.3,
+          "e": 11.42,
+          "c": 0.745725
+        },
+        {
+          "w": "question",
+          "s": 11.59,
+          "e": 12.15,
+          "c": 0.999033
+        },
+        {
+          "w": "to",
+          "s": 12.15,
+          "e": 12.31,
+          "c": 0.99995
+        },
+        {
+          "w": "Dr.",
+          "s": 12.33,
+          "e": 12.79,
+          "c": 0.998009
+        },
+        {
+          "w": "McDougall.",
+          "s": 12.79,
+          "e": 13.88,
+          "c": 0.648093
+        },
+        {
+          "w": "I've",
+          "s": 13.88,
+          "e": 14.24,
+          "c": 0.999537
+        },
+        {
+          "w": "heard",
+          "s": 14.24,
+          "e": 14.7,
+          "c": 0.999945
+        },
+        {
+          "w": "heartbreaking",
+          "s": 14.7,
+          "e": 15.87,
+          "c": 0.997592
+        },
+        {
+          "w": "firsthand",
+          "s": 15.97,
+          "e": 16.75,
+          "c": 0.57842
+        },
+        {
+          "w": "accounts",
+          "s": 16.75,
+          "e": 17.49,
+          "c": 0.999502
+        },
+        {
+          "w": "from",
+          "s": 17.49,
+          "e": 17.96,
+          "c": 0.999985
+        },
+        {
+          "w": "K-12",
+          "s": 17.96,
+          "e": 19.46,
+          "c": 0.484721
+        },
+        {
+          "w": "students",
+          "s": 19.46,
+          "e": 19.78,
+          "c": 0.897172
+        },
+        {
+          "w": "in",
+          "s": 19.89,
+          "e": 20.08,
+          "c": 0.967296
+        },
+        {
+          "w": "New",
+          "s": 20.19,
+          "e": 20.24,
+          "c": 0.984726
+        },
+        {
+          "w": "Hampshire",
+          "s": 20.41,
+          "e": 20.83,
+          "c": 0.998675
+        },
+        {
+          "w": "about",
+          "s": 20.83,
+          "e": 21.13,
+          "c": 0.999954
+        },
+        {
+          "w": "their",
+          "s": 21.15,
+          "e": 21.18,
+          "c": 0.999998
+        },
+        {
+          "w": "own",
+          "s": 21.44,
+          "e": 21.68,
+          "c": 0.999943
+        },
+        {
+          "w": "struggles",
+          "s": 21.98,
+          "e": 22.27,
+          "c": 0.999939
+        },
+        {
+          "w": "with",
+          "s": 22.41,
+          "e": 22.53,
+          "c": 0.999979
+        },
+        {
+          "w": "mental",
+          "s": 22.53,
+          "e": 22.79,
+          "c": 0.999973
+        },
+        {
+          "w": "health",
+          "s": 22.92,
+          "e": 23.29,
+          "c": 0.999966
+        },
+        {
+          "w": "during",
+          "s": 23.33,
+          "e": 23.68,
+          "c": 0.99995
+        },
+        {
+          "w": "the",
+          "s": 23.76,
+          "e": 23.89,
+          "c": 0.999987
+        },
+        {
+          "w": "pandemic",
+          "s": 23.89,
+          "e": 24.41,
+          "c": 0.999916
+        },
+        {
+          "w": "or",
+          "s": 24.41,
+          "e": 24.54,
+          "c": 0.925934
+        },
+        {
+          "w": "their",
+          "s": 24.54,
+          "e": 24.87,
+          "c": 0.999868
+        },
+        {
+          "w": "worries",
+          "s": 24.87,
+          "e": 25.38,
+          "c": 0.997183
+        },
+        {
+          "w": "about",
+          "s": 25.53,
+          "e": 25.7,
+          "c": 0.910085
+        },
+        {
+          "w": "their",
+          "s": 25.87,
+          "e": 26.36,
+          "c": 0.716167
+        },
+        {
+          "w": "friends.",
+          "s": 26.36,
+          "e": 27.7,
+          "c": 0.750846
+        },
+        {
+          "w": "Maybe",
+          "s": 27.87,
+          "e": 28.18,
+          "c": 0.953654
+        },
+        {
+          "w": "the",
+          "s": 28.18,
+          "e": 28.43,
+          "c": 0.841418
+        },
+        {
+          "w": "silver",
+          "s": 28.45,
+          "e": 28.63,
+          "c": 0.987263
+        },
+        {
+          "w": "lining",
+          "s": 29.43,
+          "e": 29.61,
+          "c": 0.990167
+        },
+        {
+          "w": "here",
+          "s": 29.68,
+          "e": 30.02,
+          "c": 0.989123
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 30.12,
+      "end_s": 30.13,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to",
+      "words": [
+        {
+          "w": "to",
+          "s": 30.12,
+          "e": 30.12,
+          "c": 0.760466
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 30.19,
+      "end_s": 60.02,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "follow up on what Dr. Skorton was just saying is that last week in a meeting with them in person I was tiptoeing around the issue. I wasn't sure fifth graders and high school students would want to talk to me about mental health. They had no inhibitions about talking to me about mental health. They are worried about it for themselves, for their friends, and the pandemic has really obviously exacerbated it. In 2020 mental health related emergency department visits for children",
+      "words": [
+        {
+          "w": "follow",
+          "s": 30.19,
+          "e": 30.5,
+          "c": 0.999295
+        },
+        {
+          "w": "up",
+          "s": 30.5,
+          "e": 30.62,
+          "c": 0.975643
+        },
+        {
+          "w": "on",
+          "s": 30.62,
+          "e": 30.66,
+          "c": 0.997096
+        },
+        {
+          "w": "what",
+          "s": 30.74,
+          "e": 30.99,
+          "c": 0.996626
+        },
+        {
+          "w": "Dr.",
+          "s": 30.99,
+          "e": 31.26,
+          "c": 0.844913
+        },
+        {
+          "w": "Skorton",
+          "s": 31.35,
+          "e": 31.74,
+          "c": 0.553692
+        },
+        {
+          "w": "was",
+          "s": 31.74,
+          "e": 31.9,
+          "c": 0.991732
+        },
+        {
+          "w": "just",
+          "s": 31.9,
+          "e": 32.12,
+          "c": 0.98893
+        },
+        {
+          "w": "saying",
+          "s": 32.12,
+          "e": 32.48,
+          "c": 0.995564
+        },
+        {
+          "w": "is",
+          "s": 32.48,
+          "e": 32.94,
+          "c": 0.611797
+        },
+        {
+          "w": "that",
+          "s": 33.48,
+          "e": 33.76,
+          "c": 0.812496
+        },
+        {
+          "w": "last",
+          "s": 34,
+          "e": 34.28,
+          "c": 0.948313
+        },
+        {
+          "w": "week",
+          "s": 34.28,
+          "e": 34.64,
+          "c": 0.993655
+        },
+        {
+          "w": "in",
+          "s": 34.64,
+          "e": 35.31,
+          "c": 0.816475
+        },
+        {
+          "w": "a",
+          "s": 35.48,
+          "e": 35.68,
+          "c": 0.996276
+        },
+        {
+          "w": "meeting",
+          "s": 35.68,
+          "e": 36,
+          "c": 0.97457
+        },
+        {
+          "w": "with",
+          "s": 36,
+          "e": 36.16,
+          "c": 0.954279
+        },
+        {
+          "w": "them",
+          "s": 36.16,
+          "e": 36.55,
+          "c": 0.877823
+        },
+        {
+          "w": "in",
+          "s": 36.56,
+          "e": 36.78,
+          "c": 0.914468
+        },
+        {
+          "w": "person",
+          "s": 36.83,
+          "e": 37.37,
+          "c": 0.944344
+        },
+        {
+          "w": "I",
+          "s": 37.68,
+          "e": 37.71,
+          "c": 0.88759
+        },
+        {
+          "w": "was",
+          "s": 37.84,
+          "e": 37.94,
+          "c": 0.999748
+        },
+        {
+          "w": "tiptoeing",
+          "s": 37.94,
+          "e": 38.54,
+          "c": 0.936788
+        },
+        {
+          "w": "around",
+          "s": 38.54,
+          "e": 38.94,
+          "c": 0.999823
+        },
+        {
+          "w": "the",
+          "s": 38.94,
+          "e": 39.13,
+          "c": 0.999765
+        },
+        {
+          "w": "issue.",
+          "s": 39.14,
+          "e": 39.59,
+          "c": 0.406624
+        },
+        {
+          "w": "I",
+          "s": 39.71,
+          "e": 39.74,
+          "c": 0.988827
+        },
+        {
+          "w": "wasn't",
+          "s": 39.74,
+          "e": 40.14,
+          "c": 0.999434
+        },
+        {
+          "w": "sure",
+          "s": 40.14,
+          "e": 40.48,
+          "c": 0.999811
+        },
+        {
+          "w": "fifth",
+          "s": 40.48,
+          "e": 40.62,
+          "c": 0.881041
+        },
+        {
+          "w": "graders",
+          "s": 41.16,
+          "e": 41.45,
+          "c": 0.94585
+        },
+        {
+          "w": "and",
+          "s": 41.68,
+          "e": 41.76,
+          "c": 0.983192
+        },
+        {
+          "w": "high",
+          "s": 41.76,
+          "e": 41.96,
+          "c": 0.996601
+        },
+        {
+          "w": "school",
+          "s": 42.02,
+          "e": 42.32,
+          "c": 0.995374
+        },
+        {
+          "w": "students",
+          "s": 42.32,
+          "e": 42.34,
+          "c": 0.98317
+        },
+        {
+          "w": "would",
+          "s": 42.59,
+          "e": 42.8,
+          "c": 0.807526
+        },
+        {
+          "w": "want",
+          "s": 42.87,
+          "e": 42.96,
+          "c": 0.86173
+        },
+        {
+          "w": "to",
+          "s": 43.1,
+          "e": 43.1,
+          "c": 0.999918
+        },
+        {
+          "w": "talk",
+          "s": 43.15,
+          "e": 43.39,
+          "c": 0.99979
+        },
+        {
+          "w": "to",
+          "s": 43.39,
+          "e": 43.53,
+          "c": 0.999483
+        },
+        {
+          "w": "me",
+          "s": 43.53,
+          "e": 43.62,
+          "c": 0.998866
+        },
+        {
+          "w": "about",
+          "s": 43.7,
+          "e": 44.01,
+          "c": 0.999582
+        },
+        {
+          "w": "mental",
+          "s": 44.08,
+          "e": 44.43,
+          "c": 0.998883
+        },
+        {
+          "w": "health.",
+          "s": 44.51,
+          "e": 45.12,
+          "c": 0.819474
+        },
+        {
+          "w": "They",
+          "s": 45.2,
+          "e": 45.42,
+          "c": 0.990237
+        },
+        {
+          "w": "had",
+          "s": 45.42,
+          "e": 45.64,
+          "c": 0.999516
+        },
+        {
+          "w": "no",
+          "s": 45.64,
+          "e": 45.78,
+          "c": 0.999211
+        },
+        {
+          "w": "inhibitions",
+          "s": 45.78,
+          "e": 46.58,
+          "c": 0.997506
+        },
+        {
+          "w": "about",
+          "s": 46.58,
+          "e": 46.7,
+          "c": 0.996943
+        },
+        {
+          "w": "talking",
+          "s": 46.96,
+          "e": 47.45,
+          "c": 0.999481
+        },
+        {
+          "w": "to",
+          "s": 47.45,
+          "e": 47.59,
+          "c": 0.999304
+        },
+        {
+          "w": "me",
+          "s": 47.59,
+          "e": 47.62,
+          "c": 0.999155
+        },
+        {
+          "w": "about",
+          "s": 47.83,
+          "e": 48.19,
+          "c": 0.979262
+        },
+        {
+          "w": "mental",
+          "s": 48.24,
+          "e": 48.64,
+          "c": 0.994592
+        },
+        {
+          "w": "health.",
+          "s": 48.8,
+          "e": 49.15,
+          "c": 0.858143
+        },
+        {
+          "w": "They",
+          "s": 49.15,
+          "e": 49.29,
+          "c": 0.99563
+        },
+        {
+          "w": "are",
+          "s": 49.38,
+          "e": 49.55,
+          "c": 0.999422
+        },
+        {
+          "w": "worried",
+          "s": 49.55,
+          "e": 49.9,
+          "c": 0.999805
+        },
+        {
+          "w": "about",
+          "s": 50,
+          "e": 50.23,
+          "c": 0.999876
+        },
+        {
+          "w": "it",
+          "s": 50.23,
+          "e": 50.32,
+          "c": 0.999617
+        },
+        {
+          "w": "for",
+          "s": 50.34,
+          "e": 50.51,
+          "c": 0.999182
+        },
+        {
+          "w": "themselves,",
+          "s": 50.51,
+          "e": 51.19,
+          "c": 0.636273
+        },
+        {
+          "w": "for",
+          "s": 51.19,
+          "e": 51.36,
+          "c": 0.998607
+        },
+        {
+          "w": "their",
+          "s": 51.36,
+          "e": 51.57,
+          "c": 0.999666
+        },
+        {
+          "w": "friends,",
+          "s": 51.66,
+          "e": 52.15,
+          "c": 0.621439
+        },
+        {
+          "w": "and",
+          "s": 52.15,
+          "e": 52.32,
+          "c": 0.991149
+        },
+        {
+          "w": "the",
+          "s": 52.32,
+          "e": 52.38,
+          "c": 0.999087
+        },
+        {
+          "w": "pandemic",
+          "s": 52.64,
+          "e": 53,
+          "c": 0.968084
+        },
+        {
+          "w": "has",
+          "s": 53.07,
+          "e": 53.17,
+          "c": 0.994736
+        },
+        {
+          "w": "really",
+          "s": 53.17,
+          "e": 53.3,
+          "c": 0.997725
+        },
+        {
+          "w": "obviously",
+          "s": 53.71,
+          "e": 54.14,
+          "c": 0.983598
+        },
+        {
+          "w": "exacerbated",
+          "s": 54.14,
+          "e": 54.89,
+          "c": 0.991486
+        },
+        {
+          "w": "it.",
+          "s": 54.89,
+          "e": 55.21,
+          "c": 0.975083
+        },
+        {
+          "w": "In",
+          "s": 55.24,
+          "e": 55.35,
+          "c": 0.990877
+        },
+        {
+          "w": "2020",
+          "s": 55.35,
+          "e": 56.16,
+          "c": 0.990452
+        },
+        {
+          "w": "mental",
+          "s": 56.17,
+          "e": 56.46,
+          "c": 0.495481
+        },
+        {
+          "w": "health",
+          "s": 56.59,
+          "e": 56.65,
+          "c": 0.991074
+        },
+        {
+          "w": "related",
+          "s": 57.01,
+          "e": 57.26,
+          "c": 0.877637
+        },
+        {
+          "w": "emergency",
+          "s": 57.52,
+          "e": 58.09,
+          "c": 0.980575
+        },
+        {
+          "w": "department",
+          "s": 58.09,
+          "e": 58.76,
+          "c": 0.987521
+        },
+        {
+          "w": "visits",
+          "s": 58.8,
+          "e": 59.19,
+          "c": 0.99489
+        },
+        {
+          "w": "for",
+          "s": 59.19,
+          "e": 59.39,
+          "c": 0.9925
+        },
+        {
+          "w": "children",
+          "s": 59.39,
+          "e": 60.02,
+          "c": 0.996837
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 60.02,
+      "end_s": 60.03,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "increased",
+      "words": [
+        {
+          "w": "increased",
+          "s": 60.02,
+          "e": 60.02,
+          "c": 0.604459
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 60.02,
+      "end_s": 73.11,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "dramatically. And we know because of the pandemic, it's been harder for them to get in to see their primary care docs or to get to school in person to have the kind of mental health supports that school might provide. So we have to do better for our kids.",
+      "words": [
+        {
+          "w": "dramatically.",
+          "s": 60,
+          "e": 61.28,
+          "c": 0.360328
+        },
+        {
+          "w": "And",
+          "s": 61.28,
+          "e": 61.44,
+          "c": 0.719826
+        },
+        {
+          "w": "we",
+          "s": 61.44,
+          "e": 61.54,
+          "c": 0.988327
+        },
+        {
+          "w": "know",
+          "s": 61.54,
+          "e": 61.75,
+          "c": 0.998452
+        },
+        {
+          "w": "because",
+          "s": 61.75,
+          "e": 62.12,
+          "c": 0.925131
+        },
+        {
+          "w": "of",
+          "s": 62.12,
+          "e": 62.22,
+          "c": 0.99166
+        },
+        {
+          "w": "the",
+          "s": 62.22,
+          "e": 62.38,
+          "c": 0.993364
+        },
+        {
+          "w": "pandemic,",
+          "s": 62.44,
+          "e": 62.84,
+          "c": 0.536821
+        },
+        {
+          "w": "it's",
+          "s": 62.84,
+          "e": 62.94,
+          "c": 0.94577
+        },
+        {
+          "w": "been",
+          "s": 63.12,
+          "e": 63.2,
+          "c": 0.982251
+        },
+        {
+          "w": "harder",
+          "s": 63.2,
+          "e": 63.47,
+          "c": 0.974
+        },
+        {
+          "w": "for",
+          "s": 63.47,
+          "e": 63.61,
+          "c": 0.99655
+        },
+        {
+          "w": "them",
+          "s": 63.61,
+          "e": 63.79,
+          "c": 0.997936
+        },
+        {
+          "w": "to",
+          "s": 63.79,
+          "e": 63.86,
+          "c": 0.996649
+        },
+        {
+          "w": "get",
+          "s": 63.95,
+          "e": 64.04,
+          "c": 0.9144
+        },
+        {
+          "w": "in",
+          "s": 64.04,
+          "e": 64.16,
+          "c": 0.772736
+        },
+        {
+          "w": "to",
+          "s": 64.2,
+          "e": 64.26,
+          "c": 0.959159
+        },
+        {
+          "w": "see",
+          "s": 64.38,
+          "e": 64.46,
+          "c": 0.995702
+        },
+        {
+          "w": "their",
+          "s": 64.46,
+          "e": 64.6,
+          "c": 0.960838
+        },
+        {
+          "w": "primary",
+          "s": 64.64,
+          "e": 65.07,
+          "c": 0.999342
+        },
+        {
+          "w": "care",
+          "s": 65.07,
+          "e": 65.2,
+          "c": 0.999853
+        },
+        {
+          "w": "docs",
+          "s": 65.35,
+          "e": 65.5,
+          "c": 0.99802
+        },
+        {
+          "w": "or",
+          "s": 65.57,
+          "e": 65.65,
+          "c": 0.909545
+        },
+        {
+          "w": "to",
+          "s": 65.67,
+          "e": 65.77,
+          "c": 0.999962
+        },
+        {
+          "w": "get",
+          "s": 65.86,
+          "e": 65.97,
+          "c": 0.99999
+        },
+        {
+          "w": "to",
+          "s": 65.97,
+          "e": 66.09,
+          "c": 0.999987
+        },
+        {
+          "w": "school",
+          "s": 66.09,
+          "e": 66.43,
+          "c": 0.99995
+        },
+        {
+          "w": "in",
+          "s": 66.49,
+          "e": 66.57,
+          "c": 0.999569
+        },
+        {
+          "w": "person",
+          "s": 66.57,
+          "e": 66.91,
+          "c": 0.997297
+        },
+        {
+          "w": "to",
+          "s": 66.95,
+          "e": 67.02,
+          "c": 0.972854
+        },
+        {
+          "w": "have",
+          "s": 67.08,
+          "e": 67.31,
+          "c": 0.999985
+        },
+        {
+          "w": "the",
+          "s": 67.31,
+          "e": 67.49,
+          "c": 0.999977
+        },
+        {
+          "w": "kind",
+          "s": 67.49,
+          "e": 67.54,
+          "c": 0.999586
+        },
+        {
+          "w": "of",
+          "s": 67.76,
+          "e": 67.85,
+          "c": 0.999994
+        },
+        {
+          "w": "mental",
+          "s": 67.85,
+          "e": 68.13,
+          "c": 0.999962
+        },
+        {
+          "w": "health",
+          "s": 68.22,
+          "e": 68.51,
+          "c": 0.999603
+        },
+        {
+          "w": "supports",
+          "s": 68.59,
+          "e": 69.08,
+          "c": 0.986302
+        },
+        {
+          "w": "that",
+          "s": 69.08,
+          "e": 69.44,
+          "c": 0.993447
+        },
+        {
+          "w": "school",
+          "s": 69.44,
+          "e": 69.87,
+          "c": 0.985417
+        },
+        {
+          "w": "might",
+          "s": 69.87,
+          "e": 70.22,
+          "c": 0.999958
+        },
+        {
+          "w": "provide.",
+          "s": 70.22,
+          "e": 70.93,
+          "c": 0.999691
+        },
+        {
+          "w": "So",
+          "s": 70.93,
+          "e": 71.07,
+          "c": 0.999903
+        },
+        {
+          "w": "we",
+          "s": 71.07,
+          "e": 71.2,
+          "c": 0.880463
+        },
+        {
+          "w": "have",
+          "s": 71.21,
+          "e": 71.49,
+          "c": 0.999998
+        },
+        {
+          "w": "to",
+          "s": 71.49,
+          "e": 71.62,
+          "c": 1
+        },
+        {
+          "w": "do",
+          "s": 71.64,
+          "e": 71.77,
+          "c": 0.999994
+        },
+        {
+          "w": "better",
+          "s": 71.77,
+          "e": 72.2,
+          "c": 0.999989
+        },
+        {
+          "w": "for",
+          "s": 72.2,
+          "e": 72.34,
+          "c": 0.999998
+        },
+        {
+          "w": "our",
+          "s": 72.56,
+          "e": 72.62,
+          "c": 0.999962
+        },
+        {
+          "w": "kids.",
+          "s": 72.62,
+          "e": 73.11,
+          "c": 0.999611
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 73.11,
+      "end_s": 83.82,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Dr. McDougall, what steps can Congress take to ensure that pediatricians and primary care providers are prepared to respond to the pediatric mental health crisis we are experiencing",
+      "words": [
+        {
+          "w": "Dr.",
+          "s": 73.11,
+          "e": 73.45,
+          "c": 0.985898
+        },
+        {
+          "w": "McDougall,",
+          "s": 73.46,
+          "e": 74.23,
+          "c": 0.752748
+        },
+        {
+          "w": "what",
+          "s": 74.23,
+          "e": 74.47,
+          "c": 0.999159
+        },
+        {
+          "w": "steps",
+          "s": 74.59,
+          "e": 74.86,
+          "c": 0.999962
+        },
+        {
+          "w": "can",
+          "s": 74.86,
+          "e": 75.13,
+          "c": 0.999937
+        },
+        {
+          "w": "Congress",
+          "s": 75.56,
+          "e": 75.56,
+          "c": 0.603183
+        },
+        {
+          "w": "take",
+          "s": 75.56,
+          "e": 75.83,
+          "c": 0.99988
+        },
+        {
+          "w": "to",
+          "s": 75.83,
+          "e": 75.96,
+          "c": 0.999996
+        },
+        {
+          "w": "ensure",
+          "s": 75.96,
+          "e": 76.37,
+          "c": 0.999693
+        },
+        {
+          "w": "that",
+          "s": 76.37,
+          "e": 76.63,
+          "c": 0.99999
+        },
+        {
+          "w": "pediatricians",
+          "s": 76.78,
+          "e": 77.49,
+          "c": 0.999641
+        },
+        {
+          "w": "and",
+          "s": 77.6,
+          "e": 77.7,
+          "c": 0.999996
+        },
+        {
+          "w": "primary",
+          "s": 77.76,
+          "e": 78.19,
+          "c": 0.999966
+        },
+        {
+          "w": "care",
+          "s": 78.22,
+          "e": 78.46,
+          "c": 0.999979
+        },
+        {
+          "w": "providers",
+          "s": 78.68,
+          "e": 79.05,
+          "c": 0.999956
+        },
+        {
+          "w": "are",
+          "s": 79.14,
+          "e": 79.3,
+          "c": 0.999987
+        },
+        {
+          "w": "prepared",
+          "s": 79.3,
+          "e": 79.82,
+          "c": 0.999907
+        },
+        {
+          "w": "to",
+          "s": 79.87,
+          "e": 79.98,
+          "c": 1
+        },
+        {
+          "w": "respond",
+          "s": 79.98,
+          "e": 80.46,
+          "c": 0.999922
+        },
+        {
+          "w": "to",
+          "s": 80.46,
+          "e": 80.59,
+          "c": 0.999987
+        },
+        {
+          "w": "the",
+          "s": 80.59,
+          "e": 80.92,
+          "c": 0.99995
+        },
+        {
+          "w": "pediatric",
+          "s": 80.92,
+          "e": 81.48,
+          "c": 0.997529
+        },
+        {
+          "w": "mental",
+          "s": 81.54,
+          "e": 81.77,
+          "c": 0.999918
+        },
+        {
+          "w": "health",
+          "s": 82.14,
+          "e": 82.32,
+          "c": 0.999941
+        },
+        {
+          "w": "crisis",
+          "s": 82.32,
+          "e": 82.71,
+          "c": 0.999918
+        },
+        {
+          "w": "we",
+          "s": 82.71,
+          "e": 82.85,
+          "c": 0.999878
+        },
+        {
+          "w": "are",
+          "s": 82.85,
+          "e": 83.05,
+          "c": 0.999992
+        },
+        {
+          "w": "experiencing",
+          "s": 83.05,
+          "e": 83.82,
+          "c": 0.999979
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 83.98,
+      "end_s": 84.04,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "as a",
+      "words": [
+        {
+          "w": "as",
+          "s": 83.98,
+          "e": 83.98,
+          "c": 0.999992
+        },
+        {
+          "w": "a",
+          "s": 84.04,
+          "e": 84.04,
+          "c": 0.999998
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 84.04,
+      "end_s": 89.99,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "result of the pandemic? And what can we do in Congress to improve access to mental health services for kids through their",
+      "words": [
+        {
+          "w": "result",
+          "s": 84.04,
+          "e": 84.41,
+          "c": 0.999985
+        },
+        {
+          "w": "of",
+          "s": 84.5,
+          "e": 84.57,
+          "c": 1
+        },
+        {
+          "w": "the",
+          "s": 84.57,
+          "e": 84.77,
+          "c": 0.999992
+        },
+        {
+          "w": "pandemic?",
+          "s": 84.77,
+          "e": 85.5,
+          "c": 0.98702
+        },
+        {
+          "w": "And",
+          "s": 85.5,
+          "e": 85.7,
+          "c": 0.990626
+        },
+        {
+          "w": "what",
+          "s": 85.7,
+          "e": 85.95,
+          "c": 0.999699
+        },
+        {
+          "w": "can",
+          "s": 86.07,
+          "e": 86.16,
+          "c": 0.997016
+        },
+        {
+          "w": "we",
+          "s": 86.16,
+          "e": 86.29,
+          "c": 0.998563
+        },
+        {
+          "w": "do",
+          "s": 86.29,
+          "e": 86.44,
+          "c": 0.99169
+        },
+        {
+          "w": "in",
+          "s": 86.5,
+          "e": 86.6,
+          "c": 0.16063
+        },
+        {
+          "w": "Congress",
+          "s": 86.69,
+          "e": 87,
+          "c": 0.919418
+        },
+        {
+          "w": "to",
+          "s": 87,
+          "e": 87.06,
+          "c": 0.97225
+        },
+        {
+          "w": "improve",
+          "s": 87.12,
+          "e": 87.48,
+          "c": 0.98616
+        },
+        {
+          "w": "access",
+          "s": 87.72,
+          "e": 87.96,
+          "c": 0.903953
+        },
+        {
+          "w": "to",
+          "s": 87.96,
+          "e": 88.14,
+          "c": 0.811765
+        },
+        {
+          "w": "mental",
+          "s": 88.14,
+          "e": 88.29,
+          "c": 0.888176
+        },
+        {
+          "w": "health",
+          "s": 88.35,
+          "e": 88.6,
+          "c": 0.899098
+        },
+        {
+          "w": "services",
+          "s": 88.6,
+          "e": 89.1,
+          "c": 0.93437
+        },
+        {
+          "w": "for",
+          "s": 89.1,
+          "e": 89.26,
+          "c": 0.91506
+        },
+        {
+          "w": "kids",
+          "s": 89.26,
+          "e": 89.4,
+          "c": 0.983043
+        },
+        {
+          "w": "through",
+          "s": 89.62,
+          "e": 89.78,
+          "c": 0.974514
+        },
+        {
+          "w": "their",
+          "s": 89.78,
+          "e": 89.99,
+          "c": 0.99329
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 90.01,
+      "end_s": 92.34,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "communities, including their",
+      "words": [
+        {
+          "w": "communities,",
+          "s": 90.01,
+          "e": 91.12,
+          "c": 0.165534
+        },
+        {
+          "w": "including",
+          "s": 91.12,
+          "e": 91.62,
+          "c": 0.991534
+        },
+        {
+          "w": "their",
+          "s": 91.68,
+          "e": 92.34,
+          "c": 0.997255
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 92.34,
+      "end_s": 94.86,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "schools. - Very good question.",
+      "words": [
+        {
+          "w": "schools.",
+          "s": 92.34,
+          "e": 93.24,
+          "c": 0.187638
+        },
+        {
+          "w": "-",
+          "s": 93.25,
+          "e": 93.32,
+          "c": 0.520844
+        },
+        {
+          "w": "Very",
+          "s": 93.32,
+          "e": 93.66,
+          "c": 0.862265
+        },
+        {
+          "w": "good",
+          "s": 93.66,
+          "e": 93.97,
+          "c": 0.999258
+        },
+        {
+          "w": "question.",
+          "s": 94.03,
+          "e": 94.86,
+          "c": 0.890051
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 94.95,
+      "end_s": 118.1,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "As primary care physicians, we many times are the first persons who are talked to about the mental health concerns. And in some cases, we're able to manage the mental health concerns.",
+      "words": [
+        {
+          "w": "As",
+          "s": 94.95,
+          "e": 95.15,
+          "c": 0.992579
+        },
+        {
+          "w": "primary",
+          "s": 95.15,
+          "e": 95.91,
+          "c": 0.98855
+        },
+        {
+          "w": "care",
+          "s": 95.91,
+          "e": 96.34,
+          "c": 0.997
+        },
+        {
+          "w": "physicians,",
+          "s": 96.34,
+          "e": 97.73,
+          "c": 0.913218
+        },
+        {
+          "w": "we",
+          "s": 97.73,
+          "e": 98.04,
+          "c": 0.574492
+        },
+        {
+          "w": "many",
+          "s": 98.18,
+          "e": 98.47,
+          "c": 0.70456
+        },
+        {
+          "w": "times",
+          "s": 98.49,
+          "e": 98.97,
+          "c": 0.997063
+        },
+        {
+          "w": "are",
+          "s": 99.05,
+          "e": 99.39,
+          "c": 0.998656
+        },
+        {
+          "w": "the",
+          "s": 99.39,
+          "e": 99.72,
+          "c": 0.999142
+        },
+        {
+          "w": "first",
+          "s": 99.75,
+          "e": 100.18,
+          "c": 0.996364
+        },
+        {
+          "w": "persons",
+          "s": 100.33,
+          "e": 100.74,
+          "c": 0.989449
+        },
+        {
+          "w": "who",
+          "s": 101.11,
+          "e": 101.58,
+          "c": 0.969671
+        },
+        {
+          "w": "are",
+          "s": 101.58,
+          "e": 101.98,
+          "c": 0.939366
+        },
+        {
+          "w": "talked",
+          "s": 102.28,
+          "e": 103.41,
+          "c": 0.715348
+        },
+        {
+          "w": "to",
+          "s": 103.95,
+          "e": 104.04,
+          "c": 0.87069
+        },
+        {
+          "w": "about",
+          "s": 104.05,
+          "e": 104.7,
+          "c": 0.999704
+        },
+        {
+          "w": "the",
+          "s": 104.7,
+          "e": 105.09,
+          "c": 0.997917
+        },
+        {
+          "w": "mental",
+          "s": 105.09,
+          "e": 105.63,
+          "c": 0.99887
+        },
+        {
+          "w": "health",
+          "s": 105.72,
+          "e": 106.67,
+          "c": 0.998173
+        },
+        {
+          "w": "concerns.",
+          "s": 107.28,
+          "e": 107.76,
+          "c": 0.598167
+        },
+        {
+          "w": "And",
+          "s": 107.77,
+          "e": 108.76,
+          "c": 0.99017
+        },
+        {
+          "w": "in",
+          "s": 108.76,
+          "e": 109.26,
+          "c": 0.863579
+        },
+        {
+          "w": "some",
+          "s": 109.26,
+          "e": 110.27,
+          "c": 0.994672
+        },
+        {
+          "w": "cases,",
+          "s": 111,
+          "e": 111.72,
+          "c": 0.420439
+        },
+        {
+          "w": "we're",
+          "s": 111.72,
+          "e": 112.07,
+          "c": 0.787517
+        },
+        {
+          "w": "able",
+          "s": 112.07,
+          "e": 112.15,
+          "c": 0.999369
+        },
+        {
+          "w": "to",
+          "s": 112.67,
+          "e": 112.76,
+          "c": 0.880933
+        },
+        {
+          "w": "manage",
+          "s": 112.76,
+          "e": 112.76,
+          "c": 0.981558
+        },
+        {
+          "w": "the",
+          "s": 112.77,
+          "e": 113.44,
+          "c": 0.99918
+        },
+        {
+          "w": "mental",
+          "s": 113.47,
+          "e": 114.35,
+          "c": 0.999338
+        },
+        {
+          "w": "health",
+          "s": 115.99,
+          "e": 116.23,
+          "c": 0.999355
+        },
+        {
+          "w": "concerns.",
+          "s": 116.23,
+          "e": 118.1,
+          "c": 0.780678
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 118.06,
+      "end_s": 118.39,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "And",
+      "words": [
+        {
+          "w": "And",
+          "s": 118.064,
+          "e": 118.394,
+          "c": 0.117183
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 118.79,
+      "end_s": 146.66,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that being said, typically it may involve a referral to a psychologist or a licensed social worker to work in concert with us. And someone mentioned earlier about the importance of telehealth. Congress has to continue funding of telehealth.",
+      "words": [
+        {
+          "w": "that",
+          "s": 118.794,
+          "e": 118.834,
+          "c": 0.842035
+        },
+        {
+          "w": "being",
+          "s": 118.834,
+          "e": 119.244,
+          "c": 0.99807
+        },
+        {
+          "w": "said,",
+          "s": 119.384,
+          "e": 120.064,
+          "c": 0.967132
+        },
+        {
+          "w": "typically",
+          "s": 120.064,
+          "e": 120.704,
+          "c": 0.952866
+        },
+        {
+          "w": "it",
+          "s": 120.704,
+          "e": 120.844,
+          "c": 0.712602
+        },
+        {
+          "w": "may",
+          "s": 120.844,
+          "e": 121.064,
+          "c": 0.987732
+        },
+        {
+          "w": "involve",
+          "s": 121.064,
+          "e": 122.944,
+          "c": 0.975696
+        },
+        {
+          "w": "a",
+          "s": 123.104,
+          "e": 123.114,
+          "c": 0.421348
+        },
+        {
+          "w": "referral",
+          "s": 123.114,
+          "e": 123.574,
+          "c": 0.982762
+        },
+        {
+          "w": "to",
+          "s": 123.574,
+          "e": 123.704,
+          "c": 0.661817
+        },
+        {
+          "w": "a",
+          "s": 123.704,
+          "e": 125.064,
+          "c": 0.984038
+        },
+        {
+          "w": "psychologist",
+          "s": 125.064,
+          "e": 125.504,
+          "c": 0.851807
+        },
+        {
+          "w": "or",
+          "s": 125.504,
+          "e": 125.664,
+          "c": 0.73996
+        },
+        {
+          "w": "a",
+          "s": 125.664,
+          "e": 125.904,
+          "c": 0.875255
+        },
+        {
+          "w": "licensed",
+          "s": 126.264,
+          "e": 126.914,
+          "c": 0.972821
+        },
+        {
+          "w": "social",
+          "s": 127.974,
+          "e": 128.134,
+          "c": 0.999174
+        },
+        {
+          "w": "worker",
+          "s": 128.214,
+          "e": 128.824,
+          "c": 0.998971
+        },
+        {
+          "w": "to",
+          "s": 129.074,
+          "e": 129.274,
+          "c": 0.986148
+        },
+        {
+          "w": "work",
+          "s": 129.334,
+          "e": 129.904,
+          "c": 0.987538
+        },
+        {
+          "w": "in",
+          "s": 129.904,
+          "e": 130.194,
+          "c": 0.988474
+        },
+        {
+          "w": "concert",
+          "s": 130.194,
+          "e": 131.054,
+          "c": 0.994899
+        },
+        {
+          "w": "with",
+          "s": 131.504,
+          "e": 131.824,
+          "c": 0.984981
+        },
+        {
+          "w": "us.",
+          "s": 131.824,
+          "e": 132.594,
+          "c": 0.759499
+        },
+        {
+          "w": "And",
+          "s": 132.604,
+          "e": 132.984,
+          "c": 0.99911
+        },
+        {
+          "w": "someone",
+          "s": 133.334,
+          "e": 133.784,
+          "c": 0.993775
+        },
+        {
+          "w": "mentioned",
+          "s": 133.924,
+          "e": 134.944,
+          "c": 0.998093
+        },
+        {
+          "w": "earlier",
+          "s": 135.214,
+          "e": 135.904,
+          "c": 0.999476
+        },
+        {
+          "w": "about",
+          "s": 135.904,
+          "e": 136.414,
+          "c": 0.997086
+        },
+        {
+          "w": "the",
+          "s": 136.604,
+          "e": 136.914,
+          "c": 0.999407
+        },
+        {
+          "w": "importance",
+          "s": 137.034,
+          "e": 138.184,
+          "c": 0.999028
+        },
+        {
+          "w": "of",
+          "s": 138.184,
+          "e": 138.434,
+          "c": 0.997375
+        },
+        {
+          "w": "telehealth.",
+          "s": 138.434,
+          "e": 140.124,
+          "c": 0.849039
+        },
+        {
+          "w": "Congress",
+          "s": 140.854,
+          "e": 141.314,
+          "c": 0.997368
+        },
+        {
+          "w": "has",
+          "s": 141.444,
+          "e": 141.704,
+          "c": 0.996824
+        },
+        {
+          "w": "to",
+          "s": 141.954,
+          "e": 142.064,
+          "c": 0.999641
+        },
+        {
+          "w": "continue",
+          "s": 142.084,
+          "e": 143.214,
+          "c": 0.999645
+        },
+        {
+          "w": "funding",
+          "s": 143.354,
+          "e": 143.944,
+          "c": 0.987586
+        },
+        {
+          "w": "of",
+          "s": 144.514,
+          "e": 144.654,
+          "c": 0.990388
+        },
+        {
+          "w": "telehealth.",
+          "s": 144.654,
+          "e": 146.664,
+          "c": 0.985874
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 146.9,
+      "end_s": 173.92,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "That has to continue and we need to also prioritize training of licensed social workers, psychologists, and psychiatrists. So a strong message needs to be sent to our medical schools, our health profession schools, that this is a national crisis that we all need to step up to.",
+      "words": [
+        {
+          "w": "That",
+          "s": 146.896,
+          "e": 147.126,
+          "c": 0.0627989
+        },
+        {
+          "w": "has",
+          "s": 147.346,
+          "e": 147.596,
+          "c": 0.994835
+        },
+        {
+          "w": "to",
+          "s": 147.596,
+          "e": 147.656,
+          "c": 0.998894
+        },
+        {
+          "w": "continue",
+          "s": 147.906,
+          "e": 148.806,
+          "c": 0.998917
+        },
+        {
+          "w": "and",
+          "s": 149.196,
+          "e": 149.656,
+          "c": 0.291863
+        },
+        {
+          "w": "we",
+          "s": 149.656,
+          "e": 149.816,
+          "c": 0.973493
+        },
+        {
+          "w": "need",
+          "s": 149.816,
+          "e": 150.056,
+          "c": 0.976699
+        },
+        {
+          "w": "to",
+          "s": 150.186,
+          "e": 150.316,
+          "c": 0.960307
+        },
+        {
+          "w": "also",
+          "s": 150.316,
+          "e": 150.546,
+          "c": 0.958694
+        },
+        {
+          "w": "prioritize",
+          "s": 150.666,
+          "e": 151.656,
+          "c": 0.94047
+        },
+        {
+          "w": "training",
+          "s": 151.656,
+          "e": 153.306,
+          "c": 0.685721
+        },
+        {
+          "w": "of",
+          "s": 153.616,
+          "e": 153.916,
+          "c": 0.827808
+        },
+        {
+          "w": "licensed",
+          "s": 154.396,
+          "e": 154.956,
+          "c": 0.874142
+        },
+        {
+          "w": "social",
+          "s": 155.076,
+          "e": 155.486,
+          "c": 0.834337
+        },
+        {
+          "w": "workers,",
+          "s": 155.486,
+          "e": 156.426,
+          "c": 0.932271
+        },
+        {
+          "w": "psychologists,",
+          "s": 156.516,
+          "e": 157.896,
+          "c": 0.476205
+        },
+        {
+          "w": "and",
+          "s": 157.916,
+          "e": 158.286,
+          "c": 0.869524
+        },
+        {
+          "w": "psychiatrists.",
+          "s": 158.546,
+          "e": 159.596,
+          "c": 0.737319
+        },
+        {
+          "w": "So",
+          "s": 159.796,
+          "e": 159.796,
+          "c": 0.944645
+        },
+        {
+          "w": "a",
+          "s": 159.836,
+          "e": 159.896,
+          "c": 0.768312
+        },
+        {
+          "w": "strong",
+          "s": 159.896,
+          "e": 160.506,
+          "c": 0.999306
+        },
+        {
+          "w": "message",
+          "s": 160.506,
+          "e": 161.206,
+          "c": 0.999169
+        },
+        {
+          "w": "needs",
+          "s": 161.206,
+          "e": 161.726,
+          "c": 0.991206
+        },
+        {
+          "w": "to",
+          "s": 161.726,
+          "e": 161.756,
+          "c": 0.997571
+        },
+        {
+          "w": "be",
+          "s": 162.126,
+          "e": 162.126,
+          "c": 0.998803
+        },
+        {
+          "w": "sent",
+          "s": 162.136,
+          "e": 162.386,
+          "c": 0.99191
+        },
+        {
+          "w": "to",
+          "s": 162.556,
+          "e": 162.726,
+          "c": 0.994454
+        },
+        {
+          "w": "our",
+          "s": 162.726,
+          "e": 162.996,
+          "c": 0.997141
+        },
+        {
+          "w": "medical",
+          "s": 163.126,
+          "e": 163.726,
+          "c": 0.991883
+        },
+        {
+          "w": "schools,",
+          "s": 163.876,
+          "e": 164.716,
+          "c": 0.908905
+        },
+        {
+          "w": "our",
+          "s": 164.716,
+          "e": 164.846,
+          "c": 0.902918
+        },
+        {
+          "w": "health",
+          "s": 164.956,
+          "e": 165.366,
+          "c": 0.987303
+        },
+        {
+          "w": "profession",
+          "s": 165.656,
+          "e": 166.116,
+          "c": 0.45105
+        },
+        {
+          "w": "schools,",
+          "s": 166.116,
+          "e": 166.756,
+          "c": 0.588374
+        },
+        {
+          "w": "that",
+          "s": 166.756,
+          "e": 166.836,
+          "c": 0.49781
+        },
+        {
+          "w": "this",
+          "s": 167.326,
+          "e": 167.586,
+          "c": 0.918774
+        },
+        {
+          "w": "is",
+          "s": 167.696,
+          "e": 167.886,
+          "c": 0.988434
+        },
+        {
+          "w": "a",
+          "s": 168.016,
+          "e": 168.156,
+          "c": 0.995685
+        },
+        {
+          "w": "national",
+          "s": 168.156,
+          "e": 169.546,
+          "c": 0.987856
+        },
+        {
+          "w": "crisis",
+          "s": 169.546,
+          "e": 170.366,
+          "c": 0.96931
+        },
+        {
+          "w": "that",
+          "s": 170.856,
+          "e": 171.166,
+          "c": 0.93019
+        },
+        {
+          "w": "we",
+          "s": 171.166,
+          "e": 171.226,
+          "c": 0.99162
+        },
+        {
+          "w": "all",
+          "s": 171.486,
+          "e": 171.876,
+          "c": 0.997341
+        },
+        {
+          "w": "need",
+          "s": 171.876,
+          "e": 172.406,
+          "c": 0.997356
+        },
+        {
+          "w": "to",
+          "s": 172.586,
+          "e": 172.726,
+          "c": 0.996225
+        },
+        {
+          "w": "step",
+          "s": 172.726,
+          "e": 173.256,
+          "c": 0.996767
+        },
+        {
+          "w": "up",
+          "s": 173.406,
+          "e": 173.576,
+          "c": 0.998371
+        },
+        {
+          "w": "to.",
+          "s": 173.576,
+          "e": 173.916,
+          "c": 0.973157
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 174.13,
+      "end_s": 174.14,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "So",
+      "words": [
+        {
+          "w": "So",
+          "s": 174.127,
+          "e": 174.127,
+          "c": 0.921493
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 174.16,
+      "end_s": 177.08,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "those are my initial thoughts.",
+      "words": [
+        {
+          "w": "those",
+          "s": 174.157,
+          "e": 174.427,
+          "c": 0.729897
+        },
+        {
+          "w": "are",
+          "s": 174.757,
+          "e": 174.947,
+          "c": 0.997253
+        },
+        {
+          "w": "my",
+          "s": 175.077,
+          "e": 175.077,
+          "c": 0.99915
+        },
+        {
+          "w": "initial",
+          "s": 175.187,
+          "e": 175.847,
+          "c": 0.998693
+        },
+        {
+          "w": "thoughts.",
+          "s": 175.887,
+          "e": 177.077,
+          "c": 0.993339
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 177.32,
+      "end_s": 182.93,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you very much for those initial thoughts. They're great ones. I want to -- I'm just going to comment quickly that I thank",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 177.317,
+          "e": 177.387,
+          "c": 0.727698
+        },
+        {
+          "w": "you",
+          "s": 177.387,
+          "e": 177.537,
+          "c": 0.999369
+        },
+        {
+          "w": "very",
+          "s": 177.557,
+          "e": 177.617,
+          "c": 0.994858
+        },
+        {
+          "w": "much",
+          "s": 177.917,
+          "e": 178.077,
+          "c": 0.998612
+        },
+        {
+          "w": "for",
+          "s": 178.077,
+          "e": 178.147,
+          "c": 0.951252
+        },
+        {
+          "w": "those",
+          "s": 178.347,
+          "e": 178.417,
+          "c": 0.987656
+        },
+        {
+          "w": "initial",
+          "s": 178.417,
+          "e": 178.807,
+          "c": 0.968497
+        },
+        {
+          "w": "thoughts.",
+          "s": 178.807,
+          "e": 179.177,
+          "c": 0.760096
+        },
+        {
+          "w": "They're",
+          "s": 179.387,
+          "e": 179.537,
+          "c": 0.966464
+        },
+        {
+          "w": "great",
+          "s": 179.537,
+          "e": 179.687,
+          "c": 0.972893
+        },
+        {
+          "w": "ones.",
+          "s": 180.007,
+          "e": 180.177,
+          "c": 0.993449
+        },
+        {
+          "w": "I",
+          "s": 180.177,
+          "e": 180.257,
+          "c": 0.998559
+        },
+        {
+          "w": "want",
+          "s": 180.417,
+          "e": 180.597,
+          "c": 0.586419
+        },
+        {
+          "w": "to",
+          "s": 180.597,
+          "e": 180.687,
+          "c": 0.97742
+        },
+        {
+          "w": "--",
+          "s": 180.957,
+          "e": 180.957,
+          "c": 0.506885
+        },
+        {
+          "w": "I'm",
+          "s": 181.007,
+          "e": 181.107,
+          "c": 0.93215
+        },
+        {
+          "w": "just",
+          "s": 181.107,
+          "e": 181.307,
+          "c": 0.997105
+        },
+        {
+          "w": "going",
+          "s": 181.447,
+          "e": 181.567,
+          "c": 0.975934
+        },
+        {
+          "w": "to",
+          "s": 181.567,
+          "e": 181.657,
+          "c": 0.991972
+        },
+        {
+          "w": "comment",
+          "s": 181.737,
+          "e": 182.027,
+          "c": 0.987916
+        },
+        {
+          "w": "quickly",
+          "s": 182.027,
+          "e": 182.377,
+          "c": 0.985321
+        },
+        {
+          "w": "that",
+          "s": 182.657,
+          "e": 182.727,
+          "c": 0.998285
+        },
+        {
+          "w": "I",
+          "s": 182.727,
+          "e": 182.797,
+          "c": 0.992103
+        },
+        {
+          "w": "thank",
+          "s": 182.797,
+          "e": 182.927,
+          "c": 0.871127
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 183.26,
+      "end_s": 202.13,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "all of the panelists for the support that you've all expressed for boosting the behavioral workforce and the workforce to treat substance use disorder. And I'm pleased and honored to work with Senator Collins on the Opioid Workforce Act, and we'll continue to push that through. Dr. Herbert,",
+      "words": [
+        {
+          "w": "all",
+          "s": 183.257,
+          "e": 183.407,
+          "c": 0.998841
+        },
+        {
+          "w": "of",
+          "s": 183.407,
+          "e": 183.547,
+          "c": 0.984671
+        },
+        {
+          "w": "the",
+          "s": 183.687,
+          "e": 183.787,
+          "c": 0.998677
+        },
+        {
+          "w": "panelists",
+          "s": 183.787,
+          "e": 184.517,
+          "c": 0.995543
+        },
+        {
+          "w": "for",
+          "s": 184.517,
+          "e": 184.777,
+          "c": 0.774218
+        },
+        {
+          "w": "the",
+          "s": 184.777,
+          "e": 185.037,
+          "c": 0.996489
+        },
+        {
+          "w": "support",
+          "s": 185.037,
+          "e": 185.587,
+          "c": 0.997411
+        },
+        {
+          "w": "that",
+          "s": 185.907,
+          "e": 185.907,
+          "c": 0.999701
+        },
+        {
+          "w": "you've",
+          "s": 185.917,
+          "e": 186.187,
+          "c": 0.991639
+        },
+        {
+          "w": "all",
+          "s": 186.237,
+          "e": 186.247,
+          "c": 0.996052
+        },
+        {
+          "w": "expressed",
+          "s": 186.547,
+          "e": 186.977,
+          "c": 0.999251
+        },
+        {
+          "w": "for",
+          "s": 186.977,
+          "e": 187.347,
+          "c": 0.707718
+        },
+        {
+          "w": "boosting",
+          "s": 187.347,
+          "e": 188.377,
+          "c": 0.993343
+        },
+        {
+          "w": "the",
+          "s": 188.377,
+          "e": 188.377,
+          "c": 0.807473
+        },
+        {
+          "w": "behavioral",
+          "s": 188.637,
+          "e": 189.017,
+          "c": 0.951002
+        },
+        {
+          "w": "workforce",
+          "s": 189.037,
+          "e": 189.617,
+          "c": 0.578407
+        },
+        {
+          "w": "and",
+          "s": 189.857,
+          "e": 189.867,
+          "c": 0.996231
+        },
+        {
+          "w": "the",
+          "s": 189.867,
+          "e": 190.087,
+          "c": 0.906568
+        },
+        {
+          "w": "workforce",
+          "s": 190.117,
+          "e": 190.857,
+          "c": 0.977172
+        },
+        {
+          "w": "to",
+          "s": 190.887,
+          "e": 190.977,
+          "c": 0.952112
+        },
+        {
+          "w": "treat",
+          "s": 190.977,
+          "e": 191.237,
+          "c": 0.998226
+        },
+        {
+          "w": "substance",
+          "s": 191.237,
+          "e": 191.707,
+          "c": 0.987435
+        },
+        {
+          "w": "use",
+          "s": 191.707,
+          "e": 191.817,
+          "c": 0.982122
+        },
+        {
+          "w": "disorder.",
+          "s": 191.937,
+          "e": 192.317,
+          "c": 0.588219
+        },
+        {
+          "w": "And",
+          "s": 192.487,
+          "e": 192.487,
+          "c": 0.995431
+        },
+        {
+          "w": "I'm",
+          "s": 192.537,
+          "e": 192.647,
+          "c": 0.997927
+        },
+        {
+          "w": "pleased",
+          "s": 192.647,
+          "e": 192.827,
+          "c": 0.999502
+        },
+        {
+          "w": "and",
+          "s": 193.157,
+          "e": 193.217,
+          "c": 0.981963
+        },
+        {
+          "w": "honored",
+          "s": 193.217,
+          "e": 193.617,
+          "c": 0.998843
+        },
+        {
+          "w": "to",
+          "s": 193.617,
+          "e": 193.717,
+          "c": 0.944355
+        },
+        {
+          "w": "work",
+          "s": 193.717,
+          "e": 193.917,
+          "c": 0.998915
+        },
+        {
+          "w": "with",
+          "s": 193.917,
+          "e": 194.237,
+          "c": 0.747098
+        },
+        {
+          "w": "Senator",
+          "s": 194.237,
+          "e": 194.707,
+          "c": 0.978342
+        },
+        {
+          "w": "Collins",
+          "s": 194.827,
+          "e": 195.377,
+          "c": 0.989985
+        },
+        {
+          "w": "on",
+          "s": 195.517,
+          "e": 195.517,
+          "c": 0.998637
+        },
+        {
+          "w": "the",
+          "s": 195.617,
+          "e": 195.737,
+          "c": 0.992347
+        },
+        {
+          "w": "Opioid",
+          "s": 195.737,
+          "e": 196.157,
+          "c": 0.970965
+        },
+        {
+          "w": "Workforce",
+          "s": 196.217,
+          "e": 196.807,
+          "c": 0.989223
+        },
+        {
+          "w": "Act,",
+          "s": 196.807,
+          "e": 197.077,
+          "c": 0.440727
+        },
+        {
+          "w": "and",
+          "s": 197.317,
+          "e": 197.397,
+          "c": 0.999569
+        },
+        {
+          "w": "we'll",
+          "s": 197.397,
+          "e": 197.647,
+          "c": 0.578489
+        },
+        {
+          "w": "continue",
+          "s": 197.947,
+          "e": 198.777,
+          "c": 0.998992
+        },
+        {
+          "w": "to",
+          "s": 198.787,
+          "e": 198.997,
+          "c": 0.996506
+        },
+        {
+          "w": "push",
+          "s": 198.997,
+          "e": 199.427,
+          "c": 0.98967
+        },
+        {
+          "w": "that",
+          "s": 199.427,
+          "e": 199.777,
+          "c": 0.997253
+        },
+        {
+          "w": "through.",
+          "s": 200.047,
+          "e": 200.977,
+          "c": 0.990798
+        },
+        {
+          "w": "Dr.",
+          "s": 201.137,
+          "e": 201.377,
+          "c": 0.986284
+        },
+        {
+          "w": "Herbert,",
+          "s": 201.377,
+          "e": 202.127,
+          "c": 0.662796
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 202.26,
+      "end_s": 220.93,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Under the American Rescue Plan, Congress increased federal funding for home and community based services to help more people access the care they need in the settings that best suits their needs. But this funding increase is temporary. Congress needs to make long term sustainable investments in the home health and community based workforce. That's",
+      "words": [
+        {
+          "w": "Under",
+          "s": 202.259,
+          "e": 202.419,
+          "c": 0.925941
+        },
+        {
+          "w": "the",
+          "s": 202.419,
+          "e": 202.599,
+          "c": 0.998188
+        },
+        {
+          "w": "American",
+          "s": 202.599,
+          "e": 203.099,
+          "c": 0.993154
+        },
+        {
+          "w": "Rescue",
+          "s": 203.099,
+          "e": 203.409,
+          "c": 0.940512
+        },
+        {
+          "w": "Plan,",
+          "s": 203.509,
+          "e": 203.849,
+          "c": 0.942864
+        },
+        {
+          "w": "Congress",
+          "s": 203.849,
+          "e": 204.229,
+          "c": 0.589994
+        },
+        {
+          "w": "increased",
+          "s": 204.279,
+          "e": 204.749,
+          "c": 0.954068
+        },
+        {
+          "w": "federal",
+          "s": 204.749,
+          "e": 205.109,
+          "c": 0.915622
+        },
+        {
+          "w": "funding",
+          "s": 205.109,
+          "e": 205.569,
+          "c": 0.944697
+        },
+        {
+          "w": "for",
+          "s": 205.569,
+          "e": 205.769,
+          "c": 0.588767
+        },
+        {
+          "w": "home",
+          "s": 205.769,
+          "e": 206.009,
+          "c": 0.912447
+        },
+        {
+          "w": "and",
+          "s": 206.009,
+          "e": 206.109,
+          "c": 0.737043
+        },
+        {
+          "w": "community",
+          "s": 206.109,
+          "e": 206.509,
+          "c": 0.779045
+        },
+        {
+          "w": "based",
+          "s": 206.549,
+          "e": 206.799,
+          "c": 0.445522
+        },
+        {
+          "w": "services",
+          "s": 206.799,
+          "e": 207.409,
+          "c": 0.561128
+        },
+        {
+          "w": "to",
+          "s": 207.409,
+          "e": 207.549,
+          "c": 0.617201
+        },
+        {
+          "w": "help",
+          "s": 207.549,
+          "e": 207.799,
+          "c": 0.960168
+        },
+        {
+          "w": "more",
+          "s": 207.869,
+          "e": 208.049,
+          "c": 0.908252
+        },
+        {
+          "w": "people",
+          "s": 208.049,
+          "e": 208.409,
+          "c": 0.927266
+        },
+        {
+          "w": "access",
+          "s": 208.409,
+          "e": 208.869,
+          "c": 0.912036
+        },
+        {
+          "w": "the",
+          "s": 208.869,
+          "e": 209.009,
+          "c": 0.897498
+        },
+        {
+          "w": "care",
+          "s": 209.009,
+          "e": 209.249,
+          "c": 0.986764
+        },
+        {
+          "w": "they",
+          "s": 209.249,
+          "e": 209.369,
+          "c": 0.916216
+        },
+        {
+          "w": "need",
+          "s": 209.369,
+          "e": 209.729,
+          "c": 0.947592
+        },
+        {
+          "w": "in",
+          "s": 210.219,
+          "e": 210.249,
+          "c": 0.772942
+        },
+        {
+          "w": "the",
+          "s": 210.249,
+          "e": 210.349,
+          "c": 0.964661
+        },
+        {
+          "w": "settings",
+          "s": 210.349,
+          "e": 210.749,
+          "c": 0.959791
+        },
+        {
+          "w": "that",
+          "s": 210.749,
+          "e": 210.869,
+          "c": 0.966099
+        },
+        {
+          "w": "best",
+          "s": 210.869,
+          "e": 211.099,
+          "c": 0.973702
+        },
+        {
+          "w": "suits",
+          "s": 211.109,
+          "e": 211.319,
+          "c": 0.951424
+        },
+        {
+          "w": "their",
+          "s": 211.469,
+          "e": 211.549,
+          "c": 0.974245
+        },
+        {
+          "w": "needs.",
+          "s": 211.549,
+          "e": 212.349,
+          "c": 0.955164
+        },
+        {
+          "w": "But",
+          "s": 212.499,
+          "e": 212.559,
+          "c": 0.99533
+        },
+        {
+          "w": "this",
+          "s": 212.559,
+          "e": 212.839,
+          "c": 0.99089
+        },
+        {
+          "w": "funding",
+          "s": 212.839,
+          "e": 213.319,
+          "c": 0.999685
+        },
+        {
+          "w": "increase",
+          "s": 213.319,
+          "e": 213.869,
+          "c": 0.822763
+        },
+        {
+          "w": "is",
+          "s": 213.869,
+          "e": 214.009,
+          "c": 0.996605
+        },
+        {
+          "w": "temporary.",
+          "s": 214.009,
+          "e": 214.869,
+          "c": 0.96497
+        },
+        {
+          "w": "Congress",
+          "s": 214.869,
+          "e": 215.349,
+          "c": 0.73759
+        },
+        {
+          "w": "needs",
+          "s": 215.349,
+          "e": 215.649,
+          "c": 0.995397
+        },
+        {
+          "w": "to",
+          "s": 215.649,
+          "e": 215.769,
+          "c": 0.999525
+        },
+        {
+          "w": "make",
+          "s": 215.769,
+          "e": 216.009,
+          "c": 0.999441
+        },
+        {
+          "w": "long",
+          "s": 216.009,
+          "e": 216.249,
+          "c": 0.997535
+        },
+        {
+          "w": "term",
+          "s": 216.249,
+          "e": 216.509,
+          "c": 0.790216
+        },
+        {
+          "w": "sustainable",
+          "s": 216.509,
+          "e": 217.209,
+          "c": 0.671084
+        },
+        {
+          "w": "investments",
+          "s": 217.209,
+          "e": 217.909,
+          "c": 0.983966
+        },
+        {
+          "w": "in",
+          "s": 217.909,
+          "e": 218.019,
+          "c": 0.993599
+        },
+        {
+          "w": "the",
+          "s": 218.109,
+          "e": 218.219,
+          "c": 0.993165
+        },
+        {
+          "w": "home",
+          "s": 218.219,
+          "e": 218.469,
+          "c": 0.996105
+        },
+        {
+          "w": "health",
+          "s": 218.469,
+          "e": 218.849,
+          "c": 0.918529
+        },
+        {
+          "w": "and",
+          "s": 218.849,
+          "e": 219.039,
+          "c": 0.99587
+        },
+        {
+          "w": "community",
+          "s": 219.039,
+          "e": 219.609,
+          "c": 0.998376
+        },
+        {
+          "w": "based",
+          "s": 219.609,
+          "e": 219.929,
+          "c": 0.971892
+        },
+        {
+          "w": "workforce.",
+          "s": 219.929,
+          "e": 220.569,
+          "c": 0.896796
+        },
+        {
+          "w": "That's",
+          "s": 220.719,
+          "e": 220.929,
+          "c": 0.995345
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 220.93,
+      "end_s": 229.37,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "going to ensure access to quality, comprehensive health services for older adults and individuals with disabilities who choose to remain in their homes.",
+      "words": [
+        {
+          "w": "going",
+          "s": 220.929,
+          "e": 221.229,
+          "c": 0.963334
+        },
+        {
+          "w": "to",
+          "s": 221.229,
+          "e": 221.329,
+          "c": 0.999884
+        },
+        {
+          "w": "ensure",
+          "s": 221.429,
+          "e": 221.659,
+          "c": 0.977927
+        },
+        {
+          "w": "access",
+          "s": 221.719,
+          "e": 222.089,
+          "c": 0.999096
+        },
+        {
+          "w": "to",
+          "s": 222.089,
+          "e": 222.209,
+          "c": 0.999157
+        },
+        {
+          "w": "quality,",
+          "s": 222.209,
+          "e": 222.689,
+          "c": 0.671186
+        },
+        {
+          "w": "comprehensive",
+          "s": 222.759,
+          "e": 223.559,
+          "c": 0.991006
+        },
+        {
+          "w": "health",
+          "s": 223.559,
+          "e": 223.929,
+          "c": 0.994518
+        },
+        {
+          "w": "services",
+          "s": 223.929,
+          "e": 224.469,
+          "c": 0.997394
+        },
+        {
+          "w": "for",
+          "s": 224.469,
+          "e": 224.629,
+          "c": 0.969205
+        },
+        {
+          "w": "older",
+          "s": 224.659,
+          "e": 224.969,
+          "c": 0.997286
+        },
+        {
+          "w": "adults",
+          "s": 224.999,
+          "e": 225.379,
+          "c": 0.994772
+        },
+        {
+          "w": "and",
+          "s": 225.399,
+          "e": 225.599,
+          "c": 0.984912
+        },
+        {
+          "w": "individuals",
+          "s": 225.599,
+          "e": 226.329,
+          "c": 0.997927
+        },
+        {
+          "w": "with",
+          "s": 226.329,
+          "e": 226.549,
+          "c": 0.99811
+        },
+        {
+          "w": "disabilities",
+          "s": 226.619,
+          "e": 227.329,
+          "c": 0.998929
+        },
+        {
+          "w": "who",
+          "s": 227.429,
+          "e": 227.589,
+          "c": 0.981248
+        },
+        {
+          "w": "choose",
+          "s": 227.589,
+          "e": 227.989,
+          "c": 0.995796
+        },
+        {
+          "w": "to",
+          "s": 227.989,
+          "e": 228.119,
+          "c": 0.999666
+        },
+        {
+          "w": "remain",
+          "s": 228.119,
+          "e": 228.199,
+          "c": 0.999462
+        },
+        {
+          "w": "in",
+          "s": 228.649,
+          "e": 228.649,
+          "c": 0.999256
+        },
+        {
+          "w": "their",
+          "s": 228.679,
+          "e": 228.979,
+          "c": 0.999418
+        },
+        {
+          "w": "homes.",
+          "s": 228.979,
+          "e": 229.369,
+          "c": 0.9563
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 229.5,
+      "end_s": 236.23,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Doctor, can you speak to the role that home health workers play in improving care for older adults and individuals with disabilities,",
+      "words": [
+        {
+          "w": "Doctor,",
+          "s": 229.501,
+          "e": 229.791,
+          "c": 0.895133
+        },
+        {
+          "w": "can",
+          "s": 229.921,
+          "e": 230.051,
+          "c": 0.997345
+        },
+        {
+          "w": "you",
+          "s": 230.051,
+          "e": 230.221,
+          "c": 0.999788
+        },
+        {
+          "w": "speak",
+          "s": 230.241,
+          "e": 230.531,
+          "c": 0.999336
+        },
+        {
+          "w": "to",
+          "s": 230.651,
+          "e": 230.651,
+          "c": 0.997193
+        },
+        {
+          "w": "the",
+          "s": 230.701,
+          "e": 230.881,
+          "c": 0.998445
+        },
+        {
+          "w": "role",
+          "s": 230.881,
+          "e": 231.181,
+          "c": 0.998062
+        },
+        {
+          "w": "that",
+          "s": 231.181,
+          "e": 231.331,
+          "c": 0.919233
+        },
+        {
+          "w": "home",
+          "s": 231.441,
+          "e": 231.541,
+          "c": 0.982989
+        },
+        {
+          "w": "health",
+          "s": 231.541,
+          "e": 231.781,
+          "c": 0.986604
+        },
+        {
+          "w": "workers",
+          "s": 231.861,
+          "e": 232.241,
+          "c": 0.982469
+        },
+        {
+          "w": "play",
+          "s": 232.441,
+          "e": 232.581,
+          "c": 0.859718
+        },
+        {
+          "w": "in",
+          "s": 232.581,
+          "e": 232.671,
+          "c": 0.843203
+        },
+        {
+          "w": "improving",
+          "s": 232.671,
+          "e": 233.101,
+          "c": 0.987538
+        },
+        {
+          "w": "care",
+          "s": 233.101,
+          "e": 233.381,
+          "c": 0.980877
+        },
+        {
+          "w": "for",
+          "s": 233.381,
+          "e": 233.581,
+          "c": 0.923851
+        },
+        {
+          "w": "older",
+          "s": 233.581,
+          "e": 233.901,
+          "c": 0.908255
+        },
+        {
+          "w": "adults",
+          "s": 233.901,
+          "e": 234.371,
+          "c": 0.517101
+        },
+        {
+          "w": "and",
+          "s": 234.541,
+          "e": 234.551,
+          "c": 0.999926
+        },
+        {
+          "w": "individuals",
+          "s": 234.551,
+          "e": 235.181,
+          "c": 0.999958
+        },
+        {
+          "w": "with",
+          "s": 235.181,
+          "e": 235.261,
+          "c": 0.999989
+        },
+        {
+          "w": "disabilities,",
+          "s": 235.471,
+          "e": 236.231,
+          "c": 0.421742
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 236.28,
+      "end_s": 242.6,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and how will additional sustained investments in home and community-based health workers strengthen our health care system? So",
+      "words": [
+        {
+          "w": "and",
+          "s": 236.281,
+          "e": 236.371,
+          "c": 0.888454
+        },
+        {
+          "w": "how",
+          "s": 236.481,
+          "e": 236.621,
+          "c": 0.999949
+        },
+        {
+          "w": "will",
+          "s": 236.621,
+          "e": 236.821,
+          "c": 0.999943
+        },
+        {
+          "w": "additional",
+          "s": 236.961,
+          "e": 237.531,
+          "c": 0.999498
+        },
+        {
+          "w": "sustained",
+          "s": 237.531,
+          "e": 238.121,
+          "c": 0.998251
+        },
+        {
+          "w": "investments",
+          "s": 238.121,
+          "e": 238.851,
+          "c": 0.994948
+        },
+        {
+          "w": "in",
+          "s": 238.901,
+          "e": 239.081,
+          "c": 0.927301
+        },
+        {
+          "w": "home",
+          "s": 239.151,
+          "e": 239.261,
+          "c": 0.966619
+        },
+        {
+          "w": "and",
+          "s": 239.261,
+          "e": 239.301,
+          "c": 0.748947
+        },
+        {
+          "w": "community-based",
+          "s": 239.541,
+          "e": 240.131,
+          "c": 0.996852
+        },
+        {
+          "w": "health",
+          "s": 240.131,
+          "e": 240.261,
+          "c": 0.999868
+        },
+        {
+          "w": "workers",
+          "s": 240.471,
+          "e": 240.781,
+          "c": 0.999952
+        },
+        {
+          "w": "strengthen",
+          "s": 240.781,
+          "e": 241.231,
+          "c": 0.999784
+        },
+        {
+          "w": "our",
+          "s": 241.281,
+          "e": 241.371,
+          "c": 0.99999
+        },
+        {
+          "w": "health",
+          "s": 241.481,
+          "e": 241.731,
+          "c": 0.67159
+        },
+        {
+          "w": "care",
+          "s": 241.731,
+          "e": 241.821,
+          "c": 0.999085
+        },
+        {
+          "w": "system?",
+          "s": 241.961,
+          "e": 242.331,
+          "c": 0.999399
+        },
+        {
+          "w": "So",
+          "s": 242.481,
+          "e": 242.601,
+          "c": 0.741312
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 242.6,
+      "end_s": 242.69,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I",
+      "words": [
+        {
+          "w": "I",
+          "s": 242.601,
+          "e": 242.691,
+          "c": 0.79042
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 242.69,
+      "end_s": 259.08,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "think you nailed it. We need additional funding to support it. It's absolutely critical, the home health care workforce, in terms of maintaining the health, especially of our older populations. And if I, so I would simply support your assertion that the funding needs to continue post-COVID.",
+      "words": [
+        {
+          "w": "think",
+          "s": 242.691,
+          "e": 243.151,
+          "c": 0.99999
+        },
+        {
+          "w": "you",
+          "s": 243.151,
+          "e": 243.421,
+          "c": 0.999966
+        },
+        {
+          "w": "nailed",
+          "s": 243.421,
+          "e": 243.971,
+          "c": 0.997773
+        },
+        {
+          "w": "it.",
+          "s": 243.971,
+          "e": 244.461,
+          "c": 0.996892
+        },
+        {
+          "w": "We",
+          "s": 244.591,
+          "e": 244.591,
+          "c": 0.998955
+        },
+        {
+          "w": "need",
+          "s": 244.621,
+          "e": 244.851,
+          "c": 0.999929
+        },
+        {
+          "w": "additional",
+          "s": 244.851,
+          "e": 245.341,
+          "c": 0.99996
+        },
+        {
+          "w": "funding",
+          "s": 245.551,
+          "e": 245.991,
+          "c": 0.999981
+        },
+        {
+          "w": "to",
+          "s": 245.991,
+          "e": 246.121,
+          "c": 0.999668
+        },
+        {
+          "w": "support",
+          "s": 246.121,
+          "e": 246.591,
+          "c": 0.999903
+        },
+        {
+          "w": "it.",
+          "s": 246.591,
+          "e": 246.901,
+          "c": 0.593333
+        },
+        {
+          "w": "It's",
+          "s": 247.041,
+          "e": 247.141,
+          "c": 0.999727
+        },
+        {
+          "w": "absolutely",
+          "s": 247.211,
+          "e": 247.851,
+          "c": 0.999962
+        },
+        {
+          "w": "critical,",
+          "s": 247.851,
+          "e": 248.511,
+          "c": 0.904426
+        },
+        {
+          "w": "the",
+          "s": 248.511,
+          "e": 248.711,
+          "c": 0.989993
+        },
+        {
+          "w": "home",
+          "s": 248.711,
+          "e": 248.931,
+          "c": 0.999912
+        },
+        {
+          "w": "health",
+          "s": 248.971,
+          "e": 249.381,
+          "c": 0.981879
+        },
+        {
+          "w": "care",
+          "s": 249.451,
+          "e": 249.571,
+          "c": 0.970495
+        },
+        {
+          "w": "workforce,",
+          "s": 249.761,
+          "e": 250.051,
+          "c": 0.708672
+        },
+        {
+          "w": "in",
+          "s": 250.151,
+          "e": 250.151,
+          "c": 0.999992
+        },
+        {
+          "w": "terms",
+          "s": 250.181,
+          "e": 250.361,
+          "c": 0.999805
+        },
+        {
+          "w": "of",
+          "s": 250.361,
+          "e": 250.441,
+          "c": 1
+        },
+        {
+          "w": "maintaining",
+          "s": 250.441,
+          "e": 250.911,
+          "c": 0.999519
+        },
+        {
+          "w": "the",
+          "s": 250.961,
+          "e": 251.031,
+          "c": 0.999979
+        },
+        {
+          "w": "health,",
+          "s": 251.061,
+          "e": 251.391,
+          "c": 0.94867
+        },
+        {
+          "w": "especially",
+          "s": 251.391,
+          "e": 251.821,
+          "c": 0.999983
+        },
+        {
+          "w": "of",
+          "s": 251.821,
+          "e": 251.901,
+          "c": 0.99725
+        },
+        {
+          "w": "our",
+          "s": 251.901,
+          "e": 252.031,
+          "c": 0.999994
+        },
+        {
+          "w": "older",
+          "s": 252.031,
+          "e": 252.241,
+          "c": 0.99972
+        },
+        {
+          "w": "populations.",
+          "s": 252.241,
+          "e": 252.941,
+          "c": 0.946405
+        },
+        {
+          "w": "And",
+          "s": 252.941,
+          "e": 253.431,
+          "c": 0.600435
+        },
+        {
+          "w": "if",
+          "s": 253.521,
+          "e": 253.871,
+          "c": 0.757155
+        },
+        {
+          "w": "I,",
+          "s": 253.871,
+          "e": 254.441,
+          "c": 0.785211
+        },
+        {
+          "w": "so",
+          "s": 254.561,
+          "e": 254.561,
+          "c": 0.869216
+        },
+        {
+          "w": "I",
+          "s": 254.601,
+          "e": 254.621,
+          "c": 0.999051
+        },
+        {
+          "w": "would",
+          "s": 254.621,
+          "e": 254.891,
+          "c": 0.999638
+        },
+        {
+          "w": "simply",
+          "s": 255.021,
+          "e": 255.301,
+          "c": 0.999937
+        },
+        {
+          "w": "support",
+          "s": 255.301,
+          "e": 255.631,
+          "c": 0.999962
+        },
+        {
+          "w": "your",
+          "s": 255.751,
+          "e": 255.991,
+          "c": 0.99995
+        },
+        {
+          "w": "assertion",
+          "s": 255.991,
+          "e": 256.431,
+          "c": 0.999893
+        },
+        {
+          "w": "that",
+          "s": 256.541,
+          "e": 256.791,
+          "c": 0.999969
+        },
+        {
+          "w": "the",
+          "s": 256.791,
+          "e": 256.881,
+          "c": 0.99991
+        },
+        {
+          "w": "funding",
+          "s": 257.021,
+          "e": 257.391,
+          "c": 0.999821
+        },
+        {
+          "w": "needs",
+          "s": 257.541,
+          "e": 257.731,
+          "c": 0.999767
+        },
+        {
+          "w": "to",
+          "s": 257.731,
+          "e": 257.851,
+          "c": 0.999998
+        },
+        {
+          "w": "continue",
+          "s": 257.851,
+          "e": 258.271,
+          "c": 0.999924
+        },
+        {
+          "w": "post-COVID.",
+          "s": 258.361,
+          "e": 259.081,
+          "c": 0.840005
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 259.53,
+      "end_s": 286.18,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Could I add something about behavioral health since you brought that up? I mean, as a clinical psychologist by training, I could go on for hours on this topic, but I'll try to just keep it very brief. It's absolutely critical that we train more behavioral health professionals. There's no question at all levels, not just doctoral level trained people, but master's level counselors, social workers. At the same time, what we also need to do is we, and this gets back to that interprofessional",
+      "words": [
+        {
+          "w": "Could",
+          "s": 259.531,
+          "e": 259.651,
+          "c": 0.715861
+        },
+        {
+          "w": "I",
+          "s": 259.651,
+          "e": 259.661,
+          "c": 0.998094
+        },
+        {
+          "w": "add",
+          "s": 259.771,
+          "e": 259.901,
+          "c": 0.997485
+        },
+        {
+          "w": "something",
+          "s": 259.901,
+          "e": 260.481,
+          "c": 0.996713
+        },
+        {
+          "w": "about",
+          "s": 260.481,
+          "e": 260.741,
+          "c": 0.81723
+        },
+        {
+          "w": "behavioral",
+          "s": 260.741,
+          "e": 261.111,
+          "c": 0.873874
+        },
+        {
+          "w": "health",
+          "s": 261.111,
+          "e": 261.281,
+          "c": 0.986294
+        },
+        {
+          "w": "since",
+          "s": 261.361,
+          "e": 261.591,
+          "c": 0.235987
+        },
+        {
+          "w": "you",
+          "s": 261.661,
+          "e": 261.821,
+          "c": 0.954531
+        },
+        {
+          "w": "brought",
+          "s": 262.111,
+          "e": 262.581,
+          "c": 0.827901
+        },
+        {
+          "w": "that",
+          "s": 262.581,
+          "e": 262.831,
+          "c": 0.986632
+        },
+        {
+          "w": "up?",
+          "s": 262.881,
+          "e": 263.281,
+          "c": 0.842038
+        },
+        {
+          "w": "I",
+          "s": 263.281,
+          "e": 263.331,
+          "c": 0.837401
+        },
+        {
+          "w": "mean,",
+          "s": 263.471,
+          "e": 263.611,
+          "c": 0.792705
+        },
+        {
+          "w": "as",
+          "s": 263.711,
+          "e": 263.771,
+          "c": 0.997567
+        },
+        {
+          "w": "a",
+          "s": 263.771,
+          "e": 263.821,
+          "c": 0.998127
+        },
+        {
+          "w": "clinical",
+          "s": 263.821,
+          "e": 264.261,
+          "c": 0.996506
+        },
+        {
+          "w": "psychologist",
+          "s": 264.261,
+          "e": 264.921,
+          "c": 0.996092
+        },
+        {
+          "w": "by",
+          "s": 264.921,
+          "e": 265.041,
+          "c": 0.767512
+        },
+        {
+          "w": "training,",
+          "s": 265.041,
+          "e": 265.641,
+          "c": 0.837705
+        },
+        {
+          "w": "I",
+          "s": 265.641,
+          "e": 265.711,
+          "c": 0.940254
+        },
+        {
+          "w": "could",
+          "s": 265.711,
+          "e": 266.061,
+          "c": 0.99666
+        },
+        {
+          "w": "go",
+          "s": 266.071,
+          "e": 266.211,
+          "c": 0.997571
+        },
+        {
+          "w": "on",
+          "s": 266.211,
+          "e": 266.351,
+          "c": 0.997259
+        },
+        {
+          "w": "for",
+          "s": 266.351,
+          "e": 266.521,
+          "c": 0.996371
+        },
+        {
+          "w": "hours",
+          "s": 266.601,
+          "e": 266.771,
+          "c": 0.99716
+        },
+        {
+          "w": "on",
+          "s": 266.881,
+          "e": 266.961,
+          "c": 0.99563
+        },
+        {
+          "w": "this",
+          "s": 267.151,
+          "e": 267.351,
+          "c": 0.996327
+        },
+        {
+          "w": "topic,",
+          "s": 267.351,
+          "e": 267.901,
+          "c": 0.765788
+        },
+        {
+          "w": "but",
+          "s": 267.901,
+          "e": 268.461,
+          "c": 0.866204
+        },
+        {
+          "w": "I'll",
+          "s": 268.481,
+          "e": 268.831,
+          "c": 0.995235
+        },
+        {
+          "w": "try",
+          "s": 268.911,
+          "e": 269.171,
+          "c": 0.972849
+        },
+        {
+          "w": "to",
+          "s": 269.171,
+          "e": 269.361,
+          "c": 0.990777
+        },
+        {
+          "w": "just",
+          "s": 269.371,
+          "e": 269.761,
+          "c": 0.979673
+        },
+        {
+          "w": "keep",
+          "s": 269.761,
+          "e": 270.151,
+          "c": 0.999325
+        },
+        {
+          "w": "it",
+          "s": 270.151,
+          "e": 270.351,
+          "c": 0.99899
+        },
+        {
+          "w": "very",
+          "s": 270.351,
+          "e": 270.731,
+          "c": 0.996441
+        },
+        {
+          "w": "brief.",
+          "s": 270.751,
+          "e": 271.571,
+          "c": 0.99419
+        },
+        {
+          "w": "It's",
+          "s": 271.581,
+          "e": 271.781,
+          "c": 0.999174
+        },
+        {
+          "w": "absolutely",
+          "s": 271.781,
+          "e": 272.281,
+          "c": 0.999197
+        },
+        {
+          "w": "critical",
+          "s": 272.281,
+          "e": 272.681,
+          "c": 0.999659
+        },
+        {
+          "w": "that",
+          "s": 272.681,
+          "e": 272.881,
+          "c": 0.998963
+        },
+        {
+          "w": "we",
+          "s": 272.881,
+          "e": 272.981,
+          "c": 0.999445
+        },
+        {
+          "w": "train",
+          "s": 272.981,
+          "e": 273.151,
+          "c": 0.990854
+        },
+        {
+          "w": "more",
+          "s": 273.221,
+          "e": 273.431,
+          "c": 0.999077
+        },
+        {
+          "w": "behavioral",
+          "s": 273.431,
+          "e": 273.921,
+          "c": 0.988355
+        },
+        {
+          "w": "health",
+          "s": 273.921,
+          "e": 274.111,
+          "c": 0.99752
+        },
+        {
+          "w": "professionals.",
+          "s": 274.351,
+          "e": 275.061,
+          "c": 0.769758
+        },
+        {
+          "w": "There's",
+          "s": 275.251,
+          "e": 275.391,
+          "c": 0.996622
+        },
+        {
+          "w": "no",
+          "s": 275.491,
+          "e": 275.561,
+          "c": 0.998911
+        },
+        {
+          "w": "question",
+          "s": 275.561,
+          "e": 276.011,
+          "c": 0.99911
+        },
+        {
+          "w": "at",
+          "s": 276.011,
+          "e": 276.121,
+          "c": 0.693813
+        },
+        {
+          "w": "all",
+          "s": 276.121,
+          "e": 276.281,
+          "c": 0.999114
+        },
+        {
+          "w": "levels,",
+          "s": 276.281,
+          "e": 276.721,
+          "c": 0.909188
+        },
+        {
+          "w": "not",
+          "s": 276.721,
+          "e": 276.881,
+          "c": 0.998812
+        },
+        {
+          "w": "just",
+          "s": 276.881,
+          "e": 277.101,
+          "c": 0.999544
+        },
+        {
+          "w": "doctoral",
+          "s": 277.101,
+          "e": 277.541,
+          "c": 0.947288
+        },
+        {
+          "w": "level",
+          "s": 277.831,
+          "e": 277.831,
+          "c": 0.883492
+        },
+        {
+          "w": "trained",
+          "s": 277.831,
+          "e": 278.221,
+          "c": 0.86734
+        },
+        {
+          "w": "people,",
+          "s": 278.221,
+          "e": 278.551,
+          "c": 0.912538
+        },
+        {
+          "w": "but",
+          "s": 278.671,
+          "e": 278.681,
+          "c": 0.994488
+        },
+        {
+          "w": "master's",
+          "s": 278.931,
+          "e": 279.321,
+          "c": 0.746061
+        },
+        {
+          "w": "level",
+          "s": 279.511,
+          "e": 279.651,
+          "c": 0.999588
+        },
+        {
+          "w": "counselors,",
+          "s": 279.751,
+          "e": 280.761,
+          "c": 0.978631
+        },
+        {
+          "w": "social",
+          "s": 280.761,
+          "e": 281.261,
+          "c": 0.998412
+        },
+        {
+          "w": "workers.",
+          "s": 281.261,
+          "e": 282.141,
+          "c": 0.869669
+        },
+        {
+          "w": "At",
+          "s": 282.141,
+          "e": 282.241,
+          "c": 0.999062
+        },
+        {
+          "w": "the",
+          "s": 282.331,
+          "e": 282.391,
+          "c": 0.999689
+        },
+        {
+          "w": "same",
+          "s": 282.391,
+          "e": 282.591,
+          "c": 0.99987
+        },
+        {
+          "w": "time,",
+          "s": 282.591,
+          "e": 282.891,
+          "c": 0.961406
+        },
+        {
+          "w": "what",
+          "s": 282.891,
+          "e": 283.091,
+          "c": 0.997427
+        },
+        {
+          "w": "we",
+          "s": 283.091,
+          "e": 283.141,
+          "c": 0.999744
+        },
+        {
+          "w": "also",
+          "s": 283.191,
+          "e": 283.391,
+          "c": 0.999148
+        },
+        {
+          "w": "need",
+          "s": 283.391,
+          "e": 283.591,
+          "c": 0.999434
+        },
+        {
+          "w": "to",
+          "s": 283.591,
+          "e": 283.691,
+          "c": 0.999426
+        },
+        {
+          "w": "do",
+          "s": 283.691,
+          "e": 283.791,
+          "c": 0.999157
+        },
+        {
+          "w": "is",
+          "s": 283.791,
+          "e": 283.891,
+          "c": 0.972468
+        },
+        {
+          "w": "we,",
+          "s": 283.891,
+          "e": 284.091,
+          "c": 0.46972
+        },
+        {
+          "w": "and",
+          "s": 284.161,
+          "e": 284.241,
+          "c": 0.994619
+        },
+        {
+          "w": "this",
+          "s": 284.241,
+          "e": 284.391,
+          "c": 0.998117
+        },
+        {
+          "w": "gets",
+          "s": 284.461,
+          "e": 284.621,
+          "c": 0.997242
+        },
+        {
+          "w": "back",
+          "s": 284.841,
+          "e": 284.841,
+          "c": 0.998708
+        },
+        {
+          "w": "to",
+          "s": 284.911,
+          "e": 284.941,
+          "c": 0.997832
+        },
+        {
+          "w": "that",
+          "s": 284.941,
+          "e": 285.141,
+          "c": 0.992411
+        },
+        {
+          "w": "interprofessional",
+          "s": 285.141,
+          "e": 286.181,
+          "c": 0.948634
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 286.37,
+      "end_s": 287.75,
+      "speaker": "SPEAKER_13",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "model I was talking about.",
+      "words": [
+        {
+          "w": "model",
+          "s": 286.371,
+          "e": 286.501,
+          "c": 0.997002
+        },
+        {
+          "w": "I",
+          "s": 286.501,
+          "e": 286.501,
+          "c": 0.962619
+        },
+        {
+          "w": "was",
+          "s": 286.611,
+          "e": 286.751,
+          "c": 0.999235
+        },
+        {
+          "w": "talking",
+          "s": 286.751,
+          "e": 287.171,
+          "c": 0.974221
+        },
+        {
+          "w": "about.",
+          "s": 287.231,
+          "e": 287.751,
+          "c": 0.926093
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "start_s": 287.7,
+      "end_s": 309.96,
+      "speaker": "SPEAKER_13",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "we need to train all healthcare professionals, including dentists to recognize and OBGYNs for example, to recognize and diagnose behavioral health problems. And there are behavioral health interventions that those non-expert providers can also learn to provide. And also I would add that we've made tremendous progress over the past 30 years",
+      "words": [
+        {
+          "w": "we",
+          "s": 287.696,
+          "e": 287.806,
+          "c": 0.361396
+        },
+        {
+          "w": "need",
+          "s": 287.956,
+          "e": 288.026,
+          "c": 0.998555
+        },
+        {
+          "w": "to",
+          "s": 288.026,
+          "e": 288.136,
+          "c": 0.998805
+        },
+        {
+          "w": "train",
+          "s": 288.136,
+          "e": 288.416,
+          "c": 0.998009
+        },
+        {
+          "w": "all",
+          "s": 288.416,
+          "e": 288.546,
+          "c": 0.993428
+        },
+        {
+          "w": "healthcare",
+          "s": 288.606,
+          "e": 289.136,
+          "c": 0.807845
+        },
+        {
+          "w": "professionals,",
+          "s": 289.136,
+          "e": 289.896,
+          "c": 0.71628
+        },
+        {
+          "w": "including",
+          "s": 290.156,
+          "e": 290.686,
+          "c": 0.937807
+        },
+        {
+          "w": "dentists",
+          "s": 290.686,
+          "e": 291.376,
+          "c": 0.993688
+        },
+        {
+          "w": "to",
+          "s": 291.456,
+          "e": 291.656,
+          "c": 0.370398
+        },
+        {
+          "w": "recognize",
+          "s": 291.656,
+          "e": 292.826,
+          "c": 0.99629
+        },
+        {
+          "w": "and",
+          "s": 292.866,
+          "e": 293.236,
+          "c": 0.302145
+        },
+        {
+          "w": "OBGYNs",
+          "s": 293.396,
+          "e": 294.116,
+          "c": 0.355392
+        },
+        {
+          "w": "for",
+          "s": 294.116,
+          "e": 294.316,
+          "c": 0.505185
+        },
+        {
+          "w": "example,",
+          "s": 294.346,
+          "e": 294.896,
+          "c": 0.725196
+        },
+        {
+          "w": "to",
+          "s": 294.896,
+          "e": 295.016,
+          "c": 0.999344
+        },
+        {
+          "w": "recognize",
+          "s": 295.156,
+          "e": 295.556,
+          "c": 0.999504
+        },
+        {
+          "w": "and",
+          "s": 295.566,
+          "e": 295.746,
+          "c": 0.998353
+        },
+        {
+          "w": "diagnose",
+          "s": 295.746,
+          "e": 296.156,
+          "c": 0.99489
+        },
+        {
+          "w": "behavioral",
+          "s": 296.276,
+          "e": 296.846,
+          "c": 0.982526
+        },
+        {
+          "w": "health",
+          "s": 296.846,
+          "e": 297.196,
+          "c": 0.998134
+        },
+        {
+          "w": "problems.",
+          "s": 297.286,
+          "e": 297.736,
+          "c": 0.735598
+        },
+        {
+          "w": "And",
+          "s": 297.916,
+          "e": 297.926,
+          "c": 0.998963
+        },
+        {
+          "w": "there",
+          "s": 297.996,
+          "e": 298.276,
+          "c": 0.996094
+        },
+        {
+          "w": "are",
+          "s": 298.276,
+          "e": 298.476,
+          "c": 0.998167
+        },
+        {
+          "w": "behavioral",
+          "s": 298.476,
+          "e": 299.156,
+          "c": 0.996915
+        },
+        {
+          "w": "health",
+          "s": 299.156,
+          "e": 299.566,
+          "c": 0.996839
+        },
+        {
+          "w": "interventions",
+          "s": 299.566,
+          "e": 300.406,
+          "c": 0.997586
+        },
+        {
+          "w": "that",
+          "s": 300.736,
+          "e": 300.896,
+          "c": 0.999622
+        },
+        {
+          "w": "those",
+          "s": 300.896,
+          "e": 301.416,
+          "c": 0.999552
+        },
+        {
+          "w": "non-expert",
+          "s": 301.416,
+          "e": 302.466,
+          "c": 0.855525
+        },
+        {
+          "w": "providers",
+          "s": 302.466,
+          "e": 303.456,
+          "c": 0.979245
+        },
+        {
+          "w": "can",
+          "s": 303.456,
+          "e": 303.666,
+          "c": 0.911397
+        },
+        {
+          "w": "also",
+          "s": 303.666,
+          "e": 303.826,
+          "c": 0.998485
+        },
+        {
+          "w": "learn",
+          "s": 303.976,
+          "e": 304.306,
+          "c": 0.997843
+        },
+        {
+          "w": "to",
+          "s": 304.306,
+          "e": 304.436,
+          "c": 0.996968
+        },
+        {
+          "w": "provide.",
+          "s": 304.446,
+          "e": 304.976,
+          "c": 0.979088
+        },
+        {
+          "w": "And",
+          "s": 305.236,
+          "e": 305.336,
+          "c": 0.998793
+        },
+        {
+          "w": "also",
+          "s": 305.336,
+          "e": 305.816,
+          "c": 0.996111
+        },
+        {
+          "w": "I",
+          "s": 305.816,
+          "e": 305.926,
+          "c": 0.763928
+        },
+        {
+          "w": "would",
+          "s": 305.926,
+          "e": 306.456,
+          "c": 0.999336
+        },
+        {
+          "w": "add",
+          "s": 306.536,
+          "e": 306.916,
+          "c": 0.998312
+        },
+        {
+          "w": "that",
+          "s": 306.916,
+          "e": 307.046,
+          "c": 0.776762
+        },
+        {
+          "w": "we've",
+          "s": 307.066,
+          "e": 307.246,
+          "c": 0.962917
+        },
+        {
+          "w": "made",
+          "s": 307.246,
+          "e": 307.416,
+          "c": 0.99179
+        },
+        {
+          "w": "tremendous",
+          "s": 307.416,
+          "e": 308.036,
+          "c": 0.866778
+        },
+        {
+          "w": "progress",
+          "s": 308.036,
+          "e": 308.476,
+          "c": 0.971847
+        },
+        {
+          "w": "over",
+          "s": 308.736,
+          "e": 308.746,
+          "c": 0.99983
+        },
+        {
+          "w": "the",
+          "s": 308.746,
+          "e": 308.926,
+          "c": 0.999809
+        },
+        {
+          "w": "past",
+          "s": 308.956,
+          "e": 309.216,
+          "c": 0.998538
+        },
+        {
+          "w": "30",
+          "s": 309.216,
+          "e": 309.616,
+          "c": 0.996837
+        },
+        {
+          "w": "years",
+          "s": 309.616,
+          "e": 309.956,
+          "c": 0.999333
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "start_s": 310.05,
+      "end_s": 323.62,
+      "speaker": "SPEAKER_13",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "in non-pharmacological treatments that in many cases have longer lasting effects, but they're still not widely practiced. Because it's much easier to just give somebody a pill. And I'm not suggesting there aren't appropriate places for pharmacological",
+      "words": [
+        {
+          "w": "in",
+          "s": 310.045,
+          "e": 310.055,
+          "c": 0.952675
+        },
+        {
+          "w": "non-pharmacological",
+          "s": 310.075,
+          "e": 311.115,
+          "c": 0.834264
+        },
+        {
+          "w": "treatments",
+          "s": 311.145,
+          "e": 311.765,
+          "c": 0.995469
+        },
+        {
+          "w": "that",
+          "s": 311.765,
+          "e": 311.905,
+          "c": 0.668162
+        },
+        {
+          "w": "in",
+          "s": 311.905,
+          "e": 312.085,
+          "c": 0.812845
+        },
+        {
+          "w": "many",
+          "s": 312.085,
+          "e": 312.455,
+          "c": 0.992545
+        },
+        {
+          "w": "cases",
+          "s": 312.455,
+          "e": 312.785,
+          "c": 0.992721
+        },
+        {
+          "w": "have",
+          "s": 313.055,
+          "e": 313.305,
+          "c": 0.999662
+        },
+        {
+          "w": "longer",
+          "s": 313.305,
+          "e": 313.845,
+          "c": 0.990388
+        },
+        {
+          "w": "lasting",
+          "s": 313.845,
+          "e": 314.485,
+          "c": 0.8074
+        },
+        {
+          "w": "effects,",
+          "s": 314.545,
+          "e": 315.145,
+          "c": 0.707304
+        },
+        {
+          "w": "but",
+          "s": 315.255,
+          "e": 315.425,
+          "c": 0.999729
+        },
+        {
+          "w": "they're",
+          "s": 315.425,
+          "e": 316.075,
+          "c": 0.986805
+        },
+        {
+          "w": "still",
+          "s": 316.075,
+          "e": 316.515,
+          "c": 0.998944
+        },
+        {
+          "w": "not",
+          "s": 316.535,
+          "e": 316.815,
+          "c": 0.999512
+        },
+        {
+          "w": "widely",
+          "s": 316.815,
+          "e": 317.375,
+          "c": 0.997548
+        },
+        {
+          "w": "practiced.",
+          "s": 317.375,
+          "e": 318.265,
+          "c": 0.585799
+        },
+        {
+          "w": "Because",
+          "s": 318.375,
+          "e": 318.535,
+          "c": 0.982684
+        },
+        {
+          "w": "it's",
+          "s": 318.535,
+          "e": 318.685,
+          "c": 0.994994
+        },
+        {
+          "w": "much",
+          "s": 318.685,
+          "e": 318.785,
+          "c": 0.997501
+        },
+        {
+          "w": "easier",
+          "s": 318.855,
+          "e": 319.085,
+          "c": 0.999441
+        },
+        {
+          "w": "to",
+          "s": 319.155,
+          "e": 319.225,
+          "c": 0.989074
+        },
+        {
+          "w": "just",
+          "s": 319.225,
+          "e": 319.455,
+          "c": 0.996289
+        },
+        {
+          "w": "give",
+          "s": 319.515,
+          "e": 319.725,
+          "c": 0.997662
+        },
+        {
+          "w": "somebody",
+          "s": 319.725,
+          "e": 320.225,
+          "c": 0.998593
+        },
+        {
+          "w": "a",
+          "s": 320.225,
+          "e": 320.285,
+          "c": 0.996894
+        },
+        {
+          "w": "pill.",
+          "s": 320.285,
+          "e": 320.545,
+          "c": 0.923044
+        },
+        {
+          "w": "And",
+          "s": 320.655,
+          "e": 320.695,
+          "c": 0.994177
+        },
+        {
+          "w": "I'm",
+          "s": 320.695,
+          "e": 320.845,
+          "c": 0.990155
+        },
+        {
+          "w": "not",
+          "s": 320.845,
+          "e": 320.995,
+          "c": 0.99975
+        },
+        {
+          "w": "suggesting",
+          "s": 320.995,
+          "e": 321.525,
+          "c": 0.998894
+        },
+        {
+          "w": "there",
+          "s": 321.525,
+          "e": 321.705,
+          "c": 0.913692
+        },
+        {
+          "w": "aren't",
+          "s": 321.725,
+          "e": 321.985,
+          "c": 0.97008
+        },
+        {
+          "w": "appropriate",
+          "s": 321.985,
+          "e": 322.505,
+          "c": 0.855119
+        },
+        {
+          "w": "places",
+          "s": 322.505,
+          "e": 322.865,
+          "c": 0.975007
+        },
+        {
+          "w": "for",
+          "s": 322.985,
+          "e": 323.025,
+          "c": 0.999807
+        },
+        {
+          "w": "pharmacological",
+          "s": 323.025,
+          "e": 323.615,
+          "c": 0.82272
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "start_s": 323.62,
+      "end_s": 329.85,
+      "speaker": "SPEAKER_15",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "prevention. - Sure, sure. No, I understand that, I appreciate that. And I realize I'm out of time. I'm just gonna say I'm gonna submit a question",
+      "words": [
+        {
+          "w": "prevention.",
+          "s": 323.615,
+          "e": 324.095,
+          "c": 0.362446
+        },
+        {
+          "w": "-",
+          "s": 324.205,
+          "e": 324.205,
+          "c": 0.906314
+        },
+        {
+          "w": "Sure,",
+          "s": 324.255,
+          "e": 324.555,
+          "c": 0.944934
+        },
+        {
+          "w": "sure.",
+          "s": 324.555,
+          "e": 324.965,
+          "c": 0.44652
+        },
+        {
+          "w": "No,",
+          "s": 325.065,
+          "e": 325.165,
+          "c": 0.913095
+        },
+        {
+          "w": "I",
+          "s": 325.165,
+          "e": 325.205,
+          "c": 0.999783
+        },
+        {
+          "w": "understand",
+          "s": 325.205,
+          "e": 325.675,
+          "c": 0.997801
+        },
+        {
+          "w": "that,",
+          "s": 325.675,
+          "e": 325.985,
+          "c": 0.578607
+        },
+        {
+          "w": "I",
+          "s": 325.985,
+          "e": 325.995,
+          "c": 0.967464
+        },
+        {
+          "w": "appreciate",
+          "s": 325.995,
+          "e": 326.125,
+          "c": 0.999739
+        },
+        {
+          "w": "that.",
+          "s": 326.125,
+          "e": 326.185,
+          "c": 0.531181
+        },
+        {
+          "w": "And",
+          "s": 326.295,
+          "e": 326.355,
+          "c": 0.999199
+        },
+        {
+          "w": "I",
+          "s": 326.355,
+          "e": 326.405,
+          "c": 0.998426
+        },
+        {
+          "w": "realize",
+          "s": 326.405,
+          "e": 326.805,
+          "c": 0.984055
+        },
+        {
+          "w": "I'm",
+          "s": 326.805,
+          "e": 326.965,
+          "c": 0.976733
+        },
+        {
+          "w": "out",
+          "s": 326.965,
+          "e": 327.135,
+          "c": 0.98263
+        },
+        {
+          "w": "of",
+          "s": 327.135,
+          "e": 327.245,
+          "c": 0.999512
+        },
+        {
+          "w": "time.",
+          "s": 327.245,
+          "e": 327.685,
+          "c": 0.631999
+        },
+        {
+          "w": "I'm",
+          "s": 327.735,
+          "e": 327.845,
+          "c": 0.99935
+        },
+        {
+          "w": "just",
+          "s": 327.845,
+          "e": 328.065,
+          "c": 0.997645
+        },
+        {
+          "w": "gonna",
+          "s": 328.065,
+          "e": 328.335,
+          "c": 0.81143
+        },
+        {
+          "w": "say",
+          "s": 328.335,
+          "e": 328.505,
+          "c": 0.986242
+        },
+        {
+          "w": "I'm",
+          "s": 328.575,
+          "e": 328.685,
+          "c": 0.516763
+        },
+        {
+          "w": "gonna",
+          "s": 328.685,
+          "e": 328.975,
+          "c": 0.964981
+        },
+        {
+          "w": "submit",
+          "s": 328.975,
+          "e": 329.345,
+          "c": 0.991289
+        },
+        {
+          "w": "a",
+          "s": 329.345,
+          "e": 329.395,
+          "c": 0.555075
+        },
+        {
+          "w": "question",
+          "s": 329.395,
+          "e": 329.845,
+          "c": 0.998793
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "start_s": 329.95,
+      "end_s": 331.29,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "for the record.",
+      "words": [
+        {
+          "w": "for",
+          "s": 329.955,
+          "e": 330.205,
+          "c": 0.999361
+        },
+        {
+          "w": "the",
+          "s": 330.205,
+          "e": 330.565,
+          "c": 0.999413
+        },
+        {
+          "w": "record.",
+          "s": 330.565,
+          "e": 331.285,
+          "c": 0.868068
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "start_s": 331.32,
+      "end_s": 353.57,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to the panel because, Mr. Chair, one of the things I think we really also need to focus on is a partnership between our primary care docs and community health workers to help address the social determinants of health. Because it's so critical if people, docs or treating, can actually get the nutrition assistance or housing that they need, that can be a big step forward too. Thank",
+      "words": [
+        {
+          "w": "to",
+          "s": 331.325,
+          "e": 331.385,
+          "c": 0.81967
+        },
+        {
+          "w": "the",
+          "s": 331.385,
+          "e": 331.595,
+          "c": 0.944166
+        },
+        {
+          "w": "panel",
+          "s": 331.595,
+          "e": 331.955,
+          "c": 0.996987
+        },
+        {
+          "w": "because,",
+          "s": 331.955,
+          "e": 332.565,
+          "c": 0.325629
+        },
+        {
+          "w": "Mr.",
+          "s": 332.615,
+          "e": 332.945,
+          "c": 0.973525
+        },
+        {
+          "w": "Chair,",
+          "s": 332.945,
+          "e": 333.485,
+          "c": 0.95814
+        },
+        {
+          "w": "one",
+          "s": 333.485,
+          "e": 333.645,
+          "c": 0.727481
+        },
+        {
+          "w": "of",
+          "s": 333.645,
+          "e": 333.745,
+          "c": 0.980049
+        },
+        {
+          "w": "the",
+          "s": 333.745,
+          "e": 333.845,
+          "c": 0.986382
+        },
+        {
+          "w": "things",
+          "s": 333.845,
+          "e": 334.125,
+          "c": 0.978581
+        },
+        {
+          "w": "I",
+          "s": 334.185,
+          "e": 334.185,
+          "c": 0.663754
+        },
+        {
+          "w": "think",
+          "s": 334.185,
+          "e": 334.395,
+          "c": 0.950303
+        },
+        {
+          "w": "we",
+          "s": 334.405,
+          "e": 334.505,
+          "c": 0.833567
+        },
+        {
+          "w": "really",
+          "s": 334.505,
+          "e": 334.765,
+          "c": 0.898014
+        },
+        {
+          "w": "also",
+          "s": 334.765,
+          "e": 334.965,
+          "c": 0.943496
+        },
+        {
+          "w": "need",
+          "s": 335.065,
+          "e": 335.205,
+          "c": 0.953175
+        },
+        {
+          "w": "to",
+          "s": 335.205,
+          "e": 335.255,
+          "c": 0.893977
+        },
+        {
+          "w": "focus",
+          "s": 335.295,
+          "e": 335.645,
+          "c": 0.898285
+        },
+        {
+          "w": "on",
+          "s": 335.725,
+          "e": 335.795,
+          "c": 0.999123
+        },
+        {
+          "w": "is",
+          "s": 335.795,
+          "e": 335.865,
+          "c": 0.92692
+        },
+        {
+          "w": "a",
+          "s": 335.965,
+          "e": 335.995,
+          "c": 0.980267
+        },
+        {
+          "w": "partnership",
+          "s": 336.015,
+          "e": 336.885,
+          "c": 0.998593
+        },
+        {
+          "w": "between",
+          "s": 336.895,
+          "e": 337.445,
+          "c": 0.997398
+        },
+        {
+          "w": "our",
+          "s": 337.445,
+          "e": 337.675,
+          "c": 0.990038
+        },
+        {
+          "w": "primary",
+          "s": 337.675,
+          "e": 338.175,
+          "c": 0.976941
+        },
+        {
+          "w": "care",
+          "s": 338.225,
+          "e": 338.525,
+          "c": 0.997409
+        },
+        {
+          "w": "docs",
+          "s": 338.585,
+          "e": 338.905,
+          "c": 0.95726
+        },
+        {
+          "w": "and",
+          "s": 338.905,
+          "e": 339.035,
+          "c": 0.972769
+        },
+        {
+          "w": "community",
+          "s": 339.035,
+          "e": 339.365,
+          "c": 0.992562
+        },
+        {
+          "w": "health",
+          "s": 339.425,
+          "e": 339.725,
+          "c": 0.992322
+        },
+        {
+          "w": "workers",
+          "s": 339.725,
+          "e": 340.115,
+          "c": 0.985393
+        },
+        {
+          "w": "to",
+          "s": 340.175,
+          "e": 340.245,
+          "c": 0.964635
+        },
+        {
+          "w": "help",
+          "s": 340.245,
+          "e": 340.425,
+          "c": 0.994146
+        },
+        {
+          "w": "address",
+          "s": 340.565,
+          "e": 341.065,
+          "c": 0.999439
+        },
+        {
+          "w": "the",
+          "s": 341.065,
+          "e": 341.315,
+          "c": 0.997369
+        },
+        {
+          "w": "social",
+          "s": 341.315,
+          "e": 341.805,
+          "c": 0.997988
+        },
+        {
+          "w": "determinants",
+          "s": 341.885,
+          "e": 342.805,
+          "c": 0.988418
+        },
+        {
+          "w": "of",
+          "s": 342.805,
+          "e": 342.965,
+          "c": 0.998338
+        },
+        {
+          "w": "health.",
+          "s": 342.965,
+          "e": 343.745,
+          "c": 0.370829
+        },
+        {
+          "w": "Because",
+          "s": 343.825,
+          "e": 344.185,
+          "c": 0.998382
+        },
+        {
+          "w": "it's",
+          "s": 344.185,
+          "e": 344.415,
+          "c": 0.829686
+        },
+        {
+          "w": "so",
+          "s": 344.415,
+          "e": 344.545,
+          "c": 0.998487
+        },
+        {
+          "w": "critical",
+          "s": 344.545,
+          "e": 345.045,
+          "c": 0.999192
+        },
+        {
+          "w": "if",
+          "s": 345.045,
+          "e": 345.165,
+          "c": 0.916894
+        },
+        {
+          "w": "people,",
+          "s": 345.165,
+          "e": 345.595,
+          "c": 0.659195
+        },
+        {
+          "w": "docs",
+          "s": 345.685,
+          "e": 345.915,
+          "c": 0.967848
+        },
+        {
+          "w": "or",
+          "s": 345.915,
+          "e": 345.995,
+          "c": 0.633959
+        },
+        {
+          "w": "treating,",
+          "s": 346.055,
+          "e": 346.625,
+          "c": 0.854196
+        },
+        {
+          "w": "can",
+          "s": 346.685,
+          "e": 346.845,
+          "c": 0.992089
+        },
+        {
+          "w": "actually",
+          "s": 346.845,
+          "e": 347.345,
+          "c": 0.994835
+        },
+        {
+          "w": "get",
+          "s": 347.345,
+          "e": 347.465,
+          "c": 0.997118
+        },
+        {
+          "w": "the",
+          "s": 347.535,
+          "e": 347.725,
+          "c": 0.996193
+        },
+        {
+          "w": "nutrition",
+          "s": 347.725,
+          "e": 348.385,
+          "c": 0.994852
+        },
+        {
+          "w": "assistance",
+          "s": 348.465,
+          "e": 349.135,
+          "c": 0.995786
+        },
+        {
+          "w": "or",
+          "s": 349.135,
+          "e": 349.235,
+          "c": 0.993136
+        },
+        {
+          "w": "housing",
+          "s": 349.325,
+          "e": 349.805,
+          "c": 0.996441
+        },
+        {
+          "w": "that",
+          "s": 349.805,
+          "e": 350.085,
+          "c": 0.984198
+        },
+        {
+          "w": "they",
+          "s": 350.165,
+          "e": 350.405,
+          "c": 0.998729
+        },
+        {
+          "w": "need,",
+          "s": 350.405,
+          "e": 350.855,
+          "c": 0.33845
+        },
+        {
+          "w": "that",
+          "s": 350.855,
+          "e": 351.155,
+          "c": 0.993678
+        },
+        {
+          "w": "can",
+          "s": 351.155,
+          "e": 351.375,
+          "c": 0.986162
+        },
+        {
+          "w": "be",
+          "s": 351.375,
+          "e": 351.525,
+          "c": 0.99878
+        },
+        {
+          "w": "a",
+          "s": 351.525,
+          "e": 351.545,
+          "c": 0.998645
+        },
+        {
+          "w": "big",
+          "s": 351.625,
+          "e": 351.815,
+          "c": 0.998959
+        },
+        {
+          "w": "step",
+          "s": 351.815,
+          "e": 352.105,
+          "c": 0.999388
+        },
+        {
+          "w": "forward",
+          "s": 352.105,
+          "e": 352.635,
+          "c": 0.996995
+        },
+        {
+          "w": "too.",
+          "s": 352.635,
+          "e": 353.125,
+          "c": 0.605591
+        },
+        {
+          "w": "Thank",
+          "s": 353.205,
+          "e": 353.575,
+          "c": 0.992979
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "start_s": 353.57,
+      "end_s": 354.36,
+      "speaker": "SPEAKER_18",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you. Thank",
+      "words": [
+        {
+          "w": "you.",
+          "s": 353.575,
+          "e": 354.125,
+          "c": 0.989047
+        },
+        {
+          "w": "Thank",
+          "s": 354.205,
+          "e": 354.355,
+          "c": 0.909021
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "start_s": 354.44,
+      "end_s": 354.68,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you.",
+      "words": [
+        {
+          "w": "you.",
+          "s": 354.445,
+          "e": 354.675,
+          "c": 0.995883
+        }
+      ]
+    }
+  ]
+}

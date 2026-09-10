@@ -1,0 +1,2828 @@
+{
+  "schema_version": 2,
+  "canonical_id": "37228913cec722fc",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 226.17,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T11:38:02.661Z",
+  "text_sha256": "f2d7f7a0fe9af22c33aa6d52588ac3734ee692c8fd3a162296cfb33c29a61f8e",
+  "segments_sha256": "70177eb558da321332f49491352c389b1cb96b6cfaca6ad890e9e16f279a8fcb",
+  "words_sha256": "d8260e898d0d8c02d22934112569b4b4cc6860126ab2924de22d58d25522c484",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 9,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 39,
+    "clusters": 4,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 102.7
+      },
+      "clean_s": 102.7,
+      "speaking_s": 102.7,
+      "first_s": 1.03
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2 (higher-pitched voice)",
+      "voice": {
+        "descriptor": "woman",
+        "p": 0.87,
+        "confidence": "low",
+        "clean_s": 46.9
+      },
+      "clean_s": 46.9,
+      "speaking_s": 46.9,
+      "first_s": 118.81
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 3,
+      "label": "Speaker 3 (higher-pitched voice)",
+      "voice": {
+        "descriptor": "woman",
+        "p": 0.85,
+        "confidence": "low",
+        "clean_s": 35
+      },
+      "clean_s": 35,
+      "speaking_s": 35.3,
+      "first_s": 172.61
+    },
+    {
+      "id": "SPEAKER_06",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 9.4
+      },
+      "clean_s": 9.4,
+      "speaking_s": 9.7,
+      "first_s": 196.96
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 1,
+      "end_s": 1,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 5.96,
+      "end_s": 6.81,
+      "segment_i": 2,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 54.9,
+      "end_s": 55.06,
+      "segment_i": 5,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 108.64,
+      "end_s": 108.77,
+      "segment_i": 8,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 117.98,
+      "end_s": 118.76,
+      "segment_i": 10,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 130.31,
+      "end_s": 130.99,
+      "segment_i": 12,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 165.84,
+      "end_s": 166.05,
+      "segment_i": 15,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 171.11,
+      "end_s": 171.89,
+      "segment_i": 17,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 199.86,
+      "end_s": 200.36,
+      "segment_i": 21,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 204.5,
+      "end_s": 205.2,
+      "segment_i": 23,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 225.79,
+      "end_s": 226.17,
+      "segment_i": 26,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 1,
+      "end_s": 1.01,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "- I",
+      "words": [
+        {
+          "w": "-",
+          "s": 1,
+          "e": 1,
+          "c": 0.0498398
+        },
+        {
+          "w": "I",
+          "s": 1,
+          "e": 1,
+          "c": 0.872786
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 1.1,
+      "end_s": 5.86,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "want to share with you a personal story.",
+      "words": [
+        {
+          "w": "want",
+          "s": 1.1,
+          "e": 1.2,
+          "c": 0.994552
+        },
+        {
+          "w": "to",
+          "s": 1.2,
+          "e": 1.6,
+          "c": 0.998477
+        },
+        {
+          "w": "share",
+          "s": 2.03,
+          "e": 2.6,
+          "c": 0.9993
+        },
+        {
+          "w": "with",
+          "s": 2.6,
+          "e": 3.4,
+          "c": 0.996575
+        },
+        {
+          "w": "you",
+          "s": 3.4,
+          "e": 4.04,
+          "c": 0.999222
+        },
+        {
+          "w": "a",
+          "s": 4.04,
+          "e": 4.12,
+          "c": 0.739927
+        },
+        {
+          "w": "personal",
+          "s": 4.12,
+          "e": 4.99,
+          "c": 0.994949
+        },
+        {
+          "w": "story.",
+          "s": 5.09,
+          "e": 5.86,
+          "c": 0.991185
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 5.96,
+      "end_s": 6.81,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "One of my",
+      "words": [
+        {
+          "w": "One",
+          "s": 5.96,
+          "e": 6.27,
+          "c": 0.998732
+        },
+        {
+          "w": "of",
+          "s": 6.27,
+          "e": 6.54,
+          "c": 0.999094
+        },
+        {
+          "w": "my",
+          "s": 6.54,
+          "e": 6.81,
+          "c": 0.999542
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 6.91,
+      "end_s": 27.14,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "biggest dreams was to visit Miami because in 1968, when I was born, most of my father's family left Cuba, so I have never met them. And,",
+      "words": [
+        {
+          "w": "biggest",
+          "s": 6.91,
+          "e": 7.76,
+          "c": 0.999504
+        },
+        {
+          "w": "dreams",
+          "s": 7.76,
+          "e": 8.6,
+          "c": 0.997763
+        },
+        {
+          "w": "was",
+          "s": 8.6,
+          "e": 9.16,
+          "c": 0.964341
+        },
+        {
+          "w": "to",
+          "s": 9.33,
+          "e": 9.84,
+          "c": 0.817283
+        },
+        {
+          "w": "visit",
+          "s": 9.96,
+          "e": 10.85,
+          "c": 0.99616
+        },
+        {
+          "w": "Miami",
+          "s": 10.85,
+          "e": 11.58,
+          "c": 0.99725
+        },
+        {
+          "w": "because",
+          "s": 12.91,
+          "e": 12.96,
+          "c": 0.996685
+        },
+        {
+          "w": "in",
+          "s": 12.96,
+          "e": 13.27,
+          "c": 0.96763
+        },
+        {
+          "w": "1968,",
+          "s": 13.27,
+          "e": 15.44,
+          "c": 0.501311
+        },
+        {
+          "w": "when",
+          "s": 15.44,
+          "e": 15.86,
+          "c": 0.976516
+        },
+        {
+          "w": "I",
+          "s": 15.96,
+          "e": 15.96,
+          "c": 0.999802
+        },
+        {
+          "w": "was",
+          "s": 15.97,
+          "e": 16.27,
+          "c": 0.999846
+        },
+        {
+          "w": "born,",
+          "s": 16.27,
+          "e": 16.8,
+          "c": 0.976673
+        },
+        {
+          "w": "most",
+          "s": 16.9,
+          "e": 17.56,
+          "c": 0.999483
+        },
+        {
+          "w": "of",
+          "s": 17.83,
+          "e": 17.94,
+          "c": 0.999727
+        },
+        {
+          "w": "my",
+          "s": 17.94,
+          "e": 18.31,
+          "c": 0.999582
+        },
+        {
+          "w": "father's",
+          "s": 18.35,
+          "e": 19.84,
+          "c": 0.994055
+        },
+        {
+          "w": "family",
+          "s": 19.84,
+          "e": 20.98,
+          "c": 0.998294
+        },
+        {
+          "w": "left",
+          "s": 20.98,
+          "e": 21.74,
+          "c": 0.99173
+        },
+        {
+          "w": "Cuba,",
+          "s": 21.74,
+          "e": 22.54,
+          "c": 0.470953
+        },
+        {
+          "w": "so",
+          "s": 22.64,
+          "e": 22.7,
+          "c": 0.998757
+        },
+        {
+          "w": "I",
+          "s": 22.7,
+          "e": 22.78,
+          "c": 0.995818
+        },
+        {
+          "w": "have",
+          "s": 22.78,
+          "e": 23.11,
+          "c": 0.885172
+        },
+        {
+          "w": "never",
+          "s": 23.16,
+          "e": 23.5,
+          "c": 0.999746
+        },
+        {
+          "w": "met",
+          "s": 23.59,
+          "e": 23.76,
+          "c": 0.999214
+        },
+        {
+          "w": "them.",
+          "s": 23.76,
+          "e": 24.18,
+          "c": 0.728259
+        },
+        {
+          "w": "And,",
+          "s": 25.23,
+          "e": 27.14,
+          "c": 0.327175
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 27.35,
+      "end_s": 54.9,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Due to the new times, we've got visas for a complete family to come to US for the first time last year. I am so proud either because I had my own resources to do this family trip, so I could introduce my 10-year-old daughter to my family here.",
+      "words": [
+        {
+          "w": "Due",
+          "s": 27.35,
+          "e": 27.76,
+          "c": 0.383055
+        },
+        {
+          "w": "to",
+          "s": 27.81,
+          "e": 28.19,
+          "c": 0.987159
+        },
+        {
+          "w": "the",
+          "s": 28.19,
+          "e": 28.83,
+          "c": 0.827153
+        },
+        {
+          "w": "new",
+          "s": 28.83,
+          "e": 29.47,
+          "c": 0.950877
+        },
+        {
+          "w": "times,",
+          "s": 29.47,
+          "e": 30.72,
+          "c": 0.725541
+        },
+        {
+          "w": "we've",
+          "s": 30.83,
+          "e": 31.08,
+          "c": 0.702001
+        },
+        {
+          "w": "got",
+          "s": 31.14,
+          "e": 31.38,
+          "c": 0.933853
+        },
+        {
+          "w": "visas",
+          "s": 31.38,
+          "e": 32.11,
+          "c": 0.937974
+        },
+        {
+          "w": "for",
+          "s": 32.13,
+          "e": 32.32,
+          "c": 0.719755
+        },
+        {
+          "w": "a",
+          "s": 32.32,
+          "e": 32.4,
+          "c": 0.462253
+        },
+        {
+          "w": "complete",
+          "s": 32.4,
+          "e": 32.95,
+          "c": 0.965991
+        },
+        {
+          "w": "family",
+          "s": 32.97,
+          "e": 33.62,
+          "c": 0.960737
+        },
+        {
+          "w": "to",
+          "s": 33.7,
+          "e": 33.95,
+          "c": 0.998336
+        },
+        {
+          "w": "come",
+          "s": 33.95,
+          "e": 34.45,
+          "c": 0.999464
+        },
+        {
+          "w": "to",
+          "s": 34.45,
+          "e": 34.7,
+          "c": 0.997929
+        },
+        {
+          "w": "US",
+          "s": 34.7,
+          "e": 34.91,
+          "c": 0.402715
+        },
+        {
+          "w": "for",
+          "s": 34.95,
+          "e": 35.33,
+          "c": 0.98998
+        },
+        {
+          "w": "the",
+          "s": 35.33,
+          "e": 35.71,
+          "c": 0.993532
+        },
+        {
+          "w": "first",
+          "s": 35.71,
+          "e": 36.34,
+          "c": 0.998536
+        },
+        {
+          "w": "time",
+          "s": 36.34,
+          "e": 36.68,
+          "c": 0.999178
+        },
+        {
+          "w": "last",
+          "s": 36.84,
+          "e": 37.34,
+          "c": 0.98927
+        },
+        {
+          "w": "year.",
+          "s": 37.41,
+          "e": 38.26,
+          "c": 0.995763
+        },
+        {
+          "w": "I",
+          "s": 38.26,
+          "e": 38.4,
+          "c": 0.998742
+        },
+        {
+          "w": "am",
+          "s": 38.49,
+          "e": 38.68,
+          "c": 0.983003
+        },
+        {
+          "w": "so",
+          "s": 38.68,
+          "e": 38.96,
+          "c": 0.999357
+        },
+        {
+          "w": "proud",
+          "s": 38.96,
+          "e": 39.47,
+          "c": 0.999861
+        },
+        {
+          "w": "either",
+          "s": 39.67,
+          "e": 40.5,
+          "c": 0.738645
+        },
+        {
+          "w": "because",
+          "s": 40.5,
+          "e": 41.2,
+          "c": 0.831568
+        },
+        {
+          "w": "I",
+          "s": 41.53,
+          "e": 41.73,
+          "c": 0.990577
+        },
+        {
+          "w": "had",
+          "s": 41.97,
+          "e": 42.19,
+          "c": 0.89512
+        },
+        {
+          "w": "my",
+          "s": 42.21,
+          "e": 42.44,
+          "c": 0.96553
+        },
+        {
+          "w": "own",
+          "s": 42.44,
+          "e": 42.8,
+          "c": 0.989353
+        },
+        {
+          "w": "resources",
+          "s": 42.8,
+          "e": 44.34,
+          "c": 0.982356
+        },
+        {
+          "w": "to",
+          "s": 44.57,
+          "e": 44.78,
+          "c": 0.997786
+        },
+        {
+          "w": "do",
+          "s": 44.78,
+          "e": 45.22,
+          "c": 0.954733
+        },
+        {
+          "w": "this",
+          "s": 45.22,
+          "e": 46.1,
+          "c": 0.917632
+        },
+        {
+          "w": "family",
+          "s": 46.1,
+          "e": 47.25,
+          "c": 0.998411
+        },
+        {
+          "w": "trip,",
+          "s": 48.05,
+          "e": 48.47,
+          "c": 0.280697
+        },
+        {
+          "w": "so",
+          "s": 48.47,
+          "e": 48.61,
+          "c": 0.641207
+        },
+        {
+          "w": "I",
+          "s": 48.61,
+          "e": 48.68,
+          "c": 0.992744
+        },
+        {
+          "w": "could",
+          "s": 48.68,
+          "e": 49.03,
+          "c": 0.965372
+        },
+        {
+          "w": "introduce",
+          "s": 49.08,
+          "e": 49.78,
+          "c": 0.866207
+        },
+        {
+          "w": "my",
+          "s": 49.78,
+          "e": 50.04,
+          "c": 0.999453
+        },
+        {
+          "w": "10-year-old",
+          "s": 50.04,
+          "e": 51.99,
+          "c": 0.559792
+        },
+        {
+          "w": "daughter",
+          "s": 51.99,
+          "e": 52.69,
+          "c": 0.999468
+        },
+        {
+          "w": "to",
+          "s": 52.69,
+          "e": 53.29,
+          "c": 0.996179
+        },
+        {
+          "w": "my",
+          "s": 53.49,
+          "e": 53.55,
+          "c": 0.999232
+        },
+        {
+          "w": "family",
+          "s": 53.55,
+          "e": 54.33,
+          "c": 0.999725
+        },
+        {
+          "w": "here.",
+          "s": 54.33,
+          "e": 54.9,
+          "c": 0.887119
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 54.9,
+      "end_s": 55.06,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I",
+      "words": [
+        {
+          "w": "I",
+          "s": 54.896,
+          "e": 55.056,
+          "c": 0.975387
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 55.27,
+      "end_s": 82.36,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "cannot tell you enough how important it has been to be a real family again. If you ask my daughter, when she hears talking about distance and walls, she doesn't understand. For her, everything seems like unreal.",
+      "words": [
+        {
+          "w": "cannot",
+          "s": 55.266,
+          "e": 56.026,
+          "c": 0.950668
+        },
+        {
+          "w": "tell",
+          "s": 56.026,
+          "e": 56.666,
+          "c": 0.999176
+        },
+        {
+          "w": "you",
+          "s": 56.666,
+          "e": 56.966,
+          "c": 0.99874
+        },
+        {
+          "w": "enough",
+          "s": 56.966,
+          "e": 58.136,
+          "c": 0.996576
+        },
+        {
+          "w": "how",
+          "s": 58.266,
+          "e": 58.536,
+          "c": 0.87644
+        },
+        {
+          "w": "important",
+          "s": 58.536,
+          "e": 59.326,
+          "c": 0.995716
+        },
+        {
+          "w": "it",
+          "s": 59.806,
+          "e": 59.866,
+          "c": 0.404114
+        },
+        {
+          "w": "has",
+          "s": 59.866,
+          "e": 60.056,
+          "c": 0.930318
+        },
+        {
+          "w": "been",
+          "s": 60.086,
+          "e": 60.546,
+          "c": 0.928271
+        },
+        {
+          "w": "to",
+          "s": 60.926,
+          "e": 60.946,
+          "c": 0.999523
+        },
+        {
+          "w": "be",
+          "s": 60.946,
+          "e": 61.336,
+          "c": 0.996565
+        },
+        {
+          "w": "a",
+          "s": 61.336,
+          "e": 61.506,
+          "c": 0.916562
+        },
+        {
+          "w": "real",
+          "s": 61.606,
+          "e": 62.316,
+          "c": 0.996248
+        },
+        {
+          "w": "family",
+          "s": 62.316,
+          "e": 62.676,
+          "c": 0.998395
+        },
+        {
+          "w": "again.",
+          "s": 63.866,
+          "e": 65.006,
+          "c": 0.991491
+        },
+        {
+          "w": "If",
+          "s": 65.116,
+          "e": 65.376,
+          "c": 0.99907
+        },
+        {
+          "w": "you",
+          "s": 65.486,
+          "e": 65.766,
+          "c": 0.999539
+        },
+        {
+          "w": "ask",
+          "s": 65.766,
+          "e": 66.086,
+          "c": 0.950403
+        },
+        {
+          "w": "my",
+          "s": 66.166,
+          "e": 66.416,
+          "c": 0.996957
+        },
+        {
+          "w": "daughter,",
+          "s": 66.416,
+          "e": 67.736,
+          "c": 0.835037
+        },
+        {
+          "w": "when",
+          "s": 68.416,
+          "e": 68.896,
+          "c": 0.933554
+        },
+        {
+          "w": "she",
+          "s": 68.916,
+          "e": 69.566,
+          "c": 0.998727
+        },
+        {
+          "w": "hears",
+          "s": 69.996,
+          "e": 70.616,
+          "c": 0.914588
+        },
+        {
+          "w": "talking",
+          "s": 70.616,
+          "e": 71.066,
+          "c": 0.78325
+        },
+        {
+          "w": "about",
+          "s": 71.116,
+          "e": 71.836,
+          "c": 0.56571
+        },
+        {
+          "w": "distance",
+          "s": 71.836,
+          "e": 72.796,
+          "c": 0.884163
+        },
+        {
+          "w": "and",
+          "s": 73.186,
+          "e": 73.286,
+          "c": 0.996905
+        },
+        {
+          "w": "walls,",
+          "s": 73.286,
+          "e": 74.376,
+          "c": 0.588834
+        },
+        {
+          "w": "she",
+          "s": 74.376,
+          "e": 74.836,
+          "c": 0.997661
+        },
+        {
+          "w": "doesn't",
+          "s": 74.836,
+          "e": 75.936,
+          "c": 0.99689
+        },
+        {
+          "w": "understand.",
+          "s": 76.126,
+          "e": 77.996,
+          "c": 0.994021
+        },
+        {
+          "w": "For",
+          "s": 78.366,
+          "e": 78.386,
+          "c": 0.99911
+        },
+        {
+          "w": "her,",
+          "s": 78.386,
+          "e": 78.946,
+          "c": 0.905726
+        },
+        {
+          "w": "everything",
+          "s": 79.046,
+          "e": 80.066,
+          "c": 0.999304
+        },
+        {
+          "w": "seems",
+          "s": 80.346,
+          "e": 81.016,
+          "c": 0.987611
+        },
+        {
+          "w": "like",
+          "s": 81.306,
+          "e": 81.536,
+          "c": 0.628051
+        },
+        {
+          "w": "unreal.",
+          "s": 81.536,
+          "e": 82.356,
+          "c": 0.57848
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 82.62,
+      "end_s": 108.65,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And I wish that could be true. I wish that the next president, I mean the president-elect in the US, Donald Trump, will not change the policy toward Cuba. We want to continue the relationship. We have so much in common.",
+      "words": [
+        {
+          "w": "And",
+          "s": 82.622,
+          "e": 82.682,
+          "c": 0.744135
+        },
+        {
+          "w": "I",
+          "s": 82.682,
+          "e": 82.792,
+          "c": 0.990412
+        },
+        {
+          "w": "wish",
+          "s": 82.792,
+          "e": 83.232,
+          "c": 0.992568
+        },
+        {
+          "w": "that",
+          "s": 83.232,
+          "e": 83.672,
+          "c": 0.993697
+        },
+        {
+          "w": "could",
+          "s": 83.672,
+          "e": 84.192,
+          "c": 0.99156
+        },
+        {
+          "w": "be",
+          "s": 84.332,
+          "e": 84.442,
+          "c": 0.99902
+        },
+        {
+          "w": "true.",
+          "s": 84.442,
+          "e": 85.212,
+          "c": 0.955312
+        },
+        {
+          "w": "I",
+          "s": 85.472,
+          "e": 85.472,
+          "c": 0.999607
+        },
+        {
+          "w": "wish",
+          "s": 85.522,
+          "e": 86.322,
+          "c": 0.993267
+        },
+        {
+          "w": "that",
+          "s": 86.352,
+          "e": 87.252,
+          "c": 0.989619
+        },
+        {
+          "w": "the",
+          "s": 87.252,
+          "e": 87.472,
+          "c": 0.973457
+        },
+        {
+          "w": "next",
+          "s": 87.472,
+          "e": 87.642,
+          "c": 0.983614
+        },
+        {
+          "w": "president,",
+          "s": 88.222,
+          "e": 88.492,
+          "c": 0.77532
+        },
+        {
+          "w": "I",
+          "s": 88.492,
+          "e": 88.562,
+          "c": 0.973298
+        },
+        {
+          "w": "mean",
+          "s": 88.762,
+          "e": 88.832,
+          "c": 0.99883
+        },
+        {
+          "w": "the",
+          "s": 88.832,
+          "e": 89.032,
+          "c": 0.653687
+        },
+        {
+          "w": "president-elect",
+          "s": 89.032,
+          "e": 90.092,
+          "c": 0.411498
+        },
+        {
+          "w": "in",
+          "s": 90.092,
+          "e": 90.302,
+          "c": 0.966518
+        },
+        {
+          "w": "the",
+          "s": 90.312,
+          "e": 90.652,
+          "c": 0.515525
+        },
+        {
+          "w": "US,",
+          "s": 90.652,
+          "e": 90.912,
+          "c": 0.665108
+        },
+        {
+          "w": "Donald",
+          "s": 91.462,
+          "e": 91.842,
+          "c": 0.86601
+        },
+        {
+          "w": "Trump,",
+          "s": 91.842,
+          "e": 92.672,
+          "c": 0.905293
+        },
+        {
+          "w": "will",
+          "s": 92.942,
+          "e": 93.562,
+          "c": 0.984057
+        },
+        {
+          "w": "not",
+          "s": 93.562,
+          "e": 94.232,
+          "c": 0.999844
+        },
+        {
+          "w": "change",
+          "s": 94.232,
+          "e": 95.062,
+          "c": 0.996892
+        },
+        {
+          "w": "the",
+          "s": 95.642,
+          "e": 96.212,
+          "c": 0.963663
+        },
+        {
+          "w": "policy",
+          "s": 96.212,
+          "e": 97.272,
+          "c": 0.602865
+        },
+        {
+          "w": "toward",
+          "s": 97.342,
+          "e": 97.542,
+          "c": 0.508478
+        },
+        {
+          "w": "Cuba.",
+          "s": 97.592,
+          "e": 97.672,
+          "c": 0.991507
+        },
+        {
+          "w": "We",
+          "s": 97.942,
+          "e": 98.102,
+          "c": 0.999314
+        },
+        {
+          "w": "want",
+          "s": 98.102,
+          "e": 98.962,
+          "c": 0.998915
+        },
+        {
+          "w": "to",
+          "s": 98.962,
+          "e": 99.392,
+          "c": 0.999121
+        },
+        {
+          "w": "continue",
+          "s": 99.392,
+          "e": 101.112,
+          "c": 0.999157
+        },
+        {
+          "w": "the",
+          "s": 101.122,
+          "e": 101.772,
+          "c": 0.99214
+        },
+        {
+          "w": "relationship.",
+          "s": 101.772,
+          "e": 105.052,
+          "c": 0.995015
+        },
+        {
+          "w": "We",
+          "s": 105.322,
+          "e": 105.412,
+          "c": 0.999699
+        },
+        {
+          "w": "have",
+          "s": 105.412,
+          "e": 106.082,
+          "c": 0.998868
+        },
+        {
+          "w": "so",
+          "s": 106.112,
+          "e": 106.462,
+          "c": 0.997889
+        },
+        {
+          "w": "much",
+          "s": 106.532,
+          "e": 107.192,
+          "c": 0.999817
+        },
+        {
+          "w": "in",
+          "s": 107.192,
+          "e": 107.382,
+          "c": 0.998776
+        },
+        {
+          "w": "common.",
+          "s": 108.022,
+          "e": 108.652,
+          "c": 0.863939
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 108.64,
+      "end_s": 108.77,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I",
+      "words": [
+        {
+          "w": "I",
+          "s": 108.64,
+          "e": 108.77,
+          "c": 0.957676
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 109.01,
+      "end_s": 117.98,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "truly believe that we need to work together to build a new bright future, trust me.",
+      "words": [
+        {
+          "w": "truly",
+          "s": 109.01,
+          "e": 109.44,
+          "c": 0.99347
+        },
+        {
+          "w": "believe",
+          "s": 109.44,
+          "e": 110.19,
+          "c": 0.995063
+        },
+        {
+          "w": "that",
+          "s": 110.67,
+          "e": 110.98,
+          "c": 0.979107
+        },
+        {
+          "w": "we",
+          "s": 111.03,
+          "e": 111.28,
+          "c": 0.996445
+        },
+        {
+          "w": "need",
+          "s": 111.28,
+          "e": 111.74,
+          "c": 0.993275
+        },
+        {
+          "w": "to",
+          "s": 112.01,
+          "e": 112.12,
+          "c": 0.977055
+        },
+        {
+          "w": "work",
+          "s": 112.12,
+          "e": 112.47,
+          "c": 0.9925
+        },
+        {
+          "w": "together",
+          "s": 112.71,
+          "e": 113.44,
+          "c": 0.967307
+        },
+        {
+          "w": "to",
+          "s": 113.86,
+          "e": 113.88,
+          "c": 0.58388
+        },
+        {
+          "w": "build",
+          "s": 113.89,
+          "e": 114.45,
+          "c": 0.95999
+        },
+        {
+          "w": "a",
+          "s": 114.59,
+          "e": 114.64,
+          "c": 0.897891
+        },
+        {
+          "w": "new",
+          "s": 114.64,
+          "e": 115.16,
+          "c": 0.959367
+        },
+        {
+          "w": "bright",
+          "s": 115.27,
+          "e": 115.64,
+          "c": 0.577659
+        },
+        {
+          "w": "future,",
+          "s": 115.64,
+          "e": 116.9,
+          "c": 0.390014
+        },
+        {
+          "w": "trust",
+          "s": 116.95,
+          "e": 117.44,
+          "c": 0.915873
+        },
+        {
+          "w": "me.",
+          "s": 117.44,
+          "e": 117.98,
+          "c": 0.971341
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 117.98,
+      "end_s": 118.76,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "So, the",
+      "words": [
+        {
+          "w": "So,",
+          "s": 117.98,
+          "e": 118.42,
+          "c": 0.423487
+        },
+        {
+          "w": "the",
+          "s": 118.42,
+          "e": 118.76,
+          "c": 0.995239
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 118.76,
+      "end_s": 130.31,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "changes made by the U.S., such as increasing flights, increasing travelers to Cuba, facilitating commerce,",
+      "words": [
+        {
+          "w": "changes",
+          "s": 118.76,
+          "e": 119.53,
+          "c": 0.983671
+        },
+        {
+          "w": "made",
+          "s": 119.53,
+          "e": 119.78,
+          "c": 0.998525
+        },
+        {
+          "w": "by",
+          "s": 120.01,
+          "e": 120.23,
+          "c": 0.997615
+        },
+        {
+          "w": "the",
+          "s": 120.23,
+          "e": 120.57,
+          "c": 0.996774
+        },
+        {
+          "w": "U.S.,",
+          "s": 120.57,
+          "e": 121.74,
+          "c": 0.56022
+        },
+        {
+          "w": "such",
+          "s": 121.76,
+          "e": 122.4,
+          "c": 0.94408
+        },
+        {
+          "w": "as",
+          "s": 122.4,
+          "e": 122.67,
+          "c": 0.998711
+        },
+        {
+          "w": "increasing",
+          "s": 123.23,
+          "e": 124.32,
+          "c": 0.968308
+        },
+        {
+          "w": "flights,",
+          "s": 124.32,
+          "e": 125.7,
+          "c": 0.921964
+        },
+        {
+          "w": "increasing",
+          "s": 125.7,
+          "e": 126.81,
+          "c": 0.697898
+        },
+        {
+          "w": "travelers",
+          "s": 126.9,
+          "e": 127.38,
+          "c": 0.939963
+        },
+        {
+          "w": "to",
+          "s": 127.38,
+          "e": 127.57,
+          "c": 0.999409
+        },
+        {
+          "w": "Cuba,",
+          "s": 127.75,
+          "e": 128.15,
+          "c": 0.993019
+        },
+        {
+          "w": "facilitating",
+          "s": 128.15,
+          "e": 128.93,
+          "c": 0.990493
+        },
+        {
+          "w": "commerce,",
+          "s": 129.41,
+          "e": 130.31,
+          "c": 0.618111
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 130.31,
+      "end_s": 130.99,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "this has",
+      "words": [
+        {
+          "w": "this",
+          "s": 130.31,
+          "e": 130.5,
+          "c": 0.58912
+        },
+        {
+          "w": "has",
+          "s": 130.75,
+          "e": 130.99,
+          "c": 0.799002
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 130.99,
+      "end_s": 136.3,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "been important because it has made our business grow.",
+      "words": [
+        {
+          "w": "been",
+          "s": 130.99,
+          "e": 131.23,
+          "c": 0.998213
+        },
+        {
+          "w": "important",
+          "s": 131.45,
+          "e": 132.18,
+          "c": 0.996776
+        },
+        {
+          "w": "because",
+          "s": 132.63,
+          "e": 132.96,
+          "c": 0.962549
+        },
+        {
+          "w": "it",
+          "s": 132.96,
+          "e": 133.14,
+          "c": 0.991533
+        },
+        {
+          "w": "has",
+          "s": 133.15,
+          "e": 133.44,
+          "c": 0.9926
+        },
+        {
+          "w": "made",
+          "s": 133.44,
+          "e": 133.83,
+          "c": 0.996567
+        },
+        {
+          "w": "our",
+          "s": 133.83,
+          "e": 134.12,
+          "c": 0.992424
+        },
+        {
+          "w": "business",
+          "s": 134.12,
+          "e": 135,
+          "c": 0.991919
+        },
+        {
+          "w": "grow.",
+          "s": 135.37,
+          "e": 136.3,
+          "c": 0.991586
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 136.27,
+      "end_s": 165.83,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "So, this is such an important moment for Cubans. We are worried about the future. And that's why we're here today representing our businesses, representing the rest of the Cuban entrepreneurs and all of our families, because our families depend on these changes and this relationship moving forward. So, our message is that we want the U.S.-Cuba relationship to continue.",
+      "words": [
+        {
+          "w": "So,",
+          "s": 136.272,
+          "e": 136.622,
+          "c": 0.282384
+        },
+        {
+          "w": "this",
+          "s": 136.692,
+          "e": 136.992,
+          "c": 0.998536
+        },
+        {
+          "w": "is",
+          "s": 136.992,
+          "e": 137.172,
+          "c": 0.99625
+        },
+        {
+          "w": "such",
+          "s": 137.172,
+          "e": 137.532,
+          "c": 0.994789
+        },
+        {
+          "w": "an",
+          "s": 137.532,
+          "e": 137.712,
+          "c": 0.995731
+        },
+        {
+          "w": "important",
+          "s": 137.712,
+          "e": 138.522,
+          "c": 0.99902
+        },
+        {
+          "w": "moment",
+          "s": 138.522,
+          "e": 138.912,
+          "c": 0.994617
+        },
+        {
+          "w": "for",
+          "s": 139.082,
+          "e": 139.462,
+          "c": 0.978398
+        },
+        {
+          "w": "Cubans.",
+          "s": 139.462,
+          "e": 140.652,
+          "c": 0.963766
+        },
+        {
+          "w": "We",
+          "s": 140.652,
+          "e": 140.842,
+          "c": 0.998243
+        },
+        {
+          "w": "are",
+          "s": 141.062,
+          "e": 141.122,
+          "c": 0.998426
+        },
+        {
+          "w": "worried",
+          "s": 141.122,
+          "e": 141.702,
+          "c": 0.998211
+        },
+        {
+          "w": "about",
+          "s": 141.892,
+          "e": 142.272,
+          "c": 0.99056
+        },
+        {
+          "w": "the",
+          "s": 142.272,
+          "e": 142.552,
+          "c": 0.998942
+        },
+        {
+          "w": "future.",
+          "s": 142.552,
+          "e": 143.172,
+          "c": 0.348902
+        },
+        {
+          "w": "And",
+          "s": 143.172,
+          "e": 143.392,
+          "c": 0.9741
+        },
+        {
+          "w": "that's",
+          "s": 143.582,
+          "e": 143.822,
+          "c": 0.915236
+        },
+        {
+          "w": "why",
+          "s": 143.882,
+          "e": 144.052,
+          "c": 0.998751
+        },
+        {
+          "w": "we're",
+          "s": 144.052,
+          "e": 144.432,
+          "c": 0.958565
+        },
+        {
+          "w": "here",
+          "s": 144.432,
+          "e": 144.732,
+          "c": 0.998721
+        },
+        {
+          "w": "today",
+          "s": 144.732,
+          "e": 145.152,
+          "c": 0.995004
+        },
+        {
+          "w": "representing",
+          "s": 145.152,
+          "e": 145.752,
+          "c": 0.587506
+        },
+        {
+          "w": "our",
+          "s": 145.942,
+          "e": 146.232,
+          "c": 0.952665
+        },
+        {
+          "w": "businesses,",
+          "s": 146.342,
+          "e": 147.252,
+          "c": 0.952943
+        },
+        {
+          "w": "representing",
+          "s": 147.672,
+          "e": 148.332,
+          "c": 0.998445
+        },
+        {
+          "w": "the",
+          "s": 148.492,
+          "e": 148.722,
+          "c": 0.998064
+        },
+        {
+          "w": "rest",
+          "s": 148.722,
+          "e": 149.112,
+          "c": 0.999472
+        },
+        {
+          "w": "of",
+          "s": 149.112,
+          "e": 149.302,
+          "c": 0.996875
+        },
+        {
+          "w": "the",
+          "s": 149.302,
+          "e": 149.592,
+          "c": 0.996873
+        },
+        {
+          "w": "Cuban",
+          "s": 149.592,
+          "e": 149.902,
+          "c": 0.995756
+        },
+        {
+          "w": "entrepreneurs",
+          "s": 150.112,
+          "e": 151.172,
+          "c": 0.980906
+        },
+        {
+          "w": "and",
+          "s": 151.412,
+          "e": 151.752,
+          "c": 0.24883
+        },
+        {
+          "w": "all",
+          "s": 151.822,
+          "e": 151.992,
+          "c": 0.877761
+        },
+        {
+          "w": "of",
+          "s": 151.992,
+          "e": 152.152,
+          "c": 0.889605
+        },
+        {
+          "w": "our",
+          "s": 152.152,
+          "e": 152.412,
+          "c": 0.897816
+        },
+        {
+          "w": "families,",
+          "s": 152.412,
+          "e": 152.992,
+          "c": 0.366487
+        },
+        {
+          "w": "because",
+          "s": 153.402,
+          "e": 153.522,
+          "c": 0.999342
+        },
+        {
+          "w": "our",
+          "s": 153.522,
+          "e": 153.742,
+          "c": 0.997314
+        },
+        {
+          "w": "families",
+          "s": 153.742,
+          "e": 154.352,
+          "c": 0.997259
+        },
+        {
+          "w": "depend",
+          "s": 154.352,
+          "e": 154.802,
+          "c": 0.994179
+        },
+        {
+          "w": "on",
+          "s": 154.802,
+          "e": 154.952,
+          "c": 0.990864
+        },
+        {
+          "w": "these",
+          "s": 154.952,
+          "e": 155.332,
+          "c": 0.912419
+        },
+        {
+          "w": "changes",
+          "s": 155.332,
+          "e": 155.662,
+          "c": 0.99488
+        },
+        {
+          "w": "and",
+          "s": 155.862,
+          "e": 156.052,
+          "c": 0.6187
+        },
+        {
+          "w": "this",
+          "s": 156.162,
+          "e": 156.332,
+          "c": 0.870459
+        },
+        {
+          "w": "relationship",
+          "s": 156.332,
+          "e": 156.912,
+          "c": 0.992296
+        },
+        {
+          "w": "moving",
+          "s": 157.562,
+          "e": 157.602,
+          "c": 0.985817
+        },
+        {
+          "w": "forward.",
+          "s": 157.602,
+          "e": 158.332,
+          "c": 0.990922
+        },
+        {
+          "w": "So,",
+          "s": 158.332,
+          "e": 158.912,
+          "c": 0.826427
+        },
+        {
+          "w": "our",
+          "s": 158.912,
+          "e": 159.342,
+          "c": 0.99879
+        },
+        {
+          "w": "message",
+          "s": 159.342,
+          "e": 160.362,
+          "c": 0.86753
+        },
+        {
+          "w": "is",
+          "s": 160.362,
+          "e": 160.652,
+          "c": 0.994078
+        },
+        {
+          "w": "that",
+          "s": 160.652,
+          "e": 160.982,
+          "c": 0.985817
+        },
+        {
+          "w": "we",
+          "s": 161.502,
+          "e": 161.522,
+          "c": 0.997002
+        },
+        {
+          "w": "want",
+          "s": 161.522,
+          "e": 162.132,
+          "c": 0.989685
+        },
+        {
+          "w": "the",
+          "s": 162.132,
+          "e": 162.412,
+          "c": 0.982105
+        },
+        {
+          "w": "U.S.-Cuba",
+          "s": 162.412,
+          "e": 163.652,
+          "c": 0.732773
+        },
+        {
+          "w": "relationship",
+          "s": 163.652,
+          "e": 164.812,
+          "c": 0.996837
+        },
+        {
+          "w": "to",
+          "s": 164.812,
+          "e": 165.002,
+          "c": 0.991312
+        },
+        {
+          "w": "continue.",
+          "s": 165.012,
+          "e": 165.832,
+          "c": 0.842065
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 165.84,
+      "end_s": 166.05,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "No",
+      "words": [
+        {
+          "w": "No",
+          "s": 165.84,
+          "e": 166.05,
+          "c": 0.351274
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 166.16,
+      "end_s": 171.06,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "nos den la espalda. Please, don't turn your",
+      "words": [
+        {
+          "w": "nos",
+          "s": 166.16,
+          "e": 166.42,
+          "c": 0.961743
+        },
+        {
+          "w": "den",
+          "s": 166.42,
+          "e": 166.68,
+          "c": 0.970042
+        },
+        {
+          "w": "la",
+          "s": 166.77,
+          "e": 167,
+          "c": 0.980681
+        },
+        {
+          "w": "espalda.",
+          "s": 167,
+          "e": 168.2,
+          "c": 0.852124
+        },
+        {
+          "w": "Please,",
+          "s": 168.52,
+          "e": 169.29,
+          "c": 0.414427
+        },
+        {
+          "w": "don't",
+          "s": 169.29,
+          "e": 169.94,
+          "c": 0.995947
+        },
+        {
+          "w": "turn",
+          "s": 169.97,
+          "e": 170.52,
+          "c": 0.996514
+        },
+        {
+          "w": "your",
+          "s": 170.58,
+          "e": 171.06,
+          "c": 0.996413
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 171.11,
+      "end_s": 171.89,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "back on",
+      "words": [
+        {
+          "w": "back",
+          "s": 171.11,
+          "e": 171.47,
+          "c": 0.998498
+        },
+        {
+          "w": "on",
+          "s": 171.62,
+          "e": 171.89,
+          "c": 0.998913
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 171.89,
+      "end_s": 193.1,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "us. And I want to release a letter. This letter has been written for all of us. It has been signed for me and for, well, three beautiful women and entrepreneurs also.",
+      "words": [
+        {
+          "w": "us.",
+          "s": 171.89,
+          "e": 172.62,
+          "c": 0.974488
+        },
+        {
+          "w": "And",
+          "s": 172.94,
+          "e": 173.46,
+          "c": 0.758411
+        },
+        {
+          "w": "I",
+          "s": 173.52,
+          "e": 173.76,
+          "c": 0.987204
+        },
+        {
+          "w": "want",
+          "s": 173.76,
+          "e": 174.32,
+          "c": 0.998157
+        },
+        {
+          "w": "to",
+          "s": 175,
+          "e": 175.47,
+          "c": 0.999224
+        },
+        {
+          "w": "release",
+          "s": 175.47,
+          "e": 177.24,
+          "c": 0.969906
+        },
+        {
+          "w": "a",
+          "s": 177.24,
+          "e": 177.75,
+          "c": 0.990622
+        },
+        {
+          "w": "letter.",
+          "s": 177.75,
+          "e": 180.38,
+          "c": 0.963448
+        },
+        {
+          "w": "This",
+          "s": 180.7,
+          "e": 180.98,
+          "c": 0.999146
+        },
+        {
+          "w": "letter",
+          "s": 180.98,
+          "e": 181.79,
+          "c": 0.998731
+        },
+        {
+          "w": "has",
+          "s": 181.79,
+          "e": 182.32,
+          "c": 0.958058
+        },
+        {
+          "w": "been",
+          "s": 182.76,
+          "e": 182.93,
+          "c": 0.991155
+        },
+        {
+          "w": "written",
+          "s": 182.93,
+          "e": 183.98,
+          "c": 0.989245
+        },
+        {
+          "w": "for",
+          "s": 183.98,
+          "e": 184.43,
+          "c": 0.996301
+        },
+        {
+          "w": "all",
+          "s": 184.43,
+          "e": 184.88,
+          "c": 0.998658
+        },
+        {
+          "w": "of",
+          "s": 184.88,
+          "e": 185.14,
+          "c": 0.995706
+        },
+        {
+          "w": "us.",
+          "s": 185.14,
+          "e": 185.52,
+          "c": 0.746797
+        },
+        {
+          "w": "It",
+          "s": 185.52,
+          "e": 185.69,
+          "c": 0.845251
+        },
+        {
+          "w": "has",
+          "s": 185.85,
+          "e": 186.17,
+          "c": 0.752606
+        },
+        {
+          "w": "been",
+          "s": 186.17,
+          "e": 186.69,
+          "c": 0.999285
+        },
+        {
+          "w": "signed",
+          "s": 186.69,
+          "e": 187.22,
+          "c": 0.992332
+        },
+        {
+          "w": "for",
+          "s": 187.56,
+          "e": 187.83,
+          "c": 0.994854
+        },
+        {
+          "w": "me",
+          "s": 187.9,
+          "e": 188.12,
+          "c": 0.998647
+        },
+        {
+          "w": "and",
+          "s": 188.33,
+          "e": 188.51,
+          "c": 0.818246
+        },
+        {
+          "w": "for,",
+          "s": 188.51,
+          "e": 189.2,
+          "c": 0.324744
+        },
+        {
+          "w": "well,",
+          "s": 189.2,
+          "e": 189.56,
+          "c": 0.951157
+        },
+        {
+          "w": "three",
+          "s": 189.88,
+          "e": 189.94,
+          "c": 0.991361
+        },
+        {
+          "w": "beautiful",
+          "s": 189.94,
+          "e": 190.62,
+          "c": 0.993981
+        },
+        {
+          "w": "women",
+          "s": 190.62,
+          "e": 190.99,
+          "c": 0.997054
+        },
+        {
+          "w": "and",
+          "s": 190.99,
+          "e": 191.22,
+          "c": 0.694642
+        },
+        {
+          "w": "entrepreneurs",
+          "s": 191.24,
+          "e": 192.24,
+          "c": 0.980826
+        },
+        {
+          "w": "also.",
+          "s": 192.38,
+          "e": 193.1,
+          "c": 0.861774
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 193.27,
+      "end_s": 197.44,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and for over 100 cuentapropistas,",
+      "words": [
+        {
+          "w": "and",
+          "s": 193.266,
+          "e": 193.686,
+          "c": 0.653385
+        },
+        {
+          "w": "for",
+          "s": 193.686,
+          "e": 194.316,
+          "c": 0.946907
+        },
+        {
+          "w": "over",
+          "s": 194.316,
+          "e": 194.976,
+          "c": 0.990616
+        },
+        {
+          "w": "100",
+          "s": 195.346,
+          "e": 196.106,
+          "c": 0.868676
+        },
+        {
+          "w": "cuentapropistas,",
+          "s": 196.206,
+          "e": 197.436,
+          "c": 0.469753
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 197.64,
+      "end_s": 199.86,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that's what we call the entrepreneurs",
+      "words": [
+        {
+          "w": "that's",
+          "s": 197.636,
+          "e": 197.886,
+          "c": 0.635308
+        },
+        {
+          "w": "what",
+          "s": 197.886,
+          "e": 198.186,
+          "c": 0.801837
+        },
+        {
+          "w": "we",
+          "s": 198.186,
+          "e": 198.276,
+          "c": 0.988197
+        },
+        {
+          "w": "call",
+          "s": 198.356,
+          "e": 198.636,
+          "c": 0.963012
+        },
+        {
+          "w": "the",
+          "s": 198.636,
+          "e": 198.866,
+          "c": 0.95144
+        },
+        {
+          "w": "entrepreneurs",
+          "s": 198.866,
+          "e": 199.856,
+          "c": 0.824654
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 199.86,
+      "end_s": 200.36,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "in Cuba.",
+      "words": [
+        {
+          "w": "in",
+          "s": 199.856,
+          "e": 199.996,
+          "c": 0.986671
+        },
+        {
+          "w": "Cuba.",
+          "s": 200.006,
+          "e": 200.356,
+          "c": 0.980002
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 200.56,
+      "end_s": 204.49,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Here we ask President-elect Donald",
+      "words": [
+        {
+          "w": "Here",
+          "s": 200.556,
+          "e": 201.296,
+          "c": 0.822452
+        },
+        {
+          "w": "we",
+          "s": 201.296,
+          "e": 201.766,
+          "c": 0.80561
+        },
+        {
+          "w": "ask",
+          "s": 201.766,
+          "e": 202.276,
+          "c": 0.591593
+        },
+        {
+          "w": "President-elect",
+          "s": 202.646,
+          "e": 203.916,
+          "c": 0.770981
+        },
+        {
+          "w": "Donald",
+          "s": 203.916,
+          "e": 204.486,
+          "c": 0.685661
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 204.5,
+      "end_s": 205.2,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Trump to",
+      "words": [
+        {
+          "w": "Trump",
+          "s": 204.496,
+          "e": 204.976,
+          "c": 0.994638
+        },
+        {
+          "w": "to",
+          "s": 205.196,
+          "e": 205.196,
+          "c": 0.993763
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 205.21,
+      "end_s": 218.92,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "continue the relations with our country, to build the progress, and also to invite him to come to Cuba and see the growth there, all the private business,",
+      "words": [
+        {
+          "w": "continue",
+          "s": 205.206,
+          "e": 206.016,
+          "c": 0.991925
+        },
+        {
+          "w": "the",
+          "s": 206.016,
+          "e": 206.316,
+          "c": 0.264406
+        },
+        {
+          "w": "relations",
+          "s": 206.316,
+          "e": 206.916,
+          "c": 0.974238
+        },
+        {
+          "w": "with",
+          "s": 207.286,
+          "e": 207.646,
+          "c": 0.997558
+        },
+        {
+          "w": "our",
+          "s": 207.646,
+          "e": 207.916,
+          "c": 0.998591
+        },
+        {
+          "w": "country,",
+          "s": 208.026,
+          "e": 208.736,
+          "c": 0.656213
+        },
+        {
+          "w": "to",
+          "s": 208.936,
+          "e": 208.966,
+          "c": 0.934575
+        },
+        {
+          "w": "build",
+          "s": 208.966,
+          "e": 209.526,
+          "c": 0.998357
+        },
+        {
+          "w": "the",
+          "s": 209.526,
+          "e": 209.876,
+          "c": 0.981437
+        },
+        {
+          "w": "progress,",
+          "s": 209.876,
+          "e": 210.816,
+          "c": 0.788999
+        },
+        {
+          "w": "and",
+          "s": 211.016,
+          "e": 211.216,
+          "c": 0.998963
+        },
+        {
+          "w": "also",
+          "s": 211.216,
+          "e": 211.596,
+          "c": 0.991093
+        },
+        {
+          "w": "to",
+          "s": 211.736,
+          "e": 212.006,
+          "c": 0.947679
+        },
+        {
+          "w": "invite",
+          "s": 212.006,
+          "e": 212.736,
+          "c": 0.999049
+        },
+        {
+          "w": "him",
+          "s": 213.106,
+          "e": 213.206,
+          "c": 0.99826
+        },
+        {
+          "w": "to",
+          "s": 213.206,
+          "e": 213.466,
+          "c": 0.993932
+        },
+        {
+          "w": "come",
+          "s": 213.466,
+          "e": 213.996,
+          "c": 0.999542
+        },
+        {
+          "w": "to",
+          "s": 213.996,
+          "e": 214.256,
+          "c": 0.998325
+        },
+        {
+          "w": "Cuba",
+          "s": 214.256,
+          "e": 214.836,
+          "c": 0.999487
+        },
+        {
+          "w": "and",
+          "s": 215.036,
+          "e": 215.146,
+          "c": 0.998738
+        },
+        {
+          "w": "see",
+          "s": 215.146,
+          "e": 215.456,
+          "c": 0.994395
+        },
+        {
+          "w": "the",
+          "s": 215.456,
+          "e": 215.756,
+          "c": 0.981472
+        },
+        {
+          "w": "growth",
+          "s": 215.766,
+          "e": 216.386,
+          "c": 0.98332
+        },
+        {
+          "w": "there,",
+          "s": 216.386,
+          "e": 217.086,
+          "c": 0.916506
+        },
+        {
+          "w": "all",
+          "s": 217.126,
+          "e": 217.366,
+          "c": 0.743106
+        },
+        {
+          "w": "the",
+          "s": 217.366,
+          "e": 217.616,
+          "c": 0.978974
+        },
+        {
+          "w": "private",
+          "s": 217.616,
+          "e": 218.206,
+          "c": 0.999077
+        },
+        {
+          "w": "business,",
+          "s": 218.206,
+          "e": 218.916,
+          "c": 0.599324
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 219.12,
+      "end_s": 225.79,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and to see how this relation has been good for us. Thank",
+      "words": [
+        {
+          "w": "and",
+          "s": 219.122,
+          "e": 219.722,
+          "c": 0.71463
+        },
+        {
+          "w": "to",
+          "s": 219.722,
+          "e": 220.262,
+          "c": 0.945318
+        },
+        {
+          "w": "see",
+          "s": 220.262,
+          "e": 221.072,
+          "c": 0.998757
+        },
+        {
+          "w": "how",
+          "s": 221.072,
+          "e": 221.912,
+          "c": 0.985893
+        },
+        {
+          "w": "this",
+          "s": 221.912,
+          "e": 222.242,
+          "c": 0.769376
+        },
+        {
+          "w": "relation",
+          "s": 222.252,
+          "e": 222.952,
+          "c": 0.868281
+        },
+        {
+          "w": "has",
+          "s": 222.952,
+          "e": 223.312,
+          "c": 0.405742
+        },
+        {
+          "w": "been",
+          "s": 223.312,
+          "e": 223.712,
+          "c": 0.99591
+        },
+        {
+          "w": "good",
+          "s": 223.782,
+          "e": 224.272,
+          "c": 0.992333
+        },
+        {
+          "w": "for",
+          "s": 224.272,
+          "e": 224.602,
+          "c": 0.989512
+        },
+        {
+          "w": "us.",
+          "s": 224.622,
+          "e": 225.172,
+          "c": 0.960749
+        },
+        {
+          "w": "Thank",
+          "s": 225.382,
+          "e": 225.792,
+          "c": 0.998982
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 225.79,
+      "end_s": 226.17,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you.",
+      "words": [
+        {
+          "w": "you.",
+          "s": 225.792,
+          "e": 226.172,
+          "c": 0.965612
+        }
+      ]
+    }
+  ]
+}

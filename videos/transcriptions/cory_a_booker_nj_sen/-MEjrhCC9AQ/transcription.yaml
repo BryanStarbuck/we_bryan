@@ -1,0 +1,135 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "In America, we have no kings."
+    Description: >-
+      A short direct-to-camera address by Senator Cory Booker urging Americans to
+      protest. He argues that the claim dissent is unpatriotic is "a lie" and what
+      "authoritarians try to make you believe", and asserts that President Donald Trump
+      is violating the Constitution and fundamental rights — a characterisation that is
+      Booker's own and is contested; the clip contains no specific act, ruling or
+      citation, and Trump is not present to answer it. He closes on the framing that
+      the United States is "not a nation of kings" but a democracy in which the power of
+      the people exceeds the people in power. The clip is exhortation, not argument from
+      evidence.
+    URL: "https://www.youtube.com/watch?v=-MEjrhCC9AQ"
+    Video_ID: "-MEjrhCC9AQ"
+    Show: "Senator Cory Booker"
+    Runtime: "00:01:23"
+    Language: "en"
+
+  Media:
+    File: "-MEjrhCC9AQ.m4a"
+    SHA256: "5da1cad7ebde770829113caf4cd76a58ecbb8135546d3e40448ba1dcdc1e9058"
+    Bytes: 1358748
+    Duration_Seconds: 83
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-MEjrhCC9AQ"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-MEjrhCC9AQ.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/cory_a_booker_nj_sen/-MEjrhCC9AQ/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC6FlymqNS1VettnVZa7goPA"
+    Uploader_ID: "@senbooker"
+    View_Count: 5169
+    Comment_Count: 105
+    Availability: "public"
+    Published_At: "2025-06-14T13:28:31+00:00"
+    Captured_At: "2026-09-10T04:32:46-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "54.8%"
+      Turns: 2
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "45.2%"
+      Turns: 1
+
+  Topics:
+    - "Right to protest and freedom of speech"
+    - "Accusations of constitutional violation"
+    - "Authoritarianism as a political frame"
+    - "Civic participation and voter mobilisation"
+
+  Source:
+    Canonical_ID: "3626d0589583686c"
+    Transcribed: "2026-09-10T04:35:06.109931-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 192
+    Segments: 6
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T04:32:46.818370-07:00"
+    Transcription_Finished: "2026-09-10T04:35:06.109931-07:00"
+    Recorded: "2025-06-14"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-MEjrhCC9AQ.ctm"
+    Fountain: "-MEjrhCC9AQ.fountain"
+    Diarization_RTTM: "-MEjrhCC9AQ.rttm"
+    As_Broadcast_Script: "-MEjrhCC9AQ.script.txt"
+    Segments_JSON: "-MEjrhCC9AQ.segments.json"
+    Segments_JSONL: "-MEjrhCC9AQ.segments.jsonl"
+    Subtitles_SRT: "-MEjrhCC9AQ.srt"
+    Plain_Text: "-MEjrhCC9AQ.transcription"
+    Subtitles_VTT: "-MEjrhCC9AQ.vtt"
+    Transcript_SHA256: "2674ce714448de76faf02b2e61219def967139bc905de8e8906744483b0cac63"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "cory_a_booker_nj_sen"
+    video_uid: "cory_a_booker_nj_sen::-MEjrhCC9AQ"
+    video_key: "-MEjrhCC9AQ"
+    youtube_id: "-MEjrhCC9AQ"
+    priority: 595
+    ceiling: 1000
+    raw_score: 595
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T10:15:12.024Z"
+    demand_run_id: "job_1789035300004_69"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-MEjrhCC9AQ"
+    source_ref: "-MEjrhCC9AQ"
+    subject_kind: "new_politician"

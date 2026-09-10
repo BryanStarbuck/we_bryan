@@ -1,0 +1,187 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Senator Hassan Pushes for Additional Resources to Address Children’s Mental Health Challenges"
+    Description: >-
+      Senator Maggie Hassan questions a panel on children's mental health during the
+      COVID-19 pandemic. She relays that New Hampshire K-12 students, from fifth graders
+      to high schoolers, spoke to her about mental health without hesitation, and says
+      paediatric mental-health emergency department visits rose sharply in 2020 while
+      access to primary care and in-school supports fell. She asks Dr. McDougall what
+      Congress can do to prepare paediatricians and primary care providers. The witnesses
+      describe an interprofessional model, training non-specialists including dentists and
+      OBGYNs to recognise behavioural health problems, and note that non-pharmacological
+      treatments have improved over thirty years but are still under-used because "it's
+      much easier to just give somebody a pill". Hassan closes on linking primary care to
+      community health workers on social determinants of health. The 2020 increase is
+      stated by her without a source named in the clip.
+    URL: "https://www.youtube.com/watch?v=-O_KciTKRSA"
+    Video_ID: "-O_KciTKRSA"
+    Show: "Senator Maggie Hassan"
+    Runtime: "00:05:54"
+    Language: "en"
+
+  Media:
+    File: "-O_KciTKRSA.m4a"
+    SHA256: "d93326474d50a3281be5ad2a8e088a6a59809ff583d9b75bab0c8e12ffb6e161"
+    Bytes: 5738869
+    Duration_Seconds: 354
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-O_KciTKRSA"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-O_KciTKRSA.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/margaret_wood_hassan_nh_sen/-O_KciTKRSA/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC4dD6MKchWaCEbfHo-VbQhA"
+    Uploader_ID: "@SenatorHassan"
+    View_Count: 63
+    Like_Count: 2
+    Comment_Count: 3
+    Availability: "public"
+    Published_At: "2021-05-20T16:13:38+00:00"
+    Captured_At: "2026-09-10T04:33:05-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "30.9%"
+      Turns: 4
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "11.4%"
+      Turns: 4
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "0.7%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "23.2%"
+      Turns: 3
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_09"
+      Share_Of_Speech: "8.5%"
+      Turns: 2
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_11"
+      Share_Of_Speech: "12.4%"
+      Turns: 1
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "10.6%"
+      Turns: 1
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_15"
+      Share_Of_Speech: "1.8%"
+      Turns: 1
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_18"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+
+  Topics:
+    - "Paediatric mental health during COVID-19"
+    - "Primary care and paediatrician readiness"
+    - "Interprofessional behavioural health training"
+    - "Social determinants of health"
+
+  Source:
+    Canonical_ID: "36aaa519430afad3"
+    Transcribed: "2026-09-10T04:40:40.088873-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 913
+    Segments: 35
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T04:33:07.466707-07:00"
+    Transcription_Finished: "2026-09-10T04:40:40.088873-07:00"
+    Recorded: "2021-05-20"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-O_KciTKRSA.ctm"
+    Fountain: "-O_KciTKRSA.fountain"
+    Diarization_RTTM: "-O_KciTKRSA.rttm"
+    As_Broadcast_Script: "-O_KciTKRSA.script.txt"
+    Segments_JSON: "-O_KciTKRSA.segments.json"
+    Segments_JSONL: "-O_KciTKRSA.segments.jsonl"
+    Subtitles_SRT: "-O_KciTKRSA.srt"
+    Plain_Text: "-O_KciTKRSA.transcription"
+    Subtitles_VTT: "-O_KciTKRSA.vtt"
+    Transcript_SHA256: "8611c7551f479539526123f64dcf2766c97ca6f70cd7fd566e41bfa92dd66862"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "margaret_wood_hassan_nh_sen"
+    video_uid: "margaret_wood_hassan_nh_sen::-O_KciTKRSA"
+    video_key: "-O_KciTKRSA"
+    youtube_id: "-O_KciTKRSA"
+    priority: 595
+    ceiling: 1000
+    raw_score: 595
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T11:29:48.986Z"
+    demand_run_id: "job_1789039766260_6"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-O_KciTKRSA"
+    source_ref: "-O_KciTKRSA"
+    subject_kind: "new_politician"

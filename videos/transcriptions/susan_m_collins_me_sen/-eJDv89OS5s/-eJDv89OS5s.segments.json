@@ -1,0 +1,1136 @@
+{
+  "schema_version": 2,
+  "canonical_id": "3c8308d0095162ab",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 90.2,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T11:35:49.080Z",
+  "text_sha256": "03365436a3fe8fe2ce9c773bc06e859ddb375fb3aa47d55639e92ef04f888d49",
+  "segments_sha256": "205ba8565e0263fa5d3d77bc49b6434f99975b30a706fd9692ed2c8a812cddf9",
+  "words_sha256": "c454f2076f98c34f9fc7192c8da5825a6c1205b92edfbd17e122f7965fec194d",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 3,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 1,
+    "clusters": 1,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 85.9
+      },
+      "clean_s": 85.9,
+      "speaking_s": 85.9,
+      "first_s": 4.38
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 4,
+      "end_s": 4.4,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 16,
+      "end_s": 16.2,
+      "segment_i": 2,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 27,
+      "end_s": 27,
+      "segment_i": 4,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 4,
+      "end_s": 4.4,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I have some",
+      "words": [
+        {
+          "w": "I",
+          "s": 4,
+          "e": 4,
+          "c": 0.276924
+        },
+        {
+          "w": "have",
+          "s": 4.08,
+          "e": 4.2,
+          "c": 0.959701
+        },
+        {
+          "w": "some",
+          "s": 4.4,
+          "e": 4.4,
+          "c": 0.990604
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 4.41,
+      "end_s": 15.3,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "great news. BIW and the Navy have completed their negotiations. That means that BIW will",
+      "words": [
+        {
+          "w": "great",
+          "s": 4.41,
+          "e": 4.65,
+          "c": 0.989885
+        },
+        {
+          "w": "news.",
+          "s": 4.65,
+          "e": 4.96,
+          "c": 0.708248
+        },
+        {
+          "w": "BIW",
+          "s": 5,
+          "e": 5.91,
+          "c": 0.888237
+        },
+        {
+          "w": "and",
+          "s": 5.91,
+          "e": 6.83,
+          "c": 0.980699
+        },
+        {
+          "w": "the",
+          "s": 6.83,
+          "e": 7.75,
+          "c": 0.985967
+        },
+        {
+          "w": "Navy",
+          "s": 9,
+          "e": 9,
+          "c": 0.942762
+        },
+        {
+          "w": "have",
+          "s": 9.08,
+          "e": 9.29,
+          "c": 0.956379
+        },
+        {
+          "w": "completed",
+          "s": 9.41,
+          "e": 9.96,
+          "c": 0.983649
+        },
+        {
+          "w": "their",
+          "s": 10.03,
+          "e": 10.5,
+          "c": 0.987219
+        },
+        {
+          "w": "negotiations.",
+          "s": 10.5,
+          "e": 11.99,
+          "c": 0.962063
+        },
+        {
+          "w": "That",
+          "s": 12,
+          "e": 12.75,
+          "c": 0.99636
+        },
+        {
+          "w": "means",
+          "s": 12.75,
+          "e": 13.68,
+          "c": 0.998372
+        },
+        {
+          "w": "that",
+          "s": 13.68,
+          "e": 14.43,
+          "c": 0.980999
+        },
+        {
+          "w": "BIW",
+          "s": 14.43,
+          "e": 15,
+          "c": 0.991841
+        },
+        {
+          "w": "will",
+          "s": 15,
+          "e": 15.3,
+          "c": 0.983781
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 16,
+      "end_s": 16.2,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "construct the",
+      "words": [
+        {
+          "w": "construct",
+          "s": 16,
+          "e": 16,
+          "c": 0.979329
+        },
+        {
+          "w": "the",
+          "s": 16.2,
+          "e": 16.2,
+          "c": 0.836612
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 16.41,
+      "end_s": 26.3,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "second and third ships in the DDG-1000 class of destroyers. With BIW already hard at",
+      "words": [
+        {
+          "w": "second",
+          "s": 16.41,
+          "e": 16.95,
+          "c": 0.856384
+        },
+        {
+          "w": "and",
+          "s": 17,
+          "e": 17.23,
+          "c": 0.732884
+        },
+        {
+          "w": "third",
+          "s": 17.23,
+          "e": 17.61,
+          "c": 0.827344
+        },
+        {
+          "w": "ships",
+          "s": 17.61,
+          "e": 18,
+          "c": 0.824438
+        },
+        {
+          "w": "in",
+          "s": 18,
+          "e": 18.24,
+          "c": 0.997116
+        },
+        {
+          "w": "the",
+          "s": 18.24,
+          "e": 18.6,
+          "c": 0.996848
+        },
+        {
+          "w": "DDG-1000",
+          "s": 18.6,
+          "e": 20.54,
+          "c": 0.784242
+        },
+        {
+          "w": "class",
+          "s": 20.54,
+          "e": 21.15,
+          "c": 0.884322
+        },
+        {
+          "w": "of",
+          "s": 21.15,
+          "e": 21.39,
+          "c": 0.994937
+        },
+        {
+          "w": "destroyers.",
+          "s": 22.08,
+          "e": 22.95,
+          "c": 0.931876
+        },
+        {
+          "w": "With",
+          "s": 23,
+          "e": 23.66,
+          "c": 0.997917
+        },
+        {
+          "w": "BIW",
+          "s": 23.66,
+          "e": 24.15,
+          "c": 0.996111
+        },
+        {
+          "w": "already",
+          "s": 24.15,
+          "e": 25.31,
+          "c": 0.996137
+        },
+        {
+          "w": "hard",
+          "s": 25.31,
+          "e": 25.97,
+          "c": 0.995008
+        },
+        {
+          "w": "at",
+          "s": 25.97,
+          "e": 26.3,
+          "c": 0.97247
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 27,
+      "end_s": 27.01,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "work,",
+      "words": [
+        {
+          "w": "work,",
+          "s": 27,
+          "e": 27,
+          "c": 0.552582
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 27,
+      "end_s": 56.52,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "On the first DDG-1000, this agreement means that the yard will receive approximately $3 billion in work. This agreement is a testament to the highly skilled and hardworking men and women of Bath Iron Works. It's also a win for the Navy. It will give the Navy cutting edge destroyers at affordable prices.",
+      "words": [
+        {
+          "w": "On",
+          "s": 26.967,
+          "e": 27.187,
+          "c": 0.907
+        },
+        {
+          "w": "the",
+          "s": 27.187,
+          "e": 27.367,
+          "c": 0.998441
+        },
+        {
+          "w": "first",
+          "s": 27.557,
+          "e": 28.097,
+          "c": 0.969427
+        },
+        {
+          "w": "DDG-1000,",
+          "s": 28.097,
+          "e": 30.127,
+          "c": 0.521975
+        },
+        {
+          "w": "this",
+          "s": 30.127,
+          "e": 30.357,
+          "c": 0.736894
+        },
+        {
+          "w": "agreement",
+          "s": 30.517,
+          "e": 31.187,
+          "c": 0.979225
+        },
+        {
+          "w": "means",
+          "s": 31.337,
+          "e": 31.767,
+          "c": 0.849145
+        },
+        {
+          "w": "that",
+          "s": 31.967,
+          "e": 32.337,
+          "c": 0.997822
+        },
+        {
+          "w": "the",
+          "s": 32.337,
+          "e": 32.617,
+          "c": 0.983061
+        },
+        {
+          "w": "yard",
+          "s": 32.617,
+          "e": 32.997,
+          "c": 0.62501
+        },
+        {
+          "w": "will",
+          "s": 32.997,
+          "e": 33.297,
+          "c": 0.997423
+        },
+        {
+          "w": "receive",
+          "s": 33.387,
+          "e": 34.057,
+          "c": 0.997031
+        },
+        {
+          "w": "approximately",
+          "s": 34.057,
+          "e": 35.097,
+          "c": 0.799699
+        },
+        {
+          "w": "$3",
+          "s": 35.097,
+          "e": 35.347,
+          "c": 0.501508
+        },
+        {
+          "w": "billion",
+          "s": 35.517,
+          "e": 36.057,
+          "c": 0.98241
+        },
+        {
+          "w": "in",
+          "s": 36.057,
+          "e": 36.587,
+          "c": 0.565109
+        },
+        {
+          "w": "work.",
+          "s": 36.587,
+          "e": 38.477,
+          "c": 0.996179
+        },
+        {
+          "w": "This",
+          "s": 38.487,
+          "e": 38.877,
+          "c": 0.999192
+        },
+        {
+          "w": "agreement",
+          "s": 38.877,
+          "e": 39.777,
+          "c": 0.997902
+        },
+        {
+          "w": "is",
+          "s": 39.777,
+          "e": 39.977,
+          "c": 0.997976
+        },
+        {
+          "w": "a",
+          "s": 39.977,
+          "e": 40.077,
+          "c": 0.991512
+        },
+        {
+          "w": "testament",
+          "s": 40.077,
+          "e": 40.997,
+          "c": 0.994685
+        },
+        {
+          "w": "to",
+          "s": 40.997,
+          "e": 41.127,
+          "c": 0.915816
+        },
+        {
+          "w": "the",
+          "s": 41.177,
+          "e": 41.327,
+          "c": 0.991074
+        },
+        {
+          "w": "highly",
+          "s": 41.547,
+          "e": 41.937,
+          "c": 0.991658
+        },
+        {
+          "w": "skilled",
+          "s": 42.037,
+          "e": 43.017,
+          "c": 0.899268
+        },
+        {
+          "w": "and",
+          "s": 43.027,
+          "e": 43.287,
+          "c": 0.999901
+        },
+        {
+          "w": "hardworking",
+          "s": 43.337,
+          "e": 44.487,
+          "c": 0.691014
+        },
+        {
+          "w": "men",
+          "s": 44.487,
+          "e": 44.797,
+          "c": 0.997156
+        },
+        {
+          "w": "and",
+          "s": 44.797,
+          "e": 45.107,
+          "c": 0.997061
+        },
+        {
+          "w": "women",
+          "s": 45.107,
+          "e": 45.637,
+          "c": 0.998771
+        },
+        {
+          "w": "of",
+          "s": 45.637,
+          "e": 45.677,
+          "c": 0.989255
+        },
+        {
+          "w": "Bath",
+          "s": 46.087,
+          "e": 46.267,
+          "c": 0.831938
+        },
+        {
+          "w": "Iron",
+          "s": 46.267,
+          "e": 46.647,
+          "c": 0.728142
+        },
+        {
+          "w": "Works.",
+          "s": 46.757,
+          "e": 47.597,
+          "c": 0.712209
+        },
+        {
+          "w": "It's",
+          "s": 47.607,
+          "e": 48.007,
+          "c": 0.990837
+        },
+        {
+          "w": "also",
+          "s": 48.197,
+          "e": 48.487,
+          "c": 0.999296
+        },
+        {
+          "w": "a",
+          "s": 48.627,
+          "e": 48.657,
+          "c": 0.998458
+        },
+        {
+          "w": "win",
+          "s": 48.657,
+          "e": 48.937,
+          "c": 0.998386
+        },
+        {
+          "w": "for",
+          "s": 49.027,
+          "e": 49.377,
+          "c": 0.999512
+        },
+        {
+          "w": "the",
+          "s": 49.377,
+          "e": 49.737,
+          "c": 0.998521
+        },
+        {
+          "w": "Navy.",
+          "s": 49.737,
+          "e": 50.307,
+          "c": 0.947341
+        },
+        {
+          "w": "It",
+          "s": 50.607,
+          "e": 50.767,
+          "c": 0.999325
+        },
+        {
+          "w": "will",
+          "s": 50.767,
+          "e": 51.007,
+          "c": 0.999155
+        },
+        {
+          "w": "give",
+          "s": 51.197,
+          "e": 51.457,
+          "c": 0.997362
+        },
+        {
+          "w": "the",
+          "s": 51.467,
+          "e": 51.727,
+          "c": 0.999112
+        },
+        {
+          "w": "Navy",
+          "s": 51.727,
+          "e": 52.117,
+          "c": 0.987895
+        },
+        {
+          "w": "cutting",
+          "s": 52.117,
+          "e": 52.687,
+          "c": 0.98241
+        },
+        {
+          "w": "edge",
+          "s": 52.687,
+          "e": 52.987,
+          "c": 0.684722
+        },
+        {
+          "w": "destroyers",
+          "s": 53.007,
+          "e": 53.997,
+          "c": 0.913676
+        },
+        {
+          "w": "at",
+          "s": 54.007,
+          "e": 54.237,
+          "c": 0.998416
+        },
+        {
+          "w": "affordable",
+          "s": 54.237,
+          "e": 55.337,
+          "c": 0.998184
+        },
+        {
+          "w": "prices.",
+          "s": 55.427,
+          "e": 56.517,
+          "c": 0.996582
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 56.71,
+      "end_s": 90.2,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Over the past several years, I have worked so hard to ensure that the Navy has the funds that it needs to meet our military requirements. More recently, I've also worked hard with the Navy and Bath Iron Works to bring the two sides together to urge them to conclude these vital negotiations. This agreement will help to ensure a steady workload for our shipyard for years to come.",
+      "words": [
+        {
+          "w": "Over",
+          "s": 56.714,
+          "e": 56.844,
+          "c": 0.963833
+        },
+        {
+          "w": "the",
+          "s": 56.844,
+          "e": 57.124,
+          "c": 0.999542
+        },
+        {
+          "w": "past",
+          "s": 57.124,
+          "e": 57.504,
+          "c": 0.997702
+        },
+        {
+          "w": "several",
+          "s": 57.504,
+          "e": 58.174,
+          "c": 0.996641
+        },
+        {
+          "w": "years,",
+          "s": 58.174,
+          "e": 58.834,
+          "c": 0.767663
+        },
+        {
+          "w": "I",
+          "s": 58.964,
+          "e": 58.974,
+          "c": 0.942691
+        },
+        {
+          "w": "have",
+          "s": 58.974,
+          "e": 59.404,
+          "c": 0.989697
+        },
+        {
+          "w": "worked",
+          "s": 59.404,
+          "e": 60.074,
+          "c": 0.993605
+        },
+        {
+          "w": "so",
+          "s": 60.074,
+          "e": 60.174,
+          "c": 0.989459
+        },
+        {
+          "w": "hard",
+          "s": 60.334,
+          "e": 60.704,
+          "c": 0.992704
+        },
+        {
+          "w": "to",
+          "s": 61.064,
+          "e": 61.264,
+          "c": 0.843187
+        },
+        {
+          "w": "ensure",
+          "s": 61.264,
+          "e": 61.804,
+          "c": 0.973158
+        },
+        {
+          "w": "that",
+          "s": 61.804,
+          "e": 62.074,
+          "c": 0.936663
+        },
+        {
+          "w": "the",
+          "s": 62.214,
+          "e": 62.304,
+          "c": 0.977441
+        },
+        {
+          "w": "Navy",
+          "s": 62.304,
+          "e": 62.624,
+          "c": 0.96699
+        },
+        {
+          "w": "has",
+          "s": 62.704,
+          "e": 63.184,
+          "c": 0.965151
+        },
+        {
+          "w": "the",
+          "s": 63.184,
+          "e": 63.474,
+          "c": 0.970049
+        },
+        {
+          "w": "funds",
+          "s": 63.624,
+          "e": 63.874,
+          "c": 0.987342
+        },
+        {
+          "w": "that",
+          "s": 64.054,
+          "e": 64.174,
+          "c": 0.618598
+        },
+        {
+          "w": "it",
+          "s": 64.204,
+          "e": 64.304,
+          "c": 0.98119
+        },
+        {
+          "w": "needs",
+          "s": 64.434,
+          "e": 64.814,
+          "c": 0.98522
+        },
+        {
+          "w": "to",
+          "s": 64.874,
+          "e": 65.144,
+          "c": 0.834315
+        },
+        {
+          "w": "meet",
+          "s": 65.384,
+          "e": 65.594,
+          "c": 0.992392
+        },
+        {
+          "w": "our",
+          "s": 65.594,
+          "e": 65.924,
+          "c": 0.998382
+        },
+        {
+          "w": "military",
+          "s": 65.924,
+          "e": 66.844,
+          "c": 0.990566
+        },
+        {
+          "w": "requirements.",
+          "s": 66.844,
+          "e": 67.844,
+          "c": 0.988067
+        },
+        {
+          "w": "More",
+          "s": 68.114,
+          "e": 68.244,
+          "c": 0.997318
+        },
+        {
+          "w": "recently,",
+          "s": 68.264,
+          "e": 69.264,
+          "c": 0.998757
+        },
+        {
+          "w": "I've",
+          "s": 69.264,
+          "e": 69.664,
+          "c": 0.984975
+        },
+        {
+          "w": "also",
+          "s": 69.664,
+          "e": 70.044,
+          "c": 0.999905
+        },
+        {
+          "w": "worked",
+          "s": 70.084,
+          "e": 70.664,
+          "c": 0.999941
+        },
+        {
+          "w": "hard",
+          "s": 70.664,
+          "e": 70.974,
+          "c": 0.999882
+        },
+        {
+          "w": "with",
+          "s": 71.134,
+          "e": 71.464,
+          "c": 0.999981
+        },
+        {
+          "w": "the",
+          "s": 71.464,
+          "e": 71.764,
+          "c": 0.999184
+        },
+        {
+          "w": "Navy",
+          "s": 71.764,
+          "e": 72.104,
+          "c": 0.99992
+        },
+        {
+          "w": "and",
+          "s": 72.194,
+          "e": 72.464,
+          "c": 0.961371
+        },
+        {
+          "w": "Bath",
+          "s": 72.554,
+          "e": 72.864,
+          "c": 0.82675
+        },
+        {
+          "w": "Iron",
+          "s": 72.864,
+          "e": 73.264,
+          "c": 0.918045
+        },
+        {
+          "w": "Works",
+          "s": 73.264,
+          "e": 73.764,
+          "c": 0.910227
+        },
+        {
+          "w": "to",
+          "s": 73.764,
+          "e": 73.964,
+          "c": 0.993314
+        },
+        {
+          "w": "bring",
+          "s": 73.964,
+          "e": 74.464,
+          "c": 0.999973
+        },
+        {
+          "w": "the",
+          "s": 74.464,
+          "e": 74.674,
+          "c": 0.999994
+        },
+        {
+          "w": "two",
+          "s": 74.764,
+          "e": 75.064,
+          "c": 0.999847
+        },
+        {
+          "w": "sides",
+          "s": 75.064,
+          "e": 75.554,
+          "c": 0.999907
+        },
+        {
+          "w": "together",
+          "s": 75.564,
+          "e": 76.214,
+          "c": 0.999876
+        },
+        {
+          "w": "to",
+          "s": 76.394,
+          "e": 76.624,
+          "c": 0.961949
+        },
+        {
+          "w": "urge",
+          "s": 76.784,
+          "e": 77.064,
+          "c": 0.999765
+        },
+        {
+          "w": "them",
+          "s": 77.064,
+          "e": 77.504,
+          "c": 0.999943
+        },
+        {
+          "w": "to",
+          "s": 77.504,
+          "e": 77.724,
+          "c": 0.999807
+        },
+        {
+          "w": "conclude",
+          "s": 77.724,
+          "e": 78.594,
+          "c": 0.999796
+        },
+        {
+          "w": "these",
+          "s": 78.744,
+          "e": 79.154,
+          "c": 0.99939
+        },
+        {
+          "w": "vital",
+          "s": 79.154,
+          "e": 79.484,
+          "c": 0.999804
+        },
+        {
+          "w": "negotiations.",
+          "s": 79.894,
+          "e": 81.404,
+          "c": 0.999287
+        },
+        {
+          "w": "This",
+          "s": 82.294,
+          "e": 82.474,
+          "c": 0.975115
+        },
+        {
+          "w": "agreement",
+          "s": 82.474,
+          "e": 83.444,
+          "c": 0.976045
+        },
+        {
+          "w": "will",
+          "s": 83.444,
+          "e": 83.874,
+          "c": 0.997297
+        },
+        {
+          "w": "help",
+          "s": 83.874,
+          "e": 84.284,
+          "c": 0.997643
+        },
+        {
+          "w": "to",
+          "s": 84.294,
+          "e": 84.414,
+          "c": 0.99212
+        },
+        {
+          "w": "ensure",
+          "s": 84.544,
+          "e": 85.144,
+          "c": 0.978131
+        },
+        {
+          "w": "a",
+          "s": 85.264,
+          "e": 85.264,
+          "c": 0.994662
+        },
+        {
+          "w": "steady",
+          "s": 85.314,
+          "e": 85.834,
+          "c": 0.998852
+        },
+        {
+          "w": "workload",
+          "s": 85.904,
+          "e": 86.774,
+          "c": 0.964645
+        },
+        {
+          "w": "for",
+          "s": 86.774,
+          "e": 87.064,
+          "c": 0.996761
+        },
+        {
+          "w": "our",
+          "s": 87.184,
+          "e": 87.414,
+          "c": 0.996658
+        },
+        {
+          "w": "shipyard",
+          "s": 87.414,
+          "e": 88.204,
+          "c": 0.97724
+        },
+        {
+          "w": "for",
+          "s": 88.284,
+          "e": 88.594,
+          "c": 0.991452
+        },
+        {
+          "w": "years",
+          "s": 88.594,
+          "e": 89.054,
+          "c": 0.998258
+        },
+        {
+          "w": "to",
+          "s": 89.204,
+          "e": 89.344,
+          "c": 0.999329
+        },
+        {
+          "w": "come.",
+          "s": 89.344,
+          "e": 90.204,
+          "c": 0.988523
+        }
+      ]
+    }
+  ]
+}

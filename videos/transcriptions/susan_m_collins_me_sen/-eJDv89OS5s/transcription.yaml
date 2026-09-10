@@ -1,0 +1,125 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Senator Collins Announces BIW and Navy Reach an Agreement on DDG-1000; Great News for Maine Jobs!"
+    Description: >-
+      Senator Susan Collins announces that Bath Iron Works and the Navy have concluded
+      negotiations, so BIW will build the second and third ships of the DDG-1000
+      destroyer class — work she puts at roughly $3 billion for the yard. She credits
+      the workforce, calls the outcome a win for the Navy on cost, and describes her own
+      role as pressing for Navy funding and bringing the two sides together. The dollar
+      figure and the claim of personal influence are hers as stated in the announcement.
+    URL: "https://www.youtube.com/watch?v=-eJDv89OS5s"
+    Video_ID: "-eJDv89OS5s"
+    Show: "SenatorSusanCollins"
+    Runtime: "00:01:32"
+    Language: "en"
+
+  Media:
+    File: "-eJDv89OS5s.m4a"
+    SHA256: "6a1a0d8501a62f10cd93157c4bf40e5a421bab1914d97b2ac4b96b2bb46c93b5"
+    Bytes: 1493935
+    Duration_Seconds: 92
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-eJDv89OS5s"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-eJDv89OS5s.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/susan_m_collins_me_sen/-eJDv89OS5s/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC6GYaBx5kT2r4PN8KENxC-w"
+    Uploader_ID: "@SenatorSusanCollins"
+    View_Count: 487
+    Availability: "public"
+    Published_At: "2011-07-26T21:47:16+00:00"
+    Captured_At: "2026-09-10T04:33:36-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 3
+
+  Topics:
+    - "Bath Iron Works shipbuilding contract"
+    - "DDG-1000 destroyer program"
+    - "Defense appropriations and Navy funding"
+    - "Maine shipyard jobs"
+
+  Source:
+    Canonical_ID: "3c8308d0095162ab"
+    Transcribed: "2026-09-10T04:35:49.590506-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 158
+    Segments: 7
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T04:33:37.331472-07:00"
+    Transcription_Finished: "2026-09-10T04:35:49.590506-07:00"
+    Recorded: "2011-07-26"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-eJDv89OS5s.ctm"
+    Fountain: "-eJDv89OS5s.fountain"
+    Diarization_RTTM: "-eJDv89OS5s.rttm"
+    As_Broadcast_Script: "-eJDv89OS5s.script.txt"
+    Segments_JSON: "-eJDv89OS5s.segments.json"
+    Segments_JSONL: "-eJDv89OS5s.segments.jsonl"
+    Subtitles_SRT: "-eJDv89OS5s.srt"
+    Plain_Text: "-eJDv89OS5s.transcription"
+    Subtitles_VTT: "-eJDv89OS5s.vtt"
+    Transcript_SHA256: "03365436a3fe8fe2ce9c773bc06e859ddb375fb3aa47d55639e92ef04f888d49"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "susan_m_collins_me_sen"
+    video_uid: "susan_m_collins_me_sen::-eJDv89OS5s"
+    video_key: "-eJDv89OS5s"
+    youtube_id: "-eJDv89OS5s"
+    priority: 595
+    ceiling: 1000
+    raw_score: 595
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T10:15:12.024Z"
+    demand_run_id: "job_1789035300004_69"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-eJDv89OS5s"
+    source_ref: "-eJDv89OS5s"
+    subject_kind: "new_politician"

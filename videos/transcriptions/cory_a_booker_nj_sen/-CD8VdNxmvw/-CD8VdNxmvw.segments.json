@@ -1,0 +1,7337 @@
+{
+  "schema_version": 2,
+  "canonical_id": "6e3946d95ec29a5f",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 429.99,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T11:42:42.737Z",
+  "text_sha256": "fb839deda26655f37b4a43c05e5d126281593e498782846583fd060eba88e7cb",
+  "segments_sha256": "45b91aadb9c2ca481a529483748dc4bce54da3690cb3ed90b2b980b43dcc090c",
+  "words_sha256": "202571f1f9214e53bb4e299b71b8c0a2737d05458825e89d6b7ef92d61295335",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 17,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 71,
+    "clusters": 19,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 21.8
+      },
+      "clean_s": 21.8,
+      "speaking_s": 21.8,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_01",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 6.4
+      },
+      "clean_s": 6.4,
+      "speaking_s": 6.4,
+      "first_s": 9.97
+    },
+    {
+      "id": "SPEAKER_02",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 7.1
+      },
+      "clean_s": 7.1,
+      "speaking_s": 7.1,
+      "first_s": 19.98
+    },
+    {
+      "id": "SPEAKER_04",
+      "n": 4,
+      "label": "Speaker 4 (higher-pitched voice)",
+      "voice": {
+        "descriptor": "woman",
+        "p": 0.8,
+        "confidence": "low",
+        "clean_s": 14.1
+      },
+      "clean_s": 14.1,
+      "speaking_s": 14.1,
+      "first_s": 32.99
+    },
+    {
+      "id": "SPEAKER_05",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 7.4
+      },
+      "clean_s": 7.4,
+      "speaking_s": 7.8,
+      "first_s": 52.97
+    },
+    {
+      "id": "SPEAKER_06",
+      "n": 6,
+      "label": "Speaker 6 (higher-pitched voice)",
+      "voice": {
+        "descriptor": "woman",
+        "p": 0.89,
+        "confidence": "low",
+        "clean_s": 84.9
+      },
+      "clean_s": 84.9,
+      "speaking_s": 85.8,
+      "first_s": 61.37
+    },
+    {
+      "id": "SPEAKER_07",
+      "n": 7,
+      "label": "Woman 7",
+      "voice": {
+        "descriptor": "woman",
+        "p": 0.95,
+        "confidence": "high",
+        "clean_s": 21.4
+      },
+      "clean_s": 21.4,
+      "speaking_s": 21.4,
+      "first_s": 73.98
+    },
+    {
+      "id": "SPEAKER_08",
+      "n": 8,
+      "label": "Woman 8",
+      "voice": {
+        "descriptor": "woman",
+        "p": 0.91,
+        "confidence": "high",
+        "clean_s": 40.7
+      },
+      "clean_s": 40.7,
+      "speaking_s": 41.1,
+      "first_s": 95.97
+    },
+    {
+      "id": "SPEAKER_10",
+      "n": 9,
+      "label": "Speaker 9",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 8.2
+      },
+      "clean_s": 8.2,
+      "speaking_s": 8.6,
+      "first_s": 124.03
+    },
+    {
+      "id": "SPEAKER_12",
+      "n": 10,
+      "label": "Speaker 10",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.3
+      },
+      "clean_s": 5.3,
+      "speaking_s": 5.3,
+      "first_s": 153.96
+    },
+    {
+      "id": "SPEAKER_13",
+      "n": 11,
+      "label": "Speaker 11",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 9.5
+      },
+      "clean_s": 9.5,
+      "speaking_s": 9.5,
+      "first_s": 163.62
+    },
+    {
+      "id": "SPEAKER_14",
+      "n": 12,
+      "label": "Speaker 12 (higher-pitched voice)",
+      "voice": {
+        "descriptor": "woman",
+        "p": 0.86,
+        "confidence": "low",
+        "clean_s": 47.3
+      },
+      "clean_s": 47.3,
+      "speaking_s": 47.3,
+      "first_s": 189.28
+    },
+    {
+      "id": "SPEAKER_16",
+      "n": 13,
+      "label": "Speaker 13",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.6
+      },
+      "clean_s": 0.6,
+      "speaking_s": 1.1,
+      "first_s": 278.97
+    },
+    {
+      "id": "SPEAKER_18",
+      "n": 14,
+      "label": "Speaker 14",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.3
+      },
+      "clean_s": 4.3,
+      "speaking_s": 4.3,
+      "first_s": 301.98
+    },
+    {
+      "id": "SPEAKER_09",
+      "n": 15,
+      "label": "Speaker 15",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 7.7
+      },
+      "clean_s": 7.7,
+      "speaking_s": 7.7,
+      "first_s": 340.82
+    },
+    {
+      "id": "SPEAKER_19",
+      "n": 16,
+      "label": "Speaker 16",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 16.8
+      },
+      "clean_s": 16.8,
+      "speaking_s": 16.8,
+      "first_s": 349.34
+    },
+    {
+      "id": "SPEAKER_20",
+      "n": 17,
+      "label": "Speaker 17",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 11
+      },
+      "clean_s": 11,
+      "speaking_s": 11,
+      "first_s": 402.03
+    },
+    {
+      "id": "SPEAKER_21",
+      "n": 18,
+      "label": "Speaker 18",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 3.1
+      },
+      "clean_s": 3.1,
+      "speaking_s": 3.1,
+      "first_s": 417.52
+    },
+    {
+      "id": "SPEAKER_23",
+      "n": 19,
+      "label": "Speaker 19",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.7
+      },
+      "clean_s": 1.7,
+      "speaking_s": 1.7,
+      "first_s": 428.37
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 8.23,
+      "end_s": 9.26,
+      "segment_i": 1,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 11.63,
+      "end_s": 12.87,
+      "segment_i": 4,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 16.32,
+      "end_s": 17.77,
+      "segment_i": 6,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 22.06,
+      "end_s": 22.72,
+      "segment_i": 9,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 22.72,
+      "end_s": 23.51,
+      "segment_i": 10,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 36.76,
+      "end_s": 37.85,
+      "segment_i": 13,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 44.43,
+      "end_s": 46.03,
+      "segment_i": 15,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 48.87,
+      "end_s": 49.86,
+      "segment_i": 17,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 49.86,
+      "end_s": 51.01,
+      "segment_i": 18,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 63.44,
+      "end_s": 65.94,
+      "segment_i": 21,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 77.89,
+      "end_s": 78.46,
+      "segment_i": 24,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 83.34,
+      "end_s": 84.16,
+      "segment_i": 26,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 125.41,
+      "end_s": 127.28,
+      "segment_i": 31,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 130.82,
+      "end_s": 131.27,
+      "segment_i": 34,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 142.64,
+      "end_s": 146.14,
+      "segment_i": 36,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 159.67,
+      "end_s": 163.38,
+      "segment_i": 40,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 173.49,
+      "end_s": 175.85,
+      "segment_i": 42,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 178.76,
+      "end_s": 179.08,
+      "segment_i": 44,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 185.92,
+      "end_s": 187.38,
+      "segment_i": 47,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 209.89,
+      "end_s": 210.95,
+      "segment_i": 49,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 210.91,
+      "end_s": 212.32,
+      "segment_i": 50,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 216.35,
+      "end_s": 218.18,
+      "segment_i": 52,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 227.72,
+      "end_s": 230.98,
+      "segment_i": 54,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 238.22,
+      "end_s": 239.59,
+      "segment_i": 56,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 239.58,
+      "end_s": 241.01,
+      "segment_i": 57,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 249.98,
+      "end_s": 250.89,
+      "segment_i": 59,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 279.87,
+      "end_s": 281.3,
+      "segment_i": 63,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 281.3,
+      "end_s": 282.2,
+      "segment_i": 64,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 300.4,
+      "end_s": 304.21,
+      "segment_i": 66,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 308.56,
+      "end_s": 309.09,
+      "segment_i": 68,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 331.89,
+      "end_s": 331.98,
+      "segment_i": 70,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 340.76,
+      "end_s": 340.76,
+      "segment_i": 73,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 346.69,
+      "end_s": 348.58,
+      "segment_i": 75,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 356.01,
+      "end_s": 356.49,
+      "segment_i": 78,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 356.45,
+      "end_s": 356.93,
+      "segment_i": 79,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 369.95,
+      "end_s": 371.86,
+      "segment_i": 82,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 374.41,
+      "end_s": 375.13,
+      "segment_i": 84,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 384,
+      "end_s": 384.28,
+      "segment_i": 86,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 392.94,
+      "end_s": 393.87,
+      "segment_i": 88,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 412.74,
+      "end_s": 412.8,
+      "segment_i": 91,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 417.07,
+      "end_s": 417.49,
+      "segment_i": 93,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 420.89,
+      "end_s": 427.18,
+      "segment_i": 95,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.26,
+      "end_s": 7.94,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Senator Brown and Senator Bennett for championing this issue for not this Congress, but for years.",
+      "words": [
+        {
+          "w": "Senator",
+          "s": 0.26,
+          "e": 0.48,
+          "c": 0.804526
+        },
+        {
+          "w": "Brown",
+          "s": 0.48,
+          "e": 0.82,
+          "c": 0.994262
+        },
+        {
+          "w": "and",
+          "s": 0.82,
+          "e": 0.98,
+          "c": 0.981845
+        },
+        {
+          "w": "Senator",
+          "s": 1.08,
+          "e": 1.5,
+          "c": 0.983022
+        },
+        {
+          "w": "Bennett",
+          "s": 1.5,
+          "e": 1.66,
+          "c": 0.801682
+        },
+        {
+          "w": "for",
+          "s": 1.66,
+          "e": 2.32,
+          "c": 0.591791
+        },
+        {
+          "w": "championing",
+          "s": 2.65,
+          "e": 3.52,
+          "c": 0.989392
+        },
+        {
+          "w": "this",
+          "s": 3.52,
+          "e": 3.81,
+          "c": 0.984235
+        },
+        {
+          "w": "issue",
+          "s": 3.89,
+          "e": 4.28,
+          "c": 0.997851
+        },
+        {
+          "w": "for",
+          "s": 4.28,
+          "e": 4.52,
+          "c": 0.700494
+        },
+        {
+          "w": "not",
+          "s": 4.89,
+          "e": 5.51,
+          "c": 0.792358
+        },
+        {
+          "w": "this",
+          "s": 5.65,
+          "e": 6.36,
+          "c": 0.986525
+        },
+        {
+          "w": "Congress,",
+          "s": 6.36,
+          "e": 6.95,
+          "c": 0.519194
+        },
+        {
+          "w": "but",
+          "s": 7.05,
+          "e": 7.13,
+          "c": 0.869999
+        },
+        {
+          "w": "for",
+          "s": 7.24,
+          "e": 7.36,
+          "c": 0.997636
+        },
+        {
+          "w": "years.",
+          "s": 7.36,
+          "e": 7.94,
+          "c": 0.765759
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 8.23,
+      "end_s": 9.26,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Before I came",
+      "words": [
+        {
+          "w": "Before",
+          "s": 8.23,
+          "e": 8.67,
+          "c": 0.999447
+        },
+        {
+          "w": "I",
+          "s": 8.67,
+          "e": 8.79,
+          "c": 0.999992
+        },
+        {
+          "w": "came",
+          "s": 8.79,
+          "e": 9.26,
+          "c": 0.999971
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 9.27,
+      "end_s": 9.51,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to",
+      "words": [
+        {
+          "w": "to",
+          "s": 9.27,
+          "e": 9.51,
+          "c": 0.999998
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 9.51,
+      "end_s": 11.63,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Washington, these",
+      "words": [
+        {
+          "w": "Washington,",
+          "s": 9.51,
+          "e": 10.97,
+          "c": 0.996928
+        },
+        {
+          "w": "these",
+          "s": 11.05,
+          "e": 11.63,
+          "c": 0.942718
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 11.63,
+      "end_s": 12.87,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "two men were",
+      "words": [
+        {
+          "w": "two",
+          "s": 11.63,
+          "e": 12,
+          "c": 0.999977
+        },
+        {
+          "w": "men",
+          "s": 12,
+          "e": 12.22,
+          "c": 0.999989
+        },
+        {
+          "w": "were",
+          "s": 12.22,
+          "e": 12.87,
+          "c": 0.999962
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 13.59,
+      "end_s": 15.85,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "standing up and talking about",
+      "words": [
+        {
+          "w": "standing",
+          "s": 13.59,
+          "e": 13.88,
+          "c": 0.999903
+        },
+        {
+          "w": "up",
+          "s": 13.94,
+          "e": 14.13,
+          "c": 0.999994
+        },
+        {
+          "w": "and",
+          "s": 14.25,
+          "e": 14.5,
+          "c": 0.999369
+        },
+        {
+          "w": "talking",
+          "s": 14.5,
+          "e": 15.38,
+          "c": 0.999882
+        },
+        {
+          "w": "about",
+          "s": 15.38,
+          "e": 15.85,
+          "c": 0.99914
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 16.32,
+      "end_s": 17.77,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the moral core of",
+      "words": [
+        {
+          "w": "the",
+          "s": 16.32,
+          "e": 16.47,
+          "c": 0.999704
+        },
+        {
+          "w": "moral",
+          "s": 16.47,
+          "e": 17.15,
+          "c": 0.999844
+        },
+        {
+          "w": "core",
+          "s": 17.15,
+          "e": 17.69,
+          "c": 0.999483
+        },
+        {
+          "w": "of",
+          "s": 17.69,
+          "e": 17.77,
+          "c": 1
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 17.77,
+      "end_s": 19.81,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "our country. If",
+      "words": [
+        {
+          "w": "our",
+          "s": 17.77,
+          "e": 18.37,
+          "c": 0.999985
+        },
+        {
+          "w": "country.",
+          "s": 18.71,
+          "e": 19.76,
+          "c": 0.993993
+        },
+        {
+          "w": "If",
+          "s": 19.76,
+          "e": 19.81,
+          "c": 0.959571
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 19.95,
+      "end_s": 21.96,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you want to see how a nation",
+      "words": [
+        {
+          "w": "you",
+          "s": 19.95,
+          "e": 20.22,
+          "c": 0.999996
+        },
+        {
+          "w": "want",
+          "s": 20.22,
+          "e": 20.42,
+          "c": 0.999905
+        },
+        {
+          "w": "to",
+          "s": 20.42,
+          "e": 20.8,
+          "c": 0.999998
+        },
+        {
+          "w": "see",
+          "s": 20.8,
+          "e": 21.08,
+          "c": 0.999987
+        },
+        {
+          "w": "how",
+          "s": 21.08,
+          "e": 21.36,
+          "c": 0.99999
+        },
+        {
+          "w": "a",
+          "s": 21.36,
+          "e": 21.45,
+          "c": 0.999989
+        },
+        {
+          "w": "nation",
+          "s": 21.71,
+          "e": 21.96,
+          "c": 0.999947
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 22.06,
+      "end_s": 22.72,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "is doing,",
+      "words": [
+        {
+          "w": "is",
+          "s": 22.06,
+          "e": 22.21,
+          "c": 0.999989
+        },
+        {
+          "w": "doing,",
+          "s": 22.21,
+          "e": 22.72,
+          "c": 0.757074
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 22.72,
+      "end_s": 23.51,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Don't look at",
+      "words": [
+        {
+          "w": "Don't",
+          "s": 22.72,
+          "e": 23.08,
+          "c": 0.761044
+        },
+        {
+          "w": "look",
+          "s": 23.08,
+          "e": 23.37,
+          "c": 0.997971
+        },
+        {
+          "w": "at",
+          "s": 23.51,
+          "e": 23.51,
+          "c": 0.997546
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 23.54,
+      "end_s": 33.2,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the buildings we build, how many billionaires we have, just look at children.",
+      "words": [
+        {
+          "w": "the",
+          "s": 23.54,
+          "e": 23.73,
+          "c": 0.990095
+        },
+        {
+          "w": "buildings",
+          "s": 23.73,
+          "e": 24.39,
+          "c": 0.991586
+        },
+        {
+          "w": "we",
+          "s": 24.39,
+          "e": 24.49,
+          "c": 0.991431
+        },
+        {
+          "w": "build,",
+          "s": 24.56,
+          "e": 25.09,
+          "c": 0.899853
+        },
+        {
+          "w": "how",
+          "s": 25.09,
+          "e": 25.28,
+          "c": 0.822952
+        },
+        {
+          "w": "many",
+          "s": 25.28,
+          "e": 25.52,
+          "c": 0.996843
+        },
+        {
+          "w": "billionaires",
+          "s": 25.52,
+          "e": 26.16,
+          "c": 0.995874
+        },
+        {
+          "w": "we",
+          "s": 26.28,
+          "e": 26.34,
+          "c": 0.993803
+        },
+        {
+          "w": "have,",
+          "s": 26.34,
+          "e": 26.58,
+          "c": 0.306421
+        },
+        {
+          "w": "just",
+          "s": 26.69,
+          "e": 26.91,
+          "c": 0.801518
+        },
+        {
+          "w": "look",
+          "s": 27.2,
+          "e": 27.58,
+          "c": 0.990242
+        },
+        {
+          "w": "at",
+          "s": 27.58,
+          "e": 27.71,
+          "c": 0.968309
+        },
+        {
+          "w": "children.",
+          "s": 27.77,
+          "e": 33.2,
+          "c": 0.883163
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 33.2,
+      "end_s": 36.64,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And what is galling me right now",
+      "words": [
+        {
+          "w": "And",
+          "s": 33.2,
+          "e": 33.61,
+          "c": 0.996782
+        },
+        {
+          "w": "what",
+          "s": 34.02,
+          "e": 34.16,
+          "c": 0.998904
+        },
+        {
+          "w": "is",
+          "s": 34.16,
+          "e": 34.43,
+          "c": 0.994977
+        },
+        {
+          "w": "galling",
+          "s": 34.43,
+          "e": 35.39,
+          "c": 0.959051
+        },
+        {
+          "w": "me",
+          "s": 35.39,
+          "e": 35.64,
+          "c": 0.998721
+        },
+        {
+          "w": "right",
+          "s": 35.66,
+          "e": 36.35,
+          "c": 0.947851
+        },
+        {
+          "w": "now",
+          "s": 36.35,
+          "e": 36.64,
+          "c": 0.999506
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 36.76,
+      "end_s": 37.85,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "is that we",
+      "words": [
+        {
+          "w": "is",
+          "s": 36.76,
+          "e": 37.03,
+          "c": 0.930023
+        },
+        {
+          "w": "that",
+          "s": 37.03,
+          "e": 37.07,
+          "c": 0.984414
+        },
+        {
+          "w": "we",
+          "s": 37.68,
+          "e": 37.85,
+          "c": 0.996065
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 37.85,
+      "end_s": 44.43,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "have come to the one yard line, we are at an inflection point in our",
+      "words": [
+        {
+          "w": "have",
+          "s": 37.85,
+          "e": 38.39,
+          "c": 0.972364
+        },
+        {
+          "w": "come",
+          "s": 38.39,
+          "e": 38.95,
+          "c": 0.997118
+        },
+        {
+          "w": "to",
+          "s": 38.95,
+          "e": 39.04,
+          "c": 0.99662
+        },
+        {
+          "w": "the",
+          "s": 39.21,
+          "e": 39.63,
+          "c": 0.979425
+        },
+        {
+          "w": "one",
+          "s": 39.63,
+          "e": 40.04,
+          "c": 0.967861
+        },
+        {
+          "w": "yard",
+          "s": 40.04,
+          "e": 40.59,
+          "c": 0.465448
+        },
+        {
+          "w": "line,",
+          "s": 40.59,
+          "e": 41.58,
+          "c": 0.432496
+        },
+        {
+          "w": "we",
+          "s": 41.58,
+          "e": 41.69,
+          "c": 0.942272
+        },
+        {
+          "w": "are",
+          "s": 41.69,
+          "e": 41.88,
+          "c": 0.773746
+        },
+        {
+          "w": "at",
+          "s": 41.88,
+          "e": 41.92,
+          "c": 0.761651
+        },
+        {
+          "w": "an",
+          "s": 41.92,
+          "e": 42.15,
+          "c": 0.984119
+        },
+        {
+          "w": "inflection",
+          "s": 42.15,
+          "e": 43.2,
+          "c": 0.99608
+        },
+        {
+          "w": "point",
+          "s": 43.29,
+          "e": 43.86,
+          "c": 0.996004
+        },
+        {
+          "w": "in",
+          "s": 43.86,
+          "e": 44.09,
+          "c": 0.996808
+        },
+        {
+          "w": "our",
+          "s": 44.09,
+          "e": 44.43,
+          "c": 0.998228
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 44.43,
+      "end_s": 46.03,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "country where we",
+      "words": [
+        {
+          "w": "country",
+          "s": 44.43,
+          "e": 45.18,
+          "c": 0.997992
+        },
+        {
+          "w": "where",
+          "s": 45.27,
+          "e": 45.77,
+          "c": 0.683858
+        },
+        {
+          "w": "we",
+          "s": 46.03,
+          "e": 46.03,
+          "c": 0.999264
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 46.4,
+      "end_s": 48.87,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "have to ask the question, who",
+      "words": [
+        {
+          "w": "have",
+          "s": 46.4,
+          "e": 46.49,
+          "c": 0.997674
+        },
+        {
+          "w": "to",
+          "s": 46.49,
+          "e": 46.61,
+          "c": 0.997038
+        },
+        {
+          "w": "ask",
+          "s": 46.71,
+          "e": 47.05,
+          "c": 0.998471
+        },
+        {
+          "w": "the",
+          "s": 47.08,
+          "e": 47.4,
+          "c": 0.99232
+        },
+        {
+          "w": "question,",
+          "s": 47.4,
+          "e": 48.53,
+          "c": 0.729111
+        },
+        {
+          "w": "who",
+          "s": 48.53,
+          "e": 48.87,
+          "c": 0.756735
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 48.87,
+      "end_s": 49.86,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "are we?",
+      "words": [
+        {
+          "w": "are",
+          "s": 48.87,
+          "e": 49.21,
+          "c": 0.998841
+        },
+        {
+          "w": "we?",
+          "s": 49.21,
+          "e": 49.86,
+          "c": 0.966774
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 49.86,
+      "end_s": 51.01,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "My friend,",
+      "words": [
+        {
+          "w": "My",
+          "s": 49.856,
+          "e": 50.086,
+          "c": 0.725377
+        },
+        {
+          "w": "friend,",
+          "s": 50.086,
+          "e": 51.006,
+          "c": 0.735178
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 51.04,
+      "end_s": 52.95,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Senator Bennett, and",
+      "words": [
+        {
+          "w": "Senator",
+          "s": 51.036,
+          "e": 51.816,
+          "c": 0.980083
+        },
+        {
+          "w": "Bennett,",
+          "s": 51.816,
+          "e": 52.656,
+          "c": 0.621118
+        },
+        {
+          "w": "and",
+          "s": 52.686,
+          "e": 52.946,
+          "c": 0.803158
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 52.95,
+      "end_s": 63.17,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I have been working with kids well before we came here, and he rattled off data that should be",
+      "words": [
+        {
+          "w": "I",
+          "s": 52.946,
+          "e": 53.046,
+          "c": 0.998631
+        },
+        {
+          "w": "have",
+          "s": 53.046,
+          "e": 53.256,
+          "c": 0.593226
+        },
+        {
+          "w": "been",
+          "s": 53.256,
+          "e": 53.456,
+          "c": 0.989778
+        },
+        {
+          "w": "working",
+          "s": 53.456,
+          "e": 54.316,
+          "c": 0.970686
+        },
+        {
+          "w": "with",
+          "s": 54.606,
+          "e": 54.696,
+          "c": 0.605645
+        },
+        {
+          "w": "kids",
+          "s": 54.696,
+          "e": 54.746,
+          "c": 0.988591
+        },
+        {
+          "w": "well",
+          "s": 54.866,
+          "e": 55.166,
+          "c": 0.787325
+        },
+        {
+          "w": "before",
+          "s": 55.426,
+          "e": 55.686,
+          "c": 0.988212
+        },
+        {
+          "w": "we",
+          "s": 55.766,
+          "e": 55.876,
+          "c": 0.989398
+        },
+        {
+          "w": "came",
+          "s": 55.876,
+          "e": 56.236,
+          "c": 0.989817
+        },
+        {
+          "w": "here,",
+          "s": 56.236,
+          "e": 57.226,
+          "c": 0.613914
+        },
+        {
+          "w": "and",
+          "s": 57.876,
+          "e": 58.316,
+          "c": 0.998275
+        },
+        {
+          "w": "he",
+          "s": 58.326,
+          "e": 58.626,
+          "c": 0.999121
+        },
+        {
+          "w": "rattled",
+          "s": 59.046,
+          "e": 59.606,
+          "c": 0.997215
+        },
+        {
+          "w": "off",
+          "s": 59.726,
+          "e": 60.126,
+          "c": 0.99861
+        },
+        {
+          "w": "data",
+          "s": 60.126,
+          "e": 60.736,
+          "c": 0.999333
+        },
+        {
+          "w": "that",
+          "s": 60.736,
+          "e": 61.636,
+          "c": 0.952866
+        },
+        {
+          "w": "should",
+          "s": 61.636,
+          "e": 62.986,
+          "c": 0.953606
+        },
+        {
+          "w": "be",
+          "s": 62.986,
+          "e": 63.166,
+          "c": 0.999582
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 63.44,
+      "end_s": 65.94,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "repeated.",
+      "words": [
+        {
+          "w": "repeated.",
+          "s": 63.436,
+          "e": 65.936,
+          "c": 0.990849
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 65.94,
+      "end_s": 73.94,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I say this is a moral issue, but he has shown this is an economic issue. We are the wealthiest nation on the planet Earth,",
+      "words": [
+        {
+          "w": "I",
+          "s": 65.936,
+          "e": 66.036,
+          "c": 0.999561
+        },
+        {
+          "w": "say",
+          "s": 66.036,
+          "e": 66.336,
+          "c": 0.984262
+        },
+        {
+          "w": "this",
+          "s": 66.336,
+          "e": 66.736,
+          "c": 0.9898
+        },
+        {
+          "w": "is",
+          "s": 66.736,
+          "e": 66.926,
+          "c": 0.872661
+        },
+        {
+          "w": "a",
+          "s": 67.036,
+          "e": 67.036,
+          "c": 0.998437
+        },
+        {
+          "w": "moral",
+          "s": 67.116,
+          "e": 67.536,
+          "c": 0.999403
+        },
+        {
+          "w": "issue,",
+          "s": 67.536,
+          "e": 68.256,
+          "c": 0.932967
+        },
+        {
+          "w": "but",
+          "s": 68.256,
+          "e": 68.436,
+          "c": 0.985316
+        },
+        {
+          "w": "he",
+          "s": 68.436,
+          "e": 68.556,
+          "c": 0.998228
+        },
+        {
+          "w": "has",
+          "s": 68.556,
+          "e": 68.626,
+          "c": 0.993284
+        },
+        {
+          "w": "shown",
+          "s": 68.766,
+          "e": 69.036,
+          "c": 0.99463
+        },
+        {
+          "w": "this",
+          "s": 69.036,
+          "e": 69.156,
+          "c": 0.984371
+        },
+        {
+          "w": "is",
+          "s": 69.256,
+          "e": 69.386,
+          "c": 0.818579
+        },
+        {
+          "w": "an",
+          "s": 69.426,
+          "e": 69.516,
+          "c": 0.979174
+        },
+        {
+          "w": "economic",
+          "s": 69.516,
+          "e": 69.976,
+          "c": 0.99939
+        },
+        {
+          "w": "issue.",
+          "s": 70.016,
+          "e": 70.526,
+          "c": 0.945456
+        },
+        {
+          "w": "We",
+          "s": 70.536,
+          "e": 70.686,
+          "c": 0.997596
+        },
+        {
+          "w": "are",
+          "s": 70.686,
+          "e": 70.936,
+          "c": 0.998942
+        },
+        {
+          "w": "the",
+          "s": 70.936,
+          "e": 71.176,
+          "c": 0.999012
+        },
+        {
+          "w": "wealthiest",
+          "s": 71.656,
+          "e": 71.966,
+          "c": 0.998944
+        },
+        {
+          "w": "nation",
+          "s": 72.076,
+          "e": 72.456,
+          "c": 0.998485
+        },
+        {
+          "w": "on",
+          "s": 72.456,
+          "e": 72.616,
+          "c": 0.998193
+        },
+        {
+          "w": "the",
+          "s": 72.616,
+          "e": 72.856,
+          "c": 0.993519
+        },
+        {
+          "w": "planet",
+          "s": 72.856,
+          "e": 73.226,
+          "c": 0.992761
+        },
+        {
+          "w": "Earth,",
+          "s": 73.366,
+          "e": 73.936,
+          "c": 0.816749
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 73.94,
+      "end_s": 77.9,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and of the top 41 countries,",
+      "words": [
+        {
+          "w": "and",
+          "s": 73.936,
+          "e": 74.316,
+          "c": 0.970658
+        },
+        {
+          "w": "of",
+          "s": 74.376,
+          "e": 74.586,
+          "c": 0.723024
+        },
+        {
+          "w": "the",
+          "s": 74.676,
+          "e": 75.126,
+          "c": 0.999418
+        },
+        {
+          "w": "top",
+          "s": 75.296,
+          "e": 75.576,
+          "c": 0.997687
+        },
+        {
+          "w": "41",
+          "s": 75.606,
+          "e": 76.496,
+          "c": 0.798155
+        },
+        {
+          "w": "countries,",
+          "s": 76.496,
+          "e": 77.896,
+          "c": 0.630587
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 77.89,
+      "end_s": 78.46,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We're",
+      "words": [
+        {
+          "w": "We're",
+          "s": 77.888,
+          "e": 78.458,
+          "c": 0.961615
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 78.57,
+      "end_s": 83.2,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "at 38 and poor kids. And",
+      "words": [
+        {
+          "w": "at",
+          "s": 78.568,
+          "e": 78.698,
+          "c": 0.998134
+        },
+        {
+          "w": "38",
+          "s": 78.698,
+          "e": 79.388,
+          "c": 0.996884
+        },
+        {
+          "w": "and",
+          "s": 79.388,
+          "e": 79.558,
+          "c": 0.386735
+        },
+        {
+          "w": "poor",
+          "s": 80.098,
+          "e": 81.028,
+          "c": 0.999093
+        },
+        {
+          "w": "kids.",
+          "s": 81.608,
+          "e": 82.448,
+          "c": 0.951746
+        },
+        {
+          "w": "And",
+          "s": 82.648,
+          "e": 83.198,
+          "c": 0.999544
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 83.34,
+      "end_s": 84.16,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "what he",
+      "words": [
+        {
+          "w": "what",
+          "s": 83.338,
+          "e": 83.928,
+          "c": 0.999908
+        },
+        {
+          "w": "he",
+          "s": 83.928,
+          "e": 84.158,
+          "c": 0.999718
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 84.16,
+      "end_s": 95.59,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "pointed out is that poverty costs all of us. It is a deep, self-inflicted wound in this society",
+      "words": [
+        {
+          "w": "pointed",
+          "s": 84.158,
+          "e": 85.558,
+          "c": 0.999857
+        },
+        {
+          "w": "out",
+          "s": 85.558,
+          "e": 86.148,
+          "c": 0.999989
+        },
+        {
+          "w": "is",
+          "s": 86.368,
+          "e": 86.408,
+          "c": 0.967178
+        },
+        {
+          "w": "that",
+          "s": 86.408,
+          "e": 86.798,
+          "c": 0.998793
+        },
+        {
+          "w": "poverty",
+          "s": 86.908,
+          "e": 87.528,
+          "c": 0.998213
+        },
+        {
+          "w": "costs",
+          "s": 87.778,
+          "e": 88.488,
+          "c": 0.998138
+        },
+        {
+          "w": "all",
+          "s": 88.488,
+          "e": 89.148,
+          "c": 0.968043
+        },
+        {
+          "w": "of",
+          "s": 89.148,
+          "e": 89.588,
+          "c": 0.99987
+        },
+        {
+          "w": "us.",
+          "s": 89.718,
+          "e": 90.708,
+          "c": 0.996818
+        },
+        {
+          "w": "It",
+          "s": 90.708,
+          "e": 90.948,
+          "c": 0.999985
+        },
+        {
+          "w": "is",
+          "s": 90.948,
+          "e": 91.188,
+          "c": 0.999996
+        },
+        {
+          "w": "a",
+          "s": 91.308,
+          "e": 91.308,
+          "c": 1
+        },
+        {
+          "w": "deep,",
+          "s": 91.398,
+          "e": 92.038,
+          "c": 0.491139
+        },
+        {
+          "w": "self-inflicted",
+          "s": 92.038,
+          "e": 93.748,
+          "c": 0.99887
+        },
+        {
+          "w": "wound",
+          "s": 94.358,
+          "e": 94.358,
+          "c": 0.999838
+        },
+        {
+          "w": "in",
+          "s": 94.428,
+          "e": 94.578,
+          "c": 0.998226
+        },
+        {
+          "w": "this",
+          "s": 94.628,
+          "e": 95.088,
+          "c": 0.999821
+        },
+        {
+          "w": "society",
+          "s": 95.088,
+          "e": 95.588,
+          "c": 0.999914
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "start_s": 96.7,
+      "end_s": 107.91,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "because poverty costs this nation over a trillion dollars as measured by economists. But I'm telling you right now, economists don't measure all the things that are important. Our GDP.",
+      "words": [
+        {
+          "w": "because",
+          "s": 96.698,
+          "e": 96.858,
+          "c": 0.999924
+        },
+        {
+          "w": "poverty",
+          "s": 96.858,
+          "e": 97.528,
+          "c": 0.999985
+        },
+        {
+          "w": "costs",
+          "s": 97.528,
+          "e": 98.258,
+          "c": 0.992608
+        },
+        {
+          "w": "this",
+          "s": 98.258,
+          "e": 98.748,
+          "c": 0.984679
+        },
+        {
+          "w": "nation",
+          "s": 98.748,
+          "e": 99.468,
+          "c": 0.999956
+        },
+        {
+          "w": "over",
+          "s": 99.748,
+          "e": 99.788,
+          "c": 0.905706
+        },
+        {
+          "w": "a",
+          "s": 99.788,
+          "e": 99.868,
+          "c": 0.99553
+        },
+        {
+          "w": "trillion",
+          "s": 99.868,
+          "e": 100.508,
+          "c": 0.999512
+        },
+        {
+          "w": "dollars",
+          "s": 100.508,
+          "e": 100.898,
+          "c": 0.99954
+        },
+        {
+          "w": "as",
+          "s": 101.068,
+          "e": 101.198,
+          "c": 0.502573
+        },
+        {
+          "w": "measured",
+          "s": 101.198,
+          "e": 101.668,
+          "c": 0.999786
+        },
+        {
+          "w": "by",
+          "s": 101.668,
+          "e": 101.778,
+          "c": 0.999905
+        },
+        {
+          "w": "economists.",
+          "s": 101.778,
+          "e": 102.568,
+          "c": 0.823972
+        },
+        {
+          "w": "But",
+          "s": 102.568,
+          "e": 102.748,
+          "c": 0.961447
+        },
+        {
+          "w": "I'm",
+          "s": 102.748,
+          "e": 102.928,
+          "c": 0.999878
+        },
+        {
+          "w": "telling",
+          "s": 103.248,
+          "e": 103.348,
+          "c": 0.999981
+        },
+        {
+          "w": "you",
+          "s": 103.348,
+          "e": 103.478,
+          "c": 1
+        },
+        {
+          "w": "right",
+          "s": 103.648,
+          "e": 103.828,
+          "c": 0.999975
+        },
+        {
+          "w": "now,",
+          "s": 103.828,
+          "e": 104.078,
+          "c": 0.999535
+        },
+        {
+          "w": "economists",
+          "s": 104.138,
+          "e": 104.338,
+          "c": 0.971452
+        },
+        {
+          "w": "don't",
+          "s": 104.618,
+          "e": 104.968,
+          "c": 0.999941
+        },
+        {
+          "w": "measure",
+          "s": 104.968,
+          "e": 105.348,
+          "c": 0.999966
+        },
+        {
+          "w": "all",
+          "s": 105.348,
+          "e": 105.508,
+          "c": 0.998009
+        },
+        {
+          "w": "the",
+          "s": 105.508,
+          "e": 105.668,
+          "c": 0.999939
+        },
+        {
+          "w": "things",
+          "s": 105.668,
+          "e": 105.998,
+          "c": 0.999985
+        },
+        {
+          "w": "that",
+          "s": 106.218,
+          "e": 106.218,
+          "c": 0.999199
+        },
+        {
+          "w": "are",
+          "s": 106.288,
+          "e": 106.378,
+          "c": 0.999987
+        },
+        {
+          "w": "important.",
+          "s": 106.378,
+          "e": 107.088,
+          "c": 0.843811
+        },
+        {
+          "w": "Our",
+          "s": 107.188,
+          "e": 107.548,
+          "c": 0.492546
+        },
+        {
+          "w": "GDP.",
+          "s": 107.858,
+          "e": 107.908,
+          "c": 0.59763
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "start_s": 107.91,
+      "end_s": 123.92,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "does not reflect well-being. It doesn't reflect how many antidepressants people take or how many child deaths there are. But the truth of our economy is every dollar we invest in getting children out of poverty returns $8 to this",
+      "words": [
+        {
+          "w": "does",
+          "s": 107.908,
+          "e": 108.178,
+          "c": 0.703007
+        },
+        {
+          "w": "not",
+          "s": 108.448,
+          "e": 108.448,
+          "c": 0.998875
+        },
+        {
+          "w": "reflect",
+          "s": 108.518,
+          "e": 108.998,
+          "c": 0.998742
+        },
+        {
+          "w": "well-being.",
+          "s": 108.998,
+          "e": 110.048,
+          "c": 0.743314
+        },
+        {
+          "w": "It",
+          "s": 110.068,
+          "e": 110.168,
+          "c": 0.999966
+        },
+        {
+          "w": "doesn't",
+          "s": 110.168,
+          "e": 110.598,
+          "c": 0.999279
+        },
+        {
+          "w": "reflect",
+          "s": 110.678,
+          "e": 111.018,
+          "c": 0.999973
+        },
+        {
+          "w": "how",
+          "s": 111.088,
+          "e": 111.188,
+          "c": 0.969903
+        },
+        {
+          "w": "many",
+          "s": 111.318,
+          "e": 111.488,
+          "c": 0.999865
+        },
+        {
+          "w": "antidepressants",
+          "s": 111.688,
+          "e": 113.048,
+          "c": 0.885294
+        },
+        {
+          "w": "people",
+          "s": 113.048,
+          "e": 113.448,
+          "c": 0.97041
+        },
+        {
+          "w": "take",
+          "s": 113.448,
+          "e": 113.648,
+          "c": 0.998283
+        },
+        {
+          "w": "or",
+          "s": 113.748,
+          "e": 113.888,
+          "c": 0.999981
+        },
+        {
+          "w": "how",
+          "s": 113.888,
+          "e": 114.028,
+          "c": 0.998569
+        },
+        {
+          "w": "many",
+          "s": 114.358,
+          "e": 114.458,
+          "c": 0.999979
+        },
+        {
+          "w": "child",
+          "s": 114.458,
+          "e": 114.858,
+          "c": 0.999891
+        },
+        {
+          "w": "deaths",
+          "s": 115.008,
+          "e": 115.358,
+          "c": 0.999716
+        },
+        {
+          "w": "there",
+          "s": 115.368,
+          "e": 115.768,
+          "c": 0.999952
+        },
+        {
+          "w": "are.",
+          "s": 115.768,
+          "e": 116.258,
+          "c": 0.877858
+        },
+        {
+          "w": "But",
+          "s": 116.308,
+          "e": 116.488,
+          "c": 0.999758
+        },
+        {
+          "w": "the",
+          "s": 116.488,
+          "e": 116.588,
+          "c": 0.999954
+        },
+        {
+          "w": "truth",
+          "s": 116.918,
+          "e": 117.028,
+          "c": 0.99999
+        },
+        {
+          "w": "of",
+          "s": 117.128,
+          "e": 117.158,
+          "c": 0.999989
+        },
+        {
+          "w": "our",
+          "s": 117.158,
+          "e": 117.358,
+          "c": 0.999989
+        },
+        {
+          "w": "economy",
+          "s": 117.358,
+          "e": 117.728,
+          "c": 0.999969
+        },
+        {
+          "w": "is",
+          "s": 117.918,
+          "e": 118.348,
+          "c": 0.972409
+        },
+        {
+          "w": "every",
+          "s": 118.358,
+          "e": 118.648,
+          "c": 0.998986
+        },
+        {
+          "w": "dollar",
+          "s": 118.978,
+          "e": 119.408,
+          "c": 0.999403
+        },
+        {
+          "w": "we",
+          "s": 119.408,
+          "e": 119.488,
+          "c": 0.999956
+        },
+        {
+          "w": "invest",
+          "s": 119.628,
+          "e": 120.188,
+          "c": 0.999958
+        },
+        {
+          "w": "in",
+          "s": 120.188,
+          "e": 120.338,
+          "c": 0.981693
+        },
+        {
+          "w": "getting",
+          "s": 120.338,
+          "e": 120.858,
+          "c": 0.999905
+        },
+        {
+          "w": "children",
+          "s": 120.858,
+          "e": 121.448,
+          "c": 0.99992
+        },
+        {
+          "w": "out",
+          "s": 121.608,
+          "e": 121.728,
+          "c": 0.986417
+        },
+        {
+          "w": "of",
+          "s": 121.728,
+          "e": 121.898,
+          "c": 0.999931
+        },
+        {
+          "w": "poverty",
+          "s": 121.898,
+          "e": 122.388,
+          "c": 0.999969
+        },
+        {
+          "w": "returns",
+          "s": 122.528,
+          "e": 122.798,
+          "c": 0.999655
+        },
+        {
+          "w": "$8",
+          "s": 123.138,
+          "e": 123.428,
+          "c": 0.953754
+        },
+        {
+          "w": "to",
+          "s": 123.428,
+          "e": 123.588,
+          "c": 0.997628
+        },
+        {
+          "w": "this",
+          "s": 123.588,
+          "e": 123.918,
+          "c": 0.999907
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "start_s": 123.92,
+      "end_s": 125.08,
+      "speaker": "SPEAKER_10",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "economy. So",
+      "words": [
+        {
+          "w": "economy.",
+          "s": 123.918,
+          "e": 124.768,
+          "c": 0.999878
+        },
+        {
+          "w": "So",
+          "s": 124.808,
+          "e": 125.078,
+          "c": 0.99663
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "start_s": 125.41,
+      "end_s": 127.28,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "it is an economic",
+      "words": [
+        {
+          "w": "it",
+          "s": 125.408,
+          "e": 125.408,
+          "c": 0.986423
+        },
+        {
+          "w": "is",
+          "s": 125.428,
+          "e": 125.718,
+          "c": 0.999989
+        },
+        {
+          "w": "an",
+          "s": 125.718,
+          "e": 125.918,
+          "c": 0.999922
+        },
+        {
+          "w": "economic",
+          "s": 126.068,
+          "e": 127.278,
+          "c": 0.999964
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "start_s": 127.28,
+      "end_s": 129.91,
+      "speaker": "SPEAKER_10",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "issue, clearly.",
+      "words": [
+        {
+          "w": "issue,",
+          "s": 127.278,
+          "e": 128.368,
+          "c": 0.991217
+        },
+        {
+          "w": "clearly.",
+          "s": 128.368,
+          "e": 129.908,
+          "c": 0.650281
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "start_s": 130.01,
+      "end_s": 130.87,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "Clearly.",
+      "words": [
+        {
+          "w": "Clearly.",
+          "s": 130.008,
+          "e": 130.868,
+          "c": 0.20567
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "start_s": 130.82,
+      "end_s": 131.27,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "It is a",
+      "words": [
+        {
+          "w": "It",
+          "s": 130.816,
+          "e": 130.996,
+          "c": 0.896565
+        },
+        {
+          "w": "is",
+          "s": 130.996,
+          "e": 131.176,
+          "c": 0.996156
+        },
+        {
+          "w": "a",
+          "s": 131.176,
+          "e": 131.266,
+          "c": 0.99866
+        }
+      ]
+    },
+    {
+      "i": 35,
+      "start_s": 131.46,
+      "end_s": 142.64,
+      "speaker": "SPEAKER_08",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "globally competitive issue because the nation in a global knowledge-based society, the nation whose children learn the most will earn the most",
+      "words": [
+        {
+          "w": "globally",
+          "s": 131.456,
+          "e": 132.016,
+          "c": 0.991268
+        },
+        {
+          "w": "competitive",
+          "s": 132.016,
+          "e": 133.046,
+          "c": 0.995391
+        },
+        {
+          "w": "issue",
+          "s": 133.046,
+          "e": 133.546,
+          "c": 0.998485
+        },
+        {
+          "w": "because",
+          "s": 134.196,
+          "e": 134.426,
+          "c": 0.999306
+        },
+        {
+          "w": "the",
+          "s": 134.426,
+          "e": 134.776,
+          "c": 0.994791
+        },
+        {
+          "w": "nation",
+          "s": 134.816,
+          "e": 135.546,
+          "c": 0.999243
+        },
+        {
+          "w": "in",
+          "s": 135.576,
+          "e": 135.656,
+          "c": 0.894698
+        },
+        {
+          "w": "a",
+          "s": 135.666,
+          "e": 135.736,
+          "c": 0.988533
+        },
+        {
+          "w": "global",
+          "s": 135.736,
+          "e": 136.106,
+          "c": 0.995761
+        },
+        {
+          "w": "knowledge-based",
+          "s": 136.106,
+          "e": 136.776,
+          "c": 0.830081
+        },
+        {
+          "w": "society,",
+          "s": 137.166,
+          "e": 137.496,
+          "c": 0.965563
+        },
+        {
+          "w": "the",
+          "s": 137.496,
+          "e": 137.806,
+          "c": 0.999119
+        },
+        {
+          "w": "nation",
+          "s": 138.136,
+          "e": 138.436,
+          "c": 0.999357
+        },
+        {
+          "w": "whose",
+          "s": 138.436,
+          "e": 138.936,
+          "c": 0.979331
+        },
+        {
+          "w": "children",
+          "s": 138.936,
+          "e": 139.726,
+          "c": 0.999546
+        },
+        {
+          "w": "learn",
+          "s": 139.866,
+          "e": 140.316,
+          "c": 0.976178
+        },
+        {
+          "w": "the",
+          "s": 140.316,
+          "e": 140.626,
+          "c": 0.994457
+        },
+        {
+          "w": "most",
+          "s": 140.626,
+          "e": 140.676,
+          "c": 0.999687
+        },
+        {
+          "w": "will",
+          "s": 141.076,
+          "e": 141.486,
+          "c": 0.999552
+        },
+        {
+          "w": "earn",
+          "s": 141.716,
+          "e": 141.896,
+          "c": 0.999455
+        },
+        {
+          "w": "the",
+          "s": 141.896,
+          "e": 142.206,
+          "c": 0.999493
+        },
+        {
+          "w": "most",
+          "s": 142.206,
+          "e": 142.636,
+          "c": 0.999903
+        }
+      ]
+    },
+    {
+      "i": 36,
+      "start_s": 142.64,
+      "end_s": 146.14,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and will out-compete. It is a",
+      "words": [
+        {
+          "w": "and",
+          "s": 142.636,
+          "e": 143.016,
+          "c": 0.775964
+        },
+        {
+          "w": "will",
+          "s": 143.016,
+          "e": 143.526,
+          "c": 0.985223
+        },
+        {
+          "w": "out-compete.",
+          "s": 143.526,
+          "e": 145.316,
+          "c": 0.685742
+        },
+        {
+          "w": "It",
+          "s": 145.316,
+          "e": 145.646,
+          "c": 0.999308
+        },
+        {
+          "w": "is",
+          "s": 145.956,
+          "e": 145.976,
+          "c": 0.99739
+        },
+        {
+          "w": "a",
+          "s": 145.976,
+          "e": 146.136,
+          "c": 0.998668
+        }
+      ]
+    },
+    {
+      "i": 37,
+      "start_s": 146.14,
+      "end_s": 153.78,
+      "speaker": "SPEAKER_10",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "national security issue as we go up against countries like China, whose top 10% of",
+      "words": [
+        {
+          "w": "national",
+          "s": 146.136,
+          "e": 147.466,
+          "c": 0.995144
+        },
+        {
+          "w": "security",
+          "s": 147.466,
+          "e": 148.536,
+          "c": 0.999146
+        },
+        {
+          "w": "issue",
+          "s": 148.926,
+          "e": 149.656,
+          "c": 0.999668
+        },
+        {
+          "w": "as",
+          "s": 149.656,
+          "e": 149.826,
+          "c": 0.999131
+        },
+        {
+          "w": "we",
+          "s": 149.826,
+          "e": 149.996,
+          "c": 0.999737
+        },
+        {
+          "w": "go",
+          "s": 149.996,
+          "e": 150.166,
+          "c": 0.99938
+        },
+        {
+          "w": "up",
+          "s": 150.296,
+          "e": 150.336,
+          "c": 0.998906
+        },
+        {
+          "w": "against",
+          "s": 150.336,
+          "e": 150.946,
+          "c": 0.999218
+        },
+        {
+          "w": "countries",
+          "s": 150.946,
+          "e": 151.726,
+          "c": 0.998584
+        },
+        {
+          "w": "like",
+          "s": 151.726,
+          "e": 152.076,
+          "c": 0.992173
+        },
+        {
+          "w": "China,",
+          "s": 152.076,
+          "e": 152.556,
+          "c": 0.603839
+        },
+        {
+          "w": "whose",
+          "s": 152.556,
+          "e": 152.916,
+          "c": 0.961426
+        },
+        {
+          "w": "top",
+          "s": 153.136,
+          "e": 153.136,
+          "c": 0.999073
+        },
+        {
+          "w": "10%",
+          "s": 153.196,
+          "e": 153.646,
+          "c": 0.97986
+        },
+        {
+          "w": "of",
+          "s": 153.646,
+          "e": 153.776,
+          "c": 0.996822
+        }
+      ]
+    },
+    {
+      "i": 38,
+      "start_s": 153.82,
+      "end_s": 155.74,
+      "speaker": "SPEAKER_12",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "their graduating high school classes",
+      "words": [
+        {
+          "w": "their",
+          "s": 153.816,
+          "e": 154.116,
+          "c": 0.997035
+        },
+        {
+          "w": "graduating",
+          "s": 154.146,
+          "e": 154.786,
+          "c": 0.996124
+        },
+        {
+          "w": "high",
+          "s": 154.926,
+          "e": 155.166,
+          "c": 0.997067
+        },
+        {
+          "w": "school",
+          "s": 155.166,
+          "e": 155.606,
+          "c": 0.987293
+        },
+        {
+          "w": "classes",
+          "s": 155.606,
+          "e": 155.736,
+          "c": 0.977748
+        }
+      ]
+    },
+    {
+      "i": 39,
+      "start_s": 156.32,
+      "end_s": 159.67,
+      "speaker": "SPEAKER_12",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Outnumber all the children we have virtually. But",
+      "words": [
+        {
+          "w": "Outnumber",
+          "s": 156.318,
+          "e": 156.758,
+          "c": 0.242673
+        },
+        {
+          "w": "all",
+          "s": 156.758,
+          "e": 156.848,
+          "c": 0.994182
+        },
+        {
+          "w": "the",
+          "s": 157.168,
+          "e": 157.178,
+          "c": 0.99667
+        },
+        {
+          "w": "children",
+          "s": 157.178,
+          "e": 157.728,
+          "c": 0.998561
+        },
+        {
+          "w": "we",
+          "s": 157.728,
+          "e": 157.878,
+          "c": 0.992504
+        },
+        {
+          "w": "have",
+          "s": 157.878,
+          "e": 158.158,
+          "c": 0.999049
+        },
+        {
+          "w": "virtually.",
+          "s": 158.158,
+          "e": 159.008,
+          "c": 0.787479
+        },
+        {
+          "w": "But",
+          "s": 159.198,
+          "e": 159.668,
+          "c": 0.999636
+        }
+      ]
+    },
+    {
+      "i": 40,
+      "start_s": 159.67,
+      "end_s": 163.38,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "it is a moral issue,",
+      "words": [
+        {
+          "w": "it",
+          "s": 159.668,
+          "e": 160.108,
+          "c": 0.999638
+        },
+        {
+          "w": "is",
+          "s": 160.108,
+          "e": 160.548,
+          "c": 0.999962
+        },
+        {
+          "w": "a",
+          "s": 160.548,
+          "e": 160.758,
+          "c": 0.99995
+        },
+        {
+          "w": "moral",
+          "s": 160.758,
+          "e": 161.858,
+          "c": 0.999598
+        },
+        {
+          "w": "issue,",
+          "s": 161.858,
+          "e": 163.378,
+          "c": 0.523078
+        }
+      ]
+    },
+    {
+      "i": 41,
+      "start_s": 163.38,
+      "end_s": 173.49,
+      "speaker": "SPEAKER_13",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "most of all. If we are going to create a more beloved community, how do we treat our children? Children",
+      "words": [
+        {
+          "w": "most",
+          "s": 163.378,
+          "e": 164.248,
+          "c": 0.992354
+        },
+        {
+          "w": "of",
+          "s": 164.248,
+          "e": 164.688,
+          "c": 0.999962
+        },
+        {
+          "w": "all.",
+          "s": 164.688,
+          "e": 166.028,
+          "c": 0.76977
+        },
+        {
+          "w": "If",
+          "s": 166.188,
+          "e": 166.188,
+          "c": 0.999918
+        },
+        {
+          "w": "we",
+          "s": 166.238,
+          "e": 166.328,
+          "c": 0.999992
+        },
+        {
+          "w": "are",
+          "s": 166.328,
+          "e": 166.548,
+          "c": 0.999685
+        },
+        {
+          "w": "going",
+          "s": 166.548,
+          "e": 166.768,
+          "c": 0.922771
+        },
+        {
+          "w": "to",
+          "s": 167.058,
+          "e": 167.058,
+          "c": 0.999998
+        },
+        {
+          "w": "create",
+          "s": 167.088,
+          "e": 167.418,
+          "c": 0.999933
+        },
+        {
+          "w": "a",
+          "s": 167.488,
+          "e": 167.568,
+          "c": 0.991423
+        },
+        {
+          "w": "more",
+          "s": 167.568,
+          "e": 167.858,
+          "c": 0.999949
+        },
+        {
+          "w": "beloved",
+          "s": 167.858,
+          "e": 168.378,
+          "c": 0.999853
+        },
+        {
+          "w": "community,",
+          "s": 168.378,
+          "e": 169.168,
+          "c": 0.999091
+        },
+        {
+          "w": "how",
+          "s": 169.438,
+          "e": 169.488,
+          "c": 0.999966
+        },
+        {
+          "w": "do",
+          "s": 169.488,
+          "e": 169.648,
+          "c": 0.999758
+        },
+        {
+          "w": "we",
+          "s": 169.648,
+          "e": 169.808,
+          "c": 0.999994
+        },
+        {
+          "w": "treat",
+          "s": 169.808,
+          "e": 169.968,
+          "c": 0.99988
+        },
+        {
+          "w": "our",
+          "s": 170.288,
+          "e": 170.458,
+          "c": 0.999977
+        },
+        {
+          "w": "children?",
+          "s": 170.458,
+          "e": 171.388,
+          "c": 0.999954
+        },
+        {
+          "w": "Children",
+          "s": 171.578,
+          "e": 173.488,
+          "c": 0.998664
+        }
+      ]
+    },
+    {
+      "i": 42,
+      "start_s": 173.49,
+      "end_s": 175.85,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "who live in",
+      "words": [
+        {
+          "w": "who",
+          "s": 173.488,
+          "e": 174.278,
+          "c": 0.999977
+        },
+        {
+          "w": "live",
+          "s": 174.278,
+          "e": 175.218,
+          "c": 0.999821
+        },
+        {
+          "w": "in",
+          "s": 175.318,
+          "e": 175.848,
+          "c": 0.999983
+        }
+      ]
+    },
+    {
+      "i": 43,
+      "start_s": 175.85,
+      "end_s": 178.76,
+      "speaker": "SPEAKER_13",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "poverty literally",
+      "words": [
+        {
+          "w": "poverty",
+          "s": 175.848,
+          "e": 177.678,
+          "c": 0.999968
+        },
+        {
+          "w": "literally",
+          "s": 177.898,
+          "e": 178.758,
+          "c": 0.999584
+        }
+      ]
+    },
+    {
+      "i": 44,
+      "start_s": 178.76,
+      "end_s": 179.08,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "have",
+      "words": [
+        {
+          "w": "have",
+          "s": 178.758,
+          "e": 179.078,
+          "c": 0.999907
+        }
+      ]
+    },
+    {
+      "i": 45,
+      "start_s": 179.21,
+      "end_s": 182.69,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "physical effects. Poverty is...",
+      "words": [
+        {
+          "w": "physical",
+          "s": 179.208,
+          "e": 180.058,
+          "c": 0.999043
+        },
+        {
+          "w": "effects.",
+          "s": 180.158,
+          "e": 181.318,
+          "c": 0.68876
+        },
+        {
+          "w": "Poverty",
+          "s": 181.478,
+          "e": 182.378,
+          "c": 0.997586
+        },
+        {
+          "w": "is...",
+          "s": 182.378,
+          "e": 182.688,
+          "c": 0.361619
+        }
+      ]
+    },
+    {
+      "i": 46,
+      "start_s": 182.91,
+      "end_s": 185.67,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "is violence.",
+      "words": [
+        {
+          "w": "is",
+          "s": 182.912,
+          "e": 183.132,
+          "c": 0.870964
+        },
+        {
+          "w": "violence.",
+          "s": 183.132,
+          "e": 185.672,
+          "c": 0.978027
+        }
+      ]
+    },
+    {
+      "i": 47,
+      "start_s": 185.92,
+      "end_s": 187.38,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Study after",
+      "words": [
+        {
+          "w": "Study",
+          "s": 185.922,
+          "e": 186.982,
+          "c": 0.995824
+        },
+        {
+          "w": "after",
+          "s": 186.982,
+          "e": 187.382,
+          "c": 0.99869
+        }
+      ]
+    },
+    {
+      "i": 48,
+      "start_s": 188.31,
+      "end_s": 209.89,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "study shows that the brain development of children in poverty is inhibited. Literally, the stress hormones, the cortisol, it is akin to an adult having a traffic accident every single day. It is an indicator of childhood",
+      "words": [
+        {
+          "w": "study",
+          "s": 188.312,
+          "e": 189.632,
+          "c": 0.999491
+        },
+        {
+          "w": "shows",
+          "s": 189.632,
+          "e": 190.952,
+          "c": 0.991478
+        },
+        {
+          "w": "that",
+          "s": 190.952,
+          "e": 191.112,
+          "c": 0.830149
+        },
+        {
+          "w": "the",
+          "s": 191.112,
+          "e": 191.322,
+          "c": 0.960844
+        },
+        {
+          "w": "brain",
+          "s": 191.332,
+          "e": 191.722,
+          "c": 0.999051
+        },
+        {
+          "w": "development",
+          "s": 192.352,
+          "e": 192.592,
+          "c": 0.985796
+        },
+        {
+          "w": "of",
+          "s": 192.772,
+          "e": 192.772,
+          "c": 0.999323
+        },
+        {
+          "w": "children",
+          "s": 192.842,
+          "e": 193.492,
+          "c": 0.999331
+        },
+        {
+          "w": "in",
+          "s": 193.492,
+          "e": 193.672,
+          "c": 0.998685
+        },
+        {
+          "w": "poverty",
+          "s": 193.672,
+          "e": 194.182,
+          "c": 0.999866
+        },
+        {
+          "w": "is",
+          "s": 194.182,
+          "e": 194.332,
+          "c": 0.998258
+        },
+        {
+          "w": "inhibited.",
+          "s": 194.332,
+          "e": 195.592,
+          "c": 0.84641
+        },
+        {
+          "w": "Literally,",
+          "s": 195.832,
+          "e": 196.272,
+          "c": 0.842285
+        },
+        {
+          "w": "the",
+          "s": 196.482,
+          "e": 196.642,
+          "c": 0.994522
+        },
+        {
+          "w": "stress",
+          "s": 196.642,
+          "e": 196.892,
+          "c": 0.999563
+        },
+        {
+          "w": "hormones,",
+          "s": 196.892,
+          "e": 197.872,
+          "c": 0.952383
+        },
+        {
+          "w": "the",
+          "s": 197.872,
+          "e": 198.262,
+          "c": 0.982911
+        },
+        {
+          "w": "cortisol,",
+          "s": 198.262,
+          "e": 199.592,
+          "c": 0.810978
+        },
+        {
+          "w": "it",
+          "s": 199.752,
+          "e": 199.752,
+          "c": 0.97671
+        },
+        {
+          "w": "is",
+          "s": 199.842,
+          "e": 199.912,
+          "c": 0.993324
+        },
+        {
+          "w": "akin",
+          "s": 199.912,
+          "e": 200.112,
+          "c": 0.993339
+        },
+        {
+          "w": "to",
+          "s": 200.242,
+          "e": 200.362,
+          "c": 0.999737
+        },
+        {
+          "w": "an",
+          "s": 200.482,
+          "e": 200.562,
+          "c": 0.998233
+        },
+        {
+          "w": "adult",
+          "s": 200.562,
+          "e": 200.882,
+          "c": 0.999712
+        },
+        {
+          "w": "having",
+          "s": 201.012,
+          "e": 201.312,
+          "c": 0.976142
+        },
+        {
+          "w": "a",
+          "s": 201.312,
+          "e": 201.552,
+          "c": 0.989536
+        },
+        {
+          "w": "traffic",
+          "s": 201.552,
+          "e": 202.082,
+          "c": 0.999497
+        },
+        {
+          "w": "accident",
+          "s": 202.082,
+          "e": 202.712,
+          "c": 0.997584
+        },
+        {
+          "w": "every",
+          "s": 202.712,
+          "e": 203.512,
+          "c": 0.711791
+        },
+        {
+          "w": "single",
+          "s": 203.512,
+          "e": 204.462,
+          "c": 0.993887
+        },
+        {
+          "w": "day.",
+          "s": 204.462,
+          "e": 205.432,
+          "c": 0.98204
+        },
+        {
+          "w": "It",
+          "s": 205.682,
+          "e": 205.772,
+          "c": 0.998414
+        },
+        {
+          "w": "is",
+          "s": 205.772,
+          "e": 206.112,
+          "c": 0.999075
+        },
+        {
+          "w": "an",
+          "s": 206.322,
+          "e": 206.452,
+          "c": 0.999449
+        },
+        {
+          "w": "indicator",
+          "s": 206.452,
+          "e": 207.072,
+          "c": 0.999001
+        },
+        {
+          "w": "of",
+          "s": 207.992,
+          "e": 208.342,
+          "c": 0.999247
+        },
+        {
+          "w": "childhood",
+          "s": 208.342,
+          "e": 209.892,
+          "c": 0.998633
+        }
+      ]
+    },
+    {
+      "i": 49,
+      "start_s": 209.89,
+      "end_s": 210.95,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "trauma.",
+      "words": [
+        {
+          "w": "trauma.",
+          "s": 209.892,
+          "e": 210.952,
+          "c": 0.83801
+        }
+      ]
+    },
+    {
+      "i": 50,
+      "start_s": 210.91,
+      "end_s": 212.32,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Poverty",
+      "words": [
+        {
+          "w": "Poverty",
+          "s": 210.912,
+          "e": 212.322,
+          "c": 0.669188
+        }
+      ]
+    },
+    {
+      "i": 51,
+      "start_s": 212.46,
+      "end_s": 216.35,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "is a moral obscenity,",
+      "words": [
+        {
+          "w": "is",
+          "s": 212.462,
+          "e": 212.722,
+          "c": 0.997718
+        },
+        {
+          "w": "a",
+          "s": 212.762,
+          "e": 212.962,
+          "c": 0.99786
+        },
+        {
+          "w": "moral",
+          "s": 212.962,
+          "e": 214.002,
+          "c": 0.998711
+        },
+        {
+          "w": "obscenity,",
+          "s": 214.002,
+          "e": 216.352,
+          "c": 0.131319
+        }
+      ]
+    },
+    {
+      "i": 52,
+      "start_s": 216.35,
+      "end_s": 218.18,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and we, the",
+      "words": [
+        {
+          "w": "and",
+          "s": 216.352,
+          "e": 217.012,
+          "c": 0.508915
+        },
+        {
+          "w": "we,",
+          "s": 217.012,
+          "e": 217.902,
+          "c": 0.650076
+        },
+        {
+          "w": "the",
+          "s": 218.182,
+          "e": 218.182,
+          "c": 0.967615
+        }
+      ]
+    },
+    {
+      "i": 53,
+      "start_s": 218.27,
+      "end_s": 227.72,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "richest nation on the planet, that year after year are rich are getting richer, our children are getting poorer. Who are we when",
+      "words": [
+        {
+          "w": "richest",
+          "s": 218.272,
+          "e": 218.762,
+          "c": 0.996074
+        },
+        {
+          "w": "nation",
+          "s": 218.822,
+          "e": 219.372,
+          "c": 0.994248
+        },
+        {
+          "w": "on",
+          "s": 219.372,
+          "e": 219.552,
+          "c": 0.976747
+        },
+        {
+          "w": "the",
+          "s": 219.552,
+          "e": 219.822,
+          "c": 0.991312
+        },
+        {
+          "w": "planet,",
+          "s": 219.822,
+          "e": 220.522,
+          "c": 0.719886
+        },
+        {
+          "w": "that",
+          "s": 220.522,
+          "e": 220.752,
+          "c": 0.649288
+        },
+        {
+          "w": "year",
+          "s": 220.752,
+          "e": 220.992,
+          "c": 0.955557
+        },
+        {
+          "w": "after",
+          "s": 220.992,
+          "e": 221.212,
+          "c": 0.96017
+        },
+        {
+          "w": "year",
+          "s": 221.332,
+          "e": 221.632,
+          "c": 0.995856
+        },
+        {
+          "w": "are",
+          "s": 221.632,
+          "e": 221.852,
+          "c": 0.720457
+        },
+        {
+          "w": "rich",
+          "s": 221.852,
+          "e": 222.162,
+          "c": 0.965497
+        },
+        {
+          "w": "are",
+          "s": 222.162,
+          "e": 222.382,
+          "c": 0.578604
+        },
+        {
+          "w": "getting",
+          "s": 222.882,
+          "e": 222.922,
+          "c": 0.998102
+        },
+        {
+          "w": "richer,",
+          "s": 222.962,
+          "e": 223.452,
+          "c": 0.764247
+        },
+        {
+          "w": "our",
+          "s": 223.532,
+          "e": 223.652,
+          "c": 0.970695
+        },
+        {
+          "w": "children",
+          "s": 223.782,
+          "e": 224.372,
+          "c": 0.99859
+        },
+        {
+          "w": "are",
+          "s": 224.372,
+          "e": 224.602,
+          "c": 0.995222
+        },
+        {
+          "w": "getting",
+          "s": 224.602,
+          "e": 225.132,
+          "c": 0.996856
+        },
+        {
+          "w": "poorer.",
+          "s": 225.132,
+          "e": 225.872,
+          "c": 0.644617
+        },
+        {
+          "w": "Who",
+          "s": 225.872,
+          "e": 226.332,
+          "c": 0.997061
+        },
+        {
+          "w": "are",
+          "s": 226.332,
+          "e": 226.792,
+          "c": 0.997135
+        },
+        {
+          "w": "we",
+          "s": 226.792,
+          "e": 227.102,
+          "c": 0.996753
+        },
+        {
+          "w": "when",
+          "s": 227.422,
+          "e": 227.722,
+          "c": 0.629205
+        }
+      ]
+    },
+    {
+      "i": 54,
+      "start_s": 227.72,
+      "end_s": 230.98,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "we pledge allegiance to a",
+      "words": [
+        {
+          "w": "we",
+          "s": 227.722,
+          "e": 227.992,
+          "c": 0.998232
+        },
+        {
+          "w": "pledge",
+          "s": 228.092,
+          "e": 228.962,
+          "c": 0.993212
+        },
+        {
+          "w": "allegiance",
+          "s": 228.962,
+          "e": 229.902,
+          "c": 0.997655
+        },
+        {
+          "w": "to",
+          "s": 230.502,
+          "e": 230.832,
+          "c": 0.997271
+        },
+        {
+          "w": "a",
+          "s": 230.832,
+          "e": 230.982,
+          "c": 0.993557
+        }
+      ]
+    },
+    {
+      "i": 55,
+      "start_s": 230.98,
+      "end_s": 237.46,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "flag and say liberty and justice for all? Who",
+      "words": [
+        {
+          "w": "flag",
+          "s": 230.982,
+          "e": 231.602,
+          "c": 0.999369
+        },
+        {
+          "w": "and",
+          "s": 231.602,
+          "e": 232.062,
+          "c": 0.970151
+        },
+        {
+          "w": "say",
+          "s": 232.062,
+          "e": 232.512,
+          "c": 0.988482
+        },
+        {
+          "w": "liberty",
+          "s": 233.222,
+          "e": 233.612,
+          "c": 0.75472
+        },
+        {
+          "w": "and",
+          "s": 233.652,
+          "e": 234.072,
+          "c": 0.989815
+        },
+        {
+          "w": "justice",
+          "s": 234.072,
+          "e": 235.162,
+          "c": 0.998055
+        },
+        {
+          "w": "for",
+          "s": 235.162,
+          "e": 235.532,
+          "c": 0.997132
+        },
+        {
+          "w": "all?",
+          "s": 235.682,
+          "e": 236.672,
+          "c": 0.962562
+        },
+        {
+          "w": "Who",
+          "s": 236.672,
+          "e": 237.462,
+          "c": 0.996704
+        }
+      ]
+    },
+    {
+      "i": 56,
+      "start_s": 238.22,
+      "end_s": 239.59,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "are we?",
+      "words": [
+        {
+          "w": "are",
+          "s": 238.222,
+          "e": 238.252,
+          "c": 0.999573
+        },
+        {
+          "w": "we?",
+          "s": 238.302,
+          "e": 239.592,
+          "c": 0.933256
+        }
+      ]
+    },
+    {
+      "i": 57,
+      "start_s": 239.58,
+      "end_s": 241.01,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We don't even know",
+      "words": [
+        {
+          "w": "We",
+          "s": 239.584,
+          "e": 239.774,
+          "c": 0.840079
+        },
+        {
+          "w": "don't",
+          "s": 239.774,
+          "e": 240.254,
+          "c": 0.989649
+        },
+        {
+          "w": "even",
+          "s": 240.254,
+          "e": 240.634,
+          "c": 0.996476
+        },
+        {
+          "w": "know",
+          "s": 240.634,
+          "e": 241.014,
+          "c": 0.998851
+        }
+      ]
+    },
+    {
+      "i": 58,
+      "start_s": 241.24,
+      "end_s": 249.98,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the demographic changes in our country. We have cities across America where one out of every 10 child is being raised by a grandparent.",
+      "words": [
+        {
+          "w": "the",
+          "s": 241.244,
+          "e": 241.304,
+          "c": 0.989421
+        },
+        {
+          "w": "demographic",
+          "s": 241.304,
+          "e": 242.364,
+          "c": 0.996139
+        },
+        {
+          "w": "changes",
+          "s": 242.364,
+          "e": 243.084,
+          "c": 0.991387
+        },
+        {
+          "w": "in",
+          "s": 243.084,
+          "e": 243.174,
+          "c": 0.931449
+        },
+        {
+          "w": "our",
+          "s": 243.174,
+          "e": 243.304,
+          "c": 0.998698
+        },
+        {
+          "w": "country.",
+          "s": 243.304,
+          "e": 243.764,
+          "c": 0.874873
+        },
+        {
+          "w": "We",
+          "s": 243.764,
+          "e": 243.894,
+          "c": 0.998546
+        },
+        {
+          "w": "have",
+          "s": 243.894,
+          "e": 244.154,
+          "c": 0.999028
+        },
+        {
+          "w": "cities",
+          "s": 244.154,
+          "e": 244.544,
+          "c": 0.998957
+        },
+        {
+          "w": "across",
+          "s": 244.544,
+          "e": 244.934,
+          "c": 0.996329
+        },
+        {
+          "w": "America",
+          "s": 245.424,
+          "e": 245.424,
+          "c": 0.998114
+        },
+        {
+          "w": "where",
+          "s": 245.434,
+          "e": 245.624,
+          "c": 0.5987
+        },
+        {
+          "w": "one",
+          "s": 245.624,
+          "e": 246.064,
+          "c": 0.822309
+        },
+        {
+          "w": "out",
+          "s": 246.064,
+          "e": 246.224,
+          "c": 0.889283
+        },
+        {
+          "w": "of",
+          "s": 246.304,
+          "e": 246.424,
+          "c": 0.955104
+        },
+        {
+          "w": "every",
+          "s": 246.424,
+          "e": 246.764,
+          "c": 0.955777
+        },
+        {
+          "w": "10",
+          "s": 246.764,
+          "e": 247.064,
+          "c": 0.844087
+        },
+        {
+          "w": "child",
+          "s": 247.064,
+          "e": 247.464,
+          "c": 0.813373
+        },
+        {
+          "w": "is",
+          "s": 247.464,
+          "e": 247.544,
+          "c": 0.76158
+        },
+        {
+          "w": "being",
+          "s": 247.634,
+          "e": 247.804,
+          "c": 0.949099
+        },
+        {
+          "w": "raised",
+          "s": 247.804,
+          "e": 248.134,
+          "c": 0.968788
+        },
+        {
+          "w": "by",
+          "s": 248.344,
+          "e": 248.354,
+          "c": 0.971349
+        },
+        {
+          "w": "a",
+          "s": 248.354,
+          "e": 248.434,
+          "c": 0.99411
+        },
+        {
+          "w": "grandparent.",
+          "s": 248.434,
+          "e": 249.984,
+          "c": 0.902521
+        }
+      ]
+    },
+    {
+      "i": 59,
+      "start_s": 249.98,
+      "end_s": 250.89,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And so here",
+      "words": [
+        {
+          "w": "And",
+          "s": 249.984,
+          "e": 250.284,
+          "c": 0.943505
+        },
+        {
+          "w": "so",
+          "s": 250.284,
+          "e": 250.484,
+          "c": 0.995017
+        },
+        {
+          "w": "here",
+          "s": 250.484,
+          "e": 250.894,
+          "c": 0.927079
+        }
+      ]
+    },
+    {
+      "i": 60,
+      "start_s": 250.89,
+      "end_s": 260.9,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "we're discussing childhood poverty, and some people are talking about work requirements when we know from the data from conservative think tanks,",
+      "words": [
+        {
+          "w": "we're",
+          "s": 250.894,
+          "e": 251.394,
+          "c": 0.866204
+        },
+        {
+          "w": "discussing",
+          "s": 251.654,
+          "e": 252.414,
+          "c": 0.999613
+        },
+        {
+          "w": "childhood",
+          "s": 252.414,
+          "e": 253.334,
+          "c": 0.993847
+        },
+        {
+          "w": "poverty,",
+          "s": 253.334,
+          "e": 254.354,
+          "c": 0.379169
+        },
+        {
+          "w": "and",
+          "s": 254.564,
+          "e": 254.584,
+          "c": 0.574829
+        },
+        {
+          "w": "some",
+          "s": 254.584,
+          "e": 254.784,
+          "c": 0.989279
+        },
+        {
+          "w": "people",
+          "s": 254.794,
+          "e": 255.104,
+          "c": 0.998525
+        },
+        {
+          "w": "are",
+          "s": 255.174,
+          "e": 255.294,
+          "c": 0.99314
+        },
+        {
+          "w": "talking",
+          "s": 255.294,
+          "e": 255.644,
+          "c": 0.996352
+        },
+        {
+          "w": "about",
+          "s": 255.914,
+          "e": 256.384,
+          "c": 0.952804
+        },
+        {
+          "w": "work",
+          "s": 256.384,
+          "e": 256.744,
+          "c": 0.922433
+        },
+        {
+          "w": "requirements",
+          "s": 256.884,
+          "e": 257.594,
+          "c": 0.94561
+        },
+        {
+          "w": "when",
+          "s": 257.604,
+          "e": 257.884,
+          "c": 0.993585
+        },
+        {
+          "w": "we",
+          "s": 257.884,
+          "e": 258.024,
+          "c": 0.999361
+        },
+        {
+          "w": "know",
+          "s": 258.024,
+          "e": 258.304,
+          "c": 0.999548
+        },
+        {
+          "w": "from",
+          "s": 258.304,
+          "e": 258.584,
+          "c": 0.984568
+        },
+        {
+          "w": "the",
+          "s": 258.584,
+          "e": 258.794,
+          "c": 0.999133
+        },
+        {
+          "w": "data",
+          "s": 258.794,
+          "e": 259.074,
+          "c": 0.999586
+        },
+        {
+          "w": "from",
+          "s": 259.264,
+          "e": 259.354,
+          "c": 0.639041
+        },
+        {
+          "w": "conservative",
+          "s": 259.354,
+          "e": 260.194,
+          "c": 0.98606
+        },
+        {
+          "w": "think",
+          "s": 260.194,
+          "e": 260.524,
+          "c": 0.931307
+        },
+        {
+          "w": "tanks,",
+          "s": 260.584,
+          "e": 260.904,
+          "c": 0.458713
+        }
+      ]
+    },
+    {
+      "i": 61,
+      "start_s": 260.88,
+      "end_s": 279.3,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to what we see in other nations like Canada, that things like the child allowance, or in our country, the child tax credit, increase workforce participation. But if you get rid of the child tax credit, those grandparents raising grandchildren, half of them plunge",
+      "words": [
+        {
+          "w": "to",
+          "s": 260.88,
+          "e": 261.01,
+          "c": 0.676061
+        },
+        {
+          "w": "what",
+          "s": 261.12,
+          "e": 261.28,
+          "c": 0.994888
+        },
+        {
+          "w": "we",
+          "s": 261.28,
+          "e": 261.4,
+          "c": 0.999234
+        },
+        {
+          "w": "see",
+          "s": 261.4,
+          "e": 261.51,
+          "c": 0.998074
+        },
+        {
+          "w": "in",
+          "s": 261.63,
+          "e": 261.74,
+          "c": 0.996997
+        },
+        {
+          "w": "other",
+          "s": 261.74,
+          "e": 262.08,
+          "c": 0.998074
+        },
+        {
+          "w": "nations",
+          "s": 262.08,
+          "e": 262.54,
+          "c": 0.991075
+        },
+        {
+          "w": "like",
+          "s": 262.64,
+          "e": 262.82,
+          "c": 0.857009
+        },
+        {
+          "w": "Canada,",
+          "s": 262.82,
+          "e": 263.34,
+          "c": 0.609816
+        },
+        {
+          "w": "that",
+          "s": 263.54,
+          "e": 263.54,
+          "c": 0.986476
+        },
+        {
+          "w": "things",
+          "s": 263.58,
+          "e": 263.81,
+          "c": 0.995154
+        },
+        {
+          "w": "like",
+          "s": 263.86,
+          "e": 263.96,
+          "c": 0.998584
+        },
+        {
+          "w": "the",
+          "s": 264.09,
+          "e": 264.2,
+          "c": 0.993636
+        },
+        {
+          "w": "child",
+          "s": 264.2,
+          "e": 264.46,
+          "c": 0.805917
+        },
+        {
+          "w": "allowance,",
+          "s": 264.46,
+          "e": 265.01,
+          "c": 0.556965
+        },
+        {
+          "w": "or",
+          "s": 265.1,
+          "e": 265.1,
+          "c": 0.54414
+        },
+        {
+          "w": "in",
+          "s": 265.19,
+          "e": 265.31,
+          "c": 0.973084
+        },
+        {
+          "w": "our",
+          "s": 265.31,
+          "e": 265.49,
+          "c": 0.996858
+        },
+        {
+          "w": "country,",
+          "s": 265.49,
+          "e": 265.92,
+          "c": 0.883174
+        },
+        {
+          "w": "the",
+          "s": 266.15,
+          "e": 266.17,
+          "c": 0.998213
+        },
+        {
+          "w": "child",
+          "s": 266.19,
+          "e": 266.58,
+          "c": 0.927614
+        },
+        {
+          "w": "tax",
+          "s": 266.68,
+          "e": 266.84,
+          "c": 0.998251
+        },
+        {
+          "w": "credit,",
+          "s": 266.84,
+          "e": 267.44,
+          "c": 0.505025
+        },
+        {
+          "w": "increase",
+          "s": 267.49,
+          "e": 267.94,
+          "c": 0.656975
+        },
+        {
+          "w": "workforce",
+          "s": 267.94,
+          "e": 268.2,
+          "c": 0.980058
+        },
+        {
+          "w": "participation.",
+          "s": 268.57,
+          "e": 269.26,
+          "c": 0.738478
+        },
+        {
+          "w": "But",
+          "s": 269.43,
+          "e": 269.43,
+          "c": 0.996962
+        },
+        {
+          "w": "if",
+          "s": 269.49,
+          "e": 269.54,
+          "c": 0.985942
+        },
+        {
+          "w": "you",
+          "s": 269.54,
+          "e": 269.71,
+          "c": 0.999632
+        },
+        {
+          "w": "get",
+          "s": 269.71,
+          "e": 269.88,
+          "c": 0.998471
+        },
+        {
+          "w": "rid",
+          "s": 269.88,
+          "e": 270.05,
+          "c": 0.999537
+        },
+        {
+          "w": "of",
+          "s": 270.05,
+          "e": 270.16,
+          "c": 0.999601
+        },
+        {
+          "w": "the",
+          "s": 270.16,
+          "e": 270.33,
+          "c": 0.993951
+        },
+        {
+          "w": "child",
+          "s": 270.33,
+          "e": 270.6,
+          "c": 0.996445
+        },
+        {
+          "w": "tax",
+          "s": 270.61,
+          "e": 270.78,
+          "c": 0.999171
+        },
+        {
+          "w": "credit,",
+          "s": 270.83,
+          "e": 271.3,
+          "c": 0.987901
+        },
+        {
+          "w": "those",
+          "s": 271.54,
+          "e": 272.08,
+          "c": 0.999188
+        },
+        {
+          "w": "grandparents",
+          "s": 272.08,
+          "e": 273.96,
+          "c": 0.994875
+        },
+        {
+          "w": "raising",
+          "s": 273.96,
+          "e": 274.99,
+          "c": 0.742264
+        },
+        {
+          "w": "grandchildren,",
+          "s": 274.99,
+          "e": 277.21,
+          "c": 0.785995
+        },
+        {
+          "w": "half",
+          "s": 277.46,
+          "e": 277.69,
+          "c": 0.996512
+        },
+        {
+          "w": "of",
+          "s": 277.74,
+          "e": 278,
+          "c": 0.999516
+        },
+        {
+          "w": "them",
+          "s": 278,
+          "e": 278.52,
+          "c": 0.998424
+        },
+        {
+          "w": "plunge",
+          "s": 278.52,
+          "e": 279.3,
+          "c": 0.927465
+        }
+      ]
+    },
+    {
+      "i": 62,
+      "start_s": 279.3,
+      "end_s": 279.5,
+      "speaker": "SPEAKER_16",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "back",
+      "words": [
+        {
+          "w": "back",
+          "s": 279.3,
+          "e": 279.5,
+          "c": 0.999275
+        }
+      ]
+    },
+    {
+      "i": 63,
+      "start_s": 279.87,
+      "end_s": 281.3,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "into poverty.",
+      "words": [
+        {
+          "w": "into",
+          "s": 279.87,
+          "e": 280.33,
+          "c": 0.998315
+        },
+        {
+          "w": "poverty.",
+          "s": 280.35,
+          "e": 281.3,
+          "c": 0.928118
+        }
+      ]
+    },
+    {
+      "i": 64,
+      "start_s": 281.3,
+      "end_s": 282.2,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and the",
+      "words": [
+        {
+          "w": "and",
+          "s": 281.296,
+          "e": 281.746,
+          "c": 0.192912
+        },
+        {
+          "w": "the",
+          "s": 281.746,
+          "e": 282.196,
+          "c": 0.987445
+        }
+      ]
+    },
+    {
+      "i": 65,
+      "start_s": 283.12,
+      "end_s": 300.08,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "stories are profound. You heard from my colleague in Colorado. We know families in New Jersey, like a woman I just saw named Margarita. She used her child tax credit payments for exactly what so many said they would be used for. She used them for food",
+      "words": [
+        {
+          "w": "stories",
+          "s": 283.116,
+          "e": 283.256,
+          "c": 0.997984
+        },
+        {
+          "w": "are",
+          "s": 283.256,
+          "e": 283.706,
+          "c": 0.998593
+        },
+        {
+          "w": "profound.",
+          "s": 283.706,
+          "e": 284.986,
+          "c": 0.945049
+        },
+        {
+          "w": "You",
+          "s": 285.396,
+          "e": 285.616,
+          "c": 0.997354
+        },
+        {
+          "w": "heard",
+          "s": 285.616,
+          "e": 285.986,
+          "c": 0.863535
+        },
+        {
+          "w": "from",
+          "s": 285.986,
+          "e": 286.286,
+          "c": 0.994556
+        },
+        {
+          "w": "my",
+          "s": 286.286,
+          "e": 286.436,
+          "c": 0.998165
+        },
+        {
+          "w": "colleague",
+          "s": 286.436,
+          "e": 287.066,
+          "c": 0.986737
+        },
+        {
+          "w": "in",
+          "s": 287.216,
+          "e": 287.256,
+          "c": 0.993021
+        },
+        {
+          "w": "Colorado.",
+          "s": 287.256,
+          "e": 287.876,
+          "c": 0.698525
+        },
+        {
+          "w": "We",
+          "s": 287.876,
+          "e": 288.016,
+          "c": 0.998974
+        },
+        {
+          "w": "know",
+          "s": 288.016,
+          "e": 288.296,
+          "c": 0.998854
+        },
+        {
+          "w": "families",
+          "s": 288.296,
+          "e": 288.866,
+          "c": 0.994723
+        },
+        {
+          "w": "in",
+          "s": 288.866,
+          "e": 289.006,
+          "c": 0.997465
+        },
+        {
+          "w": "New",
+          "s": 289.006,
+          "e": 289.216,
+          "c": 0.997657
+        },
+        {
+          "w": "Jersey,",
+          "s": 289.676,
+          "e": 289.676,
+          "c": 0.523522
+        },
+        {
+          "w": "like",
+          "s": 289.676,
+          "e": 290.066,
+          "c": 0.999344
+        },
+        {
+          "w": "a",
+          "s": 290.066,
+          "e": 290.176,
+          "c": 0.992786
+        },
+        {
+          "w": "woman",
+          "s": 290.176,
+          "e": 290.666,
+          "c": 0.998013
+        },
+        {
+          "w": "I",
+          "s": 290.666,
+          "e": 290.766,
+          "c": 0.992212
+        },
+        {
+          "w": "just",
+          "s": 290.766,
+          "e": 291.166,
+          "c": 0.998426
+        },
+        {
+          "w": "saw",
+          "s": 291.466,
+          "e": 291.466,
+          "c": 0.999275
+        },
+        {
+          "w": "named",
+          "s": 291.496,
+          "e": 291.956,
+          "c": 0.965642
+        },
+        {
+          "w": "Margarita.",
+          "s": 291.956,
+          "e": 293.176,
+          "c": 0.878617
+        },
+        {
+          "w": "She",
+          "s": 293.176,
+          "e": 293.386,
+          "c": 0.999224
+        },
+        {
+          "w": "used",
+          "s": 293.386,
+          "e": 293.666,
+          "c": 0.980612
+        },
+        {
+          "w": "her",
+          "s": 293.666,
+          "e": 293.876,
+          "c": 0.999384
+        },
+        {
+          "w": "child",
+          "s": 293.876,
+          "e": 294.216,
+          "c": 0.957934
+        },
+        {
+          "w": "tax",
+          "s": 294.216,
+          "e": 294.426,
+          "c": 0.983727
+        },
+        {
+          "w": "credit",
+          "s": 294.426,
+          "e": 294.836,
+          "c": 0.995589
+        },
+        {
+          "w": "payments",
+          "s": 294.996,
+          "e": 295.416,
+          "c": 0.997113
+        },
+        {
+          "w": "for",
+          "s": 295.416,
+          "e": 295.666,
+          "c": 0.999784
+        },
+        {
+          "w": "exactly",
+          "s": 295.666,
+          "e": 296.246,
+          "c": 0.999346
+        },
+        {
+          "w": "what",
+          "s": 296.246,
+          "e": 296.566,
+          "c": 0.99869
+        },
+        {
+          "w": "so",
+          "s": 296.576,
+          "e": 296.736,
+          "c": 0.995154
+        },
+        {
+          "w": "many",
+          "s": 296.736,
+          "e": 297.066,
+          "c": 0.999138
+        },
+        {
+          "w": "said",
+          "s": 297.236,
+          "e": 297.436,
+          "c": 0.994805
+        },
+        {
+          "w": "they",
+          "s": 297.436,
+          "e": 297.646,
+          "c": 0.984613
+        },
+        {
+          "w": "would",
+          "s": 297.646,
+          "e": 297.916,
+          "c": 0.997345
+        },
+        {
+          "w": "be",
+          "s": 297.916,
+          "e": 298.006,
+          "c": 0.999011
+        },
+        {
+          "w": "used",
+          "s": 298.096,
+          "e": 298.226,
+          "c": 0.998133
+        },
+        {
+          "w": "for.",
+          "s": 298.226,
+          "e": 298.576,
+          "c": 0.954494
+        },
+        {
+          "w": "She",
+          "s": 298.576,
+          "e": 298.826,
+          "c": 0.999264
+        },
+        {
+          "w": "used",
+          "s": 298.826,
+          "e": 299.156,
+          "c": 0.994537
+        },
+        {
+          "w": "them",
+          "s": 299.156,
+          "e": 299.486,
+          "c": 0.927224
+        },
+        {
+          "w": "for",
+          "s": 299.486,
+          "e": 299.726,
+          "c": 0.997699
+        },
+        {
+          "w": "food",
+          "s": 299.736,
+          "e": 300.076,
+          "c": 0.999392
+        }
+      ]
+    },
+    {
+      "i": 66,
+      "start_s": 300.4,
+      "end_s": 304.21,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "for her children, for school",
+      "words": [
+        {
+          "w": "for",
+          "s": 300.396,
+          "e": 300.566,
+          "c": 0.400737
+        },
+        {
+          "w": "her",
+          "s": 300.566,
+          "e": 301.056,
+          "c": 0.999527
+        },
+        {
+          "w": "children,",
+          "s": 301.056,
+          "e": 302.716,
+          "c": 0.93632
+        },
+        {
+          "w": "for",
+          "s": 302.716,
+          "e": 303.216,
+          "c": 0.999535
+        },
+        {
+          "w": "school",
+          "s": 303.216,
+          "e": 304.206,
+          "c": 0.998624
+        }
+      ]
+    },
+    {
+      "i": 67,
+      "start_s": 304.54,
+      "end_s": 308.56,
+      "speaker": "SPEAKER_18",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "supplies to keep the electricity running in her house.",
+      "words": [
+        {
+          "w": "supplies",
+          "s": 304.536,
+          "e": 305.556,
+          "c": 0.998826
+        },
+        {
+          "w": "to",
+          "s": 305.556,
+          "e": 305.596,
+          "c": 0.526462
+        },
+        {
+          "w": "keep",
+          "s": 305.816,
+          "e": 305.856,
+          "c": 0.99865
+        },
+        {
+          "w": "the",
+          "s": 305.856,
+          "e": 306.026,
+          "c": 0.853289
+        },
+        {
+          "w": "electricity",
+          "s": 306.026,
+          "e": 306.346,
+          "c": 0.992774
+        },
+        {
+          "w": "running",
+          "s": 306.836,
+          "e": 306.996,
+          "c": 0.564602
+        },
+        {
+          "w": "in",
+          "s": 306.996,
+          "e": 307.306,
+          "c": 0.998298
+        },
+        {
+          "w": "her",
+          "s": 307.306,
+          "e": 307.766,
+          "c": 0.999255
+        },
+        {
+          "w": "house.",
+          "s": 307.766,
+          "e": 308.556,
+          "c": 0.621731
+        }
+      ]
+    },
+    {
+      "i": 68,
+      "start_s": 308.56,
+      "end_s": 309.09,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "We've heard",
+      "words": [
+        {
+          "w": "We've",
+          "s": 308.56,
+          "e": 308.89,
+          "c": 0.852552
+        },
+        {
+          "w": "heard",
+          "s": 308.9,
+          "e": 309.09,
+          "c": 0.998471
+        }
+      ]
+    },
+    {
+      "i": 69,
+      "start_s": 309.37,
+      "end_s": 331.57,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "stories that they're used for a car bill to get people to work. They're used to pay for childcare that they need for their family so that they can work. Families are not using this money so they can quit their jobs. Quite the contrary, they're using them so they can get to work. Mr. President, we",
+      "words": [
+        {
+          "w": "stories",
+          "s": 309.37,
+          "e": 309.71,
+          "c": 0.998649
+        },
+        {
+          "w": "that",
+          "s": 309.71,
+          "e": 309.97,
+          "c": 0.965734
+        },
+        {
+          "w": "they're",
+          "s": 309.97,
+          "e": 310.45,
+          "c": 0.952884
+        },
+        {
+          "w": "used",
+          "s": 310.45,
+          "e": 310.63,
+          "c": 0.995853
+        },
+        {
+          "w": "for",
+          "s": 310.8,
+          "e": 310.95,
+          "c": 0.845908
+        },
+        {
+          "w": "a",
+          "s": 311.28,
+          "e": 311.35,
+          "c": 0.979748
+        },
+        {
+          "w": "car",
+          "s": 311.45,
+          "e": 311.73,
+          "c": 0.998325
+        },
+        {
+          "w": "bill",
+          "s": 311.73,
+          "e": 312.11,
+          "c": 0.990722
+        },
+        {
+          "w": "to",
+          "s": 312.22,
+          "e": 312.37,
+          "c": 0.999834
+        },
+        {
+          "w": "get",
+          "s": 312.37,
+          "e": 312.59,
+          "c": 0.999382
+        },
+        {
+          "w": "people",
+          "s": 312.91,
+          "e": 313.04,
+          "c": 0.999716
+        },
+        {
+          "w": "to",
+          "s": 313.04,
+          "e": 313.18,
+          "c": 0.999605
+        },
+        {
+          "w": "work.",
+          "s": 313.33,
+          "e": 313.74,
+          "c": 0.752786
+        },
+        {
+          "w": "They're",
+          "s": 313.74,
+          "e": 314.3,
+          "c": 0.950488
+        },
+        {
+          "w": "used",
+          "s": 314.43,
+          "e": 314.62,
+          "c": 0.997257
+        },
+        {
+          "w": "to",
+          "s": 314.62,
+          "e": 314.75,
+          "c": 0.998574
+        },
+        {
+          "w": "pay",
+          "s": 314.85,
+          "e": 315.02,
+          "c": 0.999199
+        },
+        {
+          "w": "for",
+          "s": 315.02,
+          "e": 315.26,
+          "c": 0.997725
+        },
+        {
+          "w": "childcare",
+          "s": 315.26,
+          "e": 316,
+          "c": 0.916572
+        },
+        {
+          "w": "that",
+          "s": 316,
+          "e": 316.13,
+          "c": 0.803063
+        },
+        {
+          "w": "they",
+          "s": 316.24,
+          "e": 316.48,
+          "c": 0.998628
+        },
+        {
+          "w": "need",
+          "s": 316.48,
+          "e": 316.71,
+          "c": 0.998833
+        },
+        {
+          "w": "for",
+          "s": 316.72,
+          "e": 316.94,
+          "c": 0.999765
+        },
+        {
+          "w": "their",
+          "s": 316.94,
+          "e": 317.3,
+          "c": 0.999354
+        },
+        {
+          "w": "family",
+          "s": 317.41,
+          "e": 317.74,
+          "c": 0.622002
+        },
+        {
+          "w": "so",
+          "s": 317.82,
+          "e": 317.89,
+          "c": 0.941584
+        },
+        {
+          "w": "that",
+          "s": 317.89,
+          "e": 318.13,
+          "c": 0.988108
+        },
+        {
+          "w": "they",
+          "s": 318.19,
+          "e": 318.47,
+          "c": 0.998485
+        },
+        {
+          "w": "can",
+          "s": 318.47,
+          "e": 318.69,
+          "c": 0.999729
+        },
+        {
+          "w": "work.",
+          "s": 318.69,
+          "e": 319.11,
+          "c": 0.996242
+        },
+        {
+          "w": "Families",
+          "s": 319.26,
+          "e": 319.8,
+          "c": 0.997379
+        },
+        {
+          "w": "are",
+          "s": 319.95,
+          "e": 320,
+          "c": 0.999571
+        },
+        {
+          "w": "not",
+          "s": 320,
+          "e": 320.2,
+          "c": 0.999783
+        },
+        {
+          "w": "using",
+          "s": 320.37,
+          "e": 320.54,
+          "c": 0.99958
+        },
+        {
+          "w": "this",
+          "s": 320.54,
+          "e": 320.78,
+          "c": 0.997246
+        },
+        {
+          "w": "money",
+          "s": 320.86,
+          "e": 321.18,
+          "c": 0.999924
+        },
+        {
+          "w": "so",
+          "s": 321.18,
+          "e": 321.26,
+          "c": 0.523588
+        },
+        {
+          "w": "they",
+          "s": 321.26,
+          "e": 321.33,
+          "c": 0.987515
+        },
+        {
+          "w": "can",
+          "s": 321.5,
+          "e": 321.62,
+          "c": 0.821828
+        },
+        {
+          "w": "quit",
+          "s": 321.62,
+          "e": 322,
+          "c": 0.982461
+        },
+        {
+          "w": "their",
+          "s": 322,
+          "e": 322.23,
+          "c": 0.890089
+        },
+        {
+          "w": "jobs.",
+          "s": 322.26,
+          "e": 323.02,
+          "c": 0.776423
+        },
+        {
+          "w": "Quite",
+          "s": 323.02,
+          "e": 323.37,
+          "c": 0.998117
+        },
+        {
+          "w": "the",
+          "s": 323.37,
+          "e": 323.58,
+          "c": 0.998588
+        },
+        {
+          "w": "contrary,",
+          "s": 323.71,
+          "e": 324.3,
+          "c": 0.781579
+        },
+        {
+          "w": "they're",
+          "s": 324.3,
+          "e": 324.66,
+          "c": 0.775951
+        },
+        {
+          "w": "using",
+          "s": 324.66,
+          "e": 324.92,
+          "c": 0.999632
+        },
+        {
+          "w": "them",
+          "s": 324.92,
+          "e": 325.09,
+          "c": 0.99184
+        },
+        {
+          "w": "so",
+          "s": 325.14,
+          "e": 325.29,
+          "c": 0.999622
+        },
+        {
+          "w": "they",
+          "s": 325.29,
+          "e": 325.6,
+          "c": 0.99279
+        },
+        {
+          "w": "can",
+          "s": 325.64,
+          "e": 325.67,
+          "c": 0.999355
+        },
+        {
+          "w": "get",
+          "s": 325.83,
+          "e": 326.06,
+          "c": 0.999703
+        },
+        {
+          "w": "to",
+          "s": 326.06,
+          "e": 326.06,
+          "c": 0.999432
+        },
+        {
+          "w": "work.",
+          "s": 326.25,
+          "e": 326.8,
+          "c": 0.992718
+        },
+        {
+          "w": "Mr.",
+          "s": 326.8,
+          "e": 328.23,
+          "c": 0.705754
+        },
+        {
+          "w": "President,",
+          "s": 328.27,
+          "e": 331.44,
+          "c": 0.978941
+        },
+        {
+          "w": "we",
+          "s": 331.44,
+          "e": 331.57,
+          "c": 0.985131
+        }
+      ]
+    },
+    {
+      "i": 70,
+      "start_s": 331.89,
+      "end_s": 331.98,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "are a",
+      "words": [
+        {
+          "w": "are",
+          "s": 331.89,
+          "e": 331.89,
+          "c": 0.997708
+        },
+        {
+          "w": "a",
+          "s": 331.98,
+          "e": 331.98,
+          "c": 0.965653
+        }
+      ]
+    },
+    {
+      "i": 71,
+      "start_s": 332.02,
+      "end_s": 337.18,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "nation in crisis because of how we treat our children.",
+      "words": [
+        {
+          "w": "nation",
+          "s": 332.02,
+          "e": 332.53,
+          "c": 0.99951
+        },
+        {
+          "w": "in",
+          "s": 332.67,
+          "e": 332.92,
+          "c": 0.988195
+        },
+        {
+          "w": "crisis",
+          "s": 333.03,
+          "e": 334.33,
+          "c": 0.99942
+        },
+        {
+          "w": "because",
+          "s": 334.41,
+          "e": 335.01,
+          "c": 0.999762
+        },
+        {
+          "w": "of",
+          "s": 335.09,
+          "e": 335.22,
+          "c": 0.999832
+        },
+        {
+          "w": "how",
+          "s": 335.22,
+          "e": 335.32,
+          "c": 0.999718
+        },
+        {
+          "w": "we",
+          "s": 335.51,
+          "e": 335.67,
+          "c": 0.999775
+        },
+        {
+          "w": "treat",
+          "s": 335.67,
+          "e": 336.13,
+          "c": 0.999695
+        },
+        {
+          "w": "our",
+          "s": 336.13,
+          "e": 336.4,
+          "c": 0.999491
+        },
+        {
+          "w": "children.",
+          "s": 336.4,
+          "e": 337.18,
+          "c": 0.785165
+        }
+      ]
+    },
+    {
+      "i": 72,
+      "start_s": 337.35,
+      "end_s": 340.61,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The child tax credit is a lifeline",
+      "words": [
+        {
+          "w": "The",
+          "s": 337.352,
+          "e": 337.522,
+          "c": 0.8228
+        },
+        {
+          "w": "child",
+          "s": 337.522,
+          "e": 337.972,
+          "c": 0.731705
+        },
+        {
+          "w": "tax",
+          "s": 338.152,
+          "e": 338.502,
+          "c": 0.991618
+        },
+        {
+          "w": "credit",
+          "s": 338.502,
+          "e": 339.132,
+          "c": 0.998757
+        },
+        {
+          "w": "is",
+          "s": 339.302,
+          "e": 339.482,
+          "c": 0.996605
+        },
+        {
+          "w": "a",
+          "s": 339.482,
+          "e": 339.592,
+          "c": 0.999258
+        },
+        {
+          "w": "lifeline",
+          "s": 339.592,
+          "e": 340.612,
+          "c": 0.966315
+        }
+      ]
+    },
+    {
+      "i": 73,
+      "start_s": 340.76,
+      "end_s": 340.77,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "for",
+      "words": [
+        {
+          "w": "for",
+          "s": 340.762,
+          "e": 340.762,
+          "c": 0.994949
+        }
+      ]
+    },
+    {
+      "i": 74,
+      "start_s": 340.81,
+      "end_s": 345.66,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the millions of grandparents raising grandchildren. It's a lifeline for low-income",
+      "words": [
+        {
+          "w": "the",
+          "s": 340.812,
+          "e": 340.872,
+          "c": 0.998645
+        },
+        {
+          "w": "millions",
+          "s": 340.932,
+          "e": 341.282,
+          "c": 0.997969
+        },
+        {
+          "w": "of",
+          "s": 341.312,
+          "e": 341.412,
+          "c": 0.997748
+        },
+        {
+          "w": "grandparents",
+          "s": 341.412,
+          "e": 342.022,
+          "c": 0.988947
+        },
+        {
+          "w": "raising",
+          "s": 342.062,
+          "e": 342.312,
+          "c": 0.966203
+        },
+        {
+          "w": "grandchildren.",
+          "s": 342.322,
+          "e": 342.952,
+          "c": 0.845935
+        },
+        {
+          "w": "It's",
+          "s": 343.142,
+          "e": 343.332,
+          "c": 0.988533
+        },
+        {
+          "w": "a",
+          "s": 343.332,
+          "e": 343.422,
+          "c": 0.999579
+        },
+        {
+          "w": "lifeline",
+          "s": 343.422,
+          "e": 344.162,
+          "c": 0.993509
+        },
+        {
+          "w": "for",
+          "s": 344.282,
+          "e": 344.742,
+          "c": 0.987415
+        },
+        {
+          "w": "low-income",
+          "s": 344.742,
+          "e": 345.662,
+          "c": 0.861258
+        }
+      ]
+    },
+    {
+      "i": 75,
+      "start_s": 346.69,
+      "end_s": 348.58,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "children.",
+      "words": [
+        {
+          "w": "children.",
+          "s": 346.692,
+          "e": 348.582,
+          "c": 0.967372
+        }
+      ]
+    },
+    {
+      "i": 76,
+      "start_s": 348.79,
+      "end_s": 349.08,
+      "speaker": "SPEAKER_16",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And",
+      "words": [
+        {
+          "w": "And",
+          "s": 348.792,
+          "e": 349.082,
+          "c": 0.97219
+        }
+      ]
+    },
+    {
+      "i": 77,
+      "start_s": 349.08,
+      "end_s": 355.83,
+      "speaker": "SPEAKER_19",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "so, you heard it from Senator Bennett. We are at an inflection point. What will we do right now? Will",
+      "words": [
+        {
+          "w": "so,",
+          "s": 349.082,
+          "e": 349.752,
+          "c": 0.395001
+        },
+        {
+          "w": "you",
+          "s": 349.752,
+          "e": 349.802,
+          "c": 0.972357
+        },
+        {
+          "w": "heard",
+          "s": 349.922,
+          "e": 350.212,
+          "c": 0.994129
+        },
+        {
+          "w": "it",
+          "s": 350.222,
+          "e": 350.312,
+          "c": 0.613762
+        },
+        {
+          "w": "from",
+          "s": 350.322,
+          "e": 350.552,
+          "c": 0.998734
+        },
+        {
+          "w": "Senator",
+          "s": 350.552,
+          "e": 350.952,
+          "c": 0.987477
+        },
+        {
+          "w": "Bennett.",
+          "s": 350.952,
+          "e": 351.552,
+          "c": 0.43505
+        },
+        {
+          "w": "We",
+          "s": 351.662,
+          "e": 351.662,
+          "c": 0.969849
+        },
+        {
+          "w": "are",
+          "s": 351.742,
+          "e": 351.812,
+          "c": 0.878589
+        },
+        {
+          "w": "at",
+          "s": 351.882,
+          "e": 351.932,
+          "c": 0.996181
+        },
+        {
+          "w": "an",
+          "s": 351.932,
+          "e": 352.042,
+          "c": 0.995467
+        },
+        {
+          "w": "inflection",
+          "s": 352.042,
+          "e": 352.372,
+          "c": 0.992557
+        },
+        {
+          "w": "point.",
+          "s": 352.592,
+          "e": 353.052,
+          "c": 0.920894
+        },
+        {
+          "w": "What",
+          "s": 353.252,
+          "e": 353.392,
+          "c": 0.992943
+        },
+        {
+          "w": "will",
+          "s": 353.392,
+          "e": 353.592,
+          "c": 0.994412
+        },
+        {
+          "w": "we",
+          "s": 353.712,
+          "e": 353.872,
+          "c": 0.998984
+        },
+        {
+          "w": "do",
+          "s": 354.072,
+          "e": 354.072,
+          "c": 0.999447
+        },
+        {
+          "w": "right",
+          "s": 354.092,
+          "e": 354.462,
+          "c": 0.996704
+        },
+        {
+          "w": "now?",
+          "s": 354.502,
+          "e": 355.012,
+          "c": 0.982872
+        },
+        {
+          "w": "Will",
+          "s": 355.212,
+          "e": 355.832,
+          "c": 0.993257
+        }
+      ]
+    },
+    {
+      "i": 78,
+      "start_s": 356.01,
+      "end_s": 356.49,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "we...",
+      "words": [
+        {
+          "w": "we...",
+          "s": 356.012,
+          "e": 356.492,
+          "c": 0.48617
+        }
+      ]
+    },
+    {
+      "i": 79,
+      "start_s": 356.45,
+      "end_s": 356.93,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Extend",
+      "words": [
+        {
+          "w": "Extend",
+          "s": 356.448,
+          "e": 356.928,
+          "c": 0.518737
+        }
+      ]
+    },
+    {
+      "i": 80,
+      "start_s": 357.01,
+      "end_s": 359.71,
+      "speaker": "SPEAKER_19",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the child tax credit? Will we make the full",
+      "words": [
+        {
+          "w": "the",
+          "s": 357.008,
+          "e": 357.168,
+          "c": 0.999035
+        },
+        {
+          "w": "child",
+          "s": 357.168,
+          "e": 357.568,
+          "c": 0.929356
+        },
+        {
+          "w": "tax",
+          "s": 357.638,
+          "e": 357.818,
+          "c": 0.99681
+        },
+        {
+          "w": "credit?",
+          "s": 357.818,
+          "e": 358.578,
+          "c": 0.501233
+        },
+        {
+          "w": "Will",
+          "s": 358.588,
+          "e": 358.858,
+          "c": 0.994831
+        },
+        {
+          "w": "we",
+          "s": 358.858,
+          "e": 358.978,
+          "c": 0.997731
+        },
+        {
+          "w": "make",
+          "s": 359.148,
+          "e": 359.258,
+          "c": 0.997933
+        },
+        {
+          "w": "the",
+          "s": 359.268,
+          "e": 359.458,
+          "c": 0.997234
+        },
+        {
+          "w": "full",
+          "s": 359.458,
+          "e": 359.708,
+          "c": 0.99704
+        }
+      ]
+    },
+    {
+      "i": 81,
+      "start_s": 359.78,
+      "end_s": 369.39,
+      "speaker": "SPEAKER_06",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "refundability permanent? Will we keep people having these monthly checks? That is the policy question, but the question before us really is a moral one.",
+      "words": [
+        {
+          "w": "refundability",
+          "s": 359.778,
+          "e": 360.588,
+          "c": 0.962039
+        },
+        {
+          "w": "permanent?",
+          "s": 360.598,
+          "e": 361.428,
+          "c": 0.989485
+        },
+        {
+          "w": "Will",
+          "s": 361.428,
+          "e": 361.678,
+          "c": 0.997369
+        },
+        {
+          "w": "we",
+          "s": 361.678,
+          "e": 361.798,
+          "c": 0.998683
+        },
+        {
+          "w": "keep",
+          "s": 361.988,
+          "e": 362.048,
+          "c": 0.999567
+        },
+        {
+          "w": "people",
+          "s": 362.108,
+          "e": 362.428,
+          "c": 0.998911
+        },
+        {
+          "w": "having",
+          "s": 362.428,
+          "e": 362.808,
+          "c": 0.99542
+        },
+        {
+          "w": "these",
+          "s": 362.808,
+          "e": 363.118,
+          "c": 0.996153
+        },
+        {
+          "w": "monthly",
+          "s": 363.118,
+          "e": 363.578,
+          "c": 0.999336
+        },
+        {
+          "w": "checks?",
+          "s": 363.578,
+          "e": 364.208,
+          "c": 0.988457
+        },
+        {
+          "w": "That",
+          "s": 364.208,
+          "e": 364.528,
+          "c": 0.999073
+        },
+        {
+          "w": "is",
+          "s": 364.698,
+          "e": 364.698,
+          "c": 0.998091
+        },
+        {
+          "w": "the",
+          "s": 364.768,
+          "e": 364.948,
+          "c": 0.998816
+        },
+        {
+          "w": "policy",
+          "s": 364.948,
+          "e": 365.428,
+          "c": 0.99983
+        },
+        {
+          "w": "question,",
+          "s": 365.448,
+          "e": 366.128,
+          "c": 0.701207
+        },
+        {
+          "w": "but",
+          "s": 366.128,
+          "e": 366.358,
+          "c": 0.999449
+        },
+        {
+          "w": "the",
+          "s": 366.358,
+          "e": 366.498,
+          "c": 0.999068
+        },
+        {
+          "w": "question",
+          "s": 366.698,
+          "e": 367.208,
+          "c": 0.999617
+        },
+        {
+          "w": "before",
+          "s": 367.208,
+          "e": 367.568,
+          "c": 0.997855
+        },
+        {
+          "w": "us",
+          "s": 367.678,
+          "e": 367.818,
+          "c": 0.998304
+        },
+        {
+          "w": "really",
+          "s": 367.818,
+          "e": 368.278,
+          "c": 0.96558
+        },
+        {
+          "w": "is",
+          "s": 368.278,
+          "e": 368.428,
+          "c": 0.994812
+        },
+        {
+          "w": "a",
+          "s": 368.428,
+          "e": 368.498,
+          "c": 0.994899
+        },
+        {
+          "w": "moral",
+          "s": 368.498,
+          "e": 368.608,
+          "c": 0.999592
+        },
+        {
+          "w": "one.",
+          "s": 368.898,
+          "e": 369.388,
+          "c": 0.990669
+        }
+      ]
+    },
+    {
+      "i": 82,
+      "start_s": 369.95,
+      "end_s": 371.86,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "For once and for",
+      "words": [
+        {
+          "w": "For",
+          "s": 369.948,
+          "e": 369.978,
+          "c": 0.996586
+        },
+        {
+          "w": "once",
+          "s": 370.068,
+          "e": 370.768,
+          "c": 0.999253
+        },
+        {
+          "w": "and",
+          "s": 370.768,
+          "e": 371.358,
+          "c": 0.992451
+        },
+        {
+          "w": "for",
+          "s": 371.358,
+          "e": 371.858,
+          "c": 0.99967
+        }
+      ]
+    },
+    {
+      "i": 83,
+      "start_s": 372.15,
+      "end_s": 374.41,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "all, this is not partisan.",
+      "words": [
+        {
+          "w": "all,",
+          "s": 372.148,
+          "e": 372.878,
+          "c": 0.861196
+        },
+        {
+          "w": "this",
+          "s": 372.978,
+          "e": 373.168,
+          "c": 0.949262
+        },
+        {
+          "w": "is",
+          "s": 373.238,
+          "e": 373.378,
+          "c": 0.999138
+        },
+        {
+          "w": "not",
+          "s": 373.378,
+          "e": 373.548,
+          "c": 0.999636
+        },
+        {
+          "w": "partisan.",
+          "s": 373.728,
+          "e": 374.408,
+          "c": 0.835643
+        }
+      ]
+    },
+    {
+      "i": 84,
+      "start_s": 374.41,
+      "end_s": 375.13,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "It's a",
+      "words": [
+        {
+          "w": "It's",
+          "s": 374.408,
+          "e": 374.988,
+          "c": 0.998308
+        },
+        {
+          "w": "a",
+          "s": 374.988,
+          "e": 375.128,
+          "c": 0.998902
+        }
+      ]
+    },
+    {
+      "i": 85,
+      "start_s": 375.13,
+      "end_s": 384.03,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "defining moment for the character of our country. And I say, words are not enough. We should show with the child tax credit",
+      "words": [
+        {
+          "w": "defining",
+          "s": 375.128,
+          "e": 376.108,
+          "c": 0.99956
+        },
+        {
+          "w": "moment",
+          "s": 376.328,
+          "e": 377.208,
+          "c": 0.999743
+        },
+        {
+          "w": "for",
+          "s": 377.208,
+          "e": 377.358,
+          "c": 0.981223
+        },
+        {
+          "w": "the",
+          "s": 377.358,
+          "e": 377.508,
+          "c": 0.998306
+        },
+        {
+          "w": "character",
+          "s": 377.508,
+          "e": 377.898,
+          "c": 0.999552
+        },
+        {
+          "w": "of",
+          "s": 377.998,
+          "e": 378.058,
+          "c": 0.99205
+        },
+        {
+          "w": "our",
+          "s": 378.058,
+          "e": 378.188,
+          "c": 0.999514
+        },
+        {
+          "w": "country.",
+          "s": 378.208,
+          "e": 378.568,
+          "c": 0.46705
+        },
+        {
+          "w": "And",
+          "s": 378.568,
+          "e": 378.878,
+          "c": 0.995397
+        },
+        {
+          "w": "I",
+          "s": 378.878,
+          "e": 378.978,
+          "c": 0.997413
+        },
+        {
+          "w": "say,",
+          "s": 379.128,
+          "e": 379.488,
+          "c": 0.606272
+        },
+        {
+          "w": "words",
+          "s": 379.488,
+          "e": 380.008,
+          "c": 0.971678
+        },
+        {
+          "w": "are",
+          "s": 380.008,
+          "e": 380.268,
+          "c": 0.99946
+        },
+        {
+          "w": "not",
+          "s": 380.368,
+          "e": 380.628,
+          "c": 0.99968
+        },
+        {
+          "w": "enough.",
+          "s": 380.628,
+          "e": 381.538,
+          "c": 0.943453
+        },
+        {
+          "w": "We",
+          "s": 381.608,
+          "e": 381.748,
+          "c": 0.999133
+        },
+        {
+          "w": "should",
+          "s": 382.168,
+          "e": 382.178,
+          "c": 0.999476
+        },
+        {
+          "w": "show",
+          "s": 382.178,
+          "e": 382.468,
+          "c": 0.997212
+        },
+        {
+          "w": "with",
+          "s": 382.468,
+          "e": 382.728,
+          "c": 0.894236
+        },
+        {
+          "w": "the",
+          "s": 382.798,
+          "e": 382.978,
+          "c": 0.928949
+        },
+        {
+          "w": "child",
+          "s": 382.978,
+          "e": 383.298,
+          "c": 0.976032
+        },
+        {
+          "w": "tax",
+          "s": 383.528,
+          "e": 383.558,
+          "c": 0.998913
+        },
+        {
+          "w": "credit",
+          "s": 383.558,
+          "e": 384.028,
+          "c": 0.999563
+        }
+      ]
+    },
+    {
+      "i": 86,
+      "start_s": 384,
+      "end_s": 384.28,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the",
+      "words": [
+        {
+          "w": "the",
+          "s": 384,
+          "e": 384.28,
+          "c": 0.696629
+        }
+      ]
+    },
+    {
+      "i": 87,
+      "start_s": 384.42,
+      "end_s": 392.94,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "truth in our policies, what we do with our budgets. We should show our love through what we do, not what we say.",
+      "words": [
+        {
+          "w": "truth",
+          "s": 384.42,
+          "e": 384.76,
+          "c": 0.999291
+        },
+        {
+          "w": "in",
+          "s": 384.76,
+          "e": 384.93,
+          "c": 0.972867
+        },
+        {
+          "w": "our",
+          "s": 385.17,
+          "e": 385.23,
+          "c": 0.999176
+        },
+        {
+          "w": "policies,",
+          "s": 385.23,
+          "e": 386.2,
+          "c": 0.949034
+        },
+        {
+          "w": "what",
+          "s": 386.25,
+          "e": 386.59,
+          "c": 0.890409
+        },
+        {
+          "w": "we",
+          "s": 386.59,
+          "e": 386.72,
+          "c": 0.999268
+        },
+        {
+          "w": "do",
+          "s": 386.79,
+          "e": 386.93,
+          "c": 0.998961
+        },
+        {
+          "w": "with",
+          "s": 387.12,
+          "e": 387.26,
+          "c": 0.996578
+        },
+        {
+          "w": "our",
+          "s": 387.31,
+          "e": 387.47,
+          "c": 0.998851
+        },
+        {
+          "w": "budgets.",
+          "s": 387.47,
+          "e": 388.54,
+          "c": 0.719978
+        },
+        {
+          "w": "We",
+          "s": 388.54,
+          "e": 388.72,
+          "c": 0.998824
+        },
+        {
+          "w": "should",
+          "s": 388.96,
+          "e": 389.28,
+          "c": 0.998582
+        },
+        {
+          "w": "show",
+          "s": 389.28,
+          "e": 389.47,
+          "c": 0.999066
+        },
+        {
+          "w": "our",
+          "s": 389.71,
+          "e": 389.93,
+          "c": 0.999091
+        },
+        {
+          "w": "love",
+          "s": 389.93,
+          "e": 390.32,
+          "c": 0.999643
+        },
+        {
+          "w": "through",
+          "s": 390.32,
+          "e": 390.82,
+          "c": 0.918329
+        },
+        {
+          "w": "what",
+          "s": 390.82,
+          "e": 391.1,
+          "c": 0.994425
+        },
+        {
+          "w": "we",
+          "s": 391.1,
+          "e": 391.24,
+          "c": 0.998814
+        },
+        {
+          "w": "do,",
+          "s": 391.24,
+          "e": 391.4,
+          "c": 0.901265
+        },
+        {
+          "w": "not",
+          "s": 391.77,
+          "e": 391.77,
+          "c": 0.999703
+        },
+        {
+          "w": "what",
+          "s": 391.82,
+          "e": 392.26,
+          "c": 0.999241
+        },
+        {
+          "w": "we",
+          "s": 392.26,
+          "e": 392.33,
+          "c": 0.999691
+        },
+        {
+          "w": "say.",
+          "s": 392.57,
+          "e": 392.94,
+          "c": 0.726667
+        }
+      ]
+    },
+    {
+      "i": 88,
+      "start_s": 392.94,
+      "end_s": 393.87,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And the best",
+      "words": [
+        {
+          "w": "And",
+          "s": 392.94,
+          "e": 393.22,
+          "c": 0.995292
+        },
+        {
+          "w": "the",
+          "s": 393.36,
+          "e": 393.56,
+          "c": 0.997073
+        },
+        {
+          "w": "best",
+          "s": 393.56,
+          "e": 393.87,
+          "c": 0.996938
+        }
+      ]
+    },
+    {
+      "i": 89,
+      "start_s": 394.11,
+      "end_s": 401.93,
+      "speaker": "SPEAKER_19",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "leading indicator of that will always be how the most vulnerable in our society are doing, how we take care of our",
+      "words": [
+        {
+          "w": "leading",
+          "s": 394.11,
+          "e": 394.71,
+          "c": 0.990939
+        },
+        {
+          "w": "indicator",
+          "s": 394.71,
+          "e": 395.67,
+          "c": 0.999148
+        },
+        {
+          "w": "of",
+          "s": 395.73,
+          "e": 395.84,
+          "c": 0.946324
+        },
+        {
+          "w": "that",
+          "s": 395.84,
+          "e": 396.16,
+          "c": 0.998603
+        },
+        {
+          "w": "will",
+          "s": 396.16,
+          "e": 396.35,
+          "c": 0.798927
+        },
+        {
+          "w": "always",
+          "s": 396.39,
+          "e": 396.63,
+          "c": 0.996856
+        },
+        {
+          "w": "be",
+          "s": 397.51,
+          "e": 398.04,
+          "c": 0.980733
+        },
+        {
+          "w": "how",
+          "s": 398.04,
+          "e": 398.26,
+          "c": 0.999685
+        },
+        {
+          "w": "the",
+          "s": 398.45,
+          "e": 398.48,
+          "c": 0.995796
+        },
+        {
+          "w": "most",
+          "s": 398.48,
+          "e": 398.77,
+          "c": 0.998969
+        },
+        {
+          "w": "vulnerable",
+          "s": 398.77,
+          "e": 399.43,
+          "c": 0.999474
+        },
+        {
+          "w": "in",
+          "s": 399.57,
+          "e": 399.62,
+          "c": 0.987984
+        },
+        {
+          "w": "our",
+          "s": 399.67,
+          "e": 399.86,
+          "c": 0.991263
+        },
+        {
+          "w": "society",
+          "s": 399.86,
+          "e": 400.36,
+          "c": 0.999363
+        },
+        {
+          "w": "are",
+          "s": 400.41,
+          "e": 400.59,
+          "c": 0.979053
+        },
+        {
+          "w": "doing,",
+          "s": 400.59,
+          "e": 401,
+          "c": 0.900191
+        },
+        {
+          "w": "how",
+          "s": 401,
+          "e": 401.17,
+          "c": 0.999327
+        },
+        {
+          "w": "we",
+          "s": 401.17,
+          "e": 401.28,
+          "c": 0.999676
+        },
+        {
+          "w": "take",
+          "s": 401.42,
+          "e": 401.48,
+          "c": 0.994063
+        },
+        {
+          "w": "care",
+          "s": 401.55,
+          "e": 401.72,
+          "c": 0.997048
+        },
+        {
+          "w": "of",
+          "s": 401.72,
+          "e": 401.83,
+          "c": 0.997333
+        },
+        {
+          "w": "our",
+          "s": 401.83,
+          "e": 401.93,
+          "c": 0.996837
+        }
+      ]
+    },
+    {
+      "i": 90,
+      "start_s": 402.17,
+      "end_s": 412.74,
+      "speaker": "SPEAKER_20",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "elderly, and in this case, how we care for our children. I'm honored to now have come to the floor our senator from Georgia,",
+      "words": [
+        {
+          "w": "elderly,",
+          "s": 402.17,
+          "e": 402.42,
+          "c": 0.700348
+        },
+        {
+          "w": "and",
+          "s": 402.78,
+          "e": 402.78,
+          "c": 0.999148
+        },
+        {
+          "w": "in",
+          "s": 402.84,
+          "e": 403.02,
+          "c": 0.960902
+        },
+        {
+          "w": "this",
+          "s": 403.02,
+          "e": 403.35,
+          "c": 0.999636
+        },
+        {
+          "w": "case,",
+          "s": 403.59,
+          "e": 404.22,
+          "c": 0.884406
+        },
+        {
+          "w": "how",
+          "s": 404.22,
+          "e": 404.47,
+          "c": 0.969666
+        },
+        {
+          "w": "we",
+          "s": 404.47,
+          "e": 404.62,
+          "c": 0.999277
+        },
+        {
+          "w": "care",
+          "s": 404.67,
+          "e": 404.98,
+          "c": 0.999779
+        },
+        {
+          "w": "for",
+          "s": 404.98,
+          "e": 405.23,
+          "c": 0.999125
+        },
+        {
+          "w": "our",
+          "s": 405.23,
+          "e": 405.35,
+          "c": 0.999304
+        },
+        {
+          "w": "children.",
+          "s": 405.54,
+          "e": 406.46,
+          "c": 0.999268
+        },
+        {
+          "w": "I'm",
+          "s": 406.46,
+          "e": 406.76,
+          "c": 0.721182
+        },
+        {
+          "w": "honored",
+          "s": 406.88,
+          "e": 407.4,
+          "c": 0.993617
+        },
+        {
+          "w": "to",
+          "s": 407.63,
+          "e": 407.66,
+          "c": 0.849432
+        },
+        {
+          "w": "now",
+          "s": 407.66,
+          "e": 407.85,
+          "c": 0.886849
+        },
+        {
+          "w": "have",
+          "s": 407.99,
+          "e": 408.88,
+          "c": 0.758363
+        },
+        {
+          "w": "come",
+          "s": 408.88,
+          "e": 409.72,
+          "c": 0.997267
+        },
+        {
+          "w": "to",
+          "s": 409.78,
+          "e": 409.93,
+          "c": 0.987364
+        },
+        {
+          "w": "the",
+          "s": 409.93,
+          "e": 410.21,
+          "c": 0.998793
+        },
+        {
+          "w": "floor",
+          "s": 410.21,
+          "e": 410.84,
+          "c": 0.997078
+        },
+        {
+          "w": "our",
+          "s": 410.84,
+          "e": 411.11,
+          "c": 0.991815
+        },
+        {
+          "w": "senator",
+          "s": 411.26,
+          "e": 411.74,
+          "c": 0.538176
+        },
+        {
+          "w": "from",
+          "s": 411.74,
+          "e": 412.1,
+          "c": 0.996702
+        },
+        {
+          "w": "Georgia,",
+          "s": 412.1,
+          "e": 412.74,
+          "c": 0.599443
+        }
+      ]
+    },
+    {
+      "i": 91,
+      "start_s": 412.74,
+      "end_s": 412.8,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I",
+      "words": [
+        {
+          "w": "I",
+          "s": 412.736,
+          "e": 412.796,
+          "c": 0.722833
+        }
+      ]
+    },
+    {
+      "i": 92,
+      "start_s": 413.13,
+      "end_s": 416.88,
+      "speaker": "SPEAKER_20",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "would mark as much as I love the senator from Ohio and the senator from Colorado The",
+      "words": [
+        {
+          "w": "would",
+          "s": 413.126,
+          "e": 413.166,
+          "c": 0.992776
+        },
+        {
+          "w": "mark",
+          "s": 413.166,
+          "e": 413.446,
+          "c": 0.965505
+        },
+        {
+          "w": "as",
+          "s": 413.446,
+          "e": 413.546,
+          "c": 0.762657
+        },
+        {
+          "w": "much",
+          "s": 413.626,
+          "e": 413.866,
+          "c": 0.996305
+        },
+        {
+          "w": "as",
+          "s": 413.866,
+          "e": 413.916,
+          "c": 0.993358
+        },
+        {
+          "w": "I",
+          "s": 414.006,
+          "e": 414.026,
+          "c": 0.993193
+        },
+        {
+          "w": "love",
+          "s": 414.086,
+          "e": 414.376,
+          "c": 0.986312
+        },
+        {
+          "w": "the",
+          "s": 414.466,
+          "e": 414.506,
+          "c": 0.977668
+        },
+        {
+          "w": "senator",
+          "s": 414.626,
+          "e": 414.916,
+          "c": 0.802131
+        },
+        {
+          "w": "from",
+          "s": 414.996,
+          "e": 415.156,
+          "c": 0.993705
+        },
+        {
+          "w": "Ohio",
+          "s": 415.156,
+          "e": 415.396,
+          "c": 0.99473
+        },
+        {
+          "w": "and",
+          "s": 415.396,
+          "e": 415.526,
+          "c": 0.922145
+        },
+        {
+          "w": "the",
+          "s": 415.526,
+          "e": 415.656,
+          "c": 0.99474
+        },
+        {
+          "w": "senator",
+          "s": 415.656,
+          "e": 415.966,
+          "c": 0.985025
+        },
+        {
+          "w": "from",
+          "s": 415.966,
+          "e": 416.166,
+          "c": 0.998626
+        },
+        {
+          "w": "Colorado",
+          "s": 416.286,
+          "e": 416.676,
+          "c": 0.96334
+        },
+        {
+          "w": "The",
+          "s": 416.676,
+          "e": 416.876,
+          "c": 0.966934
+        }
+      ]
+    },
+    {
+      "i": 93,
+      "start_s": 417.07,
+      "end_s": 417.49,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Senate for",
+      "words": [
+        {
+          "w": "Senate",
+          "s": 417.066,
+          "e": 417.286,
+          "c": 0.557574
+        },
+        {
+          "w": "for",
+          "s": 417.286,
+          "e": 417.486,
+          "c": 0.996263
+        }
+      ]
+    },
+    {
+      "i": 94,
+      "start_s": 417.49,
+      "end_s": 420.5,
+      "speaker": "SPEAKER_21",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Georgia has a much better haircut. I yield the floor",
+      "words": [
+        {
+          "w": "Georgia",
+          "s": 417.486,
+          "e": 417.956,
+          "c": 0.983106
+        },
+        {
+          "w": "has",
+          "s": 417.956,
+          "e": 418.156,
+          "c": 0.999129
+        },
+        {
+          "w": "a",
+          "s": 418.156,
+          "e": 418.216,
+          "c": 0.999712
+        },
+        {
+          "w": "much",
+          "s": 418.216,
+          "e": 418.446,
+          "c": 0.999009
+        },
+        {
+          "w": "better",
+          "s": 418.566,
+          "e": 418.856,
+          "c": 0.999117
+        },
+        {
+          "w": "haircut.",
+          "s": 418.936,
+          "e": 419.596,
+          "c": 0.829739
+        },
+        {
+          "w": "I",
+          "s": 419.596,
+          "e": 419.656,
+          "c": 0.983423
+        },
+        {
+          "w": "yield",
+          "s": 419.746,
+          "e": 419.976,
+          "c": 0.998647
+        },
+        {
+          "w": "the",
+          "s": 419.976,
+          "e": 420.166,
+          "c": 0.996172
+        },
+        {
+          "w": "floor",
+          "s": 420.226,
+          "e": 420.496,
+          "c": 0.999567
+        }
+      ]
+    },
+    {
+      "i": 95,
+      "start_s": 420.89,
+      "end_s": 427.18,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Senator from",
+      "words": [
+        {
+          "w": "Senator",
+          "s": 420.886,
+          "e": 424.626,
+          "c": 0.973924
+        },
+        {
+          "w": "from",
+          "s": 425.326,
+          "e": 427.176,
+          "c": 0.980031
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "start_s": 427.65,
+      "end_s": 429.99,
+      "speaker": "SPEAKER_23",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Ohio",
+      "words": [
+        {
+          "w": "Ohio",
+          "s": 427.646,
+          "e": 429.986,
+          "c": 0.966895
+        }
+      ]
+    }
+  ]
+}
