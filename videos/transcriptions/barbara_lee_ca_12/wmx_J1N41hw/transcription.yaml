@@ -14,6 +14,14 @@ Transcription:
 
   Video:
     Title: "LeeMail Introduction 10-10-14"
+    Description: >-
+      A 41-second constituent video update from October 2014 that opens with 'this is Congresswoman Barbara
+      Lee'. She describes recent events in her East Bay district: a 'Make It in America' tour stop in San
+      Leandro with House Democratic Whip Steny Hoyer, and a visit by Ambassador Birx, the Global AIDS
+      Coordinator, to HIV/AIDS clinics in the district. She also announces a new section in her 'LeeMail'
+      newsletter that lists federal grant opportunities and grants already won by local nonprofits. The
+      automatic transcript garbles a few words ('East Bank', 'LeanMail'); the meaning is clear from context
+      and the title.
     URL: "https://www.youtube.com/watch?v=wmx_J1N41hw"
     Video_ID: "wmx_J1N41hw"
     Show: "Rep. Barbara Lee"
@@ -50,17 +58,20 @@ Transcription:
     Published_At: "2014-10-10T20:32:41+00:00"
     Captured_At: "2026-08-14T05:03:37-07:00"
 
-  # No cluster is matched to a named human: the transcript does not
-  # identify who is speaking. Subject is therefore OMITTED rather than
-  # assigned to whichever label sorted first — that is the one field a
-  # scorer trusts, and a default there is a fabricated attribution.
   People_in_Video:
     Person_1:
-      Name: "Unidentified"
-      Role: "Diarized speaker cluster; the transcript does not name it"
+      Name: "Barbara Lee"
+      Role: "Congresswoman; self-identifies at 00:00 ('this is Congresswoman Barbara Lee')"
+      Subject: true
       Speaker_Label: "SPEAKER_00"
       Share_Of_Speech: "100.0%"
       Turns: 1
+
+  Topics:
+    - "Constituent newsletter update"
+    - "Make It in America manufacturing tour"
+    - "HIV/AIDS clinics and the Global AIDS Coordinator"
+    - "Federal grant opportunities for nonprofits"
 
   Source:
     Canonical_ID: "71f0054a5d9ef854"
@@ -111,3 +122,12 @@ Transcription:
     source_url: "https://www.youtube.com/watch?v=wmx_J1N41hw"
     source_ref: "wmx_J1N41hw"
     subject_kind: "new_politician"
+
+  # Blocks this version of the tool does not know about, carried forward
+  # verbatim rather than dropped.
+  Media_Provenance:
+    Real_Path: /Users/bryan/T/_we_citizens/videos/barbara_lee_ca/wmx_J1N41hw/wmx_J1N41hw.mp4
+    Real_Directory: /Users/bryan/T/_we_citizens/videos/barbara_lee_ca/wmx_J1N41hw/
+    Note: Stored_At names a symlink directory under the download root. The bytes were downloaded by the
+      legacy downloader under roster key barbara_lee_ca and are transcribed in place from the directory
+      above; the live demand row files this video under barbara_lee_ca_12, which is the key used here.

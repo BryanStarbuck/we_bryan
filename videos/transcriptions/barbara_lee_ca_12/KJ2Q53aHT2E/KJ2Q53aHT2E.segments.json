@@ -1,0 +1,4724 @@
+{
+  "schema_version": 2,
+  "canonical_id": "7e950e07be7d278e",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 289.58,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T14:44:15.709Z",
+  "text_sha256": "fb9b0a28f428bb97d4390ae264166fe93d567d01026b8035996650d032018543",
+  "segments_sha256": "1006912e0d70fa770218b697cd15f7742d386ae226b3621ac708bcbf29670689",
+  "words_sha256": "d1ab21394b314e05d6415b8d26097b16548fd700227941e8fa6a5ad2c20cf193",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 12,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 18,
+    "clusters": 5,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 2.8
+      },
+      "clean_s": 2.8,
+      "speaking_s": 2.8,
+      "first_s": 1.03
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 7
+      },
+      "clean_s": 7,
+      "speaking_s": 7,
+      "first_s": 10.26
+    },
+    {
+      "id": "SPEAKER_05",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 263.5
+      },
+      "clean_s": 263.5,
+      "speaking_s": 263.5,
+      "first_s": 17.97
+    },
+    {
+      "id": "SPEAKER_07",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.4
+      },
+      "clean_s": 1.4,
+      "speaking_s": 1.4,
+      "first_s": 41.36
+    },
+    {
+      "id": "SPEAKER_10",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.7
+      },
+      "clean_s": 0.7,
+      "speaking_s": 0.7,
+      "first_s": 288.96
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 1,
+      "end_s": 1,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 12.78,
+      "end_s": 13.18,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 30.02,
+      "end_s": 30.02,
+      "segment_i": 6,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 94.21,
+      "end_s": 94.21,
+      "segment_i": 12,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 194.38,
+      "end_s": 194.38,
+      "segment_i": 17,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 1,
+      "end_s": 1.01,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "Thank",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 1,
+          "e": 1,
+          "c": 0.461455
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 1.1,
+      "end_s": 8.78,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you. Ms. Lee? Gentle ladies",
+      "words": [
+        {
+          "w": "you.",
+          "s": 1.1,
+          "e": 2,
+          "c": 0.916464
+        },
+        {
+          "w": "Ms.",
+          "s": 2.1,
+          "e": 4.24,
+          "c": 0.977306
+        },
+        {
+          "w": "Lee?",
+          "s": 4.39,
+          "e": 7.3,
+          "c": 0.314815
+        },
+        {
+          "w": "Gentle",
+          "s": 7.4,
+          "e": 8.04,
+          "c": 0.678048
+        },
+        {
+          "w": "ladies",
+          "s": 8.39,
+          "e": 8.78,
+          "c": 0.715743
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 8.78,
+      "end_s": 12.68,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "recognized. Thank you very much, Mr. Chairman. First, thank",
+      "words": [
+        {
+          "w": "recognized.",
+          "s": 8.78,
+          "e": 10.42,
+          "c": 0.747822
+        },
+        {
+          "w": "Thank",
+          "s": 10.52,
+          "e": 10.6,
+          "c": 0.960144
+        },
+        {
+          "w": "you",
+          "s": 10.6,
+          "e": 10.71,
+          "c": 0.999022
+        },
+        {
+          "w": "very",
+          "s": 10.71,
+          "e": 10.86,
+          "c": 0.990898
+        },
+        {
+          "w": "much,",
+          "s": 10.86,
+          "e": 11.08,
+          "c": 0.854473
+        },
+        {
+          "w": "Mr.",
+          "s": 11.08,
+          "e": 11.26,
+          "c": 0.991405
+        },
+        {
+          "w": "Chairman.",
+          "s": 11.5,
+          "e": 11.69,
+          "c": 0.982596
+        },
+        {
+          "w": "First,",
+          "s": 11.8,
+          "e": 12.27,
+          "c": 0.779954
+        },
+        {
+          "w": "thank",
+          "s": 12.27,
+          "e": 12.68,
+          "c": 0.99799
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 12.78,
+      "end_s": 13.18,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you for",
+      "words": [
+        {
+          "w": "you",
+          "s": 12.78,
+          "e": 12.93,
+          "c": 0.99895
+        },
+        {
+          "w": "for",
+          "s": 12.93,
+          "e": 13.18,
+          "c": 0.99055
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 13.18,
+      "end_s": 17.78,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "affording me the opportunity to explain my request to you to",
+      "words": [
+        {
+          "w": "affording",
+          "s": 13.18,
+          "e": 13.92,
+          "c": 0.960021
+        },
+        {
+          "w": "me",
+          "s": 13.92,
+          "e": 13.94,
+          "c": 0.995209
+        },
+        {
+          "w": "the",
+          "s": 13.94,
+          "e": 14.33,
+          "c": 0.992405
+        },
+        {
+          "w": "opportunity",
+          "s": 14.33,
+          "e": 15.3,
+          "c": 0.995769
+        },
+        {
+          "w": "to",
+          "s": 15.3,
+          "e": 15.7,
+          "c": 0.927132
+        },
+        {
+          "w": "explain",
+          "s": 15.7,
+          "e": 16.44,
+          "c": 0.980871
+        },
+        {
+          "w": "my",
+          "s": 16.44,
+          "e": 16.61,
+          "c": 0.982191
+        },
+        {
+          "w": "request",
+          "s": 16.61,
+          "e": 17.2,
+          "c": 0.951136
+        },
+        {
+          "w": "to",
+          "s": 17.2,
+          "e": 17.36,
+          "c": 0.989289
+        },
+        {
+          "w": "you",
+          "s": 17.36,
+          "e": 17.63,
+          "c": 0.994131
+        },
+        {
+          "w": "to",
+          "s": 17.63,
+          "e": 17.78,
+          "c": 0.660298
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 17.78,
+      "end_s": 30.02,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "consider, including in the Fiscal 14 Defense Authorization Act. I want to thank all of the members for this chance to be with you today. I have a number of recommendations that I will quickly",
+      "words": [
+        {
+          "w": "consider,",
+          "s": 17.78,
+          "e": 19.28,
+          "c": 0.561062
+        },
+        {
+          "w": "including",
+          "s": 19.28,
+          "e": 19.36,
+          "c": 0.813162
+        },
+        {
+          "w": "in",
+          "s": 19.46,
+          "e": 19.5,
+          "c": 0.998003
+        },
+        {
+          "w": "the",
+          "s": 19.5,
+          "e": 19.72,
+          "c": 0.997223
+        },
+        {
+          "w": "Fiscal",
+          "s": 19.72,
+          "e": 20.15,
+          "c": 0.581359
+        },
+        {
+          "w": "14",
+          "s": 20.43,
+          "e": 20.59,
+          "c": 0.661351
+        },
+        {
+          "w": "Defense",
+          "s": 20.59,
+          "e": 21.1,
+          "c": 0.95847
+        },
+        {
+          "w": "Authorization",
+          "s": 21.1,
+          "e": 21.6,
+          "c": 0.996805
+        },
+        {
+          "w": "Act.",
+          "s": 22.01,
+          "e": 22.52,
+          "c": 0.961505
+        },
+        {
+          "w": "I",
+          "s": 22.57,
+          "e": 22.57,
+          "c": 0.994803
+        },
+        {
+          "w": "want",
+          "s": 22.62,
+          "e": 22.8,
+          "c": 0.99124
+        },
+        {
+          "w": "to",
+          "s": 22.8,
+          "e": 22.91,
+          "c": 0.996702
+        },
+        {
+          "w": "thank",
+          "s": 22.91,
+          "e": 23.2,
+          "c": 0.997994
+        },
+        {
+          "w": "all",
+          "s": 23.2,
+          "e": 23.37,
+          "c": 0.998205
+        },
+        {
+          "w": "of",
+          "s": 23.37,
+          "e": 23.48,
+          "c": 0.932805
+        },
+        {
+          "w": "the",
+          "s": 23.61,
+          "e": 23.65,
+          "c": 0.994687
+        },
+        {
+          "w": "members",
+          "s": 23.65,
+          "e": 24.06,
+          "c": 0.984816
+        },
+        {
+          "w": "for",
+          "s": 24.06,
+          "e": 24.1,
+          "c": 0.997116
+        },
+        {
+          "w": "this",
+          "s": 24.25,
+          "e": 24.45,
+          "c": 0.988468
+        },
+        {
+          "w": "chance",
+          "s": 24.49,
+          "e": 24.74,
+          "c": 0.997432
+        },
+        {
+          "w": "to",
+          "s": 24.81,
+          "e": 24.87,
+          "c": 0.997525
+        },
+        {
+          "w": "be",
+          "s": 24.87,
+          "e": 25.03,
+          "c": 0.998711
+        },
+        {
+          "w": "with",
+          "s": 25.03,
+          "e": 25.26,
+          "c": 0.99778
+        },
+        {
+          "w": "you",
+          "s": 25.26,
+          "e": 25.43,
+          "c": 0.998302
+        },
+        {
+          "w": "today.",
+          "s": 25.43,
+          "e": 26.02,
+          "c": 0.998028
+        },
+        {
+          "w": "I",
+          "s": 26.08,
+          "e": 26.08,
+          "c": 0.931626
+        },
+        {
+          "w": "have",
+          "s": 26.12,
+          "e": 26.35,
+          "c": 0.997438
+        },
+        {
+          "w": "a",
+          "s": 26.35,
+          "e": 26.41,
+          "c": 0.998363
+        },
+        {
+          "w": "number",
+          "s": 26.41,
+          "e": 26.82,
+          "c": 0.999537
+        },
+        {
+          "w": "of",
+          "s": 26.82,
+          "e": 26.95,
+          "c": 0.983017
+        },
+        {
+          "w": "recommendations",
+          "s": 27.12,
+          "e": 28.02,
+          "c": 0.988737
+        },
+        {
+          "w": "that",
+          "s": 28.02,
+          "e": 28.25,
+          "c": 0.939955
+        },
+        {
+          "w": "I",
+          "s": 28.51,
+          "e": 28.64,
+          "c": 0.99253
+        },
+        {
+          "w": "will",
+          "s": 28.64,
+          "e": 29.14,
+          "c": 0.986137
+        },
+        {
+          "w": "quickly",
+          "s": 29.14,
+          "e": 30.02,
+          "c": 0.990119
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 30.02,
+      "end_s": 30.03,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "address.",
+      "words": [
+        {
+          "w": "address.",
+          "s": 30.02,
+          "e": 30.02,
+          "c": 0.54574
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 30.02,
+      "end_s": 41.46,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and for which I strongly urge you to look at, support, and hopefully include. I have also submitted my full set of remarks for the record. First, Mr. Chairman.",
+      "words": [
+        {
+          "w": "and",
+          "s": 30,
+          "e": 30.28,
+          "c": 0.448408
+        },
+        {
+          "w": "for",
+          "s": 30.54,
+          "e": 30.56,
+          "c": 0.978707
+        },
+        {
+          "w": "which",
+          "s": 30.56,
+          "e": 31.01,
+          "c": 0.998395
+        },
+        {
+          "w": "I",
+          "s": 31.06,
+          "e": 31.13,
+          "c": 0.995103
+        },
+        {
+          "w": "strongly",
+          "s": 31.13,
+          "e": 31.89,
+          "c": 0.99774
+        },
+        {
+          "w": "urge",
+          "s": 31.89,
+          "e": 32.27,
+          "c": 0.998883
+        },
+        {
+          "w": "you",
+          "s": 32.27,
+          "e": 32.54,
+          "c": 0.994884
+        },
+        {
+          "w": "to",
+          "s": 32.64,
+          "e": 32.91,
+          "c": 0.981794
+        },
+        {
+          "w": "look",
+          "s": 32.91,
+          "e": 33.54,
+          "c": 0.988484
+        },
+        {
+          "w": "at,",
+          "s": 33.54,
+          "e": 33.83,
+          "c": 0.923518
+        },
+        {
+          "w": "support,",
+          "s": 33.84,
+          "e": 34.3,
+          "c": 0.52823
+        },
+        {
+          "w": "and",
+          "s": 34.33,
+          "e": 34.64,
+          "c": 0.914953
+        },
+        {
+          "w": "hopefully",
+          "s": 34.64,
+          "e": 35.16,
+          "c": 0.940357
+        },
+        {
+          "w": "include.",
+          "s": 35.25,
+          "e": 35.94,
+          "c": 0.943599
+        },
+        {
+          "w": "I",
+          "s": 35.94,
+          "e": 36.02,
+          "c": 0.999251
+        },
+        {
+          "w": "have",
+          "s": 36.02,
+          "e": 36.37,
+          "c": 0.769688
+        },
+        {
+          "w": "also",
+          "s": 36.48,
+          "e": 36.65,
+          "c": 0.998157
+        },
+        {
+          "w": "submitted",
+          "s": 36.73,
+          "e": 37.51,
+          "c": 0.998483
+        },
+        {
+          "w": "my",
+          "s": 37.51,
+          "e": 37.68,
+          "c": 0.997849
+        },
+        {
+          "w": "full",
+          "s": 37.68,
+          "e": 38.01,
+          "c": 0.998378
+        },
+        {
+          "w": "set",
+          "s": 38.04,
+          "e": 38.28,
+          "c": 0.992699
+        },
+        {
+          "w": "of",
+          "s": 38.34,
+          "e": 38.46,
+          "c": 0.997657
+        },
+        {
+          "w": "remarks",
+          "s": 38.46,
+          "e": 39.07,
+          "c": 0.995492
+        },
+        {
+          "w": "for",
+          "s": 39.07,
+          "e": 39.33,
+          "c": 0.98792
+        },
+        {
+          "w": "the",
+          "s": 39.33,
+          "e": 39.59,
+          "c": 0.998475
+        },
+        {
+          "w": "record.",
+          "s": 39.59,
+          "e": 40.46,
+          "c": 0.989723
+        },
+        {
+          "w": "First,",
+          "s": 40.46,
+          "e": 40.8,
+          "c": 0.484609
+        },
+        {
+          "w": "Mr.",
+          "s": 40.8,
+          "e": 41.04,
+          "c": 0.963888
+        },
+        {
+          "w": "Chairman.",
+          "s": 41.04,
+          "e": 41.46,
+          "c": 0.548082
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 41.46,
+      "end_s": 43.18,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Without objection, so ordered.",
+      "words": [
+        {
+          "w": "Without",
+          "s": 41.46,
+          "e": 41.86,
+          "c": 0.308019
+        },
+        {
+          "w": "objection,",
+          "s": 42,
+          "e": 42.46,
+          "c": 0.707696
+        },
+        {
+          "w": "so",
+          "s": 42.52,
+          "e": 42.59,
+          "c": 0.940131
+        },
+        {
+          "w": "ordered.",
+          "s": 42.59,
+          "e": 43.18,
+          "c": 0.94088
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 43.18,
+      "end_s": 51.49,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you very much. I am concerned that this bill may not contain language prohibiting permanent military bases in Afghanistan.",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 43.18,
+          "e": 43.44,
+          "c": 0.968876
+        },
+        {
+          "w": "you",
+          "s": 43.44,
+          "e": 43.59,
+          "c": 0.999291
+        },
+        {
+          "w": "very",
+          "s": 43.72,
+          "e": 43.8,
+          "c": 0.991815
+        },
+        {
+          "w": "much.",
+          "s": 43.8,
+          "e": 44.18,
+          "c": 0.998614
+        },
+        {
+          "w": "I",
+          "s": 44.18,
+          "e": 44.24,
+          "c": 0.999495
+        },
+        {
+          "w": "am",
+          "s": 44.25,
+          "e": 44.39,
+          "c": 0.982932
+        },
+        {
+          "w": "concerned",
+          "s": 44.72,
+          "e": 45.04,
+          "c": 0.998098
+        },
+        {
+          "w": "that",
+          "s": 45.04,
+          "e": 45.32,
+          "c": 0.978489
+        },
+        {
+          "w": "this",
+          "s": 45.32,
+          "e": 45.61,
+          "c": 0.996886
+        },
+        {
+          "w": "bill",
+          "s": 45.72,
+          "e": 45.91,
+          "c": 0.995488
+        },
+        {
+          "w": "may",
+          "s": 45.91,
+          "e": 46.12,
+          "c": 0.99739
+        },
+        {
+          "w": "not",
+          "s": 46.12,
+          "e": 46.33,
+          "c": 0.999415
+        },
+        {
+          "w": "contain",
+          "s": 46.33,
+          "e": 46.72,
+          "c": 0.998569
+        },
+        {
+          "w": "language",
+          "s": 46.83,
+          "e": 47.41,
+          "c": 0.997885
+        },
+        {
+          "w": "prohibiting",
+          "s": 47.41,
+          "e": 48.26,
+          "c": 0.984241
+        },
+        {
+          "w": "permanent",
+          "s": 48.26,
+          "e": 48.93,
+          "c": 0.979436
+        },
+        {
+          "w": "military",
+          "s": 48.93,
+          "e": 49.54,
+          "c": 0.987562
+        },
+        {
+          "w": "bases",
+          "s": 49.54,
+          "e": 49.83,
+          "c": 0.97342
+        },
+        {
+          "w": "in",
+          "s": 50.06,
+          "e": 50.24,
+          "c": 0.999674
+        },
+        {
+          "w": "Afghanistan.",
+          "s": 50.6,
+          "e": 51.49,
+          "c": 0.998504
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 51.57,
+      "end_s": 71.98,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "As signed into law on numerous occasions by both former President Bush and President Obama, Congress has maintained a long-standing prohibition on the establishment of permanent military bases in Afghanistan. I request you to consider and include in the 2014 Defense Authorization Act,",
+      "words": [
+        {
+          "w": "As",
+          "s": 51.568,
+          "e": 51.728,
+          "c": 0.675231
+        },
+        {
+          "w": "signed",
+          "s": 51.838,
+          "e": 52.228,
+          "c": 0.998237
+        },
+        {
+          "w": "into",
+          "s": 52.228,
+          "e": 52.558,
+          "c": 0.985727
+        },
+        {
+          "w": "law",
+          "s": 52.558,
+          "e": 52.808,
+          "c": 0.996767
+        },
+        {
+          "w": "on",
+          "s": 52.808,
+          "e": 52.958,
+          "c": 0.991161
+        },
+        {
+          "w": "numerous",
+          "s": 52.958,
+          "e": 53.608,
+          "c": 0.999392
+        },
+        {
+          "w": "occasions",
+          "s": 53.628,
+          "e": 54.358,
+          "c": 0.99544
+        },
+        {
+          "w": "by",
+          "s": 54.458,
+          "e": 54.748,
+          "c": 0.703919
+        },
+        {
+          "w": "both",
+          "s": 54.858,
+          "e": 54.998,
+          "c": 0.965002
+        },
+        {
+          "w": "former",
+          "s": 55.138,
+          "e": 55.398,
+          "c": 0.87382
+        },
+        {
+          "w": "President",
+          "s": 55.518,
+          "e": 56.028,
+          "c": 0.910441
+        },
+        {
+          "w": "Bush",
+          "s": 56.028,
+          "e": 56.258,
+          "c": 0.991379
+        },
+        {
+          "w": "and",
+          "s": 56.358,
+          "e": 56.568,
+          "c": 0.902018
+        },
+        {
+          "w": "President",
+          "s": 56.568,
+          "e": 57.358,
+          "c": 0.985892
+        },
+        {
+          "w": "Obama,",
+          "s": 57.358,
+          "e": 57.938,
+          "c": 0.972886
+        },
+        {
+          "w": "Congress",
+          "s": 58.038,
+          "e": 58.448,
+          "c": 0.505965
+        },
+        {
+          "w": "has",
+          "s": 58.488,
+          "e": 58.628,
+          "c": 0.983339
+        },
+        {
+          "w": "maintained",
+          "s": 58.688,
+          "e": 59.298,
+          "c": 0.987905
+        },
+        {
+          "w": "a",
+          "s": 59.318,
+          "e": 59.368,
+          "c": 0.955574
+        },
+        {
+          "w": "long-standing",
+          "s": 59.368,
+          "e": 60.268,
+          "c": 0.226228
+        },
+        {
+          "w": "prohibition",
+          "s": 60.268,
+          "e": 61.108,
+          "c": 0.893146
+        },
+        {
+          "w": "on",
+          "s": 61.108,
+          "e": 61.408,
+          "c": 0.821366
+        },
+        {
+          "w": "the",
+          "s": 61.408,
+          "e": 61.568,
+          "c": 0.943968
+        },
+        {
+          "w": "establishment",
+          "s": 61.568,
+          "e": 62.328,
+          "c": 0.898142
+        },
+        {
+          "w": "of",
+          "s": 62.328,
+          "e": 62.398,
+          "c": 0.92436
+        },
+        {
+          "w": "permanent",
+          "s": 62.488,
+          "e": 63.008,
+          "c": 0.946486
+        },
+        {
+          "w": "military",
+          "s": 63.008,
+          "e": 63.408,
+          "c": 0.953664
+        },
+        {
+          "w": "bases",
+          "s": 63.408,
+          "e": 63.858,
+          "c": 0.962723
+        },
+        {
+          "w": "in",
+          "s": 63.948,
+          "e": 64.108,
+          "c": 0.983335
+        },
+        {
+          "w": "Afghanistan.",
+          "s": 64.108,
+          "e": 65.308,
+          "c": 0.987132
+        },
+        {
+          "w": "I",
+          "s": 65.308,
+          "e": 65.398,
+          "c": 0.505765
+        },
+        {
+          "w": "request",
+          "s": 65.548,
+          "e": 66.048,
+          "c": 0.996792
+        },
+        {
+          "w": "you",
+          "s": 66.048,
+          "e": 66.178,
+          "c": 0.970006
+        },
+        {
+          "w": "to",
+          "s": 66.348,
+          "e": 66.508,
+          "c": 0.990204
+        },
+        {
+          "w": "consider",
+          "s": 66.508,
+          "e": 67.258,
+          "c": 0.997824
+        },
+        {
+          "w": "and",
+          "s": 67.258,
+          "e": 67.528,
+          "c": 0.976243
+        },
+        {
+          "w": "include",
+          "s": 67.538,
+          "e": 68.188,
+          "c": 0.994605
+        },
+        {
+          "w": "in",
+          "s": 68.188,
+          "e": 68.368,
+          "c": 0.873109
+        },
+        {
+          "w": "the",
+          "s": 68.368,
+          "e": 68.638,
+          "c": 0.998963
+        },
+        {
+          "w": "2014",
+          "s": 68.638,
+          "e": 69.758,
+          "c": 0.989046
+        },
+        {
+          "w": "Defense",
+          "s": 69.898,
+          "e": 70.418,
+          "c": 0.913284
+        },
+        {
+          "w": "Authorization",
+          "s": 70.418,
+          "e": 71.488,
+          "c": 0.987104
+        },
+        {
+          "w": "Act,",
+          "s": 71.608,
+          "e": 71.978,
+          "c": 0.435401
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 72.08,
+      "end_s": 94.07,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "that this be brought clearly in line with the no permanent basis provision which historically have been included into the defense authorization and related appropriations measures. Secondly, it should come as no surprise that I share the belief of many in the Congress that there is no military solution in Afghanistan.",
+      "words": [
+        {
+          "w": "that",
+          "s": 72.083,
+          "e": 72.233,
+          "c": 0.814354
+        },
+        {
+          "w": "this",
+          "s": 72.573,
+          "e": 72.963,
+          "c": 0.740997
+        },
+        {
+          "w": "be",
+          "s": 73.123,
+          "e": 73.253,
+          "c": 0.986707
+        },
+        {
+          "w": "brought",
+          "s": 73.253,
+          "e": 74.083,
+          "c": 0.990512
+        },
+        {
+          "w": "clearly",
+          "s": 74.233,
+          "e": 75.113,
+          "c": 0.98773
+        },
+        {
+          "w": "in",
+          "s": 75.113,
+          "e": 75.373,
+          "c": 0.993559
+        },
+        {
+          "w": "line",
+          "s": 75.373,
+          "e": 75.933,
+          "c": 0.985838
+        },
+        {
+          "w": "with",
+          "s": 75.933,
+          "e": 76.123,
+          "c": 0.950701
+        },
+        {
+          "w": "the",
+          "s": 76.213,
+          "e": 76.273,
+          "c": 0.956349
+        },
+        {
+          "w": "no",
+          "s": 76.273,
+          "e": 76.473,
+          "c": 0.598112
+        },
+        {
+          "w": "permanent",
+          "s": 76.473,
+          "e": 77.073,
+          "c": 0.919539
+        },
+        {
+          "w": "basis",
+          "s": 77.073,
+          "e": 77.623,
+          "c": 0.316822
+        },
+        {
+          "w": "provision",
+          "s": 77.623,
+          "e": 78.433,
+          "c": 0.465897
+        },
+        {
+          "w": "which",
+          "s": 78.953,
+          "e": 79.063,
+          "c": 0.478886
+        },
+        {
+          "w": "historically",
+          "s": 79.083,
+          "e": 79.833,
+          "c": 0.924288
+        },
+        {
+          "w": "have",
+          "s": 79.833,
+          "e": 80.073,
+          "c": 0.934021
+        },
+        {
+          "w": "been",
+          "s": 80.073,
+          "e": 80.263,
+          "c": 0.979779
+        },
+        {
+          "w": "included",
+          "s": 80.273,
+          "e": 80.903,
+          "c": 0.942017
+        },
+        {
+          "w": "into",
+          "s": 80.933,
+          "e": 81.183,
+          "c": 0.723687
+        },
+        {
+          "w": "the",
+          "s": 81.193,
+          "e": 81.473,
+          "c": 0.95217
+        },
+        {
+          "w": "defense",
+          "s": 81.473,
+          "e": 81.853,
+          "c": 0.815548
+        },
+        {
+          "w": "authorization",
+          "s": 81.933,
+          "e": 82.693,
+          "c": 0.858297
+        },
+        {
+          "w": "and",
+          "s": 82.693,
+          "e": 82.993,
+          "c": 0.839298
+        },
+        {
+          "w": "related",
+          "s": 82.993,
+          "e": 83.343,
+          "c": 0.91932
+        },
+        {
+          "w": "appropriations",
+          "s": 83.393,
+          "e": 84.433,
+          "c": 0.959624
+        },
+        {
+          "w": "measures.",
+          "s": 84.433,
+          "e": 85.393,
+          "c": 0.944671
+        },
+        {
+          "w": "Secondly,",
+          "s": 85.543,
+          "e": 86.143,
+          "c": 0.904752
+        },
+        {
+          "w": "it",
+          "s": 86.143,
+          "e": 86.293,
+          "c": 0.985175
+        },
+        {
+          "w": "should",
+          "s": 86.293,
+          "e": 86.743,
+          "c": 0.989055
+        },
+        {
+          "w": "come",
+          "s": 86.743,
+          "e": 87.033,
+          "c": 0.990342
+        },
+        {
+          "w": "as",
+          "s": 87.123,
+          "e": 87.193,
+          "c": 0.997172
+        },
+        {
+          "w": "no",
+          "s": 87.193,
+          "e": 87.233,
+          "c": 0.998713
+        },
+        {
+          "w": "surprise",
+          "s": 87.343,
+          "e": 87.943,
+          "c": 0.998521
+        },
+        {
+          "w": "that",
+          "s": 87.943,
+          "e": 87.983,
+          "c": 0.990424
+        },
+        {
+          "w": "I",
+          "s": 88.223,
+          "e": 88.313,
+          "c": 0.99846
+        },
+        {
+          "w": "share",
+          "s": 88.513,
+          "e": 88.693,
+          "c": 0.988331
+        },
+        {
+          "w": "the",
+          "s": 88.693,
+          "e": 88.903,
+          "c": 0.99631
+        },
+        {
+          "w": "belief",
+          "s": 88.903,
+          "e": 89.363,
+          "c": 0.989078
+        },
+        {
+          "w": "of",
+          "s": 89.363,
+          "e": 89.513,
+          "c": 0.97174
+        },
+        {
+          "w": "many",
+          "s": 89.513,
+          "e": 89.813,
+          "c": 0.998931
+        },
+        {
+          "w": "in",
+          "s": 89.813,
+          "e": 89.963,
+          "c": 0.987517
+        },
+        {
+          "w": "the",
+          "s": 89.963,
+          "e": 90.183,
+          "c": 0.997118
+        },
+        {
+          "w": "Congress",
+          "s": 90.183,
+          "e": 90.783,
+          "c": 0.906819
+        },
+        {
+          "w": "that",
+          "s": 90.783,
+          "e": 91.073,
+          "c": 0.990745
+        },
+        {
+          "w": "there",
+          "s": 91.083,
+          "e": 91.463,
+          "c": 0.998601
+        },
+        {
+          "w": "is",
+          "s": 91.463,
+          "e": 91.603,
+          "c": 0.996586
+        },
+        {
+          "w": "no",
+          "s": 91.603,
+          "e": 91.763,
+          "c": 0.997697
+        },
+        {
+          "w": "military",
+          "s": 91.763,
+          "e": 91.913,
+          "c": 0.998152
+        },
+        {
+          "w": "solution",
+          "s": 92.423,
+          "e": 92.963,
+          "c": 0.998355
+        },
+        {
+          "w": "in",
+          "s": 92.963,
+          "e": 93.093,
+          "c": 0.998643
+        },
+        {
+          "w": "Afghanistan.",
+          "s": 93.193,
+          "e": 94.073,
+          "c": 0.838261
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 94.21,
+      "end_s": 94.22,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "As",
+      "words": [
+        {
+          "w": "As",
+          "s": 94.207,
+          "e": 94.207,
+          "c": 0.963617
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 94.26,
+      "end_s": 119.04,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the daughter of a military veteran, I also know firsthand the sacrifices and the commitment involved in defending our nation. Our troops have done everything that was asked of them and more. But the truth is that their mission in Afghanistan is far past due and we should be withdrawing all of our troops and military contractors as soon as safely possible.",
+      "words": [
+        {
+          "w": "the",
+          "s": 94.257,
+          "e": 94.397,
+          "c": 0.986621
+        },
+        {
+          "w": "daughter",
+          "s": 94.457,
+          "e": 94.937,
+          "c": 0.997982
+        },
+        {
+          "w": "of",
+          "s": 94.937,
+          "e": 95.037,
+          "c": 0.999079
+        },
+        {
+          "w": "a",
+          "s": 95.077,
+          "e": 95.127,
+          "c": 0.992364
+        },
+        {
+          "w": "military",
+          "s": 95.127,
+          "e": 95.657,
+          "c": 0.974002
+        },
+        {
+          "w": "veteran,",
+          "s": 95.657,
+          "e": 96.237,
+          "c": 0.857261
+        },
+        {
+          "w": "I",
+          "s": 96.327,
+          "e": 96.367,
+          "c": 0.921646
+        },
+        {
+          "w": "also",
+          "s": 96.427,
+          "e": 96.807,
+          "c": 0.997997
+        },
+        {
+          "w": "know",
+          "s": 96.827,
+          "e": 97.167,
+          "c": 0.961338
+        },
+        {
+          "w": "firsthand",
+          "s": 97.327,
+          "e": 98.027,
+          "c": 0.863658
+        },
+        {
+          "w": "the",
+          "s": 98.447,
+          "e": 98.477,
+          "c": 0.849815
+        },
+        {
+          "w": "sacrifices",
+          "s": 98.477,
+          "e": 99.417,
+          "c": 0.970031
+        },
+        {
+          "w": "and",
+          "s": 99.417,
+          "e": 99.617,
+          "c": 0.779034
+        },
+        {
+          "w": "the",
+          "s": 99.617,
+          "e": 99.717,
+          "c": 0.938971
+        },
+        {
+          "w": "commitment",
+          "s": 99.717,
+          "e": 100.307,
+          "c": 0.924089
+        },
+        {
+          "w": "involved",
+          "s": 100.467,
+          "e": 100.967,
+          "c": 0.633354
+        },
+        {
+          "w": "in",
+          "s": 100.977,
+          "e": 101.117,
+          "c": 0.889946
+        },
+        {
+          "w": "defending",
+          "s": 101.117,
+          "e": 101.757,
+          "c": 0.965507
+        },
+        {
+          "w": "our",
+          "s": 101.757,
+          "e": 101.967,
+          "c": 0.991832
+        },
+        {
+          "w": "nation.",
+          "s": 101.967,
+          "e": 102.617,
+          "c": 0.948679
+        },
+        {
+          "w": "Our",
+          "s": 102.797,
+          "e": 102.847,
+          "c": 0.99827
+        },
+        {
+          "w": "troops",
+          "s": 102.847,
+          "e": 103.307,
+          "c": 0.997525
+        },
+        {
+          "w": "have",
+          "s": 103.307,
+          "e": 103.577,
+          "c": 0.998631
+        },
+        {
+          "w": "done",
+          "s": 103.617,
+          "e": 103.927,
+          "c": 0.998232
+        },
+        {
+          "w": "everything",
+          "s": 103.927,
+          "e": 104.707,
+          "c": 0.997518
+        },
+        {
+          "w": "that",
+          "s": 104.707,
+          "e": 105.017,
+          "c": 0.997238
+        },
+        {
+          "w": "was",
+          "s": 105.017,
+          "e": 105.247,
+          "c": 0.999073
+        },
+        {
+          "w": "asked",
+          "s": 105.247,
+          "e": 105.637,
+          "c": 0.998835
+        },
+        {
+          "w": "of",
+          "s": 105.637,
+          "e": 105.707,
+          "c": 0.99575
+        },
+        {
+          "w": "them",
+          "s": 105.867,
+          "e": 106.057,
+          "c": 0.999443
+        },
+        {
+          "w": "and",
+          "s": 106.147,
+          "e": 106.327,
+          "c": 0.828596
+        },
+        {
+          "w": "more.",
+          "s": 106.327,
+          "e": 106.897,
+          "c": 0.672087
+        },
+        {
+          "w": "But",
+          "s": 107.097,
+          "e": 107.187,
+          "c": 0.994182
+        },
+        {
+          "w": "the",
+          "s": 107.187,
+          "e": 107.457,
+          "c": 0.989183
+        },
+        {
+          "w": "truth",
+          "s": 107.457,
+          "e": 107.877,
+          "c": 0.999001
+        },
+        {
+          "w": "is",
+          "s": 107.917,
+          "e": 108.097,
+          "c": 0.9995
+        },
+        {
+          "w": "that",
+          "s": 108.097,
+          "e": 108.467,
+          "c": 0.938289
+        },
+        {
+          "w": "their",
+          "s": 108.467,
+          "e": 108.927,
+          "c": 0.995319
+        },
+        {
+          "w": "mission",
+          "s": 108.927,
+          "e": 109.567,
+          "c": 0.998885
+        },
+        {
+          "w": "in",
+          "s": 109.567,
+          "e": 109.747,
+          "c": 0.99756
+        },
+        {
+          "w": "Afghanistan",
+          "s": 109.747,
+          "e": 110.757,
+          "c": 0.999152
+        },
+        {
+          "w": "is",
+          "s": 110.757,
+          "e": 110.867,
+          "c": 0.998161
+        },
+        {
+          "w": "far",
+          "s": 110.927,
+          "e": 111.197,
+          "c": 0.998731
+        },
+        {
+          "w": "past",
+          "s": 111.287,
+          "e": 111.577,
+          "c": 0.989866
+        },
+        {
+          "w": "due",
+          "s": 111.577,
+          "e": 111.917,
+          "c": 0.999169
+        },
+        {
+          "w": "and",
+          "s": 111.917,
+          "e": 112.037,
+          "c": 0.418152
+        },
+        {
+          "w": "we",
+          "s": 112.037,
+          "e": 112.117,
+          "c": 0.98248
+        },
+        {
+          "w": "should",
+          "s": 112.157,
+          "e": 112.437,
+          "c": 0.995691
+        },
+        {
+          "w": "be",
+          "s": 112.437,
+          "e": 112.587,
+          "c": 0.98705
+        },
+        {
+          "w": "withdrawing",
+          "s": 112.677,
+          "e": 113.737,
+          "c": 0.925967
+        },
+        {
+          "w": "all",
+          "s": 113.737,
+          "e": 114.017,
+          "c": 0.82609
+        },
+        {
+          "w": "of",
+          "s": 114.047,
+          "e": 114.137,
+          "c": 0.978689
+        },
+        {
+          "w": "our",
+          "s": 114.237,
+          "e": 114.347,
+          "c": 0.996848
+        },
+        {
+          "w": "troops",
+          "s": 114.347,
+          "e": 114.737,
+          "c": 0.993752
+        },
+        {
+          "w": "and",
+          "s": 114.737,
+          "e": 114.837,
+          "c": 0.786931
+        },
+        {
+          "w": "military",
+          "s": 114.837,
+          "e": 115.137,
+          "c": 0.893135
+        },
+        {
+          "w": "contractors",
+          "s": 115.617,
+          "e": 116.307,
+          "c": 0.969772
+        },
+        {
+          "w": "as",
+          "s": 116.337,
+          "e": 116.517,
+          "c": 0.947128
+        },
+        {
+          "w": "soon",
+          "s": 116.647,
+          "e": 116.927,
+          "c": 0.986602
+        },
+        {
+          "w": "as",
+          "s": 117.007,
+          "e": 117.187,
+          "c": 0.969766
+        },
+        {
+          "w": "safely",
+          "s": 117.187,
+          "e": 117.817,
+          "c": 0.991983
+        },
+        {
+          "w": "possible.",
+          "s": 117.817,
+          "e": 119.037,
+          "c": 0.99059
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 118.98,
+      "end_s": 140.1,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "In addition to auditing the Pentagon, which I will touch on in a few moments, it is important that the Pentagon face the same financial constraints that all other government agencies are being subjected to. I am deeply concerned that the Pentagon is already seeking an exemption from the sequestration cuts mandated by Congress as part of the deeply",
+      "words": [
+        {
+          "w": "In",
+          "s": 118.976,
+          "e": 119.116,
+          "c": 0.885813
+        },
+        {
+          "w": "addition",
+          "s": 119.226,
+          "e": 119.706,
+          "c": 0.998403
+        },
+        {
+          "w": "to",
+          "s": 119.706,
+          "e": 119.836,
+          "c": 0.998407
+        },
+        {
+          "w": "auditing",
+          "s": 119.866,
+          "e": 120.426,
+          "c": 0.995653
+        },
+        {
+          "w": "the",
+          "s": 120.426,
+          "e": 120.646,
+          "c": 0.995046
+        },
+        {
+          "w": "Pentagon,",
+          "s": 120.646,
+          "e": 121.416,
+          "c": 0.899733
+        },
+        {
+          "w": "which",
+          "s": 121.416,
+          "e": 121.686,
+          "c": 0.878754
+        },
+        {
+          "w": "I",
+          "s": 121.686,
+          "e": 121.726,
+          "c": 0.996029
+        },
+        {
+          "w": "will",
+          "s": 121.726,
+          "e": 121.966,
+          "c": 0.972481
+        },
+        {
+          "w": "touch",
+          "s": 121.976,
+          "e": 122.186,
+          "c": 0.986147
+        },
+        {
+          "w": "on",
+          "s": 122.236,
+          "e": 122.416,
+          "c": 0.970125
+        },
+        {
+          "w": "in",
+          "s": 122.416,
+          "e": 122.516,
+          "c": 0.964667
+        },
+        {
+          "w": "a",
+          "s": 122.516,
+          "e": 122.546,
+          "c": 0.973316
+        },
+        {
+          "w": "few",
+          "s": 122.686,
+          "e": 122.726,
+          "c": 0.994776
+        },
+        {
+          "w": "moments,",
+          "s": 122.726,
+          "e": 123.206,
+          "c": 0.982004
+        },
+        {
+          "w": "it",
+          "s": 123.706,
+          "e": 123.876,
+          "c": 0.512503
+        },
+        {
+          "w": "is",
+          "s": 123.876,
+          "e": 123.906,
+          "c": 0.985564
+        },
+        {
+          "w": "important",
+          "s": 123.926,
+          "e": 124.506,
+          "c": 0.979107
+        },
+        {
+          "w": "that",
+          "s": 124.746,
+          "e": 124.746,
+          "c": 0.999605
+        },
+        {
+          "w": "the",
+          "s": 124.766,
+          "e": 124.916,
+          "c": 0.999375
+        },
+        {
+          "w": "Pentagon",
+          "s": 124.916,
+          "e": 125.366,
+          "c": 0.998671
+        },
+        {
+          "w": "face",
+          "s": 125.366,
+          "e": 125.606,
+          "c": 0.979978
+        },
+        {
+          "w": "the",
+          "s": 125.606,
+          "e": 125.776,
+          "c": 0.998563
+        },
+        {
+          "w": "same",
+          "s": 125.776,
+          "e": 125.966,
+          "c": 0.999615
+        },
+        {
+          "w": "financial",
+          "s": 126.036,
+          "e": 126.506,
+          "c": 0.999136
+        },
+        {
+          "w": "constraints",
+          "s": 126.606,
+          "e": 127.166,
+          "c": 0.993168
+        },
+        {
+          "w": "that",
+          "s": 127.166,
+          "e": 127.396,
+          "c": 0.995298
+        },
+        {
+          "w": "all",
+          "s": 127.396,
+          "e": 127.506,
+          "c": 0.992824
+        },
+        {
+          "w": "other",
+          "s": 127.576,
+          "e": 127.856,
+          "c": 0.986333
+        },
+        {
+          "w": "government",
+          "s": 127.856,
+          "e": 128.476,
+          "c": 0.979735
+        },
+        {
+          "w": "agencies",
+          "s": 128.476,
+          "e": 128.766,
+          "c": 0.971103
+        },
+        {
+          "w": "are",
+          "s": 129.336,
+          "e": 129.336,
+          "c": 0.999344
+        },
+        {
+          "w": "being",
+          "s": 129.346,
+          "e": 129.746,
+          "c": 0.995547
+        },
+        {
+          "w": "subjected",
+          "s": 129.746,
+          "e": 130.486,
+          "c": 0.998338
+        },
+        {
+          "w": "to.",
+          "s": 130.486,
+          "e": 130.916,
+          "c": 0.997097
+        },
+        {
+          "w": "I",
+          "s": 130.916,
+          "e": 130.976,
+          "c": 0.999609
+        },
+        {
+          "w": "am",
+          "s": 131.106,
+          "e": 131.106,
+          "c": 0.775972
+        },
+        {
+          "w": "deeply",
+          "s": 131.166,
+          "e": 131.496,
+          "c": 0.998578
+        },
+        {
+          "w": "concerned",
+          "s": 131.496,
+          "e": 132.046,
+          "c": 0.998673
+        },
+        {
+          "w": "that",
+          "s": 132.106,
+          "e": 132.336,
+          "c": 0.996502
+        },
+        {
+          "w": "the",
+          "s": 132.336,
+          "e": 132.526,
+          "c": 0.999068
+        },
+        {
+          "w": "Pentagon",
+          "s": 132.526,
+          "e": 133.046,
+          "c": 0.999447
+        },
+        {
+          "w": "is",
+          "s": 133.046,
+          "e": 133.176,
+          "c": 0.999014
+        },
+        {
+          "w": "already",
+          "s": 133.176,
+          "e": 133.626,
+          "c": 0.998812
+        },
+        {
+          "w": "seeking",
+          "s": 133.626,
+          "e": 134.076,
+          "c": 0.99682
+        },
+        {
+          "w": "an",
+          "s": 134.076,
+          "e": 134.196,
+          "c": 0.990471
+        },
+        {
+          "w": "exemption",
+          "s": 134.206,
+          "e": 134.836,
+          "c": 0.992703
+        },
+        {
+          "w": "from",
+          "s": 134.836,
+          "e": 135.086,
+          "c": 0.934276
+        },
+        {
+          "w": "the",
+          "s": 135.086,
+          "e": 135.176,
+          "c": 0.986941
+        },
+        {
+          "w": "sequestration",
+          "s": 135.226,
+          "e": 136.016,
+          "c": 0.983292
+        },
+        {
+          "w": "cuts",
+          "s": 136.406,
+          "e": 136.556,
+          "c": 0.997153
+        },
+        {
+          "w": "mandated",
+          "s": 136.556,
+          "e": 137.356,
+          "c": 0.996069
+        },
+        {
+          "w": "by",
+          "s": 137.356,
+          "e": 137.556,
+          "c": 0.999695
+        },
+        {
+          "w": "Congress",
+          "s": 137.556,
+          "e": 138.356,
+          "c": 0.986147
+        },
+        {
+          "w": "as",
+          "s": 138.356,
+          "e": 138.556,
+          "c": 0.972637
+        },
+        {
+          "w": "part",
+          "s": 138.556,
+          "e": 138.956,
+          "c": 0.997592
+        },
+        {
+          "w": "of",
+          "s": 138.956,
+          "e": 139.146,
+          "c": 0.999613
+        },
+        {
+          "w": "the",
+          "s": 139.216,
+          "e": 139.456,
+          "c": 0.997021
+        },
+        {
+          "w": "deeply",
+          "s": 139.456,
+          "e": 140.096,
+          "c": 0.998508
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 140.15,
+      "end_s": 165.1,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "flawed legislation that, of course, I could not support last year. I urge the Committee to consider common sense defense spending reforms outlined by many organizations across the political spectrum. With billions each year lost to waste, fraud, and abuse at the Pentagon, we need to ask for the same -- ask the same of the Department of Defense that we ask of other agencies.",
+      "words": [
+        {
+          "w": "flawed",
+          "s": 140.151,
+          "e": 140.411,
+          "c": 0.552953
+        },
+        {
+          "w": "legislation",
+          "s": 140.411,
+          "e": 141.051,
+          "c": 0.997837
+        },
+        {
+          "w": "that,",
+          "s": 141.051,
+          "e": 141.391,
+          "c": 0.522816
+        },
+        {
+          "w": "of",
+          "s": 141.391,
+          "e": 141.501,
+          "c": 0.999264
+        },
+        {
+          "w": "course,",
+          "s": 141.501,
+          "e": 141.921,
+          "c": 0.98727
+        },
+        {
+          "w": "I",
+          "s": 142.001,
+          "e": 142.101,
+          "c": 0.98522
+        },
+        {
+          "w": "could",
+          "s": 142.101,
+          "e": 142.601,
+          "c": 0.978696
+        },
+        {
+          "w": "not",
+          "s": 142.681,
+          "e": 142.961,
+          "c": 0.996776
+        },
+        {
+          "w": "support",
+          "s": 142.961,
+          "e": 143.391,
+          "c": 0.97982
+        },
+        {
+          "w": "last",
+          "s": 143.421,
+          "e": 143.681,
+          "c": 0.974003
+        },
+        {
+          "w": "year.",
+          "s": 143.681,
+          "e": 144.351,
+          "c": 0.977863
+        },
+        {
+          "w": "I",
+          "s": 144.501,
+          "e": 144.501,
+          "c": 0.999598
+        },
+        {
+          "w": "urge",
+          "s": 144.511,
+          "e": 144.791,
+          "c": 0.943811
+        },
+        {
+          "w": "the",
+          "s": 144.811,
+          "e": 145.021,
+          "c": 0.998001
+        },
+        {
+          "w": "Committee",
+          "s": 145.091,
+          "e": 145.751,
+          "c": 0.569602
+        },
+        {
+          "w": "to",
+          "s": 145.751,
+          "e": 145.901,
+          "c": 0.998717
+        },
+        {
+          "w": "consider",
+          "s": 145.901,
+          "e": 146.531,
+          "c": 0.997276
+        },
+        {
+          "w": "common",
+          "s": 146.531,
+          "e": 146.961,
+          "c": 0.640542
+        },
+        {
+          "w": "sense",
+          "s": 147.041,
+          "e": 147.391,
+          "c": 0.602948
+        },
+        {
+          "w": "defense",
+          "s": 147.391,
+          "e": 147.991,
+          "c": 0.959089
+        },
+        {
+          "w": "spending",
+          "s": 147.991,
+          "e": 148.361,
+          "c": 0.963922
+        },
+        {
+          "w": "reforms",
+          "s": 148.861,
+          "e": 149.561,
+          "c": 0.933155
+        },
+        {
+          "w": "outlined",
+          "s": 149.561,
+          "e": 150.101,
+          "c": 0.85533
+        },
+        {
+          "w": "by",
+          "s": 150.101,
+          "e": 150.171,
+          "c": 0.938797
+        },
+        {
+          "w": "many",
+          "s": 150.271,
+          "e": 150.501,
+          "c": 0.980368
+        },
+        {
+          "w": "organizations",
+          "s": 150.591,
+          "e": 151.451,
+          "c": 0.998614
+        },
+        {
+          "w": "across",
+          "s": 151.451,
+          "e": 151.861,
+          "c": 0.996557
+        },
+        {
+          "w": "the",
+          "s": 151.881,
+          "e": 152.051,
+          "c": 0.999256
+        },
+        {
+          "w": "political",
+          "s": 152.161,
+          "e": 152.761,
+          "c": 0.99935
+        },
+        {
+          "w": "spectrum.",
+          "s": 152.761,
+          "e": 153.561,
+          "c": 0.932595
+        },
+        {
+          "w": "With",
+          "s": 153.671,
+          "e": 153.921,
+          "c": 0.996569
+        },
+        {
+          "w": "billions",
+          "s": 153.921,
+          "e": 154.601,
+          "c": 0.993199
+        },
+        {
+          "w": "each",
+          "s": 154.601,
+          "e": 154.931,
+          "c": 0.992697
+        },
+        {
+          "w": "year",
+          "s": 154.931,
+          "e": 155.281,
+          "c": 0.995965
+        },
+        {
+          "w": "lost",
+          "s": 155.281,
+          "e": 155.621,
+          "c": 0.974583
+        },
+        {
+          "w": "to",
+          "s": 155.621,
+          "e": 155.791,
+          "c": 0.998519
+        },
+        {
+          "w": "waste,",
+          "s": 155.791,
+          "e": 156.381,
+          "c": 0.99059
+        },
+        {
+          "w": "fraud,",
+          "s": 156.381,
+          "e": 156.961,
+          "c": 0.688835
+        },
+        {
+          "w": "and",
+          "s": 156.961,
+          "e": 157.221,
+          "c": 0.998515
+        },
+        {
+          "w": "abuse",
+          "s": 157.221,
+          "e": 157.521,
+          "c": 0.997402
+        },
+        {
+          "w": "at",
+          "s": 157.571,
+          "e": 157.811,
+          "c": 0.990227
+        },
+        {
+          "w": "the",
+          "s": 158.001,
+          "e": 158.061,
+          "c": 0.99831
+        },
+        {
+          "w": "Pentagon,",
+          "s": 158.061,
+          "e": 158.961,
+          "c": 0.94559
+        },
+        {
+          "w": "we",
+          "s": 158.961,
+          "e": 158.991,
+          "c": 0.979725
+        },
+        {
+          "w": "need",
+          "s": 159.131,
+          "e": 159.331,
+          "c": 0.99433
+        },
+        {
+          "w": "to",
+          "s": 159.401,
+          "e": 159.471,
+          "c": 0.994732
+        },
+        {
+          "w": "ask",
+          "s": 159.481,
+          "e": 159.681,
+          "c": 0.995429
+        },
+        {
+          "w": "for",
+          "s": 159.771,
+          "e": 159.901,
+          "c": 0.860131
+        },
+        {
+          "w": "the",
+          "s": 159.901,
+          "e": 160.051,
+          "c": 0.976934
+        },
+        {
+          "w": "same",
+          "s": 160.111,
+          "e": 160.411,
+          "c": 0.8637
+        },
+        {
+          "w": "--",
+          "s": 160.461,
+          "e": 160.551,
+          "c": 0.666163
+        },
+        {
+          "w": "ask",
+          "s": 160.551,
+          "e": 160.771,
+          "c": 0.980187
+        },
+        {
+          "w": "the",
+          "s": 160.771,
+          "e": 160.991,
+          "c": 0.990837
+        },
+        {
+          "w": "same",
+          "s": 160.991,
+          "e": 161.231,
+          "c": 0.999371
+        },
+        {
+          "w": "of",
+          "s": 161.341,
+          "e": 161.421,
+          "c": 0.995271
+        },
+        {
+          "w": "the",
+          "s": 161.421,
+          "e": 161.631,
+          "c": 0.999079
+        },
+        {
+          "w": "Department",
+          "s": 161.631,
+          "e": 162.381,
+          "c": 0.994712
+        },
+        {
+          "w": "of",
+          "s": 162.381,
+          "e": 162.521,
+          "c": 0.99771
+        },
+        {
+          "w": "Defense",
+          "s": 162.521,
+          "e": 163.011,
+          "c": 0.998181
+        },
+        {
+          "w": "that",
+          "s": 163.041,
+          "e": 163.321,
+          "c": 0.970032
+        },
+        {
+          "w": "we",
+          "s": 163.361,
+          "e": 163.471,
+          "c": 0.999251
+        },
+        {
+          "w": "ask",
+          "s": 163.471,
+          "e": 163.621,
+          "c": 0.986173
+        },
+        {
+          "w": "of",
+          "s": 163.671,
+          "e": 163.831,
+          "c": 0.993695
+        },
+        {
+          "w": "other",
+          "s": 164.101,
+          "e": 164.201,
+          "c": 0.997691
+        },
+        {
+          "w": "agencies.",
+          "s": 164.201,
+          "e": 165.101,
+          "c": 0.985962
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 165.39,
+      "end_s": 194.21,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Also, Mr. Chairman, I am deeply concerned to hear about a possible expansion of the 2001 authorization to use force. As you know, Congress has a solemn constitutional obligation to deliberate and authorize all war-making and hostilities abroad. If the executive branch is seeking expanded war-making authority, let them request it and let us engage in a full and transparent debate with the proper committees holding",
+      "words": [
+        {
+          "w": "Also,",
+          "s": 165.389,
+          "e": 165.509,
+          "c": 0.905246
+        },
+        {
+          "w": "Mr.",
+          "s": 165.509,
+          "e": 165.809,
+          "c": 0.98939
+        },
+        {
+          "w": "Chairman,",
+          "s": 165.809,
+          "e": 166.449,
+          "c": 0.972472
+        },
+        {
+          "w": "I",
+          "s": 166.449,
+          "e": 166.519,
+          "c": 0.978323
+        },
+        {
+          "w": "am",
+          "s": 166.519,
+          "e": 166.659,
+          "c": 0.977443
+        },
+        {
+          "w": "deeply",
+          "s": 166.669,
+          "e": 167.119,
+          "c": 0.997891
+        },
+        {
+          "w": "concerned",
+          "s": 167.119,
+          "e": 167.679,
+          "c": 0.994928
+        },
+        {
+          "w": "to",
+          "s": 167.829,
+          "e": 167.919,
+          "c": 0.874324
+        },
+        {
+          "w": "hear",
+          "s": 167.919,
+          "e": 168.149,
+          "c": 0.991104
+        },
+        {
+          "w": "about",
+          "s": 168.149,
+          "e": 168.349,
+          "c": 0.712837
+        },
+        {
+          "w": "a",
+          "s": 168.349,
+          "e": 168.389,
+          "c": 0.867791
+        },
+        {
+          "w": "possible",
+          "s": 168.389,
+          "e": 169.129,
+          "c": 0.858219
+        },
+        {
+          "w": "expansion",
+          "s": 169.139,
+          "e": 169.929,
+          "c": 0.910213
+        },
+        {
+          "w": "of",
+          "s": 169.939,
+          "e": 170.069,
+          "c": 0.996774
+        },
+        {
+          "w": "the",
+          "s": 170.199,
+          "e": 170.359,
+          "c": 0.996869
+        },
+        {
+          "w": "2001",
+          "s": 170.359,
+          "e": 171.419,
+          "c": 0.985171
+        },
+        {
+          "w": "authorization",
+          "s": 171.419,
+          "e": 172.459,
+          "c": 0.805725
+        },
+        {
+          "w": "to",
+          "s": 172.629,
+          "e": 172.749,
+          "c": 0.984906
+        },
+        {
+          "w": "use",
+          "s": 172.749,
+          "e": 172.999,
+          "c": 0.990288
+        },
+        {
+          "w": "force.",
+          "s": 173.049,
+          "e": 173.769,
+          "c": 0.99087
+        },
+        {
+          "w": "As",
+          "s": 173.769,
+          "e": 173.919,
+          "c": 0.999073
+        },
+        {
+          "w": "you",
+          "s": 174.039,
+          "e": 174.139,
+          "c": 0.999304
+        },
+        {
+          "w": "know,",
+          "s": 174.139,
+          "e": 174.509,
+          "c": 0.977607
+        },
+        {
+          "w": "Congress",
+          "s": 174.609,
+          "e": 175.189,
+          "c": 0.967787
+        },
+        {
+          "w": "has",
+          "s": 175.189,
+          "e": 175.409,
+          "c": 0.998656
+        },
+        {
+          "w": "a",
+          "s": 175.409,
+          "e": 175.459,
+          "c": 0.998491
+        },
+        {
+          "w": "solemn",
+          "s": 175.529,
+          "e": 175.929,
+          "c": 0.994736
+        },
+        {
+          "w": "constitutional",
+          "s": 175.929,
+          "e": 176.979,
+          "c": 0.911829
+        },
+        {
+          "w": "obligation",
+          "s": 176.979,
+          "e": 177.749,
+          "c": 0.995273
+        },
+        {
+          "w": "to",
+          "s": 177.759,
+          "e": 177.879,
+          "c": 0.732486
+        },
+        {
+          "w": "deliberate",
+          "s": 177.999,
+          "e": 178.729,
+          "c": 0.967193
+        },
+        {
+          "w": "and",
+          "s": 178.989,
+          "e": 178.989,
+          "c": 0.998666
+        },
+        {
+          "w": "authorize",
+          "s": 178.999,
+          "e": 179.759,
+          "c": 0.99605
+        },
+        {
+          "w": "all",
+          "s": 179.759,
+          "e": 180.019,
+          "c": 0.993887
+        },
+        {
+          "w": "war-making",
+          "s": 180.019,
+          "e": 180.869,
+          "c": 0.623418
+        },
+        {
+          "w": "and",
+          "s": 180.889,
+          "e": 181.129,
+          "c": 0.991329
+        },
+        {
+          "w": "hostilities",
+          "s": 181.129,
+          "e": 182.039,
+          "c": 0.993419
+        },
+        {
+          "w": "abroad.",
+          "s": 182.239,
+          "e": 182.839,
+          "c": 0.996103
+        },
+        {
+          "w": "If",
+          "s": 182.889,
+          "e": 183.029,
+          "c": 0.990966
+        },
+        {
+          "w": "the",
+          "s": 183.159,
+          "e": 183.239,
+          "c": 0.999093
+        },
+        {
+          "w": "executive",
+          "s": 183.239,
+          "e": 183.869,
+          "c": 0.639526
+        },
+        {
+          "w": "branch",
+          "s": 183.869,
+          "e": 184.289,
+          "c": 0.998974
+        },
+        {
+          "w": "is",
+          "s": 184.289,
+          "e": 184.419,
+          "c": 0.99467
+        },
+        {
+          "w": "seeking",
+          "s": 184.459,
+          "e": 184.919,
+          "c": 0.989732
+        },
+        {
+          "w": "expanded",
+          "s": 184.919,
+          "e": 185.419,
+          "c": 0.985658
+        },
+        {
+          "w": "war-making",
+          "s": 185.569,
+          "e": 186.179,
+          "c": 0.970867
+        },
+        {
+          "w": "authority,",
+          "s": 186.179,
+          "e": 186.989,
+          "c": 0.956776
+        },
+        {
+          "w": "let",
+          "s": 186.989,
+          "e": 187.139,
+          "c": 0.717576
+        },
+        {
+          "w": "them",
+          "s": 187.219,
+          "e": 187.369,
+          "c": 0.989345
+        },
+        {
+          "w": "request",
+          "s": 187.369,
+          "e": 188.149,
+          "c": 0.891346
+        },
+        {
+          "w": "it",
+          "s": 188.229,
+          "e": 188.449,
+          "c": 0.925495
+        },
+        {
+          "w": "and",
+          "s": 188.689,
+          "e": 188.689,
+          "c": 0.998201
+        },
+        {
+          "w": "let",
+          "s": 188.719,
+          "e": 188.899,
+          "c": 0.999249
+        },
+        {
+          "w": "us",
+          "s": 188.969,
+          "e": 189.089,
+          "c": 0.998908
+        },
+        {
+          "w": "engage",
+          "s": 189.089,
+          "e": 189.569,
+          "c": 0.996578
+        },
+        {
+          "w": "in",
+          "s": 189.569,
+          "e": 189.729,
+          "c": 0.997116
+        },
+        {
+          "w": "a",
+          "s": 189.729,
+          "e": 189.809,
+          "c": 0.998862
+        },
+        {
+          "w": "full",
+          "s": 189.809,
+          "e": 190.129,
+          "c": 0.998321
+        },
+        {
+          "w": "and",
+          "s": 190.129,
+          "e": 190.299,
+          "c": 0.99708
+        },
+        {
+          "w": "transparent",
+          "s": 190.369,
+          "e": 191.259,
+          "c": 0.999253
+        },
+        {
+          "w": "debate",
+          "s": 191.259,
+          "e": 191.739,
+          "c": 0.998664
+        },
+        {
+          "w": "with",
+          "s": 191.739,
+          "e": 192.059,
+          "c": 0.993631
+        },
+        {
+          "w": "the",
+          "s": 192.059,
+          "e": 192.299,
+          "c": 0.998887
+        },
+        {
+          "w": "proper",
+          "s": 192.299,
+          "e": 192.699,
+          "c": 0.993678
+        },
+        {
+          "w": "committees",
+          "s": 192.779,
+          "e": 193.559,
+          "c": 0.960198
+        },
+        {
+          "w": "holding",
+          "s": 193.609,
+          "e": 194.209,
+          "c": 0.987813
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 194.38,
+      "end_s": 194.39,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "and",
+      "words": [
+        {
+          "w": "and",
+          "s": 194.376,
+          "e": 194.376,
+          "c": 0.485178
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 194.38,
+      "end_s": 224.2,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "-- excuse me, proper committee hearings and also with members of Congress who should be afforded the opportunity to consider the full implications of an expanded AUMF. I am as deeply opposed to expanding the 2001 AUMF as I was against authorizing the original one on September 14, 2001 when I cast the lone vote against it because I knew then that it was a blank check to wage for war, that it really did erode our system",
+      "words": [
+        {
+          "w": "--",
+          "s": 194.376,
+          "e": 194.506,
+          "c": 0.257622
+        },
+        {
+          "w": "excuse",
+          "s": 194.506,
+          "e": 194.816,
+          "c": 0.994633
+        },
+        {
+          "w": "me,",
+          "s": 194.896,
+          "e": 195.156,
+          "c": 0.593123
+        },
+        {
+          "w": "proper",
+          "s": 195.266,
+          "e": 195.606,
+          "c": 0.915561
+        },
+        {
+          "w": "committee",
+          "s": 195.786,
+          "e": 196.476,
+          "c": 0.865281
+        },
+        {
+          "w": "hearings",
+          "s": 196.476,
+          "e": 197.176,
+          "c": 0.984975
+        },
+        {
+          "w": "and",
+          "s": 197.176,
+          "e": 197.346,
+          "c": 0.430135
+        },
+        {
+          "w": "also",
+          "s": 197.346,
+          "e": 197.576,
+          "c": 0.973758
+        },
+        {
+          "w": "with",
+          "s": 197.576,
+          "e": 197.676,
+          "c": 0.922242
+        },
+        {
+          "w": "members",
+          "s": 197.676,
+          "e": 198.176,
+          "c": 0.887051
+        },
+        {
+          "w": "of",
+          "s": 198.176,
+          "e": 198.256,
+          "c": 0.932687
+        },
+        {
+          "w": "Congress",
+          "s": 198.256,
+          "e": 198.576,
+          "c": 0.936101
+        },
+        {
+          "w": "who",
+          "s": 198.576,
+          "e": 198.646,
+          "c": 0.6932
+        },
+        {
+          "w": "should",
+          "s": 198.736,
+          "e": 198.976,
+          "c": 0.971174
+        },
+        {
+          "w": "be",
+          "s": 198.976,
+          "e": 199.176,
+          "c": 0.599137
+        },
+        {
+          "w": "afforded",
+          "s": 199.176,
+          "e": 199.616,
+          "c": 0.783862
+        },
+        {
+          "w": "the",
+          "s": 199.616,
+          "e": 200.176,
+          "c": 0.800505
+        },
+        {
+          "w": "opportunity",
+          "s": 200.176,
+          "e": 200.436,
+          "c": 0.815499
+        },
+        {
+          "w": "to",
+          "s": 200.436,
+          "e": 200.546,
+          "c": 0.592956
+        },
+        {
+          "w": "consider",
+          "s": 200.726,
+          "e": 201.176,
+          "c": 0.877925
+        },
+        {
+          "w": "the",
+          "s": 201.176,
+          "e": 201.376,
+          "c": 0.885861
+        },
+        {
+          "w": "full",
+          "s": 201.526,
+          "e": 201.816,
+          "c": 0.927437
+        },
+        {
+          "w": "implications",
+          "s": 201.916,
+          "e": 202.176,
+          "c": 0.635911
+        },
+        {
+          "w": "of",
+          "s": 202.276,
+          "e": 203.156,
+          "c": 0.891739
+        },
+        {
+          "w": "an",
+          "s": 203.226,
+          "e": 203.376,
+          "c": 0.91589
+        },
+        {
+          "w": "expanded",
+          "s": 203.376,
+          "e": 204.176,
+          "c": 0.883278
+        },
+        {
+          "w": "AUMF.",
+          "s": 204.176,
+          "e": 205.166,
+          "c": 0.834675
+        },
+        {
+          "w": "I",
+          "s": 205.196,
+          "e": 205.266,
+          "c": 0.959172
+        },
+        {
+          "w": "am",
+          "s": 205.376,
+          "e": 205.476,
+          "c": 0.957614
+        },
+        {
+          "w": "as",
+          "s": 205.476,
+          "e": 205.586,
+          "c": 0.996573
+        },
+        {
+          "w": "deeply",
+          "s": 205.686,
+          "e": 206.296,
+          "c": 0.997792
+        },
+        {
+          "w": "opposed",
+          "s": 206.296,
+          "e": 207.006,
+          "c": 0.993066
+        },
+        {
+          "w": "to",
+          "s": 207.016,
+          "e": 207.116,
+          "c": 0.997345
+        },
+        {
+          "w": "expanding",
+          "s": 207.256,
+          "e": 208.146,
+          "c": 0.997645
+        },
+        {
+          "w": "the",
+          "s": 208.146,
+          "e": 208.386,
+          "c": 0.997457
+        },
+        {
+          "w": "2001",
+          "s": 208.446,
+          "e": 209.636,
+          "c": 0.957731
+        },
+        {
+          "w": "AUMF",
+          "s": 209.736,
+          "e": 210.176,
+          "c": 0.995685
+        },
+        {
+          "w": "as",
+          "s": 210.176,
+          "e": 210.206,
+          "c": 0.943633
+        },
+        {
+          "w": "I",
+          "s": 210.356,
+          "e": 210.386,
+          "c": 0.995725
+        },
+        {
+          "w": "was",
+          "s": 210.386,
+          "e": 210.596,
+          "c": 0.998856
+        },
+        {
+          "w": "against",
+          "s": 210.596,
+          "e": 211.036,
+          "c": 0.995516
+        },
+        {
+          "w": "authorizing",
+          "s": 211.106,
+          "e": 211.856,
+          "c": 0.994746
+        },
+        {
+          "w": "the",
+          "s": 211.856,
+          "e": 212.066,
+          "c": 0.989385
+        },
+        {
+          "w": "original",
+          "s": 212.066,
+          "e": 212.626,
+          "c": 0.992509
+        },
+        {
+          "w": "one",
+          "s": 212.626,
+          "e": 212.796,
+          "c": 0.989461
+        },
+        {
+          "w": "on",
+          "s": 212.916,
+          "e": 212.976,
+          "c": 0.981414
+        },
+        {
+          "w": "September",
+          "s": 212.976,
+          "e": 213.606,
+          "c": 0.981198
+        },
+        {
+          "w": "14,",
+          "s": 213.606,
+          "e": 214.156,
+          "c": 0.806952
+        },
+        {
+          "w": "2001",
+          "s": 214.206,
+          "e": 215.706,
+          "c": 0.88469
+        },
+        {
+          "w": "when",
+          "s": 216.486,
+          "e": 216.506,
+          "c": 0.372236
+        },
+        {
+          "w": "I",
+          "s": 216.506,
+          "e": 216.586,
+          "c": 0.980568
+        },
+        {
+          "w": "cast",
+          "s": 216.586,
+          "e": 216.866,
+          "c": 0.992391
+        },
+        {
+          "w": "the",
+          "s": 216.966,
+          "e": 217.166,
+          "c": 0.97582
+        },
+        {
+          "w": "lone",
+          "s": 217.266,
+          "e": 217.436,
+          "c": 0.536095
+        },
+        {
+          "w": "vote",
+          "s": 217.436,
+          "e": 217.696,
+          "c": 0.976049
+        },
+        {
+          "w": "against",
+          "s": 217.696,
+          "e": 218.156,
+          "c": 0.955468
+        },
+        {
+          "w": "it",
+          "s": 218.156,
+          "e": 218.176,
+          "c": 0.964882
+        },
+        {
+          "w": "because",
+          "s": 218.376,
+          "e": 218.706,
+          "c": 0.531196
+        },
+        {
+          "w": "I",
+          "s": 218.706,
+          "e": 218.776,
+          "c": 0.994253
+        },
+        {
+          "w": "knew",
+          "s": 218.776,
+          "e": 219.076,
+          "c": 0.995429
+        },
+        {
+          "w": "then",
+          "s": 219.076,
+          "e": 219.376,
+          "c": 0.972427
+        },
+        {
+          "w": "that",
+          "s": 219.376,
+          "e": 219.606,
+          "c": 0.930433
+        },
+        {
+          "w": "it",
+          "s": 219.776,
+          "e": 219.826,
+          "c": 0.945942
+        },
+        {
+          "w": "was",
+          "s": 219.826,
+          "e": 220.046,
+          "c": 0.99779
+        },
+        {
+          "w": "a",
+          "s": 220.046,
+          "e": 220.116,
+          "c": 0.980976
+        },
+        {
+          "w": "blank",
+          "s": 220.116,
+          "e": 220.496,
+          "c": 0.993837
+        },
+        {
+          "w": "check",
+          "s": 220.496,
+          "e": 220.716,
+          "c": 0.948983
+        },
+        {
+          "w": "to",
+          "s": 221.026,
+          "e": 221.026,
+          "c": 0.993375
+        },
+        {
+          "w": "wage",
+          "s": 221.086,
+          "e": 221.326,
+          "c": 0.991987
+        },
+        {
+          "w": "for",
+          "s": 221.326,
+          "e": 221.546,
+          "c": 0.825318
+        },
+        {
+          "w": "war,",
+          "s": 221.546,
+          "e": 221.916,
+          "c": 0.559501
+        },
+        {
+          "w": "that",
+          "s": 221.916,
+          "e": 222.216,
+          "c": 0.993153
+        },
+        {
+          "w": "it",
+          "s": 222.216,
+          "e": 222.366,
+          "c": 0.998972
+        },
+        {
+          "w": "really",
+          "s": 222.366,
+          "e": 222.816,
+          "c": 0.996052
+        },
+        {
+          "w": "did",
+          "s": 222.816,
+          "e": 223.016,
+          "c": 0.997752
+        },
+        {
+          "w": "erode",
+          "s": 223.046,
+          "e": 223.406,
+          "c": 0.994632
+        },
+        {
+          "w": "our",
+          "s": 223.406,
+          "e": 223.626,
+          "c": 0.997366
+        },
+        {
+          "w": "system",
+          "s": 223.626,
+          "e": 224.196,
+          "c": 0.822136
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 224.18,
+      "end_s": 247.34,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "of checks and balances, we passed that with little debate, and it removed Congress from our constitutional responsibility, again, in matters of making war. Lastly, on the AUMF issue, in addition to my opposition to expanding the 2001 AUMF, now is the right time really to repeal this overly broad 2001 AUMF.",
+      "words": [
+        {
+          "w": "of",
+          "s": 224.176,
+          "e": 224.306,
+          "c": 0.659738
+        },
+        {
+          "w": "checks",
+          "s": 224.326,
+          "e": 224.736,
+          "c": 0.993928
+        },
+        {
+          "w": "and",
+          "s": 224.906,
+          "e": 224.976,
+          "c": 0.996039
+        },
+        {
+          "w": "balances,",
+          "s": 224.976,
+          "e": 225.696,
+          "c": 0.418057
+        },
+        {
+          "w": "we",
+          "s": 225.696,
+          "e": 225.796,
+          "c": 0.984626
+        },
+        {
+          "w": "passed",
+          "s": 225.896,
+          "e": 226.276,
+          "c": 0.766991
+        },
+        {
+          "w": "that",
+          "s": 226.276,
+          "e": 226.566,
+          "c": 0.989766
+        },
+        {
+          "w": "with",
+          "s": 226.566,
+          "e": 226.856,
+          "c": 0.993256
+        },
+        {
+          "w": "little",
+          "s": 226.856,
+          "e": 227.296,
+          "c": 0.994835
+        },
+        {
+          "w": "debate,",
+          "s": 227.296,
+          "e": 227.886,
+          "c": 0.367452
+        },
+        {
+          "w": "and",
+          "s": 227.896,
+          "e": 228.056,
+          "c": 0.796551
+        },
+        {
+          "w": "it",
+          "s": 228.056,
+          "e": 228.136,
+          "c": 0.986158
+        },
+        {
+          "w": "removed",
+          "s": 228.216,
+          "e": 228.566,
+          "c": 0.991311
+        },
+        {
+          "w": "Congress",
+          "s": 228.566,
+          "e": 229.056,
+          "c": 0.967768
+        },
+        {
+          "w": "from",
+          "s": 229.056,
+          "e": 229.336,
+          "c": 0.955837
+        },
+        {
+          "w": "our",
+          "s": 229.336,
+          "e": 229.536,
+          "c": 0.999117
+        },
+        {
+          "w": "constitutional",
+          "s": 229.536,
+          "e": 230.486,
+          "c": 0.859937
+        },
+        {
+          "w": "responsibility,",
+          "s": 230.666,
+          "e": 231.586,
+          "c": 0.620092
+        },
+        {
+          "w": "again,",
+          "s": 231.606,
+          "e": 232.076,
+          "c": 0.727002
+        },
+        {
+          "w": "in",
+          "s": 232.076,
+          "e": 232.166,
+          "c": 0.989659
+        },
+        {
+          "w": "matters",
+          "s": 232.216,
+          "e": 232.586,
+          "c": 0.989451
+        },
+        {
+          "w": "of",
+          "s": 232.696,
+          "e": 232.836,
+          "c": 0.996312
+        },
+        {
+          "w": "making",
+          "s": 233.056,
+          "e": 233.246,
+          "c": 0.997339
+        },
+        {
+          "w": "war.",
+          "s": 233.246,
+          "e": 233.736,
+          "c": 0.968091
+        },
+        {
+          "w": "Lastly,",
+          "s": 233.736,
+          "e": 234.516,
+          "c": 0.931552
+        },
+        {
+          "w": "on",
+          "s": 234.516,
+          "e": 234.706,
+          "c": 0.997759
+        },
+        {
+          "w": "the",
+          "s": 234.706,
+          "e": 234.886,
+          "c": 0.998371
+        },
+        {
+          "w": "AUMF",
+          "s": 234.996,
+          "e": 235.356,
+          "c": 0.962559
+        },
+        {
+          "w": "issue,",
+          "s": 235.456,
+          "e": 236.046,
+          "c": 0.968801
+        },
+        {
+          "w": "in",
+          "s": 236.046,
+          "e": 236.186,
+          "c": 0.998136
+        },
+        {
+          "w": "addition",
+          "s": 236.246,
+          "e": 236.986,
+          "c": 0.999091
+        },
+        {
+          "w": "to",
+          "s": 237.046,
+          "e": 237.046,
+          "c": 0.997777
+        },
+        {
+          "w": "my",
+          "s": 237.206,
+          "e": 237.256,
+          "c": 0.999037
+        },
+        {
+          "w": "opposition",
+          "s": 237.456,
+          "e": 238.376,
+          "c": 0.996898
+        },
+        {
+          "w": "to",
+          "s": 238.376,
+          "e": 238.566,
+          "c": 0.992239
+        },
+        {
+          "w": "expanding",
+          "s": 238.566,
+          "e": 239.436,
+          "c": 0.997432
+        },
+        {
+          "w": "the",
+          "s": 239.436,
+          "e": 239.736,
+          "c": 0.988048
+        },
+        {
+          "w": "2001",
+          "s": 239.736,
+          "e": 240.916,
+          "c": 0.983292
+        },
+        {
+          "w": "AUMF,",
+          "s": 240.916,
+          "e": 241.636,
+          "c": 0.988303
+        },
+        {
+          "w": "now",
+          "s": 241.636,
+          "e": 241.886,
+          "c": 0.999796
+        },
+        {
+          "w": "is",
+          "s": 241.996,
+          "e": 242.066,
+          "c": 0.996643
+        },
+        {
+          "w": "the",
+          "s": 242.066,
+          "e": 242.196,
+          "c": 0.99729
+        },
+        {
+          "w": "right",
+          "s": 242.366,
+          "e": 242.756,
+          "c": 0.998911
+        },
+        {
+          "w": "time",
+          "s": 242.756,
+          "e": 243.096,
+          "c": 0.999232
+        },
+        {
+          "w": "really",
+          "s": 243.106,
+          "e": 243.596,
+          "c": 0.653421
+        },
+        {
+          "w": "to",
+          "s": 243.696,
+          "e": 243.796,
+          "c": 0.996879
+        },
+        {
+          "w": "repeal",
+          "s": 243.796,
+          "e": 244.316,
+          "c": 0.988847
+        },
+        {
+          "w": "this",
+          "s": 244.316,
+          "e": 244.606,
+          "c": 0.998064
+        },
+        {
+          "w": "overly",
+          "s": 244.676,
+          "e": 244.896,
+          "c": 0.99471
+        },
+        {
+          "w": "broad",
+          "s": 245.356,
+          "e": 245.616,
+          "c": 0.905187
+        },
+        {
+          "w": "2001",
+          "s": 245.616,
+          "e": 246.536,
+          "c": 0.953725
+        },
+        {
+          "w": "AUMF.",
+          "s": 246.706,
+          "e": 247.336,
+          "c": 0.992123
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 247.67,
+      "end_s": 271.6,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Finally, Mr. Chairman, I ask your committee to consider creating financial consequences for the Pentagon unless the Defense Department subjects itself to an audit, as it's required to do by law and as all other federal agencies regularly do. I urge the committee to take a first step toward compelling the Pentagon to act with urgency in assuring fiscal responsibility in our defense dollars.",
+      "words": [
+        {
+          "w": "Finally,",
+          "s": 247.674,
+          "e": 247.794,
+          "c": 0.928871
+        },
+        {
+          "w": "Mr.",
+          "s": 247.794,
+          "e": 248.044,
+          "c": 0.987484
+        },
+        {
+          "w": "Chairman,",
+          "s": 248.044,
+          "e": 248.544,
+          "c": 0.956191
+        },
+        {
+          "w": "I",
+          "s": 248.544,
+          "e": 248.594,
+          "c": 0.994488
+        },
+        {
+          "w": "ask",
+          "s": 248.594,
+          "e": 248.744,
+          "c": 0.992651
+        },
+        {
+          "w": "your",
+          "s": 248.744,
+          "e": 248.904,
+          "c": 0.982246
+        },
+        {
+          "w": "committee",
+          "s": 249.024,
+          "e": 249.444,
+          "c": 0.602216
+        },
+        {
+          "w": "to",
+          "s": 249.444,
+          "e": 249.504,
+          "c": 0.970203
+        },
+        {
+          "w": "consider",
+          "s": 249.604,
+          "e": 250.194,
+          "c": 0.994418
+        },
+        {
+          "w": "creating",
+          "s": 250.334,
+          "e": 250.774,
+          "c": 0.976965
+        },
+        {
+          "w": "financial",
+          "s": 250.864,
+          "e": 251.334,
+          "c": 0.980352
+        },
+        {
+          "w": "consequences",
+          "s": 251.394,
+          "e": 252.204,
+          "c": 0.978874
+        },
+        {
+          "w": "for",
+          "s": 252.204,
+          "e": 252.424,
+          "c": 0.99931
+        },
+        {
+          "w": "the",
+          "s": 252.534,
+          "e": 252.644,
+          "c": 0.998205
+        },
+        {
+          "w": "Pentagon",
+          "s": 252.644,
+          "e": 253.234,
+          "c": 0.992496
+        },
+        {
+          "w": "unless",
+          "s": 253.234,
+          "e": 253.674,
+          "c": 0.890807
+        },
+        {
+          "w": "the",
+          "s": 253.674,
+          "e": 253.894,
+          "c": 0.971969
+        },
+        {
+          "w": "Defense",
+          "s": 253.894,
+          "e": 254.364,
+          "c": 0.945128
+        },
+        {
+          "w": "Department",
+          "s": 254.464,
+          "e": 255.054,
+          "c": 0.993608
+        },
+        {
+          "w": "subjects",
+          "s": 255.194,
+          "e": 255.744,
+          "c": 0.941493
+        },
+        {
+          "w": "itself",
+          "s": 255.744,
+          "e": 256.194,
+          "c": 0.98934
+        },
+        {
+          "w": "to",
+          "s": 256.254,
+          "e": 256.484,
+          "c": 0.980208
+        },
+        {
+          "w": "an",
+          "s": 256.484,
+          "e": 256.724,
+          "c": 0.993852
+        },
+        {
+          "w": "audit,",
+          "s": 256.724,
+          "e": 257.644,
+          "c": 0.492673
+        },
+        {
+          "w": "as",
+          "s": 257.644,
+          "e": 257.704,
+          "c": 0.934625
+        },
+        {
+          "w": "it's",
+          "s": 257.704,
+          "e": 257.844,
+          "c": 0.806798
+        },
+        {
+          "w": "required",
+          "s": 257.844,
+          "e": 258.104,
+          "c": 0.971986
+        },
+        {
+          "w": "to",
+          "s": 258.344,
+          "e": 258.504,
+          "c": 0.999935
+        },
+        {
+          "w": "do",
+          "s": 258.664,
+          "e": 258.664,
+          "c": 0.994547
+        },
+        {
+          "w": "by",
+          "s": 258.684,
+          "e": 258.824,
+          "c": 0.997156
+        },
+        {
+          "w": "law",
+          "s": 258.824,
+          "e": 259.054,
+          "c": 0.997982
+        },
+        {
+          "w": "and",
+          "s": 259.054,
+          "e": 259.304,
+          "c": 0.653183
+        },
+        {
+          "w": "as",
+          "s": 259.304,
+          "e": 259.464,
+          "c": 0.988325
+        },
+        {
+          "w": "all",
+          "s": 259.464,
+          "e": 259.704,
+          "c": 0.989612
+        },
+        {
+          "w": "other",
+          "s": 259.704,
+          "e": 260.104,
+          "c": 0.951355
+        },
+        {
+          "w": "federal",
+          "s": 260.104,
+          "e": 260.674,
+          "c": 0.743742
+        },
+        {
+          "w": "agencies",
+          "s": 260.744,
+          "e": 261.354,
+          "c": 0.999043
+        },
+        {
+          "w": "regularly",
+          "s": 261.354,
+          "e": 262.094,
+          "c": 0.99148
+        },
+        {
+          "w": "do.",
+          "s": 262.094,
+          "e": 262.584,
+          "c": 0.997501
+        },
+        {
+          "w": "I",
+          "s": 262.584,
+          "e": 262.644,
+          "c": 0.99995
+        },
+        {
+          "w": "urge",
+          "s": 262.914,
+          "e": 262.914,
+          "c": 0.998479
+        },
+        {
+          "w": "the",
+          "s": 262.924,
+          "e": 263.114,
+          "c": 0.998932
+        },
+        {
+          "w": "committee",
+          "s": 263.114,
+          "e": 263.724,
+          "c": 0.826202
+        },
+        {
+          "w": "to",
+          "s": 263.724,
+          "e": 263.854,
+          "c": 0.997438
+        },
+        {
+          "w": "take",
+          "s": 263.854,
+          "e": 264.124,
+          "c": 0.99938
+        },
+        {
+          "w": "a",
+          "s": 264.124,
+          "e": 264.154,
+          "c": 0.993142
+        },
+        {
+          "w": "first",
+          "s": 264.264,
+          "e": 264.524,
+          "c": 0.997917
+        },
+        {
+          "w": "step",
+          "s": 264.524,
+          "e": 264.734,
+          "c": 0.996428
+        },
+        {
+          "w": "toward",
+          "s": 264.844,
+          "e": 265.194,
+          "c": 0.959594
+        },
+        {
+          "w": "compelling",
+          "s": 265.204,
+          "e": 265.884,
+          "c": 0.965991
+        },
+        {
+          "w": "the",
+          "s": 265.884,
+          "e": 266.014,
+          "c": 0.994177
+        },
+        {
+          "w": "Pentagon",
+          "s": 266.104,
+          "e": 266.574,
+          "c": 0.994184
+        },
+        {
+          "w": "to",
+          "s": 266.684,
+          "e": 266.764,
+          "c": 0.993642
+        },
+        {
+          "w": "act",
+          "s": 266.764,
+          "e": 267.014,
+          "c": 0.995133
+        },
+        {
+          "w": "with",
+          "s": 267.084,
+          "e": 267.264,
+          "c": 0.966291
+        },
+        {
+          "w": "urgency",
+          "s": 267.614,
+          "e": 267.794,
+          "c": 0.997288
+        },
+        {
+          "w": "in",
+          "s": 267.794,
+          "e": 267.924,
+          "c": 0.907085
+        },
+        {
+          "w": "assuring",
+          "s": 267.924,
+          "e": 268.514,
+          "c": 0.952821
+        },
+        {
+          "w": "fiscal",
+          "s": 268.514,
+          "e": 268.844,
+          "c": 0.992509
+        },
+        {
+          "w": "responsibility",
+          "s": 268.964,
+          "e": 269.964,
+          "c": 0.990915
+        },
+        {
+          "w": "in",
+          "s": 269.964,
+          "e": 270.104,
+          "c": 0.916058
+        },
+        {
+          "w": "our",
+          "s": 270.104,
+          "e": 270.324,
+          "c": 0.999247
+        },
+        {
+          "w": "defense",
+          "s": 270.324,
+          "e": 270.834,
+          "c": 0.991665
+        },
+        {
+          "w": "dollars.",
+          "s": 270.834,
+          "e": 271.604,
+          "c": 0.994404
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 271.72,
+      "end_s": 289.02,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "As the only federal agency not subject to audit, the Pentagon has lost tens of billions of dollars to waste, fraud, and abuse. Thank you again for the opportunity to testify, and I strongly request you to consider these requested changes to the bill. Thank you",
+      "words": [
+        {
+          "w": "As",
+          "s": 271.721,
+          "e": 271.741,
+          "c": 0.917154
+        },
+        {
+          "w": "the",
+          "s": 271.741,
+          "e": 271.991,
+          "c": 0.998881
+        },
+        {
+          "w": "only",
+          "s": 271.991,
+          "e": 272.231,
+          "c": 0.999565
+        },
+        {
+          "w": "federal",
+          "s": 272.331,
+          "e": 272.801,
+          "c": 0.704326
+        },
+        {
+          "w": "agency",
+          "s": 272.901,
+          "e": 273.181,
+          "c": 0.991654
+        },
+        {
+          "w": "not",
+          "s": 273.471,
+          "e": 273.661,
+          "c": 0.986269
+        },
+        {
+          "w": "subject",
+          "s": 273.661,
+          "e": 274.241,
+          "c": 0.996588
+        },
+        {
+          "w": "to",
+          "s": 274.241,
+          "e": 274.401,
+          "c": 0.990293
+        },
+        {
+          "w": "audit,",
+          "s": 274.411,
+          "e": 275.011,
+          "c": 0.960913
+        },
+        {
+          "w": "the",
+          "s": 275.031,
+          "e": 275.221,
+          "c": 0.663988
+        },
+        {
+          "w": "Pentagon",
+          "s": 275.221,
+          "e": 275.721,
+          "c": 0.974143
+        },
+        {
+          "w": "has",
+          "s": 275.721,
+          "e": 275.921,
+          "c": 0.976462
+        },
+        {
+          "w": "lost",
+          "s": 275.921,
+          "e": 276.321,
+          "c": 0.97227
+        },
+        {
+          "w": "tens",
+          "s": 276.321,
+          "e": 276.721,
+          "c": 0.973332
+        },
+        {
+          "w": "of",
+          "s": 276.721,
+          "e": 276.861,
+          "c": 0.962043
+        },
+        {
+          "w": "billions",
+          "s": 276.861,
+          "e": 277.241,
+          "c": 0.905453
+        },
+        {
+          "w": "of",
+          "s": 277.241,
+          "e": 277.381,
+          "c": 0.689166
+        },
+        {
+          "w": "dollars",
+          "s": 277.381,
+          "e": 277.851,
+          "c": 0.932332
+        },
+        {
+          "w": "to",
+          "s": 278.191,
+          "e": 278.191,
+          "c": 0.756585
+        },
+        {
+          "w": "waste,",
+          "s": 278.311,
+          "e": 278.681,
+          "c": 0.86137
+        },
+        {
+          "w": "fraud,",
+          "s": 278.851,
+          "e": 279.021,
+          "c": 0.602377
+        },
+        {
+          "w": "and",
+          "s": 279.021,
+          "e": 279.121,
+          "c": 0.966599
+        },
+        {
+          "w": "abuse.",
+          "s": 279.121,
+          "e": 279.441,
+          "c": 0.97753
+        },
+        {
+          "w": "Thank",
+          "s": 279.581,
+          "e": 279.781,
+          "c": 0.999439
+        },
+        {
+          "w": "you",
+          "s": 279.781,
+          "e": 279.981,
+          "c": 0.999851
+        },
+        {
+          "w": "again",
+          "s": 279.981,
+          "e": 280.321,
+          "c": 0.983016
+        },
+        {
+          "w": "for",
+          "s": 280.321,
+          "e": 280.511,
+          "c": 0.999449
+        },
+        {
+          "w": "the",
+          "s": 280.511,
+          "e": 280.661,
+          "c": 0.999087
+        },
+        {
+          "w": "opportunity",
+          "s": 280.721,
+          "e": 281.471,
+          "c": 0.999485
+        },
+        {
+          "w": "to",
+          "s": 281.501,
+          "e": 281.591,
+          "c": 0.99922
+        },
+        {
+          "w": "testify,",
+          "s": 281.591,
+          "e": 282.251,
+          "c": 0.616518
+        },
+        {
+          "w": "and",
+          "s": 282.251,
+          "e": 282.551,
+          "c": 0.77847
+        },
+        {
+          "w": "I",
+          "s": 282.551,
+          "e": 282.641,
+          "c": 0.999458
+        },
+        {
+          "w": "strongly",
+          "s": 282.641,
+          "e": 283.411,
+          "c": 0.999209
+        },
+        {
+          "w": "request",
+          "s": 283.471,
+          "e": 284.101,
+          "c": 0.995029
+        },
+        {
+          "w": "you",
+          "s": 284.101,
+          "e": 284.391,
+          "c": 0.997016
+        },
+        {
+          "w": "to",
+          "s": 284.391,
+          "e": 284.581,
+          "c": 0.998628
+        },
+        {
+          "w": "consider",
+          "s": 284.581,
+          "e": 285.341,
+          "c": 0.99947
+        },
+        {
+          "w": "these",
+          "s": 285.351,
+          "e": 285.711,
+          "c": 0.998923
+        },
+        {
+          "w": "requested",
+          "s": 286.131,
+          "e": 286.731,
+          "c": 0.998542
+        },
+        {
+          "w": "changes",
+          "s": 286.731,
+          "e": 287.341,
+          "c": 0.999056
+        },
+        {
+          "w": "to",
+          "s": 287.601,
+          "e": 287.601,
+          "c": 0.999403
+        },
+        {
+          "w": "the",
+          "s": 287.611,
+          "e": 287.891,
+          "c": 0.999758
+        },
+        {
+          "w": "bill.",
+          "s": 287.891,
+          "e": 288.641,
+          "c": 0.995228
+        },
+        {
+          "w": "Thank",
+          "s": 288.781,
+          "e": 288.881,
+          "c": 0.983587
+        },
+        {
+          "w": "you",
+          "s": 288.881,
+          "e": 289.021,
+          "c": 0.99996
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 289.02,
+      "end_s": 289.58,
+      "speaker": "SPEAKER_10",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "very much.",
+      "words": [
+        {
+          "w": "very",
+          "s": 289.021,
+          "e": 289.211,
+          "c": 0.999884
+        },
+        {
+          "w": "much.",
+          "s": 289.211,
+          "e": 289.581,
+          "c": 0.999836
+        }
+      ]
+    }
+  ]
+}
