@@ -1,0 +1,700 @@
+{
+  "schema_version": 2,
+  "canonical_id": "71f0054a5d9ef854",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 41.21,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T14:40:57.602Z",
+  "text_sha256": "ed4da9b4da572d4a8c58c746b51fb6156c8a5fd0ad1032d9e91c3185d84814f5",
+  "segments_sha256": "9f4fd0572bdcaacaf949b55c93fadaad4ff915b3be388558bbc7428f095235dc",
+  "words_sha256": "f7bb4a539a845d8bac14b6f2cfbd1c2e6ed4b7981274907a5b968f2c4d997f5d",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 2,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 1,
+    "clusters": 1,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 40.6
+      },
+      "clean_s": 40.6,
+      "speaking_s": 40.6,
+      "first_s": 0.72
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.11,
+      "end_s": 0.56,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.11,
+      "end_s": 0.56,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Hi, this",
+      "words": [
+        {
+          "w": "Hi,",
+          "s": 0.11,
+          "e": 0.36,
+          "c": 0.676325
+        },
+        {
+          "w": "this",
+          "s": 0.55,
+          "e": 0.56,
+          "c": 0.980455
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.76,
+      "end_s": 24.7,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "is Congresswoman Barbara Lee. It's been a busy few weeks in the East Bank. We welcomed our Democratic Minority Whip Steny Hoyer for a Make It in America tour at the gate in San Leandro. We also welcomed Ambassador Birx, who is our Global AIDS Coordinator. She visited our great HIV/AIDS clinics here in my congressional district.",
+      "words": [
+        {
+          "w": "is",
+          "s": 0.76,
+          "e": 0.9,
+          "c": 0.987165
+        },
+        {
+          "w": "Congresswoman",
+          "s": 0.9,
+          "e": 2.07,
+          "c": 0.945354
+        },
+        {
+          "w": "Barbara",
+          "s": 2.07,
+          "e": 2.7,
+          "c": 0.878675
+        },
+        {
+          "w": "Lee.",
+          "s": 2.7,
+          "e": 3.24,
+          "c": 0.899625
+        },
+        {
+          "w": "It's",
+          "s": 3.24,
+          "e": 3.56,
+          "c": 0.562121
+        },
+        {
+          "w": "been",
+          "s": 3.56,
+          "e": 3.89,
+          "c": 0.998995
+        },
+        {
+          "w": "a",
+          "s": 3.89,
+          "e": 3.97,
+          "c": 0.987858
+        },
+        {
+          "w": "busy",
+          "s": 3.97,
+          "e": 4.23,
+          "c": 0.988444
+        },
+        {
+          "w": "few",
+          "s": 4.35,
+          "e": 4.55,
+          "c": 0.987945
+        },
+        {
+          "w": "weeks",
+          "s": 4.55,
+          "e": 4.86,
+          "c": 0.99469
+        },
+        {
+          "w": "in",
+          "s": 5,
+          "e": 5.15,
+          "c": 0.974695
+        },
+        {
+          "w": "the",
+          "s": 5.15,
+          "e": 5.38,
+          "c": 0.992557
+        },
+        {
+          "w": "East",
+          "s": 5.38,
+          "e": 5.68,
+          "c": 0.934363
+        },
+        {
+          "w": "Bank.",
+          "s": 5.68,
+          "e": 6,
+          "c": 0.66534
+        },
+        {
+          "w": "We",
+          "s": 6.11,
+          "e": 6.17,
+          "c": 0.997493
+        },
+        {
+          "w": "welcomed",
+          "s": 6.56,
+          "e": 6.88,
+          "c": 0.968348
+        },
+        {
+          "w": "our",
+          "s": 6.88,
+          "e": 7.07,
+          "c": 0.988453
+        },
+        {
+          "w": "Democratic",
+          "s": 7.25,
+          "e": 8.02,
+          "c": 0.935601
+        },
+        {
+          "w": "Minority",
+          "s": 8.02,
+          "e": 8.72,
+          "c": 0.53801
+        },
+        {
+          "w": "Whip",
+          "s": 8.72,
+          "e": 9.03,
+          "c": 0.989703
+        },
+        {
+          "w": "Steny",
+          "s": 9.18,
+          "e": 9.49,
+          "c": 0.599707
+        },
+        {
+          "w": "Hoyer",
+          "s": 9.49,
+          "e": 10,
+          "c": 0.964947
+        },
+        {
+          "w": "for",
+          "s": 10,
+          "e": 10.23,
+          "c": 0.870756
+        },
+        {
+          "w": "a",
+          "s": 10.34,
+          "e": 10.34,
+          "c": 0.829039
+        },
+        {
+          "w": "Make",
+          "s": 10.35,
+          "e": 10.68,
+          "c": 0.640078
+        },
+        {
+          "w": "It",
+          "s": 10.68,
+          "e": 10.85,
+          "c": 0.708931
+        },
+        {
+          "w": "in",
+          "s": 10.85,
+          "e": 11.02,
+          "c": 0.625766
+        },
+        {
+          "w": "America",
+          "s": 11.02,
+          "e": 11.62,
+          "c": 0.994865
+        },
+        {
+          "w": "tour",
+          "s": 11.62,
+          "e": 11.81,
+          "c": 0.665108
+        },
+        {
+          "w": "at",
+          "s": 11.81,
+          "e": 12.16,
+          "c": 0.879246
+        },
+        {
+          "w": "the",
+          "s": 12.39,
+          "e": 12.39,
+          "c": 0.911949
+        },
+        {
+          "w": "gate",
+          "s": 12.44,
+          "e": 12.74,
+          "c": 0.608223
+        },
+        {
+          "w": "in",
+          "s": 12.74,
+          "e": 12.84,
+          "c": 0.949845
+        },
+        {
+          "w": "San",
+          "s": 12.9,
+          "e": 13.09,
+          "c": 0.99159
+        },
+        {
+          "w": "Leandro.",
+          "s": 13.15,
+          "e": 14,
+          "c": 0.985868
+        },
+        {
+          "w": "We",
+          "s": 14.11,
+          "e": 14.19,
+          "c": 0.997194
+        },
+        {
+          "w": "also",
+          "s": 14.19,
+          "e": 14.57,
+          "c": 0.997611
+        },
+        {
+          "w": "welcomed",
+          "s": 14.76,
+          "e": 15.34,
+          "c": 0.994129
+        },
+        {
+          "w": "Ambassador",
+          "s": 15.34,
+          "e": 16.3,
+          "c": 0.977302
+        },
+        {
+          "w": "Birx,",
+          "s": 16.3,
+          "e": 16.86,
+          "c": 0.55016
+        },
+        {
+          "w": "who",
+          "s": 16.87,
+          "e": 16.87,
+          "c": 0.970967
+        },
+        {
+          "w": "is",
+          "s": 17.18,
+          "e": 17.35,
+          "c": 0.987652
+        },
+        {
+          "w": "our",
+          "s": 17.45,
+          "e": 17.64,
+          "c": 0.99317
+        },
+        {
+          "w": "Global",
+          "s": 17.64,
+          "e": 18.22,
+          "c": 0.599996
+        },
+        {
+          "w": "AIDS",
+          "s": 18.22,
+          "e": 18.6,
+          "c": 0.963066
+        },
+        {
+          "w": "Coordinator.",
+          "s": 18.6,
+          "e": 19.81,
+          "c": 0.866065
+        },
+        {
+          "w": "She",
+          "s": 20.11,
+          "e": 20.21,
+          "c": 0.99681
+        },
+        {
+          "w": "visited",
+          "s": 20.55,
+          "e": 20.58,
+          "c": 0.996875
+        },
+        {
+          "w": "our",
+          "s": 20.76,
+          "e": 20.92,
+          "c": 0.993689
+        },
+        {
+          "w": "great",
+          "s": 20.92,
+          "e": 21.28,
+          "c": 0.961432
+        },
+        {
+          "w": "HIV/AIDS",
+          "s": 21.28,
+          "e": 21.83,
+          "c": 0.89932
+        },
+        {
+          "w": "clinics",
+          "s": 21.86,
+          "e": 22.34,
+          "c": 0.951813
+        },
+        {
+          "w": "here",
+          "s": 22.34,
+          "e": 22.62,
+          "c": 0.951898
+        },
+        {
+          "w": "in",
+          "s": 22.62,
+          "e": 22.75,
+          "c": 0.9934
+        },
+        {
+          "w": "my",
+          "s": 22.75,
+          "e": 22.88,
+          "c": 0.991756
+        },
+        {
+          "w": "congressional",
+          "s": 23.19,
+          "e": 23.79,
+          "c": 0.600896
+        },
+        {
+          "w": "district.",
+          "s": 23.88,
+          "e": 24.7,
+          "c": 0.961228
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 24.88,
+      "end_s": 41.21,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Also, we're starting a new section on LeanMail, which sets forth new federal grant opportunities as well as grants which have been received by our fabulous, amazing nonprofits. So please, Rita, what we're doing, and thank you again.",
+      "words": [
+        {
+          "w": "Also,",
+          "s": 24.884,
+          "e": 25.064,
+          "c": 0.718714
+        },
+        {
+          "w": "we're",
+          "s": 25.114,
+          "e": 25.414,
+          "c": 0.938858
+        },
+        {
+          "w": "starting",
+          "s": 25.424,
+          "e": 25.954,
+          "c": 0.9979
+        },
+        {
+          "w": "a",
+          "s": 25.954,
+          "e": 26.014,
+          "c": 0.997269
+        },
+        {
+          "w": "new",
+          "s": 26.014,
+          "e": 26.204,
+          "c": 0.997885
+        },
+        {
+          "w": "section",
+          "s": 26.204,
+          "e": 26.674,
+          "c": 0.996838
+        },
+        {
+          "w": "on",
+          "s": 26.674,
+          "e": 26.844,
+          "c": 0.990516
+        },
+        {
+          "w": "LeanMail,",
+          "s": 26.844,
+          "e": 27.554,
+          "c": 0.0263875
+        },
+        {
+          "w": "which",
+          "s": 27.894,
+          "e": 28.204,
+          "c": 0.761561
+        },
+        {
+          "w": "sets",
+          "s": 28.364,
+          "e": 28.644,
+          "c": 0.967659
+        },
+        {
+          "w": "forth",
+          "s": 28.644,
+          "e": 29.054,
+          "c": 0.983292
+        },
+        {
+          "w": "new",
+          "s": 29.214,
+          "e": 29.564,
+          "c": 0.963527
+        },
+        {
+          "w": "federal",
+          "s": 29.664,
+          "e": 30.164,
+          "c": 0.946173
+        },
+        {
+          "w": "grant",
+          "s": 30.164,
+          "e": 30.564,
+          "c": 0.973081
+        },
+        {
+          "w": "opportunities",
+          "s": 30.584,
+          "e": 31.364,
+          "c": 0.969378
+        },
+        {
+          "w": "as",
+          "s": 31.364,
+          "e": 31.704,
+          "c": 0.204147
+        },
+        {
+          "w": "well",
+          "s": 31.704,
+          "e": 31.904,
+          "c": 0.989062
+        },
+        {
+          "w": "as",
+          "s": 31.904,
+          "e": 32.084,
+          "c": 0.982407
+        },
+        {
+          "w": "grants",
+          "s": 32.194,
+          "e": 32.584,
+          "c": 0.979814
+        },
+        {
+          "w": "which",
+          "s": 32.584,
+          "e": 32.954,
+          "c": 0.694417
+        },
+        {
+          "w": "have",
+          "s": 32.954,
+          "e": 33.254,
+          "c": 0.988035
+        },
+        {
+          "w": "been",
+          "s": 33.254,
+          "e": 33.544,
+          "c": 0.992807
+        },
+        {
+          "w": "received",
+          "s": 33.554,
+          "e": 34.154,
+          "c": 0.990962
+        },
+        {
+          "w": "by",
+          "s": 34.154,
+          "e": 34.294,
+          "c": 0.991516
+        },
+        {
+          "w": "our",
+          "s": 34.294,
+          "e": 34.544,
+          "c": 0.998308
+        },
+        {
+          "w": "fabulous,",
+          "s": 34.544,
+          "e": 35.304,
+          "c": 0.979342
+        },
+        {
+          "w": "amazing",
+          "s": 35.304,
+          "e": 35.844,
+          "c": 0.995826
+        },
+        {
+          "w": "nonprofits.",
+          "s": 35.844,
+          "e": 36.834,
+          "c": 0.867497
+        },
+        {
+          "w": "So",
+          "s": 37.034,
+          "e": 37.034,
+          "c": 0.998879
+        },
+        {
+          "w": "please,",
+          "s": 37.054,
+          "e": 37.714,
+          "c": 0.870469
+        },
+        {
+          "w": "Rita,",
+          "s": 37.714,
+          "e": 38.224,
+          "c": 0.994998
+        },
+        {
+          "w": "what",
+          "s": 38.224,
+          "e": 38.564,
+          "c": 0.998412
+        },
+        {
+          "w": "we're",
+          "s": 38.564,
+          "e": 38.984,
+          "c": 0.999933
+        },
+        {
+          "w": "doing,",
+          "s": 38.984,
+          "e": 39.574,
+          "c": 0.666274
+        },
+        {
+          "w": "and",
+          "s": 39.574,
+          "e": 39.704,
+          "c": 0.999947
+        },
+        {
+          "w": "thank",
+          "s": 40.054,
+          "e": 40.244,
+          "c": 0.999962
+        },
+        {
+          "w": "you",
+          "s": 40.244,
+          "e": 40.354,
+          "c": 0.999994
+        },
+        {
+          "w": "again.",
+          "s": 40.524,
+          "e": 41.214,
+          "c": 0.999632
+        }
+      ]
+    }
+  ]
+}

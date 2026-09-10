@@ -1,0 +1,115 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Opposing the Genocide in Gaza is Not Antisemitism"
+    URL: "https://www.youtube.com/watch?v=O2UvWPo2q3g"
+    Video_ID: "O2UvWPo2q3g"
+    Show: "Senator Bernie Sanders"
+    Runtime: "00:00:34"
+    Language: "en"
+
+  Media:
+    File: "O2UvWPo2q3g.mp4"
+    SHA256: "bbe50060573923f60e0f0c238547cb279afb627884f2cd24937f51f7997c88d7"
+    Bytes: 1456428
+    Duration_Seconds: 34
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=O2UvWPo2q3g"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "O2UvWPo2q3g.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/bernard_sanders_vt_sen/O2UvWPo2q3g/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCD_DaKNac0Ta-2PeHuoQ1uA"
+    Uploader_ID: "@SenatorSanders"
+    View_Count: 23728
+    Like_Count: 3449
+    Comment_Count: 190
+    Availability: "public"
+    Published_At: "2026-07-30T19:32:26+00:00"
+    Captured_At: "2026-08-14T05:04:03-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 2
+
+  Source:
+    Canonical_ID: "f78062fc65c48fb0"
+    Transcribed: "2026-09-10T07:40:55.590843-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 61
+    Segments: 3
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T05:04:04.248711-07:00"
+    Transcription_Finished: "2026-09-10T07:40:55.590843-07:00"
+    Recorded: "2026-07-30"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "O2UvWPo2q3g.ctm"
+    Fountain: "O2UvWPo2q3g.fountain"
+    Diarization_RTTM: "O2UvWPo2q3g.rttm"
+    As_Broadcast_Script: "O2UvWPo2q3g.script.txt"
+    Segments_JSON: "O2UvWPo2q3g.segments.json"
+    Segments_JSONL: "O2UvWPo2q3g.segments.jsonl"
+    Subtitles_SRT: "O2UvWPo2q3g.srt"
+    Plain_Text: "O2UvWPo2q3g.transcription"
+    Subtitles_VTT: "O2UvWPo2q3g.vtt"
+    Transcript_SHA256: "ec6050018a97f18dde5dfa7e356129a6d5fece8fd48c2555b051e48cd9499045"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "bernard_sanders_vt_sen"
+    video_uid: "bernard_sanders_vt_sen::O2UvWPo2q3g"
+    video_key: "O2UvWPo2q3g"
+    youtube_id: "O2UvWPo2q3g"
+    priority: 245
+    ceiling: 800
+    raw_score: 245
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 163
+    seat_rank: 195
+    challenger: false
+    round: 52
+    status: "partial"
+    demand_generated_at: "2026-09-10T14:39:56.937Z"
+    demand_run_id: "job_1789051036673_22"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=O2UvWPo2q3g"
+    source_ref: "O2UvWPo2q3g"
+    subject_kind: "new_politician"

@@ -1,0 +1,603 @@
+{
+  "schema_version": 2,
+  "canonical_id": "ac9421b52ed55b2b",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 42.05,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T14:40:58.089Z",
+  "text_sha256": "62ac8d1ad66a0471aceb272a640513089e3cdd16c7a3c821cc7004e8c67e7fdd",
+  "segments_sha256": "bff5cfff7bff3813e04d0c911f25b1a65298fbac018238e63b833f08a558fcd1",
+  "words_sha256": "bce3ae77cd1450db0d2c9537459b241c94bf82b52bd2e800915a33f9143a5f33",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 1,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 10,
+    "clusters": 1,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 35.2
+      },
+      "clean_s": 35.2,
+      "speaking_s": 35.2,
+      "first_s": 0.03
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 3.69,
+      "end_s": 4.26,
+      "segment_i": 1,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 9.81,
+      "end_s": 10.37,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.09,
+      "end_s": 3.57,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "AI was not created out of thin air.",
+      "words": [
+        {
+          "w": "AI",
+          "s": 0.09,
+          "e": 0.24,
+          "c": 0.79786
+        },
+        {
+          "w": "was",
+          "s": 0.24,
+          "e": 0.6,
+          "c": 0.995685
+        },
+        {
+          "w": "not",
+          "s": 0.6,
+          "e": 0.93,
+          "c": 0.998932
+        },
+        {
+          "w": "created",
+          "s": 1.1,
+          "e": 1.79,
+          "c": 0.99617
+        },
+        {
+          "w": "out",
+          "s": 1.79,
+          "e": 2.06,
+          "c": 0.990155
+        },
+        {
+          "w": "of",
+          "s": 2.16,
+          "e": 2.19,
+          "c": 0.998361
+        },
+        {
+          "w": "thin",
+          "s": 2.41,
+          "e": 2.86,
+          "c": 0.998155
+        },
+        {
+          "w": "air.",
+          "s": 2.86,
+          "e": 3.57,
+          "c": 0.956309
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 3.69,
+      "end_s": 4.26,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "It was",
+      "words": [
+        {
+          "w": "It",
+          "s": 3.69,
+          "e": 3.89,
+          "c": 0.999645
+        },
+        {
+          "w": "was",
+          "s": 3.89,
+          "e": 4.26,
+          "c": 0.999397
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 4.41,
+      "end_s": 9.72,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "not a brilliant idea that just popped into Mark Zuckerberg's head",
+      "words": [
+        {
+          "w": "not",
+          "s": 4.41,
+          "e": 4.77,
+          "c": 0.999971
+        },
+        {
+          "w": "a",
+          "s": 4.77,
+          "e": 4.89,
+          "c": 0.999792
+        },
+        {
+          "w": "brilliant",
+          "s": 5.14,
+          "e": 6.23,
+          "c": 0.999348
+        },
+        {
+          "w": "idea",
+          "s": 6.23,
+          "e": 6.84,
+          "c": 0.999855
+        },
+        {
+          "w": "that",
+          "s": 6.84,
+          "e": 7.11,
+          "c": 0.951321
+        },
+        {
+          "w": "just",
+          "s": 7.11,
+          "e": 7.2,
+          "c": 0.999432
+        },
+        {
+          "w": "popped",
+          "s": 7.2,
+          "e": 7.8,
+          "c": 0.997718
+        },
+        {
+          "w": "into",
+          "s": 7.8,
+          "e": 8.12,
+          "c": 0.965501
+        },
+        {
+          "w": "Mark",
+          "s": 8.32,
+          "e": 8.44,
+          "c": 0.993519
+        },
+        {
+          "w": "Zuckerberg's",
+          "s": 8.53,
+          "e": 9.37,
+          "c": 0.998121
+        },
+        {
+          "w": "head",
+          "s": 9.64,
+          "e": 9.72,
+          "c": 0.999781
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 9.81,
+      "end_s": 10.37,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "or Elon",
+      "words": [
+        {
+          "w": "or",
+          "s": 9.81,
+          "e": 9.94,
+          "c": 0.999977
+        },
+        {
+          "w": "Elon",
+          "s": 9.94,
+          "e": 10.37,
+          "c": 0.999426
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 10.37,
+      "end_s": 42.05,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Musk's imagination. The foundation of AI is our collective intelligence. The creative work of many millions of people, writers, artists, musicians, journalists, teachers, scientists, and ordinary citizens has been stolen by the wealthiest people on Earth. Mr. President, the time has come for us to take back what was stolen from us.",
+      "words": [
+        {
+          "w": "Musk's",
+          "s": 10.37,
+          "e": 11.01,
+          "c": 0.999893
+        },
+        {
+          "w": "imagination.",
+          "s": 11.26,
+          "e": 12.63,
+          "c": 0.999971
+        },
+        {
+          "w": "The",
+          "s": 12.73,
+          "e": 12.99,
+          "c": 0.999964
+        },
+        {
+          "w": "foundation",
+          "s": 12.99,
+          "e": 13.93,
+          "c": 0.999348
+        },
+        {
+          "w": "of",
+          "s": 14.18,
+          "e": 14.39,
+          "c": 0.999996
+        },
+        {
+          "w": "AI",
+          "s": 14.39,
+          "e": 14.62,
+          "c": 0.999887
+        },
+        {
+          "w": "is",
+          "s": 14.62,
+          "e": 14.83,
+          "c": 0.999979
+        },
+        {
+          "w": "our",
+          "s": 15.05,
+          "e": 15.2,
+          "c": 0.999981
+        },
+        {
+          "w": "collective",
+          "s": 15.2,
+          "e": 16.24,
+          "c": 0.999964
+        },
+        {
+          "w": "intelligence.",
+          "s": 16.68,
+          "e": 18.18,
+          "c": 0.977307
+        },
+        {
+          "w": "The",
+          "s": 18.27,
+          "e": 18.47,
+          "c": 0.999926
+        },
+        {
+          "w": "creative",
+          "s": 18.47,
+          "e": 19.1,
+          "c": 0.999958
+        },
+        {
+          "w": "work",
+          "s": 19.27,
+          "e": 19.47,
+          "c": 0.999971
+        },
+        {
+          "w": "of",
+          "s": 19.72,
+          "e": 19.84,
+          "c": 0.999992
+        },
+        {
+          "w": "many",
+          "s": 19.84,
+          "e": 20.23,
+          "c": 0.999882
+        },
+        {
+          "w": "millions",
+          "s": 20.23,
+          "e": 21.02,
+          "c": 0.999952
+        },
+        {
+          "w": "of",
+          "s": 21.02,
+          "e": 21.1,
+          "c": 0.999998
+        },
+        {
+          "w": "people,",
+          "s": 21.32,
+          "e": 21.86,
+          "c": 0.898232
+        },
+        {
+          "w": "writers,",
+          "s": 21.95,
+          "e": 22.53,
+          "c": 0.999403
+        },
+        {
+          "w": "artists,",
+          "s": 22.67,
+          "e": 23.48,
+          "c": 0.999865
+        },
+        {
+          "w": "musicians,",
+          "s": 23.48,
+          "e": 24.47,
+          "c": 0.999735
+        },
+        {
+          "w": "journalists,",
+          "s": 24.47,
+          "e": 25.49,
+          "c": 0.998123
+        },
+        {
+          "w": "teachers,",
+          "s": 25.49,
+          "e": 26.22,
+          "c": 0.979398
+        },
+        {
+          "w": "scientists,",
+          "s": 26.31,
+          "e": 27.48,
+          "c": 0.592029
+        },
+        {
+          "w": "and",
+          "s": 27.48,
+          "e": 27.79,
+          "c": 0.998868
+        },
+        {
+          "w": "ordinary",
+          "s": 27.79,
+          "e": 28.29,
+          "c": 0.999491
+        },
+        {
+          "w": "citizens",
+          "s": 28.63,
+          "e": 29.47,
+          "c": 0.999312
+        },
+        {
+          "w": "has",
+          "s": 29.47,
+          "e": 29.78,
+          "c": 0.93203
+        },
+        {
+          "w": "been",
+          "s": 29.78,
+          "e": 29.84,
+          "c": 0.998313
+        },
+        {
+          "w": "stolen",
+          "s": 30.14,
+          "e": 30.72,
+          "c": 0.982637
+        },
+        {
+          "w": "by",
+          "s": 30.81,
+          "e": 30.92,
+          "c": 0.999657
+        },
+        {
+          "w": "the",
+          "s": 30.92,
+          "e": 31.22,
+          "c": 0.999842
+        },
+        {
+          "w": "wealthiest",
+          "s": 31.22,
+          "e": 32.01,
+          "c": 0.999344
+        },
+        {
+          "w": "people",
+          "s": 32.26,
+          "e": 32.79,
+          "c": 0.99996
+        },
+        {
+          "w": "on",
+          "s": 32.84,
+          "e": 32.92,
+          "c": 0.999884
+        },
+        {
+          "w": "Earth.",
+          "s": 33.13,
+          "e": 33.88,
+          "c": 0.547782
+        },
+        {
+          "w": "Mr.",
+          "s": 33.97,
+          "e": 34.48,
+          "c": 0.998458
+        },
+        {
+          "w": "President,",
+          "s": 34.48,
+          "e": 35.78,
+          "c": 0.998525
+        },
+        {
+          "w": "the",
+          "s": 35.8,
+          "e": 36.07,
+          "c": 0.998814
+        },
+        {
+          "w": "time",
+          "s": 36.29,
+          "e": 36.51,
+          "c": 0.999992
+        },
+        {
+          "w": "has",
+          "s": 36.68,
+          "e": 36.8,
+          "c": 0.999981
+        },
+        {
+          "w": "come",
+          "s": 37.03,
+          "e": 37.48,
+          "c": 0.999971
+        },
+        {
+          "w": "for",
+          "s": 37.48,
+          "e": 38.28,
+          "c": 0.582604
+        },
+        {
+          "w": "us",
+          "s": 38.6,
+          "e": 38.84,
+          "c": 0.99979
+        },
+        {
+          "w": "to",
+          "s": 38.84,
+          "e": 39.04,
+          "c": 0.876109
+        },
+        {
+          "w": "take",
+          "s": 39.04,
+          "e": 39.44,
+          "c": 0.996846
+        },
+        {
+          "w": "back",
+          "s": 39.44,
+          "e": 39.7,
+          "c": 0.999152
+        },
+        {
+          "w": "what",
+          "s": 39.95,
+          "e": 40.29,
+          "c": 0.999992
+        },
+        {
+          "w": "was",
+          "s": 40.29,
+          "e": 40.52,
+          "c": 0.999992
+        },
+        {
+          "w": "stolen",
+          "s": 40.67,
+          "e": 41.15,
+          "c": 0.999992
+        },
+        {
+          "w": "from",
+          "s": 41.4,
+          "e": 41.69,
+          "c": 0.999994
+        },
+        {
+          "w": "us.",
+          "s": 41.69,
+          "e": 42.05,
+          "c": 0.999939
+        }
+      ]
+    }
+  ]
+}
