@@ -1,0 +1,130 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Happy Earth Day! 🌎"
+    Description: >-
+      A short Earth Day message from Representative Betty McCollum, recorded
+      outdoors in a small park near her office. She encourages viewers to get
+      outside and to do what they can for the environment, offering small
+      examples — driving a little less, taking a walk, picking up litter, or
+      simply making a pledge. She refers to astronauts on the Artemis mission
+      seeing how fragile and special the planet is, and invites viewers to
+      mark Earth Day in their own way. The clip is a general encouragement
+      rather than a policy statement: no legislation, agency or opponent is
+      named, and no contested claim is made.
+    URL: "https://www.youtube.com/watch?v=M8BXfFTgPl8"
+    Video_ID: "M8BXfFTgPl8"
+    Show: "Betty McCollum"
+    Runtime: "00:00:40"
+    Language: "en"
+
+  Media:
+    File: "M8BXfFTgPl8.mp4"
+    SHA256: "4575e18fa8c66ef20f696fea449257d4570f99c70161dd799a06fb50dbb5f25a"
+    Bytes: 2138549
+    Duration_Seconds: 40
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=M8BXfFTgPl8"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "M8BXfFTgPl8.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/betty_mccollum_mn_04/M8BXfFTgPl8/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC3sZJSdiZo2EBHbsOlsnI7A"
+    Uploader_ID: "@BMcCollum04"
+    View_Count: 1514
+    Like_Count: 20
+    Comment_Count: 1
+    Availability: "public"
+    Published_At: "2026-04-22T14:13:05+00:00"
+    Captured_At: "2026-08-14T05:04:32-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 2
+
+  Topics:
+    - "Earth Day observance"
+    - "Personal environmental action"
+    - "Artemis astronauts and the view of Earth"
+
+  Source:
+    Canonical_ID: "4c37d83ae7694926"
+    Transcribed: "2026-09-10T09:31:47.794346-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 107
+    Segments: 3
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T05:04:33.035945-07:00"
+    Transcription_Finished: "2026-09-10T09:31:47.794346-07:00"
+    Recorded: "2026-04-22"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "M8BXfFTgPl8.ctm"
+    Fountain: "M8BXfFTgPl8.fountain"
+    Diarization_RTTM: "M8BXfFTgPl8.rttm"
+    As_Broadcast_Script: "M8BXfFTgPl8.script.txt"
+    Segments_JSON: "M8BXfFTgPl8.segments.json"
+    Segments_JSONL: "M8BXfFTgPl8.segments.jsonl"
+    Subtitles_SRT: "M8BXfFTgPl8.srt"
+    Plain_Text: "M8BXfFTgPl8.transcription"
+    Subtitles_VTT: "M8BXfFTgPl8.vtt"
+    Transcript_SHA256: "9a9fb37b4dd99dedeab594547b691f7b83e2f1dd3215c4579fd834efef9bf18c"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "betty_mccollum_mn_04"
+    video_uid: "betty_mccollum_mn_04::M8BXfFTgPl8"
+    video_key: "M8BXfFTgPl8"
+    youtube_id: "M8BXfFTgPl8"
+    priority: 400
+    ceiling: 800
+    raw_score: 400
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    seat_rank: 150
+    challenger: true
+    round: 9
+    status: "partial"
+    demand_generated_at: "2026-09-10T15:08:15.968Z"
+    demand_run_id: "job_1789052880123_10"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=M8BXfFTgPl8"
+    source_ref: "M8BXfFTgPl8"
+    subject_kind: "new_politician"

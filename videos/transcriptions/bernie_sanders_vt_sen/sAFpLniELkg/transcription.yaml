@@ -1,0 +1,165 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "The reality of the student loan crisis under Trump"
+    Description: >-
+      A short campaign-style clip from Senator Bernie Sanders' channel in
+      which several borrowers, not the senator, do almost all of the talking
+      about long-running student loan debt. One says they started school in
+      1997 and have been paying for roughly thirty years, in and out of
+      default, with wages garnished, and offers pay stubs as proof. Another
+      says they borrowed close to $40,000 in the 1990s and describes the
+      interest compounding faster than they can pay it down. A third breaks
+      down describing what restarting garnishments would mean for their
+      family, including not being able to take grandchildren on an outing and
+      not knowing how the children will afford college. The framing of these
+      accounts as a crisis caused by the current administration is the
+      channel's own, carried in the video title rather than in what the
+      speakers say; the borrowers describe their own circumstances and do not
+      assign blame to a named official. No lender, servicer or government
+      agency is present to answer the accounts given.
+    URL: "https://www.youtube.com/watch?v=sAFpLniELkg"
+    Video_ID: "sAFpLniELkg"
+    Show: "Senator Bernie Sanders"
+    Runtime: "00:01:09"
+    Language: "en"
+
+  Media:
+    File: "sAFpLniELkg.mp4"
+    SHA256: "289aeaa22c033391a10cfb71b4f7e6dd1bfcbc50ed69647f9e7c0549bfb6c55e"
+    Bytes: 2079691
+    Duration_Seconds: 69
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=sAFpLniELkg"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "sAFpLniELkg.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/bernie_sanders_vt_sen/sAFpLniELkg/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCD_DaKNac0Ta-2PeHuoQ1uA"
+    Uploader_ID: "@SenatorSanders"
+    View_Count: 28576
+    Like_Count: 4293
+    Comment_Count: 358
+    Availability: "public"
+    Published_At: "2026-07-10T15:13:41+00:00"
+    Captured_At: "2026-08-14T06:17:25-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "4.0%"
+      Turns: 1
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "18.3%"
+      Turns: 2
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "4.7%"
+      Turns: 1
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "6.5%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "53.2%"
+      Turns: 2
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_09"
+      Share_Of_Speech: "13.3%"
+      Turns: 1
+
+  Topics:
+    - "Student loan debt and long-term repayment"
+    - "Wage garnishment and loan default"
+    - "Compounding interest on 1990s-era student loans"
+    - "Family financial strain and college affordability"
+
+  Source:
+    Canonical_ID: "a2dba8c37ffd0a6a"
+    Transcribed: "2026-09-10T09:32:46.101477-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 169
+    Segments: 17
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:17:26.075772-07:00"
+    Transcription_Finished: "2026-09-10T09:32:46.101477-07:00"
+    Recorded: "2026-07-10"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "sAFpLniELkg.ctm"
+    Fountain: "sAFpLniELkg.fountain"
+    Diarization_RTTM: "sAFpLniELkg.rttm"
+    As_Broadcast_Script: "sAFpLniELkg.script.txt"
+    Segments_JSON: "sAFpLniELkg.segments.json"
+    Segments_JSONL: "sAFpLniELkg.segments.jsonl"
+    Subtitles_SRT: "sAFpLniELkg.srt"
+    Plain_Text: "sAFpLniELkg.transcription"
+    Subtitles_VTT: "sAFpLniELkg.vtt"
+    Transcript_SHA256: "955132736655689c3b60fd2f56ec788d80085429cb4f5dfb4d8d86aeeea36c81"
+
+  # DEMAND — there is NO live row for this video, and that is the fact recorded
+  # here rather than a gap. It was adopted from this machine's transcription
+  # ledger (p_download_videos STAGE 1D): the media was already downloaded and
+  # had no words. video_demand.csv is regenerated on every engine run and rows
+  # leave it; this roster key carries none in run job_1789052880123_10, and no
+  # .demand.yaml seed was written at download time either — the media predates
+  # seeding and came from code/scripts/download_politician_videos.mjs.
+  # Only VERIFIED facts are stated below. priority, ceiling, raw, bound_by,
+  # seat_rank, round and the transcript counts are OMITTED because this run
+  # never measured them; absent is absent, and a fabricated priority would be
+  # indistinguishable from an engine-priced one.
+  Demand:
+    roster_key: "bernie_sanders_vt_sen"
+    video_uid: "bernie_sanders_vt_sen::sAFpLniELkg"
+    video_key: "sAFpLniELkg"
+    youtube_id: "sAFpLniELkg"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=sAFpLniELkg"
+    source_ref: "sAFpLniELkg"
+    demand_row_present: false
+    adopted_from: "in_progress.csv — STAGE 1D backlog"
+    demand_run_id_checked: "job_1789052880123_10"

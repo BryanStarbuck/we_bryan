@@ -1,0 +1,135 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Rep. Good Talks Ukraine Funding on The Daily Signal"
+    Description: >-
+      A short interview clip of Representative Bob Good on The Daily Signal,
+      arguing against additional United States funding for Ukraine and
+      objecting to pairing it with emergency funding for Hawaii, which he says
+      has nothing to do with Ukraine. He gives several reasons: he does not
+      regard it as a U.S. national security issue, he objects to the United
+      States leading NATO in Europe and carrying what he calls the lion's
+      share, and he says he does not know the exit strategy, what the result
+      looks like, or the limit of U.S. involvement. He also says there is no
+      accountability for roughly $113 billion already sent and that the money
+      being sent is borrowed. He closes by asking why the country would
+      exacerbate its own national security and military weaknesses by sending
+      resources abroad. The $113 billion figure and the characterisations of
+      NATO burden-sharing and of U.S. military weakness are his own
+      assertions, offered in an interview setting with no opposing view
+      present.
+    URL: "https://www.youtube.com/watch?v=_ufIiWXdnSQ"
+    Video_ID: "_ufIiWXdnSQ"
+    Show: "Congressman Bob Good"
+    Runtime: "00:00:33"
+    Language: "en"
+
+  Media:
+    File: "_ufIiWXdnSQ.mp4"
+    SHA256: "d749e106e8e60bee58bdfb312f35de7dc9a3018afd5e8137dacb0d1a48129ea5"
+    Bytes: 3210277
+    Duration_Seconds: 33
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=_ufIiWXdnSQ"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "_ufIiWXdnSQ.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/bob_good_va_05/_ufIiWXdnSQ/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCGgzX8qiWHfZfbfqfMsJGAg"
+    Uploader_ID: "@congressmanbobgood7773"
+    View_Count: 21
+    Like_Count: 1
+    Comment_Count: 2
+    Availability: "public"
+    Published_At: "2023-09-01T13:55:56+00:00"
+    Captured_At: "2026-08-14T05:05:18-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 1
+
+  Topics:
+    - "U.S. funding for Ukraine"
+    - "Pairing Ukraine aid with Hawaii emergency funding"
+    - "NATO burden-sharing and U.S. leadership in Europe"
+    - "Accountability for aid already appropriated"
+
+  Source:
+    Canonical_ID: "dd9ee80fabe3a864"
+    Transcribed: "2026-09-10T09:31:45.997743-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 127
+    Segments: 1
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T05:05:18.878928-07:00"
+    Transcription_Finished: "2026-09-10T09:31:45.997743-07:00"
+    Recorded: "2023-09-01"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "_ufIiWXdnSQ.ctm"
+    Fountain: "_ufIiWXdnSQ.fountain"
+    Diarization_RTTM: "_ufIiWXdnSQ.rttm"
+    As_Broadcast_Script: "_ufIiWXdnSQ.script.txt"
+    Segments_JSON: "_ufIiWXdnSQ.segments.json"
+    Segments_JSONL: "_ufIiWXdnSQ.segments.jsonl"
+    Subtitles_SRT: "_ufIiWXdnSQ.srt"
+    Plain_Text: "_ufIiWXdnSQ.transcription"
+    Subtitles_VTT: "_ufIiWXdnSQ.vtt"
+    Transcript_SHA256: "d4b3eda565e6e6f2249d25d6c0e21055dc1c849e4e7ba20ac3a51d7afd19dfac"
+
+  # DEMAND — there is NO live row for this video, and that is the fact recorded
+  # here rather than a gap. It was adopted from this machine's transcription
+  # ledger (p_download_videos STAGE 1D): the media was already downloaded and
+  # had no words. video_demand.csv is regenerated on every engine run and rows
+  # leave it; this roster key carries none in run job_1789052880123_10, and no
+  # .demand.yaml seed was written at download time either — the media predates
+  # seeding and came from code/scripts/download_politician_videos.mjs.
+  # Only VERIFIED facts are stated below. priority, ceiling, raw, bound_by,
+  # seat_rank, round and the transcript counts are OMITTED because this run
+  # never measured them; absent is absent, and a fabricated priority would be
+  # indistinguishable from an engine-priced one.
+  Demand:
+    roster_key: "bob_good_va_05"
+    video_uid: "bob_good_va_05::_ufIiWXdnSQ"
+    video_key: "_ufIiWXdnSQ"
+    youtube_id: "_ufIiWXdnSQ"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=_ufIiWXdnSQ"
+    source_ref: "_ufIiWXdnSQ"
+    demand_row_present: false
+    adopted_from: "in_progress.csv — STAGE 1D backlog"
+    demand_run_id_checked: "job_1789052880123_10"

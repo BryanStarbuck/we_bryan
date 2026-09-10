@@ -1,0 +1,979 @@
+{
+  "schema_version": 2,
+  "canonical_id": "5afb806448b48136",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 44.43,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T16:31:46.751Z",
+  "text_sha256": "5377041590180c05407678946c41ce777a766825b1006aa94691c67c919dc6ff",
+  "segments_sha256": "857c2db79f02624433c6492492ef5dc4042d4307e3d4a238b51cad462953ecb2",
+  "words_sha256": "03c935d91da96c7b1daa1a71cdff5bf342a4020f0a256eec33e859dd4dc370a2",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 2,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 2,
+    "clusters": 1,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Man 1",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.91,
+        "confidence": "high",
+        "clean_s": 40.8
+      },
+      "clean_s": 40.8,
+      "speaking_s": 40.8,
+      "first_s": 1.01
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 1.09,
+      "end_s": 1.09,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 43.35,
+      "end_s": 44.43,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 1.09,
+      "end_s": 1.1,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Congressman",
+      "words": [
+        {
+          "w": "Congressman",
+          "s": 1.09,
+          "e": 1.09,
+          "c": 0.972557
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 1.18,
+      "end_s": 21.76,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Bob Goode here at the border in Arizona looking at the new border wall constructed by former President Trump and really getting a sense from our border patrol on what happens here actually at the border and the threat to our country and really the threat of the policies that are planning to be enacted by our new President Biden and what the danger presents to our country.",
+      "words": [
+        {
+          "w": "Bob",
+          "s": 1.18,
+          "e": 1.39,
+          "c": 0.981567
+        },
+        {
+          "w": "Goode",
+          "s": 1.39,
+          "e": 1.88,
+          "c": 0.44732
+        },
+        {
+          "w": "here",
+          "s": 1.88,
+          "e": 2.3,
+          "c": 0.972164
+        },
+        {
+          "w": "at",
+          "s": 2.31,
+          "e": 2.61,
+          "c": 0.972457
+        },
+        {
+          "w": "the",
+          "s": 2.61,
+          "e": 3.08,
+          "c": 0.992006
+        },
+        {
+          "w": "border",
+          "s": 3.08,
+          "e": 3.5,
+          "c": 0.963857
+        },
+        {
+          "w": "in",
+          "s": 3.5,
+          "e": 3.67,
+          "c": 0.981465
+        },
+        {
+          "w": "Arizona",
+          "s": 3.67,
+          "e": 4.28,
+          "c": 0.996603
+        },
+        {
+          "w": "looking",
+          "s": 4.28,
+          "e": 4.6,
+          "c": 0.347633
+        },
+        {
+          "w": "at",
+          "s": 4.6,
+          "e": 4.76,
+          "c": 0.911068
+        },
+        {
+          "w": "the",
+          "s": 4.76,
+          "e": 4.84,
+          "c": 0.84784
+        },
+        {
+          "w": "new",
+          "s": 4.84,
+          "e": 5,
+          "c": 0.95529
+        },
+        {
+          "w": "border",
+          "s": 5,
+          "e": 5.32,
+          "c": 0.86898
+        },
+        {
+          "w": "wall",
+          "s": 5.32,
+          "e": 5.55,
+          "c": 0.869258
+        },
+        {
+          "w": "constructed",
+          "s": 5.74,
+          "e": 6.42,
+          "c": 0.996797
+        },
+        {
+          "w": "by",
+          "s": 6.42,
+          "e": 6.57,
+          "c": 0.994736
+        },
+        {
+          "w": "former",
+          "s": 6.57,
+          "e": 7.04,
+          "c": 0.973309
+        },
+        {
+          "w": "President",
+          "s": 7.05,
+          "e": 7.74,
+          "c": 0.757453
+        },
+        {
+          "w": "Trump",
+          "s": 7.74,
+          "e": 8.16,
+          "c": 0.995116
+        },
+        {
+          "w": "and",
+          "s": 8.16,
+          "e": 8.28,
+          "c": 0.637737
+        },
+        {
+          "w": "really",
+          "s": 8.28,
+          "e": 8.52,
+          "c": 0.973708
+        },
+        {
+          "w": "getting",
+          "s": 8.53,
+          "e": 8.82,
+          "c": 0.900801
+        },
+        {
+          "w": "a",
+          "s": 8.82,
+          "e": 8.86,
+          "c": 0.982594
+        },
+        {
+          "w": "sense",
+          "s": 8.86,
+          "e": 9.08,
+          "c": 0.998047
+        },
+        {
+          "w": "from",
+          "s": 9.08,
+          "e": 9.2,
+          "c": 0.962048
+        },
+        {
+          "w": "our",
+          "s": 9.2,
+          "e": 9.28,
+          "c": 0.97712
+        },
+        {
+          "w": "border",
+          "s": 9.28,
+          "e": 9.6,
+          "c": 0.752109
+        },
+        {
+          "w": "patrol",
+          "s": 9.78,
+          "e": 9.98,
+          "c": 0.994165
+        },
+        {
+          "w": "on",
+          "s": 9.98,
+          "e": 10.1,
+          "c": 0.965038
+        },
+        {
+          "w": "what",
+          "s": 10.1,
+          "e": 10.34,
+          "c": 0.999077
+        },
+        {
+          "w": "happens",
+          "s": 10.36,
+          "e": 10.79,
+          "c": 0.990246
+        },
+        {
+          "w": "here",
+          "s": 10.79,
+          "e": 11.04,
+          "c": 0.99878
+        },
+        {
+          "w": "actually",
+          "s": 11.04,
+          "e": 11.55,
+          "c": 0.865268
+        },
+        {
+          "w": "at",
+          "s": 11.55,
+          "e": 11.67,
+          "c": 0.990374
+        },
+        {
+          "w": "the",
+          "s": 11.67,
+          "e": 11.86,
+          "c": 0.999306
+        },
+        {
+          "w": "border",
+          "s": 11.86,
+          "e": 12.24,
+          "c": 0.996487
+        },
+        {
+          "w": "and",
+          "s": 12.24,
+          "e": 12.47,
+          "c": 0.935495
+        },
+        {
+          "w": "the",
+          "s": 12.48,
+          "e": 12.62,
+          "c": 0.955525
+        },
+        {
+          "w": "threat",
+          "s": 12.62,
+          "e": 12.91,
+          "c": 0.997927
+        },
+        {
+          "w": "to",
+          "s": 12.91,
+          "e": 13,
+          "c": 0.989727
+        },
+        {
+          "w": "our",
+          "s": 13,
+          "e": 13.16,
+          "c": 0.994446
+        },
+        {
+          "w": "country",
+          "s": 13.16,
+          "e": 14.08,
+          "c": 0.901466
+        },
+        {
+          "w": "and",
+          "s": 14.25,
+          "e": 14.25,
+          "c": 0.992142
+        },
+        {
+          "w": "really",
+          "s": 14.26,
+          "e": 14.58,
+          "c": 0.995934
+        },
+        {
+          "w": "the",
+          "s": 14.59,
+          "e": 14.76,
+          "c": 0.991892
+        },
+        {
+          "w": "threat",
+          "s": 14.76,
+          "e": 15.1,
+          "c": 0.998266
+        },
+        {
+          "w": "of",
+          "s": 15.1,
+          "e": 15.21,
+          "c": 0.998133
+        },
+        {
+          "w": "the",
+          "s": 15.21,
+          "e": 15.37,
+          "c": 0.996767
+        },
+        {
+          "w": "policies",
+          "s": 15.39,
+          "e": 15.84,
+          "c": 0.997851
+        },
+        {
+          "w": "that",
+          "s": 15.85,
+          "e": 16.07,
+          "c": 0.994896
+        },
+        {
+          "w": "are",
+          "s": 16.07,
+          "e": 16.24,
+          "c": 0.998571
+        },
+        {
+          "w": "planning",
+          "s": 16.24,
+          "e": 16.7,
+          "c": 0.996449
+        },
+        {
+          "w": "to",
+          "s": 16.7,
+          "e": 16.81,
+          "c": 0.991741
+        },
+        {
+          "w": "be",
+          "s": 16.81,
+          "e": 16.95,
+          "c": 0.985998
+        },
+        {
+          "w": "enacted",
+          "s": 16.99,
+          "e": 17.44,
+          "c": 0.963947
+        },
+        {
+          "w": "by",
+          "s": 17.44,
+          "e": 17.64,
+          "c": 0.87751
+        },
+        {
+          "w": "our",
+          "s": 17.64,
+          "e": 18.08,
+          "c": 0.882372
+        },
+        {
+          "w": "new",
+          "s": 18.26,
+          "e": 18.28,
+          "c": 0.990594
+        },
+        {
+          "w": "President",
+          "s": 18.28,
+          "e": 18.89,
+          "c": 0.687112
+        },
+        {
+          "w": "Biden",
+          "s": 18.9,
+          "e": 19.24,
+          "c": 0.986378
+        },
+        {
+          "w": "and",
+          "s": 19.24,
+          "e": 19.44,
+          "c": 0.948851
+        },
+        {
+          "w": "what",
+          "s": 19.44,
+          "e": 19.71,
+          "c": 0.990881
+        },
+        {
+          "w": "the",
+          "s": 19.71,
+          "e": 19.91,
+          "c": 0.995682
+        },
+        {
+          "w": "danger",
+          "s": 19.91,
+          "e": 20.32,
+          "c": 0.998329
+        },
+        {
+          "w": "presents",
+          "s": 20.32,
+          "e": 20.85,
+          "c": 0.761457
+        },
+        {
+          "w": "to",
+          "s": 20.87,
+          "e": 21,
+          "c": 0.994594
+        },
+        {
+          "w": "our",
+          "s": 21,
+          "e": 21.2,
+          "c": 0.999619
+        },
+        {
+          "w": "country.",
+          "s": 21.2,
+          "e": 21.76,
+          "c": 0.845111
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 21.71,
+      "end_s": 43.33,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Controlling immigration, particularly illegal immigration, is one of the greatest priorities for our country, or at least it should be, because illegal immigration is a national security issue, it's an economic issue, and certainly during a virus such as COVID, it is a health care issue as well. So it's critical that we enforce our laws and that we have laws in place that protect our citizens and put Americans",
+      "words": [
+        {
+          "w": "Controlling",
+          "s": 21.709,
+          "e": 22.359,
+          "c": 0.752522
+        },
+        {
+          "w": "immigration,",
+          "s": 22.359,
+          "e": 23.149,
+          "c": 0.891234
+        },
+        {
+          "w": "particularly",
+          "s": 23.149,
+          "e": 23.649,
+          "c": 0.908416
+        },
+        {
+          "w": "illegal",
+          "s": 23.649,
+          "e": 23.949,
+          "c": 0.984885
+        },
+        {
+          "w": "immigration,",
+          "s": 23.949,
+          "e": 24.679,
+          "c": 0.683219
+        },
+        {
+          "w": "is",
+          "s": 24.679,
+          "e": 24.709,
+          "c": 0.733461
+        },
+        {
+          "w": "one",
+          "s": 24.709,
+          "e": 25.469,
+          "c": 0.899801
+        },
+        {
+          "w": "of",
+          "s": 25.469,
+          "e": 25.509,
+          "c": 0.974167
+        },
+        {
+          "w": "the",
+          "s": 25.509,
+          "e": 25.579,
+          "c": 0.9635
+        },
+        {
+          "w": "greatest",
+          "s": 25.589,
+          "e": 25.859,
+          "c": 0.922519
+        },
+        {
+          "w": "priorities",
+          "s": 25.869,
+          "e": 26.319,
+          "c": 0.937423
+        },
+        {
+          "w": "for",
+          "s": 26.319,
+          "e": 26.449,
+          "c": 0.988088
+        },
+        {
+          "w": "our",
+          "s": 26.449,
+          "e": 26.579,
+          "c": 0.997468
+        },
+        {
+          "w": "country,",
+          "s": 26.579,
+          "e": 26.979,
+          "c": 0.562712
+        },
+        {
+          "w": "or",
+          "s": 26.979,
+          "e": 27.069,
+          "c": 0.985466
+        },
+        {
+          "w": "at",
+          "s": 27.069,
+          "e": 27.159,
+          "c": 0.990467
+        },
+        {
+          "w": "least",
+          "s": 27.159,
+          "e": 27.369,
+          "c": 0.999216
+        },
+        {
+          "w": "it",
+          "s": 27.379,
+          "e": 27.469,
+          "c": 0.973639
+        },
+        {
+          "w": "should",
+          "s": 27.469,
+          "e": 27.739,
+          "c": 0.998119
+        },
+        {
+          "w": "be,",
+          "s": 27.739,
+          "e": 28.149,
+          "c": 0.662679
+        },
+        {
+          "w": "because",
+          "s": 28.149,
+          "e": 28.749,
+          "c": 0.880003
+        },
+        {
+          "w": "illegal",
+          "s": 28.749,
+          "e": 29.149,
+          "c": 0.928867
+        },
+        {
+          "w": "immigration",
+          "s": 29.149,
+          "e": 29.629,
+          "c": 0.932917
+        },
+        {
+          "w": "is",
+          "s": 29.629,
+          "e": 29.739,
+          "c": 0.681448
+        },
+        {
+          "w": "a",
+          "s": 29.749,
+          "e": 29.799,
+          "c": 0.996854
+        },
+        {
+          "w": "national",
+          "s": 29.829,
+          "e": 30.399,
+          "c": 0.995091
+        },
+        {
+          "w": "security",
+          "s": 30.399,
+          "e": 30.979,
+          "c": 0.997765
+        },
+        {
+          "w": "issue,",
+          "s": 30.979,
+          "e": 31.479,
+          "c": 0.675799
+        },
+        {
+          "w": "it's",
+          "s": 31.479,
+          "e": 31.759,
+          "c": 0.966779
+        },
+        {
+          "w": "an",
+          "s": 31.759,
+          "e": 31.889,
+          "c": 0.996548
+        },
+        {
+          "w": "economic",
+          "s": 31.899,
+          "e": 32.479,
+          "c": 0.962314
+        },
+        {
+          "w": "issue,",
+          "s": 32.479,
+          "e": 33.029,
+          "c": 0.834577
+        },
+        {
+          "w": "and",
+          "s": 33.029,
+          "e": 33.149,
+          "c": 0.978297
+        },
+        {
+          "w": "certainly",
+          "s": 33.149,
+          "e": 33.469,
+          "c": 0.950221
+        },
+        {
+          "w": "during",
+          "s": 33.469,
+          "e": 33.749,
+          "c": 0.961443
+        },
+        {
+          "w": "a",
+          "s": 33.749,
+          "e": 33.829,
+          "c": 0.955753
+        },
+        {
+          "w": "virus",
+          "s": 33.829,
+          "e": 34.139,
+          "c": 0.999323
+        },
+        {
+          "w": "such",
+          "s": 34.139,
+          "e": 34.389,
+          "c": 0.950206
+        },
+        {
+          "w": "as",
+          "s": 34.389,
+          "e": 34.509,
+          "c": 0.998456
+        },
+        {
+          "w": "COVID,",
+          "s": 34.509,
+          "e": 34.939,
+          "c": 0.73252
+        },
+        {
+          "w": "it",
+          "s": 34.939,
+          "e": 35.059,
+          "c": 0.996738
+        },
+        {
+          "w": "is",
+          "s": 35.059,
+          "e": 35.179,
+          "c": 0.989438
+        },
+        {
+          "w": "a",
+          "s": 35.179,
+          "e": 35.239,
+          "c": 0.998056
+        },
+        {
+          "w": "health",
+          "s": 35.239,
+          "e": 35.619,
+          "c": 0.616128
+        },
+        {
+          "w": "care",
+          "s": 35.619,
+          "e": 35.869,
+          "c": 0.962333
+        },
+        {
+          "w": "issue",
+          "s": 35.869,
+          "e": 36.179,
+          "c": 0.997978
+        },
+        {
+          "w": "as",
+          "s": 36.179,
+          "e": 36.299,
+          "c": 0.93083
+        },
+        {
+          "w": "well.",
+          "s": 36.299,
+          "e": 36.829,
+          "c": 0.840921
+        },
+        {
+          "w": "So",
+          "s": 36.829,
+          "e": 36.929,
+          "c": 0.801489
+        },
+        {
+          "w": "it's",
+          "s": 36.929,
+          "e": 37.129,
+          "c": 0.890281
+        },
+        {
+          "w": "critical",
+          "s": 37.129,
+          "e": 37.829,
+          "c": 0.988774
+        },
+        {
+          "w": "that",
+          "s": 37.829,
+          "e": 38.349,
+          "c": 0.943214
+        },
+        {
+          "w": "we",
+          "s": 38.349,
+          "e": 38.489,
+          "c": 0.956063
+        },
+        {
+          "w": "enforce",
+          "s": 38.489,
+          "e": 38.859,
+          "c": 0.999001
+        },
+        {
+          "w": "our",
+          "s": 38.859,
+          "e": 39.009,
+          "c": 0.999542
+        },
+        {
+          "w": "laws",
+          "s": 39.009,
+          "e": 39.219,
+          "c": 0.999093
+        },
+        {
+          "w": "and",
+          "s": 39.219,
+          "e": 39.369,
+          "c": 0.779832
+        },
+        {
+          "w": "that",
+          "s": 39.369,
+          "e": 39.579,
+          "c": 0.892093
+        },
+        {
+          "w": "we",
+          "s": 39.579,
+          "e": 39.679,
+          "c": 0.999651
+        },
+        {
+          "w": "have",
+          "s": 39.679,
+          "e": 39.889,
+          "c": 0.999748
+        },
+        {
+          "w": "laws",
+          "s": 39.889,
+          "e": 40.089,
+          "c": 0.999413
+        },
+        {
+          "w": "in",
+          "s": 40.109,
+          "e": 40.199,
+          "c": 0.99968
+        },
+        {
+          "w": "place",
+          "s": 40.199,
+          "e": 40.459,
+          "c": 0.999272
+        },
+        {
+          "w": "that",
+          "s": 40.459,
+          "e": 40.669,
+          "c": 0.95605
+        },
+        {
+          "w": "protect",
+          "s": 40.669,
+          "e": 41.039,
+          "c": 0.994406
+        },
+        {
+          "w": "our",
+          "s": 41.039,
+          "e": 41.189,
+          "c": 0.998555
+        },
+        {
+          "w": "citizens",
+          "s": 41.189,
+          "e": 41.669,
+          "c": 0.992311
+        },
+        {
+          "w": "and",
+          "s": 41.669,
+          "e": 41.729,
+          "c": 0.88117
+        },
+        {
+          "w": "put",
+          "s": 41.729,
+          "e": 42.129,
+          "c": 0.990082
+        },
+        {
+          "w": "Americans",
+          "s": 42.129,
+          "e": 43.329,
+          "c": 0.986103
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 43.35,
+      "end_s": 44.43,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "first.",
+      "words": [
+        {
+          "w": "first.",
+          "s": 43.349,
+          "e": 44.429,
+          "c": 0.984142
+        }
+      ]
+    }
+  ]
+}

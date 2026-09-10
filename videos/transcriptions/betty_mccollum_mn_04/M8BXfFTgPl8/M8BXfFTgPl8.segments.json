@@ -1,0 +1,760 @@
+{
+  "schema_version": 2,
+  "canonical_id": "4c37d83ae7694926",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 38.96,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T16:31:47.762Z",
+  "text_sha256": "9a9fb37b4dd99dedeab594547b691f7b83e2f1dd3215c4579fd834efef9bf18c",
+  "segments_sha256": "7fe0378130e1be9a541a6d9e5f90f40094b6b3b836bbf90455479e62c900bc7f",
+  "words_sha256": "9f5471277401986479fe36abbf0fc3a9b84433e2284b457aef50f05539844458",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 1,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 1,
+    "clusters": 1,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Woman 1",
+      "voice": {
+        "descriptor": "woman",
+        "p": 0.92,
+        "confidence": "high",
+        "clean_s": 39.4
+      },
+      "clean_s": 39.4,
+      "speaking_s": 39.4,
+      "first_s": 0.03
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 2.17,
+      "end_s": 2.37,
+      "segment_i": 1,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.07,
+      "end_s": 1.74,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "To celebrate Earth Day, I",
+      "words": [
+        {
+          "w": "To",
+          "s": 0.07,
+          "e": 0.15,
+          "c": 0.830281
+        },
+        {
+          "w": "celebrate",
+          "s": 0.15,
+          "e": 0.86,
+          "c": 0.998763
+        },
+        {
+          "w": "Earth",
+          "s": 0.86,
+          "e": 1.24,
+          "c": 0.999053
+        },
+        {
+          "w": "Day,",
+          "s": 1.39,
+          "e": 1.66,
+          "c": 0.978935
+        },
+        {
+          "w": "I",
+          "s": 1.66,
+          "e": 1.74,
+          "c": 0.938951
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 2.17,
+      "end_s": 2.37,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "left my",
+      "words": [
+        {
+          "w": "left",
+          "s": 2.17,
+          "e": 2.17,
+          "c": 0.999857
+        },
+        {
+          "w": "my",
+          "s": 2.37,
+          "e": 2.37,
+          "c": 0.999771
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 2.42,
+      "end_s": 38.96,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "office over there and walked out to a wonderful little park. And I just wanted to take a moment to tell you, get out, enjoy the great outdoors, and do what you can. Whether it's driving a little less today, taking a walk, picking up some debris that you find, or making a pledge just to do what you can to protect our environment. Anything. Having our astronauts from Artemis up in space realize just how fragile, just how special this planet is. So celebrate Earth Day in your own way. Me, I'm going to stay outside a little longer.",
+      "words": [
+        {
+          "w": "office",
+          "s": 2.42,
+          "e": 2.99,
+          "c": 0.999849
+        },
+        {
+          "w": "over",
+          "s": 2.99,
+          "e": 3.4,
+          "c": 0.999228
+        },
+        {
+          "w": "there",
+          "s": 3.4,
+          "e": 3.96,
+          "c": 0.99958
+        },
+        {
+          "w": "and",
+          "s": 3.96,
+          "e": 4.01,
+          "c": 0.776965
+        },
+        {
+          "w": "walked",
+          "s": 4.45,
+          "e": 4.64,
+          "c": 0.999462
+        },
+        {
+          "w": "out",
+          "s": 4.64,
+          "e": 4.79,
+          "c": 0.99935
+        },
+        {
+          "w": "to",
+          "s": 4.92,
+          "e": 5.02,
+          "c": 0.998511
+        },
+        {
+          "w": "a",
+          "s": 5.02,
+          "e": 5.09,
+          "c": 0.99979
+        },
+        {
+          "w": "wonderful",
+          "s": 5.09,
+          "e": 5.72,
+          "c": 0.998155
+        },
+        {
+          "w": "little",
+          "s": 5.83,
+          "e": 6.26,
+          "c": 0.997554
+        },
+        {
+          "w": "park.",
+          "s": 6.26,
+          "e": 7.24,
+          "c": 0.808027
+        },
+        {
+          "w": "And",
+          "s": 7.33,
+          "e": 7.51,
+          "c": 0.966555
+        },
+        {
+          "w": "I",
+          "s": 7.54,
+          "e": 7.6,
+          "c": 0.999558
+        },
+        {
+          "w": "just",
+          "s": 7.6,
+          "e": 7.96,
+          "c": 0.999996
+        },
+        {
+          "w": "wanted",
+          "s": 7.96,
+          "e": 8.48,
+          "c": 0.999989
+        },
+        {
+          "w": "to",
+          "s": 8.63,
+          "e": 8.68,
+          "c": 1
+        },
+        {
+          "w": "take",
+          "s": 8.68,
+          "e": 8.97,
+          "c": 0.999983
+        },
+        {
+          "w": "a",
+          "s": 9.13,
+          "e": 9.13,
+          "c": 1
+        },
+        {
+          "w": "moment",
+          "s": 9.66,
+          "e": 9.67,
+          "c": 0.99999
+        },
+        {
+          "w": "to",
+          "s": 9.67,
+          "e": 9.85,
+          "c": 0.999996
+        },
+        {
+          "w": "tell",
+          "s": 9.85,
+          "e": 10.21,
+          "c": 0.999987
+        },
+        {
+          "w": "you,",
+          "s": 10.21,
+          "e": 10.71,
+          "c": 0.964648
+        },
+        {
+          "w": "get",
+          "s": 10.75,
+          "e": 10.91,
+          "c": 0.926182
+        },
+        {
+          "w": "out,",
+          "s": 10.91,
+          "e": 11.22,
+          "c": 0.989848
+        },
+        {
+          "w": "enjoy",
+          "s": 11.22,
+          "e": 11.26,
+          "c": 0.997976
+        },
+        {
+          "w": "the",
+          "s": 11.69,
+          "e": 11.73,
+          "c": 0.999987
+        },
+        {
+          "w": "great",
+          "s": 11.73,
+          "e": 12.03,
+          "c": 0.999851
+        },
+        {
+          "w": "outdoors,",
+          "s": 12.16,
+          "e": 13.11,
+          "c": 0.75524
+        },
+        {
+          "w": "and",
+          "s": 13.11,
+          "e": 13.5,
+          "c": 0.775257
+        },
+        {
+          "w": "do",
+          "s": 13.89,
+          "e": 13.97,
+          "c": 0.830943
+        },
+        {
+          "w": "what",
+          "s": 14.2,
+          "e": 14.24,
+          "c": 0.998165
+        },
+        {
+          "w": "you",
+          "s": 14.24,
+          "e": 14.4,
+          "c": 0.976638
+        },
+        {
+          "w": "can.",
+          "s": 14.47,
+          "e": 14.84,
+          "c": 0.738977
+        },
+        {
+          "w": "Whether",
+          "s": 14.93,
+          "e": 15.41,
+          "c": 0.994325
+        },
+        {
+          "w": "it's",
+          "s": 15.41,
+          "e": 15.73,
+          "c": 0.999554
+        },
+        {
+          "w": "driving",
+          "s": 15.73,
+          "e": 16.3,
+          "c": 0.999876
+        },
+        {
+          "w": "a",
+          "s": 16.3,
+          "e": 16.38,
+          "c": 0.999992
+        },
+        {
+          "w": "little",
+          "s": 16.38,
+          "e": 16.57,
+          "c": 0.999971
+        },
+        {
+          "w": "less",
+          "s": 17.19,
+          "e": 17.19,
+          "c": 0.999346
+        },
+        {
+          "w": "today,",
+          "s": 17.26,
+          "e": 17.76,
+          "c": 0.996559
+        },
+        {
+          "w": "taking",
+          "s": 17.76,
+          "e": 18.25,
+          "c": 0.999788
+        },
+        {
+          "w": "a",
+          "s": 18.25,
+          "e": 18.31,
+          "c": 0.992983
+        },
+        {
+          "w": "walk,",
+          "s": 18.35,
+          "e": 18.81,
+          "c": 0.999649
+        },
+        {
+          "w": "picking",
+          "s": 18.81,
+          "e": 19.38,
+          "c": 0.99926
+        },
+        {
+          "w": "up",
+          "s": 19.38,
+          "e": 19.54,
+          "c": 0.999996
+        },
+        {
+          "w": "some",
+          "s": 19.54,
+          "e": 19.86,
+          "c": 0.999992
+        },
+        {
+          "w": "debris",
+          "s": 19.86,
+          "e": 20.35,
+          "c": 0.999886
+        },
+        {
+          "w": "that",
+          "s": 20.35,
+          "e": 20.56,
+          "c": 0.999981
+        },
+        {
+          "w": "you",
+          "s": 20.67,
+          "e": 20.91,
+          "c": 0.999989
+        },
+        {
+          "w": "find,",
+          "s": 20.91,
+          "e": 21.43,
+          "c": 0.997468
+        },
+        {
+          "w": "or",
+          "s": 21.7,
+          "e": 21.7,
+          "c": 0.593357
+        },
+        {
+          "w": "making",
+          "s": 21.8,
+          "e": 22.14,
+          "c": 0.999846
+        },
+        {
+          "w": "a",
+          "s": 22.4,
+          "e": 22.4,
+          "c": 0.999987
+        },
+        {
+          "w": "pledge",
+          "s": 23,
+          "e": 23.02,
+          "c": 0.999945
+        },
+        {
+          "w": "just",
+          "s": 23.02,
+          "e": 23.3,
+          "c": 0.47299
+        },
+        {
+          "w": "to",
+          "s": 23.3,
+          "e": 23.41,
+          "c": 1
+        },
+        {
+          "w": "do",
+          "s": 23.52,
+          "e": 23.58,
+          "c": 0.999998
+        },
+        {
+          "w": "what",
+          "s": 23.58,
+          "e": 23.86,
+          "c": 0.999987
+        },
+        {
+          "w": "you",
+          "s": 23.86,
+          "e": 24.07,
+          "c": 0.999998
+        },
+        {
+          "w": "can",
+          "s": 24.07,
+          "e": 24.21,
+          "c": 0.999998
+        },
+        {
+          "w": "to",
+          "s": 24.28,
+          "e": 24.42,
+          "c": 0.999958
+        },
+        {
+          "w": "protect",
+          "s": 24.42,
+          "e": 24.92,
+          "c": 0.999952
+        },
+        {
+          "w": "our",
+          "s": 24.92,
+          "e": 25.1,
+          "c": 0.999971
+        },
+        {
+          "w": "environment.",
+          "s": 25.17,
+          "e": 26.12,
+          "c": 0.997695
+        },
+        {
+          "w": "Anything.",
+          "s": 26.89,
+          "e": 27.65,
+          "c": 0.476691
+        },
+        {
+          "w": "Having",
+          "s": 27.65,
+          "e": 28.04,
+          "c": 0.996678
+        },
+        {
+          "w": "our",
+          "s": 28.19,
+          "e": 28.34,
+          "c": 0.999939
+        },
+        {
+          "w": "astronauts",
+          "s": 28.34,
+          "e": 28.54,
+          "c": 0.999979
+        },
+        {
+          "w": "from",
+          "s": 29.22,
+          "e": 29.42,
+          "c": 0.999882
+        },
+        {
+          "w": "Artemis",
+          "s": 29.42,
+          "e": 29.89,
+          "c": 0.998759
+        },
+        {
+          "w": "up",
+          "s": 29.97,
+          "e": 30.1,
+          "c": 0.999659
+        },
+        {
+          "w": "in",
+          "s": 30.15,
+          "e": 30.26,
+          "c": 0.999933
+        },
+        {
+          "w": "space",
+          "s": 30.26,
+          "e": 30.65,
+          "c": 0.999891
+        },
+        {
+          "w": "realize",
+          "s": 30.65,
+          "e": 30.81,
+          "c": 0.986088
+        },
+        {
+          "w": "just",
+          "s": 31.26,
+          "e": 31.5,
+          "c": 0.999989
+        },
+        {
+          "w": "how",
+          "s": 31.5,
+          "e": 31.73,
+          "c": 0.999996
+        },
+        {
+          "w": "fragile,",
+          "s": 31.73,
+          "e": 32.42,
+          "c": 0.99522
+        },
+        {
+          "w": "just",
+          "s": 32.42,
+          "e": 32.73,
+          "c": 0.999844
+        },
+        {
+          "w": "how",
+          "s": 32.73,
+          "e": 32.96,
+          "c": 0.999992
+        },
+        {
+          "w": "special",
+          "s": 32.96,
+          "e": 33.06,
+          "c": 0.999977
+        },
+        {
+          "w": "this",
+          "s": 33.76,
+          "e": 33.81,
+          "c": 0.999983
+        },
+        {
+          "w": "planet",
+          "s": 33.81,
+          "e": 34.1,
+          "c": 0.999983
+        },
+        {
+          "w": "is.",
+          "s": 34.26,
+          "e": 34.76,
+          "c": 0.999996
+        },
+        {
+          "w": "So",
+          "s": 34.83,
+          "e": 34.88,
+          "c": 0.999954
+        },
+        {
+          "w": "celebrate",
+          "s": 34.88,
+          "e": 35.45,
+          "c": 0.963196
+        },
+        {
+          "w": "Earth",
+          "s": 35.45,
+          "e": 35.68,
+          "c": 0.999943
+        },
+        {
+          "w": "Day",
+          "s": 35.8,
+          "e": 35.95,
+          "c": 0.999926
+        },
+        {
+          "w": "in",
+          "s": 35.95,
+          "e": 36,
+          "c": 0.996137
+        },
+        {
+          "w": "your",
+          "s": 36.15,
+          "e": 36.32,
+          "c": 0.999947
+        },
+        {
+          "w": "own",
+          "s": 36.32,
+          "e": 36.49,
+          "c": 0.999983
+        },
+        {
+          "w": "way.",
+          "s": 36.49,
+          "e": 36.82,
+          "c": 0.999384
+        },
+        {
+          "w": "Me,",
+          "s": 36.96,
+          "e": 37.12,
+          "c": 0.580938
+        },
+        {
+          "w": "I'm",
+          "s": 37.17,
+          "e": 37.27,
+          "c": 0.999091
+        },
+        {
+          "w": "going",
+          "s": 37.27,
+          "e": 37.41,
+          "c": 0.9813
+        },
+        {
+          "w": "to",
+          "s": 37.55,
+          "e": 37.63,
+          "c": 1
+        },
+        {
+          "w": "stay",
+          "s": 37.63,
+          "e": 37.84,
+          "c": 0.999891
+        },
+        {
+          "w": "outside",
+          "s": 37.84,
+          "e": 38.21,
+          "c": 0.999935
+        },
+        {
+          "w": "a",
+          "s": 38.21,
+          "e": 38.23,
+          "c": 0.999956
+        },
+        {
+          "w": "little",
+          "s": 38.27,
+          "e": 38.57,
+          "c": 0.999989
+        },
+        {
+          "w": "longer.",
+          "s": 38.57,
+          "e": 38.96,
+          "c": 0.999958
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Rep. Good Joins Longwood University for Grand Opening of Brock Center"
+    Description: >-
+      A very short ceremonial clip in which Representative Bob Good speaks at
+      the opening of the Brock Center at Longwood University in Farmville,
+      Virginia. He calls the opening exciting and describes the facility as a
+      game changer — literally, he says — not only for the basketball program
+      but for the whole campus community, as well as for Farmville and Prince
+      Edward County. He thanks those present for including him and closes with
+      cheers for the Lancers. There is no policy content and no contested
+      claim; the video is a local ceremonial appearance of about twenty
+      seconds.
+    URL: "https://www.youtube.com/watch?v=cIeWeBxcpFc"
+    Video_ID: "cIeWeBxcpFc"
+    Show: "Congressman Bob Good"
+    Runtime: "00:00:23"
+    Language: "en"
+
+  Media:
+    File: "cIeWeBxcpFc.mp4"
+    SHA256: "94060c6061e828f5321ff67687050e41f86fe39748401dd9d3038af9e91b8d7e"
+    Bytes: 2000262
+    Duration_Seconds: 23
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=cIeWeBxcpFc"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "cIeWeBxcpFc.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/bob_good_va_05/cIeWeBxcpFc/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCGgzX8qiWHfZfbfqfMsJGAg"
+    Uploader_ID: "@congressmanbobgood7773"
+    View_Count: 523
+    Like_Count: 14
+    Comment_Count: 3
+    Availability: "public"
+    Published_At: "2023-08-31T13:25:41+00:00"
+    Captured_At: "2026-08-14T05:04:59-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "95.8%"
+      Turns: 1
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "4.2%"
+      Turns: 1
+
+  Topics:
+    - "Opening of the Brock Center at Longwood University"
+    - "Local economic and campus impact in Farmville and Prince Edward County"
+    - "Ceremonial constituent appearance"
+
+  Source:
+    Canonical_ID: "4acf8ff211792aba"
+    Transcribed: "2026-09-10T09:31:21.077393-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 60
+    Segments: 3
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:18:07.873378-07:00"
+    Transcription_Finished: "2026-09-10T09:31:21.077393-07:00"
+    Recorded: "2023-08-31"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "cIeWeBxcpFc.ctm"
+    Fountain: "cIeWeBxcpFc.fountain"
+    Diarization_RTTM: "cIeWeBxcpFc.rttm"
+    As_Broadcast_Script: "cIeWeBxcpFc.script.txt"
+    Segments_JSON: "cIeWeBxcpFc.segments.json"
+    Segments_JSONL: "cIeWeBxcpFc.segments.jsonl"
+    Subtitles_SRT: "cIeWeBxcpFc.srt"
+    Plain_Text: "cIeWeBxcpFc.transcription"
+    Subtitles_VTT: "cIeWeBxcpFc.vtt"
+    Transcript_SHA256: "212d1624bede0bc06c40e4c140b88fdc273bccd6ddf392f441e036c5735a8e42"
+
+  # DEMAND — there is NO live row for this video, and that is the fact recorded
+  # here rather than a gap. It was adopted from this machine's transcription
+  # ledger (p_download_videos STAGE 1D): the media was already downloaded and
+  # had no words. video_demand.csv is regenerated on every engine run and rows
+  # leave it; this roster key carries none in run job_1789052880123_10, and no
+  # .demand.yaml seed was written at download time either — the media predates
+  # seeding and came from code/scripts/download_politician_videos.mjs.
+  # Only VERIFIED facts are stated below. priority, ceiling, raw, bound_by,
+  # seat_rank, round and the transcript counts are OMITTED because this run
+  # never measured them; absent is absent, and a fabricated priority would be
+  # indistinguishable from an engine-priced one.
+  Demand:
+    roster_key: "bob_good_va_05"
+    video_uid: "bob_good_va_05::cIeWeBxcpFc"
+    video_key: "cIeWeBxcpFc"
+    youtube_id: "cIeWeBxcpFc"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=cIeWeBxcpFc"
+    source_ref: "cIeWeBxcpFc"
+    demand_row_present: false
+    adopted_from: "in_progress.csv — STAGE 1D backlog"
+    demand_run_id_checked: "job_1789052880123_10"

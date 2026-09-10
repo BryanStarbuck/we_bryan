@@ -1,0 +1,148 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Supreme Court Rebukes Trump"
+    Description: >-
+      Representative Betty McCollum, recording away from Minnesota while on
+      what she describes as oversight work in a warmer region, reports that
+      the Supreme Court has ruled the president's use of tariffs
+      unconstitutional. She grounds the ruling in Article One of the
+      Constitution, which she says assigns that responsibility to Congress.
+      She characterises the president's subsequent news conference as ranting,
+      raving and uncontrollable, and as an argument that the Court was wrong
+      and that he is always right. She then makes her substantive point:
+      tariffs are not fees, as she says he calls them, but taxes ultimately
+      borne by consumers through the higher prices companies charge to offset
+      them. She closes by thanking the Court for protecting the Constitution.
+      The account of the ruling, the characterisation of the news conference,
+      and the claim about who bears the cost are hers; the administration is
+      not represented and does not answer them.
+    URL: "https://www.youtube.com/watch?v=y7bdMmXFEk0"
+    Video_ID: "y7bdMmXFEk0"
+    Show: "Betty McCollum"
+    Runtime: "00:00:58"
+    Language: "en"
+
+  Media:
+    File: "y7bdMmXFEk0.mp4"
+    SHA256: "41f7df3cc63b5747f1a68b073db6b06800c41b39e1c4f8f16256c14d2515c4c6"
+    Bytes: 2759821
+    Duration_Seconds: 58
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=y7bdMmXFEk0"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "y7bdMmXFEk0.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/betty_mccollum_mn_04/y7bdMmXFEk0/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC3sZJSdiZo2EBHbsOlsnI7A"
+    Uploader_ID: "@BMcCollum04"
+    View_Count: 1542
+    Like_Count: 38
+    Comment_Count: 3
+    Availability: "public"
+    Published_At: "2026-02-20T23:23:52+00:00"
+    Captured_At: "2026-08-14T06:17:59-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "83.1%"
+      Turns: 2
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "2.0%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "14.9%"
+      Turns: 1
+
+  Topics:
+    - "Supreme Court ruling on presidential tariff authority"
+    - "Article One and congressional power over taxation"
+    - "Whether tariffs are fees or consumer taxes"
+    - "Cost of living and consumer prices"
+
+  Source:
+    Canonical_ID: "10efe3786afb1da7"
+    Transcribed: "2026-09-10T09:32:29.546798-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 145
+    Segments: 5
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:18:00.593824-07:00"
+    Transcription_Finished: "2026-09-10T09:32:29.546798-07:00"
+    Recorded: "2026-02-20"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "y7bdMmXFEk0.ctm"
+    Fountain: "y7bdMmXFEk0.fountain"
+    Diarization_RTTM: "y7bdMmXFEk0.rttm"
+    As_Broadcast_Script: "y7bdMmXFEk0.script.txt"
+    Segments_JSON: "y7bdMmXFEk0.segments.json"
+    Segments_JSONL: "y7bdMmXFEk0.segments.jsonl"
+    Subtitles_SRT: "y7bdMmXFEk0.srt"
+    Plain_Text: "y7bdMmXFEk0.transcription"
+    Subtitles_VTT: "y7bdMmXFEk0.vtt"
+    Transcript_SHA256: "dd714793f664dfe5a4bdec19a39252f65813b6716cd0eef4103ca8c57052b49f"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "betty_mccollum_mn_04"
+    video_uid: "betty_mccollum_mn_04::y7bdMmXFEk0"
+    video_key: "y7bdMmXFEk0"
+    youtube_id: "y7bdMmXFEk0"
+    priority: 400
+    ceiling: 800
+    raw_score: 400
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    seat_rank: 150
+    challenger: true
+    round: 25
+    status: "partial"
+    demand_generated_at: "2026-09-10T15:08:15.968Z"
+    demand_run_id: "job_1789052880123_10"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=y7bdMmXFEk0"
+    source_ref: "y7bdMmXFEk0"
+    subject_kind: "new_politician"

@@ -1,0 +1,1036 @@
+{
+  "schema_version": 2,
+  "canonical_id": "10efe3786afb1da7",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 57.62,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T16:32:28.563Z",
+  "text_sha256": "dd714793f664dfe5a4bdec19a39252f65813b6716cd0eef4103ca8c57052b49f",
+  "segments_sha256": "9c1b4e40135108549ab27731d7965bbdde69e377f84bf8126bfcd9d560245bce",
+  "words_sha256": "a4eb1bd3fad7e4fc816e6b90ebbf4f25a87892ac907696b941a4909fa6ae88f2",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 2,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 7,
+    "clusters": 3,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_01",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1
+      },
+      "clean_s": 1,
+      "speaking_s": 1,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_00",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 47.6
+      },
+      "clean_s": 47.6,
+      "speaking_s": 47.6,
+      "first_s": 1.33
+    },
+    {
+      "id": "SPEAKER_02",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 6.7
+      },
+      "clean_s": 6.7,
+      "speaking_s": 6.7,
+      "first_s": 20.97
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.09,
+      "end_s": 1.24,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Hi. Well,",
+      "words": [
+        {
+          "w": "Hi.",
+          "s": 0.09,
+          "e": 0.5,
+          "c": 0.472424
+        },
+        {
+          "w": "Well,",
+          "s": 0.51,
+          "e": 1.24,
+          "c": 0.753869
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 1.24,
+      "end_s": 20.84,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I'm going to confess I'm not in Minnesota. I am working, though. I'm in a warmer region doing some oversight. But I wanted to share with you the exciting news. The Supreme Court upheld the Constitution and told President Trump the way he was using tariffs was unconstitutional. Article one of the Constitution gives that",
+      "words": [
+        {
+          "w": "I'm",
+          "s": 1.24,
+          "e": 1.36,
+          "c": 0.942338
+        },
+        {
+          "w": "going",
+          "s": 1.36,
+          "e": 1.58,
+          "c": 0.762241
+        },
+        {
+          "w": "to",
+          "s": 1.58,
+          "e": 1.65,
+          "c": 0.983716
+        },
+        {
+          "w": "confess",
+          "s": 1.66,
+          "e": 2,
+          "c": 0.92447
+        },
+        {
+          "w": "I'm",
+          "s": 2,
+          "e": 2.2,
+          "c": 0.389375
+        },
+        {
+          "w": "not",
+          "s": 2.2,
+          "e": 2.4,
+          "c": 0.93207
+        },
+        {
+          "w": "in",
+          "s": 2.4,
+          "e": 2.45,
+          "c": 0.777969
+        },
+        {
+          "w": "Minnesota.",
+          "s": 2.46,
+          "e": 3.04,
+          "c": 0.893497
+        },
+        {
+          "w": "I",
+          "s": 3.12,
+          "e": 3.12,
+          "c": 0.99971
+        },
+        {
+          "w": "am",
+          "s": 3.16,
+          "e": 3.28,
+          "c": 0.983785
+        },
+        {
+          "w": "working,",
+          "s": 3.34,
+          "e": 4.06,
+          "c": 0.564872
+        },
+        {
+          "w": "though.",
+          "s": 4.27,
+          "e": 4.84,
+          "c": 0.948912
+        },
+        {
+          "w": "I'm",
+          "s": 4.96,
+          "e": 5.12,
+          "c": 0.987325
+        },
+        {
+          "w": "in",
+          "s": 5.16,
+          "e": 5.28,
+          "c": 0.999195
+        },
+        {
+          "w": "a",
+          "s": 5.28,
+          "e": 5.36,
+          "c": 0.995858
+        },
+        {
+          "w": "warmer",
+          "s": 5.36,
+          "e": 5.78,
+          "c": 0.996307
+        },
+        {
+          "w": "region",
+          "s": 5.89,
+          "e": 6.38,
+          "c": 0.998211
+        },
+        {
+          "w": "doing",
+          "s": 6.38,
+          "e": 6.79,
+          "c": 0.797342
+        },
+        {
+          "w": "some",
+          "s": 6.79,
+          "e": 7.12,
+          "c": 0.995199
+        },
+        {
+          "w": "oversight.",
+          "s": 7.12,
+          "e": 7.88,
+          "c": 0.730435
+        },
+        {
+          "w": "But",
+          "s": 7.97,
+          "e": 8.05,
+          "c": 0.995439
+        },
+        {
+          "w": "I",
+          "s": 8.05,
+          "e": 8.09,
+          "c": 0.99183
+        },
+        {
+          "w": "wanted",
+          "s": 8.16,
+          "e": 8.44,
+          "c": 0.997487
+        },
+        {
+          "w": "to",
+          "s": 8.44,
+          "e": 8.55,
+          "c": 0.999588
+        },
+        {
+          "w": "share",
+          "s": 8.55,
+          "e": 8.78,
+          "c": 0.999197
+        },
+        {
+          "w": "with",
+          "s": 8.83,
+          "e": 9.05,
+          "c": 0.996405
+        },
+        {
+          "w": "you",
+          "s": 9.07,
+          "e": 9.26,
+          "c": 0.998576
+        },
+        {
+          "w": "the",
+          "s": 9.26,
+          "e": 9.49,
+          "c": 0.980071
+        },
+        {
+          "w": "exciting",
+          "s": 9.49,
+          "e": 10.12,
+          "c": 0.997495
+        },
+        {
+          "w": "news.",
+          "s": 10.12,
+          "e": 10.67,
+          "c": 0.927186
+        },
+        {
+          "w": "The",
+          "s": 10.78,
+          "e": 10.89,
+          "c": 0.99563
+        },
+        {
+          "w": "Supreme",
+          "s": 10.98,
+          "e": 11.43,
+          "c": 0.99602
+        },
+        {
+          "w": "Court",
+          "s": 11.43,
+          "e": 11.7,
+          "c": 0.994061
+        },
+        {
+          "w": "upheld",
+          "s": 11.8,
+          "e": 12.3,
+          "c": 0.976624
+        },
+        {
+          "w": "the",
+          "s": 12.3,
+          "e": 12.48,
+          "c": 0.995154
+        },
+        {
+          "w": "Constitution",
+          "s": 12.56,
+          "e": 13.52,
+          "c": 0.933653
+        },
+        {
+          "w": "and",
+          "s": 13.52,
+          "e": 13.72,
+          "c": 0.571771
+        },
+        {
+          "w": "told",
+          "s": 13.72,
+          "e": 14.02,
+          "c": 0.9681
+        },
+        {
+          "w": "President",
+          "s": 14.11,
+          "e": 14.48,
+          "c": 0.856589
+        },
+        {
+          "w": "Trump",
+          "s": 14.48,
+          "e": 14.8,
+          "c": 0.893138
+        },
+        {
+          "w": "the",
+          "s": 14.92,
+          "e": 15.04,
+          "c": 0.961947
+        },
+        {
+          "w": "way",
+          "s": 15.08,
+          "e": 15.29,
+          "c": 0.999716
+        },
+        {
+          "w": "he",
+          "s": 15.32,
+          "e": 15.46,
+          "c": 0.99934
+        },
+        {
+          "w": "was",
+          "s": 15.46,
+          "e": 15.7,
+          "c": 0.999253
+        },
+        {
+          "w": "using",
+          "s": 15.71,
+          "e": 16.12,
+          "c": 0.999152
+        },
+        {
+          "w": "tariffs",
+          "s": 16.14,
+          "e": 16.7,
+          "c": 0.995845
+        },
+        {
+          "w": "was",
+          "s": 16.7,
+          "e": 16.95,
+          "c": 0.992572
+        },
+        {
+          "w": "unconstitutional.",
+          "s": 16.95,
+          "e": 18.56,
+          "c": 0.978405
+        },
+        {
+          "w": "Article",
+          "s": 18.68,
+          "e": 18.97,
+          "c": 0.997291
+        },
+        {
+          "w": "one",
+          "s": 18.97,
+          "e": 19.15,
+          "c": 0.359409
+        },
+        {
+          "w": "of",
+          "s": 19.15,
+          "e": 19.27,
+          "c": 0.995473
+        },
+        {
+          "w": "the",
+          "s": 19.27,
+          "e": 19.45,
+          "c": 0.996983
+        },
+        {
+          "w": "Constitution",
+          "s": 19.45,
+          "e": 20.18,
+          "c": 0.974518
+        },
+        {
+          "w": "gives",
+          "s": 20.18,
+          "e": 20.48,
+          "c": 0.952754
+        },
+        {
+          "w": "that",
+          "s": 20.48,
+          "e": 20.84,
+          "c": 0.976824
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 20.84,
+      "end_s": 29.18,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "responsibility to Congress. The president had a ranting, raving, uncontrollable",
+      "words": [
+        {
+          "w": "responsibility",
+          "s": 20.84,
+          "e": 21.62,
+          "c": 0.973418
+        },
+        {
+          "w": "to",
+          "s": 21.69,
+          "e": 21.84,
+          "c": 0.986173
+        },
+        {
+          "w": "Congress.",
+          "s": 21.84,
+          "e": 22.94,
+          "c": 0.978569
+        },
+        {
+          "w": "The",
+          "s": 23.06,
+          "e": 23.23,
+          "c": 0.909575
+        },
+        {
+          "w": "president",
+          "s": 23.24,
+          "e": 24.07,
+          "c": 0.730642
+        },
+        {
+          "w": "had",
+          "s": 24.17,
+          "e": 24.39,
+          "c": 0.9976
+        },
+        {
+          "w": "a",
+          "s": 24.39,
+          "e": 24.48,
+          "c": 0.996265
+        },
+        {
+          "w": "ranting,",
+          "s": 24.48,
+          "e": 25.36,
+          "c": 0.979436
+        },
+        {
+          "w": "raving,",
+          "s": 25.36,
+          "e": 27.5,
+          "c": 0.905497
+        },
+        {
+          "w": "uncontrollable",
+          "s": 27.51,
+          "e": 29.18,
+          "c": 0.838751
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 29.18,
+      "end_s": 29.4,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "news",
+      "words": [
+        {
+          "w": "news",
+          "s": 29.182,
+          "e": 29.402,
+          "c": 0.630283
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 29.4,
+      "end_s": 57.62,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "conference afterwards explaining why he thought the Supreme Court was wrong and why he, once again, is always right. But let's keep in mind, tariffs are not the fees he talks about. They are taxes. They're taxes borrowed by you, either through the companies having to charge more to consumers to offset what the president was doing to raise the cost of everyday living for Americans. So I'm grateful for the Supreme Court for protecting our Constitution.",
+      "words": [
+        {
+          "w": "conference",
+          "s": 29.402,
+          "e": 30.022,
+          "c": 0.982027
+        },
+        {
+          "w": "afterwards",
+          "s": 30.022,
+          "e": 30.652,
+          "c": 0.929255
+        },
+        {
+          "w": "explaining",
+          "s": 30.652,
+          "e": 31.142,
+          "c": 0.707423
+        },
+        {
+          "w": "why",
+          "s": 31.142,
+          "e": 32.052,
+          "c": 0.7573
+        },
+        {
+          "w": "he",
+          "s": 32.052,
+          "e": 32.152,
+          "c": 0.974496
+        },
+        {
+          "w": "thought",
+          "s": 32.152,
+          "e": 32.382,
+          "c": 0.977126
+        },
+        {
+          "w": "the",
+          "s": 32.392,
+          "e": 32.512,
+          "c": 0.904384
+        },
+        {
+          "w": "Supreme",
+          "s": 32.512,
+          "e": 32.832,
+          "c": 0.865853
+        },
+        {
+          "w": "Court",
+          "s": 32.832,
+          "e": 33.152,
+          "c": 0.96685
+        },
+        {
+          "w": "was",
+          "s": 33.152,
+          "e": 33.282,
+          "c": 0.975517
+        },
+        {
+          "w": "wrong",
+          "s": 33.302,
+          "e": 33.552,
+          "c": 0.936073
+        },
+        {
+          "w": "and",
+          "s": 33.552,
+          "e": 33.692,
+          "c": 0.562304
+        },
+        {
+          "w": "why",
+          "s": 33.692,
+          "e": 33.872,
+          "c": 0.99774
+        },
+        {
+          "w": "he,",
+          "s": 33.872,
+          "e": 34.112,
+          "c": 0.789237
+        },
+        {
+          "w": "once",
+          "s": 34.112,
+          "e": 34.362,
+          "c": 0.993925
+        },
+        {
+          "w": "again,",
+          "s": 34.362,
+          "e": 34.792,
+          "c": 0.983474
+        },
+        {
+          "w": "is",
+          "s": 34.792,
+          "e": 34.912,
+          "c": 0.998144
+        },
+        {
+          "w": "always",
+          "s": 34.912,
+          "e": 35.282,
+          "c": 0.99963
+        },
+        {
+          "w": "right.",
+          "s": 35.282,
+          "e": 35.832,
+          "c": 0.977597
+        },
+        {
+          "w": "But",
+          "s": 35.832,
+          "e": 36.062,
+          "c": 0.644947
+        },
+        {
+          "w": "let's",
+          "s": 36.062,
+          "e": 36.442,
+          "c": 0.96821
+        },
+        {
+          "w": "keep",
+          "s": 36.442,
+          "e": 36.732,
+          "c": 0.997544
+        },
+        {
+          "w": "in",
+          "s": 36.732,
+          "e": 36.892,
+          "c": 0.998496
+        },
+        {
+          "w": "mind,",
+          "s": 36.892,
+          "e": 37.382,
+          "c": 0.794464
+        },
+        {
+          "w": "tariffs",
+          "s": 37.382,
+          "e": 37.972,
+          "c": 0.978238
+        },
+        {
+          "w": "are",
+          "s": 37.972,
+          "e": 38.222,
+          "c": 0.998492
+        },
+        {
+          "w": "not",
+          "s": 38.222,
+          "e": 38.442,
+          "c": 0.99485
+        },
+        {
+          "w": "the",
+          "s": 38.492,
+          "e": 38.672,
+          "c": 0.978502
+        },
+        {
+          "w": "fees",
+          "s": 38.672,
+          "e": 38.882,
+          "c": 0.813771
+        },
+        {
+          "w": "he",
+          "s": 38.882,
+          "e": 39.072,
+          "c": 0.956919
+        },
+        {
+          "w": "talks",
+          "s": 39.072,
+          "e": 39.372,
+          "c": 0.539331
+        },
+        {
+          "w": "about.",
+          "s": 39.402,
+          "e": 39.872,
+          "c": 0.935967
+        },
+        {
+          "w": "They",
+          "s": 39.882,
+          "e": 40.142,
+          "c": 0.999756
+        },
+        {
+          "w": "are",
+          "s": 40.142,
+          "e": 40.332,
+          "c": 0.999983
+        },
+        {
+          "w": "taxes.",
+          "s": 40.332,
+          "e": 40.842,
+          "c": 0.98453
+        },
+        {
+          "w": "They're",
+          "s": 40.842,
+          "e": 41.292,
+          "c": 0.969507
+        },
+        {
+          "w": "taxes",
+          "s": 41.292,
+          "e": 41.602,
+          "c": 0.999441
+        },
+        {
+          "w": "borrowed",
+          "s": 41.622,
+          "e": 42.132,
+          "c": 0.656996
+        },
+        {
+          "w": "by",
+          "s": 42.132,
+          "e": 42.262,
+          "c": 0.999939
+        },
+        {
+          "w": "you,",
+          "s": 42.262,
+          "e": 42.582,
+          "c": 0.83483
+        },
+        {
+          "w": "either",
+          "s": 42.582,
+          "e": 42.962,
+          "c": 0.952534
+        },
+        {
+          "w": "through",
+          "s": 42.992,
+          "e": 43.422,
+          "c": 0.999041
+        },
+        {
+          "w": "the",
+          "s": 43.422,
+          "e": 43.612,
+          "c": 0.999786
+        },
+        {
+          "w": "companies",
+          "s": 43.612,
+          "e": 44.192,
+          "c": 0.996812
+        },
+        {
+          "w": "having",
+          "s": 44.192,
+          "e": 44.642,
+          "c": 0.972513
+        },
+        {
+          "w": "to",
+          "s": 44.652,
+          "e": 44.872,
+          "c": 0.778342
+        },
+        {
+          "w": "charge",
+          "s": 44.872,
+          "e": 45.262,
+          "c": 0.688969
+        },
+        {
+          "w": "more",
+          "s": 45.302,
+          "e": 45.632,
+          "c": 0.998864
+        },
+        {
+          "w": "to",
+          "s": 45.632,
+          "e": 45.802,
+          "c": 0.643119
+        },
+        {
+          "w": "consumers",
+          "s": 45.802,
+          "e": 46.632,
+          "c": 0.999918
+        },
+        {
+          "w": "to",
+          "s": 46.632,
+          "e": 46.812,
+          "c": 0.929909
+        },
+        {
+          "w": "offset",
+          "s": 46.812,
+          "e": 47.352,
+          "c": 0.999928
+        },
+        {
+          "w": "what",
+          "s": 47.352,
+          "e": 47.722,
+          "c": 0.999975
+        },
+        {
+          "w": "the",
+          "s": 47.762,
+          "e": 47.992,
+          "c": 0.99999
+        },
+        {
+          "w": "president",
+          "s": 47.992,
+          "e": 48.792,
+          "c": 0.785177
+        },
+        {
+          "w": "was",
+          "s": 48.822,
+          "e": 49.072,
+          "c": 0.999956
+        },
+        {
+          "w": "doing",
+          "s": 49.082,
+          "e": 49.532,
+          "c": 0.999969
+        },
+        {
+          "w": "to",
+          "s": 49.532,
+          "e": 49.712,
+          "c": 0.832596
+        },
+        {
+          "w": "raise",
+          "s": 49.712,
+          "e": 50.162,
+          "c": 0.999802
+        },
+        {
+          "w": "the",
+          "s": 50.162,
+          "e": 50.432,
+          "c": 0.999973
+        },
+        {
+          "w": "cost",
+          "s": 50.432,
+          "e": 50.792,
+          "c": 0.985853
+        },
+        {
+          "w": "of",
+          "s": 50.792,
+          "e": 50.972,
+          "c": 0.998401
+        },
+        {
+          "w": "everyday",
+          "s": 50.972,
+          "e": 51.652,
+          "c": 0.990648
+        },
+        {
+          "w": "living",
+          "s": 51.692,
+          "e": 52.342,
+          "c": 0.993038
+        },
+        {
+          "w": "for",
+          "s": 52.352,
+          "e": 52.552,
+          "c": 0.981776
+        },
+        {
+          "w": "Americans.",
+          "s": 52.552,
+          "e": 53.362,
+          "c": 0.999807
+        },
+        {
+          "w": "So",
+          "s": 53.362,
+          "e": 53.482,
+          "c": 0.999327
+        },
+        {
+          "w": "I'm",
+          "s": 53.492,
+          "e": 53.682,
+          "c": 0.919479
+        },
+        {
+          "w": "grateful",
+          "s": 53.682,
+          "e": 54.222,
+          "c": 0.999849
+        },
+        {
+          "w": "for",
+          "s": 54.222,
+          "e": 54.412,
+          "c": 0.998628
+        },
+        {
+          "w": "the",
+          "s": 54.412,
+          "e": 54.622,
+          "c": 0.99995
+        },
+        {
+          "w": "Supreme",
+          "s": 54.622,
+          "e": 55.092,
+          "c": 0.99975
+        },
+        {
+          "w": "Court",
+          "s": 55.092,
+          "e": 55.392,
+          "c": 0.999935
+        },
+        {
+          "w": "for",
+          "s": 55.442,
+          "e": 55.622,
+          "c": 0.994533
+        },
+        {
+          "w": "protecting",
+          "s": 55.652,
+          "e": 56.312,
+          "c": 0.999769
+        },
+        {
+          "w": "our",
+          "s": 56.312,
+          "e": 56.502,
+          "c": 0.999949
+        },
+        {
+          "w": "Constitution.",
+          "s": 56.562,
+          "e": 57.622,
+          "c": 0.722237
+        }
+      ]
+    }
+  ]
+}

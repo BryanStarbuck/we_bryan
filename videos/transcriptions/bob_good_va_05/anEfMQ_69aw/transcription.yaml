@@ -1,0 +1,132 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "“We Should NOT Fear A Government Shutdown, Most Of What We Do Up Here Is Bad Anyway.” - Rep. Good"
+    Description: >-
+      Remarks by Representative Bob Good arguing that Republicans should not
+      fear a government shutdown. He asserts that most of what Congress does
+      is bad anyway and hurts the American people, that essential operations
+      continue during a shutdown, and that most Americans would not even
+      notice a temporary one. He then addresses the Speaker directly, framing
+      the moment as an opportunity to be a transformational, historical
+      Speaker who stares down Democrats, free spenders and the president,
+      passes a Republican bill out of the House, and forces the Senate and
+      White House to accept it or see no movement. He asks what would happen
+      if Republicans for once refused to cave and betray the trust voters
+      placed in them by giving the party a majority. The claims about the
+      effects of a shutdown and about the conduct of other members are his own
+      advocacy, made from the House floor with no rebuttal in the clip.
+    URL: "https://www.youtube.com/watch?v=anEfMQ_69aw"
+    Video_ID: "anEfMQ_69aw"
+    Show: "Congressman Bob Good"
+    Runtime: "00:00:53"
+    Language: "en"
+
+  Media:
+    File: "anEfMQ_69aw.mp4"
+    SHA256: "96b48f298f9a849336dd11d4711bbf8174ef40ac90e37a49c8b120a888007e1a"
+    Bytes: 3762064
+    Duration_Seconds: 53
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=anEfMQ_69aw"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "anEfMQ_69aw.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/bob_good_va_05/anEfMQ_69aw/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCGgzX8qiWHfZfbfqfMsJGAg"
+    Uploader_ID: "@congressmanbobgood7773"
+    View_Count: 751
+    Like_Count: 24
+    Comment_Count: 8
+    Availability: "public"
+    Published_At: "2023-07-25T19:03:37+00:00"
+    Captured_At: "2026-08-14T05:05:03-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 1
+
+  Topics:
+    - "Government shutdown strategy and appropriations"
+    - "Republican House leadership and the Speaker's role"
+    - "Federal spending and negotiating posture toward the Senate and White House"
+
+  Source:
+    Canonical_ID: "290347858c6a2ee9"
+    Transcribed: "2026-09-10T09:32:06.528382-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 194
+    Segments: 3
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:18:10.326412-07:00"
+    Transcription_Finished: "2026-09-10T09:32:06.528382-07:00"
+    Recorded: "2023-07-25"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "anEfMQ_69aw.ctm"
+    Fountain: "anEfMQ_69aw.fountain"
+    Diarization_RTTM: "anEfMQ_69aw.rttm"
+    As_Broadcast_Script: "anEfMQ_69aw.script.txt"
+    Segments_JSON: "anEfMQ_69aw.segments.json"
+    Segments_JSONL: "anEfMQ_69aw.segments.jsonl"
+    Subtitles_SRT: "anEfMQ_69aw.srt"
+    Plain_Text: "anEfMQ_69aw.transcription"
+    Subtitles_VTT: "anEfMQ_69aw.vtt"
+    Transcript_SHA256: "acba348cc8664a746088f9bb1d9c6bbaf5746e8cc3052e546befadd97519687d"
+
+  # DEMAND — there is NO live row for this video, and that is the fact recorded
+  # here rather than a gap. It was adopted from this machine's transcription
+  # ledger (p_download_videos STAGE 1D): the media was already downloaded and
+  # had no words. video_demand.csv is regenerated on every engine run and rows
+  # leave it; this roster key carries none in run job_1789052880123_10, and no
+  # .demand.yaml seed was written at download time either — the media predates
+  # seeding and came from code/scripts/download_politician_videos.mjs.
+  # Only VERIFIED facts are stated below. priority, ceiling, raw, bound_by,
+  # seat_rank, round and the transcript counts are OMITTED because this run
+  # never measured them; absent is absent, and a fabricated priority would be
+  # indistinguishable from an engine-priced one.
+  Demand:
+    roster_key: "bob_good_va_05"
+    video_uid: "bob_good_va_05::anEfMQ_69aw"
+    video_key: "anEfMQ_69aw"
+    youtube_id: "anEfMQ_69aw"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=anEfMQ_69aw"
+    source_ref: "anEfMQ_69aw"
+    demand_row_present: false
+    adopted_from: "in_progress.csv — STAGE 1D backlog"
+    demand_run_id_checked: "job_1789052880123_10"

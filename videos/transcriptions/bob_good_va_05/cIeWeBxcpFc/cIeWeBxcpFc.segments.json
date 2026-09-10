@@ -1,0 +1,492 @@
+{
+  "schema_version": 2,
+  "canonical_id": "4acf8ff211792aba",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 19.43,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T16:31:20.810Z",
+  "text_sha256": "212d1624bede0bc06c40e4c140b88fdc273bccd6ddf392f441e036c5735a8e42",
+  "segments_sha256": "b0d91b4d641fe51db08cba25c614e0661fb32fde69f6403c34709cc5c7cff311",
+  "words_sha256": "2492e797d38fcd46a282d27ae196e5bbe5e5be185e9b1ae05d6ec9106f3a0277",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 1,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 3,
+    "clusters": 2,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_01",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.3
+      },
+      "clean_s": 0.3,
+      "speaking_s": 0.9,
+      "first_s": 0.79
+    },
+    {
+      "id": "SPEAKER_00",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 19.2
+      },
+      "clean_s": 19.2,
+      "speaking_s": 19.8,
+      "first_s": 1.31
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.08,
+      "end_s": 0.32,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.08,
+      "end_s": 0.32,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "It's a",
+      "words": [
+        {
+          "w": "It's",
+          "s": 0.08,
+          "e": 0.26,
+          "c": 0.830177
+        },
+        {
+          "w": "a",
+          "s": 0.26,
+          "e": 0.32,
+          "c": 0.997537
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.32,
+      "end_s": 1.12,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "pleasure to be",
+      "words": [
+        {
+          "w": "pleasure",
+          "s": 0.32,
+          "e": 0.85,
+          "c": 0.997439
+        },
+        {
+          "w": "to",
+          "s": 0.88,
+          "e": 0.99,
+          "c": 0.991959
+        },
+        {
+          "w": "be",
+          "s": 0.99,
+          "e": 1.12,
+          "c": 0.99693
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 1.12,
+      "end_s": 19.43,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "here at Longwood University celebrating the exciting opening of the Cross Center. This is a game changer, literally, not just for the basketball program, but the entire campus community, as well as Farmville and Prince Edward County, and I'm privileged you to let me be there with them today. Go Lancers! Go Elwood! Great day!",
+      "words": [
+        {
+          "w": "here",
+          "s": 1.12,
+          "e": 1.44,
+          "c": 0.985154
+        },
+        {
+          "w": "at",
+          "s": 1.44,
+          "e": 1.55,
+          "c": 0.978211
+        },
+        {
+          "w": "Longwood",
+          "s": 1.59,
+          "e": 2,
+          "c": 0.910919
+        },
+        {
+          "w": "University",
+          "s": 2,
+          "e": 2.8,
+          "c": 0.975977
+        },
+        {
+          "w": "celebrating",
+          "s": 2.8,
+          "e": 3.6,
+          "c": 0.5131
+        },
+        {
+          "w": "the",
+          "s": 3.6,
+          "e": 3.72,
+          "c": 0.965916
+        },
+        {
+          "w": "exciting",
+          "s": 3.72,
+          "e": 4.28,
+          "c": 0.958077
+        },
+        {
+          "w": "opening",
+          "s": 4.28,
+          "e": 4.8,
+          "c": 0.717463
+        },
+        {
+          "w": "of",
+          "s": 4.8,
+          "e": 5,
+          "c": 0.867601
+        },
+        {
+          "w": "the",
+          "s": 5.01,
+          "e": 5.15,
+          "c": 0.948712
+        },
+        {
+          "w": "Cross",
+          "s": 5.17,
+          "e": 5.43,
+          "c": 0.221894
+        },
+        {
+          "w": "Center.",
+          "s": 5.45,
+          "e": 5.8,
+          "c": 0.835236
+        },
+        {
+          "w": "This",
+          "s": 5.88,
+          "e": 6.04,
+          "c": 0.999773
+        },
+        {
+          "w": "is",
+          "s": 6.04,
+          "e": 6.16,
+          "c": 0.999977
+        },
+        {
+          "w": "a",
+          "s": 6.16,
+          "e": 6.22,
+          "c": 0.999907
+        },
+        {
+          "w": "game",
+          "s": 6.24,
+          "e": 6.46,
+          "c": 0.999918
+        },
+        {
+          "w": "changer,",
+          "s": 6.46,
+          "e": 7,
+          "c": 0.581836
+        },
+        {
+          "w": "literally,",
+          "s": 7,
+          "e": 7.66,
+          "c": 0.923391
+        },
+        {
+          "w": "not",
+          "s": 7.67,
+          "e": 7.84,
+          "c": 0.999727
+        },
+        {
+          "w": "just",
+          "s": 7.84,
+          "e": 8.09,
+          "c": 0.999866
+        },
+        {
+          "w": "for",
+          "s": 8.09,
+          "e": 8.27,
+          "c": 0.926791
+        },
+        {
+          "w": "the",
+          "s": 8.27,
+          "e": 8.44,
+          "c": 0.99999
+        },
+        {
+          "w": "basketball",
+          "s": 8.45,
+          "e": 9.06,
+          "c": 0.997839
+        },
+        {
+          "w": "program,",
+          "s": 9.06,
+          "e": 9.66,
+          "c": 0.991726
+        },
+        {
+          "w": "but",
+          "s": 9.66,
+          "e": 9.87,
+          "c": 0.911809
+        },
+        {
+          "w": "the",
+          "s": 9.87,
+          "e": 10.08,
+          "c": 0.817387
+        },
+        {
+          "w": "entire",
+          "s": 10.08,
+          "e": 10.51,
+          "c": 0.999846
+        },
+        {
+          "w": "campus",
+          "s": 10.51,
+          "e": 10.93,
+          "c": 0.987325
+        },
+        {
+          "w": "community,",
+          "s": 10.94,
+          "e": 11.6,
+          "c": 0.919456
+        },
+        {
+          "w": "as",
+          "s": 11.68,
+          "e": 11.71,
+          "c": 0.999544
+        },
+        {
+          "w": "well",
+          "s": 11.71,
+          "e": 11.94,
+          "c": 0.99721
+        },
+        {
+          "w": "as",
+          "s": 11.94,
+          "e": 12.05,
+          "c": 0.999964
+        },
+        {
+          "w": "Farmville",
+          "s": 12.05,
+          "e": 12.56,
+          "c": 0.515639
+        },
+        {
+          "w": "and",
+          "s": 12.56,
+          "e": 12.73,
+          "c": 0.993974
+        },
+        {
+          "w": "Prince",
+          "s": 12.73,
+          "e": 13.07,
+          "c": 0.542928
+        },
+        {
+          "w": "Edward",
+          "s": 13.07,
+          "e": 13.41,
+          "c": 0.295974
+        },
+        {
+          "w": "County,",
+          "s": 13.41,
+          "e": 13.86,
+          "c": 0.555526
+        },
+        {
+          "w": "and",
+          "s": 13.86,
+          "e": 14.03,
+          "c": 0.975236
+        },
+        {
+          "w": "I'm",
+          "s": 14.03,
+          "e": 14.18,
+          "c": 0.993763
+        },
+        {
+          "w": "privileged",
+          "s": 14.19,
+          "e": 14.76,
+          "c": 0.639905
+        },
+        {
+          "w": "you",
+          "s": 14.76,
+          "e": 14.9,
+          "c": 0.422214
+        },
+        {
+          "w": "to",
+          "s": 14.93,
+          "e": 15.04,
+          "c": 0.701192
+        },
+        {
+          "w": "let",
+          "s": 15.04,
+          "e": 15.21,
+          "c": 0.778765
+        },
+        {
+          "w": "me",
+          "s": 15.21,
+          "e": 15.32,
+          "c": 0.996312
+        },
+        {
+          "w": "be",
+          "s": 15.32,
+          "e": 15.43,
+          "c": 0.998475
+        },
+        {
+          "w": "there",
+          "s": 15.43,
+          "e": 15.71,
+          "c": 0.997396
+        },
+        {
+          "w": "with",
+          "s": 15.71,
+          "e": 15.93,
+          "c": 0.998218
+        },
+        {
+          "w": "them",
+          "s": 15.93,
+          "e": 16.16,
+          "c": 0.997261
+        },
+        {
+          "w": "today.",
+          "s": 16.17,
+          "e": 16.76,
+          "c": 0.999794
+        },
+        {
+          "w": "Go",
+          "s": 16.84,
+          "e": 16.9,
+          "c": 0.99975
+        },
+        {
+          "w": "Lancers!",
+          "s": 16.9,
+          "e": 17.6,
+          "c": 0.570379
+        },
+        {
+          "w": "Go",
+          "s": 17.64,
+          "e": 17.77,
+          "c": 0.992851
+        },
+        {
+          "w": "Elwood!",
+          "s": 17.77,
+          "e": 18.46,
+          "c": 0.94468
+        },
+        {
+          "w": "Great",
+          "s": 18.46,
+          "e": 18.9,
+          "c": 0.953758
+        },
+        {
+          "w": "day!",
+          "s": 18.9,
+          "e": 19.43,
+          "c": 0.949691
+        }
+      ]
+    }
+  ]
+}

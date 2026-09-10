@@ -1,0 +1,136 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Rep. Good: “The 2nd Amendment is NOT About Hunting, but About Self-Defense from the Government!”"
+    Description: >-
+      Floor remarks by Representative Bob Good supporting a bill that would
+      let federal education dollars fund school hunting and archery programs.
+      He asserts that the necessity of the bill shows how much the Democratic
+      Party and the Biden Department of Education 'hate' Second Amendment
+      rights, and states his view that the Second Amendment is not primarily
+      about hunting or recreation but about self-defense and protection from
+      government tyranny. He says the Department of Education currently
+      interprets the law to restrict such funding and, in his
+      characterisation, wants to use any and every means to impose a gun
+      control agenda on law-abiding citizens. He traces the problem to the
+      Bipartisan Safer Communities Act passed in the previous Congress, which
+      he says he vigorously opposed, and calls for doing more to repeal what
+      he describes as its harmful impacts on schools. The attribution of
+      motive to the Department of Education and to the Democratic Party is his
+      own contested characterisation, made in floor debate with no rebuttal in
+      this clip.
+    URL: "https://www.youtube.com/watch?v=UXCf8kXS-VI"
+    Video_ID: "UXCf8kXS-VI"
+    Show: "Congressman Bob Good"
+    Runtime: "00:00:55"
+    Language: "en"
+
+  Media:
+    File: "UXCf8kXS-VI.mp4"
+    SHA256: "269a1a85de8fed02e0a04398a73dce88ed6e7d87b294f251f1d1eba07bdb5f8f"
+    Bytes: 4895912
+    Duration_Seconds: 55
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=UXCf8kXS-VI"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "UXCf8kXS-VI.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/bob_good_va_05/UXCf8kXS-VI/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCGgzX8qiWHfZfbfqfMsJGAg"
+    Uploader_ID: "@congressmanbobgood7773"
+    View_Count: 4179
+    Like_Count: 166
+    Comment_Count: 24
+    Availability: "public"
+    Published_At: "2023-09-14T15:42:08+00:00"
+    Captured_At: "2026-08-14T05:04:54-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 1
+
+  Topics:
+    - "Federal funding for school hunting and archery programs"
+    - "Second Amendment interpretation \u2014 self-defense versus recreation"
+    - "Department of Education funding rules"
+    - "Bipartisan Safer Communities Act and calls for repeal"
+
+  Source:
+    Canonical_ID: "8de3c5ab138963ba"
+    Transcribed: "2026-09-10T09:32:06.540189-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 150
+    Segments: 3
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T05:04:55.946404-07:00"
+    Transcription_Finished: "2026-09-10T09:32:06.540189-07:00"
+    Recorded: "2023-09-14"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "UXCf8kXS-VI.ctm"
+    Fountain: "UXCf8kXS-VI.fountain"
+    Diarization_RTTM: "UXCf8kXS-VI.rttm"
+    As_Broadcast_Script: "UXCf8kXS-VI.script.txt"
+    Segments_JSON: "UXCf8kXS-VI.segments.json"
+    Segments_JSONL: "UXCf8kXS-VI.segments.jsonl"
+    Subtitles_SRT: "UXCf8kXS-VI.srt"
+    Plain_Text: "UXCf8kXS-VI.transcription"
+    Subtitles_VTT: "UXCf8kXS-VI.vtt"
+    Transcript_SHA256: "29b1f0a9d6ceb152710e928fdd4a6fd436310ca2d018e9b49f407a469cef72c4"
+
+  # DEMAND — there is NO live row for this video, and that is the fact recorded
+  # here rather than a gap. It was adopted from this machine's transcription
+  # ledger (p_download_videos STAGE 1D): the media was already downloaded and
+  # had no words. video_demand.csv is regenerated on every engine run and rows
+  # leave it; this roster key carries none in run job_1789052880123_10, and no
+  # .demand.yaml seed was written at download time either — the media predates
+  # seeding and came from code/scripts/download_politician_videos.mjs.
+  # Only VERIFIED facts are stated below. priority, ceiling, raw, bound_by,
+  # seat_rank, round and the transcript counts are OMITTED because this run
+  # never measured them; absent is absent, and a fabricated priority would be
+  # indistinguishable from an engine-priced one.
+  Demand:
+    roster_key: "bob_good_va_05"
+    video_uid: "bob_good_va_05::UXCf8kXS-VI"
+    video_key: "UXCf8kXS-VI"
+    youtube_id: "UXCf8kXS-VI"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=UXCf8kXS-VI"
+    source_ref: "UXCf8kXS-VI"
+    demand_row_present: false
+    adopted_from: "in_progress.csv — STAGE 1D backlog"
+    demand_run_id_checked: "job_1789052880123_10"

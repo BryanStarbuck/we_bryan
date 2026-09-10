@@ -1,0 +1,137 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Ten Weeks in Minnesota"
+    Description: >-
+      A serious direct-to-camera statement in which Representative Betty
+      McCollum describes what she calls ten weeks of sustained, coordinated
+      violation of civil rights in Minnesota carried out by the federal
+      government. She asserts that Minnesotans are being racially profiled on
+      a mass scale, unconstitutionally taken from their homes, and assaulted
+      on the streets by federal agents carrying military equipment she says is
+      typically used in war zones. She names two people, Renee Goode and Alex
+      Petty, whom she says were shot and killed by federal agents, and says no
+      transparent investigation is taking place that would hold anyone
+      accountable. She also describes a speed chase involving an ICE vehicle
+      in her own neighbourhood that she says caused panic and near-serious
+      injuries, and says she is waiting for the St. Paul report, which is the
+      one she says she will trust. Every characterisation here is McCollum's
+      own and is contested; no federal agency, and no agent involved in the
+      deaths or the chase she describes, is present in the clip to answer it,
+      and this record makes no finding about any of it.
+    URL: "https://www.youtube.com/watch?v=ruXXrCiVfPQ"
+    Video_ID: "ruXXrCiVfPQ"
+    Show: "Betty McCollum"
+    Runtime: "00:00:59"
+    Language: "en"
+
+  Media:
+    File: "ruXXrCiVfPQ.mp4"
+    SHA256: "98680b1de9e1510fd8b32a196d676caa3ecc89d97cfb7aeece223ad57864cf12"
+    Bytes: 1888508
+    Duration_Seconds: 59
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=ruXXrCiVfPQ"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "ruXXrCiVfPQ.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/betty_mccollum_mn_04/ruXXrCiVfPQ/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC3sZJSdiZo2EBHbsOlsnI7A"
+    Uploader_ID: "@BMcCollum04"
+    View_Count: 1077
+    Like_Count: 33
+    Availability: "public"
+    Published_At: "2026-02-12T17:06:18+00:00"
+    Captured_At: "2026-08-14T06:18:02-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 3
+
+  Topics:
+    - "Federal immigration enforcement in Minnesota"
+    - "Allegations of racial profiling and civil rights violations"
+    - "Deaths of Renee Goode and Alex Petty \u2014 accountability and investigation"
+    - "ICE vehicle pursuit in a St. Paul neighbourhood"
+
+  Source:
+    Canonical_ID: "f76325ae46a45518"
+    Transcribed: "2026-09-10T09:32:29.570573-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 120
+    Segments: 4
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:18:03.726457-07:00"
+    Transcription_Finished: "2026-09-10T09:32:29.570573-07:00"
+    Recorded: "2026-02-12"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "ruXXrCiVfPQ.ctm"
+    Fountain: "ruXXrCiVfPQ.fountain"
+    Diarization_RTTM: "ruXXrCiVfPQ.rttm"
+    As_Broadcast_Script: "ruXXrCiVfPQ.script.txt"
+    Segments_JSON: "ruXXrCiVfPQ.segments.json"
+    Segments_JSONL: "ruXXrCiVfPQ.segments.jsonl"
+    Subtitles_SRT: "ruXXrCiVfPQ.srt"
+    Plain_Text: "ruXXrCiVfPQ.transcription"
+    Subtitles_VTT: "ruXXrCiVfPQ.vtt"
+    Transcript_SHA256: "b2f74774af4fbe37412eef05b155c7c5041c854553b972f433567e996d286383"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "betty_mccollum_mn_04"
+    video_uid: "betty_mccollum_mn_04::ruXXrCiVfPQ"
+    video_key: "ruXXrCiVfPQ"
+    youtube_id: "ruXXrCiVfPQ"
+    priority: 400
+    ceiling: 800
+    raw_score: 400
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    seat_rank: 150
+    challenger: true
+    round: 23
+    status: "partial"
+    demand_generated_at: "2026-09-10T15:08:15.968Z"
+    demand_run_id: "job_1789052880123_10"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=ruXXrCiVfPQ"
+    source_ref: "ruXXrCiVfPQ"
+    subject_kind: "new_politician"

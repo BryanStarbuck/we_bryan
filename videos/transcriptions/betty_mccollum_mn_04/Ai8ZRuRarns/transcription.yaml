@@ -1,0 +1,144 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Fishing Opener in Stillwater!"
+    Description: >-
+      A light, non-legislative constituent video in which Representative Betty
+      McCollum visits Stillwater, Minnesota, alongside the city's mayor,
+      identified in the clip only as Mayor Ted. The two discuss the city
+      hosting the Minnesota fishing opener, which the mayor says is the first
+      time in the history of the event that Stillwater — which he calls the
+      birthplace of Minnesota — has hosted it. He promotes the weekend's live
+      music, food and activities for people not fishing, and mentions the
+      forecast. McCollum jokes that all the mayors in her fourth district are
+      her favourite and encourages viewers to get a fishing license and come
+      to town. There is no policy content in this video; it is local promotion
+      and tourism boosterism.
+    URL: "https://www.youtube.com/watch?v=Ai8ZRuRarns"
+    Video_ID: "Ai8ZRuRarns"
+    Show: "Betty McCollum"
+    Runtime: "00:00:51"
+    Language: "en"
+
+  Media:
+    File: "Ai8ZRuRarns.mp4"
+    SHA256: "eae044d72dfc4f225985497d60df13da2bf00c357ebce2888b4054696f7a1b36"
+    Bytes: 2794033
+    Duration_Seconds: 51
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "av1"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=Ai8ZRuRarns"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "Ai8ZRuRarns.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/betty_mccollum_mn_04/Ai8ZRuRarns/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC3sZJSdiZo2EBHbsOlsnI7A"
+    Uploader_ID: "@BMcCollum04"
+    View_Count: 926
+    Like_Count: 13
+    Comment_Count: 1
+    Availability: "public"
+    Published_At: "2026-05-07T21:53:36+00:00"
+    Captured_At: "2026-08-14T05:04:24-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "45.8%"
+      Turns: 3
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "50.5%"
+      Turns: 3
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "3.7%"
+      Turns: 1
+
+  Topics:
+    - "Minnesota fishing opener hosted in Stillwater"
+    - "Local tourism and community events"
+    - "Constituent outreach in Minnesota's 4th district"
+
+  Source:
+    Canonical_ID: "84bb0f84eb26581a"
+    Transcribed: "2026-09-10T09:32:04.820543-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 183
+    Segments: 10
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T05:04:25.196869-07:00"
+    Transcription_Finished: "2026-09-10T09:32:04.820543-07:00"
+    Recorded: "2026-05-07"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "Ai8ZRuRarns.ctm"
+    Fountain: "Ai8ZRuRarns.fountain"
+    Diarization_RTTM: "Ai8ZRuRarns.rttm"
+    As_Broadcast_Script: "Ai8ZRuRarns.script.txt"
+    Segments_JSON: "Ai8ZRuRarns.segments.json"
+    Segments_JSONL: "Ai8ZRuRarns.segments.jsonl"
+    Subtitles_SRT: "Ai8ZRuRarns.srt"
+    Plain_Text: "Ai8ZRuRarns.transcription"
+    Subtitles_VTT: "Ai8ZRuRarns.vtt"
+    Transcript_SHA256: "84b310bf1df201633572a421ce96cd4f16d92831748629071317522932b6a987"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "betty_mccollum_mn_04"
+    video_uid: "betty_mccollum_mn_04::Ai8ZRuRarns"
+    video_key: "Ai8ZRuRarns"
+    youtube_id: "Ai8ZRuRarns"
+    priority: 400
+    ceiling: 800
+    raw_score: 400
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    seat_rank: 150
+    challenger: true
+    round: 5
+    status: "partial"
+    demand_generated_at: "2026-09-10T15:08:15.968Z"
+    demand_run_id: "job_1789052880123_10"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=Ai8ZRuRarns"
+    source_ref: "Ai8ZRuRarns"
+    subject_kind: "new_politician"
