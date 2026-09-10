@@ -1,0 +1,133 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Biden’s McJobs economy"
+    Description: >-
+      St Onge picks apart a US June jobs report, crediting a Twitter thread by colleagues 'EJ and Tony'. He
+      notes headline payrolls rose 209,000 — 30,000 below expectations and the lowest in two and a half years
+      — with the prior two months revised down by 110,000, and remarks that repeated downward revisions mean
+      either the statisticians are poor at their job or are publishing optimistic figures and quietly
+      correcting them. Netting revisions and population growth he argues real job growth was roughly flat,
+      that most net gains were government posts which he says do not grow the economy and describes as
+      'parasites', and that composition worsened: multiple job holders up 233,000 and 452,000 more people
+      working part-time for economic reasons, which he reads as a precursor to layoffs. He adds that over two
+      million workers remain out of the labour force since COVID. He expects flat real wages to prompt further
+      Fed tightening and predicts a full recession. The imputation of intent to government statisticians is an
+      unevidenced accusation, and the characterisation of public employees is the speaker's own rhetoric.
+    URL: "https://www.youtube.com/watch?v=-EsaN5RQ9DM"
+    Video_ID: "-EsaN5RQ9DM"
+    Show: "Peter St Onge, Ph.D."
+    Runtime: "00:03:18"
+    Language: "en"
+
+  Media:
+    File: "-EsaN5RQ9DM.m4a"
+    SHA256: "883e8ad791727b609ed98a3e417dceb535706ce5d943ca9241b5e50b9617b4b6"
+    Bytes: 3216850
+    Duration_Seconds: 198
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-EsaN5RQ9DM"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-EsaN5RQ9DM.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/peter_st_onge/-EsaN5RQ9DM/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCDwR3dznveYdTH3EM5vWWeA"
+    Uploader_ID: "@Profstonge"
+    View_Count: 3022
+    Like_Count: 385
+    Comment_Count: 25
+    Availability: "public"
+    Published_At: "2023-07-09T13:07:38+00:00"
+    Captured_At: "2026-09-10T04:47:18-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 13
+
+  Topics:
+    - "US monthly employment report and revisions"
+    - "Public versus private sector job growth"
+    - "Part-time and multiple job holding as labour-market signals"
+    - "Labour force participation since the pandemic"
+    - "Real wage growth"
+    - "Recession forecasting"
+
+  Source:
+    Canonical_ID: "-EsaN5RQ9DM"
+    Transcribed: "2026-09-10T05:47:25.436737-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 525
+    Segments: 49
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T04:47:19.142083-07:00"
+    Transcription_Finished: "2026-09-10T05:47:25.436737-07:00"
+    Recorded: "2023-07-09"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-EsaN5RQ9DM.ctm"
+    Fountain: "-EsaN5RQ9DM.fountain"
+    Diarization_RTTM: "-EsaN5RQ9DM.rttm"
+    As_Broadcast_Script: "-EsaN5RQ9DM.script.txt"
+    Segments_JSON: "-EsaN5RQ9DM.segments.json"
+    Segments_JSONL: "-EsaN5RQ9DM.segments.jsonl"
+    Subtitles_SRT: "-EsaN5RQ9DM.srt"
+    Plain_Text: "-EsaN5RQ9DM.transcription"
+    Subtitles_VTT: "-EsaN5RQ9DM.vtt"
+    Transcript_SHA256: "fa2aedf21a6738acb8fd9f581294e8c826584254e17c44f73323a96bb64dab5f"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "peter_st_onge"
+    video_uid: "peter_st_onge::-EsaN5RQ9DM"
+    video_key: "-EsaN5RQ9DM"
+    youtube_id: "-EsaN5RQ9DM"
+    priority: 100
+    ceiling: 1000
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T11:29:48.986Z"
+    demand_run_id: "job_1789039766260_6"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-EsaN5RQ9DM"
+    source_ref: "-EsaN5RQ9DM"
+    subject_kind: "people_only"

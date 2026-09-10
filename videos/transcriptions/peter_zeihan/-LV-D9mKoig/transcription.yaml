@@ -1,0 +1,141 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Where in the World: Quartzite and Greentech"
+    Description: >-
+      A comparison of solar and wind power, recorded in the Sierra Nevada. Zeihan argues photovoltaic solar is
+      oversold: silicon is common and quartz widely mineable, but refining to solar grade requires a blast
+      furnace, nearly half is done in China using coal, and much panel assembly happens in Xinjiang-adjacent
+      supply chains he describes as using slave labour — so the front-end carbon and human-rights costs are
+      high. The decisive problem in his account is placement: panels in high-elevation sunny locations perform
+      well but few people live there, while in Seattle, Toronto, New York, London, Stockholm, Shanghai or Hong
+      Kong they generate under a fifth as much, meaning many such cities never repay the carbon debt, with
+      transmission over 500 miles as a further cost. He rates wind materially better: non-toxic manufacturing
+      largely in the US and Denmark, turbines grown from 100 feet to nearly 800 which quadrupled viable areas
+      and reach stronger, more reliable currents, roughly three to four times the electricity per dollar, and
+      — unlike solar, which generates nothing after sunset while peak demand is after 6pm — a contribution to
+      baseload and peak. He concludes the 'mystique' around solar makes it part of the environmental problem
+      in many locations. The comparative figures are his own and are contested.
+    URL: "https://www.youtube.com/watch?v=-LV-D9mKoig"
+    Video_ID: "-LV-D9mKoig"
+    Show: "Zeihan on Geopolitics"
+    Runtime: "00:06:17"
+    Language: "en"
+
+  Media:
+    File: "-LV-D9mKoig.m4a"
+    SHA256: "252c17d482a28cd69cfd59babe5fa38c1286efda41f55f9dd139891cd112af59"
+    Bytes: 6110597
+    Duration_Seconds: 377
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-LV-D9mKoig"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-LV-D9mKoig.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/peter_zeihan/-LV-D9mKoig/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCsy9I56PY3IngCf_VGjunMQ"
+    Uploader_ID: "@ZeihanonGeopolitics"
+    View_Count: 135392
+    Like_Count: 6012
+    Comment_Count: 1000
+    Availability: "public"
+    Published_At: "2022-12-21T10:45:00+00:00"
+    Captured_At: "2026-09-10T04:47:56-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "62.2%"
+      Turns: 4
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "37.8%"
+      Turns: 3
+
+  Topics:
+    - "Solar photovoltaic manufacturing and its carbon footprint"
+    - "Forced labour allegations in solar supply chains"
+    - "Geographic siting and capacity factors for solar"
+    - "Wind turbine height, reliability and baseload contribution"
+    - "Electricity transmission constraints"
+    - "Critique of green-technology policy choices"
+
+  Source:
+    Canonical_ID: "-LV-D9mKoig"
+    Transcribed: "2026-09-10T05:52:55.230702-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1171
+    Segments: 77
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T04:47:57.788892-07:00"
+    Transcription_Finished: "2026-09-10T05:52:55.230702-07:00"
+    Recorded: "2022-12-21"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-LV-D9mKoig.ctm"
+    Fountain: "-LV-D9mKoig.fountain"
+    Diarization_RTTM: "-LV-D9mKoig.rttm"
+    As_Broadcast_Script: "-LV-D9mKoig.script.txt"
+    Segments_JSON: "-LV-D9mKoig.segments.json"
+    Segments_JSONL: "-LV-D9mKoig.segments.jsonl"
+    Subtitles_SRT: "-LV-D9mKoig.srt"
+    Plain_Text: "-LV-D9mKoig.transcription"
+    Subtitles_VTT: "-LV-D9mKoig.vtt"
+    Transcript_SHA256: "858a4acf0d8f16dc283b8c01549e1ba4c35e29c75dffebfbfdd5458bc1809436"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "peter_zeihan"
+    video_uid: "peter_zeihan::-LV-D9mKoig"
+    video_key: "-LV-D9mKoig"
+    youtube_id: "-LV-D9mKoig"
+    priority: 100
+    ceiling: 1000
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T11:29:48.986Z"
+    demand_run_id: "job_1789039766260_6"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-LV-D9mKoig"
+    source_ref: "-LV-D9mKoig"
+    subject_kind: "people_only"

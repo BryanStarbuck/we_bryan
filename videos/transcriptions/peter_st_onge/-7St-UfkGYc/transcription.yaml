@@ -1,0 +1,134 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Abuse of “Birthright Citizenship”"
+    Description: >-
+      St Onge argues in favour of ending birthright citizenship, following a Trump executive order on the
+      subject. His legal claim is that the practice rests on a misreading of the Fourteenth Amendment: he
+      focuses on the phrase 'subject to the jurisdiction thereof', cites historian Tom Wood quoting the
+      amendment's authors to the effect that it excluded those 'owing allegiance to any foreign sovereignty',
+      and notes that Native Americans were granted citizenship by act of Congress rather than by the
+      amendment. On scale he says roughly 622,000 children a year are born to non-citizen parents, about
+      400,000 of them to people in the country illegally, or one birth in six, and cites a study finding 75%
+      of migrant families from Guatemala and Mexico with children receive federal welfare. He describes an
+      estimated 40,000 'birth tourists' a year and pre-birthing centres serving Chinese and Taiwanese clients,
+      and anticipates opponents relying on Wong Kim Ark. The constitutional reading is contested and is not
+      the prevailing judicial interpretation; the claims about migrants' motives, including an anecdote about
+      women in shelters, are the speaker's own characterisation and are not sourced in the recording.
+    URL: "https://www.youtube.com/watch?v=-7St-UfkGYc"
+    Video_ID: "-7St-UfkGYc"
+    Show: "Peter St Onge, Ph.D."
+    Runtime: "00:03:41"
+    Language: "en"
+
+  Media:
+    File: "-7St-UfkGYc.m4a"
+    SHA256: "e98e59cbcc93563870b00b1beb904f839da95eccdba0c17fccbcbcd3c554819f"
+    Bytes: 3577348
+    Duration_Seconds: 221
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-7St-UfkGYc"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-7St-UfkGYc.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/peter_st_onge/-7St-UfkGYc/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCDwR3dznveYdTH3EM5vWWeA"
+    Uploader_ID: "@Profstonge"
+    View_Count: 4323
+    Like_Count: 722
+    Comment_Count: 32
+    Availability: "public"
+    Published_At: "2025-01-30T13:30:00+00:00"
+    Captured_At: "2026-09-10T04:47:31-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 17
+
+  Topics:
+    - "Birthright citizenship and the Fourteenth Amendment"
+    - "Trump executive orders on immigration"
+    - "Legal interpretation of 'subject to the jurisdiction thereof'"
+    - "Wong Kim Ark and citizenship case law"
+    - "Birth tourism"
+    - "Welfare receipt among migrant families"
+
+  Source:
+    Canonical_ID: "-7St-UfkGYc"
+    Transcribed: "2026-09-10T05:49:10.559210-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 584
+    Segments: 75
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T04:47:32.742945-07:00"
+    Transcription_Finished: "2026-09-10T05:49:10.559210-07:00"
+    Recorded: "2025-01-30"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-7St-UfkGYc.ctm"
+    Fountain: "-7St-UfkGYc.fountain"
+    Diarization_RTTM: "-7St-UfkGYc.rttm"
+    As_Broadcast_Script: "-7St-UfkGYc.script.txt"
+    Segments_JSON: "-7St-UfkGYc.segments.json"
+    Segments_JSONL: "-7St-UfkGYc.segments.jsonl"
+    Subtitles_SRT: "-7St-UfkGYc.srt"
+    Plain_Text: "-7St-UfkGYc.transcription"
+    Subtitles_VTT: "-7St-UfkGYc.vtt"
+    Transcript_SHA256: "a853c98cd59bc82d9a17c3e6ddd90bfdb21eeb6bdb15824c904947cc53678fad"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "peter_st_onge"
+    video_uid: "peter_st_onge::-7St-UfkGYc"
+    video_key: "-7St-UfkGYc"
+    youtube_id: "-7St-UfkGYc"
+    priority: 100
+    ceiling: 1000
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T11:29:48.986Z"
+    demand_run_id: "job_1789039766260_6"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-7St-UfkGYc"
+    source_ref: "-7St-UfkGYc"
+    subject_kind: "people_only"

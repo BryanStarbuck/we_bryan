@@ -1,0 +1,147 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Myanmar Is More Important Than You Think || Peter Zeihan"
+    Description: >-
+      Recorded in Yosemite, with an appended Patreon question-time announcement, this clip argues that Myanmar
+      matters more than its profile suggests, prompted by the ruling junta scheduling elections for 28
+      December. Zeihan gives three reasons. First, supply chains: he holds that China is demographically
+      finished, so manufacturing must be rebuilt elsewhere, and multi-step supply chains need a low-end
+      assembly tier for which Myanmar is suited — comparable in skills to 1980s Mexico, and unusually for Asia
+      served by a navigable river, the Irrawaddy, which makes cargo movement cheap. Second, narcotics:
+      minority groups fund the civil war through the heroin trade, and past transfers from military to
+      civilian rule have coincided with reduced production. Third, China directly: hemmed in by the First
+      Island Chain and unable to break through it, China wants an overland route bypassing the Strait of
+      Malacca, and historically loses its Myanmar investments when civilians take power. He cautions that
+      Myanmar democracy is not comparable to elsewhere, noting the military is drawn from the Burman majority
+      and that minority policy did not improve under Aung San Suu Kyi. The forecast of Chinese collapse and
+      the election's outcome are his own predictions.
+    URL: "https://www.youtube.com/watch?v=-3HevnPmCOo"
+    Video_ID: "-3HevnPmCOo"
+    Show: "Zeihan on Geopolitics"
+    Runtime: "00:05:49"
+    Language: "en"
+
+  Media:
+    File: "-3HevnPmCOo.m4a"
+    SHA256: "58943b5c1d65083511fd230eb92e5741b73128519e91655ff9c58e791efa0aa6"
+    Bytes: 5650222
+    Duration_Seconds: 349
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-3HevnPmCOo"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-3HevnPmCOo.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/peter_zeihan/-3HevnPmCOo/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCsy9I56PY3IngCf_VGjunMQ"
+    Uploader_ID: "@ZeihanonGeopolitics"
+    View_Count: 138716
+    Like_Count: 5230
+    Comment_Count: 525
+    Availability: "public"
+    Published_At: "2025-11-17T10:45:00+00:00"
+    Captured_At: "2026-09-10T04:47:49-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "8.2%"
+      Turns: 1
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "89.8%"
+      Turns: 22
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "2.0%"
+      Turns: 2
+
+  Topics:
+    - "Myanmar's scheduled elections and military rule"
+    - "Post-China manufacturing supply chains"
+    - "The Irrawaddy as a navigable waterway"
+    - "Heroin production and civil-war financing"
+    - "Chinese access to the Indian Ocean and the Strait of Malacca"
+    - "Ethnic politics and minority treatment in Myanmar"
+
+  Source:
+    Canonical_ID: "-3HevnPmCOo"
+    Transcribed: "2026-09-10T05:51:33.236282-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1051
+    Segments: 88
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T04:47:51.273925-07:00"
+    Transcription_Finished: "2026-09-10T05:51:33.236282-07:00"
+    Recorded: "2025-11-17"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-3HevnPmCOo.ctm"
+    Fountain: "-3HevnPmCOo.fountain"
+    Diarization_RTTM: "-3HevnPmCOo.rttm"
+    As_Broadcast_Script: "-3HevnPmCOo.script.txt"
+    Segments_JSON: "-3HevnPmCOo.segments.json"
+    Segments_JSONL: "-3HevnPmCOo.segments.jsonl"
+    Subtitles_SRT: "-3HevnPmCOo.srt"
+    Plain_Text: "-3HevnPmCOo.transcription"
+    Subtitles_VTT: "-3HevnPmCOo.vtt"
+    Transcript_SHA256: "8d6834072e7610e0251f9620793bdc0a218f7c05ec2edafc530653b784435673"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "peter_zeihan"
+    video_uid: "peter_zeihan::-3HevnPmCOo"
+    video_key: "-3HevnPmCOo"
+    youtube_id: "-3HevnPmCOo"
+    priority: 100
+    ceiling: 1000
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T11:29:48.986Z"
+    demand_run_id: "job_1789039766260_6"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-3HevnPmCOo"
+    source_ref: "-3HevnPmCOo"
+    subject_kind: "people_only"

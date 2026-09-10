@@ -1,0 +1,136 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "America’s Changing Republican Party || Peter Zeihan"
+    Description: >-
+      Recorded on the final day of the 2024 Republican National Convention, this is Zeihan's reading of a
+      party in structural flux — part of what he calls the late stage of the sixth American party structure,
+      in which factions realign every generation or two. He identifies three changes from the older Republican
+      identity of social conservatism, internationalism, hawkishness and broad pro-business politics. First, a
+      softer line on social issues such as abortion and gay rights, reframed as questions for the states,
+      which he says has upset social conservatives but which Trump can absorb given his hold on the party.
+      Second, a shift from international involvement toward isolationism — armed but disengaged — which he
+      links to the first term's handling of Ukraine and of the unenforced phase-one China trade deal. Third,
+      and the one he finds most striking, a turn from business toward organised labour, citing a Teamsters
+      representative addressing the convention and criticising the Chamber of Commerce, and platform language
+      against right-to-work laws; he connects this to a doubling of US industrial plant creating organisable
+      blue-collar work. He notes Ron DeSantis's evident anger and Nikki Haley's awkward reception, and that
+      Haley and Mike Pence have both formed think tanks. His characterisations of individual politicians are
+      personal impressions, and he stresses the realignment is not settled.
+    URL: "https://www.youtube.com/watch?v=-YUndZPV20g"
+    Video_ID: "-YUndZPV20g"
+    Show: "Zeihan on Geopolitics"
+    Runtime: "00:06:06"
+    Language: "en"
+
+  Media:
+    File: "-YUndZPV20g.m4a"
+    SHA256: "ee9ebb390be0cf15693c8d7dbf1dcb8f6d978a59f23e8e3471e097910ccca927"
+    Bytes: 5934479
+    Duration_Seconds: 366
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-YUndZPV20g"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-YUndZPV20g.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/peter_zeihan/-YUndZPV20g/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCsy9I56PY3IngCf_VGjunMQ"
+    Uploader_ID: "@ZeihanonGeopolitics"
+    View_Count: 441526
+    Like_Count: 14875
+    Comment_Count: 3100
+    Availability: "public"
+    Published_At: "2024-07-18T09:45:00+00:00"
+    Captured_At: "2026-09-10T04:47:52-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 26
+
+  Topics:
+    - "Republican Party realignment and the 2024 convention"
+    - "American party-system cycles"
+    - "Isolationism versus international engagement"
+    - "Organised labour and right-to-work laws"
+    - "Social conservatism and federalism on abortion and gay rights"
+    - "Intra-party rivalry and post-Trump conservatism"
+
+  Source:
+    Canonical_ID: "-YUndZPV20g"
+    Transcribed: "2026-09-10T05:51:37.006449-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1111
+    Segments: 63
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T04:47:54.034084-07:00"
+    Transcription_Finished: "2026-09-10T05:51:37.006449-07:00"
+    Recorded: "2024-07-18"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-YUndZPV20g.ctm"
+    Fountain: "-YUndZPV20g.fountain"
+    Diarization_RTTM: "-YUndZPV20g.rttm"
+    As_Broadcast_Script: "-YUndZPV20g.script.txt"
+    Segments_JSON: "-YUndZPV20g.segments.json"
+    Segments_JSONL: "-YUndZPV20g.segments.jsonl"
+    Subtitles_SRT: "-YUndZPV20g.srt"
+    Plain_Text: "-YUndZPV20g.transcription"
+    Subtitles_VTT: "-YUndZPV20g.vtt"
+    Transcript_SHA256: "3d3934358172727677cf3b166dfa2e51ea26a459aee5b26cb0357342429d8e14"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "peter_zeihan"
+    video_uid: "peter_zeihan::-YUndZPV20g"
+    video_key: "-YUndZPV20g"
+    youtube_id: "-YUndZPV20g"
+    priority: 100
+    ceiling: 1000
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T11:29:48.986Z"
+    demand_run_id: "job_1789039766260_6"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-YUndZPV20g"
+    source_ref: "-YUndZPV20g"
+    subject_kind: "people_only"

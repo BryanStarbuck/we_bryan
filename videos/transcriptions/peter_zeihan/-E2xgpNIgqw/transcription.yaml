@@ -1,0 +1,148 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Magyar Tries to Rebuild the Visegrád Group || Peter Zeihan"
+    Description: >-
+      Filmed at an Italian monastery, this clip covers the new Hungarian prime minister's first foreign trip,
+      to Warsaw to meet Poland's Donald Tusk. Zeihan is careful to say what the meeting is not: not an
+      ideological alliance, since the Hungarian leader is firmly of the right while Tusk is centre-left and an
+      avowed pan-Europeanist, and the two disagree on domestic questions. He characterises the Hungarian
+      transition as one from corruption to conservatism rather than right to left, and reports that former
+      ministers have left the country expecting prosecution. What he argues it is instead is strategic: a
+      revival of the Visegrád Group of Poland, Hungary, the Czech Republic and Slovakia, dormant for a decade.
+      Because the EU Council uses weighted majority voting requiring both a number of states and a population
+      share, he calculates the four together carry more voting weight than France or Italy for a similar
+      population, letting central Europe bargain on equal terms — with Russia and Ukraine the immediate issue
+      and budgets the everyday one. The characterisations of Viktor Orbán as corrupt and pro-Russian, and of
+      Robert Fico, are the speaker's own assessments of named living politicians who are not represented here.
+      Note: the transcript renders the Hungarian prime minister's name as spoken and it is not independently
+      verified in this record.
+    URL: "https://www.youtube.com/watch?v=-E2xgpNIgqw"
+    Video_ID: "-E2xgpNIgqw"
+    Show: "Zeihan on Geopolitics"
+    Runtime: "00:03:38"
+    Language: "en"
+
+  Media:
+    File: "-E2xgpNIgqw.m4a"
+    SHA256: "9beddcd8eb7295144aefde49f35594de570acb3cd7686d216c3f6db8d5336d54"
+    Bytes: 3533764
+    Duration_Seconds: 218
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-E2xgpNIgqw"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-E2xgpNIgqw.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/peter_zeihan/-E2xgpNIgqw/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCsy9I56PY3IngCf_VGjunMQ"
+    Uploader_ID: "@ZeihanonGeopolitics"
+    View_Count: 94246
+    Like_Count: 4004
+    Comment_Count: 182
+    Availability: "public"
+    Published_At: "2026-06-02T09:45:01+00:00"
+    Captured_At: "2026-09-10T04:47:29-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "21.2%"
+      Turns: 2
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "72.4%"
+      Turns: 5
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "6.4%"
+      Turns: 1
+
+  Topics:
+    - "Hungarian government transition and its first foreign trip"
+    - "Poland–Hungary relations under Donald Tusk"
+    - "Revival of the Visegrád Group"
+    - "EU Council weighted majority voting mechanics"
+    - "Central European influence within the European Union"
+    - "Russia and the Ukraine war as a consensus issue"
+
+  Source:
+    Canonical_ID: "-E2xgpNIgqw"
+    Transcribed: "2026-09-10T05:49:11.187940-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 693
+    Segments: 41
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T04:47:30.143699-07:00"
+    Transcription_Finished: "2026-09-10T05:49:11.187940-07:00"
+    Recorded: "2026-06-02"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-E2xgpNIgqw.ctm"
+    Fountain: "-E2xgpNIgqw.fountain"
+    Diarization_RTTM: "-E2xgpNIgqw.rttm"
+    As_Broadcast_Script: "-E2xgpNIgqw.script.txt"
+    Segments_JSON: "-E2xgpNIgqw.segments.json"
+    Segments_JSONL: "-E2xgpNIgqw.segments.jsonl"
+    Subtitles_SRT: "-E2xgpNIgqw.srt"
+    Plain_Text: "-E2xgpNIgqw.transcription"
+    Subtitles_VTT: "-E2xgpNIgqw.vtt"
+    Transcript_SHA256: "1df4889d2fdb580e998d9b61f69e7253aac830430d7e6675a49a1536f14b6cf6"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "peter_zeihan"
+    video_uid: "peter_zeihan::-E2xgpNIgqw"
+    video_key: "-E2xgpNIgqw"
+    youtube_id: "-E2xgpNIgqw"
+    priority: 100
+    ceiling: 1000
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T11:29:48.986Z"
+    demand_run_id: "job_1789039766260_6"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-E2xgpNIgqw"
+    source_ref: "-E2xgpNIgqw"
+    subject_kind: "people_only"

@@ -1,0 +1,3790 @@
+{
+  "schema_version": 1,
+  "canonical_id": "-EsaN5RQ9DM",
+  "source": "whisper_cpp",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "duration_s": 198.855688,
+  "produced_at": "2026-09-10T12:47:25.394Z",
+  "text_sha256": "fa2aedf21a6738acb8fd9f581294e8c826584254e17c44f73323a96bb64dab5f",
+  "asr": {
+    "engine": "whisper.cpp",
+    "model": "whisper_large_v3_turbo_q5_0.bin",
+    "version": null,
+    "compute": "metal",
+    "word_timing": "token_coarse",
+    "segments": 49
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "sherpa_pyannote_segmentation_3_0.bin",
+    "emb_model": "eres2net_base_3dspeaker_16k.bin",
+    "turns": 1,
+    "clusters": 1,
+    "overlap_detection": false,
+    "num_clusters_forced": null,
+    "threshold": 0.5
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "speaking_s": 182.3,
+      "first_s": 0,
+      "turns": 49
+    }
+  ],
+  "speaker_map": {},
+  "gaps": [
+    {
+      "kind": "no_speakers_captured",
+      "start_s": null,
+      "end_s": null,
+      "segment_i": null,
+      "cause": "diarization did not run on this file"
+    }
+  ],
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0,
+      "end_s": 2.96,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "Biden's new job numbers are out, and they are ugly.",
+      "words": [
+        {
+          "w": "Biden's",
+          "s": 0.05,
+          "e": 0.46,
+          "c": 0.997761
+        },
+        {
+          "w": "new",
+          "s": 0.46,
+          "e": 0.65,
+          "c": 0.999624
+        },
+        {
+          "w": "job",
+          "s": 0.65,
+          "e": 0.81,
+          "c": 0.999836
+        },
+        {
+          "w": "numbers",
+          "s": 0.85,
+          "e": 1.3,
+          "c": 0.999891
+        },
+        {
+          "w": "are",
+          "s": 1.3,
+          "e": 1.49,
+          "c": 0.999659
+        },
+        {
+          "w": "out,",
+          "s": 1.49,
+          "e": 1.81,
+          "c": 0.429851
+        },
+        {
+          "w": "and",
+          "s": 1.88,
+          "e": 2.05,
+          "c": 0.988174
+        },
+        {
+          "w": "they",
+          "s": 2.05,
+          "e": 2.3,
+          "c": 0.999685
+        },
+        {
+          "w": "are",
+          "s": 2.3,
+          "e": 2.49,
+          "c": 0.999504
+        },
+        {
+          "w": "ugly.",
+          "s": 2.49,
+          "e": 2.96,
+          "c": 0.999619
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 3.34,
+      "end_s": 8.94,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "In short, real jobs are down, while DoorDash and government jobs are the entire Bidenomics",
+      "words": [
+        {
+          "w": "In",
+          "s": 3.34,
+          "e": 3.39,
+          "c": 0.999985
+        },
+        {
+          "w": "short,",
+          "s": 3.39,
+          "e": 3.66,
+          "c": 0.999958
+        },
+        {
+          "w": "real",
+          "s": 3.66,
+          "e": 3.98,
+          "c": 0.9967
+        },
+        {
+          "w": "jobs",
+          "s": 3.98,
+          "e": 4.3,
+          "c": 0.999979
+        },
+        {
+          "w": "are",
+          "s": 4.3,
+          "e": 4.54,
+          "c": 0.999996
+        },
+        {
+          "w": "down,",
+          "s": 4.54,
+          "e": 5.04,
+          "c": 0.984804
+        },
+        {
+          "w": "while",
+          "s": 5.04,
+          "e": 5.32,
+          "c": 0.885498
+        },
+        {
+          "w": "DoorDash",
+          "s": 5.33,
+          "e": 5.78,
+          "c": 0.929848
+        },
+        {
+          "w": "and",
+          "s": 5.78,
+          "e": 5.91,
+          "c": 0.997695
+        },
+        {
+          "w": "government",
+          "s": 5.98,
+          "e": 6.4,
+          "c": 0.996257
+        },
+        {
+          "w": "jobs",
+          "s": 6.64,
+          "e": 6.82,
+          "c": 0.998433
+        },
+        {
+          "w": "are",
+          "s": 6.82,
+          "e": 7.08,
+          "c": 0.862437
+        },
+        {
+          "w": "the",
+          "s": 7.08,
+          "e": 7.3,
+          "c": 0.999146
+        },
+        {
+          "w": "entire",
+          "s": 7.44,
+          "e": 7.86,
+          "c": 0.996772
+        },
+        {
+          "w": "Bidenomics",
+          "s": 7.86,
+          "e": 8.94,
+          "c": 0.918237
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 8.94,
+      "end_s": 9.58,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "miracle.",
+      "words": [
+        {
+          "w": "miracle.",
+          "s": 8.99,
+          "e": 9.58,
+          "c": 0.999767
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 10.32,
+      "end_s": 15.04,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "My colleague EJ and Tony broke it down in a Twitter thread, so let's dig in.",
+      "words": [
+        {
+          "w": "My",
+          "s": 10.32,
+          "e": 10.37,
+          "c": 0.999981
+        },
+        {
+          "w": "colleague",
+          "s": 10.37,
+          "e": 10.51,
+          "c": 0.981165
+        },
+        {
+          "w": "EJ",
+          "s": 10.51,
+          "e": 10.67,
+          "c": 0.914507
+        },
+        {
+          "w": "and",
+          "s": 10.67,
+          "e": 10.92,
+          "c": 0.814168
+        },
+        {
+          "w": "Tony",
+          "s": 10.92,
+          "e": 11.26,
+          "c": 0.999173
+        },
+        {
+          "w": "broke",
+          "s": 11.26,
+          "e": 11.66,
+          "c": 0.999727
+        },
+        {
+          "w": "it",
+          "s": 11.7,
+          "e": 11.85,
+          "c": 0.999987
+        },
+        {
+          "w": "down",
+          "s": 11.85,
+          "e": 12.13,
+          "c": 0.999998
+        },
+        {
+          "w": "in",
+          "s": 12.2,
+          "e": 12.36,
+          "c": 0.999657
+        },
+        {
+          "w": "a",
+          "s": 12.36,
+          "e": 12.44,
+          "c": 1
+        },
+        {
+          "w": "Twitter",
+          "s": 12.44,
+          "e": 13.03,
+          "c": 0.999823
+        },
+        {
+          "w": "thread,",
+          "s": 13.03,
+          "e": 13.71,
+          "c": 0.996223
+        },
+        {
+          "w": "so",
+          "s": 13.71,
+          "e": 13.88,
+          "c": 0.999985
+        },
+        {
+          "w": "let's",
+          "s": 13.88,
+          "e": 14.28,
+          "c": 0.999983
+        },
+        {
+          "w": "dig",
+          "s": 14.42,
+          "e": 14.55,
+          "c": 0.999949
+        },
+        {
+          "w": "in.",
+          "s": 14.55,
+          "e": 15.04,
+          "c": 0.999994
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 15.56,
+      "end_s": 21.48,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "Headline jobs rose 209,000 in the June report, which was 30,000 less than expected, so that's",
+      "words": [
+        {
+          "w": "Headline",
+          "s": 15.56,
+          "e": 15.61,
+          "c": 0.998251
+        },
+        {
+          "w": "jobs",
+          "s": 15.61,
+          "e": 15.76,
+          "c": 0.999182
+        },
+        {
+          "w": "rose",
+          "s": 15.76,
+          "e": 16,
+          "c": 0.999886
+        },
+        {
+          "w": "209,000",
+          "s": 16,
+          "e": 17.22,
+          "c": 0.981847
+        },
+        {
+          "w": "in",
+          "s": 17.22,
+          "e": 17.34,
+          "c": 0.999983
+        },
+        {
+          "w": "the",
+          "s": 17.34,
+          "e": 17.46,
+          "c": 0.999989
+        },
+        {
+          "w": "June",
+          "s": 17.54,
+          "e": 17.76,
+          "c": 0.999975
+        },
+        {
+          "w": "report,",
+          "s": 17.76,
+          "e": 18.25,
+          "c": 0.999302
+        },
+        {
+          "w": "which",
+          "s": 18.25,
+          "e": 18.55,
+          "c": 0.999716
+        },
+        {
+          "w": "was",
+          "s": 18.55,
+          "e": 18.62,
+          "c": 0.999981
+        },
+        {
+          "w": "30,000",
+          "s": 18.86,
+          "e": 19.77,
+          "c": 0.999087
+        },
+        {
+          "w": "less",
+          "s": 19.77,
+          "e": 20.01,
+          "c": 0.999897
+        },
+        {
+          "w": "than",
+          "s": 20.01,
+          "e": 20.25,
+          "c": 0.983828
+        },
+        {
+          "w": "expected,",
+          "s": 20.25,
+          "e": 20.86,
+          "c": 0.982386
+        },
+        {
+          "w": "so",
+          "s": 20.86,
+          "e": 20.98,
+          "c": 0.994004
+        },
+        {
+          "w": "that's",
+          "s": 20.98,
+          "e": 21.48,
+          "c": 0.999053
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 21.48,
+      "end_s": 21.82,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "a mess.",
+      "words": [
+        {
+          "w": "a",
+          "s": 21.52,
+          "e": 21.53,
+          "c": 0.99662
+        },
+        {
+          "w": "mess.",
+          "s": 21.53,
+          "e": 21.82,
+          "c": 0.699188
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 22.28,
+      "end_s": 26.9,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "That's also the lowest in two and a half years, and it took the unemployment rate to",
+      "words": [
+        {
+          "w": "That's",
+          "s": 22.28,
+          "e": 22.33,
+          "c": 0.999718
+        },
+        {
+          "w": "also",
+          "s": 22.33,
+          "e": 22.54,
+          "c": 0.999943
+        },
+        {
+          "w": "the",
+          "s": 22.54,
+          "e": 22.76,
+          "c": 0.999992
+        },
+        {
+          "w": "lowest",
+          "s": 22.76,
+          "e": 23.2,
+          "c": 0.99984
+        },
+        {
+          "w": "in",
+          "s": 23.2,
+          "e": 23.34,
+          "c": 0.999983
+        },
+        {
+          "w": "two",
+          "s": 23.34,
+          "e": 23.56,
+          "c": 0.990852
+        },
+        {
+          "w": "and",
+          "s": 23.56,
+          "e": 23.78,
+          "c": 0.998104
+        },
+        {
+          "w": "a",
+          "s": 23.78,
+          "e": 23.85,
+          "c": 0.999928
+        },
+        {
+          "w": "half",
+          "s": 23.85,
+          "e": 24.09,
+          "c": 0.99995
+        },
+        {
+          "w": "years,",
+          "s": 24.16,
+          "e": 24.64,
+          "c": 0.954545
+        },
+        {
+          "w": "and",
+          "s": 24.64,
+          "e": 24.85,
+          "c": 0.999983
+        },
+        {
+          "w": "it",
+          "s": 24.92,
+          "e": 25,
+          "c": 0.999989
+        },
+        {
+          "w": "took",
+          "s": 25,
+          "e": 25.29,
+          "c": 0.99996
+        },
+        {
+          "w": "the",
+          "s": 25.29,
+          "e": 25.34,
+          "c": 0.999985
+        },
+        {
+          "w": "unemployment",
+          "s": 25.58,
+          "e": 26.39,
+          "c": 0.999901
+        },
+        {
+          "w": "rate",
+          "s": 26.39,
+          "e": 26.68,
+          "c": 0.999969
+        },
+        {
+          "w": "to",
+          "s": 26.68,
+          "e": 26.86,
+          "c": 0.994306
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 26.9,
+      "end_s": 30.24,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "3.6%, which is up just a smidge on the year.",
+      "words": [
+        {
+          "w": "3.6%,",
+          "s": 26.95,
+          "e": 27.78,
+          "c": 0.972285
+        },
+        {
+          "w": "which",
+          "s": 27.78,
+          "e": 28.15,
+          "c": 0.999985
+        },
+        {
+          "w": "is",
+          "s": 28.15,
+          "e": 28.3,
+          "c": 0.999966
+        },
+        {
+          "w": "up",
+          "s": 28.3,
+          "e": 28.45,
+          "c": 0.999989
+        },
+        {
+          "w": "just",
+          "s": 28.45,
+          "e": 28.71,
+          "c": 0.99984
+        },
+        {
+          "w": "a",
+          "s": 28.77,
+          "e": 28.8,
+          "c": 1
+        },
+        {
+          "w": "smidge",
+          "s": 28.88,
+          "e": 29.27,
+          "c": 0.994831
+        },
+        {
+          "w": "on",
+          "s": 29.27,
+          "e": 29.42,
+          "c": 0.999859
+        },
+        {
+          "w": "the",
+          "s": 29.42,
+          "e": 29.64,
+          "c": 0.999977
+        },
+        {
+          "w": "year.",
+          "s": 29.64,
+          "e": 30.24,
+          "c": 0.998812
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 30.82,
+      "end_s": 35.46,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "Meanwhile, the previous two months were revised down by 110,000 jobs.",
+      "words": [
+        {
+          "w": "Meanwhile,",
+          "s": 30.86,
+          "e": 30.99,
+          "c": 0.999893
+        },
+        {
+          "w": "the",
+          "s": 30.99,
+          "e": 31.19,
+          "c": 0.999996
+        },
+        {
+          "w": "previous",
+          "s": 31.19,
+          "e": 31.74,
+          "c": 0.999985
+        },
+        {
+          "w": "two",
+          "s": 31.74,
+          "e": 31.94,
+          "c": 0.999901
+        },
+        {
+          "w": "months",
+          "s": 31.94,
+          "e": 32.35,
+          "c": 0.999939
+        },
+        {
+          "w": "were",
+          "s": 32.35,
+          "e": 32.62,
+          "c": 0.999975
+        },
+        {
+          "w": "revised",
+          "s": 32.62,
+          "e": 33.1,
+          "c": 0.999872
+        },
+        {
+          "w": "down",
+          "s": 33.1,
+          "e": 33.37,
+          "c": 0.999973
+        },
+        {
+          "w": "by",
+          "s": 33.37,
+          "e": 33.5,
+          "c": 0.99999
+        },
+        {
+          "w": "110,000",
+          "s": 33.5,
+          "e": 34.78,
+          "c": 0.999472
+        },
+        {
+          "w": "jobs.",
+          "s": 34.92,
+          "e": 35.46,
+          "c": 0.999905
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 35.84,
+      "end_s": 40.92,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "By the way, we've seen this every report this year with numbers being revised down, meaning",
+      "words": [
+        {
+          "w": "By",
+          "s": 35.84,
+          "e": 35.84,
+          "c": 0.999945
+        },
+        {
+          "w": "the",
+          "s": 35.84,
+          "e": 35.89,
+          "c": 0.999998
+        },
+        {
+          "w": "way,",
+          "s": 35.89,
+          "e": 36.15,
+          "c": 0.999994
+        },
+        {
+          "w": "we've",
+          "s": 36.15,
+          "e": 36.49,
+          "c": 0.999546
+        },
+        {
+          "w": "seen",
+          "s": 36.49,
+          "e": 36.77,
+          "c": 0.999975
+        },
+        {
+          "w": "this",
+          "s": 36.77,
+          "e": 37.05,
+          "c": 0.999899
+        },
+        {
+          "w": "every",
+          "s": 37.05,
+          "e": 37.39,
+          "c": 0.99987
+        },
+        {
+          "w": "report",
+          "s": 37.39,
+          "e": 37.73,
+          "c": 0.999975
+        },
+        {
+          "w": "this",
+          "s": 37.82,
+          "e": 38.08,
+          "c": 0.999989
+        },
+        {
+          "w": "year",
+          "s": 38.08,
+          "e": 38.36,
+          "c": 0.999987
+        },
+        {
+          "w": "with",
+          "s": 38.36,
+          "e": 38.62,
+          "c": 0.674428
+        },
+        {
+          "w": "numbers",
+          "s": 38.64,
+          "e": 38.9,
+          "c": 0.999964
+        },
+        {
+          "w": "being",
+          "s": 39.14,
+          "e": 39.45,
+          "c": 0.99999
+        },
+        {
+          "w": "revised",
+          "s": 39.46,
+          "e": 39.8,
+          "c": 0.99992
+        },
+        {
+          "w": "down,",
+          "s": 39.94,
+          "e": 40.35,
+          "c": 0.999933
+        },
+        {
+          "w": "meaning",
+          "s": 40.35,
+          "e": 40.92,
+          "c": 0.992909
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 40.92,
+      "end_s": 45.92,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "either government statisticians are getting very bad at their job, or they are intentionally",
+      "words": [
+        {
+          "w": "either",
+          "s": 40.97,
+          "e": 41.29,
+          "c": 0.999893
+        },
+        {
+          "w": "government",
+          "s": 41.29,
+          "e": 41.91,
+          "c": 0.999521
+        },
+        {
+          "w": "statisticians",
+          "s": 41.91,
+          "e": 42.71,
+          "c": 0.998051
+        },
+        {
+          "w": "are",
+          "s": 42.71,
+          "e": 42.82,
+          "c": 0.999996
+        },
+        {
+          "w": "getting",
+          "s": 42.9,
+          "e": 43.32,
+          "c": 0.999954
+        },
+        {
+          "w": "very",
+          "s": 43.32,
+          "e": 43.49,
+          "c": 0.999952
+        },
+        {
+          "w": "bad",
+          "s": 43.57,
+          "e": 43.75,
+          "c": 0.999979
+        },
+        {
+          "w": "at",
+          "s": 43.75,
+          "e": 43.87,
+          "c": 0.999983
+        },
+        {
+          "w": "their",
+          "s": 43.87,
+          "e": 43.98,
+          "c": 0.999996
+        },
+        {
+          "w": "job,",
+          "s": 44.22,
+          "e": 44.48,
+          "c": 0.685709
+        },
+        {
+          "w": "or",
+          "s": 44.48,
+          "e": 44.59,
+          "c": 0.999704
+        },
+        {
+          "w": "they",
+          "s": 44.59,
+          "e": 44.85,
+          "c": 0.999411
+        },
+        {
+          "w": "are",
+          "s": 44.85,
+          "e": 45.02,
+          "c": 0.99995
+        },
+        {
+          "w": "intentionally",
+          "s": 45.02,
+          "e": 45.92,
+          "c": 0.999129
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 45.92,
+      "end_s": 49.62,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "reporting rosy numbers, then revising them down when nobody is looking.",
+      "words": [
+        {
+          "w": "reporting",
+          "s": 45.97,
+          "e": 46.43,
+          "c": 0.999762
+        },
+        {
+          "w": "rosy",
+          "s": 46.43,
+          "e": 46.65,
+          "c": 0.999798
+        },
+        {
+          "w": "numbers,",
+          "s": 46.65,
+          "e": 47.16,
+          "c": 0.982607
+        },
+        {
+          "w": "then",
+          "s": 47.16,
+          "e": 47.39,
+          "c": 0.999937
+        },
+        {
+          "w": "revising",
+          "s": 47.39,
+          "e": 47.82,
+          "c": 0.99926
+        },
+        {
+          "w": "them",
+          "s": 47.9,
+          "e": 48.07,
+          "c": 0.999992
+        },
+        {
+          "w": "down",
+          "s": 48.07,
+          "e": 48.3,
+          "c": 0.999989
+        },
+        {
+          "w": "when",
+          "s": 48.3,
+          "e": 48.49,
+          "c": 0.999905
+        },
+        {
+          "w": "nobody",
+          "s": 48.56,
+          "e": 48.87,
+          "c": 0.999912
+        },
+        {
+          "w": "is",
+          "s": 48.87,
+          "e": 48.97,
+          "c": 0.99991
+        },
+        {
+          "w": "looking.",
+          "s": 49.22,
+          "e": 49.59,
+          "c": 0.999474
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 50.18,
+      "end_s": 53.78,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "So accounting for the revisions leaves about 100,000 jobs on the month.",
+      "words": [
+        {
+          "w": "So",
+          "s": 50.18,
+          "e": 50.23,
+          "c": 0.998163
+        },
+        {
+          "w": "accounting",
+          "s": 50.23,
+          "e": 50.28,
+          "c": 0.731972
+        },
+        {
+          "w": "for",
+          "s": 50.28,
+          "e": 50.44,
+          "c": 0.999996
+        },
+        {
+          "w": "the",
+          "s": 50.44,
+          "e": 50.6,
+          "c": 0.999985
+        },
+        {
+          "w": "revisions",
+          "s": 50.6,
+          "e": 51.09,
+          "c": 0.999722
+        },
+        {
+          "w": "leaves",
+          "s": 51.09,
+          "e": 51.42,
+          "c": 0.999752
+        },
+        {
+          "w": "about",
+          "s": 51.42,
+          "e": 51.69,
+          "c": 0.999929
+        },
+        {
+          "w": "100,000",
+          "s": 51.69,
+          "e": 52.75,
+          "c": 0.999882
+        },
+        {
+          "w": "jobs",
+          "s": 52.83,
+          "e": 53,
+          "c": 0.999977
+        },
+        {
+          "w": "on",
+          "s": 53,
+          "e": 53.11,
+          "c": 0.989736
+        },
+        {
+          "w": "the",
+          "s": 53.11,
+          "e": 53.24,
+          "c": 0.999596
+        },
+        {
+          "w": "month.",
+          "s": 53.48,
+          "e": 53.77,
+          "c": 0.999811
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 53.78,
+      "end_s": 59.46,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "Keep in mind, population growth cancels about 70,000 of those, leaving 30,000, essentially",
+      "words": [
+        {
+          "w": "Keep",
+          "s": 53.83,
+          "e": 54,
+          "c": 0.959885
+        },
+        {
+          "w": "in",
+          "s": 54,
+          "e": 54.11,
+          "c": 0.999912
+        },
+        {
+          "w": "mind,",
+          "s": 54.11,
+          "e": 54.44,
+          "c": 0.969011
+        },
+        {
+          "w": "population",
+          "s": 54.44,
+          "e": 54.99,
+          "c": 0.999563
+        },
+        {
+          "w": "growth",
+          "s": 54.99,
+          "e": 55.32,
+          "c": 0.999958
+        },
+        {
+          "w": "cancels",
+          "s": 55.32,
+          "e": 55.68,
+          "c": 0.994485
+        },
+        {
+          "w": "about",
+          "s": 55.76,
+          "e": 55.96,
+          "c": 0.999098
+        },
+        {
+          "w": "70,000",
+          "s": 55.96,
+          "e": 56.84,
+          "c": 0.999683
+        },
+        {
+          "w": "of",
+          "s": 56.95,
+          "e": 56.97,
+          "c": 0.999306
+        },
+        {
+          "w": "those,",
+          "s": 57.08,
+          "e": 57.37,
+          "c": 0.998277
+        },
+        {
+          "w": "leaving",
+          "s": 57.38,
+          "e": 57.74,
+          "c": 0.999861
+        },
+        {
+          "w": "30,000,",
+          "s": 57.88,
+          "e": 58.8,
+          "c": 0.378249
+        },
+        {
+          "w": "essentially",
+          "s": 58.8,
+          "e": 59.46,
+          "c": 0.994968
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 59.46,
+      "end_s": 63.12,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "flat on a worker population of 162 million.",
+      "words": [
+        {
+          "w": "flat",
+          "s": 59.51,
+          "e": 59.79,
+          "c": 0.99987
+        },
+        {
+          "w": "on",
+          "s": 59.79,
+          "e": 59.95,
+          "c": 0.967822
+        },
+        {
+          "w": "a",
+          "s": 59.95,
+          "e": 60.03,
+          "c": 0.999971
+        },
+        {
+          "w": "worker",
+          "s": 60.03,
+          "e": 60.52,
+          "c": 0.999821
+        },
+        {
+          "w": "population",
+          "s": 60.52,
+          "e": 61.34,
+          "c": 0.999971
+        },
+        {
+          "w": "of",
+          "s": 61.34,
+          "e": 61.51,
+          "c": 0.999975
+        },
+        {
+          "w": "162",
+          "s": 61.51,
+          "e": 62.24,
+          "c": 0.999678
+        },
+        {
+          "w": "million.",
+          "s": 62.24,
+          "e": 63.12,
+          "c": 0.956924
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 63.46,
+      "end_s": 64.38,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "But it gets worse.",
+      "words": [
+        {
+          "w": "But",
+          "s": 63.46,
+          "e": 63.48,
+          "c": 0.999266
+        },
+        {
+          "w": "it",
+          "s": 63.48,
+          "e": 63.51,
+          "c": 0.999947
+        },
+        {
+          "w": "gets",
+          "s": 63.51,
+          "e": 63.77,
+          "c": 0.99996
+        },
+        {
+          "w": "worse.",
+          "s": 63.77,
+          "e": 64.38,
+          "c": 0.997794
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 64.48,
+      "end_s": 68.84,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "For starters, most of those net jobs were actually government jobs, which don't grow the economy.",
+      "words": [
+        {
+          "w": "For",
+          "s": 64.53,
+          "e": 64.54,
+          "c": 0.999929
+        },
+        {
+          "w": "starters,",
+          "s": 64.54,
+          "e": 65.07,
+          "c": 0.999994
+        },
+        {
+          "w": "most",
+          "s": 65.07,
+          "e": 65.27,
+          "c": 0.999964
+        },
+        {
+          "w": "of",
+          "s": 65.27,
+          "e": 65.38,
+          "c": 1
+        },
+        {
+          "w": "those",
+          "s": 65.38,
+          "e": 65.65,
+          "c": 0.999859
+        },
+        {
+          "w": "net",
+          "s": 65.65,
+          "e": 65.81,
+          "c": 0.99976
+        },
+        {
+          "w": "jobs",
+          "s": 65.81,
+          "e": 66.02,
+          "c": 0.999973
+        },
+        {
+          "w": "were",
+          "s": 66.02,
+          "e": 66.23,
+          "c": 0.99954
+        },
+        {
+          "w": "actually",
+          "s": 66.23,
+          "e": 66.66,
+          "c": 0.999876
+        },
+        {
+          "w": "government",
+          "s": 66.66,
+          "e": 67.2,
+          "c": 0.999989
+        },
+        {
+          "w": "jobs,",
+          "s": 67.2,
+          "e": 67.51,
+          "c": 0.999634
+        },
+        {
+          "w": "which",
+          "s": 67.51,
+          "e": 67.54,
+          "c": 0.99999
+        },
+        {
+          "w": "don't",
+          "s": 67.78,
+          "e": 68.04,
+          "c": 0.99992
+        },
+        {
+          "w": "grow",
+          "s": 68.04,
+          "e": 68.34,
+          "c": 0.999914
+        },
+        {
+          "w": "the",
+          "s": 68.34,
+          "e": 68.44,
+          "c": 0.935686
+        },
+        {
+          "w": "economy.",
+          "s": 68.58,
+          "e": 68.78,
+          "c": 0.793671
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 68.94,
+      "end_s": 70.02,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "In fact, many shrink it.",
+      "words": [
+        {
+          "w": "In",
+          "s": 68.94,
+          "e": 68.99,
+          "c": 0.999832
+        },
+        {
+          "w": "fact,",
+          "s": 68.99,
+          "e": 69.24,
+          "c": 0.999926
+        },
+        {
+          "w": "many",
+          "s": 69.24,
+          "e": 69.44,
+          "c": 0.999935
+        },
+        {
+          "w": "shrink",
+          "s": 69.44,
+          "e": 69.73,
+          "c": 0.999933
+        },
+        {
+          "w": "it.",
+          "s": 69.73,
+          "e": 70.02,
+          "c": 0.999977
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 70.42,
+      "end_s": 75.32,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "We can debate whether an EPA bureaucrat cancels 5 or 10 workers, but they certainly aren't growing",
+      "words": [
+        {
+          "w": "We",
+          "s": 70.42,
+          "e": 70.42,
+          "c": 0.99971
+        },
+        {
+          "w": "can",
+          "s": 70.42,
+          "e": 70.47,
+          "c": 0.999992
+        },
+        {
+          "w": "debate",
+          "s": 70.47,
+          "e": 70.68,
+          "c": 0.999926
+        },
+        {
+          "w": "whether",
+          "s": 70.68,
+          "e": 71.1,
+          "c": 0.999882
+        },
+        {
+          "w": "an",
+          "s": 71.1,
+          "e": 71.21,
+          "c": 0.999943
+        },
+        {
+          "w": "EPA",
+          "s": 71.21,
+          "e": 71.4,
+          "c": 0.999912
+        },
+        {
+          "w": "bureaucrat",
+          "s": 71.4,
+          "e": 72,
+          "c": 0.689783
+        },
+        {
+          "w": "cancels",
+          "s": 72,
+          "e": 72.42,
+          "c": 0.998016
+        },
+        {
+          "w": "5",
+          "s": 72.42,
+          "e": 72.6,
+          "c": 0.66251
+        },
+        {
+          "w": "or",
+          "s": 72.6,
+          "e": 72.72,
+          "c": 0.999809
+        },
+        {
+          "w": "10",
+          "s": 72.72,
+          "e": 73.08,
+          "c": 0.999863
+        },
+        {
+          "w": "workers,",
+          "s": 73.08,
+          "e": 73.61,
+          "c": 0.999929
+        },
+        {
+          "w": "but",
+          "s": 73.72,
+          "e": 73.8,
+          "c": 0.999989
+        },
+        {
+          "w": "they",
+          "s": 73.8,
+          "e": 74.03,
+          "c": 0.999989
+        },
+        {
+          "w": "certainly",
+          "s": 74.05,
+          "e": 74.59,
+          "c": 0.999952
+        },
+        {
+          "w": "aren't",
+          "s": 74.59,
+          "e": 75,
+          "c": 0.999823
+        },
+        {
+          "w": "growing",
+          "s": 75.04,
+          "e": 75.32,
+          "c": 0.611739
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 75.32,
+      "end_s": 75.64,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "anything.",
+      "words": [
+        {
+          "w": "anything.",
+          "s": 75.37,
+          "e": 75.64,
+          "c": 0.988855
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 75.76,
+      "end_s": 76.62,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "They are parasites.",
+      "words": [
+        {
+          "w": "They",
+          "s": 75.81,
+          "e": 75.84,
+          "c": 0.999144
+        },
+        {
+          "w": "are",
+          "s": 75.84,
+          "e": 75.99,
+          "c": 0.999977
+        },
+        {
+          "w": "parasites.",
+          "s": 75.99,
+          "e": 76.57,
+          "c": 0.999819
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 77.06,
+      "end_s": 82.68,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "So that takes us to productive jobs growing actually below the pace of population.",
+      "words": [
+        {
+          "w": "So",
+          "s": 77.11,
+          "e": 77.21,
+          "c": 0.90705
+        },
+        {
+          "w": "that",
+          "s": 77.21,
+          "e": 77.52,
+          "c": 0.998532
+        },
+        {
+          "w": "takes",
+          "s": 77.52,
+          "e": 77.87,
+          "c": 0.998877
+        },
+        {
+          "w": "us",
+          "s": 77.91,
+          "e": 78.06,
+          "c": 0.999493
+        },
+        {
+          "w": "to",
+          "s": 78.06,
+          "e": 78.21,
+          "c": 0.999773
+        },
+        {
+          "w": "productive",
+          "s": 78.21,
+          "e": 78.95,
+          "c": 0.994653
+        },
+        {
+          "w": "jobs",
+          "s": 79.04,
+          "e": 79.3,
+          "c": 0.999765
+        },
+        {
+          "w": "growing",
+          "s": 79.31,
+          "e": 79.84,
+          "c": 0.990907
+        },
+        {
+          "w": "actually",
+          "s": 79.86,
+          "e": 80.49,
+          "c": 0.997107
+        },
+        {
+          "w": "below",
+          "s": 80.49,
+          "e": 80.88,
+          "c": 0.999918
+        },
+        {
+          "w": "the",
+          "s": 80.88,
+          "e": 81.02,
+          "c": 0.999737
+        },
+        {
+          "w": "pace",
+          "s": 81.16,
+          "e": 81.42,
+          "c": 0.99914
+        },
+        {
+          "w": "of",
+          "s": 81.42,
+          "e": 81.57,
+          "c": 0.999805
+        },
+        {
+          "w": "population.",
+          "s": 81.57,
+          "e": 82.68,
+          "c": 0.999045
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 83.08,
+      "end_s": 85.48,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "Finally, the big one, job composition.",
+      "words": [
+        {
+          "w": "Finally,",
+          "s": 83.13,
+          "e": 83.35,
+          "c": 0.968064
+        },
+        {
+          "w": "the",
+          "s": 83.35,
+          "e": 83.57,
+          "c": 0.999912
+        },
+        {
+          "w": "big",
+          "s": 83.57,
+          "e": 83.79,
+          "c": 0.999886
+        },
+        {
+          "w": "one,",
+          "s": 83.79,
+          "e": 84.16,
+          "c": 0.926917
+        },
+        {
+          "w": "job",
+          "s": 84.16,
+          "e": 84.38,
+          "c": 0.999659
+        },
+        {
+          "w": "composition.",
+          "s": 84.38,
+          "e": 85.48,
+          "c": 0.999489
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 86.16,
+      "end_s": 94.08,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "The BLS reported that multiple job holders rose an amazing 233,000 on the month, which completely",
+      "words": [
+        {
+          "w": "The",
+          "s": 86.16,
+          "e": 86.16,
+          "c": 0.987304
+        },
+        {
+          "w": "BLS",
+          "s": 86.16,
+          "e": 86.22,
+          "c": 0.99522
+        },
+        {
+          "w": "reported",
+          "s": 86.22,
+          "e": 86.78,
+          "c": 0.999804
+        },
+        {
+          "w": "that",
+          "s": 86.78,
+          "e": 87.15,
+          "c": 0.999989
+        },
+        {
+          "w": "multiple",
+          "s": 87.15,
+          "e": 87.9,
+          "c": 0.99992
+        },
+        {
+          "w": "job",
+          "s": 87.9,
+          "e": 88.18,
+          "c": 0.999918
+        },
+        {
+          "w": "holders",
+          "s": 88.18,
+          "e": 88.83,
+          "c": 0.96878
+        },
+        {
+          "w": "rose",
+          "s": 88.83,
+          "e": 89.2,
+          "c": 0.998809
+        },
+        {
+          "w": "an",
+          "s": 89.2,
+          "e": 89.34,
+          "c": 0.95531
+        },
+        {
+          "w": "amazing",
+          "s": 89.46,
+          "e": 90.03,
+          "c": 0.999043
+        },
+        {
+          "w": "233,000",
+          "s": 90.03,
+          "e": 91.89,
+          "c": 0.946105
+        },
+        {
+          "w": "on",
+          "s": 91.89,
+          "e": 92.07,
+          "c": 0.998889
+        },
+        {
+          "w": "the",
+          "s": 92.07,
+          "e": 92.33,
+          "c": 0.998251
+        },
+        {
+          "w": "month,",
+          "s": 92.35,
+          "e": 92.99,
+          "c": 0.999851
+        },
+        {
+          "w": "which",
+          "s": 93.01,
+          "e": 93.58,
+          "c": 0.99898
+        },
+        {
+          "w": "completely",
+          "s": 93.58,
+          "e": 94.05,
+          "c": 0.924117
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 94.08,
+      "end_s": 96.42,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "swamped the alleged job gains.",
+      "words": [
+        {
+          "w": "swamped",
+          "s": 94.13,
+          "e": 94.65,
+          "c": 0.999813
+        },
+        {
+          "w": "the",
+          "s": 94.65,
+          "e": 94.89,
+          "c": 0.999683
+        },
+        {
+          "w": "alleged",
+          "s": 94.9,
+          "e": 95.48,
+          "c": 0.999798
+        },
+        {
+          "w": "job",
+          "s": 95.48,
+          "e": 95.73,
+          "c": 0.999939
+        },
+        {
+          "w": "gains.",
+          "s": 95.73,
+          "e": 96.42,
+          "c": 0.999956
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 96.74,
+      "end_s": 102.92,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "In addition, 452,000 more people were working part-time for, quote, economic reasons.",
+      "words": [
+        {
+          "w": "In",
+          "s": 96.79,
+          "e": 96.87,
+          "c": 0.961892
+        },
+        {
+          "w": "addition,",
+          "s": 96.87,
+          "e": 97.53,
+          "c": 0.999155
+        },
+        {
+          "w": "452,000",
+          "s": 97.53,
+          "e": 98.86,
+          "c": 0.995207
+        },
+        {
+          "w": "more",
+          "s": 98.86,
+          "e": 99.12,
+          "c": 0.997975
+        },
+        {
+          "w": "people",
+          "s": 99.12,
+          "e": 99.52,
+          "c": 0.999201
+        },
+        {
+          "w": "were",
+          "s": 99.52,
+          "e": 99.77,
+          "c": 0.999384
+        },
+        {
+          "w": "working",
+          "s": 99.78,
+          "e": 100.25,
+          "c": 0.999491
+        },
+        {
+          "w": "part-time",
+          "s": 100.25,
+          "e": 100.7,
+          "c": 0.700746
+        },
+        {
+          "w": "for,",
+          "s": 100.84,
+          "e": 101.16,
+          "c": 0.764931
+        },
+        {
+          "w": "quote,",
+          "s": 101.16,
+          "e": 101.61,
+          "c": 0.997301
+        },
+        {
+          "w": "economic",
+          "s": 101.62,
+          "e": 102.15,
+          "c": 0.985566
+        },
+        {
+          "w": "reasons.",
+          "s": 102.15,
+          "e": 102.91,
+          "c": 0.917911
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 102.92,
+      "end_s": 108.78,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "In other words, not by choice, which BLS attributes to people whose, quote, hours were reduced due",
+      "words": [
+        {
+          "w": "In",
+          "s": 102.97,
+          "e": 103.05,
+          "c": 0.992805
+        },
+        {
+          "w": "other",
+          "s": 103.05,
+          "e": 103.38,
+          "c": 0.999725
+        },
+        {
+          "w": "words,",
+          "s": 103.38,
+          "e": 103.84,
+          "c": 0.999649
+        },
+        {
+          "w": "not",
+          "s": 103.84,
+          "e": 104.04,
+          "c": 0.999355
+        },
+        {
+          "w": "by",
+          "s": 104.04,
+          "e": 104.17,
+          "c": 0.999701
+        },
+        {
+          "w": "choice,",
+          "s": 104.17,
+          "e": 104.7,
+          "c": 0.289541
+        },
+        {
+          "w": "which",
+          "s": 104.7,
+          "e": 105.03,
+          "c": 0.99967
+        },
+        {
+          "w": "BLS",
+          "s": 105.03,
+          "e": 105.22,
+          "c": 0.997366
+        },
+        {
+          "w": "attributes",
+          "s": 105.22,
+          "e": 105.89,
+          "c": 0.997702
+        },
+        {
+          "w": "to",
+          "s": 105.89,
+          "e": 105.98,
+          "c": 0.999657
+        },
+        {
+          "w": "people",
+          "s": 106.22,
+          "e": 106.42,
+          "c": 0.999821
+        },
+        {
+          "w": "whose,",
+          "s": 106.42,
+          "e": 106.88,
+          "c": 0.996345
+        },
+        {
+          "w": "quote,",
+          "s": 106.88,
+          "e": 107.34,
+          "c": 0.999792
+        },
+        {
+          "w": "hours",
+          "s": 107.34,
+          "e": 107.65,
+          "c": 0.988814
+        },
+        {
+          "w": "were",
+          "s": 107.68,
+          "e": 108.08,
+          "c": 0.997632
+        },
+        {
+          "w": "reduced",
+          "s": 108.08,
+          "e": 108.5,
+          "c": 0.875694
+        },
+        {
+          "w": "due",
+          "s": 108.5,
+          "e": 108.78,
+          "c": 0.974737
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 108.78,
+      "end_s": 111.24,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "to slack work or business conditions.",
+      "words": [
+        {
+          "w": "to",
+          "s": 108.83,
+          "e": 108.92,
+          "c": 0.999949
+        },
+        {
+          "w": "slack",
+          "s": 108.92,
+          "e": 109.28,
+          "c": 0.981199
+        },
+        {
+          "w": "work",
+          "s": 109.28,
+          "e": 109.56,
+          "c": 0.998955
+        },
+        {
+          "w": "or",
+          "s": 109.56,
+          "e": 109.7,
+          "c": 0.999893
+        },
+        {
+          "w": "business",
+          "s": 109.7,
+          "e": 110.27,
+          "c": 0.999968
+        },
+        {
+          "w": "conditions.",
+          "s": 110.27,
+          "e": 111.23,
+          "c": 0.99995
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "start_s": 111.84,
+      "end_s": 116.04,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "In other words, companies are reducing hours, which is the next step to layoffs.",
+      "words": [
+        {
+          "w": "In",
+          "s": 111.84,
+          "e": 111.84,
+          "c": 0.9998
+        },
+        {
+          "w": "other",
+          "s": 111.84,
+          "e": 111.89,
+          "c": 0.999929
+        },
+        {
+          "w": "words,",
+          "s": 111.89,
+          "e": 112.16,
+          "c": 0.99996
+        },
+        {
+          "w": "companies",
+          "s": 112.16,
+          "e": 112.76,
+          "c": 0.999929
+        },
+        {
+          "w": "are",
+          "s": 112.76,
+          "e": 112.96,
+          "c": 0.999926
+        },
+        {
+          "w": "reducing",
+          "s": 112.96,
+          "e": 113.5,
+          "c": 0.999752
+        },
+        {
+          "w": "hours,",
+          "s": 113.5,
+          "e": 113.96,
+          "c": 0.999401
+        },
+        {
+          "w": "which",
+          "s": 113.96,
+          "e": 114.29,
+          "c": 0.999992
+        },
+        {
+          "w": "is",
+          "s": 114.29,
+          "e": 114.41,
+          "c": 0.999973
+        },
+        {
+          "w": "the",
+          "s": 114.49,
+          "e": 114.62,
+          "c": 0.999983
+        },
+        {
+          "w": "next",
+          "s": 114.62,
+          "e": 114.88,
+          "c": 0.999975
+        },
+        {
+          "w": "step",
+          "s": 114.89,
+          "e": 115.16,
+          "c": 0.999958
+        },
+        {
+          "w": "to",
+          "s": 115.16,
+          "e": 115.29,
+          "c": 0.999716
+        },
+        {
+          "w": "layoffs.",
+          "s": 115.29,
+          "e": 116.04,
+          "c": 0.999542
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "start_s": 116.5,
+      "end_s": 123.12,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "Take it together, and real jobs plunged by over 100,000 with more to come, while Americans made",
+      "words": [
+        {
+          "w": "Take",
+          "s": 116.5,
+          "e": 116.5,
+          "c": 0.819847
+        },
+        {
+          "w": "it",
+          "s": 116.5,
+          "e": 116.56,
+          "c": 0.992729
+        },
+        {
+          "w": "together,",
+          "s": 116.56,
+          "e": 117.24,
+          "c": 0.339117
+        },
+        {
+          "w": "and",
+          "s": 117.24,
+          "e": 117.46,
+          "c": 0.99943
+        },
+        {
+          "w": "real",
+          "s": 117.46,
+          "e": 117.76,
+          "c": 0.967805
+        },
+        {
+          "w": "jobs",
+          "s": 117.76,
+          "e": 118.05,
+          "c": 0.9989
+        },
+        {
+          "w": "plunged",
+          "s": 118.05,
+          "e": 118.58,
+          "c": 0.997067
+        },
+        {
+          "w": "by",
+          "s": 118.58,
+          "e": 118.73,
+          "c": 0.999714
+        },
+        {
+          "w": "over",
+          "s": 118.73,
+          "e": 119.03,
+          "c": 0.999937
+        },
+        {
+          "w": "100,000",
+          "s": 119.03,
+          "e": 120.46,
+          "c": 0.999558
+        },
+        {
+          "w": "with",
+          "s": 120.6,
+          "e": 120.82,
+          "c": 0.784818
+        },
+        {
+          "w": "more",
+          "s": 120.82,
+          "e": 121.06,
+          "c": 0.99955
+        },
+        {
+          "w": "to",
+          "s": 121.12,
+          "e": 121.27,
+          "c": 0.999476
+        },
+        {
+          "w": "come,",
+          "s": 121.27,
+          "e": 121.72,
+          "c": 0.674802
+        },
+        {
+          "w": "while",
+          "s": 121.72,
+          "e": 122.09,
+          "c": 0.996822
+        },
+        {
+          "w": "Americans",
+          "s": 122.09,
+          "e": 122.84,
+          "c": 0.997826
+        },
+        {
+          "w": "made",
+          "s": 122.84,
+          "e": 123.12,
+          "c": 0.72924
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "start_s": 123.12,
+      "end_s": 128.96,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "up the difference delivering DoorDash, not even counting the 2 million-plus workers who",
+      "words": [
+        {
+          "w": "up",
+          "s": 123.17,
+          "e": 123.27,
+          "c": 0.99861
+        },
+        {
+          "w": "the",
+          "s": 123.27,
+          "e": 123.49,
+          "c": 0.997786
+        },
+        {
+          "w": "difference",
+          "s": 123.49,
+          "e": 124.23,
+          "c": 0.999508
+        },
+        {
+          "w": "delivering",
+          "s": 124.23,
+          "e": 124.93,
+          "c": 0.944901
+        },
+        {
+          "w": "DoorDash,",
+          "s": 125,
+          "e": 125.69,
+          "c": 0.89737
+        },
+        {
+          "w": "not",
+          "s": 125.69,
+          "e": 125.9,
+          "c": 0.999929
+        },
+        {
+          "w": "even",
+          "s": 125.91,
+          "e": 126.18,
+          "c": 0.999983
+        },
+        {
+          "w": "counting",
+          "s": 126.42,
+          "e": 126.79,
+          "c": 0.999914
+        },
+        {
+          "w": "the",
+          "s": 126.79,
+          "e": 127.01,
+          "c": 0.999954
+        },
+        {
+          "w": "2",
+          "s": 127.01,
+          "e": 127.22,
+          "c": 0.893199
+        },
+        {
+          "w": "million-plus",
+          "s": 127.22,
+          "e": 128.11,
+          "c": 0.28038
+        },
+        {
+          "w": "workers",
+          "s": 128.11,
+          "e": 128.62,
+          "c": 0.999865
+        },
+        {
+          "w": "who",
+          "s": 128.67,
+          "e": 128.96,
+          "c": 0.997942
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "start_s": 128.96,
+      "end_s": 129.84,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "are still missing.",
+      "words": [
+        {
+          "w": "are",
+          "s": 129.01,
+          "e": 129.1,
+          "c": 0.999983
+        },
+        {
+          "w": "still",
+          "s": 129.1,
+          "e": 129.34,
+          "c": 0.99999
+        },
+        {
+          "w": "missing.",
+          "s": 129.34,
+          "e": 129.84,
+          "c": 0.99995
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "start_s": 129.98,
+      "end_s": 133.74,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "I've mentioned in previous videos that they've dropped out of the labor force since COVID.",
+      "words": [
+        {
+          "w": "I've",
+          "s": 129.98,
+          "e": 130.03,
+          "c": 0.998862
+        },
+        {
+          "w": "mentioned",
+          "s": 130.03,
+          "e": 130.47,
+          "c": 0.999886
+        },
+        {
+          "w": "in",
+          "s": 130.47,
+          "e": 130.57,
+          "c": 0.999996
+        },
+        {
+          "w": "previous",
+          "s": 130.57,
+          "e": 130.96,
+          "c": 0.999981
+        },
+        {
+          "w": "videos",
+          "s": 130.96,
+          "e": 131.25,
+          "c": 0.999977
+        },
+        {
+          "w": "that",
+          "s": 131.25,
+          "e": 131.45,
+          "c": 0.999992
+        },
+        {
+          "w": "they've",
+          "s": 131.45,
+          "e": 131.79,
+          "c": 0.999691
+        },
+        {
+          "w": "dropped",
+          "s": 131.79,
+          "e": 132.13,
+          "c": 0.999865
+        },
+        {
+          "w": "out",
+          "s": 132.13,
+          "e": 132.28,
+          "c": 0.999987
+        },
+        {
+          "w": "of",
+          "s": 132.28,
+          "e": 132.38,
+          "c": 0.999962
+        },
+        {
+          "w": "the",
+          "s": 132.38,
+          "e": 132.53,
+          "c": 0.999985
+        },
+        {
+          "w": "labor",
+          "s": 132.53,
+          "e": 132.76,
+          "c": 0.998898
+        },
+        {
+          "w": "force",
+          "s": 132.78,
+          "e": 133.02,
+          "c": 0.999842
+        },
+        {
+          "w": "since",
+          "s": 133.03,
+          "e": 133.04,
+          "c": 0.999926
+        },
+        {
+          "w": "COVID.",
+          "s": 133.28,
+          "e": 133.74,
+          "c": 0.996839
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "start_s": 134.4,
+      "end_s": 138.34,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "Many are now on government benefits, where they're no longer counted as unemployed.",
+      "words": [
+        {
+          "w": "Many",
+          "s": 134.4,
+          "e": 134.4,
+          "c": 0.99991
+        },
+        {
+          "w": "are",
+          "s": 134.4,
+          "e": 134.4,
+          "c": 0.999992
+        },
+        {
+          "w": "now",
+          "s": 134.4,
+          "e": 134.45,
+          "c": 0.999947
+        },
+        {
+          "w": "on",
+          "s": 134.45,
+          "e": 134.46,
+          "c": 0.999954
+        },
+        {
+          "w": "government",
+          "s": 134.46,
+          "e": 135.08,
+          "c": 0.99988
+        },
+        {
+          "w": "benefits,",
+          "s": 135.08,
+          "e": 135.69,
+          "c": 0.704129
+        },
+        {
+          "w": "where",
+          "s": 135.69,
+          "e": 136,
+          "c": 0.999807
+        },
+        {
+          "w": "they're",
+          "s": 136,
+          "e": 136.42,
+          "c": 0.999035
+        },
+        {
+          "w": "no",
+          "s": 136.42,
+          "e": 136.54,
+          "c": 0.999887
+        },
+        {
+          "w": "longer",
+          "s": 136.54,
+          "e": 136.91,
+          "c": 0.999989
+        },
+        {
+          "w": "counted",
+          "s": 136.91,
+          "e": 137.34,
+          "c": 0.999861
+        },
+        {
+          "w": "as",
+          "s": 137.34,
+          "e": 137.45,
+          "c": 0.999966
+        },
+        {
+          "w": "unemployed.",
+          "s": 137.7,
+          "e": 138.34,
+          "c": 0.999636
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "start_s": 138.86,
+      "end_s": 140.2,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "Statistically, they're retired.",
+      "words": [
+        {
+          "w": "Statistically,",
+          "s": 138.86,
+          "e": 139.2,
+          "c": 0.997495
+        },
+        {
+          "w": "they're",
+          "s": 139.2,
+          "e": 139.6,
+          "c": 0.999884
+        },
+        {
+          "w": "retired.",
+          "s": 139.6,
+          "e": 140.2,
+          "c": 0.99971
+        }
+      ]
+    },
+    {
+      "i": 35,
+      "start_s": 140.86,
+      "end_s": 141.62,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "So what's next?",
+      "words": [
+        {
+          "w": "So",
+          "s": 140.86,
+          "e": 140.86,
+          "c": 0.999039
+        },
+        {
+          "w": "what's",
+          "s": 140.86,
+          "e": 140.93,
+          "c": 0.983864
+        },
+        {
+          "w": "next?",
+          "s": 140.93,
+          "e": 141.62,
+          "c": 0.999941
+        }
+      ]
+    },
+    {
+      "i": 36,
+      "start_s": 141.82,
+      "end_s": 146.32,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "Erosion and job composition is hitting wages, which came in flat after inflation.",
+      "words": [
+        {
+          "w": "Erosion",
+          "s": 141.82,
+          "e": 142.06,
+          "c": 0.995611
+        },
+        {
+          "w": "and",
+          "s": 142.06,
+          "e": 142.25,
+          "c": 0.658523
+        },
+        {
+          "w": "job",
+          "s": 142.25,
+          "e": 142.44,
+          "c": 0.999983
+        },
+        {
+          "w": "composition",
+          "s": 142.44,
+          "e": 143.15,
+          "c": 0.99962
+        },
+        {
+          "w": "is",
+          "s": 143.15,
+          "e": 143.28,
+          "c": 0.999668
+        },
+        {
+          "w": "hitting",
+          "s": 143.28,
+          "e": 143.71,
+          "c": 0.999908
+        },
+        {
+          "w": "wages,",
+          "s": 143.8,
+          "e": 144.18,
+          "c": 0.999969
+        },
+        {
+          "w": "which",
+          "s": 144.18,
+          "e": 144.5,
+          "c": 0.999996
+        },
+        {
+          "w": "came",
+          "s": 144.5,
+          "e": 144.76,
+          "c": 0.999947
+        },
+        {
+          "w": "in",
+          "s": 144.76,
+          "e": 144.88,
+          "c": 0.999998
+        },
+        {
+          "w": "flat",
+          "s": 145.12,
+          "e": 145.15,
+          "c": 0.999924
+        },
+        {
+          "w": "after",
+          "s": 145.15,
+          "e": 145.46,
+          "c": 0.999737
+        },
+        {
+          "w": "inflation.",
+          "s": 145.47,
+          "e": 146.32,
+          "c": 0.999773
+        }
+      ]
+    },
+    {
+      "i": 37,
+      "start_s": 146.78,
+      "end_s": 151.62,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "That's actually surprising, since inflation was supposed to have trickled into wages by now.",
+      "words": [
+        {
+          "w": "That's",
+          "s": 146.78,
+          "e": 146.83,
+          "c": 0.956607
+        },
+        {
+          "w": "actually",
+          "s": 146.83,
+          "e": 147.24,
+          "c": 0.999956
+        },
+        {
+          "w": "surprising,",
+          "s": 147.24,
+          "e": 148.03,
+          "c": 0.871233
+        },
+        {
+          "w": "since",
+          "s": 148.03,
+          "e": 148.36,
+          "c": 0.999859
+        },
+        {
+          "w": "inflation",
+          "s": 148.36,
+          "e": 148.95,
+          "c": 0.999966
+        },
+        {
+          "w": "was",
+          "s": 148.95,
+          "e": 149.15,
+          "c": 0.999989
+        },
+        {
+          "w": "supposed",
+          "s": 149.15,
+          "e": 149.68,
+          "c": 0.999952
+        },
+        {
+          "w": "to",
+          "s": 149.68,
+          "e": 149.81,
+          "c": 0.999994
+        },
+        {
+          "w": "have",
+          "s": 149.81,
+          "e": 149.84,
+          "c": 0.99999
+        },
+        {
+          "w": "trickled",
+          "s": 150.08,
+          "e": 150.59,
+          "c": 0.99954
+        },
+        {
+          "w": "into",
+          "s": 150.59,
+          "e": 150.74,
+          "c": 0.999859
+        },
+        {
+          "w": "wages",
+          "s": 150.88,
+          "e": 151.18,
+          "c": 0.99984
+        },
+        {
+          "w": "by",
+          "s": 151.18,
+          "e": 151.36,
+          "c": 0.997383
+        },
+        {
+          "w": "now.",
+          "s": 151.4,
+          "e": 151.62,
+          "c": 0.971908
+        }
+      ]
+    },
+    {
+      "i": 38,
+      "start_s": 151.62,
+      "end_s": 153.02,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "I've got an upcoming video on that.",
+      "words": [
+        {
+          "w": "I've",
+          "s": 151.66,
+          "e": 151.79,
+          "c": 0.802997
+        },
+        {
+          "w": "got",
+          "s": 151.79,
+          "e": 151.92,
+          "c": 0.999056
+        },
+        {
+          "w": "an",
+          "s": 151.92,
+          "e": 152.01,
+          "c": 0.99995
+        },
+        {
+          "w": "upcoming",
+          "s": 152.01,
+          "e": 152.37,
+          "c": 0.999838
+        },
+        {
+          "w": "video",
+          "s": 152.37,
+          "e": 152.59,
+          "c": 0.999983
+        },
+        {
+          "w": "on",
+          "s": 152.59,
+          "e": 152.68,
+          "c": 0.999945
+        },
+        {
+          "w": "that.",
+          "s": 152.68,
+          "e": 153.02,
+          "c": 0.999887
+        }
+      ]
+    },
+    {
+      "i": 39,
+      "start_s": 153.6,
+      "end_s": 159.44,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "Even so, flat wages is bad news for the Fed, who's trying to make wages go down so people",
+      "words": [
+        {
+          "w": "Even",
+          "s": 153.6,
+          "e": 153.6,
+          "c": 0.998414
+        },
+        {
+          "w": "so,",
+          "s": 153.6,
+          "e": 153.71,
+          "c": 0.999973
+        },
+        {
+          "w": "flat",
+          "s": 153.71,
+          "e": 154.06,
+          "c": 0.999851
+        },
+        {
+          "w": "wages",
+          "s": 154.06,
+          "e": 154.49,
+          "c": 0.999825
+        },
+        {
+          "w": "is",
+          "s": 154.49,
+          "e": 154.66,
+          "c": 0.999956
+        },
+        {
+          "w": "bad",
+          "s": 154.66,
+          "e": 154.92,
+          "c": 0.999937
+        },
+        {
+          "w": "news",
+          "s": 154.92,
+          "e": 155.27,
+          "c": 0.999964
+        },
+        {
+          "w": "for",
+          "s": 155.27,
+          "e": 155.5,
+          "c": 0.999949
+        },
+        {
+          "w": "the",
+          "s": 155.58,
+          "e": 155.79,
+          "c": 0.99995
+        },
+        {
+          "w": "Fed,",
+          "s": 155.79,
+          "e": 156.17,
+          "c": 0.999129
+        },
+        {
+          "w": "who's",
+          "s": 156.25,
+          "e": 156.64,
+          "c": 0.998365
+        },
+        {
+          "w": "trying",
+          "s": 156.9,
+          "e": 157.17,
+          "c": 0.999804
+        },
+        {
+          "w": "to",
+          "s": 157.17,
+          "e": 157.34,
+          "c": 0.999992
+        },
+        {
+          "w": "make",
+          "s": 157.34,
+          "e": 157.56,
+          "c": 0.999931
+        },
+        {
+          "w": "wages",
+          "s": 157.7,
+          "e": 158.12,
+          "c": 0.99984
+        },
+        {
+          "w": "go",
+          "s": 158.12,
+          "e": 158.29,
+          "c": 0.999958
+        },
+        {
+          "w": "down",
+          "s": 158.29,
+          "e": 158.64,
+          "c": 0.998921
+        },
+        {
+          "w": "so",
+          "s": 158.64,
+          "e": 158.81,
+          "c": 0.833209
+        },
+        {
+          "w": "people",
+          "s": 158.81,
+          "e": 159.44,
+          "c": 0.997274
+        }
+      ]
+    },
+    {
+      "i": 40,
+      "start_s": 159.44,
+      "end_s": 162.28,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "stop spending and the federal government can spend instead.",
+      "words": [
+        {
+          "w": "stop",
+          "s": 159.49,
+          "e": 159.65,
+          "c": 0.999228
+        },
+        {
+          "w": "spending",
+          "s": 159.65,
+          "e": 160.07,
+          "c": 0.999796
+        },
+        {
+          "w": "and",
+          "s": 160.07,
+          "e": 160.23,
+          "c": 0.858536
+        },
+        {
+          "w": "the",
+          "s": 160.23,
+          "e": 160.39,
+          "c": 0.999895
+        },
+        {
+          "w": "federal",
+          "s": 160.39,
+          "e": 160.76,
+          "c": 0.999489
+        },
+        {
+          "w": "government",
+          "s": 160.76,
+          "e": 161.25,
+          "c": 0.999977
+        },
+        {
+          "w": "can",
+          "s": 161.31,
+          "e": 161.45,
+          "c": 0.999954
+        },
+        {
+          "w": "spend",
+          "s": 161.45,
+          "e": 161.71,
+          "c": 0.999838
+        },
+        {
+          "w": "instead.",
+          "s": 161.71,
+          "e": 162.28,
+          "c": 0.999687
+        }
+      ]
+    },
+    {
+      "i": 41,
+      "start_s": 162.84,
+      "end_s": 168.86,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "So expect the Fed to turn this into yet more rate hikes, limited at this point only by their",
+      "words": [
+        {
+          "w": "So",
+          "s": 162.84,
+          "e": 162.89,
+          "c": 0.999449
+        },
+        {
+          "w": "expect",
+          "s": 162.89,
+          "e": 162.97,
+          "c": 0.986745
+        },
+        {
+          "w": "the",
+          "s": 162.97,
+          "e": 163.23,
+          "c": 0.999947
+        },
+        {
+          "w": "Fed",
+          "s": 163.23,
+          "e": 163.49,
+          "c": 0.999929
+        },
+        {
+          "w": "to",
+          "s": 163.49,
+          "e": 163.65,
+          "c": 1
+        },
+        {
+          "w": "turn",
+          "s": 163.69,
+          "e": 164.01,
+          "c": 0.999971
+        },
+        {
+          "w": "this",
+          "s": 164.01,
+          "e": 164.36,
+          "c": 0.999975
+        },
+        {
+          "w": "into",
+          "s": 164.36,
+          "e": 164.65,
+          "c": 0.999975
+        },
+        {
+          "w": "yet",
+          "s": 164.72,
+          "e": 164.97,
+          "c": 0.999756
+        },
+        {
+          "w": "more",
+          "s": 164.97,
+          "e": 165.31,
+          "c": 0.999626
+        },
+        {
+          "w": "rate",
+          "s": 165.31,
+          "e": 165.67,
+          "c": 0.999809
+        },
+        {
+          "w": "hikes,",
+          "s": 165.67,
+          "e": 166.27,
+          "c": 0.998016
+        },
+        {
+          "w": "limited",
+          "s": 166.27,
+          "e": 166.8,
+          "c": 0.998367
+        },
+        {
+          "w": "at",
+          "s": 166.94,
+          "e": 167.05,
+          "c": 0.999005
+        },
+        {
+          "w": "this",
+          "s": 167.05,
+          "e": 167.39,
+          "c": 0.999983
+        },
+        {
+          "w": "point",
+          "s": 167.39,
+          "e": 167.83,
+          "c": 0.999966
+        },
+        {
+          "w": "only",
+          "s": 167.83,
+          "e": 168.18,
+          "c": 0.993894
+        },
+        {
+          "w": "by",
+          "s": 168.18,
+          "e": 168.34,
+          "c": 0.999369
+        },
+        {
+          "w": "their",
+          "s": 168.39,
+          "e": 168.84,
+          "c": 0.99564
+        }
+      ]
+    },
+    {
+      "i": 42,
+      "start_s": 168.86,
+      "end_s": 171.6,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "fear of crashing yet more banks.",
+      "words": [
+        {
+          "w": "fear",
+          "s": 168.91,
+          "e": 169.23,
+          "c": 0.999773
+        },
+        {
+          "w": "of",
+          "s": 169.23,
+          "e": 169.41,
+          "c": 0.999985
+        },
+        {
+          "w": "crashing",
+          "s": 169.41,
+          "e": 170.16,
+          "c": 0.999733
+        },
+        {
+          "w": "yet",
+          "s": 170.16,
+          "e": 170.44,
+          "c": 0.999234
+        },
+        {
+          "w": "more",
+          "s": 170.44,
+          "e": 170.75,
+          "c": 0.999983
+        },
+        {
+          "w": "banks.",
+          "s": 170.84,
+          "e": 171.6,
+          "c": 0.999741
+        }
+      ]
+    },
+    {
+      "i": 43,
+      "start_s": 172.02,
+      "end_s": 176.74,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "Month by month, Americans are losing their financial buffer, their full-time jobs, their savings,",
+      "words": [
+        {
+          "w": "Month",
+          "s": 172.02,
+          "e": 172.02,
+          "c": 0.996727
+        },
+        {
+          "w": "by",
+          "s": 172.02,
+          "e": 172.07,
+          "c": 0.997782
+        },
+        {
+          "w": "month,",
+          "s": 172.07,
+          "e": 172.4,
+          "c": 0.999933
+        },
+        {
+          "w": "Americans",
+          "s": 172.4,
+          "e": 172.92,
+          "c": 0.999912
+        },
+        {
+          "w": "are",
+          "s": 172.92,
+          "e": 173.09,
+          "c": 0.999992
+        },
+        {
+          "w": "losing",
+          "s": 173.09,
+          "e": 173.44,
+          "c": 0.999952
+        },
+        {
+          "w": "their",
+          "s": 173.44,
+          "e": 173.73,
+          "c": 0.999994
+        },
+        {
+          "w": "financial",
+          "s": 173.73,
+          "e": 174.25,
+          "c": 0.999981
+        },
+        {
+          "w": "buffer,",
+          "s": 174.25,
+          "e": 174.71,
+          "c": 0.967241
+        },
+        {
+          "w": "their",
+          "s": 174.71,
+          "e": 175,
+          "c": 0.999968
+        },
+        {
+          "w": "full-time",
+          "s": 175,
+          "e": 175.51,
+          "c": 0.999603
+        },
+        {
+          "w": "jobs,",
+          "s": 175.51,
+          "e": 175.85,
+          "c": 0.99995
+        },
+        {
+          "w": "their",
+          "s": 175.85,
+          "e": 176.14,
+          "c": 0.996533
+        },
+        {
+          "w": "savings,",
+          "s": 176.14,
+          "e": 176.74,
+          "c": 0.647329
+        }
+      ]
+    },
+    {
+      "i": 44,
+      "start_s": 176.98,
+      "end_s": 182.96,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "all while their debts pile up amid Washington happy talk about the amazing feats of Bidenomics.",
+      "words": [
+        {
+          "w": "all",
+          "s": 176.98,
+          "e": 177.03,
+          "c": 0.84164
+        },
+        {
+          "w": "while",
+          "s": 177.03,
+          "e": 177.33,
+          "c": 0.999929
+        },
+        {
+          "w": "their",
+          "s": 177.33,
+          "e": 177.7,
+          "c": 0.999981
+        },
+        {
+          "w": "debts",
+          "s": 177.7,
+          "e": 178.07,
+          "c": 0.999081
+        },
+        {
+          "w": "pile",
+          "s": 178.07,
+          "e": 178.37,
+          "c": 0.99975
+        },
+        {
+          "w": "up",
+          "s": 178.37,
+          "e": 178.52,
+          "c": 0.999794
+        },
+        {
+          "w": "amid",
+          "s": 178.52,
+          "e": 178.79,
+          "c": 0.943727
+        },
+        {
+          "w": "Washington",
+          "s": 178.86,
+          "e": 179.55,
+          "c": 0.999468
+        },
+        {
+          "w": "happy",
+          "s": 179.62,
+          "e": 179.94,
+          "c": 0.980608
+        },
+        {
+          "w": "talk",
+          "s": 179.94,
+          "e": 180.04,
+          "c": 0.998969
+        },
+        {
+          "w": "about",
+          "s": 180.28,
+          "e": 180.61,
+          "c": 0.999924
+        },
+        {
+          "w": "the",
+          "s": 180.61,
+          "e": 180.83,
+          "c": 0.999853
+        },
+        {
+          "w": "amazing",
+          "s": 180.83,
+          "e": 181.36,
+          "c": 0.999152
+        },
+        {
+          "w": "feats",
+          "s": 181.36,
+          "e": 181.71,
+          "c": 0.886267
+        },
+        {
+          "w": "of",
+          "s": 181.74,
+          "e": 181.88,
+          "c": 0.998169
+        },
+        {
+          "w": "Bidenomics.",
+          "s": 181.88,
+          "e": 182.94,
+          "c": 0.915141
+        }
+      ]
+    },
+    {
+      "i": 45,
+      "start_s": 182.96,
+      "end_s": 188.5,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "As post-pandemic pent-up demand fades and the economy drops into full-blown recession,",
+      "words": [
+        {
+          "w": "As",
+          "s": 183.01,
+          "e": 183.1,
+          "c": 0.712462
+        },
+        {
+          "w": "post-pandemic",
+          "s": 183.1,
+          "e": 184.03,
+          "c": 0.993057
+        },
+        {
+          "w": "pent-up",
+          "s": 184.03,
+          "e": 184.53,
+          "c": 0.988978
+        },
+        {
+          "w": "demand",
+          "s": 184.53,
+          "e": 184.96,
+          "c": 0.997616
+        },
+        {
+          "w": "fades",
+          "s": 184.96,
+          "e": 185.32,
+          "c": 0.996251
+        },
+        {
+          "w": "and",
+          "s": 185.32,
+          "e": 185.53,
+          "c": 0.920507
+        },
+        {
+          "w": "the",
+          "s": 185.53,
+          "e": 185.74,
+          "c": 0.999498
+        },
+        {
+          "w": "economy",
+          "s": 185.74,
+          "e": 186.02,
+          "c": 0.999523
+        },
+        {
+          "w": "drops",
+          "s": 186.26,
+          "e": 186.61,
+          "c": 0.998908
+        },
+        {
+          "w": "into",
+          "s": 186.61,
+          "e": 186.9,
+          "c": 0.999458
+        },
+        {
+          "w": "full-blown",
+          "s": 186.9,
+          "e": 187.61,
+          "c": 0.997524
+        },
+        {
+          "w": "recession,",
+          "s": 187.61,
+          "e": 188.46,
+          "c": 0.996717
+        }
+      ]
+    },
+    {
+      "i": 46,
+      "start_s": 189.1,
+      "end_s": 193.14,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "on present trends, there will be millions of Americans up against the wall.",
+      "words": [
+        {
+          "w": "on",
+          "s": 189.1,
+          "e": 189.13,
+          "c": 0.99894
+        },
+        {
+          "w": "present",
+          "s": 189.13,
+          "e": 189.15,
+          "c": 0.999369
+        },
+        {
+          "w": "trends,",
+          "s": 189.15,
+          "e": 189.69,
+          "c": 0.984136
+        },
+        {
+          "w": "there",
+          "s": 189.69,
+          "e": 190.04,
+          "c": 0.995632
+        },
+        {
+          "w": "will",
+          "s": 190.04,
+          "e": 190.32,
+          "c": 0.999928
+        },
+        {
+          "w": "be",
+          "s": 190.32,
+          "e": 190.44,
+          "c": 0.999739
+        },
+        {
+          "w": "millions",
+          "s": 190.46,
+          "e": 190.99,
+          "c": 0.999552
+        },
+        {
+          "w": "of",
+          "s": 191.08,
+          "e": 191.16,
+          "c": 0.999561
+        },
+        {
+          "w": "Americans",
+          "s": 191.16,
+          "e": 191.79,
+          "c": 0.999533
+        },
+        {
+          "w": "up",
+          "s": 191.79,
+          "e": 191.93,
+          "c": 0.997988
+        },
+        {
+          "w": "against",
+          "s": 191.93,
+          "e": 192.42,
+          "c": 0.999899
+        },
+        {
+          "w": "the",
+          "s": 192.42,
+          "e": 192.63,
+          "c": 0.999901
+        },
+        {
+          "w": "wall.",
+          "s": 192.63,
+          "e": 193.06,
+          "c": 0.999464
+        }
+      ]
+    },
+    {
+      "i": 47,
+      "start_s": 193.62,
+      "end_s": 194.86,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "Okay, we'll be watching.",
+      "words": [
+        {
+          "w": "Okay,",
+          "s": 193.62,
+          "e": 193.67,
+          "c": 0.475794
+        },
+        {
+          "w": "we'll",
+          "s": 193.67,
+          "e": 193.91,
+          "c": 0.999302
+        },
+        {
+          "w": "be",
+          "s": 193.91,
+          "e": 194.05,
+          "c": 0.99996
+        },
+        {
+          "w": "watching.",
+          "s": 194.05,
+          "e": 194.86,
+          "c": 0.999866
+        }
+      ]
+    },
+    {
+      "i": 48,
+      "start_s": 195.18,
+      "end_s": 195.72,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "low_conf": false,
+      "text": "See you next time.",
+      "words": [
+        {
+          "w": "See",
+          "s": 195.18,
+          "e": 195.18,
+          "c": 0.99739
+        },
+        {
+          "w": "you",
+          "s": 195.18,
+          "e": 195.23,
+          "c": 0.999887
+        },
+        {
+          "w": "next",
+          "s": 195.23,
+          "e": 195.36,
+          "c": 0.999958
+        },
+        {
+          "w": "time.",
+          "s": 195.36,
+          "e": 195.72,
+          "c": 0.999918
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Trump’s Christmas Gift to America"
+    Description: >-
+      A celebratory Christmas-themed commentary recorded after the 2024 US election and before the
+      inauguration. St Onge argues Americans have reason for hope: a secure border, an end to wars, and a
+      chance to rein in the federal government. He cites a post-election jump in consumer sentiment to its
+      highest level since April and a market rally, contrasts the mood with the previous year's dread, and
+      credits Trump's campaigning stamina, a coalition he describes as including Elon Musk, Vivek Ramaswamy,
+      Robert F. Kennedy Jr and Tulsi Gabbard, and what he calls the collapse of legacy media after its
+      abandonment of objectivity. Looking ahead he expects releases of January 6 defendants and Ross Ulbricht,
+      border executive orders and deregulation, and says the most important change is that millions of
+      Americans feel hope. The assessments of media, of the previous administration and of past elections —
+      including the claim that elections would be stolen — are the speaker's own political opinions, offered
+      without sourcing and contested.
+    URL: "https://www.youtube.com/watch?v=-7ufWW6yz6I"
+    Video_ID: "-7ufWW6yz6I"
+    Show: "Peter St Onge, Ph.D."
+    Runtime: "00:03:14"
+    Language: "en"
+
+  Media:
+    File: "-7ufWW6yz6I.m4a"
+    SHA256: "e9668c7134fcc6760e9c67baa9d323e64d55351ee89ff8449cb9c48d385af3d9"
+    Bytes: 3149991
+    Duration_Seconds: 194
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-7ufWW6yz6I"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-7ufWW6yz6I.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/peter_st_onge/-7ufWW6yz6I/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCDwR3dznveYdTH3EM5vWWeA"
+    Uploader_ID: "@Profstonge"
+    View_Count: 5710
+    Like_Count: 876
+    Comment_Count: 81
+    Availability: "public"
+    Published_At: "2024-12-25T13:30:00+00:00"
+    Captured_At: "2026-09-10T04:47:15-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 3
+
+  Topics:
+    - "The 2024 US presidential election result"
+    - "Consumer sentiment and market reaction"
+    - "Expected Trump administration policy priorities"
+    - "Deregulation and federal workforce reduction"
+    - "Claims about legacy media decline"
+    - "Political optimism and public mood"
+
+  Source:
+    Canonical_ID: "-7ufWW6yz6I"
+    Transcribed: "2026-09-10T05:47:20.053596-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 536
+    Segments: 33
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T04:47:16.598219-07:00"
+    Transcription_Finished: "2026-09-10T05:47:20.053596-07:00"
+    Recorded: "2024-12-25"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-7ufWW6yz6I.ctm"
+    Fountain: "-7ufWW6yz6I.fountain"
+    Diarization_RTTM: "-7ufWW6yz6I.rttm"
+    As_Broadcast_Script: "-7ufWW6yz6I.script.txt"
+    Segments_JSON: "-7ufWW6yz6I.segments.json"
+    Segments_JSONL: "-7ufWW6yz6I.segments.jsonl"
+    Subtitles_SRT: "-7ufWW6yz6I.srt"
+    Plain_Text: "-7ufWW6yz6I.transcription"
+    Subtitles_VTT: "-7ufWW6yz6I.vtt"
+    Transcript_SHA256: "4c916568e8759c0c93282ac09034a2abe3eef13029a43add8791d420d43c0838"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "peter_st_onge"
+    video_uid: "peter_st_onge::-7ufWW6yz6I"
+    video_key: "-7ufWW6yz6I"
+    youtube_id: "-7ufWW6yz6I"
+    priority: 100
+    ceiling: 1000
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T11:29:48.986Z"
+    demand_run_id: "job_1789039766260_6"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-7ufWW6yz6I"
+    source_ref: "-7ufWW6yz6I"
+    subject_kind: "people_only"

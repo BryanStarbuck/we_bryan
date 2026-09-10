@@ -1,0 +1,139 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Winners and Losers of the Iran War: Ukraine and Russia || Peter Zeihan"
+    Description: >-
+      Part of a series on the consequences of a war involving Iran, this entry examines Russia and Ukraine.
+      Zeihan sets the scene with regional crude exports falling from 22 million barrels a day to perhaps 10–12
+      million, a shortfall he says will persist at least nine months after fighting stops and over two years
+      for some Iraqi production, with the effect shifting from a throughput failure to a supply failure as the
+      last pre-war tankers arrive in Asia and Europe. He states the initial conventional wisdom — Ukraine
+      disadvantaged by Western distraction and diverted interceptors, Russia enriched by oil above $100
+      against break-evens of $30–50 — and then argues five weeks in that it has become more nuanced. On
+      Russia: providing intelligence and hardware to Iran to target US forces has, he says, shifted opinion in
+      the Defense Department and on Capitol Hill, while Ukrainian long-range drones have removed 1.5–2 million
+      barrels a day of Baltic export capacity with no backup pipeline. On Ukraine: a year operating without US
+      assistance drove counter-drone innovation, and he describes a system costing $2,000–3,000 against
+      $30,000–50,000 for a Shahed, with Zelensky signing multi-billion-dollar Gulf investment deals since
+      Ukraine's constraint was cash rather than ideas. He closes by comparing the emerging
+      European–Ukrainian–Gulf alignment to the 1985 Saudi production surge against the Soviet Union. The
+      remark that Trump 'remains firmly in Putin's pocket' is an unevidenced characterisation of a named
+      living person who is not represented here; the scenario as a whole is the speaker's analysis of a fast-
+      moving situation.
+    URL: "https://www.youtube.com/watch?v=-acUKR8XqXw"
+    Video_ID: "-acUKR8XqXw"
+    Show: "Zeihan on Geopolitics"
+    Runtime: "00:07:17"
+    Language: "en"
+
+  Media:
+    File: "-acUKR8XqXw.m4a"
+    SHA256: "b5c9dbdc7d3f8b914e9bd373c3c6a918ed49f95ec5f86ba9d3b6ff6709dcd670"
+    Bytes: 7073069
+    Duration_Seconds: 437
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-acUKR8XqXw"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-acUKR8XqXw.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/peter_zeihan/-acUKR8XqXw/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCsy9I56PY3IngCf_VGjunMQ"
+    Uploader_ID: "@ZeihanonGeopolitics"
+    View_Count: 203745
+    Like_Count: 7004
+    Comment_Count: 658
+    Availability: "public"
+    Published_At: "2026-04-13T09:45:01+00:00"
+    Captured_At: "2026-09-10T04:48:03-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 4
+
+  Topics:
+    - "Persian Gulf crude export disruption and oil prices"
+    - "Russian oil revenue and export infrastructure"
+    - "Ukrainian long-range drone capability"
+    - "Counter-drone technology and its cost asymmetry"
+    - "Gulf state investment in Ukrainian defence production"
+    - "Emerging geopolitical alignments against Russia"
+
+  Source:
+    Canonical_ID: "-acUKR8XqXw"
+    Transcribed: "2026-09-10T05:53:23.633163-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1169
+    Segments: 56
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T04:48:04.280488-07:00"
+    Transcription_Finished: "2026-09-10T05:53:23.633163-07:00"
+    Recorded: "2026-04-13"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-acUKR8XqXw.ctm"
+    Fountain: "-acUKR8XqXw.fountain"
+    Diarization_RTTM: "-acUKR8XqXw.rttm"
+    As_Broadcast_Script: "-acUKR8XqXw.script.txt"
+    Segments_JSON: "-acUKR8XqXw.segments.json"
+    Segments_JSONL: "-acUKR8XqXw.segments.jsonl"
+    Subtitles_SRT: "-acUKR8XqXw.srt"
+    Plain_Text: "-acUKR8XqXw.transcription"
+    Subtitles_VTT: "-acUKR8XqXw.vtt"
+    Transcript_SHA256: "3603a7bfb7f9338cf40062cdcb33ee641cfcfff5a765294d2713bd7141b258d8"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "peter_zeihan"
+    video_uid: "peter_zeihan::-acUKR8XqXw"
+    video_key: "-acUKR8XqXw"
+    youtube_id: "-acUKR8XqXw"
+    priority: 100
+    ceiling: 1000
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T11:29:48.986Z"
+    demand_run_id: "job_1789039766260_6"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-acUKR8XqXw"
+    source_ref: "-acUKR8XqXw"
+    subject_kind: "people_only"

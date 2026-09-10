@@ -1,0 +1,136 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Join Peter Zeihan's Live Q&A On Feb. 7"
+    Description: >-
+      A short housekeeping and fundraising announcement rather than an analytical segment. Zeihan announces a
+      Patreon 'question time' for 7 February at noon Eastern, invites analyst-tier members to send questions
+      in advance, and states that subscription fees for January, February and March that would normally be his
+      will instead go to the Los Angeles Food Bank system. He refers to the recent Los Angeles fires,
+      describing the damage as the greatest in absolute terms to any American metro and arguably the greatest
+      in relative terms since the dawn of the industrial age, and adds a self-interested argument for
+      donating: Los Angeles hosts the country's largest container port complex at LA and Long Beach, and
+      further damage there would be felt nationally. The comparative claim about the scale of the fire damage
+      is his own and is not sourced in the recording. The diarizer separated two clusters in this clip and the
+      transcript does not identify who either is, so no speaker is named.
+    URL: "https://www.youtube.com/watch?v=-GbHoKBf9Z4"
+    Video_ID: "-GbHoKBf9Z4"
+    Show: "Zeihan on Geopolitics"
+    Runtime: "00:01:47"
+    Language: "en"
+
+  Media:
+    File: "-GbHoKBf9Z4.m4a"
+    SHA256: "4f1e4c45f401342bc227fc240dd436cd6fd64c59716f64f39d1a60ff42ce4935"
+    Bytes: 1735019
+    Duration_Seconds: 107
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-GbHoKBf9Z4"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-GbHoKBf9Z4.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/peter_zeihan/-GbHoKBf9Z4/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCsy9I56PY3IngCf_VGjunMQ"
+    Uploader_ID: "@ZeihanonGeopolitics"
+    View_Count: 10178
+    Like_Count: 299
+    Comment_Count: 21
+    Availability: "public"
+    Published_At: "2025-01-28T12:30:00+00:00"
+    Captured_At: "2026-09-10T04:47:09-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "90.6%"
+      Turns: 1
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "9.4%"
+      Turns: 1
+
+  Topics:
+    - "Patreon subscriber question-and-answer session"
+    - "Charitable fundraising for the Los Angeles Food Bank"
+    - "The 2025 Los Angeles wildfires"
+    - "Ports of Los Angeles and Long Beach as supply-chain infrastructure"
+
+  Source:
+    Canonical_ID: "-GbHoKBf9Z4"
+    Transcribed: "2026-09-10T05:46:54.223464-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 314
+    Segments: 18
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T04:47:10.399435-07:00"
+    Transcription_Finished: "2026-09-10T05:46:54.223464-07:00"
+    Recorded: "2025-01-28"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-GbHoKBf9Z4.ctm"
+    Fountain: "-GbHoKBf9Z4.fountain"
+    Diarization_RTTM: "-GbHoKBf9Z4.rttm"
+    As_Broadcast_Script: "-GbHoKBf9Z4.script.txt"
+    Segments_JSON: "-GbHoKBf9Z4.segments.json"
+    Segments_JSONL: "-GbHoKBf9Z4.segments.jsonl"
+    Subtitles_SRT: "-GbHoKBf9Z4.srt"
+    Plain_Text: "-GbHoKBf9Z4.transcription"
+    Subtitles_VTT: "-GbHoKBf9Z4.vtt"
+    Transcript_SHA256: "18afb69a13320b51942c2efa60530d3cdae15c41216479b43b823e22493b0efe"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "peter_zeihan"
+    video_uid: "peter_zeihan::-GbHoKBf9Z4"
+    video_key: "-GbHoKBf9Z4"
+    youtube_id: "-GbHoKBf9Z4"
+    priority: 100
+    ceiling: 1000
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T11:29:48.986Z"
+    demand_run_id: "job_1789039766260_6"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-GbHoKBf9Z4"
+    source_ref: "-GbHoKBf9Z4"
+    subject_kind: "people_only"

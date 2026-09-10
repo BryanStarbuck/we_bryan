@@ -1,0 +1,153 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "China's Energy Problem and Dealing with the Taliban || Peter Zeihan"
+    Description: >-
+      A long-form argument that China cannot secure its energy supply, triggered by a regional commander of
+      the TTP — the Pakistani Taliban — publicly offering to permit Chinese infrastructure work through
+      Pakistan in exchange for 5% protection money, with an explicit threat to attack sites and workers
+      otherwise. Zeihan uses this to make a structural point: earlier imperial powers and the US had multiple
+      proximate energy sources and routes, whereas China arrived late, found Southeast Asia largely tapped,
+      and is left with the Persian Gulf. He walks the route's chokepoints — having to choose between Iran and
+      the far larger Saudi exporter, then passing India, Singapore, Australian missile range, Vietnam, the
+      Philippines and Taiwan, under the reach of the US and Japanese navies — and argues a Pakistani overland
+      pipeline over mountain passes is impractical. His conclusion is that China is the most strategically
+      vulnerable major power in history, dependent on a security order it cannot protect, influence or
+      replace. He closes with a qualification: the vulnerability is in oil-derived liquid fuels, while
+      domestic low-quality coal can keep the lights on at severe environmental cost. The TTP statement is
+      reported; the strategic conclusions are his analysis.
+    URL: "https://www.youtube.com/watch?v=-4ct2yCQOK0"
+    Video_ID: "-4ct2yCQOK0"
+    Show: "Zeihan on Geopolitics"
+    Runtime: "00:07:22"
+    Language: "en"
+
+  Media:
+    File: "-4ct2yCQOK0.m4a"
+    SHA256: "b009725181a62b23a3e0571ade48a63d1cbd1d70bf77577f0063588991c8e0ab"
+    Bytes: 7150801
+    Duration_Seconds: 442
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-4ct2yCQOK0"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-4ct2yCQOK0.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/peter_zeihan/-4ct2yCQOK0/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCsy9I56PY3IngCf_VGjunMQ"
+    Uploader_ID: "@ZeihanonGeopolitics"
+    View_Count: 465690
+    Like_Count: 14575
+    Comment_Count: 989
+    Availability: "public"
+    Published_At: "2024-01-18T10:45:01+00:00"
+    Captured_At: "2026-09-10T04:48:06-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "72.1%"
+      Turns: 32
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "26.0%"
+      Turns: 8
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "0.7%"
+      Turns: 1
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "1.2%"
+      Turns: 1
+
+  Topics:
+    - "Chinese energy import dependence and sea-lane vulnerability"
+    - "The Pakistani Taliban and threats to Chinese infrastructure"
+    - "China-Pakistan overland corridor proposals"
+    - "Persian Gulf supplier politics"
+    - "Naval chokepoints and the First Island Chain"
+    - "Coal as China's fallback domestic fuel"
+
+  Source:
+    Canonical_ID: "-4ct2yCQOK0"
+    Transcribed: "2026-09-10T05:54:41.923360-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1349
+    Segments: 106
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T04:48:06.752606-07:00"
+    Transcription_Finished: "2026-09-10T05:54:41.923360-07:00"
+    Recorded: "2024-01-18"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-4ct2yCQOK0.ctm"
+    Fountain: "-4ct2yCQOK0.fountain"
+    Diarization_RTTM: "-4ct2yCQOK0.rttm"
+    As_Broadcast_Script: "-4ct2yCQOK0.script.txt"
+    Segments_JSON: "-4ct2yCQOK0.segments.json"
+    Segments_JSONL: "-4ct2yCQOK0.segments.jsonl"
+    Subtitles_SRT: "-4ct2yCQOK0.srt"
+    Plain_Text: "-4ct2yCQOK0.transcription"
+    Subtitles_VTT: "-4ct2yCQOK0.vtt"
+    Transcript_SHA256: "03f02d9493e3a0a89395281e5e0f7530a484c10e8a34efb9731cd60c9eb523bb"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "peter_zeihan"
+    video_uid: "peter_zeihan::-4ct2yCQOK0"
+    video_key: "-4ct2yCQOK0"
+    youtube_id: "-4ct2yCQOK0"
+    priority: 100
+    ceiling: 1000
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T11:29:48.986Z"
+    demand_run_id: "job_1789039766260_6"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-4ct2yCQOK0"
+    source_ref: "-4ct2yCQOK0"
+    subject_kind: "people_only"

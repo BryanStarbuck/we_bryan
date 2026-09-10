@@ -1,0 +1,132 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "78% of Americans say fast food a luxury"
+    Description: >-
+      A short monologue on a LendingTree survey of 2,000 Americans which St Onge says found 78% now regard
+      fast food as a luxury and 62% are eating less of it because of price. He contrasts menu prices before
+      and after the pandemic — a Big Mac from $3.99 to $8.29, a Chipotle chicken burrito from $6.50 to $10.70
+      — and puts fast-food inflation at 41% by the Fed's data and up to 55% by actual menus, with staples such
+      as nuggets and cheeseburgers up 200% or more. He attributes the rise to $6 trillion of Federal Reserve
+      money printing and $8 trillion of federal deficits, with regulation, shoplifting and rioting as
+      aggravating factors, and argues that if the Big Mac is the better inflation gauge then Americans are
+      poorer than the official statistics suggest. He closes by claiming long-run living-standard indicators
+      have stalled or reversed since 2000 and that elites cannot see it. The causal account and the motives he
+      ascribes are his own and are contested; the officials and agencies he blames are not represented.
+    URL: "https://www.youtube.com/watch?v=-0O2aJbgHVA"
+    Video_ID: "-0O2aJbgHVA"
+    Show: "Peter St Onge, Ph.D."
+    Runtime: "00:03:42"
+    Language: "en"
+
+  Media:
+    File: "-0O2aJbgHVA.m4a"
+    SHA256: "00943022dd4b9f18b73607e7fa3ffcbcb57b3561390e34b28ed2cbc0e008cb52"
+    Bytes: 3595749
+    Duration_Seconds: 222
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-0O2aJbgHVA"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-0O2aJbgHVA.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/peter_st_onge/-0O2aJbgHVA/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCDwR3dznveYdTH3EM5vWWeA"
+    Uploader_ID: "@Profstonge"
+    View_Count: 5075
+    Like_Count: 690
+    Comment_Count: 76
+    Availability: "public"
+    Published_At: "2024-05-28T12:31:26+00:00"
+    Captured_At: "2026-09-10T04:47:34-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 10
+
+  Topics:
+    - "Consumer price inflation and the cost of eating out"
+    - "Fast food prices as an informal inflation gauge"
+    - "Federal Reserve monetary expansion"
+    - "Federal deficit spending"
+    - "Lower-income and working-class consumer spending"
+    - "Long-run living-standard indicators"
+
+  Source:
+    Canonical_ID: "-0O2aJbgHVA"
+    Transcribed: "2026-09-10T05:49:17.969548-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 592
+    Segments: 30
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T04:47:35.162594-07:00"
+    Transcription_Finished: "2026-09-10T05:49:17.969548-07:00"
+    Recorded: "2024-05-28"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-0O2aJbgHVA.ctm"
+    Fountain: "-0O2aJbgHVA.fountain"
+    Diarization_RTTM: "-0O2aJbgHVA.rttm"
+    As_Broadcast_Script: "-0O2aJbgHVA.script.txt"
+    Segments_JSON: "-0O2aJbgHVA.segments.json"
+    Segments_JSONL: "-0O2aJbgHVA.segments.jsonl"
+    Subtitles_SRT: "-0O2aJbgHVA.srt"
+    Plain_Text: "-0O2aJbgHVA.transcription"
+    Subtitles_VTT: "-0O2aJbgHVA.vtt"
+    Transcript_SHA256: "f37604649241a7886ee4459fb1dec15614b5ae554b1458161246f5a852634637"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "peter_st_onge"
+    video_uid: "peter_st_onge::-0O2aJbgHVA"
+    video_key: "-0O2aJbgHVA"
+    youtube_id: "-0O2aJbgHVA"
+    priority: 100
+    ceiling: 1000
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T11:29:48.986Z"
+    demand_run_id: "job_1789039766260_6"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-0O2aJbgHVA"
+    source_ref: "-0O2aJbgHVA"
+    subject_kind: "people_only"

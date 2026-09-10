@@ -1,0 +1,140 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "How the Fed broke housing"
+    Description: >-
+      St Onge summarises an FX Hedgers analysis arguing that the Federal Reserve, acting on behalf of
+      Congress, destroyed housing affordability. He traces a sequence: Lyndon Johnson's 1960s housing
+      subsidies, which he says priced the poor out of their own neighbourhoods; 1970s inflation from Vietnam
+      and Great Society spending, and the Fed's near-20% rate response; a reprieve under Reagan; George W.
+      Bush's expansion of subsidies together with pressure on banks to lend to poor credits and permissive
+      ratings treatment of products like interest-only mortgages, leading to the 2008 crash; then roughly
+      fifteen years of near-zero rates and trillions of mortgage-bond purchases that inflated house prices and
+      rewarded existing owners. He argues housing, not capitalism, is the main driver of the income inequality
+      journalists write about, and that today's 8% mortgages have frozen the market. He predicts lower rates
+      will not help because they would simply re-inflate prices, and endorses the source's phrase 'modern-day
+      serfdom'. The historical causal chain is the argument of the speaker and his cited source, and is
+      contested.
+    URL: "https://www.youtube.com/watch?v=-5L50uWE2ks"
+    Video_ID: "-5L50uWE2ks"
+    Show: "Peter St Onge, Ph.D."
+    Runtime: "00:03:56"
+    Language: "en"
+
+  Media:
+    File: "-5L50uWE2ks.m4a"
+    SHA256: "663ac8305ecd3d028963fd6eb25dddc86ca0d16d7f3c5e126efbb1955715ebb2"
+    Bytes: 3818431
+    Duration_Seconds: 236
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-5L50uWE2ks"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-5L50uWE2ks.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/peter_st_onge/-5L50uWE2ks/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCDwR3dznveYdTH3EM5vWWeA"
+    Uploader_ID: "@Profstonge"
+    View_Count: 4644
+    Like_Count: 611
+    Comment_Count: 27
+    Availability: "public"
+    Published_At: "2023-12-28T15:07:26+00:00"
+    Captured_At: "2026-09-10T04:47:42-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "78.9%"
+      Turns: 3
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "21.1%"
+      Turns: 1
+
+  Topics:
+    - "Housing affordability and home ownership"
+    - "Federal Reserve interest-rate policy and quantitative easing"
+    - "Federal housing subsidies from Johnson onward"
+    - "The 2008 mortgage crisis and its causes"
+    - "Mortgage rate lock-in and frozen housing turnover"
+    - "Housing as a driver of wealth inequality"
+
+  Source:
+    Canonical_ID: "-5L50uWE2ks"
+    Transcribed: "2026-09-10T05:50:16.423727-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 622
+    Segments: 38
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T04:47:43.563450-07:00"
+    Transcription_Finished: "2026-09-10T05:50:16.423727-07:00"
+    Recorded: "2023-12-28"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-5L50uWE2ks.ctm"
+    Fountain: "-5L50uWE2ks.fountain"
+    Diarization_RTTM: "-5L50uWE2ks.rttm"
+    As_Broadcast_Script: "-5L50uWE2ks.script.txt"
+    Segments_JSON: "-5L50uWE2ks.segments.json"
+    Segments_JSONL: "-5L50uWE2ks.segments.jsonl"
+    Subtitles_SRT: "-5L50uWE2ks.srt"
+    Plain_Text: "-5L50uWE2ks.transcription"
+    Subtitles_VTT: "-5L50uWE2ks.vtt"
+    Transcript_SHA256: "d79258d70531fe2e3e58fc8ea9591c4a731ae5ba09f378ae92586ad3a55775de"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "peter_st_onge"
+    video_uid: "peter_st_onge::-5L50uWE2ks"
+    video_key: "-5L50uWE2ks"
+    youtube_id: "-5L50uWE2ks"
+    priority: 100
+    ceiling: 1000
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T11:29:48.986Z"
+    demand_run_id: "job_1789039766260_6"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-5L50uWE2ks"
+    source_ref: "-5L50uWE2ks"
+    subject_kind: "people_only"
