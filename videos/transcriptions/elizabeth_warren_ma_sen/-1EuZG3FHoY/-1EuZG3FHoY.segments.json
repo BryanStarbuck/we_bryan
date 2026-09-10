@@ -1,0 +1,5977 @@
+{
+  "schema_version": 2,
+  "canonical_id": "b2a83688a79915f8",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 342.6,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T01:36:35.223Z",
+  "text_sha256": "ecea8808150250ffc191aca47023ffc707d38a4c80c574295a8c459b6e9737a9",
+  "segments_sha256": "da6414118cd7c6515919c81a8001f0d3ac167012d0f748369aa6738dc692b1ca",
+  "words_sha256": "cc601a86dac1368671c3d571e242e75e2145b4e82e8e8f34dcac5c20483ba158",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 14,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 39,
+    "clusters": 16,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Woman 1",
+      "voice": {
+        "descriptor": "woman",
+        "p": 0.9,
+        "confidence": "high",
+        "clean_s": 248.1
+      },
+      "clean_s": 248.1,
+      "speaking_s": 249.5,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_02",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.1
+      },
+      "clean_s": 1.1,
+      "speaking_s": 1.1,
+      "first_s": 43.8
+    },
+    {
+      "id": "SPEAKER_05",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 3.4
+      },
+      "clean_s": 3.4,
+      "speaking_s": 3.7,
+      "first_s": 58.57
+    },
+    {
+      "id": "SPEAKER_07",
+      "n": 4,
+      "label": "Speaker 4 (higher-pitched voice)",
+      "voice": {
+        "descriptor": "woman",
+        "p": 0.85,
+        "confidence": "low",
+        "clean_s": 22.1
+      },
+      "clean_s": 22.1,
+      "speaking_s": 22.4,
+      "first_s": 164.97
+    },
+    {
+      "id": "SPEAKER_09",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.4
+      },
+      "clean_s": 4.4,
+      "speaking_s": 4.7,
+      "first_s": 167.03
+    },
+    {
+      "id": "SPEAKER_10",
+      "n": 6,
+      "label": "Speaker 6 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.76,
+        "confidence": "low",
+        "clean_s": 26.8
+      },
+      "clean_s": 26.8,
+      "speaking_s": 26.8,
+      "first_s": 172.21
+    },
+    {
+      "id": "SPEAKER_12",
+      "n": 7,
+      "label": "Speaker 7",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.1
+      },
+      "clean_s": 1.1,
+      "speaking_s": 1.1,
+      "first_s": 198.97
+    },
+    {
+      "id": "SPEAKER_13",
+      "n": 8,
+      "label": "Speaker 8",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.1
+      },
+      "clean_s": 1.1,
+      "speaking_s": 2,
+      "first_s": 268.88
+    },
+    {
+      "id": "SPEAKER_14",
+      "n": 9,
+      "label": "Speaker 9",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 3.7
+      },
+      "clean_s": 3.7,
+      "speaking_s": 4.5,
+      "first_s": 270.06
+    },
+    {
+      "id": "SPEAKER_15",
+      "n": 10,
+      "label": "Speaker 10",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0
+      },
+      "clean_s": 0,
+      "speaking_s": 1.5,
+      "first_s": 274.92
+    },
+    {
+      "id": "SPEAKER_16",
+      "n": 11,
+      "label": "Speaker 11",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0
+      },
+      "clean_s": 0,
+      "speaking_s": 1.9,
+      "first_s": 275.97
+    },
+    {
+      "id": "SPEAKER_17",
+      "n": 12,
+      "label": "Speaker 12",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.6
+      },
+      "clean_s": 0.6,
+      "speaking_s": 2,
+      "first_s": 276.44
+    },
+    {
+      "id": "SPEAKER_18",
+      "n": 13,
+      "label": "Speaker 13",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.5
+      },
+      "clean_s": 1.5,
+      "speaking_s": 1.5,
+      "first_s": 278.84
+    },
+    {
+      "id": "SPEAKER_19",
+      "n": 14,
+      "label": "Speaker 14",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 3.1
+      },
+      "clean_s": 3.1,
+      "speaking_s": 3.2,
+      "first_s": 281.24
+    },
+    {
+      "id": "SPEAKER_21",
+      "n": 15,
+      "label": "Speaker 15",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 6.2
+      },
+      "clean_s": 6.2,
+      "speaking_s": 6.2,
+      "first_s": 287.78
+    },
+    {
+      "id": "SPEAKER_26",
+      "n": 16,
+      "label": "Speaker 16",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 0.2
+      },
+      "clean_s": 0.2,
+      "speaking_s": 1.2,
+      "first_s": 341.36
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 23.03,
+      "end_s": 23.48,
+      "segment_i": 1,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 43.42,
+      "end_s": 43.49,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 145.87,
+      "end_s": 145.87,
+      "segment_i": 11,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 172.29,
+      "end_s": 172.29,
+      "segment_i": 16,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 220.51,
+      "end_s": 220.62,
+      "segment_i": 21,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 256.07,
+      "end_s": 256.07,
+      "segment_i": 24,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 310.4,
+      "end_s": 310.4,
+      "segment_i": 37,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 328.23,
+      "end_s": 328.76,
+      "segment_i": 40,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.21,
+      "end_s": 23.03,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you Mr. Chairman. So today I'm going to talk about how criminals are using our financial system to move money to finance terrorists, drug traffickers, and sanctioned countries like Russia and Iran and North Korea. Our witnesses are the CEOs of the largest banks in the United States and they deal with this issue every single",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 0.21,
+          "e": 0.37,
+          "c": 0.757949
+        },
+        {
+          "w": "you",
+          "s": 0.42,
+          "e": 0.57,
+          "c": 0.833751
+        },
+        {
+          "w": "Mr.",
+          "s": 0.58,
+          "e": 0.95,
+          "c": 0.349664
+        },
+        {
+          "w": "Chairman.",
+          "s": 0.95,
+          "e": 1.84,
+          "c": 0.760572
+        },
+        {
+          "w": "So",
+          "s": 1.84,
+          "e": 1.99,
+          "c": 0.672771
+        },
+        {
+          "w": "today",
+          "s": 2.04,
+          "e": 2.5,
+          "c": 0.930889
+        },
+        {
+          "w": "I'm",
+          "s": 2.5,
+          "e": 2.8,
+          "c": 0.684881
+        },
+        {
+          "w": "going",
+          "s": 2.8,
+          "e": 2.99,
+          "c": 0.958027
+        },
+        {
+          "w": "to",
+          "s": 2.99,
+          "e": 3.08,
+          "c": 0.993271
+        },
+        {
+          "w": "talk",
+          "s": 3.08,
+          "e": 3.25,
+          "c": 0.986099
+        },
+        {
+          "w": "about",
+          "s": 3.25,
+          "e": 3.46,
+          "c": 0.994727
+        },
+        {
+          "w": "how",
+          "s": 3.46,
+          "e": 3.59,
+          "c": 0.991892
+        },
+        {
+          "w": "criminals",
+          "s": 3.6,
+          "e": 4.16,
+          "c": 0.979753
+        },
+        {
+          "w": "are",
+          "s": 4.16,
+          "e": 4.28,
+          "c": 0.981023
+        },
+        {
+          "w": "using",
+          "s": 4.28,
+          "e": 4.6,
+          "c": 0.659818
+        },
+        {
+          "w": "our",
+          "s": 4.6,
+          "e": 4.72,
+          "c": 0.625789
+        },
+        {
+          "w": "financial",
+          "s": 4.93,
+          "e": 5.59,
+          "c": 0.993837
+        },
+        {
+          "w": "system",
+          "s": 5.64,
+          "e": 5.91,
+          "c": 0.996856
+        },
+        {
+          "w": "to",
+          "s": 6.4,
+          "e": 6.44,
+          "c": 0.99163
+        },
+        {
+          "w": "move",
+          "s": 6.44,
+          "e": 6.84,
+          "c": 0.998858
+        },
+        {
+          "w": "money",
+          "s": 6.84,
+          "e": 7.28,
+          "c": 0.999756
+        },
+        {
+          "w": "to",
+          "s": 7.45,
+          "e": 7.54,
+          "c": 0.990316
+        },
+        {
+          "w": "finance",
+          "s": 7.54,
+          "e": 8.24,
+          "c": 0.994425
+        },
+        {
+          "w": "terrorists,",
+          "s": 8.24,
+          "e": 9.09,
+          "c": 0.879857
+        },
+        {
+          "w": "drug",
+          "s": 9.09,
+          "e": 9.36,
+          "c": 0.995036
+        },
+        {
+          "w": "traffickers,",
+          "s": 9.36,
+          "e": 10.34,
+          "c": 0.590612
+        },
+        {
+          "w": "and",
+          "s": 10.34,
+          "e": 10.68,
+          "c": 0.963398
+        },
+        {
+          "w": "sanctioned",
+          "s": 10.89,
+          "e": 11.61,
+          "c": 0.988612
+        },
+        {
+          "w": "countries",
+          "s": 11.61,
+          "e": 12.46,
+          "c": 0.998277
+        },
+        {
+          "w": "like",
+          "s": 12.46,
+          "e": 12.83,
+          "c": 0.867449
+        },
+        {
+          "w": "Russia",
+          "s": 12.83,
+          "e": 13.24,
+          "c": 0.996031
+        },
+        {
+          "w": "and",
+          "s": 13.41,
+          "e": 13.67,
+          "c": 0.733475
+        },
+        {
+          "w": "Iran",
+          "s": 13.67,
+          "e": 13.99,
+          "c": 0.99874
+        },
+        {
+          "w": "and",
+          "s": 14.06,
+          "e": 14.32,
+          "c": 0.883147
+        },
+        {
+          "w": "North",
+          "s": 14.32,
+          "e": 14.79,
+          "c": 0.99515
+        },
+        {
+          "w": "Korea.",
+          "s": 14.79,
+          "e": 15.6,
+          "c": 0.991227
+        },
+        {
+          "w": "Our",
+          "s": 15.6,
+          "e": 15.78,
+          "c": 0.919975
+        },
+        {
+          "w": "witnesses",
+          "s": 15.78,
+          "e": 16.33,
+          "c": 0.97214
+        },
+        {
+          "w": "are",
+          "s": 16.33,
+          "e": 16.52,
+          "c": 0.997617
+        },
+        {
+          "w": "the",
+          "s": 16.73,
+          "e": 16.73,
+          "c": 0.992125
+        },
+        {
+          "w": "CEOs",
+          "s": 16.73,
+          "e": 17.01,
+          "c": 0.937242
+        },
+        {
+          "w": "of",
+          "s": 17.01,
+          "e": 17.15,
+          "c": 0.997805
+        },
+        {
+          "w": "the",
+          "s": 17.15,
+          "e": 17.36,
+          "c": 0.544247
+        },
+        {
+          "w": "largest",
+          "s": 17.36,
+          "e": 17.71,
+          "c": 0.999468
+        },
+        {
+          "w": "banks",
+          "s": 18.19,
+          "e": 18.2,
+          "c": 0.998616
+        },
+        {
+          "w": "in",
+          "s": 18.23,
+          "e": 18.34,
+          "c": 0.970276
+        },
+        {
+          "w": "the",
+          "s": 18.34,
+          "e": 18.51,
+          "c": 0.998778
+        },
+        {
+          "w": "United",
+          "s": 18.56,
+          "e": 18.97,
+          "c": 0.997314
+        },
+        {
+          "w": "States",
+          "s": 18.97,
+          "e": 19.39,
+          "c": 0.997763
+        },
+        {
+          "w": "and",
+          "s": 19.39,
+          "e": 19.6,
+          "c": 0.757868
+        },
+        {
+          "w": "they",
+          "s": 19.6,
+          "e": 19.83,
+          "c": 0.998877
+        },
+        {
+          "w": "deal",
+          "s": 19.9,
+          "e": 20.16,
+          "c": 0.999173
+        },
+        {
+          "w": "with",
+          "s": 20.16,
+          "e": 20.44,
+          "c": 0.999295
+        },
+        {
+          "w": "this",
+          "s": 20.44,
+          "e": 20.75,
+          "c": 0.995889
+        },
+        {
+          "w": "issue",
+          "s": 20.97,
+          "e": 21.47,
+          "c": 0.999012
+        },
+        {
+          "w": "every",
+          "s": 21.47,
+          "e": 21.95,
+          "c": 0.998542
+        },
+        {
+          "w": "single",
+          "s": 22.47,
+          "e": 23.03,
+          "c": 0.998037
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 23.03,
+      "end_s": 23.48,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "day.",
+      "words": [
+        {
+          "w": "day.",
+          "s": 23.03,
+          "e": 23.48,
+          "c": 0.980726
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 23.6,
+      "end_s": 43.48,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Mr. Moynihan, you are the CEO of Bank of America, so let me ask you: If a terrorist group that wanted to attack the United States tried to move money through Bank of America accounts, do you have systems in place to identify that activity, to report it to law enforcement, and to shut it down?",
+      "words": [
+        {
+          "w": "Mr.",
+          "s": 23.6,
+          "e": 23.85,
+          "c": 0.923374
+        },
+        {
+          "w": "Moynihan,",
+          "s": 23.86,
+          "e": 24.7,
+          "c": 0.905113
+        },
+        {
+          "w": "you",
+          "s": 24.78,
+          "e": 24.93,
+          "c": 0.963081
+        },
+        {
+          "w": "are",
+          "s": 24.93,
+          "e": 25.16,
+          "c": 0.977415
+        },
+        {
+          "w": "the",
+          "s": 25.16,
+          "e": 25.39,
+          "c": 0.995799
+        },
+        {
+          "w": "CEO",
+          "s": 25.39,
+          "e": 25.62,
+          "c": 0.995613
+        },
+        {
+          "w": "of",
+          "s": 25.62,
+          "e": 25.77,
+          "c": 0.982713
+        },
+        {
+          "w": "Bank",
+          "s": 25.77,
+          "e": 26.07,
+          "c": 0.956749
+        },
+        {
+          "w": "of",
+          "s": 26.07,
+          "e": 26.22,
+          "c": 0.994108
+        },
+        {
+          "w": "America,",
+          "s": 26.22,
+          "e": 26.79,
+          "c": 0.615832
+        },
+        {
+          "w": "so",
+          "s": 26.86,
+          "e": 27.03,
+          "c": 0.850003
+        },
+        {
+          "w": "let",
+          "s": 27.03,
+          "e": 27.32,
+          "c": 0.98233
+        },
+        {
+          "w": "me",
+          "s": 27.32,
+          "e": 27.51,
+          "c": 0.997849
+        },
+        {
+          "w": "ask",
+          "s": 27.51,
+          "e": 27.79,
+          "c": 0.996947
+        },
+        {
+          "w": "you:",
+          "s": 27.8,
+          "e": 28.19,
+          "c": 0.312588
+        },
+        {
+          "w": "If",
+          "s": 28.2,
+          "e": 28.32,
+          "c": 0.536752
+        },
+        {
+          "w": "a",
+          "s": 28.38,
+          "e": 28.38,
+          "c": 0.959388
+        },
+        {
+          "w": "terrorist",
+          "s": 28.46,
+          "e": 28.94,
+          "c": 0.998574
+        },
+        {
+          "w": "group",
+          "s": 28.94,
+          "e": 29.11,
+          "c": 0.997284
+        },
+        {
+          "w": "that",
+          "s": 29.51,
+          "e": 29.51,
+          "c": 0.990033
+        },
+        {
+          "w": "wanted",
+          "s": 29.64,
+          "e": 29.89,
+          "c": 0.997428
+        },
+        {
+          "w": "to",
+          "s": 29.89,
+          "e": 30,
+          "c": 0.998426
+        },
+        {
+          "w": "attack",
+          "s": 30,
+          "e": 30.39,
+          "c": 0.995355
+        },
+        {
+          "w": "the",
+          "s": 30.39,
+          "e": 30.58,
+          "c": 0.989023
+        },
+        {
+          "w": "United",
+          "s": 30.58,
+          "e": 30.96,
+          "c": 0.977373
+        },
+        {
+          "w": "States",
+          "s": 30.96,
+          "e": 31.33,
+          "c": 0.994429
+        },
+        {
+          "w": "tried",
+          "s": 31.4,
+          "e": 31.74,
+          "c": 0.841269
+        },
+        {
+          "w": "to",
+          "s": 31.75,
+          "e": 31.84,
+          "c": 0.987933
+        },
+        {
+          "w": "move",
+          "s": 31.84,
+          "e": 32.08,
+          "c": 0.986984
+        },
+        {
+          "w": "money",
+          "s": 32.08,
+          "e": 32.55,
+          "c": 0.976306
+        },
+        {
+          "w": "through",
+          "s": 33.2,
+          "e": 33.28,
+          "c": 0.563166
+        },
+        {
+          "w": "Bank",
+          "s": 33.35,
+          "e": 33.6,
+          "c": 0.926403
+        },
+        {
+          "w": "of",
+          "s": 33.6,
+          "e": 33.76,
+          "c": 0.98914
+        },
+        {
+          "w": "America",
+          "s": 33.76,
+          "e": 34.28,
+          "c": 0.993199
+        },
+        {
+          "w": "accounts,",
+          "s": 34.43,
+          "e": 35.54,
+          "c": 0.92822
+        },
+        {
+          "w": "do",
+          "s": 35.7,
+          "e": 35.7,
+          "c": 0.976321
+        },
+        {
+          "w": "you",
+          "s": 35.8,
+          "e": 35.94,
+          "c": 0.99935
+        },
+        {
+          "w": "have",
+          "s": 35.96,
+          "e": 36.27,
+          "c": 0.999613
+        },
+        {
+          "w": "systems",
+          "s": 36.27,
+          "e": 36.45,
+          "c": 0.997105
+        },
+        {
+          "w": "in",
+          "s": 36.88,
+          "e": 37.01,
+          "c": 0.999554
+        },
+        {
+          "w": "place",
+          "s": 37.01,
+          "e": 37.41,
+          "c": 0.999235
+        },
+        {
+          "w": "to",
+          "s": 37.41,
+          "e": 37.58,
+          "c": 0.998184
+        },
+        {
+          "w": "identify",
+          "s": 37.58,
+          "e": 38.23,
+          "c": 0.998969
+        },
+        {
+          "w": "that",
+          "s": 38.24,
+          "e": 38.57,
+          "c": 0.998075
+        },
+        {
+          "w": "activity,",
+          "s": 38.57,
+          "e": 39.44,
+          "c": 0.941647
+        },
+        {
+          "w": "to",
+          "s": 39.44,
+          "e": 39.59,
+          "c": 0.85842
+        },
+        {
+          "w": "report",
+          "s": 39.59,
+          "e": 39.92,
+          "c": 0.998801
+        },
+        {
+          "w": "it",
+          "s": 40.02,
+          "e": 40.19,
+          "c": 0.996365
+        },
+        {
+          "w": "to",
+          "s": 40.19,
+          "e": 40.34,
+          "c": 0.998582
+        },
+        {
+          "w": "law",
+          "s": 40.54,
+          "e": 40.56,
+          "c": 0.993078
+        },
+        {
+          "w": "enforcement,",
+          "s": 40.56,
+          "e": 41.58,
+          "c": 0.79876
+        },
+        {
+          "w": "and",
+          "s": 41.58,
+          "e": 41.83,
+          "c": 0.941217
+        },
+        {
+          "w": "to",
+          "s": 41.91,
+          "e": 42.1,
+          "c": 0.996981
+        },
+        {
+          "w": "shut",
+          "s": 42.1,
+          "e": 42.52,
+          "c": 0.996453
+        },
+        {
+          "w": "it",
+          "s": 42.52,
+          "e": 42.65,
+          "c": 0.999672
+        },
+        {
+          "w": "down?",
+          "s": 42.79,
+          "e": 43.48,
+          "c": 0.983791
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 43.42,
+      "end_s": 43.49,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "-",
+      "words": [
+        {
+          "w": "-",
+          "s": 43.424,
+          "e": 43.494,
+          "c": 0.156123
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 43.49,
+      "end_s": 45.08,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Yes, we do, Senator.",
+      "words": [
+        {
+          "w": "Yes,",
+          "s": 43.494,
+          "e": 43.864,
+          "c": 0.5363
+        },
+        {
+          "w": "we",
+          "s": 43.874,
+          "e": 44.014,
+          "c": 0.997744
+        },
+        {
+          "w": "do,",
+          "s": 44.014,
+          "e": 44.264,
+          "c": 0.838288
+        },
+        {
+          "w": "Senator.",
+          "s": 44.314,
+          "e": 45.084,
+          "c": 0.902536
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 45.08,
+      "end_s": 58.51,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "- Okay, Mr. Diamond, you are the CEO of JPMorgan. What about you? If terrorist group tried to move money through JPMorgan accounts, do you have systems in place to catch it, to report it, and to shut it down?",
+      "words": [
+        {
+          "w": "-",
+          "s": 45.084,
+          "e": 45.164,
+          "c": 0.995644
+        },
+        {
+          "w": "Okay,",
+          "s": 45.164,
+          "e": 45.674,
+          "c": 0.78386
+        },
+        {
+          "w": "Mr.",
+          "s": 45.674,
+          "e": 46.094,
+          "c": 0.9849
+        },
+        {
+          "w": "Diamond,",
+          "s": 46.094,
+          "e": 46.904,
+          "c": 0.648946
+        },
+        {
+          "w": "you",
+          "s": 46.904,
+          "e": 47.194,
+          "c": 0.845238
+        },
+        {
+          "w": "are",
+          "s": 47.194,
+          "e": 47.484,
+          "c": 0.998108
+        },
+        {
+          "w": "the",
+          "s": 47.534,
+          "e": 47.774,
+          "c": 0.995611
+        },
+        {
+          "w": "CEO",
+          "s": 47.774,
+          "e": 48.054,
+          "c": 0.994768
+        },
+        {
+          "w": "of",
+          "s": 48.054,
+          "e": 48.124,
+          "c": 0.963274
+        },
+        {
+          "w": "JPMorgan.",
+          "s": 48.174,
+          "e": 48.904,
+          "c": 0.491084
+        },
+        {
+          "w": "What",
+          "s": 48.904,
+          "e": 49.124,
+          "c": 0.998134
+        },
+        {
+          "w": "about",
+          "s": 49.294,
+          "e": 49.404,
+          "c": 0.999373
+        },
+        {
+          "w": "you?",
+          "s": 49.404,
+          "e": 49.734,
+          "c": 0.776602
+        },
+        {
+          "w": "If",
+          "s": 49.744,
+          "e": 49.874,
+          "c": 0.780046
+        },
+        {
+          "w": "terrorist",
+          "s": 49.874,
+          "e": 50.494,
+          "c": 0.496641
+        },
+        {
+          "w": "group",
+          "s": 50.494,
+          "e": 50.824,
+          "c": 0.947784
+        },
+        {
+          "w": "tried",
+          "s": 50.824,
+          "e": 51.074,
+          "c": 0.98072
+        },
+        {
+          "w": "to",
+          "s": 51.164,
+          "e": 51.284,
+          "c": 0.99485
+        },
+        {
+          "w": "move",
+          "s": 51.434,
+          "e": 51.574,
+          "c": 0.998498
+        },
+        {
+          "w": "money",
+          "s": 51.574,
+          "e": 51.944,
+          "c": 0.997879
+        },
+        {
+          "w": "through",
+          "s": 52.034,
+          "e": 52.444,
+          "c": 0.999134
+        },
+        {
+          "w": "JPMorgan",
+          "s": 52.444,
+          "e": 52.984,
+          "c": 0.930644
+        },
+        {
+          "w": "accounts,",
+          "s": 52.984,
+          "e": 53.624,
+          "c": 0.965874
+        },
+        {
+          "w": "do",
+          "s": 53.654,
+          "e": 53.684,
+          "c": 0.523249
+        },
+        {
+          "w": "you",
+          "s": 53.684,
+          "e": 53.784,
+          "c": 0.976408
+        },
+        {
+          "w": "have",
+          "s": 53.784,
+          "e": 53.944,
+          "c": 0.998439
+        },
+        {
+          "w": "systems",
+          "s": 53.944,
+          "e": 54.494,
+          "c": 0.987897
+        },
+        {
+          "w": "in",
+          "s": 54.524,
+          "e": 54.814,
+          "c": 0.900445
+        },
+        {
+          "w": "place",
+          "s": 54.814,
+          "e": 55.544,
+          "c": 0.998051
+        },
+        {
+          "w": "to",
+          "s": 55.544,
+          "e": 55.684,
+          "c": 0.999828
+        },
+        {
+          "w": "catch",
+          "s": 55.684,
+          "e": 56.044,
+          "c": 0.998239
+        },
+        {
+          "w": "it,",
+          "s": 56.044,
+          "e": 56.324,
+          "c": 0.99423
+        },
+        {
+          "w": "to",
+          "s": 56.324,
+          "e": 56.464,
+          "c": 0.998226
+        },
+        {
+          "w": "report",
+          "s": 56.464,
+          "e": 56.874,
+          "c": 0.99954
+        },
+        {
+          "w": "it,",
+          "s": 56.874,
+          "e": 57.184,
+          "c": 0.884352
+        },
+        {
+          "w": "and",
+          "s": 57.234,
+          "e": 57.394,
+          "c": 0.99364
+        },
+        {
+          "w": "to",
+          "s": 57.424,
+          "e": 57.544,
+          "c": 0.998841
+        },
+        {
+          "w": "shut",
+          "s": 57.544,
+          "e": 57.834,
+          "c": 0.999439
+        },
+        {
+          "w": "it",
+          "s": 57.834,
+          "e": 57.974,
+          "c": 0.999662
+        },
+        {
+          "w": "down?",
+          "s": 57.994,
+          "e": 58.514,
+          "c": 0.981111
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 58.56,
+      "end_s": 61.89,
+      "speaker": "SPEAKER_05",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "- We have extensive systems in place, but no system is foolproof.",
+      "words": [
+        {
+          "w": "-",
+          "s": 58.564,
+          "e": 58.624,
+          "c": 0.999655
+        },
+        {
+          "w": "We",
+          "s": 58.624,
+          "e": 58.734,
+          "c": 0.999115
+        },
+        {
+          "w": "have",
+          "s": 58.954,
+          "e": 59.004,
+          "c": 0.999622
+        },
+        {
+          "w": "extensive",
+          "s": 59.014,
+          "e": 59.594,
+          "c": 0.997931
+        },
+        {
+          "w": "systems",
+          "s": 59.594,
+          "e": 59.894,
+          "c": 0.996658
+        },
+        {
+          "w": "in",
+          "s": 60.174,
+          "e": 60.174,
+          "c": 0.99806
+        },
+        {
+          "w": "place,",
+          "s": 60.254,
+          "e": 60.524,
+          "c": 0.819849
+        },
+        {
+          "w": "but",
+          "s": 60.524,
+          "e": 60.694,
+          "c": 0.999847
+        },
+        {
+          "w": "no",
+          "s": 60.724,
+          "e": 60.814,
+          "c": 0.99859
+        },
+        {
+          "w": "system",
+          "s": 60.924,
+          "e": 61.174,
+          "c": 0.965407
+        },
+        {
+          "w": "is",
+          "s": 61.174,
+          "e": 61.294,
+          "c": 0.967456
+        },
+        {
+          "w": "foolproof.",
+          "s": 61.294,
+          "e": 61.894,
+          "c": 0.960464
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 62.02,
+      "end_s": 70.56,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "- Okay, but you do have systems in place. Work on this every day. And let me just ask all of you, in the interest of time, just raise your hand",
+      "words": [
+        {
+          "w": "-",
+          "s": 62.024,
+          "e": 62.084,
+          "c": 0.99947
+        },
+        {
+          "w": "Okay,",
+          "s": 62.084,
+          "e": 62.484,
+          "c": 0.886286
+        },
+        {
+          "w": "but",
+          "s": 62.484,
+          "e": 62.684,
+          "c": 0.997375
+        },
+        {
+          "w": "you",
+          "s": 62.684,
+          "e": 62.864,
+          "c": 0.998698
+        },
+        {
+          "w": "do",
+          "s": 62.884,
+          "e": 63.004,
+          "c": 0.99874
+        },
+        {
+          "w": "have",
+          "s": 63.014,
+          "e": 63.284,
+          "c": 0.999045
+        },
+        {
+          "w": "systems",
+          "s": 63.284,
+          "e": 63.764,
+          "c": 0.998696
+        },
+        {
+          "w": "in",
+          "s": 63.764,
+          "e": 63.874,
+          "c": 0.996962
+        },
+        {
+          "w": "place.",
+          "s": 63.904,
+          "e": 64.324,
+          "c": 0.57227
+        },
+        {
+          "w": "Work",
+          "s": 64.324,
+          "e": 64.594,
+          "c": 0.714162
+        },
+        {
+          "w": "on",
+          "s": 64.714,
+          "e": 64.734,
+          "c": 0.998414
+        },
+        {
+          "w": "this",
+          "s": 64.774,
+          "e": 65.044,
+          "c": 0.998904
+        },
+        {
+          "w": "every",
+          "s": 65.044,
+          "e": 65.404,
+          "c": 0.94829
+        },
+        {
+          "w": "day.",
+          "s": 65.404,
+          "e": 65.704,
+          "c": 0.915541
+        },
+        {
+          "w": "And",
+          "s": 65.864,
+          "e": 66.024,
+          "c": 0.942435
+        },
+        {
+          "w": "let",
+          "s": 66.024,
+          "e": 66.174,
+          "c": 0.976284
+        },
+        {
+          "w": "me",
+          "s": 66.254,
+          "e": 66.274,
+          "c": 0.999277
+        },
+        {
+          "w": "just",
+          "s": 66.314,
+          "e": 66.484,
+          "c": 0.996031
+        },
+        {
+          "w": "ask",
+          "s": 66.494,
+          "e": 66.654,
+          "c": 0.999199
+        },
+        {
+          "w": "all",
+          "s": 66.654,
+          "e": 66.784,
+          "c": 0.997558
+        },
+        {
+          "w": "of",
+          "s": 66.844,
+          "e": 66.914,
+          "c": 0.994829
+        },
+        {
+          "w": "you,",
+          "s": 66.914,
+          "e": 67.184,
+          "c": 0.572714
+        },
+        {
+          "w": "in",
+          "s": 67.184,
+          "e": 67.234,
+          "c": 0.630729
+        },
+        {
+          "w": "the",
+          "s": 67.264,
+          "e": 67.364,
+          "c": 0.994937
+        },
+        {
+          "w": "interest",
+          "s": 67.554,
+          "e": 67.734,
+          "c": 0.896543
+        },
+        {
+          "w": "of",
+          "s": 67.744,
+          "e": 67.964,
+          "c": 0.989104
+        },
+        {
+          "w": "time,",
+          "s": 67.964,
+          "e": 68.644,
+          "c": 0.963031
+        },
+        {
+          "w": "just",
+          "s": 68.714,
+          "e": 69.084,
+          "c": 0.997522
+        },
+        {
+          "w": "raise",
+          "s": 69.094,
+          "e": 69.654,
+          "c": 0.998571
+        },
+        {
+          "w": "your",
+          "s": 69.654,
+          "e": 69.974,
+          "c": 0.999152
+        },
+        {
+          "w": "hand",
+          "s": 70.334,
+          "e": 70.564,
+          "c": 0.999363
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 70.75,
+      "end_s": 100.49,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "if you have those programs in place. Good. I see all the hands up. Look, I believe that none of you want your banks to be used to finance terrorist attacks. But let's be clear, none of you runs these anti-money laundering programs out of the goodness of your hearts. Back in 1970, Congress passed the Bank Secrecy Act to make sure that banks don't run a financial system that is open to terrorists and drug traffickers and rogue nations.",
+      "words": [
+        {
+          "w": "if",
+          "s": 70.748,
+          "e": 70.758,
+          "c": 0.839485
+        },
+        {
+          "w": "you",
+          "s": 70.758,
+          "e": 71.098,
+          "c": 0.999478
+        },
+        {
+          "w": "have",
+          "s": 71.098,
+          "e": 71.488,
+          "c": 0.999451
+        },
+        {
+          "w": "those",
+          "s": 71.638,
+          "e": 72.118,
+          "c": 0.998138
+        },
+        {
+          "w": "programs",
+          "s": 72.178,
+          "e": 73.048,
+          "c": 0.994846
+        },
+        {
+          "w": "in",
+          "s": 73.048,
+          "e": 73.278,
+          "c": 0.996544
+        },
+        {
+          "w": "place.",
+          "s": 73.278,
+          "e": 74.228,
+          "c": 0.740922
+        },
+        {
+          "w": "Good.",
+          "s": 74.448,
+          "e": 75.028,
+          "c": 0.55613
+        },
+        {
+          "w": "I",
+          "s": 75.028,
+          "e": 75.098,
+          "c": 0.860705
+        },
+        {
+          "w": "see",
+          "s": 75.098,
+          "e": 75.178,
+          "c": 0.999146
+        },
+        {
+          "w": "all",
+          "s": 75.338,
+          "e": 75.508,
+          "c": 0.998039
+        },
+        {
+          "w": "the",
+          "s": 75.678,
+          "e": 75.728,
+          "c": 0.989598
+        },
+        {
+          "w": "hands",
+          "s": 75.728,
+          "e": 76.068,
+          "c": 0.998776
+        },
+        {
+          "w": "up.",
+          "s": 76.068,
+          "e": 76.428,
+          "c": 0.983761
+        },
+        {
+          "w": "Look,",
+          "s": 76.648,
+          "e": 76.768,
+          "c": 0.893496
+        },
+        {
+          "w": "I",
+          "s": 76.878,
+          "e": 76.878,
+          "c": 0.997666
+        },
+        {
+          "w": "believe",
+          "s": 76.918,
+          "e": 77.338,
+          "c": 0.999119
+        },
+        {
+          "w": "that",
+          "s": 77.338,
+          "e": 77.598,
+          "c": 0.95793
+        },
+        {
+          "w": "none",
+          "s": 77.598,
+          "e": 77.708,
+          "c": 0.996664
+        },
+        {
+          "w": "of",
+          "s": 77.878,
+          "e": 77.988,
+          "c": 0.999045
+        },
+        {
+          "w": "you",
+          "s": 77.988,
+          "e": 78.228,
+          "c": 0.998517
+        },
+        {
+          "w": "want",
+          "s": 78.228,
+          "e": 78.528,
+          "c": 0.420444
+        },
+        {
+          "w": "your",
+          "s": 78.528,
+          "e": 78.828,
+          "c": 0.978424
+        },
+        {
+          "w": "banks",
+          "s": 78.828,
+          "e": 79.228,
+          "c": 0.981135
+        },
+        {
+          "w": "to",
+          "s": 79.228,
+          "e": 79.328,
+          "c": 0.700302
+        },
+        {
+          "w": "be",
+          "s": 79.328,
+          "e": 79.358,
+          "c": 0.986353
+        },
+        {
+          "w": "used",
+          "s": 79.358,
+          "e": 79.928,
+          "c": 0.979645
+        },
+        {
+          "w": "to",
+          "s": 79.928,
+          "e": 80.028,
+          "c": 0.785331
+        },
+        {
+          "w": "finance",
+          "s": 80.438,
+          "e": 80.528,
+          "c": 0.901582
+        },
+        {
+          "w": "terrorist",
+          "s": 80.528,
+          "e": 81.368,
+          "c": 0.903787
+        },
+        {
+          "w": "attacks.",
+          "s": 81.368,
+          "e": 82.028,
+          "c": 0.638685
+        },
+        {
+          "w": "But",
+          "s": 82.248,
+          "e": 82.248,
+          "c": 0.982354
+        },
+        {
+          "w": "let's",
+          "s": 82.248,
+          "e": 82.618,
+          "c": 0.94875
+        },
+        {
+          "w": "be",
+          "s": 82.618,
+          "e": 82.768,
+          "c": 0.999012
+        },
+        {
+          "w": "clear,",
+          "s": 82.768,
+          "e": 83.308,
+          "c": 0.401861
+        },
+        {
+          "w": "none",
+          "s": 83.478,
+          "e": 83.588,
+          "c": 0.770186
+        },
+        {
+          "w": "of",
+          "s": 83.588,
+          "e": 83.718,
+          "c": 0.999075
+        },
+        {
+          "w": "you",
+          "s": 83.718,
+          "e": 83.928,
+          "c": 0.997737
+        },
+        {
+          "w": "runs",
+          "s": 83.928,
+          "e": 84.318,
+          "c": 0.927639
+        },
+        {
+          "w": "these",
+          "s": 84.328,
+          "e": 84.528,
+          "c": 0.971532
+        },
+        {
+          "w": "anti-money",
+          "s": 84.528,
+          "e": 84.948,
+          "c": 0.819575
+        },
+        {
+          "w": "laundering",
+          "s": 84.948,
+          "e": 85.668,
+          "c": 0.98947
+        },
+        {
+          "w": "programs",
+          "s": 86.038,
+          "e": 86.228,
+          "c": 0.979593
+        },
+        {
+          "w": "out",
+          "s": 86.228,
+          "e": 86.238,
+          "c": 0.583281
+        },
+        {
+          "w": "of",
+          "s": 86.528,
+          "e": 86.528,
+          "c": 0.990728
+        },
+        {
+          "w": "the",
+          "s": 86.588,
+          "e": 86.708,
+          "c": 0.99211
+        },
+        {
+          "w": "goodness",
+          "s": 86.738,
+          "e": 87.188,
+          "c": 0.992135
+        },
+        {
+          "w": "of",
+          "s": 87.188,
+          "e": 87.308,
+          "c": 0.993606
+        },
+        {
+          "w": "your",
+          "s": 87.308,
+          "e": 87.548,
+          "c": 0.998228
+        },
+        {
+          "w": "hearts.",
+          "s": 87.548,
+          "e": 88.128,
+          "c": 0.923016
+        },
+        {
+          "w": "Back",
+          "s": 88.348,
+          "e": 88.448,
+          "c": 0.998035
+        },
+        {
+          "w": "in",
+          "s": 88.448,
+          "e": 88.468,
+          "c": 0.999163
+        },
+        {
+          "w": "1970,",
+          "s": 88.618,
+          "e": 89.718,
+          "c": 0.91352
+        },
+        {
+          "w": "Congress",
+          "s": 89.778,
+          "e": 90.398,
+          "c": 0.941271
+        },
+        {
+          "w": "passed",
+          "s": 90.398,
+          "e": 90.898,
+          "c": 0.996468
+        },
+        {
+          "w": "the",
+          "s": 90.898,
+          "e": 91.048,
+          "c": 0.979886
+        },
+        {
+          "w": "Bank",
+          "s": 91.048,
+          "e": 91.448,
+          "c": 0.940003
+        },
+        {
+          "w": "Secrecy",
+          "s": 91.448,
+          "e": 92.048,
+          "c": 0.965502
+        },
+        {
+          "w": "Act",
+          "s": 92.138,
+          "e": 92.328,
+          "c": 0.997994
+        },
+        {
+          "w": "to",
+          "s": 92.328,
+          "e": 92.348,
+          "c": 0.818068
+        },
+        {
+          "w": "make",
+          "s": 92.698,
+          "e": 92.978,
+          "c": 0.995101
+        },
+        {
+          "w": "sure",
+          "s": 92.978,
+          "e": 93.398,
+          "c": 0.997828
+        },
+        {
+          "w": "that",
+          "s": 93.398,
+          "e": 93.698,
+          "c": 0.664755
+        },
+        {
+          "w": "banks",
+          "s": 93.878,
+          "e": 94.128,
+          "c": 0.965478
+        },
+        {
+          "w": "don't",
+          "s": 94.128,
+          "e": 94.528,
+          "c": 0.922861
+        },
+        {
+          "w": "run",
+          "s": 94.528,
+          "e": 94.728,
+          "c": 0.96356
+        },
+        {
+          "w": "a",
+          "s": 94.728,
+          "e": 94.828,
+          "c": 0.943574
+        },
+        {
+          "w": "financial",
+          "s": 94.828,
+          "e": 95.328,
+          "c": 0.980684
+        },
+        {
+          "w": "system",
+          "s": 95.328,
+          "e": 96.128,
+          "c": 0.985832
+        },
+        {
+          "w": "that",
+          "s": 96.348,
+          "e": 96.438,
+          "c": 0.991737
+        },
+        {
+          "w": "is",
+          "s": 96.438,
+          "e": 96.468,
+          "c": 0.997708
+        },
+        {
+          "w": "open",
+          "s": 96.618,
+          "e": 96.898,
+          "c": 0.998982
+        },
+        {
+          "w": "to",
+          "s": 96.898,
+          "e": 97.048,
+          "c": 0.99979
+        },
+        {
+          "w": "terrorists",
+          "s": 97.048,
+          "e": 97.838,
+          "c": 0.980537
+        },
+        {
+          "w": "and",
+          "s": 97.838,
+          "e": 98.058,
+          "c": 0.939153
+        },
+        {
+          "w": "drug",
+          "s": 98.068,
+          "e": 98.378,
+          "c": 0.999481
+        },
+        {
+          "w": "traffickers",
+          "s": 98.378,
+          "e": 99.038,
+          "c": 0.980301
+        },
+        {
+          "w": "and",
+          "s": 99.038,
+          "e": 99.468,
+          "c": 0.968282
+        },
+        {
+          "w": "rogue",
+          "s": 99.468,
+          "e": 99.858,
+          "c": 0.988157
+        },
+        {
+          "w": "nations.",
+          "s": 100.138,
+          "e": 100.488,
+          "c": 0.921572
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 100.71,
+      "end_s": 127.1,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "But, time passed, and the crooks got more sophisticated. So after the 9/11 terrorist attacks, law enforcement discovered the way terrorists had gotten around the Bank Secrecy Act, and Congress was then called on to update the laws to cut off future access. And that's what Congress did. Today's terrorists have a new way to get around the Bank Secrecy Act: cryptocurrency.",
+      "words": [
+        {
+          "w": "But,",
+          "s": 100.71,
+          "e": 100.96,
+          "c": 0.483524
+        },
+        {
+          "w": "time",
+          "s": 101.45,
+          "e": 101.88,
+          "c": 0.988373
+        },
+        {
+          "w": "passed,",
+          "s": 101.92,
+          "e": 103.01,
+          "c": 0.285642
+        },
+        {
+          "w": "and",
+          "s": 103.07,
+          "e": 103.2,
+          "c": 0.918303
+        },
+        {
+          "w": "the",
+          "s": 103.2,
+          "e": 103.27,
+          "c": 0.996548
+        },
+        {
+          "w": "crooks",
+          "s": 103.41,
+          "e": 103.77,
+          "c": 0.929401
+        },
+        {
+          "w": "got",
+          "s": 103.77,
+          "e": 103.96,
+          "c": 0.990977
+        },
+        {
+          "w": "more",
+          "s": 103.96,
+          "e": 104.22,
+          "c": 0.992928
+        },
+        {
+          "w": "sophisticated.",
+          "s": 104.22,
+          "e": 105.14,
+          "c": 0.876923
+        },
+        {
+          "w": "So",
+          "s": 105.33,
+          "e": 105.33,
+          "c": 0.994319
+        },
+        {
+          "w": "after",
+          "s": 105.37,
+          "e": 105.62,
+          "c": 0.599366
+        },
+        {
+          "w": "the",
+          "s": 106.1,
+          "e": 106.1,
+          "c": 0.994579
+        },
+        {
+          "w": "9/11",
+          "s": 106.12,
+          "e": 107.05,
+          "c": 0.963168
+        },
+        {
+          "w": "terrorist",
+          "s": 107.05,
+          "e": 107.91,
+          "c": 0.993589
+        },
+        {
+          "w": "attacks,",
+          "s": 107.91,
+          "e": 108.62,
+          "c": 0.964567
+        },
+        {
+          "w": "law",
+          "s": 108.82,
+          "e": 108.82,
+          "c": 0.983691
+        },
+        {
+          "w": "enforcement",
+          "s": 108.85,
+          "e": 109.1,
+          "c": 0.996331
+        },
+        {
+          "w": "discovered",
+          "s": 109.6,
+          "e": 110.24,
+          "c": 0.99795
+        },
+        {
+          "w": "the",
+          "s": 110.24,
+          "e": 110.39,
+          "c": 0.986575
+        },
+        {
+          "w": "way",
+          "s": 110.39,
+          "e": 110.54,
+          "c": 0.999295
+        },
+        {
+          "w": "terrorists",
+          "s": 110.54,
+          "e": 110.69,
+          "c": 0.930952
+        },
+        {
+          "w": "had",
+          "s": 111.18,
+          "e": 111.18,
+          "c": 0.768412
+        },
+        {
+          "w": "gotten",
+          "s": 111.21,
+          "e": 111.42,
+          "c": 0.97003
+        },
+        {
+          "w": "around",
+          "s": 111.55,
+          "e": 111.81,
+          "c": 0.875573
+        },
+        {
+          "w": "the",
+          "s": 111.87,
+          "e": 112.11,
+          "c": 0.959291
+        },
+        {
+          "w": "Bank",
+          "s": 112.11,
+          "e": 112.46,
+          "c": 0.883079
+        },
+        {
+          "w": "Secrecy",
+          "s": 112.55,
+          "e": 113.07,
+          "c": 0.932207
+        },
+        {
+          "w": "Act,",
+          "s": 113.4,
+          "e": 113.48,
+          "c": 0.726845
+        },
+        {
+          "w": "and",
+          "s": 113.71,
+          "e": 113.76,
+          "c": 0.994201
+        },
+        {
+          "w": "Congress",
+          "s": 113.76,
+          "e": 114.52,
+          "c": 0.945631
+        },
+        {
+          "w": "was",
+          "s": 114.55,
+          "e": 114.8,
+          "c": 0.995273
+        },
+        {
+          "w": "then",
+          "s": 114.8,
+          "e": 115.18,
+          "c": 0.996329
+        },
+        {
+          "w": "called",
+          "s": 115.18,
+          "e": 115.54,
+          "c": 0.998241
+        },
+        {
+          "w": "on",
+          "s": 115.54,
+          "e": 115.93,
+          "c": 0.98356
+        },
+        {
+          "w": "to",
+          "s": 116.07,
+          "e": 116.13,
+          "c": 0.988874
+        },
+        {
+          "w": "update",
+          "s": 116.13,
+          "e": 116.67,
+          "c": 0.982489
+        },
+        {
+          "w": "the",
+          "s": 116.73,
+          "e": 116.98,
+          "c": 0.996826
+        },
+        {
+          "w": "laws",
+          "s": 116.98,
+          "e": 117.32,
+          "c": 0.997025
+        },
+        {
+          "w": "to",
+          "s": 117.41,
+          "e": 117.53,
+          "c": 0.874254
+        },
+        {
+          "w": "cut",
+          "s": 117.53,
+          "e": 117.71,
+          "c": 0.997282
+        },
+        {
+          "w": "off",
+          "s": 117.74,
+          "e": 117.93,
+          "c": 0.982917
+        },
+        {
+          "w": "future",
+          "s": 118.27,
+          "e": 118.42,
+          "c": 0.989707
+        },
+        {
+          "w": "access.",
+          "s": 118.42,
+          "e": 119.14,
+          "c": 0.607973
+        },
+        {
+          "w": "And",
+          "s": 119.37,
+          "e": 119.38,
+          "c": 0.946093
+        },
+        {
+          "w": "that's",
+          "s": 119.38,
+          "e": 119.7,
+          "c": 0.98798
+        },
+        {
+          "w": "what",
+          "s": 120.11,
+          "e": 120.18,
+          "c": 0.999439
+        },
+        {
+          "w": "Congress",
+          "s": 120.21,
+          "e": 120.82,
+          "c": 0.984174
+        },
+        {
+          "w": "did.",
+          "s": 120.82,
+          "e": 121.21,
+          "c": 0.99571
+        },
+        {
+          "w": "Today's",
+          "s": 121.55,
+          "e": 121.79,
+          "c": 0.98824
+        },
+        {
+          "w": "terrorists",
+          "s": 122.29,
+          "e": 122.52,
+          "c": 0.987119
+        },
+        {
+          "w": "have",
+          "s": 122.52,
+          "e": 122.67,
+          "c": 0.995319
+        },
+        {
+          "w": "a",
+          "s": 122.83,
+          "e": 122.87,
+          "c": 0.997706
+        },
+        {
+          "w": "new",
+          "s": 122.87,
+          "e": 123.08,
+          "c": 0.999133
+        },
+        {
+          "w": "way",
+          "s": 123.08,
+          "e": 123.29,
+          "c": 0.999369
+        },
+        {
+          "w": "to",
+          "s": 123.29,
+          "e": 123.39,
+          "c": 0.992048
+        },
+        {
+          "w": "get",
+          "s": 123.39,
+          "e": 123.63,
+          "c": 0.995835
+        },
+        {
+          "w": "around",
+          "s": 123.91,
+          "e": 124.07,
+          "c": 0.988078
+        },
+        {
+          "w": "the",
+          "s": 124.07,
+          "e": 124.28,
+          "c": 0.82356
+        },
+        {
+          "w": "Bank",
+          "s": 124.28,
+          "e": 124.51,
+          "c": 0.99103
+        },
+        {
+          "w": "Secrecy",
+          "s": 124.57,
+          "e": 125.05,
+          "c": 0.978838
+        },
+        {
+          "w": "Act:",
+          "s": 125.05,
+          "e": 125.42,
+          "c": 0.455994
+        },
+        {
+          "w": "cryptocurrency.",
+          "s": 125.42,
+          "e": 127.1,
+          "c": 0.447331
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 127.38,
+      "end_s": 145.43,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Last year, an estimated $20 billion in illicit crypto transactions funded every kind of dangerous criminal. North Korea has funded at least half its missile program, including nuclear weapons, using the proceeds of crypto crime.",
+      "words": [
+        {
+          "w": "Last",
+          "s": 127.376,
+          "e": 127.396,
+          "c": 0.96847
+        },
+        {
+          "w": "year,",
+          "s": 127.396,
+          "e": 127.906,
+          "c": 0.643307
+        },
+        {
+          "w": "an",
+          "s": 127.906,
+          "e": 128.076,
+          "c": 0.993616
+        },
+        {
+          "w": "estimated",
+          "s": 128.076,
+          "e": 128.856,
+          "c": 0.999539
+        },
+        {
+          "w": "$20",
+          "s": 128.856,
+          "e": 129.456,
+          "c": 0.705993
+        },
+        {
+          "w": "billion",
+          "s": 129.456,
+          "e": 130.066,
+          "c": 0.985514
+        },
+        {
+          "w": "in",
+          "s": 130.176,
+          "e": 130.216,
+          "c": 0.7931
+        },
+        {
+          "w": "illicit",
+          "s": 130.216,
+          "e": 130.656,
+          "c": 0.976964
+        },
+        {
+          "w": "crypto",
+          "s": 130.656,
+          "e": 131.236,
+          "c": 0.928803
+        },
+        {
+          "w": "transactions",
+          "s": 131.236,
+          "e": 132.416,
+          "c": 0.964467
+        },
+        {
+          "w": "funded",
+          "s": 132.976,
+          "e": 133.326,
+          "c": 0.640338
+        },
+        {
+          "w": "every",
+          "s": 133.486,
+          "e": 134.016,
+          "c": 0.976697
+        },
+        {
+          "w": "kind",
+          "s": 134.016,
+          "e": 134.266,
+          "c": 0.986591
+        },
+        {
+          "w": "of",
+          "s": 134.726,
+          "e": 134.876,
+          "c": 0.986043
+        },
+        {
+          "w": "dangerous",
+          "s": 135.016,
+          "e": 135.656,
+          "c": 0.952854
+        },
+        {
+          "w": "criminal.",
+          "s": 135.656,
+          "e": 136.356,
+          "c": 0.973175
+        },
+        {
+          "w": "North",
+          "s": 136.686,
+          "e": 136.806,
+          "c": 0.997874
+        },
+        {
+          "w": "Korea",
+          "s": 136.806,
+          "e": 137.256,
+          "c": 0.998746
+        },
+        {
+          "w": "has",
+          "s": 137.256,
+          "e": 137.486,
+          "c": 0.998696
+        },
+        {
+          "w": "funded",
+          "s": 137.526,
+          "e": 137.936,
+          "c": 0.99671
+        },
+        {
+          "w": "at",
+          "s": 138.066,
+          "e": 138.246,
+          "c": 0.997801
+        },
+        {
+          "w": "least",
+          "s": 138.246,
+          "e": 138.696,
+          "c": 0.999214
+        },
+        {
+          "w": "half",
+          "s": 138.706,
+          "e": 139.056,
+          "c": 0.993648
+        },
+        {
+          "w": "its",
+          "s": 139.056,
+          "e": 139.326,
+          "c": 0.966689
+        },
+        {
+          "w": "missile",
+          "s": 139.326,
+          "e": 139.956,
+          "c": 0.985645
+        },
+        {
+          "w": "program,",
+          "s": 139.956,
+          "e": 140.736,
+          "c": 0.786776
+        },
+        {
+          "w": "including",
+          "s": 140.816,
+          "e": 141.596,
+          "c": 0.771619
+        },
+        {
+          "w": "nuclear",
+          "s": 141.596,
+          "e": 141.726,
+          "c": 0.991745
+        },
+        {
+          "w": "weapons,",
+          "s": 142.276,
+          "e": 143.056,
+          "c": 0.741448
+        },
+        {
+          "w": "using",
+          "s": 143.056,
+          "e": 143.446,
+          "c": 0.921603
+        },
+        {
+          "w": "the",
+          "s": 143.446,
+          "e": 143.566,
+          "c": 0.998652
+        },
+        {
+          "w": "proceeds",
+          "s": 144.026,
+          "e": 144.346,
+          "c": 0.996774
+        },
+        {
+          "w": "of",
+          "s": 144.346,
+          "e": 144.506,
+          "c": 0.998005
+        },
+        {
+          "w": "crypto",
+          "s": 144.506,
+          "e": 144.966,
+          "c": 0.686879
+        },
+        {
+          "w": "crime.",
+          "s": 145.146,
+          "e": 145.426,
+          "c": 0.945117
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 145.87,
+      "end_s": 145.88,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "and",
+      "words": [
+        {
+          "w": "and",
+          "s": 145.868,
+          "e": 145.868,
+          "c": 0.441791
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 145.91,
+      "end_s": 164.81,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Israeli officials have confirmed that Hamas received millions of dollars through crypto transactions, including, quote, \"large sums from Iran.\" Mr. Diamond, you've been CEO of J.P. Morgan for almost two decades. Can you explain why crypto is",
+      "words": [
+        {
+          "w": "Israeli",
+          "s": 145.908,
+          "e": 146.398,
+          "c": 0.970998
+        },
+        {
+          "w": "officials",
+          "s": 146.398,
+          "e": 147.078,
+          "c": 0.998851
+        },
+        {
+          "w": "have",
+          "s": 147.078,
+          "e": 147.318,
+          "c": 0.993974
+        },
+        {
+          "w": "confirmed",
+          "s": 147.388,
+          "e": 148.028,
+          "c": 0.997312
+        },
+        {
+          "w": "that",
+          "s": 148.128,
+          "e": 148.398,
+          "c": 0.83767
+        },
+        {
+          "w": "Hamas",
+          "s": 148.398,
+          "e": 148.758,
+          "c": 0.984281
+        },
+        {
+          "w": "received",
+          "s": 148.828,
+          "e": 149.128,
+          "c": 0.829716
+        },
+        {
+          "w": "millions",
+          "s": 149.238,
+          "e": 149.928,
+          "c": 0.962822
+        },
+        {
+          "w": "of",
+          "s": 149.938,
+          "e": 150.138,
+          "c": 0.990369
+        },
+        {
+          "w": "dollars",
+          "s": 150.138,
+          "e": 150.478,
+          "c": 0.99452
+        },
+        {
+          "w": "through",
+          "s": 151.068,
+          "e": 151.388,
+          "c": 0.996573
+        },
+        {
+          "w": "crypto",
+          "s": 151.388,
+          "e": 151.838,
+          "c": 0.93991
+        },
+        {
+          "w": "transactions,",
+          "s": 151.958,
+          "e": 153.118,
+          "c": 0.420636
+        },
+        {
+          "w": "including,",
+          "s": 153.178,
+          "e": 154.638,
+          "c": 0.325718
+        },
+        {
+          "w": "quote,",
+          "s": 154.638,
+          "e": 155.318,
+          "c": 0.859052
+        },
+        {
+          "w": "\"large",
+          "s": 155.318,
+          "e": 155.888,
+          "c": 0.672907
+        },
+        {
+          "w": "sums",
+          "s": 156.028,
+          "e": 156.228,
+          "c": 0.996991
+        },
+        {
+          "w": "from",
+          "s": 156.468,
+          "e": 156.568,
+          "c": 0.775606
+        },
+        {
+          "w": "Iran.\"",
+          "s": 156.678,
+          "e": 157.488,
+          "c": 0.636231
+        },
+        {
+          "w": "Mr.",
+          "s": 157.488,
+          "e": 157.788,
+          "c": 0.958033
+        },
+        {
+          "w": "Diamond,",
+          "s": 157.788,
+          "e": 158.328,
+          "c": 0.571961
+        },
+        {
+          "w": "you've",
+          "s": 158.328,
+          "e": 158.688,
+          "c": 0.981317
+        },
+        {
+          "w": "been",
+          "s": 158.688,
+          "e": 158.928,
+          "c": 0.999708
+        },
+        {
+          "w": "CEO",
+          "s": 158.928,
+          "e": 159.108,
+          "c": 0.992922
+        },
+        {
+          "w": "of",
+          "s": 159.108,
+          "e": 159.158,
+          "c": 0.981639
+        },
+        {
+          "w": "J.P.",
+          "s": 159.228,
+          "e": 159.708,
+          "c": 0.608719
+        },
+        {
+          "w": "Morgan",
+          "s": 159.708,
+          "e": 160.058,
+          "c": 0.963615
+        },
+        {
+          "w": "for",
+          "s": 160.128,
+          "e": 160.428,
+          "c": 0.979761
+        },
+        {
+          "w": "almost",
+          "s": 160.428,
+          "e": 160.968,
+          "c": 0.998085
+        },
+        {
+          "w": "two",
+          "s": 161.078,
+          "e": 161.388,
+          "c": 0.970837
+        },
+        {
+          "w": "decades.",
+          "s": 161.388,
+          "e": 162.148,
+          "c": 0.867773
+        },
+        {
+          "w": "Can",
+          "s": 162.408,
+          "e": 162.478,
+          "c": 0.994788
+        },
+        {
+          "w": "you",
+          "s": 162.478,
+          "e": 162.798,
+          "c": 0.999783
+        },
+        {
+          "w": "explain",
+          "s": 162.798,
+          "e": 163.588,
+          "c": 0.99976
+        },
+        {
+          "w": "why",
+          "s": 163.588,
+          "e": 163.898,
+          "c": 0.994249
+        },
+        {
+          "w": "crypto",
+          "s": 163.948,
+          "e": 164.528,
+          "c": 0.993827
+        },
+        {
+          "w": "is",
+          "s": 164.628,
+          "e": 164.808,
+          "c": 0.996827
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 164.81,
+      "end_s": 166.6,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "such an attractive",
+      "words": [
+        {
+          "w": "such",
+          "s": 164.808,
+          "e": 165.258,
+          "c": 0.99911
+        },
+        {
+          "w": "an",
+          "s": 165.258,
+          "e": 165.478,
+          "c": 0.997478
+        },
+        {
+          "w": "attractive",
+          "s": 165.478,
+          "e": 166.598,
+          "c": 0.997103
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 166.6,
+      "end_s": 168.11,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "financial tool",
+      "words": [
+        {
+          "w": "financial",
+          "s": 166.598,
+          "e": 167.568,
+          "c": 0.995701
+        },
+        {
+          "w": "tool",
+          "s": 167.808,
+          "e": 168.108,
+          "c": 0.999758
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 168.19,
+      "end_s": 172.06,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "for terrorists, drug traffickers, and rogue nations?",
+      "words": [
+        {
+          "w": "for",
+          "s": 168.191,
+          "e": 168.281,
+          "c": 0.93225
+        },
+        {
+          "w": "terrorists,",
+          "s": 168.281,
+          "e": 169.151,
+          "c": 0.984966
+        },
+        {
+          "w": "drug",
+          "s": 169.151,
+          "e": 169.381,
+          "c": 0.990749
+        },
+        {
+          "w": "traffickers,",
+          "s": 169.461,
+          "e": 170.471,
+          "c": 0.661812
+        },
+        {
+          "w": "and",
+          "s": 170.471,
+          "e": 170.761,
+          "c": 0.96442
+        },
+        {
+          "w": "rogue",
+          "s": 170.761,
+          "e": 171.251,
+          "c": 0.989876
+        },
+        {
+          "w": "nations?",
+          "s": 171.251,
+          "e": 172.061,
+          "c": 0.684206
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 172.29,
+      "end_s": 172.3,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "-",
+      "words": [
+        {
+          "w": "-",
+          "s": 172.291,
+          "e": 172.291,
+          "c": 0.94857
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 172.34,
+      "end_s": 198.08,
+      "speaker": "SPEAKER_10",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I've always been deeply opposed to crypto, Bitcoin, et cetera. You pointed out the only true use case for it is criminals, drug traffickers, anti-money laundering, tax avoidance, and that is a use case, because it is somewhat anonymous, not fully, and because you can move money instantaneously, and because it doesn't go through, as you mentioned, all these systems have built up over many years, know your customers, sanctions, OFAC, they can bypass all of that. All right.",
+      "words": [
+        {
+          "w": "I've",
+          "s": 172.341,
+          "e": 172.491,
+          "c": 0.944096
+        },
+        {
+          "w": "always",
+          "s": 172.531,
+          "e": 172.861,
+          "c": 0.998586
+        },
+        {
+          "w": "been",
+          "s": 172.861,
+          "e": 173.091,
+          "c": 0.99891
+        },
+        {
+          "w": "deeply",
+          "s": 173.091,
+          "e": 173.441,
+          "c": 0.993146
+        },
+        {
+          "w": "opposed",
+          "s": 173.441,
+          "e": 173.851,
+          "c": 0.989778
+        },
+        {
+          "w": "to",
+          "s": 173.941,
+          "e": 174.001,
+          "c": 0.709849
+        },
+        {
+          "w": "crypto,",
+          "s": 174.071,
+          "e": 174.621,
+          "c": 0.971865
+        },
+        {
+          "w": "Bitcoin,",
+          "s": 174.771,
+          "e": 175.211,
+          "c": 0.860403
+        },
+        {
+          "w": "et",
+          "s": 175.211,
+          "e": 175.341,
+          "c": 0.89615
+        },
+        {
+          "w": "cetera.",
+          "s": 175.341,
+          "e": 175.931,
+          "c": 0.964586
+        },
+        {
+          "w": "You",
+          "s": 176.071,
+          "e": 176.081,
+          "c": 0.998584
+        },
+        {
+          "w": "pointed",
+          "s": 176.091,
+          "e": 176.401,
+          "c": 0.996862
+        },
+        {
+          "w": "out",
+          "s": 176.401,
+          "e": 176.541,
+          "c": 0.99681
+        },
+        {
+          "w": "the",
+          "s": 176.541,
+          "e": 176.661,
+          "c": 0.828798
+        },
+        {
+          "w": "only",
+          "s": 176.661,
+          "e": 176.801,
+          "c": 0.927553
+        },
+        {
+          "w": "true",
+          "s": 176.941,
+          "e": 177.161,
+          "c": 0.933565
+        },
+        {
+          "w": "use",
+          "s": 177.241,
+          "e": 177.471,
+          "c": 0.99708
+        },
+        {
+          "w": "case",
+          "s": 177.471,
+          "e": 177.821,
+          "c": 0.989742
+        },
+        {
+          "w": "for",
+          "s": 177.821,
+          "e": 178.041,
+          "c": 0.952541
+        },
+        {
+          "w": "it",
+          "s": 178.041,
+          "e": 178.071,
+          "c": 0.991637
+        },
+        {
+          "w": "is",
+          "s": 178.331,
+          "e": 178.371,
+          "c": 0.986971
+        },
+        {
+          "w": "criminals,",
+          "s": 178.371,
+          "e": 179.341,
+          "c": 0.996234
+        },
+        {
+          "w": "drug",
+          "s": 179.341,
+          "e": 179.521,
+          "c": 0.986269
+        },
+        {
+          "w": "traffickers,",
+          "s": 179.601,
+          "e": 180.321,
+          "c": 0.997002
+        },
+        {
+          "w": "anti-money",
+          "s": 180.491,
+          "e": 180.761,
+          "c": 0.935959
+        },
+        {
+          "w": "laundering,",
+          "s": 180.761,
+          "e": 181.221,
+          "c": 0.416434
+        },
+        {
+          "w": "tax",
+          "s": 181.361,
+          "e": 181.511,
+          "c": 0.953104
+        },
+        {
+          "w": "avoidance,",
+          "s": 181.511,
+          "e": 182.281,
+          "c": 0.48576
+        },
+        {
+          "w": "and",
+          "s": 182.411,
+          "e": 182.531,
+          "c": 0.996807
+        },
+        {
+          "w": "that",
+          "s": 182.571,
+          "e": 182.961,
+          "c": 0.979436
+        },
+        {
+          "w": "is",
+          "s": 182.961,
+          "e": 183.131,
+          "c": 0.995961
+        },
+        {
+          "w": "a",
+          "s": 183.181,
+          "e": 183.191,
+          "c": 0.976544
+        },
+        {
+          "w": "use",
+          "s": 183.281,
+          "e": 183.501,
+          "c": 0.993218
+        },
+        {
+          "w": "case,",
+          "s": 183.581,
+          "e": 183.941,
+          "c": 0.366338
+        },
+        {
+          "w": "because",
+          "s": 184.091,
+          "e": 184.351,
+          "c": 0.999203
+        },
+        {
+          "w": "it",
+          "s": 184.351,
+          "e": 184.461,
+          "c": 0.999274
+        },
+        {
+          "w": "is",
+          "s": 184.461,
+          "e": 184.571,
+          "c": 0.997872
+        },
+        {
+          "w": "somewhat",
+          "s": 184.571,
+          "e": 185.041,
+          "c": 0.99839
+        },
+        {
+          "w": "anonymous,",
+          "s": 185.041,
+          "e": 185.701,
+          "c": 0.973376
+        },
+        {
+          "w": "not",
+          "s": 185.771,
+          "e": 185.941,
+          "c": 0.940503
+        },
+        {
+          "w": "fully,",
+          "s": 185.941,
+          "e": 186.321,
+          "c": 0.929004
+        },
+        {
+          "w": "and",
+          "s": 186.451,
+          "e": 186.501,
+          "c": 0.994391
+        },
+        {
+          "w": "because",
+          "s": 186.501,
+          "e": 186.931,
+          "c": 0.998376
+        },
+        {
+          "w": "you",
+          "s": 186.931,
+          "e": 187.111,
+          "c": 0.99967
+        },
+        {
+          "w": "can",
+          "s": 187.111,
+          "e": 187.181,
+          "c": 0.994071
+        },
+        {
+          "w": "move",
+          "s": 187.321,
+          "e": 187.541,
+          "c": 0.999363
+        },
+        {
+          "w": "money",
+          "s": 187.631,
+          "e": 187.851,
+          "c": 0.99963
+        },
+        {
+          "w": "instantaneously,",
+          "s": 187.851,
+          "e": 188.821,
+          "c": 0.585325
+        },
+        {
+          "w": "and",
+          "s": 188.951,
+          "e": 188.981,
+          "c": 0.966805
+        },
+        {
+          "w": "because",
+          "s": 188.981,
+          "e": 189.361,
+          "c": 0.999173
+        },
+        {
+          "w": "it",
+          "s": 189.361,
+          "e": 189.471,
+          "c": 0.999053
+        },
+        {
+          "w": "doesn't",
+          "s": 189.471,
+          "e": 189.831,
+          "c": 0.99915
+        },
+        {
+          "w": "go",
+          "s": 189.871,
+          "e": 189.961,
+          "c": 0.999491
+        },
+        {
+          "w": "through,",
+          "s": 189.961,
+          "e": 190.441,
+          "c": 0.798479
+        },
+        {
+          "w": "as",
+          "s": 190.581,
+          "e": 190.581,
+          "c": 0.998001
+        },
+        {
+          "w": "you",
+          "s": 190.611,
+          "e": 190.731,
+          "c": 0.999302
+        },
+        {
+          "w": "mentioned,",
+          "s": 190.731,
+          "e": 191.321,
+          "c": 0.942221
+        },
+        {
+          "w": "all",
+          "s": 191.321,
+          "e": 191.391,
+          "c": 0.875549
+        },
+        {
+          "w": "these",
+          "s": 191.481,
+          "e": 191.591,
+          "c": 0.869271
+        },
+        {
+          "w": "systems",
+          "s": 191.591,
+          "e": 191.801,
+          "c": 0.996755
+        },
+        {
+          "w": "have",
+          "s": 191.881,
+          "e": 191.941,
+          "c": 0.383175
+        },
+        {
+          "w": "built",
+          "s": 191.941,
+          "e": 192.221,
+          "c": 0.523532
+        },
+        {
+          "w": "up",
+          "s": 192.221,
+          "e": 192.341,
+          "c": 0.978457
+        },
+        {
+          "w": "over",
+          "s": 192.471,
+          "e": 192.651,
+          "c": 0.997773
+        },
+        {
+          "w": "many",
+          "s": 192.651,
+          "e": 192.961,
+          "c": 0.997862
+        },
+        {
+          "w": "years,",
+          "s": 192.961,
+          "e": 193.521,
+          "c": 0.744131
+        },
+        {
+          "w": "know",
+          "s": 193.521,
+          "e": 193.651,
+          "c": 0.582426
+        },
+        {
+          "w": "your",
+          "s": 193.741,
+          "e": 193.861,
+          "c": 0.989874
+        },
+        {
+          "w": "customers,",
+          "s": 193.861,
+          "e": 194.361,
+          "c": 0.824543
+        },
+        {
+          "w": "sanctions,",
+          "s": 194.361,
+          "e": 194.981,
+          "c": 0.814987
+        },
+        {
+          "w": "OFAC,",
+          "s": 194.981,
+          "e": 196.341,
+          "c": 0.678714
+        },
+        {
+          "w": "they",
+          "s": 196.511,
+          "e": 196.621,
+          "c": 0.842211
+        },
+        {
+          "w": "can",
+          "s": 196.621,
+          "e": 196.801,
+          "c": 0.995106
+        },
+        {
+          "w": "bypass",
+          "s": 196.801,
+          "e": 197.161,
+          "c": 0.433909
+        },
+        {
+          "w": "all",
+          "s": 197.161,
+          "e": 197.241,
+          "c": 0.998241
+        },
+        {
+          "w": "of",
+          "s": 197.381,
+          "e": 197.461,
+          "c": 0.946539
+        },
+        {
+          "w": "that.",
+          "s": 197.461,
+          "e": 197.921,
+          "c": 0.965788
+        },
+        {
+          "w": "All",
+          "s": 197.961,
+          "e": 197.961,
+          "c": 0.170482
+        },
+        {
+          "w": "right.",
+          "s": 198.031,
+          "e": 198.081,
+          "c": 0.98024
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 198.06,
+      "end_s": 199.29,
+      "speaker": "SPEAKER_10",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "If I was the government's,",
+      "words": [
+        {
+          "w": "If",
+          "s": 198.061,
+          "e": 198.161,
+          "c": 0.466176
+        },
+        {
+          "w": "I",
+          "s": 198.161,
+          "e": 198.211,
+          "c": 0.991346
+        },
+        {
+          "w": "was",
+          "s": 198.211,
+          "e": 198.311,
+          "c": 0.815148
+        },
+        {
+          "w": "the",
+          "s": 198.371,
+          "e": 198.521,
+          "c": 0.984975
+        },
+        {
+          "w": "government's,",
+          "s": 198.531,
+          "e": 199.291,
+          "c": 0.744673
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 199.29,
+      "end_s": 200.2,
+      "speaker": "SPEAKER_12",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I'd close it down.",
+      "words": [
+        {
+          "w": "I'd",
+          "s": 199.291,
+          "e": 199.451,
+          "c": 0.926802
+        },
+        {
+          "w": "close",
+          "s": 199.451,
+          "e": 199.671,
+          "c": 0.991172
+        },
+        {
+          "w": "it",
+          "s": 199.711,
+          "e": 199.811,
+          "c": 0.9993
+        },
+        {
+          "w": "down.",
+          "s": 199.811,
+          "e": 200.201,
+          "c": 0.988863
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 200.2,
+      "end_s": 220.47,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "- Okay, well, that's what we're gonna talk about. Because last week, federal law enforcement asked Congress to update the banking laws saying, quote, \"We cannot rely on statutory definitions that are decades old to address the illicit finance risks that we face in 2023.\"",
+      "words": [
+        {
+          "w": "-",
+          "s": 200.201,
+          "e": 200.251,
+          "c": 0.922333
+        },
+        {
+          "w": "Okay,",
+          "s": 200.251,
+          "e": 200.561,
+          "c": 0.668905
+        },
+        {
+          "w": "well,",
+          "s": 200.561,
+          "e": 200.861,
+          "c": 0.415002
+        },
+        {
+          "w": "that's",
+          "s": 200.951,
+          "e": 201.181,
+          "c": 0.996364
+        },
+        {
+          "w": "what",
+          "s": 201.181,
+          "e": 201.391,
+          "c": 0.993062
+        },
+        {
+          "w": "we're",
+          "s": 201.391,
+          "e": 201.651,
+          "c": 0.996816
+        },
+        {
+          "w": "gonna",
+          "s": 201.651,
+          "e": 201.911,
+          "c": 0.792382
+        },
+        {
+          "w": "talk",
+          "s": 201.911,
+          "e": 202.081,
+          "c": 0.995034
+        },
+        {
+          "w": "about.",
+          "s": 202.361,
+          "e": 202.461,
+          "c": 0.706556
+        },
+        {
+          "w": "Because",
+          "s": 202.461,
+          "e": 202.941,
+          "c": 0.995076
+        },
+        {
+          "w": "last",
+          "s": 202.941,
+          "e": 203.121,
+          "c": 0.956787
+        },
+        {
+          "w": "week,",
+          "s": 203.211,
+          "e": 203.591,
+          "c": 0.840222
+        },
+        {
+          "w": "federal",
+          "s": 203.631,
+          "e": 204.171,
+          "c": 0.8213
+        },
+        {
+          "w": "law",
+          "s": 204.171,
+          "e": 204.351,
+          "c": 0.998607
+        },
+        {
+          "w": "enforcement",
+          "s": 204.621,
+          "e": 205.261,
+          "c": 0.998872
+        },
+        {
+          "w": "asked",
+          "s": 205.261,
+          "e": 205.661,
+          "c": 0.575219
+        },
+        {
+          "w": "Congress",
+          "s": 205.661,
+          "e": 206.221,
+          "c": 0.923162
+        },
+        {
+          "w": "to",
+          "s": 206.221,
+          "e": 206.401,
+          "c": 0.999954
+        },
+        {
+          "w": "update",
+          "s": 206.401,
+          "e": 206.881,
+          "c": 0.999544
+        },
+        {
+          "w": "the",
+          "s": 206.971,
+          "e": 207.221,
+          "c": 0.999657
+        },
+        {
+          "w": "banking",
+          "s": 207.221,
+          "e": 207.811,
+          "c": 0.997373
+        },
+        {
+          "w": "laws",
+          "s": 207.861,
+          "e": 208.101,
+          "c": 0.999464
+        },
+        {
+          "w": "saying,",
+          "s": 208.381,
+          "e": 208.951,
+          "c": 0.644584
+        },
+        {
+          "w": "quote,",
+          "s": 208.951,
+          "e": 209.641,
+          "c": 0.725608
+        },
+        {
+          "w": "\"We",
+          "s": 209.641,
+          "e": 209.891,
+          "c": 0.927444
+        },
+        {
+          "w": "cannot",
+          "s": 209.951,
+          "e": 210.451,
+          "c": 0.995875
+        },
+        {
+          "w": "rely",
+          "s": 210.491,
+          "e": 210.831,
+          "c": 0.999563
+        },
+        {
+          "w": "on",
+          "s": 210.831,
+          "e": 210.921,
+          "c": 0.997716
+        },
+        {
+          "w": "statutory",
+          "s": 211.031,
+          "e": 211.841,
+          "c": 0.998805
+        },
+        {
+          "w": "definitions",
+          "s": 211.841,
+          "e": 212.901,
+          "c": 0.999039
+        },
+        {
+          "w": "that",
+          "s": 212.901,
+          "e": 213.281,
+          "c": 0.945226
+        },
+        {
+          "w": "are",
+          "s": 213.281,
+          "e": 213.551,
+          "c": 0.999613
+        },
+        {
+          "w": "decades",
+          "s": 213.561,
+          "e": 214.161,
+          "c": 0.999376
+        },
+        {
+          "w": "old",
+          "s": 214.291,
+          "e": 214.511,
+          "c": 0.976315
+        },
+        {
+          "w": "to",
+          "s": 214.521,
+          "e": 214.691,
+          "c": 0.627066
+        },
+        {
+          "w": "address",
+          "s": 215.061,
+          "e": 215.301,
+          "c": 0.999205
+        },
+        {
+          "w": "the",
+          "s": 215.301,
+          "e": 215.431,
+          "c": 0.712324
+        },
+        {
+          "w": "illicit",
+          "s": 215.561,
+          "e": 216.061,
+          "c": 0.973061
+        },
+        {
+          "w": "finance",
+          "s": 216.061,
+          "e": 216.771,
+          "c": 0.822716
+        },
+        {
+          "w": "risks",
+          "s": 216.781,
+          "e": 217.601,
+          "c": 0.984564
+        },
+        {
+          "w": "that",
+          "s": 217.621,
+          "e": 218.031,
+          "c": 0.999651
+        },
+        {
+          "w": "we",
+          "s": 218.031,
+          "e": 218.231,
+          "c": 0.999924
+        },
+        {
+          "w": "face",
+          "s": 218.231,
+          "e": 218.641,
+          "c": 0.965084
+        },
+        {
+          "w": "in",
+          "s": 218.641,
+          "e": 218.841,
+          "c": 0.999636
+        },
+        {
+          "w": "2023.\"",
+          "s": 218.841,
+          "e": 220.471,
+          "c": 0.894009
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 220.51,
+      "end_s": 220.62,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And",
+      "words": [
+        {
+          "w": "And",
+          "s": 220.509,
+          "e": 220.619,
+          "c": 0.680282
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 220.81,
+      "end_s": 237.73,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "these law enforcement officials specifically called out the use of crypto to finance terrorist attacks. Now, the laws clearly need to be updated, but crypto lobbyists are working overtime to block any legislation. They claim crypto is special.",
+      "words": [
+        {
+          "w": "these",
+          "s": 220.809,
+          "e": 221.009,
+          "c": 0.95838
+        },
+        {
+          "w": "law",
+          "s": 221.049,
+          "e": 221.209,
+          "c": 0.986824
+        },
+        {
+          "w": "enforcement",
+          "s": 221.209,
+          "e": 221.909,
+          "c": 0.989955
+        },
+        {
+          "w": "officials",
+          "s": 221.909,
+          "e": 222.509,
+          "c": 0.996976
+        },
+        {
+          "w": "specifically",
+          "s": 222.509,
+          "e": 223.249,
+          "c": 0.844914
+        },
+        {
+          "w": "called",
+          "s": 223.449,
+          "e": 223.649,
+          "c": 0.962835
+        },
+        {
+          "w": "out",
+          "s": 223.649,
+          "e": 223.939,
+          "c": 0.984712
+        },
+        {
+          "w": "the",
+          "s": 224.559,
+          "e": 224.559,
+          "c": 0.992386
+        },
+        {
+          "w": "use",
+          "s": 224.579,
+          "e": 224.849,
+          "c": 0.999228
+        },
+        {
+          "w": "of",
+          "s": 224.849,
+          "e": 224.999,
+          "c": 0.999121
+        },
+        {
+          "w": "crypto",
+          "s": 225.039,
+          "e": 225.629,
+          "c": 0.931732
+        },
+        {
+          "w": "to",
+          "s": 225.629,
+          "e": 225.719,
+          "c": 0.988436
+        },
+        {
+          "w": "finance",
+          "s": 225.839,
+          "e": 226.509,
+          "c": 0.994287
+        },
+        {
+          "w": "terrorist",
+          "s": 226.509,
+          "e": 227.399,
+          "c": 0.990227
+        },
+        {
+          "w": "attacks.",
+          "s": 227.399,
+          "e": 228.269,
+          "c": 0.984151
+        },
+        {
+          "w": "Now,",
+          "s": 228.269,
+          "e": 228.579,
+          "c": 0.536918
+        },
+        {
+          "w": "the",
+          "s": 228.579,
+          "e": 228.759,
+          "c": 0.884199
+        },
+        {
+          "w": "laws",
+          "s": 228.809,
+          "e": 228.999,
+          "c": 0.990435
+        },
+        {
+          "w": "clearly",
+          "s": 229.049,
+          "e": 229.459,
+          "c": 0.996689
+        },
+        {
+          "w": "need",
+          "s": 229.459,
+          "e": 229.709,
+          "c": 0.95651
+        },
+        {
+          "w": "to",
+          "s": 229.709,
+          "e": 229.719,
+          "c": 0.999018
+        },
+        {
+          "w": "be",
+          "s": 229.839,
+          "e": 229.949,
+          "c": 0.998683
+        },
+        {
+          "w": "updated,",
+          "s": 229.949,
+          "e": 230.569,
+          "c": 0.826891
+        },
+        {
+          "w": "but",
+          "s": 230.569,
+          "e": 230.749,
+          "c": 0.985785
+        },
+        {
+          "w": "crypto",
+          "s": 230.879,
+          "e": 231.119,
+          "c": 0.984981
+        },
+        {
+          "w": "lobbyists",
+          "s": 231.119,
+          "e": 231.569,
+          "c": 0.960646
+        },
+        {
+          "w": "are",
+          "s": 231.669,
+          "e": 231.849,
+          "c": 0.987532
+        },
+        {
+          "w": "working",
+          "s": 231.849,
+          "e": 232.279,
+          "c": 0.998491
+        },
+        {
+          "w": "overtime",
+          "s": 232.279,
+          "e": 232.809,
+          "c": 0.982304
+        },
+        {
+          "w": "to",
+          "s": 232.809,
+          "e": 232.979,
+          "c": 0.765918
+        },
+        {
+          "w": "block",
+          "s": 232.979,
+          "e": 233.309,
+          "c": 0.996624
+        },
+        {
+          "w": "any",
+          "s": 233.509,
+          "e": 233.649,
+          "c": 0.991314
+        },
+        {
+          "w": "legislation.",
+          "s": 233.649,
+          "e": 234.869,
+          "c": 0.969577
+        },
+        {
+          "w": "They",
+          "s": 235.169,
+          "e": 235.339,
+          "c": 0.99609
+        },
+        {
+          "w": "claim",
+          "s": 235.339,
+          "e": 235.869,
+          "c": 0.998506
+        },
+        {
+          "w": "crypto",
+          "s": 235.969,
+          "e": 236.639,
+          "c": 0.8582
+        },
+        {
+          "w": "is",
+          "s": 236.639,
+          "e": 236.869,
+          "c": 0.995095
+        },
+        {
+          "w": "special.",
+          "s": 236.869,
+          "e": 237.729,
+          "c": 0.630726
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 237.85,
+      "end_s": 255.96,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and it shouldn't have to comply with the Bank Secrecy Act, even if that means letting terrorists and drug traffickers and ransomware criminals and rogue nations move billions of dollars totally unrestricted. So I'd like to go down the line here. Maybe I can start with you, Mr. Sharf.",
+      "words": [
+        {
+          "w": "and",
+          "s": 237.854,
+          "e": 237.864,
+          "c": 0.675374
+        },
+        {
+          "w": "it",
+          "s": 237.864,
+          "e": 237.994,
+          "c": 0.99795
+        },
+        {
+          "w": "shouldn't",
+          "s": 237.994,
+          "e": 238.604,
+          "c": 0.997579
+        },
+        {
+          "w": "have",
+          "s": 238.604,
+          "e": 238.874,
+          "c": 0.997598
+        },
+        {
+          "w": "to",
+          "s": 238.874,
+          "e": 239.004,
+          "c": 0.999195
+        },
+        {
+          "w": "comply",
+          "s": 239.004,
+          "e": 239.324,
+          "c": 0.999053
+        },
+        {
+          "w": "with",
+          "s": 239.574,
+          "e": 239.664,
+          "c": 0.910652
+        },
+        {
+          "w": "the",
+          "s": 239.664,
+          "e": 239.964,
+          "c": 0.979999
+        },
+        {
+          "w": "Bank",
+          "s": 239.964,
+          "e": 240.334,
+          "c": 0.918651
+        },
+        {
+          "w": "Secrecy",
+          "s": 240.424,
+          "e": 240.904,
+          "c": 0.969891
+        },
+        {
+          "w": "Act,",
+          "s": 241.014,
+          "e": 241.364,
+          "c": 0.658051
+        },
+        {
+          "w": "even",
+          "s": 241.554,
+          "e": 241.674,
+          "c": 0.998089
+        },
+        {
+          "w": "if",
+          "s": 241.674,
+          "e": 241.834,
+          "c": 0.998992
+        },
+        {
+          "w": "that",
+          "s": 241.834,
+          "e": 242.124,
+          "c": 0.998715
+        },
+        {
+          "w": "means",
+          "s": 242.144,
+          "e": 242.554,
+          "c": 0.998291
+        },
+        {
+          "w": "letting",
+          "s": 242.564,
+          "e": 242.944,
+          "c": 0.984298
+        },
+        {
+          "w": "terrorists",
+          "s": 242.944,
+          "e": 243.504,
+          "c": 0.98494
+        },
+        {
+          "w": "and",
+          "s": 243.504,
+          "e": 243.704,
+          "c": 0.762215
+        },
+        {
+          "w": "drug",
+          "s": 243.704,
+          "e": 243.964,
+          "c": 0.996504
+        },
+        {
+          "w": "traffickers",
+          "s": 243.964,
+          "e": 244.604,
+          "c": 0.981087
+        },
+        {
+          "w": "and",
+          "s": 244.714,
+          "e": 244.864,
+          "c": 0.478039
+        },
+        {
+          "w": "ransomware",
+          "s": 245.224,
+          "e": 245.564,
+          "c": 0.920714
+        },
+        {
+          "w": "criminals",
+          "s": 245.674,
+          "e": 246.664,
+          "c": 0.899217
+        },
+        {
+          "w": "and",
+          "s": 246.854,
+          "e": 246.924,
+          "c": 0.999723
+        },
+        {
+          "w": "rogue",
+          "s": 246.924,
+          "e": 247.354,
+          "c": 0.993743
+        },
+        {
+          "w": "nations",
+          "s": 247.354,
+          "e": 247.964,
+          "c": 0.995968
+        },
+        {
+          "w": "move",
+          "s": 247.964,
+          "e": 248.324,
+          "c": 0.979781
+        },
+        {
+          "w": "billions",
+          "s": 248.574,
+          "e": 249.134,
+          "c": 0.990018
+        },
+        {
+          "w": "of",
+          "s": 249.134,
+          "e": 249.324,
+          "c": 0.999476
+        },
+        {
+          "w": "dollars",
+          "s": 249.324,
+          "e": 249.904,
+          "c": 0.999579
+        },
+        {
+          "w": "totally",
+          "s": 250.524,
+          "e": 250.634,
+          "c": 0.82364
+        },
+        {
+          "w": "unrestricted.",
+          "s": 250.634,
+          "e": 251.964,
+          "c": 0.978875
+        },
+        {
+          "w": "So",
+          "s": 252.064,
+          "e": 252.064,
+          "c": 0.996787
+        },
+        {
+          "w": "I'd",
+          "s": 252.114,
+          "e": 252.214,
+          "c": 0.790412
+        },
+        {
+          "w": "like",
+          "s": 252.214,
+          "e": 252.414,
+          "c": 0.998582
+        },
+        {
+          "w": "to",
+          "s": 252.414,
+          "e": 252.514,
+          "c": 0.999304
+        },
+        {
+          "w": "go",
+          "s": 252.514,
+          "e": 252.614,
+          "c": 0.998557
+        },
+        {
+          "w": "down",
+          "s": 252.614,
+          "e": 252.714,
+          "c": 0.999859
+        },
+        {
+          "w": "the",
+          "s": 252.804,
+          "e": 252.964,
+          "c": 0.996563
+        },
+        {
+          "w": "line",
+          "s": 252.964,
+          "e": 253.154,
+          "c": 0.999849
+        },
+        {
+          "w": "here.",
+          "s": 253.164,
+          "e": 253.564,
+          "c": 0.564321
+        },
+        {
+          "w": "Maybe",
+          "s": 253.564,
+          "e": 253.924,
+          "c": 0.714919
+        },
+        {
+          "w": "I",
+          "s": 253.924,
+          "e": 253.964,
+          "c": 0.996082
+        },
+        {
+          "w": "can",
+          "s": 254.054,
+          "e": 254.204,
+          "c": 0.994476
+        },
+        {
+          "w": "start",
+          "s": 254.204,
+          "e": 254.564,
+          "c": 0.998948
+        },
+        {
+          "w": "with",
+          "s": 254.564,
+          "e": 254.854,
+          "c": 0.999291
+        },
+        {
+          "w": "you,",
+          "s": 254.854,
+          "e": 255.204,
+          "c": 0.854977
+        },
+        {
+          "w": "Mr.",
+          "s": 255.204,
+          "e": 255.554,
+          "c": 0.914486
+        },
+        {
+          "w": "Sharf.",
+          "s": 255.824,
+          "e": 255.964,
+          "c": 0.349222
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 256.07,
+      "end_s": 256.08,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Do",
+      "words": [
+        {
+          "w": "Do",
+          "s": 256.072,
+          "e": 256.072,
+          "c": 0.585001
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 256.15,
+      "end_s": 263.25,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you think that crypto companies facilitating financial transactions should have to follow the same",
+      "words": [
+        {
+          "w": "you",
+          "s": 256.152,
+          "e": 256.262,
+          "c": 0.998393
+        },
+        {
+          "w": "think",
+          "s": 256.262,
+          "e": 256.502,
+          "c": 0.999417
+        },
+        {
+          "w": "that",
+          "s": 256.582,
+          "e": 256.772,
+          "c": 0.967313
+        },
+        {
+          "w": "crypto",
+          "s": 256.862,
+          "e": 257.202,
+          "c": 0.980065
+        },
+        {
+          "w": "companies",
+          "s": 257.202,
+          "e": 257.792,
+          "c": 0.986217
+        },
+        {
+          "w": "facilitating",
+          "s": 257.792,
+          "e": 258.652,
+          "c": 0.819961
+        },
+        {
+          "w": "financial",
+          "s": 258.652,
+          "e": 259.192,
+          "c": 0.887616
+        },
+        {
+          "w": "transactions",
+          "s": 259.192,
+          "e": 260.282,
+          "c": 0.897983
+        },
+        {
+          "w": "should",
+          "s": 260.852,
+          "e": 261.142,
+          "c": 0.996613
+        },
+        {
+          "w": "have",
+          "s": 261.142,
+          "e": 261.432,
+          "c": 0.99979
+        },
+        {
+          "w": "to",
+          "s": 261.472,
+          "e": 261.632,
+          "c": 0.99975
+        },
+        {
+          "w": "follow",
+          "s": 261.632,
+          "e": 262.152,
+          "c": 0.99958
+        },
+        {
+          "w": "the",
+          "s": 262.152,
+          "e": 262.572,
+          "c": 0.975548
+        },
+        {
+          "w": "same",
+          "s": 262.652,
+          "e": 263.252,
+          "c": 0.998925
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 263.25,
+      "end_s": 268.75,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "anti-money laundering rules that your bank has to follow?",
+      "words": [
+        {
+          "w": "anti-money",
+          "s": 263.252,
+          "e": 264.192,
+          "c": 0.865781
+        },
+        {
+          "w": "laundering",
+          "s": 264.192,
+          "e": 264.982,
+          "c": 0.982375
+        },
+        {
+          "w": "rules",
+          "s": 265.522,
+          "e": 265.652,
+          "c": 0.9875
+        },
+        {
+          "w": "that",
+          "s": 265.852,
+          "e": 266.122,
+          "c": 0.998671
+        },
+        {
+          "w": "your",
+          "s": 266.122,
+          "e": 266.592,
+          "c": 0.999117
+        },
+        {
+          "w": "bank",
+          "s": 266.592,
+          "e": 267.052,
+          "c": 0.997994
+        },
+        {
+          "w": "has",
+          "s": 267.082,
+          "e": 267.412,
+          "c": 0.999369
+        },
+        {
+          "w": "to",
+          "s": 267.412,
+          "e": 267.572,
+          "c": 0.999868
+        },
+        {
+          "w": "follow?",
+          "s": 267.652,
+          "e": 268.752,
+          "c": 0.953021
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 268.95,
+      "end_s": 269.95,
+      "speaker": "SPEAKER_13",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Absolutely, Senator.",
+      "words": [
+        {
+          "w": "Absolutely,",
+          "s": 268.952,
+          "e": 269.442,
+          "c": 0.764578
+        },
+        {
+          "w": "Senator.",
+          "s": 269.522,
+          "e": 269.952,
+          "c": 0.866254
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "start_s": 270.15,
+      "end_s": 274.47,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Okay, I like absolutely. Let's go on down the line. Mr. Moynihan?",
+      "words": [
+        {
+          "w": "Okay,",
+          "s": 270.152,
+          "e": 270.442,
+          "c": 0.728973
+        },
+        {
+          "w": "I",
+          "s": 270.442,
+          "e": 270.502,
+          "c": 0.826289
+        },
+        {
+          "w": "like",
+          "s": 270.582,
+          "e": 270.732,
+          "c": 0.981328
+        },
+        {
+          "w": "absolutely.",
+          "s": 270.862,
+          "e": 271.872,
+          "c": 0.741914
+        },
+        {
+          "w": "Let's",
+          "s": 272.142,
+          "e": 272.272,
+          "c": 0.573719
+        },
+        {
+          "w": "go",
+          "s": 272.272,
+          "e": 272.322,
+          "c": 0.996662
+        },
+        {
+          "w": "on",
+          "s": 272.402,
+          "e": 272.502,
+          "c": 0.605407
+        },
+        {
+          "w": "down",
+          "s": 272.582,
+          "e": 272.732,
+          "c": 0.997444
+        },
+        {
+          "w": "the",
+          "s": 272.792,
+          "e": 272.982,
+          "c": 0.999049
+        },
+        {
+          "w": "line.",
+          "s": 273.052,
+          "e": 273.452,
+          "c": 0.826665
+        },
+        {
+          "w": "Mr.",
+          "s": 273.582,
+          "e": 273.782,
+          "c": 0.803582
+        },
+        {
+          "w": "Moynihan?",
+          "s": 273.782,
+          "e": 274.472,
+          "c": 0.799113
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "start_s": 274.75,
+      "end_s": 276.35,
+      "speaker": "SPEAKER_15",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Absolutely. Okay.",
+      "words": [
+        {
+          "w": "Absolutely.",
+          "s": 274.752,
+          "e": 275.552,
+          "c": 0.587001
+        },
+        {
+          "w": "Okay.",
+          "s": 275.752,
+          "e": 276.352,
+          "c": 0.78326
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "start_s": 276.55,
+      "end_s": 278.65,
+      "speaker": "SPEAKER_17",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Absolutely, positively, certainly.",
+      "words": [
+        {
+          "w": "Absolutely,",
+          "s": 276.552,
+          "e": 277.042,
+          "c": 0.357384
+        },
+        {
+          "w": "positively,",
+          "s": 277.122,
+          "e": 277.852,
+          "c": 0.828027
+        },
+        {
+          "w": "certainly.",
+          "s": 277.852,
+          "e": 278.652,
+          "c": 0.982739
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "start_s": 278.85,
+      "end_s": 281.05,
+      "speaker": "SPEAKER_18",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Unanimous, absolutely.",
+      "words": [
+        {
+          "w": "Unanimous,",
+          "s": 278.852,
+          "e": 279.672,
+          "c": 0.722349
+        },
+        {
+          "w": "absolutely.",
+          "s": 279.752,
+          "e": 281.052,
+          "c": 0.970648
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "start_s": 281.25,
+      "end_s": 284.95,
+      "speaker": "SPEAKER_19",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Absolutely. Absolutely.",
+      "words": [
+        {
+          "w": "Absolutely.",
+          "s": 281.252,
+          "e": 282.432,
+          "c": 0.973105
+        },
+        {
+          "w": "Absolutely.",
+          "s": 282.652,
+          "e": 284.952,
+          "c": 0.984744
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "start_s": 284.91,
+      "end_s": 287.61,
+      "speaker": "SPEAKER_19",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "Absolutely. All right, it's",
+      "words": [
+        {
+          "w": "Absolutely.",
+          "s": 284.912,
+          "e": 285.912,
+          "c": 0.348756
+        },
+        {
+          "w": "All",
+          "s": 285.912,
+          "e": 286.312,
+          "c": 0.167805
+        },
+        {
+          "w": "right,",
+          "s": 286.522,
+          "e": 287.232,
+          "c": 0.484662
+        },
+        {
+          "w": "it's",
+          "s": 287.232,
+          "e": 287.612,
+          "c": 0.943632
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "start_s": 287.71,
+      "end_s": 293.96,
+      "speaker": "SPEAKER_21",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "the word of the day. You know, we've got a way to do this. Senator Marshall and I,",
+      "words": [
+        {
+          "w": "the",
+          "s": 287.712,
+          "e": 288.152,
+          "c": 0.99296
+        },
+        {
+          "w": "word",
+          "s": 288.332,
+          "e": 288.682,
+          "c": 0.972206
+        },
+        {
+          "w": "of",
+          "s": 288.682,
+          "e": 288.942,
+          "c": 0.996407
+        },
+        {
+          "w": "the",
+          "s": 288.942,
+          "e": 289.342,
+          "c": 0.99601
+        },
+        {
+          "w": "day.",
+          "s": 289.342,
+          "e": 290.192,
+          "c": 0.971395
+        },
+        {
+          "w": "You",
+          "s": 290.192,
+          "e": 290.342,
+          "c": 0.994141
+        },
+        {
+          "w": "know,",
+          "s": 290.432,
+          "e": 290.822,
+          "c": 0.854123
+        },
+        {
+          "w": "we've",
+          "s": 290.822,
+          "e": 291.172,
+          "c": 0.980756
+        },
+        {
+          "w": "got",
+          "s": 291.172,
+          "e": 291.382,
+          "c": 0.99791
+        },
+        {
+          "w": "a",
+          "s": 291.382,
+          "e": 291.452,
+          "c": 0.993337
+        },
+        {
+          "w": "way",
+          "s": 291.452,
+          "e": 291.662,
+          "c": 0.99955
+        },
+        {
+          "w": "to",
+          "s": 291.662,
+          "e": 291.802,
+          "c": 0.998782
+        },
+        {
+          "w": "do",
+          "s": 291.802,
+          "e": 291.892,
+          "c": 0.998881
+        },
+        {
+          "w": "this.",
+          "s": 291.932,
+          "e": 292.452,
+          "c": 0.86246
+        },
+        {
+          "w": "Senator",
+          "s": 292.452,
+          "e": 292.962,
+          "c": 0.997525
+        },
+        {
+          "w": "Marshall",
+          "s": 293.062,
+          "e": 293.542,
+          "c": 0.985452
+        },
+        {
+          "w": "and",
+          "s": 293.542,
+          "e": 293.752,
+          "c": 0.994615
+        },
+        {
+          "w": "I,",
+          "s": 293.752,
+          "e": 293.962,
+          "c": 0.80509
+        }
+      ]
+    },
+    {
+      "i": 35,
+      "start_s": 293.96,
+      "end_s": 309.33,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "along with 18 of our Senate colleagues, including Senator Cortez Masto, Senator Smith, Senator Fetterman, Senator Warnock, Senator Butler, who are here right now and on the Senate Banking Committee, have a bill that would do exactly what law enforcement",
+      "words": [
+        {
+          "w": "along",
+          "s": 293.962,
+          "e": 294.152,
+          "c": 0.995894
+        },
+        {
+          "w": "with",
+          "s": 294.242,
+          "e": 294.612,
+          "c": 0.998511
+        },
+        {
+          "w": "18",
+          "s": 294.832,
+          "e": 295.042,
+          "c": 0.930585
+        },
+        {
+          "w": "of",
+          "s": 295.042,
+          "e": 295.182,
+          "c": 0.995554
+        },
+        {
+          "w": "our",
+          "s": 295.182,
+          "e": 295.392,
+          "c": 0.999249
+        },
+        {
+          "w": "Senate",
+          "s": 295.392,
+          "e": 295.822,
+          "c": 0.931148
+        },
+        {
+          "w": "colleagues,",
+          "s": 295.822,
+          "e": 296.772,
+          "c": 0.841323
+        },
+        {
+          "w": "including",
+          "s": 296.772,
+          "e": 296.862,
+          "c": 0.975429
+        },
+        {
+          "w": "Senator",
+          "s": 296.862,
+          "e": 297.142,
+          "c": 0.90625
+        },
+        {
+          "w": "Cortez",
+          "s": 297.692,
+          "e": 297.852,
+          "c": 0.869505
+        },
+        {
+          "w": "Masto,",
+          "s": 297.852,
+          "e": 298.272,
+          "c": 0.749979
+        },
+        {
+          "w": "Senator",
+          "s": 298.462,
+          "e": 298.672,
+          "c": 0.993248
+        },
+        {
+          "w": "Smith,",
+          "s": 298.692,
+          "e": 299.112,
+          "c": 0.994218
+        },
+        {
+          "w": "Senator",
+          "s": 299.112,
+          "e": 299.532,
+          "c": 0.992241
+        },
+        {
+          "w": "Fetterman,",
+          "s": 299.532,
+          "e": 300.152,
+          "c": 0.84002
+        },
+        {
+          "w": "Senator",
+          "s": 300.272,
+          "e": 300.612,
+          "c": 0.990912
+        },
+        {
+          "w": "Warnock,",
+          "s": 300.612,
+          "e": 301.152,
+          "c": 0.988055
+        },
+        {
+          "w": "Senator",
+          "s": 301.152,
+          "e": 301.362,
+          "c": 0.979962
+        },
+        {
+          "w": "Butler,",
+          "s": 301.592,
+          "e": 302.052,
+          "c": 0.762446
+        },
+        {
+          "w": "who",
+          "s": 302.052,
+          "e": 302.222,
+          "c": 0.990271
+        },
+        {
+          "w": "are",
+          "s": 302.262,
+          "e": 302.472,
+          "c": 0.990437
+        },
+        {
+          "w": "here",
+          "s": 302.472,
+          "e": 302.542,
+          "c": 0.979905
+        },
+        {
+          "w": "right",
+          "s": 302.592,
+          "e": 302.862,
+          "c": 0.691547
+        },
+        {
+          "w": "now",
+          "s": 302.972,
+          "e": 303.122,
+          "c": 0.9996
+        },
+        {
+          "w": "and",
+          "s": 303.212,
+          "e": 303.432,
+          "c": 0.887432
+        },
+        {
+          "w": "on",
+          "s": 303.582,
+          "e": 303.582,
+          "c": 0.990639
+        },
+        {
+          "w": "the",
+          "s": 303.582,
+          "e": 303.792,
+          "c": 0.993578
+        },
+        {
+          "w": "Senate",
+          "s": 303.812,
+          "e": 304.282,
+          "c": 0.987673
+        },
+        {
+          "w": "Banking",
+          "s": 304.282,
+          "e": 304.682,
+          "c": 0.913853
+        },
+        {
+          "w": "Committee,",
+          "s": 304.812,
+          "e": 305.632,
+          "c": 0.911798
+        },
+        {
+          "w": "have",
+          "s": 305.692,
+          "e": 305.982,
+          "c": 0.988825
+        },
+        {
+          "w": "a",
+          "s": 305.992,
+          "e": 306.072,
+          "c": 0.9995
+        },
+        {
+          "w": "bill",
+          "s": 306.072,
+          "e": 306.382,
+          "c": 0.997392
+        },
+        {
+          "w": "that",
+          "s": 306.382,
+          "e": 306.562,
+          "c": 0.997069
+        },
+        {
+          "w": "would",
+          "s": 306.712,
+          "e": 307.082,
+          "c": 0.971136
+        },
+        {
+          "w": "do",
+          "s": 307.082,
+          "e": 307.172,
+          "c": 0.997546
+        },
+        {
+          "w": "exactly",
+          "s": 307.242,
+          "e": 307.662,
+          "c": 0.995539
+        },
+        {
+          "w": "what",
+          "s": 307.712,
+          "e": 307.982,
+          "c": 0.997594
+        },
+        {
+          "w": "law",
+          "s": 308.242,
+          "e": 308.322,
+          "c": 0.995769
+        },
+        {
+          "w": "enforcement",
+          "s": 308.322,
+          "e": 309.332,
+          "c": 0.987652
+        }
+      ]
+    },
+    {
+      "i": 36,
+      "start_s": 309.33,
+      "end_s": 310.33,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "asks.",
+      "words": [
+        {
+          "w": "asks.",
+          "s": 309.332,
+          "e": 310.332,
+          "c": 0.996063
+        }
+      ]
+    },
+    {
+      "i": 37,
+      "start_s": 310.4,
+      "end_s": 310.41,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "It",
+      "words": [
+        {
+          "w": "It",
+          "s": 310.401,
+          "e": 310.401,
+          "c": 0.831576
+        }
+      ]
+    },
+    {
+      "i": 38,
+      "start_s": 310.4,
+      "end_s": 324.02,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "would extend the anti-money laundering rules that banks follow so that crypto could not be used for financing terrorist attacks or North Korea's nuclear program. When it comes to banking policy, I am not usually holding",
+      "words": [
+        {
+          "w": "would",
+          "s": 310.401,
+          "e": 310.661,
+          "c": 0.999317
+        },
+        {
+          "w": "extend",
+          "s": 310.661,
+          "e": 310.981,
+          "c": 0.998114
+        },
+        {
+          "w": "the",
+          "s": 310.981,
+          "e": 311.141,
+          "c": 0.996829
+        },
+        {
+          "w": "anti-money",
+          "s": 311.141,
+          "e": 311.661,
+          "c": 0.952696
+        },
+        {
+          "w": "laundering",
+          "s": 311.661,
+          "e": 312.241,
+          "c": 0.979757
+        },
+        {
+          "w": "rules",
+          "s": 312.241,
+          "e": 312.531,
+          "c": 0.981894
+        },
+        {
+          "w": "that",
+          "s": 312.531,
+          "e": 312.731,
+          "c": 0.879255
+        },
+        {
+          "w": "banks",
+          "s": 312.871,
+          "e": 313.101,
+          "c": 0.985103
+        },
+        {
+          "w": "follow",
+          "s": 313.121,
+          "e": 313.521,
+          "c": 0.990067
+        },
+        {
+          "w": "so",
+          "s": 313.521,
+          "e": 314.121,
+          "c": 0.490901
+        },
+        {
+          "w": "that",
+          "s": 314.121,
+          "e": 314.241,
+          "c": 0.951305
+        },
+        {
+          "w": "crypto",
+          "s": 314.501,
+          "e": 314.781,
+          "c": 0.902171
+        },
+        {
+          "w": "could",
+          "s": 314.781,
+          "e": 315.071,
+          "c": 0.926491
+        },
+        {
+          "w": "not",
+          "s": 315.151,
+          "e": 315.391,
+          "c": 0.824271
+        },
+        {
+          "w": "be",
+          "s": 315.491,
+          "e": 315.621,
+          "c": 0.936536
+        },
+        {
+          "w": "used",
+          "s": 315.621,
+          "e": 315.941,
+          "c": 0.946553
+        },
+        {
+          "w": "for",
+          "s": 315.941,
+          "e": 316.141,
+          "c": 0.887107
+        },
+        {
+          "w": "financing",
+          "s": 316.301,
+          "e": 316.741,
+          "c": 0.907673
+        },
+        {
+          "w": "terrorist",
+          "s": 316.741,
+          "e": 317.351,
+          "c": 0.948434
+        },
+        {
+          "w": "attacks",
+          "s": 317.401,
+          "e": 317.881,
+          "c": 0.989632
+        },
+        {
+          "w": "or",
+          "s": 317.881,
+          "e": 317.951,
+          "c": 0.911405
+        },
+        {
+          "w": "North",
+          "s": 318.251,
+          "e": 318.371,
+          "c": 0.994345
+        },
+        {
+          "w": "Korea's",
+          "s": 318.371,
+          "e": 318.861,
+          "c": 0.995005
+        },
+        {
+          "w": "nuclear",
+          "s": 318.861,
+          "e": 319.241,
+          "c": 0.990765
+        },
+        {
+          "w": "program.",
+          "s": 319.351,
+          "e": 320.071,
+          "c": 0.98584
+        },
+        {
+          "w": "When",
+          "s": 320.181,
+          "e": 320.421,
+          "c": 0.98762
+        },
+        {
+          "w": "it",
+          "s": 320.421,
+          "e": 320.591,
+          "c": 0.999994
+        },
+        {
+          "w": "comes",
+          "s": 320.611,
+          "e": 321.011,
+          "c": 0.999975
+        },
+        {
+          "w": "to",
+          "s": 321.011,
+          "e": 321.181,
+          "c": 0.999996
+        },
+        {
+          "w": "banking",
+          "s": 321.181,
+          "e": 321.781,
+          "c": 0.999767
+        },
+        {
+          "w": "policy,",
+          "s": 321.781,
+          "e": 322.411,
+          "c": 0.994898
+        },
+        {
+          "w": "I",
+          "s": 322.461,
+          "e": 322.521,
+          "c": 0.999203
+        },
+        {
+          "w": "am",
+          "s": 322.651,
+          "e": 322.711,
+          "c": 0.999664
+        },
+        {
+          "w": "not",
+          "s": 322.711,
+          "e": 322.941,
+          "c": 0.999815
+        },
+        {
+          "w": "usually",
+          "s": 323.011,
+          "e": 323.341,
+          "c": 0.999779
+        },
+        {
+          "w": "holding",
+          "s": 323.731,
+          "e": 324.021,
+          "c": 0.999956
+        }
+      ]
+    },
+    {
+      "i": 39,
+      "start_s": 324.28,
+      "end_s": 328.23,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "hands with the CEOs of multi-billion dollar banks, but",
+      "words": [
+        {
+          "w": "hands",
+          "s": 324.281,
+          "e": 324.581,
+          "c": 0.999914
+        },
+        {
+          "w": "with",
+          "s": 324.581,
+          "e": 324.851,
+          "c": 0.999998
+        },
+        {
+          "w": "the",
+          "s": 324.941,
+          "e": 325.171,
+          "c": 0.999891
+        },
+        {
+          "w": "CEOs",
+          "s": 325.171,
+          "e": 325.511,
+          "c": 0.995809
+        },
+        {
+          "w": "of",
+          "s": 325.511,
+          "e": 325.681,
+          "c": 0.999998
+        },
+        {
+          "w": "multi-billion",
+          "s": 325.681,
+          "e": 326.711,
+          "c": 0.635976
+        },
+        {
+          "w": "dollar",
+          "s": 326.781,
+          "e": 327.261,
+          "c": 0.936681
+        },
+        {
+          "w": "banks,",
+          "s": 327.321,
+          "e": 327.731,
+          "c": 0.702429
+        },
+        {
+          "w": "but",
+          "s": 328.031,
+          "e": 328.231,
+          "c": 0.920966
+        }
+      ]
+    },
+    {
+      "i": 40,
+      "start_s": 328.23,
+      "end_s": 328.76,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "this is a",
+      "words": [
+        {
+          "w": "this",
+          "s": 328.231,
+          "e": 328.561,
+          "c": 0.999971
+        },
+        {
+          "w": "is",
+          "s": 328.561,
+          "e": 328.721,
+          "c": 0.999981
+        },
+        {
+          "w": "a",
+          "s": 328.721,
+          "e": 328.761,
+          "c": 0.999992
+        }
+      ]
+    },
+    {
+      "i": 41,
+      "start_s": 328.78,
+      "end_s": 341.5,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "matter of national security. Terrorists, drug traffickers, and rogue nations should be barred from using crypto for their dangerous activities. It's time for Congress to act. Thank",
+      "words": [
+        {
+          "w": "matter",
+          "s": 328.781,
+          "e": 329.301,
+          "c": 0.999973
+        },
+        {
+          "w": "of",
+          "s": 329.301,
+          "e": 329.381,
+          "c": 0.999979
+        },
+        {
+          "w": "national",
+          "s": 329.551,
+          "e": 330.021,
+          "c": 0.999641
+        },
+        {
+          "w": "security.",
+          "s": 330.471,
+          "e": 331.081,
+          "c": 0.999949
+        },
+        {
+          "w": "Terrorists,",
+          "s": 331.181,
+          "e": 331.981,
+          "c": 0.79498
+        },
+        {
+          "w": "drug",
+          "s": 331.981,
+          "e": 332.281,
+          "c": 0.999971
+        },
+        {
+          "w": "traffickers,",
+          "s": 332.281,
+          "e": 333.261,
+          "c": 0.560573
+        },
+        {
+          "w": "and",
+          "s": 333.261,
+          "e": 333.411,
+          "c": 0.999989
+        },
+        {
+          "w": "rogue",
+          "s": 333.481,
+          "e": 333.861,
+          "c": 0.999592
+        },
+        {
+          "w": "nations",
+          "s": 333.901,
+          "e": 334.331,
+          "c": 0.999956
+        },
+        {
+          "w": "should",
+          "s": 334.731,
+          "e": 334.841,
+          "c": 0.999985
+        },
+        {
+          "w": "be",
+          "s": 334.841,
+          "e": 334.991,
+          "c": 0.999998
+        },
+        {
+          "w": "barred",
+          "s": 334.991,
+          "e": 335.371,
+          "c": 0.999165
+        },
+        {
+          "w": "from",
+          "s": 335.471,
+          "e": 335.661,
+          "c": 0.999979
+        },
+        {
+          "w": "using",
+          "s": 335.821,
+          "e": 336.111,
+          "c": 0.99992
+        },
+        {
+          "w": "crypto",
+          "s": 336.111,
+          "e": 336.561,
+          "c": 0.999853
+        },
+        {
+          "w": "for",
+          "s": 336.561,
+          "e": 336.741,
+          "c": 0.99999
+        },
+        {
+          "w": "their",
+          "s": 336.841,
+          "e": 337.161,
+          "c": 0.999992
+        },
+        {
+          "w": "dangerous",
+          "s": 337.161,
+          "e": 337.841,
+          "c": 0.999956
+        },
+        {
+          "w": "activities.",
+          "s": 337.841,
+          "e": 338.841,
+          "c": 0.999148
+        },
+        {
+          "w": "It's",
+          "s": 339.521,
+          "e": 339.681,
+          "c": 0.622326
+        },
+        {
+          "w": "time",
+          "s": 339.681,
+          "e": 339.941,
+          "c": 0.999615
+        },
+        {
+          "w": "for",
+          "s": 339.951,
+          "e": 340.151,
+          "c": 0.998584
+        },
+        {
+          "w": "Congress",
+          "s": 340.151,
+          "e": 340.691,
+          "c": 0.958331
+        },
+        {
+          "w": "to",
+          "s": 340.691,
+          "e": 340.821,
+          "c": 0.996411
+        },
+        {
+          "w": "act.",
+          "s": 340.821,
+          "e": 341.261,
+          "c": 0.98891
+        },
+        {
+          "w": "Thank",
+          "s": 341.361,
+          "e": 341.501,
+          "c": 0.396684
+        }
+      ]
+    },
+    {
+      "i": 42,
+      "start_s": 341.51,
+      "end_s": 342.6,
+      "speaker": "SPEAKER_26",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you, Mr. Chairman.",
+      "words": [
+        {
+          "w": "you,",
+          "s": 341.511,
+          "e": 341.761,
+          "c": 0.740996
+        },
+        {
+          "w": "Mr.",
+          "s": 341.761,
+          "e": 342.011,
+          "c": 0.977844
+        },
+        {
+          "w": "Chairman.",
+          "s": 342.011,
+          "e": 342.601,
+          "c": 0.951319
+        }
+      ]
+    }
+  ]
+}

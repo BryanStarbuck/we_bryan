@@ -1,0 +1,6060 @@
+{
+  "schema_version": 2,
+  "canonical_id": "eafcdf90c7b73bd6",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 377.15,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T01:37:17.571Z",
+  "text_sha256": "9afcb95779b190137242e4eede4042ade055cf0246ccb6e3d14c6c5796826e70",
+  "segments_sha256": "08bdcd3678e4f7b362a293222d36149f9942f13eecda67d9c217257fdfd1c29f",
+  "words_sha256": "53606ac6ab06735e78a61905fc64546cc61efbe52628e166da35e17cc608c9e7",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 15,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 27,
+    "clusters": 9,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_01",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 2.8
+      },
+      "clean_s": 2.8,
+      "speaking_s": 2.8,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_00",
+      "n": 2,
+      "label": "Speaker 2 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.85,
+        "confidence": "low",
+        "clean_s": 94.9
+      },
+      "clean_s": 94.9,
+      "speaking_s": 96.3,
+      "first_s": 3.03
+    },
+    {
+      "id": "SPEAKER_04",
+      "n": 3,
+      "label": "Speaker 3 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.88,
+        "confidence": "low",
+        "clean_s": 201
+      },
+      "clean_s": 201,
+      "speaking_s": 203.2,
+      "first_s": 39.4
+    },
+    {
+      "id": "SPEAKER_09",
+      "n": 4,
+      "label": "Speaker 4",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 8.1
+      },
+      "clean_s": 8.1,
+      "speaking_s": 8.4,
+      "first_s": 172.59
+    },
+    {
+      "id": "SPEAKER_07",
+      "n": 5,
+      "label": "Speaker 5",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 5.5
+      },
+      "clean_s": 5.5,
+      "speaking_s": 6.6,
+      "first_s": 279.46
+    },
+    {
+      "id": "SPEAKER_10",
+      "n": 6,
+      "label": "Speaker 6",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.8
+      },
+      "clean_s": 4.8,
+      "speaking_s": 4.8,
+      "first_s": 323.12
+    },
+    {
+      "id": "SPEAKER_11",
+      "n": 7,
+      "label": "Speaker 7",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 8.2
+      },
+      "clean_s": 8.2,
+      "speaking_s": 8.2,
+      "first_s": 328.81
+    },
+    {
+      "id": "SPEAKER_13",
+      "n": 8,
+      "label": "Speaker 8 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.83,
+        "confidence": "low",
+        "clean_s": 35.4
+      },
+      "clean_s": 35.4,
+      "speaking_s": 35.8,
+      "first_s": 336.97
+    },
+    {
+      "id": "SPEAKER_14",
+      "n": 9,
+      "label": "Speaker 9",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 1.6
+      },
+      "clean_s": 1.6,
+      "speaking_s": 2,
+      "first_s": 374.15
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.14,
+      "end_s": 0.14,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 37.96,
+      "end_s": 38.76,
+      "segment_i": 4,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 195.34,
+      "end_s": 195.34,
+      "segment_i": 14,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 322.96,
+      "end_s": 322.96,
+      "segment_i": 22,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 328.16,
+      "end_s": 328.69,
+      "segment_i": 24,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 373.83,
+      "end_s": 374.03,
+      "segment_i": 28,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 375.63,
+      "end_s": 376.99,
+      "segment_i": 30,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.14,
+      "end_s": 0.15,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "The",
+      "words": [
+        {
+          "w": "The",
+          "s": 0.14,
+          "e": 0.14,
+          "c": 0.366497
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.31,
+      "end_s": 3.18,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "gentleman from Kentucky, Mr. Massey is recognized for five minutes.",
+      "words": [
+        {
+          "w": "gentleman",
+          "s": 0.31,
+          "e": 0.57,
+          "c": 0.824993
+        },
+        {
+          "w": "from",
+          "s": 0.57,
+          "e": 0.75,
+          "c": 0.972458
+        },
+        {
+          "w": "Kentucky,",
+          "s": 0.77,
+          "e": 1.23,
+          "c": 0.593279
+        },
+        {
+          "w": "Mr.",
+          "s": 1.23,
+          "e": 1.46,
+          "c": 0.963048
+        },
+        {
+          "w": "Massey",
+          "s": 1.46,
+          "e": 1.74,
+          "c": 0.833836
+        },
+        {
+          "w": "is",
+          "s": 1.74,
+          "e": 1.82,
+          "c": 0.536752
+        },
+        {
+          "w": "recognized",
+          "s": 1.82,
+          "e": 2.31,
+          "c": 0.963184
+        },
+        {
+          "w": "for",
+          "s": 2.31,
+          "e": 2.45,
+          "c": 0.952607
+        },
+        {
+          "w": "five",
+          "s": 2.45,
+          "e": 2.64,
+          "c": 0.855951
+        },
+        {
+          "w": "minutes.",
+          "s": 2.64,
+          "e": 3.18,
+          "c": 0.985201
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 3.37,
+      "end_s": 25.8,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Thank you, Mr. Chairman. Mr. Dolio, my colleague, Mr. Crawford, asked you about flexibility in the airport improvement program, which are federal dollars that come back to the airports, and you lamented the fact that there was a shortage in revenue, that flexibility would help in that program,",
+      "words": [
+        {
+          "w": "Thank",
+          "s": 3.37,
+          "e": 3.68,
+          "c": 0.944889
+        },
+        {
+          "w": "you,",
+          "s": 3.68,
+          "e": 4.18,
+          "c": 0.672831
+        },
+        {
+          "w": "Mr.",
+          "s": 4.18,
+          "e": 4.68,
+          "c": 0.989778
+        },
+        {
+          "w": "Chairman.",
+          "s": 4.68,
+          "e": 5.79,
+          "c": 0.937619
+        },
+        {
+          "w": "Mr.",
+          "s": 5.98,
+          "e": 6.39,
+          "c": 0.977812
+        },
+        {
+          "w": "Dolio,",
+          "s": 6.39,
+          "e": 7.21,
+          "c": 0.279324
+        },
+        {
+          "w": "my",
+          "s": 7.21,
+          "e": 7.45,
+          "c": 0.42822
+        },
+        {
+          "w": "colleague,",
+          "s": 7.45,
+          "e": 8.69,
+          "c": 0.317612
+        },
+        {
+          "w": "Mr.",
+          "s": 8.88,
+          "e": 9.34,
+          "c": 0.985037
+        },
+        {
+          "w": "Crawford,",
+          "s": 9.34,
+          "e": 10.52,
+          "c": 0.636699
+        },
+        {
+          "w": "asked",
+          "s": 10.52,
+          "e": 10.86,
+          "c": 0.967682
+        },
+        {
+          "w": "you",
+          "s": 11.18,
+          "e": 11.35,
+          "c": 0.934634
+        },
+        {
+          "w": "about",
+          "s": 11.56,
+          "e": 11.6,
+          "c": 0.990921
+        },
+        {
+          "w": "flexibility",
+          "s": 11.6,
+          "e": 12.24,
+          "c": 0.870485
+        },
+        {
+          "w": "in",
+          "s": 12.24,
+          "e": 12.37,
+          "c": 0.882584
+        },
+        {
+          "w": "the",
+          "s": 12.37,
+          "e": 12.51,
+          "c": 0.976173
+        },
+        {
+          "w": "airport",
+          "s": 13.29,
+          "e": 13.44,
+          "c": 0.598102
+        },
+        {
+          "w": "improvement",
+          "s": 13.45,
+          "e": 14.08,
+          "c": 0.935441
+        },
+        {
+          "w": "program,",
+          "s": 14.27,
+          "e": 14.75,
+          "c": 0.659311
+        },
+        {
+          "w": "which",
+          "s": 14.75,
+          "e": 15.11,
+          "c": 0.9886
+        },
+        {
+          "w": "are",
+          "s": 15.12,
+          "e": 15.34,
+          "c": 0.93892
+        },
+        {
+          "w": "federal",
+          "s": 15.34,
+          "e": 15.86,
+          "c": 0.949341
+        },
+        {
+          "w": "dollars",
+          "s": 15.86,
+          "e": 16.35,
+          "c": 0.997662
+        },
+        {
+          "w": "that",
+          "s": 16.39,
+          "e": 16.67,
+          "c": 0.980501
+        },
+        {
+          "w": "come",
+          "s": 16.67,
+          "e": 16.97,
+          "c": 0.987155
+        },
+        {
+          "w": "back",
+          "s": 17.16,
+          "e": 17.28,
+          "c": 0.997019
+        },
+        {
+          "w": "to",
+          "s": 17.32,
+          "e": 17.43,
+          "c": 0.995142
+        },
+        {
+          "w": "the",
+          "s": 17.43,
+          "e": 17.64,
+          "c": 0.990163
+        },
+        {
+          "w": "airports,",
+          "s": 17.64,
+          "e": 18.35,
+          "c": 0.403389
+        },
+        {
+          "w": "and",
+          "s": 18.57,
+          "e": 18.62,
+          "c": 0.995402
+        },
+        {
+          "w": "you",
+          "s": 18.62,
+          "e": 18.84,
+          "c": 0.996873
+        },
+        {
+          "w": "lamented",
+          "s": 18.84,
+          "e": 19.43,
+          "c": 0.99587
+        },
+        {
+          "w": "the",
+          "s": 19.43,
+          "e": 19.64,
+          "c": 0.950086
+        },
+        {
+          "w": "fact",
+          "s": 19.9,
+          "e": 19.98,
+          "c": 0.998911
+        },
+        {
+          "w": "that",
+          "s": 19.98,
+          "e": 20.24,
+          "c": 0.958371
+        },
+        {
+          "w": "there",
+          "s": 20.24,
+          "e": 20.57,
+          "c": 0.996599
+        },
+        {
+          "w": "was",
+          "s": 20.57,
+          "e": 20.76,
+          "c": 0.997792
+        },
+        {
+          "w": "a",
+          "s": 20.78,
+          "e": 20.83,
+          "c": 0.99306
+        },
+        {
+          "w": "shortage",
+          "s": 20.83,
+          "e": 21.36,
+          "c": 0.998889
+        },
+        {
+          "w": "in",
+          "s": 21.36,
+          "e": 21.49,
+          "c": 0.990985
+        },
+        {
+          "w": "revenue,",
+          "s": 21.49,
+          "e": 22.08,
+          "c": 0.729562
+        },
+        {
+          "w": "that",
+          "s": 22.08,
+          "e": 22.33,
+          "c": 0.971011
+        },
+        {
+          "w": "flexibility",
+          "s": 22.42,
+          "e": 23.07,
+          "c": 0.997497
+        },
+        {
+          "w": "would",
+          "s": 23.07,
+          "e": 23.4,
+          "c": 0.994338
+        },
+        {
+          "w": "help",
+          "s": 23.4,
+          "e": 23.66,
+          "c": 0.998696
+        },
+        {
+          "w": "in",
+          "s": 23.66,
+          "e": 23.73,
+          "c": 0.978601
+        },
+        {
+          "w": "that",
+          "s": 23.75,
+          "e": 23.92,
+          "c": 0.986641
+        },
+        {
+          "w": "program,",
+          "s": 24.24,
+          "e": 25.8,
+          "c": 0.844236
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 26.04,
+      "end_s": 37.96,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "needed more funds. Can you talk about the other sources of revenue that airports have and how that plays into it? Particularly, my follow-up question is going to be about the passenger facility charge.",
+      "words": [
+        {
+          "w": "needed",
+          "s": 26.036,
+          "e": 26.316,
+          "c": 0.447822
+        },
+        {
+          "w": "more",
+          "s": 26.316,
+          "e": 26.586,
+          "c": 0.998424
+        },
+        {
+          "w": "funds.",
+          "s": 26.676,
+          "e": 27.416,
+          "c": 0.769038
+        },
+        {
+          "w": "Can",
+          "s": 27.416,
+          "e": 27.546,
+          "c": 0.636863
+        },
+        {
+          "w": "you",
+          "s": 27.546,
+          "e": 27.656,
+          "c": 0.99802
+        },
+        {
+          "w": "talk",
+          "s": 27.686,
+          "e": 27.836,
+          "c": 0.998371
+        },
+        {
+          "w": "about",
+          "s": 27.846,
+          "e": 28.046,
+          "c": 0.994495
+        },
+        {
+          "w": "the",
+          "s": 28.056,
+          "e": 28.186,
+          "c": 0.988018
+        },
+        {
+          "w": "other",
+          "s": 28.186,
+          "e": 28.416,
+          "c": 0.991891
+        },
+        {
+          "w": "sources",
+          "s": 28.416,
+          "e": 28.896,
+          "c": 0.981959
+        },
+        {
+          "w": "of",
+          "s": 28.896,
+          "e": 29.016,
+          "c": 0.98029
+        },
+        {
+          "w": "revenue",
+          "s": 29.016,
+          "e": 29.456,
+          "c": 0.930206
+        },
+        {
+          "w": "that",
+          "s": 29.456,
+          "e": 29.746,
+          "c": 0.924722
+        },
+        {
+          "w": "airports",
+          "s": 29.816,
+          "e": 30.486,
+          "c": 0.894888
+        },
+        {
+          "w": "have",
+          "s": 30.856,
+          "e": 31.286,
+          "c": 0.838294
+        },
+        {
+          "w": "and",
+          "s": 31.816,
+          "e": 31.816,
+          "c": 0.999262
+        },
+        {
+          "w": "how",
+          "s": 31.876,
+          "e": 32.036,
+          "c": 0.999462
+        },
+        {
+          "w": "that",
+          "s": 32.036,
+          "e": 32.316,
+          "c": 0.999075
+        },
+        {
+          "w": "plays",
+          "s": 32.316,
+          "e": 32.656,
+          "c": 0.997978
+        },
+        {
+          "w": "into",
+          "s": 32.656,
+          "e": 32.826,
+          "c": 0.993852
+        },
+        {
+          "w": "it?",
+          "s": 32.856,
+          "e": 33.296,
+          "c": 0.449886
+        },
+        {
+          "w": "Particularly,",
+          "s": 33.296,
+          "e": 34.256,
+          "c": 0.434925
+        },
+        {
+          "w": "my",
+          "s": 34.256,
+          "e": 34.356,
+          "c": 0.97348
+        },
+        {
+          "w": "follow-up",
+          "s": 34.356,
+          "e": 34.806,
+          "c": 0.73887
+        },
+        {
+          "w": "question",
+          "s": 34.806,
+          "e": 35.216,
+          "c": 0.930601
+        },
+        {
+          "w": "is",
+          "s": 35.216,
+          "e": 35.296,
+          "c": 0.775646
+        },
+        {
+          "w": "going",
+          "s": 35.296,
+          "e": 35.456,
+          "c": 0.963721
+        },
+        {
+          "w": "to",
+          "s": 35.456,
+          "e": 35.536,
+          "c": 0.971569
+        },
+        {
+          "w": "be",
+          "s": 35.536,
+          "e": 35.586,
+          "c": 0.983674
+        },
+        {
+          "w": "about",
+          "s": 35.676,
+          "e": 35.836,
+          "c": 0.946472
+        },
+        {
+          "w": "the",
+          "s": 35.946,
+          "e": 35.956,
+          "c": 0.911167
+        },
+        {
+          "w": "passenger",
+          "s": 36.216,
+          "e": 36.646,
+          "c": 0.976643
+        },
+        {
+          "w": "facility",
+          "s": 36.646,
+          "e": 37.156,
+          "c": 0.990645
+        },
+        {
+          "w": "charge.",
+          "s": 37.576,
+          "e": 37.956,
+          "c": 0.973547
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 37.96,
+      "end_s": 38.76,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Good.",
+      "words": [
+        {
+          "w": "Good.",
+          "s": 37.956,
+          "e": 38.756,
+          "c": 0.571058
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 38.76,
+      "end_s": 50.42,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Okay. The airports have different funding sources to use for capital projects. Of course, PFC program, the AIP grant program,",
+      "words": [
+        {
+          "w": "Okay.",
+          "s": 38.756,
+          "e": 39.456,
+          "c": 0.785015
+        },
+        {
+          "w": "The",
+          "s": 39.456,
+          "e": 39.796,
+          "c": 0.957878
+        },
+        {
+          "w": "airports",
+          "s": 39.796,
+          "e": 40.646,
+          "c": 0.992773
+        },
+        {
+          "w": "have",
+          "s": 41.056,
+          "e": 41.156,
+          "c": 0.996871
+        },
+        {
+          "w": "different",
+          "s": 41.156,
+          "e": 41.426,
+          "c": 0.936485
+        },
+        {
+          "w": "funding",
+          "s": 41.716,
+          "e": 42.236,
+          "c": 0.998687
+        },
+        {
+          "w": "sources",
+          "s": 42.236,
+          "e": 42.656,
+          "c": 0.997957
+        },
+        {
+          "w": "to",
+          "s": 43.076,
+          "e": 43.236,
+          "c": 0.971021
+        },
+        {
+          "w": "use",
+          "s": 43.236,
+          "e": 43.566,
+          "c": 0.997938
+        },
+        {
+          "w": "for",
+          "s": 43.566,
+          "e": 43.876,
+          "c": 0.997164
+        },
+        {
+          "w": "capital",
+          "s": 43.936,
+          "e": 44.676,
+          "c": 0.997004
+        },
+        {
+          "w": "projects.",
+          "s": 44.676,
+          "e": 45.896,
+          "c": 0.557294
+        },
+        {
+          "w": "Of",
+          "s": 45.896,
+          "e": 46.116,
+          "c": 0.97662
+        },
+        {
+          "w": "course,",
+          "s": 46.116,
+          "e": 46.926,
+          "c": 0.80816
+        },
+        {
+          "w": "PFC",
+          "s": 47.006,
+          "e": 47.336,
+          "c": 0.626537
+        },
+        {
+          "w": "program,",
+          "s": 47.416,
+          "e": 48.336,
+          "c": 0.853056
+        },
+        {
+          "w": "the",
+          "s": 48.336,
+          "e": 48.656,
+          "c": 0.98393
+        },
+        {
+          "w": "AIP",
+          "s": 48.676,
+          "e": 48.906,
+          "c": 0.949818
+        },
+        {
+          "w": "grant",
+          "s": 49.026,
+          "e": 49.556,
+          "c": 0.905662
+        },
+        {
+          "w": "program,",
+          "s": 49.556,
+          "e": 50.416,
+          "c": 0.793636
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 50.6,
+      "end_s": 78.57,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "airport funds that remain and are usable after all expenses are taken care of, are pretty much the bigger pots. Right now we have the temporary bill program that will run for another three years. Now, you heard the stats earlier that there's $30 billion a year need in airport infrastructure development.",
+      "words": [
+        {
+          "w": "airport",
+          "s": 50.604,
+          "e": 51.394,
+          "c": 0.276221
+        },
+        {
+          "w": "funds",
+          "s": 51.394,
+          "e": 52.054,
+          "c": 0.987511
+        },
+        {
+          "w": "that",
+          "s": 52.444,
+          "e": 52.674,
+          "c": 0.968367
+        },
+        {
+          "w": "remain",
+          "s": 52.804,
+          "e": 53.534,
+          "c": 0.827297
+        },
+        {
+          "w": "and",
+          "s": 53.654,
+          "e": 53.804,
+          "c": 0.718206
+        },
+        {
+          "w": "are",
+          "s": 53.804,
+          "e": 54.044,
+          "c": 0.986542
+        },
+        {
+          "w": "usable",
+          "s": 54.044,
+          "e": 54.544,
+          "c": 0.974734
+        },
+        {
+          "w": "after",
+          "s": 54.544,
+          "e": 54.984,
+          "c": 0.83251
+        },
+        {
+          "w": "all",
+          "s": 54.984,
+          "e": 55.264,
+          "c": 0.986446
+        },
+        {
+          "w": "expenses",
+          "s": 55.264,
+          "e": 55.884,
+          "c": 0.766015
+        },
+        {
+          "w": "are",
+          "s": 55.884,
+          "e": 56.384,
+          "c": 0.9413
+        },
+        {
+          "w": "taken",
+          "s": 56.384,
+          "e": 56.744,
+          "c": 0.963481
+        },
+        {
+          "w": "care",
+          "s": 56.774,
+          "e": 57.084,
+          "c": 0.94325
+        },
+        {
+          "w": "of,",
+          "s": 57.084,
+          "e": 58.094,
+          "c": 0.335619
+        },
+        {
+          "w": "are",
+          "s": 58.094,
+          "e": 58.384,
+          "c": 0.703511
+        },
+        {
+          "w": "pretty",
+          "s": 58.564,
+          "e": 58.644,
+          "c": 0.937723
+        },
+        {
+          "w": "much",
+          "s": 58.864,
+          "e": 58.964,
+          "c": 0.999773
+        },
+        {
+          "w": "the",
+          "s": 59.094,
+          "e": 59.254,
+          "c": 0.994152
+        },
+        {
+          "w": "bigger",
+          "s": 59.474,
+          "e": 60.074,
+          "c": 0.974637
+        },
+        {
+          "w": "pots.",
+          "s": 60.074,
+          "e": 60.864,
+          "c": 0.642875
+        },
+        {
+          "w": "Right",
+          "s": 61.084,
+          "e": 61.184,
+          "c": 0.99627
+        },
+        {
+          "w": "now",
+          "s": 61.314,
+          "e": 61.474,
+          "c": 0.999388
+        },
+        {
+          "w": "we",
+          "s": 61.664,
+          "e": 61.664,
+          "c": 0.559653
+        },
+        {
+          "w": "have",
+          "s": 61.694,
+          "e": 61.984,
+          "c": 0.998769
+        },
+        {
+          "w": "the",
+          "s": 61.984,
+          "e": 62.204,
+          "c": 0.9918
+        },
+        {
+          "w": "temporary",
+          "s": 62.204,
+          "e": 62.934,
+          "c": 0.882978
+        },
+        {
+          "w": "bill",
+          "s": 62.934,
+          "e": 63.254,
+          "c": 0.613681
+        },
+        {
+          "w": "program",
+          "s": 63.294,
+          "e": 63.824,
+          "c": 0.989479
+        },
+        {
+          "w": "that",
+          "s": 63.824,
+          "e": 64.144,
+          "c": 0.991195
+        },
+        {
+          "w": "will",
+          "s": 64.144,
+          "e": 64.464,
+          "c": 0.991964
+        },
+        {
+          "w": "run",
+          "s": 64.464,
+          "e": 64.684,
+          "c": 0.997105
+        },
+        {
+          "w": "for",
+          "s": 64.734,
+          "e": 64.944,
+          "c": 0.992559
+        },
+        {
+          "w": "another",
+          "s": 64.944,
+          "e": 65.504,
+          "c": 0.996575
+        },
+        {
+          "w": "three",
+          "s": 65.504,
+          "e": 65.814,
+          "c": 0.910891
+        },
+        {
+          "w": "years.",
+          "s": 65.894,
+          "e": 66.624,
+          "c": 0.995847
+        },
+        {
+          "w": "Now,",
+          "s": 66.844,
+          "e": 67.234,
+          "c": 0.77656
+        },
+        {
+          "w": "you",
+          "s": 67.454,
+          "e": 67.684,
+          "c": 0.822192
+        },
+        {
+          "w": "heard",
+          "s": 67.684,
+          "e": 68.294,
+          "c": 0.912593
+        },
+        {
+          "w": "the",
+          "s": 68.684,
+          "e": 68.754,
+          "c": 0.995503
+        },
+        {
+          "w": "stats",
+          "s": 68.754,
+          "e": 69.424,
+          "c": 0.997531
+        },
+        {
+          "w": "earlier",
+          "s": 69.424,
+          "e": 70.364,
+          "c": 0.995184
+        },
+        {
+          "w": "that",
+          "s": 70.364,
+          "e": 70.884,
+          "c": 0.967499
+        },
+        {
+          "w": "there's",
+          "s": 70.884,
+          "e": 71.824,
+          "c": 0.647439
+        },
+        {
+          "w": "$30",
+          "s": 71.824,
+          "e": 72.684,
+          "c": 0.629157
+        },
+        {
+          "w": "billion",
+          "s": 72.784,
+          "e": 73.694,
+          "c": 0.970839
+        },
+        {
+          "w": "a",
+          "s": 73.694,
+          "e": 73.784,
+          "c": 0.884312
+        },
+        {
+          "w": "year",
+          "s": 73.824,
+          "e": 74.354,
+          "c": 0.995598
+        },
+        {
+          "w": "need",
+          "s": 74.354,
+          "e": 74.884,
+          "c": 0.874301
+        },
+        {
+          "w": "in",
+          "s": 74.884,
+          "e": 75.154,
+          "c": 0.95049
+        },
+        {
+          "w": "airport",
+          "s": 75.154,
+          "e": 76.184,
+          "c": 0.984398
+        },
+        {
+          "w": "infrastructure",
+          "s": 76.184,
+          "e": 76.904,
+          "c": 0.933594
+        },
+        {
+          "w": "development.",
+          "s": 77.124,
+          "e": 78.574,
+          "c": 0.995585
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 78.98,
+      "end_s": 98.28,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Those funds combined over airports, the AIP program, PFCs, airport revenues, equate to about $13 billion a year, so there's still a big gap, so something has to give or something has to be done to start closing that gap.",
+      "words": [
+        {
+          "w": "Those",
+          "s": 78.98,
+          "e": 79.21,
+          "c": 0.81069
+        },
+        {
+          "w": "funds",
+          "s": 79.4,
+          "e": 79.72,
+          "c": 0.998772
+        },
+        {
+          "w": "combined",
+          "s": 79.82,
+          "e": 80.7,
+          "c": 0.947916
+        },
+        {
+          "w": "over",
+          "s": 80.7,
+          "e": 80.98,
+          "c": 0.931308
+        },
+        {
+          "w": "airports,",
+          "s": 81.18,
+          "e": 82.25,
+          "c": 0.768831
+        },
+        {
+          "w": "the",
+          "s": 82.42,
+          "e": 82.71,
+          "c": 0.926144
+        },
+        {
+          "w": "AIP",
+          "s": 82.73,
+          "e": 83.09,
+          "c": 0.928765
+        },
+        {
+          "w": "program,",
+          "s": 83.09,
+          "e": 84.21,
+          "c": 0.904567
+        },
+        {
+          "w": "PFCs,",
+          "s": 84.39,
+          "e": 85.4,
+          "c": 0.843787
+        },
+        {
+          "w": "airport",
+          "s": 85.62,
+          "e": 86.19,
+          "c": 0.900456
+        },
+        {
+          "w": "revenues,",
+          "s": 86.19,
+          "e": 87.2,
+          "c": 0.552372
+        },
+        {
+          "w": "equate",
+          "s": 87.36,
+          "e": 87.85,
+          "c": 0.94745
+        },
+        {
+          "w": "to",
+          "s": 87.85,
+          "e": 88.08,
+          "c": 0.986988
+        },
+        {
+          "w": "about",
+          "s": 88.08,
+          "e": 88.33,
+          "c": 0.888385
+        },
+        {
+          "w": "$13",
+          "s": 88.46,
+          "e": 89.02,
+          "c": 0.835142
+        },
+        {
+          "w": "billion",
+          "s": 89.02,
+          "e": 89.65,
+          "c": 0.987228
+        },
+        {
+          "w": "a",
+          "s": 89.66,
+          "e": 89.76,
+          "c": 0.970618
+        },
+        {
+          "w": "year,",
+          "s": 89.76,
+          "e": 90.23,
+          "c": 0.170991
+        },
+        {
+          "w": "so",
+          "s": 90.48,
+          "e": 90.51,
+          "c": 0.81449
+        },
+        {
+          "w": "there's",
+          "s": 90.51,
+          "e": 91.06,
+          "c": 0.927118
+        },
+        {
+          "w": "still",
+          "s": 91.14,
+          "e": 91.55,
+          "c": 0.937176
+        },
+        {
+          "w": "a",
+          "s": 91.55,
+          "e": 91.64,
+          "c": 0.998142
+        },
+        {
+          "w": "big",
+          "s": 91.65,
+          "e": 91.91,
+          "c": 0.998273
+        },
+        {
+          "w": "gap,",
+          "s": 91.91,
+          "e": 92.23,
+          "c": 0.210307
+        },
+        {
+          "w": "so",
+          "s": 92.58,
+          "e": 92.58,
+          "c": 0.841266
+        },
+        {
+          "w": "something",
+          "s": 92.63,
+          "e": 93.32,
+          "c": 0.989681
+        },
+        {
+          "w": "has",
+          "s": 93.45,
+          "e": 93.69,
+          "c": 0.997232
+        },
+        {
+          "w": "to",
+          "s": 93.69,
+          "e": 93.87,
+          "c": 0.9964
+        },
+        {
+          "w": "give",
+          "s": 93.87,
+          "e": 94.24,
+          "c": 0.887625
+        },
+        {
+          "w": "or",
+          "s": 94.24,
+          "e": 94.39,
+          "c": 0.891431
+        },
+        {
+          "w": "something",
+          "s": 94.43,
+          "e": 95.25,
+          "c": 0.995786
+        },
+        {
+          "w": "has",
+          "s": 95.25,
+          "e": 95.47,
+          "c": 0.996656
+        },
+        {
+          "w": "to",
+          "s": 95.52,
+          "e": 95.71,
+          "c": 0.997712
+        },
+        {
+          "w": "be",
+          "s": 95.71,
+          "e": 95.89,
+          "c": 0.999094
+        },
+        {
+          "w": "done",
+          "s": 95.89,
+          "e": 96.23,
+          "c": 0.999458
+        },
+        {
+          "w": "to",
+          "s": 96.26,
+          "e": 96.28,
+          "c": 0.995435
+        },
+        {
+          "w": "start",
+          "s": 96.45,
+          "e": 96.87,
+          "c": 0.998471
+        },
+        {
+          "w": "closing",
+          "s": 96.94,
+          "e": 97.51,
+          "c": 0.998467
+        },
+        {
+          "w": "that",
+          "s": 97.61,
+          "e": 97.92,
+          "c": 0.996139
+        },
+        {
+          "w": "gap.",
+          "s": 97.92,
+          "e": 98.28,
+          "c": 0.92644
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 98.52,
+      "end_s": 124.41,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The PFC program, when it was stood up in 2000 at $3 and later, I'm sorry, in 90 at $3 and 10 years later was bumped to $450, has lost value over time with inflation. So it doesn't buy you the same thing it did then. Bumping the PFC would be a very significant help.",
+      "words": [
+        {
+          "w": "The",
+          "s": 98.518,
+          "e": 98.588,
+          "c": 0.961366
+        },
+        {
+          "w": "PFC",
+          "s": 98.588,
+          "e": 98.808,
+          "c": 0.955115
+        },
+        {
+          "w": "program,",
+          "s": 98.948,
+          "e": 99.758,
+          "c": 0.584977
+        },
+        {
+          "w": "when",
+          "s": 99.758,
+          "e": 100.148,
+          "c": 0.992665
+        },
+        {
+          "w": "it",
+          "s": 100.148,
+          "e": 100.348,
+          "c": 0.99586
+        },
+        {
+          "w": "was",
+          "s": 100.348,
+          "e": 100.648,
+          "c": 0.917127
+        },
+        {
+          "w": "stood",
+          "s": 100.648,
+          "e": 101.138,
+          "c": 0.992599
+        },
+        {
+          "w": "up",
+          "s": 101.138,
+          "e": 101.328,
+          "c": 0.987903
+        },
+        {
+          "w": "in",
+          "s": 101.388,
+          "e": 101.588,
+          "c": 0.974916
+        },
+        {
+          "w": "2000",
+          "s": 101.588,
+          "e": 102.698,
+          "c": 0.640738
+        },
+        {
+          "w": "at",
+          "s": 103.078,
+          "e": 103.488,
+          "c": 0.756107
+        },
+        {
+          "w": "$3",
+          "s": 103.488,
+          "e": 104.338,
+          "c": 0.777538
+        },
+        {
+          "w": "and",
+          "s": 104.408,
+          "e": 104.628,
+          "c": 0.550145
+        },
+        {
+          "w": "later,",
+          "s": 104.628,
+          "e": 105.048,
+          "c": 0.194845
+        },
+        {
+          "w": "I'm",
+          "s": 105.048,
+          "e": 105.298,
+          "c": 0.596324
+        },
+        {
+          "w": "sorry,",
+          "s": 105.298,
+          "e": 105.928,
+          "c": 0.847313
+        },
+        {
+          "w": "in",
+          "s": 105.928,
+          "e": 106.528,
+          "c": 0.758949
+        },
+        {
+          "w": "90",
+          "s": 106.528,
+          "e": 107.068,
+          "c": 0.356641
+        },
+        {
+          "w": "at",
+          "s": 107.368,
+          "e": 109.228,
+          "c": 0.67606
+        },
+        {
+          "w": "$3",
+          "s": 109.228,
+          "e": 110.148,
+          "c": 0.828858
+        },
+        {
+          "w": "and",
+          "s": 110.148,
+          "e": 110.458,
+          "c": 0.44603
+        },
+        {
+          "w": "10",
+          "s": 110.698,
+          "e": 110.948,
+          "c": 0.711301
+        },
+        {
+          "w": "years",
+          "s": 110.948,
+          "e": 111.348,
+          "c": 0.993809
+        },
+        {
+          "w": "later",
+          "s": 111.368,
+          "e": 111.748,
+          "c": 0.997986
+        },
+        {
+          "w": "was",
+          "s": 111.748,
+          "e": 111.988,
+          "c": 0.672704
+        },
+        {
+          "w": "bumped",
+          "s": 111.988,
+          "e": 112.468,
+          "c": 0.732023
+        },
+        {
+          "w": "to",
+          "s": 112.468,
+          "e": 112.628,
+          "c": 0.934983
+        },
+        {
+          "w": "$450,",
+          "s": 112.628,
+          "e": 113.598,
+          "c": 0.544722
+        },
+        {
+          "w": "has",
+          "s": 113.598,
+          "e": 113.828,
+          "c": 0.934926
+        },
+        {
+          "w": "lost",
+          "s": 113.868,
+          "e": 114.158,
+          "c": 0.998511
+        },
+        {
+          "w": "value",
+          "s": 114.158,
+          "e": 114.558,
+          "c": 0.99798
+        },
+        {
+          "w": "over",
+          "s": 114.558,
+          "e": 114.878,
+          "c": 0.992386
+        },
+        {
+          "w": "time",
+          "s": 114.878,
+          "e": 114.958,
+          "c": 0.998898
+        },
+        {
+          "w": "with",
+          "s": 115.258,
+          "e": 115.518,
+          "c": 0.995241
+        },
+        {
+          "w": "inflation.",
+          "s": 115.518,
+          "e": 116.508,
+          "c": 0.695829
+        },
+        {
+          "w": "So",
+          "s": 116.758,
+          "e": 116.758,
+          "c": 0.943716
+        },
+        {
+          "w": "it",
+          "s": 116.808,
+          "e": 116.948,
+          "c": 0.998424
+        },
+        {
+          "w": "doesn't",
+          "s": 116.948,
+          "e": 117.618,
+          "c": 0.995837
+        },
+        {
+          "w": "buy",
+          "s": 117.618,
+          "e": 117.898,
+          "c": 0.997895
+        },
+        {
+          "w": "you",
+          "s": 117.898,
+          "e": 118.178,
+          "c": 0.997849
+        },
+        {
+          "w": "the",
+          "s": 118.178,
+          "e": 118.458,
+          "c": 0.990919
+        },
+        {
+          "w": "same",
+          "s": 118.458,
+          "e": 118.728,
+          "c": 0.999685
+        },
+        {
+          "w": "thing",
+          "s": 118.838,
+          "e": 119.318,
+          "c": 0.996413
+        },
+        {
+          "w": "it",
+          "s": 119.318,
+          "e": 119.508,
+          "c": 0.982493
+        },
+        {
+          "w": "did",
+          "s": 119.508,
+          "e": 119.788,
+          "c": 0.999119
+        },
+        {
+          "w": "then.",
+          "s": 119.788,
+          "e": 120.528,
+          "c": 0.860347
+        },
+        {
+          "w": "Bumping",
+          "s": 120.528,
+          "e": 121.158,
+          "c": 0.970822
+        },
+        {
+          "w": "the",
+          "s": 121.178,
+          "e": 121.428,
+          "c": 0.952841
+        },
+        {
+          "w": "PFC",
+          "s": 121.428,
+          "e": 121.638,
+          "c": 0.99891
+        },
+        {
+          "w": "would",
+          "s": 121.748,
+          "e": 122.148,
+          "c": 0.99597
+        },
+        {
+          "w": "be",
+          "s": 122.148,
+          "e": 122.328,
+          "c": 0.998374
+        },
+        {
+          "w": "a",
+          "s": 122.328,
+          "e": 122.418,
+          "c": 0.861296
+        },
+        {
+          "w": "very",
+          "s": 122.418,
+          "e": 122.688,
+          "c": 0.996673
+        },
+        {
+          "w": "significant",
+          "s": 122.798,
+          "e": 123.768,
+          "c": 0.99962
+        },
+        {
+          "w": "help.",
+          "s": 123.768,
+          "e": 124.408,
+          "c": 0.98884
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 124.59,
+      "end_s": 146.79,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "and it would be airports self-generating the funds from local users of airports and airport facilities. So it's a big gap, and again, the flexibility would help, but really we need to bump the programs and provide more funding.",
+      "words": [
+        {
+          "w": "and",
+          "s": 124.594,
+          "e": 124.794,
+          "c": 0.655448
+        },
+        {
+          "w": "it",
+          "s": 124.794,
+          "e": 125.064,
+          "c": 0.996022
+        },
+        {
+          "w": "would",
+          "s": 125.064,
+          "e": 125.734,
+          "c": 0.997853
+        },
+        {
+          "w": "be",
+          "s": 125.744,
+          "e": 125.994,
+          "c": 0.999399
+        },
+        {
+          "w": "airports",
+          "s": 126.064,
+          "e": 127.064,
+          "c": 0.982396
+        },
+        {
+          "w": "self-generating",
+          "s": 127.404,
+          "e": 128.594,
+          "c": 0.806719
+        },
+        {
+          "w": "the",
+          "s": 128.834,
+          "e": 129.194,
+          "c": 0.884817
+        },
+        {
+          "w": "funds",
+          "s": 129.194,
+          "e": 129.644,
+          "c": 0.993076
+        },
+        {
+          "w": "from",
+          "s": 130.114,
+          "e": 130.854,
+          "c": 0.536515
+        },
+        {
+          "w": "local",
+          "s": 130.954,
+          "e": 131.264,
+          "c": 0.868265
+        },
+        {
+          "w": "users",
+          "s": 131.264,
+          "e": 132.004,
+          "c": 0.948628
+        },
+        {
+          "w": "of",
+          "s": 132.144,
+          "e": 132.774,
+          "c": 0.878812
+        },
+        {
+          "w": "airports",
+          "s": 132.784,
+          "e": 133.464,
+          "c": 0.904791
+        },
+        {
+          "w": "and",
+          "s": 133.464,
+          "e": 133.604,
+          "c": 0.903235
+        },
+        {
+          "w": "airport",
+          "s": 133.604,
+          "e": 133.984,
+          "c": 0.957389
+        },
+        {
+          "w": "facilities.",
+          "s": 133.984,
+          "e": 135.174,
+          "c": 0.958815
+        },
+        {
+          "w": "So",
+          "s": 135.394,
+          "e": 135.624,
+          "c": 0.82693
+        },
+        {
+          "w": "it's",
+          "s": 135.624,
+          "e": 136.504,
+          "c": 0.604326
+        },
+        {
+          "w": "a",
+          "s": 136.504,
+          "e": 136.724,
+          "c": 0.999249
+        },
+        {
+          "w": "big",
+          "s": 136.724,
+          "e": 137.364,
+          "c": 0.999451
+        },
+        {
+          "w": "gap,",
+          "s": 137.364,
+          "e": 138.234,
+          "c": 0.288965
+        },
+        {
+          "w": "and",
+          "s": 138.234,
+          "e": 138.444,
+          "c": 0.893694
+        },
+        {
+          "w": "again,",
+          "s": 138.624,
+          "e": 139.024,
+          "c": 0.555493
+        },
+        {
+          "w": "the",
+          "s": 139.024,
+          "e": 139.234,
+          "c": 0.903166
+        },
+        {
+          "w": "flexibility",
+          "s": 139.234,
+          "e": 140.084,
+          "c": 0.999529
+        },
+        {
+          "w": "would",
+          "s": 140.084,
+          "e": 140.434,
+          "c": 0.966169
+        },
+        {
+          "w": "help,",
+          "s": 140.434,
+          "e": 140.804,
+          "c": 0.819388
+        },
+        {
+          "w": "but",
+          "s": 141.004,
+          "e": 141.124,
+          "c": 0.997744
+        },
+        {
+          "w": "really",
+          "s": 141.124,
+          "e": 141.744,
+          "c": 0.939298
+        },
+        {
+          "w": "we",
+          "s": 141.774,
+          "e": 141.984,
+          "c": 0.7493
+        },
+        {
+          "w": "need",
+          "s": 141.984,
+          "e": 142.404,
+          "c": 0.999209
+        },
+        {
+          "w": "to",
+          "s": 142.414,
+          "e": 142.624,
+          "c": 0.998679
+        },
+        {
+          "w": "bump",
+          "s": 142.624,
+          "e": 142.994,
+          "c": 0.85927
+        },
+        {
+          "w": "the",
+          "s": 143.074,
+          "e": 143.374,
+          "c": 0.996622
+        },
+        {
+          "w": "programs",
+          "s": 143.374,
+          "e": 144.244,
+          "c": 0.993519
+        },
+        {
+          "w": "and",
+          "s": 144.244,
+          "e": 144.564,
+          "c": 0.992473
+        },
+        {
+          "w": "provide",
+          "s": 144.564,
+          "e": 145.284,
+          "c": 0.998352
+        },
+        {
+          "w": "more",
+          "s": 145.464,
+          "e": 145.754,
+          "c": 0.998013
+        },
+        {
+          "w": "funding.",
+          "s": 145.754,
+          "e": 146.794,
+          "c": 0.993909
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 147.11,
+      "end_s": 153.56,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Sometimes when Congress wants to raise taxes, we call it a user fee as a euphemism.",
+      "words": [
+        {
+          "w": "Sometimes",
+          "s": 147.114,
+          "e": 147.454,
+          "c": 0.914985
+        },
+        {
+          "w": "when",
+          "s": 147.534,
+          "e": 147.814,
+          "c": 0.894602
+        },
+        {
+          "w": "Congress",
+          "s": 147.814,
+          "e": 148.374,
+          "c": 0.94778
+        },
+        {
+          "w": "wants",
+          "s": 148.374,
+          "e": 148.724,
+          "c": 0.99534
+        },
+        {
+          "w": "to",
+          "s": 148.724,
+          "e": 148.864,
+          "c": 0.999216
+        },
+        {
+          "w": "raise",
+          "s": 148.864,
+          "e": 149.094,
+          "c": 0.997887
+        },
+        {
+          "w": "taxes,",
+          "s": 149.254,
+          "e": 149.624,
+          "c": 0.7108
+        },
+        {
+          "w": "we",
+          "s": 149.924,
+          "e": 149.984,
+          "c": 0.903559
+        },
+        {
+          "w": "call",
+          "s": 150.014,
+          "e": 150.554,
+          "c": 0.986502
+        },
+        {
+          "w": "it",
+          "s": 150.554,
+          "e": 150.794,
+          "c": 0.990085
+        },
+        {
+          "w": "a",
+          "s": 150.824,
+          "e": 150.954,
+          "c": 0.946366
+        },
+        {
+          "w": "user",
+          "s": 150.954,
+          "e": 151.484,
+          "c": 0.671911
+        },
+        {
+          "w": "fee",
+          "s": 151.564,
+          "e": 151.894,
+          "c": 0.979699
+        },
+        {
+          "w": "as",
+          "s": 151.894,
+          "e": 152.164,
+          "c": 0.750843
+        },
+        {
+          "w": "a",
+          "s": 152.164,
+          "e": 152.244,
+          "c": 0.99639
+        },
+        {
+          "w": "euphemism.",
+          "s": 152.564,
+          "e": 153.564,
+          "c": 0.620678
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 153.73,
+      "end_s": 172.78,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "But the passenger facility charge never goes into our coffers here at the federal government. It truly is a user fee because it goes from the user to the airport. Can you talk about how you use those fees responsibly and what you would do if we did increase the cap?",
+      "words": [
+        {
+          "w": "But",
+          "s": 153.73,
+          "e": 153.74,
+          "c": 0.702048
+        },
+        {
+          "w": "the",
+          "s": 153.74,
+          "e": 153.96,
+          "c": 0.973652
+        },
+        {
+          "w": "passenger",
+          "s": 153.96,
+          "e": 154.6,
+          "c": 0.984098
+        },
+        {
+          "w": "facility",
+          "s": 154.69,
+          "e": 155.2,
+          "c": 0.985467
+        },
+        {
+          "w": "charge",
+          "s": 155.23,
+          "e": 155.63,
+          "c": 0.989012
+        },
+        {
+          "w": "never",
+          "s": 155.69,
+          "e": 156.07,
+          "c": 0.887855
+        },
+        {
+          "w": "goes",
+          "s": 156.68,
+          "e": 157.02,
+          "c": 0.863897
+        },
+        {
+          "w": "into",
+          "s": 157.02,
+          "e": 157.22,
+          "c": 0.895652
+        },
+        {
+          "w": "our",
+          "s": 157.22,
+          "e": 157.43,
+          "c": 0.945797
+        },
+        {
+          "w": "coffers",
+          "s": 157.43,
+          "e": 157.92,
+          "c": 0.99533
+        },
+        {
+          "w": "here",
+          "s": 157.92,
+          "e": 158.17,
+          "c": 0.773274
+        },
+        {
+          "w": "at",
+          "s": 158.18,
+          "e": 158.19,
+          "c": 0.862799
+        },
+        {
+          "w": "the",
+          "s": 158.26,
+          "e": 158.3,
+          "c": 0.976166
+        },
+        {
+          "w": "federal",
+          "s": 158.3,
+          "e": 158.66,
+          "c": 0.745258
+        },
+        {
+          "w": "government.",
+          "s": 158.66,
+          "e": 159.32,
+          "c": 0.839772
+        },
+        {
+          "w": "It",
+          "s": 159.5,
+          "e": 159.5,
+          "c": 0.911879
+        },
+        {
+          "w": "truly",
+          "s": 159.55,
+          "e": 159.96,
+          "c": 0.99467
+        },
+        {
+          "w": "is",
+          "s": 159.96,
+          "e": 160.12,
+          "c": 0.99891
+        },
+        {
+          "w": "a",
+          "s": 160.15,
+          "e": 160.23,
+          "c": 0.996316
+        },
+        {
+          "w": "user",
+          "s": 160.23,
+          "e": 160.6,
+          "c": 0.997594
+        },
+        {
+          "w": "fee",
+          "s": 160.6,
+          "e": 160.92,
+          "c": 0.993921
+        },
+        {
+          "w": "because",
+          "s": 160.92,
+          "e": 161.62,
+          "c": 0.777372
+        },
+        {
+          "w": "it",
+          "s": 161.62,
+          "e": 161.81,
+          "c": 0.977092
+        },
+        {
+          "w": "goes",
+          "s": 161.81,
+          "e": 161.89,
+          "c": 0.985547
+        },
+        {
+          "w": "from",
+          "s": 162.46,
+          "e": 162.59,
+          "c": 0.997297
+        },
+        {
+          "w": "the",
+          "s": 162.59,
+          "e": 162.88,
+          "c": 0.997632
+        },
+        {
+          "w": "user",
+          "s": 162.88,
+          "e": 163.26,
+          "c": 0.998742
+        },
+        {
+          "w": "to",
+          "s": 163.33,
+          "e": 163.46,
+          "c": 0.99701
+        },
+        {
+          "w": "the",
+          "s": 163.46,
+          "e": 163.74,
+          "c": 0.998814
+        },
+        {
+          "w": "airport.",
+          "s": 163.76,
+          "e": 164.74,
+          "c": 0.984684
+        },
+        {
+          "w": "Can",
+          "s": 164.96,
+          "e": 165.19,
+          "c": 0.994427
+        },
+        {
+          "w": "you",
+          "s": 165.19,
+          "e": 165.64,
+          "c": 0.99919
+        },
+        {
+          "w": "talk",
+          "s": 165.64,
+          "e": 166.24,
+          "c": 0.997381
+        },
+        {
+          "w": "about",
+          "s": 166.24,
+          "e": 167,
+          "c": 0.999396
+        },
+        {
+          "w": "how",
+          "s": 167,
+          "e": 167.26,
+          "c": 0.972327
+        },
+        {
+          "w": "you",
+          "s": 167.28,
+          "e": 167.38,
+          "c": 0.998527
+        },
+        {
+          "w": "use",
+          "s": 167.58,
+          "e": 167.58,
+          "c": 0.831511
+        },
+        {
+          "w": "those",
+          "s": 167.95,
+          "e": 168.31,
+          "c": 0.997113
+        },
+        {
+          "w": "fees",
+          "s": 168.31,
+          "e": 168.68,
+          "c": 0.990917
+        },
+        {
+          "w": "responsibly",
+          "s": 168.68,
+          "e": 169.74,
+          "c": 0.983425
+        },
+        {
+          "w": "and",
+          "s": 169.74,
+          "e": 169.91,
+          "c": 0.600915
+        },
+        {
+          "w": "what",
+          "s": 169.92,
+          "e": 170.06,
+          "c": 0.862292
+        },
+        {
+          "w": "you",
+          "s": 170.06,
+          "e": 170.16,
+          "c": 0.991181
+        },
+        {
+          "w": "would",
+          "s": 170.16,
+          "e": 170.34,
+          "c": 0.990023
+        },
+        {
+          "w": "do",
+          "s": 170.34,
+          "e": 170.86,
+          "c": 0.984923
+        },
+        {
+          "w": "if",
+          "s": 170.86,
+          "e": 171.07,
+          "c": 0.924911
+        },
+        {
+          "w": "we",
+          "s": 171.07,
+          "e": 171.27,
+          "c": 0.993377
+        },
+        {
+          "w": "did",
+          "s": 171.27,
+          "e": 171.54,
+          "c": 0.986098
+        },
+        {
+          "w": "increase",
+          "s": 171.54,
+          "e": 172.23,
+          "c": 0.989171
+        },
+        {
+          "w": "the",
+          "s": 172.24,
+          "e": 172.5,
+          "c": 0.998232
+        },
+        {
+          "w": "cap?",
+          "s": 172.5,
+          "e": 172.78,
+          "c": 0.677274
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 172.98,
+      "end_s": 181.05,
+      "speaker": "SPEAKER_09",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "for the first time in many years, allowing you to collect your own revenue? It's with the big infrastructure needs, a lot of",
+      "words": [
+        {
+          "w": "for",
+          "s": 172.984,
+          "e": 173.094,
+          "c": 0.645392
+        },
+        {
+          "w": "the",
+          "s": 173.094,
+          "e": 173.404,
+          "c": 0.99839
+        },
+        {
+          "w": "first",
+          "s": 173.404,
+          "e": 173.934,
+          "c": 0.997004
+        },
+        {
+          "w": "time",
+          "s": 173.934,
+          "e": 174.314,
+          "c": 0.998571
+        },
+        {
+          "w": "in",
+          "s": 174.374,
+          "e": 174.564,
+          "c": 0.994939
+        },
+        {
+          "w": "many",
+          "s": 174.564,
+          "e": 174.984,
+          "c": 0.989353
+        },
+        {
+          "w": "years,",
+          "s": 174.984,
+          "e": 175.684,
+          "c": 0.550578
+        },
+        {
+          "w": "allowing",
+          "s": 175.684,
+          "e": 176.274,
+          "c": 0.605949
+        },
+        {
+          "w": "you",
+          "s": 176.274,
+          "e": 176.504,
+          "c": 0.994958
+        },
+        {
+          "w": "to",
+          "s": 176.504,
+          "e": 176.584,
+          "c": 0.985197
+        },
+        {
+          "w": "collect",
+          "s": 176.584,
+          "e": 176.864,
+          "c": 0.991947
+        },
+        {
+          "w": "your",
+          "s": 176.944,
+          "e": 177.134,
+          "c": 0.978558
+        },
+        {
+          "w": "own",
+          "s": 177.134,
+          "e": 177.304,
+          "c": 0.990454
+        },
+        {
+          "w": "revenue?",
+          "s": 177.304,
+          "e": 177.774,
+          "c": 0.860019
+        },
+        {
+          "w": "It's",
+          "s": 178.054,
+          "e": 178.204,
+          "c": 0.763764
+        },
+        {
+          "w": "with",
+          "s": 178.204,
+          "e": 178.504,
+          "c": 0.404883
+        },
+        {
+          "w": "the",
+          "s": 178.504,
+          "e": 178.634,
+          "c": 0.991117
+        },
+        {
+          "w": "big",
+          "s": 178.724,
+          "e": 178.944,
+          "c": 0.978542
+        },
+        {
+          "w": "infrastructure",
+          "s": 178.944,
+          "e": 179.994,
+          "c": 0.993729
+        },
+        {
+          "w": "needs,",
+          "s": 179.994,
+          "e": 180.434,
+          "c": 0.592114
+        },
+        {
+          "w": "a",
+          "s": 180.534,
+          "e": 180.564,
+          "c": 0.938534
+        },
+        {
+          "w": "lot",
+          "s": 180.724,
+          "e": 180.884,
+          "c": 0.99818
+        },
+        {
+          "w": "of",
+          "s": 180.964,
+          "e": 181.054,
+          "c": 0.993659
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 181.05,
+      "end_s": 195.04,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "it in terminals and land side. What the PFC program does is gives you the flexibility to use those funds in those areas as opposed to everything on the year field. The AIP program",
+      "words": [
+        {
+          "w": "it",
+          "s": 181.054,
+          "e": 181.224,
+          "c": 0.991142
+        },
+        {
+          "w": "in",
+          "s": 181.224,
+          "e": 181.394,
+          "c": 0.964969
+        },
+        {
+          "w": "terminals",
+          "s": 181.394,
+          "e": 182.224,
+          "c": 0.990872
+        },
+        {
+          "w": "and",
+          "s": 182.224,
+          "e": 182.384,
+          "c": 0.574385
+        },
+        {
+          "w": "land",
+          "s": 182.384,
+          "e": 182.764,
+          "c": 0.832094
+        },
+        {
+          "w": "side.",
+          "s": 183.204,
+          "e": 183.514,
+          "c": 0.712198
+        },
+        {
+          "w": "What",
+          "s": 183.784,
+          "e": 183.944,
+          "c": 0.800436
+        },
+        {
+          "w": "the",
+          "s": 183.944,
+          "e": 184.214,
+          "c": 0.996141
+        },
+        {
+          "w": "PFC",
+          "s": 184.214,
+          "e": 184.484,
+          "c": 0.978217
+        },
+        {
+          "w": "program",
+          "s": 184.484,
+          "e": 185.114,
+          "c": 0.91347
+        },
+        {
+          "w": "does",
+          "s": 185.114,
+          "e": 185.484,
+          "c": 0.99639
+        },
+        {
+          "w": "is",
+          "s": 185.484,
+          "e": 185.664,
+          "c": 0.855177
+        },
+        {
+          "w": "gives",
+          "s": 185.664,
+          "e": 186.054,
+          "c": 0.654751
+        },
+        {
+          "w": "you",
+          "s": 186.394,
+          "e": 186.394,
+          "c": 0.997092
+        },
+        {
+          "w": "the",
+          "s": 186.414,
+          "e": 186.664,
+          "c": 0.990756
+        },
+        {
+          "w": "flexibility",
+          "s": 186.664,
+          "e": 187.664,
+          "c": 0.995879
+        },
+        {
+          "w": "to",
+          "s": 187.744,
+          "e": 187.904,
+          "c": 0.967759
+        },
+        {
+          "w": "use",
+          "s": 187.904,
+          "e": 188.224,
+          "c": 0.983935
+        },
+        {
+          "w": "those",
+          "s": 188.224,
+          "e": 188.464,
+          "c": 0.967386
+        },
+        {
+          "w": "funds",
+          "s": 188.884,
+          "e": 189.504,
+          "c": 0.961244
+        },
+        {
+          "w": "in",
+          "s": 189.654,
+          "e": 189.654,
+          "c": 0.989906
+        },
+        {
+          "w": "those",
+          "s": 189.704,
+          "e": 190.024,
+          "c": 0.999703
+        },
+        {
+          "w": "areas",
+          "s": 190.064,
+          "e": 190.414,
+          "c": 0.999491
+        },
+        {
+          "w": "as",
+          "s": 190.414,
+          "e": 190.544,
+          "c": 0.706789
+        },
+        {
+          "w": "opposed",
+          "s": 190.584,
+          "e": 191.034,
+          "c": 0.997815
+        },
+        {
+          "w": "to",
+          "s": 191.094,
+          "e": 191.164,
+          "c": 0.99923
+        },
+        {
+          "w": "everything",
+          "s": 191.274,
+          "e": 191.974,
+          "c": 0.994691
+        },
+        {
+          "w": "on",
+          "s": 191.974,
+          "e": 192.034,
+          "c": 0.996194
+        },
+        {
+          "w": "the",
+          "s": 192.324,
+          "e": 192.384,
+          "c": 0.978883
+        },
+        {
+          "w": "year",
+          "s": 192.384,
+          "e": 192.684,
+          "c": 0.65824
+        },
+        {
+          "w": "field.",
+          "s": 192.684,
+          "e": 193.334,
+          "c": 0.693177
+        },
+        {
+          "w": "The",
+          "s": 193.344,
+          "e": 193.764,
+          "c": 0.844198
+        },
+        {
+          "w": "AIP",
+          "s": 193.764,
+          "e": 194.184,
+          "c": 0.82825
+        },
+        {
+          "w": "program",
+          "s": 194.184,
+          "e": 195.044,
+          "c": 0.970816
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 195.34,
+      "end_s": 195.35,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "is",
+      "words": [
+        {
+          "w": "is",
+          "s": 195.341,
+          "e": 195.341,
+          "c": 0.884825
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 195.46,
+      "end_s": 223.14,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "more geared to airfield improvement. So as PFC revenues increase, airports have a better ability to improve terminals, improve the airfield as well. We can use those funds on the airfield. They can provide matches to grants that we receive in picking up that gap. And the more we can do with grants and with the PFC program,",
+      "words": [
+        {
+          "w": "more",
+          "s": 195.461,
+          "e": 195.671,
+          "c": 0.998428
+        },
+        {
+          "w": "geared",
+          "s": 195.671,
+          "e": 196.171,
+          "c": 0.982454
+        },
+        {
+          "w": "to",
+          "s": 196.171,
+          "e": 196.321,
+          "c": 0.998416
+        },
+        {
+          "w": "airfield",
+          "s": 196.321,
+          "e": 196.981,
+          "c": 0.982847
+        },
+        {
+          "w": "improvement.",
+          "s": 196.981,
+          "e": 198.131,
+          "c": 0.944029
+        },
+        {
+          "w": "So",
+          "s": 198.381,
+          "e": 198.481,
+          "c": 0.599365
+        },
+        {
+          "w": "as",
+          "s": 198.501,
+          "e": 198.781,
+          "c": 0.885012
+        },
+        {
+          "w": "PFC",
+          "s": 198.781,
+          "e": 199.221,
+          "c": 0.977905
+        },
+        {
+          "w": "revenues",
+          "s": 199.231,
+          "e": 200.361,
+          "c": 0.915849
+        },
+        {
+          "w": "increase,",
+          "s": 200.431,
+          "e": 201.941,
+          "c": 0.975
+        },
+        {
+          "w": "airports",
+          "s": 202.261,
+          "e": 202.611,
+          "c": 0.996227
+        },
+        {
+          "w": "have",
+          "s": 202.611,
+          "e": 202.941,
+          "c": 0.999613
+        },
+        {
+          "w": "a",
+          "s": 202.941,
+          "e": 203.011,
+          "c": 0.988949
+        },
+        {
+          "w": "better",
+          "s": 203.021,
+          "e": 203.471,
+          "c": 0.999653
+        },
+        {
+          "w": "ability",
+          "s": 203.581,
+          "e": 204.131,
+          "c": 0.997212
+        },
+        {
+          "w": "to",
+          "s": 204.191,
+          "e": 204.381,
+          "c": 0.929748
+        },
+        {
+          "w": "improve",
+          "s": 204.431,
+          "e": 204.611,
+          "c": 0.983157
+        },
+        {
+          "w": "terminals,",
+          "s": 205.131,
+          "e": 205.801,
+          "c": 0.975219
+        },
+        {
+          "w": "improve",
+          "s": 206.041,
+          "e": 206.181,
+          "c": 0.992612
+        },
+        {
+          "w": "the",
+          "s": 206.181,
+          "e": 206.321,
+          "c": 0.998195
+        },
+        {
+          "w": "airfield",
+          "s": 206.321,
+          "e": 206.701,
+          "c": 0.991259
+        },
+        {
+          "w": "as",
+          "s": 206.701,
+          "e": 206.791,
+          "c": 0.901959
+        },
+        {
+          "w": "well.",
+          "s": 206.791,
+          "e": 207.181,
+          "c": 0.828112
+        },
+        {
+          "w": "We",
+          "s": 207.341,
+          "e": 207.341,
+          "c": 0.998847
+        },
+        {
+          "w": "can",
+          "s": 207.461,
+          "e": 207.591,
+          "c": 0.997533
+        },
+        {
+          "w": "use",
+          "s": 207.591,
+          "e": 207.841,
+          "c": 0.999355
+        },
+        {
+          "w": "those",
+          "s": 207.841,
+          "e": 208.241,
+          "c": 0.996073
+        },
+        {
+          "w": "funds",
+          "s": 208.261,
+          "e": 208.681,
+          "c": 0.997533
+        },
+        {
+          "w": "on",
+          "s": 208.681,
+          "e": 208.841,
+          "c": 0.955341
+        },
+        {
+          "w": "the",
+          "s": 208.841,
+          "e": 209.011,
+          "c": 0.993449
+        },
+        {
+          "w": "airfield.",
+          "s": 209.091,
+          "e": 209.851,
+          "c": 0.89173
+        },
+        {
+          "w": "They",
+          "s": 210.281,
+          "e": 210.471,
+          "c": 0.998614
+        },
+        {
+          "w": "can",
+          "s": 210.471,
+          "e": 210.791,
+          "c": 0.998123
+        },
+        {
+          "w": "provide",
+          "s": 210.791,
+          "e": 211.541,
+          "c": 0.999129
+        },
+        {
+          "w": "matches",
+          "s": 211.541,
+          "e": 212.321,
+          "c": 0.990526
+        },
+        {
+          "w": "to",
+          "s": 212.321,
+          "e": 213.881,
+          "c": 0.868686
+        },
+        {
+          "w": "grants",
+          "s": 213.881,
+          "e": 214.321,
+          "c": 0.903841
+        },
+        {
+          "w": "that",
+          "s": 214.351,
+          "e": 214.501,
+          "c": 0.812883
+        },
+        {
+          "w": "we",
+          "s": 214.501,
+          "e": 214.621,
+          "c": 0.986833
+        },
+        {
+          "w": "receive",
+          "s": 214.621,
+          "e": 215.511,
+          "c": 0.77439
+        },
+        {
+          "w": "in",
+          "s": 215.761,
+          "e": 215.761,
+          "c": 0.718454
+        },
+        {
+          "w": "picking",
+          "s": 215.901,
+          "e": 216.421,
+          "c": 0.998609
+        },
+        {
+          "w": "up",
+          "s": 216.421,
+          "e": 216.591,
+          "c": 0.998662
+        },
+        {
+          "w": "that",
+          "s": 216.591,
+          "e": 216.971,
+          "c": 0.998382
+        },
+        {
+          "w": "gap.",
+          "s": 216.971,
+          "e": 217.281,
+          "c": 0.813129
+        },
+        {
+          "w": "And",
+          "s": 217.461,
+          "e": 217.541,
+          "c": 0.813796
+        },
+        {
+          "w": "the",
+          "s": 217.601,
+          "e": 217.801,
+          "c": 0.998569
+        },
+        {
+          "w": "more",
+          "s": 217.801,
+          "e": 218.151,
+          "c": 0.999884
+        },
+        {
+          "w": "we",
+          "s": 218.151,
+          "e": 218.311,
+          "c": 0.995708
+        },
+        {
+          "w": "can",
+          "s": 218.321,
+          "e": 218.581,
+          "c": 0.998932
+        },
+        {
+          "w": "do",
+          "s": 218.581,
+          "e": 218.781,
+          "c": 0.999134
+        },
+        {
+          "w": "with",
+          "s": 218.781,
+          "e": 219.681,
+          "c": 0.927833
+        },
+        {
+          "w": "grants",
+          "s": 219.681,
+          "e": 221.041,
+          "c": 0.92899
+        },
+        {
+          "w": "and",
+          "s": 221.041,
+          "e": 221.121,
+          "c": 0.690635
+        },
+        {
+          "w": "with",
+          "s": 221.351,
+          "e": 221.771,
+          "c": 0.989865
+        },
+        {
+          "w": "the",
+          "s": 221.771,
+          "e": 222.081,
+          "c": 0.893726
+        },
+        {
+          "w": "PFC",
+          "s": 222.081,
+          "e": 222.371,
+          "c": 0.99635
+        },
+        {
+          "w": "program,",
+          "s": 222.371,
+          "e": 223.141,
+          "c": 0.744253
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 223.29,
+      "end_s": 250.43,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "It's less we have to do with debt and less costs that flow down to the air carriers that fly in and out of our facilities. So we're always, as airport operators, we are consistently looking for ways to find our needs. And no one's -- and I can tell you, I've been the CEO in three airports. The needs were different in each, and we adapt to the needs. New Orleans, the new terminal was essential.",
+      "words": [
+        {
+          "w": "It's",
+          "s": 223.29,
+          "e": 223.46,
+          "c": 0.688278
+        },
+        {
+          "w": "less",
+          "s": 223.49,
+          "e": 223.81,
+          "c": 0.998235
+        },
+        {
+          "w": "we",
+          "s": 223.81,
+          "e": 223.97,
+          "c": 0.96203
+        },
+        {
+          "w": "have",
+          "s": 223.98,
+          "e": 224.33,
+          "c": 0.997643
+        },
+        {
+          "w": "to",
+          "s": 224.33,
+          "e": 224.44,
+          "c": 0.998199
+        },
+        {
+          "w": "do",
+          "s": 224.5,
+          "e": 224.67,
+          "c": 0.977709
+        },
+        {
+          "w": "with",
+          "s": 224.67,
+          "e": 224.99,
+          "c": 0.987944
+        },
+        {
+          "w": "debt",
+          "s": 225.01,
+          "e": 225.36,
+          "c": 0.987127
+        },
+        {
+          "w": "and",
+          "s": 225.51,
+          "e": 225.64,
+          "c": 0.795781
+        },
+        {
+          "w": "less",
+          "s": 225.64,
+          "e": 226,
+          "c": 0.982965
+        },
+        {
+          "w": "costs",
+          "s": 226.31,
+          "e": 226.76,
+          "c": 0.916799
+        },
+        {
+          "w": "that",
+          "s": 226.76,
+          "e": 226.88,
+          "c": 0.783045
+        },
+        {
+          "w": "flow",
+          "s": 226.88,
+          "e": 227.12,
+          "c": 0.962711
+        },
+        {
+          "w": "down",
+          "s": 227.12,
+          "e": 227.46,
+          "c": 0.789643
+        },
+        {
+          "w": "to",
+          "s": 227.46,
+          "e": 227.62,
+          "c": 0.825205
+        },
+        {
+          "w": "the",
+          "s": 227.62,
+          "e": 227.8,
+          "c": 0.90867
+        },
+        {
+          "w": "air",
+          "s": 227.8,
+          "e": 227.94,
+          "c": 0.975811
+        },
+        {
+          "w": "carriers",
+          "s": 227.94,
+          "e": 228.55,
+          "c": 0.863502
+        },
+        {
+          "w": "that",
+          "s": 228.55,
+          "e": 229.08,
+          "c": 0.579335
+        },
+        {
+          "w": "fly",
+          "s": 229.08,
+          "e": 229.3,
+          "c": 0.592549
+        },
+        {
+          "w": "in",
+          "s": 229.3,
+          "e": 229.56,
+          "c": 0.952497
+        },
+        {
+          "w": "and",
+          "s": 229.56,
+          "e": 229.67,
+          "c": 0.876007
+        },
+        {
+          "w": "out",
+          "s": 229.67,
+          "e": 229.84,
+          "c": 0.964188
+        },
+        {
+          "w": "of",
+          "s": 229.84,
+          "e": 229.99,
+          "c": 0.975321
+        },
+        {
+          "w": "our",
+          "s": 229.99,
+          "e": 230.22,
+          "c": 0.991406
+        },
+        {
+          "w": "facilities.",
+          "s": 230.22,
+          "e": 231.15,
+          "c": 0.968727
+        },
+        {
+          "w": "So",
+          "s": 231.43,
+          "e": 231.43,
+          "c": 0.63813
+        },
+        {
+          "w": "we're",
+          "s": 231.47,
+          "e": 231.86,
+          "c": 0.786013
+        },
+        {
+          "w": "always,",
+          "s": 231.86,
+          "e": 232.56,
+          "c": 0.66687
+        },
+        {
+          "w": "as",
+          "s": 232.56,
+          "e": 232.73,
+          "c": 0.997605
+        },
+        {
+          "w": "airport",
+          "s": 232.74,
+          "e": 233.35,
+          "c": 0.976902
+        },
+        {
+          "w": "operators,",
+          "s": 233.35,
+          "e": 234.37,
+          "c": 0.966394
+        },
+        {
+          "w": "we",
+          "s": 234.49,
+          "e": 234.54,
+          "c": 0.893305
+        },
+        {
+          "w": "are",
+          "s": 234.54,
+          "e": 234.77,
+          "c": 0.898034
+        },
+        {
+          "w": "consistently",
+          "s": 234.78,
+          "e": 235.74,
+          "c": 0.994497
+        },
+        {
+          "w": "looking",
+          "s": 235.74,
+          "e": 236.3,
+          "c": 0.99289
+        },
+        {
+          "w": "for",
+          "s": 236.3,
+          "e": 236.54,
+          "c": 0.990091
+        },
+        {
+          "w": "ways",
+          "s": 236.54,
+          "e": 236.88,
+          "c": 0.993608
+        },
+        {
+          "w": "to",
+          "s": 236.88,
+          "e": 237.03,
+          "c": 0.982055
+        },
+        {
+          "w": "find",
+          "s": 237.1,
+          "e": 237.24,
+          "c": 0.894748
+        },
+        {
+          "w": "our",
+          "s": 237.38,
+          "e": 237.62,
+          "c": 0.987304
+        },
+        {
+          "w": "needs.",
+          "s": 237.62,
+          "e": 238.06,
+          "c": 0.567509
+        },
+        {
+          "w": "And",
+          "s": 238.27,
+          "e": 238.33,
+          "c": 0.89815
+        },
+        {
+          "w": "no",
+          "s": 238.33,
+          "e": 238.51,
+          "c": 0.722198
+        },
+        {
+          "w": "one's",
+          "s": 238.57,
+          "e": 238.96,
+          "c": 0.918771
+        },
+        {
+          "w": "--",
+          "s": 238.96,
+          "e": 239.16,
+          "c": 0.204905
+        },
+        {
+          "w": "and",
+          "s": 239.16,
+          "e": 239.38,
+          "c": 0.666456
+        },
+        {
+          "w": "I",
+          "s": 239.43,
+          "e": 239.46,
+          "c": 0.99659
+        },
+        {
+          "w": "can",
+          "s": 239.46,
+          "e": 239.69,
+          "c": 0.99575
+        },
+        {
+          "w": "tell",
+          "s": 239.69,
+          "e": 239.91,
+          "c": 0.99906
+        },
+        {
+          "w": "you,",
+          "s": 240.02,
+          "e": 240.3,
+          "c": 0.537953
+        },
+        {
+          "w": "I've",
+          "s": 240.44,
+          "e": 240.68,
+          "c": 0.985706
+        },
+        {
+          "w": "been",
+          "s": 240.68,
+          "e": 240.93,
+          "c": 0.987894
+        },
+        {
+          "w": "the",
+          "s": 241.02,
+          "e": 241.22,
+          "c": 0.587752
+        },
+        {
+          "w": "CEO",
+          "s": 241.32,
+          "e": 241.45,
+          "c": 0.994622
+        },
+        {
+          "w": "in",
+          "s": 241.45,
+          "e": 241.57,
+          "c": 0.977144
+        },
+        {
+          "w": "three",
+          "s": 241.6,
+          "e": 241.94,
+          "c": 0.971256
+        },
+        {
+          "w": "airports.",
+          "s": 241.99,
+          "e": 242.88,
+          "c": 0.937326
+        },
+        {
+          "w": "The",
+          "s": 243.09,
+          "e": 243.15,
+          "c": 0.995934
+        },
+        {
+          "w": "needs",
+          "s": 243.15,
+          "e": 243.61,
+          "c": 0.999024
+        },
+        {
+          "w": "were",
+          "s": 243.61,
+          "e": 243.97,
+          "c": 0.974585
+        },
+        {
+          "w": "different",
+          "s": 243.97,
+          "e": 244.73,
+          "c": 0.998774
+        },
+        {
+          "w": "in",
+          "s": 244.84,
+          "e": 244.97,
+          "c": 0.97633
+        },
+        {
+          "w": "each,",
+          "s": 244.97,
+          "e": 245.51,
+          "c": 0.428068
+        },
+        {
+          "w": "and",
+          "s": 245.51,
+          "e": 245.75,
+          "c": 0.992784
+        },
+        {
+          "w": "we",
+          "s": 245.77,
+          "e": 245.86,
+          "c": 0.99838
+        },
+        {
+          "w": "adapt",
+          "s": 246.11,
+          "e": 246.41,
+          "c": 0.981532
+        },
+        {
+          "w": "to",
+          "s": 246.42,
+          "e": 246.6,
+          "c": 0.999439
+        },
+        {
+          "w": "the",
+          "s": 246.6,
+          "e": 246.87,
+          "c": 0.999432
+        },
+        {
+          "w": "needs.",
+          "s": 246.87,
+          "e": 247.68,
+          "c": 0.993544
+        },
+        {
+          "w": "New",
+          "s": 247.88,
+          "e": 247.88,
+          "c": 0.948632
+        },
+        {
+          "w": "Orleans,",
+          "s": 247.91,
+          "e": 248.48,
+          "c": 0.881703
+        },
+        {
+          "w": "the",
+          "s": 248.48,
+          "e": 248.65,
+          "c": 0.953401
+        },
+        {
+          "w": "new",
+          "s": 248.7,
+          "e": 248.88,
+          "c": 0.992608
+        },
+        {
+          "w": "terminal",
+          "s": 248.88,
+          "e": 249.41,
+          "c": 0.990701
+        },
+        {
+          "w": "was",
+          "s": 249.41,
+          "e": 249.53,
+          "c": 0.835783
+        },
+        {
+          "w": "essential.",
+          "s": 249.64,
+          "e": 250.43,
+          "c": 0.969372
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 250.64,
+      "end_s": 267.45,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "In St. Louis, we went through a significant upgrade of the existing facilities, and that was sufficient there. In San Antonio, a new terminal and concourse was needed to replace a World War II facility.",
+      "words": [
+        {
+          "w": "In",
+          "s": 250.642,
+          "e": 250.752,
+          "c": 0.901832
+        },
+        {
+          "w": "St.",
+          "s": 250.752,
+          "e": 251.542,
+          "c": 0.866999
+        },
+        {
+          "w": "Louis,",
+          "s": 251.542,
+          "e": 252.672,
+          "c": 0.819618
+        },
+        {
+          "w": "we",
+          "s": 252.672,
+          "e": 252.852,
+          "c": 0.961654
+        },
+        {
+          "w": "went",
+          "s": 252.852,
+          "e": 253.212,
+          "c": 0.997402
+        },
+        {
+          "w": "through",
+          "s": 253.212,
+          "e": 253.872,
+          "c": 0.995799
+        },
+        {
+          "w": "a",
+          "s": 253.872,
+          "e": 253.942,
+          "c": 0.964389
+        },
+        {
+          "w": "significant",
+          "s": 253.942,
+          "e": 254.752,
+          "c": 0.997533
+        },
+        {
+          "w": "upgrade",
+          "s": 254.902,
+          "e": 255.262,
+          "c": 0.994805
+        },
+        {
+          "w": "of",
+          "s": 255.382,
+          "e": 255.492,
+          "c": 0.883861
+        },
+        {
+          "w": "the",
+          "s": 255.492,
+          "e": 255.732,
+          "c": 0.987935
+        },
+        {
+          "w": "existing",
+          "s": 255.732,
+          "e": 256.262,
+          "c": 0.989555
+        },
+        {
+          "w": "facilities,",
+          "s": 256.362,
+          "e": 257.272,
+          "c": 0.450746
+        },
+        {
+          "w": "and",
+          "s": 257.282,
+          "e": 257.462,
+          "c": 0.825485
+        },
+        {
+          "w": "that",
+          "s": 257.462,
+          "e": 257.662,
+          "c": 0.968908
+        },
+        {
+          "w": "was",
+          "s": 257.772,
+          "e": 257.882,
+          "c": 0.991261
+        },
+        {
+          "w": "sufficient",
+          "s": 257.972,
+          "e": 258.462,
+          "c": 0.98157
+        },
+        {
+          "w": "there.",
+          "s": 258.462,
+          "e": 258.962,
+          "c": 0.974277
+        },
+        {
+          "w": "In",
+          "s": 259.152,
+          "e": 259.192,
+          "c": 0.997369
+        },
+        {
+          "w": "San",
+          "s": 259.192,
+          "e": 259.522,
+          "c": 0.997097
+        },
+        {
+          "w": "Antonio,",
+          "s": 259.522,
+          "e": 260.532,
+          "c": 0.968025
+        },
+        {
+          "w": "a",
+          "s": 260.532,
+          "e": 260.642,
+          "c": 0.996989
+        },
+        {
+          "w": "new",
+          "s": 260.642,
+          "e": 260.822,
+          "c": 0.999478
+        },
+        {
+          "w": "terminal",
+          "s": 261.002,
+          "e": 261.872,
+          "c": 0.990259
+        },
+        {
+          "w": "and",
+          "s": 261.872,
+          "e": 262.202,
+          "c": 0.968394
+        },
+        {
+          "w": "concourse",
+          "s": 262.202,
+          "e": 263.212,
+          "c": 0.992917
+        },
+        {
+          "w": "was",
+          "s": 263.212,
+          "e": 263.542,
+          "c": 0.994964
+        },
+        {
+          "w": "needed",
+          "s": 263.542,
+          "e": 264.212,
+          "c": 0.998496
+        },
+        {
+          "w": "to",
+          "s": 264.212,
+          "e": 264.392,
+          "c": 0.995995
+        },
+        {
+          "w": "replace",
+          "s": 264.422,
+          "e": 265.222,
+          "c": 0.999056
+        },
+        {
+          "w": "a",
+          "s": 265.222,
+          "e": 265.312,
+          "c": 0.844409
+        },
+        {
+          "w": "World",
+          "s": 265.312,
+          "e": 265.892,
+          "c": 0.955133
+        },
+        {
+          "w": "War",
+          "s": 265.892,
+          "e": 266.202,
+          "c": 0.998917
+        },
+        {
+          "w": "II",
+          "s": 266.312,
+          "e": 266.432,
+          "c": 0.966188
+        },
+        {
+          "w": "facility.",
+          "s": 266.462,
+          "e": 267.452,
+          "c": 0.878252
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "start_s": 267.42,
+      "end_s": 280.41,
+      "speaker": "SPEAKER_04",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "It's different needs everywhere. None of us are out building monuments to our greatness. It's just essential needs in those communities. The PFC program has gone a long",
+      "words": [
+        {
+          "w": "It's",
+          "s": 267.424,
+          "e": 267.704,
+          "c": 0.246438
+        },
+        {
+          "w": "different",
+          "s": 267.704,
+          "e": 268.334,
+          "c": 0.922775
+        },
+        {
+          "w": "needs",
+          "s": 268.334,
+          "e": 268.684,
+          "c": 0.993889
+        },
+        {
+          "w": "everywhere.",
+          "s": 268.684,
+          "e": 269.584,
+          "c": 0.889028
+        },
+        {
+          "w": "None",
+          "s": 269.614,
+          "e": 269.944,
+          "c": 0.499978
+        },
+        {
+          "w": "of",
+          "s": 269.944,
+          "e": 270.114,
+          "c": 0.994683
+        },
+        {
+          "w": "us",
+          "s": 270.114,
+          "e": 270.284,
+          "c": 0.992731
+        },
+        {
+          "w": "are",
+          "s": 270.284,
+          "e": 270.544,
+          "c": 0.986654
+        },
+        {
+          "w": "out",
+          "s": 270.544,
+          "e": 270.864,
+          "c": 0.935783
+        },
+        {
+          "w": "building",
+          "s": 271.014,
+          "e": 271.824,
+          "c": 0.888887
+        },
+        {
+          "w": "monuments",
+          "s": 271.824,
+          "e": 272.454,
+          "c": 0.951364
+        },
+        {
+          "w": "to",
+          "s": 272.454,
+          "e": 272.604,
+          "c": 0.816321
+        },
+        {
+          "w": "our",
+          "s": 272.604,
+          "e": 272.704,
+          "c": 0.92119
+        },
+        {
+          "w": "greatness.",
+          "s": 272.704,
+          "e": 273.964,
+          "c": 0.86454
+        },
+        {
+          "w": "It's",
+          "s": 274.124,
+          "e": 274.284,
+          "c": 0.997297
+        },
+        {
+          "w": "just",
+          "s": 274.284,
+          "e": 274.604,
+          "c": 0.993527
+        },
+        {
+          "w": "essential",
+          "s": 274.604,
+          "e": 275.324,
+          "c": 0.900241
+        },
+        {
+          "w": "needs",
+          "s": 275.324,
+          "e": 275.724,
+          "c": 0.99731
+        },
+        {
+          "w": "in",
+          "s": 275.724,
+          "e": 275.874,
+          "c": 0.987816
+        },
+        {
+          "w": "those",
+          "s": 275.874,
+          "e": 276.284,
+          "c": 0.998525
+        },
+        {
+          "w": "communities.",
+          "s": 276.284,
+          "e": 277.404,
+          "c": 0.46031
+        },
+        {
+          "w": "The",
+          "s": 277.414,
+          "e": 277.774,
+          "c": 0.734221
+        },
+        {
+          "w": "PFC",
+          "s": 277.774,
+          "e": 278.114,
+          "c": 0.92255
+        },
+        {
+          "w": "program",
+          "s": 278.114,
+          "e": 278.944,
+          "c": 0.863786
+        },
+        {
+          "w": "has",
+          "s": 278.944,
+          "e": 279.294,
+          "c": 0.992881
+        },
+        {
+          "w": "gone",
+          "s": 279.294,
+          "e": 279.744,
+          "c": 0.978784
+        },
+        {
+          "w": "a",
+          "s": 279.744,
+          "e": 279.924,
+          "c": 0.99364
+        },
+        {
+          "w": "long",
+          "s": 280.344,
+          "e": 280.414,
+          "c": 0.984076
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "start_s": 280.41,
+      "end_s": 286.25,
+      "speaker": "SPEAKER_07",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "way in helping us develop those facilities, but it is losing value with inflation. I'm",
+      "words": [
+        {
+          "w": "way",
+          "s": 280.414,
+          "e": 280.784,
+          "c": 0.989004
+        },
+        {
+          "w": "in",
+          "s": 280.784,
+          "e": 281.704,
+          "c": 0.918549
+        },
+        {
+          "w": "helping",
+          "s": 281.704,
+          "e": 282.084,
+          "c": 0.974737
+        },
+        {
+          "w": "us",
+          "s": 282.084,
+          "e": 282.194,
+          "c": 0.999554
+        },
+        {
+          "w": "develop",
+          "s": 282.344,
+          "e": 282.674,
+          "c": 0.942275
+        },
+        {
+          "w": "those",
+          "s": 282.704,
+          "e": 283.004,
+          "c": 0.996748
+        },
+        {
+          "w": "facilities,",
+          "s": 283.004,
+          "e": 283.794,
+          "c": 0.86315
+        },
+        {
+          "w": "but",
+          "s": 283.794,
+          "e": 283.984,
+          "c": 0.998508
+        },
+        {
+          "w": "it",
+          "s": 283.984,
+          "e": 284.114,
+          "c": 0.997497
+        },
+        {
+          "w": "is",
+          "s": 284.114,
+          "e": 284.224,
+          "c": 0.992793
+        },
+        {
+          "w": "losing",
+          "s": 284.274,
+          "e": 284.634,
+          "c": 0.998127
+        },
+        {
+          "w": "value",
+          "s": 284.634,
+          "e": 284.934,
+          "c": 0.997271
+        },
+        {
+          "w": "with",
+          "s": 284.954,
+          "e": 285.224,
+          "c": 0.640947
+        },
+        {
+          "w": "inflation.",
+          "s": 285.224,
+          "e": 286.024,
+          "c": 0.99137
+        },
+        {
+          "w": "I'm",
+          "s": 286.064,
+          "e": 286.254,
+          "c": 0.981532
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "start_s": 286.31,
+      "end_s": 297.44,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "sorry I don't have much time, Mr. Santa, but I had a question for you and hopefully the chairman will indulge me and allow you to answer it if I go over time. We've seen recent",
+      "words": [
+        {
+          "w": "sorry",
+          "s": 286.314,
+          "e": 286.574,
+          "c": 0.990458
+        },
+        {
+          "w": "I",
+          "s": 286.614,
+          "e": 286.644,
+          "c": 0.545204
+        },
+        {
+          "w": "don't",
+          "s": 286.644,
+          "e": 286.974,
+          "c": 0.994649
+        },
+        {
+          "w": "have",
+          "s": 286.974,
+          "e": 287.244,
+          "c": 0.998496
+        },
+        {
+          "w": "much",
+          "s": 287.244,
+          "e": 287.434,
+          "c": 0.993297
+        },
+        {
+          "w": "time,",
+          "s": 287.504,
+          "e": 287.914,
+          "c": 0.811343
+        },
+        {
+          "w": "Mr.",
+          "s": 287.914,
+          "e": 288.224,
+          "c": 0.971112
+        },
+        {
+          "w": "Santa,",
+          "s": 288.254,
+          "e": 288.784,
+          "c": 0.891939
+        },
+        {
+          "w": "but",
+          "s": 288.784,
+          "e": 288.944,
+          "c": 0.981768
+        },
+        {
+          "w": "I",
+          "s": 288.944,
+          "e": 288.984,
+          "c": 0.994006
+        },
+        {
+          "w": "had",
+          "s": 289.024,
+          "e": 289.154,
+          "c": 0.943374
+        },
+        {
+          "w": "a",
+          "s": 289.154,
+          "e": 289.204,
+          "c": 0.995942
+        },
+        {
+          "w": "question",
+          "s": 289.204,
+          "e": 289.504,
+          "c": 0.99587
+        },
+        {
+          "w": "for",
+          "s": 289.654,
+          "e": 289.844,
+          "c": 0.989434
+        },
+        {
+          "w": "you",
+          "s": 289.844,
+          "e": 290.384,
+          "c": 0.988018
+        },
+        {
+          "w": "and",
+          "s": 290.384,
+          "e": 291.004,
+          "c": 0.337804
+        },
+        {
+          "w": "hopefully",
+          "s": 291.004,
+          "e": 291.324,
+          "c": 0.816065
+        },
+        {
+          "w": "the",
+          "s": 291.554,
+          "e": 291.564,
+          "c": 0.85963
+        },
+        {
+          "w": "chairman",
+          "s": 291.594,
+          "e": 292.254,
+          "c": 0.612869
+        },
+        {
+          "w": "will",
+          "s": 292.254,
+          "e": 292.594,
+          "c": 0.982838
+        },
+        {
+          "w": "indulge",
+          "s": 292.594,
+          "e": 293.184,
+          "c": 0.998456
+        },
+        {
+          "w": "me",
+          "s": 293.184,
+          "e": 293.354,
+          "c": 0.99866
+        },
+        {
+          "w": "and",
+          "s": 293.354,
+          "e": 293.604,
+          "c": 0.9872
+        },
+        {
+          "w": "allow",
+          "s": 293.604,
+          "e": 294.024,
+          "c": 0.997202
+        },
+        {
+          "w": "you",
+          "s": 294.024,
+          "e": 294.224,
+          "c": 0.997914
+        },
+        {
+          "w": "to",
+          "s": 294.284,
+          "e": 294.444,
+          "c": 0.995754
+        },
+        {
+          "w": "answer",
+          "s": 294.444,
+          "e": 294.944,
+          "c": 0.996531
+        },
+        {
+          "w": "it",
+          "s": 294.944,
+          "e": 295.124,
+          "c": 0.970369
+        },
+        {
+          "w": "if",
+          "s": 295.124,
+          "e": 295.264,
+          "c": 0.913542
+        },
+        {
+          "w": "I",
+          "s": 295.374,
+          "e": 295.374,
+          "c": 0.996327
+        },
+        {
+          "w": "go",
+          "s": 295.404,
+          "e": 295.544,
+          "c": 0.997485
+        },
+        {
+          "w": "over",
+          "s": 295.544,
+          "e": 295.884,
+          "c": 0.990692
+        },
+        {
+          "w": "time.",
+          "s": 295.884,
+          "e": 296.544,
+          "c": 0.995467
+        },
+        {
+          "w": "We've",
+          "s": 296.544,
+          "e": 296.774,
+          "c": 0.562321
+        },
+        {
+          "w": "seen",
+          "s": 296.774,
+          "e": 296.984,
+          "c": 0.884092
+        },
+        {
+          "w": "recent",
+          "s": 297.224,
+          "e": 297.444,
+          "c": 0.651476
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "start_s": 297.42,
+      "end_s": 322.96,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "reports, and I don't know if they're true or apocryphal, or if these are things that happened in the past and we just didn't pay attention, but we've seen recent reports of, I don't know how you characterize them, but I'll call them near misses, when planes are taking off and landing and get closer than we're comfortable with at airports. I've seen those in social media. I don't know if it's more than normal. Can you let the public know, are those",
+      "words": [
+        {
+          "w": "reports,",
+          "s": 297.424,
+          "e": 297.934,
+          "c": 0.567246
+        },
+        {
+          "w": "and",
+          "s": 297.934,
+          "e": 298.034,
+          "c": 0.991626
+        },
+        {
+          "w": "I",
+          "s": 298.114,
+          "e": 298.154,
+          "c": 0.995366
+        },
+        {
+          "w": "don't",
+          "s": 298.154,
+          "e": 298.434,
+          "c": 0.998942
+        },
+        {
+          "w": "know",
+          "s": 298.434,
+          "e": 298.664,
+          "c": 0.998782
+        },
+        {
+          "w": "if",
+          "s": 298.664,
+          "e": 298.774,
+          "c": 0.997748
+        },
+        {
+          "w": "they're",
+          "s": 298.774,
+          "e": 299.144,
+          "c": 0.992477
+        },
+        {
+          "w": "true",
+          "s": 299.204,
+          "e": 299.464,
+          "c": 0.992254
+        },
+        {
+          "w": "or",
+          "s": 299.464,
+          "e": 299.724,
+          "c": 0.95295
+        },
+        {
+          "w": "apocryphal,",
+          "s": 299.724,
+          "e": 300.504,
+          "c": 0.56082
+        },
+        {
+          "w": "or",
+          "s": 300.504,
+          "e": 301.104,
+          "c": 0.958192
+        },
+        {
+          "w": "if",
+          "s": 301.104,
+          "e": 301.224,
+          "c": 0.986197
+        },
+        {
+          "w": "these",
+          "s": 301.484,
+          "e": 301.854,
+          "c": 0.979124
+        },
+        {
+          "w": "are",
+          "s": 301.854,
+          "e": 302.164,
+          "c": 0.994262
+        },
+        {
+          "w": "things",
+          "s": 302.164,
+          "e": 302.624,
+          "c": 0.972854
+        },
+        {
+          "w": "that",
+          "s": 302.624,
+          "e": 302.854,
+          "c": 0.901762
+        },
+        {
+          "w": "happened",
+          "s": 303.014,
+          "e": 303.424,
+          "c": 0.664891
+        },
+        {
+          "w": "in",
+          "s": 303.424,
+          "e": 303.534,
+          "c": 0.999908
+        },
+        {
+          "w": "the",
+          "s": 303.534,
+          "e": 303.654,
+          "c": 0.999901
+        },
+        {
+          "w": "past",
+          "s": 303.764,
+          "e": 303.904,
+          "c": 0.99988
+        },
+        {
+          "w": "and",
+          "s": 303.904,
+          "e": 304.034,
+          "c": 0.903547
+        },
+        {
+          "w": "we",
+          "s": 304.114,
+          "e": 304.174,
+          "c": 0.999457
+        },
+        {
+          "w": "just",
+          "s": 304.174,
+          "e": 304.264,
+          "c": 0.999157
+        },
+        {
+          "w": "didn't",
+          "s": 304.394,
+          "e": 304.674,
+          "c": 0.999661
+        },
+        {
+          "w": "pay",
+          "s": 304.724,
+          "e": 304.854,
+          "c": 0.999743
+        },
+        {
+          "w": "attention,",
+          "s": 304.854,
+          "e": 305.444,
+          "c": 0.908406
+        },
+        {
+          "w": "but",
+          "s": 305.444,
+          "e": 305.604,
+          "c": 0.999346
+        },
+        {
+          "w": "we've",
+          "s": 305.604,
+          "e": 305.764,
+          "c": 0.998258
+        },
+        {
+          "w": "seen",
+          "s": 305.874,
+          "e": 306.054,
+          "c": 0.999542
+        },
+        {
+          "w": "recent",
+          "s": 306.164,
+          "e": 306.404,
+          "c": 0.999102
+        },
+        {
+          "w": "reports",
+          "s": 306.404,
+          "e": 306.544,
+          "c": 0.999598
+        },
+        {
+          "w": "of,",
+          "s": 306.894,
+          "e": 307.104,
+          "c": 0.860559
+        },
+        {
+          "w": "I",
+          "s": 307.104,
+          "e": 307.214,
+          "c": 0.987976
+        },
+        {
+          "w": "don't",
+          "s": 307.494,
+          "e": 307.904,
+          "c": 0.999834
+        },
+        {
+          "w": "know",
+          "s": 307.964,
+          "e": 308.184,
+          "c": 0.999304
+        },
+        {
+          "w": "how",
+          "s": 308.304,
+          "e": 308.344,
+          "c": 0.999844
+        },
+        {
+          "w": "you",
+          "s": 308.344,
+          "e": 308.504,
+          "c": 0.999134
+        },
+        {
+          "w": "characterize",
+          "s": 308.504,
+          "e": 309.164,
+          "c": 0.998258
+        },
+        {
+          "w": "them,",
+          "s": 309.164,
+          "e": 309.434,
+          "c": 0.998898
+        },
+        {
+          "w": "but",
+          "s": 309.554,
+          "e": 309.654,
+          "c": 0.999954
+        },
+        {
+          "w": "I'll",
+          "s": 309.654,
+          "e": 309.864,
+          "c": 0.999256
+        },
+        {
+          "w": "call",
+          "s": 309.864,
+          "e": 310.084,
+          "c": 0.999939
+        },
+        {
+          "w": "them",
+          "s": 310.084,
+          "e": 310.304,
+          "c": 0.999882
+        },
+        {
+          "w": "near",
+          "s": 310.304,
+          "e": 310.524,
+          "c": 0.998856
+        },
+        {
+          "w": "misses,",
+          "s": 310.524,
+          "e": 310.964,
+          "c": 0.541526
+        },
+        {
+          "w": "when",
+          "s": 310.964,
+          "e": 311.084,
+          "c": 0.999058
+        },
+        {
+          "w": "planes",
+          "s": 311.494,
+          "e": 311.504,
+          "c": 0.999895
+        },
+        {
+          "w": "are",
+          "s": 311.514,
+          "e": 311.674,
+          "c": 0.999901
+        },
+        {
+          "w": "taking",
+          "s": 311.674,
+          "e": 312.064,
+          "c": 0.998127
+        },
+        {
+          "w": "off",
+          "s": 312.064,
+          "e": 312.344,
+          "c": 0.961139
+        },
+        {
+          "w": "and",
+          "s": 312.344,
+          "e": 312.534,
+          "c": 0.998915
+        },
+        {
+          "w": "landing",
+          "s": 312.534,
+          "e": 312.954,
+          "c": 0.999922
+        },
+        {
+          "w": "and",
+          "s": 313.034,
+          "e": 313.154,
+          "c": 0.826407
+        },
+        {
+          "w": "get",
+          "s": 313.314,
+          "e": 313.364,
+          "c": 0.9983
+        },
+        {
+          "w": "closer",
+          "s": 313.364,
+          "e": 313.744,
+          "c": 0.999907
+        },
+        {
+          "w": "than",
+          "s": 313.744,
+          "e": 313.994,
+          "c": 0.999756
+        },
+        {
+          "w": "we're",
+          "s": 313.994,
+          "e": 314.304,
+          "c": 0.999905
+        },
+        {
+          "w": "comfortable",
+          "s": 314.304,
+          "e": 314.964,
+          "c": 0.999966
+        },
+        {
+          "w": "with",
+          "s": 315.084,
+          "e": 315.164,
+          "c": 0.999945
+        },
+        {
+          "w": "at",
+          "s": 315.274,
+          "e": 315.374,
+          "c": 0.986843
+        },
+        {
+          "w": "airports.",
+          "s": 315.374,
+          "e": 316.134,
+          "c": 0.968339
+        },
+        {
+          "w": "I've",
+          "s": 316.144,
+          "e": 316.234,
+          "c": 0.923907
+        },
+        {
+          "w": "seen",
+          "s": 316.414,
+          "e": 316.564,
+          "c": 0.99995
+        },
+        {
+          "w": "those",
+          "s": 316.564,
+          "e": 316.814,
+          "c": 0.999826
+        },
+        {
+          "w": "in",
+          "s": 316.964,
+          "e": 316.964,
+          "c": 0.997328
+        },
+        {
+          "w": "social",
+          "s": 316.984,
+          "e": 317.124,
+          "c": 0.987828
+        },
+        {
+          "w": "media.",
+          "s": 317.244,
+          "e": 317.854,
+          "c": 0.977819
+        },
+        {
+          "w": "I",
+          "s": 317.934,
+          "e": 317.934,
+          "c": 0.99996
+        },
+        {
+          "w": "don't",
+          "s": 317.934,
+          "e": 318.314,
+          "c": 0.99999
+        },
+        {
+          "w": "know",
+          "s": 318.314,
+          "e": 318.624,
+          "c": 0.99999
+        },
+        {
+          "w": "if",
+          "s": 318.624,
+          "e": 318.724,
+          "c": 0.99999
+        },
+        {
+          "w": "it's",
+          "s": 318.834,
+          "e": 319.064,
+          "c": 0.999971
+        },
+        {
+          "w": "more",
+          "s": 319.114,
+          "e": 319.374,
+          "c": 0.99999
+        },
+        {
+          "w": "than",
+          "s": 319.384,
+          "e": 319.584,
+          "c": 0.999968
+        },
+        {
+          "w": "normal.",
+          "s": 319.694,
+          "e": 320.364,
+          "c": 0.999786
+        },
+        {
+          "w": "Can",
+          "s": 320.374,
+          "e": 320.404,
+          "c": 0.999565
+        },
+        {
+          "w": "you",
+          "s": 320.784,
+          "e": 320.844,
+          "c": 0.999985
+        },
+        {
+          "w": "let",
+          "s": 320.844,
+          "e": 321.034,
+          "c": 0.999985
+        },
+        {
+          "w": "the",
+          "s": 321.074,
+          "e": 321.304,
+          "c": 0.999983
+        },
+        {
+          "w": "public",
+          "s": 321.304,
+          "e": 321.724,
+          "c": 0.999971
+        },
+        {
+          "w": "know,",
+          "s": 321.884,
+          "e": 322.214,
+          "c": 0.953153
+        },
+        {
+          "w": "are",
+          "s": 322.264,
+          "e": 322.454,
+          "c": 0.999247
+        },
+        {
+          "w": "those",
+          "s": 322.454,
+          "e": 322.964,
+          "c": 0.998778
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "start_s": 322.96,
+      "end_s": 322.97,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "reports",
+      "words": [
+        {
+          "w": "reports",
+          "s": 322.964,
+          "e": 322.964,
+          "c": 0.213444
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "start_s": 323.15,
+      "end_s": 327.89,
+      "speaker": "SPEAKER_10",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "There are an increased number of those incidents, and if so, what do you think the cause is?",
+      "words": [
+        {
+          "w": "There",
+          "s": 323.152,
+          "e": 323.172,
+          "c": 0.258532
+        },
+        {
+          "w": "are",
+          "s": 323.182,
+          "e": 323.322,
+          "c": 0.759997
+        },
+        {
+          "w": "an",
+          "s": 323.322,
+          "e": 323.422,
+          "c": 0.98478
+        },
+        {
+          "w": "increased",
+          "s": 323.422,
+          "e": 323.892,
+          "c": 0.992014
+        },
+        {
+          "w": "number",
+          "s": 323.892,
+          "e": 324.232,
+          "c": 0.9885
+        },
+        {
+          "w": "of",
+          "s": 324.232,
+          "e": 324.332,
+          "c": 0.980191
+        },
+        {
+          "w": "those",
+          "s": 324.332,
+          "e": 324.592,
+          "c": 0.99747
+        },
+        {
+          "w": "incidents,",
+          "s": 324.592,
+          "e": 325.152,
+          "c": 0.490701
+        },
+        {
+          "w": "and",
+          "s": 325.152,
+          "e": 325.242,
+          "c": 0.655638
+        },
+        {
+          "w": "if",
+          "s": 325.402,
+          "e": 325.552,
+          "c": 0.983284
+        },
+        {
+          "w": "so,",
+          "s": 325.552,
+          "e": 325.892,
+          "c": 0.918927
+        },
+        {
+          "w": "what",
+          "s": 325.892,
+          "e": 326.222,
+          "c": 0.933743
+        },
+        {
+          "w": "do",
+          "s": 326.432,
+          "e": 326.642,
+          "c": 0.916773
+        },
+        {
+          "w": "you",
+          "s": 326.642,
+          "e": 327.022,
+          "c": 0.993146
+        },
+        {
+          "w": "think",
+          "s": 327.032,
+          "e": 327.202,
+          "c": 0.983879
+        },
+        {
+          "w": "the",
+          "s": 327.262,
+          "e": 327.402,
+          "c": 0.990811
+        },
+        {
+          "w": "cause",
+          "s": 327.402,
+          "e": 327.632,
+          "c": 0.988668
+        },
+        {
+          "w": "is?",
+          "s": 327.632,
+          "e": 327.892,
+          "c": 0.993608
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "start_s": 328.16,
+      "end_s": 328.69,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Well, some",
+      "words": [
+        {
+          "w": "Well,",
+          "s": 328.162,
+          "e": 328.372,
+          "c": 0.993309
+        },
+        {
+          "w": "some",
+          "s": 328.372,
+          "e": 328.692,
+          "c": 0.999924
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "start_s": 328.69,
+      "end_s": 336.83,
+      "speaker": "SPEAKER_11",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "of the recent events that have been in the news are, you know, they're troubling for us. It's an increased amount of risk that we're unwilling",
+      "words": [
+        {
+          "w": "of",
+          "s": 328.692,
+          "e": 328.852,
+          "c": 0.999996
+        },
+        {
+          "w": "the",
+          "s": 328.852,
+          "e": 329.092,
+          "c": 0.999998
+        },
+        {
+          "w": "recent",
+          "s": 329.092,
+          "e": 329.572,
+          "c": 0.999872
+        },
+        {
+          "w": "events",
+          "s": 329.572,
+          "e": 330.052,
+          "c": 0.999931
+        },
+        {
+          "w": "that",
+          "s": 330.052,
+          "e": 330.212,
+          "c": 0.999887
+        },
+        {
+          "w": "have",
+          "s": 330.392,
+          "e": 330.692,
+          "c": 0.999521
+        },
+        {
+          "w": "been",
+          "s": 330.692,
+          "e": 331.012,
+          "c": 0.999722
+        },
+        {
+          "w": "in",
+          "s": 331.012,
+          "e": 331.122,
+          "c": 0.999657
+        },
+        {
+          "w": "the",
+          "s": 331.182,
+          "e": 331.302,
+          "c": 0.999952
+        },
+        {
+          "w": "news",
+          "s": 331.412,
+          "e": 331.642,
+          "c": 0.999805
+        },
+        {
+          "w": "are,",
+          "s": 331.772,
+          "e": 332.032,
+          "c": 0.511258
+        },
+        {
+          "w": "you",
+          "s": 332.052,
+          "e": 332.512,
+          "c": 0.950361
+        },
+        {
+          "w": "know,",
+          "s": 332.512,
+          "e": 333.432,
+          "c": 0.999971
+        },
+        {
+          "w": "they're",
+          "s": 333.432,
+          "e": 333.742,
+          "c": 0.922302
+        },
+        {
+          "w": "troubling",
+          "s": 333.822,
+          "e": 334.152,
+          "c": 0.993588
+        },
+        {
+          "w": "for",
+          "s": 334.152,
+          "e": 334.282,
+          "c": 0.888582
+        },
+        {
+          "w": "us.",
+          "s": 334.282,
+          "e": 334.512,
+          "c": 0.994493
+        },
+        {
+          "w": "It's",
+          "s": 334.512,
+          "e": 334.732,
+          "c": 0.981255
+        },
+        {
+          "w": "an",
+          "s": 334.782,
+          "e": 334.842,
+          "c": 0.999992
+        },
+        {
+          "w": "increased",
+          "s": 334.852,
+          "e": 335.322,
+          "c": 0.999844
+        },
+        {
+          "w": "amount",
+          "s": 335.342,
+          "e": 335.672,
+          "c": 0.999617
+        },
+        {
+          "w": "of",
+          "s": 335.672,
+          "e": 335.782,
+          "c": 1
+        },
+        {
+          "w": "risk",
+          "s": 335.782,
+          "e": 336.002,
+          "c": 0.999355
+        },
+        {
+          "w": "that",
+          "s": 336.002,
+          "e": 336.222,
+          "c": 0.999989
+        },
+        {
+          "w": "we're",
+          "s": 336.222,
+          "e": 336.482,
+          "c": 0.999989
+        },
+        {
+          "w": "unwilling",
+          "s": 336.482,
+          "e": 336.832,
+          "c": 0.999973
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "start_s": 337.01,
+      "end_s": 342.75,
+      "speaker": "SPEAKER_13",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "to accept right now, but they really are inspired and invoked, unfortunately, by",
+      "words": [
+        {
+          "w": "to",
+          "s": 337.012,
+          "e": 337.102,
+          "c": 0.999998
+        },
+        {
+          "w": "accept",
+          "s": 337.102,
+          "e": 337.432,
+          "c": 0.999935
+        },
+        {
+          "w": "right",
+          "s": 337.432,
+          "e": 337.702,
+          "c": 0.999977
+        },
+        {
+          "w": "now,",
+          "s": 337.702,
+          "e": 337.922,
+          "c": 0.492934
+        },
+        {
+          "w": "but",
+          "s": 338.032,
+          "e": 338.262,
+          "c": 0.603953
+        },
+        {
+          "w": "they",
+          "s": 338.392,
+          "e": 338.632,
+          "c": 0.999641
+        },
+        {
+          "w": "really",
+          "s": 338.642,
+          "e": 339.172,
+          "c": 0.999699
+        },
+        {
+          "w": "are",
+          "s": 339.172,
+          "e": 339.412,
+          "c": 0.99605
+        },
+        {
+          "w": "inspired",
+          "s": 339.412,
+          "e": 340.142,
+          "c": 0.998731
+        },
+        {
+          "w": "and",
+          "s": 340.402,
+          "e": 340.402,
+          "c": 0.860666
+        },
+        {
+          "w": "invoked,",
+          "s": 340.442,
+          "e": 341.182,
+          "c": 0.915867
+        },
+        {
+          "w": "unfortunately,",
+          "s": 341.182,
+          "e": 342.502,
+          "c": 0.999222
+        },
+        {
+          "w": "by",
+          "s": 342.502,
+          "e": 342.752,
+          "c": 0.993972
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "start_s": 342.96,
+      "end_s": 373.83,
+      "speaker": "SPEAKER_13",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "uh lack of staffing when you control more traffic with less operational positions you introduce risk into the system now the ntsb is is uh investigating those we partner with him we're part of the uh the investigation to ensure that we learn from those uh events and we don't repeat those but ultimately working more traffic six-day work weeks 10-hour days introduced introduces risks to the system thank",
+      "words": [
+        {
+          "w": "uh",
+          "s": 342.962,
+          "e": 342.972,
+          "c": 0.106965
+        },
+        {
+          "w": "lack",
+          "s": 342.982,
+          "e": 343.232,
+          "c": 0.577415
+        },
+        {
+          "w": "of",
+          "s": 343.452,
+          "e": 343.632,
+          "c": 0.999458
+        },
+        {
+          "w": "staffing",
+          "s": 343.722,
+          "e": 344.212,
+          "c": 0.995262
+        },
+        {
+          "w": "when",
+          "s": 344.662,
+          "e": 345.012,
+          "c": 0.538164
+        },
+        {
+          "w": "you",
+          "s": 345.062,
+          "e": 345.412,
+          "c": 0.99967
+        },
+        {
+          "w": "control",
+          "s": 345.412,
+          "e": 346.052,
+          "c": 0.994681
+        },
+        {
+          "w": "more",
+          "s": 346.352,
+          "e": 346.622,
+          "c": 0.974388
+        },
+        {
+          "w": "traffic",
+          "s": 346.622,
+          "e": 347.182,
+          "c": 0.995569
+        },
+        {
+          "w": "with",
+          "s": 347.262,
+          "e": 347.582,
+          "c": 0.993908
+        },
+        {
+          "w": "less",
+          "s": 347.582,
+          "e": 347.932,
+          "c": 0.993269
+        },
+        {
+          "w": "operational",
+          "s": 348.012,
+          "e": 348.592,
+          "c": 0.979448
+        },
+        {
+          "w": "positions",
+          "s": 348.592,
+          "e": 349.072,
+          "c": 0.937838
+        },
+        {
+          "w": "you",
+          "s": 349.072,
+          "e": 349.212,
+          "c": 0.907331
+        },
+        {
+          "w": "introduce",
+          "s": 349.232,
+          "e": 349.702,
+          "c": 0.793046
+        },
+        {
+          "w": "risk",
+          "s": 349.712,
+          "e": 349.942,
+          "c": 0.743538
+        },
+        {
+          "w": "into",
+          "s": 350.162,
+          "e": 350.292,
+          "c": 0.998043
+        },
+        {
+          "w": "the",
+          "s": 350.292,
+          "e": 350.432,
+          "c": 0.999451
+        },
+        {
+          "w": "system",
+          "s": 350.652,
+          "e": 351.042,
+          "c": 0.999771
+        },
+        {
+          "w": "now",
+          "s": 351.052,
+          "e": 351.292,
+          "c": 0.910912
+        },
+        {
+          "w": "the",
+          "s": 351.292,
+          "e": 351.412,
+          "c": 0.99772
+        },
+        {
+          "w": "ntsb",
+          "s": 351.412,
+          "e": 351.872,
+          "c": 0.64296
+        },
+        {
+          "w": "is",
+          "s": 351.882,
+          "e": 352.042,
+          "c": 0.999859
+        },
+        {
+          "w": "is",
+          "s": 352.042,
+          "e": 352.202,
+          "c": 0.956512
+        },
+        {
+          "w": "uh",
+          "s": 352.202,
+          "e": 352.212,
+          "c": 0.834732
+        },
+        {
+          "w": "investigating",
+          "s": 352.542,
+          "e": 353.262,
+          "c": 0.992814
+        },
+        {
+          "w": "those",
+          "s": 353.552,
+          "e": 353.862,
+          "c": 0.999626
+        },
+        {
+          "w": "we",
+          "s": 353.922,
+          "e": 354.072,
+          "c": 0.999373
+        },
+        {
+          "w": "partner",
+          "s": 354.072,
+          "e": 354.662,
+          "c": 0.989329
+        },
+        {
+          "w": "with",
+          "s": 354.662,
+          "e": 355.002,
+          "c": 0.999975
+        },
+        {
+          "w": "him",
+          "s": 355.002,
+          "e": 355.312,
+          "c": 0.781445
+        },
+        {
+          "w": "we're",
+          "s": 355.312,
+          "e": 355.552,
+          "c": 0.847571
+        },
+        {
+          "w": "part",
+          "s": 355.552,
+          "e": 355.792,
+          "c": 0.985314
+        },
+        {
+          "w": "of",
+          "s": 355.792,
+          "e": 355.872,
+          "c": 0.99943
+        },
+        {
+          "w": "the",
+          "s": 355.932,
+          "e": 356.112,
+          "c": 0.997377
+        },
+        {
+          "w": "uh",
+          "s": 356.112,
+          "e": 356.352,
+          "c": 0.923847
+        },
+        {
+          "w": "the",
+          "s": 356.562,
+          "e": 356.662,
+          "c": 0.999344
+        },
+        {
+          "w": "investigation",
+          "s": 356.662,
+          "e": 357.812,
+          "c": 0.999868
+        },
+        {
+          "w": "to",
+          "s": 358.202,
+          "e": 358.202,
+          "c": 0.999929
+        },
+        {
+          "w": "ensure",
+          "s": 358.262,
+          "e": 358.612,
+          "c": 0.998896
+        },
+        {
+          "w": "that",
+          "s": 358.872,
+          "e": 359.212,
+          "c": 0.999973
+        },
+        {
+          "w": "we",
+          "s": 359.282,
+          "e": 359.432,
+          "c": 0.999992
+        },
+        {
+          "w": "learn",
+          "s": 359.432,
+          "e": 359.642,
+          "c": 0.992839
+        },
+        {
+          "w": "from",
+          "s": 359.962,
+          "e": 360.322,
+          "c": 0.999975
+        },
+        {
+          "w": "those",
+          "s": 360.322,
+          "e": 360.872,
+          "c": 0.999935
+        },
+        {
+          "w": "uh",
+          "s": 360.992,
+          "e": 361.152,
+          "c": 0.897145
+        },
+        {
+          "w": "events",
+          "s": 361.152,
+          "e": 361.892,
+          "c": 0.99854
+        },
+        {
+          "w": "and",
+          "s": 361.892,
+          "e": 362.262,
+          "c": 0.998266
+        },
+        {
+          "w": "we",
+          "s": 362.262,
+          "e": 362.502,
+          "c": 0.999928
+        },
+        {
+          "w": "don't",
+          "s": 362.502,
+          "e": 363.102,
+          "c": 0.999531
+        },
+        {
+          "w": "repeat",
+          "s": 363.122,
+          "e": 363.852,
+          "c": 0.998944
+        },
+        {
+          "w": "those",
+          "s": 363.852,
+          "e": 364.352,
+          "c": 0.99514
+        },
+        {
+          "w": "but",
+          "s": 364.852,
+          "e": 364.992,
+          "c": 0.701142
+        },
+        {
+          "w": "ultimately",
+          "s": 365.202,
+          "e": 365.902,
+          "c": 0.998392
+        },
+        {
+          "w": "working",
+          "s": 365.962,
+          "e": 366.452,
+          "c": 0.995076
+        },
+        {
+          "w": "more",
+          "s": 366.892,
+          "e": 366.942,
+          "c": 0.999472
+        },
+        {
+          "w": "traffic",
+          "s": 366.942,
+          "e": 367.592,
+          "c": 0.998569
+        },
+        {
+          "w": "six-day",
+          "s": 367.592,
+          "e": 368.232,
+          "c": 0.592589
+        },
+        {
+          "w": "work",
+          "s": 368.232,
+          "e": 368.602,
+          "c": 0.999159
+        },
+        {
+          "w": "weeks",
+          "s": 368.602,
+          "e": 369.062,
+          "c": 0.95383
+        },
+        {
+          "w": "10-hour",
+          "s": 369.062,
+          "e": 370.072,
+          "c": 0.571648
+        },
+        {
+          "w": "days",
+          "s": 370.072,
+          "e": 370.402,
+          "c": 0.998506
+        },
+        {
+          "w": "introduced",
+          "s": 370.482,
+          "e": 371.372,
+          "c": 0.81256
+        },
+        {
+          "w": "introduces",
+          "s": 371.372,
+          "e": 372.352,
+          "c": 0.984555
+        },
+        {
+          "w": "risks",
+          "s": 372.352,
+          "e": 372.752,
+          "c": 0.969171
+        },
+        {
+          "w": "to",
+          "s": 372.752,
+          "e": 372.832,
+          "c": 0.863784
+        },
+        {
+          "w": "the",
+          "s": 372.902,
+          "e": 372.992,
+          "c": 0.780545
+        },
+        {
+          "w": "system",
+          "s": 373.202,
+          "e": 373.432,
+          "c": 0.995085
+        },
+        {
+          "w": "thank",
+          "s": 373.462,
+          "e": 373.832,
+          "c": 0.989462
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "start_s": 373.83,
+      "end_s": 374.03,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "you",
+      "words": [
+        {
+          "w": "you",
+          "s": 373.832,
+          "e": 374.032,
+          "c": 0.999901
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "start_s": 374.08,
+      "end_s": 375.63,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "mr chairman i yield back",
+      "words": [
+        {
+          "w": "mr",
+          "s": 374.082,
+          "e": 374.212,
+          "c": 0.981042
+        },
+        {
+          "w": "chairman",
+          "s": 374.212,
+          "e": 374.452,
+          "c": 0.995328
+        },
+        {
+          "w": "i",
+          "s": 374.892,
+          "e": 374.902,
+          "c": 0.988312
+        },
+        {
+          "w": "yield",
+          "s": 374.912,
+          "e": 375.242,
+          "c": 0.987392
+        },
+        {
+          "w": "back",
+          "s": 375.282,
+          "e": 375.632,
+          "c": 0.999005
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "start_s": 375.63,
+      "end_s": 376.99,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "uh ranking member the",
+      "words": [
+        {
+          "w": "uh",
+          "s": 375.632,
+          "e": 375.802,
+          "c": 0.3328
+        },
+        {
+          "w": "ranking",
+          "s": 375.802,
+          "e": 376.292,
+          "c": 0.779621
+        },
+        {
+          "w": "member",
+          "s": 376.592,
+          "e": 376.902,
+          "c": 0.925872
+        },
+        {
+          "w": "the",
+          "s": 376.992,
+          "e": 376.992,
+          "c": 0.288257
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "start_s": 377.02,
+      "end_s": 377.15,
+      "speaker": "SPEAKER_14",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "focus",
+      "words": [
+        {
+          "w": "focus",
+          "s": 377.022,
+          "e": 377.152,
+          "c": 0.50594
+        }
+      ]
+    }
+  ]
+}

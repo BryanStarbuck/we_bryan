@@ -1,0 +1,225 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "At Hearing, Bank CEOs Agree on Need to Enforce Anti-Money Laundering Rules Against Crypto Companies"
+    Description: >-
+      Senator Warren's questioning of the CEOs of the largest U.S. banks at
+      a Senate Banking Committee hearing, on illicit finance and
+      cryptocurrency. She first establishes that each bank runs anti-money-
+      laundering programs, getting a yes from Bank of America's Brian
+      Moynihan, a qualified yes from JPMorgan's Jamie Dimon that no system
+      is foolproof, and a show of hands from the rest. Her argument is that
+      those programs exist because of the Bank Secrecy Act rather than
+      goodwill, that the law was updated after 9/11 when terrorists found
+      ways around it, and that cryptocurrency is the current route around
+      it. She cites an estimated $20 billion in illicit crypto transactions
+      in the prior year, says North Korea has funded at least half its
+      missile program including nuclear weapons through crypto crime, and
+      says Israeli officials confirmed Hamas received millions including
+      large sums from Iran; these are figures and attributions she puts on
+      the record rather than findings established at the hearing. Dimon says
+      he has always been deeply opposed to crypto, calls its only true use
+      case criminal, and says if it were up to him he would close it down.
+      Each CEO agrees crypto firms should follow the same anti-money-
+      laundering rules as banks. Warren closes by pointing to her bill with
+      Senator Marshall and 18 colleagues.
+    URL: "https://www.youtube.com/watch?v=-1EuZG3FHoY"
+    Video_ID: "-1EuZG3FHoY"
+    Show: "Senator Elizabeth Warren"
+    Runtime: "00:05:42"
+    Language: "en"
+
+  Media:
+    File: "-1EuZG3FHoY.m4a"
+    SHA256: "bd139d423c61f20b43b01e9bf2e2f34b1154a2380e4b3b2bc4ca2f1fdc422310"
+    Bytes: 5541673
+    Duration_Seconds: 342
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-1EuZG3FHoY"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-1EuZG3FHoY.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/elizabeth_warren_ma_sen/-1EuZG3FHoY/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCTH9zV8Imw09J5bOoTR18_A"
+    Uploader_ID: "@SenatorElizabethWarren"
+    View_Count: 1168
+    Like_Count: 38
+    Availability: "public"
+    Published_At: "2023-12-06T20:04:01+00:00"
+    Captured_At: "2026-09-09T18:32:50-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "74.8%"
+      Turns: 11
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "1.0%"
+      Turns: 1
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "6.5%"
+      Turns: 4
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_09"
+      Share_Of_Speech: "1.6%"
+      Turns: 1
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_10"
+      Share_Of_Speech: "8.0%"
+      Turns: 1
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_12"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_14"
+      Share_Of_Speech: "1.3%"
+      Turns: 1
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_15"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_17"
+      Share_Of_Speech: "0.6%"
+      Turns: 1
+    Person_12:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_18"
+      Share_Of_Speech: "0.7%"
+      Turns: 1
+    Person_13:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_19"
+      Share_Of_Speech: "1.9%"
+      Turns: 1
+    Person_14:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_21"
+      Share_Of_Speech: "1.8%"
+      Turns: 1
+    Person_15:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_26"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+
+  Topics:
+    - "Anti-money laundering and the Bank Secrecy Act"
+    - "Cryptocurrency regulation and illicit finance"
+    - "Terrorist and sanctions-evasion financing"
+    - "Senate Banking Committee oversight of bank CEOs"
+    - "Proposed digital asset AML legislation"
+
+  Source:
+    Canonical_ID: "b2a83688a79915f8"
+    Transcribed: "2026-09-09T18:36:36.390863-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 840
+    Segments: 43
+
+  Timestamps:
+    Downloaded_At: "2026-09-09T18:32:51.660592-07:00"
+    Transcription_Finished: "2026-09-09T18:36:36.390863-07:00"
+    Recorded: "2023-12-06"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-1EuZG3FHoY.ctm"
+    Fountain: "-1EuZG3FHoY.fountain"
+    Diarization_RTTM: "-1EuZG3FHoY.rttm"
+    As_Broadcast_Script: "-1EuZG3FHoY.script.txt"
+    Segments_JSON: "-1EuZG3FHoY.segments.json"
+    Segments_JSONL: "-1EuZG3FHoY.segments.jsonl"
+    Subtitles_SRT: "-1EuZG3FHoY.srt"
+    Plain_Text: "-1EuZG3FHoY.transcription"
+    Subtitles_VTT: "-1EuZG3FHoY.vtt"
+    Transcript_SHA256: "ecea8808150250ffc191aca47023ffc707d38a4c80c574295a8c459b6e9737a9"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "elizabeth_warren_ma_sen"
+    video_uid: "elizabeth_warren_ma_sen::-1EuZG3FHoY"
+    video_key: "-1EuZG3FHoY"
+    youtube_id: "-1EuZG3FHoY"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-09T23:06:34.925Z"
+    demand_run_id: "job_1788995190120_11"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-1EuZG3FHoY"
+    source_ref: "-1EuZG3FHoY"
+    subject_kind: "new_politician"

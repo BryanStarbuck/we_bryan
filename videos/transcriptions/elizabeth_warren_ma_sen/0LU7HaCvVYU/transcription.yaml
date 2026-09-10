@@ -1,0 +1,182 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Donald Trump's presidential library is one more way he can wallow in corruption."
+    Description: >-
+      A television interview in which Senator Elizabeth Warren discusses a
+      bill she has introduced, with co-sponsors including Senator
+      Blumenthal, to put guardrails on donations to presidential libraries.
+      Her argument is that the problem predates Donald Trump — sitting
+      presidents have long taken library donations while still able to issue
+      pardons, cut tariff deals or approve mergers — and that the current
+      gap is the absence of any rules at all: no disclosure requirement, no
+      caps, and no limits on who may give, including foreign governments and
+      people seeking pardons. Her bill would bar a sitting president from
+      soliciting or accepting funds for a future library. She characterises
+      Donald Trump as having put the practice on steroids, citing a $400
+      million airplane from Qatar and the settlement of a lawsuit she calls
+      bogus; those characterisations are hers and are contested, and Trump
+      is not present to answer them. She notes a similar bill was introduced
+      on a bipartisan basis in the House with Representative Moskowitz and
+      never got a vote in the Senate, and argues the effort should be
+      bipartisan. The interviewer closes by predicting she will struggle to
+      win Republican support.
+    URL: "https://www.youtube.com/watch?v=0LU7HaCvVYU"
+    Video_ID: "0LU7HaCvVYU"
+    Show: "Senator Elizabeth Warren"
+    Runtime: "00:02:45"
+    Language: "en"
+
+  Media:
+    File: "0LU7HaCvVYU.m4a"
+    SHA256: "564a391d1e6e90e66816f8c234abafc7a901417084fe8eebda339284e77f09a0"
+    Bytes: 2681755
+    Duration_Seconds: 165
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=0LU7HaCvVYU"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "0LU7HaCvVYU.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/elizabeth_warren_ma_sen/0LU7HaCvVYU/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCTH9zV8Imw09J5bOoTR18_A"
+    Uploader_ID: "@SenatorElizabethWarren"
+    View_Count: 1352
+    Like_Count: 163
+    Comment_Count: 36
+    Availability: "public"
+    Published_At: "2025-07-17T15:47:30+00:00"
+    Captured_At: "2026-09-09T18:33:02-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "12.7%"
+      Turns: 1
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "6.1%"
+      Turns: 2
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "2.6%"
+      Turns: 1
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "4.0%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "17.2%"
+      Turns: 3
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "11.2%"
+      Turns: 2
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "31.7%"
+      Turns: 3
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "14.3%"
+      Turns: 2
+
+  Topics:
+    - "Presidential library donations and disclosure rules"
+    - "Proposed legislation on gifts to sitting presidents"
+    - "Foreign government donations and pardons"
+    - "Bipartisan legislative prospects in the Senate"
+    - "Political corruption and conflict-of-interest arguments"
+
+  Source:
+    Canonical_ID: "6fccf507ef862fb1"
+    Transcribed: "2026-09-09T18:35:22.408217-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 412
+    Segments: 23
+
+  Timestamps:
+    Downloaded_At: "2026-09-09T18:33:03.023438-07:00"
+    Transcription_Finished: "2026-09-09T18:35:22.408217-07:00"
+    Recorded: "2025-07-17"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "0LU7HaCvVYU.ctm"
+    Fountain: "0LU7HaCvVYU.fountain"
+    Diarization_RTTM: "0LU7HaCvVYU.rttm"
+    As_Broadcast_Script: "0LU7HaCvVYU.script.txt"
+    Segments_JSON: "0LU7HaCvVYU.segments.json"
+    Segments_JSONL: "0LU7HaCvVYU.segments.jsonl"
+    Subtitles_SRT: "0LU7HaCvVYU.srt"
+    Plain_Text: "0LU7HaCvVYU.transcription"
+    Subtitles_VTT: "0LU7HaCvVYU.vtt"
+    Transcript_SHA256: "17d28b85aee9f8e7c7537e82587e6f8087370514371ccae98b197d80d19f2af9"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "elizabeth_warren_ma_sen"
+    video_uid: "elizabeth_warren_ma_sen::0LU7HaCvVYU"
+    video_key: "0LU7HaCvVYU"
+    youtube_id: "0LU7HaCvVYU"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-09T23:06:34.925Z"
+    demand_run_id: "job_1788995190120_11"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=0LU7HaCvVYU"
+    source_ref: "0LU7HaCvVYU"
+    subject_kind: "new_politician"

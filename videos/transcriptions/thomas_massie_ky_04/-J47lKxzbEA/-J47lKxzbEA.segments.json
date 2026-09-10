@@ -1,0 +1,4004 @@
+{
+  "schema_version": 2,
+  "canonical_id": "9b98b616d049385a",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 245.54,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T01:35:36.193Z",
+  "text_sha256": "d64b9bc10790f95d130a2ed5ea602ff6870f6b7cf8feedc98b4962a8b9ecd472",
+  "segments_sha256": "ee0e29d5267349fcac063d4420b498da8712812c83315638cbdc4ac3a70c76a6",
+  "words_sha256": "1dad78587d819ae865cfa23fbbcb70050e81d8ee10b5ae3187833a77e26550ce",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 9,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 22,
+    "clusters": 3,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_01",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 4.6
+      },
+      "clean_s": 4.6,
+      "speaking_s": 4.6,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_00",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 217.7
+      },
+      "clean_s": 217.7,
+      "speaking_s": 217.7,
+      "first_s": 5.62
+    },
+    {
+      "id": "SPEAKER_03",
+      "n": 3,
+      "label": "Speaker 3",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 8.7
+      },
+      "clean_s": 8.7,
+      "speaking_s": 8.7,
+      "first_s": 236.97
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.48,
+      "end_s": 0.49,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 26.94,
+      "end_s": 27.03,
+      "segment_i": 3,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 50.53,
+      "end_s": 50.53,
+      "segment_i": 5,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 79.3,
+      "end_s": 79.48,
+      "segment_i": 7,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 106.49,
+      "end_s": 106.49,
+      "segment_i": 9,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 152.66,
+      "end_s": 152.66,
+      "segment_i": 12,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 209.78,
+      "end_s": 210.06,
+      "segment_i": 15,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.48,
+      "end_s": 0.49,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The chair",
+      "words": [
+        {
+          "w": "The",
+          "s": 0.48,
+          "e": 0.48,
+          "c": 0.709045
+        },
+        {
+          "w": "chair",
+          "s": 0.49,
+          "e": 0.49,
+          "c": 0.621053
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.71,
+      "end_s": 4.72,
+      "speaker": "SPEAKER_01",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "recognizes the gentleman from North Carolina, Mr. Jones, for five minutes.",
+      "words": [
+        {
+          "w": "recognizes",
+          "s": 0.71,
+          "e": 1.11,
+          "c": 0.990642
+        },
+        {
+          "w": "the",
+          "s": 1.11,
+          "e": 1.29,
+          "c": 0.950924
+        },
+        {
+          "w": "gentleman",
+          "s": 1.29,
+          "e": 1.84,
+          "c": 0.971994
+        },
+        {
+          "w": "from",
+          "s": 1.9,
+          "e": 2.13,
+          "c": 0.971983
+        },
+        {
+          "w": "North",
+          "s": 2.13,
+          "e": 2.36,
+          "c": 0.990219
+        },
+        {
+          "w": "Carolina,",
+          "s": 2.46,
+          "e": 3.05,
+          "c": 0.819991
+        },
+        {
+          "w": "Mr.",
+          "s": 3.05,
+          "e": 3.28,
+          "c": 0.910517
+        },
+        {
+          "w": "Jones,",
+          "s": 3.28,
+          "e": 3.72,
+          "c": 0.666641
+        },
+        {
+          "w": "for",
+          "s": 3.72,
+          "e": 3.91,
+          "c": 0.973063
+        },
+        {
+          "w": "five",
+          "s": 3.91,
+          "e": 4.15,
+          "c": 0.851847
+        },
+        {
+          "w": "minutes.",
+          "s": 4.24,
+          "e": 4.72,
+          "c": 0.981717
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 4.79,
+      "end_s": 26.94,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Mr. Speaker, I am on the floor today to bring attention to an article from the World Affairs Journal titled, \"Money Pit: The Monstrous Failure of USAID to Afghanistan.\" This is an eight-page article documenting case after case of American tax dollars being wasted in Afghanistan.",
+      "words": [
+        {
+          "w": "Mr.",
+          "s": 4.79,
+          "e": 5.72,
+          "c": 0.872761
+        },
+        {
+          "w": "Speaker,",
+          "s": 5.72,
+          "e": 6.72,
+          "c": 0.702567
+        },
+        {
+          "w": "I",
+          "s": 6.72,
+          "e": 6.79,
+          "c": 0.987696
+        },
+        {
+          "w": "am",
+          "s": 6.79,
+          "e": 6.93,
+          "c": 0.966341
+        },
+        {
+          "w": "on",
+          "s": 6.93,
+          "e": 6.94,
+          "c": 0.997314
+        },
+        {
+          "w": "the",
+          "s": 7.08,
+          "e": 7.29,
+          "c": 0.99553
+        },
+        {
+          "w": "floor",
+          "s": 7.29,
+          "e": 7.54,
+          "c": 0.999516
+        },
+        {
+          "w": "today",
+          "s": 7.72,
+          "e": 8.01,
+          "c": 0.989938
+        },
+        {
+          "w": "to",
+          "s": 8.01,
+          "e": 8.15,
+          "c": 0.986252
+        },
+        {
+          "w": "bring",
+          "s": 8.15,
+          "e": 8.55,
+          "c": 0.989076
+        },
+        {
+          "w": "attention",
+          "s": 8.63,
+          "e": 9.06,
+          "c": 0.949128
+        },
+        {
+          "w": "to",
+          "s": 9.16,
+          "e": 9.27,
+          "c": 0.974169
+        },
+        {
+          "w": "an",
+          "s": 9.37,
+          "e": 9.58,
+          "c": 0.985785
+        },
+        {
+          "w": "article",
+          "s": 9.64,
+          "e": 10.56,
+          "c": 0.989572
+        },
+        {
+          "w": "from",
+          "s": 10.56,
+          "e": 10.76,
+          "c": 0.810387
+        },
+        {
+          "w": "the",
+          "s": 10.76,
+          "e": 10.84,
+          "c": 0.921103
+        },
+        {
+          "w": "World",
+          "s": 10.91,
+          "e": 11.07,
+          "c": 0.696717
+        },
+        {
+          "w": "Affairs",
+          "s": 11.38,
+          "e": 11.68,
+          "c": 0.989868
+        },
+        {
+          "w": "Journal",
+          "s": 11.68,
+          "e": 12.2,
+          "c": 0.842045
+        },
+        {
+          "w": "titled,",
+          "s": 12.2,
+          "e": 12.8,
+          "c": 0.46418
+        },
+        {
+          "w": "\"Money",
+          "s": 12.8,
+          "e": 13.24,
+          "c": 0.664532
+        },
+        {
+          "w": "Pit:",
+          "s": 13.24,
+          "e": 13.53,
+          "c": 0.653839
+        },
+        {
+          "w": "The",
+          "s": 13.53,
+          "e": 13.75,
+          "c": 0.954027
+        },
+        {
+          "w": "Monstrous",
+          "s": 13.75,
+          "e": 14.42,
+          "c": 0.930014
+        },
+        {
+          "w": "Failure",
+          "s": 14.42,
+          "e": 14.99,
+          "c": 0.984921
+        },
+        {
+          "w": "of",
+          "s": 15.07,
+          "e": 15.23,
+          "c": 0.955898
+        },
+        {
+          "w": "USAID",
+          "s": 15.24,
+          "e": 15.71,
+          "c": 0.617607
+        },
+        {
+          "w": "to",
+          "s": 15.81,
+          "e": 15.97,
+          "c": 0.986116
+        },
+        {
+          "w": "Afghanistan.\"",
+          "s": 16.08,
+          "e": 17.68,
+          "c": 0.854367
+        },
+        {
+          "w": "This",
+          "s": 17.76,
+          "e": 18.09,
+          "c": 0.997739
+        },
+        {
+          "w": "is",
+          "s": 18.17,
+          "e": 18.29,
+          "c": 0.995513
+        },
+        {
+          "w": "an",
+          "s": 18.29,
+          "e": 18.49,
+          "c": 0.966188
+        },
+        {
+          "w": "eight-page",
+          "s": 18.49,
+          "e": 19.5,
+          "c": 0.548602
+        },
+        {
+          "w": "article",
+          "s": 19.5,
+          "e": 20.21,
+          "c": 0.990658
+        },
+        {
+          "w": "documenting",
+          "s": 20.21,
+          "e": 21.31,
+          "c": 0.92781
+        },
+        {
+          "w": "case",
+          "s": 21.35,
+          "e": 21.74,
+          "c": 0.992123
+        },
+        {
+          "w": "after",
+          "s": 21.74,
+          "e": 22.17,
+          "c": 0.908153
+        },
+        {
+          "w": "case",
+          "s": 22.33,
+          "e": 22.63,
+          "c": 0.997914
+        },
+        {
+          "w": "of",
+          "s": 22.65,
+          "e": 22.86,
+          "c": 0.991961
+        },
+        {
+          "w": "American",
+          "s": 22.88,
+          "e": 23.61,
+          "c": 0.990145
+        },
+        {
+          "w": "tax",
+          "s": 23.68,
+          "e": 23.98,
+          "c": 0.988075
+        },
+        {
+          "w": "dollars",
+          "s": 23.98,
+          "e": 24.76,
+          "c": 0.989789
+        },
+        {
+          "w": "being",
+          "s": 24.76,
+          "e": 24.93,
+          "c": 0.974866
+        },
+        {
+          "w": "wasted",
+          "s": 25.16,
+          "e": 25.48,
+          "c": 0.952049
+        },
+        {
+          "w": "in",
+          "s": 25.48,
+          "e": 25.66,
+          "c": 0.99886
+        },
+        {
+          "w": "Afghanistan.",
+          "s": 25.66,
+          "e": 26.94,
+          "c": 0.99827
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 26.94,
+      "end_s": 27.03,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I",
+      "words": [
+        {
+          "w": "I",
+          "s": 26.944,
+          "e": 27.034,
+          "c": 0.975129
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "start_s": 27.34,
+      "end_s": 50.3,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "would like to bring one specific example to your attention, keeping in mind that many more months have now passed since this article was published, and these figures are now even larger. And I quote, \"In a recent quarterly report, the United States Special Inspector General for Afghan Reconstruction said that when security for aid workers is figured,",
+      "words": [
+        {
+          "w": "would",
+          "s": 27.344,
+          "e": 27.524,
+          "c": 0.951884
+        },
+        {
+          "w": "like",
+          "s": 27.524,
+          "e": 27.914,
+          "c": 0.998946
+        },
+        {
+          "w": "to",
+          "s": 27.914,
+          "e": 28.104,
+          "c": 0.997567
+        },
+        {
+          "w": "bring",
+          "s": 28.104,
+          "e": 28.494,
+          "c": 0.994397
+        },
+        {
+          "w": "one",
+          "s": 28.664,
+          "e": 28.754,
+          "c": 0.97374
+        },
+        {
+          "w": "specific",
+          "s": 28.884,
+          "e": 29.664,
+          "c": 0.987672
+        },
+        {
+          "w": "example",
+          "s": 29.664,
+          "e": 30.334,
+          "c": 0.996004
+        },
+        {
+          "w": "to",
+          "s": 30.384,
+          "e": 30.524,
+          "c": 0.959395
+        },
+        {
+          "w": "your",
+          "s": 30.654,
+          "e": 30.804,
+          "c": 0.994871
+        },
+        {
+          "w": "attention,",
+          "s": 30.804,
+          "e": 31.554,
+          "c": 0.610352
+        },
+        {
+          "w": "keeping",
+          "s": 31.554,
+          "e": 31.954,
+          "c": 0.817649
+        },
+        {
+          "w": "in",
+          "s": 31.954,
+          "e": 32.064,
+          "c": 0.994727
+        },
+        {
+          "w": "mind",
+          "s": 32.064,
+          "e": 32.304,
+          "c": 0.997459
+        },
+        {
+          "w": "that",
+          "s": 32.304,
+          "e": 32.474,
+          "c": 0.942453
+        },
+        {
+          "w": "many",
+          "s": 32.544,
+          "e": 32.784,
+          "c": 0.972763
+        },
+        {
+          "w": "more",
+          "s": 32.784,
+          "e": 33.044,
+          "c": 0.99911
+        },
+        {
+          "w": "months",
+          "s": 33.184,
+          "e": 33.434,
+          "c": 0.99493
+        },
+        {
+          "w": "have",
+          "s": 33.434,
+          "e": 33.654,
+          "c": 0.992135
+        },
+        {
+          "w": "now",
+          "s": 33.694,
+          "e": 33.884,
+          "c": 0.911725
+        },
+        {
+          "w": "passed",
+          "s": 33.884,
+          "e": 34.284,
+          "c": 0.984493
+        },
+        {
+          "w": "since",
+          "s": 34.284,
+          "e": 34.564,
+          "c": 0.98997
+        },
+        {
+          "w": "this",
+          "s": 34.724,
+          "e": 34.864,
+          "c": 0.966931
+        },
+        {
+          "w": "article",
+          "s": 34.914,
+          "e": 35.254,
+          "c": 0.995308
+        },
+        {
+          "w": "was",
+          "s": 35.364,
+          "e": 35.534,
+          "c": 0.988333
+        },
+        {
+          "w": "published,",
+          "s": 35.534,
+          "e": 36.254,
+          "c": 0.403831
+        },
+        {
+          "w": "and",
+          "s": 36.404,
+          "e": 36.404,
+          "c": 0.988616
+        },
+        {
+          "w": "these",
+          "s": 36.494,
+          "e": 36.774,
+          "c": 0.987296
+        },
+        {
+          "w": "figures",
+          "s": 36.784,
+          "e": 37.244,
+          "c": 0.994281
+        },
+        {
+          "w": "are",
+          "s": 37.244,
+          "e": 37.444,
+          "c": 0.992193
+        },
+        {
+          "w": "now",
+          "s": 37.444,
+          "e": 37.644,
+          "c": 0.985603
+        },
+        {
+          "w": "even",
+          "s": 37.644,
+          "e": 37.984,
+          "c": 0.986282
+        },
+        {
+          "w": "larger.",
+          "s": 38.384,
+          "e": 38.984,
+          "c": 0.805912
+        },
+        {
+          "w": "And",
+          "s": 39.274,
+          "e": 39.284,
+          "c": 0.866093
+        },
+        {
+          "w": "I",
+          "s": 39.384,
+          "e": 39.404,
+          "c": 0.97886
+        },
+        {
+          "w": "quote,",
+          "s": 39.404,
+          "e": 40.184,
+          "c": 0.421232
+        },
+        {
+          "w": "\"In",
+          "s": 40.184,
+          "e": 40.334,
+          "c": 0.768239
+        },
+        {
+          "w": "a",
+          "s": 40.334,
+          "e": 40.384,
+          "c": 0.995196
+        },
+        {
+          "w": "recent",
+          "s": 40.384,
+          "e": 40.534,
+          "c": 0.990613
+        },
+        {
+          "w": "quarterly",
+          "s": 40.764,
+          "e": 41.184,
+          "c": 0.998376
+        },
+        {
+          "w": "report,",
+          "s": 41.184,
+          "e": 41.604,
+          "c": 0.835751
+        },
+        {
+          "w": "the",
+          "s": 41.604,
+          "e": 41.754,
+          "c": 0.975865
+        },
+        {
+          "w": "United",
+          "s": 41.764,
+          "e": 42.134,
+          "c": 0.794076
+        },
+        {
+          "w": "States",
+          "s": 42.134,
+          "e": 42.604,
+          "c": 0.968889
+        },
+        {
+          "w": "Special",
+          "s": 42.694,
+          "e": 43.184,
+          "c": 0.972901
+        },
+        {
+          "w": "Inspector",
+          "s": 43.184,
+          "e": 44.104,
+          "c": 0.188028
+        },
+        {
+          "w": "General",
+          "s": 44.104,
+          "e": 44.464,
+          "c": 0.914125
+        },
+        {
+          "w": "for",
+          "s": 44.464,
+          "e": 44.724,
+          "c": 0.985252
+        },
+        {
+          "w": "Afghan",
+          "s": 44.864,
+          "e": 45.254,
+          "c": 0.982835
+        },
+        {
+          "w": "Reconstruction",
+          "s": 45.254,
+          "e": 46.494,
+          "c": 0.434525
+        },
+        {
+          "w": "said",
+          "s": 46.494,
+          "e": 46.774,
+          "c": 0.984357
+        },
+        {
+          "w": "that",
+          "s": 46.854,
+          "e": 47.184,
+          "c": 0.936949
+        },
+        {
+          "w": "when",
+          "s": 47.194,
+          "e": 47.544,
+          "c": 0.930483
+        },
+        {
+          "w": "security",
+          "s": 47.544,
+          "e": 48.254,
+          "c": 0.960063
+        },
+        {
+          "w": "for",
+          "s": 48.254,
+          "e": 48.454,
+          "c": 0.996371
+        },
+        {
+          "w": "aid",
+          "s": 48.534,
+          "e": 48.724,
+          "c": 0.987016
+        },
+        {
+          "w": "workers",
+          "s": 48.784,
+          "e": 49.394,
+          "c": 0.994691
+        },
+        {
+          "w": "is",
+          "s": 49.394,
+          "e": 49.574,
+          "c": 0.996432
+        },
+        {
+          "w": "figured,",
+          "s": 49.574,
+          "e": 50.304,
+          "c": 0.744718
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "start_s": 50.53,
+      "end_s": 50.54,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The",
+      "words": [
+        {
+          "w": "The",
+          "s": 50.532,
+          "e": 50.532,
+          "c": 0.61578
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "start_s": 50.59,
+      "end_s": 78.56,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "total amount of non-military funds Washington has appropriated since 2002 is approximately $100 billion, more than the United States has ever spent to rebuild a country. I further quote, since then, Congress has appropriated another $16.5 billion for reconstruction, and all that has not brought the United States or the Afghan a single sustainable institution or program.",
+      "words": [
+        {
+          "w": "total",
+          "s": 50.592,
+          "e": 50.972,
+          "c": 0.998824
+        },
+        {
+          "w": "amount",
+          "s": 50.972,
+          "e": 51.502,
+          "c": 0.995942
+        },
+        {
+          "w": "of",
+          "s": 51.502,
+          "e": 51.582,
+          "c": 0.996145
+        },
+        {
+          "w": "non-military",
+          "s": 51.682,
+          "e": 52.712,
+          "c": 0.855322
+        },
+        {
+          "w": "funds",
+          "s": 52.712,
+          "e": 53.202,
+          "c": 0.996319
+        },
+        {
+          "w": "Washington",
+          "s": 53.212,
+          "e": 53.812,
+          "c": 0.944816
+        },
+        {
+          "w": "has",
+          "s": 53.812,
+          "e": 54.012,
+          "c": 0.979621
+        },
+        {
+          "w": "appropriated",
+          "s": 54.012,
+          "e": 54.832,
+          "c": 0.988755
+        },
+        {
+          "w": "since",
+          "s": 54.832,
+          "e": 55.142,
+          "c": 0.965211
+        },
+        {
+          "w": "2002",
+          "s": 55.252,
+          "e": 55.932,
+          "c": 0.989968
+        },
+        {
+          "w": "is",
+          "s": 55.932,
+          "e": 56.872,
+          "c": 0.633967
+        },
+        {
+          "w": "approximately",
+          "s": 56.872,
+          "e": 57.512,
+          "c": 0.976869
+        },
+        {
+          "w": "$100",
+          "s": 57.512,
+          "e": 58.332,
+          "c": 0.541595
+        },
+        {
+          "w": "billion,",
+          "s": 58.682,
+          "e": 59.132,
+          "c": 0.580615
+        },
+        {
+          "w": "more",
+          "s": 59.442,
+          "e": 59.502,
+          "c": 0.999544
+        },
+        {
+          "w": "than",
+          "s": 59.502,
+          "e": 59.862,
+          "c": 0.999992
+        },
+        {
+          "w": "the",
+          "s": 59.882,
+          "e": 60.142,
+          "c": 0.999855
+        },
+        {
+          "w": "United",
+          "s": 60.142,
+          "e": 60.652,
+          "c": 0.9989
+        },
+        {
+          "w": "States",
+          "s": 60.732,
+          "e": 61.242,
+          "c": 0.999922
+        },
+        {
+          "w": "has",
+          "s": 61.242,
+          "e": 61.512,
+          "c": 0.999807
+        },
+        {
+          "w": "ever",
+          "s": 61.512,
+          "e": 61.882,
+          "c": 0.999928
+        },
+        {
+          "w": "spent",
+          "s": 61.882,
+          "e": 62.342,
+          "c": 0.999945
+        },
+        {
+          "w": "to",
+          "s": 62.342,
+          "e": 62.522,
+          "c": 0.999966
+        },
+        {
+          "w": "rebuild",
+          "s": 62.522,
+          "e": 63.162,
+          "c": 0.999807
+        },
+        {
+          "w": "a",
+          "s": 63.162,
+          "e": 63.252,
+          "c": 0.999983
+        },
+        {
+          "w": "country.",
+          "s": 63.252,
+          "e": 64.222,
+          "c": 0.998489
+        },
+        {
+          "w": "I",
+          "s": 64.232,
+          "e": 64.342,
+          "c": 0.998357
+        },
+        {
+          "w": "further",
+          "s": 64.552,
+          "e": 65.172,
+          "c": 0.999584
+        },
+        {
+          "w": "quote,",
+          "s": 65.172,
+          "e": 66.012,
+          "c": 0.977044
+        },
+        {
+          "w": "since",
+          "s": 66.012,
+          "e": 66.382,
+          "c": 0.497586
+        },
+        {
+          "w": "then,",
+          "s": 66.382,
+          "e": 66.702,
+          "c": 0.509134
+        },
+        {
+          "w": "Congress",
+          "s": 66.832,
+          "e": 67.432,
+          "c": 0.999596
+        },
+        {
+          "w": "has",
+          "s": 67.432,
+          "e": 67.652,
+          "c": 0.999949
+        },
+        {
+          "w": "appropriated",
+          "s": 67.652,
+          "e": 68.552,
+          "c": 0.999893
+        },
+        {
+          "w": "another",
+          "s": 68.552,
+          "e": 69.062,
+          "c": 0.999973
+        },
+        {
+          "w": "$16.5",
+          "s": 69.092,
+          "e": 70.032,
+          "c": 0.998748
+        },
+        {
+          "w": "billion",
+          "s": 70.032,
+          "e": 70.152,
+          "c": 0.999893
+        },
+        {
+          "w": "for",
+          "s": 70.712,
+          "e": 70.772,
+          "c": 0.999868
+        },
+        {
+          "w": "reconstruction,",
+          "s": 70.772,
+          "e": 71.892,
+          "c": 0.746636
+        },
+        {
+          "w": "and",
+          "s": 72.112,
+          "e": 72.112,
+          "c": 0.999971
+        },
+        {
+          "w": "all",
+          "s": 72.212,
+          "e": 72.292,
+          "c": 0.99999
+        },
+        {
+          "w": "that",
+          "s": 72.382,
+          "e": 72.622,
+          "c": 0.999304
+        },
+        {
+          "w": "has",
+          "s": 72.642,
+          "e": 72.852,
+          "c": 0.999969
+        },
+        {
+          "w": "not",
+          "s": 72.852,
+          "e": 73.072,
+          "c": 0.99995
+        },
+        {
+          "w": "brought",
+          "s": 73.072,
+          "e": 73.592,
+          "c": 0.999853
+        },
+        {
+          "w": "the",
+          "s": 73.592,
+          "e": 73.812,
+          "c": 0.999834
+        },
+        {
+          "w": "United",
+          "s": 73.812,
+          "e": 74.262,
+          "c": 0.999274
+        },
+        {
+          "w": "States",
+          "s": 74.262,
+          "e": 74.712,
+          "c": 0.999966
+        },
+        {
+          "w": "or",
+          "s": 74.712,
+          "e": 74.822,
+          "c": 0.998174
+        },
+        {
+          "w": "the",
+          "s": 74.872,
+          "e": 75.082,
+          "c": 0.999302
+        },
+        {
+          "w": "Afghan",
+          "s": 75.082,
+          "e": 75.532,
+          "c": 0.993591
+        },
+        {
+          "w": "a",
+          "s": 75.532,
+          "e": 75.602,
+          "c": 0.997876
+        },
+        {
+          "w": "single",
+          "s": 75.602,
+          "e": 76.052,
+          "c": 0.999979
+        },
+        {
+          "w": "sustainable",
+          "s": 76.052,
+          "e": 76.702,
+          "c": 0.927886
+        },
+        {
+          "w": "institution",
+          "s": 76.872,
+          "e": 77.692,
+          "c": 0.999836
+        },
+        {
+          "w": "or",
+          "s": 77.692,
+          "e": 77.772,
+          "c": 0.999323
+        },
+        {
+          "w": "program.",
+          "s": 78.342,
+          "e": 78.562,
+          "c": 0.970554
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "start_s": 79.3,
+      "end_s": 79.48,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "As I",
+      "words": [
+        {
+          "w": "As",
+          "s": 79.296,
+          "e": 79.416,
+          "c": 0.903521
+        },
+        {
+          "w": "I",
+          "s": 79.416,
+          "e": 79.476,
+          "c": 0.994156
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "start_s": 79.83,
+      "end_s": 106.3,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "traveled through the 3rd District of North Carolina last week, I spoke on this subject many times and was met with frustration from the audience at the waste of taxpayers' money in Afghanistan. When I went on to explain that the Afghan parliament was able to vote on the bilateral strategic agreement that we are in the process of finalizing with Afghanistan, but we have not even debated the issue in the House.",
+      "words": [
+        {
+          "w": "traveled",
+          "s": 79.826,
+          "e": 79.956,
+          "c": 0.882743
+        },
+        {
+          "w": "through",
+          "s": 79.956,
+          "e": 80.376,
+          "c": 0.982324
+        },
+        {
+          "w": "the",
+          "s": 80.376,
+          "e": 80.556,
+          "c": 0.981757
+        },
+        {
+          "w": "3rd",
+          "s": 80.556,
+          "e": 80.776,
+          "c": 0.712156
+        },
+        {
+          "w": "District",
+          "s": 80.886,
+          "e": 81.296,
+          "c": 0.727819
+        },
+        {
+          "w": "of",
+          "s": 81.366,
+          "e": 81.436,
+          "c": 0.979876
+        },
+        {
+          "w": "North",
+          "s": 81.496,
+          "e": 81.756,
+          "c": 0.950654
+        },
+        {
+          "w": "Carolina",
+          "s": 81.756,
+          "e": 82.296,
+          "c": 0.99424
+        },
+        {
+          "w": "last",
+          "s": 82.296,
+          "e": 82.796,
+          "c": 0.969397
+        },
+        {
+          "w": "week,",
+          "s": 82.796,
+          "e": 83.476,
+          "c": 0.827175
+        },
+        {
+          "w": "I",
+          "s": 83.476,
+          "e": 83.566,
+          "c": 0.629731
+        },
+        {
+          "w": "spoke",
+          "s": 83.686,
+          "e": 84.056,
+          "c": 0.975933
+        },
+        {
+          "w": "on",
+          "s": 84.056,
+          "e": 84.196,
+          "c": 0.972752
+        },
+        {
+          "w": "this",
+          "s": 84.196,
+          "e": 84.356,
+          "c": 0.94926
+        },
+        {
+          "w": "subject",
+          "s": 84.356,
+          "e": 84.766,
+          "c": 0.886931
+        },
+        {
+          "w": "many",
+          "s": 84.776,
+          "e": 85.086,
+          "c": 0.999062
+        },
+        {
+          "w": "times",
+          "s": 85.306,
+          "e": 85.476,
+          "c": 0.997609
+        },
+        {
+          "w": "and",
+          "s": 85.476,
+          "e": 85.706,
+          "c": 0.924979
+        },
+        {
+          "w": "was",
+          "s": 85.706,
+          "e": 85.916,
+          "c": 0.931216
+        },
+        {
+          "w": "met",
+          "s": 85.996,
+          "e": 86.156,
+          "c": 0.993887
+        },
+        {
+          "w": "with",
+          "s": 86.166,
+          "e": 86.476,
+          "c": 0.997748
+        },
+        {
+          "w": "frustration",
+          "s": 86.476,
+          "e": 87.276,
+          "c": 0.960953
+        },
+        {
+          "w": "from",
+          "s": 87.436,
+          "e": 87.646,
+          "c": 0.990597
+        },
+        {
+          "w": "the",
+          "s": 87.646,
+          "e": 87.876,
+          "c": 0.991049
+        },
+        {
+          "w": "audience",
+          "s": 87.876,
+          "e": 88.406,
+          "c": 0.99763
+        },
+        {
+          "w": "at",
+          "s": 88.456,
+          "e": 88.656,
+          "c": 0.973753
+        },
+        {
+          "w": "the",
+          "s": 88.666,
+          "e": 88.866,
+          "c": 0.99184
+        },
+        {
+          "w": "waste",
+          "s": 89.166,
+          "e": 89.206,
+          "c": 0.824758
+        },
+        {
+          "w": "of",
+          "s": 89.206,
+          "e": 89.326,
+          "c": 0.990187
+        },
+        {
+          "w": "taxpayers'",
+          "s": 89.406,
+          "e": 90.056,
+          "c": 0.800218
+        },
+        {
+          "w": "money",
+          "s": 90.056,
+          "e": 90.356,
+          "c": 0.812774
+        },
+        {
+          "w": "in",
+          "s": 90.356,
+          "e": 90.626,
+          "c": 0.998936
+        },
+        {
+          "w": "Afghanistan.",
+          "s": 90.906,
+          "e": 92.576,
+          "c": 0.995072
+        },
+        {
+          "w": "When",
+          "s": 92.576,
+          "e": 92.836,
+          "c": 0.998772
+        },
+        {
+          "w": "I",
+          "s": 92.836,
+          "e": 92.896,
+          "c": 0.999228
+        },
+        {
+          "w": "went",
+          "s": 93.106,
+          "e": 93.156,
+          "c": 0.996989
+        },
+        {
+          "w": "on",
+          "s": 93.156,
+          "e": 93.286,
+          "c": 0.977504
+        },
+        {
+          "w": "to",
+          "s": 93.286,
+          "e": 93.406,
+          "c": 0.997792
+        },
+        {
+          "w": "explain",
+          "s": 93.426,
+          "e": 93.876,
+          "c": 0.998304
+        },
+        {
+          "w": "that",
+          "s": 93.876,
+          "e": 94.056,
+          "c": 0.981495
+        },
+        {
+          "w": "the",
+          "s": 94.166,
+          "e": 94.326,
+          "c": 0.985804
+        },
+        {
+          "w": "Afghan",
+          "s": 94.326,
+          "e": 94.696,
+          "c": 0.995968
+        },
+        {
+          "w": "parliament",
+          "s": 94.786,
+          "e": 95.376,
+          "c": 0.622359
+        },
+        {
+          "w": "was",
+          "s": 95.376,
+          "e": 95.566,
+          "c": 0.995966
+        },
+        {
+          "w": "able",
+          "s": 95.566,
+          "e": 95.826,
+          "c": 0.997957
+        },
+        {
+          "w": "to",
+          "s": 95.826,
+          "e": 95.946,
+          "c": 0.997061
+        },
+        {
+          "w": "vote",
+          "s": 95.946,
+          "e": 96.206,
+          "c": 0.996698
+        },
+        {
+          "w": "on",
+          "s": 96.296,
+          "e": 96.296,
+          "c": 0.99015
+        },
+        {
+          "w": "the",
+          "s": 96.296,
+          "e": 96.526,
+          "c": 0.993055
+        },
+        {
+          "w": "bilateral",
+          "s": 96.966,
+          "e": 97.236,
+          "c": 0.785418
+        },
+        {
+          "w": "strategic",
+          "s": 97.766,
+          "e": 97.976,
+          "c": 0.990837
+        },
+        {
+          "w": "agreement",
+          "s": 98.066,
+          "e": 98.716,
+          "c": 0.996538
+        },
+        {
+          "w": "that",
+          "s": 98.826,
+          "e": 99.016,
+          "c": 0.828798
+        },
+        {
+          "w": "we",
+          "s": 99.086,
+          "e": 99.226,
+          "c": 0.974377
+        },
+        {
+          "w": "are",
+          "s": 99.226,
+          "e": 99.476,
+          "c": 0.976802
+        },
+        {
+          "w": "in",
+          "s": 99.476,
+          "e": 99.636,
+          "c": 0.997244
+        },
+        {
+          "w": "the",
+          "s": 99.636,
+          "e": 99.736,
+          "c": 0.995991
+        },
+        {
+          "w": "process",
+          "s": 99.896,
+          "e": 100.476,
+          "c": 0.999403
+        },
+        {
+          "w": "of",
+          "s": 100.476,
+          "e": 100.626,
+          "c": 0.993534
+        },
+        {
+          "w": "finalizing",
+          "s": 100.626,
+          "e": 101.476,
+          "c": 0.989997
+        },
+        {
+          "w": "with",
+          "s": 101.626,
+          "e": 101.806,
+          "c": 0.955824
+        },
+        {
+          "w": "Afghanistan,",
+          "s": 101.866,
+          "e": 102.976,
+          "c": 0.667864
+        },
+        {
+          "w": "but",
+          "s": 102.976,
+          "e": 103.036,
+          "c": 0.899264
+        },
+        {
+          "w": "we",
+          "s": 103.136,
+          "e": 103.186,
+          "c": 0.982982
+        },
+        {
+          "w": "have",
+          "s": 103.186,
+          "e": 103.376,
+          "c": 0.944934
+        },
+        {
+          "w": "not",
+          "s": 103.376,
+          "e": 103.626,
+          "c": 0.998929
+        },
+        {
+          "w": "even",
+          "s": 103.906,
+          "e": 103.956,
+          "c": 0.995811
+        },
+        {
+          "w": "debated",
+          "s": 103.956,
+          "e": 104.516,
+          "c": 0.993944
+        },
+        {
+          "w": "the",
+          "s": 104.596,
+          "e": 104.786,
+          "c": 0.981596
+        },
+        {
+          "w": "issue",
+          "s": 104.786,
+          "e": 105.156,
+          "c": 0.995822
+        },
+        {
+          "w": "in",
+          "s": 105.226,
+          "e": 105.356,
+          "c": 0.993909
+        },
+        {
+          "w": "the",
+          "s": 105.356,
+          "e": 105.606,
+          "c": 0.998361
+        },
+        {
+          "w": "House.",
+          "s": 105.606,
+          "e": 106.296,
+          "c": 0.860121
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "start_s": 106.49,
+      "end_s": 106.5,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "The",
+      "words": [
+        {
+          "w": "The",
+          "s": 106.488,
+          "e": 106.488,
+          "c": 0.879061
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "start_s": 106.56,
+      "end_s": 127.74,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "individuals with whom I spoke were incredibly disappointed in Congress. Mr. Speaker, we cannot blame the American people for wanting a vote on this agreement, which will spend billions of American dollars in Afghanistan with little to no accountability over at least the next ten years. This is not a partisan issue.",
+      "words": [
+        {
+          "w": "individuals",
+          "s": 106.558,
+          "e": 107.248,
+          "c": 0.997933
+        },
+        {
+          "w": "with",
+          "s": 107.248,
+          "e": 107.518,
+          "c": 0.994325
+        },
+        {
+          "w": "whom",
+          "s": 107.518,
+          "e": 107.788,
+          "c": 0.997132
+        },
+        {
+          "w": "I",
+          "s": 107.788,
+          "e": 107.848,
+          "c": 0.995602
+        },
+        {
+          "w": "spoke",
+          "s": 107.848,
+          "e": 108.228,
+          "c": 0.997406
+        },
+        {
+          "w": "were",
+          "s": 108.228,
+          "e": 108.548,
+          "c": 0.978547
+        },
+        {
+          "w": "incredibly",
+          "s": 108.548,
+          "e": 109.358,
+          "c": 0.987182
+        },
+        {
+          "w": "disappointed",
+          "s": 109.358,
+          "e": 110.328,
+          "c": 0.98704
+        },
+        {
+          "w": "in",
+          "s": 110.328,
+          "e": 110.478,
+          "c": 0.994968
+        },
+        {
+          "w": "Congress.",
+          "s": 110.478,
+          "e": 111.408,
+          "c": 0.930678
+        },
+        {
+          "w": "Mr.",
+          "s": 111.408,
+          "e": 111.738,
+          "c": 0.923434
+        },
+        {
+          "w": "Speaker,",
+          "s": 111.738,
+          "e": 112.328,
+          "c": 0.893908
+        },
+        {
+          "w": "we",
+          "s": 112.328,
+          "e": 112.408,
+          "c": 0.986487
+        },
+        {
+          "w": "cannot",
+          "s": 112.478,
+          "e": 112.858,
+          "c": 0.962127
+        },
+        {
+          "w": "blame",
+          "s": 112.858,
+          "e": 113.188,
+          "c": 0.999239
+        },
+        {
+          "w": "the",
+          "s": 113.188,
+          "e": 113.348,
+          "c": 0.994863
+        },
+        {
+          "w": "American",
+          "s": 113.428,
+          "e": 113.918,
+          "c": 0.994029
+        },
+        {
+          "w": "people",
+          "s": 113.918,
+          "e": 114.298,
+          "c": 0.989885
+        },
+        {
+          "w": "for",
+          "s": 114.378,
+          "e": 114.508,
+          "c": 0.965941
+        },
+        {
+          "w": "wanting",
+          "s": 114.588,
+          "e": 114.958,
+          "c": 0.983205
+        },
+        {
+          "w": "a",
+          "s": 114.958,
+          "e": 115.018,
+          "c": 0.986244
+        },
+        {
+          "w": "vote",
+          "s": 115.018,
+          "e": 115.258,
+          "c": 0.998089
+        },
+        {
+          "w": "on",
+          "s": 115.288,
+          "e": 115.388,
+          "c": 0.981175
+        },
+        {
+          "w": "this",
+          "s": 115.388,
+          "e": 115.628,
+          "c": 0.990318
+        },
+        {
+          "w": "agreement,",
+          "s": 115.638,
+          "e": 117.228,
+          "c": 0.735588
+        },
+        {
+          "w": "which",
+          "s": 117.618,
+          "e": 117.638,
+          "c": 0.998268
+        },
+        {
+          "w": "will",
+          "s": 117.638,
+          "e": 117.868,
+          "c": 0.994353
+        },
+        {
+          "w": "spend",
+          "s": 117.868,
+          "e": 118.158,
+          "c": 0.990137
+        },
+        {
+          "w": "billions",
+          "s": 118.158,
+          "e": 118.628,
+          "c": 0.970447
+        },
+        {
+          "w": "of",
+          "s": 118.628,
+          "e": 118.738,
+          "c": 0.996364
+        },
+        {
+          "w": "American",
+          "s": 118.738,
+          "e": 119.208,
+          "c": 0.979604
+        },
+        {
+          "w": "dollars",
+          "s": 119.208,
+          "e": 119.618,
+          "c": 0.994423
+        },
+        {
+          "w": "in",
+          "s": 119.618,
+          "e": 119.648,
+          "c": 0.985214
+        },
+        {
+          "w": "Afghanistan",
+          "s": 119.768,
+          "e": 120.438,
+          "c": 0.997592
+        },
+        {
+          "w": "with",
+          "s": 120.528,
+          "e": 120.698,
+          "c": 0.786676
+        },
+        {
+          "w": "little",
+          "s": 120.698,
+          "e": 121.078,
+          "c": 0.992417
+        },
+        {
+          "w": "to",
+          "s": 121.078,
+          "e": 121.198,
+          "c": 0.972607
+        },
+        {
+          "w": "no",
+          "s": 121.198,
+          "e": 121.318,
+          "c": 0.99233
+        },
+        {
+          "w": "accountability",
+          "s": 121.318,
+          "e": 121.788,
+          "c": 0.987758
+        },
+        {
+          "w": "over",
+          "s": 122.518,
+          "e": 122.728,
+          "c": 0.996497
+        },
+        {
+          "w": "at",
+          "s": 122.728,
+          "e": 122.968,
+          "c": 0.982814
+        },
+        {
+          "w": "least",
+          "s": 122.968,
+          "e": 123.578,
+          "c": 0.998635
+        },
+        {
+          "w": "the",
+          "s": 123.578,
+          "e": 123.858,
+          "c": 0.945253
+        },
+        {
+          "w": "next",
+          "s": 123.998,
+          "e": 124.418,
+          "c": 0.997902
+        },
+        {
+          "w": "ten",
+          "s": 124.418,
+          "e": 124.778,
+          "c": 0.553657
+        },
+        {
+          "w": "years.",
+          "s": 124.778,
+          "e": 125.788,
+          "c": 0.992918
+        },
+        {
+          "w": "This",
+          "s": 126.058,
+          "e": 126.088,
+          "c": 0.996909
+        },
+        {
+          "w": "is",
+          "s": 126.088,
+          "e": 126.238,
+          "c": 0.997784
+        },
+        {
+          "w": "not",
+          "s": 126.238,
+          "e": 126.428,
+          "c": 0.998809
+        },
+        {
+          "w": "a",
+          "s": 126.468,
+          "e": 126.538,
+          "c": 0.995271
+        },
+        {
+          "w": "partisan",
+          "s": 126.538,
+          "e": 127.148,
+          "c": 0.992042
+        },
+        {
+          "w": "issue.",
+          "s": 127.148,
+          "e": 127.738,
+          "c": 0.983068
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "start_s": 128.11,
+      "end_s": 152.65,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Congressman Jim McGovern and I have signed a letter asking the leadership of both parties for a debate on the expenditure tax dollars to prop up the corrupt nation of Afghanistan. To further explain why this debate is necessary, I will briefly read two more examples from the Money Pit article, and I quote: \"The Special Inspector General's Office, widely known as",
+      "words": [
+        {
+          "w": "Congressman",
+          "s": 128.11,
+          "e": 128.52,
+          "c": 0.951835
+        },
+        {
+          "w": "Jim",
+          "s": 128.52,
+          "e": 128.72,
+          "c": 0.974711
+        },
+        {
+          "w": "McGovern",
+          "s": 128.72,
+          "e": 129.23,
+          "c": 0.989522
+        },
+        {
+          "w": "and",
+          "s": 129.29,
+          "e": 129.42,
+          "c": 0.976346
+        },
+        {
+          "w": "I",
+          "s": 129.46,
+          "e": 129.52,
+          "c": 0.99747
+        },
+        {
+          "w": "have",
+          "s": 129.52,
+          "e": 129.79,
+          "c": 0.989748
+        },
+        {
+          "w": "signed",
+          "s": 129.79,
+          "e": 130.2,
+          "c": 0.996219
+        },
+        {
+          "w": "a",
+          "s": 130.2,
+          "e": 130.26,
+          "c": 0.992316
+        },
+        {
+          "w": "letter",
+          "s": 130.3,
+          "e": 130.76,
+          "c": 0.998544
+        },
+        {
+          "w": "asking",
+          "s": 130.76,
+          "e": 131.16,
+          "c": 0.916758
+        },
+        {
+          "w": "the",
+          "s": 131.16,
+          "e": 131.32,
+          "c": 0.979439
+        },
+        {
+          "w": "leadership",
+          "s": 131.32,
+          "e": 131.83,
+          "c": 0.986948
+        },
+        {
+          "w": "of",
+          "s": 131.91,
+          "e": 132,
+          "c": 0.942593
+        },
+        {
+          "w": "both",
+          "s": 132,
+          "e": 132.3,
+          "c": 0.948353
+        },
+        {
+          "w": "parties",
+          "s": 132.3,
+          "e": 132.89,
+          "c": 0.981018
+        },
+        {
+          "w": "for",
+          "s": 133.39,
+          "e": 133.59,
+          "c": 0.996978
+        },
+        {
+          "w": "a",
+          "s": 133.59,
+          "e": 133.66,
+          "c": 0.962058
+        },
+        {
+          "w": "debate",
+          "s": 133.73,
+          "e": 134.07,
+          "c": 0.999424
+        },
+        {
+          "w": "on",
+          "s": 134.12,
+          "e": 134.23,
+          "c": 0.994685
+        },
+        {
+          "w": "the",
+          "s": 134.23,
+          "e": 134.44,
+          "c": 0.983022
+        },
+        {
+          "w": "expenditure",
+          "s": 134.44,
+          "e": 135.23,
+          "c": 0.971372
+        },
+        {
+          "w": "tax",
+          "s": 135.23,
+          "e": 135.44,
+          "c": 0.537733
+        },
+        {
+          "w": "dollars",
+          "s": 135.44,
+          "e": 136,
+          "c": 0.985759
+        },
+        {
+          "w": "to",
+          "s": 136,
+          "e": 136.3,
+          "c": 0.97317
+        },
+        {
+          "w": "prop",
+          "s": 136.3,
+          "e": 136.9,
+          "c": 0.994342
+        },
+        {
+          "w": "up",
+          "s": 136.9,
+          "e": 137.22,
+          "c": 0.990118
+        },
+        {
+          "w": "the",
+          "s": 137.22,
+          "e": 137.45,
+          "c": 0.972159
+        },
+        {
+          "w": "corrupt",
+          "s": 137.53,
+          "e": 138.17,
+          "c": 0.975171
+        },
+        {
+          "w": "nation",
+          "s": 138.17,
+          "e": 138.51,
+          "c": 0.991153
+        },
+        {
+          "w": "of",
+          "s": 138.59,
+          "e": 138.93,
+          "c": 0.990665
+        },
+        {
+          "w": "Afghanistan.",
+          "s": 139.09,
+          "e": 140.25,
+          "c": 0.969481
+        },
+        {
+          "w": "To",
+          "s": 140.29,
+          "e": 140.43,
+          "c": 0.996624
+        },
+        {
+          "w": "further",
+          "s": 140.63,
+          "e": 140.94,
+          "c": 0.997552
+        },
+        {
+          "w": "explain",
+          "s": 141.02,
+          "e": 141.47,
+          "c": 0.998353
+        },
+        {
+          "w": "why",
+          "s": 141.47,
+          "e": 141.69,
+          "c": 0.998251
+        },
+        {
+          "w": "this",
+          "s": 141.69,
+          "e": 141.99,
+          "c": 0.994791
+        },
+        {
+          "w": "debate",
+          "s": 141.99,
+          "e": 142.42,
+          "c": 0.998574
+        },
+        {
+          "w": "is",
+          "s": 142.47,
+          "e": 142.58,
+          "c": 0.998285
+        },
+        {
+          "w": "necessary,",
+          "s": 142.58,
+          "e": 143.4,
+          "c": 0.878108
+        },
+        {
+          "w": "I",
+          "s": 143.4,
+          "e": 143.46,
+          "c": 0.778446
+        },
+        {
+          "w": "will",
+          "s": 143.46,
+          "e": 143.7,
+          "c": 0.91944
+        },
+        {
+          "w": "briefly",
+          "s": 143.7,
+          "e": 144.13,
+          "c": 0.972995
+        },
+        {
+          "w": "read",
+          "s": 144.13,
+          "e": 144.35,
+          "c": 0.990987
+        },
+        {
+          "w": "two",
+          "s": 144.43,
+          "e": 144.53,
+          "c": 0.963778
+        },
+        {
+          "w": "more",
+          "s": 144.67,
+          "e": 144.79,
+          "c": 0.995549
+        },
+        {
+          "w": "examples",
+          "s": 144.79,
+          "e": 145.3,
+          "c": 0.995025
+        },
+        {
+          "w": "from",
+          "s": 145.3,
+          "e": 145.43,
+          "c": 0.955394
+        },
+        {
+          "w": "the",
+          "s": 145.79,
+          "e": 145.79,
+          "c": 0.963117
+        },
+        {
+          "w": "Money",
+          "s": 145.93,
+          "e": 146.51,
+          "c": 0.933754
+        },
+        {
+          "w": "Pit",
+          "s": 146.51,
+          "e": 146.79,
+          "c": 0.988251
+        },
+        {
+          "w": "article,",
+          "s": 146.87,
+          "e": 147.9,
+          "c": 0.251793
+        },
+        {
+          "w": "and",
+          "s": 147.9,
+          "e": 148.25,
+          "c": 0.967802
+        },
+        {
+          "w": "I",
+          "s": 148.25,
+          "e": 148.36,
+          "c": 0.995203
+        },
+        {
+          "w": "quote:",
+          "s": 148.36,
+          "e": 149.08,
+          "c": 0.480507
+        },
+        {
+          "w": "\"The",
+          "s": 149.08,
+          "e": 149.28,
+          "c": 0.499629
+        },
+        {
+          "w": "Special",
+          "s": 149.28,
+          "e": 149.64,
+          "c": 0.93015
+        },
+        {
+          "w": "Inspector",
+          "s": 149.64,
+          "e": 150.11,
+          "c": 0.982035
+        },
+        {
+          "w": "General's",
+          "s": 150.11,
+          "e": 150.57,
+          "c": 0.967995
+        },
+        {
+          "w": "Office,",
+          "s": 150.57,
+          "e": 150.98,
+          "c": 0.538437
+        },
+        {
+          "w": "widely",
+          "s": 151.29,
+          "e": 151.34,
+          "c": 0.99254
+        },
+        {
+          "w": "known",
+          "s": 151.34,
+          "e": 151.56,
+          "c": 0.96265
+        },
+        {
+          "w": "as",
+          "s": 151.56,
+          "e": 152.65,
+          "c": 0.946989
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "start_s": 152.66,
+      "end_s": 152.67,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "CIGAR,",
+      "words": [
+        {
+          "w": "CIGAR,",
+          "s": 152.66,
+          "e": 152.66,
+          "c": 0.282468
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "start_s": 152.84,
+      "end_s": 180.25,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "noted that for the 2012 and 2013 fiscal years the United States has been providing Afghanistan practically the most corrupt nation on earth with one point billion dollars in fuel for the Afghan military, even though the United States has made no effort to determine how much fuel the military actually requires. And I further quote, the article goes on to cite a GAO report stating that,",
+      "words": [
+        {
+          "w": "noted",
+          "s": 152.838,
+          "e": 152.918,
+          "c": 0.887812
+        },
+        {
+          "w": "that",
+          "s": 152.918,
+          "e": 153.158,
+          "c": 0.987315
+        },
+        {
+          "w": "for",
+          "s": 153.168,
+          "e": 153.358,
+          "c": 0.863843
+        },
+        {
+          "w": "the",
+          "s": 153.358,
+          "e": 153.548,
+          "c": 0.990783
+        },
+        {
+          "w": "2012",
+          "s": 153.548,
+          "e": 154.298,
+          "c": 0.991225
+        },
+        {
+          "w": "and",
+          "s": 154.298,
+          "e": 154.488,
+          "c": 0.916613
+        },
+        {
+          "w": "2013",
+          "s": 154.488,
+          "e": 155.268,
+          "c": 0.992517
+        },
+        {
+          "w": "fiscal",
+          "s": 155.268,
+          "e": 155.928,
+          "c": 0.917751
+        },
+        {
+          "w": "years",
+          "s": 155.928,
+          "e": 156.198,
+          "c": 0.979154
+        },
+        {
+          "w": "the",
+          "s": 156.668,
+          "e": 156.708,
+          "c": 0.185955
+        },
+        {
+          "w": "United",
+          "s": 156.708,
+          "e": 157.048,
+          "c": 0.91081
+        },
+        {
+          "w": "States",
+          "s": 157.178,
+          "e": 157.358,
+          "c": 0.967963
+        },
+        {
+          "w": "has",
+          "s": 157.418,
+          "e": 157.508,
+          "c": 0.916202
+        },
+        {
+          "w": "been",
+          "s": 157.508,
+          "e": 157.728,
+          "c": 0.985475
+        },
+        {
+          "w": "providing",
+          "s": 157.728,
+          "e": 158.208,
+          "c": 0.815204
+        },
+        {
+          "w": "Afghanistan",
+          "s": 158.208,
+          "e": 159.088,
+          "c": 0.81287
+        },
+        {
+          "w": "practically",
+          "s": 159.318,
+          "e": 160.158,
+          "c": 0.990645
+        },
+        {
+          "w": "the",
+          "s": 160.158,
+          "e": 160.448,
+          "c": 0.986592
+        },
+        {
+          "w": "most",
+          "s": 160.448,
+          "e": 160.848,
+          "c": 0.996907
+        },
+        {
+          "w": "corrupt",
+          "s": 160.848,
+          "e": 161.488,
+          "c": 0.925677
+        },
+        {
+          "w": "nation",
+          "s": 161.488,
+          "e": 162.038,
+          "c": 0.991787
+        },
+        {
+          "w": "on",
+          "s": 162.038,
+          "e": 162.218,
+          "c": 0.997253
+        },
+        {
+          "w": "earth",
+          "s": 162.218,
+          "e": 162.668,
+          "c": 0.766423
+        },
+        {
+          "w": "with",
+          "s": 162.668,
+          "e": 162.798,
+          "c": 0.847311
+        },
+        {
+          "w": "one",
+          "s": 163.148,
+          "e": 164.208,
+          "c": 0.22344
+        },
+        {
+          "w": "point",
+          "s": 164.208,
+          "e": 164.428,
+          "c": 0.710712
+        },
+        {
+          "w": "billion",
+          "s": 164.468,
+          "e": 164.828,
+          "c": 0.383557
+        },
+        {
+          "w": "dollars",
+          "s": 164.828,
+          "e": 165.188,
+          "c": 0.981712
+        },
+        {
+          "w": "in",
+          "s": 165.188,
+          "e": 165.308,
+          "c": 0.983622
+        },
+        {
+          "w": "fuel",
+          "s": 165.308,
+          "e": 165.848,
+          "c": 0.967651
+        },
+        {
+          "w": "for",
+          "s": 165.848,
+          "e": 165.968,
+          "c": 0.981167
+        },
+        {
+          "w": "the",
+          "s": 166.278,
+          "e": 166.388,
+          "c": 0.995201
+        },
+        {
+          "w": "Afghan",
+          "s": 166.388,
+          "e": 167.078,
+          "c": 0.9629
+        },
+        {
+          "w": "military,",
+          "s": 167.078,
+          "e": 168.118,
+          "c": 0.309687
+        },
+        {
+          "w": "even",
+          "s": 168.118,
+          "e": 168.318,
+          "c": 0.965346
+        },
+        {
+          "w": "though",
+          "s": 168.408,
+          "e": 168.668,
+          "c": 0.997647
+        },
+        {
+          "w": "the",
+          "s": 168.668,
+          "e": 168.828,
+          "c": 0.993248
+        },
+        {
+          "w": "United",
+          "s": 168.868,
+          "e": 169.088,
+          "c": 0.980426
+        },
+        {
+          "w": "States",
+          "s": 169.158,
+          "e": 169.488,
+          "c": 0.987719
+        },
+        {
+          "w": "has",
+          "s": 169.488,
+          "e": 169.628,
+          "c": 0.977139
+        },
+        {
+          "w": "made",
+          "s": 169.628,
+          "e": 169.758,
+          "c": 0.995746
+        },
+        {
+          "w": "no",
+          "s": 169.868,
+          "e": 169.968,
+          "c": 0.996151
+        },
+        {
+          "w": "effort",
+          "s": 170.108,
+          "e": 170.308,
+          "c": 0.995313
+        },
+        {
+          "w": "to",
+          "s": 170.308,
+          "e": 170.418,
+          "c": 0.991934
+        },
+        {
+          "w": "determine",
+          "s": 170.418,
+          "e": 170.908,
+          "c": 0.995908
+        },
+        {
+          "w": "how",
+          "s": 170.908,
+          "e": 171.108,
+          "c": 0.992721
+        },
+        {
+          "w": "much",
+          "s": 171.338,
+          "e": 171.488,
+          "c": 0.999125
+        },
+        {
+          "w": "fuel",
+          "s": 171.488,
+          "e": 171.858,
+          "c": 0.982214
+        },
+        {
+          "w": "the",
+          "s": 171.868,
+          "e": 172.148,
+          "c": 0.948741
+        },
+        {
+          "w": "military",
+          "s": 172.148,
+          "e": 172.908,
+          "c": 0.996662
+        },
+        {
+          "w": "actually",
+          "s": 172.908,
+          "e": 173.598,
+          "c": 0.992178
+        },
+        {
+          "w": "requires.",
+          "s": 173.688,
+          "e": 174.688,
+          "c": 0.842277
+        },
+        {
+          "w": "And",
+          "s": 174.978,
+          "e": 175.018,
+          "c": 0.978015
+        },
+        {
+          "w": "I",
+          "s": 175.018,
+          "e": 175.108,
+          "c": 0.990199
+        },
+        {
+          "w": "further",
+          "s": 175.108,
+          "e": 175.728,
+          "c": 0.994736
+        },
+        {
+          "w": "quote,",
+          "s": 175.738,
+          "e": 176.338,
+          "c": 0.474733
+        },
+        {
+          "w": "the",
+          "s": 176.358,
+          "e": 176.628,
+          "c": 0.450462
+        },
+        {
+          "w": "article",
+          "s": 176.628,
+          "e": 177.238,
+          "c": 0.99631
+        },
+        {
+          "w": "goes",
+          "s": 177.328,
+          "e": 177.518,
+          "c": 0.9977
+        },
+        {
+          "w": "on",
+          "s": 177.608,
+          "e": 177.788,
+          "c": 0.969035
+        },
+        {
+          "w": "to",
+          "s": 177.858,
+          "e": 177.978,
+          "c": 0.997151
+        },
+        {
+          "w": "cite",
+          "s": 177.978,
+          "e": 178.328,
+          "c": 0.987764
+        },
+        {
+          "w": "a",
+          "s": 178.328,
+          "e": 178.418,
+          "c": 0.962292
+        },
+        {
+          "w": "GAO",
+          "s": 178.418,
+          "e": 178.688,
+          "c": 0.985411
+        },
+        {
+          "w": "report",
+          "s": 178.808,
+          "e": 179.198,
+          "c": 0.986199
+        },
+        {
+          "w": "stating",
+          "s": 179.238,
+          "e": 179.858,
+          "c": 0.970291
+        },
+        {
+          "w": "that,",
+          "s": 179.858,
+          "e": 180.248,
+          "c": 0.441222
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "start_s": 180.24,
+      "end_s": 209.8,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "$130 million Afghan contractors built a large shower bathroom facility without holes in the walls or floor for plumbing and drains. What's more, the walls were constructed of crumbling cinder blocks. The report blamed insufficient oversight. Mr. Speaker, it is time that we bring to a close the era of waste, fraud, and abuse of the United States resources overseas and in Afghanistan.",
+      "words": [
+        {
+          "w": "$130",
+          "s": 180.24,
+          "e": 181.27,
+          "c": 0.331003
+        },
+        {
+          "w": "million",
+          "s": 181.27,
+          "e": 181.97,
+          "c": 0.94509
+        },
+        {
+          "w": "Afghan",
+          "s": 181.99,
+          "e": 182.38,
+          "c": 0.934259
+        },
+        {
+          "w": "contractors",
+          "s": 182.62,
+          "e": 183.78,
+          "c": 0.982173
+        },
+        {
+          "w": "built",
+          "s": 183.78,
+          "e": 184.08,
+          "c": 0.928666
+        },
+        {
+          "w": "a",
+          "s": 184.12,
+          "e": 184.24,
+          "c": 0.964805
+        },
+        {
+          "w": "large",
+          "s": 184.24,
+          "e": 184.54,
+          "c": 0.977167
+        },
+        {
+          "w": "shower",
+          "s": 184.54,
+          "e": 185.08,
+          "c": 0.942341
+        },
+        {
+          "w": "bathroom",
+          "s": 185.08,
+          "e": 185.62,
+          "c": 0.443257
+        },
+        {
+          "w": "facility",
+          "s": 185.62,
+          "e": 186.43,
+          "c": 0.981237
+        },
+        {
+          "w": "without",
+          "s": 187.21,
+          "e": 187.73,
+          "c": 0.617161
+        },
+        {
+          "w": "holes",
+          "s": 187.8,
+          "e": 188.14,
+          "c": 0.971579
+        },
+        {
+          "w": "in",
+          "s": 188.21,
+          "e": 188.3,
+          "c": 0.953433
+        },
+        {
+          "w": "the",
+          "s": 188.55,
+          "e": 188.66,
+          "c": 0.992964
+        },
+        {
+          "w": "walls",
+          "s": 188.66,
+          "e": 189.26,
+          "c": 0.985665
+        },
+        {
+          "w": "or",
+          "s": 189.26,
+          "e": 189.5,
+          "c": 0.978722
+        },
+        {
+          "w": "floor",
+          "s": 189.5,
+          "e": 190.1,
+          "c": 0.946026
+        },
+        {
+          "w": "for",
+          "s": 190.1,
+          "e": 190.44,
+          "c": 0.990002
+        },
+        {
+          "w": "plumbing",
+          "s": 190.67,
+          "e": 191.42,
+          "c": 0.994687
+        },
+        {
+          "w": "and",
+          "s": 191.42,
+          "e": 191.69,
+          "c": 0.968899
+        },
+        {
+          "w": "drains.",
+          "s": 191.79,
+          "e": 192.88,
+          "c": 0.977796
+        },
+        {
+          "w": "What's",
+          "s": 193.1,
+          "e": 193.21,
+          "c": 0.761925
+        },
+        {
+          "w": "more,",
+          "s": 193.21,
+          "e": 193.54,
+          "c": 0.696113
+        },
+        {
+          "w": "the",
+          "s": 193.54,
+          "e": 193.67,
+          "c": 0.994277
+        },
+        {
+          "w": "walls",
+          "s": 193.8,
+          "e": 193.99,
+          "c": 0.997459
+        },
+        {
+          "w": "were",
+          "s": 193.99,
+          "e": 194.1,
+          "c": 0.994245
+        },
+        {
+          "w": "constructed",
+          "s": 194.26,
+          "e": 194.83,
+          "c": 0.995465
+        },
+        {
+          "w": "of",
+          "s": 194.83,
+          "e": 194.94,
+          "c": 0.952748
+        },
+        {
+          "w": "crumbling",
+          "s": 194.94,
+          "e": 195.39,
+          "c": 0.99232
+        },
+        {
+          "w": "cinder",
+          "s": 195.49,
+          "e": 195.74,
+          "c": 0.962648
+        },
+        {
+          "w": "blocks.",
+          "s": 195.85,
+          "e": 196.27,
+          "c": 0.920477
+        },
+        {
+          "w": "The",
+          "s": 196.45,
+          "e": 196.45,
+          "c": 0.996398
+        },
+        {
+          "w": "report",
+          "s": 196.64,
+          "e": 196.94,
+          "c": 0.97572
+        },
+        {
+          "w": "blamed",
+          "s": 196.94,
+          "e": 197.33,
+          "c": 0.980991
+        },
+        {
+          "w": "insufficient",
+          "s": 197.33,
+          "e": 198.09,
+          "c": 0.993877
+        },
+        {
+          "w": "oversight.",
+          "s": 198.11,
+          "e": 198.88,
+          "c": 0.987826
+        },
+        {
+          "w": "Mr.",
+          "s": 198.9,
+          "e": 199.33,
+          "c": 0.890374
+        },
+        {
+          "w": "Speaker,",
+          "s": 199.34,
+          "e": 200.1,
+          "c": 0.941585
+        },
+        {
+          "w": "it",
+          "s": 200.11,
+          "e": 200.12,
+          "c": 0.949296
+        },
+        {
+          "w": "is",
+          "s": 200.28,
+          "e": 200.45,
+          "c": 0.983307
+        },
+        {
+          "w": "time",
+          "s": 200.45,
+          "e": 200.8,
+          "c": 0.988284
+        },
+        {
+          "w": "that",
+          "s": 200.8,
+          "e": 201.04,
+          "c": 0.929032
+        },
+        {
+          "w": "we",
+          "s": 201.15,
+          "e": 201.32,
+          "c": 0.998154
+        },
+        {
+          "w": "bring",
+          "s": 201.32,
+          "e": 201.74,
+          "c": 0.956074
+        },
+        {
+          "w": "to",
+          "s": 201.75,
+          "e": 201.92,
+          "c": 0.984089
+        },
+        {
+          "w": "a",
+          "s": 201.92,
+          "e": 202,
+          "c": 0.989172
+        },
+        {
+          "w": "close",
+          "s": 202,
+          "e": 202.43,
+          "c": 0.994008
+        },
+        {
+          "w": "the",
+          "s": 202.43,
+          "e": 202.69,
+          "c": 0.953066
+        },
+        {
+          "w": "era",
+          "s": 202.69,
+          "e": 202.95,
+          "c": 0.981478
+        },
+        {
+          "w": "of",
+          "s": 202.95,
+          "e": 203.12,
+          "c": 0.996008
+        },
+        {
+          "w": "waste,",
+          "s": 203.12,
+          "e": 203.72,
+          "c": 0.960691
+        },
+        {
+          "w": "fraud,",
+          "s": 203.72,
+          "e": 204.32,
+          "c": 0.550149
+        },
+        {
+          "w": "and",
+          "s": 204.32,
+          "e": 204.58,
+          "c": 0.994061
+        },
+        {
+          "w": "abuse",
+          "s": 204.58,
+          "e": 205.08,
+          "c": 0.969973
+        },
+        {
+          "w": "of",
+          "s": 205.14,
+          "e": 205.29,
+          "c": 0.995837
+        },
+        {
+          "w": "the",
+          "s": 205.39,
+          "e": 205.57,
+          "c": 0.949941
+        },
+        {
+          "w": "United",
+          "s": 205.58,
+          "e": 206.09,
+          "c": 0.963883
+        },
+        {
+          "w": "States",
+          "s": 206.09,
+          "e": 206.61,
+          "c": 0.996365
+        },
+        {
+          "w": "resources",
+          "s": 206.61,
+          "e": 207.27,
+          "c": 0.702587
+        },
+        {
+          "w": "overseas",
+          "s": 207.52,
+          "e": 208.08,
+          "c": 0.982019
+        },
+        {
+          "w": "and",
+          "s": 208.1,
+          "e": 208.3,
+          "c": 0.859655
+        },
+        {
+          "w": "in",
+          "s": 208.39,
+          "e": 208.53,
+          "c": 0.565086
+        },
+        {
+          "w": "Afghanistan.",
+          "s": 208.63,
+          "e": 209.8,
+          "c": 0.992216
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "start_s": 209.78,
+      "end_s": 210.06,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Mr.",
+      "words": [
+        {
+          "w": "Mr.",
+          "s": 209.776,
+          "e": 210.056,
+          "c": 0.961314
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "start_s": 210.24,
+      "end_s": 236.83,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Speaker, I hope the leadership of both parties will allow this Congress to debate whether we should stay in Afghanistan for 10 more years. If the parliament in Afghanistan can have that debate, why can't the United States House of Representatives? In closing, I would like to ask God to please bless our men and women in uniform and their families. And I'll close by saying we have spent enough blood and treasure on this failed policy in Afghanistan.",
+      "words": [
+        {
+          "w": "Speaker,",
+          "s": 210.236,
+          "e": 210.576,
+          "c": 0.88707
+        },
+        {
+          "w": "I",
+          "s": 210.576,
+          "e": 210.626,
+          "c": 0.995063
+        },
+        {
+          "w": "hope",
+          "s": 210.626,
+          "e": 210.856,
+          "c": 0.997662
+        },
+        {
+          "w": "the",
+          "s": 210.856,
+          "e": 211.026,
+          "c": 0.988142
+        },
+        {
+          "w": "leadership",
+          "s": 211.026,
+          "e": 211.616,
+          "c": 0.998063
+        },
+        {
+          "w": "of",
+          "s": 211.616,
+          "e": 211.726,
+          "c": 0.988186
+        },
+        {
+          "w": "both",
+          "s": 211.726,
+          "e": 211.956,
+          "c": 0.99648
+        },
+        {
+          "w": "parties",
+          "s": 211.956,
+          "e": 212.416,
+          "c": 0.992755
+        },
+        {
+          "w": "will",
+          "s": 212.476,
+          "e": 212.696,
+          "c": 0.968916
+        },
+        {
+          "w": "allow",
+          "s": 212.696,
+          "e": 213.036,
+          "c": 0.996922
+        },
+        {
+          "w": "this",
+          "s": 213.036,
+          "e": 213.106,
+          "c": 0.951352
+        },
+        {
+          "w": "Congress",
+          "s": 213.796,
+          "e": 214.376,
+          "c": 0.911938
+        },
+        {
+          "w": "to",
+          "s": 214.376,
+          "e": 214.576,
+          "c": 0.982964
+        },
+        {
+          "w": "debate",
+          "s": 214.576,
+          "e": 214.996,
+          "c": 0.970614
+        },
+        {
+          "w": "whether",
+          "s": 215.116,
+          "e": 216.076,
+          "c": 0.713639
+        },
+        {
+          "w": "we",
+          "s": 216.076,
+          "e": 216.276,
+          "c": 0.920946
+        },
+        {
+          "w": "should",
+          "s": 216.296,
+          "e": 216.956,
+          "c": 0.992231
+        },
+        {
+          "w": "stay",
+          "s": 216.956,
+          "e": 217.176,
+          "c": 0.979529
+        },
+        {
+          "w": "in",
+          "s": 217.176,
+          "e": 217.286,
+          "c": 0.994465
+        },
+        {
+          "w": "Afghanistan",
+          "s": 217.286,
+          "e": 217.876,
+          "c": 0.996961
+        },
+        {
+          "w": "for",
+          "s": 217.976,
+          "e": 218.076,
+          "c": 0.994215
+        },
+        {
+          "w": "10",
+          "s": 218.076,
+          "e": 218.416,
+          "c": 0.750258
+        },
+        {
+          "w": "more",
+          "s": 218.416,
+          "e": 218.636,
+          "c": 0.999651
+        },
+        {
+          "w": "years.",
+          "s": 218.636,
+          "e": 219.096,
+          "c": 0.986269
+        },
+        {
+          "w": "If",
+          "s": 219.116,
+          "e": 219.226,
+          "c": 0.99907
+        },
+        {
+          "w": "the",
+          "s": 219.226,
+          "e": 219.396,
+          "c": 0.999973
+        },
+        {
+          "w": "parliament",
+          "s": 219.576,
+          "e": 219.986,
+          "c": 0.686278
+        },
+        {
+          "w": "in",
+          "s": 219.986,
+          "e": 220.096,
+          "c": 0.997027
+        },
+        {
+          "w": "Afghanistan",
+          "s": 220.096,
+          "e": 220.746,
+          "c": 0.999962
+        },
+        {
+          "w": "can",
+          "s": 220.746,
+          "e": 220.916,
+          "c": 0.999977
+        },
+        {
+          "w": "have",
+          "s": 220.916,
+          "e": 221.146,
+          "c": 0.999876
+        },
+        {
+          "w": "that",
+          "s": 221.146,
+          "e": 221.366,
+          "c": 0.999989
+        },
+        {
+          "w": "debate,",
+          "s": 221.416,
+          "e": 221.836,
+          "c": 0.999573
+        },
+        {
+          "w": "why",
+          "s": 221.836,
+          "e": 222.006,
+          "c": 0.999272
+        },
+        {
+          "w": "can't",
+          "s": 222.006,
+          "e": 222.286,
+          "c": 0.998772
+        },
+        {
+          "w": "the",
+          "s": 222.286,
+          "e": 222.386,
+          "c": 0.999952
+        },
+        {
+          "w": "United",
+          "s": 222.386,
+          "e": 222.456,
+          "c": 0.999516
+        },
+        {
+          "w": "States",
+          "s": 223.126,
+          "e": 223.156,
+          "c": 0.999727
+        },
+        {
+          "w": "House",
+          "s": 223.156,
+          "e": 223.446,
+          "c": 0.996265
+        },
+        {
+          "w": "of",
+          "s": 223.446,
+          "e": 223.556,
+          "c": 0.999752
+        },
+        {
+          "w": "Representatives?",
+          "s": 223.556,
+          "e": 224.656,
+          "c": 0.995036
+        },
+        {
+          "w": "In",
+          "s": 224.776,
+          "e": 224.906,
+          "c": 0.968008
+        },
+        {
+          "w": "closing,",
+          "s": 225.236,
+          "e": 225.466,
+          "c": 0.9998
+        },
+        {
+          "w": "I",
+          "s": 225.556,
+          "e": 225.556,
+          "c": 0.999971
+        },
+        {
+          "w": "would",
+          "s": 225.566,
+          "e": 225.876,
+          "c": 0.999588
+        },
+        {
+          "w": "like",
+          "s": 225.876,
+          "e": 226.136,
+          "c": 0.999159
+        },
+        {
+          "w": "to",
+          "s": 226.136,
+          "e": 226.266,
+          "c": 0.999998
+        },
+        {
+          "w": "ask",
+          "s": 226.266,
+          "e": 226.426,
+          "c": 0.999956
+        },
+        {
+          "w": "God",
+          "s": 226.456,
+          "e": 226.636,
+          "c": 0.999954
+        },
+        {
+          "w": "to",
+          "s": 226.646,
+          "e": 226.776,
+          "c": 0.999969
+        },
+        {
+          "w": "please",
+          "s": 226.776,
+          "e": 227.166,
+          "c": 0.999272
+        },
+        {
+          "w": "bless",
+          "s": 227.166,
+          "e": 227.476,
+          "c": 0.999689
+        },
+        {
+          "w": "our",
+          "s": 227.486,
+          "e": 227.676,
+          "c": 0.999863
+        },
+        {
+          "w": "men",
+          "s": 227.676,
+          "e": 227.866,
+          "c": 0.999893
+        },
+        {
+          "w": "and",
+          "s": 227.866,
+          "e": 228.036,
+          "c": 0.999908
+        },
+        {
+          "w": "women",
+          "s": 228.036,
+          "e": 228.106,
+          "c": 0.999973
+        },
+        {
+          "w": "in",
+          "s": 228.106,
+          "e": 228.506,
+          "c": 0.999624
+        },
+        {
+          "w": "uniform",
+          "s": 228.796,
+          "e": 228.966,
+          "c": 0.999798
+        },
+        {
+          "w": "and",
+          "s": 229.026,
+          "e": 229.156,
+          "c": 0.999043
+        },
+        {
+          "w": "their",
+          "s": 229.156,
+          "e": 229.386,
+          "c": 0.999716
+        },
+        {
+          "w": "families.",
+          "s": 229.516,
+          "e": 230.296,
+          "c": 0.944209
+        },
+        {
+          "w": "And",
+          "s": 230.316,
+          "e": 230.536,
+          "c": 0.951274
+        },
+        {
+          "w": "I'll",
+          "s": 230.536,
+          "e": 230.826,
+          "c": 0.978411
+        },
+        {
+          "w": "close",
+          "s": 230.826,
+          "e": 231.196,
+          "c": 0.999866
+        },
+        {
+          "w": "by",
+          "s": 231.196,
+          "e": 231.346,
+          "c": 0.999989
+        },
+        {
+          "w": "saying",
+          "s": 231.346,
+          "e": 231.796,
+          "c": 0.99999
+        },
+        {
+          "w": "we",
+          "s": 231.796,
+          "e": 231.946,
+          "c": 0.997752
+        },
+        {
+          "w": "have",
+          "s": 231.946,
+          "e": 232.176,
+          "c": 0.999994
+        },
+        {
+          "w": "spent",
+          "s": 232.266,
+          "e": 232.616,
+          "c": 0.999914
+        },
+        {
+          "w": "enough",
+          "s": 232.616,
+          "e": 233.066,
+          "c": 0.999983
+        },
+        {
+          "w": "blood",
+          "s": 233.066,
+          "e": 233.436,
+          "c": 0.999826
+        },
+        {
+          "w": "and",
+          "s": 233.436,
+          "e": 233.586,
+          "c": 0.999994
+        },
+        {
+          "w": "treasure",
+          "s": 234.256,
+          "e": 234.256,
+          "c": 0.999929
+        },
+        {
+          "w": "on",
+          "s": 234.336,
+          "e": 234.406,
+          "c": 0.999701
+        },
+        {
+          "w": "this",
+          "s": 234.406,
+          "e": 234.706,
+          "c": 0.999985
+        },
+        {
+          "w": "failed",
+          "s": 234.706,
+          "e": 235.146,
+          "c": 0.997244
+        },
+        {
+          "w": "policy",
+          "s": 235.156,
+          "e": 235.536,
+          "c": 0.999977
+        },
+        {
+          "w": "in",
+          "s": 235.656,
+          "e": 235.756,
+          "c": 0.999943
+        },
+        {
+          "w": "Afghanistan.",
+          "s": 235.756,
+          "e": 236.826,
+          "c": 0.998327
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "start_s": 237.42,
+      "end_s": 245.54,
+      "speaker": "SPEAKER_03",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Let's debate the issue and stop spending the taxpayers' money in Afghanistan. I yield back the balance of my time. The gentleman yields back.",
+      "words": [
+        {
+          "w": "Let's",
+          "s": 237.416,
+          "e": 237.696,
+          "c": 0.997577
+        },
+        {
+          "w": "debate",
+          "s": 237.876,
+          "e": 238.036,
+          "c": 0.999947
+        },
+        {
+          "w": "the",
+          "s": 238.046,
+          "e": 238.106,
+          "c": 0.999752
+        },
+        {
+          "w": "issue",
+          "s": 238.206,
+          "e": 238.496,
+          "c": 0.994347
+        },
+        {
+          "w": "and",
+          "s": 238.496,
+          "e": 238.666,
+          "c": 0.999834
+        },
+        {
+          "w": "stop",
+          "s": 238.666,
+          "e": 238.896,
+          "c": 0.999903
+        },
+        {
+          "w": "spending",
+          "s": 238.896,
+          "e": 239.276,
+          "c": 0.995989
+        },
+        {
+          "w": "the",
+          "s": 239.366,
+          "e": 239.446,
+          "c": 0.999689
+        },
+        {
+          "w": "taxpayers'",
+          "s": 239.526,
+          "e": 240.056,
+          "c": 0.967276
+        },
+        {
+          "w": "money",
+          "s": 240.116,
+          "e": 240.386,
+          "c": 0.999969
+        },
+        {
+          "w": "in",
+          "s": 240.386,
+          "e": 240.496,
+          "c": 0.999865
+        },
+        {
+          "w": "Afghanistan.",
+          "s": 240.496,
+          "e": 241.376,
+          "c": 0.995254
+        },
+        {
+          "w": "I",
+          "s": 241.376,
+          "e": 241.446,
+          "c": 0.999931
+        },
+        {
+          "w": "yield",
+          "s": 241.816,
+          "e": 241.816,
+          "c": 0.999868
+        },
+        {
+          "w": "back",
+          "s": 241.836,
+          "e": 242.106,
+          "c": 0.999918
+        },
+        {
+          "w": "the",
+          "s": 242.166,
+          "e": 242.286,
+          "c": 0.968271
+        },
+        {
+          "w": "balance",
+          "s": 242.346,
+          "e": 242.846,
+          "c": 0.746712
+        },
+        {
+          "w": "of",
+          "s": 242.846,
+          "e": 242.996,
+          "c": 0.971439
+        },
+        {
+          "w": "my",
+          "s": 242.996,
+          "e": 243.146,
+          "c": 0.999916
+        },
+        {
+          "w": "time.",
+          "s": 243.146,
+          "e": 243.676,
+          "c": 0.999556
+        },
+        {
+          "w": "The",
+          "s": 243.696,
+          "e": 243.916,
+          "c": 0.999735
+        },
+        {
+          "w": "gentleman",
+          "s": 244.156,
+          "e": 244.576,
+          "c": 0.996455
+        },
+        {
+          "w": "yields",
+          "s": 244.576,
+          "e": 244.956,
+          "c": 0.998906
+        },
+        {
+          "w": "back.",
+          "s": 245.036,
+          "e": 245.536,
+          "c": 0.997
+        }
+      ]
+    }
+  ]
+}

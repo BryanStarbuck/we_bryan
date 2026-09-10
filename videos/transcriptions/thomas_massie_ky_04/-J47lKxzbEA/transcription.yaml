@@ -1,0 +1,151 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Rep. Walter Jones Talks about Wasteful Spending in Afghanistan"
+    Description: >-
+      A House floor speech by Representative Walter Jones of North Carolina
+      on waste in U.S. spending in Afghanistan, posted to Thomas Massie's
+      channel. Jones reads at length from a World Affairs Journal article
+      titled 'Money Pit: The Monstrous Failure of USAID to Afghanistan',
+      quoting the Special Inspector General for Afghan Reconstruction that
+      roughly $100 billion in non-military funds had been appropriated since
+      2002 with a further $16.5 billion for reconstruction, and arguing this
+      has produced no sustainable institution or program. He cites fuel
+      supplied to the Afghan military without any determination of how much
+      was actually needed, and a shower and bathroom facility built without
+      plumbing holes and with crumbling cinder blocks. The figures and
+      characterisations are quoted from that article and from the Inspector
+      General's reports rather than independently established here. His
+      procedural point is that the Afghan parliament was allowed to vote on
+      the bilateral strategic agreement while the House has not debated it,
+      and he notes a bipartisan letter he signed with Congressman Jim
+      McGovern asking leadership for that debate. He closes asking a
+      blessing on service members and their families.
+    URL: "https://www.youtube.com/watch?v=-J47lKxzbEA"
+    Video_ID: "-J47lKxzbEA"
+    Show: "RepThomasMassie"
+    Runtime: "00:04:05"
+    Language: "en"
+
+  Media:
+    File: "-J47lKxzbEA.m4a"
+    SHA256: "ca5eb80e5848fd0c712eb3fbc07f4e468e0803489b658b60ca54be89c8e3d9ee"
+    Bytes: 3973133
+    Duration_Seconds: 245
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-J47lKxzbEA"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-J47lKxzbEA.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/thomas_massie_ky_04/-J47lKxzbEA/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCpmXOtvvXC3GE8o9VxYNK7g"
+    Uploader_ID: "@RepThomasMassie"
+    View_Count: 361
+    Like_Count: 8
+    Availability: "public"
+    Published_At: "2014-03-25T20:15:05+00:00"
+    Captured_At: "2026-09-09T18:33:34-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "95.0%"
+      Turns: 7
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "1.7%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "3.4%"
+      Turns: 1
+
+  Topics:
+    - "Afghanistan reconstruction spending and waste"
+    - "USAID and Special Inspector General (SIGAR) findings"
+    - "Congressional oversight of the bilateral strategic agreement"
+    - "Bipartisan calls for a floor debate on Afghanistan"
+    - "Federal contracting failures"
+
+  Source:
+    Canonical_ID: "9b98b616d049385a"
+    Transcribed: "2026-09-09T18:35:37.490711-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 601
+    Segments: 18
+
+  Timestamps:
+    Downloaded_At: "2026-09-09T18:33:34.601901-07:00"
+    Transcription_Finished: "2026-09-09T18:35:37.490711-07:00"
+    Recorded: "2014-03-25"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-J47lKxzbEA.ctm"
+    Fountain: "-J47lKxzbEA.fountain"
+    Diarization_RTTM: "-J47lKxzbEA.rttm"
+    As_Broadcast_Script: "-J47lKxzbEA.script.txt"
+    Segments_JSON: "-J47lKxzbEA.segments.json"
+    Segments_JSONL: "-J47lKxzbEA.segments.jsonl"
+    Subtitles_SRT: "-J47lKxzbEA.srt"
+    Plain_Text: "-J47lKxzbEA.transcription"
+    Subtitles_VTT: "-J47lKxzbEA.vtt"
+    Transcript_SHA256: "d64b9bc10790f95d130a2ed5ea602ff6870f6b7cf8feedc98b4962a8b9ecd472"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "thomas_massie_ky_04"
+    video_uid: "thomas_massie_ky_04::-J47lKxzbEA"
+    video_key: "-J47lKxzbEA"
+    youtube_id: "-J47lKxzbEA"
+    priority: 700
+    ceiling: 1000
+    raw_score: 700
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 150
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T00:37:35.586Z"
+    demand_run_id: "job_1789000565795_24"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-J47lKxzbEA"
+    source_ref: "-J47lKxzbEA"
+    subject_kind: "new_politician"

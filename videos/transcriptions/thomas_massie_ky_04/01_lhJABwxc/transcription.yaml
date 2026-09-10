@@ -1,0 +1,189 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Congressman Thomas Massie On Supporting Airport Infrastructure: 3/23/23"
+    Description: >-
+      Representative Thomas Massie's five minutes of questioning at a March
+      2023 hearing on airport infrastructure. He asks an airport executive
+      to lay out airports' revenue sources beyond federal Airport
+      Improvement Program grants, and the witness describes AIP, passenger
+      facility charges and retained airport revenue totalling roughly $13
+      billion a year against a stated $30 billion annual infrastructure
+      need, with the PFC losing value to inflation since it was set at $3 in
+      1990 and raised to $4.50 a decade later. Massie draws the distinction
+      that a passenger facility charge is a genuine user fee rather than a
+      tax euphemism, because the money goes from the user to the airport and
+      never into federal coffers, and asks what airports would do with a
+      higher cap. The witness explains PFCs give flexibility for terminal
+      and landside work that AIP does not fund, reduces debt and costs
+      passed to carriers, and cites differing needs in New Orleans, St.
+      Louis and San Antonio. Massie then asks a second witness whether
+      reported near misses on takeoff and landing are actually increasing;
+      the witness says the incidents are troubling and attributes the added
+      risk to controller staffing shortages, six-day weeks and ten-hour
+      days, with NTSB investigations under way.
+    URL: "https://www.youtube.com/watch?v=01_lhJABwxc"
+    Video_ID: "01_lhJABwxc"
+    Show: "RepThomasMassie"
+    Runtime: "00:06:17"
+    Language: "en"
+
+  Media:
+    File: "01_lhJABwxc.m4a"
+    SHA256: "551d089914d2150518f4c7270634abd1eb1ad4964c287753d28a0d4a8844d187"
+    Bytes: 6103838
+    Duration_Seconds: 377
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=01_lhJABwxc"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "01_lhJABwxc.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/thomas_massie_ky_04/01_lhJABwxc/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCpmXOtvvXC3GE8o9VxYNK7g"
+    Uploader_ID: "@RepThomasMassie"
+    View_Count: 594
+    Like_Count: 56
+    Comment_Count: 7
+    Availability: "public"
+    Published_At: "2023-03-23T23:07:45+00:00"
+    Captured_At: "2026-09-09T18:33:41-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "26.0%"
+      Turns: 3
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "0.8%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "55.6%"
+      Turns: 3
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "1.6%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_09"
+      Share_Of_Speech: "2.2%"
+      Turns: 1
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_10"
+      Share_Of_Speech: "1.3%"
+      Turns: 1
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_11"
+      Share_Of_Speech: "2.2%"
+      Turns: 1
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "9.9%"
+      Turns: 1
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_14"
+      Share_Of_Speech: "0.5%"
+      Turns: 2
+
+  Topics:
+    - "Airport infrastructure funding and the AIP grant program"
+    - "Passenger facility charges and the federal cap"
+    - "User fees versus taxes"
+    - "Runway near-miss incidents and air traffic controller staffing"
+    - "House transportation hearing"
+
+  Source:
+    Canonical_ID: "eafcdf90c7b73bd6"
+    Transcribed: "2026-09-09T18:37:18.396641-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 897
+    Segments: 32
+
+  Timestamps:
+    Downloaded_At: "2026-09-09T18:33:42.930995-07:00"
+    Transcription_Finished: "2026-09-09T18:37:18.396641-07:00"
+    Recorded: "2023-03-23"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "01_lhJABwxc.ctm"
+    Fountain: "01_lhJABwxc.fountain"
+    Diarization_RTTM: "01_lhJABwxc.rttm"
+    As_Broadcast_Script: "01_lhJABwxc.script.txt"
+    Segments_JSON: "01_lhJABwxc.segments.json"
+    Segments_JSONL: "01_lhJABwxc.segments.jsonl"
+    Subtitles_SRT: "01_lhJABwxc.srt"
+    Plain_Text: "01_lhJABwxc.transcription"
+    Subtitles_VTT: "01_lhJABwxc.vtt"
+    Transcript_SHA256: "9afcb95779b190137242e4eede4042ade055cf0246ccb6e3d14c6c5796826e70"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "thomas_massie_ky_04"
+    video_uid: "thomas_massie_ky_04::01_lhJABwxc"
+    video_key: "01_lhJABwxc"
+    youtube_id: "01_lhJABwxc"
+    priority: 700
+    ceiling: 1000
+    raw_score: 700
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 150
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T00:37:35.586Z"
+    demand_run_id: "job_1789000565795_24"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=01_lhJABwxc"
+    source_ref: "01_lhJABwxc"
+    subject_kind: "new_politician"

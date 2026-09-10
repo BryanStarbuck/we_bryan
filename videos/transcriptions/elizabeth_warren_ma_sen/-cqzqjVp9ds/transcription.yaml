@@ -1,0 +1,180 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Senator Warren's Floor Speech on Military Nominations"
+    Description: >-
+      A Senate floor speech by Senator Warren opposing a blanket hold on
+      senior military nominations. She explains the ordinarily invisible
+      mechanism: the Senate must approve thousands of military promotions
+      each year, normally in batches and usually without a recorded vote.
+      She states that the senator from Alabama — Tommy Tuberville, whom she
+      refers to by state throughout — has placed a hold on all senior
+      military nominations, freezing promotions for 184 top-level leaders.
+      Her argument for the harm is both material and strategic: pay
+      increases cannot take effect, families cannot decide about moving or
+      school enrollment, and special-needs families face delays. She quotes
+      the Army Chief of Staff and Secretary Austin on readiness effects. She
+      names among the blocked posts the next commanders of the Fifth and
+      Seventh Fleets, the next military representative to NATO, the Director
+      of Intelligence for Cyber Command, and the former chief of staff of
+      Operation Warp Speed, and says the hold covers eleven three-star
+      commanders, three Silver Star recipients and three Purple Heart
+      recipients. She acknowledges the underlying dispute is over the
+      Department of Defense policy on travel to access abortion care, says
+      plainly that she disagrees with him on that issue, and argues the
+      remedy is to seek votes and change the law rather than to hold
+      nominations, calling the tactic extortion rather than democracy. The
+      characterisations of motive and consequence are hers; the senator she
+      is addressing is not present to answer them.
+    URL: "https://www.youtube.com/watch?v=-cqzqjVp9ds"
+    Video_ID: "-cqzqjVp9ds"
+    Show: "Senator Elizabeth Warren"
+    Runtime: "00:11:12"
+    Language: "en"
+
+  Media:
+    File: "-cqzqjVp9ds.m4a"
+    SHA256: "609ec3cb264856786828e098f3c95318d2ec7f0101e89e0ceefd1fef6f84bb1e"
+    Bytes: 10877119
+    Duration_Seconds: 672
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-cqzqjVp9ds"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-cqzqjVp9ds.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/elizabeth_warren_ma_sen/-cqzqjVp9ds/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCTH9zV8Imw09J5bOoTR18_A"
+    Uploader_ID: "@SenatorElizabethWarren"
+    View_Count: 699
+    Like_Count: 45
+    Availability: "public"
+    Published_At: "2023-04-25T21:29:05+00:00"
+    Captured_At: "2026-09-09T18:35:17-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "7.2%"
+      Turns: 5
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "6.9%"
+      Turns: 2
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "10.9%"
+      Turns: 8
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "26.4%"
+      Turns: 16
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "5.1%"
+      Turns: 5
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "21.5%"
+      Turns: 12
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "22.0%"
+      Turns: 11
+
+  Topics:
+    - "Blanket holds on senior military promotions"
+    - "Senate confirmation process for military nominations"
+    - "Military readiness and family pay and moving decisions"
+    - "Pentagon abortion travel policy dispute"
+    - "Senate Armed Services Subcommittee on Personnel"
+
+  Source:
+    Canonical_ID: "fdc3da50e03d19da"
+    Transcribed: "2026-09-09T19:10:04.638705-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1387
+    Segments: 89
+
+  Timestamps:
+    Downloaded_At: "2026-09-09T18:35:19.870349-07:00"
+    Transcription_Finished: "2026-09-09T19:10:04.638705-07:00"
+    Recorded: "2023-04-25"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-cqzqjVp9ds.ctm"
+    Fountain: "-cqzqjVp9ds.fountain"
+    Diarization_RTTM: "-cqzqjVp9ds.rttm"
+    As_Broadcast_Script: "-cqzqjVp9ds.script.txt"
+    Segments_JSON: "-cqzqjVp9ds.segments.json"
+    Segments_JSONL: "-cqzqjVp9ds.segments.jsonl"
+    Subtitles_SRT: "-cqzqjVp9ds.srt"
+    Plain_Text: "-cqzqjVp9ds.transcription"
+    Subtitles_VTT: "-cqzqjVp9ds.vtt"
+    Transcript_SHA256: "10f3e0eae7813051c784e123df1322b1dc85883c80eb8d2649014cbe053d854b"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "elizabeth_warren_ma_sen"
+    video_uid: "elizabeth_warren_ma_sen::-cqzqjVp9ds"
+    video_key: "-cqzqjVp9ds"
+    youtube_id: "-cqzqjVp9ds"
+    priority: 745
+    ceiling: 1000
+    raw_score: 745
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-09T23:06:34.925Z"
+    demand_run_id: "job_1788995190120_11"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-cqzqjVp9ds"
+    source_ref: "-cqzqjVp9ds"
+    subject_kind: "new_politician"

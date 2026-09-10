@@ -1,0 +1,150 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "BREAKING: Trump Responds To Iran Demanding Reparations In Exchange For Reopening Strait Of Hormuz"
+    Description: >-
+      A short clip of a White House press availability in which President
+      Trump takes reporter questions about Iran after a separate
+      announcement. Asked what follows his statement that the last round of
+      talks was Iran's final chance, he twice answers only that reporters
+      will find out, and confirms the ability to escalate without saying
+      whether it will be used. The substance is his response to a reported
+      Iranian demand for reparations for damage done: he says that if
+      damages are to be paid, Iran should pay them, and asserts a counter-
+      claim covering fifty years of harm and thousands of people he says
+      were wounded or killed. He goes on to say families of protesters
+      killed in Iran should receive damages, putting the figure at 52,000
+      killed over the previous four months and saying it stood at 52,000 a
+      month and a half earlier. Those figures and the framing are his own
+      assertions, made in a press exchange with no source given and no
+      Iranian representative present to answer them; the exchange is a
+      transcript of what was said, not a verification of it.
+    URL: "https://www.youtube.com/watch?v=cK1JQ0O35wY"
+    Video_ID: "cK1JQ0O35wY"
+    Show: "Forbes Breaking News"
+    Runtime: "00:01:14"
+    Language: "en"
+
+  Media:
+    File: "cK1JQ0O35wY.m4a"
+    SHA256: "eca87f3ab47e388157c7ca4ddecf1155a0c9ad6e66ba57088cb122294c303910"
+    Bytes: 1199528
+    Duration_Seconds: 74
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=cK1JQ0O35wY"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "cK1JQ0O35wY.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/donald_j_trump_us_pres/cK1JQ0O35wY/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCg40OxZ1GYh3u3jBntB6DLg"
+    Uploader_ID: "@ForbesBreakingNews"
+    View_Count: 47887
+    Like_Count: 521
+    Comment_Count: 405
+    Availability: "public"
+    Published_At: "2026-08-10T19:53:07+00:00"
+    Captured_At: "2026-09-09T18:33:06-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "27.2%"
+      Turns: 3
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "2.5%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "70.3%"
+      Turns: 4
+
+  Topics:
+    - "Iran nuclear and military escalation"
+    - "Reparations claims and counter-claims"
+    - "Protester deaths in Iran (asserted figures)"
+    - "Strait of Hormuz"
+    - "White House press availability"
+
+  Source:
+    Canonical_ID: "0f9735fccac86fe4"
+    Transcribed: "2026-09-09T18:35:11.697771-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 224
+    Segments: 11
+
+  Timestamps:
+    Downloaded_At: "2026-09-09T18:33:06.349085-07:00"
+    Transcription_Finished: "2026-09-09T18:35:11.697771-07:00"
+    Recorded: "2026-08-10"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "cK1JQ0O35wY.ctm"
+    Fountain: "cK1JQ0O35wY.fountain"
+    Diarization_RTTM: "cK1JQ0O35wY.rttm"
+    As_Broadcast_Script: "cK1JQ0O35wY.script.txt"
+    Segments_JSON: "cK1JQ0O35wY.segments.json"
+    Segments_JSONL: "cK1JQ0O35wY.segments.jsonl"
+    Subtitles_SRT: "cK1JQ0O35wY.srt"
+    Plain_Text: "cK1JQ0O35wY.transcription"
+    Subtitles_VTT: "cK1JQ0O35wY.vtt"
+    Transcript_SHA256: "5476de7dd997ddc84f4155fbbc199a0e32859805f030e3fff064c7cc40a7b517"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "donald_j_trump_us_pres"
+    video_uid: "donald_j_trump_us_pres::cK1JQ0O35wY"
+    video_key: "cK1JQ0O35wY"
+    youtube_id: "cK1JQ0O35wY"
+    priority: 700
+    ceiling: 1000
+    raw_score: 700
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 300
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-09T23:06:34.925Z"
+    demand_run_id: "job_1788995190120_11"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=cK1JQ0O35wY"
+    source_ref: "cK1JQ0O35wY"
+    subject_kind: "legacy_politician"

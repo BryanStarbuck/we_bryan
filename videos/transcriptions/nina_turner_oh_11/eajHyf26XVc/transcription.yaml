@@ -1,0 +1,134 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "I am running for Congress"
+    Description: >-
+      A 72-second campaign announcement video for Nina Turner's run in
+      Ohio's 11th Congressional District. Speaking to camera, she introduces
+      herself as a daughter of Cleveland raised by a nurse's aide and a
+      truck driver, and lists the record she runs on: securing senior
+      housing as a Cleveland City Councilwoman, standing with labor to
+      defend collective bargaining rights as an Ohio State Senator, and
+      leading the effort to create the Ohio Task Force on Community and
+      Police Relations. She names her priorities as good jobs, health care,
+      and education from pre-K through college, and frames the immediate
+      task as helping the district recover from the coronavirus, including
+      small businesses and those hardest hit. It is an introduction and a
+      biography rather than a policy argument; no opposing candidate is
+      named and no claim is made about anyone else.
+    URL: "https://www.youtube.com/watch?v=eajHyf26XVc"
+    Video_ID: "eajHyf26XVc"
+    Show: "Nina Turner"
+    Runtime: "00:01:12"
+    Language: "en"
+
+  Media:
+    File: "eajHyf26XVc.m4a"
+    SHA256: "d331adea2b8b7f8ae85acff4b8758903e1d16eaf3be82a1ac5337fd66b27f3e9"
+    Bytes: 1174113
+    Duration_Seconds: 72
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=eajHyf26XVc"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "eajHyf26XVc.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/nina_turner_oh_11/eajHyf26XVc/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCOaKTu2gsT_xWlUsh9GssLg"
+    Uploader_ID: "@ninaturner1366"
+    View_Count: 6301
+    Like_Count: 1043
+    Availability: "public"
+    Published_At: "2020-12-15T19:33:40+00:00"
+    Captured_At: "2026-09-09T18:33:28-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 1
+
+  Topics:
+    - "Congressional campaign announcement, Ohio 11th District"
+    - "Cleveland City Council and Ohio Senate record"
+    - "Collective bargaining and labor rights"
+    - "Coronavirus recovery for small businesses"
+    - "Jobs, health care and pre-K-to-college education"
+
+  Source:
+    Canonical_ID: "3799b3cb755745fb"
+    Transcribed: "2026-09-09T18:35:10.141100-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 175
+    Segments: 3
+
+  Timestamps:
+    Downloaded_At: "2026-09-09T18:33:29.271537-07:00"
+    Transcription_Finished: "2026-09-09T18:35:10.141100-07:00"
+    Recorded: "2020-12-15"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "eajHyf26XVc.ctm"
+    Fountain: "eajHyf26XVc.fountain"
+    Diarization_RTTM: "eajHyf26XVc.rttm"
+    As_Broadcast_Script: "eajHyf26XVc.script.txt"
+    Segments_JSON: "eajHyf26XVc.segments.json"
+    Segments_JSONL: "eajHyf26XVc.segments.jsonl"
+    Subtitles_SRT: "eajHyf26XVc.srt"
+    Plain_Text: "eajHyf26XVc.transcription"
+    Subtitles_VTT: "eajHyf26XVc.vtt"
+    Transcript_SHA256: "a414b4528a45d5d705857101c787b1cd36c388f6689896af289c612fb2c92c56"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "nina_turner_oh_11"
+    video_uid: "nina_turner_oh_11::eajHyf26XVc"
+    video_key: "eajHyf26XVc"
+    youtube_id: "eajHyf26XVc"
+    priority: 700
+    ceiling: 1000
+    raw_score: 700
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    seat_rank: 150
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-09T23:06:34.925Z"
+    demand_run_id: "job_1788995190120_11"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=eajHyf26XVc"
+    source_ref: "eajHyf26XVc"
+    subject_kind: "new_politician"
