@@ -1,0 +1,183 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "The Bond Market Is About to Break... And Stocks Go With It"
+    Description: >-
+      A sixty-two-minute episode recorded after a weekend escalation of the Iran war, tracking the resulting
+      commodity surge and arguing it makes the Federal Reserve's two percent inflation target unreachable.
+      Schiff reports Brent crude touching about 99.50 dollars a barrel intraday and West Texas closing above
+      94, diesel continuing a record run, and copper hitting another all-time high around 6.82 to 6.85 dollars
+      a pound, which he notes is up close to sixty percent since Trump took office. He argues copper remains
+      cheap priced in gold rather than dollars, and inverts the common reading of the gold-copper ratio: where
+      others expect gold to fall toward copper, he expects copper to rise toward gold, calculating that with
+      gold near 4,400 dollars copper would have to exceed eleven dollars a pound to restore its historic
+      average. His inflation argument is that after roughly sixty-five consecutive months above two percent, a
+      target that could not be reached while oil was falling cannot be reached while oil is rising, and that
+      government will keep generating inflation because it has no politically acceptable alternative. He
+      forecasts serious carnage in the bond market followed by equities. The episode also contains an extended
+      passage asserting that the government lies routinely about economic statistics to flatter Trump's
+      record, and reasoning from there that its statements about the Iran situation should not be trusted
+      either, on the general principle that a liar lies about everything convenient. THAT INFERENCE IS
+      SCHIFF'S OWN and is an argument from character rather than from evidence about Iran specifically; he
+      explicitly concedes he is not a military expert. All price levels, ratios and forecasts are as he states
+      them and are contested, and he sells precious metals. The episode closes with personal remarks about
+      spending Yom Kippur in Panama City and promotion of his Schiff Sovereign Plan B conference.
+    URL: "https://www.youtube.com/watch?v=c67_xpXhEEI"
+    Video_ID: "c67_xpXhEEI"
+    Show: "Peter Schiff"
+    Runtime: "01:02:19"
+    Language: "en"
+
+  Media:
+    File: "c67_xpXhEEI.m4a"
+    SHA256: "3b842f0e45c419dc5770da7fe75660bb3b5bc7a0c3274ade29ad70e92d491273"
+    Bytes: 60484638
+    Duration_Seconds: 3739
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=c67_xpXhEEI"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "c67_xpXhEEI.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/peter_schiff/c67_xpXhEEI/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCIjuLiLHdFxYtFmWlbTGQRQ"
+    Uploader_ID: "@peterschiff"
+    View_Count: 121078
+    Like_Count: 3574
+    Comment_Count: 954
+    Availability: "public"
+    Published_At: "2026-09-09T03:58:06+00:00"
+    Captured_At: "2026-09-09T20:07:26-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "50.3%"
+      Turns: 112
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "1.4%"
+      Turns: 6
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "13.3%"
+      Turns: 35
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_09"
+      Share_Of_Speech: "10.9%"
+      Turns: 42
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_10"
+      Share_Of_Speech: "11.7%"
+      Turns: 49
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_11"
+      Share_Of_Speech: "11.6%"
+      Turns: 28
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_14"
+      Share_Of_Speech: "0.9%"
+      Turns: 3
+
+  Topics:
+    - "Iran war escalation and commodity price surge"
+    - "Oil, diesel and record copper prices"
+    - "Gold-copper ratio analysis"
+    - "Persistent inflation above the two percent target"
+    - "Forecast of bond and equity market breakdown"
+    - "Claims that government economic statistics are falsified"
+
+  Source:
+    Canonical_ID: "680324c7c6374664"
+    Transcribed: "2026-09-09T20:50:10.121493-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 9668
+    Segments: 479
+
+  Timestamps:
+    Downloaded_At: "2026-09-09T20:07:28.003416-07:00"
+    Transcription_Finished: "2026-09-09T20:50:10.121493-07:00"
+    Recorded: "2026-09-09"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "c67_xpXhEEI.ctm"
+    Fountain: "c67_xpXhEEI.fountain"
+    Diarization_RTTM: "c67_xpXhEEI.rttm"
+    As_Broadcast_Script: "c67_xpXhEEI.script.txt"
+    Segments_JSON: "c67_xpXhEEI.segments.json"
+    Segments_JSONL: "c67_xpXhEEI.segments.jsonl"
+    Subtitles_SRT: "c67_xpXhEEI.srt"
+    Plain_Text: "c67_xpXhEEI.transcription"
+    Subtitles_VTT: "c67_xpXhEEI.vtt"
+    Transcript_SHA256: "777298e83b6bd8e02b93f731fa9dd21182930b539808e214519801c5e82b7af9"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "peter_schiff"
+    video_uid: "peter_schiff::c67_xpXhEEI"
+    video_key: "c67_xpXhEEI"
+    youtube_id: "c67_xpXhEEI"
+    priority: 100
+    ceiling: 1000
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T00:37:35.586Z"
+    demand_run_id: "job_1789000565795_24"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=c67_xpXhEEI"
+    source_ref: "c67_xpXhEEI"
+    subject_kind: "people_only"

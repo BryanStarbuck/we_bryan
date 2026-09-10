@@ -1,0 +1,176 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "The Fed Just Chose Inflation... And the Bond Market Called Its Bluff"
+    Description: >-
+      An hour-long episode reacting to an FOMC decision that left the policy rate unchanged at three and a
+      half to three and three quarters percent, and to Kevin Warsh's second press conference as Federal
+      Reserve chairman. Schiff notes the vote was not unanimous, with three FOMC members favouring a quarter-
+      point hike and Warsh not among them, and that markets had priced roughly a thirty percent chance of a
+      hike. His argument is that Warsh is all bark and no bite: that even the hike on offer would have been
+      far too small and too late to reach the two percent target, and that a serious effort would require
+      shrinking the balance sheet and the money supply, which he says has continued growing since Warsh took
+      over. He walks through the press conference, dwelling on an exchange with CNBC's Steve Liesman, who
+      pressed Warsh on what the markets he says he listens to are actually telling him given that they are
+      pushing rates higher; Schiff says Warsh sidestepped the question. He agrees with Warsh's stated dislike
+      of forward guidance, arguing that markets pricing off Fed expectations rather than fundamentals corrupts
+      the very signal the Fed wants to read. His broader thesis is that the Fed is trapped: the debt load and
+      what he calls a massive bubble mean a Volcker-style response would cause worse damage than the inflation
+      it treats, so markets crash if the Fed hikes and crash anyway if it does not. He closes on Bitcoin,
+      arguing that repeated apparent bottoms are a sign the bottom has not arrived and that buyers are being
+      lured in before a further fall. Every forecast and characterisation is Schiff's own, contested, and made
+      by a long-standing Fed critic whose business sells precious metals; Warsh and Liesman are represented
+      only through Schiff's summary rather than played at length.
+    URL: "https://www.youtube.com/watch?v=F6ylB-FNCGw"
+    Video_ID: "F6ylB-FNCGw"
+    Show: "Peter Schiff"
+    Runtime: "01:00:57"
+    Language: "en"
+
+  Media:
+    File: "F6ylB-FNCGw.m4a"
+    SHA256: "f820201e4d4465fa8c76f9df612ef592ee903399e48a248b4096c04320a9b447"
+    Bytes: 59152360
+    Duration_Seconds: 3657
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=F6ylB-FNCGw"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "F6ylB-FNCGw.info.json"
+    Stored_At: "/Users/bryanstarbuck/T/_we_citizens/download/videos/peter_schiff/F6ylB-FNCGw/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCIjuLiLHdFxYtFmWlbTGQRQ"
+    Uploader_ID: "@peterschiff"
+    View_Count: 144539
+    Like_Count: 4518
+    Comment_Count: 952
+    Availability: "public"
+    Published_At: "2026-07-30T04:48:11+00:00"
+    Captured_At: "2026-09-09T20:06:38-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "40.4%"
+      Turns: 67
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "10.7%"
+      Turns: 31
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "12.2%"
+      Turns: 35
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "32.2%"
+      Turns: 44
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_11"
+      Share_Of_Speech: "4.1%"
+      Turns: 5
+
+  Topics:
+    - "FOMC decision to hold rates and the dissenting votes"
+    - "Kevin Warsh press conference and credibility"
+    - "Forward guidance and market signal distortion"
+    - "Federal Reserve balance sheet and money supply growth"
+    - "Argument that the Fed is trapped by debt levels"
+    - "Bearish Bitcoin outlook"
+
+  Source:
+    Canonical_ID: "ebbcadabf2f7a3a5"
+    Transcribed: "2026-09-09T20:39:11.683280-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 9786
+    Segments: 349
+
+  Timestamps:
+    Downloaded_At: "2026-09-09T20:06:44.226724-07:00"
+    Transcription_Finished: "2026-09-09T20:39:11.683280-07:00"
+    Recorded: "2026-07-30"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "F6ylB-FNCGw.ctm"
+    Fountain: "F6ylB-FNCGw.fountain"
+    Diarization_RTTM: "F6ylB-FNCGw.rttm"
+    As_Broadcast_Script: "F6ylB-FNCGw.script.txt"
+    Segments_JSON: "F6ylB-FNCGw.segments.json"
+    Segments_JSONL: "F6ylB-FNCGw.segments.jsonl"
+    Subtitles_SRT: "F6ylB-FNCGw.srt"
+    Plain_Text: "F6ylB-FNCGw.transcription"
+    Subtitles_VTT: "F6ylB-FNCGw.vtt"
+    Transcript_SHA256: "5e59735929f4c8e711dc40aad58a576fad2d373b8eddfbfa453e825df9fef71f"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "peter_schiff"
+    video_uid: "peter_schiff::F6ylB-FNCGw"
+    video_key: "F6ylB-FNCGw"
+    youtube_id: "F6ylB-FNCGw"
+    priority: 100
+    ceiling: 1000
+    raw_score: 100
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: false
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T00:37:35.586Z"
+    demand_run_id: "job_1789000565795_24"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=F6ylB-FNCGw"
+    source_ref: "F6ylB-FNCGw"
+    subject_kind: "people_only"
