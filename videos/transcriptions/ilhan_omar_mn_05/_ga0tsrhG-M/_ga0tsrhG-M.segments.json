@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "canonical_id": "7c2862b799f786f5",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": false,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 26.11,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T21:51:52.077Z",
+  "text_sha256": "2be37fc2e38cf06625607c112eee51f76e965af91b19c6887a68a34b176a4154",
+  "segments_sha256": "176c553dd0235ccdd6072857c35ed97733a06eeed8aa374be740354e413ca375",
+  "words_sha256": "477c8b0ecedb1cb682738c292cd262bf298502466215e5840bd3cd883f82aace",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "fixed_grid",
+    "chunks": 1,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 0,
+    "clusters": 0,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.18,
+      "end_s": 26.11,
+      "speaker": null,
+      "speaker_conf": null,
+      "speaker_cause": "no_diarization",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "*music*",
+      "words": [
+        {
+          "w": "*music*",
+          "s": 0.18,
+          "e": 26.11,
+          "c": 0.121292
+        }
+      ]
+    }
+  ]
+}

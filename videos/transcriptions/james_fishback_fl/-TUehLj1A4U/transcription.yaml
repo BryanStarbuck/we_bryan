@@ -1,0 +1,103 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "E V I L"
+    URL: "https://www.youtube.com/watch?v=-TUehLj1A4U"
+    Video_ID: "-TUehLj1A4U"
+    Show: "The Governor"
+    Runtime: "00:00:32"
+    Language: "en"
+
+  Media:
+    File: "-TUehLj1A4U.mp4"
+    SHA256: "6615bc2c14028ebcb4b699115980ce4a649ed2c434252df99e81deb555ad0964"
+    Bytes: 5855913
+    Duration_Seconds: 32
+    Container: "mp4"
+    Audio_Codec: "aac"
+    Video_Codec: "h264"
+    Media_Kind: "video"
+    Source_URL: "https://www.youtube.com/watch?v=-TUehLj1A4U"
+    Downloader: "yt-dlp 2026.07.04"
+    Metadata_From: "-TUehLj1A4U.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/videos/james_fishback_fl/-TUehLj1A4U/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCUvC_BGdGj8KG8uk5SBBafg"
+    Uploader_ID: "@James_Fishback"
+    View_Count: 437
+    Like_Count: 14
+    Comment_Count: 2
+    Availability: "public"
+    Published_At: "2018-09-05T07:04:52+00:00"
+    Captured_At: "2026-08-14T06:31:24-07:00"
+
+  Source:
+    Canonical_ID: "6a25cb5e992e21c0"
+    Transcribed: "2026-09-10T14:51:57.430289-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 7
+    Segments: 1
+
+  Timestamps:
+    Downloaded_At: "2026-08-14T06:31:25.846287-07:00"
+    Transcription_Finished: "2026-09-10T14:51:57.430289-07:00"
+    Recorded: "2018-09-05"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-TUehLj1A4U.ctm"
+    Fountain: "-TUehLj1A4U.fountain"
+    Diarization_RTTM: "-TUehLj1A4U.rttm"
+    As_Broadcast_Script: "-TUehLj1A4U.script.txt"
+    Segments_JSON: "-TUehLj1A4U.segments.json"
+    Segments_JSONL: "-TUehLj1A4U.segments.jsonl"
+    Subtitles_SRT: "-TUehLj1A4U.srt"
+    Plain_Text: "-TUehLj1A4U.transcription"
+    Subtitles_VTT: "-TUehLj1A4U.vtt"
+    Transcript_SHA256: "0a4d6211ddbf3d5272f2ec85648fdbb92e63d52ee918eaaf8313fd8b6d570281"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "james_fishback_fl"
+    video_uid: "james_fishback_fl::-TUehLj1A4U"
+    video_key: "-TUehLj1A4U"
+    youtube_id: "-TUehLj1A4U"
+    priority: 440
+    ceiling: 800
+    raw_score: 440
+    bound_by: "raw"
+    transcripts_held: 1
+    trusted_transcripts_held: 0
+    person_transcripts_held: 20
+    seat_rank: 240
+    challenger: true
+    round: 1
+    status: "partial"
+    demand_generated_at: "2026-09-10T21:42:00.261Z"
+    demand_run_id: "job_1789076291301_23"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-TUehLj1A4U"
+    source_ref: "-TUehLj1A4U"
+    subject_kind: "new_politician"

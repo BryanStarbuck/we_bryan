@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "canonical_id": "6a25cb5e992e21c0",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": false,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 32.48,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T21:51:57.061Z",
+  "text_sha256": "0a4d6211ddbf3d5272f2ec85648fdbb92e63d52ee918eaaf8313fd8b6d570281",
+  "segments_sha256": "428ce7d156d4e658bf5a9967cd6c736b9f6bfa3e00ef079a700d8f14f98bf2a6",
+  "words_sha256": "bc89e78d7f355f296fd0dd56545e6b3cd039df310da9612b40260ed8135bb513",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "ffmpeg_silencedetect",
+    "chunks": 1,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 0,
+    "clusters": 0,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.58,
+      "end_s": 32.48,
+      "speaker": null,
+      "speaker_conf": null,
+      "speaker_cause": "no_diarization",
+      "overlap": false,
+      "low_conf": true,
+      "timing_source": null,
+      "text": "I love you. We'll be right back.",
+      "words": [
+        {
+          "w": "I",
+          "s": 0.58,
+          "e": 2,
+          "c": 0.0303106
+        },
+        {
+          "w": "love",
+          "s": 2,
+          "e": 17.98,
+          "c": 0.0220946
+        },
+        {
+          "w": "you.",
+          "s": 17.98,
+          "e": 29.98,
+          "c": 0.272313
+        },
+        {
+          "w": "We'll",
+          "s": 30,
+          "e": 30.65,
+          "c": 0.0254219
+        },
+        {
+          "w": "be",
+          "s": 30.65,
+          "e": 30.91,
+          "c": 0.512329
+        },
+        {
+          "w": "right",
+          "s": 30.91,
+          "e": 31.56,
+          "c": 0.88361
+        },
+        {
+          "w": "back.",
+          "s": 31.56,
+          "e": 32.48,
+          "c": 0.982338
+        }
+      ]
+    }
+  ]
+}

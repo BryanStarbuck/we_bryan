@@ -1,0 +1,178 @@
+{
+  "schema_version": 2,
+  "canonical_id": "d75fa32cbc6a75b1",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 11.32,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-10T21:51:48.582Z",
+  "text_sha256": "7c2f8afe7cfd5774f066b4fe2c7a47204464990b7916c93f0e662c0bc85ca6b5",
+  "segments_sha256": "48e28a8dd85b5a2593228a62f72f63de2a0d513bff477fe82a6281b7edbf40f7",
+  "words_sha256": "0e08c79f2b198a584ca5201d71ec78855bfc2dbf9083b41aba0897ddf25067b2",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 1,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 2,
+    "clusters": 1,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 10
+      },
+      "clean_s": 10,
+      "speaking_s": 10,
+      "first_s": 0.23
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.08,
+      "end_s": 11.32,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "And probably will be polite Time gets a spell on you But you won't forget me",
+      "words": [
+        {
+          "w": "And",
+          "s": 0.08,
+          "e": 0.39,
+          "c": 0.562038
+        },
+        {
+          "w": "probably",
+          "s": 0.39,
+          "e": 1.43,
+          "c": 0.974136
+        },
+        {
+          "w": "will",
+          "s": 1.43,
+          "e": 1.94,
+          "c": 0.957059
+        },
+        {
+          "w": "be",
+          "s": 1.95,
+          "e": 2.22,
+          "c": 0.996441
+        },
+        {
+          "w": "polite",
+          "s": 2.22,
+          "e": 2.94,
+          "c": 0.531959
+        },
+        {
+          "w": "Time",
+          "s": 3.03,
+          "e": 3.92,
+          "c": 0.919541
+        },
+        {
+          "w": "gets",
+          "s": 3.92,
+          "e": 4.9,
+          "c": 0.655735
+        },
+        {
+          "w": "a",
+          "s": 4.9,
+          "e": 5.14,
+          "c": 0.901172
+        },
+        {
+          "w": "spell",
+          "s": 5.14,
+          "e": 6.36,
+          "c": 0.990911
+        },
+        {
+          "w": "on",
+          "s": 6.36,
+          "e": 6.85,
+          "c": 0.996966
+        },
+        {
+          "w": "you",
+          "s": 6.85,
+          "e": 7.6,
+          "c": 0.79869
+        },
+        {
+          "w": "But",
+          "s": 7.69,
+          "e": 8.18,
+          "c": 0.687167
+        },
+        {
+          "w": "you",
+          "s": 8.18,
+          "e": 8.76,
+          "c": 0.999926
+        },
+        {
+          "w": "won't",
+          "s": 8.76,
+          "e": 9.73,
+          "c": 0.999378
+        },
+        {
+          "w": "forget",
+          "s": 9.73,
+          "e": 10.9,
+          "c": 0.970834
+        },
+        {
+          "w": "me",
+          "s": 10.9,
+          "e": 11.32,
+          "c": 0.99923
+        }
+      ]
+    }
+  ]
+}
