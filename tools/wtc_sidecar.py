@@ -431,6 +431,34 @@ def gather(roster_key: str, video_key: str, demand_csv: str) -> dict:
         f for f in os.listdir(out)
         if f.startswith(video_key + ".") and f[len(video_key) + 1:] in FILE_LABELS
     )
+
+    # --- PROVENANCE, DERIVED FROM WHAT IS ACTUALLY ON DISK.
+    # These three fields used to be three hardcoded string literals naming the
+    # aligned_local pipeline, written onto EVERY sidecar regardless of what had
+    # produced the words. That is a fabricated provenance claim, and it is the
+    # one kind of error this file exists to refuse: Source.Evidence_Grade is one
+    # of the FOUR fields the product actually reads (reader_facts()), and
+    # `aligned` tells a scorer it is holding word timings and acoustic speaker
+    # turns. A transcript made by a words-only engine has neither, and stamping
+    # `aligned` on it inflates confidence on a claim nothing can support.
+    #
+    # The evidence is on disk and needs no configuration: the aligned pipeline
+    # is the only thing that emits BOTH a .ctm (word timings) and a .rttm
+    # (speaker turns), so their presence IS the grade. Words alone are `flat`
+    # (transcription.mdx §5.1 — a closed vocabulary; `flat` is the entry for
+    # "words only"). A lower grade lowers stated confidence and renders a
+    # caveat; §5.1 is explicit that it NEVER blocks an award, so recording the
+    # true one costs the movement nothing and buys it an honest read.
+    have = {f[len(video_key) + 1:] for f in facts["files"]}
+    facts["aligned"] = "ctm" in have and "rttm" in have
+    if facts["aligned"]:
+        facts["asr"] = "whisper_cpp / ggml-large-v3-turbo-q5_0"
+        facts["diarization"] = "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+        facts["evidence_grade"] = "aligned"
+    else:
+        facts["asr"] = None            # supplied by --asr, or kept from the file
+        facts["diarization"] = None    # absent is absent: nothing diarized this
+        facts["evidence_grade"] = "flat"
     # The CSV is regenerated every engine run, so a long batch can reach here
     # after its row changed or closed. The selection-time seed is what the row
     # actually said when the work started; prefer the live row, fall back to it.
@@ -449,7 +477,8 @@ def merge_preserving(existing, facts) -> dict:
     Returns {"Description":..., "Topics":[...], "people":{label:{...}}, "extra":{...}}
     Anything returned here is written back verbatim.
     """
-    kept = {"Description": None, "Topics": None, "people": {}, "extra": {}}
+    kept = {"Description": None, "Topics": None, "people": {}, "extra": {},
+            "ASR": None, "Diarization": None, "Evidence_Grade": None}
     if not isinstance(existing, dict):
         return kept
     body = existing.get("Transcription")
@@ -459,6 +488,14 @@ def merge_preserving(existing, facts) -> dict:
     video = body.get("Video") if isinstance(body.get("Video"), dict) else {}
     if _str(video.get("Description")):
         kept["Description"] = video["Description"]
+
+    # Provenance is established once, by the run that made the words, and can
+    # never be re-derived afterwards from a repo directory alone. A later
+    # `write` (to add a Description, say) must not silently restamp it.
+    source = body.get("Source") if isinstance(body.get("Source"), dict) else {}
+    for f in ("ASR", "Diarization", "Evidence_Grade"):
+        if _str(source.get(f)):
+            kept[f] = source[f]
     topics = body.get("Topics")
     if isinstance(topics, list) and topics:
         kept["Topics"] = topics
@@ -699,9 +736,19 @@ def render(facts, kept) -> str:
     if facts["canonical_id"]:
         A(f"    Canonical_ID: {yq(facts['canonical_id'])}")
     A(f"    Transcribed: {yq(facts['finished'])}")
-    A('    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"')
-    A('    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"')
-    A('    Evidence_Grade: "aligned"')
+    # Precedence: what this run was TOLD (--asr / --evidence-grade) > what the
+    # file already says (the run that made the words) > what the artifacts on
+    # disk prove. Diarization is omitted entirely when nothing diarized this
+    # recording — absent is absent, and an empty string reads as a measurement.
+    asr = facts.get("asr_override") or kept.get("ASR") or facts.get("asr")
+    diar = facts.get("diarization_override") or kept.get("Diarization") or facts.get("diarization")
+    grade = (facts.get("evidence_grade_override") or kept.get("Evidence_Grade")
+             or facts.get("evidence_grade"))
+    if asr:
+        A(f"    ASR: {yq(asr)}")
+    if diar:
+        A(f"    Diarization: {yq(diar)}")
+    A(f"    Evidence_Grade: {yq(grade)}")
     A(f"    Word_Count: {facts['words']}")
     if facts["segments"]:
         A(f"    Segments: {facts['segments']}")
@@ -835,6 +882,9 @@ def cmd_write(args) -> int:
             print(f"  FAIL  {roster_key}/{video_key}: {err}")
             rc = 1
             continue
+        facts["asr_override"] = args.asr
+        facts["diarization_override"] = args.diarization
+        facts["evidence_grade_override"] = args.evidence_grade
         existing = load_existing(path)
         kept = merge_preserving(existing, facts)
         atomic_write(path, render(facts, kept))
@@ -888,11 +938,6 @@ def cmd_verify(args) -> int:
             continue
         stem = video_key if video_key in stems else sorted(stems)[0]
 
-        for suf in OUTPUT_SUFFIXES:
-            p = os.path.join(d, f"{stem}.{suf}")
-            if not os.path.exists(p) or os.path.getsize(p) == 0:
-                miss.append(f"missing:{suf}")
-
         sc = os.path.join(d, "transcription.yaml")
         if not os.path.exists(sc):
             miss.append("NO_SIDECAR")
@@ -903,6 +948,23 @@ def cmd_verify(args) -> int:
             miss.append("SIDECAR_DOES_NOT_PARSE")
             problems.append((target, miss))
             continue
+
+        # WHICH ARTIFACTS ARE OWED DEPENDS ON WHAT MADE THE WORDS. This loop used
+        # to demand all nine OUTPUT_SUFFIXES from every transcript, which silently
+        # assumed the aligned_local pipeline was the only transcriber that would
+        # ever write here. It is not: a words-only engine (transcription.mdx §5.1
+        # `flat`) emits the .transcription and nothing else, and there is no .srt
+        # for it to be missing. Demanding one reports a fabricated defect and, worse,
+        # the only way to satisfy it would be to synthesise timings nothing measured.
+        # So the grade the sidecar RECORDS is what sets the bar. `aligned` still owes
+        # all nine, and that is the check that matters — an aligned claim with no
+        # .ctm or .rttm beside it is the sidecar lying about its own provenance.
+        grade = _str((reader_facts(doc) or {}).get("evidence_grade")) or "flat"
+        owed = OUTPUT_SUFFIXES if grade == "aligned" else ("transcription",)
+        for suf in owed:
+            fp = os.path.join(d, f"{stem}.{suf}")
+            if not os.path.exists(fp) or os.path.getsize(fp) == 0:
+                miss.append(f"missing:{suf}")
 
         # The four the product actually reads.
         for k, v in reader_facts(doc).items():
@@ -991,6 +1053,17 @@ def main(argv=None) -> int:
     w = sub.add_parser("write", help="build or refresh sidecars, preserving hand-written fields")
     w.add_argument("targets", nargs="+", metavar="roster_key/video_key")
     w.add_argument("--demand-csv", default=DEFAULT_DEMAND_CSV)
+    w.add_argument("--asr", default=None,
+                   help="the engine that actually produced the words, e.g. "
+                        "'apple-speechanalyzer (Large File Bridge)'. Recorded as "
+                        "Source.ASR. Without it the sidecar keeps what it already "
+                        "says, and a new one states only what the artifacts prove.")
+    w.add_argument("--diarization", default=None,
+                   help="the diarizer, when one ran. Omitted when none did.")
+    w.add_argument("--evidence-grade", default=None,
+                   help="override the grade derived from the artifacts on disk "
+                        "(transcription.mdx §5.1: aligned | attested | "
+                        "machine_caption | flat | legacy_*).")
     w.set_defaults(func=cmd_write)
 
     sd = sub.add_parser("seed", help="record the demand row beside the media, OUTSIDE the repo")

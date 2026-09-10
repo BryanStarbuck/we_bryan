@@ -349,5 +349,82 @@ class AtomicWriteLeavesAReadableFile(unittest.TestCase):
         self.assertTrue(mode & stat.S_IRGRP or mode & stat.S_IROTH, oct(mode))
 
 
+class ProvenanceIsMeasuredNotAsserted(unittest.TestCase):
+    """Source.ASR / Diarization / Evidence_Grade used to be three hardcoded
+    string literals naming the aligned_local pipeline, stamped onto EVERY
+    sidecar whatever had produced the words. Evidence_Grade is one of the four
+    fields the product reads, and `aligned` claims word timings and acoustic
+    speaker turns. A words-only engine produces neither."""
+
+    def _facts(self, suffixes):
+        """The parts of gather()'s output render() reads, for a video whose
+        output directory holds exactly `suffixes`."""
+        vk = "abc"
+        files = sorted(f"{vk}.{s}" for s in suffixes if s in S.FILE_LABELS)
+        have = {f[len(vk) + 1:] for f in files}
+        aligned = "ctm" in have and "rttm" in have
+        return {
+            "files": files,
+            "aligned": aligned,
+            "asr": "whisper_cpp / ggml-large-v3-turbo-q5_0" if aligned else None,
+            "diarization": ("sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+                            if aligned else None),
+            "evidence_grade": "aligned" if aligned else "flat",
+        }
+
+    def test_word_timings_and_speaker_turns_together_are_aligned(self):
+        f = self._facts(("transcription", "ctm", "rttm"))
+        self.assertEqual(f["evidence_grade"], "aligned")
+        self.assertTrue(f["diarization"])
+
+    def test_words_only_is_flat_and_names_no_diarizer(self):
+        # The Large File Bridge engines (apple-speechanalyzer, whisper-small)
+        # emit the words and nothing else.
+        f = self._facts(("transcription",))
+        self.assertEqual(f["evidence_grade"], "flat")
+        self.assertIsNone(f["diarization"])
+
+    def test_timings_without_speakers_are_not_aligned(self):
+        # Half the aligned pipeline is not the aligned pipeline.
+        self.assertEqual(self._facts(("transcription", "ctm"))["evidence_grade"], "flat")
+        self.assertEqual(self._facts(("transcription", "rttm"))["evidence_grade"], "flat")
+
+    def test_provenance_survives_a_later_write(self):
+        # A re-run to add a Description must not restamp how the words were made:
+        # the run that made them is the only thing that ever knew.
+        kept = S.merge_preserving(sidecar_with_handwritten(), {})
+        self.assertEqual(kept["Evidence_Grade"], "aligned")
+
+    def test_absent_provenance_stays_absent(self):
+        doc = yaml.safe_load("Transcription:\n  Source:\n    Word_Count: 5\n")
+        kept = S.merge_preserving(doc, {})
+        self.assertIsNone(kept["ASR"])
+        self.assertIsNone(kept["Evidence_Grade"])
+
+
+class TheGateAsksForWhatTheEngineOwes(unittest.TestCase):
+    """cmd_verify used to demand all nine aligned-pipeline artifacts from every
+    transcript, which assumed one transcriber would ever write here."""
+
+    def _owed(self, grade):
+        return S.OUTPUT_SUFFIXES if grade == "aligned" else ("transcription",)
+
+    def test_aligned_still_owes_all_nine(self):
+        # The check that matters: an `aligned` claim with no .ctm/.rttm beside it
+        # is the sidecar lying about its own provenance.
+        self.assertEqual(self._owed("aligned"), S.OUTPUT_SUFFIXES)
+        self.assertIn("rttm", self._owed("aligned"))
+        self.assertIn("ctm", self._owed("aligned"))
+
+    def test_flat_owes_only_the_words(self):
+        self.assertEqual(self._owed("flat"), ("transcription",))
+
+    def test_an_unrecorded_grade_owes_only_the_words(self):
+        # Absent is absent: a missing grade must not be read as a promise of
+        # timings the sidecar never made.
+        for g in ("", None, "machine_caption", "legacy_flat"):
+            self.assertEqual(self._owed(S._str(g) or "flat"), ("transcription",))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
