@@ -1237,6 +1237,32 @@ at Stage 2.3 as "already on disk", so nothing is wasted. Do not clone it yoursel
   * Poll {LOCALHOST_API} until it answers before continuing. Do not race it. If it
     has not answered within about 90 seconds, print Z8 and stop.
 
+  * ⚠️ THE APP MUST OUTLIVE THE THING THAT STARTED IT, AND AN AUTOMATED RUN IS THE
+    ONE CONTEXT WHERE IT WILL NOT. `just run` returns as soon as the services are
+    up, but the processes it leaves behind belong to the STARTING SHELL's process
+    group. When this prompt is driven by an agent or a script, that group is torn
+    down at the end of the step that ran the command, and every service in it gets
+    SIGTERM — minutes later, silently, with nothing in the app's own log but a
+    successful boot followed by no more lines.
+    MEASURED, 2026-09-10: fifteen short videos finished, then the app went away and
+    the five LONGEST videos in the batch all failed with the identical
+    `ECONNREFUSED 127.0.0.1:9333`. Two restarts from inside the run were killed the
+    same way, each within a minute or two. Nothing about the videos was wrong; two
+    hours of downloaded audio simply had nowhere to go.
+    THE TELL is a batch whose failures are sorted by duration — the short ones pass,
+    the long ones do not — with one identical connection error and no CLI stderr
+    beyond it. That is not a hard video and it is not a model problem.
+    THE FIX IS TO START IT SOMEWHERE THAT STAYS UP: the citizen's own terminal, or
+    the agent's persistent background facility if it genuinely survives across
+    steps. In Claude Code the citizen types
+
+        ! cd {WTC_REPO} && just run
+
+    which runs in the session's own shell rather than a step's. Confirm :9333 is
+    still answering IMMEDIATELY BEFORE Stage 6 and again if any job returns
+    ECONNREFUSED — and if it has gone, say so and stop rather than retrying, because
+    every retry against a dead app burns the media's turn in the batch for nothing.
+
 5.5 CONFIRM THE MACHINE CAN ACTUALLY TRANSCRIBE
 
         {CITIZENS_CLI} capability --local
