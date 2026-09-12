@@ -1,0 +1,134 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Kari Lake’s One-On-One Interview with ABC 15 to Discuss Senate Campaign"
+    Description: >-
+      A sit-down interview of Kari Lake by an ABC15 Arizona reporter in
+      March 2024, early in her U.S. Senate campaign for the seat Kyrsten
+      Sinema was leaving; the reporter asks most of the questions and
+      presses on several answers. Lake says she wants to go to Washington to
+      get work done and come home rather than make a career of politics, and
+      names the border and the economy as her priorities, blaming inflation
+      on what she calls Biden and Ruben Gallego economics. On spending she
+      says the country must cut and also grow its way out of debt by
+      bringing manufacturing back; she says she supports the CHIPS Act but
+      objects to the diversity, equity and inclusion conditions attached to
+      it. Asked about corporate profits and inflation, she says there is
+      corporate greed but focuses on lobbyists and on small-business Trump
+      tax cuts she says will expire in 2025, and she describes her campaign
+      as funded mainly by small donors. The reporter challenges her
+      opposition to the bipartisan Senate border bill, citing border mayors
+      who backed it; Lake calls the bill disastrous, says it would have
+      codified what she calls an invasion, contains no money for a wall and
+      was really about aid to Ukraine, and says she would vote no. On
+      abortion she says she would not introduce or vote for a federal ban,
+      that the question belongs to the states, and that she wants more
+      support for families, including a child tax credit starting in
+      pregnancy. Asked how she will win over moderates when her positions
+      have not changed, she says her America First policies already appeal
+      across parties. The last questions concern the defamation suit brought
+      by Maricopa County Recorder Stephen Richer (the ASR writes 'Stephen
+      Richard') and her legal team's move to let a default judgment be
+      entered; Lake calls the case lawfare, says she stands by her
+      statements that Arizona elections are run like a banana republic, and
+      says she is skipping to damages to avoid a costly trial. Her claims
+      about election administration and about Richer's motives are her own,
+      are contested, and Richer is not present to respond.
+    URL: "https://www.youtube.com/watch?v=-yTJHe1W4OA"
+    Video_ID: "-yTJHe1W4OA"
+    Show: "Kari Lake"
+    Runtime: "00:32:30"
+    Language: "en"
+
+  Media:
+    File: "-yTJHe1W4OA.m4a"
+    SHA256: "2a73484fde00b5662033a6933d832048e12ebabded8a42fd3ccb5f279fd90ebd"
+    Bytes: 31549567
+    Duration_Seconds: 1950
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-yTJHe1W4OA"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-yTJHe1W4OA.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/kari_lake_us_pres/-yTJHe1W4OA/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCakn6ZCwlFA6Ct6XSU-HmtQ"
+    Uploader_ID: "@karilake"
+    View_Count: 2674
+    Like_Count: 279
+    Comment_Count: 117
+    Availability: "public"
+    Published_At: "2024-03-28T18:20:39+00:00"
+    Captured_At: "2026-09-10T14:17:27-07:00"
+
+  Topics:
+    - "2024 Arizona U.S. Senate campaign"
+    - "Border security and the bipartisan Senate border bill"
+    - "Inflation, federal spending and debt"
+    - "CHIPS Act and domestic manufacturing"
+    - "Corporate profits and small-business taxes"
+    - "Campaign fundraising"
+    - "Abortion policy and family support"
+    - "Stephen Richer defamation lawsuit"
+    - "Election administration claims"
+
+  Source:
+    Transcribed: "2026-09-12T16:16:02.765349-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 6629
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T14:17:33.465881-07:00"
+    Transcription_Finished: "2026-09-12T16:16:02.765349-07:00"
+    Recorded: "2024-03-28"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "-yTJHe1W4OA.transcription"
+    Transcript_SHA256: "bc1a6847a14ffe26928763a94658d8ceb01a48d5566b53407ecbfb895f49c2d5"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "kari_lake_us_pres"
+    video_uid: "kari_lake_us_pres::-yTJHe1W4OA"
+    video_key: "-yTJHe1W4OA"
+    youtube_id: "-yTJHe1W4OA"
+    priority: 550
+    ceiling: 1000
+    raw_score: 550
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    seat_rank: 300
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-12T23:08:35.632Z"
+    demand_run_id: "job_1789254480043_29"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-yTJHe1W4OA"
+    source_ref: "-yTJHe1W4OA"
+    subject_kind: "new_politician"

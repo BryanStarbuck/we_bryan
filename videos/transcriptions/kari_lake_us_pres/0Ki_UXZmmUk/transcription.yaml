@@ -1,0 +1,124 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Kari Kicks off her Make Arizona Grand Again Tour in Prescott"
+    Description: >-
+      Kari Lake's stump speech opening her Make Arizona Grand Again bus tour
+      in Prescott, Arizona, recorded in July 2024 during her U.S. Senate
+      campaign; it is a single speaker addressing an outdoor crowd in the
+      heat. She recounts arriving in Arizona as a journalist in 1994 and
+      says she left that career because she saw it as 'fake news'. She
+      argues life has become hard under what she calls the 'Biden regime'
+      and her opponent Ruben Gallego, puts illegal border crossings at 12
+      million, and proposes building the wall, reinstating Remain in Mexico
+      and ending catch and release. She asserts Joe Biden is not fit to
+      finish his term, says the media has been lying about this and about
+      the economy, and warns that his foreign policy risks drawing the
+      country toward World War III, while thanking veterans in the crowd.
+      Most of the speech is organising: she asks supporters to talk to ten
+      friends, check they are registered, reach out to independents and
+      Democrats, vote in the July primary for Trump-endorsed candidates, and
+      put a bumper sticker on their cars. She describes Gallego as a far-
+      left Democrat from Chicago who supports open borders and sanctuary
+      cities, marched at defund-the-police rallies and backed ending the
+      filibuster, and says Democrats cut Medicare and will go after Social
+      Security next; these characterisations of an absent opponent are hers
+      and are contested. The ASR garbles several names ('Carrie Lake', 'Ruby
+      Guy').
+    URL: "https://www.youtube.com/watch?v=0Ki_UXZmmUk"
+    Video_ID: "0Ki_UXZmmUk"
+    Show: "Kari Lake"
+    Runtime: "00:09:18"
+    Language: "en"
+
+  Media:
+    File: "0Ki_UXZmmUk.m4a"
+    SHA256: "245d42af3be32db7da3475b0167c0a1166ebeed84e1a4e1a2d43d635db530013"
+    Bytes: 9034426
+    Duration_Seconds: 558
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=0Ki_UXZmmUk"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "0Ki_UXZmmUk.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/kari_lake_us_pres/0Ki_UXZmmUk/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCakn6ZCwlFA6Ct6XSU-HmtQ"
+    Uploader_ID: "@karilake"
+    View_Count: 2467
+    Like_Count: 349
+    Comment_Count: 64
+    Availability: "public"
+    Published_At: "2024-07-08T23:32:36+00:00"
+    Captured_At: "2026-09-10T14:17:35-07:00"
+
+  Topics:
+    - "2024 Arizona U.S. Senate campaign"
+    - "Border security and immigration"
+    - "Cost of living and the economy"
+    - "President Biden's fitness for office"
+    - "Foreign wars and veterans"
+    - "Voter registration and turnout"
+    - "Attacks on opponent Ruben Gallego"
+    - "Medicare and Social Security"
+
+  Source:
+    Transcribed: "2026-09-12T16:14:30.618263-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 1902
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T14:17:38.635029-07:00"
+    Transcription_Finished: "2026-09-12T16:14:30.618263-07:00"
+    Recorded: "2024-07-08"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "0Ki_UXZmmUk.transcription"
+    Transcript_SHA256: "8180afef0f485461e91e293112bd37500c8820a422abce80f4fe575108aad991"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "kari_lake_us_pres"
+    video_uid: "kari_lake_us_pres::0Ki_UXZmmUk"
+    video_key: "0Ki_UXZmmUk"
+    youtube_id: "0Ki_UXZmmUk"
+    priority: 550
+    ceiling: 1000
+    raw_score: 550
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    seat_rank: 300
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-12T23:08:35.632Z"
+    demand_run_id: "job_1789254480043_29"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=0Ki_UXZmmUk"
+    source_ref: "0Ki_UXZmmUk"
+    subject_kind: "new_politician"

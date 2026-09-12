@@ -1,0 +1,134 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Who is Judge Tony Graf?  - Ep 171"
+    Description: >-
+      A live episode (Ep 171, holiday weekend, early September 2026) of
+      Baron Coleman's solo YouTube show, which covers the prosecution of
+      Tyler Robinson for the killing of Charlie Kirk; Coleman, a defense
+      lawyer, speaks alone for nearly three hours, and the second half is
+      him reading and answering viewer comments. His opening statement
+      concerns Ryan Fournier of Students for Trump: Coleman says the account
+      keeps posting dozens of times a day although Fournier is reportedly
+      held in a DC jail on an assault charge (he stresses the presumption of
+      innocence), recounts the reported 2019 arrangement under which Turning
+      Point USA ran the Students for Trump accounts and the 2023 falling-out
+      over removing Trump's branding, and argues that free speech loses
+      meaning when the public cannot tell who is actually speaking. The main
+      segment examines Judge Tony Graf, who presides over the Robinson case.
+      Coleman says he is not criticising the judge's handling of the case so
+      far, walks through his published career as a prosecutor specialising
+      in special-victims and sex-crimes cases in Salt Lake, Utah and Davis
+      counties and a term on the Tooele County council, and questions why a
+      lawyer with little history in Utah County was appointed there in
+      August 2025 and then assigned this case, citing the Utah
+      Constitution's residency rule. He then points to the special-victims
+      background of the detective who signed the first search warrants, the
+      arrest of George Zinn on obstruction and child-material charges, and
+      to several people and charities around Turning Point USA involved in
+      anti-trafficking or child-protection work, and speculates aloud that
+      Robinson could have been a 'patsy' compromised through that kind of
+      material. He repeatedly labels this speculation, says he is not
+      accusing Robinson, the judge or the FBI of anything, and says he
+      doubts the official account that a .30-06 shot caused the wound. The
+      insinuations about the judge's selection and about the named
+      individuals and organisations are Coleman's own, are unproven, and
+      none of those named is present to answer them. The comment segment
+      touches on the Netflix series Death of a Pastor's Wife, Formula 1, his
+      family, merchandise and memberships.
+    URL: "https://www.youtube.com/watch?v=1EtjNI-32UI"
+    Video_ID: "1EtjNI-32UI"
+    Show: "Baron Coleman"
+    Runtime: "02:43:59"
+    Language: "en"
+
+  Media:
+    File: "1EtjNI-32UI.m4a"
+    SHA256: "42da8638002385bad7b317778b9696a16d785b8fd786676bd1b6c8e4304d5fc5"
+    Bytes: 159130837
+    Duration_Seconds: 9839
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=1EtjNI-32UI"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "1EtjNI-32UI.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/baron_coleman_al/1EtjNI-32UI/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCkEowWfq-LO_3EEYYzKoSoA"
+    Uploader_ID: "@realbaronpodcast"
+    View_Count: 346803
+    Like_Count: 35054
+    Comment_Count: 1400
+    Availability: "public"
+    Published_At: "2026-09-07T00:53:16+00:00"
+    Captured_At: "2026-09-10T14:15:56-07:00"
+
+  Topics:
+    - "Tyler Robinson prosecution for the killing of Charlie Kirk"
+    - "Background and appointment of Judge Tony Graf"
+    - "Ryan Fournier, Students for Trump and Turning Point USA account leasing"
+    - "Authorship of political social-media accounts and free speech"
+    - "Speculation that the accused was a patsy"
+    - "Search warrants and the George Zinn arrest"
+    - "Anti-trafficking charities linked to Turning Point USA figures"
+    - "Viewer comments and show business"
+
+  Source:
+    Transcribed: "2026-09-12T16:22:45.090294-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 27615
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T14:16:10.712224-07:00"
+    Transcription_Finished: "2026-09-12T16:22:45.090294-07:00"
+    Recorded: "2026-09-07"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "1EtjNI-32UI.transcription"
+    Transcript_SHA256: "6c8270f7565c12fc6d191a299454b076fc190398ffecafbd0a7943e671be8059"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "baron_coleman_al"
+    video_uid: "baron_coleman_al::1EtjNI-32UI"
+    video_key: "1EtjNI-32UI"
+    youtube_id: "1EtjNI-32UI"
+    priority: 550
+    ceiling: 1000
+    raw_score: 550
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T16:23:52.832Z"
+    demand_run_id: "job_1789057406903_3"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=1EtjNI-32UI"
+    source_ref: "1EtjNI-32UI"
+    subject_kind: "new_politician"

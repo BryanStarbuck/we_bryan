@@ -1,0 +1,132 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Charlie Kirk and 9/11 - Two Tragedies with Anniversaries One Day Apart - Ep 173"
+    Description: >-
+      A live episode (Ep 173, 9 September 2026, the eve of the first
+      anniversary of Charlie Kirk's killing and two days before the 25th
+      anniversary of 9/11) of Baron Coleman's solo YouTube show on the Tyler
+      Robinson prosecution; he speaks alone for nearly four hours, and the
+      second half is viewer comments. His opening statement compares the two
+      events: the shock each caused, what he calls the tidy official
+      narratives that followed, and the persistent questions each left,
+      which for 9/11 he lists as World Trade Center building 7, free-fall
+      collapse, reported thermite and airline short-selling, and for the
+      Kirk case as ballistics, DNA, the arrest timeline, gaps in released
+      footage, the missing wound exit, the missing microphones and necklace,
+      and the conduct of several named Kirk associates at the scene. He
+      argues that people who ask such questions are shamed rather than
+      answered, while saying the parallel does not prove either official
+      account false. He then walks through newly released higher-quality
+      campus footage, posted by the creator Trigger Smart, of a figure on
+      the Losee Center roof, arguing the figure's pauses, lack of a limp and
+      simple step over a railing do not match the prosecution's
+      descriptions; discusses a rarely seen photo, first posted on X in
+      September 2025, that appears to show Robinson after surrendering; and
+      compares the autopsy wounds of the Butler, Pennsylvania gunman with
+      Kirk's to argue that a .30-06 round should have exited. He questions
+      why Arizona state senator Jake Hoffman, a past Turning Point USA
+      contractor, said on local news that he was monitoring a live stream of
+      the event, and closes the content with alarm about artificial-
+      intelligence risk, reading resignation posts by AI researchers and
+      criticising a Peter Thiel interview answer. The doubts about 9/11 and
+      the insinuations about named individuals are Coleman's own, are
+      contested, and those named are not present to respond. He says he is
+      emotionally drained and may not broadcast on the anniversary; comments
+      cover viewers' 9/11 memories, sobriety, faith and a hot-dog debate.
+    URL: "https://www.youtube.com/watch?v=5lwgYDbLNhw"
+    Video_ID: "5lwgYDbLNhw"
+    Show: "Baron Coleman"
+    Runtime: "03:42:55"
+    Language: "en"
+
+  Media:
+    File: "5lwgYDbLNhw.m4a"
+    SHA256: "925351cf544089f73ace847108ae0dadf4da01488d1511ab2a35dc202e0d65c0"
+    Bytes: 216322139
+    Duration_Seconds: 13375
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=5lwgYDbLNhw"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "5lwgYDbLNhw.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/baron_coleman_al/5lwgYDbLNhw/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCkEowWfq-LO_3EEYYzKoSoA"
+    Uploader_ID: "@realbaronpodcast"
+    View_Count: 249660
+    Like_Count: 29797
+    Comment_Count: 1500
+    Availability: "public"
+    Published_At: "2026-09-10T04:13:16+00:00"
+    Captured_At: "2026-09-10T14:16:45-07:00"
+
+  Topics:
+    - "First anniversary of Charlie Kirk's killing and 25th anniversary of 9/11"
+    - "Challenges to official accounts of 9/11 and the Kirk killing"
+    - "Newly released rooftop surveillance footage"
+    - "Ballistics and the absence of an exit wound"
+    - "Photo of Tyler Robinson after surrender"
+    - "Jake Hoffman and the event live stream"
+    - "Artificial-intelligence extinction risk warnings"
+    - "Viewer comments and memories of 9/11"
+
+  Source:
+    Transcribed: "2026-09-12T16:26:04.677503-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 37058
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T14:16:49.892399-07:00"
+    Transcription_Finished: "2026-09-12T16:26:04.677503-07:00"
+    Recorded: "2026-09-10"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "5lwgYDbLNhw.transcription"
+    Transcript_SHA256: "bd63ee23d72701274fb43dd5b67ffa6d3cae139901c5ca799a4bca30047593ba"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "baron_coleman_al"
+    video_uid: "baron_coleman_al::5lwgYDbLNhw"
+    video_key: "5lwgYDbLNhw"
+    youtube_id: "5lwgYDbLNhw"
+    priority: 550
+    ceiling: 1000
+    raw_score: 550
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T16:23:52.832Z"
+    demand_run_id: "job_1789057406903_3"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=5lwgYDbLNhw"
+    source_ref: "5lwgYDbLNhw"
+    subject_kind: "new_politician"

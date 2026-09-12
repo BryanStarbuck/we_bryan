@@ -1,0 +1,105 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Thank you, Governor Ducey! 💪"
+    Description: >-
+      A fifteen-second clip posted to Kari Lake's channel during her 2024
+      U.S. Senate campaign. It is narrated in the third person, in the style
+      of a news report, rather than by Lake herself: it says former Arizona
+      governor Doug Ducey is now officially endorsing Lake for the Senate
+      seat and Donald Trump for the White House, and that Ducey released a
+      statement saying he is voting Republican up and down the ballot. The
+      ASR spells her name 'Carrie Lake'; the endorsement is as reported in
+      the clip.
+    URL: "https://www.youtube.com/watch?v=0hw-rPpkFCw"
+    Video_ID: "0hw-rPpkFCw"
+    Show: "Kari Lake"
+    Runtime: "00:00:15"
+    Language: "en"
+
+  Media:
+    File: "0hw-rPpkFCw.m4a"
+    SHA256: "330e31fb26a51d1da6586ab8829f4686142510a8eea7805d2b7b43f73a840e82"
+    Bytes: 249073
+    Duration_Seconds: 15
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=0hw-rPpkFCw"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "0hw-rPpkFCw.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/kari_lake_us_pres/0hw-rPpkFCw/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCakn6ZCwlFA6Ct6XSU-HmtQ"
+    Uploader_ID: "@karilake"
+    View_Count: 31255
+    Like_Count: 1789
+    Comment_Count: 115
+    Availability: "public"
+    Published_At: "2024-08-14T01:06:01+00:00"
+    Captured_At: "2026-09-10T14:17:40-07:00"
+
+  Topics:
+    - "Doug Ducey endorsement"
+    - "2024 Arizona U.S. Senate race"
+    - "2024 presidential election"
+
+  Source:
+    Transcribed: "2026-09-12T16:14:28.884830-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 45
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T14:17:41.317039-07:00"
+    Transcription_Finished: "2026-09-12T16:14:28.884830-07:00"
+    Recorded: "2024-08-14"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "0hw-rPpkFCw.transcription"
+    Transcript_SHA256: "e68507ff76dffd3cf497e81b10cc3675301320a8d76a30bbee2be8ab49a43c43"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "kari_lake_us_pres"
+    video_uid: "kari_lake_us_pres::0hw-rPpkFCw"
+    video_key: "0hw-rPpkFCw"
+    youtube_id: "0hw-rPpkFCw"
+    priority: 550
+    ceiling: 1000
+    raw_score: 550
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 10
+    seat_rank: 300
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-12T23:08:35.632Z"
+    demand_run_id: "job_1789254480043_29"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=0hw-rPpkFCw"
+    source_ref: "0hw-rPpkFCw"
+    subject_kind: "new_politician"

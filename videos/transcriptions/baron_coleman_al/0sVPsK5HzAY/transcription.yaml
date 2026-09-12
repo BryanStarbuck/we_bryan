@@ -1,0 +1,133 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Real Eyes Realize Real Lies - Ep 114"
+    Description: >-
+      A live episode (Ep 114, mid-May 2026) of Baron Coleman's solo YouTube
+      show on the prosecution of Tyler Robinson for the killing of Charlie
+      Kirk; Coleman speaks alone for about three and a half hours, and
+      roughly the second half is him reading and answering viewer comments.
+      His opening statement retells the 1954 Sam Sheppard murder case and
+      the 1966 Supreme Court decision Sheppard v. Maxwell on prejudicial
+      publicity, and compares it with the Robinson case: he cites defense
+      survey figures that most potential Utah County jurors already believe
+      Robinson guilty and discusses Judge Tony Graf's ruling allowing
+      cameras with limits, arguing the case must be decided in court rather
+      than in public opinion. He then repeats his contention that Robinson
+      was arrested and read his Miranda rights on the evening of September
+      11, pointing to a Washington County Attorney's Office Facebook post
+      and to the county's handling of a records request for surveillance
+      video of the surrender, and argues that if he is right it raises the
+      question of who wrote a later Discord message; he acknowledges he may
+      be wrong about the date. The largest segment plays clips from a video
+      by the YouTuber Nissi and adds his own examples to argue that Erika
+      Kirk has repeatedly told untrue stories about her life: her absence
+      from a Turning Point USA event with Vice President JD Vance, how and
+      when she met Charlie Kirk (including a Tyler Bowyer interview
+      describing an earlier meeting at a gym), her pageant history, how long
+      she played college basketball, her degree, honours and a claimed
+      doctorate, when she first read the Bible, and the size of her
+      nonprofit. He says this is criticism of her honesty rather than of her
+      grief; these are his characterisations, several are contested, and she
+      is not present to respond. He also reads and rebuts an X post by a
+      small account, amplified by some Turning Point USA staff, accusing him
+      of profiting from Kirk's death, and says those closest to Kirk show
+      little interest in investigating the killing. Viewer comments cover
+      his illness and recovery, merchandise, faith and sobriety milestones,
+      widows' reactions to Erika Kirk, his speculation about her appearance,
+      and an upcoming members-only interview.
+    URL: "https://www.youtube.com/watch?v=0sVPsK5HzAY"
+    Video_ID: "0sVPsK5HzAY"
+    Show: "Baron Coleman"
+    Runtime: "03:35:07"
+    Language: "en"
+
+  Media:
+    File: "0sVPsK5HzAY.m4a"
+    SHA256: "e9c67d514ea55cc0a3c80ad6b1ca753a4664fad6104b1987c218ebffe80ed402"
+    Bytes: 208748003
+    Duration_Seconds: 12907
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=0sVPsK5HzAY"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "0sVPsK5HzAY.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/baron_coleman_al/0sVPsK5HzAY/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCkEowWfq-LO_3EEYYzKoSoA"
+    Uploader_ID: "@realbaronpodcast"
+    View_Count: 317433
+    Like_Count: 31155
+    Comment_Count: 1800
+    Availability: "public"
+    Published_At: "2026-05-15T03:45:55+00:00"
+    Captured_At: "2026-09-10T14:14:39-07:00"
+
+  Topics:
+    - "Tyler Robinson prosecution for the killing of Charlie Kirk"
+    - "Sheppard v. Maxwell and pretrial publicity"
+    - "Cameras in the courtroom ruling"
+    - "Disputed arrest and Miranda timeline"
+    - "Allegations of inconsistent statements by Erika Kirk"
+    - "Criticism from Turning Point USA staff and online critics"
+    - "Viewer comments and show business"
+
+  Source:
+    Transcribed: "2026-09-12T16:25:23.686634-07:00"
+    ASR: "apple-speechanalyzer (Large File Bridge)"
+    Evidence_Grade: "flat"
+    Word_Count: 34936
+
+  Timestamps:
+    Downloaded_At: "2026-09-10T14:15:51.963063-07:00"
+    Transcription_Finished: "2026-09-12T16:25:23.686634-07:00"
+    Recorded: "2026-05-15"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Plain_Text: "0sVPsK5HzAY.transcription"
+    Transcript_SHA256: "8ccb6e4680d5e30a1ec2d4508cd9559e13ed2cfe357bc121a56a78c7061cef01"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "baron_coleman_al"
+    video_uid: "baron_coleman_al::0sVPsK5HzAY"
+    video_key: "0sVPsK5HzAY"
+    youtube_id: "0sVPsK5HzAY"
+    priority: 550
+    ceiling: 1000
+    raw_score: 550
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T16:23:52.832Z"
+    demand_run_id: "job_1789057406903_3"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=0sVPsK5HzAY"
+    source_ref: "0sVPsK5HzAY"
+    subject_kind: "new_politician"
