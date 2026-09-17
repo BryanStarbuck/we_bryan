@@ -1,0 +1,526 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Michael Tracey talks to Mike Gravel about his 2020 campaign"
+    Description: >-
+      A 77-minute interview with former US Senator Mike Gravel (Alaska,
+      1969-1981),
+      recorded 14 May during his 2020 presidential run at the age of 89. The
+      interviewer frames it in an introduction, noting Gravel's 2008 primary
+      debate
+      appearances and that this campaign began when a group of New York
+      teenagers
+      recruited him to run. Gravel's central argument throughout is his
+      'legislature of
+      the people': he holds that elected representatives have a monopoly on
+      lawmaking,
+      that this monopoly is what sustains the elites, and that a constitutional
+      amendment plus a federal Legislative Procedures Act would let citizens
+      enact laws
+      in partnership with officials. He says he has been working on this for
+      25-30
+      years and is finishing a book on it, 'Human Governance'. He is explicit
+      that this
+      is why he doubts a progressive agenda can pass even if Sanders wins, given
+      Senate
+      arithmetic. On the other candidates, all of these are his stated opinions:
+      he is
+      supportive of Bernie Sanders, Tulsi Gabbard and Elizabeth Warren, and
+      would like
+      a Sanders-Gabbard ticket; he credits Gabbard's committee experience and
+      says only
+      she and Sanders address the military-industrial complex; he praises
+      Alexandria
+      Ocasio-Cortez and the Green New Deal; he argues Pete Buttigieg's media
+      rise was
+      'engineered' because he poses no threat to Wall Street or the
+      military-industrial
+      complex and that he 'articulates a lot of mush'; and he objects to
+      Buttigieg's
+      remarks about Chelsea Manning's clemency, correcting the record that it
+      was a
+      commutation rather than a pardon. He rejects the Trump-Russia narrative as
+      'crap'
+      and 'the conventional wisdom of the establishment', pointing to US funding
+      and
+      management of Yeltsin's re-election as his counter-example. On Venezuela
+      he
+      defends a Sanders statement the interviewer raises, arguing Maduro is a
+      problem
+      but that US sanctions are the greater cause of dysfunction, and citing a
+      report
+      that 40,000 children would die as a result. He calls the whole sanctions
+      approach
+      immoral because it empowers the leaders it targets while harming the poor,
+      and
+      recalls Madeleine Albright's 'collateral damage' answer about Iraqi child
+      deaths
+      as murder. He explains his famous 2008 debate exchange calling Joe Biden
+      arrogant,
+      extending the charge to Biden's handling of the Anita Hill hearings and to
+      the
+      Iraq partition plan, and calls the Iraq war probably the worst foreign
+      policy
+      mistake in American history. He states as fact that a psychiatrist has
+      charted
+      Trump's declining mental acuity and predicts Trump will lose the
+      presidency within
+      18 months — a claim he attributes to that psychiatrist, not to any
+      examination of
+      his own, and one the subject is not present to answer. He advises
+      Democrats
+      against impeachment as a distraction. A long biographical stretch covers
+      his move
+      to Alaska before statehood, his rise from freshman legislator to Speaker,
+      his
+      1980 primary defeat after alienating fishing and Native constituencies,
+      his AGSOC
+      stock-ownership proposal, and his affection for the state's landscapes. He
+      closes
+      supporting drug decriminalisation on the Portuguese model, research into
+      cannabis and psychedelics, criticising Brexit as a referendum taken
+      without
+      informing people of the consequences, and reporting his campaign stood at
+      35,000
+      of the 65,000 donors the DNC required for debate entry. Every political
+      characterisation here is Gravel's own and is contested; the people he
+      criticises
+      do not appear. The video ends with the host's Patreon and podcast promo.
+    URL: "https://www.youtube.com/watch?v=00V-BkpXl0c"
+    Video_ID: "00V-BkpXl0c"
+    Show: "M. Tracey"
+    Runtime: "01:17:00"
+    Language: "en"
+
+  Media:
+    File: "00V-BkpXl0c.m4a"
+    SHA256: "b80e6b20316828f7504184d718f5d79fc568c926f834a1e4e237bfc9bbb5e9ee"
+    Bytes: 74722208
+    Duration_Seconds: 4620
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=00V-BkpXl0c"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "00V-BkpXl0c.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/michael_tracey_us/00V-BkpXl0c/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCaLn4FMU_Fp-LBcdbYgYWow"
+    Uploader_ID: "@m-tracey"
+    View_Count: 2048
+    Like_Count: 133
+    Comment_Count: 34
+    Availability: "public"
+    Published_At: "2019-05-15T18:38:44+00:00"
+    Captured_At: "2026-09-17T11:31:25-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  # TWO PEOPLE, 53 CLUSTERS. The transcript identifies two speakers — the
+  # host, who records the framing introduction and outro, and his guest
+  # former Senator Mike Gravel, addressed by name throughout — but it does
+  # NOT identify which diarized cluster is which, and 53 clusters for a
+  # two-person remote interview is noise rather than 53 humans. Names and
+  # Subject are omitted from every entry rather than guessed, and the
+  # clusters are reported as returned rather than merged.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "7.5%"
+      Turns: 23
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "1.6%"
+      Turns: 9
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "3.8%"
+      Turns: 18
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "0.5%"
+      Turns: 6
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "57.0%"
+      Turns: 99
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_101"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_102"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_105"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_12:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_126"
+      Share_Of_Speech: "0.3%"
+      Turns: 3
+    Person_13:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_130"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_14:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_135"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_15:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_136"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_16:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_138"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_17:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_143"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_18:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_144"
+      Share_Of_Speech: "0.2%"
+      Turns: 3
+    Person_19:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_147"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_20:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_149"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_21:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_15"
+      Share_Of_Speech: "7.0%"
+      Turns: 26
+    Person_22:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_150"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_23:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_155"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_24:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_16"
+      Share_Of_Speech: "0.4%"
+      Turns: 3
+    Person_25:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_169"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_26:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_172"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_27:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_175"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_28:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_179"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_29:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_18"
+      Share_Of_Speech: "11.7%"
+      Turns: 40
+    Person_30:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_189"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_31:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_20"
+      Share_Of_Speech: "0.2%"
+      Turns: 2
+    Person_32:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_22"
+      Share_Of_Speech: "0.3%"
+      Turns: 2
+    Person_33:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_29"
+      Share_Of_Speech: "0.2%"
+      Turns: 2
+    Person_34:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_31"
+      Share_Of_Speech: "0.2%"
+      Turns: 2
+    Person_35:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_32"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_36:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_35"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_37:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_39"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_38:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_40"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_39:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_41"
+      Share_Of_Speech: "0.7%"
+      Turns: 4
+    Person_40:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_44"
+      Share_Of_Speech: "0.3%"
+      Turns: 4
+    Person_41:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_53"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_42:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_56"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_43:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_60"
+      Share_Of_Speech: "0.6%"
+      Turns: 4
+    Person_44:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_61"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_45:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_69"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_46:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_72"
+      Share_Of_Speech: "0.2%"
+      Turns: 2
+    Person_47:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_78"
+      Share_Of_Speech: "0.3%"
+      Turns: 4
+    Person_48:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_82"
+      Share_Of_Speech: "3.7%"
+      Turns: 13
+    Person_49:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_84"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_50:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_85"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_51:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_90"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_52:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_94"
+      Share_Of_Speech: "1.3%"
+      Turns: 6
+    Person_53:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_96"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+
+  Topics:
+    - "Gravel's 'legislature of the people' and direct citizen lawmaking"
+    - "The 2020 Democratic primary field and debate-entry donor thresholds"
+    - "The military-industrial complex and Wall Street influence on both parties"
+    - "Rejection of the Trump-Russia narrative"
+    - "US sanctions on Venezuela and their humanitarian effect"
+    - "Joe Biden, the Iraq partition plan and the Anita Hill hearings"
+    - "Gravel's Alaska political career and 1980 primary defeat"
+    - "Drug decriminalisation, cannabis research and the Portuguese model"
+
+  Source:
+    Canonical_ID: "ec00f2f78c273ed8"
+    Transcribed: "2026-09-17T12:59:56.237188-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 10648
+    Segments: 553
+
+  Timestamps:
+    Downloaded_At: "2026-09-17T11:31:37.170635-07:00"
+    Transcription_Finished: "2026-09-17T12:59:56.237188-07:00"
+    Recorded: "2019-05-15"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "00V-BkpXl0c.ctm"
+    Fountain: "00V-BkpXl0c.fountain"
+    Diarization_RTTM: "00V-BkpXl0c.rttm"
+    As_Broadcast_Script: "00V-BkpXl0c.script.txt"
+    Segments_JSON: "00V-BkpXl0c.segments.json"
+    Segments_JSONL: "00V-BkpXl0c.segments.jsonl"
+    Subtitles_SRT: "00V-BkpXl0c.srt"
+    Plain_Text: "00V-BkpXl0c.transcription"
+    Subtitles_VTT: "00V-BkpXl0c.vtt"
+    Transcript_SHA256: "5b7b41d46c297d4f29434539fb6e7e8b0f340a44a3e455012023eead4bde4a73"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "michael_tracey_us"
+    video_uid: "michael_tracey_us::00V-BkpXl0c"
+    video_key: "00V-BkpXl0c"
+    youtube_id: "00V-BkpXl0c"
+    priority: 766
+    ceiling: 1000
+    raw_score: 550
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T16:23:52.832Z"
+    demand_run_id: "job_1789057406903_3"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=00V-BkpXl0c"
+    source_ref: "00V-BkpXl0c"
+    subject_kind: "new_politician"

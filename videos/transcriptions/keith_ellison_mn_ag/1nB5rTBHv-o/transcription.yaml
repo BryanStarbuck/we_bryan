@@ -1,0 +1,154 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "8.18.25: How to spot text message scams with Parker"
+    Description: >-
+      A 2.5-minute consumer-protection explainer from the Minnesota Attorney
+      General's
+      office. The speaker introduces himself as Parker Mertz, manager of the
+      Consumer
+      Action Division, and walks through one real scam text message to show how
+      to
+      spot the tells. The message claimed to come from Apple about a transaction
+      on
+      the recipient's account, and he notes it was well constructed: it carried
+      an
+      Apple ID case number, a date and time for the supposedly illicit
+      transaction,
+      and a phone number and link that both looked official. He makes the point
+      that
+      awkward wording used to be the giveaway but that, with AI now in everyday
+      use,
+      nothing in the language of this one stood out — he had to go to Apple's
+      own
+      website to establish that the link was not affiliated with Apple and that
+      the
+      phone number was not Apple's published customer-service line and had been
+      flagged on scam-reporting sites. His advice is to click no links and call
+      no
+      numbers from such a message, to go directly to the Apple website and check
+      the
+      account there, and, if information or payment has already been given out,
+      to
+      report it to the Internet Crime Complaint Center at ic3.gov, which he
+      describes
+      as affiliated with the FBI and other law-enforcement agencies. He closes
+      with
+      the Minnesota Attorney General's office phone number, saying a live person
+      will
+      answer. This is practical consumer guidance rather than political
+      argument.
+    URL: "https://www.youtube.com/watch?v=1nB5rTBHv-o"
+    Video_ID: "1nB5rTBHv-o"
+    Show: "MN Attorney General Keith Ellison"
+    Runtime: "00:02:32"
+    Language: "en"
+
+  Media:
+    File: "1nB5rTBHv-o.m4a"
+    SHA256: "633ffe1fcd699f5554db66dcae9b02ef2e9c9b69acc633bd7138cd203967e02d"
+    Bytes: 2471111
+    Duration_Seconds: 152
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=1nB5rTBHv-o"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "1nB5rTBHv-o.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/keith_ellison_mn_ag/1nB5rTBHv-o/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC24VphM2BVBQYrN2oTjjHUQ"
+    Uploader_ID: "@agkeithellison"
+    View_Count: 38
+    Like_Count: 2
+    Availability: "public"
+    Published_At: "2025-08-18T22:38:52+00:00"
+    Captured_At: "2026-09-17T11:29:51-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Parker Mertz"
+      Role: "Manager, Consumer Action Division, Minnesota Attorney General's office; sole speaker, identifies himself on camera"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 3
+
+  Topics:
+    - "Text-message phishing scams impersonating Apple"
+    - "How AI-written scam messages defeat the old language tells"
+    - "Reporting fraud to the Internet Crime Complaint Center (ic3.gov)"
+    - "Minnesota Attorney General consumer protection outreach"
+
+  Source:
+    Canonical_ID: "2a21d0e761682074"
+    Transcribed: "2026-09-17T12:12:28.846189-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 408
+    Segments: 9
+
+  Timestamps:
+    Downloaded_At: "2026-09-17T11:29:52.503895-07:00"
+    Transcription_Finished: "2026-09-17T12:12:28.846189-07:00"
+    Recorded: "2025-08-18"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "1nB5rTBHv-o.ctm"
+    Fountain: "1nB5rTBHv-o.fountain"
+    Diarization_RTTM: "1nB5rTBHv-o.rttm"
+    As_Broadcast_Script: "1nB5rTBHv-o.script.txt"
+    Segments_JSON: "1nB5rTBHv-o.segments.json"
+    Segments_JSONL: "1nB5rTBHv-o.segments.jsonl"
+    Subtitles_SRT: "1nB5rTBHv-o.srt"
+    Plain_Text: "1nB5rTBHv-o.transcription"
+    Subtitles_VTT: "1nB5rTBHv-o.vtt"
+    Transcript_SHA256: "7cc06a2313aebccd884f2fa2d6d9e7c5ee437de371a7bb8ab235a1a309534dfc"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "keith_ellison_mn_ag"
+    video_uid: "keith_ellison_mn_ag::1nB5rTBHv-o"
+    video_key: "1nB5rTBHv-o"
+    youtube_id: "1nB5rTBHv-o"
+    priority: 766
+    ceiling: 1000
+    raw_score: 550
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-17T19:11:18.533Z"
+    demand_run_id: "job_1789672046534_129"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=1nB5rTBHv-o"
+    source_ref: "1nB5rTBHv-o"
+    subject_kind: "new_politician"

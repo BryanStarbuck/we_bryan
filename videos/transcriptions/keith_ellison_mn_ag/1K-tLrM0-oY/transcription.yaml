@@ -1,0 +1,587 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "#1 Affording Insulin w: Nicole Smith Holt"
+    Description: >-
+      The first episode of 'Affording Your Life', a podcast hosted by Minnesota
+      Attorney General Keith Ellison, with guest Nicole Smith-Holt on the cost
+      of
+      insulin. Ellison opens with a disclaimer that the show is consumer
+      information
+      and not legal advice. The bulk of the episode is Smith-Holt's account of
+      her son
+      Alec: diagnosed with type 1 diabetes in 2015 at 24, able to afford insulin
+      at
+      roughly $300 a month out of pocket while on her insurance; aged off that
+      plan at
+      26 in 2017; and unable to afford a marketplace replacement at about $450 a
+      month
+      with a $7,600 deductible. She says he chose to pay cash, miscalculated,
+      and was
+      told at the pharmacy that a month's insulin and supplies would cost $1,300
+      when
+      he had about $1,000. He left without the medication and began rationing —
+      which
+      she says roughly a quarter of type 1 diabetics have done — and was found
+      dead
+      five days later of diabetic ketoacidosis. Asked why he did not call for
+      help, she
+      explains that the brain is among the first organs affected, causing
+      confusion and
+      disorientation. She then tells Ellison a second Minnesotan, a 21-year-old
+      working
+      two jobs, had just been found dead the same way. The conversation turns to
+      the
+      history and the industry: the discovery of insulin, the inventors' refusal
+      to
+      take a patent in their names, the one Canadian dollar each they accepted,
+      and the
+      wards where children once waited to die. She says the University of
+      Toronto
+      lacked the capacity to mass-produce it, Eli Lilly stepped in, and that
+      since
+      Humalog's 1996 introduction its price has risen 1,200 per cent with no
+      change to
+      the formula and no R&D justification. She describes buying, on an advocacy
+      caravan to Canada, the same Eli Lilly vial that costs about $340 in the US
+      for
+      under $30, and says the group spent roughly $2,000 to save about $20,000.
+      She
+      notes that three companies — Eli Lilly, Novo Nordisk and Sanofi — sell
+      about 96
+      per cent of the world's insulin and have raised prices in lockstep.
+      Ellison
+      responds in his official capacity, saying he has a responsibility to
+      prevent
+      anti-competitive practices such as illegal price fixing, that his office
+      is suing
+      generic drug manufacturers and has filed one insulin lawsuit, and that
+      Smith-Holt
+      co-chairs his drug pricing task force alongside Senator Jensen. They
+      discuss the
+      Alec Smith Emergency Insulin Act, which she describes as a safety net
+      providing a
+      three-month emergency supply rather than a price fix, and which died in
+      the final
+      minutes of a special session; she states as her personal opinion that Novo
+      Nordisk lobbying swayed the votes. She closes saying the campaign
+      regrouped,
+      doubled in size and will not stop. IMPORTANT: the claims about
+      pharmaceutical
+      company conduct, pricing motives and the cause of the bill's failure are
+      the
+      speakers' own — Smith-Holt is a bereaved parent and an advocate, Ellison
+      is a
+      litigant against these companies, and the named companies do not appear
+      here to
+      answer. The lawsuits described are allegations that had not been
+      adjudicated.
+    URL: "https://www.youtube.com/watch?v=1K-tLrM0-oY"
+    Video_ID: "1K-tLrM0-oY"
+    Show: "MN Attorney General Keith Ellison"
+    Runtime: "00:20:04"
+    Language: "en"
+
+  Media:
+    File: "1K-tLrM0-oY.m4a"
+    SHA256: "abff7741f6e906cf6871ac96d1be9606112ab776c593e028290d6ade74389338"
+    Bytes: 19485642
+    Duration_Seconds: 1204
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=1K-tLrM0-oY"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "1K-tLrM0-oY.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/keith_ellison_mn_ag/1K-tLrM0-oY/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC24VphM2BVBQYrN2oTjjHUQ"
+    Uploader_ID: "@agkeithellison"
+    View_Count: 254
+    Like_Count: 3
+    Comment_Count: 1
+    Availability: "public"
+    Published_At: "2019-09-18T21:09:49+00:00"
+    Captured_At: "2026-09-17T11:29:45-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  # TWO PEOPLE, 65 CLUSTERS. The transcript identifies exactly two speakers
+  # by name — Keith Ellison, who hosts and introduces himself, and his guest
+  # Nicole Smith-Holt — but it does NOT identify which diarized cluster is
+  # which, and 65 clusters for a two-person studio conversation is noise, not
+  # 65 humans. Names and Subject are therefore omitted from every entry
+  # rather than attached to whichever clusters carry the largest shares, and
+  # the clusters are reported as returned rather than merged.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "5.3%"
+      Turns: 8
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "3.2%"
+      Turns: 6
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "8.4%"
+      Turns: 9
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "33.7%"
+      Turns: 27
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_10"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_103"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_109"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_111"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_12:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_112"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_13:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_114"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_14:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_115"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_15:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_118"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_16:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_119"
+      Share_Of_Speech: "3.4%"
+      Turns: 2
+    Person_17:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_12"
+      Share_Of_Speech: "1.3%"
+      Turns: 1
+    Person_18:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_122"
+      Share_Of_Speech: "0.4%"
+      Turns: 2
+    Person_19:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_129"
+      Share_Of_Speech: "0.3%"
+      Turns: 3
+    Person_20:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "0.6%"
+      Turns: 1
+    Person_21:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_130"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_22:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_134"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_23:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_135"
+      Share_Of_Speech: "0.9%"
+      Turns: 4
+    Person_24:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_14"
+      Share_Of_Speech: "1.9%"
+      Turns: 2
+    Person_25:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_140"
+      Share_Of_Speech: "1.2%"
+      Turns: 2
+    Person_26:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_142"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_27:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_143"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_28:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_146"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_29:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_15"
+      Share_Of_Speech: "12.8%"
+      Turns: 24
+    Person_30:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_151"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_31:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_154"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_32:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_155"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_33:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_156"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_34:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_160"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_35:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_165"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_36:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_166"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_37:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_167"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_38:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_17"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_39:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_18"
+      Share_Of_Speech: "3.7%"
+      Turns: 5
+    Person_40:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_19"
+      Share_Of_Speech: "2.2%"
+      Turns: 2
+    Person_41:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_22"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+    Person_42:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_23"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_43:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_24"
+      Share_Of_Speech: "8.5%"
+      Turns: 17
+    Person_44:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_26"
+      Share_Of_Speech: "0.6%"
+      Turns: 2
+    Person_45:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_27"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_46:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_33"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_47:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_34"
+      Share_Of_Speech: "0.7%"
+      Turns: 2
+    Person_48:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_38"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_49:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_42"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_50:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_52"
+      Share_Of_Speech: "0.6%"
+      Turns: 1
+    Person_51:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_54"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+    Person_52:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_56"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_53:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_66"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_54:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_69"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_55:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_74"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_56:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_78"
+      Share_Of_Speech: "1.0%"
+      Turns: 3
+    Person_57:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_81"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_58:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_84"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_59:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_85"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_60:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_86"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_61:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_87"
+      Share_Of_Speech: "0.6%"
+      Turns: 2
+    Person_62:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_88"
+      Share_Of_Speech: "0.5%"
+      Turns: 2
+    Person_63:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_90"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_64:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_97"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_65:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_98"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+
+  Topics:
+    - "The death of Alec Smith after rationing insulin"
+    - "Insulin pricing in the United States and Eli Lilly's Humalog"
+    - "Cross-border insulin caravans to Canada"
+    - "Alleged lockstep pricing by Eli Lilly, Novo Nordisk and Sanofi"
+    - "The Alec Smith Emergency Insulin Act and its failure in the legislature"
+    - "Health insurance deductibles and aging off a parent's plan at 26"
+    - "State attorney general enforcement against price fixing"
+
+  Source:
+    Canonical_ID: "1f8627d7526b4ce3"
+    Transcribed: "2026-09-17T12:30:53.433303-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 2996
+    Segments: 234
+
+  Timestamps:
+    Downloaded_At: "2026-09-17T11:29:49.578395-07:00"
+    Transcription_Finished: "2026-09-17T12:30:53.433303-07:00"
+    Recorded: "2019-09-18"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "1K-tLrM0-oY.ctm"
+    Fountain: "1K-tLrM0-oY.fountain"
+    Diarization_RTTM: "1K-tLrM0-oY.rttm"
+    As_Broadcast_Script: "1K-tLrM0-oY.script.txt"
+    Segments_JSON: "1K-tLrM0-oY.segments.json"
+    Segments_JSONL: "1K-tLrM0-oY.segments.jsonl"
+    Subtitles_SRT: "1K-tLrM0-oY.srt"
+    Plain_Text: "1K-tLrM0-oY.transcription"
+    Subtitles_VTT: "1K-tLrM0-oY.vtt"
+    Transcript_SHA256: "c8472e9057221c7d1d14be23f212e46e9cd500b57746c6613149c20d26df312f"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "keith_ellison_mn_ag"
+    video_uid: "keith_ellison_mn_ag::1K-tLrM0-oY"
+    video_key: "1K-tLrM0-oY"
+    youtube_id: "1K-tLrM0-oY"
+    priority: 766
+    ceiling: 1000
+    raw_score: 550
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-17T19:11:18.533Z"
+    demand_run_id: "job_1789672046534_129"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=1K-tLrM0-oY"
+    source_ref: "1K-tLrM0-oY"
+    subject_kind: "new_politician"

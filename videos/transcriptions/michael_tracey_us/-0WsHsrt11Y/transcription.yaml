@@ -1,0 +1,241 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Bernie mocks NYT reporter for asking dumb questions"
+    Description: >-
+      A 19-minute solo commentary responding to a New York Times article about
+      Bernie
+      Sanders' foreign-policy activity as mayor of Burlington, Vermont in the
+      1980s.
+      The speaker says he already knew much of the material, having spent time
+      in 2015
+      in the University of Vermont archive holding Sanders' mayoral papers, and
+      grants
+      that some of the reporting is genuinely interesting. His objection is to
+      the
+      framing: he argues the article presents the 1980s activity as unserious or
+      disqualifying while omitting context. He works through the specifics the
+      article
+      raises — Sanders' 1985 trip to Managua and meeting with Daniel Ortega,
+      where he
+      opposed the Reagan administration's CIA-backed effort against the
+      Nicaraguan
+      government and complained that American media had 'not reflected fairly
+      the goals
+      and accomplishments of your administration'; his reported line to CBS
+      journalist
+      George Creel, 'You are worms'; the 1988 sister-city relationship between
+      Burlington and a Soviet city on the Volga and the accompanying trip; his
+      remark
+      that Soviet health care was free or nearly so; his call to 'reduce the
+      obscene
+      federal military budget'; his stated view that aspects of Cuban governance
+      were
+      laudable; and a 1982 pamphlet and ballot initiative opposing US support
+      for the
+      government of El Salvador. Against each he offers a defence: that
+      Republicans
+      were themselves embracing Gorbachev in that era, that the health-care
+      remark was
+      a statement of fact, that municipal anti-war resolutions are commonplace
+      and
+      symbolic, and that the Times does not mention what he calls the disastrous
+      results of Reagan's Central America policy — which he argues can be
+      traced, with
+      caveats about the looseness of the link, to the instability now driving
+      migration
+      north. He also defends Sanders' record on ordinary municipal functions. A
+      second
+      strand attacks the journalists: he says Chuck Todd asking whether Sanders
+      regrets
+      his Vietnam-era anti-war activism is shameful, and recommends Nick Turse's
+      book
+      'Kill Anything That Moves' on systematic civilian killing in Vietnam. He
+      transcribes portions of Sanders' contentious follow-up interview with
+      Times
+      reporter Sydney Ember about anti-American chants at the Managua rally,
+      endorses
+      Sanders' rudeness ('she deserved it... Bernie should have been ruder'),
+      and
+      accuses Ember of having previously confabulated a sexism controversy about
+      the
+      2016 campaign out of thin air. He closes by arguing that being pressed
+      this way
+      is actually good for Sanders, because consistency is his main political
+      asset and
+      the pressure makes it harder for him to jettison old positions to court
+      the
+      Democratic establishment — while noting he thinks Sanders blundered by
+      towing the
+      mainstream line on Trump and Russia, and saying he voted for him in 2016
+      but is
+      not a 'fanboy'. Every judgement here — about the Times' motives, about
+      Ember,
+      about Reagan's policy and its consequences — is the speaker's own and is
+      contested; none of the journalists he criticises appears to answer.
+    URL: "https://www.youtube.com/watch?v=-0WsHsrt11Y"
+    Video_ID: "-0WsHsrt11Y"
+    Show: "M. Tracey"
+    Runtime: "00:19:03"
+    Language: "en"
+
+  Media:
+    File: "-0WsHsrt11Y.m4a"
+    SHA256: "227db717076e920f71bd0c338ecd09c799f39e9f80eb414d5a4b6b3894555df1"
+    Bytes: 18487433
+    Duration_Seconds: 1143
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-0WsHsrt11Y"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-0WsHsrt11Y.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/michael_tracey_us/-0WsHsrt11Y/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCaLn4FMU_Fp-LBcdbYgYWow"
+    Uploader_ID: "@m-tracey"
+    View_Count: 4691
+    Like_Count: 258
+    Comment_Count: 57
+    Availability: "public"
+    Published_At: "2019-05-19T23:47:50+00:00"
+    Captured_At: "2026-09-17T11:29:56-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  # ONE SPEAKER, EIGHT CLUSTERS. The transcript is a continuous solo
+  # commentary ("Hey, everybody" ... "talk to you later") with no second
+  # voice; the quoted interview exchanges are read aloud by that same
+  # speaker, not played as audio. Diarization split the monologue across
+  # eight clusters. The transcript never states the speaker's name, so the
+  # entries stay "Unidentified" and Subject is omitted rather than asserted
+  # on whichever cluster happens to carry the largest share.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "7.6%"
+      Turns: 9
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "2.6%"
+      Turns: 5
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "54.1%"
+      Turns: 59
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "10.1%"
+      Turns: 14
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "13.7%"
+      Turns: 20
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "1.1%"
+      Turns: 2
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "4.7%"
+      Turns: 5
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "6.2%"
+      Turns: 6
+
+  Topics:
+    - "Bernie Sanders' 1980s foreign-policy activity as mayor of Burlington"
+    - "New York Times coverage of Sanders and its framing"
+    - "US policy in Nicaragua, El Salvador and Central America under Reagan"
+    - "Burlington's Soviet sister-city relationship and Cold War diplomacy"
+    - "Sanders' contentious interview with reporter Sydney Ember"
+    - "Press criticism, Chuck Todd, and Vietnam-era anti-war activism"
+
+  Source:
+    Canonical_ID: "383fedc40f928473"
+    Transcribed: "2026-09-17T12:25:18.521266-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 2671
+    Segments: 196
+
+  Timestamps:
+    Downloaded_At: "2026-09-17T11:30:36.441774-07:00"
+    Transcription_Finished: "2026-09-17T12:25:18.521266-07:00"
+    Recorded: "2019-05-19"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-0WsHsrt11Y.ctm"
+    Fountain: "-0WsHsrt11Y.fountain"
+    Diarization_RTTM: "-0WsHsrt11Y.rttm"
+    As_Broadcast_Script: "-0WsHsrt11Y.script.txt"
+    Segments_JSON: "-0WsHsrt11Y.segments.json"
+    Segments_JSONL: "-0WsHsrt11Y.segments.jsonl"
+    Subtitles_SRT: "-0WsHsrt11Y.srt"
+    Plain_Text: "-0WsHsrt11Y.transcription"
+    Subtitles_VTT: "-0WsHsrt11Y.vtt"
+    Transcript_SHA256: "9481bb4068fab7ab380a010c5e6b488fde632867f6a892a082124f9ba1b60789"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "michael_tracey_us"
+    video_uid: "michael_tracey_us::-0WsHsrt11Y"
+    video_key: "-0WsHsrt11Y"
+    youtube_id: "-0WsHsrt11Y"
+    priority: 766
+    ceiling: 1000
+    raw_score: 550
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T16:23:52.832Z"
+    demand_run_id: "job_1789057406903_3"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-0WsHsrt11Y"
+    source_ref: "-0WsHsrt11Y"
+    subject_kind: "new_politician"

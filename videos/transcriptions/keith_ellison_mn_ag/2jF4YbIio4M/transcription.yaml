@@ -1,0 +1,150 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Protect the Minnesota Dream Act"
+    Description: >-
+      A 2.5-minute direct-to-camera message from Keith Ellison, who identifies
+      himself
+      as Minnesota Attorney General, about his office's defence of the Minnesota
+      Dream
+      Act. He describes the law as allowing a person who attended Minnesota
+      schools
+      for years, and who came to the country as a child because their parents
+      brought
+      them, to attend a Minnesota college at in-state tuition — adding that
+      anyone who
+      moves to Minnesota and makes it their home can do the same. He says the
+      federal
+      government is suing Minnesota over the law and, in his characterisation,
+      is
+      'falsely accusing us of discrimination'; that framing is his own and the
+      federal
+      case is not represented here. The second half of the video is Ellison
+      reading
+      thank-you cards sent to his office by students affected by the law,
+      including
+      one in Spanish which he translates on camera, and two in English. He
+      closes by
+      arguing that these are Minnesota kids who grew up in the state and that
+      the
+      federal action would make higher education much harder for them to reach.
+      The
+      video is advocacy for a state law by the official defending it in court,
+      and
+      carries no response from the opposing party in that litigation.
+    URL: "https://www.youtube.com/watch?v=2jF4YbIio4M"
+    Video_ID: "2jF4YbIio4M"
+    Show: "MN Attorney General Keith Ellison"
+    Runtime: "00:02:39"
+    Language: "en"
+
+  Media:
+    File: "2jF4YbIio4M.m4a"
+    SHA256: "d1eae905ece704ee5adbada99eea313e5593b0226c572867f7059b36989e9632"
+    Bytes: 2572806
+    Duration_Seconds: 159
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=2jF4YbIio4M"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "2jF4YbIio4M.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/keith_ellison_mn_ag/2jF4YbIio4M/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UC24VphM2BVBQYrN2oTjjHUQ"
+    Uploader_ID: "@agkeithellison"
+    View_Count: 41
+    Like_Count: 2
+    Comment_Count: 3
+    Availability: "public"
+    Published_At: "2025-10-27T19:59:18+00:00"
+    Captured_At: "2026-09-17T11:29:54-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Keith Ellison"
+      Role: "Minnesota Attorney General; sole speaker, identifies himself on camera"
+      Subject: true
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 7
+
+  Topics:
+    - "The Minnesota Dream Act and in-state tuition"
+    - "Federal litigation against a Minnesota state law"
+    - "Immigrant students brought to the US as children"
+    - "Thank-you cards from students affected by the law"
+
+  Source:
+    Canonical_ID: "aae3def42f19f904"
+    Transcribed: "2026-09-17T12:12:30.168071-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 459
+    Segments: 12
+
+  Timestamps:
+    Downloaded_At: "2026-09-17T11:29:54.958986-07:00"
+    Transcription_Finished: "2026-09-17T12:12:30.168071-07:00"
+    Recorded: "2025-10-27"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "2jF4YbIio4M.ctm"
+    Fountain: "2jF4YbIio4M.fountain"
+    Diarization_RTTM: "2jF4YbIio4M.rttm"
+    As_Broadcast_Script: "2jF4YbIio4M.script.txt"
+    Segments_JSON: "2jF4YbIio4M.segments.json"
+    Segments_JSONL: "2jF4YbIio4M.segments.jsonl"
+    Subtitles_SRT: "2jF4YbIio4M.srt"
+    Plain_Text: "2jF4YbIio4M.transcription"
+    Subtitles_VTT: "2jF4YbIio4M.vtt"
+    Transcript_SHA256: "472dd43fbbe7a160bfb26a832773bac658f7b72a000c71e49011b567c849c839"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "keith_ellison_mn_ag"
+    video_uid: "keith_ellison_mn_ag::2jF4YbIio4M"
+    video_key: "2jF4YbIio4M"
+    youtube_id: "2jF4YbIio4M"
+    priority: 766
+    ceiling: 1000
+    raw_score: 550
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-17T19:11:18.533Z"
+    demand_run_id: "job_1789672046534_129"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=2jF4YbIio4M"
+    source_ref: "2jF4YbIio4M"
+    subject_kind: "new_politician"

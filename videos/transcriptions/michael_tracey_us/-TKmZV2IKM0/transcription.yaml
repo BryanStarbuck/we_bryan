@@ -1,0 +1,198 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: 'AOC says Trump is running "concentration camps"'
+    Description: >-
+      A 13-minute solo commentary arguing that Alexandria Ocasio-Cortez was
+      wrong to
+      describe US immigration detention centres as 'concentration camps'. The
+      speaker's
+      case is about consistency of language rather than about conditions. He
+      argues
+      that in American political usage the term necessarily invokes the
+      Holocaust, so
+      anyone who does not intend that comparison should choose a different word,
+      and
+      that the intent has to be questioned if they do not. He is explicit that
+      this is
+      separate from the substance: he grants there is a serious influx of
+      migrants
+      driven by instability and destitution in Central America, and that the
+      conditions
+      people are held in are a legitimate subject of scrutiny. He notes that
+      Bernie
+      Sanders, asked on CNN, said he does not use the term, and argues that
+      unless one
+      is willing to call Sanders a denier of fascism, the objection to the
+      wording has
+      to be conceded. His central argument turns on an article Ocasio-Cortez
+      herself
+      circulated to justify the term, which he says states that the detention
+      network
+      has existed for decades — begun under Clinton in the 1990s and built up
+      under
+      Bush, Obama and then Trump. From that he poses the question he returns to
+      repeatedly: either Clinton and Obama also presided over concentration
+      camps, or
+      something changed on 20 January 2017, and if the latter, the label tracks
+      who is
+      in office rather than how the facilities operate. He cites a thread by
+      Andy
+      Grewal, a law professor at the University of Iowa, for supporting
+      instances under
+      Obama: the administration's successful 2016 argument in the Ninth Circuit
+      case
+      Flores v. Lynch that it could separate parents from children immediately,
+      and
+      reports of children held in cages so crowded they were 'forced to sleep
+      standing
+      up or not at all', plus an ACLU study finding pervasive abuse and neglect
+      of
+      unaccompanied children in CBP custody. He says this is not a 'but Obama
+      did it'
+      point but a demand for a consistent standard. He declines to take a side
+      on the
+      scholarly debate over whether the Holocaust is historically unique or can
+      be
+      analogised, saying only that invoking it requires a well-made argument. He
+      closes
+      by arguing that Ocasio-Cortez should be held to a high standard because of
+      her
+      influence, that right-wing obsession with her is nonetheless excessive,
+      and that
+      histrionic rhetoric crowds out rational inquiry into real problems —
+      followed by
+      a Patreon and podcast promo. Every judgement here is the speaker's own;
+      neither
+      Ocasio-Cortez nor anyone he criticises appears to answer, and his reading
+      of her
+      motives is inference rather than established fact.
+    URL: "https://www.youtube.com/watch?v=-TKmZV2IKM0"
+    Video_ID: "-TKmZV2IKM0"
+    Show: "M. Tracey"
+    Runtime: "00:13:29"
+    Language: "en"
+
+  Media:
+    File: "-TKmZV2IKM0.m4a"
+    SHA256: "3324846cc40734928dcbcd8e46228e0e27c4ff6563f08a0274f2ce6a2c3a3d36"
+    Bytes: 13096811
+    Duration_Seconds: 809
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-TKmZV2IKM0"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-TKmZV2IKM0.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/michael_tracey_us/-TKmZV2IKM0/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCaLn4FMU_Fp-LBcdbYgYWow"
+    Uploader_ID: "@m-tracey"
+    View_Count: 3854
+    Like_Count: 260
+    Comment_Count: 268
+    Availability: "public"
+    Published_At: "2019-06-19T19:59:16+00:00"
+    Captured_At: "2026-09-17T11:30:56-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  # ONE SPEAKER, TWO CLUSTERS. The transcript is a continuous solo commentary
+  # ("Hello friends" ... "I will talk to you later") with no second voice in
+  # it; diarization split that single monologue across two clusters. The
+  # transcript never states the speaker's name — the channel does — so the
+  # entries stay "Unidentified" and Subject is omitted rather than asserted
+  # on a cluster the words themselves do not identify.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "43.2%"
+      Turns: 32
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "56.8%"
+      Turns: 41
+
+  Topics:
+    - "Whether US immigration detention centres should be called 'concentration camps'"
+    - "Holocaust analogy in American political rhetoric"
+    - "Continuity of immigration detention across Clinton, Bush, Obama and Trump administrations"
+    - "Flores v. Lynch and family separation under Obama"
+    - "Bernie Sanders declining to use the term"
+    - "Political communication and the standards applied to influential politicians"
+
+  Source:
+    Canonical_ID: "bc9b1ea9e01728a5"
+    Transcribed: "2026-09-17T12:20:03.680452-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1716
+    Segments: 142
+
+  Timestamps:
+    Downloaded_At: "2026-09-17T11:30:59.567743-07:00"
+    Transcription_Finished: "2026-09-17T12:20:03.680452-07:00"
+    Recorded: "2019-06-19"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-TKmZV2IKM0.ctm"
+    Fountain: "-TKmZV2IKM0.fountain"
+    Diarization_RTTM: "-TKmZV2IKM0.rttm"
+    As_Broadcast_Script: "-TKmZV2IKM0.script.txt"
+    Segments_JSON: "-TKmZV2IKM0.segments.json"
+    Segments_JSONL: "-TKmZV2IKM0.segments.jsonl"
+    Subtitles_SRT: "-TKmZV2IKM0.srt"
+    Plain_Text: "-TKmZV2IKM0.transcription"
+    Subtitles_VTT: "-TKmZV2IKM0.vtt"
+    Transcript_SHA256: "9f6de6a80686315c1f97aa8fdf747994c11c062cdca776a45f6a994c3491a1cc"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "michael_tracey_us"
+    video_uid: "michael_tracey_us::-TKmZV2IKM0"
+    video_key: "-TKmZV2IKM0"
+    youtube_id: "-TKmZV2IKM0"
+    priority: 766
+    ceiling: 1000
+    raw_score: 550
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T16:23:52.832Z"
+    demand_run_id: "job_1789057406903_3"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-TKmZV2IKM0"
+    source_ref: "-TKmZV2IKM0"
+    subject_kind: "new_politician"

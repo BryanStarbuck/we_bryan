@@ -1,0 +1,157 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Bret Weinstein on the Charlie Kirk Assassination"
+    Description: >-
+      An 88-second excerpt of an interview with Bret Weinstein, recorded shortly
+      after
+      the killing of Charlie Kirk. Weinstein opens by saying he feels personally
+      threatened and is speaking anyway because he believes it is the right
+      thing to
+      do; he says that as a Jewish person arguing that current policy is not in
+      the
+      interest of either the Israeli people or diaspora Jews, and that it is
+      creating
+      conditions that result in pogroms and genocides, he expects that position
+      to be
+      perceived as threatening by some. He then says he does not trust 'whatever
+      the
+      forces are that just pushed us into a war'. On Kirk, Weinstein states only
+      that
+      he has 'been handed a story that doesn't add up', says he did not know
+      Kirk well
+      but knew he had been publicly clear about his concerns over an attack on
+      Iran,
+      and speculates that 'something' saw a closing window and an opportunity to
+      bring
+      about that war while Kirk would have been a formidable voice against it.
+      He also
+      refers to a remark he attributes to Netanyahu about having dreamt of this
+      war
+      for forty years. Every claim here is Weinstein's own speculation, offered
+      as
+      such and unproven; he names no perpetrator and presents no evidence, and
+      none of
+      the parties he alludes to is present to answer.
+    URL: "https://www.youtube.com/watch?v=-3VJ1RxVdtI"
+    Video_ID: "-3VJ1RxVdtI"
+    Show: "Tucker Carlson"
+    Runtime: "00:01:27"
+    Language: "en"
+
+  Media:
+    File: "-3VJ1RxVdtI.m4a"
+    SHA256: "6cde8e6e8adb8918d8a343567e8458f9611bcba71a2f9167a08ae85c8334e6c1"
+    Bytes: 1419207
+    Duration_Seconds: 87
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-3VJ1RxVdtI"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-3VJ1RxVdtI.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/tucker_carlson_us_pres/-3VJ1RxVdtI/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCGttrUON87gWfU6dMWm1fcA"
+    Uploader_ID: "@TuckerCarlson"
+    View_Count: 352605
+    Like_Count: 20706
+    Comment_Count: 1100
+    Availability: "public"
+    Published_At: "2026-03-14T21:00:01+00:00"
+    Captured_At: "2026-09-17T11:31:39-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "98.8%"
+      Turns: 2
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "1.2%"
+      Turns: 1
+
+  Topics:
+    - "The killing of Charlie Kirk, and Weinstein's stated doubts about the account given"
+    - "US and Israeli policy toward Iran"
+    - "A speaker's stated fear of reprisal for dissenting publicly"
+    - "Antisemitism, diaspora Jewish opinion and Israeli policy"
+
+  Source:
+    Canonical_ID: "2631aa7e133653e1"
+    Transcribed: "2026-09-17T12:12:12.641883-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 291
+    Segments: 5
+
+  Timestamps:
+    Downloaded_At: "2026-09-17T11:31:40.704865-07:00"
+    Transcription_Finished: "2026-09-17T12:12:12.641883-07:00"
+    Recorded: "2026-03-14"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-3VJ1RxVdtI.ctm"
+    Fountain: "-3VJ1RxVdtI.fountain"
+    Diarization_RTTM: "-3VJ1RxVdtI.rttm"
+    As_Broadcast_Script: "-3VJ1RxVdtI.script.txt"
+    Segments_JSON: "-3VJ1RxVdtI.segments.json"
+    Segments_JSONL: "-3VJ1RxVdtI.segments.jsonl"
+    Subtitles_SRT: "-3VJ1RxVdtI.srt"
+    Plain_Text: "-3VJ1RxVdtI.transcription"
+    Subtitles_VTT: "-3VJ1RxVdtI.vtt"
+    Transcript_SHA256: "afa0ef798cf58a4799f18993f7d22c48604c70762de4cfad8b8e1134e82f1954"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "tucker_carlson_us_pres"
+    video_uid: "tucker_carlson_us_pres::-3VJ1RxVdtI"
+    video_key: "-3VJ1RxVdtI"
+    youtube_id: "-3VJ1RxVdtI"
+    priority: 755
+    ceiling: 1000
+    raw_score: 530
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 12
+    seat_rank: 300
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-17T19:11:18.533Z"
+    demand_run_id: "job_1789672046534_129"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-3VJ1RxVdtI"
+    source_ref: "-3VJ1RxVdtI"
+    subject_kind: "new_politician"
