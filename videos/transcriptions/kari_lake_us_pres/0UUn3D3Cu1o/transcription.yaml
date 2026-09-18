@@ -1,0 +1,126 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Join Kari and Senator Mike Lee at SodaRush on June 28th!"
+    Description: >-
+      A 29-second campaign event announcement in which Kari Lake invites Arizona
+      supporters to a June 28th appearance with Senator Mike Lee of Utah at Soda Rush in
+      Mesa. She says she is thrilled to have Senator Lee's endorsement and excited that he
+      will campaign with her in the state, and directs viewers to her campaign site for
+      details. It is scheduling and endorsement promotion with no policy content.
+    URL: "https://www.youtube.com/watch?v=0UUn3D3Cu1o"
+    Video_ID: "0UUn3D3Cu1o"
+    Show: "Kari Lake"
+    Runtime: "00:00:28"
+    Language: "en"
+
+  Media:
+    File: "0UUn3D3Cu1o.m4a"
+    SHA256: "7adf09636b6a7b12591afc2abdac87dc9e985132ece959b9b1b7f171b82db107"
+    Bytes: 466123
+    Duration_Seconds: 28
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=0UUn3D3Cu1o"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "0UUn3D3Cu1o.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/kari_lake_us_pres/0UUn3D3Cu1o/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCakn6ZCwlFA6Ct6XSU-HmtQ"
+    Uploader_ID: "@karilake"
+    View_Count: 1701
+    Like_Count: 213
+    Comment_Count: 20
+    Availability: "public"
+    Published_At: "2024-06-26T19:55:28+00:00"
+    Captured_At: "2026-09-17T13:44:21-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 1
+
+  Topics:
+    - Campaign event promotion
+    - Mike Lee endorsement
+    - Arizona Senate campaigning
+    - Mesa, Arizona
+
+  Source:
+    Canonical_ID: "891ebeb48f8c2520"
+    Transcribed: "2026-09-17T14:33:12.389815-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 82
+    Segments: 2
+
+  Timestamps:
+    Downloaded_At: "2026-09-17T13:44:22.384675-07:00"
+    Transcription_Finished: "2026-09-17T14:33:12.389815-07:00"
+    Recorded: "2024-06-26"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "0UUn3D3Cu1o.ctm"
+    Fountain: "0UUn3D3Cu1o.fountain"
+    Diarization_RTTM: "0UUn3D3Cu1o.rttm"
+    As_Broadcast_Script: "0UUn3D3Cu1o.script.txt"
+    Segments_JSON: "0UUn3D3Cu1o.segments.json"
+    Segments_JSONL: "0UUn3D3Cu1o.segments.jsonl"
+    Subtitles_SRT: "0UUn3D3Cu1o.srt"
+    Plain_Text: "0UUn3D3Cu1o.transcription"
+    Subtitles_VTT: "0UUn3D3Cu1o.vtt"
+    Transcript_SHA256: "c8838d8411473808240e3732194d34ff74ae541a72a46521f318717336046789"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "kari_lake_us_pres"
+    video_uid: "kari_lake_us_pres::0UUn3D3Cu1o"
+    video_key: "0UUn3D3Cu1o"
+    youtube_id: "0UUn3D3Cu1o"
+    priority: 743
+    ceiling: 1000
+    raw_score: 510
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 14
+    seat_rank: 300
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-17T23:08:34.219Z"
+    demand_run_id: "job_1789686480125_227"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=0UUn3D3Cu1o"
+    source_ref: "0UUn3D3Cu1o"
+    subject_kind: "new_politician"

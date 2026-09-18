@@ -1,0 +1,127 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "House Republicans advanced bills to abolish the Department of Education."
+    Description: >-
+      A 16-second clip of Senator Patty Murray speaking against House Republican
+      legislation that she says would rubber-stamp the Trump administration's efforts to
+      dismantle the Department of Education. She identifies herself as a former preschool
+      teacher and states that every one of those bills is dead on arrival as long as she
+      is a United States senator. No specific bill is named and no opposing view appears
+      in the clip.
+    URL: "https://www.youtube.com/watch?v=-1ieReQSWAY"
+    Video_ID: "-1ieReQSWAY"
+    Show: "Senator Patty Murray"
+    Runtime: "00:00:16"
+    Language: "en"
+
+  Media:
+    File: "-1ieReQSWAY.m4a"
+    SHA256: "7b7570a67166b9f09bbc1b38afe24ddddd8de6dfa17ccadcfcb60b1eb42347e7"
+    Bytes: 261840
+    Duration_Seconds: 16
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-1ieReQSWAY"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-1ieReQSWAY.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/patty_murray_wa_sen/-1ieReQSWAY/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCb8jq3TvQ3AzKsexhWfFLoA"
+    Uploader_ID: "@pattymurray"
+    View_Count: 1265
+    Like_Count: 91
+    Comment_Count: 12
+    Availability: "public"
+    Published_At: "2026-07-30T13:41:03+00:00"
+    Captured_At: "2026-09-17T13:45:53-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 2
+
+  Topics:
+    - Department of Education
+    - House Republican legislation to abolish the department
+    - Federal education policy
+    - Senate Democratic opposition messaging
+
+  Source:
+    Canonical_ID: "d713bee4e21ec877"
+    Transcribed: "2026-09-17T14:33:04.391982-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 49
+    Segments: 4
+
+  Timestamps:
+    Downloaded_At: "2026-09-17T13:45:54.101209-07:00"
+    Transcription_Finished: "2026-09-17T14:33:04.391982-07:00"
+    Recorded: "2026-07-30"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-1ieReQSWAY.ctm"
+    Fountain: "-1ieReQSWAY.fountain"
+    Diarization_RTTM: "-1ieReQSWAY.rttm"
+    As_Broadcast_Script: "-1ieReQSWAY.script.txt"
+    Segments_JSON: "-1ieReQSWAY.segments.json"
+    Segments_JSONL: "-1ieReQSWAY.segments.jsonl"
+    Subtitles_SRT: "-1ieReQSWAY.srt"
+    Plain_Text: "-1ieReQSWAY.transcription"
+    Subtitles_VTT: "-1ieReQSWAY.vtt"
+    Transcript_SHA256: "89f39253a86d0cb1724c30e6f463d3b9501fd796494bf14abf40b4f425f3c3e5"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "patty_murray_wa_sen"
+    video_uid: "patty_murray_wa_sen::-1ieReQSWAY"
+    video_key: "-1ieReQSWAY"
+    youtube_id: "-1ieReQSWAY"
+    priority: 734
+    ceiling: 1000
+    raw_score: 495
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 5
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-17T23:08:34.219Z"
+    demand_run_id: "job_1789686480125_227"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-1ieReQSWAY"
+    source_ref: "-1ieReQSWAY"
+    subject_kind: "new_politician"

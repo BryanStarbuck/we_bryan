@@ -1,0 +1,433 @@
+{
+  "schema_version": 2,
+  "canonical_id": "d713bee4e21ec877",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 15.51,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-17T21:33:04.037Z",
+  "text_sha256": "89f39253a86d0cb1724c30e6f463d3b9501fd796494bf14abf40b4f425f3c3e5",
+  "segments_sha256": "def0b1f047c4f678a21bf24c809b85c4a9dfa5852498993dea2dc1b10bff1916",
+  "words_sha256": "2a7369dfeae62714f58767295afa8616034e3104b2cf8daeb54a1c9faa4a09aa",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 1,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 2,
+    "clusters": 1,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 15.1
+      },
+      "clean_s": 15.1,
+      "speaking_s": 15.1,
+      "first_s": 0.03
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.07,
+      "end_s": 0.07,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    },
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 9.17,
+      "end_s": 9.6,
+      "segment_i": 2,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.07,
+      "end_s": 0.08,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "I",
+      "words": [
+        {
+          "w": "I",
+          "s": 0.07,
+          "e": 0.07,
+          "c": 0.90568
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.07,
+      "end_s": 9.17,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "want to address legislation we've seen in the House of Representatives that would rubber stamp much of the Trump administration's efforts to dismantle the Department of Education. As long",
+      "words": [
+        {
+          "w": "want",
+          "s": 0.07,
+          "e": 0.35,
+          "c": 0.991287
+        },
+        {
+          "w": "to",
+          "s": 0.35,
+          "e": 0.48,
+          "c": 0.999319
+        },
+        {
+          "w": "address",
+          "s": 0.48,
+          "e": 1,
+          "c": 0.996413
+        },
+        {
+          "w": "legislation",
+          "s": 1,
+          "e": 1.44,
+          "c": 0.885529
+        },
+        {
+          "w": "we've",
+          "s": 1.44,
+          "e": 1.59,
+          "c": 0.923288
+        },
+        {
+          "w": "seen",
+          "s": 1.74,
+          "e": 2,
+          "c": 0.913651
+        },
+        {
+          "w": "in",
+          "s": 2,
+          "e": 2.08,
+          "c": 0.950886
+        },
+        {
+          "w": "the",
+          "s": 2.08,
+          "e": 2.2,
+          "c": 0.975465
+        },
+        {
+          "w": "House",
+          "s": 2.2,
+          "e": 2.32,
+          "c": 0.96402
+        },
+        {
+          "w": "of",
+          "s": 2.42,
+          "e": 2.5,
+          "c": 0.98658
+        },
+        {
+          "w": "Representatives",
+          "s": 2.5,
+          "e": 3.2,
+          "c": 0.965939
+        },
+        {
+          "w": "that",
+          "s": 3.2,
+          "e": 3.56,
+          "c": 0.840041
+        },
+        {
+          "w": "would",
+          "s": 3.56,
+          "e": 3.74,
+          "c": 0.895767
+        },
+        {
+          "w": "rubber",
+          "s": 3.76,
+          "e": 4.16,
+          "c": 0.857954
+        },
+        {
+          "w": "stamp",
+          "s": 4.16,
+          "e": 4.58,
+          "c": 0.76275
+        },
+        {
+          "w": "much",
+          "s": 4.6,
+          "e": 4.97,
+          "c": 0.881262
+        },
+        {
+          "w": "of",
+          "s": 4.99,
+          "e": 5.07,
+          "c": 0.987767
+        },
+        {
+          "w": "the",
+          "s": 5.07,
+          "e": 5.18,
+          "c": 0.9925
+        },
+        {
+          "w": "Trump",
+          "s": 5.28,
+          "e": 5.42,
+          "c": 0.991311
+        },
+        {
+          "w": "administration's",
+          "s": 5.47,
+          "e": 6.29,
+          "c": 0.879992
+        },
+        {
+          "w": "efforts",
+          "s": 6.3,
+          "e": 6.77,
+          "c": 0.982978
+        },
+        {
+          "w": "to",
+          "s": 7.09,
+          "e": 7.09,
+          "c": 0.986654
+        },
+        {
+          "w": "dismantle",
+          "s": 7.17,
+          "e": 7.5,
+          "c": 0.999214
+        },
+        {
+          "w": "the",
+          "s": 7.5,
+          "e": 7.63,
+          "c": 0.998805
+        },
+        {
+          "w": "Department",
+          "s": 7.63,
+          "e": 8.08,
+          "c": 0.982293
+        },
+        {
+          "w": "of",
+          "s": 8.08,
+          "e": 8.17,
+          "c": 0.995774
+        },
+        {
+          "w": "Education.",
+          "s": 8.17,
+          "e": 8.74,
+          "c": 0.984866
+        },
+        {
+          "w": "As",
+          "s": 8.81,
+          "e": 8.88,
+          "c": 0.999722
+        },
+        {
+          "w": "long",
+          "s": 8.88,
+          "e": 9.17,
+          "c": 0.999928
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "start_s": 9.17,
+      "end_s": 9.6,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "as this",
+      "words": [
+        {
+          "w": "as",
+          "s": 9.17,
+          "e": 9.31,
+          "c": 0.999996
+        },
+        {
+          "w": "this",
+          "s": 9.31,
+          "e": 9.6,
+          "c": 0.999929
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "start_s": 9.6,
+      "end_s": 15.51,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "former preschool teacher is a United States senator, every one of those bills is dead on arrival.",
+      "words": [
+        {
+          "w": "former",
+          "s": 9.6,
+          "e": 10.01,
+          "c": 0.999893
+        },
+        {
+          "w": "preschool",
+          "s": 10.12,
+          "e": 10.66,
+          "c": 0.999506
+        },
+        {
+          "w": "teacher",
+          "s": 10.71,
+          "e": 11.18,
+          "c": 0.998649
+        },
+        {
+          "w": "is",
+          "s": 11.18,
+          "e": 11.32,
+          "c": 0.999533
+        },
+        {
+          "w": "a",
+          "s": 11.32,
+          "e": 11.39,
+          "c": 0.920363
+        },
+        {
+          "w": "United",
+          "s": 11.39,
+          "e": 11.82,
+          "c": 0.99935
+        },
+        {
+          "w": "States",
+          "s": 11.82,
+          "e": 12.25,
+          "c": 0.999472
+        },
+        {
+          "w": "senator,",
+          "s": 12.25,
+          "e": 12.89,
+          "c": 0.70757
+        },
+        {
+          "w": "every",
+          "s": 12.89,
+          "e": 13.25,
+          "c": 0.997541
+        },
+        {
+          "w": "one",
+          "s": 13.25,
+          "e": 13.46,
+          "c": 0.99999
+        },
+        {
+          "w": "of",
+          "s": 13.46,
+          "e": 13.6,
+          "c": 1
+        },
+        {
+          "w": "those",
+          "s": 13.6,
+          "e": 13.92,
+          "c": 0.999866
+        },
+        {
+          "w": "bills",
+          "s": 14.04,
+          "e": 14.32,
+          "c": 0.99979
+        },
+        {
+          "w": "is",
+          "s": 14.32,
+          "e": 14.46,
+          "c": 0.999977
+        },
+        {
+          "w": "dead",
+          "s": 14.46,
+          "e": 14.75,
+          "c": 0.999926
+        },
+        {
+          "w": "on",
+          "s": 14.75,
+          "e": 14.89,
+          "c": 0.998395
+        },
+        {
+          "w": "arrival.",
+          "s": 14.89,
+          "e": 15.51,
+          "c": 0.999743
+        }
+      ]
+    }
+  ]
+}

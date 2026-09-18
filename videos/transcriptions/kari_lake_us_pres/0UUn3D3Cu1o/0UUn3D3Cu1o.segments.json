@@ -1,0 +1,596 @@
+{
+  "schema_version": 2,
+  "canonical_id": "891ebeb48f8c2520",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 28.24,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-17T21:33:11.424Z",
+  "text_sha256": "c8838d8411473808240e3732194d34ff74ae541a72a46521f318717336046789",
+  "segments_sha256": "0d292365f75c4fc1233ff4a15259613b412d540e6bd2e8c7e2ae6322612a1f08",
+  "words_sha256": "8aa172cf881b7dcceaa3424bc51c75cf23cc53a477bd18b4e1cb041c54ac23c4",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 1,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 1,
+    "clusters": 1,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 28
+      },
+      "clean_s": 28,
+      "speaking_s": 28,
+      "first_s": 0.35
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [
+    {
+      "kind": "speaker_undetermined",
+      "start_s": 0.07,
+      "end_s": 0.33,
+      "segment_i": 0,
+      "cause": "no_turn_overlap"
+    }
+  ],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.07,
+      "end_s": 0.33,
+      "speaker": null,
+      "speaker_conf": "none",
+      "speaker_cause": "no_turn_overlap",
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Hey,",
+      "words": [
+        {
+          "w": "Hey,",
+          "s": 0.07,
+          "e": 0.33,
+          "c": 0.706858
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 0.39,
+      "end_s": 28.24,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Arizona, Cary Lake here, and I'm so excited to welcome Senator Mike Lee from Utah to our great state. I'm thrilled to have Senator Lee's endorsement and very excited that he will be campaigning with me in the Grand Canyon State. We would love to see you this Friday, June 28th, in Mesa at Soda Rush. Swing by and join us on Friday at 4 p.m. You can visit kerrylake.com slash events for more information. I hope to see you there.",
+      "words": [
+        {
+          "w": "Arizona,",
+          "s": 0.39,
+          "e": 0.92,
+          "c": 0.783805
+        },
+        {
+          "w": "Cary",
+          "s": 0.92,
+          "e": 1.09,
+          "c": 0.237854
+        },
+        {
+          "w": "Lake",
+          "s": 1.21,
+          "e": 1.44,
+          "c": 0.889726
+        },
+        {
+          "w": "here,",
+          "s": 1.44,
+          "e": 1.88,
+          "c": 0.718953
+        },
+        {
+          "w": "and",
+          "s": 1.88,
+          "e": 2.07,
+          "c": 0.814523
+        },
+        {
+          "w": "I'm",
+          "s": 2.07,
+          "e": 2.24,
+          "c": 0.999316
+        },
+        {
+          "w": "so",
+          "s": 2.33,
+          "e": 2.37,
+          "c": 0.99923
+        },
+        {
+          "w": "excited",
+          "s": 2.37,
+          "e": 2.84,
+          "c": 0.999216
+        },
+        {
+          "w": "to",
+          "s": 2.84,
+          "e": 2.89,
+          "c": 0.988125
+        },
+        {
+          "w": "welcome",
+          "s": 2.95,
+          "e": 3.3,
+          "c": 0.999331
+        },
+        {
+          "w": "Senator",
+          "s": 3.3,
+          "e": 3.72,
+          "c": 0.979776
+        },
+        {
+          "w": "Mike",
+          "s": 3.72,
+          "e": 3.92,
+          "c": 0.996117
+        },
+        {
+          "w": "Lee",
+          "s": 4.02,
+          "e": 4.16,
+          "c": 0.995915
+        },
+        {
+          "w": "from",
+          "s": 4.16,
+          "e": 4.38,
+          "c": 0.970027
+        },
+        {
+          "w": "Utah",
+          "s": 4.38,
+          "e": 4.67,
+          "c": 0.963984
+        },
+        {
+          "w": "to",
+          "s": 4.71,
+          "e": 5.06,
+          "c": 0.937827
+        },
+        {
+          "w": "our",
+          "s": 5.06,
+          "e": 5.21,
+          "c": 0.973411
+        },
+        {
+          "w": "great",
+          "s": 5.29,
+          "e": 5.45,
+          "c": 0.997193
+        },
+        {
+          "w": "state.",
+          "s": 5.6,
+          "e": 5.84,
+          "c": 0.999878
+        },
+        {
+          "w": "I'm",
+          "s": 5.84,
+          "e": 6.05,
+          "c": 0.599015
+        },
+        {
+          "w": "thrilled",
+          "s": 6.05,
+          "e": 6.63,
+          "c": 0.999973
+        },
+        {
+          "w": "to",
+          "s": 6.63,
+          "e": 6.77,
+          "c": 1
+        },
+        {
+          "w": "have",
+          "s": 6.77,
+          "e": 7.06,
+          "c": 0.999973
+        },
+        {
+          "w": "Senator",
+          "s": 7.06,
+          "e": 7.57,
+          "c": 0.999916
+        },
+        {
+          "w": "Lee's",
+          "s": 7.57,
+          "e": 7.92,
+          "c": 0.999914
+        },
+        {
+          "w": "endorsement",
+          "s": 7.92,
+          "e": 8.72,
+          "c": 0.999661
+        },
+        {
+          "w": "and",
+          "s": 8.72,
+          "e": 8.93,
+          "c": 0.906494
+        },
+        {
+          "w": "very",
+          "s": 8.93,
+          "e": 9.14,
+          "c": 0.999975
+        },
+        {
+          "w": "excited",
+          "s": 9.24,
+          "e": 9.73,
+          "c": 0.999874
+        },
+        {
+          "w": "that",
+          "s": 9.73,
+          "e": 10.02,
+          "c": 0.999882
+        },
+        {
+          "w": "he",
+          "s": 10.02,
+          "e": 10.2,
+          "c": 0.99627
+        },
+        {
+          "w": "will",
+          "s": 10.23,
+          "e": 10.34,
+          "c": 0.703623
+        },
+        {
+          "w": "be",
+          "s": 10.34,
+          "e": 10.54,
+          "c": 0.986237
+        },
+        {
+          "w": "campaigning",
+          "s": 10.92,
+          "e": 11.38,
+          "c": 0.998464
+        },
+        {
+          "w": "with",
+          "s": 11.4,
+          "e": 11.63,
+          "c": 0.999994
+        },
+        {
+          "w": "me",
+          "s": 11.75,
+          "e": 11.86,
+          "c": 0.999992
+        },
+        {
+          "w": "in",
+          "s": 11.86,
+          "e": 12.01,
+          "c": 0.99995
+        },
+        {
+          "w": "the",
+          "s": 12.01,
+          "e": 12.13,
+          "c": 0.999899
+        },
+        {
+          "w": "Grand",
+          "s": 12.26,
+          "e": 12.63,
+          "c": 0.998553
+        },
+        {
+          "w": "Canyon",
+          "s": 12.63,
+          "e": 13.07,
+          "c": 0.999907
+        },
+        {
+          "w": "State.",
+          "s": 13.13,
+          "e": 13.7,
+          "c": 0.766085
+        },
+        {
+          "w": "We",
+          "s": 13.77,
+          "e": 13.87,
+          "c": 0.995758
+        },
+        {
+          "w": "would",
+          "s": 13.87,
+          "e": 14.26,
+          "c": 0.999969
+        },
+        {
+          "w": "love",
+          "s": 14.26,
+          "e": 14.57,
+          "c": 0.999973
+        },
+        {
+          "w": "to",
+          "s": 14.57,
+          "e": 14.72,
+          "c": 0.999989
+        },
+        {
+          "w": "see",
+          "s": 14.72,
+          "e": 14.95,
+          "c": 0.999983
+        },
+        {
+          "w": "you",
+          "s": 14.95,
+          "e": 15.14,
+          "c": 0.999996
+        },
+        {
+          "w": "this",
+          "s": 15.21,
+          "e": 15.41,
+          "c": 0.999949
+        },
+        {
+          "w": "Friday,",
+          "s": 15.49,
+          "e": 16.28,
+          "c": 0.999855
+        },
+        {
+          "w": "June",
+          "s": 16.28,
+          "e": 16.36,
+          "c": 0.959272
+        },
+        {
+          "w": "28th,",
+          "s": 16.69,
+          "e": 17.44,
+          "c": 0.797765
+        },
+        {
+          "w": "in",
+          "s": 17.51,
+          "e": 17.63,
+          "c": 0.979014
+        },
+        {
+          "w": "Mesa",
+          "s": 17.72,
+          "e": 18,
+          "c": 0.997577
+        },
+        {
+          "w": "at",
+          "s": 18,
+          "e": 18.19,
+          "c": 0.999367
+        },
+        {
+          "w": "Soda",
+          "s": 18.19,
+          "e": 18.53,
+          "c": 0.996044
+        },
+        {
+          "w": "Rush.",
+          "s": 18.65,
+          "e": 19.22,
+          "c": 0.990028
+        },
+        {
+          "w": "Swing",
+          "s": 19.22,
+          "e": 19.68,
+          "c": 0.99823
+        },
+        {
+          "w": "by",
+          "s": 19.77,
+          "e": 19.88,
+          "c": 0.998826
+        },
+        {
+          "w": "and",
+          "s": 19.88,
+          "e": 20.16,
+          "c": 0.999947
+        },
+        {
+          "w": "join",
+          "s": 20.16,
+          "e": 20.54,
+          "c": 0.999952
+        },
+        {
+          "w": "us",
+          "s": 20.54,
+          "e": 20.73,
+          "c": 0.999969
+        },
+        {
+          "w": "on",
+          "s": 20.73,
+          "e": 20.92,
+          "c": 0.99999
+        },
+        {
+          "w": "Friday",
+          "s": 20.92,
+          "e": 21.49,
+          "c": 0.999889
+        },
+        {
+          "w": "at",
+          "s": 21.49,
+          "e": 21.64,
+          "c": 0.999939
+        },
+        {
+          "w": "4",
+          "s": 21.72,
+          "e": 21.96,
+          "c": 0.999047
+        },
+        {
+          "w": "p.m.",
+          "s": 21.96,
+          "e": 22.8,
+          "c": 0.95478
+        },
+        {
+          "w": "You",
+          "s": 22.8,
+          "e": 23.02,
+          "c": 0.973909
+        },
+        {
+          "w": "can",
+          "s": 23.07,
+          "e": 23.27,
+          "c": 0.999958
+        },
+        {
+          "w": "visit",
+          "s": 23.59,
+          "e": 23.8,
+          "c": 0.999737
+        },
+        {
+          "w": "kerrylake.com",
+          "s": 23.91,
+          "e": 24.89,
+          "c": 0.308445
+        },
+        {
+          "w": "slash",
+          "s": 24.89,
+          "e": 25.24,
+          "c": 0.978018
+        },
+        {
+          "w": "events",
+          "s": 25.24,
+          "e": 25.69,
+          "c": 0.99862
+        },
+        {
+          "w": "for",
+          "s": 25.7,
+          "e": 25.83,
+          "c": 0.956059
+        },
+        {
+          "w": "more",
+          "s": 25.83,
+          "e": 26.01,
+          "c": 0.993547
+        },
+        {
+          "w": "information.",
+          "s": 26.01,
+          "e": 26.66,
+          "c": 0.960342
+        },
+        {
+          "w": "I",
+          "s": 26.66,
+          "e": 26.72,
+          "c": 0.925781
+        },
+        {
+          "w": "hope",
+          "s": 26.73,
+          "e": 27,
+          "c": 0.999851
+        },
+        {
+          "w": "to",
+          "s": 27.07,
+          "e": 27.18,
+          "c": 0.997973
+        },
+        {
+          "w": "see",
+          "s": 27.18,
+          "e": 27.4,
+          "c": 0.995458
+        },
+        {
+          "w": "you",
+          "s": 27.4,
+          "e": 27.62,
+          "c": 0.992207
+        },
+        {
+          "w": "there.",
+          "s": 27.62,
+          "e": 28.24,
+          "c": 0.995647
+        }
+      ]
+    }
+  ]
+}

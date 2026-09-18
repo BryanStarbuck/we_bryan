@@ -1,0 +1,231 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: '"Katie Hobbs is the political equivalent of OJ Simpson." Kari talks about Election Fraud'
+    Description: >-
+      A television interview in which Kari Lake, introduced as deputy CEO of the U.S. Agency
+      for Global Media, discusses a federal grand jury subpoena for Arizona State Senate
+      records relating to the 2020 Maricopa County audit, disclosed in a post by state
+      Senate President Warren Petersen that the host reads on air. Lake says a day of
+      reckoning is coming for Maricopa County, which she calls ground zero for the most
+      corrupt elections in the country, and names Georgia, Michigan, Wisconsin and
+      Pennsylvania as competitors for that description. She advocates the SAVE Act, proof of
+      citizenship to vote, cleaned voter rolls, hand-counted paper ballots and mail voting
+      limited to travel, military and emergency cases, and suggests members of Congress
+      oppose the SAVE Act because they would lose their seats under honest elections. These
+      are her assertions; no court has found the outcomes she describes, Governor Katie
+      Hobbs's contrary statement is read on air and dismissed by the speakers, and the
+      officials named do not appear to answer.
+    URL: "https://www.youtube.com/watch?v=1MzRaDTaA7w"
+    Video_ID: "1MzRaDTaA7w"
+    Show: "Kari Lake"
+    Runtime: "00:05:53"
+    Language: "en"
+
+  Media:
+    File: "1MzRaDTaA7w.m4a"
+    SHA256: "2c2628248ec4839ec04c61bcb6cc999aec7e483481b901825a03b1181645139f"
+    Bytes: 5721286
+    Duration_Seconds: 353
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=1MzRaDTaA7w"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "1MzRaDTaA7w.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/kari_lake_us_pres/1MzRaDTaA7w/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCakn6ZCwlFA6Ct6XSU-HmtQ"
+    Uploader_ID: "@karilake"
+    View_Count: 5264
+    Like_Count: 669
+    Comment_Count: 102
+    Availability: "public"
+    Published_At: "2026-03-31T16:07:05+00:00"
+    Captured_At: "2026-09-17T13:44:32-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "22.0%"
+      Turns: 8
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "5.3%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "2.9%"
+      Turns: 2
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "1.8%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "13.7%"
+      Turns: 4
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "24.8%"
+      Turns: 5
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "1.7%"
+      Turns: 1
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_09"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_10"
+      Share_Of_Speech: "6.8%"
+      Turns: 3
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_14"
+      Share_Of_Speech: "1.4%"
+      Turns: 1
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_15"
+      Share_Of_Speech: "8.5%"
+      Turns: 2
+    Person_12:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_16"
+      Share_Of_Speech: "0.8%"
+      Turns: 1
+    Person_13:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_18"
+      Share_Of_Speech: "2.5%"
+      Turns: 1
+    Person_14:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_24"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_15:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_26"
+      Share_Of_Speech: "4.7%"
+      Turns: 1
+    Person_16:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_30"
+      Share_Of_Speech: "0.9%"
+      Turns: 1
+    Person_17:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_34"
+      Share_Of_Speech: "1.2%"
+      Turns: 1
+
+  Topics:
+    - Claims about 2020 elections in Maricopa County
+    - Federal grand jury subpoena of Arizona Senate audit records
+    - SAVE Act and proof-of-citizenship voting
+    - Mail ballots, voting machines and hand counting
+    - Katie Hobbs and Arizona election administration
+
+  Source:
+    Canonical_ID: "e9ca70a126923b72"
+    Transcribed: "2026-09-17T16:03:32.672633-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 1038
+    Segments: 49
+
+  Timestamps:
+    Downloaded_At: "2026-09-17T13:44:50.180443-07:00"
+    Transcription_Finished: "2026-09-17T16:03:32.672633-07:00"
+    Recorded: "2026-03-31"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "1MzRaDTaA7w.ctm"
+    Fountain: "1MzRaDTaA7w.fountain"
+    Diarization_RTTM: "1MzRaDTaA7w.rttm"
+    As_Broadcast_Script: "1MzRaDTaA7w.script.txt"
+    Segments_JSON: "1MzRaDTaA7w.segments.json"
+    Segments_JSONL: "1MzRaDTaA7w.segments.jsonl"
+    Subtitles_SRT: "1MzRaDTaA7w.srt"
+    Plain_Text: "1MzRaDTaA7w.transcription"
+    Subtitles_VTT: "1MzRaDTaA7w.vtt"
+    Transcript_SHA256: "96bf77d5c92755e4f11cb0347010b5be4139d4760cf96b3f8a0337cd80b3b98a"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "kari_lake_us_pres"
+    video_uid: "kari_lake_us_pres::1MzRaDTaA7w"
+    video_key: "1MzRaDTaA7w"
+    youtube_id: "1MzRaDTaA7w"
+    priority: 743
+    ceiling: 1000
+    raw_score: 510
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 14
+    seat_rank: 300
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-17T23:08:34.219Z"
+    demand_run_id: "job_1789686480125_227"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=1MzRaDTaA7w"
+    source_ref: "1MzRaDTaA7w"
+    subject_kind: "new_politician"

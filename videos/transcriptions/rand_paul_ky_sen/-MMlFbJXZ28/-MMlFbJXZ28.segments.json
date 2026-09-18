@@ -1,0 +1,584 @@
+{
+  "schema_version": 2,
+  "canonical_id": "4597fd93c0e7defb",
+  "source": "aligned_local",
+  "language": "en",
+  "has_timings": true,
+  "has_speakers": true,
+  "has_words": true,
+  "words_omitted": false,
+  "duration_s": 30.1,
+  "evidence_grade": "aligned",
+  "segment_generation": 1,
+  "produced_at": "2026-09-17T21:30:09.151Z",
+  "text_sha256": "423befff59198a26900a1433e810b47485ba4596cd739072dba6bd624cd1018d",
+  "segments_sha256": "935b47f2257cd9f9a9fa7dae27202dd7106be3268a34b9db4d68dd0e1f3e1a11",
+  "words_sha256": "5c0a402351c624333e5b81ad91a7efee00bc19929a3eeed1d1e6044bbf8a4bf7",
+  "asr": {
+    "engine": "whisper_cpp",
+    "version": null,
+    "model": "ggml-large-v3-turbo-q5_0",
+    "profile": "standard",
+    "compute": "metal+coreml",
+    "vad": "silero",
+    "chunks": 1,
+    "chunks_rejected": 0,
+    "word_timing": "dtw_coarse",
+    "two_pass_chunks": 0
+  },
+  "diar": {
+    "engine": "sherpa-onnx-node",
+    "seg_model": "pyannote-segmentation-3-0-onnx",
+    "emb_model": "eres2net_base_3dspeaker_16k",
+    "turns": 2,
+    "clusters": 2,
+    "overlap_detection": false,
+    "min_speakers": null,
+    "max_speakers": null,
+    "windowed": false,
+    "attribution": null
+  },
+  "voice": {
+    "backend": "dsp",
+    "policy_version": 1
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "n": 1,
+      "label": "Speaker 1 (lower-pitched voice)",
+      "voice": {
+        "descriptor": "man",
+        "p": 0.83,
+        "confidence": "low",
+        "clean_s": 19.4
+      },
+      "clean_s": 19.4,
+      "speaking_s": 19.4,
+      "first_s": 0.03
+    },
+    {
+      "id": "SPEAKER_02",
+      "n": 2,
+      "label": "Speaker 2",
+      "voice": {
+        "descriptor": null,
+        "p": null,
+        "confidence": "none",
+        "clean_s": 10.4
+      },
+      "clean_s": 10.4,
+      "speaking_s": 10.4,
+      "first_s": 19.69
+    }
+  ],
+  "speaker_map": {},
+  "speaker_map_proposed": {},
+  "speaker_identities": {},
+  "gaps": [],
+  "enriched_from": null,
+  "segments": [
+    {
+      "i": 0,
+      "start_s": 0.13,
+      "end_s": 19.42,
+      "speaker": "SPEAKER_00",
+      "speaker_conf": "high",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "Rand Paul stood up for Lake Cumberland, fought for jobs alongside A.K. Steele, and defended our Kentucky tax dollars from wasteful spending overseas. He fights for Kentucky every day. With a 96% voting record and over 400 bills introduced, Rand Paul is the hardest working member of Congress. I'm",
+      "words": [
+        {
+          "w": "Rand",
+          "s": 0.13,
+          "e": 0.27,
+          "c": 0.964394
+        },
+        {
+          "w": "Paul",
+          "s": 0.27,
+          "e": 0.54,
+          "c": 0.996759
+        },
+        {
+          "w": "stood",
+          "s": 0.54,
+          "e": 0.87,
+          "c": 0.977242
+        },
+        {
+          "w": "up",
+          "s": 0.87,
+          "e": 1,
+          "c": 0.996267
+        },
+        {
+          "w": "for",
+          "s": 1,
+          "e": 1.2,
+          "c": 0.996818
+        },
+        {
+          "w": "Lake",
+          "s": 1.2,
+          "e": 1.47,
+          "c": 0.991347
+        },
+        {
+          "w": "Cumberland,",
+          "s": 1.47,
+          "e": 2.16,
+          "c": 0.879419
+        },
+        {
+          "w": "fought",
+          "s": 2.3,
+          "e": 2.6,
+          "c": 0.835323
+        },
+        {
+          "w": "for",
+          "s": 2.6,
+          "e": 2.76,
+          "c": 0.99556
+        },
+        {
+          "w": "jobs",
+          "s": 2.76,
+          "e": 3,
+          "c": 0.991414
+        },
+        {
+          "w": "alongside",
+          "s": 3,
+          "e": 3.6,
+          "c": 0.956079
+        },
+        {
+          "w": "A.K.",
+          "s": 3.6,
+          "e": 3.96,
+          "c": 0.431236
+        },
+        {
+          "w": "Steele,",
+          "s": 3.96,
+          "e": 4.5,
+          "c": 0.317256
+        },
+        {
+          "w": "and",
+          "s": 4.67,
+          "e": 4.84,
+          "c": 0.518253
+        },
+        {
+          "w": "defended",
+          "s": 4.84,
+          "e": 5.32,
+          "c": 0.894746
+        },
+        {
+          "w": "our",
+          "s": 5.32,
+          "e": 5.56,
+          "c": 0.957402
+        },
+        {
+          "w": "Kentucky",
+          "s": 5.63,
+          "e": 6,
+          "c": 0.904559
+        },
+        {
+          "w": "tax",
+          "s": 6,
+          "e": 6.19,
+          "c": 0.979619
+        },
+        {
+          "w": "dollars",
+          "s": 6.19,
+          "e": 6.64,
+          "c": 0.991652
+        },
+        {
+          "w": "from",
+          "s": 6.64,
+          "e": 6.81,
+          "c": 0.990008
+        },
+        {
+          "w": "wasteful",
+          "s": 6.89,
+          "e": 7.39,
+          "c": 0.997967
+        },
+        {
+          "w": "spending",
+          "s": 7.44,
+          "e": 7.91,
+          "c": 0.99871
+        },
+        {
+          "w": "overseas.",
+          "s": 7.91,
+          "e": 8.64,
+          "c": 0.995653
+        },
+        {
+          "w": "He",
+          "s": 8.77,
+          "e": 8.8,
+          "c": 0.999929
+        },
+        {
+          "w": "fights",
+          "s": 8.8,
+          "e": 9.28,
+          "c": 0.999687
+        },
+        {
+          "w": "for",
+          "s": 9.28,
+          "e": 9.52,
+          "c": 0.999987
+        },
+        {
+          "w": "Kentucky",
+          "s": 9.52,
+          "e": 10.17,
+          "c": 0.999964
+        },
+        {
+          "w": "every",
+          "s": 10.17,
+          "e": 10.57,
+          "c": 0.998214
+        },
+        {
+          "w": "day.",
+          "s": 10.57,
+          "e": 11.08,
+          "c": 0.998757
+        },
+        {
+          "w": "With",
+          "s": 11.21,
+          "e": 11.39,
+          "c": 0.999945
+        },
+        {
+          "w": "a",
+          "s": 11.39,
+          "e": 11.46,
+          "c": 0.999899
+        },
+        {
+          "w": "96%",
+          "s": 11.46,
+          "e": 11.99,
+          "c": 0.940431
+        },
+        {
+          "w": "voting",
+          "s": 12.05,
+          "e": 12.47,
+          "c": 0.999672
+        },
+        {
+          "w": "record",
+          "s": 12.47,
+          "e": 12.94,
+          "c": 0.999945
+        },
+        {
+          "w": "and",
+          "s": 12.94,
+          "e": 13.16,
+          "c": 0.999558
+        },
+        {
+          "w": "over",
+          "s": 13.16,
+          "e": 13.48,
+          "c": 0.999933
+        },
+        {
+          "w": "400",
+          "s": 13.48,
+          "e": 14.18,
+          "c": 0.999817
+        },
+        {
+          "w": "bills",
+          "s": 14.18,
+          "e": 14.57,
+          "c": 0.999598
+        },
+        {
+          "w": "introduced,",
+          "s": 14.57,
+          "e": 15.5,
+          "c": 0.999798
+        },
+        {
+          "w": "Rand",
+          "s": 15.5,
+          "e": 15.81,
+          "c": 0.998955
+        },
+        {
+          "w": "Paul",
+          "s": 15.81,
+          "e": 16.09,
+          "c": 0.999966
+        },
+        {
+          "w": "is",
+          "s": 16.18,
+          "e": 16.27,
+          "c": 0.999994
+        },
+        {
+          "w": "the",
+          "s": 16.27,
+          "e": 16.5,
+          "c": 0.999992
+        },
+        {
+          "w": "hardest",
+          "s": 16.5,
+          "e": 17.02,
+          "c": 0.999718
+        },
+        {
+          "w": "working",
+          "s": 17.07,
+          "e": 17.6,
+          "c": 0.787509
+        },
+        {
+          "w": "member",
+          "s": 17.6,
+          "e": 18.07,
+          "c": 0.989106
+        },
+        {
+          "w": "of",
+          "s": 18.07,
+          "e": 18.22,
+          "c": 0.999996
+        },
+        {
+          "w": "Congress.",
+          "s": 18.22,
+          "e": 19.2,
+          "c": 0.999417
+        },
+        {
+          "w": "I'm",
+          "s": 19.27,
+          "e": 19.42,
+          "c": 0.998342
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "start_s": 19.42,
+      "end_s": 30.1,
+      "speaker": "SPEAKER_02",
+      "speaker_conf": "low",
+      "speaker_cause": null,
+      "overlap": false,
+      "low_conf": false,
+      "timing_source": null,
+      "text": "standing up for Kentucky so we can downsize big government, protect our jobs, and give our children a better future. I'm Rand Paul and I approve this message. Thank you.",
+      "words": [
+        {
+          "w": "standing",
+          "s": 19.42,
+          "e": 20.03,
+          "c": 0.999897
+        },
+        {
+          "w": "up",
+          "s": 20.03,
+          "e": 20.11,
+          "c": 0.999908
+        },
+        {
+          "w": "for",
+          "s": 20.17,
+          "e": 20.4,
+          "c": 0.999968
+        },
+        {
+          "w": "Kentucky",
+          "s": 20.4,
+          "e": 21.01,
+          "c": 0.999929
+        },
+        {
+          "w": "so",
+          "s": 21.01,
+          "e": 21.16,
+          "c": 0.999924
+        },
+        {
+          "w": "we",
+          "s": 21.16,
+          "e": 21.3,
+          "c": 0.999828
+        },
+        {
+          "w": "can",
+          "s": 21.32,
+          "e": 21.53,
+          "c": 0.999994
+        },
+        {
+          "w": "downsize",
+          "s": 21.53,
+          "e": 22.13,
+          "c": 0.991047
+        },
+        {
+          "w": "big",
+          "s": 22.13,
+          "e": 22.35,
+          "c": 0.996953
+        },
+        {
+          "w": "government,",
+          "s": 22.35,
+          "e": 23.26,
+          "c": 0.99984
+        },
+        {
+          "w": "protect",
+          "s": 23.26,
+          "e": 23.7,
+          "c": 0.998112
+        },
+        {
+          "w": "our",
+          "s": 23.87,
+          "e": 24.01,
+          "c": 0.999989
+        },
+        {
+          "w": "jobs,",
+          "s": 24.01,
+          "e": 24.46,
+          "c": 0.998717
+        },
+        {
+          "w": "and",
+          "s": 24.46,
+          "e": 24.68,
+          "c": 0.999985
+        },
+        {
+          "w": "give",
+          "s": 24.68,
+          "e": 24.96,
+          "c": 0.9998
+        },
+        {
+          "w": "our",
+          "s": 24.98,
+          "e": 25.2,
+          "c": 0.999969
+        },
+        {
+          "w": "children",
+          "s": 25.2,
+          "e": 25.81,
+          "c": 0.999775
+        },
+        {
+          "w": "a",
+          "s": 25.81,
+          "e": 25.88,
+          "c": 0.999994
+        },
+        {
+          "w": "better",
+          "s": 25.88,
+          "e": 26.33,
+          "c": 0.999893
+        },
+        {
+          "w": "future.",
+          "s": 26.33,
+          "e": 27.14,
+          "c": 0.999966
+        },
+        {
+          "w": "I'm",
+          "s": 27.21,
+          "e": 27.36,
+          "c": 0.54884
+        },
+        {
+          "w": "Rand",
+          "s": 27.36,
+          "e": 27.67,
+          "c": 0.999939
+        },
+        {
+          "w": "Paul",
+          "s": 27.67,
+          "e": 27.98,
+          "c": 0.999975
+        },
+        {
+          "w": "and",
+          "s": 27.98,
+          "e": 28.21,
+          "c": 0.590435
+        },
+        {
+          "w": "I",
+          "s": 28.21,
+          "e": 28.28,
+          "c": 0.99996
+        },
+        {
+          "w": "approve",
+          "s": 28.28,
+          "e": 28.79,
+          "c": 0.996018
+        },
+        {
+          "w": "this",
+          "s": 28.85,
+          "e": 29.14,
+          "c": 0.999807
+        },
+        {
+          "w": "message.",
+          "s": 29.14,
+          "e": 29.98,
+          "c": 0.999771
+        },
+        {
+          "w": "Thank",
+          "s": 30.04,
+          "e": 30.04,
+          "c": 0.128942
+        },
+        {
+          "w": "you.",
+          "s": 30.06,
+          "e": 30.1,
+          "c": 0.946559
+        }
+      ]
+    }
+  ]
+}

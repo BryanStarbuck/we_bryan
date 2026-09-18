@@ -1,0 +1,413 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Sen. Murray Presser on Why Democrats are Fighting to Prevent Health Care Costs from Skyrocketing"
+    Description: >-
+      A recorded press conference in which Senator Patty Murray and other speakers press the
+      Democrats' case on expiring health insurance subsidies, followed by questions from
+      reporters. Murray argues Republicans have created a health care crisis that is costing
+      people insurance, closing hospitals, and will more than double premiums for millions
+      if Congress does not act, and says Republicans would rather shut down the government
+      than negotiate on preventing premiums from exploding. She says a top House Republican
+      recently urged colleagues in private not to talk about the issue. These are her
+      characterisations of the other party's position and motives; no Republican appears to
+      answer them, and the unnamed House Republican and the private remark cannot be checked
+      from the recording.
+    URL: "https://www.youtube.com/watch?v=-QE_mIdGCs8"
+    Video_ID: "-QE_mIdGCs8"
+    Show: "Senator Patty Murray"
+    Runtime: "00:21:24"
+    Language: "en"
+
+  Media:
+    File: "-QE_mIdGCs8.m4a"
+    SHA256: "cafd04137563e2f8722ccad9f605fff414501c956dafe81148097caa91fae1c6"
+    Bytes: 20767254
+    Duration_Seconds: 1284
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=-QE_mIdGCs8"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "-QE_mIdGCs8.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/patty_murray_wa_sen/-QE_mIdGCs8/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCb8jq3TvQ3AzKsexhWfFLoA"
+    Uploader_ID: "@pattymurray"
+    View_Count: 174
+    Like_Count: 31
+    Comment_Count: 7
+    Availability: "public"
+    Published_At: "2025-10-01T17:58:47+00:00"
+    Captured_At: "2026-09-17T13:46:01-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "4.2%"
+      Turns: 6
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "2.3%"
+      Turns: 5
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "9.5%"
+      Turns: 12
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "14.8%"
+      Turns: 14
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "2.7%"
+      Turns: 5
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "11.8%"
+      Turns: 11
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_09"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_10"
+      Share_Of_Speech: "12.5%"
+      Turns: 14
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_102"
+      Share_Of_Speech: "1.4%"
+      Turns: 2
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_105"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_107"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_12:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_108"
+      Share_Of_Speech: "0.6%"
+      Turns: 1
+    Person_13:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_18"
+      Share_Of_Speech: "2.0%"
+      Turns: 3
+    Person_14:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_19"
+      Share_Of_Speech: "16.5%"
+      Turns: 7
+    Person_15:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_22"
+      Share_Of_Speech: "0.6%"
+      Turns: 1
+    Person_16:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_23"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_17:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_26"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_18:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_27"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_19:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_29"
+      Share_Of_Speech: "3.8%"
+      Turns: 5
+    Person_20:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_31"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_21:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_34"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_22:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_35"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_23:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_36"
+      Share_Of_Speech: "0.4%"
+      Turns: 2
+    Person_24:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_37"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_25:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_38"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_26:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_39"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_27:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_41"
+      Share_Of_Speech: "0.5%"
+      Turns: 2
+    Person_28:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_43"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_29:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_45"
+      Share_Of_Speech: "0.7%"
+      Turns: 1
+    Person_30:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_47"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_31:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_52"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_32:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_54"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_33:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_55"
+      Share_Of_Speech: "0.9%"
+      Turns: 1
+    Person_34:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_58"
+      Share_Of_Speech: "1.7%"
+      Turns: 2
+    Person_35:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_65"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_36:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_66"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_37:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_68"
+      Share_Of_Speech: "2.1%"
+      Turns: 2
+    Person_38:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_73"
+      Share_Of_Speech: "0.7%"
+      Turns: 2
+    Person_39:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_74"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_40:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_75"
+      Share_Of_Speech: "1.0%"
+      Turns: 1
+    Person_41:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_78"
+      Share_Of_Speech: "1.2%"
+      Turns: 3
+    Person_42:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_80"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_43:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_82"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_44:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_83"
+      Share_Of_Speech: "1.4%"
+      Turns: 2
+    Person_45:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_91"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_46:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_96"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+    Person_47:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_98"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_48:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_99"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+
+  Topics:
+    - Health insurance premiums and expiring subsidies
+    - Government shutdown negotiations
+    - Hospital closures and coverage losses
+    - Senate Democratic messaging strategy
+
+  Source:
+    Canonical_ID: "7f3e746d4dbbd9f7"
+    Transcribed: "2026-09-17T16:13:35.548096-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 3440
+    Segments: 215
+
+  Timestamps:
+    Downloaded_At: "2026-09-17T13:46:06.292686-07:00"
+    Transcription_Finished: "2026-09-17T16:13:35.548096-07:00"
+    Recorded: "2025-10-01"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "-QE_mIdGCs8.ctm"
+    Fountain: "-QE_mIdGCs8.fountain"
+    Diarization_RTTM: "-QE_mIdGCs8.rttm"
+    As_Broadcast_Script: "-QE_mIdGCs8.script.txt"
+    Segments_JSON: "-QE_mIdGCs8.segments.json"
+    Segments_JSONL: "-QE_mIdGCs8.segments.jsonl"
+    Subtitles_SRT: "-QE_mIdGCs8.srt"
+    Plain_Text: "-QE_mIdGCs8.transcription"
+    Subtitles_VTT: "-QE_mIdGCs8.vtt"
+    Transcript_SHA256: "83a341bbe25aa346a826f639af87963deda8fb8a0bc7fda6acbc8cd490e916f0"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "patty_murray_wa_sen"
+    video_uid: "patty_murray_wa_sen::-QE_mIdGCs8"
+    video_key: "-QE_mIdGCs8"
+    youtube_id: "-QE_mIdGCs8"
+    priority: 734
+    ceiling: 1000
+    raw_score: 495
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 5
+    seat_rank: 195
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-17T23:08:34.219Z"
+    demand_run_id: "job_1789686480125_227"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=-QE_mIdGCs8"
+    source_ref: "-QE_mIdGCs8"
+    subject_kind: "new_politician"

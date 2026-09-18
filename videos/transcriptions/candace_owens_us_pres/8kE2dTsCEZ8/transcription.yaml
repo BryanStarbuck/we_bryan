@@ -1,0 +1,172 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Larry Elder at BLEXIT Greenville"
+    Description: >-
+      A speech by author and radio host Larry Elder at a BLEXIT event in Greenville,
+      published on Candace Owens's channel. Elder opens with an anecdote about a man at the
+      Charlotte airport wearing a shirt reading "I can't be calm, I have a black child",
+      which he uses to introduce his central argument against what he calls the narrative
+      that police are mowing down black people because they are black. He builds the case
+      through an extended sports analogy about former NBA player Jalen Rose answering a
+      critic of his career calmly and with statistics, presenting data and argument as the
+      alternative to emotional narrative. The claims and framing are Elder's own and are
+      contested; no opposing speaker appears and no figures are cited on stage.
+    URL: "https://www.youtube.com/watch?v=8kE2dTsCEZ8"
+    Video_ID: "8kE2dTsCEZ8"
+    Show: "Candace Owens"
+    Runtime: "00:16:23"
+    Language: "en"
+
+  Media:
+    File: "8kE2dTsCEZ8.m4a"
+    SHA256: "a989e37fff17d06f9ecd78cb835d143f00a167e4bcd3e5b50706f000c5e2dcec"
+    Bytes: 15911698
+    Duration_Seconds: 983
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=8kE2dTsCEZ8"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "8kE2dTsCEZ8.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/candace_owens_us_pres/8kE2dTsCEZ8/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCL0u5uz7KZ9q-pe-VC8TY-w"
+    Uploader_ID: "@RealCandaceO"
+    View_Count: 29214
+    Like_Count: 2456
+    Comment_Count: 199
+    Availability: "public"
+    Published_At: "2020-09-13T12:23:16+00:00"
+    Captured_At: "2026-09-17T13:45:47-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "2.4%"
+      Turns: 1
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "1.2%"
+      Turns: 2
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "28.9%"
+      Turns: 23
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "34.3%"
+      Turns: 32
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "30.4%"
+      Turns: 29
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "2.0%"
+      Turns: 7
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_15"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_16"
+      Share_Of_Speech: "0.6%"
+      Turns: 2
+
+  Topics:
+    - Policing and race
+    - BLEXIT movement and black conservatism
+    - Data and argument versus narrative
+    - Media framing of police shootings
+
+  Source:
+    Canonical_ID: "e6140e8d5c7fd56e"
+    Transcribed: "2026-09-17T16:08:36.784110-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 2548
+    Segments: 184
+
+  Timestamps:
+    Downloaded_At: "2026-09-17T13:45:51.330817-07:00"
+    Transcription_Finished: "2026-09-17T16:08:36.784110-07:00"
+    Recorded: "2020-09-13"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "8kE2dTsCEZ8.ctm"
+    Fountain: "8kE2dTsCEZ8.fountain"
+    Diarization_RTTM: "8kE2dTsCEZ8.rttm"
+    As_Broadcast_Script: "8kE2dTsCEZ8.script.txt"
+    Segments_JSON: "8kE2dTsCEZ8.segments.json"
+    Segments_JSONL: "8kE2dTsCEZ8.segments.jsonl"
+    Subtitles_SRT: "8kE2dTsCEZ8.srt"
+    Plain_Text: "8kE2dTsCEZ8.transcription"
+    Subtitles_VTT: "8kE2dTsCEZ8.vtt"
+    Transcript_SHA256: "8b038cc22d41c196c8938bf518a67eef79793a173bb43ae01144456805f12bbf"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "candace_owens_us_pres"
+    video_uid: "candace_owens_us_pres::8kE2dTsCEZ8"
+    video_key: "8kE2dTsCEZ8"
+    youtube_id: "8kE2dTsCEZ8"
+    priority: 737
+    ceiling: 1000
+    raw_score: 500
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 179
+    seat_rank: 300
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-14T23:08:02.149Z"
+    demand_run_id: "job_1789427280145_441"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=8kE2dTsCEZ8"
+    source_ref: "8kE2dTsCEZ8"
+    subject_kind: "new_politician"

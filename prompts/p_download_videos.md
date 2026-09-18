@@ -232,6 +232,26 @@ VIDEO_COUNT is the number of videos to process this run
     "download" in what they typed is about the size of the run, not a demand that
     bytes be fetched.
 
+MAX_VIDEO_SECONDS is the value 10800
+  * THREE HOURS. A video longer than this is NOT WORKED — not downloaded, not
+    adopted from the backlog, not transcribed. It is skipped, counted and named.
+  * WHY, and it is an owner's ruling rather than a performance tweak: a single
+    3+ hour podcast eats a whole run. MEASURED 2026-09-17: three baron_coleman_al
+    radio shows of 13151 s, 13621 s and 13903 s were 11.3 of one run's 16.8 hours
+    of audio, and the OTHER SEVENTEEN videos together came to 5.5. One person's
+    three shows would have taken longer than every other selected video combined,
+    and the movement gets seventeen voices for the price of three.
+  * IT IS NOT A JUDGEMENT ABOUT THE CONTENT. A four-hour show is not less worth
+    hearing; it is worth hearing on a machine that has been given to it on
+    purpose. Which is the override below.
+  * THE CITIZEN CAN LIFT IT. If the run text says "do the long ones", "no length
+    limit", "include the long podcasts", or names such a video, the cap is off for
+    that run and the Stage 10 report says it was lifted.
+  * A video skipped for length is NEVER deleted and NEVER marked failed. Its media
+    stays where it is and its ledger row keeps whatever status it had — `tries` is
+    not incremented, because no attempt was made. It is work deferred, not work
+    abandoned, and a run that lifts the cap picks it up untouched.
+
 MAX_PARALLEL_TRANSCRIBE is the value 12
 DEFAULT_PARALLEL_TRANSCRIBE is the value 4
   * Ceiling and starting point. See STAGE 6.3.
@@ -372,6 +392,14 @@ HARD RULES — VIOLATING ANY OF THESE FAILS THE RUN
 
 * NEVER download in violation of a site's Terms of Service. If a URL cannot be
   fetched lawfully, skip it, record the reason in {RUN_LOG}, and move on.
+
+* NEVER WORK A VIDEO LONGER THAN {MAX_VIDEO_SECONDS} unless the citizen lifted the
+  cap. Three hours is the line. The test runs in three places because the length is
+  learned in three different moments — STAGE 2.3 when the row or a legacy sidecar
+  states it, STAGE 1D.1 for backlog media already on disk, and STAGE 4.5 for
+  everything else, which is the only measurement that is always available and
+  always true. The media is left alone and the ledger row is left alone; a skip for
+  length is a deferral, not a failure.
 
 * NEVER invent a video_key or a roster_key. Both are FROZEN and both come from
   {VIDEO_DEMAND_CSV}, verbatim. A key derived from a filename or a title is a bug.
@@ -1089,6 +1117,14 @@ From 1C's reconciled ledger, take every row where ALL of these hold:
   * status is `pending` or `failed`
   * NOT (`started` within {STALE_CLAIM_HOURS}) — 1C already excluded these
   * `tries` < {MAX_TRANSCRIBE_TRIES}, UNLESS the citizen lifted the cap
+  * THE MEDIA IS SHORTER THAN {MAX_VIDEO_SECONDS}, UNLESS the citizen lifted that
+    cap. ffprobe the file — 1D.3 is about to ffprobe it anyway, so this costs
+    nothing extra and it is the one measurement that is always right. A backlog
+    row over the cap stays in the ledger exactly as it is: not adopted, not
+    failed, `tries` untouched. Count it separately from the try-capped rows in
+    Z50 and name it in Stage 10, because "too long for a default run" and "failed
+    three times" are opposite facts and a citizen who confuses them will go
+    looking for a bug that is not there.
 
 Order it: fewest `tries` first, then oldest `earliest_attempt_at` first, then
 {video_uid}. Fewest tries first because a never-attempted video is more likely to
@@ -1196,6 +1232,18 @@ Walk the chosen traversal and, for each row, skip it if ANY of these is true:
 
   * {MANIFEST_FILE} already lists that video_key.
   * The row is marked unobtainable, satisfied, or carries a closed_reason.
+  * ITS STATED LENGTH IS OVER {MAX_VIDEO_SECONDS} and the citizen has not lifted
+    the cap. Take the length from the row's duration_seconds, or — when the media
+    is already on disk — from a {video_key}.video.yaml beside it.
+    THIS TEST CATCHES ALMOST NOTHING AND IS STILL WORTH RUNNING. duration_seconds
+    is blank on essentially every engine row (APPENDIX F says why: the videos.list
+    queue kind is declared and not implemented), so the real enforcement is
+    STAGE 4.5, after ffprobe. What this test buys is the case where the length IS
+    known — a supplement row priced from a yt-dlp listing, or legacy media with a
+    sidecar — and there it saves a download nobody was going to use.
+    BLANK IS UNKNOWN, NEVER SHORT. A blank duration is not a pass; it is a
+    deferral of the question to 4.5. Never treat an absent length as under the cap
+    and never treat it as over one.
 
 A DIRECTORY IS NOT A TRANSCRIPT. The test above is for {video_key}.transcription
 and it is deliberately not "does the directory exist": runs before Stage 3 was
@@ -1476,6 +1524,38 @@ Against MEDIA_FILE, and hold the results for Stage 7:
                               -of default=nw=1:nk=1 "{MEDIA_FILE}"
   * Container and codecs, from the same ffprobe.
   * The ABSOLUTE path, and which root it came from.
+
+4.5a DROP ANYTHING OVER {MAX_VIDEO_SECONDS} — THIS IS WHERE THE CAP ACTUALLY BITES
+
+ffprobe has just measured the real length, and for almost every video this is the
+FIRST moment anybody knows it: the CSV's duration_seconds is blank on essentially
+every engine row, so Stage 2.3's test passed on ignorance rather than on a number.
+
+For every video whose measured Duration_Seconds exceeds {MAX_VIDEO_SECONDS}, and
+where the citizen has not lifted the cap:
+
+  * Drop it from this run's batch. It never reaches Stage 6, so it is never
+    claimed and `tries` is never incremented — no attempt was made.
+  * LEAVE THE MEDIA WHERE IT IS. It was already downloaded, it is outside every
+    repo, and the next run that lifts the cap finds it at Stage 2.3 as "already on
+    disk" with nothing to re-fetch. Deleting it would throw away bandwidth this
+    machine has already spent on a video the movement still wants.
+  * LEAVE THE LEDGER ROW ALONE, or write one with `status: pending` if there is
+    none. `pending` is the truthful state: media on disk, never attempted.
+  * Do NOT backfill the slot. A run that selected 20 and drops 3 for length does
+    17, and says so. Walking further down the ladder to refill
+    would mean measuring, downloading and possibly dropping again, which turns a
+    length cap into an unbounded search.
+  * Count them, print Z53 once at the end of the stage, and name every one in the
+    Stage 10 report with its measured length.
+
+THE COUNTERPART RULE: a video dropped here is on the ladder forever and will be
+re-selected, re-downloaded and re-dropped by every future default run. That is
+wasteful and it is the honest cost of a cap enforced after the download. Mitigate
+it the cheap way — the media stays on disk, so the second run's Stage 2.3 finds it
+already there and the only repeated work is one ffprobe. Do not "fix" this by
+marking the row satisfied in {VIDEO_DEMAND_CSV}; that file is read-only here and
+the video is not satisfied, it is deferred.
 
 4.5b NOTE ANY SUPERSEDED FULL-VIDEO FILES
 
@@ -2305,6 +2385,11 @@ Then say, in plain sentences and only where there is something to say:
   * EVERY LEDGER CORRECTION Stage 1C made, by video_uid and reason. A row that said
     `finished` with no transcript behind it means an earlier run reported success it
     did not achieve, and that is worth a human's attention.
+  * EVERY VIDEO SKIPPED FOR LENGTH (Z53), by roster_key/video_key with its measured
+    duration, and whether it came from the backlog or from this run's own
+    downloads. Say plainly that the media is on disk and that lifting the cap costs
+    no re-download. Never let a run report "17 transcribed" against a batch of 20
+    without saying where the other three went.
   * any row whose media would not open in ffprobe (Stage 1D.3), by path — those are
     probably truncated downloads and only the citizen should decide to delete them
   * any ledger row this run could not parse and therefore left alone
@@ -3276,6 +3361,7 @@ Z50 — the backlog table. Printed whenever a backlog exists, BEFORE Stage 2's
       adoptable now      {a}   ({s} never tried, {f} failed before)
       claimed by another run {c}   started under {STALE_CLAIM_HOURS}h ago
       at the try cap     {x}   {MAX_TRANSCRIBE_TRIES} attempts, skipped
+      over 3 hours       {t}   deferred, never attempted (Z53)
       media gone         {g}   nothing on disk to transcribe
       ------------------------------------------------------------
       This run adopts {k} of them FIRST, so it will download {d}
@@ -3304,6 +3390,25 @@ Z51 — a video has exhausted {MAX_TRANSCRIBE_TRIES}. Stage 10 tail only.
       When the cause is fixed, run this prompt again and say so:
       ============================================================
       ... p_download_videos.md   retry the failures
+
+
+Z53 — videos were skipped for being longer than {MAX_VIDEO_SECONDS}.
+      Printed once at the end of Stage 4, and again in the Stage 10 tail.
+      Never silent: a citizen who asked for 20 and got 17 is owed the reason.
+
+      ============================================================
+      {n} video(s) are longer than 3 hours and were NOT worked.
+      One 4-hour podcast costs more than a dozen ordinary clips,
+      and the movement gets more voices for the same machine time.
+      Nothing was deleted and nothing was marked failed — the
+      media is on disk and a run that lifts the cap picks these
+      up with no re-download:
+      ------------------------------------------------------------
+      {roster_key}/{video_key}   {H}h {MM}m
+      ------------------------------------------------------------
+      To do them anyway, say so:
+      ============================================================
+      ... p_download_videos.md   do the long ones
 
 
 Z52 — the ledger disagreed with the disk. Stage 10 tail only, and never silent.

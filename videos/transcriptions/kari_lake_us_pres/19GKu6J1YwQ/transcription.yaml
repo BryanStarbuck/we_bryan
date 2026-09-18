@@ -1,0 +1,132 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: 'Watch! ThIs Is Why Trump Calls Her "Border Kari Lake"'
+    Description: >-
+      A 67-second clip of Kari Lake campaigning on immigration and the economy during her
+      Arizona Senate run. She attacks her opponent Ruben Gallego over a vote against
+      President Trump's border national emergency and over remarks she says he made to
+      donors, argues that twenty million people pouring in are taking jobs and housing and
+      are why housing is unaffordable, and states that she is completely opposed to an open
+      border while being a hundred percent for legal immigration. She then pledges to
+      extend the Trump tax cuts and to end taxes on Social Security benefits, tips and
+      overtime, and to cut wasteful government spending. The characterisations of Gallego
+      are her own and he is absent and unable to answer them; the twenty-million figure and
+      the housing causation are asserted without a source.
+    URL: "https://www.youtube.com/watch?v=19GKu6J1YwQ"
+    Video_ID: "19GKu6J1YwQ"
+    Show: "Kari Lake"
+    Runtime: "00:01:07"
+    Language: "en"
+
+  Media:
+    File: "19GKu6J1YwQ.m4a"
+    SHA256: "cfad28725ccc265b58127bb6a9072a34b47ca083d4caaff1071ca273096f9f00"
+    Bytes: 1087143
+    Duration_Seconds: 67
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=19GKu6J1YwQ"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "19GKu6J1YwQ.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/kari_lake_us_pres/19GKu6J1YwQ/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCakn6ZCwlFA6Ct6XSU-HmtQ"
+    Uploader_ID: "@karilake"
+    View_Count: 2817
+    Like_Count: 466
+    Comment_Count: 82
+    Availability: "public"
+    Published_At: "2024-10-11T17:11:51+00:00"
+    Captured_At: "2026-09-17T13:44:30-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 3
+
+  Topics:
+    - Border and immigration policy
+    - Attacks on Ruben Gallego
+    - Claims about job and housing competition
+    - Trump tax cuts, Social Security, tips and overtime
+    - Federal spending and money printing
+
+  Source:
+    Canonical_ID: "0731051a17620bf0"
+    Transcribed: "2026-09-17T15:11:59.679752-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 232
+    Segments: 7
+
+  Timestamps:
+    Downloaded_At: "2026-09-17T13:44:31.095735-07:00"
+    Transcription_Finished: "2026-09-17T15:11:59.679752-07:00"
+    Recorded: "2024-10-11"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "19GKu6J1YwQ.ctm"
+    Fountain: "19GKu6J1YwQ.fountain"
+    Diarization_RTTM: "19GKu6J1YwQ.rttm"
+    As_Broadcast_Script: "19GKu6J1YwQ.script.txt"
+    Segments_JSON: "19GKu6J1YwQ.segments.json"
+    Segments_JSONL: "19GKu6J1YwQ.segments.jsonl"
+    Subtitles_SRT: "19GKu6J1YwQ.srt"
+    Plain_Text: "19GKu6J1YwQ.transcription"
+    Subtitles_VTT: "19GKu6J1YwQ.vtt"
+    Transcript_SHA256: "9a083976fc8457402ca4dfd28c49e22490f977f2e6b8e31a127a5ace84b267b0"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "kari_lake_us_pres"
+    video_uid: "kari_lake_us_pres::19GKu6J1YwQ"
+    video_key: "19GKu6J1YwQ"
+    youtube_id: "19GKu6J1YwQ"
+    priority: 743
+    ceiling: 1000
+    raw_score: 510
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 14
+    seat_rank: 300
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-17T23:08:34.219Z"
+    demand_run_id: "job_1789686480125_227"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=19GKu6J1YwQ"
+    source_ref: "19GKu6J1YwQ"
+    subject_kind: "new_politician"
