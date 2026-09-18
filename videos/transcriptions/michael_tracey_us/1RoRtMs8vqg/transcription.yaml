@@ -1,0 +1,981 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Michael Tracey and Richard Hanania on Trump and the Iran war"
+    Description: >-
+      A long, informal conversation (June 2025) between journalist Michael Tracey and writer Richard Hanania,
+      recorded during the Israel-Iran war before the U.S. strikes on Iranian nuclear sites. They discuss
+      whether President Trump will join the Israeli bombing campaign: Tracey argues Trump's pre-strike post
+      promising diplomacy amounted to public disinformation and that Trump was not 'dragged' into the
+      conflict, citing his earlier Time interview, while Hanania is more open to the war and argues regime
+      collapse in Iran could turn out well, pointing to Iran's secular middle-class protest movements and the
+      fall of the Soviet Union. Tracey counters with Libya and the risk of loose enriched uranium after a
+      government collapse. They also cover Trump's Federal Reserve remarks, continued Biden-era arms drawdowns
+      to Ukraine under Pete Hegseth, the multilateral negotiation of the 2015 Iran nuclear deal and Trump's
+      withdrawal from it, differing Obama and Republican views of Iran, Trump's Gaza proposals, the influence
+      of pro-Israel donors and advisers, Steve Bannon's role in the MAGA movement, and their own experiences
+      on Tucker Carlson's and Rush Limbaugh's shows. The views are each speaker's own, and they disagree
+      openly; the officials discussed are not present.
+    URL: "https://www.youtube.com/watch?v=1RoRtMs8vqg"
+    Video_ID: "1RoRtMs8vqg"
+    Show: "M. Tracey"
+    Runtime: "01:17:19"
+    Language: "en"
+
+  Media:
+    File: "1RoRtMs8vqg.m4a"
+    SHA256: "3543b8e8014cbc8fc19f210aac0a5ce928bdea948512104884abe0488e96b9a2"
+    Bytes: 75025714
+    Duration_Seconds: 4639
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=1RoRtMs8vqg"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "1RoRtMs8vqg.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/michael_tracey_us/1RoRtMs8vqg/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCaLn4FMU_Fp-LBcdbYgYWow"
+    Uploader_ID: "@m-tracey"
+    View_Count: 2088
+    Like_Count: 80
+    Comment_Count: 26
+    Availability: "public"
+    Published_At: "2025-06-18T19:54:48+00:00"
+    Captured_At: "2026-09-18T10:45:50-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "1.3%"
+      Turns: 12
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "0.7%"
+      Turns: 2
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "0.2%"
+      Turns: 2
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "1.0%"
+      Turns: 8
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "0.6%"
+      Turns: 7
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_09"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_102"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_104"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_105"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_11"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_12:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_113"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_13:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_114"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_14:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_123"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_15:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_126"
+      Share_Of_Speech: "0.3%"
+      Turns: 2
+    Person_16:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_127"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_17:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "1.0%"
+      Turns: 5
+    Person_18:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_131"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_19:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_133"
+      Share_Of_Speech: "0.8%"
+      Turns: 7
+    Person_20:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_136"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_21:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_140"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_22:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_142"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_23:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_144"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_24:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_145"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_25:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_147"
+      Share_Of_Speech: "0.4%"
+      Turns: 5
+    Person_26:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_148"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_27:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_15"
+      Share_Of_Speech: "0.2%"
+      Turns: 3
+    Person_28:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_151"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_29:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_152"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_30:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_157"
+      Share_Of_Speech: "0.2%"
+      Turns: 2
+    Person_31:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_159"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_32:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_16"
+      Share_Of_Speech: "5.1%"
+      Turns: 26
+    Person_33:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_161"
+      Share_Of_Speech: "3.3%"
+      Turns: 26
+    Person_34:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_163"
+      Share_Of_Speech: "0.2%"
+      Turns: 2
+    Person_35:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_165"
+      Share_Of_Speech: "0.3%"
+      Turns: 3
+    Person_36:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_169"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_37:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_17"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_38:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_170"
+      Share_Of_Speech: "0.0%"
+      Turns: 2
+    Person_39:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_173"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_40:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_174"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_41:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_178"
+      Share_Of_Speech: "0.3%"
+      Turns: 2
+    Person_42:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_184"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_43:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_196"
+      Share_Of_Speech: "0.3%"
+      Turns: 3
+    Person_44:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_197"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_45:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_199"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_46:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_201"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_47:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_204"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_48:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_205"
+      Share_Of_Speech: "1.5%"
+      Turns: 10
+    Person_49:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_206"
+      Share_Of_Speech: "0.4%"
+      Turns: 3
+    Person_50:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_213"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_51:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_22"
+      Share_Of_Speech: "0.7%"
+      Turns: 10
+    Person_52:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_220"
+      Share_Of_Speech: "0.2%"
+      Turns: 2
+    Person_53:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_222"
+      Share_Of_Speech: "1.0%"
+      Turns: 3
+    Person_54:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_223"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_55:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_226"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_56:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_229"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_57:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_23"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_58:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_231"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_59:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_239"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_60:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_24"
+      Share_Of_Speech: "11.5%"
+      Turns: 75
+    Person_61:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_241"
+      Share_Of_Speech: "0.0%"
+      Turns: 2
+    Person_62:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_243"
+      Share_Of_Speech: "0.5%"
+      Turns: 6
+    Person_63:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_245"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_64:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_248"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_65:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_250"
+      Share_Of_Speech: "0.0%"
+      Turns: 2
+    Person_66:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_254"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_67:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_256"
+      Share_Of_Speech: "0.2%"
+      Turns: 3
+    Person_68:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_264"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_69:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_269"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_70:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_272"
+      Share_Of_Speech: "0.4%"
+      Turns: 3
+    Person_71:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_273"
+      Share_Of_Speech: "0.7%"
+      Turns: 2
+    Person_72:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_274"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_73:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_275"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_74:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_278"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_75:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_28"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_76:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_283"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_77:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_284"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_78:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_285"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_79:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_29"
+      Share_Of_Speech: "0.5%"
+      Turns: 3
+    Person_80:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_291"
+      Share_Of_Speech: "0.6%"
+      Turns: 5
+    Person_81:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_298"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_82:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_304"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_83:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_305"
+      Share_Of_Speech: "0.2%"
+      Turns: 2
+    Person_84:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_307"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_85:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_308"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_86:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_31"
+      Share_Of_Speech: "2.4%"
+      Turns: 20
+    Person_87:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_313"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_88:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_314"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_89:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_317"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_90:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_32"
+      Share_Of_Speech: "0.5%"
+      Turns: 7
+    Person_91:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_323"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_92:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_324"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_93:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_329"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_94:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_342"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_95:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_35"
+      Share_Of_Speech: "0.5%"
+      Turns: 3
+    Person_96:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_350"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_97:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_352"
+      Share_Of_Speech: "0.1%"
+      Turns: 3
+    Person_98:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_353"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_99:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_357"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_100:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_359"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_101:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_361"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_102:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_365"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_103:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_369"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_104:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_37"
+      Share_Of_Speech: "6.6%"
+      Turns: 41
+    Person_105:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_381"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_106:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_384"
+      Share_Of_Speech: "0.0%"
+      Turns: 2
+    Person_107:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_39"
+      Share_Of_Speech: "0.1%"
+      Turns: 3
+    Person_108:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_391"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_109:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_40"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_110:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_405"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_111:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_406"
+      Share_Of_Speech: "0.5%"
+      Turns: 4
+    Person_112:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_409"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_113:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_412"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_114:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_416"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_115:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_417"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_116:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_419"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_117:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_42"
+      Share_Of_Speech: "0.3%"
+      Turns: 2
+    Person_118:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_421"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_119:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_423"
+      Share_Of_Speech: "0.1%"
+      Turns: 2
+    Person_120:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_429"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_121:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_435"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_122:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_44"
+      Share_Of_Speech: "8.5%"
+      Turns: 39
+    Person_123:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_46"
+      Share_Of_Speech: "1.7%"
+      Turns: 13
+    Person_124:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_50"
+      Share_Of_Speech: "11.3%"
+      Turns: 79
+    Person_125:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_52"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_126:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_54"
+      Share_Of_Speech: "0.4%"
+      Turns: 3
+    Person_127:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_57"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_128:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_59"
+      Share_Of_Speech: "0.6%"
+      Turns: 6
+    Person_129:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_65"
+      Share_Of_Speech: "1.3%"
+      Turns: 9
+    Person_130:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_69"
+      Share_Of_Speech: "0.2%"
+      Turns: 2
+    Person_131:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_70"
+      Share_Of_Speech: "4.0%"
+      Turns: 24
+    Person_132:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_73"
+      Share_Of_Speech: "0.8%"
+      Turns: 7
+    Person_133:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_75"
+      Share_Of_Speech: "0.4%"
+      Turns: 7
+    Person_134:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_78"
+      Share_Of_Speech: "0.0%"
+      Turns: 2
+    Person_135:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_86"
+      Share_Of_Speech: "0.0%"
+      Turns: 2
+    Person_136:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_87"
+      Share_Of_Speech: "0.5%"
+      Turns: 3
+    Person_137:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_91"
+      Share_Of_Speech: "4.3%"
+      Turns: 18
+    Person_138:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_93"
+      Share_Of_Speech: "12.0%"
+      Turns: 70
+    Person_139:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_94"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_140:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_96"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_141:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_97"
+      Share_Of_Speech: "2.4%"
+      Turns: 13
+    Person_142:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_99"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+
+  Topics:
+    - "Israel-Iran war and possible U.S. strikes on Iran"
+    - "Regime change in Iran"
+    - "Iran nuclear deal (JCPOA)"
+    - "Trump administration foreign policy and Israel"
+    - "U.S. arms to Ukraine"
+    - "Steve Bannon and the MAGA coalition"
+
+  Source:
+    Canonical_ID: "b61f5d4c5a3a9580"
+    Transcribed: "2026-09-18T11:26:17.615338-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 13193
+    Segments: 1039
+
+  Timestamps:
+    Downloaded_At: "2026-09-18T10:46:07.713742-07:00"
+    Transcription_Finished: "2026-09-18T11:26:17.615338-07:00"
+    Recorded: "2025-06-18"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "1RoRtMs8vqg.ctm"
+    Fountain: "1RoRtMs8vqg.fountain"
+    Diarization_RTTM: "1RoRtMs8vqg.rttm"
+    As_Broadcast_Script: "1RoRtMs8vqg.script.txt"
+    Segments_JSON: "1RoRtMs8vqg.segments.json"
+    Segments_JSONL: "1RoRtMs8vqg.segments.jsonl"
+    Subtitles_SRT: "1RoRtMs8vqg.srt"
+    Plain_Text: "1RoRtMs8vqg.transcription"
+    Subtitles_VTT: "1RoRtMs8vqg.vtt"
+    Transcript_SHA256: "1a7c55e8f1b1645c136002684b3801b2209b27f36dee1d5b212aab5dd7a8a03c"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "michael_tracey_us"
+    video_uid: "michael_tracey_us::1RoRtMs8vqg"
+    video_key: "1RoRtMs8vqg"
+    youtube_id: "1RoRtMs8vqg"
+    priority: 766
+    ceiling: 1000
+    raw_score: 550
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T16:23:52.832Z"
+    demand_run_id: "job_1789057406903_3"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=1RoRtMs8vqg"
+    source_ref: "1RoRtMs8vqg"
+    subject_kind: "new_politician"

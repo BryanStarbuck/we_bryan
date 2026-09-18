@@ -1,0 +1,126 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "KARI LAKE: We have to get the majority in the U.S. Senate"
+    Description: >-
+      A 13-second campaign clip posted on Kari Lake's channel during her 2024 U.S. Senate run in Arizona. The
+      speaker, in a single sentence, urges viewers to vote for Donald Trump because a second Trump term would
+      likely bring new Supreme Court and federal judicial nominations, and argues that confirming them
+      requires a Republican majority in the U.S. Senate. The transcript does not name the speaker; the channel
+      and title attribute it to Kari Lake.
+    URL: "https://www.youtube.com/watch?v=27BhgjnOvGA"
+    Video_ID: "27BhgjnOvGA"
+    Show: "Kari Lake"
+    Runtime: "00:00:13"
+    Language: "en"
+
+  Media:
+    File: "27BhgjnOvGA.m4a"
+    SHA256: "8a9b40239f12c640e12ebb8ef149a8e43b6043d89d6ca128747eb327bf84774c"
+    Bytes: 211521
+    Duration_Seconds: 13
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=27BhgjnOvGA"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "27BhgjnOvGA.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/kari_lake_us_pres/27BhgjnOvGA/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCakn6ZCwlFA6Ct6XSU-HmtQ"
+    Uploader_ID: "@karilake"
+    View_Count: 167198
+    Like_Count: 14076
+    Comment_Count: 564
+    Availability: "public"
+    Published_At: "2024-06-21T19:38:21+00:00"
+    Captured_At: "2026-09-18T10:46:44-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 1
+
+  Topics:
+    - "2024 presidential election"
+    - "Supreme Court and judicial nominations"
+    - "Senate confirmation and control of the U.S. Senate"
+    - "Campaign messaging"
+
+  Source:
+    Canonical_ID: "cbb56cce92403c9e"
+    Transcribed: "2026-09-18T10:47:53.620189-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 50
+    Segments: 1
+
+  Timestamps:
+    Downloaded_At: "2026-09-18T10:46:45.338916-07:00"
+    Transcription_Finished: "2026-09-18T10:47:53.620189-07:00"
+    Recorded: "2024-06-21"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "27BhgjnOvGA.ctm"
+    Fountain: "27BhgjnOvGA.fountain"
+    Diarization_RTTM: "27BhgjnOvGA.rttm"
+    As_Broadcast_Script: "27BhgjnOvGA.script.txt"
+    Segments_JSON: "27BhgjnOvGA.segments.json"
+    Segments_JSONL: "27BhgjnOvGA.segments.jsonl"
+    Subtitles_SRT: "27BhgjnOvGA.srt"
+    Plain_Text: "27BhgjnOvGA.transcription"
+    Subtitles_VTT: "27BhgjnOvGA.vtt"
+    Transcript_SHA256: "c499096d9ea152ae5bd563c82bd973295ec95a259bc7a431306a6e83392371e0"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "kari_lake_us_pres"
+    video_uid: "kari_lake_us_pres::27BhgjnOvGA"
+    video_key: "27BhgjnOvGA"
+    youtube_id: "27BhgjnOvGA"
+    priority: 737
+    ceiling: 1000
+    raw_score: 500
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 19
+    seat_rank: 300
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-18T17:08:15.515Z"
+    demand_run_id: "job_1789751280006_46"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=27BhgjnOvGA"
+    source_ref: "27BhgjnOvGA"
+    subject_kind: "new_politician"

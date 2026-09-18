@@ -1,0 +1,304 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Pro police protest in Bloomfield, NJ"
+    Description: >-
+      Raw on-the-ground footage, posted by Michael Tracey in June 2020, of a community rally in Bloomfield,
+      New Jersey held in the days after George Floyd's killing, which the uploader titled a 'pro police
+      protest'. An organiser named Matthew thanks the police director for joining the event. The Bloomfield
+      police director then speaks: he calls what happened in Minneapolis a disgrace to the profession, pledges
+      swift and harsh discipline for any officer who acted similarly, describes the department's youth,
+      community and senior police academies, and responds to a question about an earlier Vice documentary by
+      saying it relied on skewed data and that Bloomfield tracks the race of every motor-vehicle stop to flag
+      problem officers early. The clip ends with the crowd chanting 'No justice, no peace' and the names of
+      George Floyd and Breonna Taylor. Michael Tracey is recording rather than speaking.
+    URL: "https://www.youtube.com/watch?v=0Qmbc54gJMk"
+    Video_ID: "0Qmbc54gJMk"
+    Show: "M. Tracey"
+    Runtime: "00:05:51"
+    Language: "en"
+
+  Media:
+    File: "0Qmbc54gJMk.m4a"
+    SHA256: "11ff68807842491e31c7a9d0d7928726e94e4c7a165335174a9b3638c19cc214"
+    Bytes: 5688595
+    Duration_Seconds: 351
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=0Qmbc54gJMk"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "0Qmbc54gJMk.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/michael_tracey_us/0Qmbc54gJMk/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCaLn4FMU_Fp-LBcdbYgYWow"
+    Uploader_ID: "@m-tracey"
+    View_Count: 2956
+    Like_Count: 102
+    Comment_Count: 108
+    Availability: "public"
+    Published_At: "2020-06-05T23:24:53+00:00"
+    Captured_At: "2026-09-18T10:45:40-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "10.9%"
+      Turns: 4
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "2.4%"
+      Turns: 1
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "1.3%"
+      Turns: 1
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_09"
+      Share_Of_Speech: "0.7%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_10"
+      Share_Of_Speech: "2.7%"
+      Turns: 1
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_11"
+      Share_Of_Speech: "1.4%"
+      Turns: 1
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_14"
+      Share_Of_Speech: "2.5%"
+      Turns: 2
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_16"
+      Share_Of_Speech: "5.1%"
+      Turns: 2
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_19"
+      Share_Of_Speech: "3.5%"
+      Turns: 2
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_26"
+      Share_Of_Speech: "1.3%"
+      Turns: 1
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_28"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_12:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_29"
+      Share_Of_Speech: "27.3%"
+      Turns: 5
+    Person_13:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_32"
+      Share_Of_Speech: "1.3%"
+      Turns: 1
+    Person_14:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_34"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+    Person_15:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_35"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_16:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_37"
+      Share_Of_Speech: "2.1%"
+      Turns: 1
+    Person_17:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_41"
+      Share_Of_Speech: "2.2%"
+      Turns: 1
+    Person_18:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_44"
+      Share_Of_Speech: "2.1%"
+      Turns: 1
+    Person_19:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_45"
+      Share_Of_Speech: "9.9%"
+      Turns: 1
+    Person_20:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_48"
+      Share_Of_Speech: "1.8%"
+      Turns: 1
+    Person_21:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_51"
+      Share_Of_Speech: "0.8%"
+      Turns: 1
+    Person_22:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_56"
+      Share_Of_Speech: "0.8%"
+      Turns: 1
+    Person_23:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_58"
+      Share_Of_Speech: "7.3%"
+      Turns: 2
+    Person_24:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_65"
+      Share_Of_Speech: "3.2%"
+      Turns: 1
+    Person_25:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_71"
+      Share_Of_Speech: "0.8%"
+      Turns: 1
+    Person_26:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_72"
+      Share_Of_Speech: "1.6%"
+      Turns: 1
+    Person_27:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_73"
+      Share_Of_Speech: "3.3%"
+      Turns: 1
+    Person_28:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_75"
+      Share_Of_Speech: "0.3%"
+      Turns: 1
+    Person_29:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_76"
+      Share_Of_Speech: "1.1%"
+      Turns: 1
+    Person_30:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_77"
+      Share_Of_Speech: "1.0%"
+      Turns: 1
+
+  Topics:
+    - "George Floyd protests, June 2020"
+    - "Police-community relations in Bloomfield, New Jersey"
+    - "Police accountability and officer discipline"
+    - "Racial data on traffic stops"
+    - "Local community organising"
+
+  Source:
+    Canonical_ID: "0657b23c9fdfb504"
+    Transcribed: "2026-09-18T10:49:20.003287-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 779
+    Segments: 67
+
+  Timestamps:
+    Downloaded_At: "2026-09-18T10:45:41.730478-07:00"
+    Transcription_Finished: "2026-09-18T10:49:20.003287-07:00"
+    Recorded: "2020-06-05"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "0Qmbc54gJMk.ctm"
+    Fountain: "0Qmbc54gJMk.fountain"
+    Diarization_RTTM: "0Qmbc54gJMk.rttm"
+    As_Broadcast_Script: "0Qmbc54gJMk.script.txt"
+    Segments_JSON: "0Qmbc54gJMk.segments.json"
+    Segments_JSONL: "0Qmbc54gJMk.segments.jsonl"
+    Subtitles_SRT: "0Qmbc54gJMk.srt"
+    Plain_Text: "0Qmbc54gJMk.transcription"
+    Subtitles_VTT: "0Qmbc54gJMk.vtt"
+    Transcript_SHA256: "750034417b7b87202ee2c10d2a8119f9a0b8a2eb4c606400abdbf48fb1689104"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "michael_tracey_us"
+    video_uid: "michael_tracey_us::0Qmbc54gJMk"
+    video_key: "0Qmbc54gJMk"
+    youtube_id: "0Qmbc54gJMk"
+    priority: 766
+    ceiling: 1000
+    raw_score: 550
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T16:23:52.832Z"
+    demand_run_id: "job_1789057406903_3"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=0Qmbc54gJMk"
+    source_ref: "0Qmbc54gJMk"
+    subject_kind: "new_politician"

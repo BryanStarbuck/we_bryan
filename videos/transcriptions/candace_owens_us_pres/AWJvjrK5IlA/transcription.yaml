@@ -1,0 +1,271 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Brandon Tatum at BLEXIT Greenville"
+    Description: >-
+      A speech by former Tucson police officer and radio host Brandon Tatum at a BLEXIT event in Greenville
+      (September 2020), posted on Candace Owens' channel. Tatum tells how he joined the Tucson Police
+      Department after a ride-along in which an officer saved a suicidal teenager, and describes serving as a
+      field training officer, SWAT member and department spokesman. He argues that the narrative of widespread
+      police brutality against Black Americans is 'a lie', says the public was misled about the cases of
+      Breonna Taylor, Jacob Blake and George Floyd, objects to athletes displaying Jacob Blake's name, and
+      urges young people to comply during police stops and to consider becoming officers. He then rejects the
+      idea of white privilege in favour of 'Christ's privilege', urges personal responsibility and a service
+      mindset, and says Christians should take positions on abortion, marriage and church closures from
+      scripture rather than party. His account of those specific cases is his own and is disputed by others;
+      the people involved are not present.
+    URL: "https://www.youtube.com/watch?v=AWJvjrK5IlA"
+    Video_ID: "AWJvjrK5IlA"
+    Show: "Candace Owens"
+    Runtime: "00:18:01"
+    Language: "en"
+
+  Media:
+    File: "AWJvjrK5IlA.m4a"
+    SHA256: "021ac1e92be459b2ce6d9432c093e33abf431632bc369902b02d1ef89b85c7c8"
+    Bytes: 17493331
+    Duration_Seconds: 1081
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=AWJvjrK5IlA"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "AWJvjrK5IlA.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/candace_owens_us_pres/AWJvjrK5IlA/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCL0u5uz7KZ9q-pe-VC8TY-w"
+    Uploader_ID: "@RealCandaceO"
+    View_Count: 32652
+    Like_Count: 2677
+    Comment_Count: 297
+    Availability: "public"
+    Published_At: "2020-09-13T12:25:12+00:00"
+    Captured_At: "2026-09-18T10:46:29-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "1.0%"
+      Turns: 1
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "0.8%"
+      Turns: 2
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "11.3%"
+      Turns: 20
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "4.7%"
+      Turns: 8
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_06"
+      Share_Of_Speech: "2.5%"
+      Turns: 7
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "30.4%"
+      Turns: 33
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "0.4%"
+      Turns: 1
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_09"
+      Share_Of_Speech: "6.7%"
+      Turns: 12
+    Person_10:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_10"
+      Share_Of_Speech: "0.5%"
+      Turns: 3
+    Person_11:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_11"
+      Share_Of_Speech: "16.3%"
+      Turns: 25
+    Person_12:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_12"
+      Share_Of_Speech: "1.2%"
+      Turns: 2
+    Person_13:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_13"
+      Share_Of_Speech: "1.5%"
+      Turns: 4
+    Person_14:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_14"
+      Share_Of_Speech: "6.3%"
+      Turns: 12
+    Person_15:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_15"
+      Share_Of_Speech: "6.7%"
+      Turns: 9
+    Person_16:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_16"
+      Share_Of_Speech: "3.4%"
+      Turns: 5
+    Person_17:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_17"
+      Share_Of_Speech: "0.7%"
+      Turns: 1
+    Person_18:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_18"
+      Share_Of_Speech: "0.6%"
+      Turns: 2
+    Person_19:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_20"
+      Share_Of_Speech: "1.4%"
+      Turns: 2
+    Person_20:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_27"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_21:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_28"
+      Share_Of_Speech: "0.8%"
+      Turns: 4
+    Person_22:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_31"
+      Share_Of_Speech: "0.8%"
+      Turns: 3
+    Person_23:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_32"
+      Share_Of_Speech: "0.8%"
+      Turns: 1
+    Person_24:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_33"
+      Share_Of_Speech: "0.7%"
+      Turns: 1
+
+  Topics:
+    - "Policing and police-brutality narratives"
+    - "Breonna Taylor, Jacob Blake and George Floyd cases"
+    - "Conduct during police stops"
+    - "Christian faith and personal responsibility"
+    - "Abortion, marriage and church closures"
+
+  Source:
+    Canonical_ID: "28f1bd12a1a2040a"
+    Transcribed: "2026-09-18T10:56:12.537450-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 2641
+    Segments: 273
+
+  Timestamps:
+    Downloaded_At: "2026-09-18T10:46:31.216179-07:00"
+    Transcription_Finished: "2026-09-18T10:56:12.537450-07:00"
+    Recorded: "2020-09-13"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "AWJvjrK5IlA.ctm"
+    Fountain: "AWJvjrK5IlA.fountain"
+    Diarization_RTTM: "AWJvjrK5IlA.rttm"
+    As_Broadcast_Script: "AWJvjrK5IlA.script.txt"
+    Segments_JSON: "AWJvjrK5IlA.segments.json"
+    Segments_JSONL: "AWJvjrK5IlA.segments.jsonl"
+    Subtitles_SRT: "AWJvjrK5IlA.srt"
+    Plain_Text: "AWJvjrK5IlA.transcription"
+    Subtitles_VTT: "AWJvjrK5IlA.vtt"
+    Transcript_SHA256: "4faa7f3fa5728e3578e5ec929f20843b277621efea2f71c0c2e1e7bc0f656fe1"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "candace_owens_us_pres"
+    video_uid: "candace_owens_us_pres::AWJvjrK5IlA"
+    video_key: "AWJvjrK5IlA"
+    youtube_id: "AWJvjrK5IlA"
+    priority: 737
+    ceiling: 1000
+    raw_score: 500
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 179
+    seat_rank: 300
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-16T23:08:00.835Z"
+    demand_run_id: "job_1789600080009_270"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=AWJvjrK5IlA"
+    source_ref: "AWJvjrK5IlA"
+    subject_kind: "new_politician"

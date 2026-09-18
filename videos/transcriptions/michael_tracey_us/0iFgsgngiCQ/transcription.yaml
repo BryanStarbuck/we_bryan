@@ -1,0 +1,169 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Eric Swalwell, the most dimwitted presidential candidate"
+    Description: >-
+      A solo commentary video by journalist Michael Tracey (July 2019) mocking then-presidential candidate
+      Rep. Eric Swalwell, whom he describes as emblematic of an MSNBC-style elite liberalism. Tracey
+      criticises Swalwell's proposal for a new federal statute protecting journalists after the assault on
+      Andy Ngo as redundant, argues that Swalwell's call for a mandatory assault-weapon buyback would provoke
+      extreme unrest, and calls his 'pass the torch' line against Joe Biden in the first Democratic debate a
+      contentless generational attack. Most of the video targets Swalwell's Trump-Russia rhetoric: his
+      comparison of 2016 election interference to Pearl Harbor and 9/11, his statement that Trump was a
+      Russian agent, and his claim that Trump likely faced sealed indictments, which Tracey says the Mueller
+      report dispelled. Tracey argues Trump's actual Russia policy was belligerent, citing arms to Ukraine and
+      withdrawal from the INF Treaty, and recounts briefly questioning Swalwell in South Carolina for a
+      Spectator column. The characterisations of Swalwell, including the title's insult, are Tracey's own;
+      Swalwell is not present to respond beyond the quotes Tracey paraphrases.
+    URL: "https://www.youtube.com/watch?v=0iFgsgngiCQ"
+    Video_ID: "0iFgsgngiCQ"
+    Show: "M. Tracey"
+    Runtime: "00:20:03"
+    Language: "en"
+
+  Media:
+    File: "0iFgsgngiCQ.m4a"
+    SHA256: "432a4a4b4e60663fdb43aff2816081181b556b657a7856c33926ec219645aa8a"
+    Bytes: 19471712
+    Duration_Seconds: 1203
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=0iFgsgngiCQ"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "0iFgsgngiCQ.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/michael_tracey_us/0iFgsgngiCQ/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCaLn4FMU_Fp-LBcdbYgYWow"
+    Uploader_ID: "@m-tracey"
+    View_Count: 4026
+    Like_Count: 285
+    Comment_Count: 89
+    Availability: "public"
+    Published_At: "2019-07-07T22:48:30+00:00"
+    Captured_At: "2026-09-18T10:45:43-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "68.6%"
+      Turns: 73
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "16.2%"
+      Turns: 25
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_02"
+      Share_Of_Speech: "0.6%"
+      Turns: 1
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_04"
+      Share_Of_Speech: "9.0%"
+      Turns: 14
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "4.8%"
+      Turns: 6
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_15"
+      Share_Of_Speech: "0.0%"
+      Turns: 1
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_26"
+      Share_Of_Speech: "0.7%"
+      Turns: 1
+
+  Topics:
+    - "Eric Swalwell's 2020 presidential campaign"
+    - "Trump-Russia allegations and the Mueller report"
+    - "Gun control and mandatory buyback proposals"
+    - "Democratic primary debates and generational arguments"
+    - "U.S.-Russia policy under Trump"
+
+  Source:
+    Canonical_ID: "555793bde0e080d4"
+    Transcribed: "2026-09-18T10:57:02.049605-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 2811
+    Segments: 209
+
+  Timestamps:
+    Downloaded_At: "2026-09-18T10:45:48.262382-07:00"
+    Transcription_Finished: "2026-09-18T10:57:02.049605-07:00"
+    Recorded: "2019-07-07"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "0iFgsgngiCQ.ctm"
+    Fountain: "0iFgsgngiCQ.fountain"
+    Diarization_RTTM: "0iFgsgngiCQ.rttm"
+    As_Broadcast_Script: "0iFgsgngiCQ.script.txt"
+    Segments_JSON: "0iFgsgngiCQ.segments.json"
+    Segments_JSONL: "0iFgsgngiCQ.segments.jsonl"
+    Subtitles_SRT: "0iFgsgngiCQ.srt"
+    Plain_Text: "0iFgsgngiCQ.transcription"
+    Subtitles_VTT: "0iFgsgngiCQ.vtt"
+    Transcript_SHA256: "f8b80cab9a2aaac812d4f142051c6942c300dbdff1b48363ec3e317cbf0b8126"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "michael_tracey_us"
+    video_uid: "michael_tracey_us::0iFgsgngiCQ"
+    video_key: "0iFgsgngiCQ"
+    youtube_id: "0iFgsgngiCQ"
+    priority: 766
+    ceiling: 1000
+    raw_score: 550
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T16:23:52.832Z"
+    demand_run_id: "job_1789057406903_3"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=0iFgsgngiCQ"
+    source_ref: "0iFgsgngiCQ"
+    subject_kind: "new_politician"
