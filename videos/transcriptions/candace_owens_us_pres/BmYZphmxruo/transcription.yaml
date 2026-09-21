@@ -1,0 +1,127 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "M BLEXIT - American Mentality"
+    Description: >-
+      A 77-second promotional clip from Candace Owens' BLEXIT campaign titled 'American Mentality'. A single
+      unidentified speaker (the transcript does not name him) says that excuses come from a lack of ambition,
+      argues that people have been taught from childhood that skin colour limits what they can do, and calls
+      'can't' one of the most dangerous words in English because it breeds self-doubt. He presents the BLEXIT
+      message (transcribed by the ASR as 'Plexig'/'plexa') as an 'I can', 'no excuses' attitude and ties it to
+      the American dream of hard work, a home, family and travel. Candace Owens does not speak in the clip.
+    URL: "https://www.youtube.com/watch?v=BmYZphmxruo"
+    Video_ID: "BmYZphmxruo"
+    Show: "Candace Owens"
+    Runtime: "00:01:17"
+    Language: "en"
+
+  Media:
+    File: "BmYZphmxruo.m4a"
+    SHA256: "4cf9ec395a631ffbf56e43cfd5fb7dbe37d507b492b9ff42ec1b0461c26429d4"
+    Bytes: 1248346
+    Duration_Seconds: 77
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=BmYZphmxruo"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "BmYZphmxruo.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/candace_owens_us_pres/BmYZphmxruo/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCL0u5uz7KZ9q-pe-VC8TY-w"
+    Uploader_ID: "@RealCandaceO"
+    View_Count: 32645
+    Like_Count: 2692
+    Comment_Count: 309
+    Availability: "public"
+    Published_At: "2020-08-13T19:15:09+00:00"
+    Captured_At: "2026-09-21T13:04:20-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "100.0%"
+      Turns: 2
+
+  Topics:
+    - "BLEXIT campaign messaging"
+    - "Personal responsibility and self-reliance"
+    - "The American dream"
+    - "Race and self-limiting beliefs"
+
+  Source:
+    Canonical_ID: "56b2ef7bba6d95c0"
+    Transcribed: "2026-09-21T13:31:50.691943-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 258
+    Segments: 7
+
+  Timestamps:
+    Downloaded_At: "2026-09-21T13:04:40.841237-07:00"
+    Transcription_Finished: "2026-09-21T13:31:50.691943-07:00"
+    Recorded: "2020-08-13"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "BmYZphmxruo.ctm"
+    Fountain: "BmYZphmxruo.fountain"
+    Diarization_RTTM: "BmYZphmxruo.rttm"
+    As_Broadcast_Script: "BmYZphmxruo.script.txt"
+    Segments_JSON: "BmYZphmxruo.segments.json"
+    Segments_JSONL: "BmYZphmxruo.segments.jsonl"
+    Subtitles_SRT: "BmYZphmxruo.srt"
+    Plain_Text: "BmYZphmxruo.transcription"
+    Subtitles_VTT: "BmYZphmxruo.vtt"
+    Transcript_SHA256: "f5138d04faec69bfc0c459b51f60538adb928570fbb251812e34aabf16add40c"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "candace_owens_us_pres"
+    video_uid: "candace_owens_us_pres::BmYZphmxruo"
+    video_key: "BmYZphmxruo"
+    youtube_id: "BmYZphmxruo"
+    priority: 737
+    ceiling: 1000
+    raw_score: 500
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 189
+    seat_rank: 300
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-21T15:36:40.377Z"
+    demand_run_id: "job_1790004999483_4"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=BmYZphmxruo"
+    source_ref: "BmYZphmxruo"
+    subject_kind: "new_politician"

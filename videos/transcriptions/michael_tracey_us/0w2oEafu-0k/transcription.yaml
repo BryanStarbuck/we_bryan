@@ -1,0 +1,179 @@
+# transcription.yaml — the human-readable record of WHAT was transcribed
+# and FROM WHERE. Written by tools/wtc_sidecar.py; see that file for why
+# this is checked-in code and not an improvisation.
+#
+# NOT EVIDENCE (pm/calc_engine_user_repo_ingest.mdx §17.R5): these bytes are
+# never hashed into content_sha256, never landed, never published. The words
+# are authenticated by the manifest's text_sha256 over the .transcription.
+# The product reads only Video.URL, Video.Video_ID, Video.Title and
+# Source.Evidence_Grade. The rest is for humans.
+#
+# ABSENT IS ABSENT: a field this run could not establish is omitted. There
+# are no placeholders, because a zero read later is a measurement.
+Transcription:
+
+  Video:
+    Title: "Ross Perot dead at 89!"
+    Description: >-
+      A solo commentary by Michael Tracey recorded on the day Ross Perot died (July 9, 2019). Tracey reflects
+      on Perot's legacy and the 2016 comparisons of Perot with Donald Trump. He notes that Trump sought
+      Perot's Reform Party nomination in 2000, yet Perot never commented publicly on Trump. Tracey speculates
+      that Perot's strict personal moral code, including his stance on adultery, may explain that silence. He
+      argues that Trump has largely governed as a conventional Republican, apart from some foreign-policy and
+      trade deviations. He draws an electoral line between Perot beating George H.W. Bush's vote share in
+      Maine in 1992 and Trump winning Maine's second district in 2016, and questions the common claim that
+      Perot cost Bush the 1992 election. He recounts Perot's mid-1992 withdrawal, which he attributes to a
+      fabricated dirty-tricks story from a former police officer named Scott Barnes, and praises Perot as the
+      only major 1992 candidate to question the Gulf War. The assessments are Tracey's own.
+    URL: "https://www.youtube.com/watch?v=0w2oEafu-0k"
+    Video_ID: "0w2oEafu-0k"
+    Show: "M. Tracey"
+    Runtime: "00:20:29"
+    Language: "en"
+
+  Media:
+    File: "0w2oEafu-0k.m4a"
+    SHA256: "311b78e9f90dc49fc04309bdebd244be4f0730a93e01d7dc5f585449e09720a5"
+    Bytes: 19892618
+    Duration_Seconds: 1229
+    Container: "m4a"
+    Audio_Codec: "aac"
+    Media_Kind: "audio"
+    Source_URL: "https://www.youtube.com/watch?v=0w2oEafu-0k"
+    Downloader: "yt-dlp 2026.08.19"
+    Metadata_From: "0w2oEafu-0k.info.json"
+    Stored_At: "/Users/bryan/T/_we_citizens/download/videos/michael_tracey_us/0w2oEafu-0k/"
+
+  # CAPTURE — facts about the posting AT THE MOMENT IT WAS FETCHED.
+  # These live nowhere else. The .info.json they came from sits beside the
+  # media, outside every repo, under a root that is treated as disposable
+  # once the words exist. View counts change hourly and are never
+  # recoverable for a past date; a video can be edited, made private or
+  # deleted; a channel handle can be renamed or reassigned to a different
+  # human, which is why Channel_ID is kept and not just the handle.
+  Capture:
+    Channel_ID: "UCaLn4FMU_Fp-LBcdbYgYWow"
+    Uploader_ID: "@m-tracey"
+    View_Count: 1863
+    Like_Count: 144
+    Comment_Count: 57
+    Availability: "public"
+    Published_At: "2019-07-09T22:03:12+00:00"
+    Captured_At: "2026-09-21T12:42:53-07:00"
+
+  # No cluster is matched to a named human: the transcript does not
+  # identify who is speaking. Subject is therefore OMITTED rather than
+  # assigned to whichever label sorted first — that is the one field a
+  # scorer trusts, and a default there is a fabricated attribution.
+  People_in_Video:
+    Person_1:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_00"
+      Share_Of_Speech: "34.7%"
+      Turns: 42
+    Person_2:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_01"
+      Share_Of_Speech: "42.7%"
+      Turns: 58
+    Person_3:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_03"
+      Share_Of_Speech: "14.5%"
+      Turns: 20
+    Person_4:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_05"
+      Share_Of_Speech: "0.2%"
+      Turns: 1
+    Person_5:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_07"
+      Share_Of_Speech: "0.1%"
+      Turns: 1
+    Person_6:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_08"
+      Share_Of_Speech: "1.9%"
+      Turns: 5
+    Person_7:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_10"
+      Share_Of_Speech: "4.7%"
+      Turns: 10
+    Person_8:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_14"
+      Share_Of_Speech: "0.5%"
+      Turns: 1
+    Person_9:
+      Name: "Unidentified"
+      Role: "Diarized speaker cluster; the transcript does not name it"
+      Speaker_Label: "SPEAKER_17"
+      Share_Of_Speech: "0.7%"
+      Turns: 2
+
+  Topics:
+    - "Ross Perot's political legacy"
+    - "Perot and Trump comparisons"
+    - "Third-party and independent candidates"
+    - "1992 presidential election"
+    - "Gulf War criticism"
+
+  Source:
+    Canonical_ID: "45c16c318463af9a"
+    Transcribed: "2026-09-21T13:48:43.093456-07:00"
+    ASR: "whisper_cpp / ggml-large-v3-turbo-q5_0"
+    Diarization: "sherpa-onnx-node / pyannote-segmentation-3-0-onnx"
+    Evidence_Grade: "aligned"
+    Word_Count: 2883
+    Segments: 241
+
+  Timestamps:
+    Downloaded_At: "2026-09-21T12:43:57.301865-07:00"
+    Transcription_Finished: "2026-09-21T13:48:43.093456-07:00"
+    Recorded: "2019-07-09"   # from upload_date. NEVER the decode date.
+
+  Files:
+    Word_Timings_CTM: "0w2oEafu-0k.ctm"
+    Fountain: "0w2oEafu-0k.fountain"
+    Diarization_RTTM: "0w2oEafu-0k.rttm"
+    As_Broadcast_Script: "0w2oEafu-0k.script.txt"
+    Segments_JSON: "0w2oEafu-0k.segments.json"
+    Segments_JSONL: "0w2oEafu-0k.segments.jsonl"
+    Subtitles_SRT: "0w2oEafu-0k.srt"
+    Plain_Text: "0w2oEafu-0k.transcription"
+    Subtitles_VTT: "0w2oEafu-0k.vtt"
+    Transcript_SHA256: "e9ca95e3314bbb1c05ed374e92ca068cb243a2a027b90764d4075f9072d08029"
+
+  Demand:   # the join back to the server: which request this answers
+    # The WHOLE demand row. The CSV is regenerated every engine run, so
+    # this is the only record of what it said when the work was done.
+    roster_key: "michael_tracey_us"
+    video_uid: "michael_tracey_us::0w2oEafu-0k"
+    video_key: "0w2oEafu-0k"
+    youtube_id: "0w2oEafu-0k"
+    priority: 766
+    ceiling: 1000
+    raw_score: 550
+    bound_by: "raw"
+    transcripts_held: 0
+    trusted_transcripts_held: 0
+    person_transcripts_held: 0
+    challenger: true
+    round: 1
+    status: "open"
+    demand_generated_at: "2026-09-10T16:23:52.832Z"
+    demand_run_id: "job_1789057406903_3"
+    source_type: "youtube"
+    source_url: "https://www.youtube.com/watch?v=0w2oEafu-0k"
+    source_ref: "0w2oEafu-0k"
+    subject_kind: "new_politician"
