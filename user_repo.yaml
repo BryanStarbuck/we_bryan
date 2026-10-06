@@ -12574,4 +12574,41 @@ user_repo:
         - "videos/transcriptions/michael_tracey_us/3BsEERcbpic/3BsEERcbpic.script.txt"
         - "videos/transcriptions/michael_tracey_us/3BsEERcbpic/3BsEERcbpic.srt"
         - "videos/transcriptions/michael_tracey_us/3BsEERcbpic/3BsEERcbpic.vtt"
-  updated_at: 2026-09-21T15:09:46.127709-07:00
+    - video_key: "LteuvHgDMN8"
+      roster_key: "project_constitution"
+      # people_only row: column 1 IS the person key, and
+      #   data_we_citizens/people/project_constitution.yaml exists (checked).
+      #   The holder is the CHANNEL, Project Constitution — not the guest.
+      person_key: "project_constitution"
+      title: "‼️Teri Hourihan Is Running for Governor of Arizona as an Independent— She Sits Down with Us Live."
+      source_url: "https://www.youtube.com/watch?v=LteuvHgDMN8"
+      recorded_language: "en"
+      path: "videos/transcriptions/project_constitution/LteuvHgDMN8/LteuvHgDMN8.transcription"
+      sidecar: "videos/transcriptions/project_constitution/LteuvHgDMN8/transcription.yaml"
+      segments: "videos/transcriptions/project_constitution/LteuvHgDMN8/LteuvHgDMN8.segments.json"
+      text_sha256: "6b4ed2400fed96c1357b06475676e54f73253c1858d5dc9ae195e0ae53780d2f"
+      transcribed_at: 2026-10-06T09:19:12.844870-07:00
+      word_count: 25779
+      evidence_grade: "aligned"
+      asr: "whisper.cpp / ggml-large-v3-turbo-q5_0"
+      demand_run_id: "2026_Oct_06_08_24_52_local_supplement"
+      # speakers: ONE cluster mapped. Diarization over-clustered badly — 358
+      #   clusters (294 in the .rttm) for about five humans (host Colin, two
+      #   guest co-hosts, Teri Ann Hourihan, Angela Mohan). SPEAKER_22 carries
+      #   Hourihan's own self-introduction and life story and is named; her
+      #   voice is also split across other clusters that are NOT named here.
+      #   SPEAKER_00 opens with "It's me Colin" but also holds a co-host's
+      #   lines, so it is mixed and left unmapped. No `subject` is claimed:
+      #   no single cluster is the channel's voice. She has no person seed
+      #   (her roster key is teri_hourihan_az_gov), so no person_key is given.
+      speakers:
+        SPEAKER_22: { role: "guest", display_name: "Teri Ann Hourihan" }
+      unread_sidecars:
+        - "videos/transcriptions/project_constitution/LteuvHgDMN8/LteuvHgDMN8.ctm"
+        - "videos/transcriptions/project_constitution/LteuvHgDMN8/LteuvHgDMN8.rttm"
+        - "videos/transcriptions/project_constitution/LteuvHgDMN8/LteuvHgDMN8.fountain"
+        - "videos/transcriptions/project_constitution/LteuvHgDMN8/LteuvHgDMN8.segments.jsonl"
+        - "videos/transcriptions/project_constitution/LteuvHgDMN8/LteuvHgDMN8.script.txt"
+        - "videos/transcriptions/project_constitution/LteuvHgDMN8/LteuvHgDMN8.srt"
+        - "videos/transcriptions/project_constitution/LteuvHgDMN8/LteuvHgDMN8.vtt"
+  updated_at: 2026-10-06T09:21:24.479378-07:00
