@@ -12600,9 +12600,10 @@ user_repo:
       #   SPEAKER_00 opens with "It's me Colin" but also holds a co-host's
       #   lines, so it is mixed and left unmapped. No `subject` is claimed:
       #   no single cluster is the channel's voice. She has no person seed
-      #   (her roster key is teri_hourihan_az_gov), so no person_key is given.
+      #   (her roster key is teri_hourihan_az_gov). 2026-10-06: person_key added —
+      #   for every human on disk person_key == politician_key (people.mdx §2.1).
       speakers:
-        SPEAKER_22: { role: "guest", display_name: "Teri Ann Hourihan" }
+        SPEAKER_22: { person_key: "teri_hourihan_az_gov", role: "guest", display_name: "Teri Ann Hourihan" }
       unread_sidecars:
         - "videos/transcriptions/project_constitution/LteuvHgDMN8/LteuvHgDMN8.ctm"
         - "videos/transcriptions/project_constitution/LteuvHgDMN8/LteuvHgDMN8.rttm"
