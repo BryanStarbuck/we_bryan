@@ -4,62 +4,49 @@ Download political videos into this citizen's own We The Citizens User Data Repo
 transcribe them on THIS machine, and commit the transcriptions so the movement can
 read them.
 
-This prompt is run from inside ONE citizen's personal user data repo. It finds the
-other We The Citizens repos on this machine by itself, reads the shared demand list
-to learn which videos the movement still needs, downloads the ones this citizen does
-not already hold, transcribes them against a localhost install, writes a
-transcription.yaml sidecar beside every result, and pushes.
+Run from inside ONE citizen's user data repo. It finds the other We The Citizens
+repos itself, reads the shared demand list for videos the movement still needs,
+downloads those this citizen does not hold, transcribes them against a localhost
+install, writes a transcription.yaml sidecar beside each result, and pushes.
 
-IT FINISHES WHAT EARLIER RUNS STARTED BEFORE IT STARTS ANYTHING NEW. A download
-whose transcription died is the most valuable work on the machine — the bytes are
-already here and the movement is already waiting — so STAGE 1C reconciles a
-cross-run ledger ({IN_PROGRESS_CSV}) against what is actually on disk, and STAGE 1D
-adopts that backlog ahead of the demand ladder. The ledger is also how two runs in
-two windows stay out of each other's way: a claim is written BEFORE the work, not
-after, and is believed for {STALE_CLAIM_HOURS}.
+IT FINISHES EARLIER RUNS' WORK FIRST. A download whose transcription died is the
+most valuable work on the machine (bytes here, movement waiting), so STAGE 1C
+reconciles the cross-run ledger {IN_PROGRESS_CSV} against disk and STAGE 1D adopts
+that backlog ahead of the demand ladder. The ledger also keeps two runs in two
+windows apart: a claim is written BEFORE the work and believed for
+{STALE_CLAIM_HOURS}.
 
-Read every stage before starting. Stages run in order. A stage that cannot complete
-STOPS the run and reports; it never guesses past a missing input.
+Read every stage first. Stages run in order. A stage that cannot complete STOPS
+and reports; it never guesses past a missing input.
 
-Every message this prompt prints to the citizen is in APPENDIX Z, by code. A stage
-says "print Z4" rather than carrying its own wall of text. When a situation arises
-that has no Z code, write the message in the same shape — one sentence of WHY, then
-the copyable lines — and say in the run report that a new message was needed.
+Every citizen-facing message is in APPENDIX Z by code ("print Z4"). A situation
+with no Z code: write the message in the same shape (one sentence of WHY, then the
+copyable lines) and note in the run report that a new message was needed.
 
 
 ====================================================================
 OUTPUT DISCIPLINE — WHAT REACHES THE CITIZEN
 ====================================================================
 
-The citizen sees SEVEN things and nothing else:
+The citizen sees SEVEN things only:
 
   1. The Stage 1 repo table (Z1).
-  2. The Stage 1B top-up table (Z40) — and ONLY when it actually added rows.
-  3. The Stage 1C backlog table (Z50) — and ONLY when a backlog exists. It earns
-     its place because it changes what the run is about to spend an hour on: a
-     citizen who typed "download 20" and is about to get a catch-up run instead
-     needs to know BEFORE it happens, not from the final report.
+  2. The Stage 1B top-up table (Z40), ONLY when it added rows.
+  3. The Stage 1C backlog table (Z50), ONLY when a backlog exists (a citizen who
+     typed "download 20" and is getting a catch-up run must know BEFORE it happens).
   4. The Stage 2 selection table.
   5. The Stage 6 "this will take N" warning (Z20).
-  6. Any Z-coded problem, at the moment it happens.
+  6. Any Z-coded problem, when it happens.
   7. The Stage 10 final report.
 
-Everything else — per-file progress, ffmpeg output, yt-dlp chatter, every skip and
-its reason, every path resolved — goes to {RUN_LOG} and NOT to the screen. A run
-that prints a line per file buries the three lines that needed reading.
+Everything else (per-file progress, ffmpeg/yt-dlp output, skips and reasons,
+resolved paths) goes to {RUN_LOG}, not the screen. No stage narration, no heading
+for a stage with nothing to say.
 
-Do not narrate stages. Do not print a heading for a stage that had nothing to say.
-Silence between the selection table and the final report is the correct output for a
-run where nothing went wrong.
-
-ONE EXCEPTION, and it matters on a long run: Stage 6 can be silent for the better
-part of an hour, and a silent terminal is indistinguishable from a hung one. Print a
-single line each time a video finishes — nothing more than
+ONE EXCEPTION: Stage 6 can be silent for most of an hour, which looks hung. Print
+one line as each video finishes, nothing more:
 
       [ DONE] kari_lake_us_pres/0jIindXGitE   374s   1748 s audio
-
-— so the citizen can see the batch moving. That is one line per video for the whole
-run, which is the floor, not the per-file chatter this section rules out.
 
 
 ====================================================================
@@ -67,190 +54,146 @@ VARIABLES
 ====================================================================
 
 ROOT_DIR dir is ~/BGit/Bryan_git/we_bryan
-  * The citizen's own User Data Repo. This is the repo this prompt lives in and the
-    only repo this prompt is allowed to WRITE to.
-  * On another citizen's computer this is a different path. Change this one line.
-  * If {CONFIG_FILE} already carries we_citizens.user_repo_path and that path is a
-    valid user data repo, that value WINS over the line above — the citizen may have
-    cloned this repo somewhere else. Stage 1 settles it.
+  * The citizen's own User Data Repo: where this prompt lives and the ONLY repo it
+    may WRITE to. On another citizen's computer, change this one line.
+  * If {CONFIG_FILE} carries we_citizens.user_repo_path and it is a valid user data
+    repo, that value WINS (the citizen may have cloned elsewhere). Stage 1 settles it.
 
 CONFIG_FILE is file ~/.config/we_citizens/config.yaml
-  * Machine-local. Outside every repo. Never checked in. Schema in APPENDIX A.
+  * Machine-local, outside every repo, never checked in. Schema in APPENDIX A.
 
 DATA_REPO dir is DISCOVERED IN STAGE 1
-  * The shared We The Citizens data repo.
-  * Remote: https://github.com/ACT3ai/data_we_citizens.git
-  * Read-only from this prompt. Never write to it, never commit in it.
+  * Shared data repo. Remote: https://github.com/ACT3ai/data_we_citizens.git
+  * Read-only: never write or commit in it.
 
 WTC_REPO dir is DISCOVERED IN STAGE 1
-  * The We The Citizens product repo — the web app and the citizens CLI.
-  * Remote: https://github.com/ACT3ai/we_the_citizens.git
-  * Read-only from this prompt except for `just build` / `just run`, which are allowed.
+  * Product repo (web app + citizens CLI). Remote: https://github.com/ACT3ai/we_the_citizens.git
+  * Read-only except `just build` / `just run`.
 
 VIDEO_DEMAND_CSV is file {DATA_REPO}/video_demand.csv
 VIDEO_DEMAND_YAML is file {DATA_REPO}/video_demand.yaml
-  * THE MOVEMENT'S QUEUE, and it is a SNAPSHOT rather than a live list. It is the
-    output of the video-demand calc engine, which runs on an install that can see
-    the private video library, and it is correct only as of its own generated_at.
-    Read-only here, like everything else in {DATA_REPO}. STAGE 1B is what covers
-    the window between its generated_at and now.
+  * THE MOVEMENT'S QUEUE, a SNAPSHOT from the video-demand calc engine (runs where
+    the private video library is visible), correct only as of its generated_at.
+    Read-only. STAGE 1B covers the window since generated_at.
 
 PEOPLE_DIR dir is {DATA_REPO}/people
-  * One committed YAML seed per public figure the movement has decided to listen to.
-    An admin adds files here continuously; the demand engine only learns about them
-    when it next runs, and can only price them when it holds a video for them.
-    This is STAGE 1B's input. Read-only.
+  * One YAML seed per public figure the movement listens to. Admins add these
+    continuously; the engine learns of them only on its next run, and prices them
+    only once it holds a video. STAGE 1B's input. Read-only.
 
 ROSTER_DIR dir is {DATA_REPO}/politicians/new
-  * The roster records a seed's links[] point at. Holds the office, the jurisdiction
-    and youtube_channel. Read-only.
+  * Roster records a seed's links[] point at: office, jurisdiction,
+    youtube_channel. Read-only.
 
 YOUTUBE_QUEUE_CSV is file {DATA_REPO}/youtube.csv
-  * The movement's channel-fetch queue. STAGE 1B reads it as a third source for a
-    person's channel URL. Read-only, and never written by this prompt.
+  * Channel-fetch queue; STAGE 1B's third source for a channel URL. Read-only.
 
 CONTENDERS_SLATE is file {DATA_REPO}/contenders/slate.yaml
-  * The sealed contenders edition. Supplies the live-challenger term and, for anyone
-    on it, a seat_kind in the vocabulary the rank map understands. ABSENT means the
-    challenger column is BLANK, never false.
+  * Sealed contenders edition: live-challenger term and, for anyone on it, a
+    seat_kind the rank map understands. ABSENT = challenger column BLANK, never false.
 
 OFFICE_RANK_FILE is the NEWEST file matching
 {DATA_REPO}/scores/new_politician_qualified/npq_*.yaml
-  * Carries office_importance_rank, the movement's admin-repriceable seat ladder.
-    Read at run time rather than copied into this prompt, so an admin who reprices
-    the ladder reprices STAGE 1B in the same edit. See APPENDIX F.
+  * Carries office_importance_rank, the admin-repriceable seat ladder. Read at run
+    time so a reprice reprices STAGE 1B too. See APPENDIX F.
 
 QUEUE_ROOT dir is {VIDEO_DOWNLOAD_ROOT}/_queue
-  * OUTSIDE every repo, beside the media roots and the run logs. `mkdir -p` it in
-    STAGE 1B before anything writes into it.
+  * Outside every repo. `mkdir -p` in STAGE 1B before writing.
 
 QUEUE_SUPPLEMENT_CSV is file {QUEUE_ROOT}/video_demand_supplement.csv
 QUEUE_SUPPLEMENT_YAML is file {QUEUE_ROOT}/video_demand_supplement.yaml
-  * STAGE 1B's output: rows for people the engine has not priced, in the SAME
-    COLUMNS as {VIDEO_DEMAND_CSV}. Stage 2 reads the two files as one list.
-  * PROVISIONAL and it says so on every row — notes names this prompt and run_id is
-    "{THE_DATE_TIME_STRING}local_supplement". It is a statement about who the
-    movement's queue is not asking about, never a claim to have run the engine.
-  * IT IS NEVER APPENDED TO {VIDEO_DEMAND_CSV}. See STAGE 1B's opening for the three
-    separate reasons, any one of which is enough.
-  * It PERSISTS between runs and accumulates. It is never truncated and rows are
-    never deleted from it by this prompt.
+  * STAGE 1B's output: rows for people the engine has not priced, SAME COLUMNS as
+    {VIDEO_DEMAND_CSV}; Stage 2 reads both as one list.
+  * PROVISIONAL on every row: notes names this prompt, run_id is
+    "{THE_DATE_TIME_STRING}local_supplement". A statement about who the queue is
+    not asking about, never a claim to have run the engine.
+  * NEVER appended to {VIDEO_DEMAND_CSV} (STAGE 1B gives three reasons).
+  * PERSISTS and accumulates: never truncated, rows never deleted by this prompt.
 
 NEW_PEOPLE_MAX_VIDEOS is the value 10
-  * The per-person cap in STAGE 1B, and it is VIDEO_DEMAND_ROUND_SIZE — round 1 is
-    the top 10 videos per person. A supplement that dealt 200 rows for one newly
-    added human would bury the movement's whole round-1 ladder under one person.
+  * STAGE 1B per-person cap = VIDEO_DEMAND_ROUND_SIZE (round 1 = top 10 per
+    person); more would bury the round-1 ladder under one new person.
 
 VIDEO_DOWNLOAD_ROOT dir is ~/T/_we_citizens/download/videos
-  * Where media THIS PROMPT downloads lands. OUTSIDE every git repo, on purpose:
-    media is large and it is never committed.
-  * THE MEDIA IS DISPOSABLE ONCE THE WORDS EXIST. THE METADATA BESIDE IT IS NOT.
-    The {video_key}.info.json holds the only copy of the channel id, the view /
-    like / comment counts at capture time, and the availability — facts that
-    change hourly, are never recoverable for a past date, and vanish outright if
-    the video is edited, made private or deleted. Nothing else on this machine
-    has them, and *.info.json is in {ROOT_DIR}/.gitignore, so they can never
-    reach the repo by accident.
-    Stage 7's Capture block is what rescues them. Until a video's sidecar carries
-    a Capture block, deleting its directory destroys evidence permanently.
-    This is not theoretical: the one transcript in this repo that predates the
-    Capture block, tucker/joe_kent, has lost its media, and its Media.SHA256 can
-    now never be computed. `verify` reports it as LEGACY forever.
-  * SAFE TO DELETE: the media file itself, and any superseded full-video file,
-    once `verify` is green for that video. Deleting the .info.json is only safe
-    after its facts are in the sidecar.
+  * Where this prompt's media lands; OUTSIDE every repo (large, never committed).
+  * MEDIA IS DISPOSABLE ONCE THE WORDS EXIST; THE METADATA IS NOT. The
+    {video_key}.info.json holds the only copy of channel id, view/like/comment
+    counts at capture time, and availability: facts unrecoverable for a past date
+    and lost if the video is edited, made private or deleted. *.info.json is in
+    {ROOT_DIR}/.gitignore. Stage 7's Capture block rescues them; until a sidecar has
+    a Capture block, deleting its directory destroys evidence permanently (e.g.
+    tucker/joe_kent predates Capture, lost its media, and `verify` reports it LEGACY
+    forever).
+  * SAFE TO DELETE: the media file and any superseded full-video file once `verify`
+    is green; the .info.json only after its facts are in the sidecar.
   * Layout: {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/{video_key}.{ext}
-  * It may not exist yet. Create it, and create {VIDEO_DOWNLOAD_ROOT}/_runs, before
-    anything writes into either.
+  * Create it and {VIDEO_DOWNLOAD_ROOT}/_runs before writing.
 
 VIDEO_DOWNLOAD_ROOT_LEGACY dir is ~/T/_we_citizens/videos
-  * An OLDER media root written by code/scripts/download_politician_videos.mjs, same
-    {roster_key}/{video_key}/ shape. It holds media for several hundred videos, and
-    for some rows only a {video_key}.info.json with no media beside it.
-  * READ it in Stage 2 so a video already downloaded there is not downloaded twice,
-    and transcribe FROM it in place. Never write into it, never move media out of it.
-  * Its {video_key}.video.yaml carries title, published_at, bytes, downloaded_at and
-    the yt-dlp version. Stage 4.6 reads it.
+  * OLDER media root from code/scripts/download_politician_videos.mjs, same
+    {roster_key}/{video_key}/ shape; several hundred videos, some rows only a
+    {video_key}.info.json with no media.
+  * READ in Stage 2 to avoid double downloads; transcribe FROM it in place. Never
+    write into it or move media out.
+  * Its {video_key}.video.yaml has title, published_at, bytes, downloaded_at, yt-dlp
+    version (Stage 4.6 reads it).
 
 MEDIA_FILE is RESOLVED PER VIDEO, in STAGE 2.3 or STAGE 4
-  * The absolute path to the one file that will actually be handed to the
-    transcriber for this video. It may sit under EITHER media root and it is NOT
-    assumed to be under {VIDEO_DOWNLOAD_ROOT}: a video found in the legacy root is
-    transcribed in place. Every later stage refers to this, never to a rebuilt path.
+  * Absolute path of the one file handed to the transcriber; may be under EITHER
+    media root. Later stages use it, never a rebuilt path.
 
 STAGE_DIR is {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/out/, PER VIDEO
-  * Where the CLI writes its nine output files (STAGE 6.2). OUTSIDE every repo.
-  * A transcription takes minutes to hours. Writing it straight into
-    {TRANSCRIPTIONS_ROOT} leaves a half-finished directory inside the repo for that
-    whole window, where the auto-committer of STAGE 9.4 can and does commit it.
-    Staging outside and moving in on success (STAGE 7.1) costs one rename.
-  * On failure it stays exactly where it is, beside the media, as the evidence.
+  * Where the CLI writes its nine output files (STAGE 6.2), OUTSIDE every repo.
+    Transcription takes minutes to hours; writing into {TRANSCRIPTIONS_ROOT} leaves
+    a half-finished dir the STAGE 9.4 auto-committer can commit. Stage outside,
+    move in on success (STAGE 7.1). On failure it stays beside the media as evidence.
 
 MEDIA_ROOTS is the ordered list [{VIDEO_DOWNLOAD_ROOT}, {VIDEO_DOWNLOAD_ROOT_LEGACY}]
-  * Searched in this order whenever the question is "does this machine already hold
-    the media for {roster_key}/{video_key}?".
+  * Search order for "does this machine already hold {roster_key}/{video_key}?".
 
 TRANSCRIPTIONS_ROOT dir is {ROOT_DIR}/videos/transcriptions
-  * Layout for anything THIS prompt writes:
-    {TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/
-  * Older hand-made directories under here use other shapes. They are LEGACY, they
-    are left exactly as they are, and Stage 2.3 finds them by video_key, not by path.
-  * This is what gets committed and pushed.
+  * Layout for what THIS prompt writes: {TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/
+  * Older hand-made dirs with other shapes are LEGACY, left as they are, found by
+    video_key not path (Stage 2.3). This tree is committed and pushed.
 
 MANIFEST_FILE is file {ROOT_DIR}/user_repo.yaml
-  * The repo's own index of its transcripts. A transcript not listed here is
-    INVISIBLE to the movement's scanner. See STAGE 8 and APPENDIX C.
+  * The repo's transcript index; unlisted = INVISIBLE to the movement's scanner.
+    See STAGE 8 and APPENDIX C.
 
 SIDECAR_TOOL is file {ROOT_DIR}/tools/wtc_sidecar.py
-  * The CHECKED-IN builder and verifier for transcription.yaml. Three verbs:
+  * The CHECKED-IN builder/verifier for transcription.yaml (test beside it:
+    {ROOT_DIR}/tools/test_wtc_sidecar.py), so this prompt never describes a schema
+    nothing implements. Three verbs:
       seed    {roster_key}/{video_key}   Stage 3.2. Snapshots the demand row BESIDE
-                                         THE MEDIA, outside every repo. It refuses
-                                         to write under {TRANSCRIPTIONS_ROOT}.
+                                         THE MEDIA, outside every repo; refuses to
+                                         write under {TRANSCRIPTIONS_ROOT}.
       write   {roster_key}/{video_key}   Stage 7.1. Creates the repo directory and
                                          writes the complete sidecar, merging every
                                          hand-written field already there.
-      verify  --all                      Stage 7.5. The gate. It is committed code with a test beside it
-    ({ROOT_DIR}/tools/test_wtc_sidecar.py) precisely so this prompt never has to
-    describe a schema that nothing implements.
-  * WHY IT EXISTS: before it, the writer was improvised in /tmp on every run. The
-    outputs were committed and auditable forever; the program that produced them
-    was deleted by the next /tmp sweep. Unversioned code wrote files into a repo
-    meant to be published. If it ever moves back to a scratch directory, that
-    regression has returned.
+      verify  --all                      Stage 7.5. The gate.
+  * It replaced a writer improvised in /tmp each run (outputs committed forever,
+    program deleted by the next /tmp sweep). Never move it back to scratch.
 
 CITIZENS_CLI is file {WTC_REPO}/cli/citizens
 LOCALHOST_API is the string "http://127.0.0.1:9333"
 LOCALHOST_WEB is the string "http://localhost:4444"
 
 VIDEO_COUNT is the number of videos to process this run
-  * DEFAULT = 20. The person running this prompt may name a different number in the
-    text they typed with the command ("download 5", "do 50", "just 1").
-  * IT IS A BUDGET FOR VIDEOS PROCESSED, NOT FOR VIDEOS DOWNLOADED. STAGE 1D spends
-    it on the backlog first, so a run with 20 un-transcribed downloads already on
-    disk downloads NOTHING and still does 20 videos' worth of work. A citizen who
-    typed "download 20" is told that before it happens (Z50), because the word
-    "download" in what they typed is about the size of the run, not a demand that
-    bytes be fetched.
+  * DEFAULT = 20; the run text may name another ("download 5", "do 50", "just 1").
+  * A BUDGET FOR VIDEOS PROCESSED, NOT DOWNLOADED. STAGE 1D spends it on the backlog
+    first, so 20 un-transcribed downloads on disk = download NOTHING, still 20
+    videos of work. Z50 tells the citizen first ("download" sizes the run).
 
 MAX_VIDEO_SECONDS is the value 10800
-  * THREE HOURS. A video longer than this is NOT WORKED — not downloaded, not
-    adopted from the backlog, not transcribed. It is skipped, counted and named.
-  * WHY, and it is an owner's ruling rather than a performance tweak: a single
-    3+ hour podcast eats a whole run. MEASURED 2026-09-17: three baron_coleman_al
-    radio shows of 13151 s, 13621 s and 13903 s were 11.3 of one run's 16.8 hours
-    of audio, and the OTHER SEVENTEEN videos together came to 5.5. One person's
-    three shows would have taken longer than every other selected video combined,
-    and the movement gets seventeen voices for the price of three.
-  * IT IS NOT A JUDGEMENT ABOUT THE CONTENT. A four-hour show is not less worth
-    hearing; it is worth hearing on a machine that has been given to it on
-    purpose. Which is the override below.
-  * THE CITIZEN CAN LIFT IT. If the run text says "do the long ones", "no length
-    limit", "include the long podcasts", or names such a video, the cap is off for
-    that run and the Stage 10 report says it was lifted.
-  * A video skipped for length is NEVER deleted and NEVER marked failed. Its media
-    stays where it is and its ledger row keeps whatever status it had — `tries` is
-    not incremented, because no attempt was made. It is work deferred, not work
-    abandoned, and a run that lifts the cap picks it up untouched.
+  * THREE HOURS. Longer videos are NOT WORKED (not downloaded, adopted, or
+    transcribed): skipped, counted, named.
+  * Owner's ruling: one 3+ hour podcast eats a run (measured 2026-09-17: three
+    baron_coleman_al shows of 13151, 13621, 13903 s were 11.3 of one run's 16.8
+    audio hours; the other seventeen videos totalled 5.5). Not a content judgement.
+  * THE CITIZEN CAN LIFT IT: run text "do the long ones", "no length limit",
+    "include the long podcasts", or naming such a video; Stage 10 says it was lifted.
+  * A length skip is NEVER deleted or marked failed: media stays, ledger status
+    unchanged, `tries` not incremented. Deferred, not abandoned.
 
 MAX_PARALLEL_TRANSCRIBE is the value 12
 DEFAULT_PARALLEL_TRANSCRIBE is the value 4
@@ -260,220 +203,162 @@ THE_DATE_TIME_STRING is the string "{Date}_{Time}_" using only alphanumerics and
 underscores, e.g. 2026_Sep_05_08_14_31_
 
 RUN_LOG is file {VIDEO_DOWNLOAD_ROOT}/_runs/{THE_DATE_TIME_STRING}download_videos.log
-  * Outside the repo. Every stage appends what it did, what it skipped and why.
-  * `mkdir -p` its directory in Stage 1 before any stage tries to append to it.
+  * Outside the repo. Every stage appends what it did, skipped, and why.
+    `mkdir -p` its directory in Stage 1.
 
 IN_PROGRESS_CSV is file ~/T/_we_citizens/videos/download/in_progress.csv
-  * THE CROSS-RUN TRANSCRIPTION LEDGER, and the answer to the failure this prompt
-    kept having: a video gets downloaded, the transcription dies, and the next run
-    walks straight past it because Stage 2.3 only skips on "the words exist" and
-    only selects from the demand ladder — so the media sits on disk forever and
-    nobody ever finishes it. MEASURED 2026-09-10: 20 videos downloaded, 0
-    transcribed, and nothing in the pipeline would have picked them up again.
-  * It is a LEDGER, not a queue: one row per {video_uid}, carrying who is working
-    it, since when, how many times it has been tried, and how it ended. STAGE 1C
-    reconciles it against the disk; STAGE 1D works the backlog it exposes.
-  * OUTSIDE EVERY REPO and never committed. It is machine-local operational state
-    about attempts, not a record of the corpus — the corpus is the repo.
-  * SEVERAL RUNS SHARE IT. The citizen may have this prompt open in two windows,
-    and a run may have been killed, cancelled or crashed at any point. Every rule
-    in APPENDIX G exists because the writer cannot assume it is alone.
-  * `mkdir -p` its directory in Stage 1. If the file does not exist, STAGE 1C
-    creates it with the header from APPENDIX G and no rows. An absent ledger is a
-    first run, never an error.
-  * NOTE ON THE PATH: this is `videos/download`, which is the reverse of
-    {VIDEO_DOWNLOAD_ROOT}'s `download/videos`, and it is deliberate — the owner
-    named this location. It therefore lands beside
-    {VIDEO_DOWNLOAD_ROOT_LEGACY}. Both are outside every repo, so nothing is at
-    risk either way; if it should move under {QUEUE_ROOT} instead, this is the one
-    line to change.
+  * THE CROSS-RUN TRANSCRIPTION LEDGER. Fixes the recurring failure: a video
+    downloaded, transcription died, and the next run walked past it (Stage 2.3
+    skips only on "words exist" and selects only from the ladder). Measured
+    2026-09-10: 20 downloaded, 0 transcribed, nothing would pick them up.
+  * A LEDGER, not a queue: one row per {video_uid} (who works it, since when, tries,
+    outcome). STAGE 1C reconciles it with disk; STAGE 1D works the backlog.
+  * OUTSIDE EVERY REPO, never committed (operational state, not corpus).
+  * SHARED BY SEVERAL RUNS (two windows, killed or crashed runs); APPENDIX G's rules
+    exist because the writer is never assumed alone.
+  * `mkdir -p` its directory in Stage 1. Missing file: STAGE 1C creates it with the
+    APPENDIX G header (a first run, never an error).
+  * Path is `videos/download` (reverse of {VIDEO_DOWNLOAD_ROOT}) on purpose: the
+    owner named it. To move it under {QUEUE_ROOT}, change this one line.
 
 IN_PROGRESS_LOCK is file {IN_PROGRESS_CSV}.lock
-  * A directory created with `mkdir` — atomic on every filesystem this runs on, and
-    the reason a lock is a directory here rather than a file with a flag in it.
-  * Held ONLY around a read-modify-write of {IN_PROGRESS_CSV}, which is
-    milliseconds. It is NEVER held across a download or a transcription: a lock
-    held for the hour a transcription takes would block every other run on the
-    machine, which is the opposite of what the ledger is for. The CLAIM in the
-    ledger is what marks long work in flight; the lock only protects the file.
-  * STALE LOCK: if the directory exists and its mtime is older than 60 seconds, the
-    run that held it is gone. Remove it, log that it was broken, and proceed.
+  * A DIRECTORY created with `mkdir` (atomic everywhere).
+  * Held ONLY around a read-modify-write of {IN_PROGRESS_CSV} (milliseconds), NEVER
+    across a download or transcription. The ledger CLAIM marks long work in flight;
+    the lock only protects the file.
+  * STALE LOCK: exists with mtime older than 60 seconds = holder gone. Remove it,
+    log the break, proceed.
 
 STALE_CLAIM_HOURS is the value 8
-  * How long a `started` row is believed. Inside this window the row is ANOTHER
-    RUN'S WORK and is left alone — a transcription legitimately runs for hours, and
-    stealing one wastes an hour of CPU on both machines and can have two processes
-    writing the same STAGE_DIR. Outside it, the claim is dead and this run may take
-    it over. 8 hours is longer than any single transcription measured on this
-    hardware and short enough that an overnight crash is recovered the next morning.
+  * How long a `started` row is believed. Inside the window it is ANOTHER RUN'S
+    WORK, left alone (stealing wastes an hour of CPU on both and races on one
+    STAGE_DIR). Outside it the claim is dead and may be taken over. Longer than any
+    measured transcription, short enough to recover an overnight crash next morning.
 
 MAX_TRANSCRIBE_TRIES is the value 3
-  * After three genuine attempts a video is SKIPPED rather than tried a fourth time.
-    A video that fails three times is not failing on luck: it is a truncated file, a
-    codec the transcriber refuses, or a bug in the pipeline, and the fourth attempt
-    burns the same CPU to reach the same place. The row stays in the ledger with its
-    reasons so a human can see what it hit.
-  * THE CITIZEN CAN OVERRIDE IT. If the run text says "retry the failures", "retry
-    exhausted", "try the max-tries ones" or names such a video, the cap is lifted
-    for that run and the ledger says the attempt was a forced retry. That is the
-    intended way to work a video after fixing the bug that blocked it.
+  * After three genuine attempts a video is SKIPPED (truncated file, refused codec,
+    or pipeline bug; a fourth try reaches the same place). Its row and reasons stay
+    for a human.
+  * OVERRIDE: run text "retry the failures", "retry exhausted", "try the max-tries
+    ones", or naming such a video lifts the cap for that run; the ledger records a
+    forced retry. The intended way to rework a video after fixing its bug.
 
 
 ====================================================================
 TWO KEY NAMESPACES — DO NOT COLLAPSE THEM
 ====================================================================
 
-This product names the same human two ways and the difference decides where files go.
+The same human has two names, and the difference decides where files go.
 
-  roster_key   The key in {VIDEO_DEMAND_CSV}'s FIRST COLUMN. Office-scoped:
+  roster_key   {VIDEO_DEMAND_CSV}'s FIRST COLUMN. Office-scoped:
                kari_lake_us_pres, tucker_carlson_us_pres, darryl_cooper_us.
-               It matches a directory in {DATA_REPO}/politicians/new/.
-               THIS IS THE DIRECTORY SEGMENT under {TRANSCRIPTIONS_ROOT} and every
-               media root. Use it verbatim, byte for byte, always.
+               Matches a directory in {DATA_REPO}/politicians/new/.
+               THE DIRECTORY SEGMENT under {TRANSCRIPTIONS_ROOT} and every media
+               root. Verbatim, byte for byte, always.
 
-  person_key   The frozen PERSON key, office-free: tucker_carlson, casey_putsch.
-               It exists only when {DATA_REPO}/people/{person_key}.yaml exists, and
-               for most roster entries IT DOES NOT EXIST — there are ~100 person
-               seeds against thousands of roster entries.
-               It is what {MANIFEST_FILE}'s speaker map is keyed by.
+  person_key   The frozen office-free PERSON key: tucker_carlson, casey_putsch.
+               Exists only when {DATA_REPO}/people/{person_key}.yaml exists (~100
+               seeds vs thousands of roster entries, so usually NOT).
+               {MANIFEST_FILE}'s speaker map is keyed by it.
 
 Rules:
-
-  * The CSV column is LABELLED person_key and is NOT one. Read it as roster_key.
-  * To get a person_key: strip nothing, guess nothing. Look for
-    {DATA_REPO}/politicians/new/{roster_key}/{roster_key}.yaml and read a
-    person_key out of it if it states one; otherwise test whether
-    {DATA_REPO}/people/{candidate}.yaml exists for a candidate the roster record
-    itself names.
-  * If no person_key resolves, OMIT it. Absent is absent. A person_key invented by
-    chopping "_us_pres" off a roster key is a fabricated identity claim, and the
-    scanner treats manifest person keys as claims it will surface to an admin.
-  * THE ONE CASE WHERE THE TWO ARE THE SAME STRING, and it is not a collapse of the
-    namespaces: a row whose subject_kind is `people_only` is published under the
-    PERSON key, because there is no roster record to scope it to an office. Column 1
-    carries that person key, it is the directory segment like any other column-1
-    value, AND {DATA_REPO}/people/{that key}.yaml exists by definition — so Stage 8
-    can state a person_key for it without looking anything up. Verify the file
-    exists rather than assuming the equality; that check is one `test -f`.
-  * Report in Stage 10 how many entries could not resolve a person_key.
+  * The CSV column LABELLED person_key is NOT one; read it as roster_key.
+  * To get a person_key, strip and guess nothing: read one from
+    {DATA_REPO}/politicians/new/{roster_key}/{roster_key}.yaml if stated, else test
+    {DATA_REPO}/people/{candidate}.yaml for a candidate the roster record names.
+  * None resolves: OMIT it. Chopping "_us_pres" off a roster key fabricates an
+    identity claim the scanner surfaces to an admin.
+  * Exception (not a collapse): a `people_only` row is published under the PERSON
+    key (no roster record to scope it). Column 1 holds that person key, it is the
+    directory segment, and {DATA_REPO}/people/{that key}.yaml exists by definition,
+    so Stage 8 may state it; still verify with one `test -f`.
+  * Stage 10 reports how many entries could not resolve a person_key.
 
 
 ====================================================================
 HARD RULES — VIOLATING ANY OF THESE FAILS THE RUN
 ====================================================================
 
-* NEVER ask production to transcribe. Not once, not as a fallback, not "just to
-  test". Transcription is work a citizen's own machine does. Every CLI call in this
-  prompt carries --local. The CLI's DEFAULT TARGET IS PRODUCTION, so an omitted
-  --local is a production call by accident. There is no acceptable reason to reach
-  https://app.WeTheCitizens.io from this prompt.
+* NEVER ask production to transcribe (not as fallback, not "to test"). Every CLI
+  call carries --local; the CLI's DEFAULT TARGET IS PRODUCTION, so an omitted
+  --local is an accidental production call. Never reach https://app.WeTheCitizens.io.
 
-* NEVER write to {DATA_REPO}. It is read-only reference here. Do not commit in it,
-  do not `git add` in it, do not repair it, do not pull it, and do not append a row
-  to {VIDEO_DEMAND_CSV}. STAGE 1B adds rows for people the engine has not seen — it
-  writes them to {QUEUE_SUPPLEMENT_CSV}, outside every repo, for the three reasons
-  that stage states.
+* NEVER write to {DATA_REPO}: no commit, `git add`, repair, pull, or appended row to
+  {VIDEO_DEMAND_CSV}. STAGE 1B writes to {QUEUE_SUPPLEMENT_CSV} outside every repo.
 
-* NEVER write application code into {WTC_REPO}. `just build` and `just run` are the
-  only things this prompt does there.
+* NEVER write application code into {WTC_REPO}; only `just build` and `just run`.
 
-* NEVER PUT A PARTIAL OR FAILED TRANSCRIPTION INTO {ROOT_DIR} — and the way to
-  honour that is to never write it there in the first place, not to write it and
-  clean up afterwards. Nothing enters {TRANSCRIPTIONS_ROOT} until the words exist
-  (STAGE 3, STAGE 7.1); a failed transcription's artefacts are written beside the
-  video, outside every repo (STAGE 7.4). A half-written directory in the repo is
-  worse than an absent one: the scanner cannot tell it from a complete one.
+* NEVER PUT A PARTIAL OR FAILED TRANSCRIPTION INTO {ROOT_DIR}, by never writing it
+  there, not by cleaning up. Nothing enters {TRANSCRIPTIONS_ROOT} until the words
+  exist (STAGE 3, 7.1); failure artefacts stay beside the video (STAGE 7.4). The
+  scanner cannot tell a half-written repo dir from a complete one.
 
 * NEVER DELETE A TRANSCRIPT OR A TRACKED FILE UNDER {ROOT_DIR}. "Clean up the
-  partial" is how fifteen committed transcription.yaml files were destroyed on
-  2026-09-07. If a path under {TRANSCRIPTIONS_ROOT} is tracked by git, or holds a
-  {video_key}.transcription, it is not this run's to remove — whatever state it is
-  in. STAGE 7.4a is the guard and it is two commands.
+  partial" destroyed fifteen committed transcription.yaml files on 2026-09-07. A
+  path under {TRANSCRIPTIONS_ROOT} tracked by git, or holding a
+  {video_key}.transcription, is never this run's to remove. STAGE 7.4a is the guard.
 
-* NEVER download in violation of a site's Terms of Service. If a URL cannot be
-  fetched lawfully, skip it, record the reason in {RUN_LOG}, and move on.
+* NEVER download in violation of a site's Terms of Service. Unlawful URL: skip,
+  record in {RUN_LOG}, move on.
 
 * NEVER WORK A VIDEO LONGER THAN {MAX_VIDEO_SECONDS} unless the citizen lifted the
-  cap. Three hours is the line. The test runs in three places because the length is
-  learned in three different moments — STAGE 2.3 when the row or a legacy sidecar
-  states it, STAGE 1D.1 for backlog media already on disk, and STAGE 4.5 for
-  everything else, which is the only measurement that is always available and
-  always true. The media is left alone and the ledger row is left alone; a skip for
-  length is a deferral, not a failure.
+  cap. Tested where length becomes known: STAGE 2.3 (row or legacy sidecar), STAGE
+  1D.1 (backlog media on disk), STAGE 4.5 (everything else; always available and
+  true). Media and ledger row untouched; a deferral, not a failure.
 
-* NEVER invent a video_key or a roster_key. Both are FROZEN and both come from
-  {VIDEO_DEMAND_CSV}, verbatim. A key derived from a filename or a title is a bug.
+* NEVER invent a video_key or roster_key. Both FROZEN, verbatim from
+  {VIDEO_DEMAND_CSV}; one derived from a filename or title is a bug.
 
-* NEVER commit media. No .mp4, .webm, .m4a, .info.json inside {ROOT_DIR}. Media
-  lives under a media root, which is outside every repo.
+* NEVER commit media (.mp4, .webm, .m4a, .info.json) inside {ROOT_DIR}.
 
-* NEVER create or switch a git branch. Work on whatever branch is checked out.
+* NEVER create or switch a git branch.
 
-* NEVER modify a transcript directory this run did not create. Legacy directories
-  under {TRANSCRIPTIONS_ROOT} are read to answer "do we already have this?" and are
-  otherwise untouched.
+* NEVER modify a transcript directory this run did not create. Legacy dirs are read
+  to answer "do we already have this?" and otherwise untouched.
 
-* NEVER START A TRANSCRIPTION WITHOUT FIRST WRITING THE CLAIM TO
-  {IN_PROGRESS_CSV}, and never delete or truncate that file. Stage 6.1b is the
-  claim and it happens BEFORE the transcriber is called, because a hung or killed
-  attempt runs no code afterwards — so a ledger written after the work records only
-  the successes and loses exactly the failures the next run has to find. This is
-  how 20 downloaded videos came to be transcribed zero times with nothing in the
-  pipeline that would ever pick them up again.
+* NEVER START A TRANSCRIPTION WITHOUT FIRST WRITING THE CLAIM TO {IN_PROGRESS_CSV}
+  (Stage 6.1b), and never delete or truncate it. A hung or killed attempt runs no
+  code afterwards, so a post-hoc ledger records only successes and loses exactly
+  the failures the next run must find.
 
-* NEVER STEAL A LIVE CLAIM. A ledger row marked `started` within
-  {STALE_CLAIM_HOURS} belongs to another run — possibly another window the citizen
-  has open right now. Leave it, count it, report it. Two runs transcribing one
-  video waste an hour of CPU each and race on the same STAGE_DIR.
+* NEVER STEAL A LIVE CLAIM. A `started` row within {STALE_CLAIM_HOURS} belongs to
+  another run, maybe another open window. Leave it, count it, report it.
 
 
 ====================================================================
 STAGE 1 — FIND THE OTHER REPOS AND SETTLE {CONFIG_FILE}
 ====================================================================
 
-The goal of this stage: end with DATA_REPO, WTC_REPO and ROOT_DIR all set to real,
-verified, absolute paths, and with {CONFIG_FILE} on disk saying the same three
-things. Nothing after this stage guesses a path.
+Goal: DATA_REPO, WTC_REPO and ROOT_DIR set to verified absolute paths, and
+{CONFIG_FILE} saying the same. Nothing later guesses a path.
 
 1.1 READ {CONFIG_FILE} IF IT EXISTS
 
-* If the file does not exist, note "config absent — will create" and go to 1.3.
-* If it exists, parse it. Accept BOTH shapes:
-  * The CURRENT shape, nested under a `we_citizens:` key (APPENDIX A).
-  * The RETIRED shape, a bare top-level `user_repo_path:` with no nesting. If you
-    read the retired shape, carry its value forward and REWRITE the file into the
-    current shape in 1.6. Say so in the output.
-* Every value read here is a CLAIM, not a fact. 1.2 turns claims into facts.
+* Absent: note "config absent — will create", go to 1.3.
+* Present: parse BOTH shapes: CURRENT (nested under `we_citizens:`, APPENDIX A) and
+  RETIRED (bare top-level `user_repo_path:`). Retired: carry the value forward,
+  REWRITE into the current shape in 1.6, say so.
+* Every value is a CLAIM until 1.2 verifies it.
 
 1.2 VERIFY EVERY PATH THE CONFIG CLAIMS — A STALE PATH IS WORSE THAN A MISSING ONE
 
-For each of the three values, in order, run this check:
-
-  * Does the directory exist? If not, the value is STALE. Discard it and search.
-  * Is it a git repo (does it have a .git)? If not, STALE. Discard and search.
-  * Run: git -C <path> remote -v
-    Compare the fetch remote against the expected remote for that slot:
-      user_repo_path        a clone of template_user_repo_we_citizens, i.e. the
-                            citizen's OWN fork/clone. The remote is per-citizen and
-                            is NOT a fixed string — accept any remote here, and rely
-                            on the content marker below as the shape test.
+For each of the three values: directory exists, has .git, and
+`git -C <path> remote -v` fetch remote matches the slot:
+      user_repo_path        the citizen's own fork/clone of
+                            template_user_repo_we_citizens; any remote accepted,
+                            the content marker is the shape test
       data_repo             github.com/ACT3ai/data_we_citizens
       we_the_citizens_repo  github.com/ACT3ai/we_the_citizens
-    A remote that does not match is STALE. Discard and search. Do not "fix it up" —
-    a directory that is a repo but the WRONG repo is exactly the failure that makes
-    a run write a transcript into somebody else's tree.
-  * Confirm the slot's own content marker as a second, independent test:
+and the content marker holds:
       data_repo             {path}/video_demand.csv exists
       we_the_citizens_repo  {path}/cli/citizens exists AND {path}/justfile exists
       user_repo_path        {path}/user_repo.yaml OR {path}/videos/ exists
+Any failure = STALE: discard and search; never "fix it up" (the wrong repo is how
+a transcript lands in somebody else's tree). All four pass = CONFIRMED.
 
-Anything that survives all four checks is CONFIRMED. Record it.
+1.3 SEARCH THE DISK FOR ANYTHING NOT CONFIRMED (first confirmed hit per slot)
 
-1.3 SEARCH THE DISK FOR ANYTHING NOT CONFIRMED
-
-Search in this order and stop at the first confirmed hit per slot.
-
-  * Search the common locations first — they cost nothing:
+  * Common locations first:
       data_repo:            ~/BGit/act3/data_we_citizens
                             ~/data_we_citizens
                             ~/BGit/data_we_citizens
@@ -481,52 +366,37 @@ Search in this order and stop at the first confirmed hit per slot.
                             ~/BGit/act3/we_the_citizens
                             ~/we_citizens
                             ~/BGit/we_citizens
-      user_repo_path:       the directory this prompt file is in, walked UP to the
-                            nearest enclosing git repo root. That is almost always
-                            the answer and should be tried before any search.
-
-  * If still not found, search by REMOTE, which is the only reliable identifier:
-    walk the likely repo parents (~/BGit and its immediate children, ~/, ~/Documents,
-    ~/Projects, ~/src, ~/code) to a depth of 4, and for every directory holding a
-    .git, run `git -C <dir> remote -v` and match the expected remote.
-
-  * DO NOT use Spotlight or `mdfind`, and do not rely on any index-backed search —
-    filesystem indexing is off on this machine and they return nothing while
-    appearing to succeed. Use `fd` if installed, otherwise `find` with an explicit
-    -maxdepth, otherwise `git -C ... remote -v` over a plain directory listing walk.
-
-  * Put every candidate through the FULL 1.2 verification before accepting it.
+      user_repo_path:       this prompt's directory walked UP to the enclosing git
+                            root (almost always the answer; try it first).
+  * Else search by REMOTE: walk ~/BGit and its children, ~/, ~/Documents,
+    ~/Projects, ~/src, ~/code to depth 4; `git -C <dir> remote -v` on each .git dir.
+  * NEVER Spotlight/`mdfind` or any index-backed search (indexing is off; they
+    return nothing while appearing to succeed). Use `fd`, else `find -maxdepth`,
+    else a plain listing walk.
+  * Every candidate goes through the full 1.2 check.
 
 1.4 WHAT TO DO WHEN A SLOT CANNOT BE FOUND
 
-  * user_repo_path NOT FOUND — fatal. Print Z2 and STOP.
-  * data_repo NOT FOUND — fatal for this run: the demand list lives there and there
-    is nothing to download without it. Print Z3 and STOP. Do not clone it yourself.
-  * we_the_citizens_repo NOT FOUND — NOT fatal here. Stages 2, 3 and 4 run without
-    it. Carry the absence forward; Stage 5.1 is where the citizen is asked for it.
+  * user_repo_path: fatal. Print Z2, STOP.
+  * data_repo: fatal (no demand list). Print Z3, STOP. Do not clone it yourself.
+  * we_the_citizens_repo: NOT fatal here (Stages 2-4 run without it); Stage 5.1 asks.
 
-1.5 REPORT WHAT STAGE 1 DECIDED
-
-Print Z1 — one line per slot, saying how each was resolved.
+1.5 Print Z1 (one line per slot: how it was resolved).
 
 1.6 WRITE {CONFIG_FILE} BACK, AND MAKE THE RUN DIRECTORIES
 
-* Create ~/.config/we_citizens/ if it does not exist.
-* Write every CONFIRMED path into {CONFIG_FILE} in the APPENDIX A shape.
-* Absolute and fully expanded. No "~". No relative paths. Another process reading
-  this file has a different working directory and may have a different HOME.
-* Preserve any key already in the file that this prompt does not own. Do not delete
-  what you did not write.
-* Leave a slot OUT rather than writing a path that failed verification. An absent
-  key means "go look"; a wrong key means "go to the wrong place".
-* If the file was already correct, do not rewrite it, and say "unchanged" in Z1.
+* Create ~/.config/we_citizens/ if needed. Write every CONFIRMED path in the
+  APPENDIX A shape, absolute and fully expanded (no "~", no relative; readers have
+  other cwd and maybe other HOME).
+* Preserve keys this prompt does not own. Leave a slot OUT rather than write an
+  unverified path (absent = go look; wrong = go to the wrong place).
+* Already correct: do not rewrite; Z1 says "unchanged".
 * mkdir -p {VIDEO_DOWNLOAD_ROOT} and {VIDEO_DOWNLOAD_ROOT}/_runs. Open {RUN_LOG}.
 
 1.7 THE MEDIA GITIGNORE — A SAFETY NET FOR THE HARD RULE
 
-The "never commit media" rule needs an enforcement that survives a mistake. If
-{ROOT_DIR}/.gitignore does not already ignore media, append this block to it (create
-the file if absent) and include it in Stage 9's commit:
+If {ROOT_DIR}/.gitignore does not already ignore media, append this (create the
+file if absent) and include it in Stage 9's commit:
 
     # Media never belongs in this repo — it lives under ~/T/_we_citizens/.
     *.mp4
@@ -538,150 +408,96 @@ the file if absent) and include it in Stage 9's commit:
     # ...but the empty-directory markers must always survive.
     !.gitkeep
 
-Say in Stage 10 whether this was added. Never REMOVE a rule already in the file.
+Stage 10 says whether it was added. Never REMOVE an existing rule.
 
 
 ====================================================================
 STAGE 1B — TOP UP THE QUEUE WITH PEOPLE THE ENGINE HAS NOT PRICED
 ====================================================================
 
-THE WINDOW THIS STAGE CLOSES.
+THE WINDOW THIS STAGE CLOSES. {VIDEO_DEMAND_CSV} is the engine's output as of its
+generated_at; admins commit new seeds into {PEOPLE_DIR} anytime. In between
+(sometimes days) a human is on the movement's books and on nobody's queue. The
+engine's own {VIDEO_DEMAND_YAML} gap sentences admit it: for some eligible people
+"we hold no video and no channel record for them ... This is a SOURCING gap, not a
+calc gap — re-running this engine cannot move it." A citizen's machine with yt-dlp
+can close exactly that gap.
 
-{VIDEO_DEMAND_CSV} is not a live queue. It is the OUTPUT of the video-demand calc
-engine, which runs on an install that can see the private video library, and it is
-correct only as of its own generated_at. Meanwhile an admin commits a new person
-seed into {PEOPLE_DIR} whenever the movement decides to start listening to somebody
-new. Between those two facts is a window — sometimes days long — in which a human is
-on the movement's books and on nobody's work queue, and a citizen running this
-prompt walks straight past them because the CSV has no row to walk.
+PRODUCES {QUEUE_SUPPLEMENT_CSV} (same columns as {VIDEO_DEMAND_CSV}, only rows the
+engine has not published) and {QUEUE_SUPPLEMENT_YAML} (how it was built, what it
+could not establish). Stage 2 reads both as one list.
 
-It is not a hypothetical and it is not small. {VIDEO_DEMAND_YAML}'s own gap
-sentences say it out loud, in the engine's voice: people entered the eligible
-universe from data_we_citizens/people/, fewer of them were priced, and for the
-remainder "we hold no video and no channel record for them, so there is nothing on
-the ladder to ask a miner for. This is a SOURCING gap, not a calc gap — re-running
-this engine cannot move it." A citizen's own machine, with yt-dlp on it, can close
-exactly that sourcing gap for exactly those people.
+NEVER APPENDED TO {VIDEO_DEMAND_CSV}; written under {QUEUE_ROOT}. Any one reason suffices:
+  * {DATA_REPO} is read-only so a citizen's run can never corrupt the shared record.
+  * The next engine run OVERWRITES that file; an appended row would later vanish,
+    leaving no way to tell priced from guessed-then-deleted.
+  * {VIDEO_DEMAND_YAML} publishes csv_sha256; appending breaks it and every verifier
+    (including Stage 2.1) reports the movement's file as tampered.
 
-WHAT THIS STAGE PRODUCES: {QUEUE_SUPPLEMENT_CSV}, a file with the SAME COLUMNS as
-{VIDEO_DEMAND_CSV} holding only rows the engine has not published, plus
-{QUEUE_SUPPLEMENT_YAML} beside it saying how it was built and what it could not
-establish. Stage 2 reads the two files as one list.
+PROVISIONAL: rows carry run_id "{THE_DATE_TIME_STRING}local_supplement" and a notes
+cell naming this prompt; this machine's best answer to "who is the movement not
+asking about", never an engine run.
 
-WHERE IT DOES NOT GO, AND WHY THE HARD RULE IS NOT BENT HERE. The supplement is
-written under {QUEUE_ROOT}, outside every repo. It is NOT appended to
-{VIDEO_DEMAND_CSV}. Three reasons, and any one of them is enough:
-
-  * {DATA_REPO} is read-only from this prompt. That rule exists so a citizen's run
-    can never corrupt the movement's shared record, and a stage that needed an
-    exception to it would be the wrong stage.
-  * The next engine run OVERWRITES that file wholesale. An appended row survives
-    until the next sweep and then vanishes, which is worse than never adding it:
-    the citizen would have no way to tell a row that was priced from a row that was
-    guessed and then deleted.
-  * {VIDEO_DEMAND_YAML} publishes csv_sha256 over the CSV. Appending a row breaks
-    that hash, and every reader that verifies it — including Stage 2.1 of this very
-    prompt — starts reporting the movement's own file as tampered with.
-
-The supplement is PROVISIONAL, and every consumer is told so: its rows carry
-run_id "{THE_DATE_TIME_STRING}local_supplement" and a notes cell naming this prompt.
-A row here is this machine's best answer to "who is the movement not asking about",
-never a claim to have run the engine.
-
-If nothing needs topping up, this stage writes nothing, prints nothing, and logs one
-line. Silence here is the normal case on a machine whose data repo was pulled today.
+Nothing to top up (normal on a freshly pulled data repo): write and print nothing,
+log one line.
 
 
 1B.0 PRECONDITION
 
-Stage 1 has confirmed {DATA_REPO} and {RUN_LOG} is open. If {PEOPLE_DIR} does not
-exist, log it and skip this whole stage — an older data repo has no seed directory
-and that is not an error.
-
-Do a read-only freshness check on the data repo before trusting its age:
+Stage 1 confirmed {DATA_REPO}; {RUN_LOG} is open. No {PEOPLE_DIR} (older data repo):
+log it and skip the stage (not an error). Read-only freshness check:
 
         git -C {DATA_REPO} fetch --dry-run 2>&1 | head -5
 
-If it reports the remote is ahead, print Z42 and CARRY ON. A citizen whose data repo
-is a week behind will be shown people as "new" who were priced days ago, and the fix
-is one pull they can run themselves. Do not pull {DATA_REPO} yourself — this prompt
-does not write to it and a merge is a write.
+Remote ahead: print Z42 and CARRY ON (stale data repos show priced people as "new";
+the fix is the citizen's own pull). Never pull {DATA_REPO} yourself (a merge is a write).
 
 
 1B.1 THE QUEUE'S OWN AS-OF DATE
 
-* Read generated_at and run_id from {VIDEO_DEMAND_YAML}. That timestamp is
-  QUEUE_ASOF and everything in this stage is measured against it.
-* If the yaml is missing or has no generated_at, fall back to the newest
-  computed_at in {VIDEO_DEMAND_CSV}, and say in the log that the fallback was used.
-* Log QUEUE_ASOF and the run_id. The Stage 10 report names them.
+* QUEUE_ASOF = generated_at from {VIDEO_DEMAND_YAML}; also read run_id. Missing:
+  fall back to the newest computed_at in {VIDEO_DEMAND_CSV} and log the fallback.
+* Log QUEUE_ASOF and run_id; Stage 10 names them.
 
 
 1B.2 THE TIMESTAMP IS THE HINT. ABSENCE FROM THE LADDER IS THE TEST.
 
-The obvious implementation — "list {PEOPLE_DIR} for files newer than the CSV" —
-gets this wrong in both directions, and both failures are silent:
+"Seeds newer than the CSV" fails silently both ways: filesystem mtime is the
+checkout time, not commit date (fresh clone = all new, old clone = none), so mtime
+may only WIDEN the set, never narrow it; and an OLD seed can still be unpriced (the
+33 people in the engine's gap sentence). Candidates = UNION of, logging which test
+caught each:
 
-  * FILESYSTEM MTIME IS NOT A COMMIT DATE. `git clone` and `git checkout` stamp
-    every file with the moment of the checkout, so on a fresh clone mtime says all
-    of them are new, and on a long-lived clone it says none of them are. Never let
-    mtime NARROW the candidate set. It may only widen it.
-  * A SEED CAN BE OLD AND STILL UNPRICED. The 33 people the engine's own gap
-    sentence names were committed long before the last run and have no row on the
-    ladder anyway, because the engine holds no video for them. A pure timestamp
-    test walks past every one of them — the exact people this stage exists for.
+  (a) SEED NEWER THAN THE QUEUE: latest of the seed's updated_at (else created_at),
+      `git -C {DATA_REPO} log -1 --format=%cI -- people/<file>`, and mtime is after
+      QUEUE_ASOF.
 
-So build the candidate set as the UNION of these three, and log which test caught
-each candidate:
+  (b) ZERO ROWS ON THE LADDER: none of the seed's person_key and EVERY links[].key
+      appears in column 1 of {VIDEO_DEMAND_CSV}. Never test the person key alone
+      (roster-linked humans publish under the ROSTER key; a person-key test mints a
+      duplicate ladder). Still insufficient: links[] can be incomplete (measured
+      2026-09-10: marjorie_taylor_greene links ..._us_pres but her rows are under
+      marjorie_taylor_greene_ga_14; matt_gaetz links matt_gaetz_us, rows under
+      matt_gaetz_fl_01), so 1B.5 de-duplicates by video id again.
 
-  (a) SEED NEWER THAN THE QUEUE. For each {PEOPLE_DIR}/*.yaml take the LATEST of:
-        - the file's own updated_at (and created_at, if updated_at is absent)
-        - git -C {DATA_REPO} log -1 --format=%cI -- people/<file>
-        - the filesystem mtime
-      If that is after QUEUE_ASOF, it is a candidate.
+  (c) NAMED BY THE CITIZEN ("do the new people", "add jack_farley"), even if (a)
+      and (b) passed them over.
 
-  (b) ZERO ROWS ON THE LADDER. Read the seed's person_key and EVERY links[].key it
-      names. Ask whether ANY of those keys appears in column 1 of
-      {VIDEO_DEMAND_CSV}. If none does, it is a candidate, whatever its date.
-
-      DO NOT test the person key alone. A roster-linked human's rows are published
-      under the ROSTER key, and a person-key-only test reports every roster-linked
-      seed as new and then mints a second, duplicate ladder for them under a key
-      nothing else in the product uses.
-
-      AND THIS TEST IS STILL NOT SUFFICIENT, WHICH IS WHY 1B.5 DE-DUPLICATES AGAIN.
-      A seed's links[] can be INCOMPLETE, so "none of the seed's keys has rows" is
-      not the same fact as "the movement has no rows for this human". MEASURED,
-      2026-09-10: marjorie_taylor_greene's seed links marjorie_taylor_greene_us_pres
-      and her rows are on the ladder under marjorie_taylor_greene_ga_14;
-      matt_gaetz's seed links matt_gaetz_us and his rows are under matt_gaetz_fl_01.
-      Both looked new here and neither was. Nothing in the seed can catch that — the
-      only thing that can is comparing the actual video ids, which 1B.5 does.
-
-  (c) NAMED BY THE CITIZEN. If the run text names a person ("do the new people",
-      "add jack_farley"), take them as a candidate even when (a) and (b) would both
-      have passed over them.
-
-Read column 1 of the CSV ONCE into a set. It is ~150k rows and a per-person grep
-over it re-reads 35MB a hundred times.
+Read column 1 ONCE into a set (~150k rows, 35MB; never grep per person):
 
         cut -d, -f1 {VIDEO_DEMAND_CSV} | tail -n +2 | sort -u
 
-Then SUBTRACT, and log each subtraction with its reason:
-
-  * a candidate that already has rows under any of its keys — not new, drop it
-  * a candidate already present in {QUEUE_SUPPLEMENT_CSV} from an earlier run whose
-    rows are still unworked — already topped up, drop it and do not re-list the
-    channel
-  * bryan_starbuck, or any seed whose person_key matches the citizen running this.
-    THE CITIZEN IS NOT A WORK ITEM. Log it and move on.
+Then SUBTRACT, logging each reason:
+  * already has rows under any of its keys
+  * already in {QUEUE_SUPPLEMENT_CSV} with unworked rows (do not re-list the channel)
+  * bryan_starbuck, or any seed matching the citizen running this (THE CITIZEN IS
+    NOT A WORK ITEM)
 
 
 1B.3 WHICH STORE IS THIS HUMAN KNOWN FROM — subject_kind, IN THE SPEC'S OWN ORDER
 
-This decides the arithmetic, so resolve it by the ORDERED list and not by "is there
-a seed?", which answers the question backwards for every roster-linked human.
-Take the FIRST that matches (calc_engine_video_demand.mdx §12.2):
+Resolve by this ordered list (calc_engine_video_demand.mdx §12.2), FIRST match, not
+by "is there a seed?":
 
   1. a links[] entry of kind new_politician       -> new_politician
   2. a links[] entry of kind worrisome_challenger -> worrisome_challenger
@@ -690,43 +506,30 @@ Take the FIRST that matches (calc_engine_video_demand.mdx §12.2):
   5. none of the four, and the seed exists        -> people_only
   6. none of the above                            -> BLANK, never people_only
 
-`people_only` means A SEED WITH NO ROSTER LINK AT ALL. It is the absence of a roster
-record, not the presence of a seed. A human on politicians/new/ is a new_politician
-even when a seed also exists.
+people_only = a seed with NO roster link (a human on politicians/new/ is
+new_politician even with a seed).
 
-THE KEY THIS ROW IS PUBLISHED UNDER follows from the same answer, and it is the
-directory segment every later stage uses:
-
-  * subject_kind people_only          -> column 1 is the PERSON key
-  * any roster kind                   -> column 1 is that link's ROSTER key
-
-Both are read verbatim from the seed. Neither is derived by adding or removing an
-office suffix. See TWO KEY NAMESPACES: a key built by chopping "_us_pres" off
-another key is a fabricated identity claim.
+Column 1 (the directory segment later stages use): people_only -> the PERSON key;
+any roster kind -> that link's ROSTER key. Both verbatim from the seed, never built
+by adding/removing an office suffix (TWO KEY NAMESPACES).
 
 
 1B.4 FIND THE CHANNEL — ATTRIBUTED, OR NOT AT ALL
 
-A video attributed to the wrong human publishes one person's recorded words under
-another's name. That is the single worst thing this prompt can do, so the channel
-must come from a record the movement already committed. Look in this order and take
-the first hit:
+Attributing videos to the wrong human publishes one person's words under another's
+name, the worst thing this prompt can do. The channel must come from a committed
+record, first hit of:
 
   1. the seed's own source_urls[] — any youtube.com entry
   2. {ROSTER_DIR}/{roster_key}/{roster_key}.yaml -> youtube_channel
   3. {YOUTUBE_QUEUE_CSV} — the row whose person_key (col 18) or politician_key
      (col 3) is one of this human's keys, and its target (col 4)
 
-NEVER search YouTube for the person's name and take the first channel back. Never
-accept a channel because the handle resembles the name. If none of the three hits,
-the candidate is UNSOURCED: it gets no rows, it is counted, and it is named in Z40
-with the one thing a human can do about it — add a youtube.com URL to the seed's
-source_urls, or file a youtube.csv row. That is a stated gap with a remedy, which is
-worth more than a guessed channel that renders perfectly.
-
-Log, per candidate, WHICH of the three sources supplied the channel. When two of
-them disagree, take the seed's and log both — the seed is the record an admin
-committed about the human; youtube.csv is a work queue.
+NEVER search YouTube by name or accept a lookalike handle. No hit = UNSOURCED: no
+rows, counted, named in Z40 with the remedy (add a youtube.com URL to the seed's
+source_urls, or file a youtube.csv row). Log which source supplied each channel; on
+disagreement take the seed's (an admin's record; youtube.csv is a work queue) and
+log both.
 
 
 1B.5 LIST THE UPLOADS — REAL PLATFORM IDS, NEVER MINTED KEYS
@@ -735,88 +538,53 @@ committed about the human; youtube.csv is a work queue.
                --print "%(id)s\t%(duration)s\t%(title)s" \
                "{channel_url}/videos"
 
-  * This is a metadata listing of a public channel page. It downloads no media. It
-    is the same tool Stage 4 already uses and the same Terms of Service rule
-    applies: if a channel cannot be listed lawfully, skip it and log the reason.
-  * THE `/videos` SUFFIX IS A GUESS ABOUT A URL SHAPE AND IT FAILS OFTEN. MEASURED,
-    2026-09-10: seven of twelve channels answered "This channel does not have a
-    videos tab" or "Unable to download API page", including handle URLs that open
-    perfectly in a browser. On failure, retry ONCE against the BARE channel URL with
-    no suffix, and once against `{channel_url}/streams` if the person is known for
-    live shows. Those are three cheap attempts at the same public page, not three
-    attempts to get around a refusal — a 403, a login wall, an age gate or a
-    members-only listing is a NO and is not retried at all.
-  * THE video_key IS THE 11-CHARACTER YOUTUBE ID, byte for byte as yt-dlp printed
-    it. That is what the engine publishes on every YouTube row today — video_key,
-    youtube_id and source_ref are the same string — so this stage is READING a
-    frozen platform key, not inventing one. Nothing here derives a key from a title,
-    a slug, a date or a counter. If yt-dlp returns something that is not
-    [A-Za-z0-9_-]{11}, drop that entry and log it.
-  * {NEW_PEOPLE_MAX_VIDEOS} is 10 because that is VIDEO_DEMAND_ROUND_SIZE — round 1
-    is the top 10 videos per person, and a supplement that dealt 200 rows for one
-    newly-added human would bury the movement's whole round-1 ladder under one
-    person. Every supplement row is round 1 and there is no round 2 here.
-  * `--playlist-end` yields the channel's MOST RECENT uploads, which is a different
-    selection from the engine's "highest priority within this person". With no
-    duration and no transcript counts, every one of this person's rows prices
-    identically anyway (§3.2 gives one raw score per person when nothing is held),
-    so recency is the only ordering available. Say that in {QUEUE_SUPPLEMENT_YAML};
-    do not present it as the engine's ordering.
-  * If yt-dlp lists ZERO videos — channel deleted, renamed, or nothing public — the
-    candidate is counted as listed-empty. No rows, no error, one log line.
-  * A candidate whose listing fails twice is dropped for this run. Do not retry a
-    third time and do not try a different channel.
+  * Metadata listing of a public page, no media; same ToS rule as Stage 4 (cannot
+    list lawfully: skip, log).
+  * `/videos` often fails (measured 2026-09-10: 7 of 12 channels, "This channel does
+    not have a videos tab" / "Unable to download API page"). On failure retry ONCE
+    with the BARE channel URL, and once with `{channel_url}/streams` for live-show
+    people. A 403, login wall, age gate or members-only listing is a NO, never retried.
+  * video_key = the 11-character YouTube id exactly as printed (the engine publishes
+    video_key = youtube_id = source_ref on YouTube rows), so this READS a frozen key.
+    Anything not [A-Za-z0-9_-]{11}: drop and log.
+  * Every supplement row is round 1 (cap {NEW_PEOPLE_MAX_VIDEOS}); there is no round 2.
+  * `--playlist-end` gives MOST RECENT uploads, not the engine's priority order; with
+    no held transcripts every row for a person prices identically (§3.2), so recency
+    is the only ordering. State that in {QUEUE_SUPPLEMENT_YAML}.
+  * Zero videos listed: counted listed-empty, no rows, one log line.
+  * Listing fails twice: drop for this run; no third try, no other channel.
 
-DE-DUPLICATE BEFORE PRICING. Drop any id that already appears anywhere in column 3
-of {VIDEO_DEMAND_CSV}, or that this repo already holds words for:
+DE-DUPLICATE BEFORE PRICING: drop any id already in column 3 of {VIDEO_DEMAND_CSV} or
+with words in this repo:
 
         find {TRANSCRIPTIONS_ROOT} -name "{video_key}.transcription"
 
-A channel re-listed on a later run must produce no duplicate row.
+A re-listed channel must produce no duplicate. A bare-key comparison is a bug
+everywhere else (video_key is unique per person only) but right here: a YouTube id
+names one video platform-wide.
 
-THE BARE-KEY TEST IS THE RIGHT ONE HERE, AND ONLY HERE. Everywhere else in this
-prompt a bare video_key comparison is a bug, because a video_key is unique within
-one person only. On a YouTube row it is also the YouTube id, and a YouTube id names
-ONE video on the whole platform — so an id already in column 3 is the same video,
-whoever the ladder filed it under. That is exactly the case worth catching.
-
-AND WHEN IT CATCHES EVERY ID FOR A CANDIDATE, THAT CANDIDATE WAS NEVER NEW. It means
-the movement already has this human's videos on the ladder under a roster key the
-seed's links[] does not name — 1B.2's test (b) asked whether any of the seed's OWN
-keys had rows, and the answer was no for a key nobody publishes under. MEASURED on
-2026-09-10: matt_gaetz's seed links matt_gaetz_us, and all ten of his recent uploads
-were already on the ladder under matt_gaetz_fl_01. Record that candidate as
-`already_on_ladder_under=<the key that holds them>`, add no rows, and name it in the
-patch CSV of 1B.8 — the remedy is a links[] entry on the seed, which is an admin's
-one-line edit, and it is a more valuable thing to report than a row.
+If this drops EVERY id for a candidate, it was never new: the ladder has them under a
+roster key the seed's links[] omits (measured: all ten matt_gaetz uploads were under
+matt_gaetz_fl_01). Record `already_on_ladder_under=<that key>`, add no rows, and name
+it in the 1B.8 patch CSV (remedy: an admin's one-line links[] edit).
 
 
 1B.6 PRICE EACH ROW — APPENDIX F, NOT A NUMBER INVENTED HERE
 
-The arithmetic is normative and it is written out in APPENDIX F. Run it; do not
-approximate it, and do not copy a neighbouring row's priority because the person
-"seems similar". Two inputs need sourcing before the sum:
+Run APPENDIX F exactly; never approximate or copy a "similar" row's priority.
+Inputs to source:
+  * office_importance_rank from the NEWEST
+    {DATA_REPO}/scores/new_politician_qualified/npq_*.yaml (admin policy, read live).
+    Unreadable: the seat term is a stated cause, NOT zero (APPENDIX F).
+  * sealed slate {DATA_REPO}/contenders/slate.yaml: key in assignments[] = challenger
+    true; absent from an EXISTING slate = false; NO slate = BLANK (not false).
 
-  * office_importance_rank — read from the NEWEST
-    {DATA_REPO}/scores/new_politician_qualified/npq_*.yaml. It is the movement's
-    admin-repriceable policy and this run reads it rather than carrying a copy, so a
-    reprice reaches this stage the same day it reaches the engine. If it cannot be
-    read, the seat term is a stated cause and NOT a zero — see APPENDIX F.
-  * the sealed contenders slate — {DATA_REPO}/contenders/slate.yaml. A key present
-    in assignments[] is challenger true; a key absent from a slate THAT EXISTS is
-    false; NO slate on disk means the column is BLANK. Blank is not false.
+The two transcript counts are LOCAL (over this machine's {TRANSCRIPTIONS_ROOT}).
+For a new person both are 0, same as the engine. Otherwise the supplement's priority
+is HIGHER than the movement's would be; state that gap in {QUEUE_SUPPLEMENT_YAML}.
+Never guess what other citizens hold.
 
-THE TWO TRANSCRIPT COUNTS ARE LOCAL AND SAY SO. This machine cannot see the
-movement's corpus, so transcripts_held and person_transcripts_held are counted over
-{TRANSCRIPTIONS_ROOT} on THIS computer only. For a genuinely new person both are 0
-and the answer is the same one the engine would give. Where they are not, the
-supplement's priority is HIGHER than the movement's would be, and
-{QUEUE_SUPPLEMENT_YAML} states that as a gap in exactly those words. Do not fold in
-a guess about what other citizens hold.
-
-The expected shape of the answer, so an implausible number is caught rather than
-published:
-
+Expected answers (catch implausible numbers):
   * a never-heard people_only human       ->  priority 100
   * a never-heard state assembly seat     ->  priority 490
   * a never-heard senator                 ->  priority 595
@@ -824,26 +592,18 @@ published:
   * any of the above, +150, when the key is on the sealed slate
   * any of the above, +100, when yt-dlp printed a duration over 2400 seconds
 
-THAT LAST ONE IS THE LONG-FORM TERM WAKING UP, AND IT IS NOT A DEVIATION. Every row
-the engine publishes today has a blank duration, so on the engine's ladder the term
-is structurally dead. A channel listing gives this stage a real duration for free,
-so a supplement row for a 45-minute video legitimately prices 100 points above the
-band — a people_only human at 200 rather than 100. Say so in
-{QUEUE_SUPPLEMENT_YAML}: it is the one place a supplement row is knowingly priced
-higher than the engine would price the same video today, and a reader comparing the
-two files deserves the reason rather than a discrepancy.
+The +100 is the long-form term working (engine rows have blank durations so it is
+dead there; a listing gives real durations). The one place a supplement row is
+knowingly priced above the engine; say so in {QUEUE_SUPPLEMENT_YAML}.
 
-A supplement row above 950, or below 0, is a bug in the sum. Log it, drop the row,
-and say so in Stage 10 rather than publishing a number nobody can reproduce.
+A row above 950 or below 0 is a sum bug: log, drop, say so in Stage 10.
 
 
 1B.7 WRITE {QUEUE_SUPPLEMENT_CSV}
 
-* The header is the header of {VIDEO_DEMAND_CSV}, READ FROM THAT FILE at run time
-  and copied byte for byte. Never a header typed out here: the columns are
-  append-only and a newer engine may have added a 26th, which this stage must carry
-  as an empty cell rather than refuse.
-* Every cell is filled by column NAME, never by position.
+* Header READ from {VIDEO_DEMAND_CSV} at run time, byte for byte (columns are
+  append-only; carry an unknown newer column as an empty cell). Fill cells by
+  column NAME, never position.
 * Fixed values on every supplement row:
       round                     1
       status                    open
@@ -858,21 +618,16 @@ and say so in Stage 10 rather than publishing a number nobody can reproduce.
       source_ref                {video_key}
       video_uid                 {column-1 key}::{video_key}
       youtube_id                {video_key}
-* BLANK IS AN ABSENCE AND NEVER A ZERO. seat_rank is blank whenever the seat term
-  carried a cause — including for every people_only row, whose cause is "no
-  candidacy on file — known from people/ only". A seat_rank of 0 published against a
-  named living person reads as "the least important office there is", which is a
-  measurement this run never made. duration_seconds is blank unless yt-dlp printed a
-  real number.
-* Rows are written in the same published order the engine uses: round ascending,
-  then priority descending, then column-1 key ascending, then video_uid ascending.
-* If the file already exists, MERGE by video_uid: rows already there are kept as
-  they are, new ones are added, and nothing is rewritten. This stage never deletes a
-  supplement row — Stage 2 skips what has been transcribed, and a row that has been
-  worked costs one skip, while a row deleted in error costs a video nobody fetches.
+* BLANK IS AN ABSENCE, NEVER A ZERO. seat_rank blank whenever the seat term carried a
+  cause, including every people_only row ("no candidacy on file — known from people/
+  only"); a 0 against a named living person reads as "least important office", a
+  measurement never made. duration_seconds blank unless yt-dlp printed a number.
+* Order: round asc, priority desc, column-1 key asc, video_uid asc (engine order).
+* Existing file: MERGE by video_uid (keep existing rows untouched, add new). Never
+  delete a supplement row (a worked row costs one Stage 2 skip; a wrongly deleted
+  one costs a video nobody fetches).
 
-Write {QUEUE_SUPPLEMENT_YAML} beside it, in the shape of {VIDEO_DEMAND_YAML} so the
-same readers work:
+{QUEUE_SUPPLEMENT_YAML} beside it, in {VIDEO_DEMAND_YAML}'s shape:
 
     video_demand_supplement:
       schema_version: 1
@@ -899,275 +654,181 @@ same readers work:
           is a source_urls entry on the seed or a youtube.csv row>"
         - "<the recency note from 1B.5>"
 
-Then verify what was written before anything trusts it: re-read the supplement,
-confirm every row parses under the real header, that no video_uid is duplicated
-within it or shared with {VIDEO_DEMAND_CSV}, and that every priority is an integer
-in [0, 1000]. A row that fails is dropped and named in the log.
+Verify before trusting: re-read; every row parses under the real header; no
+video_uid duplicated within it or shared with {VIDEO_DEMAND_CSV}; every priority an
+integer in [0, 1000]. Failing rows dropped and logged.
 
 
 1B.8 THE PATCH THE ENGINE'S OWNER CAN ACTUALLY USE
 
-This stage answers one run on one machine. The durable fix is the movement's engine
-learning these people exist. So also write, to
-{QUEUE_ROOT}/{THE_DATE_TIME_STRING}new_people_patch.csv, one row per PERSON — not
-per video — with these columns:
+The durable fix is the engine learning these people exist. Write
+{QUEUE_ROOT}/{THE_DATE_TIME_STRING}new_people_patch.csv, one row per PERSON:
 
     person_key,column_1_key,subject_kind,channel_url,channel_source,videos_listed,rows_added,status
 
-`status` is one of added, unsourced, listed_empty, dropped, and carries the reason.
-Name the file in Stage 10. It is the artifact a citizen can send to whoever runs the
-demand engine, and it is the thing that makes this stage stop being necessary.
+status: added, unsourced, listed_empty, dropped, with the reason. Name the file in
+Stage 10 (the artifact a citizen sends to whoever runs the demand engine).
 
 
 1B.9 SAY WHAT ADDING THEM DOES AND DOES NOT DO
 
-A supplement row is on the queue. It is not near the top of it, and a citizen who
-watches this stage add thirty rows and then watches Stage 2 select none of them is
-owed the reason BEFORE the selection table, not after.
-
-The bands are the reason and they are the ratified design, not a defect: a
-never-heard senator prices 595 and a never-heard people_only human prices 100. With
-150,000 priced rows on the ladder, everything STAGE 1B adds sorts below all of them
-and a default depth-first run of 20 never reaches it. The owner ratified exactly
-this — "a human with no candidacy on file waits behind one who has" — and the
-mechanism that keeps a low row reachable at all is the ROUND, which this stage
-cannot raise anybody in.
-
-MEASURED, 2026-09-10: 30 supplement rows were added at 400 / 200 / 100 and the run's
-20 slots all went to senators at 595.
-
-So STAGE 1B's output is a STANDING addition to the queue rather than this run's
-work, and two things make it reachable now rather than eventually:
-
-  * THE CITIZEN NAMES THEM. If the run text names a person or says "do the new
-    people", Stage 2.3 restricts the traversal to those keys and the bands stop
-    mattering. That is the intended way to work a newly-added human, and Z40 says
-    so in its last line.
-  * THE ENGINE PRICES THEM PROPERLY. The patch CSV of 1B.8 is what makes that
-    happen, and it is the durable fix.
-
-Say this in Stage 10 whenever rows were added and none were selected. A citizen who
-concludes the stage did nothing will turn it off.
+Supplement rows are on the queue but not near the top, by ratified design: a
+never-heard senator is 595, a people_only human 100, and with 150,000 priced rows a
+default run of 20 never reaches them ("a human with no candidacy on file waits behind
+one who has"; only the ROUND keeps low rows reachable, and this stage cannot raise
+rounds). Measured 2026-09-10: 30 rows added at 400/200/100; all 20 slots went to
+senators at 595. So 1B output is a STANDING queue addition. Reachable now via:
+  * THE CITIZEN NAMES THEM (or says "do the new people"): Stage 2.3 restricts to
+    those keys and bands stop mattering (Z40's last line says so).
+  * THE ENGINE PRICES THEM: the 1B.8 patch CSV, the durable fix.
+Whenever rows were added and none selected, say this in Stage 10 (otherwise the
+citizen concludes the stage did nothing and turns it off).
 
 1B.10 REPORT
 
-* Rows added: print Z40, once, before Stage 2's selection table.
-* Nothing added: print nothing at all. One line to {RUN_LOG}.
-* Never print a per-candidate line to the terminal. The table is the output; the
-  reasoning goes to {RUN_LOG}.
+* Rows added: print Z40 once, before the selection table. Nothing added: print
+  nothing, one {RUN_LOG} line. Never per-candidate terminal lines.
 
 
 ====================================================================
 STAGE 1C — RECONCILE THE LEDGER WITH WHAT IS ACTUALLY ON DISK
 ====================================================================
 
-THE HOLE THIS STAGE CLOSES, AND IT IS NOT HYPOTHETICAL.
+THE HOLE: a video downloads, then transcription dies (app crash, cancel, sleep,
+server restart). Stage 2 selects only from the ladder and 2.3 skips only when WORDS
+exist, so the download is never looked at again (measured 2026-09-10: 20 downloaded,
+0 transcribed). This stage asks: WHAT HAS THIS MACHINE DOWNLOADED AND NOT YET TURNED
+INTO WORDS?
 
-A video gets downloaded and the transcription then dies — the app falls over, the
-run is cancelled, the machine sleeps, a watcher restarts the server mid-job. The
-media is on disk and the words do not exist. Nothing in this prompt used to pick
-that up again: Stage 2 selects from the demand ladder, and Stage 2.3 skips a row
-only when the WORDS exist, so an un-transcribed download is neither skipped nor
-selected — it is simply never looked at again. MEASURED 2026-09-10: a run
-downloaded 20 videos, transcribed 0, and every one of those 20 would have sat
-under the media root untouched by every future run.
-
-So this stage asks the question no earlier stage asked: WHAT HAS THIS MACHINE
-ALREADY PAID TO DOWNLOAD AND NOT YET TURNED INTO WORDS?
-
-THE DISK IS THE TRUTH AND THE LEDGER IS THE CLAIM. Everything below reconciles in
-that direction. A ledger row saying `finished` for a video with no transcript is
-wrong and gets corrected; a transcript with no ledger row is a completed video from
-before the ledger existed and gets a row stating so. Never the other way round: a
-ledger that overrides the disk would let one bad row hide a real backlog forever.
+THE DISK IS THE TRUTH; THE LEDGER IS THE CLAIM. Reconcile in that direction only: a
+`finished` row with no transcript is corrected; a transcript with no row (pre-ledger)
+gets a row. A ledger overriding the disk would let one bad row hide a backlog forever.
 
 1C.0 PRECONDITION
 
-Stage 1 has confirmed {ROOT_DIR} and the media roots, and {RUN_LOG} is open.
-`mkdir -p` the directory holding {IN_PROGRESS_CSV}.
-
-If {IN_PROGRESS_CSV} does not exist, create it with the APPENDIX G header and no
-rows, log "ledger created — first run on this machine", and carry on into 1C.2.
-There is no backlog to find in an absent ledger, but 1C.2 still scans the disk,
-and on a machine with existing downloads that first scan is exactly what populates
-it.
+Stage 1 confirmed {ROOT_DIR} and media roots; {RUN_LOG} open. `mkdir -p` the
+{IN_PROGRESS_CSV} directory. Missing ledger: create it with the APPENDIX G header,
+log "ledger created — first run on this machine", continue to 1C.2 (the first scan
+populates it from existing downloads).
 
 1C.1 READ THE LEDGER UNDER THE LOCK
 
-Take {IN_PROGRESS_LOCK} (breaking it if stale, per its variable note), read the
-whole file, release the lock. Parse by COLUMN NAME, never by position — APPENDIX G
-is append-only and a newer version of this prompt may have added a column.
-
-A row that does not parse is LEFT EXACTLY AS IT IS and reported. Do not drop it and
-do not repair it: it is another run's writing, and a row this run cannot read is
-not a row this run may delete.
+Take {IN_PROGRESS_LOCK} (break if stale), read the whole file, release. Parse by
+COLUMN NAME (APPENDIX G is append-only). An unparseable row is LEFT EXACTLY AS IT IS
+and reported: another run's writing, never this run's to drop or repair.
 
 1C.2 WALK BOTH MEDIA ROOTS AND CLASSIFY EVERY VIDEO
 
-For every {roster_key}/{video_key}/ directory under {MEDIA_ROOTS}, establish two
-facts and nothing else:
+For every {roster_key}/{video_key}/ under {MEDIA_ROOTS}, two facts only:
 
-  HAS_MEDIA   a file on the transcriber's allowlist (Stage 4.4) exists in it,
-              preferring audio over video exactly as Stage 2.3 does. A directory
-              holding only a .info.json is NOT media. A .fNNN pre-merge part is
-              never media.
-  HAS_WORDS   `find {TRANSCRIPTIONS_ROOT} -name "{video_key}.transcription"`
-              returns a hit. BY VIDEO KEY, NOT BY PATH — legacy transcript
-              directories use hand-made names and a path-shaped test walks past
-              them and re-transcribes an hour of audio this citizen already has.
+  HAS_MEDIA   a transcriber-allowlisted file (Stage 4.4) exists, audio preferred over
+              video as in Stage 2.3. A lone .info.json is NOT media; a .fNNN
+              pre-merge part is never media.
+  HAS_WORDS   `find {TRANSCRIPTIONS_ROOT} -name "{video_key}.transcription"` hits. BY
+              VIDEO KEY, NOT PATH (legacy dirs have hand-made names; a path test
+              re-transcribes audio the citizen already has).
 
-That gives four classes, and each has exactly one correct ledger state:
+Four classes, one correct ledger state each:
 
-  media + words        -> `finished`. If the ledger says anything else, CORRECT it
-                          and log the correction. This is the common case on a
-                          machine that has been working for a while, and it is how
-                          a `started` row left behind by a run that actually
-                          succeeded before dying gets closed.
-  media, NO words      -> THE BACKLOG. This is what the stage exists to find.
-                          1C.3 decides what state it should carry.
-  NO media, words      -> `finished`, media cleared. Normal and safe: the media is
-                          disposable once the words and the Capture block exist.
-                          Never re-download it.
-  NO media, no words   -> not a row at all. There is nothing here. If the ledger
-                          has a row for it, mark it `media_gone` and say so — the
-                          download either never completed or the file was removed,
-                          and Stage 2 may legitimately select it again.
+  media + words        -> `finished`; correct and log any other state (closes
+                          `started` rows from runs that succeeded then died).
+  media, NO words      -> THE BACKLOG; 1C.3 decides its state.
+  NO media, words      -> `finished`, media cleared. Normal (media disposable after
+                          words + Capture). Never re-download.
+  NO media, no words   -> no row. If the ledger has one, mark `media_gone` and say so
+                          (download never completed or file removed); Stage 2 may
+                          select it again.
 
-Log the four counts. Print nothing yet.
+Log the four counts; print nothing yet.
 
-1C.3 WHAT STATE A BACKLOG ROW SHOULD CARRY — THE ONE PLACE JUDGEMENT IS NEEDED
+1C.3 WHAT STATE A BACKLOG ROW SHOULD CARRY
 
-For a video with media and no words:
+For media with no words:
 
-  * NO LEDGER ROW -> add one, `status: pending`, `tries: 0`, every timestamp empty.
-    It has never been attempted as far as this machine can prove. Do NOT invent a
-    `tries` count from the presence of a STAGE_DIR or a .FAILED.txt — those are
-    evidence that something happened, not a count of how many times.
-    DO read a {video_key}.FAILED.txt if one is there and carry its reason into
-    `note`, because that is the most useful thing a human will read.
-  * `status: started` AND `started_at` IS WITHIN {STALE_CLAIM_HOURS}
-    -> LEAVE IT COMPLETELY ALONE. Another run is working it right now. It is not
-    this run's backlog, it is not this run's row to touch, and its media is not
-    this run's to re-download. Count it and move on.
-  * `status: started` AND `started_at` IS OLDER THAN {STALE_CLAIM_HOURS}
-    -> the claim is DEAD. Whoever held it is gone. Set `status: failed`, put the
-    reason `claim expired after {STALE_CLAIM_HOURS}h — the run that held it did not
-    finish`, and leave `tries` where it is: the attempt genuinely happened and
-    already counted. It is now adoptable by 1D.
-  * `status: failed` -> adoptable, subject to the tries cap.
-  * `status: finished` but no words -> the ledger is wrong (see 1C.2). Set
-    `status: failed`, reason `ledger said finished but no transcript exists`, and
-    log the correction loudly: it means some earlier run reported success it did
-    not achieve, which is worth a human knowing.
-  * `status: pending` -> adoptable.
+  * NO LEDGER ROW -> add `status: pending`, `tries: 0`, timestamps empty. Never infer
+    `tries` from a STAGE_DIR or .FAILED.txt (evidence, not a count). Do carry a
+    {video_key}.FAILED.txt reason into `note`.
+  * `started` within {STALE_CLAIM_HOURS} -> LEAVE COMPLETELY ALONE (another run is on
+    it; not this run's row or media). Count it.
+  * `started` older than {STALE_CLAIM_HOURS} -> DEAD claim: `status: failed`, reason
+    `claim expired after {STALE_CLAIM_HOURS}h — the run that held it did not
+    finish`, `tries` unchanged (the attempt counted). Adoptable by 1D.
+  * `failed` -> adoptable, subject to the tries cap.
+  * `finished` but no words -> ledger wrong: `status: failed`, reason `ledger said
+    finished but no transcript exists`; log loudly (an earlier run claimed false success).
+  * `pending` -> adoptable.
 
-A ROW THIS RUN DID NOT CLAIM IS NEVER GIVEN A NEW `started_at`. The timestamps
-belong to the attempt that made them; rewriting one destroys the only evidence of
-how long something has been stuck.
+Never give a row this run did not claim a new `started_at` (timestamps are the only
+evidence of how long something has been stuck).
 
 1C.4 WRITE THE RECONCILED LEDGER BACK, ONCE, UNDER THE LOCK
 
-Take the lock. RE-READ the file — another run may have written between 1C.1 and
-now, and the copy in memory is already stale. Merge by {video_uid}:
+Take the lock and RE-READ (another run may have written since 1C.1). Merge by
+{video_uid}:
+  * row this stage corrected -> write it, UNLESS the re-read shows it now `started`
+    within {STALE_CLAIM_HOURS} (another run just claimed it; its claim wins; log).
+  * row untouched -> keep the re-read version byte for byte.
+  * row being added -> add it.
+Write atomically (temp file + rename on the same filesystem), release.
 
-  * a row THIS STAGE corrected -> write the correction, unless the re-read shows
-    the row now `started` inside {STALE_CLAIM_HOURS}, in which case ANOTHER RUN
-    JUST CLAIMED IT and its claim wins. Drop the correction and log it.
-  * a row this stage did not touch -> keep the re-read version byte for byte.
-  * a row this stage is adding -> add it.
-
-Write atomically (temp file plus rename, both on the same filesystem, so no reader
-ever sees a half-written ledger), release the lock.
-
-NEVER TRUNCATE THE LEDGER AND NEVER DELETE A ROW. A `finished` row costs one line
-and is the record that the work was done; a deleted row costs a re-download and a
-re-transcription of something this machine already has. If the file ever needs
-pruning that is a human's decision, not a run's.
+NEVER TRUNCATE THE LEDGER OR DELETE A ROW (a `finished` row is the record of done
+work; deleting it costs a re-download and re-transcription). Pruning is a human's call.
 
 1C.5 REPORT
 
-* A backlog exists: print Z50 — the table of what is adoptable, what is claimed by
-  another run, and what is capped out. This is one of the few things the citizen
-  sees, because it changes what the run is about to spend an hour doing.
-* No backlog and no corrections: print nothing. One line to {RUN_LOG}.
-* Corrections made but no backlog: print nothing to the terminal, but NAME every
-  correction in the Stage 10 report. A ledger that said `finished` for a video with
-  no words is a fact about an earlier run that somebody should see.
+* Backlog exists: print Z50 (adoptable / claimed by another run / capped out).
+* No backlog, no corrections: print nothing; one {RUN_LOG} line.
+* Corrections but no backlog: nothing on the terminal, but NAME every correction in
+  Stage 10.
 
 
 ====================================================================
 STAGE 1D — WORK THE BACKLOG BEFORE DOWNLOADING ANYTHING NEW
 ====================================================================
 
-THE PRIORITY RULE, AND THE REASON FOR IT:
-
         AN ALREADY-DOWNLOADED VIDEO OUTRANKS EVERY ROW ON THE DEMAND LADDER.
 
-The bytes are already on this disk. Somebody's bandwidth and somebody's disk have
-already been spent, the movement is already waiting for those words, and no new
-download can be worth more than finishing work that is one stage from done.
-Downloading twenty more videos while twenty un-transcribed ones sit on the same
-disk is how a machine accumulates a permanent backlog it never works off.
+The bytes and bandwidth are spent and the movement is waiting; no new download is
+worth more than finishing work one stage from done. Downloading more while
+un-transcribed media sits on disk builds a permanent backlog.
 
 1D.1 BUILD THE ADOPTION LIST
 
-From 1C's reconciled ledger, take every row where ALL of these hold:
+From 1C's ledger, rows where ALL hold:
+  * HAS_MEDIA true, HAS_WORDS false
+  * status `pending` or `failed` (live `started` already excluded by 1C)
+  * `tries` < {MAX_TRANSCRIBE_TRIES}, unless the citizen lifted the cap
+  * media shorter than {MAX_VIDEO_SECONDS} (ffprobe it; 1D.3 does anyway), unless
+    lifted. Over-cap rows stay untouched (not adopted, not failed, tries unchanged),
+    counted SEPARATELY from try-capped rows in Z50 and named in Stage 10 ("too long"
+    and "failed three times" are opposite facts).
 
-  * HAS_MEDIA is true and HAS_WORDS is false
-  * status is `pending` or `failed`
-  * NOT (`started` within {STALE_CLAIM_HOURS}) — 1C already excluded these
-  * `tries` < {MAX_TRANSCRIBE_TRIES}, UNLESS the citizen lifted the cap
-  * THE MEDIA IS SHORTER THAN {MAX_VIDEO_SECONDS}, UNLESS the citizen lifted that
-    cap. ffprobe the file — 1D.3 is about to ffprobe it anyway, so this costs
-    nothing extra and it is the one measurement that is always right. A backlog
-    row over the cap stays in the ledger exactly as it is: not adopted, not
-    failed, `tries` untouched. Count it separately from the try-capped rows in
-    Z50 and name it in Stage 10, because "too long for a default run" and "failed
-    three times" are opposite facts and a citizen who confuses them will go
-    looking for a bug that is not there.
+Order: fewest `tries`, then oldest `earliest_attempt_at`, then {video_uid} (likely
+wins first; longest-stuck first within that).
 
-Order it: fewest `tries` first, then oldest `earliest_attempt_at` first, then
-{video_uid}. Fewest tries first because a never-attempted video is more likely to
-succeed than one that has already failed twice, and a run that dies partway
-through should have spent its time on the likely wins. Oldest-first inside that,
-because a video that has been stuck for three weeks has been keeping the movement
-waiting for three weeks.
-
-RESTRICTIONS THE CITIZEN NAMED STILL APPLY. If the run text named people (Stage
-2.3b), the adoption list is filtered to those keys too — a citizen who asked for
-"peter" did not ask for somebody else's backlog. Say so in the table.
+Citizen-named restrictions (Stage 2.3b) filter this list too ("peter" did not ask for
+someone else's backlog); say so in the table.
 
 1D.2 THE CAP, AND WHAT IT DOES TO {VIDEO_COUNT}
 
-Adopted videos CONSUME {VIDEO_COUNT} SLOTS, and they consume them FIRST.
-
-  * Backlog ≥ {VIDEO_COUNT}: this run is entirely a catch-up run. Take the first
-    {VIDEO_COUNT}, download NOTHING, and say so plainly — a citizen who typed
-    "download 20" and sees no downloads is owed the reason before it happens, not
-    in the final report.
-  * Backlog < {VIDEO_COUNT}: adopt all of it, and let Stage 2 fill the remaining
-    slots with new rows from the ladder.
-  * Backlog empty: Stage 2 behaves exactly as it always has.
-
-THE CITIZEN CAN CHANGE THIS. "just the backlog" / "catch up" -> adopt only, never
-download. "skip the backlog" / "only new" -> log the backlog size, adopt nothing,
-and STILL report it in Stage 10 so it is not silently abandoned.
+Adopted videos consume {VIDEO_COUNT} slots FIRST.
+  * Backlog >= {VIDEO_COUNT}: catch-up run only; take the first {VIDEO_COUNT},
+    download NOTHING, say so before it happens.
+  * Backlog < {VIDEO_COUNT}: adopt all; Stage 2 fills the rest from the ladder.
+  * Empty: Stage 2 as always.
+Overrides: "just the backlog" / "catch up" -> adopt only, never download. "skip the
+backlog" / "only new" -> adopt nothing, log the size, STILL report it in Stage 10.
 
 1D.3 CARRY THEM FORWARD
 
-An adopted row arrives at Stage 4 with its MEDIA_FILE already resolved (1C.2 found
-it) and marked "already on disk", so it SKIPS 4.2–4.4 and runs 4.5 and 4.6 like
-any other carried-in video. It still needs its Stage 3.2 demand seed if one is
-missing, and Stage 6 claims it in the ledger exactly like a fresh download. From
-Stage 4 onward an adopted video and a newly downloaded one are indistinguishable,
-which is the point: there is one transcription path, not two.
+An adopted row reaches Stage 4 with MEDIA_FILE resolved (1C.2) and marked "already
+on disk": it SKIPS 4.2-4.4, runs 4.5 and 4.6, gets its Stage 3.2 seed if missing,
+and is claimed in Stage 6 like a fresh download. One transcription path, not two.
 
-ONE THING TO CHECK BEFORE TRUSTING OLD MEDIA. Run the ffprobe of 4.5 and believe
-it: a file left by an interrupted download is frequently TRUNCATED, and a truncated
-file is why some of these failed the first time. If ffprobe cannot open it, mark
-the row `failed` with reason `media will not open in ffprobe — probably a truncated
-download`, do NOT delete the file (it is the citizen's, and outside every repo),
-and let Stage 2 decide whether to re-download it. Say it in Stage 10.
+Believe 4.5's ffprobe: interrupted downloads are often TRUNCATED (why some failed).
+Won't open: mark `failed`, reason `media will not open in ffprobe — probably a
+truncated download`, do NOT delete the file, let Stage 2 decide on re-download, say
+it in Stage 10.
 
 
 ====================================================================
@@ -1176,147 +837,88 @@ STAGE 2 — CHOOSE WHICH VIDEOS TO DOWNLOAD
 
 2.1 READ THE DEMAND LIST — BOTH HALVES OF IT
 
-* Read {VIDEO_DEMAND_CSV}. Columns are in APPENDIX B. It is generated by the
-  video-demand calc engine and is ALREADY SORTED by priority, highest first.
-* Read {QUEUE_SUPPLEMENT_CSV} if STAGE 1B wrote or found one, and treat its rows as
-  part of the same list. It has the same columns and it is read the same way, by
-  column NAME. There is no separate traversal for it and no separate quota.
-  * A supplement row is MARKED, everywhere the citizen can see it: in the Stage 2.4
-    table (Z41), and in the Stage 10 report. A citizen must be able to tell which
-    videos the movement asked for and which this machine added on its own.
-  * If a video_uid appears in BOTH files, THE ENGINE'S ROW WINS and the supplement
-    row is dropped for this run. The engine can see the movement's corpus and this
-    prompt cannot, so its priority, its transcript counts and its status are the
-    better answer wherever both exist.
-  * Everything downstream is unchanged. Stage 3.2 and Stage 7.1 read a supplement
-    row's demand facts by passing --demand-csv {QUEUE_SUPPLEMENT_CSV} to
-    {SIDECAR_TOOL}; the sidecar records the row it actually used, so a later reader
-    can tell a provisional row from a priced one.
-* Read {VIDEO_DEMAND_YAML} for the run record that produced it — run_id,
-  generated_at, rows_open, and its stated gaps. Log the run_id in {RUN_LOG} so a
-  later reader can tell which demand snapshot this run worked from.
-* If {VIDEO_DEMAND_YAML} carries csv_sha256, verify {VIDEO_DEMAND_CSV} against it
-  with `shasum -a 256`. On mismatch print Z10, log it, and keep going — the CSV is
-  still the list.
-* Consider only rows whose status is `open` or `partial`. Skip `satisfied` and
-  anything with a closed_reason.
+* Read {VIDEO_DEMAND_CSV} (columns in APPENDIX B), ALREADY SORTED by priority, highest first.
+* Read {QUEUE_SUPPLEMENT_CSV} if 1B wrote or found one, as part of the same list (same
+  columns, read by NAME; no separate traversal or quota).
+  * Supplement rows are MARKED wherever the citizen sees them (Z41 in the 2.4 table,
+    Stage 10) so movement-requested and machine-added videos are distinguishable.
+  * A video_uid in BOTH files: THE ENGINE'S ROW WINS (it sees the corpus); drop the
+    supplement row this run.
+  * Downstream unchanged: Stages 3.2 and 7.1 pass --demand-csv {QUEUE_SUPPLEMENT_CSV}
+    to {SIDECAR_TOOL} for supplement rows; the sidecar records which row it used.
+* Read {VIDEO_DEMAND_YAML} (run_id, generated_at, rows_open, gaps); log run_id.
+* If it carries csv_sha256, verify with `shasum -a 256`; mismatch: print Z10, log, keep
+  going (the CSV is still the list).
+* Only status `open` or `partial`; skip `satisfied` and any closed_reason.
 
 2.2 PICK THE TRAVERSAL — ODD/EVEN STRIDE ON LONG LISTS
 
-* Count the eligible rows across BOTH files together.
-* If the count is 1000 OR FEWER: walk the list straight down from the top, in order.
-* If the count is MORE THAN 1000: read the CURRENT WALL-CLOCK MINUTE on this machine.
-  * Minute is ODD  -> take rows at odd positions  (1st, 3rd, 5th, ...)
-  * Minute is EVEN -> take rows at even positions (2nd, 4th, 6th, ...)
-  * Positions are 1-based over the eligible rows after 2.1's filtering.
-  * WHY: several citizens run this at once against the same list. A straight
-    top-down walk has all of them download the same twenty videos. The stride
-    spreads the work across machines at no coordination cost.
-  * It is TWO buckets, so it halves collisions, it does not eliminate them. That is
-    the intended trade — the alternative is a coordination service this movement
-    does not have, and Stage 2.3 makes a collision cost a skip, not a duplicate.
-  * Log the minute and which stride was chosen.
+* Count eligible rows across BOTH files.
+* <= 1000: walk straight down from the top.
+* > 1000: CURRENT WALL-CLOCK MINUTE odd -> odd positions (1st, 3rd, ...); even -> even
+  positions (2nd, 4th, ...); 1-based over eligible rows after 2.1. Several citizens run
+  this at once; the stride spreads work at no coordination cost. Two buckets halve
+  collisions, not eliminate them (2.3 makes a collision cost a skip). Log the minute
+  and stride.
 
 2.3 SKIP WHAT THIS CITIZEN ALREADY HAS
 
-Walk the chosen traversal and, for each row, skip it if ANY of these is true:
+Skip a row if ANY holds:
 
-  * THE WORDS ALREADY EXIST IN THIS REPO. Test it by VIDEO KEY, not by path:
-    does any file named {video_key}.transcription exist ANYWHERE under
-    {TRANSCRIPTIONS_ROOT}? Older transcripts in this repo sit under hand-made
-    directory names that predate the {roster_key}/{video_key} rule, and a
-    path-shaped test walks straight past them and re-transcribes an hour of audio
-    this citizen already has.
+  * THE WORDS ALREADY EXIST IN THIS REPO, tested by VIDEO KEY anywhere under
+    {TRANSCRIPTIONS_ROOT} (legacy dirs have hand-made names):
 
         find {TRANSCRIPTIONS_ROOT} -name "{video_key}.transcription"
 
-  * {MANIFEST_FILE} already lists that video_key.
-  * The row is marked unobtainable, satisfied, or carries a closed_reason.
-  * ITS STATED LENGTH IS OVER {MAX_VIDEO_SECONDS} and the citizen has not lifted
-    the cap. Take the length from the row's duration_seconds, or — when the media
-    is already on disk — from a {video_key}.video.yaml beside it.
-    THIS TEST CATCHES ALMOST NOTHING AND IS STILL WORTH RUNNING. duration_seconds
-    is blank on essentially every engine row (APPENDIX F says why: the videos.list
-    queue kind is declared and not implemented), so the real enforcement is
-    STAGE 4.5, after ffprobe. What this test buys is the case where the length IS
-    known — a supplement row priced from a yt-dlp listing, or legacy media with a
-    sidecar — and there it saves a download nobody was going to use.
-    BLANK IS UNKNOWN, NEVER SHORT. A blank duration is not a pass; it is a
-    deferral of the question to 4.5. Never treat an absent length as under the cap
-    and never treat it as over one.
+  * {MANIFEST_FILE} already lists the video_key.
+  * The row is unobtainable, satisfied, or has a closed_reason.
+  * STATED LENGTH OVER {MAX_VIDEO_SECONDS} (cap not lifted), from duration_seconds or a
+    {video_key}.video.yaml beside on-disk media. Catches little (duration_seconds is
+    blank on nearly every engine row; APPENDIX F says why), so 4.5 is the real
+    enforcement; this saves downloads only where length is known. BLANK IS UNKNOWN,
+    NEVER SHORT: neither a pass nor a fail, deferred to 4.5.
+  * The {video_uid} is `started` in {IN_PROGRESS_CSV} within {STALE_CLAIM_HOURS}
+    (another run's work; selecting it races on STAGE_DIR). Skip, count, log.
 
-A DIRECTORY IS NOT A TRANSCRIPT. The test above is for {video_key}.transcription
-and it is deliberately not "does the directory exist": runs before Stage 3 was
-fixed left seed-only directories holding a stub transcription.yaml and no words,
-and treating those as done would skip a video the movement is still waiting for.
-Such a directory is neither a skip nor an error. Note it on the row, work the video
-normally, and let Stage 7.1 overwrite the stub with the real record — the tool
-merges, so anything a human wrote into that stub survives. List them in Stage 10;
-Stage 7.4b says when one may be cleared and when it must be left alone.
+A DIRECTORY IS NOT A TRANSCRIPT. Older runs left seed-only dirs with a stub
+transcription.yaml and no words. Not a skip, not an error: note it, work the video
+normally, let Stage 7.1 overwrite the stub (the tool merges, so human edits survive).
+List them in Stage 10; 7.4b says when one may be cleared.
 
-Do NOT skip a row merely because the media is on disk. Media without words is work
-still to do. Instead, resolve it now and carry it forward:
+Never skip merely because media is on disk; resolve and carry it forward:
 
-  * MEDIA_FILE — search {MEDIA_ROOTS} in order for
-    <root>/{roster_key}/{video_key}/{video_key}.<ext> where <ext> is on the
-    transcriber's allowlist (4.4). A directory holding only a .info.json is NOT a
-    hit, and a .fNNN pre-merge part is never a hit.
-    A directory may hold BOTH an audio file and a full-video file left by an older
-    run. PREFER THE AUDIO ONE — .m4a, .opus, .mp3, .wav, .flac, .ogg — over .mp4,
-    .mkv, .webm, .mov, .avi. Same words, a fraction of the bytes to read, and the
-    transcriber discards the video stream anyway. Within a group, largest wins.
-    The first hit wins; record its ABSOLUTE path on the row and mark the row
-    "already on disk". It is transcribed in place from wherever it is — the legacy
-    root is never written to and media is never moved.
-    Note .webm can be either: audio-only from bestaudio, or a full merge from an
-    older run. Ask ffprobe whether it carries a video stream rather than guessing
-    from the extension.
-  * If nothing is found, MEDIA_FILE is absent and Stage 4 downloads it.
+  * MEDIA_FILE: search {MEDIA_ROOTS} in order for
+    <root>/{roster_key}/{video_key}/{video_key}.<ext>, <ext> on the 4.4 allowlist (a
+    lone .info.json or a .fNNN part is never a hit). PREFER AUDIO (.m4a, .opus, .mp3,
+    .wav, .flac, .ogg) over video (.mp4, .mkv, .webm, .mov, .avi): same words, fewer
+    bytes. Largest within a group. First hit wins; record its ABSOLUTE path, mark
+    "already on disk", transcribe in place (never write the legacy root or move media).
+    .webm may be audio-only or a full merge: ask ffprobe for a video stream.
+  * Nothing found: Stage 4 downloads it.
 
-Keep going down the traversal until VIDEO_COUNT videos have been selected, or the
-list runs out. A skip does not consume a slot.
-
-STAGE 1D HAS ALREADY TAKEN SOME OF THOSE SLOTS. The number this stage may select is
-{VIDEO_COUNT} MINUS the count adopted from the backlog, and it may be zero — on a
-machine with a real backlog a run legitimately downloads nothing at all. Do not
-treat a remaining count of zero as an error or as a reason to raise
-{VIDEO_COUNT}: the run is full, of work that was already paid for.
-
-ALSO SKIP A ROW THE LEDGER SAYS IS IN FLIGHT. A row whose {video_uid} is `started`
-in {IN_PROGRESS_CSV} within {STALE_CLAIM_HOURS} is another run's work even if its
-words do not exist yet, and selecting it would have two runs download the same
-video and race on the same STAGE_DIR. Skip it, count it, and log it — this is the
-one skip reason that is about coordination rather than about the corpus.
+Continue until VIDEO_COUNT are selected or the list ends; skips do not consume slots.
+Stage 1D already took slots: this stage selects {VIDEO_COUNT} minus adopted, which may
+be zero (a full run of already-paid work, not an error).
 
 2.3b DEPTH OR BREADTH — SAY WHICH, BECAUSE THE DEFAULT IS DEPTH
 
-The demand CSV is sorted by priority and priority is largely a property of the
-PERSON, so consecutive rows are usually the same person. Walking it straight down
-means a run of 20 covers about four people, 5 videos each. That is DEPTH, and it is
-the default because the engine's ordering is the movement's stated ranking.
+Priority is largely per PERSON, so consecutive rows are usually one person: a run of
+20 covers about four people (DEPTH, the default, following the engine's ranking).
+The product's `citizens batch` defaults the other way (`--breadth 2`, "breadth-first,
+so every person gets words early"). Never decide silently:
 
-It is not always what is wanted. The product's own `citizens batch` defaults the
-other way — `--breadth 2`, "breadth-first, so every person gets words early" — on
-the view that one video each for twenty people is worth more than five each for
-four. Both are defensible and this prompt does not get to decide it silently.
-
-  * THE CITIZEN NAMED PEOPLE. If the run text names one or more people — a
-    person_key, a roster key, or "the new people" / "the ones Stage 1B added" —
-    restrict the traversal to rows whose column-1 key matches, in priority order
-    within that restriction, and ignore the stride. This overrides both defaults
-    below and it is the only way a low-priced row gets worked on purpose. Say in
-    the selection table that the traversal was restricted, and to what.
-  * DEFAULT: depth. Walk the traversal as ordered.
-  * If the citizen says "spread it out", "breadth", "one each", or names a number of
-    people, cap the selection at N rows per roster_key and move on to the next
-    person, still in priority order.
-  * Either way, SAY IN THE SELECTION TABLE how many distinct people the run covers.
-    A citizen who expected twenty voices and got four should learn it before the
-    download starts, not from the commit.
+  * CITIZEN NAMED PEOPLE (person_key, roster key, "the new people" / "the ones Stage
+    1B added"): restrict to matching column-1 keys in priority order, ignore the
+    stride. Overrides both defaults; the only way to work low-priced rows on purpose.
+    Say so in the table.
+  * DEFAULT: depth.
+  * "spread it out", "breadth", "one each", or a number of people: cap at N rows per
+    roster_key, still in priority order.
+  * Always state in the selection table how many distinct people the run covers.
 
 2.4 REPORT THE SELECTION BEFORE DOING ANY WORK
 
-Print the selection table (Z11): roster_key, video_key, priority, and state.
+Print the selection table (Z11): roster_key, video_key, priority, state.
 
 Status brackets used through the rest of this run:
       [     ]  not started
@@ -1330,126 +932,77 @@ Status brackets used through the rest of this run:
 STAGE 3 — SEED THE DEMAND ROW, OUTSIDE THE REPO
 ====================================================================
 
-THE ONE RULE THIS STAGE EXISTS TO ENFORCE:
-
         NOTHING IS WRITTEN INTO {TRANSCRIPTIONS_ROOT} UNTIL THE WORDS EXIST.
 
-Not a directory, not a .gitkeep, not a stub transcription.yaml. Stage 7.1 creates
-the directory and writes the sidecar in one step, when there is a complete record
-to put there. Until then this run leaves no trace inside {ROOT_DIR}.
+Not a directory, .gitkeep, or stub transcription.yaml; Stage 7.1 creates the dir and
+sidecar in one step on success.
 
-WHY, AND IT IS NOT HYPOTHETICAL. This stage used to seed a stub transcription.yaml
-into the repo before the download. On 2026-09-07 that produced this sequence:
-
-  1. Twenty stubs were seeded into {TRANSCRIPTIONS_ROOT}. Each held Video.URL,
-     Video_ID and a partial Demand block — sixteen lines, no words.
-  2. The external auto-committer (Stage 9.4, commits titled "Bryan 26 Tower")
-     swept mid-run and COMMITTED FIFTEEN OF THEM. It knows nothing about this
-     prompt and nothing here can stop it.
-  3. The app on :9333 would not stay up and those fifteen transcriptions failed.
-  4. Stage 7.4 did what it is told — "a failed transcription leaves NOTHING behind
-     in {ROOT_DIR}" — and removed the directories.
-  5. Fifteen committed transcription.yaml files were therefore DELETED from the
-     repo (901615a created them, d4452fa removed them), which reads in the history
-     as this pipeline destroying its own sidecars.
-
-Every step of that was individually correct. The mistake was upstream of all of
-them: a file that had not earned its place in the repo was put in the repo, and
-from that moment every later rule had to choose between committing a partial
-transcript and deleting a tracked file. Do not recreate that choice.
+WHY (2026-09-07): stubs were seeded into the repo before download; the external
+auto-committer (Stage 9.4, "Bryan 26 Tower") committed fifteen mid-run; the app on
+:9333 would not stay up and they failed; Stage 7.4 removed the dirs; so fifteen
+committed transcription.yaml files were DELETED (901615a created, d4452fa removed).
+Each step was correct; the mistake was putting an unearned file in the repo, forcing
+a choice between committing a partial and deleting a tracked file. Never recreate it.
 
 3.1 CREATE ONLY THE MEDIA DIRECTORY
 
-  * {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/ — ONLY when this run is going to
-    download. A video already on disk keeps the directory it is already in.
-  * DO NOT create {TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/. Stage 7.1 does,
-    on success, and nothing else does.
-  * The directory name IS the video_key from the CSV, byte for byte. Not a title,
-    not a slug, not a guest's name. The video_key is the join key everywhere else in
-    this product and a directory named anything else is invisible to every reader.
+  * {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/, ONLY if this run will download
+    (on-disk media keeps its directory).
+  * NOT {TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/ (only Stage 7.1, on success).
+  * The name IS the CSV video_key byte for byte (the product-wide join key), never a
+    title, slug, or guest name.
 
 3.2 SNAPSHOT THE DEMAND ROW BESIDE THE MEDIA
 
         python3 {SIDECAR_TOOL} seed {roster_key}/{video_key}
 
-For a row that came from {QUEUE_SUPPLEMENT_CSV}, point the tool at the file the row
-is actually in — otherwise it reports "no row" for a video this run legitimately
-selected:
+For a {QUEUE_SUPPLEMENT_CSV} row, point at its file (else "no row"):
 
         python3 {SIDECAR_TOOL} seed {roster_key}/{video_key} \
                 --demand-csv {QUEUE_SUPPLEMENT_CSV}
 
-That writes {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/{video_key}.demand.yaml
-— outside every repo, beside the media it belongs to.
+Writes {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/{video_key}.demand.yaml outside
+every repo. Not a placeholder: {VIDEO_DEMAND_CSV} IS REGENERATED EVERY ENGINE RUN, so
+by Stage 7 the row may differ or be gone; the seed is what it said when work started,
+and Stage 7.1 falls back to it.
 
-This is not a placeholder standing in for the sidecar. It does a job nothing else
-does: {VIDEO_DEMAND_CSV} IS REGENERATED EVERY ENGINE RUN, so by the time a
-twenty-video batch reaches Stage 7 the row it was selected from may carry a
-different priority, a different status, or be gone. The seed is what that row
-actually said when the work started, and Stage 7.1 falls back to it when the live
-CSV no longer has the row.
-
-  * If the seed cannot be written, LOG IT AND CARRY ON. It is a debugging aid and a
-    fallback, not a gate. A run must never fail because a scratch directory was
-    not writable.
-  * If {SIDECAR_TOOL} reports no row for {roster_key}::{video_key} AND the video
-    came from STAGE 2's ladder traversal, that is a SELECTION bug, not a seed bug —
-    Stage 2 chose a row that is not in the CSV. Drop the video, log it, and say so
-    in Stage 10.
-  * BUT IF THE VIDEO WAS ADOPTED BY STAGE 1D, "no row" IS EXPECTED AND IS NOT A
-    REASON TO DROP IT. {VIDEO_DEMAND_CSV} is regenerated on every engine run and
-    rows leave it — a video downloaded three weeks ago may have no row today. The
-    media is on this disk and the movement has no words for it; that is the whole
-    case for transcribing it, and it does not depend on a row still existing.
-    Carry on with whatever seed is already beside the media from the original
-    download, note "no live demand row — adopted from the ledger" on the row, and
-    let Stage 7.1 fall back to the old seed exactly as it was designed to. Dropping
-    these would make STAGE 1D silently useless on precisely the oldest and most
-    neglected part of the backlog.
+  * Seed cannot be written: LOG AND CARRY ON (a debugging aid and fallback, not a gate).
+  * "No row" for a Stage 2 ladder pick = a SELECTION bug: drop, log, report in Stage 10.
+  * "No row" for a STAGE 1D adoption is EXPECTED (rows leave the CSV): keep the
+    existing seed from the original download, note "no live demand row — adopted from
+    the ledger", let 7.1 fall back. Dropping these would make 1D useless on the
+    oldest backlog.
 
 
 ====================================================================
 STAGE 4 — GET THE MEDIA AND ITS FACTS
 ====================================================================
 
-Every selected video ends this stage with a MEDIA_FILE that exists and with its
-media facts measured. That is true whether this run downloaded it or found it. A
-video carried in from Stage 2.3 SKIPS 4.2–4.4 and still runs 4.5 and 4.6 — the
-SHA-256 is required in Stage 7 and nothing else computes it.
+Every selected video ends with an existing MEDIA_FILE and measured facts. Carried-in
+videos SKIP 4.2-4.4 but still run 4.5 and 4.6 (Stage 7 needs the SHA-256 and only 4.5
+computes it).
 
-4.1 CHECK THE TOOLS FIRST — ONCE PER RUN, NOT PER VIDEO
+4.1 CHECK THE TOOLS FIRST — ONCE PER RUN
 
-Run `which yt-dlp` and `which ffmpeg` and `which ffprobe`.
-
-  * Missing yt-dlp: print Z4, then ask whether to install it here. Install only with
-    explicit permission. Do not silently install, do not substitute a downloader.
-  * Missing ffprobe: print Z5. It measures every file's duration and 4.5 needs it.
-  * Missing ffmpeg: print Z5 only if 4.4 is actually going to run — with the
-    allowlist as wide as it is, most runs never call ffmpeg at all.
-  * If every selected video already has MEDIA_FILE, yt-dlp is not needed this run —
-    say so instead of blocking on it. ffprobe is still needed, by 4.5.
+`which yt-dlp`, `which ffmpeg`, `which ffprobe`.
+  * No yt-dlp: print Z4, ask to install; install only with explicit permission; never
+    substitute a downloader.
+  * No ffprobe: print Z5 (4.5 needs it).
+  * No ffmpeg: Z5 only if 4.4 will actually run (rare).
+  * Every video already has MEDIA_FILE: yt-dlp not needed; say so instead of blocking.
 
 4.2 RUN THE DOWNLOAD
 
-  * The URL for a YouTube row is https://www.youtube.com/watch?v={youtube_id}
-  * cd into {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/ first. Download into the
-    working directory; do not pass an output path.
-  * PUT THE URL IN DOUBLE QUOTES. Both sides. This is not optional and it is not
-    style: an unquoted URL loses its query string to the shell and yt-dlp then
-    fetches the wrong thing or nothing.
-  * WRITE THE INFO JSON. It is the only source for Title, Description, upload date,
-    channel and duration, and Stage 7 forbids inferring the recorded date from the
-    decode date — so without it those fields can never be filled at all.
-
-  * NAME THE OUTPUT WITH THE VIDEO KEY, so no rename step is needed and no
-    title-derived filename ever exists to be mistaken for a key.
-  * FETCH THE AUDIO ONLY. -f bestaudio is not a size optimisation, it is what the
-    rung is specified as: pm/transcription.mdx names rung 3 `aligned_local` as
-    "yt-dlp bestaudio -> ffmpeg -> Silero VAD -> whisper.cpp -> sherpa diarize ->
-    merge", and its Fetch-audio step says outright "the video stream is never
-    downloaded; we want the words, not the pixels". Measured against this list, a
-    full-video fetch of six clips came to 1.1 GB and the pipeline discarded every
-    pixel; bestaudio is about 1 MB per audio-minute.
+  * YouTube URL: https://www.youtube.com/watch?v={youtube_id}
+  * cd into {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/ and download there.
+  * URL IN DOUBLE QUOTES, always (unquoted, the shell eats the query string).
+  * WRITE THE INFO JSON: only source of Title, Description, upload date, channel,
+    duration (Stage 7 forbids inferring recorded date from decode date).
+  * NAME OUTPUT BY VIDEO KEY (no rename, no title-derived filename).
+  * AUDIO ONLY: rung 3 `aligned_local` in pm/transcription.mdx is "yt-dlp bestaudio ->
+    ffmpeg -> Silero VAD -> whisper.cpp -> sherpa diarize -> merge", and "the video
+    stream is never downloaded; we want the words, not the pixels". (Six full-video
+    clips = 1.1 GB of discarded pixels; bestaudio is ~1 MB per audio-minute.)
 
         cd "{VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}"
         yt-dlp -f "bestaudio[ext=m4a]/bestaudio[ext=webm]/bestaudio" \
@@ -1458,66 +1011,41 @@ Run `which yt-dlp` and `which ffmpeg` and `which ffprobe`.
                -o "{video_key}.%(ext)s" \
                "https://www.youtube.com/watch?v={youtube_id}"
 
-  * DO NOT add --extract-audio. It re-encodes a lossy source a second time for no
-    gain: bestaudio already lands as .m4a or .webm/opus and both are accepted as-is
-    (4.4). Archive the bytes the site served.
-  * If the citizen wants the video kept for some other purpose, that is a different
-    job from this one. Say so rather than quietly fetching 200 MB a clip on the
-    chance somebody wants it.
-
-  * Downloads run ONE AT A TIME. Do not parallelise this stage — parallel fetches
-    from one host is what gets an IP throttled, and a throttled machine transcribes
-    nothing for the rest of the day.
-  * yt-dlp's output goes to {RUN_LOG}, not to the screen.
-  * yt-dlp picks the container from the format it got — .m4a or .webm here. Whatever
-    it picks is the answer, and both are accepted as-is (4.4).
-  * MEDIA under this prompt is an AUDIO file. A directory left from an older
-    full-video run may hold a .mkv or .mp4 plus its pre-merge parts (.f136.mp4,
-    .f251.webm). Those still transcribe fine and Stage 2.3 still finds them. Only
-    the merged file is MEDIA_FILE — never a .fNNN part.
-  * A download that fails: log the reason in {RUN_LOG}, mark the row [FAIL ], and
-    move to the next video. One bad URL never stops a run.
-    THERE IS NOTHING TO DELETE. Stage 3 wrote nothing into {ROOT_DIR}, so a failed
-    download leaves the repo exactly as it found it. If you find yourself about to
-    remove a path under {TRANSCRIPTIONS_ROOT} here, STOP — that path was not made
-    by this run, and Stage 7.4's guard applies.
+  * NO --extract-audio (re-encodes a lossy source; .m4a and .webm/opus are accepted
+    as-is). Keeping video for another purpose is a different job; say so.
+  * ONE DOWNLOAD AT A TIME (parallel fetches get the IP throttled for the day).
+  * yt-dlp output to {RUN_LOG}. Its container choice (.m4a or .webm) is the answer.
+  * Older full-video dirs may hold .mkv/.mp4 plus .f136.mp4/.f251.webm parts; they
+    transcribe fine. Only the merged file is MEDIA_FILE, never a .fNNN part.
+  * Failed download: log, mark [FAIL ], next video. NOTHING TO DELETE (Stage 3 wrote
+    nothing to {ROOT_DIR}). About to remove a path under {TRANSCRIPTIONS_ROOT} here?
+    STOP: this run did not make it; 7.4's guard applies.
 
 4.3 SET MEDIA_FILE — NO RENAME, NO RE-ENCODE
 
-MEDIA_FILE is {video_key}.{ext} as yt-dlp wrote it. That is the whole step.
-
-  * The stem is already the frozen key because 4.2 asked for it. Never rename a file
-    to a title, and never mint a key from a filename.
-  * The sidecars (.info.json, .description, thumbnails) share that stem and stay
-    here. They never enter the repo.
+MEDIA_FILE is {video_key}.{ext} as yt-dlp wrote it. Never rename to a title or mint a
+key from a filename. Sidecars (.info.json, .description, thumbnails) share the stem,
+stay here, never enter the repo.
 
 4.4 CONVERT ONLY WHEN THE CONTAINER IS NOT ACCEPTED — WHICH IS ALMOST NEVER
 
-DO NOT re-encode video. The transcriber reads the AUDIO TRACK and nothing else, and
-it accepts the container list below directly. Transcoding an .mkv into an H.264 .mp4
-so it "looks like" what the pipeline wants costs more CPU than the transcription
-itself, doubles the disk footprint, and buys nothing.
-
-The pipeline's own allowlist — verified in
-{WTC_REPO}/code/packages/backend/src/modules/machine/machine-transcription.controller.ts,
-ALLOWED_EXTENSIONS, and anything outside it is refused with 415:
+Never re-encode video (the transcriber reads only the audio; transcoding costs more
+CPU than transcription). Allowlist from
+{WTC_REPO}/code/packages/backend/src/modules/machine/machine-transcription.controller.ts
+ALLOWED_EXTENSIONS (anything else gets 415):
 
         .mp4  .m4a  .mov  .mkv  .webm  .avi  .mp3  .wav  .flac  .ogg  .opus
 
-  * MEDIA_FILE's extension is on that list: do nothing. This is the normal path.
-  * It is NOT on the list: extract the AUDIO ONLY into .m4a. Never touch the video
-    stream.
+  * On the list: do nothing (normal).
+  * Not on it: extract AUDIO ONLY to .m4a, keep BOTH (original = evidence), set
+    MEDIA_FILE to the file handed to the CLI.
 
         ffmpeg -nostdin -loglevel error -i "{video_key}.{ext}" \
                -vn -c:a aac -b:a 128k "{video_key}.m4a"
 
-  * Keep BOTH files. The original is the evidence; the .m4a is the working copy.
-  * Set MEDIA_FILE to whichever file will actually be handed to the CLI.
-
 4.5 MEASURE THE MEDIA — RUNS FOR EVERY VIDEO, DOWNLOADED OR FOUND
 
-Against MEDIA_FILE, and hold the results for Stage 7:
-
+Against MEDIA_FILE, held for Stage 7:
   * SHA-256:          shasum -a 256 "{MEDIA_FILE}"
   * Bytes:            the file size
   * Duration seconds: ffprobe -v error -show_entries format=duration \
@@ -1525,161 +1053,113 @@ Against MEDIA_FILE, and hold the results for Stage 7:
   * Container and codecs, from the same ffprobe.
   * The ABSOLUTE path, and which root it came from.
 
-4.5a DROP ANYTHING OVER {MAX_VIDEO_SECONDS} — THIS IS WHERE THE CAP ACTUALLY BITES
+4.5a DROP ANYTHING OVER {MAX_VIDEO_SECONDS} — WHERE THE CAP ACTUALLY BITES
 
-ffprobe has just measured the real length, and for almost every video this is the
-FIRST moment anybody knows it: the CSV's duration_seconds is blank on essentially
-every engine row, so Stage 2.3's test passed on ignorance rather than on a number.
-
-For every video whose measured Duration_Seconds exceeds {MAX_VIDEO_SECONDS}, and
-where the citizen has not lifted the cap:
-
-  * Drop it from this run's batch. It never reaches Stage 6, so it is never
-    claimed and `tries` is never incremented — no attempt was made.
-  * LEAVE THE MEDIA WHERE IT IS. It was already downloaded, it is outside every
-    repo, and the next run that lifts the cap finds it at Stage 2.3 as "already on
-    disk" with nothing to re-fetch. Deleting it would throw away bandwidth this
-    machine has already spent on a video the movement still wants.
-  * LEAVE THE LEDGER ROW ALONE, or write one with `status: pending` if there is
-    none. `pending` is the truthful state: media on disk, never attempted.
-  * Do NOT backfill the slot. A run that selected 20 and drops 3 for length does
-    17, and says so. Walking further down the ladder to refill
-    would mean measuring, downloading and possibly dropping again, which turns a
-    length cap into an unbounded search.
-  * Count them, print Z53 once at the end of the stage, and name every one in the
-    Stage 10 report with its measured length.
-
-THE COUNTERPART RULE: a video dropped here is on the ladder forever and will be
-re-selected, re-downloaded and re-dropped by every future default run. That is
-wasteful and it is the honest cost of a cap enforced after the download. Mitigate
-it the cheap way — the media stays on disk, so the second run's Stage 2.3 finds it
-already there and the only repeated work is one ffprobe. Do not "fix" this by
-marking the row satisfied in {VIDEO_DEMAND_CSV}; that file is read-only here and
-the video is not satisfied, it is deferred.
+For most videos this is the first known length. Measured Duration_Seconds over the cap
+(not lifted):
+  * Drop from the batch: never reaches Stage 6, never claimed, `tries` untouched.
+  * LEAVE THE MEDIA (next cap-lifting run finds it "already on disk").
+  * Leave the ledger row alone, or write `status: pending` if none (media on disk,
+    never attempted).
+  * Do NOT backfill: 20 selected, 3 dropped = 17 done, stated (refilling turns a cap
+    into an unbounded search).
+  * Count, print Z53 once at stage end, name each with its length in Stage 10.
+Such a video will be re-selected each default run; cost is one ffprobe since the media
+stays. Never "fix" by marking it satisfied in {VIDEO_DEMAND_CSV} (read-only; deferred,
+not satisfied).
 
 4.5b NOTE ANY SUPERSEDED FULL-VIDEO FILES
 
-If a directory holds both an audio file and a full-video file for the same key, the
-video one is dead weight left by an older run. Total the bytes and print Z18 ONCE at
-the end of the stage. Do not delete anything: they are outside every repo, they cost
-only disk, and removing a citizen's files is not this prompt's call.
+Audio and full-video for the same key: the video file is dead weight. Total bytes,
+print Z18 ONCE at stage end. Delete nothing (outside repos, citizen's files).
 
 4.6 READ WHATEVER METADATA IS ALREADY BESIDE THE MEDIA
 
-Look in MEDIA_FILE's own directory, in this order, and take the first value found
-for each field. Absent stays absent — never fill one of these from the other.
-
-  * {video_key}.info.json (yt-dlp) — title, description, upload_date, duration,
-    uploader / channel, webpage_url. upload_date is the RECORDED date; it is the
-    only trustworthy source for Video.Recorded.
-  * {video_key}.video.yaml (the legacy downloader) — title, published_at,
+First value found per field, in this order; absent stays absent, never cross-filled:
+  * {video_key}.info.json (yt-dlp): title, description, upload_date, duration,
+    uploader / channel, webpage_url. upload_date is the RECORDED date, the only
+    trustworthy source for Video.Recorded.
+  * {video_key}.video.yaml (legacy downloader): title, published_at,
     duration_seconds, bytes, downloaded_at, yt_dlp_version, media_url.
-  * The CSV row — duration_seconds, when the columns above gave none.
-
-Record which file each fact came from in {RUN_LOG}. Mark the row [ DL  ].
+  * The CSV row: duration_seconds, when the above gave none.
+Log each fact's source. Mark the row [ DL  ].
 
 
 ====================================================================
 STAGE 5 — MAKE THE LOCAL WEB APP READY
 ====================================================================
 
-Transcription is done by the We The Citizens app running on THIS machine. The CLI is
-a thin HTTP client — it decodes nothing in its own process. So the app has to be up
-before Stage 6, and it has to be the LOCAL app.
-
-READ THIS FIRST, IT IS THE HARD RULE: production is never asked to transcribe. The
-CLI's default target IS production. Every call in Stage 6 carries --local.
+The local We The Citizens app transcribes; the CLI is a thin HTTP client. The app must
+be up, and LOCAL, before Stage 6. HARD RULE: production never transcribes; the CLI
+defaults to production; every Stage 6 call carries --local.
 
 5.1 IS THE PRODUCT REPO INSTALLED?
 
-If Stage 1 confirmed {WTC_REPO}, go to 5.2.
-
-If it did not, print Z6, then STOP the run after reporting what was already
-downloaded. The media stays under {VIDEO_DOWNLOAD_ROOT} and a later run picks it up
-at Stage 2.3 as "already on disk", so nothing is wasted. Do not clone it yourself.
+Stage 1 confirmed {WTC_REPO}: go to 5.2. Otherwise print Z6 and STOP after reporting
+what was downloaded (media stays; a later run picks it up at 2.3). Never clone it.
 
 5.2 IS IT UP TO DATE?
 
-  * git -C {WTC_REPO} fetch, then compare HEAD against the tracking branch.
-  * If it is behind, print Z7 — do not pull. An older install still transcribes, and
-    a surprise pull in the middle of somebody's work is not this prompt's call to
-    make. Then continue.
+`git -C {WTC_REPO} fetch`, compare HEAD to the tracking branch. Behind: print Z7, do not
+pull (old installs still transcribe), continue.
 
 5.3 IS THE CLI BUILT?
 
-  * {CITIZENS_CLI} execs {WTC_REPO}/code/packages/citizens/dist/main.js. If that file
-    is absent the CLI exits 69 and says so.
-  * If absent, build it — this is a build, not a code change, and it is allowed:
+{CITIZENS_CLI} execs {WTC_REPO}/code/packages/citizens/dist/main.js (absent: exit 69).
+Build it if absent (a build, allowed):
 
         cd {WTC_REPO} && pnpm --filter @wethecitizens/citizens build
 
 5.4 IS THE APP RUNNING?
 
-  * The test is the API, not the process list. Any HTTP answer on {LOCALHOST_API} —
-    including a 404 — means the app is up:
+  * Test the API; any HTTP answer, even 404, means up:
 
         curl -s -o /dev/null -w "%{http_code}" --max-time 3 {LOCALHOST_API}/
 
-  * If nothing answers, this prompt IS allowed to start it. `just` resolves its
-    justfile from the working directory, so change into the repo rather than
-    pointing at the file:
+  * No answer: start it (cd into the repo; `just` resolves its justfile from cwd):
 
         cd {WTC_REPO} && just build
         cd {WTC_REPO} && just run
 
-  * `just run` prints the URLs and brings up {LOCALHOST_WEB} with the API on :9333.
-  * Poll {LOCALHOST_API} until it answers before continuing. Do not race it. If it
-    has not answered within about 90 seconds, print Z8 and stop.
+  * `just run` prints URLs and brings up {LOCALHOST_WEB} with the API on :9333. Poll
+    until it answers; ~90 seconds without: print Z8, stop.
 
-  * ⚠️ THE APP MUST OUTLIVE THE THING THAT STARTED IT, AND AN AUTOMATED RUN IS THE
-    ONE CONTEXT WHERE IT WILL NOT. `just run` returns as soon as the services are
-    up, but the processes it leaves behind belong to the STARTING SHELL's process
-    group. When this prompt is driven by an agent or a script, that group is torn
-    down at the end of the step that ran the command, and every service in it gets
-    SIGTERM — minutes later, silently, with nothing in the app's own log but a
-    successful boot followed by no more lines.
-    MEASURED, 2026-09-10: fifteen short videos finished, then the app went away and
-    the five LONGEST videos in the batch all failed with the identical
-    `ECONNREFUSED 127.0.0.1:9333`. Two restarts from inside the run were killed the
-    same way, each within a minute or two. Nothing about the videos was wrong; two
-    hours of downloaded audio simply had nowhere to go.
-    THE TELL is a batch whose failures are sorted by duration — the short ones pass,
-    the long ones do not — with one identical connection error and no CLI stderr
-    beyond it. That is not a hard video and it is not a model problem.
-    THE FIX IS TO START IT SOMEWHERE THAT STAYS UP: the citizen's own terminal, or
-    the agent's persistent background facility if it genuinely survives across
-    steps. In Claude Code the citizen types
+  * ⚠️ THE APP MUST OUTLIVE WHAT STARTED IT. `just run`'s processes belong to the
+    starting shell's process group; under an agent or script that group is torn down
+    after the step and services get SIGTERM minutes later, silently (log shows a boot
+    and then nothing). Measured 2026-09-10: fifteen short videos finished, then the
+    five LONGEST all failed with identical `ECONNREFUSED 127.0.0.1:9333`; two in-run
+    restarts died the same way. THE TELL: failures sorted by duration, one identical
+    connection error, no other CLI stderr. FIX: start it somewhere persistent (the
+    citizen's terminal, or a background facility that truly survives steps). In
+    Claude Code the citizen types
 
         ! cd {WTC_REPO} && just run
 
-    which runs in the session's own shell rather than a step's. Confirm :9333 is
-    still answering IMMEDIATELY BEFORE Stage 6 and again if any job returns
-    ECONNREFUSED — and if it has gone, say so and stop rather than retrying, because
-    every retry against a dead app burns the media's turn in the batch for nothing.
+    Confirm :9333 answers IMMEDIATELY BEFORE Stage 6 and on any ECONNREFUSED; if gone,
+    say so and stop (retries against a dead app waste the batch).
 
 5.5 CONFIRM THE MACHINE CAN ACTUALLY TRANSCRIBE
 
         {CITIZENS_CLI} capability --local
 
-  * The command prints a human table AND a JSON object on the last line. Read the
-    JSON: `asr` names the engine, `models_missing` lists what is absent, `cause`
-    says why when something is off.
-  * asr == "none" (or exit 1): this install has no speech engine. Print Z12, run
-    `{CITIZENS_CLI} install --local` if the citizen agrees, and re-check.
-  * cause == "asr_disabled_on_host": you are talking to a HOSTED install. Print Z13
-    and STOP. That is the production call this prompt forbids.
+  * Prints a table and a JSON object on the last line: `asr` (engine),
+    `models_missing`, `cause`.
+  * asr == "none" (or exit 1): no speech engine. Print Z12, run
+    `{CITIZENS_CLI} install --local` if the citizen agrees, re-check.
+  * cause == "asr_disabled_on_host": a HOSTED install. Print Z13, STOP (the forbidden
+    production call).
 
 5.6 CLEAR ANY OPEN CIRCUIT BREAKERS
 
         {CITIZENS_CLI} circuit --local
 
-  * Ten consecutive failures open a tier's breaker for an hour. If one is open from
-    an earlier run whose cause has since been fixed, close it:
+  * Ten consecutive failures open a tier's breaker for an hour. If open from an earlier,
+    since-fixed cause, close it (a real fault re-opens it):
 
         {CITIZENS_CLI} circuit reset --local
 
-  * If the fault is still real the next run re-opens it. That is the breaker working.
-  * Only mention this to the citizen if a breaker was actually open (Z14).
+  * Mention only if one was open (Z14).
 
 
 ====================================================================
@@ -1688,76 +1168,43 @@ STAGE 6 — TRANSCRIBE
 
 6.1 TELL THE CITIZEN HOW LONG THIS WILL TAKE, BEFORE STARTING
 
-Sum the Duration_Seconds measured in Stage 4.5 across every video about to be
-transcribed. Then:
+Sum Stage 4.5 Duration_Seconds over the batch:
 
         estimated_wall_clock_seconds = total_audio_seconds * 0.19
 
-DO NOT DIVIDE BY P. That is the trap, and it is worth stating plainly because the
-arithmetic looks wrong until you have measured it. Per-stream the rung runs at
-0.21x–0.56x of realtime, so it is tempting to take a per-stream figure and divide by
-the four streams running at once. The streams are competing for the same cores, and
-the two effects very nearly cancel. The 0.19 constant is the AGGREGATE already —
-audio seconds in, wall-clock seconds out, with P at the default 4.
+DO NOT DIVIDE BY P. 0.19 is the AGGREGATE at the default P=4 (concurrent streams compete
+for the same cores, cancelling the gain). Measured 24-core Apple Silicon, 2026-09-05,
+P=4: 5804 s audio (1.61 h) -> ~1080 s wall = 0.186; per stream 0.21x-0.56x. (An old
+"* 0.25 / min(P,4)" underestimated by 3x.)
 
-MEASURED, 24-core Apple Silicon, 2026-09-05, P=4:
-        5804 s of audio (1.61 h)  ->  ~1080 s wall clock  =  0.186
-Per stream over the same batch: 0.23x, 0.29x, 0.27x, 0.27x, 0.21x, 0.38x, 0.56x.
-An earlier version of this file said "* 0.25 / min(P,4)" and underestimated the same
-batch by a factor of three.
+State a RANGE (estimate to 2x), rounded to the quarter hour, with total audio hours
+(per-stream speed varies 2.7x). SLOWNESS IS TURN COUNT, NOT LENGTH: diarization clusters
+speaker turns (two ~1800 s videos took 374 s and 722 s); crosstalk is costly, monologue
+cheap. On an unfamiliar machine, time the shortest video first.
 
-Say the result as a RANGE — the estimate to twice it — rounded to the nearest
-quarter hour, with the total audio hours it came from. The spread is real: the
-per-stream figures above vary by 2.7x on the same machine in the same batch.
+Only asr reports progress (a chunk percentage, not job progress). diarize reports once,
+on completion ("this stage typically runs minutes, not seconds"), and can take as long
+as ASR; a job silent on "diarize clustering 1748 s of audio" is working: never kill or
+re-queue it.
 
-WHAT MAKES A VIDEO SLOW IS TURN COUNT, NOT LENGTH. The two 1750-1900 s videos in
-that batch took 374 s and 722 s. Diarization clusters speaker turns, and a
-fast-cutting interview with ~287 estimated turns costs far more than a monologue of
-the same duration. A long single-speaker video is cheap; a short crosstalk-heavy one
-is not.
-
-Re-measure on an unfamiliar machine rather than trusting 0.19: time the shortest
-video first. A machine with fewer cores will be several times slower.
-
-The range is wide on purpose. The pipeline has two long stages and only one of them
-reports progress:
-
-  * asr reports a chunk percentage. That percentage is NOT the job's progress.
-  * diarize reports ONCE, on completion, and the CLI says so itself: "this stage
-    typically runs minutes, not seconds". On long audio it can take as long as the
-    ASR did. A job sitting silent on "diarize clustering 1748 s of audio" is
-    working, not hung — do not kill it and do not re-queue it.
-
-Print Z20 with that estimate, BEFORE the first job is queued. The point is that the
-citizen is not surprised by their own machine, and "several minutes" is the wrong
-answer for twenty long-form interviews — say hours when it is hours.
-
-If the estimate exceeds 3 hours, print Z21 and ask whether to continue, reduce
-VIDEO_COUNT, or stop. Do not start a multi-hour run nobody agreed to.
+Print Z20 with the estimate BEFORE queueing (say hours when it is hours). Over 3 hours:
+print Z21 and ask whether to continue, reduce VIDEO_COUNT, or stop.
 
 6.1b CLAIM THE VIDEO IN THE LEDGER — BEFORE THE WORK, NOT AFTER
 
         THE LEDGER IS WRITTEN AND FLUSHED TO DISK BEFORE THE TRANSCRIBER IS
         CALLED. NOT AFTER, NOT ALONGSIDE, NOT AT THE END OF THE BATCH.
 
-This ordering is the entire mechanism, and getting it backwards makes the ledger
-worse than useless. A transcription can hang forever, be cancelled by the citizen,
-or die with the machine, and in every one of those cases NOTHING RUNS AFTER IT.
-A ledger updated after the work therefore records only the successes, which is
-precisely the population that needs no record — the failures, the ones the next run
-must find, leave no trace at all. Write first and a crash leaves a `started` row
-with a timestamp, which is exactly the evidence 1C.3 turns back into work.
+A hung, cancelled, or crashed transcription runs nothing afterwards; a post-hoc ledger
+records only successes. Written first, a crash leaves a timestamped `started` row that
+1C.3 turns back into work.
 
-For each video, immediately before its transcriber call:
-
-  * Take {IN_PROGRESS_LOCK}. Re-read the ledger — between selection and now,
-    another run may have claimed this video, and the answer decides whether this
-    run may touch it at all.
-  * IF the row is now `started` within {STALE_CLAIM_HOURS} and it is not this
-    run's own claim: ANOTHER RUN GOT THERE FIRST. Release the lock, print nothing,
-    log it, drop the video from this run's batch, and move to the next. Do not
-    transcribe it. This is the race the lock cannot prevent and the re-read can.
-  * OTHERWISE claim it, in one write:
+Per video, immediately before its transcriber call:
+  * Take {IN_PROGRESS_LOCK}; RE-READ the ledger.
+  * Row now `started` within {STALE_CLAIM_HOURS} and not this run's claim: ANOTHER RUN
+    GOT THERE FIRST. Release, log, drop from the batch, next video (the race the lock
+    cannot prevent and the re-read can).
+  * Otherwise claim in one write:
         status                    started
         tries                     tries + 1
         earliest_attempt_at       UNCHANGED if already set, else now
@@ -1768,31 +1215,19 @@ For each video, immediately before its transcriber call:
         run_id                    {THE_DATE_TIME_STRING}
         media_file                the resolved absolute MEDIA_FILE
         note                      emptied, or the previous failure kept as history
-  * Write atomically, release the lock, and only then call the transcriber.
+  * Write atomically, release, THEN call the transcriber.
 
-`tries` IS INCREMENTED HERE AND NOT ON FAILURE. A video that hangs forever never
-reaches a failure handler, so a counter that increments on failure never counts the
-worst case and the video is retried indefinitely. Counting attempts STARTED is the
-only count that cannot be lost. It does mean a run killed between the claim and the
-first decode burns a try — that is the correct trade, and it is why the cap is 3
-rather than 1.
-
-`last_tried_at` CARRIES THE PREVIOUS ATTEMPT so a human reading the ledger can see
-how old the trouble is: `started_at` is always this attempt, `last_tried_at` is the
-one before it, and `earliest_attempt_at` never moves once set. Three columns because
-they answer three different questions, and collapsing any two of them loses the
-ability to tell "tried once, long ago" from "tried three times, just now".
+`tries` increments HERE, not on failure (a hang never reaches a failure handler;
+counting starts is the only count that cannot be lost; a kill before decode burns a
+try, hence a cap of 3). started_at = this attempt, last_tried_at = the one before,
+earliest_attempt_at never moves: three questions ("tried once long ago" vs "three
+times just now").
 
 6.2 THE COMMAND — --out IS A STAGING DIRECTORY, NOT THE REPO
 
-For each video, one call. Every path is ABSOLUTE — `just citizens` changes directory
-before it runs, so a relative --out lands somewhere nobody asked for. The input is
-MEDIA_FILE as resolved in Stage 2.3 or Stage 4, which may be under EITHER media root;
-it is never assumed to be under {VIDEO_DOWNLOAD_ROOT}.
-
-STAGE_DIR is {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/out/
-  * Outside every repo, beside the media and the Stage 3.2 seed.
-  * `mkdir -p` it before the call.
+One call per video, ABSOLUTE paths (`just citizens` changes directory). Input is
+MEDIA_FILE from 2.3 or 4 (either media root). `mkdir -p` STAGE_DIR
+({VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/out/) first.
 
         {CITIZENS_CLI} transcribe "{MEDIA_FILE}" \
           --create \
@@ -1802,36 +1237,22 @@ STAGE_DIR is {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/out/
           --also rttm,ctm \
           --media-url "https://www.youtube.com/watch?v={youtube_id}"
 
-DO NOT POINT --out AT {TRANSCRIPTIONS_ROOT}. It used to, and that is a second way
-into the same failure Stage 3 describes: a job takes minutes to hours, and for that
-whole window a half-written directory sits inside the repo where the auto-committer
-can reach it. Nine files appearing one at a time is exactly the partial state the
-scanner cannot distinguish from a finished one.
+NEVER --out {TRANSCRIPTIONS_ROOT}: for minutes-to-hours a half-written dir (nine files
+appearing one by one) sits where the auto-committer reaches it. Staging costs one
+same-volume `mv` in 7.1 and guarantees repo dirs always hold finished transcripts.
 
-Staging outside costs one `mv` in Stage 7.1 — both paths are on the same volume, so
-it is a rename, not a copy — and buys the invariant that a directory under
-{TRANSCRIPTIONS_ROOT} always holds a finished transcript.
+Add --title "<title>" and --recorded <ISO date> when 4.6 resolved them; omit otherwise
+(absent is the correct record).
 
-Add --title "<title>" and --recorded <ISO date> when Stage 4.6 resolved them. Omit
-either flag entirely when it did not — an absent value is printed as absent, and
-that is the correct record.
-
-What each flag is doing, because omitting one silently changes the result:
-
-  * --create      LOCATE is the default. Without --create nothing is transcribed and
-                  the command just prints where a transcript WOULD be.
-  * --local       THE HARD RULE. Without it this is a production call.
-  * --out         writes the COMPLETE FILE SET into STAGE_DIR, derived from the
-                  sidecar this run produced. Nothing is re-decoded. Stage 7.1 moves
-                  it into the repo once it is complete; a failed run leaves it here,
-                  outside every repo, for debugging.
-  * --name        the base name for those files. Without it the media file's stem is
-                  used — which is right only when Stage 4.3 renamed the media to the
-                  video key, and is WRONG for legacy media whose stem may differ.
-                  Pass it always; it is the frozen key and it should be stated.
-  * --also rttm,ctm   adds the two evaluation formats. They are what let an outsider
-                  compute DER against our diarization and WER against our words.
-  * --media-url   index data only. It is NEVER fetched. The CLI does not download.
+Flags, since omitting one silently changes the result:
+  * --create      default is LOCATE; without it nothing is transcribed.
+  * --local       THE HARD RULE; without it, a production call.
+  * --out         writes the COMPLETE FILE SET into STAGE_DIR from this run's sidecar
+                  (no re-decode); 7.1 moves it in; failures stay here for debugging.
+  * --name        base name; else the media stem, WRONG for legacy media whose stem
+                  differs. Always pass the frozen key.
+  * --also rttm,ctm   evaluation formats (outsiders compute DER and WER).
+  * --media-url   index data only; NEVER fetched.
 
 Nine files land in STAGE_DIR:
 
@@ -1845,93 +1266,55 @@ Nine files land in STAGE_DIR:
         {video_key}.ctm               word timings  (from --also)
         {video_key}.rttm              diarization   (from --also)
 
-DO NOT pass --person / --video unless the citizen explicitly asks. Those flags file
-the result under a person AND MIRROR IT INTO THE SHARED DATA REPO — a write this
-prompt's hard rules forbid. Without them the run produces a hash-keyed adhoc
-transcript in the app's state root PLUS the full file set in STAGE_DIR. The copy
-Stage 7.1 moves into the repo is the deliverable; the manifest in Stage 8 is what
-makes it visible.
+NEVER pass --person / --video unless the citizen explicitly asks: they MIRROR INTO THE
+SHARED DATA REPO (forbidden). Without them: a hash-keyed adhoc transcript in the app's
+state root plus the file set in STAGE_DIR. The 7.1 copy is the deliverable; Stage 8's
+manifest makes it visible.
 
 6.3 PARALLELISM — IT IS REQUEST CONCURRENCY, NOT LOCAL CPU
 
-The CLI decodes nothing. Every one of these calls is an HTTP request to the ONE app
-on :9333, and that app does all the CPU work. So the number to choose is how many
-jobs the server is asked to carry at once, and adding more does not add workers.
-
-  * The app QUEUES what it cannot run now — a job beyond its capacity sits printing
-    "queued…" until a slot frees. Asking for more concurrency than the server will
-    run does not fail and does not speed anything up; it just moves the wait from
-    your shell into its queue. Observed: several short jobs decode side by side,
-    but a long diarization narrows that sharply.
-  * SORT SHORTEST-FIRST. Order the batch by Duration_Seconds ascending. A 30-minute
-    video queued first holds the slot while ten 3-minute ones wait behind it, and
-    the run has nothing to show for twenty minutes. Shortest-first gets most of the
-    batch finished and committable early, which also means an interrupted run
-    leaves more done.
-  * Start at {DEFAULT_PARALLEL_TRANSCRIBE}. Never exceed {MAX_PARALLEL_TRANSCRIBE}.
-  * The server decodes 4 ASR chunks at a time WITHIN one job. Four concurrent jobs
-    therefore already ask for 16 decode threads. That is why the default is 4 and
-    not the core count — raising it oversubscribes the same cores and makes the
-    batch slower while making the machine unusable.
-  * Go above the default only when the citizen asked for speed AND the machine has
-    cores genuinely idle.
-  * A run of 3 or fewer videos runs sequentially. The coordination is not worth it.
-  * DO NOT use a subagent per video. This is a shell fan-out over one command —
-    `xargs -P {DEFAULT_PARALLEL_TRANSCRIBE} -L 1` over a list of
-    "{roster_key} {video_key} {youtube_id}" lines does the whole job. Spawning an
-    agent per video costs more than it saves and buys no isolation the filesystem
-    is not already giving.
-  * Each unit of work owns exactly one video end to end — resolve MEDIA_FILE,
-    transcribe, verify the file set, decide pass/fail. They never share a directory.
-  * One failure never stops the others.
-  * Print nothing per video. Progress belongs in {RUN_LOG}.
+Every call is an HTTP request to the ONE app on :9333, which does all CPU work.
+  * The app QUEUES beyond capacity ("queued…"); more concurrency just moves the wait.
+    A long diarization sharply narrows side-by-side decoding.
+  * SORT SHORTEST-FIRST by Duration_Seconds (long first blocks the slot; short first
+    gets most of the batch committable early, and an interrupted run leaves more done).
+  * Start at {DEFAULT_PARALLEL_TRANSCRIBE}; never exceed {MAX_PARALLEL_TRANSCRIBE}. The
+    server decodes 4 ASR chunks per job, so 4 jobs = 16 threads already; more
+    oversubscribes and slows the batch. Go higher only if the citizen asked for speed
+    AND cores are idle.
+  * 3 or fewer videos: sequential.
+  * NO subagent per video: `xargs -P {DEFAULT_PARALLEL_TRANSCRIBE} -L 1` over
+    "{roster_key} {video_key} {youtube_id}" lines does it.
+  * Each unit owns one video end to end (resolve, transcribe, verify, verdict); never a
+    shared directory. One failure never stops others. No per-video printing beyond the
+    one [ DONE] line.
 
 6.4 VERIFY EACH RESULT
 
-A transcription PASSED only if all of these hold:
-
-  * {video_key}.transcription exists in STAGE_DIR and is non-empty.
-  * {video_key}.segments.json exists and parses.
-  * The CLI exited 0.
-
-These are checked in STAGE_DIR, before anything moves. That ordering is the point:
-the verdict is reached entirely outside the repo, so a FAILURE never has to be
-undone inside it.
-
-Anything else is a FAILURE. In particular, the CLI writes the words and NAMES the
-absent derivations when the sidecar is missing — a directory with a .transcription
-and nothing else is a real, reported state, and it is a FAILURE for this prompt's
-purposes because a transcript with no timings cannot be cited.
+PASSED only if, in STAGE_DIR (before anything moves, so a failure never needs undoing
+in the repo): {video_key}.transcription exists and is non-empty;
+{video_key}.segments.json exists and parses; the CLI exited 0. Anything else FAILS,
+including words with no sidecar (the CLI names absent derivations; untimed words
+cannot be cited).
 
 6.5 RELEASE THE CLAIM — EVERY PATH OUT OF 6.4 WRITES THE LEDGER
 
-A claim taken in 6.1b is released here, and BOTH verdicts write. Under
-{IN_PROGRESS_LOCK}, re-read, update this row only, write atomically, release:
+Under {IN_PROGRESS_LOCK}: re-read, update this row only, write atomically, release.
 
   PASSED   status `finished`, `finished_at` now, `words` the word count, `note`
-           emptied. Write this AFTER Stage 7.1 has moved the files into the repo,
-           not before — `finished` in this ledger means "the words are in the
-           repo", and a row that claims it before the move is a lie for however
-           long the move takes.
-  FAILED   status `failed`, `finished_at` now (the attempt ended, even badly),
-           `note` the reason from 6.4 — which check failed, the CLI's exit code,
-           the head of its stderr. `tries` is NOT touched; 6.1b already counted it.
+           emptied. Written AFTER Stage 7.1 moved the files (`finished` means "the
+           words are in the repo").
+  FAILED   status `failed`, `finished_at` now, `note` the reason (failed check, CLI
+           exit code, head of stderr). `tries` NOT touched (6.1b counted it).
 
-WHAT A CANCELLED RUN LOOKS LIKE, AND WHY THAT IS FINE: neither branch runs, so the
-row stays `started` with this run's `started_at`. For {STALE_CLAIM_HOURS} every
-other run treats it as live work and leaves it alone; after that 1C.3 converts it
-to `failed` with `claim expired` and it becomes adoptable. That is the design
-working, not a leak — and it is why no cleanup handler is specified here. A prompt
-cannot rely on running code after being killed, so the recovery lives in the NEXT
-run's reconciliation rather than in this run's good intentions.
+A cancelled run runs neither branch: the row stays `started`, is treated as live for
+{STALE_CLAIM_HOURS}, then 1C.3 makes it `failed` / `claim expired`, adoptable. By
+design: a killed prompt runs no cleanup, so recovery lives in the NEXT run.
 
-IF THE ROW REACHED {MAX_TRANSCRIBE_TRIES} ON THIS FAILURE, say so in the note
-(`reached the try cap`) and name it in Stage 10 with Z51. It will not be attempted
-again until the cause is fixed or the cap is lifted — and a later RUN may do either
-one on its own, without waiting for a person, as soon as it can name the cause in
-the note. The cap exists to stop a runaway retry loop, not to park work in front of
-a human. A video quietly falling out of the queue is exactly what this ledger
-exists to prevent.
+Row reached {MAX_TRANSCRIBE_TRIES} on this failure: note `reached the try cap`, name it
+in Stage 10 with Z51. A later run may fix the cause or lift the cap on its own once it
+can name the cause in the note; the cap stops runaway retries, it does not park work
+for a human.
 
 
 ====================================================================
@@ -1940,369 +1323,234 @@ STAGE 7 — PUT THE RESULT IN THE REPO, OR LEAVE IT OUTSIDE
 
 7.1 ON SUCCESS — CREATE THE DIRECTORY AND WRITE transcription.yaml
 
-THIS IS THE FIRST AND ONLY MOMENT ANYTHING ENTERS {TRANSCRIPTIONS_ROOT}. The words
-now exist, so the record has earned its place in the repo. Create
-{TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/, move all nine files from STAGE_DIR
-into it, and write the sidecar — in that order, in one go, only after Stage 6.4's
-checks passed. A directory that exists under {TRANSCRIPTIONS_ROOT} always holds a
-real transcript; there is no window in which a partial one is visible to the
-auto-committer.
+THE FIRST AND ONLY MOMENT ANYTHING ENTERS {TRANSCRIPTIONS_ROOT}. Only after 6.4 passed,
+in one go: create {TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/, MOVE (same-volume
+rename, not copy) all nine files from STAGE_DIR into it, write the sidecar. A repo
+directory always holds a real transcript; the auto-committer never sees a partial.
 
-Move, do not copy. Both paths are under $HOME on one volume, so it is a rename: the
-nine files appear together rather than growing one at a time inside the repo.
-
-RUN THE TOOL. Do not hand-roll a writer and do not improvise one in a scratch
-directory:
+RUN THE TOOL; never hand-roll or improvise a writer:
 
         python3 {SIDECAR_TOOL} write {roster_key}/{video_key} [...]
 
-The tool creates the directory itself, reads the demand row by video_uid, falls
-back to Stage 3.2's seed when the CSV has moved on, and carries forward every
-hand-written field already in the file.
+Supplement rows also need --demand-csv {QUEUE_SUPPLEMENT_CSV}; the Demand block then
+carries run_id "{THE_DATE_TIME_STRING}local_supplement" and the notes cell, marking it
+provisional.
 
-A row selected from {QUEUE_SUPPLEMENT_CSV} needs --demand-csv {QUEUE_SUPPLEMENT_CSV}
-here too, for the same reason as Stage 3.2. The sidecar's Demand block then carries
-run_id "{THE_DATE_TIME_STRING}local_supplement" and the notes cell naming this
-prompt, which is how a later reader tells a provisional row from an engine-priced
-one without having to reconstruct anything.
+The tool creates the dir, reads the demand row by video_uid (falling back to the 3.2
+seed), gathers every mechanical field (SHA-256, bytes, duration, codecs, word count,
+.rttm speaker shares, Capture block, demand row), MERGES (existing Description, Topics,
+named speakers carried forward and asserted), and writes atomically.
 
-It gathers every mechanical field itself — SHA-256, bytes, duration, codecs,
-word count, speaker shares from the .rttm, the Capture block, the demand row —
-and it MERGES: any Description, Topics or named speaker already in the file is
-carried forward untouched, and it asserts that afterwards rather than assuming it.
-It writes atomically, so a crash cannot leave a truncated file that still parses.
+YOUR JOB, which the tool cannot do: read each transcript and write Description and
+Topics.
 
-What the tool CANNOT do, and what is therefore still your job: read the transcript
-and write Description and Topics. Nothing on disk contains them.
+Full schema in APPENDIX D. The blocks and who fills them:
 
-Full schema in APPENDIX D. The blocks, and who fills them:
-
-  * Video      — Title, Description, URL, Video_ID, Show, Runtime, Language.
-                 Title, Show, Runtime and the recorded date come from Stage 4.6 and
-                 need no judgement. DESCRIPTION AND TOPICS DO: they cannot be built
-                 from metadata, and they are the slowest part of this stage because
-                 they require READING each transcript. Budget for it — on a 20-video
-                 run that is 20 reads, and it is the step most likely to be skipped
-                 under time pressure. A sidecar with a real SHA-256 and an empty
-                 Description is a half-finished record.
-                 Write several sentences saying what the video actually is and what
-                 is discussed in it, FROM THE TRANSCRIPT. A restatement of the title
-                 is not a description.
-                 ATTRIBUTE CONTESTED CLAIMS. This corpus is political speech and the
-                 sidecar is read as a neutral record of it. Where the speaker asserts
-                 figures, motives or wrongdoing, the description says WHO is
-                 asserting it — "she argues", "he puts the figure at", "the
-                 characterisation is his own and is contested" — and never restates
-                 an advocate's claim in the product's own voice. Describing what was
-                 said is the job; endorsing it is not. Note too when the person named
-                 in a claim is absent and unable to answer it.
-  * Media      — THE SHA-256 OF THE FILE THAT WAS TRANSCRIBED. Required, not
-                 optional: it is what lets the server side prove the words came from
-                 that exact file. Also Bytes, Duration_Seconds, Container,
-                 Source_URL, Downloaded_At, Downloader, and Stored_At — the absolute
-                 directory, which for legacy media is under
-                 {VIDEO_DOWNLOAD_ROOT_LEGACY} and must say so.
-  * People_in_Video — one entry per diarized speaker, with Speaker_Label,
-                 Share_Of_Speech and Turns read from the .rttm. Name a person only
-                 when the transcript actually identifies them; an unidentified
-                 cluster is written as "Unidentified" with its label, never guessed.
-                 SUBJECT IS NOT A DEFAULT. Mark Subject: true on the cluster whose
-                 words are being assessed ONLY when the transcript actually
-                 identifies which cluster that is. When it does not, OMIT Subject
-                 from every entry and say why in a comment. Putting Subject: true on
-                 whichever label sorted first is not a fallback, it is a fabricated
-                 attribution — and it is the one field a scorer will trust.
-                 Expect noise on montages and ad-style clips: diarization routinely
-                 returns 7+ clusters for two minutes of music and voice-over. Report
-                 the count; do not merge clusters yourself.
-  * Topics     — what the video is actually about, FROM THE TRANSCRIPT, not from what
-                 the person is on the roster for. The demand list is built from a
-                 person's whole channel, so a candidate's corpus routinely contains
-                 videos with no political content at all — a gubernatorial figure's
-                 channel that is mostly car reviews, a commentator's cooking videos,
-                 adverts and sponsor reads. Describe what was actually said. Do NOT
-                 stretch a description toward politics to make the row look like it
-                 earned its priority: a transcript honestly labelled "car culture" is
-                 useful, and one mislabelled "policy discussion" poisons every search
-                 that later trusts it.
+  * Video      — Title, Description, URL, Video_ID, Show, Runtime, Language. Title,
+                 Show, Runtime and recorded date come from 4.6. DESCRIPTION AND TOPICS
+                 require READING each transcript (20 reads on a 20-video run; the step
+                 most likely skipped under pressure; a real SHA-256 with an empty
+                 Description is a half-finished record). Several sentences on what the
+                 video is and discusses, FROM THE TRANSCRIPT, not a restated title.
+                 ATTRIBUTE CONTESTED CLAIMS: this is political speech read as a neutral
+                 record. Say WHO asserts figures, motives or wrongdoing ("she argues",
+                 "he puts the figure at", "the characterisation is his own and is
+                 contested"); never restate an advocate's claim in the product's voice.
+                 Note when the person named in a claim is absent and cannot answer.
+  * Media      — THE SHA-256 OF THE FILE TRANSCRIBED (required: proves the words came
+                 from that exact file). Also Bytes, Duration_Seconds, Container,
+                 Source_URL, Downloaded_At, Downloader, Stored_At (absolute dir; legacy
+                 media is under {VIDEO_DOWNLOAD_ROOT_LEGACY} and must say so).
+  * People_in_Video — one entry per diarized speaker: Speaker_Label, Share_Of_Speech,
+                 Turns from the .rttm. Name a person only when the transcript
+                 identifies them; else "Unidentified" with its label, never guessed.
+                 SUBJECT IS NOT A DEFAULT: Subject: true only on the cluster the
+                 transcript identifies as the assessed speaker; otherwise OMIT Subject
+                 everywhere and say why in a comment (first-sorted label = fabricated
+                 attribution, and scorers trust this field). Montages/ads often yield
+                 7+ clusters; report the count, never merge clusters.
+  * Topics     — what the video is actually about, FROM THE TRANSCRIPT, not the
+                 person's roster role. Channels include car reviews, cooking, adverts,
+                 sponsor reads. Never stretch toward politics to justify priority: an
+                 honest "car culture" is useful; a false "policy discussion" poisons
+                 every later search.
   * Source     — Canonical_ID, Transcribed (ISO 8601 with timezone), ASR model,
                  Diarization model, Evidence_Grade, Word_Count.
   * Timestamps — Downloaded_At, Transcription_Started, Transcription_Finished,
-                 Duration_Seconds of the transcription itself. All ISO 8601 with an
-                 explicit timezone offset. These are asked for explicitly: a run
-                 with no timestamps cannot be reconstructed later.
-                 Recorded comes from Stage 4.6's upload_date / published_at ONLY. If
-                 neither existed, omit it. Never from today's date.
-  * Files      — every file actually written, by its real name. A file that was not
-                 written is not listed. Do not list the file set from APPENDIX D and
-                 assume it landed.
-                 Files is a MAPPING (Plain_Text:, Fountain:, ...), not a sequence.
-                 It holds Transcript_SHA256 alongside the filenames, and a YAML
-                 block cannot be both a list and a mapping — writing "- file.srt"
-                 items next to a "Transcript_SHA256:" key produces a file that will
-                 not parse. Parse every sidecar you write back before committing it.
-  * Demand     — the row from {VIDEO_DEMAND_CSV} this video came from: roster_key,
-                 video_uid, video_key, priority, run_id, and the demand snapshot's
-                 generated_at. THIS IS THE JOIN BACK TO THE SERVER. Without it the
-                 server cannot tell which request this transcript answers.
+                 Duration_Seconds of the transcription, all ISO 8601 with explicit
+                 offset (without them a run cannot be reconstructed). Recorded ONLY
+                 from 4.6's upload_date / published_at; else omit; never today.
+  * Files      — every file actually written, by real name (never assume APPENDIX D's
+                 set landed). A MAPPING (Plain_Text:, Fountain:, ...) holding
+                 Transcript_SHA256 beside filenames; mixing "- file.srt" items with a
+                 key will not parse. Parse every sidecar back before committing.
+  * Demand     — the source row: roster_key, video_uid, video_key, priority, run_id,
+                 the snapshot's generated_at. THE JOIN BACK TO THE SERVER.
 
-Absent is absent, at every field. And if a fact has no field, ADD the field.
+Absent is absent at every field. A fact with no field: ADD the field.
 
 7.1a SWEEP FOR THE PART A MACHINE COULD NOT HAVE WRITTEN
 
-transcription.yaml has two kinds of field and only one of them defends itself.
-
-  MECHANICAL — SHA256, Bytes, Duration, Word_Count, Files, Demand, Title, Show,
-  Recorded. All derived from the media, ffprobe, the .info.json and the CSV row.
-  A script produces them and reproduces them.
-
-  HAND-WRITTEN — Description and Topics. Nothing on disk contains them. They
-  require reading the transcript. No script can produce them, and no mechanical
-  check tends to look for them.
-
-That asymmetry is the danger: the cheap fields become the APPEARANCE of
-completeness. A sidecar with no Description still parses, still carries a correct
-and verified SHA-256, still joins back to its demand row, and would be committed,
-indexed, pushed and trusted. The absence surfaces only when a human opens it.
-
-So before Stage 8, sweep EVERY selected video and assert:
-
-  * the nine output files exist and are non-empty
-  * transcription.yaml parses
-  * Video.Description is present and NON-EMPTY
-  * Topics is present and NON-EMPTY
-  * Media.SHA256 and Demand are present
-
-THAT SWEEP IS NOW A COMMITTED COMMAND, not a thing to reinvent:
+MECHANICAL fields (SHA256, Bytes, Duration, Word_Count, Files, Demand, Title, Show,
+Recorded) are scripted and reproducible. HAND-WRITTEN fields (Description, Topics)
+need a reading and no mechanical check looks for them, so a sidecar missing them still
+parses, hashes, joins, and gets committed and trusted. Before Stage 8, for EVERY
+selected video assert: the nine files exist and are non-empty; transcription.yaml
+parses; Video.Description and Topics present and NON-EMPTY; Media.SHA256 and Demand
+present. The committed command:
 
         python3 {SIDECAR_TOOL} verify --all
 
-It exits non-zero while anything is missing, checks the four fields the product
-actually reads as well as the human ones, and re-verifies each transcript's
-SHA-256 against the bytes on disk.
-
-RE-RUN IT UNTIL IT COMES BACK CLEAN. Fixing one miss routinely reveals the next:
-in the run that produced this file it reported 19/20, then 19/20 again for a
-DIFFERENT video, then 20/20. A sweep that runs once and reports "one problem" has
-not finished.
-
-Both misses that run were OMISSIONS — a video whose sidecar was never generated,
-and a video handled early and out of band whose description was never written
-because it was already "done". Sidecars written in batches lose the exception you
-handled first. Do not trust that a directory with ten files in it is complete.
-
-SEPARATELY, THE GENERATOR IS A HAZARD. A generator that writes the file from
-scratch destroys Description and Topics on any re-run — after a bug fix, or when a
-field is added — and leaves a file that still parses and still hashes correctly.
-Regenerate the mechanical fields only, or re-apply the written ones afterwards.
-This is a different failure from the omission above and the sweep is what catches
-both.
+(non-zero while anything is missing; also checks fields the product reads and
+re-verifies each transcript's SHA-256 against disk.) RE-RUN UNTIL CLEAN: fixing one
+miss often reveals another (one run went 19/20, 19/20 for a different video, 20/20).
+Typical misses are OMISSIONS: a sidecar never generated, or an early out-of-band video
+never described because it was "done". Also: a from-scratch generator destroys
+Description and Topics on any re-run while the file still parses; regenerate
+mechanical fields only, or re-apply the written ones.
 
 7.1b PARSE WHAT YOU WROTE
 
-Read transcription.yaml back with a real YAML parser before calling the video DONE.
-A sidecar that does not parse is a failed transcription for Stage 6.4's purposes: it
-carries the SHA-256 that proves the words, and an unparseable one proves nothing.
-
-The two ways these files break, both of which cost a whole run if found late:
-
-  * A block that is half sequence and half mapping (see Files, above).
-  * A QUOTE INSIDE A QUOTED SCALAR. Political transcripts are full of phrases the
-    writer wants in quotation marks — "border czar", "state of confusion" — and
-    "The "border czar" designation" is not a YAML string, it is a parse error.
-    Use single quotes for any value containing a double quote, or drop the inner
-    quotes. Same for apostrophes inside a single-quoted scalar.
+Read transcription.yaml back with a real YAML parser before DONE; unparseable = failed
+for 6.4 purposes (the SHA-256 proves nothing). Two common breaks:
+  * A block half sequence, half mapping (see Files).
+  * A QUOTE INSIDE A QUOTED SCALAR: "The "border czar" designation" is a parse error.
+    Single-quote values containing double quotes, or drop the inner quotes; same for
+    apostrophes inside single-quoted scalars.
 
 7.2 HASH THE TRANSCRIPT TOO
 
         shasum -a 256 {TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/{video_key}.transcription
 
-Hold it for Stage 8 — the manifest stores it and treats a mismatch as a REFUSAL, not
-a warning.
+Hold for Stage 8 (a manifest mismatch is a REFUSAL, not a warning).
 
 7.3 MARK IT [ DONE]
 
-If Word_Count is under about 30 words per minute of audio, note it with Z19 in the
-Stage 10 tail. It is not a failure and not a retry — political feeds carry a lot of
-adverts, montages and music beds, and the honest record of one is a short transcript
-and a pile of spurious speaker clusters. Say so rather than letting a reader assume
-the transcription underperformed.
+Under ~30 words per audio-minute: note with Z19 in the Stage 10 tail. Not a failure or
+retry (adverts, montages, music beds give short transcripts and spurious clusters).
 
 7.4 ON FAILURE — THE REPO WAS NEVER TOUCHED, SO LEAVE IT THAT WAY
 
-A failed transcription leaves NOTHING behind in {ROOT_DIR}, and since Stage 3 the
-way it achieves that is BY NOT HAVING WRITTEN ANYTHING, not by deleting.
-
-  * LEAVE STAGE_DIR WHERE IT IS. Whatever the CLI managed to write is already
-    outside every repo, beside the seed from Stage 3.2 and the media it came from,
-    so the evidence survives for debugging and nothing partial is ever committed.
-    There is nothing to move and nothing to remove.
-    If MEDIA_FILE is under {VIDEO_DOWNLOAD_ROOT_LEGACY}, which this prompt never
-    writes to, STAGE_DIR is under {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/
-    anyway — say where the media actually is in the FAILED file.
-  * Write a {video_key}.FAILED.txt beside them: the command that was run verbatim,
-    the CLI's exit code, its stderr, which of Stage 6.4's checks failed, and the
-    timestamp.
-  * Mark the row [FAIL ] and append the reason to {RUN_LOG}.
-  * Do NOT retry automatically. A silent retry loop burns an hour of CPU against a
-    cause that has not changed.
+Nothing is left in {ROOT_DIR} because nothing was written there (not by deleting).
+  * LEAVE STAGE_DIR where it is, beside the 3.2 seed and media; nothing to move or
+    remove. For legacy-root media, STAGE_DIR is still under
+    {VIDEO_DOWNLOAD_ROOT}/{roster_key}/{video_key}/; state where the media is in the
+    FAILED file.
+  * Write {video_key}.FAILED.txt beside it: the exact command, CLI exit code, stderr,
+    which 6.4 check failed, timestamp.
+  * Mark [FAIL ], append the reason to {RUN_LOG}.
+  * NO automatic retry (burns an hour against an unchanged cause).
 
 7.4a THE DELETION GUARD — READ THIS BEFORE REMOVING ANY PATH UNDER {ROOT_DIR}
 
-This prompt has exactly one legitimate reason to remove a path under
-{TRANSCRIPTIONS_ROOT}, and it is Stage 7.4b. Everywhere else, deleting there is a
-bug. It has already cost this repo fifteen committed sidecars once (Stage 3's
-preamble has the sequence), and the failure mode is nasty because every individual
-step looked right.
-
-BEFORE removing anything under {ROOT_DIR}, run BOTH checks and pass BOTH:
+The only legitimate removal under {TRANSCRIPTIONS_ROOT} is 7.4b; anywhere else it is a
+bug (it cost fifteen committed sidecars once; Stage 3). Before removing anything under
+{ROOT_DIR}, pass BOTH:
 
   1. GIT DOES NOT KNOW ABOUT IT.
 
         git -C {ROOT_DIR} ls-files --error-unmatch -- "<path>"
 
-     Exit 0 means git TRACKS it. A tracked file is committed work — someone else's,
-     or an earlier run's, or a mid-run auto-commit's. STOP. Do not remove it, do not
-     `git rm` it, do not "tidy" it. Print Z22, leave it exactly where it is, and say
-     so in Stage 10. Removing it does not undo the commit; it adds a deletion on top
-     of it, which is what the history shows for 2026-09-07.
+     Exit 0 = TRACKED = committed work. STOP: no remove, no `git rm`, no tidy. Print
+     Z22, leave it, report in Stage 10. (Removal adds a deletion on top of the commit,
+     as on 2026-09-07.)
 
   2. THERE ARE NO WORDS IN IT.
 
         find "<path>" -name "*.transcription"
 
-     Any hit means a transcript lives there. Those are the words this whole pipeline
-     exists to produce and they are never collateral. STOP, and print Z22.
-
-Neither check needs judgement and both are one command. Run them.
+     Any hit: words are never collateral. STOP, print Z22.
 
 7.4b THE ONE PERMITTED CLEANUP — A STRANDED SEED-ONLY DIRECTORY
 
-An older run of this prompt, before Stage 3 was fixed, could leave
-{TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/ holding a stub transcription.yaml
-and NOTHING ELSE. It is invisible to Stage 2.3's skip test, which looks for
-{video_key}.transcription, so it is re-selected and re-stranded on every run.
-
-Such a directory may be cleared ONLY when ALL of these hold:
-
-  * it contains no {video_key}.transcription and no other output file — the only
-    thing in it is transcription.yaml
-  * that transcription.yaml has no Media.SHA256 and no Source block, i.e. it is a
-    seed and not a real record
-  * `git ls-files` shows it as UNTRACKED
-
-If git tracks it, it is committed history: leave it, name it in the Stage 10
-report, and let the citizen decide. This prompt does not delete a citizen's
-committed files to make its own bookkeeping tidy.
-
+Pre-fix runs could leave {TRANSCRIPTIONS_ROOT}/{roster_key}/{video_key}/ holding only a
+stub transcription.yaml (invisible to 2.3's test, so re-stranded every run). Clear it
+ONLY when ALL hold:
+  * no {video_key}.transcription or other output file; only transcription.yaml
+  * that file has no Media.SHA256 and no Source block (a seed, not a record)
+  * `git ls-files` shows it UNTRACKED
+Tracked = committed history: leave it, name it in Stage 10, citizen decides.
 
 7.5 THE GATE — NOTHING REACHES STAGE 8 UNTIL THIS IS GREEN
 
         python3 {SIDECAR_TOOL} verify --all
 
-  * Exit 0: proceed to Stage 8.
-  * Exit non-zero: fix what it names and run it AGAIN. Do not index, commit or
-    push past a red gate. An incomplete sidecar that reaches the manifest is
-    indistinguishable from a complete one to every automatic check downstream.
-  * Lines marked LEGACY do not fail the gate and must not be "fixed". They are
-    sidecars written before this schema whose media has since been cleared, so
-    their Media.SHA256 describes bytes that no longer exist anywhere and cannot
-    be recomputed. Report them; leave them exactly as written. A gate that can
-    never go green stops being read.
+  * Exit 0: proceed.
+  * Non-zero: fix what it names, run AGAIN. Never index, commit or push past red (an
+    incomplete sidecar in the manifest looks complete to every downstream check).
+  * LEGACY lines do not fail the gate and must NOT be "fixed": pre-schema sidecars
+    whose media is gone, so Media.SHA256 cannot be recomputed. Report, leave as written.
 
 
 ====================================================================
 STAGE 8 — INDEX THE NEW TRANSCRIPTS IN {MANIFEST_FILE}
 ====================================================================
 
-{MANIFEST_FILE} is read FIRST by the movement's scanner, and when it carries a
-`transcriptions:` index that index is AUTHORITATIVE — the fallback directory walk
-does not run. A transcript added to this repo and NOT added here is invisible, and
-"not found" is byte-indistinguishable from "this person has never spoken".
+The scanner reads {MANIFEST_FILE} FIRST; a `transcriptions:` index there is
+AUTHORITATIVE and the directory walk does not run. Unlisted = invisible ("not found" is
+indistinguishable from "never spoke").
 
 8.1 DECIDE WHETHER THIS REPO IS INDEXED
 
-  * If {MANIFEST_FILE} ALREADY HAS a `transcriptions:` block, it is an indexed repo.
-    APPEND every [ DONE] video to it. Leaving one out makes it invisible, and a HALF
-    index is worse than none because the listed entries suppress the walk that would
-    have found the rest.
-  * If it has NO `transcriptions:` block, the repo relies on the walk. Leave it that
-    way and do not create one — unless the citizen asked for an index, in which case
-    build a complete one covering EVERY transcript in the repo, not just this run's.
+  * Has a `transcriptions:` block: APPEND every [ DONE] video (a HALF index is worse
+    than none: listed entries suppress the walk).
+  * None: the repo relies on the walk; do not create one unless the citizen asks, and
+    then index EVERY transcript in the repo.
   * Either way, update `user_repo.updated_at`.
 
 8.1b APPEND AS TEXT. NEVER ROUND-TRIP THE MANIFEST THROUGH A YAML DUMPER
 
-{MANIFEST_FILE} is heavily commented, and those comments are the spec citations that
-explain why the file says what it says — which §, which reader function, why THIS
-person key and not that one, which hash was verified and when.
-
-A YAML dumper drops every one of them. Read-modify-dump produces a file that parses,
-validates and looks correct, and has silently destroyed the documentation. In the run
-that produced this prompt that cost 68 comment lines on the first attempt, and it was
-only caught by reading the diff.
-
-  * Split the file TEXTUALLY at the final `updated_at:` line.
-  * Append the new entries as formatted text after the existing ones.
-  * Rewrite `updated_at:`.
-  * Then parse the result to prove it is valid, and `git diff` it to prove the only
-    removed line is the old `updated_at`. If anything else shows as removed, restore
-    from git and do it again.
+Its comments are the spec citations (which §, which reader, why this person key, which
+hash verified when). A dumper drops them all while the file still parses (once cost 68
+comment lines, caught only in the diff).
+  * Split TEXTUALLY at the final `updated_at:` line; append new entries as formatted
+    text; rewrite `updated_at:`.
+  * Parse the result, then `git diff`: the only removed line must be the old
+    `updated_at`. Otherwise restore from git and redo.
 
 8.2 THE ENTRY
 
 For every [ DONE] video append to `user_repo.transcriptions:`:
-
   * video_key, title, source_url, recorded_language
   * roster_key — the CSV's first column, verbatim
-  * person_key — ONLY when it resolved per the key-namespaces section. Omit it
-                 otherwise; never derive one from the roster key.
+  * person_key — ONLY when resolved per TWO KEY NAMESPACES; else omit, never derive
   * path       — repo-root-relative, forward slashes, no leading "./"
                  videos/transcriptions/{roster_key}/{video_key}/{video_key}.transcription
   * sidecar    — .../transcription.yaml
   * segments   — .../{video_key}.segments.json
-  * text_sha256 — the hash from 7.2. A hash that does not match the bytes is stored
-                 as gap_reason: manifest_hash_mismatch and the source is NOT SCORED.
-                 Re-hash after any edit.
+  * text_sha256 — the 7.2 hash. A mismatch with the bytes is stored as gap_reason:
+                 manifest_hash_mismatch and the source is NOT SCORED. Re-hash after edits.
   * transcribed_at, word_count
   * demand_run_id — the demand snapshot this entry answers
-  * speakers   — the label -> {person_key, role, display_name} map. Give a
-                 person_key only where one resolved; otherwise give role and
-                 display_name and omit person_key. Exactly one role: subject.
-  * unread_sidecars — the files the scanner's allow-list does not admit (.ctm, .rttm,
-                 .fountain, .segments.jsonl, .script.txt, .srt, .vtt), listed so their
-                 absence from the read is STATED rather than silent.
+  * speakers   — label -> {person_key, role, display_name}; person_key only where
+                 resolved, else role + display_name. Exactly one role: subject.
+  * unread_sidecars — files the scanner's allow-list does not admit (.ctm, .rttm,
+                 .fountain, .segments.jsonl, .script.txt, .srt, .vtt), so their absence
+                 from the read is STATED.
 
 8.3 THE TOP-LEVEL person_key IS A KNOWN CONFLICT — REPORT IT, DO NOT RESOLVE IT
 
-{MANIFEST_FILE} carries ONE `user_repo.person_key` for the whole repo, and the
-schema comment says the repo's speaking corpus is scoped by it. This prompt fills a
-repo with videos of MANY different people, which that single key cannot describe.
-
-  * NEVER change the existing top-level person_key. It is the citizen's own claim
-    and the app's registration is what actually wins.
-  * When this run adds transcripts whose roster_key does not belong to that person,
-    print Z15 once at the end and name the count. It is a schema question for the
-    product, not something a download run gets to decide.
+One `user_repo.person_key` scopes the repo, but this prompt adds many people's videos.
+NEVER change it (the citizen's claim; the app's registration wins). If this run adds
+transcripts whose roster_key is not that person's, print Z15 once at the end with the
+count (a product schema question).
 
 
 ====================================================================
 STAGE 9 — COMMIT AND PUSH
 ====================================================================
 
-Only [ DONE] videos are committed. Nothing from Stage 7.4 is anywhere near the repo.
+Only [ DONE] videos are committed.
 
 9.1 CHECK WHAT IS ABOUT TO BE COMMITTED
 
         git -C {ROOT_DIR} status --short
 
-  * Confirm every path is under {ROOT_DIR}/videos/transcriptions/, or is
-    {MANIFEST_FILE}, or is {ROOT_DIR}/.gitignore.
-  * Confirm NO media file is staged — no .mp4, .webm, .mkv, .m4a, .info.json, no
-    thumbnails. If one appears, something wrote to the wrong root: print Z16, stop,
-    and commit nothing.
-  * Every directory that is meant to exist but is empty needs a .gitkeep, or git
-    drops it on push and clone never brings it back.
+  * Every path under {ROOT_DIR}/videos/transcriptions/, or {MANIFEST_FILE}, or
+    {ROOT_DIR}/.gitignore.
+  * NO media staged (.mp4, .webm, .mkv, .m4a, .info.json, thumbnails). If any: print
+    Z16, stop, commit nothing.
+  * Empty-but-intended directories need a .gitkeep.
 
 9.2 COMMIT
 
@@ -2319,115 +1567,78 @@ MSG
 
 9.3 PUSH — ONLY IF THE CITIZEN ASKS. DO NOT PUSH BY DEFAULT.
 
-{ROOT_DIR}/CLAUDE.md says, under GIT BRANCH RULES:
-
-        No `git checkout -b`, `git switch -c`, `git branch`, `git checkout <other>`,
-        or `git push` unless the user explicitly asks for it.
-
-That is a standing instruction from the repo owner and it OUTRANKS this prompt.
-Running this prompt is not itself a request to push: pushing publishes a citizen's
-transcripts to a public repo, and that is the citizen's call to make each time.
-
-  * DEFAULT: commit, then STOP. Print Z31 with the exact push command and the
-    number of commits waiting.
-  * ONLY if the citizen asked for a push in the text they typed with the command:
+The repo owner's standing rule (GIT BRANCH RULES in {ROOT_DIR}'s charter) outranks
+this prompt: no `git checkout -b`, `git switch -c`, `git branch`, `git checkout
+<other>`, or `git push` unless the user explicitly asks. Running this prompt is not a
+push request (pushing publishes transcripts publicly; the citizen's call each time).
+  * DEFAULT: commit, STOP, print Z31 with the push command and commits waiting.
+  * Only if the run text asked:
 
         git -C {ROOT_DIR} push
 
-  * Current branch only. Never create or switch a branch.
-  * If a requested push is rejected, `git pull --rebase` and retry ONCE. If it fails
-    again, print Z17 and stop — never force.
+  * Current branch only. Rejected: `git pull --rebase`, retry ONCE; fails again: Z17,
+    stop, never force.
 
 9.4 THIS MACHINE HAS AN AUTOMATIC COMMITTER — EXPECT IT
 
-{ROOT_DIR} is swept by an external auto-committer (its commits are titled
-"Bryan 26 Tower"). It knows nothing about this prompt's rules and it will commit
-whatever it finds, mid-run, at any moment. Nothing in this prompt can prevent it.
-
-SO THE DEFENCE IS NOT TO TRY. It is to make sure there is never anything partial
-for it to find: Stage 3 writes nothing into {ROOT_DIR}, and Stage 7.1 creates the
-directory and the sidecar together only once the words exist. An auto-commit that
-lands between two videos therefore captures completed transcripts and nothing else,
-which is a harmless early commit rather than a published partial.
-
-That defence is the whole reason Stage 3 works the way it does. Two earlier runs
-show what happens without it: one committed 189 files at 09:04:44 while
-transcriptions were still running, capturing directories whose sidecars had not
-been written; the next (901615a) committed fifteen stub sidecars that Stage 7.4
-then deleted. If a future edit ever moves the seed back into {TRANSCRIPTIONS_ROOT},
-both failures return together.
-
-  * Re-read `git log` before Stage 9.1. Work already committed is normal, not an
-    error, and it is not a reason to stop.
-  * Commit the REMAINDER so the tree ends complete, and say in the run report that
-    an auto-commit landed mid-run and what this commit closed.
-  * Never `git reset` or amend the auto-committer's commits to "tidy up". They may
-    already have been pushed, and they are not this prompt's to rewrite.
+An external auto-committer ("Bryan 26 Tower" commits) sweeps {ROOT_DIR} at any moment
+and nothing here can stop it. The defence is that nothing partial ever exists for it
+to find (Stage 3 writes nothing to the repo; 7.1 adds dir + sidecar together once words
+exist), so a mid-run auto-commit captures only complete transcripts. Without that
+defence: one run had 189 files committed at 09:04:44 mid-transcription (sidecars
+unwritten); the next (901615a) committed fifteen stubs that 7.4 deleted. Moving the
+seed back into {TRANSCRIPTIONS_ROOT} brings both back.
+  * Re-read `git log` before 9.1; already-committed work is normal, not a stop.
+  * Commit the REMAINDER; report that an auto-commit landed mid-run and what this
+    commit closed.
+  * Never `git reset` or amend its commits (may be pushed; not this prompt's).
 
 
 ====================================================================
 STAGE 10 — REPORT
 ====================================================================
 
-Print Z30 — the counts, then the failures by roster_key/video_key with the reason.
-Then Z31, unless the citizen asked for a push and it succeeded.
+Print Z30 (counts, then failures by roster_key/video_key with reason), then Z31 unless
+a requested push succeeded.
 
-Then say, in plain sentences and only where there is something to say:
+Then, in plain sentences, only where there is something to say:
+  * {CONFIG_FILE} changed? .gitignore created?
+  * THE BACKLOG, ALWAYS (even empty): downloaded-but-untranscribed held, adopted and
+    finished, left (claimed by another run), capped at {MAX_TRANSCRIBE_TRIES} (Z51),
+    new backlog from this run's failures. ("20 transcribed" with 40 untranscribed on
+    disk is the least useful true statement.)
+  * EVERY 1C LEDGER CORRECTION by video_uid and reason (a `finished` row with no
+    transcript = an earlier false success).
+  * EVERY LENGTH SKIP (Z53) by roster_key/video_key with measured duration, backlog or
+    this run; media on disk, lifting the cap costs no re-download. Never report 17 of
+    20 without saying where 3 went.
+  * Media that would not open in ffprobe (1D.3), by path (probably truncated; the
+    citizen decides on deletion).
+  * Ledger rows this run could not parse and left alone.
+  * STAGE 1B: people examined, rows added for, unsourced, listed empty, patch CSV path,
+    with the queue's as-of date and run_id.
+  * Transcripts from SUPPLEMENT rows, by roster_key/video_key (nobody asked yet).
+  * Z42 if the data repo was behind.
+  * Whether {WTC_REPO} is behind and needs a pull.
+  * ANY REFUSED DELETION (Z22) by path and reason; never silent.
+  * Stranded seed-only dirs from 2.3, by roster_key/video_key, tracked or not; which
+    7.4b cleared and which were left as committed.
+  * Any transcription.yaml FIELD added beyond APPENDIX D.
+  * Entries without a resolvable person_key; Z15 if it applies.
+  * Z18 for superseded video files on disk; Z19 for any low-word video.
+  * Measured throughput (total audio seconds, wall clock, ratio) to calibrate the next
+    6.1 estimate to THIS machine.
+  * Anything left needing a human.
 
-  * whether {CONFIG_FILE} was changed, and whether .gitignore was created
-  * THE BACKLOG, ALWAYS, even when it was empty and even when nothing was adopted:
-    how many downloaded-but-untranscribed videos this machine holds, how many this
-    run adopted and finished, how many were left because another run has them
-    claimed, how many are capped out at {MAX_TRANSCRIBE_TRIES} (Z51), and how many
-    are new backlog created by THIS run's own failures. A citizen who is told
-    "20 transcribed" while 40 un-transcribed downloads sit on the disk has been
-    told the least useful true thing available.
-  * EVERY LEDGER CORRECTION Stage 1C made, by video_uid and reason. A row that said
-    `finished` with no transcript behind it means an earlier run reported success it
-    did not achieve, and that is worth a human's attention.
-  * EVERY VIDEO SKIPPED FOR LENGTH (Z53), by roster_key/video_key with its measured
-    duration, and whether it came from the backlog or from this run's own
-    downloads. Say plainly that the media is on disk and that lifting the cap costs
-    no re-download. Never let a run report "17 transcribed" against a batch of 20
-    without saying where the other three went.
-  * any row whose media would not open in ffprobe (Stage 1D.3), by path — those are
-    probably truncated downloads and only the citizen should decide to delete them
-  * any ledger row this run could not parse and therefore left alone
-  * WHAT STAGE 1B ADDED, and what it could not: how many people it examined, how
-    many it added rows for, how many had no channel on record and therefore got no
-    rows, how many listed empty, and the path to the patch CSV a human can hand to
-    whoever runs the demand engine. Say the queue's as-of date and run_id beside it,
-    so a reader knows how stale the movement's list was on this machine.
-  * how many of this run's transcripts came from SUPPLEMENT rows rather than from
-    the engine's ladder, by roster_key/video_key. These are the ones nobody asked
-    for yet, and a reader of the repo deserves to know which they are.
-  * Z42 if the data repo was behind, since that changes what "new person" meant
-  * whether {WTC_REPO} is behind and needs a pull
-  * ANY DELETION THIS RUN REFUSED (Z22), by path and reason. Never leave this
-    silent: a refusal means something under {ROOT_DIR} is in a state this prompt
-    would not touch, and only the citizen can settle it.
-  * ANY STRANDED SEED-ONLY DIRECTORY found in Stage 2.3, by roster_key/video_key,
-    and whether git tracks it. Those are the residue of runs that predate Stage 3's
-    fix. Say which ones Stage 7.4b cleared and which were left because they are
-    committed.
-  * any transcription.yaml FIELD THAT WAS ADDED beyond APPENDIX D
-  * how many entries could not resolve a person_key, and Z15 if it applies
-  * Z18 if superseded video files are sitting on disk, Z19 for any low-word video
-  * the measured throughput this run achieved — total audio seconds, wall clock,
-    and the ratio — so the next run's Stage 6.1 estimate is calibrated to THIS
-    machine rather than to the constant in this file
-  * anything left in a state a human needs to act on
-
-If none of those apply, say nothing beyond Z30. Append the whole thing to {RUN_LOG}.
+None apply: nothing beyond Z30. Append everything to {RUN_LOG}.
 
 
 ====================================================================
 APPENDIX A — {CONFIG_FILE} SCHEMA
 ====================================================================
 
-Machine-local. Lives at ~/.config/we_citizens/config.yaml, OUTSIDE every repo. Never
-checked in, never synced. Each of a citizen's computers has its own copy pointing at
-wherever the clones live there.
+Machine-local at ~/.config/we_citizens/config.yaml, OUTSIDE every repo, never checked in
+or synced; each computer has its own.
 
     # We The Citizens — machine-local config.
     # Written by the web app on first run, or by hand. Each computer has its own copy.
@@ -2459,12 +1670,10 @@ wherever the clones live there.
     # -----------------------------------------------------------------------
 
 Rules:
-  * Keys may be ABSENT. An absent key means "not found on this machine, go look".
-    That is a legitimate state and it is better than a wrong path.
-  * A key that is present may still be STALE. Always verify by `git remote -v` plus
-    a content marker before trusting it (STAGE 1.2).
-  * RETIRED SHAPE, still found on older machines — a bare top-level key with no
-    nesting. Read it, carry the value, rewrite the file into the shape above:
+  * Keys may be ABSENT ("not found on this machine, go look"; better than wrong).
+  * Present keys may be STALE; verify with `git remote -v` plus a content marker (1.2).
+  * RETIRED SHAPE on older machines (bare top-level key): read, carry the value,
+    rewrite into the shape above:
 
         user_repo_path: /Users/bryan/BGit/Bryan_git/we_bryan
 
@@ -2473,88 +1682,74 @@ Rules:
 APPENDIX B — {VIDEO_DEMAND_CSV} COLUMNS
 ====================================================================
 
-Generated by the video-demand calc engine. Do not hand-edit — the next run
-overwrites it. Already sorted, highest priority first.
-
-THE COLUMNS ARE APPEND-ONLY AND ARE LOOKED UP BY HEADER NAME, NEVER BY POSITION.
-That rule is what makes appending safe, and it binds this prompt in both directions:
-a newer engine may have added a 26th column that this appendix does not list, and a
-reader that indexes by position reads it as the wrong field. STAGE 1B copies the
-header out of the live file for exactly this reason.
+Engine-generated (never hand-edit; next run overwrites), sorted highest priority first.
+COLUMNS ARE APPEND-ONLY, LOOKED UP BY HEADER NAME, NEVER POSITION (a newer engine may
+add a 26th; 1B copies the live header for this reason).
 
     person_key                MISLABELLED. For a roster human it is the ROSTER key —
                               office-scoped, e.g. kari_lake_us_pres. For a
                               people_only human it is the PERSON key. Either way it
                               is the directory segment under {TRANSCRIPTIONS_ROOT}
                               and every media root. See TWO KEY NAMESPACES.
-    video_uid                 "{column-1 key}::{video_key}" — THE KEY. Unique across
-                              the corpus, and the only thing anything joins on.
-                              NEVER join on the bare video_key: it is unique within
-                              ONE PERSON ONLY, two different videos are both named
-                              v0001 on disk today, and a video_key join matches
-                              silently across two people and publishes one person's
-                              recorded words under another's name.
+    video_uid                 "{column-1 key}::{video_key}" — THE KEY, unique across
+                              the corpus; the only join key. NEVER join on bare
+                              video_key: unique within ONE PERSON only (two videos are
+                              both v0001 on disk today), so it silently matches across
+                              people and publishes one person's words under another's.
     video_key                 THE FROZEN PRIMARY KEY of this video for this person.
                               Directory name. [A-Za-z0-9_-], 1..64. Never invented.
                               On a YouTube row it IS the 11-char YouTube id.
     youtube_id                the 11-char YouTube id. URL is
                               https://www.youtube.com/watch?v={youtube_id}
     duration_seconds          BLANK MEANS UNKNOWN, never 0
-    priority                  the computed demand score, integer 0..1000. Higher is
-                              wanted more. APPENDIX F is the arithmetic.
+    priority                  computed demand score, integer 0..1000, higher = wanted
+                              more. APPENDIX F is the arithmetic.
     ceiling                   the maximum this row's priority could reach
     raw                       the pre-clamp score. MAY BE NEGATIVE.
     bound_by                  ceiling | raw — which of the two produced priority
     transcripts_held          copies of THIS VIDEO's transcript the movement holds
     trusted_transcripts_held  of those, how many came from a trusted supplier
     person_transcripts_held   transcripts for THIS PERSON across every video — the
-                              damper's input, and a different fact from the above
-    seat_rank                 office_importance_rank for the seat this person holds
-                              or seeks. BLANK IS AN ABSENCE, NOT A ZERO.
-    challenger                true | false | blank. BLANK means there was no sealed
-                              contenders edition to ask. Blank is not false.
-    round                     which breadth-first round admitted this row. Round 1
-                              for everybody comes before round 2 for anybody.
+                              damper's input, a different fact from the above
+    seat_rank                 office_importance_rank for the seat held or sought.
+                              BLANK IS AN ABSENCE, NOT A ZERO.
+    challenger                true | false | blank. BLANK = no sealed contenders
+                              edition to ask. Blank is not false.
+    round                     breadth-first round that admitted this row. Round 1 for
+                              everybody comes before round 2 for anybody.
     status                    open | partial | satisfied | unobtainable | withdrawn
                               — only open/partial are worked
     closed_reason             why it is closed, when it is
     notes                     free text, human
     computed_at               ISO 8601
-    run_id                    the demand engine run that produced this row. CARRY IT
-                              INTO transcription.yaml — it is the join back.
-    source_type               where this video lives — youtube, rumble, ipfs, x,
+    run_id                    the engine run that produced this row. CARRY IT INTO
+                              transcription.yaml — it is the join back.
+    source_type               where the video lives — youtube, rumble, ipfs, x,
                               bluesky, nostr, mastodon, peertube, web and others.
-                              BLANK means the record carries no address at all;
-                              `web` means an address we can read and cannot place.
+                              BLANK = no address at all; `web` = readable address we
+                              cannot place.
     source_url                an address a reader can open. NEVER an IPFS gateway —
                               ipfs://<cid> is the address and a gateway is one
                               mirror's opinion of where to find it.
-    ipfs_cid                  the canonical CID, and only for an IPFS address. Blank
-                              on almost every row, by design.
-    source_ref                the platform-native unique id, normalized. On YouTube
-                              it is the same string as video_key.
+    ipfs_cid                  canonical CID, only for an IPFS address. Blank on almost
+                              every row, by design.
+    source_ref                platform-native unique id, normalized. On YouTube the
+                              same string as video_key.
     subject_kind              WHICH STORE THIS HUMAN IS KNOWN FROM — new_politician |
                               legacy_politician | worrisome_challenger |
                               fix_bill_author | people_only. A fact about the
-                              movement's FILING, never a judgement of the person and
-                              never an input to any award. Blank on a row written
-                              before 2026-09-09, and blank is what an unrecognised
-                              value reads back as. BLANK IS NEVER people_only —
-                              they are opposite facts.
+                              movement's FILING, never a judgement of the person or an
+                              award input. Blank on rows before 2026-09-09 and for
+                              unrecognised values. BLANK IS NEVER people_only.
 
-{VIDEO_DEMAND_YAML} is the run record for the same generation: schema_version,
-run_id, generated_at, engine_version, universe counts, rows_open / rows_partial /
-rows_satisfied, a `gaps:` list stating what the engine could NOT determine, and
-csv_sha256 for verifying the CSV.
+{VIDEO_DEMAND_YAML} is the run record: schema_version, run_id, generated_at,
+engine_version, universe counts, rows_open / rows_partial / rows_satisfied, a `gaps:`
+list of what the engine could NOT determine, and csv_sha256. READ THE GAPS: the
+sentence beginning "N person(s) entered the eligible universe from
+data_we_citizens/people/" is exactly STAGE 1B's population (a SOURCING gap re-running
+the engine cannot move).
 
-READ THE GAPS LIST. It is not decoration — it is the engine saying, in its own
-voice, which people it could not price and why. The sentence that begins "N
-person(s) entered the eligible universe from data_we_citizens/people/" is the exact
-population STAGE 1B exists to serve, and its remedy is stated there as a SOURCING
-gap that re-running the engine cannot move.
-
-{QUEUE_SUPPLEMENT_CSV} carries THE SAME COLUMNS, written by STAGE 1B, for people the
-engine has not priced. Its rows are provisional and every one of them says so.
+{QUEUE_SUPPLEMENT_CSV} has THE SAME COLUMNS (STAGE 1B, provisional rows).
 
 
 ====================================================================
@@ -2596,15 +1791,12 @@ APPENDIX C — {MANIFEST_FILE} ENTRY SHAPE
             - "videos/transcriptions/kari_lake_us_pres/-6tC15BHdh4/-6tC15BHdh4.rttm"
       updated_at: 2026-09-05T09:30:00.000Z
 
-  * repo_url must be PUBLIC and https. No ssh, no git://, no token. The test the
-    scan performs is "can the WORLD read this?".
-  * `path` values are repo-root-relative; the scanner applies `subpath` itself.
-  * `person_key` anywhere in this file is a CLAIM. The registration in the app wins.
-  * LEGACY ENTRIES in a real repo may carry paths that predate the
-    {roster_key}/{video_key} rule, e.g. videos/transcriptions/tucker/joe_kent/.
-    Those are correct AS WRITTEN and are never rewritten by this prompt. Only new
-    entries follow the shape above.
-
+  * repo_url must be PUBLIC https (no ssh, git://, or token); the scan tests "can the
+    WORLD read this?".
+  * `path` is repo-root-relative; the scanner applies `subpath`.
+  * Any `person_key` here is a CLAIM; the app registration wins.
+  * LEGACY entries with pre-rule paths (e.g. videos/transcriptions/tucker/joe_kent/) are
+    correct AS WRITTEN and never rewritten; only new entries follow this shape.
 
 ====================================================================
 APPENDIX D — transcription.yaml SCHEMA
@@ -2741,47 +1933,38 @@ added. ABSENT IS ABSENT: omit what is not known; never write a placeholder.
         ipfs_cid: omitted unless the CSV carries one
         source_ref: "1cbw1utqzHg"
 
-CARRY THE WHOLE DEMAND ROW, NOT A SELECTION FROM IT. Every column in APPENDIX B
-gets a home here. {VIDEO_DEMAND_CSV} is REGENERATED on every engine run: today's
-priority, transcripts_held and status are overwritten by tomorrow's, and the values
-that were true WHEN THIS TRANSCRIPT WAS MADE then exist nowhere on earth. This block
-is the only record of why this video was worked on, and a column dropped from it is
-a fact destroyed, not a fact stored elsewhere.
 
-ABSENT IS ABSENT APPLIES HARDEST HERE. A blank cell is OMITTED. seat_rank is the one
-that bites — APPENDIX B says "BLANK IS AN ABSENCE, NOT A ZERO", and a 0 written into
-this block reads to every later reader as "the least important seat there is".
+CARRY THE WHOLE DEMAND ROW, NOT A SELECTION. Every APPENDIX B column gets a home here.
+{VIDEO_DEMAND_CSV} is REGENERATED every engine run, so the values true WHEN THIS
+TRANSCRIPT WAS MADE exist nowhere else; a dropped column is a fact destroyed.
 
-A COLUMN THE ENGINE ADDS LATER is carried through under its own name rather than
-dropped. {SIDECAR_TOOL} does this automatically; it is written down here so a reader
-of the appendix knows the block is not a fixed list.
+ABSENT IS ABSENT APPLIES HARDEST HERE: blank cells are OMITTED. seat_rank bites: a 0
+reads to every later reader as "the least important seat there is".
 
-THE JOIN KEY IS video_uid, NEVER video_key. The demand engine issues placeholder
-keys — v0001, v0002 — one per person, so `v0001` appears against dozens of different
-roster_keys, each with a DIFFERENT youtube_id. Matching a demand row on a bare
-video_key returns whichever person sorted first and attaches their video's URL to
-this person's transcript, in Video.URL, which is one of the four fields the product
-actually reads. {SIDECAR_TOOL} joins on video_uid; anything else that reads this CSV
-must too. The data repo states the same rule in
-{DATA_REPO}/prompts/p_transcriptions_speakers_to_people.md.
+A COLUMN THE ENGINE ADDS LATER is carried through under its own name ({SIDECAR_TOOL}
+does this automatically; the block is not a fixed list).
+
+THE JOIN KEY IS video_uid, NEVER video_key. The engine issues placeholder keys (v0001,
+v0002) per person, so `v0001` appears against dozens of roster_keys with DIFFERENT
+youtube_ids; a bare-key match attaches another person's URL to this transcript's
+Video.URL (one of the four fields the product reads). Everything reading this CSV joins
+on video_uid (also stated in {DATA_REPO}/prompts/p_transcriptions_speakers_to_people.md).
 
 
 ====================================================================
 APPENDIX E — THE citizens CLI, ONLY WHAT THIS PROMPT USES
 ====================================================================
 
-Run from {WTC_REPO}/cli/citizens, or `just citizens <verb>` from {WTC_REPO}, or
-`node {WTC_REPO}/code/packages/citizens/dist/main.js`. Same binary, same arguments.
+Run as {WTC_REPO}/cli/citizens, `just citizens <verb>` from {WTC_REPO}, or
+`node {WTC_REPO}/code/packages/citizens/dist/main.js` (same binary and arguments).
 
-  * IT IS A THIN HTTP CLIENT. It decodes nothing in its own process — it asks the
-    app to. So the app must be running.
-  * IT NEVER FETCHES MEDIA. A URL handed to `transcribe` is refused at the edge with
-    MediaNotLocalError. That is why Stage 4 exists and uses yt-dlp. `capability`
-    reports yt_dlp: false and that is correct and expected.
-  * THE DEFAULT TARGET IS PRODUCTION. --local on every call, every time.
-    `videos`, `install`, `circuit` and `capability` REFUSE a non-local target.
-  * LOCATE IS THE DEFAULT. Without --create, `transcribe` only prints where the
-    transcript would be and exits 3 if there is none.
+  * A THIN HTTP CLIENT; the app must be running.
+  * NEVER FETCHES MEDIA: a URL to `transcribe` is refused with MediaNotLocalError
+    (hence Stage 4's yt-dlp). `capability` reporting yt_dlp: false is expected.
+  * DEFAULT TARGET IS PRODUCTION: --local on every call. `videos`, `install`, `circuit`
+    and `capability` REFUSE a non-local target.
+  * LOCATE IS THE DEFAULT: without --create, `transcribe` only prints where the
+    transcript would be (exit 3 if none).
 
 Verbs used here:
 
@@ -2794,34 +1977,29 @@ Verbs used here:
 
 Exit codes: 2 usage, 3 not found, 4 verify failed, 69 CLI not built.
 
-Not used here, and why:
-    citizens batch      walks a MEDIA ROOT this prompt does not own and defaults its
-                        --out into the shared data repo. This prompt drives one video
-                        at a time into the citizen's own repo instead.
-    --person / --video  MIRRORS THE RESULT INTO THE SHARED DATA REPO. Forbidden by
-                        this prompt's hard rules unless the citizen asks.
+Not used here:
+    citizens batch      walks a MEDIA ROOT this prompt does not own and defaults --out
+                        into the shared data repo; this prompt drives one video at a
+                        time into the citizen's own repo.
+    --person / --video  MIRRORS THE RESULT INTO THE SHARED DATA REPO; forbidden unless
+                        the citizen asks.
 
 
 ====================================================================
 APPENDIX F — THE DEMAND ARITHMETIC, FOR STAGE 1B ONLY
 ====================================================================
 
-NORMATIVE SOURCE, and this appendix is a transcription of it rather than a second
-opinion: we_the_citizens/pm/calc_engine_video_demand.mdx §3, implemented in
-code/packages/shared/src/video_demand.ts as videoDemandTerms() /
-computeVideoDemand(). If the two ever disagree, THE SPEC WINS and this appendix is
-wrong. Re-read it before trusting these numbers on a machine that has {WTC_REPO}.
-
-Every term is an INTEGER. There is no floating-point arithmetic anywhere in this
-engine and therefore nothing to round.
+A transcription, not a second opinion, of we_the_citizens/pm/calc_engine_video_demand.mdx
+§3 (code/packages/shared/src/video_demand.ts: videoDemandTerms() / computeVideoDemand()).
+On disagreement THE SPEC WINS; re-read it when {WTC_REPO} is on the machine. All terms
+are INTEGERS (nothing to round).
 
 THE CEILING — per VIDEO
 
     steps   = transcripts_held + trusted_transcripts_held
     ceiling = max(0, 1000 - 200 * steps)
 
-For a video nobody holds words for, steps is 0 and the ceiling is 1000. It exists to
-pull a video DOWN once we have heard it, so on a new person's rows it is inert.
+(1000 for an unheard video; inert on a new person's rows.)
 
 THE RAW SUM — before the ceiling
 
@@ -2838,39 +2016,25 @@ THE PUBLISHED NUMBER
     priority = max(0, min(ceiling, raw))
     bound_by = priority == ceiling && ceiling < raw ? "ceiling" : "raw"
 
-The floor is not a third binder. bound_by has two values and raw prints the true sum
-even when it is negative — that is how the floor stays legible to a reader adding
-the terms up by hand.
+The floor is not a third binder; raw prints the true (possibly negative) sum so a
+hand-check stays legible.
 
 FOUR RULES THAT ARE EASIER TO GET WRONG THAN THE SUM ITSELF
 
-  * THE -300 KEYS ON subject_kind, NEVER ON AN UNRESOLVED SEAT. A roster human whose
-    office this run could not price gets the term "seat rank / points 0 / cause seat
-    unknown" and NO PENALTY. Nine thousand rows on the live ladder carry a blank
-    seat_rank because the movement failed to resolve THEIR OFFICE; that is a gap in
-    our records, and pricing our own sourcing failure as their unimportance would
-    demote thousands of named living people, silently, and every row would render
-    perfectly.
-
-  * BLANK IS AN ABSENCE IN BOTH DIRECTIONS. seat_rank is written blank whenever the
-    seat term carried a cause, and never as 0. challenger is blank when no sealed
-    slate exists to ask — blank is not false. duration_seconds is blank when unknown
-    — blank is not 0.
-
-  * THE TWO TRANSCRIPT COUNTS ARE TWO DIFFERENT FACTS. transcripts_held is per
-    VIDEO and feeds the ceiling; person_transcripts_held is per PERSON and feeds the
-    damper. Collapsing them gives everybody with a large corpus a ceiling of 0 and
-    buries every one of their videos at priority 0 — which renders perfectly,
-    because 0 is a legal priority.
-
-  * THE LONG-FORM TERM IS DEAD AND SAYS SO. duration_seconds is blank on essentially
-    every row because the videos.list queue kind is declared and not implemented, so
-    the >2400 test can never be true. The term is emitted with points 0 and the
-    cause "duration unknown — videos.list not implemented" rather than omitted: a
-    sum that adds up perfectly while quietly asserting "we considered length and it
-    did not matter" is a small lie a reader cannot catch. If yt-dlp DID print a real
-    duration in 1B.5, the term fires normally — that is the term waking up, not a
-    deviation.
+  * THE -300 KEYS ON subject_kind, NEVER ON AN UNRESOLVED SEAT. An unpriceable roster
+    office gets "seat rank / points 0 / cause seat unknown" and NO PENALTY (~9,000 live
+    rows have blank seat_rank from OUR failure to resolve their office; penalising it
+    would silently demote thousands of named living people).
+  * BLANK IS AN ABSENCE IN BOTH DIRECTIONS: seat_rank blank (never 0) when the seat term
+    carried a cause; challenger blank (not false) with no sealed slate; duration_seconds
+    blank (not 0) when unknown.
+  * THE TWO TRANSCRIPT COUNTS ARE DIFFERENT FACTS: transcripts_held (per VIDEO, feeds the
+    ceiling) vs person_transcripts_held (per PERSON, feeds the damper). Collapsing them
+    gives large-corpus people a ceiling of 0 on every video, silently (0 is legal).
+  * THE LONG-FORM TERM IS DEAD AND SAYS SO: duration_seconds is blank nearly everywhere
+    (the videos.list queue kind is declared, not implemented), so it is emitted with
+    points 0 and cause "duration unknown — videos.list not implemented", not omitted.
+    A real yt-dlp duration in 1B.5 makes it fire normally.
 
 THE OFFICE LADDER — office_importance_rank, read at run time from the newest
 {DATA_REPO}/scores/new_politician_qualified/npq_*.yaml. Today it reads:
@@ -2878,30 +2042,24 @@ THE OFFICE LADDER — office_importance_rank, read at run time from the newest
     president 100, governor 80, speaker_house 74, speaker_senate 72,
     senator 65, us_house 50, mayor 40, state_assembly 30
 
-RESOLVING A SEAT IS TOTAL AND HAS NO ?? 0 FALLBACK. Two spellings are accepted
-because they name the same office: the seat-kind vocabulary (president, governor,
-us_senate, us_house, state_assembly) translated through
+RESOLVING A SEAT IS TOTAL, WITH NO ?? 0 FALLBACK. Accept the seat-kind vocabulary
+(president, governor, us_senate, us_house, state_assembly) translated through
 
     us_senate -> senator
 
-and then the rank map's own vocabulary (senator, mayor, speaker_house,
-speaker_senate). Anything else produces a NAMED term — points 0, cause
-"unknown office <x> — not in office_importance_rank" — and a BLANK seat_rank.
-us_senate and senator being two spellings of one office is the trap: a ?? 0 fallback
-there publishes "a United States Senate seat does not matter", silently, and nothing
-fails.
+and the rank map's own vocabulary (senator, mayor, speaker_house, speaker_senate).
+Anything else: a NAMED term (points 0, cause "unknown office <x> — not in
+office_importance_rank") and BLANK seat_rank. (A ?? 0 fallback on us_senate would
+publish "a United States Senate seat does not matter", silently.)
 
-For a Stage 1B candidate the office comes from, in order:
-  1. {DATA_REPO}/contenders/slate.yaml — the assignment's seat_kind, if the key is
-     on the sealed slate. This is the most reliable, because it is already in the
-     seat-kind vocabulary.
-  2. {ROSTER_DIR}/{roster_key}/{roster_key}.yaml — its office and level fields.
-     These are FREE TEXT written for humans ("Candidate for Governor", level:
-     state). Map them only where the reading is unambiguous; where it is not, do not
-     guess — an unresolved seat costs no penalty (rule 1 above), while a wrong one
-     reprices a human against the whole ladder.
-  3. Nothing else. A people_only candidate has no seat by definition and takes the
-     -300 term with the cause "no candidacy on file — known from people/ only".
+A Stage 1B candidate's office, in order:
+  1. {DATA_REPO}/contenders/slate.yaml assignment seat_kind, if on the sealed slate
+     (most reliable; already seat-kind vocabulary).
+  2. {ROSTER_DIR}/{roster_key}/{roster_key}.yaml office and level fields: FREE TEXT
+     ("Candidate for Governor", level: state); map only when unambiguous (unresolved
+     costs no penalty; wrong reprices a human against the whole ladder).
+  3. Nothing else. people_only has no seat and takes -300 with cause "no candidacy on
+     file — known from people/ only".
 
 THE FOUR BANDS, TO THE DIGIT — never-heard rows, ceiling inert:
 
@@ -2912,102 +2070,73 @@ THE FOUR BANDS, TO THE DIGIT — never-heard rows, ceiling inert:
     state assembly   200 +  90 + 200  =  490
     people_only      200 + 200 - 300  =  100
 
-Add +150 to any of them for a live challenger on the sealed slate. A people_only
-human this repo already holds words for prices below zero and publishes 0 — which is
-LOW, not excluded: round 1 for everybody comes before round 2 for anybody, so their
-first videos still sort above every round-2 row on the ladder including the
-president's. A supplement row must never be dropped for having priority 0.
++150 for a live challenger on the sealed slate. A people_only human this repo already
+has words for prices below zero and publishes 0: LOW, not excluded (round 1 for
+everybody precedes round 2 for anybody). Never drop a supplement row for priority 0.
 
 
 ====================================================================
 APPENDIX G — {IN_PROGRESS_CSV} SCHEMA
 ====================================================================
 
-One row per {video_uid}. Machine-local, outside every repo, never committed. Read
-and written by STAGE 1C, 1D, 6.1b and 6.5, and shared by every run on this machine.
+One row per {video_uid}; machine-local, outside every repo, never committed; read and
+written by STAGE 1C, 1D, 6.1b and 6.5 and shared by every run on this machine.
 
-COLUMNS ARE APPEND-ONLY AND ARE LOOKED UP BY HEADER NAME, NEVER BY POSITION. A
-newer version of this prompt may add a column, and a reader that indexes by
-position reads it as the wrong field. A writer that meets a column it does not know
-CARRIES IT THROUGH UNCHANGED rather than dropping it.
+COLUMNS ARE APPEND-ONLY, LOOKED UP BY HEADER NAME, NEVER POSITION. An unknown column is
+CARRIED THROUGH UNCHANGED, never dropped.
 
-    video_uid                 "{roster_key}::{video_key}" — THE KEY, and the only
-                              thing anything joins on. NEVER the bare video_key:
-                              the demand engine issues placeholder keys like v0001
-                              once per person, so a bare key matches across two
-                              people and would let one person's failure claim
-                              another person's video.
+    video_uid                 "{roster_key}::{video_key}" — THE KEY, the only join.
+                              NEVER bare video_key (placeholder keys like v0001 repeat
+                              per person; one person's failure would claim another's
+                              video).
     roster_key                the demand CSV's first column, verbatim
     video_key                 the frozen per-person key, verbatim
-    media_file                ABSOLUTE path to the file that will be handed to the
-                              transcriber. May be under either media root. Empty
-                              when the media is gone.
+    media_file                ABSOLUTE path handed to the transcriber (either media
+                              root). Empty when the media is gone.
     status                    pending | started | finished | failed | media_gone
                               * pending     media on disk, never attempted
                               * started     an attempt is IN FLIGHT. Believed for
                                             {STALE_CLAIM_HOURS} from started_at,
                                             then treated as dead by 1C.3.
-                              * finished    THE WORDS ARE IN THE REPO. Not "the
-                                            transcriber exited 0" — Stage 6.5
-                                            writes this only after Stage 7.1 moved
-                                            the files in.
+                              * finished    THE WORDS ARE IN THE REPO (written by
+                                            6.5 only after 7.1 moved them), not
+                                            "the transcriber exited 0"
                               * failed      an attempt ended without words
-                              * media_gone  the row's media is no longer on disk
-                                            and there are no words either
-    tries                     integer, incremented in 6.1b BEFORE the transcriber
-                              is called. It counts attempts STARTED, not attempts
-                              that reached a verdict — a hung or killed attempt
-                              never reaches one, and a counter that misses those is
-                              a counter that lets a bad video be retried forever.
-    earliest_attempt_at       ISO 8601. The FIRST time this video was ever
-                              attempted on this machine. WRITE ONCE AND NEVER
-                              AGAIN. It is how a reader sees that something has
-                              been stuck for three weeks rather than three minutes.
-    started_at                ISO 8601. THIS attempt's start, stamped in 6.1b.
-                              Overwritten on every attempt. The
-                              {STALE_CLAIM_HOURS} test reads this and nothing else.
-    last_tried_at             ISO 8601. The value started_at held BEFORE this
-                              attempt — the previous try, kept so the age of the
-                              trouble is visible without a history table. Empty on
-                              a first attempt.
-    finished_at              ISO 8601. When the attempt ENDED, on success or
-                              failure. Emptied by 6.1b when a new attempt starts,
-                              so a `started` row never carries a stale end time.
-    words                     word count on success. Empty otherwise. Never 0 as a
-                              placeholder — 0 is a measurement.
-    host                      "{hostname}:{pid}" of the run holding or last holding
-                              the row. It is what tells a citizen with two windows
-                              open WHICH window is working a video.
-    run_id                    {THE_DATE_TIME_STRING} of the run that last wrote
-                              this row, so a row can be traced to a {RUN_LOG}.
-    note                      free text, human. The last failure's reason, the
-                              ledger correction that was applied, "reached the try
-                              cap", the contents of a {video_key}.FAILED.txt. This
-                              is the column a human actually reads.
+                              * media_gone  media no longer on disk, no words either
+    tries                     integer, incremented in 6.1b BEFORE the transcriber is
+                              called: counts attempts STARTED (hung/killed attempts
+                              never reach a verdict; missing them allows infinite
+                              retries).
+    earliest_attempt_at       ISO 8601. FIRST attempt on this machine. WRITE ONCE,
+                              never again (shows three weeks stuck vs three minutes).
+    started_at                ISO 8601. THIS attempt's start (6.1b), overwritten each
+                              attempt. The {STALE_CLAIM_HOURS} test reads only this.
+    last_tried_at             ISO 8601. started_at's value BEFORE this attempt. Empty
+                              on a first attempt.
+    finished_at               ISO 8601. When the attempt ENDED (success or failure).
+                              Emptied by 6.1b at a new attempt.
+    words                     word count on success, else empty. Never 0 as a
+                              placeholder (0 is a measurement).
+    host                      "{hostname}:{pid}" of the run holding or last holding the
+                              row (which window is working it).
+    run_id                    {THE_DATE_TIME_STRING} of the last writer (traces to a
+                              {RUN_LOG}).
+    note                      free text, human: last failure reason, applied
+                              correction, "reached the try cap", FAILED.txt contents.
+                              The column a human reads.
 
-WRITING RULES, AND EVERY ONE OF THEM EXISTS BECAUSE SEVERAL RUNS SHARE THE FILE:
+WRITING RULES (several runs share the file):
+  * Every write: TAKE LOCK -> RE-READ -> MERGE BY video_uid -> ATOMIC WRITE -> RELEASE.
+    The re-read is mandatory (a stale copy silently reverts another run's claim).
+  * Lock held for the read-modify-write ONLY (milliseconds), NEVER across a download or
+    transcription.
+  * Rows this run does not own are written back BYTE FOR BYTE.
+  * NEVER TRUNCATE THE FILE OR DELETE A ROW. Pruning is a human's decision.
+  * ABSENT IS ABSENT: unknown timestamps are EMPTY, never zero or today (a zero-epoch
+    started_at is a 1970 claim that makes every stale test true).
 
-  * Every write is TAKE LOCK -> RE-READ -> MERGE BY video_uid -> ATOMIC WRITE ->
-    RELEASE. The re-read is not optional: the copy in memory is stale the moment
-    the lock is released, and merging a stale copy silently reverts another run's
-    claim.
-  * The lock is held for the read-modify-write ONLY — milliseconds. NEVER across a
-    download or a transcription.
-  * A row this run does not own is written back BYTE FOR BYTE. Not reformatted, not
-    re-quoted, not re-timestamped.
-  * NEVER TRUNCATE THE FILE. NEVER DELETE A ROW. A `finished` row costs one line
-    and records that the work was done; a deleted row costs a re-download and a
-    re-transcription of something this machine already holds. Pruning is a human's
-    decision.
-  * ABSENT IS ABSENT: an unknown timestamp is an EMPTY CELL, never a zero and never
-    today's date. A zero-epoch `started_at` reads as a claim from 1970 and makes
-    every stale-claim test true.
-
-WHAT THIS FILE IS NOT. It is not evidence, it is not part of the corpus, and
-nothing in the product reads it. It is one machine's operational memory of which
-attempts happened, and its only job is to make sure a downloaded video is never
-forgotten.
-
+Not evidence, not corpus, read by nothing in the product: one machine's memory of
+attempts, so a downloaded video is never forgotten.
 
 ====================================================================
 APPENDIX Z — EVERY MESSAGE THIS PROMPT PRINTS
@@ -3425,35 +2554,18 @@ Z52 — the ledger disagreed with the disk. Stage 10 tail only, and never silent
 
 OTHER SITUATIONS, AND WHAT TO DO — no banner, just log it and carry on
 
-  a ledger row is `started` by THIS host and pid, from an earlier run
-    * The previous run with this pid is gone (pids are reused, but not by a live
-      run of this prompt). Treat it exactly like any other claim: believed for
-      {STALE_CLAIM_HOURS}, then adoptable. Do not special-case "it looks like me".
-
-  {IN_PROGRESS_LOCK} exists and is younger than 60 seconds
-    * Another run is mid-write. Wait briefly and retry — a few hundred milliseconds
-      is enough, because the lock is only ever held around one file write. If it is
-      still there after ~10 seconds, treat it as stale, break it, and log that.
-
-  the ledger has a row whose roster_key/video_key is not in {VIDEO_DEMAND_CSV}
-    * Normal, not an error: the engine regenerates that file and rows leave it. The
-      media and the words are what matter. Work it if it has media and no words,
-      and do not attempt to re-derive a demand row that no longer exists — Stage
-      3.2's seed beside the media is the fallback and it says what the row said.
-
-  yt-dlp says "video unavailable", is geo-blocked, or is members-only
-    * Skip it. Log it. It is a fact about the video, not a fault in the run. Do not
-      try to route around it, and never attempt a paywall or a login.
-
-  `citizens` exits 69
-    * The CLI is not built. Build it (Stage 5.3) and continue. No banner needed.
-
-  STAGE_DIR has a .transcription and nothing else
-    * The sidecar was missing, so nothing could be derived. This is a real state the
-      CLI reports, and for this prompt it is a FAILURE — Stage 7.4 applies. Do not
-      commit words that cannot be cited.
-
-  A selected row's media is on disk but will not open in ffprobe
-    * Treat it as a failed download: mark [FAIL ], log it, do not delete the file.
-      A truncated file from an earlier interrupted run is the usual cause, and the
-      citizen may want it removed by hand rather than by this prompt.
+  * Ledger row `started` by THIS host and pid from an earlier run: the old run is gone
+    (pids get reused). Treat it like any claim (believed {STALE_CLAIM_HOURS}, then
+    adoptable); no "it looks like me" special case.
+  * {IN_PROGRESS_LOCK} exists, younger than 60 seconds: another run is mid-write; retry
+    after a few hundred ms. Still there after ~10 seconds: treat as stale, break, log.
+  * Ledger row not in {VIDEO_DEMAND_CSV}: normal (rows leave the regenerated file). Work
+    it if it has media and no words; never re-derive the row; the 3.2 seed is the fallback.
+  * yt-dlp "video unavailable", geo-blocked, or members-only: skip and log (a fact about
+    the video). Never route around it; never attempt a paywall or login.
+  * `citizens` exits 69: CLI not built; build it (5.3) and continue.
+  * STAGE_DIR has a .transcription and nothing else: the sidecar was missing; a FAILURE
+    for this prompt (7.4). Never commit words that cannot be cited.
+  * Selected media on disk will not open in ffprobe: treat as a failed download, mark
+    [FAIL ], log, never delete the file (usually truncated from an interrupted run; the
+    citizen may remove it by hand).
