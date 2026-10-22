@@ -478,7 +478,7 @@ Search in this order and stop at the first confirmed hit per slot.
                             ~/data_we_citizens
                             ~/BGit/data_we_citizens
       we_the_citizens_repo: ~/BGit/act3/we_citizens
-                            ~/BGit/act3/we_the_citizens
+                            ~/BGit/act3/we_citizens
                             ~/we_citizens
                             ~/BGit/we_citizens
       user_repo_path:       the directory this prompt file is in, walked UP to the
@@ -2807,7 +2807,7 @@ APPENDIX F — THE DEMAND ARITHMETIC, FOR STAGE 1B ONLY
 ====================================================================
 
 NORMATIVE SOURCE, and this appendix is a transcription of it rather than a second
-opinion: we_the_citizens/pm/calc_engine_video_demand.mdx §3, implemented in
+opinion: we_citizens/pm/calc_engine_video_demand.mdx §3, implemented in
 code/packages/shared/src/video_demand.ts as videoDemandTerms() /
 computeVideoDemand(). If the two ever disagree, THE SPEC WINS and this appendix is
 wrong. Re-read it before trusting these numbers on a machine that has {WTC_REPO}.
